@@ -18,7 +18,7 @@
 
 ### Fonctions
 
-normal, tank, volant, caster, ranged
+normal, tank, fast, ranged, dps
 
 ### Natures
 

@@ -381,3 +381,53 @@
 | Tertre      | 23                  |
 | Bosquet     | 37                  |
 | Cénote      | 34                  |
+
+
+
+
+
+
+
+| Noyau        | Capitale     |
+| -----------  | ------------ |
+| Humains      | Citadelle    |
+| Hauts-Elfes  | Sylve        |
+| Nains        | Forteresse   |
+| Halfling     | Hameau       |
+| Morts-vivants| Nécropole    |
+| Elfes noirs  | Abîme        |
+| Orcs         | Bastion      |
+| Tieffelin    | Pandémonium  |
+| Gnome        | Manufacture  |
+| Gobelin      | Terrier      |
+| Mages        | Empyrée      |
+| Ogres        | Tertre       |
+| Fées         | Bosquet      |
+| Naga         | Cénote       |
+
+
+### Fonctions
+
+normal, tank, fast, ranged, dps
+
+### Natures
+
+vivant, végétal, méchanique, aberration, mort-vivant, éthéré
+
+### Origines
+
+Abyssal, Astral, Axiomatique, Céleste, Elémentaire, Empyréen, Féérique, Infernal, Le Néant, Le Vide, Nécrotique, Primordial
+
+
+
+
+|        | Factory                          | Castle  | Rampart | Tower  | Inferno | Necropolis | Dungeon | Bastion | Fortress | Confluence  | Cove   |
+| ------ | -------------------------------- | ------- | ------- | ------ | ------- | ---------- | ------- | ------- | -------- | ----------- | ------ |
+| noyau  | halfing                          | humains | elfe    | mages  | démons  | undead     | drows   | orc     | gnoll    | élémentaire | pirates |
+| t1     | ranged                           | tank    | fast    | ranged | dps     | normal     | normal  | fast    | normal   | fast        | fast   |
+| t2     | dps                              | ranged  | tank    | fast   | ranged  | tank       | fast    | fast    | ranged   | ranged      | normal |
+| t3     | tank                             | fast    | ranged  | tank   | dps     | normal     | ranged  | ranged  | fast     | ranged      | ranged |
+| t4     | normal                           | normal  | fast    | ranged | tank    | dps        | ranged  | tank    | normal   | normal      | fast   |
+| t5     | fast                             | ranged  | tank    | fast   | normal  | ranged     | tank    | fast    | tank     | normal      | ranged |
+| t6     | ranged                           | tank    | normal  | dps    | fast    | tank       | fast    | ranged  | fast     | dps         | tank   |
+| t7     | tank/fast (il existe 2 unités)   | dps     | normal  | ranged | fast    | normal     | tank    | dps     | tank     | fast        | dps    |

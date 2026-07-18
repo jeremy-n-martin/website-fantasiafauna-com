@@ -1,0 +1,1 @@
+Objet faction a utiliser en one soit qui augmente.la prod pendant un.mois d'une crea
