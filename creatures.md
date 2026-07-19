@@ -263,7 +263,7 @@
 | Lindworm             | Tertre      | 8          | normal, tank                   | vivant              | Primordial  | 47                         | 45                |
 | Tarasque             | Tertre      | 7          | normal, tank                   | vivant              | Primordial  | 92                         | 45                |
 | Zmey                 | Tertre      | 15         | normal, volant, caster         | vivant              | Primordial  | 65                         | 42                |
-| Hrímþurs             | Tertre      | 6,5        | tank, ranged, normal           | vivant              | Elémentaire | 58                         | 28                |
+| Géant des glaces     | Tertre      | 6,5        | tank, ranged, normal           | vivant              | Elémentaire | 58                         | 28                |
 | Oréade               | Tertre      | 1,75       | caster                         | éthéré              | Elémentaire | 24                         | 28                |
 | Fomorien             | Tertre      | 4,2        | tank, caster, ranged           | vivant              | Primordial  | 46                         | 26                |
 | Ettin                | Tertre      | 4          | tank, normal                   | vivant              | Primordial  | 40                         | 24                |
