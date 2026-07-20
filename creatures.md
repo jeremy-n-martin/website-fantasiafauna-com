@@ -74,8 +74,8 @@
 | Wraith               | Nécropole   | 1,8        | volant, caster                 | mort-vivant, éthéré | Nécrotique  | 40                         | 55                |
 | Dullahan             | Nécropole   | 1,9        | normal, caster                 | mort-vivant, éthéré | Nécrotique  | 42                         | 52                |
 | Dracoliche           | Nécropole   | 20         | volant, tank, caster, ranged   | mort-vivant         | Nécrotique  | 90                         | 48                |
-| Níðhöggr             | Nécropole   | 30         | tank, volant                   | vivant              | Nécrotique  | 91                         | 48                |
-| Strigoï              | Nécropole   | 1,8        | normal, caster                 | mort-vivant         | Nécrotique  | 28                         | 46                |
+| Nidhogg              | Nécropole   | 30         | tank, volant                   | vivant              | Nécrotique  | 91                         | 48                |
+| Strigoi              | Nécropole   | 1,8        | normal, caster                 | mort-vivant         | Nécrotique  | 28                         | 46                |
 | Draugr               | Nécropole   | 2,1        | tank, normal                   | mort-vivant         | Nécrotique  | 31                         | 40                |
 | Mort-vivant          | Nécropole   | 1,75       | normal, tank                   | mort-vivant         | Nécrotique  | 18                         | 40                |
 | Dame Blanche         | Nécropole   | 1,7        | caster                         | éthéré, mort-vivant | Nécrotique  | 24                         | 32                |
@@ -95,10 +95,10 @@
 | Assassin             | Abîme       | 1,7        | normal, ranged                 | vivant              | Le Vide     | 38                         | 74                |
 | Mothman              | Abîme       | 2          | normal, volant                 | vivant, aberration  | Le Vide     | 24                         | 68                |
 | Araignée géante      | Abîme       | 2,5        | normal, ranged                 | vivant              | Primordial  | 14                         | 66                |
-| Doppelgänger         | Abîme       | 1,75       | normal, caster                 | vivant              | Astral      | 28                         | 64                |
+| Doppelganger         | Abîme       | 1,75       | normal, caster                 | vivant              | Astral      | 28                         | 64                |
 | Illithid             | Abîme       | 1,9        | normal, caster                 | vivant, aberration  | Astral      | 47                         | 62                |
 | Mimique              | Abîme       | 1,5        | normal, tank                   | vivant, aberration  | Le Néant    | 24                         | 62                |
-| Tyrannœil            | Abîme       | 2,5        | volant, caster, ranged         | aberration          | Le Néant    | 66                         | 62                |
+| Tyrannoeil           | Abîme       | 2,5        | volant, caster, ranged         | aberration          | Le Néant    | 66                         | 62                |
 | Basilic              | Abîme       | 1          | normal, ranged                 | vivant              | Primordial  | 30                         | 56                |
 | Dragon d'ombre       | Abîme       | 18         | volant, caster, ranged         | vivant, éthéré      | Le Néant    | 84                         | 52                |
 | Shoggoth             | Abîme       | 4,6        | normal, tank                   | aberration          | Le Néant    | 78                         | 52                |
@@ -110,13 +110,13 @@
 | Cube gélatineux      | Abîme       | 3          | tank, normal                   | aberration          | Le Néant    | 17                         | 31                |
 | Arachne              | Abîme       | 2,2        | normal, ranged                 | vivant, aberration  | Primordial  | 24                         | 30                |
 | Otyugh               | Abîme       | 2,4        | normal, tank                   | aberration          | Le Néant    | 31                         | 24                |
+| Gibbering Mouther    | Abîme       | 2,5        | tank, caster, ranged           | aberration          | Le Vide     | 30                         | 24                |
 | Myconide             | Abîme       | 1,4        | normal, caster                 | végétal             | Primordial  | 14                         | 22                |
 | Péryton              | Abîme       | 1,8        | normal, volant                 | aberration          | Abyssal     | 22                         | 22                |
 | Troglodyte           | Abîme       | 1,7        | normal                         | vivant              | Primordial  | 8                          | 22                |
 | Slaad                | Abîme       | 2          | normal, tank, caster           | aberration          | Le Néant    | 47                         | 20                |
 | Fauve désagrégateur  | Abîme       | 2,7        | tank, normal                   | vivant              | Féérique    | 34                         | 18                |
 | Flumph               | Abîme       | 0,8        | volant, caster                 | vivant              | Le Vide     | 8                          | 14                |
-| Gibbering Mouther    | Abîme       | 2,5        | tank, caster, ranged           | aberration          | Le Vide     | 30                         | 14                |
 | Guêteur              | Abîme       | 18         | tank, ranged                   | aberration          | Le Vide     | 60                         | 14                |
 | Grell                | Abîme       | 1,5        | volant, caster, normal         | aberration          | Le Vide     | 34                         | 12                |
 | Amphisbène           | Abîme       | 2          | normal                         | vivant, aberration  | Primordial  | 15                         | 11                |
@@ -431,3 +431,17 @@ Abyssal, Astral, Axiomatique, Céleste, Elémentaire, Empyréen, Féérique, Inf
 | t5     | fast                             | ranged  | tank    | fast   | normal  | ranged     | tank    | fast    | tank     | normal      | ranged |
 | t6     | ranged                           | tank    | normal  | dps    | fast    | tank       | fast    | ranged  | fast     | dps         | tank   |
 | t7     | tank/fast (il existe 2 unités)   | dps     | normal  | ranged | fast    | normal     | tank    | dps     | tank     | fast        | dps    |
+
+
+### Ancres
+
+| Tier | Attaque | Défense | HP  | Dégâts moyens | Speed |
+| ---- | ------: | ------: | --: | ------------: | ----: |
+| T1   |       2 |       2 |   5 |           1,5 |     3 |
+| T2   |       3 |       3 |   8 |           2,5 |     4 |
+| T3   |     4,5 |     4,5 |  15 |           4,5 |     5 |
+| T4   |       7 |       7 |  28 |             8 |     6 |
+| T5   |      10 |      10 |  51 |            13 |     7 |
+| T6   |      15 |      15 |  92 |            21 |     9 |
+| T7   |      22 |      22 | 166 |            34 |    11 |
+| T8   |      33 |      33 | 300 |            55 |    13 |
