@@ -20,7 +20,7 @@
 | Moine                | Citadelle   | 1,75       | normal                         | vivant              | Axiomatique | 32                         | 25                |
 | Acolyte              | Citadelle   | 1,7        | caster                         | vivant              | Céleste     | 5                          | 20                |
 | Aasimar              | Citadelle   | 1,8        | normal, caster                 | vivant              | Céleste     | 24                         | 18                |
-| Écuyer               | Citadelle   | 1,7        | normal                         | vivant              | Primordial  | 8                          | 18                |
+| Ecuyer               | Citadelle   | 1,7        | normal                         | vivant              | Primordial  | 8                          | 18                |
 | Alérion              | Citadelle   | 1,2        | volant, normal                 | vivant              | Primordial  | 12                         | 6                 |
 | Voleur               | Citadelle   | 1,7        | normal, ranged                 | vivant              | Primordial  | 12                         | 6                 |
 | Elfe                 | Sylve       | 1,8        | normal, ranged, caster         | vivant              | Féérique    | 19                         | 90                |
@@ -237,7 +237,7 @@
 | Anzu                 | Empyrée     | 8          | volant, tank, caster           | vivant              | Primordial  | 83                         | 28                |
 | Invocateur           | Empyrée     | 1,75       | caster, ranged                 | vivant              | Astral      | 55                         | 28                |
 | Mushussu             | Empyrée     | 4          | normal, tank                   | vivant, aberration  | Céleste     | 47                         | 28                |
-| Völva                | Empyrée     | 1,7        | caster, ranged                 | vivant              | Astral      | 34                         | 28                |
+| Volva                | Empyrée     | 1,7        | caster, ranged                 | vivant              | Astral      | 34                         | 28                |
 | Cryomancien          | Empyrée     | 1,7        | caster, ranged                 | vivant              | Elémentaire | 36                         | 25                |
 | Jann                 | Empyrée     | 1,9        | normal, caster                 | éthéré              | Elémentaire | 39                         | 25                |
 | Sylphe               | Empyrée     | 1,8        | volant, caster                 | éthéré              | Elémentaire | 25                         | 25                |
@@ -257,7 +257,7 @@
 | Sasquatch            | Tertre      | 2,4        | normal, tank                   | vivant              | Primordial  | 18                         | 70                |
 | Wyrm                 | Tertre      | 12         | normal, tank, caster           | vivant              | Primordial  | 70                         | 58                |
 | Grendel              | Tertre      | 3,5        | tank, normal                   | vivant, aberration  | Primordial  | 50                         | 54                |
-| Jötunn               | Tertre      | 6          | normal, tank, ranged           | vivant              | Primordial  | 64                         | 50                |
+| Jotunn               | Tertre      | 6          | normal, tank, ranged           | vivant              | Primordial  | 64                         | 50                |
 | Yuki-onna            | Tertre      | 1,7        | caster, ranged                 | éthéré              | Elémentaire | 38                         | 50                |
 | Roc                  | Tertre      | 25         | normal, volant, tank           | vivant              | Primordial  | 69                         | 46                |
 | Lindworm             | Tertre      | 8          | normal, tank                   | vivant              | Primordial  | 47                         | 45                |
@@ -282,7 +282,7 @@
 | Mandragore           | Bosquet     | 0,5        | normal, caster                 | végétal             | Féérique    | 18                         | 58                |
 | Tanuki               | Bosquet     | 0,6        | normal, caster                 | vivant, éthéré      | Féérique    | 30                         | 58                |
 | Pixie                | Bosquet     | 0,25       | volant, caster                 | vivant              | Féérique    | 11                         | 52                |
-| Yokaï                | Bosquet     | 1,7        | normal, caster                 | éthéré              | Féérique    | 30                         | 52                |
+| Yokai                | Bosquet     | 1,7        | normal, caster                 | éthéré              | Féérique    | 30                         | 52                |
 | Nekomata             | Bosquet     | 0,6        | normal, caster                 | vivant              | Féérique    | 19                         | 50                |
 | Jabberwock           | Bosquet     | 5          | normal, volant                 | vivant, aberration  | Féérique    | 58                         | 48                |
 | Tengu                | Bosquet     | 1,8        | normal, volant, ranged         | vivant, éthéré      | Féérique    | 38                         | 48                |
@@ -311,7 +311,7 @@
 | Kraken               | Cénote      | 30         | normal, tank                   | vivant              | Abyssal     | 82                         | 85                |
 | Léviathan            | Cénote      | 100        | normal, tank                   | vivant, aberration  | Primordial  | 93                         | 80                |
 | Hydre                | Cénote      | 12         | normal, tank                   | vivant              | Primordial  | 51                         | 78                |
-| Jörmungandr          | Cénote      | 40000000   | normal, tank                   | vivant, aberration  | Primordial  | 98                         | 76                |
+| Jormungandr          | Cénote      | 40000000   | normal, tank                   | vivant, aberration  | Primordial  | 98                         | 76                |
 | Kappa                | Cénote      | 1,2        | normal                         | vivant, aberration  | Féérique    | 24                         | 72                |
 | Dragon noir          | Cénote      | 17         | volant, tank, ranged           | vivant              | Elémentaire | 72                         | 70                |
 | Sirène               | Cénote      | 1,7        | volant, caster                 | vivant              | Abyssal     | 26                         | 67                |
@@ -326,7 +326,7 @@
 | Triton               | Cénote      | 1,8        | normal, caster, ranged         | vivant              | Elémentaire | 28                         | 44                |
 | Yuan-ti              | Cénote      | 2,4        | normal, caster, ranged         | vivant, aberration  | Primordial  | 47                         | 38                |
 | Homme-lézard         | Cénote      | 2          | normal, tank                   | vivant              | Primordial  | 16                         | 36                |
-| Naïade               | Cénote      | 1,7        | caster                         | éthéré              | Elémentaire | 24                         | 36                |
+| Naiade               | Cénote      | 1,7        | caster                         | éthéré              | Elémentaire | 24                         | 36                |
 | Ondine               | Cénote      | 1,7        | caster                         | éthéré              | Elémentaire | 21                         | 36                |
 | Hippocampe           | Cénote      | 3,5        | normal                         | vivant              | Elémentaire | 24                         | 35                |
 | Néréide              | Cénote      | 1,7        | caster                         | éthéré              | Elémentaire | 27                         | 34                |
@@ -334,7 +334,7 @@
 | Grindylow            | Cénote      | 1,2        | normal                         | vivant              | Féérique    | 13                         | 30                |
 | Nixe                 | Cénote      | 1,7        | caster                         | éthéré              | Elémentaire | 22                         | 30                |
 | Sahuagin             | Cénote      | 1,8        | normal, ranged                 | vivant              | Primordial  | 11                         | 28                |
-| Vodyanoï             | Cénote      | 1,6        | normal, caster                 | éthéré              | Elémentaire | 28                         | 28                |
+| Vodyanoi             | Cénote      | 1,6        | normal, caster                 | éthéré              | Elémentaire | 28                         | 28                |
 | Kuo-toa              | Cénote      | 1,5        | normal                         | vivant, aberration  | Abyssal     | 11                         | 22                |
 | Aspidochelone        | Cénote      | 300        | tank, normal                   | vivant              | Primordial  | 84                         | 20                |
 | Lusca                | Cénote      | 23         | normal, tank                   | vivant, aberration  | Abyssal     | 64                         | 20                |
@@ -435,13 +435,37 @@ Abyssal, Astral, Axiomatique, Céleste, Elémentaire, Empyréen, Féérique, Inf
 
 ### Ancres
 
-| Tier | Attaque | Défense | HP  | Dégâts moyens | Speed |
-| ---- | ------: | ------: | --: | ------------: | ----: |
-| T1   |       2 |       2 |   5 |           1,5 |     3 |
-| T2   |       3 |       3 |   8 |           2,5 |     4 |
-| T3   |     4,5 |     4,5 |  15 |           4,5 |     5 |
-| T4   |       7 |       7 |  28 |             8 |     6 |
-| T5   |      10 |      10 |  51 |            13 |     7 |
-| T6   |      15 |      15 |  92 |            21 |     9 |
-| T7   |      22 |      22 | 166 |            34 |    11 |
-| T8   |      33 |      33 | 300 |            55 |    13 |
+[VERROUILLE]
+
+| Tier | Attaque | Δ Att | Défense | Δ Déf | HP  | Δ HP | Dégâts moyens | Δ Dég | Speed | Δ Spd |
+| ---- | ------: | ----: | ------: | ----: | --: | ---: | ------------: | ----: | ----: | ----: |
+| T1   |       2 |       |       2 |       |   5 |      |          2,28 |       |     3 |       |
+| T2   |       3 |     1 |       3 |     1 |   9 |    4 |          4,14 |  1,87 |     4 |     1 |
+| T3   |       5 |     2 |       5 |     2 |  16 |    7 |          7,69 |  3,55 |     5 |     1 |
+| T4   |       8 |     3 |       8 |     3 |  29 |   13 |         14,11 |  6,42 |   6,5 |   1,5 |
+| T5   |      12 |     4 |      12 |     4 |  52 |   23 |         19,36 |  5,25 |     8 |   1,5 |
+| T6   |      17 |     5 |      17 |     5 |  93 |   41 |         23,69 |  4,33 |   9,5 |   1,5 |
+| T7   |      23 |     6 |      23 |     6 | 167 |   74 |         37,26 | 13,58 |  11,5 |     2 |
+| T8   |      30 |     7 |      30 |     7 | 300 |  133 |            50 | 12,74 |  13,5 |     2 |
+
+
+
+### Dégats et simulation de combat : 
+
+Combat :
+
+- La créature la plus rapide (c1) commence et attaque
+- puis l'autre (c2) attaque
+- puis c1, puis c2, puis c2, puis c1, puis c1, puis c2, puis c2, puis c1, puis c1, etc...
+
+Les dégat qui dépassent le point de vie de la créature sont reporté dans le stack sur la crréature suivante.
+
+Formule de dégâts :
+
+Avec :
+
+$$\Delta = A_{\text{attaquant}} - D_{\text{défenseur}}$$
+
+on a :
+
+$$D_{\text{final}} = D_{\text{unité}} \,(1 + 0{,}025\,|\Delta|)^{\mathrm{sgn}(\Delta)}$$
