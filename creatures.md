@@ -449,7 +449,6 @@ Abyssal, Astral, Axiomatique, Céleste, Elémentaire, Empyréen, Féérique, Inf
 | T8   |      30 |      30 |  300 |            50 |  13,5 |
 
 
-
 ### Dégats et simulation de combat : 
 
 Combat :
