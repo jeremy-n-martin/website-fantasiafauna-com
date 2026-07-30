@@ -401,3 +401,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un aperçu de dégâts avant clic sur structure/cible, ou rendre Boule de feu ciblable par colonne avec preview des colonnes voisines.
+
+### Publication de l’itération hit-badges
+- Commit local applicatif: `4ebf294` (`Show damage hit badges`).
+- `git push origin main`: OK (`a6a79e1..4ebf294 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `lastHitText` et `hit-badge`.
+- Vérification GitHub raw `style.css`: OK, contient `hit-badge` et `damagePop`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=4ebf294` et `style.css?v=4ebf294`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 21:20:58 GMT`, donc GitHub Pages/CDN probablement stale.
