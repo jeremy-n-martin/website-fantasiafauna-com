@@ -533,3 +533,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `enemyIntent`, `intent-badge`, `Vise:`.
 - Vérification GitHub raw `style.css`: OK, contient `intent-badge`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=64ae1b4`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 22:25:23 GMT`, donc GitHub Pages/CDN probablement stale.
+
+## Itération target-preview — 2026-07-31 00:52
+### Réalisé
+- Ajout d’une preview symétrique côté joueur: quand une créature alliée prête est sélectionnée, chaque cible ennemie affiche un badge `Clic: N dégâts` et indique la riposte de mêlée attendue.
+- Les cibles bloquées par la ligne frontale affichent maintenant `Bloqué: <front> d’abord`, ce qui rend la règle front/ranged/vol plus lisible avant le clic.
+- Les structures ennemies affichent aussi un badge de preview de dégâts quand une attaque est préparée.
+- Règles préservées: pas de POP/DEF, ATQ/HP/[ ], invocation 30/[ ], dégâts ATQ seuls, HP total de stack, tour/village/mur à 20 HP et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`target_preview_smoke=OK {"blocked":"Bloqué: Chevalier d’abord","frontPreview":"Clic: 4 dégâts · riposte 4","structure":"Clic: 4 dégâts"}`).
+- Serveur local `python -m http.server 8141`: OK.
+- `curl -I http://localhost:8141/`: HTTP 200.
+- `curl -s http://localhost:8141/game.js | grep -E 'attackPreview|structurePreview|preview-badge'`: OK.
+- `curl -s http://localhost:8141/style.css | grep -E 'preview-badge'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La preview structure montre uniquement les dégâts directs; elle ne simule pas encore une future règle de protection des structures par unités ennemies frontales.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un petit tutoriel de premier assaut ou une différenciation thématique du marché par ville/capitale.
