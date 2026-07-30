@@ -308,3 +308,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 ### Prochaine action minimale
 - Ajouter un effet visuel temporaire sur la réduction de dégâts Rempart au moment où l’attaque est résolue, ou rendre la Boule de feu ciblable sur une colonne.
 
+### Publication de l’itération rempart-visibility
+- Commit local applicatif: `a8f2895` (`Show active Rempart protection`).
+- `git push origin main`: OK (`09a62a3..a8f2895 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `protectsByRempart`, `guard-badge`, `Protégé par`.
+- Vérification GitHub raw `style.css`: OK, contient `battle-card.guarded` et `guard-badge`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=a8f2895` et `style.css?v=a8f2895`: HTTP 200 mais marqueurs absents pendant ce run; probable délai/cache GitHub Pages (`Last-Modified` encore 20:36:25).
+
