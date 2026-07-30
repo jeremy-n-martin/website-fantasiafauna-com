@@ -156,3 +156,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Limites
 - Le balancing reste brutal mais nettement plus proche d’un vrai jeu de stacks; prochaine passe: équilibrer ATQ × nombre avec armure/réduction et améliorer l’IA.
+
+
+## Itération siege-lanes — 2026-07-30
+### Réalisé
+- Remplacement du duel plat par un champ de bataille de siège: côté ennemi à gauche, défense du joueur à droite.
+- Ajout des structures Tour/Village/Mur, chacune à 20 HP. Si la tour du joueur tombe à 0 HP, l’assaut passe en défaite.
+- Ajout des zones de placement: devant le mur, sur le mur (2 places), entre village et mur.
+- La zone arrière accepte les créatures faibles/coût bas ou ranged/caster; une créature de mêlée non volante ne peut pas attaquer depuis cette zone.
+- Le village donne 6 points d’invocation fixes par tour.
+- Priorité d’attaque ennemie implémentée: front -> mur -> créatures sur mur -> arrière -> tour.
+- Capacité Vol prioritaire: peut contourner le front et frapper mur/tour.
+- UI: ennemi affiché à gauche; images ennemies miroir horizontal avec CSS `scaleX(-1)`.
+- Effet visuel de hit sur structures/créatures touchées via `lastHit` + animation CSS.
+
+### Vérification réelle
+- `node --check game.js` : OK.
+- Serveur local `python -m http.server 8128` : OK.
+- Test navigateur: lancement d’assaut, 6 structures visibles à 20/20 HP, zones visibles des deux côtés.
+- Test tour ennemi: un Draugr ennemi apparaît à gauche, image miroir confirmée par `matrix(-1, 0, 0, 1, 0, 0)`.
+- Test priorité: sans créature devant, l’ennemi attaque le mur; mur joueur passe de 20 à 8 HP.
+- Test placement: choix `sur le mur`, invocation d’Érinye, nombre de cartes sur mur passe de 0 à 1.
+
+### Limites
+- Les structures ennemies existent visuellement mais leur village n’a pas encore de boucle économique propre.
+- Prochaine passe: meilleur ciblage joueur des structures, équilibrage des dégâts de stacks contre les 20 HP de structures, capacités spéciales plus explicites.
