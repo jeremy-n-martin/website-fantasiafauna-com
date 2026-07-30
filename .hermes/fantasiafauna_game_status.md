@@ -242,11 +242,15 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Serveur local `python -m http.server 8131` : OK.
 - `curl -I http://localhost:8131/` : HTTP 200.
 - `curl -s http://localhost:8131/game.js | grep -E 'setPendingPos|chosenPosFor|cell chosen'` : OK.
+- Commit local `f5ed9ab` puis `git push origin main` : OK (`009eea2..f5ed9ab main -> main`).
+- Vérification GitHub raw `https://raw.githubusercontent.com/.../main/game.js` : OK, contient `setPendingPos` et `chosenPosFor`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=f5ed9ab-retry` : encore stale pendant ce run (`public_game_js_attempt_1/2/3=False`, 131853 octets); probable délai/cache GitHub Pages.
 
 ### Limites
 - Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique dans ce run cron.
 - Les deux logs de choix zone/colonne peuvent apparaître lors d’un clic cellule; c’est lisible mais encore verbeux.
 - Le travail sale non lié du repo est préservé et non committé.
+- Le commit applicatif est sur `origin/main`, mais `fantasiafauna.com` ne servait pas encore le nouveau `game.js` au moment de la vérification finale.
 
 ### Prochaine action minimale
 - Ajouter une petite aide visuelle/texte en combat indiquant explicitement “clique une colonne puis une carte” et vérifier un effet adjacent Rempart avec colonne choisie.
