@@ -432,3 +432,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un surlignage visuel des colonnes ennemies qui seraient touchées par la Boule de feu avant le clic, ou une règle de recharge plus explicite pour éviter cumul manuel + automatique.
+
+### Publication de l’itération fireball-column
+- Commit local applicatif: `7c51be9` (`Add targeted fireball columns`).
+- `git push origin main`: OK (`8bb112c..7c51be9 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `fireballPicker`, `castFireballColumn`, `Boule de feu ciblable`.
+- Vérification GitHub raw `style.css`: OK, contient `fireball-picker`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=7c51be9` et `style.css?v=7c51be9`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 21:39:26 GMT`, donc GitHub Pages/CDN reste probablement stale.
