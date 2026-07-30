@@ -526,3 +526,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une preview symétrique côté joueur avant clic sur cible/structure: dégâts attendus, riposte éventuelle, et blocage par front/ranged/vol.
+
+### Publication de l’itération enemy-intent
+- Commit local applicatif: `64ae1b4` (`Show enemy attack intents`).
+- `git push origin main`: OK (`74f6d18..64ae1b4 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `enemyIntent`, `intent-badge`, `Vise:`.
+- Vérification GitHub raw `style.css`: OK, contient `intent-badge`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=64ae1b4`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 22:25:23 GMT`, donc GitHub Pages/CDN probablement stale.
