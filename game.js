@@ -96,7 +96,7 @@ const LOCATIONS=[
   {name:'Citadelle d’Aurore',type:'town',capital:'Citadelle',x:14,y:20},{name:'Sylve Ancienne',type:'town',capital:'Sylve',x:36,y:18},{name:'Forteresse des Runes',type:'town',capital:'Forteresse',x:72,y:23},{name:'Hameau des Lanternes',type:'town',capital:'Hameau',x:26,y:66},{name:'Nécropole Voilée',type:'duel',capital:'Nécropole',x:61,y:69},{name:'Abîme des Miroirs',type:'boss',capital:'Abîme',x:83,y:62},{name:'Caravane du Désert',type:'town',capital:'Désert',x:53,y:43},{name:'Tour des Pactes',type:'duel',capital:'Tour',x:46,y:29}
 ];
 function cardView(c, zone='preview'){
-  const color=CAPITAL_COLORS[c.capital]||'#c9aa69'; const img=c.image?`<img src="${encodeURI(c.image)}" alt="${c.name}" loading="lazy">`:'';
+  const color=CAPITAL_COLORS[c.capital]||'#c9aa69'; const img=c.image?`<img src="${encodeURI(c.image)}" alt="${c.name}" decoding="async">`:'';
   const action = zone==='hand'?`onclick="playCard('${c.uid}')"`:zone==='ally'?`onclick="attackWith('${c.uid}')"`:'';
   return `<article class="ff-card ${c.rarity} ${zone}" style="--faction:${color}" ${action}>
     <header class="card-title"><span>${c.name}</span><b>${c.cost}</b></header>
@@ -109,7 +109,7 @@ function cardView(c, zone='preview'){
   </article>`;
 }
 function compactCard(c, zone){
-  const color=CAPITAL_COLORS[c.capital]||'#c9aa69'; const img=c.image?`<img src="${encodeURI(c.image)}" alt="${c.name}" loading="lazy">`:'';
+  const color=CAPITAL_COLORS[c.capital]||'#c9aa69'; const img=c.image?`<img src="${encodeURI(c.image)}" alt="${c.name}" decoding="async">`:'';
   const action = zone==='hand'?`onclick="playCard('${c.uid}')"`:zone==='ally'?`onclick="attackWith('${c.uid}')"`:'';
   return `<button class="battle-card ${c.rarity}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><footer><b>${c.attack}</b><span>${c.hp??c.health}</span></footer></button>`;
 }
