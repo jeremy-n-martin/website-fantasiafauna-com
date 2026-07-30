@@ -224,4 +224,29 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Limites
 - Les effets sont encore dérivés automatiquement des rôles, pas encore assignés créature par créature.
-- Prochaine passe: permettre au joueur de choisir explicitement la colonne de placement au lieu du premier slot libre.
+
+### Prochaine action minimale
+- Permettre au joueur de choisir explicitement la colonne de placement au lieu du premier slot libre.
+
+
+## Itération column-choice — 2026-07-30
+### Réalisé
+- Ajout d’un choix explicite de colonne tactique côté joueur: les 5 cellules alliées sont cliquables et la cellule choisie reçoit un halo visible.
+- Le placement de carte utilise maintenant la colonne choisie si elle est libre, sinon retombe honnêtement sur la première colonne libre de la zone.
+- Conservation des contraintes de combat: pas de POP/DEF, affichage `[ ]` distinct des unités vivantes, règle 30/[ ], dégâts ATQ seuls et placement par zones front/mur/arrière.
+- Évite le conflit entre clic de cellule et clic de carte alliée/adverse via `event.stopPropagation()` sur les mini-cartes.
+
+### Vérification réelle
+- `node --check game.js` : OK.
+- `node .hermes/smoke_column_choice.js` : OK (`column_choice_smoke=OK`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8131` : OK.
+- `curl -I http://localhost:8131/` : HTTP 200.
+- `curl -s http://localhost:8131/game.js | grep -E 'setPendingPos|chosenPosFor|cell chosen'` : OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique dans ce run cron.
+- Les deux logs de choix zone/colonne peuvent apparaître lors d’un clic cellule; c’est lisible mais encore verbeux.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une petite aide visuelle/texte en combat indiquant explicitement “clique une colonne puis une carte” et vérifier un effet adjacent Rempart avec colonne choisie.
