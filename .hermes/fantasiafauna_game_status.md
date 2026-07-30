@@ -278,3 +278,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 ### Prochaine action minimale
 - Vérifier/renforcer en jeu l’effet Rempart avec colonne choisie, idéalement avec un indicateur visuel sur l’unité protégée et son protecteur adjacent.
 
+### Publication de l’itération placement-guide
+- Commit local applicatif: `a752e22` (`Add siege placement guide`).
+- `git push origin main`: OK (`5e56b3f..a752e22 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `setPlacement`, `Ordre tactique`, `Placement actif`.
+- Vérification GitHub raw `style.css`: OK, contient `placement-guide`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=a752e22`: HTTP 200 mais marqueurs absents pendant ce run; probable délai/cache GitHub Pages.
+
