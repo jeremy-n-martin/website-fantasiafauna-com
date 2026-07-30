@@ -464,3 +464,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un surlignage visuel des colonnes ennemies touchées par Boule de feu quand le panneau est prêt, ou afficher une petite pastille de cooldown directement sur les mini-cartes `Boule de feu`.
+
+### Publication de l’itération fireball-recharge
+- Commit local applicatif: `6ed7e8e` (`Clarify fireball recharge window`).
+- `git push origin main`: OK (`df18f8b..6ed7e8e main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `fireballWindowOpen`, `Boule de feu en recharge`, `selectedFireballSource`.
+- Vérification GitHub raw `style.css`: OK, contient `fireball-picker.recharging`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=6ed7e8e` et `style.css?v=6ed7e8e`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 21:54:58 GMT`, donc GitHub Pages/CDN reste probablement stale.
