@@ -12,19 +12,26 @@ const QUOTES = [
 ];
 const state = {
   gold: 80, mana: 1, maxMana: 1, day: 1, search: '', activeCapital: 'Toutes',
-  collection: [], deckIds: [], deck: [], hand: [], board: [], enemyBoard: [], graveyard: [], enemyHp: 24, playerHp: 30, selectedAttackerUid: null,
+  collection: [], deckIds: [], deck: [], hand: [], board: [], enemyBoard: [], graveyard: [], enemyHp: 120, playerHp: 120, selectedAttackerUid: null,
   log: [], location: 'Camp du Mage', mode: 'world', boosterOpened: false, lastBooster: []
 };
 const $ = (sel, root=document)=>root.querySelector(sel);
 const byId = id => document.getElementById(id);
 const rnd = arr => arr[Math.floor(Math.random()*arr.length)];
 const shuffle = arr => arr.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
-const clone = c => ({...c, uid: crypto.randomUUID?.() || Math.random().toString(36).slice(2), hp:c.health, exhausted:false});
+function tierFor(c){ return Math.max(1, Math.min(8, c.cost || Math.ceil(c.power/12) || 1)); }
+function stackCountFor(c){ const t=tierFor(c); return t*2 + ((c.id + c.power + c.popularity) % (t+1)); }
+const clone = c => { const count=stackCountFor(c); return {...c, uid: crypto.randomUUID?.() || Math.random().toString(36).slice(2), unitHp:c.health, maxHp:c.health*count, hp:c.health*count, count, exhausted:false}; };
+function liveCount(c){ return Math.max(0, Math.ceil((c.hp ?? c.health) / (c.unitHp || c.health || 1))); }
+function liveHp(c){ return c.hp ?? c.health; }
+function displayHp(c){ return c.unitHp || c.health; }
+function strikePower(c){ return Math.max(1, c.attack * (c.count || stackCountFor(c))); }
+function applyDamage(target, amount){ target.hp=Math.max(0,(target.hp ?? target.health)-amount); target.count=liveCount(target); return target.hp<=0; }
 function quoteFor(c){ return QUOTES[(c.id + c.name.length + c.power) % QUOTES.length]; }
 function loreFor(c){
   const nature = c.natures?.length ? c.natures.join(', ') : 'mystérieuse';
   const roles = c.roles?.length ? c.roles.join(', ') : 'inconnus';
-  return `${c.name} est une créature ${nature} issue de l’arcane ${c.origin}. On la rencontre autour de ${c.capital}, où les mages l’emploient comme ${roles}. Sa taille (${c.size} m) et sa puissance brute (${c.power}/100) déterminent son coût, son attaque et sa défense.`;
+  return `${c.name} est une créature ${nature} issue de l’arcane ${c.origin}. On la rencontre autour de ${c.capital}, où les mages l’emploient comme ${roles}. Sa taille (${c.size} m), sa puissance brute (${c.power}/100) et son tier ${tierFor(c)} déterminent son coût, ses HP et le nombre d'unités invoquées [${stackCountFor(c)}].`;
 }
 function weightedCreature(){
   const roll=Math.random();
@@ -38,13 +45,13 @@ function saveGame(){
 function loadGame(){
   try {
     const raw=localStorage.getItem('fantasiafauna-save'); if(!raw) return false;
-    const data=JSON.parse(raw); state.gold=data.gold??80; state.day=data.day??1; state.location=data.location||'Camp du Mage'; state.playerHp=data.playerHp??30;
+    const data=JSON.parse(raw); state.gold=data.gold??80; state.day=data.day??1; state.location=data.location||'Camp du Mage'; state.playerHp=Math.max(90, data.playerHp??120);
     state.collection=(data.collectionIds||[]).map(id=>CREATURES.find(c=>c.id===id)).filter(Boolean);
     state.deckIds=(data.deckIds||[]).filter(id=>state.collection.some(c=>c.id===id));
     state.boosterOpened=state.collection.length>0; return state.boosterOpened;
   } catch { return false; }
 }
-function resetGame(){ localStorage.removeItem('fantasiafauna-save'); Object.assign(state,{gold:80,day:1,collection:[],deckIds:[],deck:[],hand:[],board:[],enemyBoard:[],graveyard:[],location:'Camp du Mage',mode:'world',boosterOpened:false,lastBooster:[],playerHp:30,selectedAttackerUid:null}); startGame(true); }
+function resetGame(){ localStorage.removeItem('fantasiafauna-save'); Object.assign(state,{gold:80,day:1,collection:[],deckIds:[],deck:[],hand:[],board:[],enemyBoard:[],graveyard:[],location:'Camp du Mage',mode:'world',boosterOpened:false,lastBooster:[],playerHp:120,selectedAttackerUid:null}); startGame(true); }
 function addLog(text){ state.log.unshift(text); state.log=state.log.slice(0,12); }
 function startGame(forceNew=false){
   if(!forceNew && loadGame()){ addLog('Sauvegarde retrouvée: ta collection est chargée.'); render(); return; }
@@ -74,23 +81,23 @@ function toggleDeckCard(id){
   else if(owned>0){ state.deckIds.push(idNum); addLog('Carte ajoutée au grimoire de combat.'); }
   saveGame(); render();
 }
-function newEncounter(kind='duel'){ state.mode='battle'; state.enemyHp=22+state.day*2; state.playerHp=Math.min(30,state.playerHp+4); state.maxMana=1; state.mana=1; state.board=[]; state.enemyBoard=[]; state.hand=[]; state.deck=buildBattleDeck().map(clone); state.graveyard=[]; state.selectedAttackerUid=null; draw(5); addLog(kind==='boss'?'Un champion de capitale te défie.':'Un mage errant engage un combat de cartes.'); addLog(`Grimoire préparé: ${state.deck.length} cartes, dont ${state.deckIds.length} choisies.`); saveGame(); render(); }
+function newEncounter(kind='duel'){ state.mode='battle'; state.enemyHp=(kind==='boss'?180:120)+state.day*15; state.playerHp=Math.min(120,state.playerHp+12); state.maxMana=1; state.mana=1; state.board=[]; state.enemyBoard=[]; state.hand=[]; state.deck=buildBattleDeck().map(clone); state.graveyard=[]; state.selectedAttackerUid=null; draw(5); addLog(kind==='boss'?'Un champion de capitale te défie.':'Un mage errant engage un combat de cartes.'); addLog(`Grimoire préparé: ${state.deck.length} cartes, dont ${state.deckIds.length} choisies.`); saveGame(); render(); }
 function endTurn(){ state.selectedAttackerUid=null; state.board.forEach(c=>c.exhausted=false); enemyTurn(); state.day++; state.maxMana=Math.min(10,state.maxMana+1); state.mana=state.maxMana; draw(1); saveGame(); render(); }
 function enemyTurn(){
-  const enemyCard=clone(weightedCreature()); enemyCard.hp=Math.max(1, Math.round(enemyCard.health*.75)); enemyCard.attack=Math.max(1, Math.round(enemyCard.attack*.75));
+  const enemyCard=clone(weightedCreature()); enemyCard.count=Math.max(1, Math.round(enemyCard.count*.75)); enemyCard.unitHp=enemyCard.health; enemyCard.maxHp=enemyCard.unitHp*enemyCard.count; enemyCard.hp=enemyCard.maxHp; enemyCard.attack=Math.max(1, Math.round(enemyCard.attack*.75));
   if(state.enemyBoard.length<5) { state.enemyBoard.push(enemyCard); addLog(`Adversaire invoque ${enemyCard.name}.`); }
   state.enemyBoard.forEach(e=>{
     const guard=state.board.find(c=>c.roles.includes('tank')) || state.board[0];
-    if(guard){ guard.hp-=e.attack; addLog(`${e.name} frappe ${guard.name} (${e.attack}).`); if(guard.hp<=0){ state.graveyard.push(guard); state.board=state.board.filter(c=>c.uid!==guard.uid); }}
-    else { state.playerHp-=e.attack; addLog(`${e.name} touche ton mage (${e.attack}).`); }
+    if(guard){ const dmg=strikePower(e); const dead=applyDamage(guard,dmg); addLog(`${e.name} [${e.count}] frappe ${guard.name} (${dmg}).`); if(dead){ state.graveyard.push(guard); state.board=state.board.filter(c=>c.uid!==guard.uid); }}
+    else { const dmg=strikePower(e); state.playerHp-=dmg; addLog(`${e.name} [${e.count}] touche ton mage (${dmg}).`); }
   });
-  if(state.playerHp<=0){ addLog('Défaite: rapatriement à la dernière ville, +20 or.'); state.gold+=20; state.playerHp=26; state.mode='world'; }
+  if(state.playerHp<=0){ addLog('Défaite: rapatriement à la dernière ville, +20 or.'); state.gold+=20; state.playerHp=90; state.mode='world'; }
 }
 function playCard(uid){ const c=state.hand.find(x=>x.uid===uid); if(!c || c.cost>state.mana || state.board.length>=5) return; state.hand=state.hand.filter(x=>x.uid!==uid); state.mana-=c.cost; c.exhausted=true; state.board.push(c); state.selectedAttackerUid=null; addLog(`${c.name} rejoint le champ de bataille.`); if(c.roles.includes('caster')) damageRandomEnemy(2); if(c.roles.includes('normal')) c.attack+=1; saveGame(); render(); }
-function damageRandomEnemy(n){ const target=state.enemyBoard[0]; if(target){ target.hp-=n; addLog(`Sort: ${target.name} subit ${n}.`); if(target.hp<=0) state.enemyBoard.shift(); } else { state.enemyHp-=n; addLog(`Sort direct: adversaire -${n} PV.`); } }
+function damageRandomEnemy(n){ const target=state.enemyBoard[0]; if(target){ const dead=applyDamage(target,n); addLog(`Sort: ${target.name} subit ${n}.`); if(dead) state.enemyBoard.shift(); } else { state.enemyHp-=n; addLog(`Sort direct: adversaire -${n} PV.`); } }
 function selectAttacker(uid){ const c=state.board.find(x=>x.uid===uid); if(!c) return; if(c.exhausted){ addLog(`${c.name} a déjà agi ce tour.`); state.selectedAttackerUid=null; render(); return; } state.selectedAttackerUid=state.selectedAttackerUid===uid?null:uid; addLog(state.selectedAttackerUid?`${c.name} est prêt: choisis une cible adverse ou le mage ennemi.`:'Attaque annulée.'); render(); }
 function canHitTarget(target){ const guard=state.enemyBoard.find(x=>x.roles.includes('tank')); return !guard || guard.uid===target.uid; }
-function resolveAttack(c,target){ if(target){ target.hp-=c.attack; if(!c.roles.includes('ranged')) c.hp-=target.attack; addLog(`${c.name} attaque ${target.name}.`); if(target.hp<=0) state.enemyBoard=state.enemyBoard.filter(x=>x.uid!==target.uid); if(c.hp<=0){ state.graveyard.push(c); state.board=state.board.filter(x=>x.uid!==c.uid); }} else { state.enemyHp-=c.attack; addLog(`${c.name} frappe le mage adverse (${c.attack}).`); } c.exhausted=true; state.selectedAttackerUid=null; if(state.enemyHp<=0){ state.gold+=45; const prize=weightedCreature(); state.collection.push(prize); addLog(`Victoire: +45 or et carte gagnée: ${prize.name}.`); state.mode='world'; } saveGame(); render(); }
+function resolveAttack(c,target){ if(target){ const dealt=strikePower(c); const dead=applyDamage(target,dealt); if(!c.roles.includes('ranged')) applyDamage(c,strikePower(target)); addLog(`${c.name} [${c.count}] attaque ${target.name} (${dealt}).`); if(dead) state.enemyBoard=state.enemyBoard.filter(x=>x.uid!==target.uid); if(c.hp<=0){ state.graveyard.push(c); state.board=state.board.filter(x=>x.uid!==c.uid); }} else { const dealt=strikePower(c); state.enemyHp-=dealt; addLog(`${c.name} [${c.count}] frappe le mage adverse (${dealt}).`); } c.exhausted=true; state.selectedAttackerUid=null; if(state.enemyHp<=0){ state.gold+=45; const prize=weightedCreature(); state.collection.push(prize); addLog(`Victoire: +45 or et carte gagnée: ${prize.name}.`); state.mode='world'; } saveGame(); render(); }
 function attackTarget(uid){ const c=state.board.find(x=>x.uid===state.selectedAttackerUid); const target=state.enemyBoard.find(x=>x.uid===uid); if(!c||!target) return; if(!canHitTarget(target)){ const guard=state.enemyBoard.find(x=>x.roles.includes('tank')); addLog(`Garde: ${guard.name} doit être ciblé en premier.`); render(); return; } resolveAttack(c,target); }
 function attackEnemyMage(){ const c=state.board.find(x=>x.uid===state.selectedAttackerUid); if(!c) return; const guard=state.enemyBoard.find(x=>x.roles.includes('tank')); if(guard){ addLog(`Garde: ${guard.name} protège le mage adverse.`); render(); return; } resolveAttack(c,null); }
 function attackWith(uid){ selectAttacker(uid); }
@@ -111,14 +118,14 @@ function cardView(c, zone='preview'){
     <p class="ability"><strong>${c.spell.split(':')[0]}.</strong> ${c.spell.includes(':')?c.spell.split(':').slice(1).join(':').trim():c.spell}</p>
     <p class="lore">${loreFor(c)}</p>
     <blockquote>${quoteFor(c)}</blockquote>
-    <footer class="card-stats"><span><small>ATQ</small>${c.attack}</span><span><small>DEF</small>${c.hp??c.health}</span><span><small>POP</small>${c.popularity}</span></footer>
+    <footer class="card-stats"><span><small>ATQ</small>${c.attack}</span><span><small>HP</small>${displayHp(c)}</span><span><small>[ ]</small>${c.count || stackCountFor(c)}</span></footer>
   </article>`;
 }
 function compactCard(c, zone){
   const color=CAPITAL_COLORS[c.capital]||'#c9aa69'; const img=c.image?`<img src="${encodeURI(c.image)}" alt="${c.name}" decoding="async">`:'';
   const action = zone==='hand'?`onclick="playCard('${c.uid}')"`:zone==='ally'?`onclick="selectAttacker('${c.uid}')"`:zone==='enemy'?`onclick="attackTarget('${c.uid}')"`:'';
   const selected = c.uid && state.selectedAttackerUid===c.uid ? ' selected' : '';
-  return `<button class="battle-card ${c.rarity} ${zone}${selected}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><footer><b>${c.attack}</b><span>${c.hp??c.health}</span></footer></button>`;
+  return `<button class="battle-card ${c.rarity} ${zone}${selected}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${c.count || stackCountFor(c)}]</em></footer></button>`;
 }
 function filteredCreatures(){
   const q=state.search.trim().toLowerCase();
@@ -130,15 +137,15 @@ function setSearch(v){ state.search=v; render(); }
 function renderShowcase(){
   const caps=['Toutes',...Array.from(new Set(CREATURES.map(c=>c.capital))).slice(0,14)];
   const picks=filteredCreatures().slice(0,12);
-  return `<section class="showcase panel"><div class="section-head"><div><p class="eyebrow">MVP cartes jouables</p><h2>Rectos de cartes inspirés de Magic</h2><p>Chaque créature devient une carte avec coût d’invocation, attaque, défense, origine, histoire courte, citation et capacité intégrée.</p></div><div class="searchbox"><input value="${state.search}" oninput="setSearch(this.value)" placeholder="Chercher dragon, caster, Nécropole…"><button onclick="resetGame()">Nouvelle aventure</button></div></div><div class="filters">${caps.map(c=>`<button class="${state.activeCapital===c?'active':''}" onclick="setFilter('${c.replaceAll("'","\\'")}')">${c}</button>`).join('')}</div><div class="card-gallery">${picks.map(c=>cardView(c)).join('')}</div></section>`;
+  return `<section class="showcase panel"><div class="section-head"><div><p class="eyebrow">MVP cartes jouables</p><h2>Rectos de cartes inspirés de Magic</h2><p>Chaque créature devient une carte avec coût d’invocation, attaque, HP, nombre d’unités [ ], origine, histoire courte, citation et capacité intégrée.</p></div><div class="searchbox"><input value="${state.search}" oninput="setSearch(this.value)" placeholder="Chercher dragon, caster, Nécropole…"><button onclick="resetGame()">Nouvelle aventure</button></div></div><div class="filters">${caps.map(c=>`<button class="${state.activeCapital===c?'active':''}" onclick="setFilter('${c.replaceAll("'","\\'")}')">${c}</button>`).join('')}</div><div class="card-gallery">${picks.map(c=>cardView(c)).join('')}</div></section>`;
 }
 function renderBooster(){
   if(!state.lastBooster.length) return '';
   return `<section class="panel booster"><h2>Dernier booster / gain</h2><div class="booster-row">${state.lastBooster.slice(-5).map(c=>cardView(c)).join('')}</div></section>`;
 }
 function renderWorld(){ return `${renderShowcase()}${renderBooster()}<section class="panel map-panel"><h2>Carte du monde</h2><div class="world-map">${LOCATIONS.map(l=>`<button class="place ${l.type}" style="left:${l.x}%;top:${l.y}%" onclick='travel(${JSON.stringify(l)})'><span>${l.name}</span></button>`).join('')}</div></section>
-<section class="panel actions"><h2>${state.location}</h2><p>Explore, achète des cartes, provoque des duels et construis un grimoire de créatures-sort. Le marché actuel vise: <b>${state.activeCapital}</b>.</p><button onclick="buyBooster()">Acheter booster — 60 or</button><button onclick="tradeCard()">Échanger au marché — 25 or</button><button onclick="newEncounter()">Duel rapide</button><h3>Grimoire de combat (${state.deckIds.length}/${deckLimit()})</h3><p class="deck-hint">Clique une carte de collection pour l’ajouter ou la retirer du deck du prochain duel; les places libres sont complétées automatiquement.</p><div class="deck-list">${state.deckIds.slice(0,18).map(id=>{const c=CREATURES.find(x=>x.id===id);return c?`<button onclick="toggleDeckCard(${id})">${c.name}<small>${c.cost} mana · ${c.rarity}</small></button>`:''}).join('')||'<em>Aucune carte verrouillée: deck auto.</em>'}</div><h3>Collection récente</h3><div class="collection-strip">${state.collection.slice(-12).map(c=>`<div class="collection-pick ${state.deckIds.includes(c.id)?'picked':''}" onclick="toggleDeckCard(${c.id})">${compactCard(clone(c),'preview')}</div>`).join('')}</div></section>`; }
+<section class="panel actions"><h2>${state.location}</h2><p>Explore, achète des cartes, provoque des duels de stacks et construis un grimoire de créatures-sort. Le marché actuel vise: <b>${state.activeCapital}</b>.</p><button onclick="buyBooster()">Acheter booster — 60 or</button><button onclick="tradeCard()">Échanger au marché — 25 or</button><button onclick="newEncounter()">Duel rapide</button><h3>Grimoire de combat (${state.deckIds.length}/${deckLimit()})</h3><p class="deck-hint">Clique une carte de collection pour l’ajouter ou la retirer du deck du prochain duel; les places libres sont complétées automatiquement.</p><div class="deck-list">${state.deckIds.slice(0,18).map(id=>{const c=CREATURES.find(x=>x.id===id);return c?`<button onclick="toggleDeckCard(${id})">${c.name}<small>${c.cost} mana · ${c.rarity}</small></button>`:''}).join('')||'<em>Aucune carte verrouillée: deck auto.</em>'}</div><h3>Collection récente</h3><div class="collection-strip">${state.collection.slice(-12).map(c=>`<div class="collection-pick ${state.deckIds.includes(c.id)?'picked':''}" onclick="toggleDeckCard(${c.id})">${compactCard(clone(c),'preview')}</div>`).join('')}</div></section>`; }
 function renderBattle(){ return `<section class="battle"><div class="hero-row enemy"><h2><button class="mage-target" onclick="attackEnemyMage()">Mage adverse ${state.enemyHp} PV</button></h2><p class="target-hint">${state.selectedAttackerUid?'Choisis une cible adverse; les Gardes doivent être éliminés avant le mage.':'Clique une créature alliée prête pour déclarer une attaque ciblée.'}</p><div class="board">${state.enemyBoard.map(c=>compactCard(c,'enemy')).join('')}</div></div><div class="versus"><span>Mana ${state.mana}/${state.maxMana}</span><button onclick="endTurn()">Fin du tour</button></div><div class="hero-row"><h2>Ton mage ${state.playerHp} PV</h2><div class="board">${state.board.map(c=>compactCard(c,'ally')).join('')}</div><h3>Main</h3><div class="hand">${state.hand.map(c=>compactCard(c,'hand')).join('')}</div></div></section>`; }
-function render(){ byId('app').innerHTML=`<header class="topbar"><div><p class="eyebrow">Fantasia Fauna</p><h1>Arcanes du Bestiaire</h1><p class="subtitle">MVP: bestiaire transformé en cartes de collection et combats de mages.</p></div><div class="stats"><span>Jour ${state.day}</span><span>${state.gold} or</span><span>${state.collection.length} cartes</span><span>${CREATURES.length} créatures</span></div></header><main>${state.mode==='battle'?renderBattle():renderWorld()}</main><aside class="log"><h2>Journal</h2>${state.log.map(x=>`<p>${x}</p>`).join('')}</aside>`; }
+function render(){ byId('app').innerHTML=`<header class="topbar"><div><p class="eyebrow">Fantasia Fauna</p><h1>Arcanes du Bestiaire</h1><p class="subtitle">MVP: bestiaire transformé en stacks de créatures, cartes de collection et combats de mages.</p></div><div class="stats"><span>Jour ${state.day}</span><span>${state.gold} or</span><span>${state.collection.length} cartes</span><span>${state.playerHp} PV mage</span><span>${CREATURES.length} créatures</span></div></header><main>${state.mode==='battle'?renderBattle():renderWorld()}</main><aside class="log"><h2>Journal</h2>${state.log.map(x=>`<p>${x}</p>`).join('')}</aside>`; }
 window.playCard=playCard; window.attackWith=attackWith; window.selectAttacker=selectAttacker; window.attackTarget=attackTarget; window.attackEnemyMage=attackEnemyMage; window.endTurn=endTurn; window.buyBooster=buyBooster; window.tradeCard=tradeCard; window.travel=travel; window.newEncounter=newEncounter; window.toggleDeckCard=toggleDeckCard; window.setFilter=setFilter; window.setSearch=setSearch; window.resetGame=resetGame;
 startGame();

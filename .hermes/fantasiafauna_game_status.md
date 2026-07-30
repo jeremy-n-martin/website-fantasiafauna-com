@@ -136,3 +136,23 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Étendre le ciblage aux sorts/capacités de caster ou ajouter un court tutoriel de premier duel guidé.
+
+
+## Itération stack-game — 2026-07-30
+### Réalisé
+- Suppression de `POP` et `DEF` sur les rectos: les cartes affichent maintenant `ATQ`, `HP` et le nombre d’unités `[ ]`.
+- Ajout d’un tier dérivé du coût/puissance; le nombre `[ ]` est calculé dans l’intervalle approximatif tier×2 à tier×3.
+- Passage du combat à une logique de stacks: chaque carte invoque plusieurs unités, les dégâts réduisent les HP du stack et donc son nombre vivant.
+- Hausse des PV mages/adversaires pour que le combat ne se termine pas en un coup avec les stacks.
+- Les dégâts de créature scalent maintenant avec le nombre vivant du stack, façon Heroes/Might and Magic.
+
+### Vérification réelle
+- `node --check game.js` : OK.
+- Serveur local `python -m http.server 8127` : OK.
+- Navigation navigateur locale : rectos affichent `ATQ`, `HP`, `[ ]` et ne montrent plus `POP`/`DEF`.
+- Duel rapide via JS/browser : ennemi à 135 PV, main 5 cartes, stacks visibles `[5]`, `[6]`, etc.
+- Invocation d’une carte coût 1 : plateau allié passe à 1, sort déclenché.
+- Tour adverse vérifié : stack ennemi attaque avec dégâts scalés par `[nombre]`, logs de combat cohérents.
+
+### Limites
+- Le balancing reste brutal mais nettement plus proche d’un vrai jeu de stacks; prochaine passe: équilibrer ATQ × nombre avec armure/réduction et améliorer l’IA.
