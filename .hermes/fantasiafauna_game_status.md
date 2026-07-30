@@ -595,3 +595,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `marketOffers`, `buyMarketCard`, `Marché de`.
 - Vérification GitHub raw `style.css`: OK, contient `market-stalls`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=6216d56` et `style.css?v=6216d56`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 22:54:23 GMT`, donc GitHub Pages/CDN reste stale.
+
+## Itération assault-tutor — 2026-07-31 01:28
+### Réalisé
+- Ajout d’un tutoriel de premier assaut visible au centre du combat, sous l’ordre tactique existant.
+- Le tutoriel affiche une checklist dynamique: poser un stack, préparer une attaque, lire les intentions/frapper front-mur-tour; les étapes validées sont barrées.
+- Le panneau donne la prochaine action minimale selon l’état courant: jouer une carte, sélectionner une créature prête, cibler, ou terminer le tour.
+- Ajout d’un rappel explicite des règles corrigées: `[ ]` sert à calculer `max(1, round(30/[ ]))` unités et l’ATQ ne se multiplie pas par le nombre d’unités.
+- Règles préservées: pas de POP/DEF, ATQ/HP/[ ], dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`assault_tutor_smoke=OK {"hasTutor":true,"board":1,"noPopDef":true,"reminder":true}`), confirmant le rendu du tutoriel, la progression après pose d’un stack, l’absence POP/DEF dans le combat rendu et le rappel ATQ/[ ].
+- Serveur local `python -m http.server 8143`: OK.
+- `curl -I http://localhost:8143/`: HTTP 200.
+- `curl -s http://localhost:8143/game.js | grep -E 'assaultTutor|Tutoriel d.assaut|ATQ ne se multiplie'`: OK.
+- `curl -s http://localhost:8143/style.css | grep -E 'assault-tutor'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le tutoriel est toujours visible en combat; il n’a pas encore de bouton “masquer” persistant.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un bouton de masquage/persistance du tutoriel, ou enrichir le marché avec une vente de cartes/stock persistant par ville.
