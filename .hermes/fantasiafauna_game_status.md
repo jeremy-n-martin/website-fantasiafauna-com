@@ -65,3 +65,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un détail modal au clic sur une carte + deckbuilding drag/select avant combat.
+
+
+## Itération 2 — 2026-07-30
+### Réalisé
+- Ajout d’un grimoire de combat/deckbuilding visible depuis l’écran monde.
+- La sauvegarde `localStorage` mémorise désormais les `deckIds` choisis par le joueur.
+- Le booster initial préremplit un deck de départ, les boosters/échanges ajoutent automatiquement les nouvelles cartes tant qu’il reste de la place.
+- Le bouton “Duel rapide” construit le deck de combat depuis les cartes verrouillées, puis complète automatiquement les emplacements libres.
+- Les cartes récentes de collection sont cliquables et affichent un badge “Dans le deck” quand elles sont sélectionnées.
+
+### Vérification réelle
+- `node --check game.js` : OK.
+- Smoke test Node `.hermes/smoke_deckbuilding.js` avec DOM/localStorage simulés : OK (`deckbuilding_smoke=OK`), puis script temporaire supprimé.
+- Serveur local `python -m http.server 8125` : OK.
+- `curl -I http://localhost:8125/` : HTTP 200.
+- `curl -s http://localhost:8125/ | grep -E 'Arcanes du Bestiaire|game.js'` : titre et script présents.
+
+### Limites
+- Test DOM simulé, pas une vraie interaction navigateur graphique dans ce run cron.
+- Le choix de deck est encore basé sur les IDs de créatures; les doublons d’une même créature ne sont pas distingués visuellement comme exemplaires séparés.
+- Le ciblage en combat reste automatique.
+
+### Prochaine action minimale
+- Ajouter un ciblage explicite en combat : sélectionner une créature alliée puis choisir une cible adverse ou le mage ennemi.
