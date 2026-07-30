@@ -103,3 +103,14 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Limites
 - GitHub Pages met quelques minutes à servir toutes les 2256 images via ses caches; forcer `Ctrl+F5` ou un `?v=e057227` règle le cache navigateur.
+
+
+## Itération crop-fix — 2026-07-30
+### Réalisé
+- Correction des images coupées dans les rectos de cartes: passage de `object-fit: cover` à `object-fit: contain` pour les grandes cartes et les mini-cartes.
+- Positionnement absolu des images dans le cadre pour empêcher le navigateur de conserver un rendu plus haut que le cadre.
+
+### Vérification réelle
+- Serveur local `python -m http.server 8126` : OK.
+- Vérification DOM: les 8 premières grandes cartes ont `object-fit: contain`, `position: absolute`, image rendue 242x216 dans cadre 246x220, `naturalWidth > 0`.
+- Vérification visuelle navigateur: les créatures sont moins zoomées et ne sont plus coupées brutalement dans les cadres.
