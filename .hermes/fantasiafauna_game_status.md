@@ -377,3 +377,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `structure-targets`, `attackEnemyStructureTarget`, `structureLabel`.
 - Vérification GitHub raw `style.css`: OK, contient `structure-targets`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=05020d9-1/2/3` et `style.css?v=05020d9`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 21:06:33 GMT`, donc GitHub Pages/CDN probablement stale.
+
+## Itération hit-badges — 2026-07-30 23:37
+### Réalisé
+- Ajout d’un indicateur de dégâts lisible directement sur la cible touchée: badge `-N` sur structure ou mini-carte après attaque/sort.
+- Ajout de `lastHitText` pour mémoriser le montant du dernier impact sans changer la logique de dégâts.
+- Les attaques sur structures explicites, les frappes ennemies sur structures, Boule de feu, Étincelle/sort direct et attaques créature→créature alimentent maintenant le feedback visuel.
+- Conservation des règles existantes: pas de POP/DEF, affichage ATQ/HP/[ ], `[ ]` distinct des unités, invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls et une attaque par tour via `exhausted`.
+
+### Vérification réelle
+- `git status --short --branch` : branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js` : OK.
+- `node .hermes/smoke_hit_badges.js` : OK (`hit_badges_smoke=OK {"before":20,"after":13,"lastHit":"enemy-wall","lastHitText":"-7"}`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8136` : OK.
+- `curl -I http://localhost:8136/` : HTTP 200.
+- `curl -s http://localhost:8136/game.js | grep -E 'lastHitText|hit-badge'` : OK.
+- `curl -s http://localhost:8136/style.css | grep -E 'hit-badge|damagePop'` : OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le badge indique le dernier impact rendu, pas une timeline de plusieurs impacts simultanés si plusieurs effets se résolvent en chaîne.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un aperçu de dégâts avant clic sur structure/cible, ou rendre Boule de feu ciblable par colonne avec preview des colonnes voisines.
