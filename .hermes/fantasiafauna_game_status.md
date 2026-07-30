@@ -557,3 +557,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un petit tutoriel de premier assaut ou une différenciation thématique du marché par ville/capitale.
+
+### Publication de l’itération target-preview
+- Commit local applicatif: `24f4851` (`Preview player attack targets`).
+- `git push origin main`: OK (`716e96e..24f4851 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `attackPreview`, `structurePreview`, `preview-badge`.
+- Vérification GitHub raw `style.css`: OK, contient `preview-badge`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=24f4851` et `style.css?v=24f4851`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 22:40:10 GMT`, donc GitHub Pages/CDN reste stale.
