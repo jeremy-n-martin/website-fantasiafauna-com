@@ -254,3 +254,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une petite aide visuelle/texte en combat indiquant explicitement “clique une colonne puis une carte” et vérifier un effet adjacent Rempart avec colonne choisie.
+
+## Itération placement-guide — 2026-07-30
+### Réalisé
+- Ajout d’une aide visible au centre du champ de bataille: ordre tactique en 3 étapes (colonne → carte de main → attaque).
+- Ajout d’un badge “Placement actif” affichant la zone et la colonne actuellement choisies.
+- Remplacement du double log de clic cellule par `setPlacement(slot, pos)`: un clic de colonne choisit zone+colonne avec un seul message d’action.
+- Conservation des règles existantes: pas de POP/DEF, affichage ATQ/HP/[ ], règle 30/[ ], dégâts ATQ seuls, colonnes 0..4, placement front/mur/arrière.
+
+### Vérification réelle
+- `git status --short --branch` : branche `main`, travail sale non lié toujours présent et non touché.
+- `node --check game.js` : OK.
+- `node .hermes/smoke_placement_guide.js` : OK (`placement_guide_smoke=OK`), puis script temporaire supprimé.
+- Serveur local `python -m http.server 8132` : OK.
+- `curl -I http://localhost:8132/` : HTTP 200.
+- `curl -s http://localhost:8132/game.js | grep -E 'setPlacement|Ordre tactique|Placement actif'` : OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique dans ce run cron.
+- Amélioration volontairement UI/UX minimale; elle rend le placement plus lisible mais n’ajoute pas encore de nouvelle capacité.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Vérifier/renforcer en jeu l’effet Rempart avec colonne choisie, idéalement avec un indicateur visuel sur l’unité protégée et son protecteur adjacent.
+
