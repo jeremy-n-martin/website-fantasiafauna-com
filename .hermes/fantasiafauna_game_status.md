@@ -346,3 +346,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `style.css`: OK, contient `rempartPulse`, `guardedHit`, `impact-badge`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=eb0d9d4` et `style.css?v=eb0d9d4`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 20:50:51 GMT`, donc GitHub Pages/CDN probablement stale.
 
+
+## Itération structure-targets — 2026-07-30 23:19
+### Réalisé
+- Ajout d’un panneau visible `Cibler une structure` côté ennemi avec boutons Tour, Village, Mur et Auto.
+- Ajout de `attackEnemyStructureTarget(target)` pour résoudre une attaque de créature prête vers la structure choisie, avec log explicite `la tour adverse` / `le village adverse` / `le mur adverse`.
+- Conservation de l’ancien comportement `Auto`: volant vers la tour si possible, sinon mur puis tour.
+- Aucun retour de POP/DEF: les rendus testés conservent ATQ/HP/[ ], unités vivantes et dégâts ATQ seuls.
+
+### Vérification réelle
+- `git status --short --branch` : branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js` : OK.
+- `node .hermes/smoke_structure_targets.js` : OK (`structure_targets_smoke=OK {"beforeVillage":20,"afterVillage":13,"wall":20}`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8135` : OK.
+- `curl -I http://localhost:8135/` : HTTP 200.
+- `curl -s http://localhost:8135/game.js | grep -E 'structure-targets|attackEnemyStructureTarget|structureLabel'` : OK.
+- `curl -s http://localhost:8135/style.css | grep -E 'structure-targets'` : OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le ciblage structure n’ajoute pas encore de preview de dégâts ni de règles de protection par ligne frontale côté joueur.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un aperçu de dégâts/état avant clic sur structure, ou rendre Boule de feu ciblable par colonne.
