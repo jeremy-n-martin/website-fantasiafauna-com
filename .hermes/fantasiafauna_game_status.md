@@ -339,3 +339,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 ### Prochaine action minimale
 - Rendre la Boule de feu ciblable par colonne, avec aperçu des colonnes touchées avant résolution.
 
+### Publication de l’itération guard-flash
+- Commit local applicatif: `eb0d9d4` (`Show Rempart damage reduction flash`).
+- `git push origin main`: OK (`e9f386e..eb0d9d4 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `lastGuardUid`, `guard-flash`, `Dégât amorti`.
+- Vérification GitHub raw `style.css`: OK, contient `rempartPulse`, `guardedHit`, `impact-badge`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=eb0d9d4` et `style.css?v=eb0d9d4`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 20:50:51 GMT`, donc GitHub Pages/CDN probablement stale.
+
