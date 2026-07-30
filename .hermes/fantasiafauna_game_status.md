@@ -564,3 +564,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `attackPreview`, `structurePreview`, `preview-badge`.
 - Vérification GitHub raw `style.css`: OK, contient `preview-badge`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=24f4851` et `style.css?v=24f4851`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 22:40:10 GMT`, donc GitHub Pages/CDN reste stale.
+
+## Itération themed-market — 2026-07-31 01:08
+### Réalisé
+- Ajout d’un marché de ville visible dans le panneau monde/actions: 3 offres déterministes liées à la capitale active, avec nom, capitale, rareté, prix, ATQ, HP et valeur `[ ]`.
+- Ajout de `marketOffers()`, `marketPrice(c)` et `buyMarketCard(id)` pour acheter une créature précise au lieu de dépendre seulement de l’échange aléatoire.
+- Le voyage vers une ville continue de changer `activeCapital`; les offres deviennent donc thématiques (ex: Sylve propose uniquement des créatures Sylve dans le smoke test).
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation 30/[ ], dégâts ATQ seuls, HP total de stack, siège tour/village/mur et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`market_stalls_smoke=OK {"capital":"Sylve","offers":["Firbolg","Dryade","Hippogriffe"],"bought":"Firbolg","gold":963}`), confirmant le rendu du panneau, l’absence de POP/DEF, les offres Sylve et l’achat ciblé.
+- Serveur local `python -m http.server 8142`: OK.
+- `curl -I http://localhost:8142/`: HTTP 200.
+- `curl -s http://localhost:8142/game.js | grep -E 'marketOffers|buyMarketCard|Marché de'`: OK.
+- `curl -s http://localhost:8142/style.css | grep -E 'market-stalls'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Les offres sont déterministes par jour/lieu/capitale mais ne sont pas encore stockées comme inventaire de marchand persistant.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un tutoriel de premier assaut, ou faire évoluer les marchés de villes vers achats/ventes plus riches avec stock persistant et disponibilité par rareté.
