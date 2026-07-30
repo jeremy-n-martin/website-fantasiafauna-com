@@ -12,7 +12,7 @@ const QUOTES = [
 ];
 const state = {
   gold: 80, mana: 6, maxMana: 6, day: 1, search: '', activeCapital: 'Toutes',
-  collection: [], deckIds: [], deck: [], hand: [], board: [], enemyBoard: [], graveyard: [], enemyHp: 120, playerHp: 120, selectedAttackerUid: null, pendingSlot: 'front', pendingPos: 0, lastHit: '',
+  collection: [], deckIds: [], deck: [], hand: [], board: [], enemyBoard: [], graveyard: [], enemyHp: 120, playerHp: 120, selectedAttackerUid: null, pendingSlot: 'front', pendingPos: 0, lastHit: '', lastGuardUid: '', lastGuardTargetUid: '',
   structures: {tower:20, village:20, wall:20}, enemyStructures: {tower:20, village:20, wall:20},
   log: [], location: 'Camp du Mage', mode: 'world', boosterOpened: false, lastBooster: []
 };
@@ -43,7 +43,7 @@ function chosenPosFor(slot){ return isPosFree(slot,state.pendingPos) ? state.pen
 function adjacentAllies(c){ return state.board.filter(x=>x.slot===c.slot && Math.abs((x.pos??0)-(c.pos??0))===1); }
 function protectedByRempart(target){ return state.board.find(x=>x.uid!==target.uid && x.slot===target.slot && Math.abs((x.pos??0)-(target.pos??0))===1 && specialFor(x).key==='rempart'); }
 function protectsByRempart(c){ return specialFor(c).key==='rempart' && adjacentAllies(c).length>0; }
-function damageStack(target, amount, source=''){ const shield=protectedByRempart(target); if(shield){ amount=Math.max(1, amount-1); addLog(`${shield.name} protège ${target.name}: dégâts réduits à ${amount}.`); } return applyDamage(target, amount); }
+function damageStack(target, amount, source=''){ const shield=protectedByRempart(target); if(shield){ const reduced=Math.max(1, amount-1); state.lastGuardUid=shield.uid; state.lastGuardTargetUid=target.uid; markHit(target.uid); addLog(`${shield.name} protège ${target.name}: Rempart absorbe ${amount-reduced} dégât, dégâts réduits à ${reduced}.`); amount=reduced; } return applyDamage(target, amount); }
 function randomEnemyUnit(){ return rnd(state.enemyBoard); }
 function randomAllyUnit(){ return rnd(state.board); }
 function burnEnemyArea(pos, amount=3){ const victims=state.enemyBoard.filter(e=>Math.abs((e.pos??0)-pos)<=1).slice(0,5); if(!victims.length){ state.enemyStructures.wall=Math.max(0,state.enemyStructures.wall-amount); markHit('enemy-wall'); addLog(`Boule de feu frappe le mur adverse (${amount}).`); return; } victims.forEach(v=>{ const dead=applyDamage(v,amount); markHit(v.uid); addLog(`Boule de feu touche ${v.name} (${amount}).`); if(dead) state.enemyBoard=state.enemyBoard.filter(x=>x.uid!==v.uid); }); }
@@ -84,7 +84,7 @@ function loadGame(){
     state.boosterOpened=state.collection.length>0; return state.boosterOpened;
   } catch { return false; }
 }
-function resetGame(){ localStorage.removeItem('fantasiafauna-save'); Object.assign(state,{gold:80,mana:6,maxMana:6,day:1,collection:[],deckIds:[],deck:[],hand:[],board:[],enemyBoard:[],graveyard:[],location:'Camp du Mage',mode:'world',boosterOpened:false,lastBooster:[],playerHp:120,selectedAttackerUid:null,pendingSlot:'front',pendingPos:0,lastHit:'',structures:{tower:20,village:20,wall:20},enemyStructures:{tower:20,village:20,wall:20}}); startGame(true); }
+function resetGame(){ localStorage.removeItem('fantasiafauna-save'); Object.assign(state,{gold:80,mana:6,maxMana:6,day:1,collection:[],deckIds:[],deck:[],hand:[],board:[],enemyBoard:[],graveyard:[],location:'Camp du Mage',mode:'world',boosterOpened:false,lastBooster:[],playerHp:120,selectedAttackerUid:null,pendingSlot:'front',pendingPos:0,lastHit:'',lastGuardUid:'',lastGuardTargetUid:'',structures:{tower:20,village:20,wall:20},enemyStructures:{tower:20,village:20,wall:20}}); startGame(true); }
 function addLog(text){ state.log.unshift(text); state.log=state.log.slice(0,12); }
 function startGame(forceNew=false){
   if(!forceNew && loadGame()){ addLog('Sauvegarde retrouvée: ta collection est chargée.'); render(); return; }
@@ -114,7 +114,7 @@ function toggleDeckCard(id){
   else if(owned>0){ state.deckIds.push(idNum); addLog('Carte ajoutée au grimoire de combat.'); }
   saveGame(); render();
 }
-function resetFortifications(){ state.structures={tower:20,village:20,wall:20}; state.enemyStructures={tower:20,village:20,wall:20}; state.lastHit=''; }
+function resetFortifications(){ state.structures={tower:20,village:20,wall:20}; state.enemyStructures={tower:20,village:20,wall:20}; state.lastHit=''; state.lastGuardUid=''; state.lastGuardTargetUid=''; }
 function newEncounter(kind='duel'){
   state.mode='battle'; state.enemyHp=999; state.playerHp=120; state.maxMana=6; state.mana=6; state.board=[]; state.enemyBoard=[]; state.hand=[]; state.deck=buildBattleDeck().map(clone); state.graveyard=[]; state.selectedAttackerUid=null; state.pendingSlot='front'; state.pendingPos=0; resetFortifications(); draw(5);
   addLog(kind==='boss'?'Un champion attaque ta tour.':'Un assaut commence: protège ta tour derrière le village et le mur.');
@@ -134,7 +134,7 @@ function enemyTurn(){
   [...state.enemyBoard].forEach(e=> enemyAttack(e));
   if(state.structures.tower<=0){ state.mode='defeat'; addLog('Ta tour tombe à 0 HP: défaite immédiate.'); }
 }
-function markHit(key){ state.lastHit=key; }
+function markHit(key){ state.lastHit=key; if(key!==state.lastGuardTargetUid){ state.lastGuardUid=''; state.lastGuardTargetUid=''; } }
 function damageStructure(which, amount){ state.structures[which]=Math.max(0,state.structures[which]-amount); markHit('ally-'+which); }
 function enemyAttack(e){
   const dmg=strikePower(e); let target=null;
@@ -187,8 +187,10 @@ function compactCard(c, zone){
   const guard = zone==='ally' && c.uid ? protectedByRempart(c) : null;
   const protector = zone==='ally' && c.uid && protectsByRempart(c);
   const guardClass = guard ? ' guarded' : protector ? ' protector' : '';
+  const flashClass = c.uid===state.lastGuardUid ? ' guard-flash' : c.uid===state.lastGuardTargetUid ? ' guarded-hit' : '';
   const guardBadge = guard ? `<small class="guard-badge">Protégé par ${guard.name}</small>` : protector ? '<small class="guard-badge">Rempart actif ↔</small>' : '';
-  return `<button class="battle-card ${c.rarity} ${zone}${selected}${guardClass}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><small class="special">${specialFor(c).label}: ${specialFor(c).text}</small>${guardBadge}<footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${stackCountFor(c)}]</em></footer>${c.uid?`<small class="unit-count">Unités: ${liveCount(c)}/${deployedUnitsFor(c)}</small>`:''}</button>`;
+  const impactBadge = c.uid===state.lastGuardUid ? '<small class="guard-badge impact-badge">Rempart -1 dégât</small>' : c.uid===state.lastGuardTargetUid ? '<small class="guard-badge impact-badge">Dégât amorti</small>' : '';
+  return `<button class="battle-card ${c.rarity} ${zone}${selected}${guardClass}${flashClass}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><small class="special">${specialFor(c).label}: ${specialFor(c).text}</small>${guardBadge}${impactBadge}<footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${stackCountFor(c)}]</em></footer>${c.uid?`<small class="unit-count">Unités: ${liveCount(c)}/${deployedUnitsFor(c)}</small>`:''}</button>`;
 }
 function filteredCreatures(){
   const q=state.search.trim().toLowerCase();

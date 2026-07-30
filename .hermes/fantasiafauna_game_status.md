@@ -315,3 +315,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `style.css`: OK, contient `battle-card.guarded` et `guard-badge`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=a8f2895` et `style.css?v=a8f2895`: HTTP 200 mais marqueurs absents pendant ce run; probable délai/cache GitHub Pages (`Last-Modified` encore 20:36:25).
 
+## Itération guard-flash — 2026-07-30 23:04
+### Réalisé
+- Ajout d’un feedback visuel temporaire au moment où `Rempart` réduit les dégâts: le protecteur pulse en doré (`guard-flash`) et la cible protégée pulse en vert (`guarded-hit`).
+- Ajout de badges d’impact lisibles: `Rempart -1 dégât` côté protecteur et `Dégât amorti` côté unité protégée.
+- Le journal de combat précise maintenant la réduction: `Rempart absorbe 1 dégât, dégâts réduits à ...`.
+- Conservation des règles existantes: pas de POP/DEF, ATQ/HP/[ ], règle 30/[ ], dégâts ATQ seuls, colonnes adjacentes gauche/droite.
+
+### Vérification réelle
+- `git status --short --branch` : branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js` : OK.
+- `node .hermes/smoke_guard_flash.js` : OK (`guard_flash_smoke=OK`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8134` : OK.
+- `curl -I http://localhost:8134/` : HTTP 200.
+- `curl -s http://localhost:8134/game.js | grep -E 'lastGuardUid|guard-flash|Dégât amorti'` : OK.
+- `curl -s http://localhost:8134/style.css | grep -E 'rempartPulse|guardedHit|impact-badge'` : OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- L’effet flash reste mémorisé jusqu’au prochain `markHit`, donc il indique le dernier amortissement plutôt qu’une timeline animée multi-coups.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Rendre la Boule de feu ciblable par colonne, avec aperçu des colonnes touchées avant résolution.
+
