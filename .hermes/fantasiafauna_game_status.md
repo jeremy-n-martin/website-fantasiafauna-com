@@ -114,3 +114,25 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Serveur local `python -m http.server 8126` : OK.
 - Vérification DOM: les 8 premières grandes cartes ont `object-fit: contain`, `position: absolute`, image rendue 242x216 dans cadre 246x220, `naturalWidth > 0`.
 - Vérification visuelle navigateur: les créatures sont moins zoomées et ne sont plus coupées brutalement dans les cadres.
+
+## Itération 3 — 2026-07-30
+### Réalisé
+- Ajout d’un ciblage explicite en combat: cliquer une créature alliée prête la sélectionne, puis cliquer une créature adverse ou le bouton du mage adverse résout l’attaque.
+- Ajout d’un feedback joueur visible: texte d’aide de ciblage, bouton `Mage adverse`, halo sur la créature alliée sélectionnée et curseur de cible sur les adversaires.
+- Conservation de la règle `Garde`: une créature tank adverse doit être ciblée avant les autres cartes ou le mage.
+- Remplacement de l’ancienne attaque automatique par une attaque ciblée, tout en gardant `attackWith()` comme alias compatible.
+
+### Vérification réelle
+- `node --check game.js` : OK.
+- Smoke test Node `.hermes/smoke_targeting.js` avec DOM/localStorage simulés : OK (`targeting_smoke=OK`), puis script temporaire supprimé.
+- Serveur local `python -m http.server 8127` : OK.
+- `curl -I http://localhost:8127/` : HTTP 200.
+- `curl -s http://localhost:8127/game.js | grep -E 'selectAttacker|attackEnemyMage|target-hint'` : OK.
+
+### Limites
+- Test ciblage simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Les sorts des casters restent à ciblage automatique; seule l’attaque de créature est maintenant ciblée.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Étendre le ciblage aux sorts/capacités de caster ou ajouter un court tutoriel de premier duel guidé.
