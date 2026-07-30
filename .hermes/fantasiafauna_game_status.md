@@ -181,3 +181,21 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 ### Limites
 - Les structures ennemies existent visuellement mais leur village n’a pas encore de boucle économique propre.
 - Prochaine passe: meilleur ciblage joueur des structures, équilibrage des dégâts de stacks contre les 20 HP de structures, capacités spéciales plus explicites.
+
+
+## Itération unit-count-rule — 2026-07-30
+### Réalisé
+- Changement de sémantique de `[ ]`: ce n’est plus le nombre direct d’unités en jeu, c’est la valeur de division.
+- À la mise en jeu, le nombre d’unités vaut `max(1, round(30 / [ ]))`.
+- Les dégâts d’une créature valent maintenant son ATQ seule, plus `ATQ × nombre`.
+- Une créature reste limitée à une attaque par tour via `exhausted`; les cartes jouées arrivent déjà épuisées.
+- Les HP de stack restent cumulés: si les dégâts dépassent les HP de l’unité du dessus, l’unité suivante prend le reliquat, et ainsi de suite jusqu’à destruction du tas.
+- Les mini-cartes de bataille affichent maintenant `[valeur]` et `Unités: vivantes/initiales`.
+
+### Vérification réelle
+- `node --check game.js` : OK.
+- Serveur local `python -m http.server 8129` : OK.
+- Test navigateur: carte avec `[10]` invoque 3 unités (`round(30/10)`).
+- Test overflow: stack 3 unités × 7 HP = 21 HP; après 8 dégâts, HP=13 et unités vivantes=2, donc le reliquat est bien passé à l’unité suivante.
+- Test dégâts: `strikePower(c) === c.attack` confirmé.
+- Test cadence: carte jouée arrive `exhausted=true`, donc pas d’attaque immédiate/supplémentaire.

@@ -22,17 +22,18 @@ const rnd = arr => arr[Math.floor(Math.random()*arr.length)];
 const shuffle = arr => arr.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
 function tierFor(c){ return Math.max(1, Math.min(8, c.cost || Math.ceil(c.power/12) || 1)); }
 function stackCountFor(c){ const t=tierFor(c); return t*2 + ((c.id + c.power + c.popularity) % (t+1)); }
-const clone = c => { const count=stackCountFor(c); return {...c, uid: crypto.randomUUID?.() || Math.random().toString(36).slice(2), unitHp:c.health, maxHp:c.health*count, hp:c.health*count, count, exhausted:false}; };
+function deployedUnitsFor(c){ return Math.max(1, Math.round(30 / Math.max(1, stackCountFor(c)))); }
+const clone = c => { const count=deployedUnitsFor(c); return {...c, uid: crypto.randomUUID?.() || Math.random().toString(36).slice(2), unitHp:c.health, maxHp:c.health*count, hp:c.health*count, count, exhausted:false}; };
 function liveCount(c){ return Math.max(0, Math.ceil((c.hp ?? c.health) / (c.unitHp || c.health || 1))); }
 function liveHp(c){ return c.hp ?? c.health; }
 function displayHp(c){ return c.unitHp || c.health; }
-function strikePower(c){ return Math.max(1, c.attack * (c.count || stackCountFor(c))); }
+function strikePower(c){ return Math.max(1, c.attack); }
 function applyDamage(target, amount){ target.hp=Math.max(0,(target.hp ?? target.health)-amount); target.count=liveCount(target); return target.hp<=0; }
 function quoteFor(c){ return QUOTES[(c.id + c.name.length + c.power) % QUOTES.length]; }
 function loreFor(c){
   const nature = c.natures?.length ? c.natures.join(', ') : 'mystérieuse';
   const roles = c.roles?.length ? c.roles.join(', ') : 'inconnus';
-  return `${c.name} est une créature ${nature} issue de l’arcane ${c.origin}. On la rencontre autour de ${c.capital}, où les mages l’emploient comme ${roles}. Sa taille (${c.size} m), sa puissance brute (${c.power}/100) et son tier ${tierFor(c)} déterminent son coût, ses HP et le nombre d'unités invoquées [${stackCountFor(c)}].`;
+  return `${c.name} est une créature ${nature} issue de l’arcane ${c.origin}. On la rencontre autour de ${c.capital}, où les mages l’emploient comme ${roles}. Sa taille (${c.size} m), sa puissance brute (${c.power}/100) et son tier ${tierFor(c)} déterminent son coût, ses HP et sa valeur [${stackCountFor(c)}]; quand elle est mise en jeu, elle invoque ${deployedUnitsFor(c)} unité(s).`;
 }
 function weightedCreature(){
   const roll=Math.random();
@@ -95,7 +96,7 @@ function slotCards(slot, side='ally'){ const list=side==='enemy'?state.enemyBoar
 function canPlaceInSlot(c, slot){ if(slot==='wall') return slotCards('wall').length<2; if(slot==='back') return c.cost<=3 || c.roles.includes('ranged') || c.roles.includes('caster'); return true; }
 function setPendingSlot(slot){ state.pendingSlot=slot; addLog(`Zone choisie: ${slotLabel(slot)}.`); render(); }
 function enemyTurn(){
-  const enemyCard=clone(weightedCreature()); enemyCard.count=Math.max(1, Math.round(enemyCard.count*.65)); enemyCard.unitHp=enemyCard.health; enemyCard.maxHp=enemyCard.unitHp*enemyCard.count; enemyCard.hp=enemyCard.maxHp; enemyCard.attack=Math.max(1, Math.round(enemyCard.attack*.7)); enemyCard.slot=enemyCard.roles.includes('ranged')||enemyCard.roles.includes('caster')?'back':'front';
+  const enemyCard=clone(weightedCreature()); enemyCard.slot=enemyCard.roles.includes('ranged')||enemyCard.roles.includes('caster')?'back':'front';
   if(state.enemyBoard.length<7) { state.enemyBoard.push(enemyCard); addLog(`Ennemi invoque ${enemyCard.name} ${slotLabel(enemyCard.slot)}.`); }
   [...state.enemyBoard].forEach(e=> enemyAttack(e));
   if(state.structures.tower<=0){ state.mode='defeat'; addLog('Ta tour tombe à 0 HP: défaite immédiate.'); }
@@ -150,7 +151,7 @@ function compactCard(c, zone){
   const color=CAPITAL_COLORS[c.capital]||'#c9aa69'; const img=c.image?`<img src="${encodeURI(c.image)}" alt="${c.name}" decoding="async">`:'';
   const action = zone==='hand'?`onclick="playCard('${c.uid}')"`:zone==='ally'?`onclick="selectAttacker('${c.uid}')"`:zone==='enemy'?`onclick="attackTarget('${c.uid}')"`:'';
   const selected = c.uid && state.selectedAttackerUid===c.uid ? ' selected' : '';
-  return `<button class="battle-card ${c.rarity} ${zone}${selected}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${c.count || stackCountFor(c)}]</em></footer></button>`;
+  return `<button class="battle-card ${c.rarity} ${zone}${selected}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${stackCountFor(c)}]</em></footer>${c.uid?`<small class="unit-count">Unités: ${liveCount(c)}/${deployedUnitsFor(c)}</small>`:''}</button>`;
 }
 function filteredCreatures(){
   const q=state.search.trim().toLowerCase();
@@ -162,7 +163,7 @@ function setSearch(v){ state.search=v; render(); }
 function renderShowcase(){
   const caps=['Toutes',...Array.from(new Set(CREATURES.map(c=>c.capital))).slice(0,14)];
   const picks=filteredCreatures().slice(0,12);
-  return `<section class="showcase panel"><div class="section-head"><div><p class="eyebrow">MVP cartes jouables</p><h2>Rectos de cartes inspirés de Magic</h2><p>Chaque créature devient une carte avec coût d’invocation, attaque, HP, nombre d’unités [ ], origine, histoire courte, citation et capacité intégrée.</p></div><div class="searchbox"><input value="${state.search}" oninput="setSearch(this.value)" placeholder="Chercher dragon, caster, Nécropole…"><button onclick="resetGame()">Nouvelle aventure</button></div></div><div class="filters">${caps.map(c=>`<button class="${state.activeCapital===c?'active':''}" onclick="setFilter('${c.replaceAll("'","\\'")}')">${c}</button>`).join('')}</div><div class="card-gallery">${picks.map(c=>cardView(c)).join('')}</div></section>`;
+  return `<section class="showcase panel"><div class="section-head"><div><p class="eyebrow">MVP cartes jouables</p><h2>Rectos de cartes inspirés de Magic</h2><p>Chaque créature devient une carte avec coût d’invocation, attaque, HP, valeur [ ], origine, histoire courte, citation et capacité intégrée.</p></div><div class="searchbox"><input value="${state.search}" oninput="setSearch(this.value)" placeholder="Chercher dragon, caster, Nécropole…"><button onclick="resetGame()">Nouvelle aventure</button></div></div><div class="filters">${caps.map(c=>`<button class="${state.activeCapital===c?'active':''}" onclick="setFilter('${c.replaceAll("'","\\'")}')">${c}</button>`).join('')}</div><div class="card-gallery">${picks.map(c=>cardView(c)).join('')}</div></section>`;
 }
 function renderBooster(){
   if(!state.lastBooster.length) return '';
