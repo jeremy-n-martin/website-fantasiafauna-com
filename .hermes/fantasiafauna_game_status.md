@@ -502,3 +502,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `setFireballPreview`, `fireballPreviewPos`, `fireball-zone`.
 - Vérification GitHub raw `style.css`: OK, contient `fireball-preview` et `fireball-zone`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=211e381`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 22:11:26 GMT`, donc GitHub Pages/CDN probablement stale.
+
+## Itération enemy-intent — 2026-07-31 00:38
+### Réalisé
+- Ajout d’un aperçu d’intention sur les mini-cartes ennemies: badge `Vise: ...` indiquant la prochaine cible probable et les dégâts ATQ seuls.
+- `enemyIntent(e)` reprend la priorité d’assaut existante: Vol → mur/tour, sinon créature devant le mur → mur → créature sur le mur → arrière → tour.
+- Ajout du style `.intent-badge` pour rendre l’intention ennemie visible sans changer la résolution de combat.
+- Règles préservées: pas de POP/DEF, ATQ/HP/[ ], invocation 30/[ ], dégâts ATQ seuls, HP total de stack, tour/village/mur à 20 HP et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_enemy_intent.js`: OK (`enemy_intent_smoke=OK {"intentWall":"Vise: Mur (4)","intentFront":"Vise: Pégase (4)","intentFlying":"Vise: Mur (7) · Vol"}`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8140`: OK.
+- `curl -I http://localhost:8140/`: HTTP 200.
+- `curl -s http://localhost:8140/game.js | grep -E 'enemyIntent|intent-badge|Vise:'`: OK.
+- `curl -s http://localhost:8140/style.css | grep -E 'intent-badge'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le badge prédit la cible selon l’état courant avant résolution; si plusieurs ennemis attaquent à la suite, les badges suivants peuvent changer après le premier impact.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une preview symétrique côté joueur avant clic sur cible/structure: dégâts attendus, riposte éventuelle, et blocage par front/ranged/vol.

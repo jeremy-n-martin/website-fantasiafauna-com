@@ -136,6 +136,18 @@ function enemyTurn(){
 }
 function markHit(key, text='Touché'){ state.lastHit=key; state.lastHitText=text; if(key!==state.lastGuardTargetUid){ state.lastGuardUid=''; state.lastGuardTargetUid=''; } }
 function damageStructure(which, amount){ state.structures[which]=Math.max(0,state.structures[which]-amount); markHit('ally-'+which, `-${amount}`); }
+function enemyIntent(e){
+  const dmg=strikePower(e);
+  if(e.roles.includes('volant')) return state.structures.wall>0 ? `Vise: Mur (${dmg}) · Vol` : `Vise: Tour (${dmg}) · Vol`;
+  const front=slotCards('front')[0];
+  if(front) return `Vise: ${front.name} (${dmg})`;
+  if(state.structures.wall>0) return `Vise: Mur (${dmg})`;
+  const wall=slotCards('wall')[0];
+  if(wall) return `Vise: ${wall.name} sur mur (${dmg})`;
+  const back=slotCards('back')[0];
+  if(back) return `Vise: ${back.name} arrière (${dmg})`;
+  return `Vise: Tour (${dmg})`;
+}
 function enemyAttack(e){
   const dmg=strikePower(e); let target=null;
   if(e.roles.includes('volant')){
@@ -205,8 +217,9 @@ function compactCard(c, zone){
   const flashClass = c.uid===state.lastGuardUid ? ' guard-flash' : c.uid===state.lastGuardTargetUid ? ' guarded-hit' : '';
   const guardBadge = guard ? `<small class="guard-badge">Protégé par ${guard.name}</small>` : protector ? '<small class="guard-badge">Rempart actif ↔</small>' : '';
   const impactBadge = c.uid===state.lastGuardUid ? '<small class="guard-badge impact-badge">Rempart -1 dégât</small>' : c.uid===state.lastGuardTargetUid ? '<small class="guard-badge impact-badge">Dégât amorti</small>' : '';
+  const intentBadge = zone==='enemy' && c.uid ? `<small class="intent-badge">${enemyIntent(c)}</small>` : '';
   const hitBadge = c.uid && state.lastHit===c.uid ? `<small class="hit-badge">${state.lastHitText}</small>` : '';
-  return `<button class="battle-card ${c.rarity} ${zone}${selected}${guardClass}${flashClass}${state.lastHit===c.uid?' hit':''}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><small class="special">${specialFor(c).label}: ${specialFor(c).text}</small>${guardBadge}${impactBadge}${hitBadge}<footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${stackCountFor(c)}]</em></footer>${c.uid?`<small class="unit-count">Unités: ${liveCount(c)}/${deployedUnitsFor(c)}</small>`:''}</button>`;
+  return `<button class="battle-card ${c.rarity} ${zone}${selected}${guardClass}${flashClass}${state.lastHit===c.uid?' hit':''}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><small class="special">${specialFor(c).label}: ${specialFor(c).text}</small>${intentBadge}${guardBadge}${impactBadge}${hitBadge}<footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${stackCountFor(c)}]</em></footer>${c.uid?`<small class="unit-count">Unités: ${liveCount(c)}/${deployedUnitsFor(c)}</small>`:''}</button>`;
 }
 function filteredCreatures(){
   const q=state.search.trim().toLowerCase();
