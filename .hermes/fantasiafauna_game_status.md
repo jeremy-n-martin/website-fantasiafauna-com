@@ -620,3 +620,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un bouton de masquage/persistance du tutoriel, ou enrichir le marché avec une vente de cartes/stock persistant par ville.
+
+### Publication de l’itération assault-tutor
+- Commit local applicatif: `83a6dcf` (`Add first assault tutorial`).
+- `git push origin main`: OK (`b6e794a..83a6dcf main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `assaultTutor`, `Tutoriel d’assaut`, `ATQ ne se multiplie`.
+- Vérification GitHub raw `style.css`: OK, contient `assault-tutor`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=83a6dcf` et `style.css?v=83a6dcf`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); `Last-Modified` encore `Thu, 30 Jul 2026 23:10:13 GMT`, donc GitHub Pages/CDN reste stale.
