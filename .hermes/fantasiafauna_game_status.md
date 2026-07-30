@@ -439,3 +439,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `fireballPicker`, `castFireballColumn`, `Boule de feu ciblable`.
 - Vérification GitHub raw `style.css`: OK, contient `fireball-picker`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=7c51be9` et `style.css?v=7c51be9`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 21:39:26 GMT`, donc GitHub Pages/CDN reste probablement stale.
+
+## Itération fireball-recharge — 2026-07-31 00:08
+### Réalisé
+- Clarification de la recharge de `Boule de feu`: le panneau de ciblage manuel apparaît maintenant comme `Boule de feu en recharge` hors des jours multiples de 3, avec indication du prochain jour disponible.
+- `castFireballColumn(pos)` refuse désormais les tirs manuels hors fenêtre tactique et écrit un log explicite au lieu de permettre un cumul permanent.
+- Le déclenchement automatique tous les 3 jours ignore les casters déjà épuisés, puis épuise le caster qui consomme sa fenêtre de Boule de feu; cela évite le double tir manuel + automatique le même jour.
+- Ajout d’un style bleu distinct `.fireball-picker.recharging` pour rendre l’état indisponible visible.
+- Règles préservées: pas de POP/DEF, ATQ/HP/[ ], invocation 30/[ ], dégâts ATQ seuls, HP total de stack, siège tour/village/mur et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` : branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js` : OK.
+- Smoke test Node inline : OK (`fireball_recharge_smoke=OK {"caster":"Ange","before":18,"after":15,"nextDay":6}`), confirmant qu’au jour 1 le tir ne fait aucun dégât et qu’au jour 3 il inflige exactement 3 dégâts puis épuise le caster.
+- Serveur local `python -m http.server 8138` : OK.
+- `curl -I http://localhost:8138/` : HTTP 200.
+- `curl -s http://localhost:8138/game.js | grep -E 'fireballWindowOpen|Boule de feu en recharge|selectedFireballSource'` : OK.
+- `curl -s http://localhost:8138/style.css | grep -E 'fireball-picker\\.recharging'` : OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le compteur de recharge est global par jour de bataille, pas encore une icône/cooldown par carte persistante sur plusieurs combats.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un surlignage visuel des colonnes ennemies touchées par Boule de feu quand le panneau est prêt, ou afficher une petite pastille de cooldown directement sur les mini-cartes `Boule de feu`.
