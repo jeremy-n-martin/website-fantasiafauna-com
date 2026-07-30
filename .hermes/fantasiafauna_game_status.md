@@ -408,3 +408,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `lastHitText` et `hit-badge`.
 - Vérification GitHub raw `style.css`: OK, contient `hit-badge` et `damagePop`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=4ebf294` et `style.css?v=4ebf294`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 21:20:58 GMT`, donc GitHub Pages/CDN probablement stale.
+
+## Itération fireball-column — 2026-07-30 23:52
+### Réalisé
+- Ajout d’une Boule de feu ciblable par colonne pour les créatures alliées ayant le passif `Boule de feu`.
+- Quand une créature Boule de feu prête est sélectionnée, un panneau central affiche 5 boutons de colonnes avec aperçu des colonnes voisines touchées et du nombre de cibles/mur.
+- `castFireballColumn(pos)` applique 3 dégâts sur la colonne ennemie choisie et ses voisines, épuise le caster, vide la sélection et écrit un log explicite.
+- Ajout du style visible `.fireball-picker` sans modifier les règles de siège: ATQ seuls, 30/[ ], HP total de stack, tour/village/mur 20 HP, colonnes 0..4, pas de POP/DEF.
+
+### Vérification réelle
+- `git status --short --branch` : branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js` : OK.
+- `node .hermes/smoke_fireball_column.js` : OK (`fireball_column_smoke=OK {"fireball":"Ange","before":[18,18,18],"after":[18,15,18],"exhausted":true}`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8137` : OK.
+- `curl -I http://localhost:8137/` : HTTP 200.
+- `curl -s http://localhost:8137/game.js | grep -E 'fireballPicker|castFireballColumn|Boule de feu ciblable'` : OK.
+- `curl -s http://localhost:8137/style.css | grep -E 'fireball-picker'` : OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La Boule de feu ciblable est une action manuelle disponible quand le caster est sélectionné; l’ancien déclenchement automatique tous les 3 jours est conservé.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un surlignage visuel des colonnes ennemies qui seraient touchées par la Boule de feu avant le clic, ou une règle de recharge plus explicite pour éviter cumul manuel + automatique.
