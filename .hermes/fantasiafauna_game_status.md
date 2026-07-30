@@ -627,3 +627,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `assaultTutor`, `Tutoriel d’assaut`, `ATQ ne se multiplie`.
 - Vérification GitHub raw `style.css`: OK, contient `assault-tutor`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=83a6dcf` et `style.css?v=83a6dcf`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); `Last-Modified` encore `Thu, 30 Jul 2026 23:10:13 GMT`, donc GitHub Pages/CDN reste stale.
+
+## Itération tutor-toggle — 2026-07-31 01:47
+### Réalisé
+- Ajout d’un bouton visible `Masquer` dans le tutoriel d’assaut pour réduire l’encombrement du panneau central pendant les combats.
+- Ajout d’un état sauvegardé `showTutor` dans `localStorage`; si le tutoriel est masqué, un petit panneau `Afficher le tutoriel d’assaut` permet de le rouvrir.
+- Le reset d’aventure réactive le tutoriel pour les nouveaux joueurs.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`assault_tutor_toggle_smoke=OK {"visible":true,"hidden":true,"persisted":true,"shownAgain":true}`), confirmant l’affichage, le masquage, la persistance et la réouverture.
+- Serveur local `python -m http.server 8144`: OK.
+- `curl -I http://localhost:8144/`: HTTP 200.
+- `curl -s http://localhost:8144/game.js | grep -E 'toggleAssaultTutor|showTutor|Afficher le tutoriel'`: OK.
+- `curl -s http://localhost:8144/style.css | grep -E 'assault-tutor\\.collapsed|assault-tutor button'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le tutoriel est masqué globalement par sauvegarde, pas encore par étape/profil de joueur.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une petite progression de quête visible sur la carte du monde (ex: objectifs “visiter une ville / gagner un assaut / acheter au marché”) sans changer les règles de combat.
