@@ -41,3 +41,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 3. Ajouter deckbuilding simple depuis la collection.
 4. Ajouter villes différenciées par capitale avec boutiques thématiques.
 5. Ajouter équilibrage/rarités plus strict et écran de booster.
+
+
+## Itération 1 — 2026-07-30
+### Réalisé
+- Ajout d’un vrai MVP de rectos de cartes inspirés de Magic directement visible en haut du site.
+- Chaque carte affiche désormais : nom, coût d’invocation, image, capitale/faction, type/origine/nature, capacité, histoire courte, citation, ATQ, DEF et popularité.
+- Ajout d’une galerie filtrable/recherchable par capitale, rôle, origine, rareté ou nom.
+- Ajout d’un aperçu de booster avec cartes grand format.
+- Ajout d’une sauvegarde locale `localStorage` pour collection/or/jour.
+
+### Vérification réelle
+- `node --check game.js` : OK.
+- Serveur local `python -m http.server 8124` : OK.
+- Navigation navigateur `http://localhost:8124/?mvp=cards` : OK.
+- DOM vérifié : 17 cartes grand format visibles, textes ATQ/DEF présents, histoire de créature présente, citation `« ... »` présente.
+- Recherche `dragon` saisie dans le champ : interface réactive.
+- Échantillon images chargé en HTTP 200 : Jormungandr, Quetzalcoatl, Ziz, Typhon, Hécatonchire, Léviathan, Fenrir, Tarasque.
+
+### Limites
+- Certaines histoires sont générées depuis les stats existantes; elles donnent du contexte jouable mais ne sont pas encore du lore rédigé à la main carte par carte.
+- Le combat reste fonctionnel mais encore simple; la priorité de cette tranche était l’affichage recto des cartes.
+
+### Prochaine action minimale
+- Ajouter un détail modal au clic sur une carte + deckbuilding drag/select avant combat.
