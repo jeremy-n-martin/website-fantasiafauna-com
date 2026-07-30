@@ -588,3 +588,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un tutoriel de premier assaut, ou faire évoluer les marchés de villes vers achats/ventes plus riches avec stock persistant et disponibilité par rareté.
+
+### Publication de l’itération themed-market
+- Commit local applicatif: `6216d56` (`Add themed city market offers`).
+- `git push origin main`: OK (`e71393b..6216d56 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `marketOffers`, `buyMarketCard`, `Marché de`.
+- Vérification GitHub raw `style.css`: OK, contient `market-stalls`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=6216d56` et `style.css?v=6216d56`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 22:54:23 GMT`, donc GitHub Pages/CDN reste stale.
