@@ -471,3 +471,34 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `fireballWindowOpen`, `Boule de feu en recharge`, `selectedFireballSource`.
 - Vérification GitHub raw `style.css`: OK, contient `fireball-picker.recharging`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=6ed7e8e` et `style.css?v=6ed7e8e`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 21:54:58 GMT`, donc GitHub Pages/CDN reste probablement stale.
+
+## Itération fireball-preview — 2026-07-31 00:24
+### Réalisé
+- Ajout d’un aperçu visuel de zone pour `Boule de feu`: quand une créature Boule de feu prête est sélectionnée pendant une fenêtre de jour multiple de 3, survoler/focus une colonne du panneau surligne les 3 colonnes ennemies touchées.
+- Ajout de l’état `fireballPreviewPos`, de `setFireballPreview(pos)` et du badge `Boule de feu` directement dans les cellules ennemies concernées.
+- Le tir ciblé efface l’aperçu après résolution et conserve la recharge existante: pas de tir hors fenêtre, pas de cumul manuel + automatique.
+- Règles préservées: pas de POP/DEF, ATQ/HP/[ ], invocation 30/[ ], dégâts ATQ seuls, HP total de stack, siège tour/village/mur et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_fireball_preview.js`: OK (`fireball_preview_smoke=OK {"pickerReady":true,"highlighted":9,"cleared":true,"enemyHp":[15,23,23]}`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8139`: OK.
+- `curl -I http://localhost:8139/`: HTTP 200.
+- `curl -s http://localhost:8139/game.js | grep -E 'setFireballPreview|fireballPreviewPos|fireball-preview'`: OK.
+- `curl -s http://localhost:8139/style.css | grep -E 'fireball-preview|fireball-zone'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le survol déclenche un re-render complet; fonctionnel au smoke test, mais une future passe pourrait rendre ce feedback plus fluide sans reconstruire tout le DOM.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une petite pastille/cooldown directement sur les mini-cartes `Boule de feu`, ou introduire un premier achat de marché thématique par ville/capitale.
+
+### Publication de l’itération fireball-preview
+- Commit local applicatif: `211e381` (`Preview targeted fireball columns`).
+- `git push origin main`: OK (`f1453b8..211e381 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `setFireballPreview`, `fireballPreviewPos`, `fireball-zone`.
+- Vérification GitHub raw `style.css`: OK, contient `fireball-preview` et `fireball-zone`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=211e381`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 22:11:26 GMT`, donc GitHub Pages/CDN probablement stale.
