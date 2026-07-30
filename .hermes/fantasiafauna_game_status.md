@@ -651,3 +651,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une petite progression de quête visible sur la carte du monde (ex: objectifs “visiter une ville / gagner un assaut / acheter au marché”) sans changer les règles de combat.
+
+### Publication de l’itération tutor-toggle
+- Commit local applicatif: `ce2f636` (`Allow hiding assault tutorial`).
+- `git push origin main`: OK (`c68b2b1..ce2f636 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `showTutor`, `toggleAssaultTutor`, `Afficher le tutoriel d’assaut`.
+- Vérification GitHub raw `style.css`: OK, contient `assault-tutor button` et `assault-tutor.collapsed`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=ce2f636` et `style.css?v=ce2f636`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); `Last-Modified` encore `Thu, 30 Jul 2026 23:30:27 GMT`, donc GitHub Pages/CDN reste stale.
