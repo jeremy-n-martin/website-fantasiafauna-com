@@ -285,3 +285,26 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `style.css`: OK, contient `placement-guide`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=a752e22`: HTTP 200 mais marqueurs absents pendant ce run; probable délai/cache GitHub Pages.
 
+## Itération rempart-visibility — 2026-07-30
+### Réalisé
+- Ajout d’un indicateur visuel sur le Rempart: une unité tank adjacente avec Rempart affiche maintenant `Rempart actif ↔`.
+- Les unités alliées protégées par un Rempart adjacent affichent maintenant `Protégé par <nom>` avec halo vert.
+- La logique reste basée sur les colonnes voisines gauche/droite dans la même zone/lane; aucune régression des règles ATQ/HP/[ ], 30/[ ], dégâts ATQ seuls ou placement de siège.
+
+### Vérification réelle
+- `git status --short --branch` : branche `main`, travail sale non lié toujours présent et non touché.
+- `node --check game.js` : OK.
+- `node .hermes/smoke_rempart_visibility.js` : OK (`rempart_visibility_smoke=OK {"tankProtector":true,"allyGuarded":true,"noPopDef":true,"stackShown":true}`), puis script temporaire supprimé.
+- Serveur local `python -m http.server 8133` : OK.
+- `curl -I http://localhost:8133/` : HTTP 200.
+- `curl -s http://localhost:8133/game.js | grep -E 'protectsByRempart|guard-badge|Protégé par'` : OK.
+- `curl -s http://localhost:8133/style.css | grep -E 'battle-card.guarded|guard-badge'` : OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- L’indicateur est pour les Remparts alliés visibles côté joueur; les Remparts ennemis ne reçoivent pas encore un badge dédié.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un effet visuel temporaire sur la réduction de dégâts Rempart au moment où l’attaque est résolue, ou rendre la Boule de feu ciblable sur une colonne.
+

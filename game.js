@@ -42,6 +42,7 @@ function isPosFree(slot, pos, side='ally'){ return pos>=0 && pos<5 && !slotCards
 function chosenPosFor(slot){ return isPosFree(slot,state.pendingPos) ? state.pendingPos : firstFreePos(slot); }
 function adjacentAllies(c){ return state.board.filter(x=>x.slot===c.slot && Math.abs((x.pos??0)-(c.pos??0))===1); }
 function protectedByRempart(target){ return state.board.find(x=>x.uid!==target.uid && x.slot===target.slot && Math.abs((x.pos??0)-(target.pos??0))===1 && specialFor(x).key==='rempart'); }
+function protectsByRempart(c){ return specialFor(c).key==='rempart' && adjacentAllies(c).length>0; }
 function damageStack(target, amount, source=''){ const shield=protectedByRempart(target); if(shield){ amount=Math.max(1, amount-1); addLog(`${shield.name} protège ${target.name}: dégâts réduits à ${amount}.`); } return applyDamage(target, amount); }
 function randomEnemyUnit(){ return rnd(state.enemyBoard); }
 function randomAllyUnit(){ return rnd(state.board); }
@@ -183,7 +184,11 @@ function compactCard(c, zone){
   const color=CAPITAL_COLORS[c.capital]||'#c9aa69'; const img=c.image?`<img src="${encodeURI(c.image)}" alt="${c.name}" decoding="async">`:'';
   const action = zone==='hand'?`onclick="playCard('${c.uid}')"`:zone==='ally'?`onclick="event.stopPropagation();selectAttacker('${c.uid}')"`:zone==='enemy'?`onclick="event.stopPropagation();attackTarget('${c.uid}')"`:'';
   const selected = c.uid && state.selectedAttackerUid===c.uid ? ' selected' : '';
-  return `<button class="battle-card ${c.rarity} ${zone}${selected}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><small class="special">${specialFor(c).label}: ${specialFor(c).text}</small><footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${stackCountFor(c)}]</em></footer>${c.uid?`<small class="unit-count">Unités: ${liveCount(c)}/${deployedUnitsFor(c)}</small>`:''}</button>`;
+  const guard = zone==='ally' && c.uid ? protectedByRempart(c) : null;
+  const protector = zone==='ally' && c.uid && protectsByRempart(c);
+  const guardClass = guard ? ' guarded' : protector ? ' protector' : '';
+  const guardBadge = guard ? `<small class="guard-badge">Protégé par ${guard.name}</small>` : protector ? '<small class="guard-badge">Rempart actif ↔</small>' : '';
+  return `<button class="battle-card ${c.rarity} ${zone}${selected}${guardClass}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><small class="special">${specialFor(c).label}: ${specialFor(c).text}</small>${guardBadge}<footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${stackCountFor(c)}]</em></footer>${c.uid?`<small class="unit-count">Unités: ${liveCount(c)}/${deployedUnitsFor(c)}</small>`:''}</button>`;
 }
 function filteredCreatures(){
   const q=state.search.trim().toLowerCase();
