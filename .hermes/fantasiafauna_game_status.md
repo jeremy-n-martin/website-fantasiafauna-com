@@ -370,3 +370,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un aperçu de dégâts/état avant clic sur structure, ou rendre Boule de feu ciblable par colonne.
+
+### Publication de l’itération structure-targets
+- Commit local applicatif: `05020d9` (`Add explicit structure targeting`).
+- `git push origin main`: OK (`cf81171..05020d9 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `structure-targets`, `attackEnemyStructureTarget`, `structureLabel`.
+- Vérification GitHub raw `style.css`: OK, contient `structure-targets`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=05020d9-1/2/3` et `style.css?v=05020d9`: HTTP 200 mais marqueurs absents pendant ce run; `Last-Modified` encore `Thu, 30 Jul 2026 21:06:33 GMT`, donc GitHub Pages/CDN probablement stale.
