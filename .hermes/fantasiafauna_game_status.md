@@ -199,3 +199,29 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Test overflow: stack 3 unités × 7 HP = 21 HP; après 8 dégâts, HP=13 et unités vivantes=2, donc le reliquat est bien passé à l’unité suivante.
 - Test dégâts: `strikePower(c) === c.attack` confirmé.
 - Test cadence: carte jouée arrive `exhausted=true`, donc pas d’attaque immédiate/supplémentaire.
+
+
+## Itération passive-effects-columns — 2026-07-30
+### Réalisé
+- Ajout d’une première couche de mécaniques spéciales/passives dérivées des rôles des créatures.
+- Chaque lane contient maintenant 5 colonnes/emplacements verticaux; les cartes posées reçoivent une position `pos` de 0 à 4.
+- Les effets adjacents utilisent la position: un tank avec Rempart protège les unités gauche/droite dans le même emplacement.
+- Passifs ajoutés:
+  - Maçon: créature faible coût <=2 répare +1 HP au mur allié au début du tour si le mur est endommagé.
+  - Étincelle: caster inflige 1 dégât à une unité adverse aléatoire au début du tour.
+  - Rempart: tank réduit de 1 les dégâts reçus par une unité adjacente gauche/droite.
+  - Boule de feu: gros caster/mage tous les 3 jours, 3 dégâts en cercle sur une colonne et les colonnes voisines.
+  - Sentinelle: ranged identifié comme soutien/attaque arrière.
+- UI: mini-cartes affichent maintenant le libellé de l’effet spécial; lanes rendues en 5 colonnes épaisses.
+
+### Vérification réelle
+- `node --check game.js` : OK.
+- Serveur local `python -m http.server 8130` : OK.
+- Test navigateur: assaut lancé, lane front affiche 5 cellules.
+- Test placement: deux cartes jouées devant le mur, positions 0 et 1.
+- Test effet Rempart: Nuckelavee tank en colonne 2 protège Cacodémon adjacent; dégâts ennemis réduits de 3 à 2 dans le log.
+- Test affichage effets: Étincelle/Rempart visibles sur mini-cartes.
+
+### Limites
+- Les effets sont encore dérivés automatiquement des rôles, pas encore assignés créature par créature.
+- Prochaine passe: permettre au joueur de choisir explicitement la colonne de placement au lieu du premier slot libre.
