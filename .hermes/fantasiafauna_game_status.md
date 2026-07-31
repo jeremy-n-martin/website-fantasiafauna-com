@@ -1281,3 +1281,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un contre-jeu simple à la Clairière (ex: payer 2 invocation pour couper les ronces du prochain tour, ou immunité/réduction si un Maçon est adjacent).
+
+### Publication de l’itération bosquet-terrain
+- Commit local applicatif: `1e1fd4f` (`Add Bosquet thorn terrain`).
+- `git push origin main`: OK (`67a83dc..1e1fd4f main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `bosquetThorns`, `terrainPanel`, `Ronces vivantes` (`raw_game markers: 4`).
+- Vérification GitHub raw `style.css`: OK, contient `bosquet-terrain` (`raw_css markers: 1`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=1e1fd4f` / `style.css?v=1e1fd4f`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 04:57:08 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
