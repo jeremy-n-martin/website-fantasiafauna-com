@@ -963,3 +963,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une suite de chapitre après le trophée: nouveau lieu/objectif débloqué ou choix de récompense boss persistant.
+
+### Publication de l’itération boss-trophy-panel
+- Commit local applicatif: `d155dda` (`Add Abime boss trophy panel`).
+- `git push origin main`: OK (`c0698ca..d155dda main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `bossTrophyPanel`, `Trophée obtenu`, `Relique de l’Abîme`, `trophy-panel` côté JS (`raw game markers: 4`).
+- Vérification GitHub raw `style.css`: OK, contient `trophy-panel` (`raw css markers: 1`).
+- Vérification site public `https://fantasiafauna.com/game.js?v=d155dda` et `style.css?v=d155dda`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `public_css_markers=0`, `Last-Modified: Fri, 31 Jul 2026 02:08:11 GMT`), donc GitHub Pages/CDN reste en retard.
