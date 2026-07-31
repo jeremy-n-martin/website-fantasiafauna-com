@@ -1385,3 +1385,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `bosquetBlessingPanel`, `claimBosquetBlessing`, `Bénédiction du Bosquet` (`raw_game markers: 3/3`).
 - Vérification GitHub raw `style.css`: OK, contient `bosquet-blessing` (`raw_css markers: 1/1`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=b8cdf3c` / `style.css?v=b8cdf3c`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/3`, `public_css markers: 0/1`, `Last-Modified: Fri, 31 Jul 2026 05:42:20 GMT`), donc GitHub Pages/CDN reste en retard.
+
+## Itération turn-forecast — 2026-07-31 08:11
+### Réalisé
+- Ajout d’un panneau central visible `Avant attaques ennemies` pendant les assauts.
+- Le panneau annonce les effets de début de tour ennemi avant les attaques: Rituel du miroir, Vent du Zénith, Ronces vivantes, Étincelle et Boule de feu ennemies disponibles.
+- Le panneau complète les badges `Menacé:` existants au lieu de changer la résolution des attaques; il garde la priorité de siège et les règles de stacks intactes.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline avec DOM/localStorage simulés: OK (`turn_forecast_smoke=OK {"forecast":true,"noPopDef":true}`).
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8168`: OK.
+- `curl -I http://localhost:8168/`: HTTP 200.
+- `curl -s http://localhost:8168/game.js | grep -E 'enemyPreparationForecast|Avant attaques ennemies|Aucun effet spécial ennemi prévu'`: OK.
+- `curl -s http://localhost:8168/style.css | grep -E 'turn-forecast'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La prévision additionne les sources spéciales connues avant attaques, mais ne simule pas toute la chaîne de décès/déplacements qui pourrait survenir entre deux rendus.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Raffiner les prévisions pour estimer la cible probable d’Étincelle/Boule de feu ennemie, ou ouvrir un prochain embranchement de campagne après la branche Bosquet.
