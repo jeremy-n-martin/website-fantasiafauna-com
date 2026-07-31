@@ -327,16 +327,33 @@ function renderSlot(slot, side){ const list=side==='enemy'?state.enemyBoard:stat
 function fireballPicker(){ const c=selectedFireballSource(); if(!c) return ''; if(!fireballWindowOpen()) return `<div class="fireball-picker recharging"><b>Boule de feu en recharge</b><small>${c.name}: disponible au jour ${nextFireballDay()} (fenêtre tous les 3 jours).</small></div>`; return `<div class="fireball-picker"><b>Boule de feu ciblable — jour ${state.day}</b><small>${c.name}: survole une colonne pour voir la zone touchée, puis clique pour infliger 3 dégâts.</small>${Array.from({length:5},(_,i)=>`<button onmouseenter="setFireballPreview(${i})" onfocus="setFireballPreview(${i})" onmouseleave="setFireballPreview(null)" onclick="castFireballColumn(${i})">Col. ${i+1}<small>${fireballPreview(i)}</small></button>`).join('')}</div>`; }
 function bossCounterplay(){ if(state.battleKind==='empyree'){ const disabled=state.mana<2||state.empyreeAnchor; const status=state.empyreeAnchor?'Ancrage prêt':state.mana<2?'Invocation insuffisante':`Vent ${empyreeZephyrCountdown()}`; return `<div class="boss-counter empyree-counter"><b>Contre-jeu: Vent du Zénith</b><small>Dépense 2 points d’invocation pour ancrer tes lignes et annuler le prochain vent qui épuise un stack.</small><small class="zephyr-next">${empyreeZephyrForecast()}</small><button ${disabled?'disabled':''} onclick="anchorEmpyree()">Ancrer les lignes</button><span>${status}</span></div>`; } if(state.battleKind!=='boss') return ''; const disabled=state.mana<2||state.structures.wall<=0||state.structures.wall>=20; const status=state.structures.wall>=20?'Mur intact':state.structures.wall<=0?'Mur détruit':state.mana<2?'Invocation insuffisante':`Réparer à ${Math.min(20,state.structures.wall+3)}/20`; return `<div class="boss-counter"><b>Réponse au Rituel du miroir</b><small>Dépense 2 points d’invocation pour rendre +3 HP au mur avant la prochaine fissure.</small><button ${disabled?'disabled':''} onclick="reinforceWall()">Renforcer le mur</button><span>${status}</span></div>`; }
 function terrainPanel(){ if(state.battleKind!=='bosquet') return ''; const disabled=state.mana<2||state.bosquetPruned; const status=state.bosquetPruned?'Contre-jeu prêt':state.mana<2?'Invocation insuffisante':'Coût 2 invocation'; return `<div class="bosquet-terrain"><b>Terrain: Ronces vivantes</b><small>Tous les deux jours impairs, la forêt pique le premier stack allié exposé (front → mur → arrière) pour 1 dégât; sinon elle griffe le mur.</small><span>${bosquetThornForecast()}</span><button ${disabled?'disabled':''} onclick="pruneBosquetThorns()">Couper les ronces</button><em>${status}</em></div>`; }
+function enemySparkForecast(){
+  const sparks=state.enemyBoard.filter(c=>specialFor(c).key==='spark');
+  if(!sparks.length) return [];
+  const exposed=state.board.slice().sort((a,b)=>(a.slot===b.slot?((a.pos??0)-(b.pos??0)):slotLabel(a.slot).localeCompare(slotLabel(b.slot))));
+  const names=exposed.slice(0,3).map(c=>`${c.name} col. ${(c.pos??0)+1}`).join(', ');
+  return [`${sparks.length} Étincelle ennemie: 1 dégât aléatoire sur un stack allié${names?` possible (${names}${exposed.length>3?'…':''})`:''}.`];
+}
+function enemyFireballForecast(){
+  const casters=state.enemyBoard.filter(c=>specialFor(c).key==='fireball' && state.day%3===0 && !c.exhausted);
+  if(!casters.length) return [];
+  return casters.map(c=>{
+    const pos=c.pos??2;
+    const victims=state.board.filter(v=>Math.abs((v.pos??0)-pos)<=1);
+    const range=`${Math.max(1,pos)}-${Math.min(5,pos+2)}`;
+    if(!victims.length) return `${c.name} peut lancer Boule de feu sur colonnes ${range}: aucune unité alliée dans le cercle pour l’instant.`;
+    const names=victims.slice(0,3).map(v=>`${v.name} (${slotLabel(v.slot)}, col. ${(v.pos??0)+1})`).join(', ');
+    return `${c.name} peut lancer Boule de feu sur colonnes ${range}: menace ${names}${victims.length>3?'…':''}.`;
+  });
+}
 function enemyPreparationForecast(){
   if(state.mode!=='battle') return '';
   const lines=[];
   if(state.battleKind==='boss' && state.day%3===0) lines.push('Rituel du miroir: -2 HP sur le mur allié, ou la tour si le mur est tombé.');
   if(state.battleKind==='empyree') lines.push(empyreeZephyrForecast());
   if(state.battleKind==='bosquet') lines.push(bosquetThornForecast());
-  const sparks=state.enemyBoard.filter(c=>specialFor(c).key==='spark').length;
-  const fireballs=state.enemyBoard.filter(c=>specialFor(c).key==='fireball' && state.day%3===0 && !c.exhausted).length;
-  if(sparks) lines.push(`${sparks} Étincelle ennemie: 1 dégât aléatoire avant les attaques.`);
-  if(fireballs) lines.push(`${fireballs} Boule de feu ennemie: 3 dégâts sur colonnes voisines avant les attaques.`);
+  lines.push(...enemySparkForecast());
+  lines.push(...enemyFireballForecast());
   if(!lines.length) lines.push('Aucun effet spécial ennemi prévu avant les attaques; lis surtout les badges Menacé.');
   return `<div class="turn-forecast"><b>Avant attaques ennemies</b>${lines.map(x=>`<small>${x}</small>`).join('')}</div>`;
 }

@@ -1417,3 +1417,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `enemyPreparationForecast`, `Avant attaques ennemies`, `Aucun effet spécial ennemi prévu`.
 - Vérification GitHub raw `style.css`: OK, contient `turn-forecast`.
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=08024e0` / `style.css?v=08024e0`: HTTP 200 mais marqueurs absents pendant ce run (`public markers: 0`, `Last-Modified: Fri, 31 Jul 2026 05:57:32 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération enemy-effect-forecast — 2026-07-31 08:25
+### Réalisé
+- Raffinement visible du panneau `Avant attaques ennemies`: les Étincelles ennemies indiquent maintenant les stacks alliés exposés possibles au lieu d’un simple compteur.
+- Les Boules de feu ennemies prêtes indiquent maintenant leur colonne/cercle probable et les unités alliées menacées dans les colonnes voisines.
+- La résolution du combat n’a pas été changée: règles ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants préservés.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline avec DOM/localStorage simulés: OK (`enemy_effect_forecast_smoke=OK {"spark":true,"fireball":true,"noPopDef":true}`).
+- `git diff --check -- game.js style.css`: OK, seulement avertissement CRLF/LF existant de Git.
+- Serveur local `python -m http.server 8169`: OK.
+- `curl -I http://localhost:8169/`: HTTP 200.
+- `curl -s http://localhost:8169/game.js | grep -E 'enemySparkForecast|enemyFireballForecast|peut lancer Boule de feu'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La cible d’Étincelle reste aléatoire par design: l’UI liste les cibles possibles, pas une certitude.
+- La prévision Boule de feu utilise la position actuelle du caster ennemi; si un effet préalable tue une unité avant l’incantation, le rendu suivant corrigera la menace.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ouvrir un prochain embranchement de campagne après la branche Bosquet, ou ajouter une micro-animation/halo dédié aux unités menacées par Boule de feu.
