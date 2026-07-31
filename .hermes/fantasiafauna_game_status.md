@@ -1256,3 +1256,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `Clairière des Ronces`, `bosquetDuelPanel`, `bosquetCreaturePool` (`raw_game markers: 3/3`).
 - Vérification GitHub raw `style.css`: OK, contient `bosquetDuel`, `bosquet-chapter` (`raw_css markers: 2/2`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=80d9f03` / `style.css?v=80d9f03`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/3`, `public_css markers: 0/2`, `Last-Modified: Fri, 31 Jul 2026 04:39:44 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération bosquet-terrain — 2026-07-31 07:10
+### Réalisé
+- Ajout d’un effet de terrain actif pour la `Clairière des Ronces`: `Ronces vivantes` pendant les duels Bosquet.
+- Un panneau central visible annonce la règle et la cible prévue: tous les jours impairs, la forêt inflige 1 dégât au premier stack allié exposé selon la priorité front → mur → arrière; s’il n’y a aucun stack, le mur allié prend 1 dégât.
+- L’effet est résolu pendant le tour ennemi via `bosquetThorns()`, utilise `damageStack()` pour préserver les HP totaux/overflow/liveCount et marque visuellement la cible avec `Ronces -1`.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, stacks HP total, siège tour/village/mur et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_bosquet_terrain.js`: OK (`bosquet_terrain_smoke=OK {"forecastBefore":"Ronces ce tour: menace Sorcière, colonne 3 (devant le mur).","before":12,"after":11,"panel":true,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8164`: OK.
+- `curl -I http://localhost:8164/`: HTTP 200.
+- `curl -s http://localhost:8164/game.js | grep -E 'bosquetThorns|terrainPanel|Ronces vivantes'`: OK.
+- `curl -s http://localhost:8164/style.css | grep -E 'bosquet-terrain'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- L’effet est volontairement simple et punitif; il n’ajoute pas encore de contre-jeu joueur spécifique aux ronces.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un contre-jeu simple à la Clairière (ex: payer 2 invocation pour couper les ronces du prochain tour, ou immunité/réduction si un Maçon est adjacent).
