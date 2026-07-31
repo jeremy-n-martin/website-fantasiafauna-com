@@ -74,7 +74,9 @@ function weightedCreature(){
 }
 function bossCreaturePool(){ const pool=CREATURES.filter(c=>c.capital==='Abîme'); return pool.length?pool:CREATURES.filter(c=>c.rarity==='mythique'||c.power>=55); }
 function enemySummonCreature(){ if(state.battleKind==='boss') return rnd(bossCreaturePool()); return weightedCreature(); }
-function bossAura(){ if(state.battleKind!=='boss') return ''; const abime=bossCreaturePool().length; return `<div class="boss-aura"><b>Boss: Abîme des Miroirs</b><small>Invocations typées Abîme (${abime} créatures possibles), fortifications renforcées: Tour 30 · Village 24 · Mur 28.</small></div>`; }
+function bossRiftCountdown(){ const left=(3 - (state.day % 3)) % 3; return left===0 ? 'ce tour' : `dans ${left} jour${left>1?'s':''}`; }
+function bossAura(){ if(state.battleKind!=='boss') return ''; const abime=bossCreaturePool().length; return `<div class="boss-aura"><b>Boss: Abîme des Miroirs</b><small>Invocations typées Abîme (${abime} créatures possibles), fortifications renforcées: Tour 30 · Village 24 · Mur 28.</small><small>Rituel du miroir ${bossRiftCountdown()}: au tour ennemi, l’Abîme ébrèche le mur allié de 2 HP (ou la tour si le mur est tombé).</small></div>`; }
+function bossMirrorRift(){ if(state.battleKind!=='boss' || state.day%3!==0) return; const target=state.structures.wall>0?'wall':'tower'; damageStructure(target,2); addLog(`Rituel du miroir: l’Abîme fissure ${target==='wall'?'le mur':'la tour'} allié(e) (2).`); }
 function saveGame(){
   try { localStorage.setItem('fantasiafauna-save', JSON.stringify({gold:state.gold,day:state.day,collectionIds:state.collection.map(c=>c.id),deckIds:state.deckIds,location:state.location,playerHp:state.playerHp,showTutor:state.showTutor,quests:state.quests})); } catch {}
 }
@@ -135,6 +137,7 @@ function setPendingPos(pos){ setPlacement(state.pendingSlot, pos); }
 function enemyTurn(){
   const enemyCard=clone(enemySummonCreature()); enemyCard.slot=enemyCard.roles.includes('ranged')||enemyCard.roles.includes('caster')?'back':'front'; enemyCard.pos=firstFreePos(enemyCard.slot,'enemy'); if(enemyCard.pos<0) enemyCard.pos=Math.floor(Math.random()*5);
   if(state.enemyBoard.length<7) { state.enemyBoard.push(enemyCard); addLog(`${state.battleKind==='boss'?'L’Abîme invoque':'Ennemi invoque'} ${enemyCard.name} ${slotLabel(enemyCard.slot)}.`); }
+  bossMirrorRift();
   applyStartOfTurnEffects('enemy');
   [...state.enemyBoard].forEach(e=> enemyAttack(e));
   if(state.structures.tower<=0){ state.mode='defeat'; addLog('Ta tour tombe à 0 HP: défaite immédiate.'); }

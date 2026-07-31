@@ -878,3 +878,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `bossCreaturePool`, `boss-aura`, `L’Abîme invoque` (`raw game markers: 4`).
 - Vérification GitHub raw `style.css`: OK, contient `boss-aura` (`raw css markers: 1`).
 - Vérification site public `https://fantasiafauna.com/game.js?v=72d3a8e` et `style.css?v=72d3a8e`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `public_css_markers=0`, `Last-Modified: Fri, 31 Jul 2026 01:22:40 GMT`), donc GitHub Pages/CDN reste en retard.
+
+## Itération boss-mirror-ritual — 2026-07-31 03:50
+### Réalisé
+- Ajout d’une capacité spéciale lisible pour le boss `Abîme des Miroirs`: `Rituel du miroir`.
+- L’encart boss indique maintenant le compte à rebours du rituel (`ce tour` / `dans N jours`) en plus du pool d’invocations Abîme et des fortifications renforcées.
+- Tous les 3 jours, au tour ennemi en combat boss, le rituel inflige 2 dégâts au mur allié; si le mur est déjà tombé, il touche la tour alliée.
+- Le rituel utilise `damageStructure`, donc il conserve l’effet visuel de hit et le log de combat sans modifier les règles de stack.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_boss_rift.js`: OK (`boss_rift_smoke=OK {"wallAfterRift":18,"countdown":"dans 2 jours","hit":"ally-wall"}`), confirmant l’encart, le dégât rituel de 2 au mur, le marqueur de hit, l’absence POP/DEF dans le recto et `strikePower === ATQ`.
+- Serveur local `python -m http.server 8152`: OK.
+- `curl -I http://localhost:8152/`: HTTP 200.
+- `curl -s http://localhost:8152/game.js | grep -E 'bossRiftCountdown|Rituel du miroir|bossMirrorRift'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le rituel boss est volontairement simple et lisible; il ne crée pas encore de choix de contre-jeu spécifique côté joueur.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une réponse jouable au rituel boss (ex: une action de réparation/contre-sort visible ou récompense/trophée persistant après victoire boss).
