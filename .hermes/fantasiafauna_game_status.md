@@ -777,3 +777,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Donner une récompense ou un effet de déverrouillage concret quand `Route vers l’Abîme` atteint 3/3, puis relier cette étape à un boss/lieu de la carte.
+
+### Publication de l’itération chapter-two-route
+- Commit local applicatif: `84d6ea8` (`Add chapter two route panel`).
+- `git push origin main`: OK (`486ee3c..84d6ea8 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `chapterTwoBoard`, `Route vers l’Abîme`, `ownedCapitalCount`.
+- Vérification GitHub raw `style.css`: OK, contient `chapter-panel`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=84d6ea8` et `style.css?v=84d6ea8`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); GitHub Pages/CDN semble encore stale.
