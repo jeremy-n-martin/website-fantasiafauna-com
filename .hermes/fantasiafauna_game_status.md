@@ -1685,3 +1685,30 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `style.css`: OK, contient `cenote-trophy` (`raw_css markers: 1`).
 - Vérification GitHub raw journal: OK, contient `cenote-trophy-panel` et `cenote_trophy_smoke` (`raw_status markers: 6`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=fed2787` / `style.css?v=fed2787`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 08:21:56 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération cenote-blessing-choice — 2026-07-31 10:53
+### Réalisé
+- Ajout d’une récompense post-victoire Cénote visible dans les actions du monde: `Don du Cénote stabilisé`.
+- Après `cenoteDuelWon`, le joueur peut choisir une créature Cénote/Lagune précise parmi 3 offres et reçoit +30 or.
+- Ajout de la persistance `cenoteBlessingClaimed` dans les quêtes sauvegardées/chargées/réinitialisées.
+- Ajout d’un style aquatique dédié `cenote-blessing` pour rendre la tranche visible sans modifier la logique de combat.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts de créature ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_cenote_blessing.js`: OK (`cenote_blessing_smoke=OK {"panel":true,"claimed":true,"gold":40,"collection":26,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8177`: OK.
+- `curl -I http://localhost:8177/`: HTTP 200.
+- `curl -s http://localhost:8177/game.js | grep -E 'cenoteBlessingPanel|Don du Cénote|claimCenoteBlessing'`: OK.
+- `curl -s http://localhost:8177/style.css | grep -E 'cenote-blessing'`: OK.
+- Recherche `POP|DEF` dans `game.js`: 0 résultat (`no_POP_DEF=OK`).
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La récompense choisie clôt mieux le Chapitre IV mais n’ouvre pas encore de nouveau territoire après le Cénote.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ouvrir une première route post-Cénote ou ajouter un cinquième chapitre visible sur la carte, sans toucher aux règles ATQ/HP/[ ].
