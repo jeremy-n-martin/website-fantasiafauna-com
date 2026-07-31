@@ -1058,3 +1058,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une animation/pastille dédiée `Vent du Zénith` sur le stack épuisé, ou équilibrer les récompenses/menaces du duel Empyrée après quelques tours.
+
+### Publication de l’itération empyree-zephyr
+- Commit local applicatif: `e6a31b5` (`Add Empyree zephyr counterplay`).
+- `git push origin main`: OK (`3d4f57f..e6a31b5 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `empyreeZephyr`, `Vent du Zénith`, `anchorEmpyree` (`raw_game markers: 3`).
+- Vérification GitHub raw `style.css`: OK, contient `empyree-counter` (`raw_css markers: 1`).
+- Vérification site public `https://fantasiafauna.com/game.js?v=e6a31b5` et `style.css?v=e6a31b5`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 02:56:14/13 GMT`), donc GitHub Pages/CDN reste en retard.
