@@ -682,3 +682,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un petit objectif/récompense après la première victoire d’assaut, ou enrichir les marchés avec vente/stock persistant.
+
+### Publication de l’itération quest-progress
+- Commit local applicatif: `01deb36` (`Add world quest progression`).
+- `git push origin main`: OK (`9da8263..01deb36 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `questBoard`, `Quête du mage`, `quests`.
+- Vérification GitHub raw `style.css`: OK, contient `quest-panel` et `World quest progression`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=01deb36` et `style.css?v=01deb36`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); `Last-Modified` encore `Thu, 30 Jul 2026 23:48:59 GMT`, donc GitHub Pages/CDN reste stale.
