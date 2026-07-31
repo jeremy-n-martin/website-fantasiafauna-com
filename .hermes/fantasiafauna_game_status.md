@@ -1191,3 +1191,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `Bosquet Stellaire`, `requiresEmpyreeWin`, `Marché Bosquet débloqué` (`raw_game markers: 3/3`).
 - Vérification GitHub raw `style.css`: OK, contient `.place.bosquet` (`raw_css markers: 1/1`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=ad0630c` / `style.css?v=ad0630c`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/3`, `public_css markers: 0/1`, `Last-Modified: Fri, 31 Jul 2026 04:04:58 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération bosquet-pact — 2026-07-31 06:37
+### Réalisé
+- Ajout d’une première récompense/offre spécifique au Bosquet Stellaire après victoire Empyrée: panneau visible `Pacte du Bosquet Stellaire` dans les actions de ville.
+- Le joueur peut dépenser 35 or pour choisir une des 3 créatures Bosquet proposées et l’ajouter au grimoire/collection; le pacte est ensuite marqué comme déjà scellé via `bosquetPactClaimed`.
+- Le panneau n’apparaît que si le joueur est au `Bosquet Stellaire` et a gagné le `Rempart du Zénith`, préservant le verrou post-Empyrée.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_bosquet_pact.js`: OK (`bosquet_pact_smoke=OK {"choice":"Tengu","capital":"Bosquet","gold":45,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8162`: OK.
+- `curl -I http://localhost:8162/`: HTTP 200.
+- `curl -s http://localhost:8162/game.js | grep -E 'bosquetPactPanel|claimBosquetPact|Pacte du Bosquet'`: OK.
+- `curl -s http://localhost:8162/style.css | grep -E 'bosquet-pact'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le Pacte du Bosquet est une offre/récompense de ville, pas encore un duel Bosquet ni un nouveau chapitre complet.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un court duel Bosquet post-Empyrée ou un effet de terrain forestier visible lié à la récompense Bosquet.
