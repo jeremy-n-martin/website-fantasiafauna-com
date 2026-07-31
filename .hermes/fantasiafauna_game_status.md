@@ -1126,3 +1126,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `empyreeZephyrForecast` / `zephyr-next` (`raw game markers: 2`).
 - Vérification GitHub raw `style.css`: OK, contient `.zephyr-next` (`raw css markers: 1`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=6e52c6c` / `style.css?v=6e52c6c`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 03:27:45 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération empyree-trophy — 2026-07-31 06:03
+### Réalisé
+- Ajout d’un trophée post-victoire de Chapitre III: panneau `Trophée céleste — Étendard du Rempart du Zénith` affiché sur l’écran monde quand `empyreeDuelWon=true`.
+- Le panneau confirme la victoire du Rempart du Zénith, la récompense +100 or et la carte Empyrée gagnée.
+- Ajout d’un style dédié `.empyree-trophy` pour distinguer ce trophée bleu/céleste du trophée Abîme.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`empyree_trophy_smoke=OK {"trophy":true,"victory":true,"reward":true,"noPop":true,"noDef":true,"stackRule":true,"styleMarker":true}`), confirmant le panneau, la récompense, l’absence POP/DEF et ATQ/HP/[ ].
+- Serveur local `python -m http.server 8160`: OK.
+- `curl -I http://localhost:8160/`: HTTP 200.
+- `curl -s http://localhost:8160/game.js | grep -E 'empyreeTrophyPanel|Étendard du Rempart|Carte Empyrée gagnée'`: OK.
+- `curl -s http://localhost:8160/style.css | grep -E 'empyree-trophy'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le trophée est un jalon visuel/persistant; il ne débloque pas encore une nouvelle branche de campagne après Empyrée.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une suite post-Empyrée visible (nouveau portail/capitale ou choix de récompense céleste), ou vérifier la propagation GitHub Pages du commit publié avec cache-busting.
