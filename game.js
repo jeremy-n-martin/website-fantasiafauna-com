@@ -161,17 +161,32 @@ function enemyTurn(){
 }
 function markHit(key, text='Touché'){ state.lastHit=key; state.lastHitText=text; if(key!==state.lastGuardTargetUid){ state.lastGuardUid=''; state.lastGuardTargetUid=''; } }
 function damageStructure(which, amount){ state.structures[which]=Math.max(0,state.structures[which]-amount); markHit('ally-'+which, `-${amount}`); }
-function enemyIntent(e){
+function enemyTargetInfo(e){
   const dmg=strikePower(e);
-  if(e.roles.includes('volant')) return state.structures.wall>0 ? `Vise: Mur (${dmg}) · Vol` : `Vise: Tour (${dmg}) · Vol`;
+  if(e.roles.includes('volant')) return state.structures.wall>0 ? {type:'structure', key:'wall', label:'Mur', dmg, note:'Vol'} : {type:'structure', key:'tower', label:'Tour', dmg, note:'Vol'};
   const front=slotCards('front')[0];
-  if(front) return `Vise: ${front.name} (${dmg})`;
-  if(state.structures.wall>0) return `Vise: Mur (${dmg})`;
+  if(front) return {type:'unit', uid:front.uid, label:front.name, dmg};
+  if(state.structures.wall>0) return {type:'structure', key:'wall', label:'Mur', dmg};
   const wall=slotCards('wall')[0];
-  if(wall) return `Vise: ${wall.name} sur mur (${dmg})`;
+  if(wall) return {type:'unit', uid:wall.uid, label:`${wall.name} sur mur`, dmg};
   const back=slotCards('back')[0];
-  if(back) return `Vise: ${back.name} arrière (${dmg})`;
-  return `Vise: Tour (${dmg})`;
+  if(back) return {type:'unit', uid:back.uid, label:`${back.name} arrière`, dmg};
+  return {type:'structure', key:'tower', label:'Tour', dmg};
+}
+function enemyIntent(e){
+  const t=enemyTargetInfo(e);
+  return `Vise: ${t.label} (${t.dmg})${t.note?` · ${t.note}`:''}`;
+}
+function incomingThreatsFor(kind, key){
+  if(state.mode!=='battle') return [];
+  return state.enemyBoard.map(e=>({enemy:e, target:enemyTargetInfo(e)})).filter(x=>kind==='unit'?x.target.uid===key:x.target.type==='structure'&&x.target.key===key);
+}
+function threatBadgeFor(kind, key){
+  const threats=incomingThreatsFor(kind,key);
+  if(!threats.length) return '';
+  const total=threats.reduce((sum,x)=>sum+x.target.dmg,0);
+  const names=threats.slice(0,2).map(x=>x.enemy.name).join(', ');
+  return `<small class="threat-badge">Menacé: ${total} par ${names}${threats.length>2?'…':''}</small>`;
 }
 function enemyAttack(e){
   const dmg=strikePower(e); let target=null;
@@ -263,10 +278,11 @@ function compactCard(c, zone){
   const guardBadge = guard ? `<small class="guard-badge">Protégé par ${guard.name}</small>` : protector ? '<small class="guard-badge">Rempart actif ↔</small>' : '';
   const impactBadge = c.uid===state.lastGuardUid ? '<small class="guard-badge impact-badge">Rempart -1 dégât</small>' : c.uid===state.lastGuardTargetUid ? '<small class="guard-badge impact-badge">Dégât amorti</small>' : '';
   const intentBadge = zone==='enemy' && c.uid ? `<small class="intent-badge">${enemyIntent(c)}</small>` : '';
+  const threatBadge = zone==='ally' && c.uid ? threatBadgeFor('unit', c.uid) : '';
   const previewBadge = zone==='enemy' && c.uid && state.selectedAttackerUid ? `<small class="preview-badge">${attackPreview(c)}</small>` : '';
   const zephyrHit = c.uid && state.lastHit===c.uid && state.lastHitText==='Vent du Zénith';
   const hitBadge = c.uid && state.lastHit===c.uid ? `<small class="hit-badge ${zephyrHit?'zephyr-badge':''}">${state.lastHitText}</small>` : '';
-  return `<button class="battle-card ${c.rarity} ${zone}${selected}${guardClass}${flashClass}${state.lastHit===c.uid?' hit':''}${zephyrHit?' zephyr-hit':''}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><small class="special">${specialFor(c).label}: ${specialFor(c).text}</small>${intentBadge}${previewBadge}${guardBadge}${impactBadge}${hitBadge}<footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${stackCountFor(c)}]</em></footer>${c.uid?`<small class="unit-count">Unités: ${liveCount(c)}/${deployedUnitsFor(c)}</small>`:''}</button>`;
+  return `<button class="battle-card ${c.rarity} ${zone}${selected}${guardClass}${flashClass}${state.lastHit===c.uid?' hit':''}${zephyrHit?' zephyr-hit':''}" style="--faction:${color}" ${action}><span class="cost">${c.cost}</span><div class="art">${img}</div><strong>${c.name}</strong><small>${c.capital} · ${c.rarity}</small><p>${c.spell}</p><small class="special">${specialFor(c).label}: ${specialFor(c).text}</small>${intentBadge}${threatBadge}${previewBadge}${guardBadge}${impactBadge}${hitBadge}<footer><b>${c.attack}</b><span>${displayHp(c)}</span><em>[${stackCountFor(c)}]</em></footer>${c.uid?`<small class="unit-count">Unités: ${liveCount(c)}/${deployedUnitsFor(c)}</small>`:''}</button>`;
 }
 function filteredCreatures(){
   const q=state.search.trim().toLowerCase();
@@ -303,7 +319,7 @@ function mapPlace(l){ const locked=(l.type==='boss'&&!state.quests.chapterTwoCla
 function renderWorld(){ return `${renderShowcase()}${renderBooster()}${questBoard()}${chapterTwoBoard()}${bossTrophyPanel()}${chapterThreePanel()}${empyreeTrophyPanel()}${bosquetDuelPanel()}<section class="panel map-panel"><h2>Carte du monde</h2><div class="world-map">${LOCATIONS.map(mapPlace).join('')}</div></section>
 <section class="panel actions"><h2>${state.location}</h2><p>Explore, achète des cartes, provoque des duels de stacks et construis un grimoire de créatures-sort. Le marché actuel vise: <b>${state.activeCapital}</b>.</p><button onclick="buyBooster()">Acheter booster — 60 or</button><button onclick="tradeCard()">Échanger au marché — 25 or</button><button onclick="newEncounter()">Duel rapide</button><div class="market-stalls"><h3>Marché de ${state.activeCapital}</h3><p>Offres visibles de la ville actuelle: choisis une créature précise au lieu d’un échange aléatoire.</p><div>${marketOffers().map(c=>`<button onclick="buyMarketCard(${c.id})"><b>${c.name}</b><small>${c.capital} · ${c.rarity} · ${marketPrice(c)} or</small><span>ATQ ${c.attack} · HP ${displayHp(c)} · [${stackCountFor(c)}]</span></button>`).join('')}</div></div>${bosquetPactPanel()}<h3>Grimoire de combat (${state.deckIds.length}/${deckLimit()})</h3><p class="deck-hint">Clique une carte de collection pour l’ajouter ou la retirer du deck du prochain duel; les places libres sont complétées automatiquement.</p><div class="deck-list">${state.deckIds.slice(0,18).map(id=>{const c=CREATURES.find(x=>x.id===id);return c?`<button onclick="toggleDeckCard(${id})">${c.name}<small>${c.cost} mana · ${c.rarity}</small></button>`:''}).join('')||'<em>Aucune carte verrouillée: deck auto.</em>'}</div><h3>Collection récente</h3><div class="collection-strip">${state.collection.slice(-12).map(c=>`<div class="collection-pick ${state.deckIds.includes(c.id)?'picked':''}" onclick="toggleDeckCard(${c.id})">${compactCard(clone(c),'preview')}</div>`).join('')}</div></section>`; }
 function structureMax(side, key){ if(side==='enemy' && state.battleKind==='boss') return {tower:30,village:24,wall:28}[key] || 20; if(side==='enemy' && state.battleKind==='empyree') return {tower:26,village:22,wall:24}[key] || 20; if(side==='enemy' && state.battleKind==='bosquet') return {tower:24,village:22,wall:26}[key] || 20; return 20; }
-function hpBar(label, val, side, key){ const max=structureMax(side,key); const pct=Math.max(0,Math.min(100,(val/max)*100)); const hitKey=side+'-'+key; const hit=state.lastHit===hitKey; const preview=side==='enemy'&&state.selectedAttackerUid?`<small class="preview-badge">${structurePreview(key)}</small>`:''; return `<div class="structure ${side} ${hit?'hit':''}"><b>${label}</b><span>${val}/${max} HP</span>${preview}${hit?`<small class="hit-badge">${state.lastHitText}</small>`:''}<i style="width:${pct}%"></i></div>`; }
+function hpBar(label, val, side, key){ const max=structureMax(side,key); const pct=Math.max(0,Math.min(100,(val/max)*100)); const hitKey=side+'-'+key; const hit=state.lastHit===hitKey; const preview=side==='enemy'&&state.selectedAttackerUid?`<small class="preview-badge">${structurePreview(key)}</small>`:''; const threat=side==='ally'?threatBadgeFor('structure', key):''; return `<div class="structure ${side} ${hit?'hit':''}"><b>${label}</b><span>${val}/${max} HP</span>${preview}${threat}${hit?`<small class="hit-badge">${state.lastHitText}</small>`:''}<i style="width:${pct}%"></i></div>`; }
 function renderSlot(slot, side){ const list=side==='enemy'?state.enemyBoard:state.board; const cells=Array.from({length:5},(_,i)=>list.filter(c=>c.slot===slot && (c.pos??0)===i).map(c=>compactCard(c,side==='enemy'?'enemy':'ally')).join('')||'<em>vide</em>').map((html,i)=>{ const firePreview=side==='enemy' && state.fireballPreviewPos!==null && Math.abs(i-state.fireballPreviewPos)<=1; return `<div class="cell ${side==='ally'&&state.pendingSlot===slot&&state.pendingPos===i?'chosen':''}${firePreview?' fireball-preview':''}" ${side==='ally'?`onclick="setPlacement('${slot}',${i})"`:''}><b>${i+1}</b>${firePreview?'<small class="fireball-zone">Boule de feu</small>':''}${html}</div>`; }).join(''); return `<div class="lane ${slot} ${side}"><h4>${slotLabel(slot)} · 5 emplacements verticaux</h4><div class="lane-cards cells">${cells}</div></div>`; }
 function fireballPicker(){ const c=selectedFireballSource(); if(!c) return ''; if(!fireballWindowOpen()) return `<div class="fireball-picker recharging"><b>Boule de feu en recharge</b><small>${c.name}: disponible au jour ${nextFireballDay()} (fenêtre tous les 3 jours).</small></div>`; return `<div class="fireball-picker"><b>Boule de feu ciblable — jour ${state.day}</b><small>${c.name}: survole une colonne pour voir la zone touchée, puis clique pour infliger 3 dégâts.</small>${Array.from({length:5},(_,i)=>`<button onmouseenter="setFireballPreview(${i})" onfocus="setFireballPreview(${i})" onmouseleave="setFireballPreview(null)" onclick="castFireballColumn(${i})">Col. ${i+1}<small>${fireballPreview(i)}</small></button>`).join('')}</div>`; }
 function bossCounterplay(){ if(state.battleKind==='empyree'){ const disabled=state.mana<2||state.empyreeAnchor; const status=state.empyreeAnchor?'Ancrage prêt':state.mana<2?'Invocation insuffisante':`Vent ${empyreeZephyrCountdown()}`; return `<div class="boss-counter empyree-counter"><b>Contre-jeu: Vent du Zénith</b><small>Dépense 2 points d’invocation pour ancrer tes lignes et annuler le prochain vent qui épuise un stack.</small><small class="zephyr-next">${empyreeZephyrForecast()}</small><button ${disabled?'disabled':''} onclick="anchorEmpyree()">Ancrer les lignes</button><span>${status}</span></div>`; } if(state.battleKind!=='boss') return ''; const disabled=state.mana<2||state.structures.wall<=0||state.structures.wall>=20; const status=state.structures.wall>=20?'Mur intact':state.structures.wall<=0?'Mur détruit':state.mana<2?'Invocation insuffisante':`Réparer à ${Math.min(20,state.structures.wall+3)}/20`; return `<div class="boss-counter"><b>Réponse au Rituel du miroir</b><small>Dépense 2 points d’invocation pour rendre +3 HP au mur avant la prochaine fissure.</small><button ${disabled?'disabled':''} onclick="reinforceWall()">Renforcer le mur</button><span>${status}</span></div>`; }
