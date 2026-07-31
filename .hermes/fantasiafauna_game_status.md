@@ -1582,3 +1582,29 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `defenseStatusPanel`, `Défenses actives`, `Voile anti-étincelle armé` (`raw_game_markers: 3`).
 - Vérification GitHub raw `style.css`: OK, contient `defense-status`, `veil-ready`, `ward-ready` (`raw_css_markers: 3`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=6f15a20` / `style.css?v=6f15a20`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers: 0`, `public_css_markers: 0`, `Last-Modified: Fri, 31 Jul 2026 07:28:16 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération lagune-route-chapter — 2026-07-31 09:58
+### Réalisé
+- Ajout d’un premier embranchement visible de Chapitre IV après le Bosquet: panneau `Route des marées`.
+- Ajout de deux nouveaux lieux sur la grande carte, verrouillés jusqu’à la victoire de la Clairière des Ronces: `Lagune des Échos` (ville/marché Lagune) et `Cénote Englouti` (duel de route Cénote basé sur le siège existant).
+- Ajout d’un style bleu/aquatique pour les lieux/panneau Lagune afin que la nouvelle route se distingue visuellement.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Premier smoke test `.hermes/smoke_lagune_route.js`: ÉCHEC de harnais uniquement, car le panneau Chapitre IV n’est rendu qu’après le Pacte du Bosquet; test corrigé sans changement produit.
+- `node .hermes/smoke_lagune_route.js`: OK (`lagune_route_smoke=OK {"locked":true,"open":true,"location":"Lagune des Échos","market":"Lagune","noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8174`: OK.
+- `curl -I http://localhost:8174/`: HTTP 200.
+- `curl -s http://localhost:8174/game.js | grep -E 'chapterFourPanel|Lagune des Échos|Cénote Englouti|requiresBosquetWin'`: OK.
+- `curl -s http://localhost:8174/style.css | grep -E 'lagune-panel|place\.lagune'`: OK.
+
+### Limites
+- Le duel `Cénote Englouti` réutilise pour l’instant le duel de siège générique; il n’a pas encore de mécaniques aquatiques dédiées ni de pool ennemi typé Cénote.
+- Test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Donner à `Cénote Englouti` une identité de combat dédiée: pool Cénote/Lagune et un effet de terrain aquatique lisible, sans toucher aux règles ATQ/HP/[ ].
