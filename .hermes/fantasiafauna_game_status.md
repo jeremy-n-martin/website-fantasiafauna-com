@@ -1410,3 +1410,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Raffiner les prévisions pour estimer la cible probable d’Étincelle/Boule de feu ennemie, ou ouvrir un prochain embranchement de campagne après la branche Bosquet.
+
+### Publication de l’itération turn-forecast
+- Commit local applicatif: `08024e0` (`Show enemy turn forecast`).
+- `git push origin main`: OK (`b6ccb0b..08024e0 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `enemyPreparationForecast`, `Avant attaques ennemies`, `Aucun effet spécial ennemi prévu`.
+- Vérification GitHub raw `style.css`: OK, contient `turn-forecast`.
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=08024e0` / `style.css?v=08024e0`: HTTP 200 mais marqueurs absents pendant ce run (`public markers: 0`, `Last-Modified: Fri, 31 Jul 2026 05:57:32 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
