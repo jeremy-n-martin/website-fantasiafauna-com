@@ -1483,3 +1483,30 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `style.css`: OK, contient `fire-threat-cell`, `fireThreatPulse` (`raw_css markers: 2/2`).
 - Vérification GitHub raw journal: OK, contient `fire-threat-halo` et `fire_threat_halo_smoke` (`raw_status markers: 2/2`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=cd89d40` / `style.css?v=cd89d40`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/2`, `public_css markers: 0/1`, `Last-Modified: Fri, 31 Jul 2026 06:28:27 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération fire-ward-counterplay — 2026-07-31 09:03
+### Réalisé
+- Ajout d’un contre-jeu visible au halo de Boule de feu ennemie: panneau central `Contre-jeu: Pare-feu` quand un caster ennemi Boule de feu est prêt.
+- Le joueur peut dépenser 2 points d’invocation pour protéger une colonne et ses voisines; les cellules/mini-cartes concernées affichent `Pare-feu` en bleu.
+- La prochaine Boule de feu ennemie dans la zone protégée inflige 1 dégât au lieu de 3, puis le Pare-feu se dissipe après la salve ennemie.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts de créature ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Premier lancement du smoke test `.hermes/smoke_fire_ward.js`: ÉCHEC de harnais uniquement (`ReferenceError: app is not defined`), corrigé en ajoutant `app` au contexte VM; pas de changement produit nécessaire.
+- `node .hermes/smoke_fire_ward.js`: OK (`fire_ward_smoke=OK {"mana":4,"ward":2,"hp":11,"panel":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8171`: OK.
+- `curl -I http://localhost:8171/`: HTTP 200.
+- `curl -s http://localhost:8171/game.js | grep -E 'wardFireColumn|Contre-jeu: Pare-feu|fire-ward-cell'`: OK.
+- `curl -s http://localhost:8171/style.css | grep -E 'fire-ward-panel|fire-ward-cell'`: OK.
+- Recherche `POP|DEF` dans `game.js`: 0 résultat.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le Pare-feu contre uniquement les dégâts de Boule de feu ennemie sur les stacks alliés dans les colonnes protégées; il ne bloque pas les attaques normales ni les Étincelles.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un contre-jeu/indice similaire pour Étincelle ennemie ou commencer un embranchement de campagne post-Bosquet.
