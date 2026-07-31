@@ -908,3 +908,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - `git push origin main`: OK (`db2234d..e6fc0bb main -> main`).
 - Vérification GitHub raw `game.js`: OK, contient `bossRiftCountdown`, `Rituel du miroir`, `bossMirrorRift` (`raw markers: 4`).
 - Vérification site public `https://fantasiafauna.com/game.js?v=e6fc0bb`: HTTP 200 mais marqueurs absents pendant ce run (`public markers: 0`, `Last-Modified: Fri, 31 Jul 2026 01:37:45 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération boss-counterplay — 2026-07-31 04:06
+### Réalisé
+- Ajout d’une réponse jouable et visible au `Rituel du miroir` pendant le boss Abîme: panneau `Réponse au Rituel du miroir` au centre du combat boss.
+- Nouvelle action `Renforcer le mur`: dépense 2 points d’invocation pour restaurer +3 HP au mur allié, avec badge de hit `+3` et log de combat.
+- L’action est désactivée/lisible si le mur est intact, détruit, ou si l’invocation disponible est insuffisante.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_boss_counterplay.js`: OK (`boss_counterplay_smoke=OK {"panel":true,"button":true,"noPopDef":true}`), confirmant le panneau boss, le bouton, la réparation visible après le rituel et l’absence POP/DEF dans le rendu; script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8153`: OK.
+- `curl -I http://localhost:8153/`: HTTP 200.
+- `curl -s http://localhost:8153/game.js | grep -E 'reinforceWall|bossCounterplay|Réponse au Rituel'`: OK.
+- `curl -s http://localhost:8153/style.css | grep -E 'boss-counter'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le contre-jeu boss est une réparation tactique simple; il ne retarde pas encore le compte à rebours ni ne crée un choix de contre-sort avancé.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un trophée visuel persistant après victoire boss dans la carte du monde / panneau Chapitre II, ou enrichir la récompense boss.
