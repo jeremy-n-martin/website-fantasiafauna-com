@@ -1545,3 +1545,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ouvrir un prochain embranchement de campagne après la branche Bosquet, ou ajouter un badge d’état persistant sur la défense quand le Voile anti-étincelle est armé.
+
+### Publication de l’itération spark-veil-counterplay
+- Commit local applicatif: `2b4b8e4` (`Add spark veil counterplay`).
+- `git push origin main`: OK (`98f856d..2b4b8e4 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `sparkVeilPanel`, `veilEnemySpark`, `Voile anti` (`raw_game markers: 4`).
+- Vérification GitHub raw `style.css`: OK, contient `spark-veil-panel` (`raw_css markers: 1`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=2b4b8e4`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `Last-Modified: Fri, 31 Jul 2026 07:06:13 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
