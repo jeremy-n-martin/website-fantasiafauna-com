@@ -1320,3 +1320,36 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `pruneBosquetThorns`, `Ronces coupées`, `Couper les ronces` (`raw_game markers: 3/3`).
 - Vérification GitHub raw `style.css`: OK, contient `bosquet-terrain button`, `bosquet-terrain em` (`raw_css markers: 2/2`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=4fab33f` / `style.css?v=4fab33f`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/3`, `public_css markers: 0/2`, `Last-Modified: Fri, 31 Jul 2026 05:11:59 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+
+## Itération threat-badges — 2026-07-31 07:40
+### Réalisé
+- Ajout d’une lecture visuelle des menaces ennemies sur les cibles alliées: les structures ou stacks qui seront frappés au prochain tour affichent maintenant un badge `Menacé: N par ...`.
+- Refactor minimal de l’intention ennemie via `enemyTargetInfo(e)`: le badge ennemi `Vise: ...` et les nouveaux badges alliés utilisent la même priorité réelle front → mur → mur occupé → arrière → tour, avec conservation du cas `Vol`.
+- Les badges apparaissent sur les mini-cartes alliées et sur Tour/Village/Mur alliés sans modifier la résolution des dégâts.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4, Rempart/Étincelle/Boule de feu/Ronces existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_threat_badges.js`: OK (`threat_badges_smoke=OK {"front":true,"wall":true,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8166`: OK.
+- `curl -I http://localhost:8166/`: HTTP 200.
+- `curl -s http://localhost:8166/game.js | grep -E 'enemyTargetInfo|threatBadgeFor|Menacé:'`: OK.
+- `curl -s http://localhost:8166/style.css | grep -E 'threat-badge'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Les menaces indiquent l’état cible courant avant résolution; si plusieurs effets de début de tour tuent/déplacent une cible avant l’attaque ennemie, le badge peut devenir une prévision approximative jusqu’au prochain rendu.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un bonus Bosquet positif après victoire de la Clairière, ou une prévisualisation plus fine des menaces tenant compte des effets de début de tour.
+
+### Publication de l’itération threat-badges
+- Commit local applicatif: `ca5b1fd` (`Show incoming threat badges`).
+- `git push origin main`: OK (`337c26c..ca5b1fd main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `enemyTargetInfo`, `threatBadgeFor`, `Menacé:`.
+- Vérification GitHub raw `style.css`: OK, contient `threat-badge`.
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=ca5b1fd` / `style.css?v=ca5b1fd`: HTTP 200 mais marqueurs absents pendant ce run (`public markers: 0`, `Last-Modified: Fri, 31 Jul 2026 05:27:20 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
