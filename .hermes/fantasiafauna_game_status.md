@@ -713,3 +713,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un choix de récompense ou un chapitre suivant après l’arc d’initiation, ou enrichir les marchés avec vente/stock persistant.
+
+### Publication de l’itération quest-reward
+- Commit local applicatif: `3390423` (`Add quest completion reward`).
+- `git push origin main`: OK (`721bf64..3390423 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `claimQuestReward`, `Prime disponible`, `questComplete`.
+- Vérification GitHub raw `style.css`: OK, contient `quest-reward`.
+- Vérification site public `https://fantasiafauna.com/game.js?v=3390423-retry` et `style.css?v=3390423-retry`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_marker=0`, `public_css_marker=0`); `Last-Modified` encore `Fri, 31 Jul 2026 00:04:10 GMT`, donc GitHub Pages/CDN reste stale.
