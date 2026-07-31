@@ -871,3 +871,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une récompense/trophée visuel persistant après victoire boss, ou donner au boss une intention/capacité spéciale Abîme lisible.
+
+### Publication de l’itération boss-abime-pool
+- Commit local applicatif: `72d3a8e` (`Theme Abime boss summons`).
+- `git push origin main`: OK (`9fcaf9b..72d3a8e main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `bossCreaturePool`, `boss-aura`, `L’Abîme invoque` (`raw game markers: 4`).
+- Vérification GitHub raw `style.css`: OK, contient `boss-aura` (`raw css markers: 1`).
+- Vérification site public `https://fantasiafauna.com/game.js?v=72d3a8e` et `style.css?v=72d3a8e`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `public_css_markers=0`, `Last-Modified: Fri, 31 Jul 2026 01:22:40 GMT`), donc GitHub Pages/CDN reste en retard.
