@@ -1510,3 +1510,11 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un contre-jeu/indice similaire pour Étincelle ennemie ou commencer un embranchement de campagne post-Bosquet.
+
+### Publication de l’itération fire-ward-counterplay
+- Commit local applicatif: `7d76628` (`Add fire ward counterplay`).
+- `git push origin main`: OK (`edd2898..7d76628 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `wardFireColumn`, `Contre-jeu: Pare-feu`, `fire-ward-cell` (`raw_game markers: 4`).
+- Vérification GitHub raw `style.css`: OK, contient `fire-ward-panel`/`fire-ward-cell` (`raw_css markers: 1`).
+- Vérification GitHub raw journal: OK, contient `fire-ward-counterplay` et `fire_ward_smoke` (`raw_status markers: 2`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=7d76628` / `style.css?v=7d76628`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 06:48:49 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
