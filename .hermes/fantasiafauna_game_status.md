@@ -1518,3 +1518,30 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `style.css`: OK, contient `fire-ward-panel`/`fire-ward-cell` (`raw_css markers: 1`).
 - Vérification GitHub raw journal: OK, contient `fire-ward-counterplay` et `fire_ward_smoke` (`raw_status markers: 2`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=7d76628` / `style.css?v=7d76628`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 06:48:49 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération spark-veil-counterplay — 2026-07-31 09:26
+### Réalisé
+- Ajout d’un contre-jeu visible aux Étincelles ennemies: panneau central `Contre-jeu: Voile anti-étincelle` quand une unité ennemie avec Étincelle est présente.
+- Le joueur peut dépenser 1 point d’invocation pour préparer un voile; la prochaine Étincelle ennemie est annulée avant les attaques, puis le voile est consommé.
+- Style dédié `spark-veil-panel` avec état actif pour rendre le contre-jeu lisible à côté des autres réponses tactiques.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts de créature ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- Baseline `node --check game.js`: OK.
+- `node --check game.js`: OK après édition.
+- `node .hermes/smoke_spark_veil.js`: OK (`spark_veil_smoke=OK {"mana":5,"hp":21,"panel":true,"consumed":true,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissement CRLF/LF existant de Git.
+- Serveur local `python -m http.server 8172`: OK.
+- `curl -I http://localhost:8172/`: HTTP 200.
+- `curl -s http://localhost:8172/game.js | grep -E 'sparkVeilPanel|veilEnemySpark|Voile anti'`: OK.
+- `curl -s http://localhost:8172/style.css | grep -E 'spark-veil-panel'`: OK.
+- Recherche `POP|DEF` dans `game.js`: 0 résultat (`no_POP_DEF=OK`).
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le voile annule uniquement la prochaine Étincelle ennemie visible; il ne bloque ni les Boules de feu, ni les attaques normales, ni les effets de terrain.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ouvrir un prochain embranchement de campagne après la branche Bosquet, ou ajouter un badge d’état persistant sur la défense quand le Voile anti-étincelle est armé.
