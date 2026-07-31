@@ -1288,3 +1288,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `bosquetThorns`, `terrainPanel`, `Ronces vivantes` (`raw_game markers: 4`).
 - Vérification GitHub raw `style.css`: OK, contient `bosquet-terrain` (`raw_css markers: 1`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=1e1fd4f` / `style.css?v=1e1fd4f`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 04:57:08 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération bosquet-prune — 2026-07-31 07:25
+### Réalisé
+- Ajout d’un contre-jeu visible pour la `Clairière des Ronces`: bouton `Couper les ronces` dans le panneau de terrain Bosquet.
+- Le joueur peut dépenser 2 points d’invocation pour armer `bosquetPruned`; la prochaine morsure impaire des ronces est annulée puis le drapeau est consommé.
+- Le panneau annonce clairement l’état `Ronces coupées` / `Contre-jeu prêt`, ou `Invocation insuffisante` si le joueur ne peut pas payer.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et terrain Bosquet existant.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_bosquet_prune.js`: OK (`bosquet_prune_smoke=OK {"mana":4,"hp":16,"count":2,"forecast":"Ronces coupées: la prochaine morsure de la forêt sera annulée."}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8165`: OK.
+- `curl -I http://localhost:8165/`: HTTP 200.
+- `curl -s http://localhost:8165/game.js | grep -E 'pruneBosquetThorns|Ronces coupées|Couper les ronces'`: OK.
+- `curl -s http://localhost:8165/style.css | grep -E 'bosquet-terrain button|bosquet-terrain em'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le contre-jeu annule une seule morsure des ronces; il ne crée pas encore d’immunité conditionnelle liée aux créatures Maçon/Sentinelle.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une lecture visuelle des menaces ennemies sur les cibles alliées/structures (badge “menacé par …”) ou un bonus Bosquet positif après victoire de la Clairière.
