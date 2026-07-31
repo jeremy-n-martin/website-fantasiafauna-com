@@ -1677,3 +1677,11 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ouvrir une première suite post-Cénote sur la carte du monde, ou ajouter une récompense de choix aquatique après victoire, sans toucher aux règles ATQ/HP/[ ].
+
+### Publication de l’itération cenote-trophy-panel
+- Commit local applicatif: `fed2787` (`Show Cenote victory trophy`).
+- `git push origin main`: OK (`041cdc0..fed2787 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `cenoteTrophyPanel` / `Perle du Cénote Englouti` (`raw_game markers: 2`).
+- Vérification GitHub raw `style.css`: OK, contient `cenote-trophy` (`raw_css markers: 1`).
+- Vérification GitHub raw journal: OK, contient `cenote-trophy-panel` et `cenote_trophy_smoke` (`raw_status markers: 6`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=fed2787` / `style.css?v=fed2787`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 08:21:56 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
