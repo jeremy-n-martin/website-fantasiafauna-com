@@ -939,3 +939,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `reinforceWall`, `bossCounterplay`, `Réponse au Rituel` (`raw game markers: 4`).
 - Vérification GitHub raw `style.css`: OK, contient `boss-counter` (`raw css markers: 1`).
 - Vérification site public `https://fantasiafauna.com/game.js?v=a021bed` et `style.css?v=a021bed`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `public_css_markers=0`, `Last-Modified: Fri, 31 Jul 2026 01:52:31 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération boss-trophy-panel — 2026-07-31 04:21
+### Réalisé
+- Ajout d’un trophée visuel persistant après victoire du boss `Abîme des Miroirs` sur l’écran monde: panneau `Relique de l’Abîme des Miroirs` affiché quand `bossWon=true`.
+- Le marqueur du boss sur la grande carte indique maintenant `✓ Boss vaincu · Trophée obtenu` après victoire.
+- Le trophée rappelle explicitement l’état de chapitre, le gain de +140 or et la carte trophée gagnée.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_boss_trophy.js`: OK (`boss_trophy_smoke=OK {"trophyPanel":true,"bossBadge":true,"rewardCopy":true,"noPop":true,"noDef":true,"stackRule":true}`), confirmant le panneau trophée, le badge carte du monde, la copie de récompense et l’absence de POP/DEF; script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8154`: OK.
+- `curl -I http://localhost:8154/`: HTTP 200.
+- `curl -s http://localhost:8154/game.js | grep -E 'bossTrophyPanel|Trophée obtenu|Relique de l.Abîme'`: OK.
+- `curl -s http://localhost:8154/style.css | grep -E 'trophy-panel'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le trophée est pour l’instant un panneau de progression/récompense; il ne débloque pas encore une nouvelle mécanique de fin de chapitre.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une suite de chapitre après le trophée: nouveau lieu/objectif débloqué ou choix de récompense boss persistant.
