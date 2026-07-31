@@ -1642,3 +1642,11 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un trophée/panneau de victoire Cénote ou ouvrir une première suite de route après le Cénote, sans toucher aux règles ATQ/HP/[ ].
+
+### Publication de l’itération cenote-duel-identity
+- Commit local applicatif: `c8285e1` (`Give Cenote duel aquatic identity`).
+- `git push origin main`: OK (`80fa7c7..c8285e1 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `cenoteCreaturePool`, `Courant englouti`, `braceCenoteCurrent` (`raw_game markers: 12`).
+- Vérification GitHub raw `style.css`: OK, contient `cenote-terrain` / `cenote-aura` (`raw_css markers: 1`).
+- Vérification GitHub raw journal: OK, contient `cenote-duel-identity` et `cenote_duel_smoke` (`raw_status markers: 2`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=c8285e1` / `style.css?v=c8285e1`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 08:01:01 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
