@@ -1474,3 +1474,12 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ouvrir un prochain embranchement de campagne après la branche Bosquet, ou ajouter un contre-jeu léger au halo de feu ennemi.
+
+
+### Publication de l’itération fire-threat-halo
+- Commit local applicatif: `cd89d40` (`Highlight enemy fireball threats`).
+- `git push origin main`: OK (`5931fe9..cd89d40 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `enemyFireballThreatPositions`, `fire-threat-cell`, `Cercle de feu` (`raw_game markers: 3/3`).
+- Vérification GitHub raw `style.css`: OK, contient `fire-threat-cell`, `fireThreatPulse` (`raw_css markers: 2/2`).
+- Vérification GitHub raw journal: OK, contient `fire-threat-halo` et `fire_threat_halo_smoke` (`raw_status markers: 2/2`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=cd89d40` / `style.css?v=cd89d40`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/2`, `public_css markers: 0/1`, `Last-Modified: Fri, 31 Jul 2026 06:28:27 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
