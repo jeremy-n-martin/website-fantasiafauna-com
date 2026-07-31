@@ -839,3 +839,11 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Donner au boss un pool d’invocations/intentions plus typé Abîme ou ajouter une récompense visuelle de trophée persistante dans le monde.
+
+### Publication de l’itération boss-gate
+- Commit local applicatif: `4421d90` (`Gate Abime boss encounter`).
+- `git push origin main`: OK (`773045c..4421d90 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `mapPlace` / `bossWon` / `Tour 30` (`raw game markers: 9`).
+- Vérification GitHub raw `style.css`: OK, contient `place.boss` / `boss.cleared` (`raw css markers: 2`).
+- Vérification site public `https://fantasiafauna.com/game.js?v=4421d90`: HTTP 200 mais marqueurs absents pendant ce run (`public game markers: 0`, `Last-Modified: Fri, 31 Jul 2026 01:02:36 GMT`), donc GitHub Pages/CDN reste en retard.
+- Vérification site public `https://fantasiafauna.com/style.css?v=4421d90`: un marqueur CSS boss déjà visible (`public css markers: 1`).
