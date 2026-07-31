@@ -1353,3 +1353,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `enemyTargetInfo`, `threatBadgeFor`, `Menacé:`.
 - Vérification GitHub raw `style.css`: OK, contient `threat-badge`.
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=ca5b1fd` / `style.css?v=ca5b1fd`: HTTP 200 mais marqueurs absents pendant ce run (`public markers: 0`, `Last-Modified: Fri, 31 Jul 2026 05:27:20 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération bosquet-blessing — 2026-07-31 07:55
+### Réalisé
+- Ajout d’une récompense positive visible après victoire de la `Clairière des Ronces`: panneau `Bénédiction du Bosquet apaisé` dans les actions du monde.
+- Le joueur peut choisir une des 3 créatures Bosquet proposées; la récompense ajoute la carte au grimoire/collection, donne +40 or et se verrouille via `bosquetBlessingClaimed`.
+- Ajout de styles dédiés `.bosquet-blessing` pour distinguer cette prime dorée du Pacte et du terrain Ronces.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et effets Bosquet existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_bosquet_blessing.js`: OK (`bosquet_blessing_smoke=OK {"choice":"Fée","gold":50,"collection":1,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8167`: OK.
+- `curl -I http://localhost:8167/`: HTTP 200.
+- `curl -s http://localhost:8167/game.js | grep -E 'bosquetBlessingPanel|claimBosquetBlessing|Bénédiction du Bosquet'`: OK.
+- `curl -s http://localhost:8167/style.css | grep -E 'bosquet-blessing'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La bénédiction est une récompense de campagne ponctuelle; elle n’ajoute pas encore un nouveau pouvoir persistant en combat.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une prévisualisation plus fine des menaces tenant compte des effets de début de tour, ou créer un prochain embranchement de campagne après la branche Bosquet.
