@@ -20,3 +20,5 @@ phase attaque : on choisi juste les créatures qui attaque en cliquand dessus. p
 
 c'est bon tu peux coder. Dans le site tu peux faire un onglet pour voir toutes les créatures, classés par faction (avec filtre). Dans le second onglet tu peux faire des combat random. Pour les combat random, je jouerai le joueur 1, et l'ordinateur fera le joueur 2. Tu peux générer des deck de 40 cartes en choisissant d'abord 2 à 4 couleurs, puis en choississant 40 créatures parmis ces couleurs
 
+rajoute sur les cartes un bouton qui bascule sur l'image d'après de la créature de la carte, si elle existe, puis recycle à 1.
+par exemple si il y a ogre 1 et ogre 2, on switch entre les deux, sinon on les arcours dans l'ordre et on revient au premier

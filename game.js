@@ -11,7 +11,7 @@ const QUOTES = [
   '« Qui prononce son nom achète une victoire et une dette. »'
 ];
 const state = {
-  gold: 80, mana: 6, maxMana: 6, day: 1, search: '', activeCapital: 'Toutes',
+  gold: 80, mana: 6, maxMana: 6, day: 1, search: '', activeCapital: 'Toutes', artIndex: {},
   collection: [], deckIds: [], deck: [], hand: [], board: [], enemyBoard: [], graveyard: [], enemyHp: 120, playerHp: 120, selectedAttackerUid: null, pendingSlot: 'front', pendingPos: 0, fireballPreviewPos: null, fireWardPos: null, sparkVeil: false, empyreeAnchor: false, bosquetPruned: false, cenoteBraced: false, lastHit: '', lastHitText: '', lastGuardUid: '', lastGuardTargetUid: '', battleKind: 'duel',
   structures: {tower:20, village:20, wall:20}, enemyStructures: {tower:20, village:20, wall:20},
   log: [], location: 'Camp du Mage', mode: 'world', boosterOpened: false, lastBooster: [], showTutor: true,
@@ -42,7 +42,7 @@ function firstFreePos(slot, side='ally'){ const used=new Set(slotCards(slot,side
 function isPosFree(slot, pos, side='ally'){ return pos>=0 && pos<5 && !slotCards(slot,side).some(c=>(c.pos??0)===pos); }
 function chosenPosFor(slot){ return isPosFree(slot,state.pendingPos) ? state.pendingPos : firstFreePos(slot); }
 function adjacentAllies(c){ return state.board.filter(x=>x.slot===c.slot && Math.abs((x.pos??0)-(c.pos??0))===1); }
-function protectedByRempart(target){ return state.board.find(x=>x.uid!==target.uid && x.slot===target.slot && Math.abs((x.pos??0)-(target.pos??0))===1 && specialFor(x).key==='rempart'); }
+function protectedByRempart(target){ const list=state.enemyBoard.some(c=>c.uid===target.uid)?state.enemyBoard:state.board; return list.find(x=>x.uid!==target.uid && x.slot===target.slot && Math.abs((x.pos??0)-(target.pos??0))===1 && specialFor(x).key==='rempart'); }
 function protectsByRempart(c){ return specialFor(c).key==='rempart' && adjacentAllies(c).length>0; }
 function damageStack(target, amount, source=''){ const shield=protectedByRempart(target); if(shield){ const reduced=Math.max(1, amount-1); state.lastGuardUid=shield.uid; state.lastGuardTargetUid=target.uid; markHit(target.uid, `-${reduced}`); addLog(`${shield.name} protège ${target.name}: Rempart absorbe ${amount-reduced} dégât, dégâts réduits à ${reduced}.`); amount=reduced; } return applyDamage(target, amount); }
 function randomEnemyUnit(){ return rnd(state.enemyBoard); }
@@ -150,7 +150,7 @@ function newEncounter(kind='duel'){
   addLog(kind==='boss'?'Boss: l’Abîme des Miroirs déploie des fortifications renforcées (Tour 30, Village 24, Mur 28).':kind==='empyree'?'Chapitre III: le Rempart du Zénith ouvre un duel céleste Empyrée (Tour 26, Village 22, Mur 24).':kind==='bosquet'?'Post-Empyrée: la Clairière des Ronces ouvre un duel Bosquet (Tour 24, Village 22, Mur 26).':kind==='cenote'?'Chapitre IV: le Cénote Englouti ouvre un duel aquatique Cénote/Lagune (Tour 22, Village 22, Mur 24).':'Un assaut commence: protège ta tour derrière le village et le mur.');
   addLog(kind==='boss'?'Village actif: +6 points d’invocation par tour. Tes structures restent à 20 HP; le boss a Tour 30, Village 24, Mur 28.':kind==='empyree'?'Village actif: +6 points d’invocation par tour. Les sentinelles d’Empyrée défendent une tour céleste à 26 HP.':kind==='bosquet'?'Village actif: +6 points d’invocation par tour. Les gardiens Bosquet défendent une tour vivante à 24 HP.':kind==='cenote'?'Village actif: +6 points d’invocation par tour. Le courant du Cénote menace les stacks exposés un tour sur deux.':'Village actif: +6 points d’invocation par tour. Tour, village et mur ont chacun 20 HP.'); saveGame(); render();
 }
-function endTurn(){ state.selectedAttackerUid=null; applyStartOfTurnEffects('ally'); state.board.forEach(c=>c.exhausted=false); enemyTurn(); if(state.mode==='defeat') { saveGame(); render(); return; } state.day++; state.maxMana=6; state.mana=6; draw(1); addLog('Le village produit 6 points d’invocation.'); saveGame(); render(); }
+function endTurn(){ state.selectedAttackerUid=null; state.fireballPreviewPos=null; enemyTurn(); if(state.mode==='defeat' || state.mode!=='battle'){ saveGame(); render(); return; } state.day++; state.maxMana=6; state.mana=6; state.board.forEach(c=>c.exhausted=false); draw(1); applyStartOfTurnEffects('ally'); addLog('Le village produit 6 points d’invocation.'); saveGame(); render(); }
 function slotLabel(slot){ return slot==='wall'?'sur le mur':slot==='back'?'entre village et mur':'devant le mur'; }
 function slotCards(slot, side='ally'){ const list=side==='enemy'?state.enemyBoard:state.board; return list.filter(c=>c.slot===slot).sort((a,b)=>(a.pos??0)-(b.pos??0)); }
 function canPlaceInSlot(c, slot){ if(slot==='back') return c.cost<=3 || c.roles.includes('ranged') || c.roles.includes('caster'); return true; }
@@ -213,7 +213,7 @@ function enemyAttack(e){
   if(target){ const dead=damageStack(target,dmg); markHit(target.uid); addLog(`${e.name} [${e.count}] perce jusqu’au village et frappe ${target.name} (${dmg}).`); if(dead){ state.graveyard.push(target); state.board=state.board.filter(c=>c.uid!==target.uid); } return; }
   damageStructure('tower',dmg); addLog(`${e.name} [${e.count}] frappe la tour (${dmg}).`);
 }
-function playCard(uid, slot=state.pendingSlot){ const c=state.hand.find(x=>x.uid===uid); const pos=chosenPosFor(slot); if(!c || c.cost>state.mana || state.board.length>=15) return; if(pos<0){ addLog('Cette zone est pleine: les 5 colonnes sont occupées.'); render(); return; } if(!canPlaceInSlot(c,slot)){ addLog(slot==='wall'?'Le mur n’a que 5 colonnes de défense.':'Cette zone arrière accepte surtout les faibles, ranged ou casters.'); render(); return; } state.hand=state.hand.filter(x=>x.uid!==uid); state.mana-=c.cost; c.exhausted=true; c.slot=slot; c.pos=pos; state.pendingPos=pos; state.board.push(c); state.selectedAttackerUid=null; const sp=specialFor(c); addLog(`${c.name} rejoint ${slotLabel(slot)}, colonne ${pos+1}. Effet: ${sp.label}.`); if(c.roles.includes('caster')) damageRandomEnemy(2); if(c.roles.includes('normal')) c.attack+=1; saveGame(); render(); }
+function playCard(uid, slot=state.pendingSlot){ const c=state.hand.find(x=>x.uid===uid); if(!c) return; if(c.cost>state.mana){ addLog(`Pas assez d’invocation: ${c.name} coûte ${c.cost}, tu as ${state.mana}.`); render(); return; } if(state.board.length>=15){ addLog('Ton champ est plein (15 stacks).'); render(); return; } const pos=chosenPosFor(slot); if(pos<0){ addLog('Cette zone est pleine: les 5 colonnes sont occupées.'); render(); return; } if(!canPlaceInSlot(c,slot)){ addLog(slot==='wall'?'Le mur n’a que 5 colonnes de défense.':'Cette zone arrière accepte surtout les faibles, ranged ou casters.'); render(); return; } state.hand=state.hand.filter(x=>x.uid!==uid); state.mana-=c.cost; c.exhausted=true; c.slot=slot; c.pos=pos; state.pendingPos=pos; state.board.push(c); state.selectedAttackerUid=null; const sp=specialFor(c); addLog(`${c.name} rejoint ${slotLabel(slot)}, colonne ${pos+1}. Effet: ${sp.label}.`); if(c.roles.includes('caster')) damageRandomEnemy(2); if(c.roles.includes('normal')) c.attack+=1; saveGame(); render(); }
 function damageRandomEnemy(n){ const target=state.enemyBoard[0]; if(target){ const dead=applyDamage(target,n); markHit(target.uid, `-${n}`); addLog(`Sort: ${target.name} subit ${n}.`); if(dead) state.enemyBoard.shift(); } else { state.enemyStructures.wall=Math.max(0,state.enemyStructures.wall-n); markHit('enemy-wall', `-${n}`); addLog(`Sort direct: mur adverse -${n} HP.`); } }
 function selectAttacker(uid){ const c=state.board.find(x=>x.uid===uid); if(!c) return; if(c.exhausted){ addLog(`${c.name} a déjà agi ce tour.`); state.selectedAttackerUid=null; state.fireballPreviewPos=null; render(); return; } if(c.slot==='back' && !(c.roles.includes('ranged')||c.roles.includes('caster')||c.roles.includes('volant'))){ addLog(`${c.name} est entre village et mur: pas d’attaque de mêlée depuis cette position.`); state.selectedAttackerUid=null; state.fireballPreviewPos=null; render(); return; } state.selectedAttackerUid=state.selectedAttackerUid===uid?null:uid; state.fireballPreviewPos=null; addLog(state.selectedAttackerUid?`${c.name} est prêt: choisis une cible ennemie ou une structure.`:'Attaque annulée.'); render(); }
 function fireballWindowOpen(){ return state.day % 3 === 0; }
@@ -227,10 +227,11 @@ function fireWardActiveForPos(pos){ return state.fireWardPos!==null && Math.abs(
 function wardFireColumn(pos=state.pendingPos){ if(state.mode!=='battle'){ addLog('Le Pare-feu se trace uniquement pendant un assaut.'); render(); return; } if(!readyEnemyFireballCasters().length){ addLog('Aucune Boule de feu ennemie prête à contrer.'); render(); return; } if(state.mana<2){ addLog('Tracer un Pare-feu demande 2 points d’invocation.'); render(); return; } if(state.fireWardPos!==null){ addLog('Un Pare-feu protège déjà une zone pour ce tour ennemi.'); render(); return; } const column=Math.max(0,Math.min(4,Number(pos)||0)); state.mana-=2; state.fireWardPos=column; addLog(`Pare-feu tracé sur les colonnes ${Math.max(1,column)}-${Math.min(5,column+2)}: Boule de feu ennemie réduite à 1 dégât dans cette zone.`); saveGame(); render(); }
 function readyEnemySparkCasters(){ return state.enemyBoard.filter(c=>specialFor(c).key==='spark'); }
 function veilEnemySpark(){ if(state.mode!=='battle'){ addLog('Le Voile anti-étincelle se prépare uniquement pendant un assaut.'); render(); return; } if(!readyEnemySparkCasters().length){ addLog('Aucune Étincelle ennemie visible à contrer.'); render(); return; } if(state.mana<1){ addLog('Le Voile anti-étincelle demande 1 point d’invocation.'); render(); return; } if(state.sparkVeil){ addLog('Le Voile anti-étincelle est déjà prêt.'); render(); return; } state.mana-=1; state.sparkVeil=true; addLog('Voile anti-étincelle préparé: la prochaine Étincelle ennemie sera annulée.'); saveGame(); render(); }
-function canHitTarget(target){ const front=state.enemyBoard.find(x=>x.slot==='front'); const c=state.board.find(x=>x.uid===state.selectedAttackerUid); if(c?.roles.includes('volant')) return true; return !front || front.uid===target.uid || c?.roles.includes('ranged'); }
+function canHitTarget(target){ const c=selectedAttacker(); if(!c||!target) return false; if(c.roles.includes('volant')||c.roles.includes('ranged')) return true; if(target.slot==='front') return true; return slotCards('front','enemy').length===0; }
+function canHitEnemyStructure(){ const c=selectedAttacker(); if(!c) return false; if(c.roles.includes('volant')||c.roles.includes('ranged')) return true; return slotCards('front','enemy').length===0; }
 function selectedAttacker(){ return state.board.find(x=>x.uid===state.selectedAttackerUid); }
 function attackPreview(target){ const c=selectedAttacker(); if(!c) return ''; if(!canHitTarget(target)){ const front=state.enemyBoard.find(x=>x.slot==='front'); return `Bloqué: ${front?.name||'front'} d’abord`; } const reply=(!c.roles.includes('ranged')&&!c.roles.includes('volant'))?` · riposte ${strikePower(target)}`:''; return `Clic: ${strikePower(c)} dégâts${reply}`; }
-function structurePreview(target='wall'){ const c=selectedAttacker(); if(!c) return ''; if(state.enemyStructures[target]<=0) return 'Structure détruite'; return `Clic: ${strikePower(c)} dégâts`; }
+function structurePreview(target='wall'){ const c=selectedAttacker(); if(!c) return ''; if(state.enemyStructures[target]<=0) return 'Structure détruite'; if(!canHitEnemyStructure()) return 'Front ennemi bloque'; return `Clic: ${strikePower(c)} dégâts`; }
 function assaultTutor(){
   if(!state.showTutor) return `<div class="assault-tutor collapsed"><button onclick="toggleAssaultTutor()">Afficher le tutoriel d’assaut</button><small>Masqué dans cette sauvegarde; les règles de siège restent actives.</small></div>`;
   const hasUnit=state.board.length>0;
@@ -241,11 +242,12 @@ function assaultTutor(){
   return `<div class="assault-tutor"><button onclick="toggleAssaultTutor()">Masquer</button><b>Tutoriel d’assaut</b><ol><li class="${hasUnit?'done':''}">Poser un stack: zone/colonne → carte de main.</li><li class="${selected?'done':''}">Préparer une attaque: cliquer une créature prête.</li><li class="${hasEnemy||state.enemyStructures.wall<20?'done':''}">Lire les intentions ennemies puis frapper front, mur ou tour.</li></ol><strong>À faire maintenant: ${next}</strong><small>Rappel: [ ] sert à invoquer max(1, round(30/[ ])) unités; l’ATQ ne se multiplie pas par les unités.</small></div>`;
 }
 function toggleAssaultTutor(){ state.showTutor=!state.showTutor; addLog(state.showTutor?'Tutoriel d’assaut affiché.':'Tutoriel d’assaut masqué pour cette sauvegarde.'); saveGame(); render(); }
-function resolveAttack(c,target){ if(target){ const dealt=strikePower(c); const dead=applyDamage(target,dealt); if(!c.roles.includes('ranged')&&!c.roles.includes('volant')) damageStack(c,strikePower(target)); markHit(target.uid, `-${dealt}`); addLog(`${c.name} [${c.count}] attaque ${target.name} (${dealt}).`); if(dead) state.enemyBoard=state.enemyBoard.filter(x=>x.uid!==target.uid); if(c.hp<=0){ state.graveyard.push(c); state.board=state.board.filter(x=>x.uid!==c.uid); }} else { attackEnemyStructure(c); return; } c.exhausted=true; state.selectedAttackerUid=null; saveGame(); render(); }
-function attackTarget(uid){ const c=state.board.find(x=>x.uid===state.selectedAttackerUid); const target=state.enemyBoard.find(x=>x.uid===uid); if(!c||!target) return; if(!canHitTarget(target)){ const front=state.enemyBoard.find(x=>x.slot==='front'); addLog(`Ligne normale: ${front.name} devant le mur doit être ciblé avant les autres.`); render(); return; } resolveAttack(c,target); }
+function resolveAttack(c,target){ if(target){ const dealt=strikePower(c); const dead=damageStack(target,dealt); if(!c.roles.includes('ranged')&&!c.roles.includes('volant')) damageStack(c,strikePower(target)); markHit(target.uid, `-${dealt}`); addLog(`${c.name} [${c.count}] attaque ${target.name} (${dealt}).`); if(dead){ state.graveyard.push(target); state.enemyBoard=state.enemyBoard.filter(x=>x.uid!==target.uid); } if(c.hp<=0){ state.graveyard.push(c); state.board=state.board.filter(x=>x.uid!==c.uid); }} else { attackEnemyStructure(c); return; } c.exhausted=true; state.selectedAttackerUid=null; saveGame(); render(); }
+function attackTarget(uid){ const c=state.board.find(x=>x.uid===state.selectedAttackerUid); const target=state.enemyBoard.find(x=>x.uid===uid); if(!c||!target) return; if(!canHitTarget(target)){ const fronts=slotCards('front','enemy'); addLog(fronts.length?`Ligne normale: élimine d'abord le front ennemi (${fronts.map(f=>f.name).join(', ')}).`:'Cible hors de portée pour cette unité.'); render(); return; } resolveAttack(c,target); }
 function structureLabel(key){ return key==='tower'?'la tour adverse':key==='village'?'le village adverse':'le mur adverse'; }
 function attackEnemyStructure(c, requested='auto'){
-  const dmg=strikePower(c); const fly=c.roles.includes('volant');
+  const dmg=strikePower(c); const fly=c.roles.includes('volant'); const ranged=c.roles.includes('ranged');
+  if(!fly && !ranged && slotCards('front','enemy').length>0){ addLog('La ligne ennemie devant le mur bloque encore tes frappes de structures. Élimine le front ou utilise vol/distance.'); render(); return; }
   let target=requested;
   if(target==='auto') target = fly && state.enemyStructures.tower>0 ? 'tower' : state.enemyStructures.wall>0 ? 'wall' : 'tower';
   if(!['tower','village','wall'].includes(target)) target='wall';
@@ -269,13 +271,47 @@ function travel(loc){ if(loc.requiresBoss && !state.quests.bossWon){ addLog(`${l
 const LOCATIONS=[
   {name:'Citadelle d’Aurore',type:'town',capital:'Citadelle',x:14,y:20},{name:'Sylve Ancienne',type:'town',capital:'Sylve',x:36,y:18},{name:'Forteresse des Runes',type:'town',capital:'Forteresse',x:72,y:23},{name:'Hameau des Lanternes',type:'town',capital:'Hameau',x:26,y:66},{name:'Nécropole Voilée',type:'duel',capital:'Nécropole',x:61,y:69},{name:'Abîme des Miroirs',type:'boss',capital:'Abîme',x:83,y:62},{name:'Portail d’Empyrée',type:'town',capital:'Empyrée',requiresBoss:true,x:88,y:28},{name:'Rempart du Zénith',type:'empyreeDuel',capital:'Empyrée',requiresEmpyree:true,x:75,y:13},{name:'Bosquet Stellaire',type:'town',capital:'Bosquet',requiresEmpyreeWin:true,x:64,y:8},{name:'Clairière des Ronces',type:'bosquetDuel',capital:'Bosquet',requiresBosquetPact:true,x:55,y:10},{name:'Lagune des Échos',type:'town',capital:'Lagune',requiresBosquetWin:true,x:42,y:12},{name:'Cénote Englouti',type:'cenoteDuel',capital:'Cénote',requiresBosquetWin:true,x:35,y:28},{name:'Caravane du Désert',type:'town',capital:'Désert',x:53,y:43},{name:'Tour des Pactes',type:'duel',capital:'Tour',x:46,y:29}
 ];
+function parseCreatureImage(image=''){
+  const m=String(image).match(/^img\/(.+) (\d+)\.png$/);
+  return m ? {base:m[1], num:+m[2]} : null;
+}
+function imageVariantsFor(c){
+  const parsed=parseCreatureImage(c.image);
+  if(!parsed) return c.image ? [c.image] : [];
+  const nums=(typeof IMG_VARIANTS!=='undefined' && IMG_VARIANTS[parsed.base]) || null;
+  if(nums && nums.length) return nums.map(n=>`img/${parsed.base} ${n}.png`);
+  return [c.image];
+}
+function currentArtIndex(c){
+  const variants=imageVariantsFor(c);
+  if(!variants.length) return 0;
+  return ((state.artIndex[c.id]||0) % variants.length + variants.length) % variants.length;
+}
+function currentImageFor(c){
+  const variants=imageVariantsFor(c);
+  return variants[currentArtIndex(c)] || c.image || '';
+}
+function cycleCardArt(id, ev){
+  if(ev){ ev.preventDefault(); ev.stopPropagation(); }
+  const c=CREATURES.find(x=>x.id===Number(id));
+  if(!c) return;
+  const variants=imageVariantsFor(c);
+  if(variants.length<2) return;
+  state.artIndex[c.id]=(currentArtIndex(c)+1)%variants.length;
+  render();
+}
 function cardView(c, zone='preview'){
-  const color=CAPITAL_COLORS[c.capital]||'#c9aa69'; const img=c.image?`<img src="${encodeURI(c.image)}" alt="${c.name}" decoding="async">`:'';
+  const color=CAPITAL_COLORS[c.capital]||'#c9aa69';
+  const variants=imageVariantsFor(c);
+  const artSrc=currentImageFor(c);
+  const artIdx=currentArtIndex(c);
+  const img=artSrc?`<img src="${encodeURI(artSrc)}" alt="${c.name}" decoding="async">`:'';
+  const cycleBtn=variants.length>1?`<button type="button" class="art-cycle" onclick="cycleCardArt(${c.id}, event)" title="Image suivante (${artIdx+1}/${variants.length})" aria-label="Image suivante de ${c.name}">↻ <small>${artIdx+1}/${variants.length}</small></button>`:'';
   const action = zone==='hand'?`onclick="playCard('${c.uid}')"`:zone==='ally'?`onclick="event.stopPropagation();selectAttacker('${c.uid}')"`:zone==='enemy'?`onclick="event.stopPropagation();attackTarget('${c.uid}')"`:'';
   const selected = c.uid && state.selectedAttackerUid===c.uid ? ' selected' : '';
   return `<article class="ff-card ${c.rarity} ${zone}${selected}" style="--faction:${color}" ${action}>
     <header class="card-title"><span>${c.name}</span><b>${c.cost}</b></header>
-    <div class="card-art">${img}<i>${c.capital}</i></div>
+    <div class="card-art">${img}<i>${c.capital}</i>${cycleBtn}</div>
     <div class="type-line">Créature · ${c.origin} · ${c.natures.join(' / ')}</div>
     <p class="ability"><strong>${c.spell.split(':')[0]}.</strong> ${c.spell.includes(':')?c.spell.split(':').slice(1).join(':').trim():c.spell}</p>
     <p class="lore">${loreFor(c)}</p>
@@ -402,5 +438,5 @@ function renderBattle(){ return `<section class="battle siege-battle"><div class
 
 function renderDefeat(){ return `<section class="panel defeat"><h2>Tour détruite</h2><p>Ta tour est tombée à 0 HP. L’assaut est perdu.</p><button onclick="resetGame()">Nouvelle aventure</button><button onclick="newEncounter()">Rejouer un assaut</button></section>`; }
 function render(){ byId('app').innerHTML=`<header class="topbar"><div><p class="eyebrow">Fantasia Fauna</p><h1>Arcanes du Bestiaire</h1><p class="subtitle">MVP: bestiaire transformé en stacks de créatures, cartes de collection et combats de mages.</p></div><div class="stats"><span>Jour ${state.day}</span><span>${state.gold} or</span><span>${state.collection.length} cartes</span><span>${state.playerHp} PV mage</span><span>${CREATURES.length} créatures</span></div></header><main>${state.mode==='defeat'?renderDefeat():state.mode==='battle'?renderBattle():renderWorld()}</main><aside class="log"><h2>Journal</h2>${state.log.map(x=>`<p>${x}</p>`).join('')}</aside>`; }
-window.playCard=playCard; window.reinforceWall=reinforceWall; window.anchorEmpyree=anchorEmpyree; window.pruneBosquetThorns=pruneBosquetThorns; window.braceCenoteCurrent=braceCenoteCurrent; window.wardFireColumn=wardFireColumn; window.veilEnemySpark=veilEnemySpark; window.setPlacement=setPlacement; window.setPendingSlot=setPendingSlot; window.setPendingPos=setPendingPos; window.attackWith=attackWith; window.selectAttacker=selectAttacker; window.attackTarget=attackTarget; window.attackEnemyStructureTarget=attackEnemyStructureTarget; window.attackEnemyMage=attackEnemyMage; window.castFireballColumn=castFireballColumn; window.setFireballPreview=setFireballPreview; window.endTurn=endTurn; window.buyBooster=buyBooster; window.tradeCard=tradeCard; window.buyMarketCard=buyMarketCard; window.claimBosquetPact=claimBosquetPact; window.claimBosquetBlessing=claimBosquetBlessing; window.claimCenoteBlessing=claimCenoteBlessing; window.claimQuestReward=claimQuestReward; window.claimChapterTwoReward=claimChapterTwoReward; window.travel=travel; window.newEncounter=newEncounter; window.toggleDeckCard=toggleDeckCard; window.toggleAssaultTutor=toggleAssaultTutor; window.setFilter=setFilter; window.setSearch=setSearch; window.resetGame=resetGame;
+window.playCard=playCard; window.reinforceWall=reinforceWall; window.anchorEmpyree=anchorEmpyree; window.pruneBosquetThorns=pruneBosquetThorns; window.braceCenoteCurrent=braceCenoteCurrent; window.wardFireColumn=wardFireColumn; window.veilEnemySpark=veilEnemySpark; window.setPlacement=setPlacement; window.setPendingSlot=setPendingSlot; window.setPendingPos=setPendingPos; window.attackWith=attackWith; window.selectAttacker=selectAttacker; window.attackTarget=attackTarget; window.attackEnemyStructureTarget=attackEnemyStructureTarget; window.attackEnemyMage=attackEnemyMage; window.castFireballColumn=castFireballColumn; window.setFireballPreview=setFireballPreview; window.endTurn=endTurn; window.buyBooster=buyBooster; window.tradeCard=tradeCard; window.buyMarketCard=buyMarketCard; window.claimBosquetPact=claimBosquetPact; window.claimBosquetBlessing=claimBosquetBlessing; window.claimCenoteBlessing=claimCenoteBlessing; window.claimQuestReward=claimQuestReward; window.claimChapterTwoReward=claimChapterTwoReward; window.travel=travel; window.newEncounter=newEncounter; window.toggleDeckCard=toggleDeckCard; window.toggleAssaultTutor=toggleAssaultTutor; window.setFilter=setFilter; window.setSearch=setSearch; window.cycleCardArt=cycleCardArt; window.resetGame=resetGame;
 startGame();
