@@ -1575,3 +1575,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ouvrir un prochain embranchement de campagne après la branche Bosquet, avec un premier lieu/objectif visible sans toucher aux règles de stacks.
+
+### Publication de l’itération defense-status-badges
+- Commit local applicatif: `6f15a20` (`Show active defense statuses`).
+- `git push origin main`: OK (`f46f715..6f15a20 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `defenseStatusPanel`, `Défenses actives`, `Voile anti-étincelle armé` (`raw_game_markers: 3`).
+- Vérification GitHub raw `style.css`: OK, contient `defense-status`, `veil-ready`, `ward-ready` (`raw_css_markers: 3`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=6f15a20` / `style.css?v=6f15a20`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers: 0`, `public_css_markers: 0`, `Last-Modified: Fri, 31 Jul 2026 07:28:16 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
