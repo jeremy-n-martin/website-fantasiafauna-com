@@ -932,3 +932,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un trophée visuel persistant après victoire boss dans la carte du monde / panneau Chapitre II, ou enrichir la récompense boss.
+
+### Publication de l’itération boss-counterplay
+- Commit local applicatif: `a021bed` (`Add Abime ritual counterplay`).
+- `git push origin main`: OK (`0662a11..a021bed main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `reinforceWall`, `bossCounterplay`, `Réponse au Rituel` (`raw game markers: 4`).
+- Vérification GitHub raw `style.css`: OK, contient `boss-counter` (`raw css markers: 1`).
+- Vérification site public `https://fantasiafauna.com/game.js?v=a021bed` et `style.css?v=a021bed`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `public_css_markers=0`, `Last-Modified: Fri, 31 Jul 2026 01:52:31 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
