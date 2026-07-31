@@ -1033,3 +1033,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `empyreeCreaturePool`, `Rempart du Zénith`, `empyreeDuelWon` (`raw game markers: 12`).
 - Vérification GitHub raw `style.css`: OK, contient `empyreeDuel` / `empyree-aura` (`raw css markers: 1`).
 - Vérification site public `https://fantasiafauna.com/game.js?v=2c3e9ea` et `style.css?v=2c3e9ea`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `public_css_markers=0`, `Last-Modified: Fri, 31 Jul 2026 02:40:48 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération empyree-zephyr — 2026-07-31 05:09
+### Réalisé
+- Ajout d’une capacité spéciale lisible pour le duel Empyrée: `Vent du Zénith`, déclenché au tour ennemi les jours pairs, qui épuise un stack allié prêt.
+- Ajout du contre-jeu `Ancrer les lignes`: dépense 2 points d’invocation pendant le duel Empyrée pour annuler le prochain Vent du Zénith.
+- L’encart du Rempart du Zénith annonce maintenant le compte à rebours du vent, et le panneau central affiche un bloc `Contre-jeu: Vent du Zénith` avec statut/CTA.
+- Le stack touché reçoit un `markHit(..., 'Épuisé')`, donc le feedback visuel de cible reste cohérent avec les badges d’impact existants.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_empyree_zephyr.js`: OK (`empyree_zephyr_smoke=OK {"exhaustedByWind":true,"anchorBlocked":true,"uiMarkers":true,"noPopDef":true,"mana":6}`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8157`: OK.
+- `curl -I http://localhost:8157/`: HTTP 200.
+- `curl -s http://localhost:8157/game.js | grep -E 'empyreeZephyr|Vent du Zénith|anchorEmpyree'`: OK.
+- `curl -s http://localhost:8157/style.css | grep -E 'empyree-counter'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le Vent du Zénith épuise un stack prêt selon une sélection simple de colonne/slot; il n’a pas encore d’animation dédiée autre que le badge `Épuisé`.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une animation/pastille dédiée `Vent du Zénith` sur le stack épuisé, ou équilibrer les récompenses/menaces du duel Empyrée après quelques tours.
