@@ -1150,3 +1150,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une suite post-Empyrée visible (nouveau portail/capitale ou choix de récompense céleste), ou vérifier la propagation GitHub Pages du commit publié avec cache-busting.
+
+### Publication de l’itération empyree-trophy
+- Commit local applicatif: `8ad554c` (`Add Empyree victory trophy`).
+- `git push origin main`: OK (`3a9b386..8ad554c main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `empyreeTrophyPanel`, `Étendard du Rempart`, `Carte Empyrée gagnée`.
+- Vérification GitHub raw `style.css`: OK, contient `.empyree-trophy`.
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=8ad554c` / `style.css?v=8ad554c`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `public_css_markers=0`, `Last-Modified: Fri, 31 Jul 2026 03:45:15 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
