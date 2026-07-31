@@ -1119,3 +1119,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une lecture post-victoire/objectif de Chapitre III plus explicite ou vérifier la propagation GitHub Pages du dernier commit avec cache-busting.
+
+### Publication de l’itération empyree-zephyr-forecast
+- Commit local applicatif: `6e52c6c` (`Add Empyree zephyr forecast`).
+- `git push origin main`: OK (`7793ea5..6e52c6c main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `empyreeZephyrForecast` / `zephyr-next` (`raw game markers: 2`).
+- Vérification GitHub raw `style.css`: OK, contient `.zephyr-next` (`raw css markers: 1`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=6e52c6c` / `style.css?v=6e52c6c`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 03:27:45 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
