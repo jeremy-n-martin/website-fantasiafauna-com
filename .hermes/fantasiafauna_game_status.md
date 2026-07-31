@@ -1088,3 +1088,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un équilibrage lisible du Rempart du Zénith après quelques tours (ex: intensité du vent annoncée) ou vérifier la propagation GitHub Pages du dernier commit avec cache-busting.
+
+### Publication de l’itération empyree-zephyr-visual
+- Commit local applicatif: `d352622` (`Add Empyree zephyr visual feedback`).
+- `git push origin main`: OK (`3ef8f18..d352622 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient les marqueurs `zephyr-hit`, `zephyr-badge`, `Vent du Zénith` (`raw_game markers: 3`).
+- Vérification GitHub raw `style.css`: OK, contient `zephyr-hit`, `zephyr-badge`, `zephyrPulse` (`raw_css markers: 3`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=d352622` / `style.css?v=d352622`: HTTP 200, mais CSS public encore en retard pendant ce run (`public_game markers: 1`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 03:11:15 GMT`, `Cache-Control: max-age=600`). GitHub Pages/CDN n’a donc pas encore servi tous les marqueurs du nouveau commit.
