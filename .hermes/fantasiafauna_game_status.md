@@ -1712,3 +1712,11 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ouvrir une première route post-Cénote ou ajouter un cinquième chapitre visible sur la carte, sans toucher aux règles ATQ/HP/[ ].
+
+### Publication de l’itération cenote-blessing-choice
+- Commit local applicatif: `81c6be9` (`Add Cenote blessing choice`).
+- `git push origin main`: OK (`5e6ab66..81c6be9 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `cenoteBlessingPanel`, `Don du Cénote`, `claimCenoteBlessing` (`raw_game_markers: 4`).
+- Vérification GitHub raw `style.css`: OK, contient `cenote-blessing` (`raw_css_markers: 1`).
+- Vérification GitHub raw journal: OK, contient `cenote-blessing-choice` et `cenote_blessing_smoke` (`raw_status_markers: 2`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=81c6be9` / `style.css?v=81c6be9`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers: 0`, `public_css_markers: 0`, `Last-Modified: Fri, 31 Jul 2026 08:36:57 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
