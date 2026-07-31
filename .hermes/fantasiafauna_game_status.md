@@ -1552,3 +1552,26 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `sparkVeilPanel`, `veilEnemySpark`, `Voile anti` (`raw_game markers: 4`).
 - Vérification GitHub raw `style.css`: OK, contient `spark-veil-panel` (`raw_css markers: 1`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=2b4b8e4`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `Last-Modified: Fri, 31 Jul 2026 07:06:13 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération defense-status-badges — 2026-07-31 09:42
+### Réalisé
+- Ajout d’un panneau visible `Défenses actives` côté défense alliée, au-dessus des structures Tour/Village/Mur.
+- Le panneau affiche maintenant clairement quand le `Voile anti-étincelle` est armé, et récapitule aussi le `Pare-feu` actif avec ses colonnes protégées.
+- Aucun changement de résolution combat: règles ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants préservés.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- Baseline/édition `node --check game.js`: OK.
+- Premier lancement du smoke test `.hermes/smoke_defense_status.js`: ÉCHEC de harnais uniquement (`ReferenceError: window is not defined`), corrigé en ajoutant `window` au contexte VM; pas de changement produit nécessaire.
+- `node .hermes/smoke_defense_status.js`: OK (`defense_status_smoke=OK {"defenseStatus":true,"veil":true,"ward":true,"cssHook":true,"noPopDef":true,"renderHook":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8173`: OK.
+- `curl -I http://localhost:8173/`: HTTP 200.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le panneau ne crée pas de nouvelle mécanique: il rend seulement persistants/lisibles les états défensifs déjà préparés.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ouvrir un prochain embranchement de campagne après la branche Bosquet, avec un premier lieu/objectif visible sans toucher aux règles de stacks.
