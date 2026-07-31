@@ -1616,3 +1616,29 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `style.css`: OK, contient `lagune-panel`, `place.lagune` (`raw_css markers: 2/2`).
 - Vérification GitHub raw journal: OK, contient `lagune-route-chapter` et `lagune_route_smoke` (`raw_status markers: 2/2`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=1910ac9` / `style.css?v=1910ac9`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/3`, `public_css markers: 0/2`, `Last-Modified: Fri, 31 Jul 2026 07:44:14 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération cenote-duel-identity — 2026-07-31 10:19
+### Réalisé
+- Transformation de `Cénote Englouti` en vrai duel de Chapitre IV (`type: cenoteDuel`) au lieu d’un duel générique.
+- Ajout d’une identité de combat dédiée: pool ennemi Cénote/Lagune, fortifications adverses Tour 22 · Village 22 · Mur 24, aura `Duel aquatique: Cénote Englouti`.
+- Ajout du terrain `Courant englouti`: tous les jours pairs, le premier stack allié exposé prend 1 dégât et est épuisé; s’il n’y a pas de stack, le mur prend 1 dégât.
+- Ajout du contre-jeu `Stabiliser les appuis` pour 1 point d’invocation, visible dans le panneau de terrain et dans `Défenses actives` quand il est armé.
+- Conservation des règles critiques: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts de créature ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_cenote_duel.js`: OK (`cenote_duel_smoke=OK {"kind":"cenote","tower":22,"pool":"Cénote","terrain":true,"braceCost":5,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8175`: OK.
+- `curl -I http://localhost:8175/`: HTTP 200.
+- `curl -s http://localhost:8175/game.js | grep -E 'cenoteCreaturePool|Courant englouti|braceCenoteCurrent'`: OK.
+- `curl -s http://localhost:8175/style.css | grep -E 'cenote-terrain|cenote-aura'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le Cénote utilise désormais un pool et un terrain dédiés, mais pas encore une récompense/panneau trophée aquatique complet au-delà du jalon Chapitre IV.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un trophée/panneau de victoire Cénote ou ouvrir une première suite de route après le Cénote, sans toucher aux règles ATQ/HP/[ ].
