@@ -784,3 +784,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `chapterTwoBoard`, `Route vers l’Abîme`, `ownedCapitalCount`.
 - Vérification GitHub raw `style.css`: OK, contient `chapter-panel`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=84d6ea8` et `style.css?v=84d6ea8`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); GitHub Pages/CDN semble encore stale.
+
+## Itération chapter-two-reward — 2026-07-31 03:00
+### Réalisé
+- Ajout d’un déverrouillage concret au panneau `Chapitre II — Route vers l’Abîme`: quand prime + 3 capitales + 25 cartes sont validées, le joueur peut activer le `Sceau de l’Abîme`.
+- `claimChapterTwoReward()` donne +120 or une seule fois, persiste `quests.chapterTwoClaimed`, puis indique que les boss deviennent l’objectif prioritaire.
+- Ajout d’un état visuel verrouillé/disponible/réclamé via `.chapter-unlock`, sans modifier les règles de combat.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`chapter_two_reward_smoke=OK {"before":5,"after":125,"claimed":true,"noPopDef":true}`), confirmant panneau disponible, +120 or, anti double-réclamation, persistance `chapterTwoClaimed` et absence POP/DEF dans le rendu monde.
+- Serveur local `python -m http.server 8149`: OK.
+- `curl -I http://localhost:8149/`: HTTP 200.
+- `curl -s http://localhost:8149/game.js | grep -E 'chapterTwoComplete|claimChapterTwoReward|Sceau de'`: OK.
+- `curl -s http://localhost:8149/style.css | grep -E 'chapter-unlock'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le Sceau donne une réserve d’or et un objectif narratif, mais ne verrouille/déverrouille pas encore mécaniquement l’accès aux lieux boss.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Relier `chapterTwoClaimed` à un lieu boss réellement spécial: badge/condition sur l’Abîme des Miroirs, assaut boss plus dur, puis récompense de victoire.
