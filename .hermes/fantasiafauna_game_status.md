@@ -1650,3 +1650,30 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `style.css`: OK, contient `cenote-terrain` / `cenote-aura` (`raw_css markers: 1`).
 - Vérification GitHub raw journal: OK, contient `cenote-duel-identity` et `cenote_duel_smoke` (`raw_status markers: 2`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=c8285e1` / `style.css?v=c8285e1`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 08:01:01 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+
+## Itération cenote-trophy-panel — 2026-07-31 10:35
+### Réalisé
+- Ajout d’un trophée visible de victoire pour le Chapitre IV: panneau `Perle du Cénote Englouti` affiché quand `cenoteDuelWon` est acquis.
+- Le trophée récapitule le jalon Cénote, la récompense +70 or et la carte Cénote/Lagune obtenue après la chute de la tour aquatique.
+- Ajout d’un style aquatique dédié `cenote-trophy` pour distinguer ce jalon de campagne sur la page monde.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts de créature ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_cenote_trophy.js`: OK (`cenote_trophy_smoke=OK {"trophy":true,"routeStable":true,"reward":true,"cssHook":true,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8176`: OK.
+- `curl -I http://localhost:8176/`: HTTP 200.
+- `curl -s http://localhost:8176/game.js | grep -E 'cenoteTrophyPanel|Perle du Cénote Englouti|cenote-trophy'`: OK.
+- `curl -s http://localhost:8176/style.css | grep -E 'cenote-trophy'`: OK.
+- Recherche `POP|DEF` dans `game.js`: 0 résultat (`no_POP_DEF=OK`).
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le trophée rend la victoire Cénote lisible mais n’ouvre pas encore une nouvelle zone après le Chapitre IV.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ouvrir une première suite post-Cénote sur la carte du monde, ou ajouter une récompense de choix aquatique après victoire, sans toucher aux règles ATQ/HP/[ ].
