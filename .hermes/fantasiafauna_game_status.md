@@ -994,3 +994,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un premier duel céleste/objectif Empyrée après visite du portail, ou une offre de récompense boss persistante orientée Empyrée.
+
+### Publication de l’itération chapter-three-empyree
+- Commit local applicatif: `e140b54` (`Open Empyree chapter route`).
+- `git push origin main`: OK (`127bad5..e140b54 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `chapterThreePanel`, `Portail d’Empyrée`, `empyreeVisited` (`raw game markers: 7`).
+- Vérification GitHub raw `style.css`: OK, contient `empyree-panel` / `place.portal` (`raw css markers: 1`).
+- Vérification site public `https://fantasiafauna.com/game.js?v=e140b54`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `Last-Modified: Fri, 31 Jul 2026 02:23:10 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
