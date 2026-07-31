@@ -970,3 +970,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `bossTrophyPanel`, `Trophée obtenu`, `Relique de l’Abîme`, `trophy-panel` côté JS (`raw game markers: 4`).
 - Vérification GitHub raw `style.css`: OK, contient `trophy-panel` (`raw css markers: 1`).
 - Vérification site public `https://fantasiafauna.com/game.js?v=d155dda` et `style.css?v=d155dda`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `public_css_markers=0`, `Last-Modified: Fri, 31 Jul 2026 02:08:11 GMT`), donc GitHub Pages/CDN reste en retard.
+
+## Itération chapter-three-empyree — 2026-07-31 04:39
+### Réalisé
+- Ajout d’une suite visible après le trophée boss: panneau `Chapitre III — Portail d’Empyrée` affiché quand `bossWon=true`.
+- Ajout d’un nouveau lieu sur la grande carte: `Portail d’Empyrée`, scellé tant que l’Abîme n’est pas vaincu, puis marqué `Chapitre III · marché Empyrée`.
+- Visiter ce lieu met le marché sur la capitale `Empyrée` et persiste `empyreeVisited` dans la sauvegarde locale.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_chapter_three.js`: OK (`chapter_three_smoke=OK {"portal":true,"visited":true,"capital":"Empyrée"}`), confirmant panneau Chapitre III, badge de carte, visite du portail, marché Empyrée, absence POP/DEF et présence ATQ/HP/[ ]; script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8155`: OK.
+- `curl -I http://localhost:8155/`: HTTP 200.
+- `curl -s http://localhost:8155/game.js | grep -E 'chapterThreePanel|Portail d.Empyr|empyreeVisited'`: OK.
+- `curl -s http://localhost:8155/style.css | grep -E 'empyree-panel|place\\.portal'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La suite Chapitre III est un déverrouillage de lieu/marché; elle ne contient pas encore de combat céleste spécifique.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un premier duel céleste/objectif Empyrée après visite du portail, ou une offre de récompense boss persistante orientée Empyrée.
