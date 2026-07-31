@@ -1216,3 +1216,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter un court duel Bosquet post-Empyrée ou un effet de terrain forestier visible lié à la récompense Bosquet.
+
+### Publication de l’itération bosquet-pact
+- Commit local applicatif: `8ba8904` (`Add Bosquet pact reward`).
+- `git push origin main`: OK (`c0d3287..8ba8904 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `bosquetPactPanel`, `claimBosquetPact`, `bosquetPactClaimed`.
+- Vérification GitHub raw `style.css`: OK, contient `.bosquet-pact`.
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=8ba8904` / `style.css?v=8ba8904`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 04:23:56 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
