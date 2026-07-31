@@ -1608,3 +1608,11 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Donner à `Cénote Englouti` une identité de combat dédiée: pool Cénote/Lagune et un effet de terrain aquatique lisible, sans toucher aux règles ATQ/HP/[ ].
+
+### Publication de l’itération lagune-route-chapter
+- Commit local applicatif: `1910ac9` (`Open lagune route chapter`).
+- `git push origin main`: OK (`46928ff..1910ac9 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `chapterFourPanel`, `Lagune des Échos`, `Cénote Englouti`, `requiresBosquetWin` (`raw_game markers: 4/4`).
+- Vérification GitHub raw `style.css`: OK, contient `lagune-panel`, `place.lagune` (`raw_css markers: 2/2`).
+- Vérification GitHub raw journal: OK, contient `lagune-route-chapter` et `lagune_route_smoke` (`raw_status markers: 2/2`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=1910ac9` / `style.css?v=1910ac9`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/3`, `public_css markers: 0/2`, `Last-Modified: Fri, 31 Jul 2026 07:44:14 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
