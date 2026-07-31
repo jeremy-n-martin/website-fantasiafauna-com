@@ -1157,3 +1157,29 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `empyreeTrophyPanel`, `Étendard du Rempart`, `Carte Empyrée gagnée`.
 - Vérification GitHub raw `style.css`: OK, contient `.empyree-trophy`.
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=8ad554c` / `style.css?v=8ad554c`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `public_css_markers=0`, `Last-Modified: Fri, 31 Jul 2026 03:45:15 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+
+## Itération post-empyree-bosquet — 2026-07-31 06:22
+### Réalisé
+- Ajout d’une petite suite post-victoire Empyrée visible sur la carte du monde: `Bosquet Stellaire`, ville/marché thématique Bosquet.
+- Le lieu est verrouillé tant que `empyreeDuelWon=false`, avec badge `Verrouillé — gagne le Rempart`; après victoire il affiche `Post-Empyrée · marché Bosquet`.
+- Le trophée céleste annonce maintenant que le marché Bosquet est débloqué après l’Étendard du Zénith.
+- `travel()` empêche l’accès prématuré puis bascule bien `location=Bosquet Stellaire` et `activeCapital=Bosquet` après victoire.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`bosquet_route_smoke=OK {"locked":true,"unlocked":true,"traveled":true,"activeCapital":"Bosquet","noPopDef":true,"stack":true}`), confirmant verrouillage, déverrouillage, voyage, marché Bosquet et absence POP/DEF.
+- Serveur local `python -m http.server 8161`: OK.
+- `curl -I http://localhost:8161/`: HTTP 200.
+- `curl -s http://localhost:8161/game.js | grep -E 'Bosquet Stellaire|requiresEmpyreeWin|Marché Bosquet débloqué'`: OK.
+- `curl -s http://localhost:8161/style.css | grep -E 'place\.bosquet'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le Bosquet Stellaire est une ville/marché visible, pas encore un nouveau duel ni un chapitre complet.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une première offre/récompense spécifique au Bosquet Stellaire ou un duel Bosquet court après l’ouverture post-Empyrée.
