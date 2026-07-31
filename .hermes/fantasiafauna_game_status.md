@@ -1183,3 +1183,11 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une première offre/récompense spécifique au Bosquet Stellaire ou un duel Bosquet court après l’ouverture post-Empyrée.
+
+
+### Publication de l’itération post-empyree-bosquet
+- Commit local applicatif: `ad0630c` (`Open Bosquet post-Empyree route`).
+- `git push origin main`: OK (`944baea..ad0630c main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `Bosquet Stellaire`, `requiresEmpyreeWin`, `Marché Bosquet débloqué` (`raw_game markers: 3/3`).
+- Vérification GitHub raw `style.css`: OK, contient `.place.bosquet` (`raw_css markers: 1/1`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=ad0630c` / `style.css?v=ad0630c`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/3`, `public_css markers: 0/1`, `Last-Modified: Fri, 31 Jul 2026 04:04:58 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
