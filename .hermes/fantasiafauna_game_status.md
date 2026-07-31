@@ -1378,3 +1378,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une prévisualisation plus fine des menaces tenant compte des effets de début de tour, ou créer un prochain embranchement de campagne après la branche Bosquet.
+
+### Publication de l’itération bosquet-blessing
+- Commit local applicatif: `b8cdf3c` (`Add Bosquet victory blessing`).
+- `git push origin main`: OK (`68415bc..b8cdf3c main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `bosquetBlessingPanel`, `claimBosquetBlessing`, `Bénédiction du Bosquet` (`raw_game markers: 3/3`).
+- Vérification GitHub raw `style.css`: OK, contient `bosquet-blessing` (`raw_css markers: 1/1`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=b8cdf3c` / `style.css?v=b8cdf3c`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0/3`, `public_css markers: 0/1`, `Last-Modified: Fri, 31 Jul 2026 05:42:20 GMT`), donc GitHub Pages/CDN reste en retard.
