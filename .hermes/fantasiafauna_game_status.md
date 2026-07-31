@@ -1441,3 +1441,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ouvrir un prochain embranchement de campagne après la branche Bosquet, ou ajouter une micro-animation/halo dédié aux unités menacées par Boule de feu.
+
+### Publication de l’itération enemy-effect-forecast
+- Commit local applicatif: `1a478f0` (`Refine enemy effect forecast`).
+- `git push origin main`: OK (`d86831c..1a478f0 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `enemySparkForecast`, `enemyFireballForecast`, `peut lancer Boule de feu` (`raw_game markers: 6`).
+- Vérification GitHub raw journal: OK, contient `enemy-effect-forecast` et `enemy_effect_forecast_smoke` (`raw_status markers: 2`).
+- Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=1a478f0`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `Last-Modified: Fri, 31 Jul 2026 06:13:24 GMT`, `Cache-Control: max-age=600`, `Content-Length: 177135`), donc GitHub Pages/CDN reste en retard.
