@@ -658,3 +658,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `showTutor`, `toggleAssaultTutor`, `Afficher le tutoriel d’assaut`.
 - Vérification GitHub raw `style.css`: OK, contient `assault-tutor button` et `assault-tutor.collapsed`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=ce2f636` et `style.css?v=ce2f636`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); `Last-Modified` encore `Thu, 30 Jul 2026 23:30:27 GMT`, donc GitHub Pages/CDN reste stale.
+
+## Itération quest-progress — 2026-07-31 02:02
+### Réalisé
+- Ajout d’un panneau visible `Quête du mage` sur la carte du monde avec progression d’aventure `0/3`, `1/3`, etc.
+- Trois objectifs persistants guident maintenant le joueur: visiter une ville, acheter une carte au marché, gagner un assaut.
+- Les flags de quête sont sauvegardés dans `localStorage` (`quests`) et mis à jour via `travel()`, `buyMarketCard()` et la victoire quand la tour adverse tombe.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`quest_progress_smoke=OK {"progress":"2/3","persisted":{"visitedTown":true,"boughtMarket":true,"wonAssault":false},"noPopDef":true}`), confirmant le rendu du panneau, la progression ville+marché, la persistance et l’absence de POP/DEF dans le rendu monde.
+- Serveur local `python -m http.server 8145`: OK.
+- `curl -I http://localhost:8145/`: HTTP 200.
+- `curl -s http://localhost:8145/game.js | grep -E 'questBoard|Quête du mage|quests'`: OK.
+- `curl -s http://localhost:8145/style.css | grep -E 'quest-panel|World quest progression'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La quête d’assaut se valide uniquement à la destruction de la tour adverse; pas encore de récompense/chapitre de quête séparé.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un petit objectif/récompense après la première victoire d’assaut, ou enrichir les marchés avec vente/stock persistant.
