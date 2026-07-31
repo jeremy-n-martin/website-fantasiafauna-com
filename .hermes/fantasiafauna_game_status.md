@@ -1223,3 +1223,29 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `bosquetPactPanel`, `claimBosquetPact`, `bosquetPactClaimed`.
 - Vérification GitHub raw `style.css`: OK, contient `.bosquet-pact`.
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=8ba8904` / `style.css?v=8ba8904`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 04:23:56 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération bosquet-duel — 2026-07-31 06:55
+### Réalisé
+- Ajout d’un court duel Bosquet post-Empyrée: nouvelle destination `Clairière des Ronces` sur la carte du monde, verrouillée tant que le `Pacte du Bosquet` n’est pas scellé.
+- Nouveau `battleKind='bosquet'`: ennemis tirés du pool Bosquet, aura de duel forestier et fortifications adverses Tour 24 / Village 22 / Mur 26.
+- Ajout d’un panneau de progression `Suite Bosquet` après le Pacte, indiquant l’ouverture puis la victoire de la Clairière.
+- Victoire forestière persistante: `bosquetDuelWon=true`, +80 or et une carte Bosquet gagnée.
+- Règles préservées: pas de POP/DEF sur les rectos, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur et colonnes 0..4.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_bosquet_duel.js`: OK (`bosquet_duel_smoke=OK {"pactBefore":true,"pactClaimed":true,"mapOpen":true,"started":true,"aura":true,"enemy":"Mara","reward":"Jabberwock","noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8163`: OK.
+- `curl -I http://localhost:8163/`: HTTP 200.
+- `curl -s http://localhost:8163/game.js | grep -E 'Clairière des Ronces|bosquetDuelPanel|bosquetCreaturePool'`: OK.
+- `curl -s http://localhost:8163/style.css | grep -E 'bosquetDuel|bosquet-chapter'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La Clairière est un duel court typé Bosquet; elle n’ajoute pas encore d’effet de terrain forestier actif par tour.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un effet de terrain forestier lisible à la Clairière (ex: ronces annoncées qui réparent/affaiblissent une colonne), ou vérifier la propagation GitHub Pages du commit publié avec cache-busting.
