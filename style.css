@@ -16,6 +16,9 @@
 /* Enemy intent preview */
 .intent-badge{display:block;margin:6px 0;padding:5px 7px;border:1px solid #ff9f6e88;border-radius:999px;background:linear-gradient(135deg,#4b160faa,#14080a);color:#ffd8bd;font-size:.72rem;font-weight:1000;text-align:center;box-shadow:0 0 16px #ff704422}.battle-card.enemy .intent-badge{position:relative;z-index:2}
 
+/* Boss encounter identity */
+.boss-aura{margin:8px 0 12px;padding:10px 11px;border:1px solid #ba5f8bbb;border-radius:14px;background:linear-gradient(135deg,#4b1133cc,#120813);box-shadow:0 0 22px #ba5f8b33;color:#ffe0f0}.boss-aura b,.boss-aura small{display:block}.boss-aura b{color:#ffc1df}.boss-aura small{margin-top:4px;color:#f6cfe2cc;font-size:.8rem}
+
 /* Player target preview */
 .preview-badge{display:block;margin:6px 0;padding:5px 7px;border:1px solid #83d8ff99;border-radius:999px;background:linear-gradient(135deg,#123047cc,#06131d);color:#d5f2ff;font-size:.72rem;font-weight:1000;text-align:center;box-shadow:0 0 16px #4db7ff55}.structure .preview-badge{position:relative;z-index:2;margin-top:5px}.battle-card.enemy .preview-badge{position:relative;z-index:2}.preview-badge:empty{display:none}.place.boss small{display:block;margin-top:3px;color:#ffd8bd;font-size:.68rem;font-weight:1000}.place.boss.locked{filter:saturate(.6) brightness(.78);border-color:#9b8aa0}.place.boss.cleared{box-shadow:0 0 0 3px #76d89655,0 0 22px #76d89666}.place.boss.cleared small{color:#adffd0}
 

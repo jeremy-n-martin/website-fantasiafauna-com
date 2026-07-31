@@ -847,3 +847,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `style.css`: OK, contient `place.boss` / `boss.cleared` (`raw css markers: 2`).
 - Vérification site public `https://fantasiafauna.com/game.js?v=4421d90`: HTTP 200 mais marqueurs absents pendant ce run (`public game markers: 0`, `Last-Modified: Fri, 31 Jul 2026 01:02:36 GMT`), donc GitHub Pages/CDN reste en retard.
 - Vérification site public `https://fantasiafauna.com/style.css?v=4421d90`: un marqueur CSS boss déjà visible (`public css markers: 1`).
+
+## Itération boss-abime-pool — 2026-07-31 03:35
+### Réalisé
+- Le boss `Abîme des Miroirs` invoque désormais depuis un pool typé `Abîme` via `bossCreaturePool()` / `enemySummonCreature()`, au lieu d’utiliser le tirage générique.
+- Ajout d’un encart visible `Boss: Abîme des Miroirs` dans le panneau ennemi pendant le combat boss, indiquant les invocations typées Abîme et les fortifications renforcées Tour 30 · Village 24 · Mur 28.
+- Le log d’invocation devient explicitement `L’Abîme invoque ...` pendant le boss.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_boss_abime.js`: OK (`boss_abime_smoke=OK {"pool":30,"summoned":"Tyrannoeil","capital":"Abîme","tower":30}`), confirmant l’encart boss, le pool Abîme-only, l’invocation boss Abîme et l’absence POP/DEF dans le rendu de combat; script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8151`: OK.
+- `curl -I http://localhost:8151/`: HTTP 200.
+- `curl -s http://localhost:8151/game.js | grep -E 'bossCreaturePool|boss-aura|L.Ab.me invoque|Invocations typ'`: OK.
+- `curl -s http://localhost:8151/style.css | grep -E 'boss-aura'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le boss a maintenant une identité d’invocation Abîme, mais pas encore de capacités uniques hors pool et fortifications renforcées.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une récompense/trophée visuel persistant après victoire boss, ou donner au boss une intention/capacité spéciale Abîme lisible.
