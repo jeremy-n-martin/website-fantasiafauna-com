@@ -1448,3 +1448,29 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `enemySparkForecast`, `enemyFireballForecast`, `peut lancer Boule de feu` (`raw_game markers: 6`).
 - Vérification GitHub raw journal: OK, contient `enemy-effect-forecast` et `enemy_effect_forecast_smoke` (`raw_status markers: 2`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=1a478f0`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `Last-Modified: Fri, 31 Jul 2026 06:13:24 GMT`, `Cache-Control: max-age=600`, `Content-Length: 177135`), donc GitHub Pages/CDN reste en retard.
+
+
+## Itération fire-threat-halo — 2026-07-31 08:45
+### Réalisé
+- Ajout d’un halo visuel dédié aux unités alliées/colonnes menacées par une Boule de feu ennemie prête.
+- Factorisation minimale des casters ennemis prêts via `readyEnemyFireballCasters()` et calcul de zone `enemyFireballThreatPositions()` pour partager la prévision texte et le rendu du champ.
+- Les cellules alliées touchées affichent `Menace feu`; les mini-cartes concernées reçoivent un halo orange et un badge `Cercle de feu`.
+- La résolution du combat n’a pas été changée: règles ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, stacks HP total, siège tour/village/mur, colonnes 0..4 et passifs existants préservés.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_fire_threat_halo.js`: OK (`fire_threat_halo_smoke=OK {"ready":1,"positions":"1,2,3","unitThreat":true,"cellHalo":true,"badge":true,"zone":true,"forecast":true,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- `git diff --check -- game.js style.css`: OK, seulement avertissements CRLF/LF existants de Git.
+- Serveur local `python -m http.server 8170`: OK.
+- `curl -I http://localhost:8170/`: HTTP 200.
+- `curl -s http://localhost:8170/game.js | grep -E 'enemyFireballThreatPositions|fire-threat-cell|Cercle de feu'`: OK.
+- `curl -s http://localhost:8170/style.css | grep -E 'fire-threat-cell|fireThreatPulse'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le halo suit les colonnes probables des casters Boule de feu prêts au moment du rendu; il ne simule pas les décès éventuels dus à d’autres effets avant l’incantation.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ouvrir un prochain embranchement de campagne après la branche Bosquet, ou ajouter un contre-jeu léger au halo de feu ennemi.
