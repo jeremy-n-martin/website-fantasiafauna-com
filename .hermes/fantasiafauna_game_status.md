@@ -815,3 +815,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `claimChapterTwoReward` / `Sceau de` (`raw-game=3`).
 - Vérification GitHub raw `style.css`: OK, contient `chapter-unlock` (`raw-css=1`).
 - Vérification site public `https://fantasiafauna.com/game.js?v=25cbe79` et `style.css?v=25cbe79`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); `Last-Modified` encore `Fri, 31 Jul 2026 00:47:06 GMT`, donc GitHub Pages/CDN reste stale.
+
+## Itération boss-gate — 2026-07-31 03:20
+### Réalisé
+- Lieu boss `Abîme des Miroirs` relié au `Sceau de l’Abîme`: avant activation, la carte affiche `Scellé — active le Sceau` et le clic refuse l’entrée avec un log explicite.
+- Après activation du chapitre II, la carte affiche `Boss ouvert · Tour 30` et `newEncounter('boss')` lance un siège renforcé: Tour 30, Village 24, Mur 28 côté ennemi.
+- La victoire boss donne +140 or, conserve la récompense carte, marque `quests.bossWon=true` et affiche ensuite `✓ Boss vaincu` / trophée de chapitre dans la progression.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`boss_gate_smoke=OK {"locked":true,"bossStarted":true,"hpShows":true,"bossWon":true}`), confirmant verrouillage, ouverture par Sceau, HP boss renforcés et récompense de victoire.
+- Serveur local `python -m http.server 8150`: OK.
+- `curl -I http://localhost:8150/`: HTTP 200.
+- `curl -s http://localhost:8150/game.js | grep -E 'mapPlace|bossWon|Tour 30'`: OK.
+- `curl -s http://localhost:8150/style.css | grep -E 'place\\.boss|Boss'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le boss utilise les mêmes règles IA/ennemis que l’assaut normal, avec fortifications renforcées et récompense dédiée; pas encore de deck boss thématique Abîme.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Donner au boss un pool d’invocations/intentions plus typé Abîme ou ajouter une récompense visuelle de trophée persistante dans le monde.
