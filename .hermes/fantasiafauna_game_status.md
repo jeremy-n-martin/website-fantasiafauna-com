@@ -1095,3 +1095,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient les marqueurs `zephyr-hit`, `zephyr-badge`, `Vent du Zénith` (`raw_game markers: 3`).
 - Vérification GitHub raw `style.css`: OK, contient `zephyr-hit`, `zephyr-badge`, `zephyrPulse` (`raw_css markers: 3`).
 - Vérification site public cache-busté `https://fantasiafauna.com/game.js?v=d352622` / `style.css?v=d352622`: HTTP 200, mais CSS public encore en retard pendant ce run (`public_game markers: 1`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 03:11:15 GMT`, `Cache-Control: max-age=600`). GitHub Pages/CDN n’a donc pas encore servi tous les marqueurs du nouveau commit.
+
+## Itération empyree-zephyr-forecast — 2026-07-31 05:43
+### Réalisé
+- Ajout d’une prévision lisible du `Vent du Zénith` dans le bloc de contre-jeu Empyrée: le joueur voit maintenant quel stack/colonne sera menacé avant de décider d’`Ancrer les lignes`.
+- Factorisation de la sélection réelle du vent dans `empyreeZephyrTarget()`, utilisée par la prévision et par l’effet: l’UI annonce donc la même cible que la résolution.
+- Ajout d’un style `.zephyr-next` pour rendre la menace visible dans le panneau central.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et contre-jeu existant.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_zephyr_forecast.js`: OK (`zephyr_forecast_smoke=OK {"forecast":"Vent ce tour: menace Phénix, colonne 5 (entre village et mur).","exhausted":true,"badge":"Vent du Zénith","uiMarkers":true}`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8159`: OK.
+- `curl -I http://localhost:8159/`: HTTP 200.
+- `curl -s http://localhost:8159/game.js | grep -E 'empyreeZephyrForecast|zephyr-next'`: OK.
+- `curl -s http://localhost:8159/style.css | grep -E 'zephyr-next'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Prévision du vent basée sur la cible déterministe actuelle; pas encore de trajectoire animée par colonne.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une lecture post-victoire/objectif de Chapitre III plus explicite ou vérifier la propagation GitHub Pages du dernier commit avec cache-busting.
