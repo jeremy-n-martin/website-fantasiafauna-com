@@ -751,3 +751,29 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `questRewardChoices`, `Prime disponible — choisis ta créature`, `reward-choices`.
 - Vérification GitHub raw `style.css`: OK, contient `reward-choices`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=6df2f7f` et `style.css?v=6df2f7f`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_marker=0`, `public_css_marker=0`); `Last-Modified` encore `Fri, 31 Jul 2026 00:18:46 GMT`, donc GitHub Pages/CDN reste stale.
+
+## Itération chapter-two-route — 2026-07-31 02:45
+### Réalisé
+- Ajout d’un panneau visible `Chapitre II — Route vers l’Abîme` sous la quête d’initiation.
+- Le panneau donne une suite lisible après la prime: prime choisie, au moins 3 capitales possédées, 25 cartes dans la collection.
+- Ajout des fonctions `ownedCapitalCount()`, `chapterTwoSteps()` et `chapterTwoBoard()` sans modifier les règles de combat.
+- Style responsive `.chapter-panel`, état verrouillé tant que la prime d’initiation n’est pas choisie.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline initial: échec honnête dû au jeu de test trop homogène (`CREATURES.slice(0,25)` ne couvrait pas 3 capitales), code inchangé.
+- Smoke test Node inline corrigé: OK (`chapter_two_smoke=OK {"initial":true,"complete":true,"noPopDef":true}`), confirmant panneau visible, progression 3/3 possible et absence POP/DEF dans le rendu.
+- Serveur local `python -m http.server 8148`: OK.
+- `curl -I http://localhost:8148/`: HTTP 200.
+- `curl -s http://localhost:8148/game.js | grep -E 'chapterTwoBoard|Route vers|ownedCapitalCount'`: OK.
+- `curl -s http://localhost:8148/style.css | grep -E 'chapter-panel'`: OK.
+
+### Limites
+- Le chapitre II est pour l’instant un panneau de progression/préparation; il ne déclenche pas encore un nouveau boss, une récompense ou un marché avancé.
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Donner une récompense ou un effet de déverrouillage concret quand `Route vers l’Abîme` atteint 3/3, puis relier cette étape à un boss/lieu de la carte.
