@@ -1065,3 +1065,26 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `empyreeZephyr`, `Vent du Zénith`, `anchorEmpyree` (`raw_game markers: 3`).
 - Vérification GitHub raw `style.css`: OK, contient `empyree-counter` (`raw_css markers: 1`).
 - Vérification site public `https://fantasiafauna.com/game.js?v=e6a31b5` et `style.css?v=e6a31b5`: HTTP 200 mais marqueurs absents pendant ce run (`public_game markers: 0`, `public_css markers: 0`, `Last-Modified: Fri, 31 Jul 2026 02:56:14/13 GMT`), donc GitHub Pages/CDN reste en retard.
+
+## Itération empyree-zephyr-visual — 2026-07-31 05:26
+### Réalisé
+- Ajout d’un feedback visuel dédié au `Vent du Zénith`: le stack épuisé reçoit maintenant une classe `zephyr-hit`, une pastille `Vent`, un badge `Vent du Zénith` et une animation bleue `zephyrPulse`.
+- Le déclenchement Empyrée marque désormais explicitement le hit avec `Vent du Zénith` au lieu d’un simple `Épuisé`, pour rendre la source de l’effet lisible sur la mini-carte.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et contre-jeu `Ancrer les lignes`.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_zephyr_visual.js`: OK (`zephyr_visual_smoke=OK {"exhausted":true,"badge":"Vent du Zénith","hasClass":true,"noPopDef":true}`), puis script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8158`: OK.
+- `curl -I http://localhost:8158/`: HTTP 200.
+- `curl -s http://localhost:8158/game.js | grep -E 'zephyr-hit|Vent du Zénith|zephyr-badge'`: OK.
+- `curl -s http://localhost:8158/style.css | grep -E 'zephyr-hit|zephyrPulse'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Animation CSS simple et courte; pas encore de trajectoire de vent par colonne.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un équilibrage lisible du Rempart du Zénith après quelques tours (ex: intensité du vent annoncée) ou vérifier la propagation GitHub Pages du dernier commit avec cache-busting.
