@@ -689,3 +689,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `questBoard`, `Quête du mage`, `quests`.
 - Vérification GitHub raw `style.css`: OK, contient `quest-panel` et `World quest progression`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=01deb36` et `style.css?v=01deb36`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); `Last-Modified` encore `Thu, 30 Jul 2026 23:48:59 GMT`, donc GitHub Pages/CDN reste stale.
+
+## Itération quest-reward — 2026-07-31 02:16
+### Réalisé
+- Ajout d’une prime visible pour l’arc d’initiation: après les 3 objectifs `ville + marché + assaut`, le panneau `Quête du mage` propose `Réclamer la prime`.
+- `claimQuestReward()` donne +75 or, ajoute une créature rare/mythique à la collection, la montre comme dernier gain et l’ajoute au grimoire si une place est libre.
+- La prime est persistée via `quests.arcRewardClaimed` pour empêcher les doubles réclamations; les anciennes sauvegardes reçoivent une valeur par défaut sûre.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`quest_reward_smoke=OK {"beforeGold":10,"afterGold":85,"prize":"Dragon d'or","claimed":true,"noPopDef":true}`), confirmant disponibilité de la prime, récompense unique, gain carte/or et absence POP/DEF dans le rendu.
+- Serveur local `python -m http.server 8146`: OK.
+- `curl -I http://localhost:8146/`: HTTP 200.
+- `curl -s http://localhost:8146/game.js | grep -E 'claimQuestReward|Prime disponible|questComplete'`: OK.
+- `curl -s http://localhost:8146/style.css | grep -E 'quest-reward'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- La récompense d’arc est fixe côté économie (+75 or + rare/mythique aléatoire), sans choix entre plusieurs récompenses.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un choix de récompense ou un chapitre suivant après l’arc d’initiation, ou enrichir les marchés avec vente/stock persistant.
