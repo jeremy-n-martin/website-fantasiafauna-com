@@ -808,3 +808,10 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Relier `chapterTwoClaimed` à un lieu boss réellement spécial: badge/condition sur l’Abîme des Miroirs, assaut boss plus dur, puis récompense de victoire.
+
+### Publication de l’itération chapter-two-reward
+- Commit local applicatif: `25cbe79` (`Add chapter two reward unlock`).
+- `git push origin main`: OK (`c89c55a..25cbe79 main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `claimChapterTwoReward` / `Sceau de` (`raw-game=3`).
+- Vérification GitHub raw `style.css`: OK, contient `chapter-unlock` (`raw-css=1`).
+- Vérification site public `https://fantasiafauna.com/game.js?v=25cbe79` et `style.css?v=25cbe79`: HTTP 200 mais marqueurs absents pendant ce run (`game_marker=0`, `css_marker=0`); `Last-Modified` encore `Fri, 31 Jul 2026 00:47:06 GMT`, donc GitHub Pages/CDN reste stale.
