@@ -902,3 +902,9 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 
 ### Prochaine action minimale
 - Ajouter une réponse jouable au rituel boss (ex: une action de réparation/contre-sort visible ou récompense/trophée persistant après victoire boss).
+
+### Publication de l’itération boss-mirror-ritual
+- Commit local applicatif: `e6fc0bb` (`Add Abime mirror ritual`).
+- `git push origin main`: OK (`db2234d..e6fc0bb main -> main`).
+- Vérification GitHub raw `game.js`: OK, contient `bossRiftCountdown`, `Rituel du miroir`, `bossMirrorRift` (`raw markers: 4`).
+- Vérification site public `https://fantasiafauna.com/game.js?v=e6fc0bb`: HTTP 200 mais marqueurs absents pendant ce run (`public markers: 0`, `Last-Modified: Fri, 31 Jul 2026 01:37:45 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
