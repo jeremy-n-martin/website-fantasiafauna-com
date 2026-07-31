@@ -720,3 +720,27 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `claimQuestReward`, `Prime disponible`, `questComplete`.
 - Vérification GitHub raw `style.css`: OK, contient `quest-reward`.
 - Vérification site public `https://fantasiafauna.com/game.js?v=3390423-retry` et `style.css?v=3390423-retry`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_marker=0`, `public_css_marker=0`); `Last-Modified` encore `Fri, 31 Jul 2026 00:04:10 GMT`, donc GitHub Pages/CDN reste stale.
+
+## Itération quest-reward-choice — 2026-07-31 02:30
+### Réalisé
+- Transformation de la prime finale d’initiation en choix visible: après ville + marché + assaut, le panneau `Quête du mage` affiche 3 créatures rares/mythiques sélectionnables.
+- Ajout de `questRewardChoices()` et de `claimQuestReward(id)` pour donner réellement la créature choisie, +75 or, puis verrouiller la prime via `arcRewardClaimed`.
+- Les boutons de prime montrent nom, capitale, rareté, ATQ, HP et valeur `[ ]`, sans POP/DEF.
+- Ajout du style `.reward-choices` responsive pour rendre le choix lisible dans le panneau monde.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- Smoke test Node inline: OK (`quest_reward_choice_smoke=OK {"choices":["Hécatonchire","Elfe","Diable"],"picked":"Elfe","gold":85,"noPopDef":true}`), confirmant 3 choix, gain de la créature choisie, +75 or, anti double-réclamation et absence POP/DEF dans le rendu de quête.
+- Serveur local `python -m http.server 8147`: OK.
+- `curl -I http://localhost:8147/`: HTTP 200.
+- `curl -s http://localhost:8147/game.js | grep -E 'questRewardChoices|Prime disponible|reward-choices'`: OK.
+- `curl -s http://localhost:8147/style.css | grep -E 'reward-choices'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Les 3 choix sont déterministes selon jour/collection/lieu, pas encore stockés comme offre de récompense persistante séparée.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter un chapitre suivant après la prime d’initiation, ou enrichir les marchés avec vente/stock persistant.
