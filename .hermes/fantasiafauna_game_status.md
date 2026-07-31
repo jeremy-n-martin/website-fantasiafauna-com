@@ -1001,3 +1001,28 @@ Transformer le site statique Fantasia Fauna en prototype jouable : cartes type M
 - Vérification GitHub raw `game.js`: OK, contient `chapterThreePanel`, `Portail d’Empyrée`, `empyreeVisited` (`raw game markers: 7`).
 - Vérification GitHub raw `style.css`: OK, contient `empyree-panel` / `place.portal` (`raw css markers: 1`).
 - Vérification site public `https://fantasiafauna.com/game.js?v=e140b54`: HTTP 200 mais marqueurs absents pendant ce run (`public_game_markers=0`, `Last-Modified: Fri, 31 Jul 2026 02:23:10 GMT`, `Cache-Control: max-age=600`), donc GitHub Pages/CDN reste en retard.
+
+## Itération empyree-duel — 2026-07-31 04:54
+### Réalisé
+- Ajout d’un premier duel céleste de Chapitre III: nouveau lieu `Rempart du Zénith` sur la grande carte, voilé tant que le Portail d’Empyrée n’a pas été visité.
+- `newEncounter('empyree')` lance un siège Empyrée dédié avec Tour 26, Village 22, Mur 24 et encart `Duel céleste: Rempart du Zénith`.
+- Les invocations ennemies de ce duel utilisent un pool typé `Empyrée` via `empyreeCreaturePool()` / `enemySummonCreature()`.
+- La victoire du duel céleste marque `quests.empyreeDuelWon=true`, donne +100 or et une carte Empyrée; le panneau Chapitre III affiche alors `✓ Gagner le Rempart du Zénith`.
+- Règles préservées: pas de POP/DEF, affichage ATQ/HP/[ ], invocation `max(1, round(30/[ ]))`, dégâts ATQ seuls, HP total de stack, siège tour/village/mur, colonnes 0..4 et passifs existants.
+
+### Vérification réelle
+- `git status --short --branch` avant édition: branche `main`, travail sale non lié toujours présent et non touché (`capitales.md` supprimé, fichiers/dossiers non suivis existants).
+- `node --check game.js`: OK.
+- `node .hermes/smoke_empyree_duel.js`: OK (`empyree_duel_smoke=OK {"pool":49,"tower":26,"won":true,"prizeCapital":"Empyrée"}`), confirmant verrouillage avant portail, ouverture après visite, fortifications 26/22/24, pool Empyrée, récompense +100/carte Empyrée et absence POP/DEF; script temporaire supprimé avant commit.
+- Serveur local `python -m http.server 8156`: OK.
+- `curl -I http://localhost:8156/`: HTTP 200.
+- `curl -s http://localhost:8156/game.js | grep -E 'empyreeCreaturePool|Rempart du Zénith|empyreeDuelWon'`: OK.
+- `curl -s http://localhost:8156/style.css | grep -E 'empyreeDuel|empyree-aura'`: OK.
+
+### Limites
+- Smoke test DOM simulé côté Node; pas de vraie session navigateur graphique pendant ce run cron.
+- Le duel céleste a une identité Empyrée, des fortifications et une récompense, mais pas encore une capacité spéciale unique comme le rituel de l’Abîme.
+- Le travail sale non lié du repo est préservé et non committé.
+
+### Prochaine action minimale
+- Ajouter une capacité spéciale lisible pour le duel Empyrée (ex: vents célestes qui déplacent/épuisent une colonne) ou un contre-jeu associé.
