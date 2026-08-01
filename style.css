@@ -790,6 +790,110 @@ body{
 .cbt-card.block-pick:hover{filter:brightness(1.12);transform:translateY(-2px)}
 .atk-badge{color:#ffb39a}
 
+/* Visée Hearthstone — flèche jaune pointillée */
+.combat-table{position:relative}
+.combat-table.is-aiming{cursor:crosshair}
+.cbt-aim-layer{
+  position:fixed;inset:0;z-index:90;pointer-events:none;overflow:visible;
+}
+.cbt-aim-stroke{
+  animation:cbtAimDash .55s linear infinite;
+  filter:drop-shadow(0 0 5px #ffe14acc);
+}
+@keyframes cbtAimDash{to{stroke-dashoffset:-40}}
+.cbt-card.aiming,.cbt-card.attacking.aiming{
+  outline:3px solid #ffe14a;
+  box-shadow:0 0 0 5px #ffe14a33,0 0 28px #ffe14a77,0 14px 28px #000a;
+  transform:translateY(-10px) scale(1.04);
+  z-index:3;
+}
+.cbt-card.cbt-target,.cbt-tower.cbt-target{
+  cursor:crosshair;
+  outline:2px solid #ffe14aaa;
+  box-shadow:0 0 0 4px #ffe14a28,0 0 22px #ffe14a44;
+  animation:cbtTargetPulse 1s ease-in-out infinite alternate;
+}
+.cbt-tower.cbt-target{border-radius:16px}
+.cbt-card.cbt-target-hot,.cbt-tower.cbt-target-hot{
+  outline:3px solid #fff6a8;
+  box-shadow:0 0 0 6px #ffe14a44,0 0 36px #ffe14a99;
+  filter:brightness(1.12);
+  transform:translateY(-4px) scale(1.05);
+  animation:none;
+}
+@keyframes cbtTargetPulse{
+  from{box-shadow:0 0 0 3px #ffe14a22,0 0 14px #ffe14a33}
+  to{box-shadow:0 0 0 5px #ffe14a44,0 0 28px #ffe14a66}
+}
+.target-badge{color:#ffe14a;text-shadow:0 0 8px #ffe14a88}
+.cbt-aim-panel{
+  text-align:center;padding:10px 14px;max-width:480px;margin:0 auto;
+  border:1px solid #ffe14a77;border-radius:16px;
+  background:linear-gradient(135deg,#3a2e10cc,#120e08ee);
+  box-shadow:0 0 28px #ffe14a22, inset 0 0 20px #ffe14a12;
+}
+.cbt-aim-panel b{display:block;color:#ffe14a;margin-bottom:4px;letter-spacing:.04em}
+.cbt-aim-panel p{margin:0 0 10px;color:#f8eedbcc;font-size:.9rem}
+.cbt-hint{color:#f8eedbaa;font-size:.88rem}
+.cbt-hint em{color:#9ff0bd;font-style:normal;font-weight:800}
+.cbt-row.targeting{outline:1px dashed #ffe14a44;box-shadow:inset 0 0 24px #ffe14a14}
+.cbt-wait{color:#f8eedbaa;font-weight:700}
+
+/* Capacités (keywords) + tooltips */
+.ability-row{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0 4px;position:relative;z-index:6}
+.ff-card,.cbt-card,.cbt-row,.cbt-hand{overflow:visible}
+.ff-card .ability-row,.cbt-card .ability-row{z-index:8}
+.ability-tag{
+  position:relative;display:inline-flex;align-items:center;
+  padding:3px 8px;border-radius:999px;cursor:help;
+  border:1px solid #ffffff44;background:#0008;color:#f8eedb;
+  font-size:.68rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase;
+  line-height:1.2;
+}
+.ability-tag em{font-style:normal}
+.ability-tag.ability-tank{
+  border-color:#7eb6ffaa;color:#d7ebff;
+  background:linear-gradient(135deg,#1a3355cc,#0a1524ee);
+  box-shadow:0 0 12px #4d8dff33;
+}
+.ability-tip{
+  position:absolute;left:50%;bottom:calc(100% + 10px);transform:translateX(-50%) translateY(4px);
+  width:max(180px, 16rem);max-width:min(260px,70vw);
+  padding:9px 11px;border-radius:12px;
+  border:1px solid #ffe29b88;background:linear-gradient(165deg,#2a2214f5,#100e0af8);
+  color:#f8eedbcc;font-size:.78rem;font-weight:600;letter-spacing:0;text-transform:none;line-height:1.35;
+  text-align:left;box-shadow:0 12px 28px #000c,0 0 18px #d9b45f22;
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .16s ease, transform .16s ease, visibility .16s;
+  z-index:80;
+}
+.ability-tip b{display:block;margin-bottom:4px;color:#ffe29b;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.ability-tag:hover .ability-tip,
+.ability-tag:focus .ability-tip,
+.ability-tag:focus-within .ability-tip{
+  opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);
+}
+.ff-card .ability-row,.gallery-card .ability-row{margin:4px 8px 2px}
+.cbt-card .ability-row.cbt-abilities{margin:3px 0 0;gap:3px}
+.cbt-card .ability-tag{padding:2px 6px;font-size:.58rem}
+.cbt-card .ability-tip{width:12.5rem;font-size:.72rem;bottom:calc(100% + 6px)}
+.cbt-card.is-tank{box-shadow:0 0 0 1px #7eb6ff66,0 10px 24px #0009}
+.cbt-card.cbt-blocked{opacity:.55;filter:saturate(.55);cursor:not-allowed;outline:none;box-shadow:none;animation:none}
+.cbt-tower.cbt-blocked{opacity:.55;filter:saturate(.6);cursor:not-allowed;outline:1px dashed #ffffff33;box-shadow:none;animation:none}
+.tank-badge{color:#9ec8ff;text-shadow:0 0 8px #4d8dff66}
+.blocked-badge{color:#c9b896}
+.cbt-aim-panel.tank-lock{border-color:#7eb6ff99;background:linear-gradient(135deg,#1a2a44cc,#0a1018ee);box-shadow:0 0 28px #4d8dff22}
+.cbt-aim-panel.tank-lock b{color:#9ec8ff}
+.cbt-row.tank-lock{outline:1px dashed #7eb6ff55;box-shadow:inset 0 0 24px #4d8dff14}
+.combat-table.tank-lock .cbt-card.cbt-target.ability-tank,
+.combat-table.tank-lock .cbt-card.cbt-target.is-tank{
+  outline-color:#9ec8ff;
+}
+@media (prefers-reduced-motion:reduce){
+  .cbt-aim-stroke{animation:none}
+  .cbt-card.cbt-target,.cbt-tower.cbt-target{animation:none}
+}
+
 /* Player hand: full-width horizontal row */
 .ally-hud.cbt-side{
   display:grid;
