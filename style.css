@@ -1044,7 +1044,8 @@ body{
 .ability-tag.ability-activer-tank,
 .ability-tag.ability-activer-bouclier,
 .ability-tag.ability-activer-frappe,
-.ability-tag.ability-activer-soin{
+.ability-tag.ability-activer-soin,
+.ability-tag.ability-activer-purge{
   border-color:#d4b88aaa;color:#fff3d6;
   background:linear-gradient(135deg,#3a2a14cc,#120e08ee);
   box-shadow:0 0 12px #d9b45f33;
@@ -1081,12 +1082,14 @@ body{
 .ability-tag.ability-jetons-1-1,
 .ability-tag.ability-donner-buff,
 .ability-tag.ability-charge,
+.ability-tag.ability-camouflage,
 .ability-tag.ability-vol-de-vie,
 .ability-tag.ability-dernier-souffle,
 .ability-tag.ability-cri-pioche,
 .ability-tag.ability-cri-frappe,
 .ability-tag.ability-furie,
 .ability-tag.ability-allie-meurt,
+.ability-tag.ability-quand-tue,
 .ability-tag.ability-affaiblir,
 .ability-tag.ability-survie{
   border-color:#b8a890aa;color:#f5ecd8;
@@ -1096,12 +1099,19 @@ body{
   border-color:#e07050aa;color:#ffe8dc;
   background:linear-gradient(135deg,#3a1810cc,#140806ee);
 }
+.ability-tag.ability-camouflage{
+  border-color:#90a8b8aa;color:#dce8f0;
+  background:linear-gradient(135deg,#1a242ccc,#0a1014ee);
+}
 .ability-tag.ability-vol-de-vie{
   border-color:#e07090aa;color:#ffd6e4;
   background:linear-gradient(135deg,#3a1018cc,#14060aee);
 }
 .ability-tag.ability-survie{
   border-color:#90c0a0aa;color:#e0ffe8;
+}
+.ability-tag.ability-quand-tue{
+  border-color:#d08060aa;color:#ffe0d0;
 }
 
 /* FX capacités combat */
@@ -1198,8 +1208,11 @@ body{
 .cbt-mark.freeze{background:#38bdf8;border-color:#7dd3fc;color:#38bdf8}
 .cbt-mark.regen{background:#34d399;border-color:#a7f3d0;color:#34d399}
 .cbt-mark.tanking{background:#94a3b8;border-color:#cbd5e1;color:#94a3b8}
+.cbt-mark.stealth{background:#94a3b8;border-color:#cbd5e1;color:#64748b;opacity:.85}
 .cbt-card.has-shield{box-shadow:0 0 0 1px #ffe29b88,0 0 14px #d9b45f44}
 .cbt-card.is-frozen{filter:saturate(.7) brightness(1.05)}
+.cbt-card.is-stealth{opacity:.72;filter:saturate(.55)}
+.cbt-badge.stealth-badge{background:#334155cc;color:#e2e8f0}
 @keyframes cbtFxBurst{
   0%{transform:scale(.4);opacity:1}
   100%{transform:scale(1.8);opacity:0}

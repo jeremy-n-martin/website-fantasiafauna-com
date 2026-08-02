@@ -14,6 +14,7 @@ const ACTIVATION_SPECS = [
   {id:'activer-bouclier', label:'Bouclier divin', effect:'shield'},
   {id:'activer-frappe', label:'Frappe', effect:'strike'},
   {id:'activer-soin', label:'Soins', effect:'healAll'},
+  {id:'activer-purge', label:'Purification', effect:'purge'},
 ];
 const ON_HIT_EFFECTS = [
   {role:'poison', status:'poison', label:'Poison', vfx:'poison'},
@@ -25,9 +26,9 @@ const KEYWORD_ROLES = new Set([
   'lancer','lancer-mod','lancer-max','sort-degat','sort-degat-mod','sort-degat-max',
   'soin','soin-mod','soin-max','invocation','invocation-rapide','invocation-intime',
   'etendard','formation',
-  'activer-regen','activer-tank','activer-bouclier','activer-frappe','activer-soin',
-  'bouclier-divin','double-attaque','charge','vol-de-vie','dernier-souffle',
-  'cri-pioche','cri-frappe','furie','allie-meurt','affaiblir','survie',
+  'activer-regen','activer-tank','activer-bouclier','activer-frappe','activer-soin','activer-purge',
+  'bouclier-divin','double-attaque','charge','camouflage','vol-de-vie','dernier-souffle',
+  'cri-pioche','cri-frappe','furie','allie-meurt','quand-tue','affaiblir','survie',
   'poison','brulant','gelant','fin-tour-tir','fin-tour-buff','debut-tour-soin','debut-tour-tir',
   'quand-blesse','quand-invoque','apres-attaque','jetons-1-1','donner-buff',
 ]);
@@ -61,9 +62,11 @@ function cloneCard(c){
     frozen: false,
     skipNextAttack: false,
     survieUsed: false,
+    stealthed: false,
     statuses: [],
   };
   if(hasRole(card,'bouclier-divin')) card.divineShield=true;
+  if(hasRole(card,'camouflage')) card.stealthed=true;
   return card;
 }
 function activationSpec(c){
@@ -93,6 +96,29 @@ function healCreature(c, amount){
   const before=c.hp??0;
   c.hp=Math.min(max, before+amount);
   return c.hp-before;
+}
+function clearCreatureStatuses(c){
+  if(!c) return false;
+  let changed=false;
+  if(Array.isArray(c.statuses) && c.statuses.length){
+    c.statuses=[];
+    changed=true;
+  }
+  if(c.frozen || c.skipNextAttack){
+    c.frozen=false;
+    c.skipNextAttack=false;
+    changed=true;
+  }
+  return changed;
+}
+function breakStealth(c, reason=''){
+  if(!c || !c.stealthed) return false;
+  c.stealthed=false;
+  combatLog(`${c.name} sort du camouflage${reason?` (${reason})`:''}.`);
+  return true;
+}
+function isStealthed(c){
+  return !!(c && c.stealthed);
 }
 function makeToken11(capital){
   return cloneCard({
@@ -164,19 +190,22 @@ function dealDamageToCreature(who, c, dmg, opts={}){
     combatLog(`${c.name} (Survie) : résiste avec 1 PV.`);
     spawnCombatFx('bouclier', c.uid, [c.uid]);
   }
-  if(hasRole(c,'furie') && c.hp>0){
-    buffCreature(c, 1, 0);
-    combatLog(`${c.name} (Furie) : +1 ATQ.`);
-  }
-  if(hasRole(c,'quand-blesse') && opts.allowRetaliate!==false && c.hp>0){
-    const hits=[];
-    for(const t of randomEnemyTargets(who, 1)){
-      const res=applyDamageToTarget(who, t, 1, {allowRetaliate:false});
-      if(res) hits.push(res);
+  // Furie / représailles seulement si la créature est encore en vie
+  if(c.hp>0){
+    if(hasRole(c,'furie') && !opts.skipFury){
+      buffCreature(c, 1, 0);
+      combatLog(`${c.name} (Furie) : +1 ATQ.`);
     }
-    if(hits.length){
-      combatLog(`${c.name} (Représailles) : 1 dégât → ${hits.map(h=>h.label).join(', ')}.`);
-      spawnCombatFx('sort', c.uid, hits.map(h=>h.key));
+    if(hasRole(c,'quand-blesse') && opts.allowRetaliate!==false){
+      const hits=[];
+      for(const t of randomEnemyTargets(who, 1)){
+        const res=applyDamageToTarget(who, t, 1, {allowRetaliate:false});
+        if(res) hits.push(res);
+      }
+      if(hits.length){
+        combatLog(`${c.name} (Représailles) : 1 dégât → ${hits.map(h=>h.label).join(', ')}.`);
+        spawnCombatFx('sort', c.uid, hits.map(h=>h.key));
+      }
     }
   }
   return dmg;
@@ -210,8 +239,12 @@ function killCreature(who, c, reason=''){
 }
 function sweepDead(who, reason=''){
   const b=state.battle; if(!b) return;
-  const dead=b[who].board.filter(c=>c.hp<=0);
-  dead.forEach(c=>killCreature(who, c, reason));
+  let guard=16;
+  while(guard--){
+    const dead=b[who].board.find(c=>c.hp<=0);
+    if(!dead) break;
+    killCreature(who, dead, reason);
+  }
 }
 function refreshBoardAuras(who, opts={}){
   const b=state.battle; if(!b) return;
@@ -261,9 +294,7 @@ function refreshBoardAuras(who, opts={}){
   });
   const died=side.board.filter(c=>c.hp<=0);
   if(died.length){
-    died.forEach(c=>{
-      if(side.board.some(x=>x.uid===c.uid)) killCreature(who, c, 'aura');
-    });
+    sweepDead(who, 'aura');
     return;
   }
   if(opts.fxSource){
@@ -600,11 +631,11 @@ function beginTurn(who, isOpening=false){
     c.justPlayed=false;
     c.activatedThisTurn=false;
     c.attacksThisTurn=0;
-    c.tempTank=false;
+    // Tank temporaire : appliqué au début du tour suivant l’activation, retiré en fin de ce tour
     if(c.pendingTank){
       c.tempTank=true;
       c.pendingTank=false;
-      combatLog(`${c.name} devient Tank ce tour.`);
+      combatLog(`${c.name} devient Tank jusqu’à la fin de ce tour.`);
     }
     if(c.pendingRegen){
       c.hp=c.maxHp??c.baseMaxHp??c.hp;
@@ -658,7 +689,7 @@ function runEndOfTurnEffects(who){
     const c=side.board.find(x=>x.uid===uid);
     if(!c) continue;
     if(hasStatus(c,'brulant')){
-      dealDamageToCreature(who, c, 1, {fromStrike:false});
+      dealDamageToCreature(who, c, 1, {fromStrike:false, skipFury:false});
       combatLog(`${c.name} brûle (1 dégât).`);
       if(c.hp<=0){ killCreature(who, c, 'feu'); continue; }
     }
@@ -678,6 +709,11 @@ function runEndOfTurnEffects(who){
       combatLog(`${c.name} (Montée en puissance) : +1 ATQ.`);
       spawnCombatFx('etendard', c.uid, [c.uid]);
     }
+    // Rempart : expire à la fin du tour où il était actif
+    if(c.tempTank){
+      c.tempTank=false;
+      combatLog(`${c.name} n’est plus Tank.`);
+    }
   }
   checkWinner();
 }
@@ -688,6 +724,10 @@ function triggerEnterExtras(who, card){
     card.divineShield=true;
     combatLog(`${card.name} arrive avec Bouclier divin.`);
     spawnCombatFx('bouclier', card.uid, [card.uid]);
+  }
+  if(hasRole(card,'camouflage')){
+    card.stealthed=true;
+    combatLog(`${card.name} arrive camouflée.`);
   }
   if(hasRole(card,'jetons-1-1')){
     const spawned=[];
@@ -983,22 +1023,23 @@ function hasNoRiposte(c){
     ? hasAbility(c,'sans-riposte')
     : !!(c?.roles||[]).includes('sans-riposte') || !!(c?.roles||[]).includes('ranged');
 }
-/** Cibles légales pour un assaut (Tank force le focus, sauf Assassin). */
+/** Cibles légales pour un assaut (Tank force le focus, sauf Assassin / Camouflage). */
 function legalAttackTargets(atkSide, atkCreature){
   const b=state.battle;
   const defSide=atkSide==='player'?'enemy':'player';
   const board=b[defSide].board;
+  const visible=board.filter(c=>!isStealthed(c));
   const atk=atkCreature || (b.attackSource
     ? b[atkSide].board.find(c=>c.uid===b.attackSource)
     : null);
   if(atk && isAssassin(atk)){
-    return { face:true, minions:board.slice(), forcedTank:false, assassin:true };
+    return { face:true, minions:visible.slice(), forcedTank:false, assassin:true };
   }
-  const tanks=board.filter(isTank);
+  const tanks=visible.filter(isTank);
   if(tanks.length){
     return { face:false, minions:tanks, forcedTank:true, assassin:false };
   }
-  return { face:true, minions:board.slice(), forcedTank:false, assassin:false };
+  return { face:true, minions:visible.slice(), forcedTank:false, assassin:false };
 }
 function selectAttacker(uid){
   const b=state.battle; if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
@@ -1046,6 +1087,7 @@ function startAttackAim(uid){
 }
 function applyActivationEffect(who, c, spec){
   if(!c || !spec) return;
+  breakStealth(c, 'activation');
   if(spec.effect==='regen'){
     c.pendingRegen=true;
     combatLog(`${c.name} s’active : régénération complète au prochain tour.`);
@@ -1077,6 +1119,11 @@ function applyActivationEffect(who, c, spec){
     });
     combatLog(`${c.name} s’active : soigne les alliés (+1 PV).`);
     if(keys.length) spawnCombatFx('soin', c.uid, keys);
+  } else if(spec.effect==='purge'){
+    const cleaned=clearCreatureStatuses(c);
+    const healed=healCreature(c, 2);
+    combatLog(`${c.name} s’active : purification${cleaned?' (statuts retirés)':''}${healed?` +${healed} PV`:''}.`);
+    spawnCombatFx('soin', c.uid, [c.uid]);
   }
 }
 function activateCreature(uid){
@@ -1118,8 +1165,9 @@ function applyOnAttackEffects(atk, def){
     if(fx.status) applyStatus(def, fx.status);
     if(fx.freeze) def.skipNextAttack=true;
     if(fx.weaken){
-      def.baseAttack=Math.max(0, (def.baseAttack||def.attack||0)-fx.weaken);
-      def.attack=Math.max(0, (def.attack||0)-fx.weaken);
+      buffCreature(def, -fx.weaken, 0);
+      if((def.baseAttack||0)<0) def.baseAttack=0;
+      if((def.attack||0)<0) def.attack=0;
     }
     notes.push(fx.label);
     spawnCombatFx(fx.vfx, atk.uid, [def.uid]);
@@ -1168,6 +1216,7 @@ function resolveCombatStrike(atkSide, atkUid, target){
     if(!legal.minions.some(c=>c.uid===def.uid)) return false;
   }
   markAttackUsed(atk);
+  breakStealth(atk, 'attaque');
   flashCombatCard(atk.uid);
   if(target.type==='face'){
     D.hp=Math.max(0, D.hp-atk.attack);
@@ -1182,23 +1231,43 @@ function resolveCombatStrike(atkSide, atkUid, target){
       atk.exhausted=false; atk.canAttack=true;
       return false;
     }
+    if(isStealthed(def)){
+      combatLog(`${def.name} est camouflée — cible invalide.`);
+      atk.attacksThisTurn=Math.max(0,(atk.attacksThisTurn||1)-1);
+      atk.exhausted=false; atk.canAttack=true;
+      return false;
+    }
     const tankNote=isTank(def)?' (Tank)':'';
     const noRiposte=hasNoRiposte(atk);
+    const riposteDmg=def.attack||0;
     let dealt=0;
+    // Dégâts d’attaque + vol de vie / on-hit avant la riposte (évite un heal post-létal)
     if(noRiposte){
       combatLog(`${atk.name} (${atk.attack}) frappe ${def.name}${tankNote} — sans riposte.`);
       dealt=dealDamageToCreature(defSide, def, atk.attack);
     } else {
-      combatLog(`${atk.name} (${atk.attack}) charge ${def.name}${tankNote} — riposte ${def.attack}.`);
+      combatLog(`${atk.name} (${atk.attack}) charge ${def.name}${tankNote} — riposte ${riposteDmg}.`);
       dealt=dealDamageToCreature(defSide, def, atk.attack);
-      if(def.hp>0) dealDamageToCreature(atkSide, atk, def.attack);
     }
-    if(dealt>0){
+    if(dealt>0 && def.hp>0){
       applyOnAttackEffects(atk, def);
-      applyLifesteal(atk, dealt);
+    } else if(dealt>0 && def.hp<=0){
+      // Effets on-hit inutiles sur un cadavre — skip
+    }
+    if(dealt>0) applyLifesteal(atk, dealt);
+    if(!noRiposte && def.hp>0 && riposteDmg>0){
+      dealDamageToCreature(atkSide, atk, riposteDmg);
     }
     flashCombatCard(def.uid);
-    if(def.hp<=0) killCreature(defSide, def);
+    const killedDef=def.hp<=0;
+    if(killedDef){
+      killCreature(defSide, def);
+      if(hasRole(atk,'quand-tue') && atk.hp>0 && A.board.some(x=>x.uid===atk.uid)){
+        buffCreature(atk, 1, 1);
+        combatLog(`${atk.name} (Exécution) : +1/+1.`);
+        spawnCombatFx('etendard', atk.uid, [atk.uid]);
+      }
+    }
     if(atk.hp<=0) killCreature(atkSide, atk);
     else triggerAfterAttack(atkSide, atk);
   }
@@ -1426,28 +1495,31 @@ function miniCard(c, opts={}){
   const title = opts.summonSick ? ' title="Mal d’invocation — attaque au prochain tour"'
     : opts.exhausted ? ' title="Déjà utilisée"'
     : opts.aiming ? ' title="Attaquante — choisis une cible"'
-    : opts.blocked ? ' title="Protégé par un Tank — cible invalide"'
+    : opts.blocked ? (opts.stealthed ? ' title="Camouflage — impossible à cibler"' : ' title="Protégé par un Tank — cible invalide"')
     : opts.targetable ? (opts.forcedTank ? ' title="Tank — cible obligatoire"' : ' title="Cible valide — cliquer pour attaquer"')
     : opts.ready ? ' title="Prête — cliquer pour attaquer ou activer"'
     : '';
-  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${ready}${aiming}${target}${tank}${blocked}${unafford}${flash}${opts.draggable?' can-drag':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}${c.frozen?' is-frozen':''}`;
+  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${ready}${aiming}${target}${tank}${blocked}${unafford}${flash}${opts.draggable?' can-drag':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}${c.frozen?' is-frozen':''}${isStealthed(c)?' is-stealth':''}`;
   const style=`style="--faction:${fm.color}"`;
   const badge = opts.aiming?'<em class="cbt-badge atk-badge">Vise…</em>'
     : opts.targetable && opts.forcedTank?'<em class="cbt-badge tank-badge">Tank</em>'
     : opts.targetable?'<em class="cbt-badge target-badge">Cible</em>'
+    : opts.blocked && opts.stealthed?'<em class="cbt-badge stealth-badge">Camouflage</em>'
     : opts.blocked?'<em class="cbt-badge blocked-badge">Protégé</em>'
     : opts.summonSick?'<em class="cbt-badge sick-badge">Sommeil</em>'
     : opts.ready?'<em class="cbt-badge ready-badge">Prête</em>'
     : opts.exhausted?'<em class="cbt-badge done-badge">Fatiguée</em>'
-    : (isTank(c) && !opts.hand ? '<em class="cbt-badge tank-badge">Tank</em>' : '');
+    : (isStealthed(c) && !opts.hand ? '<em class="cbt-badge stealth-badge">Camouflage</em>'
+    : (isTank(c) && !opts.hand ? '<em class="cbt-badge tank-badge">Tank</em>' : ''));
   const marks=[];
   if(!opts.hand){
     if(c.divineShield) marks.push('<i class="cbt-mark shield" title="Bouclier divin"></i>');
+    if(isStealthed(c)) marks.push('<i class="cbt-mark stealth" title="Camouflage"></i>');
     if(hasStatus(c,'poison')) marks.push('<i class="cbt-mark poison" title="Poison"></i>');
     if(hasStatus(c,'brulant')) marks.push('<i class="cbt-mark burn" title="Feu"></i>');
     if(c.frozen || c.skipNextAttack) marks.push('<i class="cbt-mark freeze" title="Gel"></i>');
     if(c.pendingRegen) marks.push('<i class="cbt-mark regen" title="Régénère au prochain tour"></i>');
-    if(c.pendingTank) marks.push('<i class="cbt-mark tanking" title="Tank au prochain tour"></i>');
+    if(c.pendingTank || c.tempTank) marks.push('<i class="cbt-mark tanking" title="Tank temporaire"></i>');
   }
   const statusRow=marks.length?`<span class="cbt-marks">${marks.join('')}</span>`:'';
   const face = typeof buildFfCardHtml==='function'
@@ -1496,6 +1568,7 @@ function renderBoardRow(side, who){
           onclick: ok ? `confirmAttackMinion('${c.uid}')` : '',
           targetable:ok,
           blocked:!ok,
+          stealthed: isStealthed(c),
           forcedTank:!!legal.forcedTank,
           selected:false,
         }));
