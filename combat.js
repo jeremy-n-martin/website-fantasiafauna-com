@@ -9,15 +9,192 @@ function pickN(arr,n){
   const copy=arr.slice(); shuffleInPlace(copy); return copy.slice(0,n);
 }
 function cloneCard(c){
+  const roles=[...(c.roles||[])];
   return {
     ...c,
+    roles,
     uid: uid(),
     hp: c.health,
     maxHp: c.health,
     canAttack: false,
     exhausted: false,
     justPlayed: true,
+    abilityCD: null,
+    summoned: false,
   };
+}
+function abilityPulseSpec(c){
+  const roles=c?.roles||[];
+  const has=(id)=>roles.includes(id);
+  if(has('lancer-max')) return {kind:'dmg', dmg:2, targets:2, period:1, vfx:'lancer', label:'Salve de lancer'};
+  if(has('sort-degat-max')) return {kind:'dmg', dmg:2, targets:2, period:1, vfx:'sort', label:'Tempête de sorts'};
+  if(has('lancer-mod')) return {kind:'dmg', dmg:1, targets:1, period:1, vfx:'lancer', label:'Arme de lancer+'};
+  if(has('sort-degat-mod')) return {kind:'dmg', dmg:1, targets:1, period:1, vfx:'sort', label:'Sort de dégât+'};
+  if(has('lancer')) return {kind:'dmg', dmg:1, targets:1, period:2, vfx:'lancer', label:'Arme de lancer'};
+  if(has('sort-degat')) return {kind:'dmg', dmg:1, targets:1, period:2, vfx:'sort', label:'Sort de dégât'};
+  if(has('soin-max')) return {kind:'heal', amount:2, targets:2, period:1, vfx:'soin', label:'Soin majeur'};
+  if(has('soin-mod')) return {kind:'heal', amount:1, targets:1, period:1, vfx:'soin', label:'Soin+'};
+  if(has('soin')) return {kind:'heal', amount:1, targets:1, period:2, vfx:'soin', label:'Soin'};
+  if(has('invocation-intime')) return {kind:'summon', period:1, vfx:'invocation', label:'Invocation incessante'};
+  if(has('invocation-rapide')) return {kind:'summon', period:2, vfx:'invocation', label:'Invocation rapide'};
+  if(has('invocation')) return {kind:'summon', period:3, vfx:'invocation', label:'Invocation'};
+  return null;
+}
+function stripPulseRoles(roles){
+  const pulse=new Set([
+    'lancer','lancer-mod','lancer-max','sort-degat','sort-degat-mod','sort-degat-max',
+    'soin','soin-mod','soin-max','invocation','invocation-rapide','invocation-intime',
+  ]);
+  return (roles||[]).filter(r=>!pulse.has(r));
+}
+function pickRandom(arr, n){
+  const copy=arr.slice();
+  shuffleInPlace(copy);
+  return copy.slice(0, Math.max(0, n));
+}
+function spawnCombatFx(vfx, fromUid, toKeys){
+  const root=document.querySelector('.combat-table')||document.body;
+  const fromEl=fromUid ? root.querySelector(`.cbt-card[data-uid="${fromUid}"]`) : null;
+  const from=fromEl ? fromEl.getBoundingClientRect() : {left:window.innerWidth/2, top:window.innerHeight/2, width:40, height:40};
+  const fx=document.createElement('div');
+  fx.className=`cbt-fx cbt-fx-${vfx}`;
+  fx.style.left=(from.left+from.width/2)+'px';
+  fx.style.top=(from.top+from.height/2)+'px';
+  document.body.appendChild(fx);
+  (toKeys||[]).forEach((key, i)=>{
+    let tip=null;
+    if(key==='face-enemy') tip=document.querySelector('.cbt-tower.enemy');
+    else if(key==='face-player') tip=document.querySelector('.cbt-tower.ally');
+    else tip=document.querySelector(`.cbt-card[data-uid="${key}"]`);
+    const r=tip?.getBoundingClientRect();
+    const bolt=document.createElement('i');
+    bolt.className='cbt-fx-bolt';
+    if(r){
+      const x1=from.left+from.width/2, y1=from.top+from.height/2;
+      const x2=r.left+r.width/2, y2=r.top+r.height/2;
+      const dx=x2-x1, dy=y2-y1;
+      const dist=Math.hypot(dx,dy)||1;
+      bolt.style.width=dist+'px';
+      bolt.style.transform=`rotate(${Math.atan2(dy,dx)}rad)`;
+      bolt.style.animationDelay=(i*60)+'ms';
+    }
+    fx.appendChild(bolt);
+    if(tip){
+      tip.classList.add('cbt-fx-hit-'+vfx);
+      setTimeout(()=>tip.classList.remove('cbt-fx-hit-'+vfx), 520);
+    }
+  });
+  setTimeout(()=>fx.remove(), 700);
+}
+function applyDamageToTarget(atkSide, target, dmg){
+  const b=state.battle; if(!b||dmg<=0) return null;
+  const defSide=atkSide==='player'?'enemy':'player';
+  const D=b[defSide];
+  if(target.type==='face'){
+    D.hp=Math.max(0, D.hp-dmg);
+    return {key: defSide==='enemy'?'face-enemy':'face-player', label: defSide==='enemy'?'la tour adverse':'ta tour'};
+  }
+  const def=D.board.find(c=>c.uid===target.uid);
+  if(!def) return null;
+  def.hp-=dmg;
+  const dead=def.hp<=0;
+  if(dead) D.board=D.board.filter(c=>c.uid!==def.uid);
+  return {key:def.uid, label:def.name+(dead?' (mort)':'')};
+}
+function randomEnemyTargets(atkSide, count){
+  const b=state.battle;
+  const defSide=atkSide==='player'?'enemy':'player';
+  const D=b[defSide];
+  const pool=D.board.map(c=>({type:'minion', uid:c.uid}));
+  pool.push({type:'face'});
+  return pickRandom(pool, count);
+}
+function randomWoundedAllies(side, count){
+  const wounded=side.board.filter(c=>(c.hp??c.health)<(c.maxHp??c.health));
+  return pickRandom(wounded, count);
+}
+function makeSummonedCreature(source){
+  const cap=source.capital;
+  const maxCost=Math.max(1, Math.min(3, (source.cost||2)-1));
+  let pool=CREATURES.filter(c=>c.capital===cap && (c.cost||0)<=maxCost && c.id!==source.id);
+  if(!pool.length) pool=CREATURES.filter(c=>(c.cost||0)<=2);
+  if(!pool.length) pool=[source];
+  const base=pickN(pool,1)[0];
+  const token=cloneCard(base);
+  token.roles=stripPulseRoles(token.roles);
+  token.summoned=true;
+  token.justPlayed=true;
+  token.canAttack=false;
+  token.abilityCD=null;
+  return token;
+}
+function summonBeside(side, source, who){
+  if(side.board.length>=8){
+    combatLog(`${source.name} ne peut pas invoquer : plateau plein.`);
+    return null;
+  }
+  const idx=side.board.findIndex(c=>c.uid===source.uid);
+  if(idx<0) return null;
+  const token=makeSummonedCreature(source);
+  const right=idx+1;
+  if(right<=side.board.length) side.board.splice(right, 0, token);
+  else side.board.splice(Math.max(0, idx), 0, token);
+  combatLog(`${who==='player'?'Ton':'Adverse'} ${source.name} invoque ${token.name}.`);
+  flashCombatCard(token.uid, 520);
+  return token;
+}
+function triggerCreaturePulse(who, card, opts={}){
+  const b=state.battle; if(!b||!card) return;
+  const spec=abilityPulseSpec(card);
+  if(!spec) return;
+  const side=b[who];
+  const hits=[];
+  if(spec.kind==='dmg'){
+    const targets=randomEnemyTargets(who, spec.targets);
+    for(const t of targets){
+      const res=applyDamageToTarget(who, t, spec.dmg);
+      if(res) hits.push(res);
+    }
+    if(hits.length){
+      combatLog(`${card.name} (${spec.label}) : ${spec.dmg} dégât(s) → ${hits.map(h=>h.label).join(', ')}.`);
+      spawnCombatFx(spec.vfx, card.uid, hits.map(h=>h.key));
+      hits.forEach(h=>{ if(h.key && !String(h.key).startsWith('face')) flashCombatCard(h.key, 380); });
+      checkWinner();
+    }
+  } else if(spec.kind==='heal'){
+    const wounded=randomWoundedAllies(side, spec.targets);
+    if(!wounded.length){
+      if(opts.enter) combatLog(`${card.name} (${spec.label}) : aucun allié blessé.`);
+    } else {
+      for(const ally of wounded){
+        const max=ally.maxHp??ally.health;
+        ally.hp=Math.min(max, (ally.hp??ally.health)+spec.amount);
+        hits.push({key:ally.uid, label:`${ally.name} +${spec.amount}`});
+      }
+      combatLog(`${card.name} (${spec.label}) soigne : ${hits.map(h=>h.label).join(', ')}.`);
+      spawnCombatFx('soin', card.uid, hits.map(h=>h.key));
+      hits.forEach(h=>flashCombatCard(h.key, 380));
+    }
+  } else if(spec.kind==='summon'){
+    const token=summonBeside(side, card, who);
+    if(token) spawnCombatFx('invocation', card.uid, [token.uid]);
+  }
+  card.abilityCD=spec.period;
+}
+function tickBoardAbilities(who){
+  const b=state.battle; if(!b) return;
+  const side=b[who];
+  // snapshot uids — summons can insert mid-loop
+  const uids=side.board.map(c=>c.uid);
+  for(const uid of uids){
+    const c=side.board.find(x=>x.uid===uid);
+    if(!c) continue;
+    const spec=abilityPulseSpec(c);
+    if(!spec) continue;
+    if(c.abilityCD==null) c.abilityCD=spec.period;
+    c.abilityCD-=1;
+    if(c.abilityCD<=0) triggerCreaturePulse(who, c, {enter:false});
+  }
 }
 function allFactions(){
   return Array.from(new Set(CREATURES.map(c=>c.capital))).sort((a,b)=>a.localeCompare(b,'fr'));
@@ -63,9 +240,21 @@ function combatLog(msg){
   b.log.unshift(msg);
   b.log=b.log.slice(0,40);
 }
+function sortHand(hand){
+  if(!hand || hand.length<2) return hand;
+  hand.sort((a,b)=>{
+    const ca=a.cost||0, cb=b.cost||0;
+    if(ca!==cb) return ca-cb;
+    const na=a.name||'', nb=b.name||'';
+    const byName=na.localeCompare(nb,'fr');
+    if(byName) return byName;
+    return String(a.uid||'').localeCompare(String(b.uid||''));
+  });
+  return hand;
+}
 function makeSide(factions){
   const deck=buildDeck(factions,40);
-  const hand=deck.splice(0,7);
+  const hand=sortHand(deck.splice(0,7));
   return {
     hp:30, mana:0, maxMana:0, turnCount:0,
     colorMana:Object.fromEntries(factions.map(f=>[f,0])),
@@ -80,7 +269,7 @@ function startCombat(){
     factions,
     turn:1,
     active: playerFirst ? 'player' : 'enemy',
-    phase:'main',
+    phase:'mulligan',
     player: makeSide(factions),
     enemy: makeSide(factions),
     selectedHandUid:null,
@@ -91,10 +280,53 @@ function startCombat(){
     coin: playerFirst ? 'Tu commences' : 'L’adversaire commence',
     log:[],
     anim:null,
+    flashUids:null,
+    firstPlayer: playerFirst ? 'player' : 'enemy',
   };
   combatLog(`Factions: ${factions.join(', ')}. ${state.battle.coin} (pile ou face).`);
-  beginTurn(state.battle.active, true);
+  combatLog(`Main d’ouverture (${state.battle.player.hand.length}) — garde ou repioche une fois.`);
   render();
+}
+function keepOpeningHand(){
+  const b=state.battle;
+  if(!b||b.phase!=='mulligan'||b.winner) return;
+  combatLog('Tu gardes ta main.');
+  finishMulligan();
+}
+function redrawOpeningHand(){
+  const b=state.battle;
+  if(!b||b.phase!=='mulligan'||b.winner) return;
+  const p=b.player;
+  const n=p.hand.length;
+  p.deck.push(...p.hand);
+  p.hand=[];
+  shuffleInPlace(p.deck);
+  for(let i=0;i<n;i++){
+    if(!p.deck.length) break;
+    p.hand.push(p.deck.shift());
+  }
+  sortHand(p.hand);
+  combatLog(`Tu repioches ${p.hand.length} carte(s).`);
+  finishMulligan();
+}
+function finishMulligan(){
+  const b=state.battle; if(!b) return;
+  b.phase='main';
+  b.selectedHandUid=null;
+  beginTurn(b.firstPlayer || b.active, true);
+  render();
+}
+function flashCombatCard(uid, ms=420){
+  const b=state.battle; if(!b||!uid) return;
+  if(!Array.isArray(b.flashUids)) b.flashUids=[];
+  if(!b.flashUids.includes(uid)) b.flashUids.push(uid);
+  clearTimeout(flashCombatCard._t);
+  flashCombatCard._t=setTimeout(()=>{
+    if(state.battle){
+      state.battle.flashUids=null;
+      render();
+    }
+  }, ms);
 }
 function beginTurn(who, isOpening=false){
   const b=state.battle; if(!b||b.winner) return;
@@ -111,7 +343,9 @@ function beginTurn(who, isOpening=false){
   }
   const draws = isOpening ? 0 : 2;
   for(let i=0;i<draws;i++) drawOne(p, who);
+  // Pas de heal passif de fin de tour : les PV blessés persistent.
   p.board.forEach(c=>{ c.canAttack=true; c.exhausted=false; c.justPlayed=false; });
+  if(!isOpening) tickBoardAbilities(who);
   combatLog(`Tour ${p.turnCount} — ${who==='player'?'à toi':'adversaire'} (mana ${p.mana}/${p.maxMana}).`);
   if(who==='enemy') setTimeout(()=>enemyTurn(), 350);
 }
@@ -124,6 +358,7 @@ function drawOne(p, who){
   }
   if(p.hand.length>=10){ p.deck.shift(); combatLog('Main pleine: carte brûlée.'); return; }
   p.hand.push(p.deck.shift());
+  sortHand(p.hand);
 }
 function checkWinner(){
   const b=state.battle; if(!b) return;
@@ -192,6 +427,7 @@ function onHandPointerMove(ev){
   if(!_ptrDrag.active && (dx*dx+dy*dy) < 36) return;
   if(!_ptrDrag.active){
     _ptrDrag.active = true;
+    hideCombatCardPreview();
     const b=state.battle;
     if(b){
       b.selectedHandUid=_ptrDrag.uid;
@@ -306,6 +542,8 @@ function playCardOn(side, card, idx, who){
   side.board.splice(i, 0, card);
   card.justPlayed=true; card.canAttack=false;
   combatLog(`${who==='player'?'Tu invoques':'Adverse invoque'} ${card.name} (${card.cost}).`);
+  flashCombatCard(card.uid, 520);
+  triggerCreaturePulse(who, card, {enter:true});
   return true;
 }
 /* —— Ciblage type Hearthstone : flèche jaune vers tour ou mignon —— */
@@ -326,16 +564,32 @@ function canCreatureAttack(c){
 function isTank(c){
   return typeof hasAbility==='function' ? hasAbility(c,'tank') : !!(c?.roles||[]).includes('tank');
 }
-/** Cibles légales pour un assaut (Tank force le focus). */
-function legalAttackTargets(atkSide){
+function isAssassin(c){
+  return typeof hasAbility==='function'
+    ? hasAbility(c,'assassin')
+    : !!(c?.roles||[]).includes('assassin') || !!(c?.roles||[]).includes('ranged');
+}
+function hasNoRiposte(c){
+  return typeof hasAbility==='function'
+    ? hasAbility(c,'sans-riposte')
+    : !!(c?.roles||[]).includes('sans-riposte') || !!(c?.roles||[]).includes('ranged');
+}
+/** Cibles légales pour un assaut (Tank force le focus, sauf Assassin). */
+function legalAttackTargets(atkSide, atkCreature){
   const b=state.battle;
   const defSide=atkSide==='player'?'enemy':'player';
   const board=b[defSide].board;
+  const atk=atkCreature || (b.attackSource
+    ? b[atkSide].board.find(c=>c.uid===b.attackSource)
+    : null);
+  if(atk && isAssassin(atk)){
+    return { face:true, minions:board.slice(), forcedTank:false, assassin:true };
+  }
   const tanks=board.filter(isTank);
   if(tanks.length){
-    return { face:false, minions:tanks, forcedTank:true };
+    return { face:false, minions:tanks, forcedTank:true, assassin:false };
   }
-  return { face:true, minions:board.slice(), forcedTank:false };
+  return { face:true, minions:board.slice(), forcedTank:false, assassin:false };
 }
 function selectAttacker(uid){
   const b=state.battle; if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
@@ -351,10 +605,12 @@ function selectAttacker(uid){
   if(b.attackSource===uid){ cancelAttack(); return; }
   b.selectedHandUid=null; b.insertAt=null;
   b.attackSource=uid; b.aimLock=null;
-  const legal=legalAttackTargets('player');
-  combatLog(legal.forcedTank
-    ? `${c.name} vise… un Tank adverse protège le reste — cible-le.`
-    : `${c.name} vise… choisis une cible (tour ou mignon).`);
+  const legal=legalAttackTargets('player', c);
+  combatLog(legal.assassin || (c && isAssassin(c))
+    ? `${c.name} vise… Ranged / Assassin : les Tanks ne te bloquent pas.`
+    : legal.forcedTank
+      ? `${c.name} vise… un Tank adverse protège le reste — cible-le.`
+      : `${c.name} vise… choisis une cible (tour ou mignon).`);
   render();
 }
 function cancelAttack(){
@@ -370,7 +626,7 @@ function resolveCombatStrike(atkSide, atkUid, target){
   const A=b[atkSide], D=b[defSide];
   const atk=A.board.find(c=>c.uid===atkUid);
   if(!atk || !canCreatureAttack(atk)) return false;
-  const legal=legalAttackTargets(atkSide);
+  const legal=legalAttackTargets(atkSide, atk);
   if(target.type==='face'){
     if(!legal.face){
       combatLog(`Impossible : un Tank adverse force le combat.`);
@@ -386,6 +642,7 @@ function resolveCombatStrike(atkSide, atkUid, target){
     if(!legal.minions.some(c=>c.uid===def.uid)) return false;
   }
   atk.exhausted=true; atk.canAttack=false;
+  flashCombatCard(atk.uid);
   if(target.type==='face'){
     D.hp=Math.max(0, D.hp-atk.attack);
     const tower=atkSide==='player'?'la tour adverse':'ta tour';
@@ -394,9 +651,16 @@ function resolveCombatStrike(atkSide, atkUid, target){
     const def=D.board.find(c=>c.uid===target.uid);
     if(!def){ atk.exhausted=false; atk.canAttack=true; return false; }
     const tankNote=isTank(def)?' (Tank)':'';
-    combatLog(`${atk.name} (${atk.attack}) charge ${def.name}${tankNote} — riposte ${def.attack}.`);
-    def.hp-=atk.attack;
-    atk.hp-=def.attack;
+    const noRiposte=hasNoRiposte(atk);
+    if(noRiposte){
+      combatLog(`${atk.name} (${atk.attack}) frappe ${def.name}${tankNote} — sans riposte.`);
+      def.hp-=atk.attack;
+    } else {
+      combatLog(`${atk.name} (${atk.attack}) charge ${def.name}${tankNote} — riposte ${def.attack}.`);
+      def.hp-=atk.attack;
+      atk.hp-=def.attack;
+    }
+    flashCombatCard(def.uid);
     if(def.hp<=0){ D.board=D.board.filter(c=>c.uid!==def.uid); combatLog(`${def.name} meurt.`); }
     if(atk.hp<=0){ A.board=A.board.filter(c=>c.uid!==atk.uid); combatLog(`${atk.name} meurt.`); }
   }
@@ -406,7 +670,8 @@ function resolveCombatStrike(atkSide, atkUid, target){
 function confirmAttackFace(){
   const b=state.battle;
   if(!b||b.active!=='player'||b.phase!=='main'||!b.attackSource) return;
-  if(!legalAttackTargets('player').face){
+  const atk=b.player.board.find(c=>c.uid===b.attackSource);
+  if(!legalAttackTargets('player', atk).face){
     combatLog('Un Tank adverse te barre la route vers la tour.');
     render();
     return;
@@ -420,7 +685,8 @@ function confirmAttackFace(){
 function confirmAttackMinion(uid){
   const b=state.battle;
   if(!b||b.active!=='player'||b.phase!=='main'||!b.attackSource) return;
-  const legal=legalAttackTargets('player');
+  const atk=b.player.board.find(c=>c.uid===b.attackSource);
+  const legal=legalAttackTargets('player', atk);
   if(!legal.minions.some(c=>c.uid===uid)){
     combatLog(legal.forcedTank
       ? 'Cible invalide : attaque un Tank.'
@@ -435,7 +701,7 @@ function confirmAttackMinion(uid){
   render();
 }
 function chooseEnemyTarget(atk){
-  const legal=legalAttackTargets('enemy');
+  const legal=legalAttackTargets('enemy', atk);
   const board=legal.minions;
   if(!board.length) return legal.face ? {type:'face'} : {type:'face'};
   const lethal=board.filter(c=>c.hp<=atk.attack).sort((a,c)=>c.attack-a.attack || a.hp-c.hp);
@@ -587,7 +853,7 @@ function syncAttackAim(){
 }
 
 function miniCard(c, opts={}){
-  const fm=factionMana(c);
+  const fm=typeof factionMana==='function' ? factionMana(c) : {color:'#c9aa69'};
   const sel=opts.selected?' selected':'';
   const atk=opts.attacking?' attacking':'';
   const sick=opts.summonSick || ((c.justPlayed||!c.canAttack) && !opts.exhausted) ? ' sick':'';
@@ -599,12 +865,11 @@ function miniCard(c, opts={}){
   const blocked=opts.blocked?' cbt-blocked':'';
   const affordable=opts.affordable!==false;
   const unafford=opts.checkAfford && !affordable ? ' unaffordable':'';
+  const flash=(state.battle && Array.isArray(state.battle.flashUids) && state.battle.flashUids.includes(c.uid)) ? ' cbt-flash' : '';
   const click=opts.onclick?`onclick="${opts.onclick}"`:'';
   const drag=opts.draggable
     ? `onpointerdown="onHandPointerDown(event,'${c.uid}')"`
     : '';
-  const artSrc=(typeof currentImageFor==='function' ? currentImageFor(c) : null) || (imageVariantsFor(c)[0] || c.image || '');
-  const img=artSrc?`<img src="${encodeURI(artSrc)}" alt="" draggable="false">`:'';
   const title = opts.summonSick ? ' title="Mal d’invocation — attaque au prochain tour"'
     : opts.exhausted ? ' title="Déjà utilisée"'
     : opts.aiming ? ' title="Attaquante — choisis une cible"'
@@ -612,9 +877,8 @@ function miniCard(c, opts={}){
     : opts.targetable ? (opts.forcedTank ? ' title="Tank — cible obligatoire"' : ' title="Cible valide — cliquer pour attaquer"')
     : opts.ready ? ' title="Prête — cliquer pour attaquer"'
     : '';
-  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${ready}${aiming}${target}${tank}${blocked}${unafford}${opts.draggable?' can-drag':''}`;
+  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${ready}${aiming}${target}${tank}${blocked}${unafford}${flash}${opts.draggable?' can-drag':''}${opts.hand?' in-hand':''}`;
   const style=`style="--faction:${fm.color}"`;
-  const abilityBits=typeof abilitiesHtml==='function' ? abilitiesHtml(c,{className:'cbt-abilities'}) : (isTank(c)?`<div class="ability-row cbt-abilities"><span class="ability-tag ability-tank"><em>Tank</em></span></div>`:'');
   const badge = opts.aiming?'<em class="cbt-badge atk-badge">Vise…</em>'
     : opts.targetable && opts.forcedTank?'<em class="cbt-badge tank-badge">Tank</em>'
     : opts.targetable?'<em class="cbt-badge target-badge">Cible</em>'
@@ -623,23 +887,23 @@ function miniCard(c, opts={}){
     : opts.ready?'<em class="cbt-badge ready-badge">Prête</em>'
     : opts.exhausted?'<em class="cbt-badge done-badge">Fatiguée</em>'
     : (isTank(c) && !opts.hand ? '<em class="cbt-badge tank-badge">Tank</em>' : '');
+  const face = typeof buildFfCardHtml==='function'
+    ? buildFfCardHtml(c, {
+        forceArchive:true,
+        frame: typeof frameFor==='function' ? frameFor(c) : {id:'normal'},
+        hp: c.hp ?? c.health,
+        maxHp: c.maxHp ?? c.health,
+        attack: c.attack,
+      })
+    : `<strong>${c.name}</strong>`;
   if(opts.hand){
     return `<div role="button" tabindex="0" class="${cls}" data-uid="${c.uid}" ${style} ${click} ${drag}
       onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();${opts.onclick||''}}">
-      <span class="cbt-cost">${manaCostHtml(c)}</span>
-      <div class="cbt-art">${img}</div>
-      <strong>${c.name}</strong>
-      ${abilityBits}
-      <footer><b>${c.attack}</b><span>${c.hp ?? c.health}</span></footer>
+      ${face}${badge}
     </div>`;
   }
   return `<button type="button" class="${cls}" data-uid="${c.uid}" ${style} ${click}${title}>
-    <span class="cbt-cost">${manaCostHtml(c)}</span>
-    <div class="cbt-art">${img}</div>
-    <strong>${c.name}</strong>
-    ${abilityBits}
-    ${badge}
-    <footer><b>${c.attack}</b><span>${c.hp ?? c.health}</span></footer>
+    ${face}${badge}
   </button>`;
 }
 function renderBoardRow(side, who){
@@ -649,7 +913,8 @@ function renderBoardRow(side, who){
   const aiming=!!b.attackSource && (b.phase==='main' || b.phase==='enemy_attack');
   const playerAiming=b.active==='player' && b.phase==='main' && !!b.attackSource
     && b.player.board.some(c=>c.uid===b.attackSource);
-  const legal=playerAiming ? legalAttackTargets('player') : null;
+  const aimAtk=playerAiming ? b.player.board.find(c=>c.uid===b.attackSource) : null;
+  const legal=playerAiming ? legalAttackTargets('player', aimAtk) : null;
   const canPlace=isPlayer && b.active==='player' && b.phase==='main' && b.selectedHandUid && !b.winner && !b.attackSource;
   const canDrop=isPlayer && b.active==='player' && b.phase==='main' && !b.winner && board.length<8 && !b.attackSource;
   const slots=canPlace?placementSlots(board):[];
@@ -750,29 +1015,43 @@ function renderCombat(){
   if(!b){
     return `<section class="panel combat-lobby">
       <div class="section-head"><div><p class="eyebrow">Arène</p><h2>Combat aléatoire</h2>
-      <p>Deux decks de 40 cartes tirés dans <b>4 factions</b> communes. Tu joues en bas. Clique une créature prête, puis vise la <b>tour</b> ou un <b>mignon</b> adverse — comme dans Hearthstone. Mana incolore (1→10) + mana de couleur cyclique. Tours à 30 PV.</p></div>
+      <p>Deux decks de 40 cartes tirés dans <b>4 factions</b> communes. Tu joues en bas. Au début tu peux <b>repioche</b> une fois ta main. Clique une créature prête, puis vise la <b>tour</b> ou un <b>mignon</b> adverse. Mana incolore (1→10) + mana de couleur cyclique. Tours à 30 PV.</p></div>
       <button class="cbt-start" onclick="startCombat()">Nouveau combat</button></div>
     </section>`;
   }
+  const mulligan=b.phase==='mulligan';
   const ended=b.winner?`<div class="cbt-banner ${b.winner}">${b.winner==='player'?'Victoire !':b.winner==='enemy'?'Défaite…':'Match nul'} <button onclick="startCombat()">Rejouer</button></div>`:'';
-  const handCanDrag=b.active==='player' && b.phase==='main' && !b.winner && !b.attackSource;
-  const playerAiming=b.active==='player' && b.phase==='main' && !!b.attackSource
+  const handCanDrag=!mulligan && b.active==='player' && b.phase==='main' && !b.winner && !b.attackSource;
+  const playerAiming=!mulligan && b.active==='player' && b.phase==='main' && !!b.attackSource
     && b.player.board.some(c=>c.uid===b.attackSource);
-  const aimLegal=playerAiming ? legalAttackTargets('player') : null;
+  const aimAtk=playerAiming ? b.player.board.find(c=>c.uid===b.attackSource) : null;
+  const aimLegal=playerAiming ? legalAttackTargets('player', aimAtk) : null;
   const aimName=b.attackSource
     ? (b.player.board.find(c=>c.uid===b.attackSource)||b.enemy.board.find(c=>c.uid===b.attackSource))?.name
     : null;
   const statusLabel = b.winner ? 'Partie terminée'
+    : mulligan ? 'Main d’ouverture'
     : b.phase==='enemy_attack' ? 'Assaut adverse'
     : playerAiming ? `Visée — ${aimName||'créature'}`
     : b.active==='player' ? 'Ton tour' : 'Tour adverse';
-  const aimHint = aimLegal?.forcedTank
-    ? `Un <strong>Tank</strong> protège le camp adverse — tu dois le frapper.`
-    : `Pointe la <strong>tour adverse</strong> ou un <strong>mignon</strong> — la flèche jaune suit ton geste.`;
+  const aimHint = aimLegal?.assassin
+    ? `<strong>Ranged</strong> : ignore les Tanks et n’encaisse pas de riposte.`
+    : aimLegal?.forcedTank
+      ? `Un <strong>Tank</strong> protège le camp adverse — tu dois le frapper.`
+      : `Pointe la <strong>tour adverse</strong> ou un <strong>mignon</strong> — la flèche jaune suit ton geste.`;
   const midControls = b.winner ? `<span class="cbt-wait">Partie terminée</span>`
+    : mulligan ? `
+      <div class="cbt-mulligan-panel">
+        <b>Main d’ouverture</b>
+        <p>Garde ces ${b.player.hand.length} cartes, ou <strong>repioche une fois</strong> le même nombre.</p>
+        <div class="cbt-mulligan-actions">
+          <button class="cbt-end" type="button" onclick="keepOpeningHand()">Garder</button>
+          <button class="cbt-start" type="button" onclick="redrawOpeningHand()">Repiocher</button>
+        </div>
+      </div>`
     : playerAiming ? `
-      <div class="cbt-aim-panel${aimLegal?.forcedTank?' tank-lock':''}">
-        <b>${aimLegal?.forcedTank?'Tank adverse !':'Choisis une cible'}</b>
+      <div class="cbt-aim-panel${aimLegal?.forcedTank?' tank-lock':''}${aimLegal?.assassin?' assassin-lock':''}">
+        <b>${aimLegal?.assassin?'Ranged — libre':aimLegal?.forcedTank?'Tank adverse !':'Choisis une cible'}</b>
         <p>${aimHint}</p>
         <button class="cbt-end" type="button" onclick="cancelAttack()">Annuler (Échap)</button>
       </div>`
@@ -801,7 +1080,7 @@ function renderCombat(){
   const enemyTowerClick = canHitFace
     ? ' onclick="confirmAttackFace()" title="Attaquer la tour adverse"'
     : (playerAiming ? ' title="Protégée par un Tank"' : '');
-  return `<section class="combat-table${playerAiming?' is-aiming':''}${aimLegal?.forcedTank?' tank-lock':''}">
+  return `<section class="combat-table${playerAiming?' is-aiming':''}${mulligan?' is-mulligan':''}${aimLegal?.forcedTank?' tank-lock':''}">
     ${aimSvg}
     ${ended}
     <div class="cbt-meta">
@@ -824,14 +1103,14 @@ function renderCombat(){
       <div class="cbt-tower ally"><span class="cbt-tower-label">Ta tour</span>${renderHearts(b.player.hp)}</div>
       ${renderManaCrystals(b.player)}
       <div class="cbt-hand">${b.player.hand.map(c=>{
-        const ok=canAfford(b.player,c) && b.player.board.length<8;
+        const ok=!mulligan && canAfford(b.player,c) && b.player.board.length<8;
         return miniCard(c,{
           hand:true,
           selected:b.selectedHandUid===c.uid,
-          onclick: b.phase==='main' && !b.attackSource ? `selectHandCard('${c.uid}')` : '',
+          onclick: !mulligan && b.phase==='main' && !b.attackSource ? `selectHandCard('${c.uid}')` : '',
           draggable: handCanDrag && ok,
-          checkAfford:true,
-          affordable: ok,
+          checkAfford:!mulligan,
+          affordable: mulligan ? true : ok,
         });
       }).join('')}<small>Deck ${b.player.deck.length}</small></div>
     </div>
@@ -839,7 +1118,73 @@ function renderCombat(){
   </section>`;
 }
 
+function findCombatCardByUid(uid){
+  const b=state.battle; if(!b||!uid) return null;
+  return b.player.hand.find(c=>c.uid===uid)
+    || b.player.board.find(c=>c.uid===uid)
+    || b.enemy.board.find(c=>c.uid===uid)
+    || null;
+}
+function hideCombatCardPreview(){
+  const host=document.getElementById('cbt-card-preview');
+  if(!host) return;
+  host.classList.remove('show');
+  host.replaceChildren();
+}
+function showCombatCardPreview(el){
+  if(!el || state.tab!=='combat' || !state.battle) return;
+  if(_ptrDrag?.active) return;
+  const uid=el.getAttribute('data-uid');
+  const c=findCombatCardByUid(uid);
+  if(!c || typeof buildFfCardHtml!=='function') return;
+  const r=el.getBoundingClientRect();
+  const midX=r.left + r.width/2;
+  const side = midX < window.innerWidth * 0.5 ? 'right' : 'left';
+  let host=document.getElementById('cbt-card-preview');
+  if(!host){
+    host=document.createElement('div');
+    host.id='cbt-card-preview';
+    host.setAttribute('aria-hidden','true');
+    document.body.appendChild(host);
+  }
+  host.className='cbt-card-preview show side-'+side;
+  const midY=r.top + r.height/2;
+  const y=Math.max(24, Math.min(window.innerHeight - 24, midY));
+  host.style.top=y+'px';
+  host.innerHTML=buildFfCardHtml(c, {
+    forceArchive:true,
+    frame: typeof frameFor==='function' ? frameFor(c) : {id:'normal'},
+    hp: c.hp ?? c.health,
+    maxHp: c.maxHp ?? c.health,
+    attack: c.attack,
+    extraClass:'cbt-preview-face',
+  });
+}
+function bindCombatCardPreview(){
+  if(bindCombatCardPreview._ready) return;
+  bindCombatCardPreview._ready=true;
+  document.addEventListener('pointerover', (ev)=>{
+    const el=ev.target?.closest?.('.combat-table .cbt-card');
+    if(!el) return;
+    const from=ev.relatedTarget;
+    if(from && el.contains(from)) return;
+    showCombatCardPreview(el);
+  });
+  document.addEventListener('pointerout', (ev)=>{
+    const el=ev.target?.closest?.('.combat-table .cbt-card');
+    if(!el) return;
+    const to=ev.relatedTarget;
+    if(to && el.contains(to)) return;
+    hideCombatCardPreview();
+  });
+  document.addEventListener('pointerdown', (ev)=>{
+    if(ev.target?.closest?.('.combat-table .cbt-card')) hideCombatCardPreview();
+  }, true);
+}
+
 window.startCombat=startCombat;
+window.keepOpeningHand=keepOpeningHand;
+window.redrawOpeningHand=redrawOpeningHand;
 window.selectHandCard=selectHandCard;
 window.playSelectedAt=playSelectedAt;
 window.selectAttacker=selectAttacker;
@@ -854,6 +1199,9 @@ window.onHandPointerDown=onHandPointerDown;
 window.onBoardDragOver=onBoardDragOver;
 window.onBoardDragLeave=onBoardDragLeave;
 window.onBoardDrop=onBoardDrop;
+window.showCombatCardPreview=showCombatCardPreview;
+window.hideCombatCardPreview=hideCombatCardPreview;
 
+bindCombatCardPreview();
 render();
 
