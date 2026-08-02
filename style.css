@@ -1030,6 +1030,79 @@ body{
   background:linear-gradient(135deg,#2a1a3acc,#100a16ee);
   box-shadow:0 0 12px #8a5ab833;
 }
+.ability-tag.ability-etendard{
+  border-color:#e0c36aaa;color:#fff0c8;
+  background:linear-gradient(135deg,#4a3814cc,#161008ee);
+  box-shadow:0 0 12px #d9b45f44;
+}
+.ability-tag.ability-formation{
+  border-color:#a8b8c8aa;color:#e8eef5;
+  background:linear-gradient(135deg,#2a323acc,#0e1216ee);
+  box-shadow:0 0 12px #8aa0b844;
+}
+.ability-tag.ability-activer-regen,
+.ability-tag.ability-activer-tank,
+.ability-tag.ability-activer-bouclier,
+.ability-tag.ability-activer-frappe,
+.ability-tag.ability-activer-soin{
+  border-color:#d4b88aaa;color:#fff3d6;
+  background:linear-gradient(135deg,#3a2a14cc,#120e08ee);
+  box-shadow:0 0 12px #d9b45f33;
+}
+.ability-tag.ability-bouclier-divin{
+  border-color:#f0e6a0aa;color:#fffce8;
+  background:linear-gradient(135deg,#4a4018cc,#161208ee);
+  box-shadow:0 0 14px #ffe29b44;
+}
+.ability-tag.ability-double-attaque{
+  border-color:#e09070aa;color:#ffe0d0;
+  background:linear-gradient(135deg,#3a2018cc,#120a08ee);
+  box-shadow:0 0 12px #e0705033;
+}
+.ability-tag.ability-poison{
+  border-color:#7dba6aaa;color:#d8f5c8;
+  background:linear-gradient(135deg,#1a3018cc,#0a1408ee);
+}
+.ability-tag.ability-brulant{
+  border-color:#e08050aa;color:#ffe0c8;
+  background:linear-gradient(135deg,#3a1c10cc,#140a06ee);
+}
+.ability-tag.ability-gelant{
+  border-color:#7ec8e0aa;color:#dff6ff;
+  background:linear-gradient(135deg,#183040cc,#0a1418ee);
+}
+.ability-tag.ability-fin-tour-tir,
+.ability-tag.ability-fin-tour-buff,
+.ability-tag.ability-debut-tour-soin,
+.ability-tag.ability-debut-tour-tir,
+.ability-tag.ability-quand-blesse,
+.ability-tag.ability-quand-invoque,
+.ability-tag.ability-apres-attaque,
+.ability-tag.ability-jetons-1-1,
+.ability-tag.ability-donner-buff,
+.ability-tag.ability-charge,
+.ability-tag.ability-vol-de-vie,
+.ability-tag.ability-dernier-souffle,
+.ability-tag.ability-cri-pioche,
+.ability-tag.ability-cri-frappe,
+.ability-tag.ability-furie,
+.ability-tag.ability-allie-meurt,
+.ability-tag.ability-affaiblir,
+.ability-tag.ability-survie{
+  border-color:#b8a890aa;color:#f5ecd8;
+  background:linear-gradient(135deg,#2a2418cc,#100e0aee);
+}
+.ability-tag.ability-charge{
+  border-color:#e07050aa;color:#ffe8dc;
+  background:linear-gradient(135deg,#3a1810cc,#140806ee);
+}
+.ability-tag.ability-vol-de-vie{
+  border-color:#e07090aa;color:#ffd6e4;
+  background:linear-gradient(135deg,#3a1018cc,#14060aee);
+}
+.ability-tag.ability-survie{
+  border-color:#90c0a0aa;color:#e0ffe8;
+}
 
 /* FX capacités combat */
 .cbt-fx{
@@ -1063,6 +1136,28 @@ body{
   box-shadow:0 0 14px #a78bfa99;
   height:4px;
 }
+.cbt-fx-etendard .cbt-fx-bolt{
+  background:linear-gradient(90deg,#fff0,#ffe29b 18%,#d9b45f 60%,#fff8);
+  box-shadow:0 0 14px #d9b45faa;
+  height:5px;
+}
+.cbt-fx-formation .cbt-fx-bolt{
+  background:linear-gradient(90deg,#fff0,#c8d4e0 18%,#8aa0b8 60%,#fff8);
+  box-shadow:0 0 12px #a8b8c899;
+  height:4px;
+}
+.cbt-fx-bouclier .cbt-fx-bolt,
+.cbt-fx-poison .cbt-fx-bolt,
+.cbt-fx-brulant .cbt-fx-bolt,
+.cbt-fx-gelant .cbt-fx-bolt,
+.cbt-fx-affaiblir .cbt-fx-bolt{
+  height:4px;
+}
+.cbt-fx-bouclier .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#ffe29b 30%,#fff8);box-shadow:0 0 16px #ffe29baa}
+.cbt-fx-poison .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#86efac 30%,#fff8);box-shadow:0 0 12px #4ade8099}
+.cbt-fx-brulant .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#fb923c 30%,#fff8);box-shadow:0 0 12px #f9731699}
+.cbt-fx-gelant .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#7dd3fc 30%,#fff8);box-shadow:0 0 12px #38bdf899}
+.cbt-fx-affaiblir .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#c4b5fd 30%,#fff8);box-shadow:0 0 12px #a78bfa99}
 @keyframes cbtFxBolt{
   0%{opacity:0;filter:brightness(1.4)}
   20%{opacity:1}
@@ -1079,6 +1174,32 @@ body{
 .cbt-fx-sort::after{background:radial-gradient(circle,#7dd3fcaa 0%,#0284c755 40%,transparent 70%)}
 .cbt-fx-soin::after{background:radial-gradient(circle,#86efacaa 0%,#16a34a55 40%,transparent 70%)}
 .cbt-fx-invocation::after{background:radial-gradient(circle,#c4b5fdaa 0%,#7c3aed55 40%,transparent 70%)}
+.cbt-fx-etendard::after{background:radial-gradient(circle,#ffe29baa 0%,#d9b45f55 40%,transparent 70%)}
+.cbt-fx-formation::after{background:radial-gradient(circle,#c8d4e0aa 0%,#6a7a8a55 40%,transparent 70%)}
+.cbt-fx-bouclier::after{background:radial-gradient(circle,#ffe29baa 0%,#d9b45f55 45%,transparent 70%)}
+.cbt-fx-poison::after{background:radial-gradient(circle,#86efacaa 0%,#16653455 45%,transparent 70%)}
+.cbt-fx-brulant::after{background:radial-gradient(circle,#fb923caa 0%,#c2410c55 45%,transparent 70%)}
+.cbt-fx-gelant::after{background:radial-gradient(circle,#7dd3fcaa 0%,#0369a155 45%,transparent 70%)}
+.cbt-fx-affaiblir::after{background:radial-gradient(circle,#c4b5fdaa 0%,#6d28d955 45%,transparent 70%)}
+.cbt-action-panel{border-color:#d9b45f88}
+.cbt-marks{
+  position:absolute;left:4px;bottom:4px;z-index:6;
+  display:flex;gap:2px;pointer-events:none;
+}
+.cbt-mark{
+  font-style:normal;font-size:0;line-height:0;
+  width:8px;height:8px;display:block;
+  border-radius:50%;border:1px solid #ffffff55;
+  box-shadow:0 0 4px currentColor;
+}
+.cbt-mark.shield{background:#ffe29b;border-color:#ffe29b;color:#ffe29b}
+.cbt-mark.poison{background:#4ade80;border-color:#86efac;color:#4ade80}
+.cbt-mark.burn{background:#f97316;border-color:#fb923c;color:#f97316}
+.cbt-mark.freeze{background:#38bdf8;border-color:#7dd3fc;color:#38bdf8}
+.cbt-mark.regen{background:#34d399;border-color:#a7f3d0;color:#34d399}
+.cbt-mark.tanking{background:#94a3b8;border-color:#cbd5e1;color:#94a3b8}
+.cbt-card.has-shield{box-shadow:0 0 0 1px #ffe29b88,0 0 14px #d9b45f44}
+.cbt-card.is-frozen{filter:saturate(.7) brightness(1.05)}
 @keyframes cbtFxBurst{
   0%{transform:scale(.4);opacity:1}
   100%{transform:scale(1.8);opacity:0}
@@ -1087,6 +1208,8 @@ body{
 .cbt-fx-hit-sort{animation:cbtHitSort .45s ease-out}
 .cbt-fx-hit-soin{animation:cbtHitSoin .5s ease-out}
 .cbt-fx-hit-invocation{animation:cbtHitInvoc .55s ease-out}
+.cbt-fx-hit-etendard{animation:cbtHitEtendard .55s ease-out}
+.cbt-fx-hit-formation{animation:cbtHitFormation .5s ease-out}
 @keyframes cbtHitLancer{
   0%{filter:brightness(1.3) sepia(.3)}
   100%{filter:none}
@@ -1102,6 +1225,14 @@ body{
 @keyframes cbtHitInvoc{
   0%{transform:scale(1.08);filter:brightness(1.25)}
   100%{transform:none;filter:none}
+}
+@keyframes cbtHitEtendard{
+  0%{filter:brightness(1.45) sepia(.35);transform:translateY(-4px)}
+  100%{filter:none;transform:none}
+}
+@keyframes cbtHitFormation{
+  0%{filter:brightness(1.3);box-shadow:0 0 0 3px #c8d4e088}
+  100%{filter:none}
 }
 
 .ability-tip{
