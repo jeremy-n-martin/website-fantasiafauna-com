@@ -1,5 +1,86 @@
 /* Combat — plateau type Hearthstone, decks 40 / 4 factions */
 
+const CBT_PREFS_KEY='ff-combat-prefs';
+function loadCombatPrefs(){
+  const defaults={ density:'compact', zoom:'md', showLog:true };
+  try{
+    const raw=localStorage.getItem(CBT_PREFS_KEY);
+    if(!raw) return {...defaults};
+    return {...defaults, ...JSON.parse(raw)};
+  }catch(_){ return {...defaults}; }
+}
+function saveCombatPrefs(){
+  try{ localStorage.setItem(CBT_PREFS_KEY, JSON.stringify(state.combatPrefs||{})); }catch(_){}
+}
+function ensureCombatPrefs(){
+  if(!state.combatPrefs) state.combatPrefs=loadCombatPrefs();
+  return state.combatPrefs;
+}
+function setCombatPref(key, value){
+  const p=ensureCombatPrefs();
+  p[key]=value;
+  saveCombatPrefs();
+  render();
+}
+function toggleCombatDensity(){
+  const p=ensureCombatPrefs();
+  setCombatPref('density', p.density==='comfort' ? 'compact' : 'comfort');
+}
+function cycleCombatZoom(dir=1){
+  const order=['sm','md','lg'];
+  const p=ensureCombatPrefs();
+  const i=Math.max(0, order.indexOf(p.zoom||'md'));
+  const next=order[(i+dir+order.length)%order.length];
+  setCombatPref('zoom', next);
+}
+function toggleCombatLog(){
+  const p=ensureCombatPrefs();
+  setCombatPref('showLog', !p.showLog);
+}
+async function toggleCombatFullscreen(){
+  const el=document.querySelector('.combat-table');
+  if(!el) return;
+  try{
+    if(document.fullscreenElement || document.webkitFullscreenElement){
+      if(document.exitFullscreen) await document.exitFullscreen();
+      else if(document.webkitExitFullscreen) document.webkitExitFullscreen();
+    } else {
+      if(el.requestFullscreen) await el.requestFullscreen();
+      else if(el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+    }
+  }catch(err){
+    combatLog('Plein écran indisponible sur ce navigateur.');
+  }
+  render();
+}
+function isCombatFullscreen(){
+  return !!(document.fullscreenElement || document.webkitFullscreenElement);
+}
+function combatTableClasses(extra=''){
+  const p=ensureCombatPrefs();
+  const dens=p.density==='comfort' ? 'cbt-density-comfort' : 'cbt-density-compact';
+  const zoom=`cbt-zoom-${p.zoom||'md'}`;
+  const log=p.showLog===false ? 'cbt-log-hidden' : '';
+  return ['combat-table', dens, zoom, log, extra].filter(Boolean).join(' ');
+}
+function renderCombatConfigBar(){
+  const p=ensureCombatPrefs();
+  const fs=isCombatFullscreen();
+  const densLabel=p.density==='comfort' ? 'Confort' : 'Compact';
+  const zoomLabel=(p.zoom||'md').toUpperCase();
+  return `<div class="cbt-meta-actions">
+    <div class="cbt-cfg-group" title="Zoom des cartes">
+      <button type="button" class="cbt-cfg" onclick="cycleCombatZoom(-1)" aria-label="Zoom moins">−</button>
+      <button type="button" class="cbt-cfg on" onclick="cycleCombatZoom(1)" title="Cycle zoom">Zoom ${zoomLabel}</button>
+      <button type="button" class="cbt-cfg" onclick="cycleCombatZoom(1)" aria-label="Zoom plus">+</button>
+    </div>
+    <button type="button" class="cbt-cfg${p.density==='comfort'?' on':''}" onclick="toggleCombatDensity()">${densLabel}</button>
+    <button type="button" class="cbt-cfg${p.showLog!==false?' on':''}" onclick="toggleCombatLog()">Journal</button>
+    <button type="button" class="cbt-cfg${fs?' on':''}" onclick="toggleCombatFullscreen()">${fs?'Quitter PE':'Plein écran'}</button>
+    <button type="button" class="cbt-cfg" onclick="startCombat()">Reset</button>
+  </div>`;
+}
+
 function uid(){ return crypto.randomUUID?.() || Math.random().toString(36).slice(2,10); }
 function shuffleInPlace(arr){
   for(let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]]; }
@@ -78,8 +159,9 @@ function activationSpec(c){
 function maxAttacks(c){
   return hasRole(c,'double-attaque') ? 2 : 1;
 }
-function buffCreature(c, atk=0, hp=0){
+function buffCreature(c, atk=0, hp=0, opts={}){
   if(!c) return;
+  const before={atk:c.attack||0, hp:c.hp||0};
   if(atk){
     c.baseAttack=(c.baseAttack||c.attack||0)+atk;
     c.attack=(c.attack||0)+atk;
@@ -89,13 +171,20 @@ function buffCreature(c, atk=0, hp=0){
     c.maxHp=(c.maxHp||0)+hp;
     c.hp=(c.hp||0)+hp;
   }
+  if(!opts.silent && (atk||hp)){
+    const delta=(c.attack||0)-before.atk + (c.hp||0)-before.hp;
+    if(delta>0) spawnDamageFloat(c.uid, delta, 'buff');
+    spawnBuffSparkles(c.uid, Math.min(8, Math.abs(atk||0)+Math.abs(hp||0)*2));
+  }
 }
 function healCreature(c, amount){
   if(!c || amount<=0) return 0;
   const max=c.maxHp??c.baseMaxHp??c.health??c.hp;
   const before=c.hp??0;
   c.hp=Math.min(max, before+amount);
-  return c.hp-before;
+  const healed=c.hp-before;
+  if(healed>0) spawnDamageFloat(c.uid, healed, 'heal');
+  return healed;
 }
 function clearCreatureStatuses(c){
   if(!c) return false;
@@ -184,6 +273,7 @@ function dealDamageToCreature(who, c, dmg, opts={}){
     return 0;
   }
   c.hp-=dmg;
+  spawnDamageFloat(c.uid, dmg, 'damage');
   if(c.hp<=0 && hasRole(c,'survie') && !c.survieUsed){
     c.survieUsed=true;
     c.hp=1;
@@ -210,12 +300,14 @@ function dealDamageToCreature(who, c, dmg, opts={}){
   }
   return dmg;
 }
-function killCreature(who, c, reason=''){
+function killCreature(who, c, reason='') {
   const b=state.battle; if(!b||!c) return false;
   const side=b[who];
   if(!side.board.some(x=>x.uid===c.uid)) return false;
   side.board=side.board.filter(x=>x.uid!==c.uid);
   combatLog(`${c.name} meurt${reason?` (${reason})`:''}.`);
+  spawnDeathParticles(c.uid);
+  if(c.hp<=-10) screenShake();
   if(hasRole(c,'dernier-souffle')){
     const hits=[];
     for(const t of randomEnemyTargets(who, 1)){
@@ -353,6 +445,107 @@ function spawnCombatFx(vfx, fromUid, toKeys){
       setTimeout(()=>tip.classList.remove('cbt-fx-hit-'+vfx), 520);
     }
   });
+  setTimeout(()=>fx.remove(), 700);
+}
+
+/* Floating damage/heal numbers */
+function spawnDamageFloat(uid, amount, type='damage'){
+  const root=document.querySelector('.combat-table')||document.body;
+  const el=uid ? root.querySelector(`.cbt-card[data-uid="${uid}"]`) : null;
+  if(!el) return;
+  const r=el.getBoundingClientRect();
+  const num=document.createElement('div');
+  num.className='cbt-damage-float'+(type==='heal'?' heal':type==='buff'?' buff':'');
+  num.textContent=(type==='heal'?'+':'-')+amount;
+  num.style.left=(r.left+r.width/2-20)+'px';
+  num.style.top=(r.top+r.height*0.3)+'px';
+  document.body.appendChild(num);
+  setTimeout(()=>num.remove(), 1500);
+}
+
+/* Tower shake effect */
+function shakeTower(side){
+  const selector=side==='enemy'?'.cbt-tower.enemy':'.cbt-tower.ally';
+  const tower=document.querySelector(selector);
+  if(!tower) return;
+  tower.classList.remove('shaking');
+  void tower.offsetWidth;
+  tower.classList.add('shaking');
+  setTimeout(()=>tower.classList.remove('shaking'), 700);
+}
+
+/* Screen shake effect */
+function screenShake(){
+  const table=document.querySelector('.combat-table');
+  if(!table) return;
+  table.classList.remove('screen-shake');
+  void table.offsetWidth;
+  table.classList.add('screen-shake');
+  setTimeout(()=>table.classList.remove('screen-shake'), 450);
+}
+
+/* Death particles */
+function spawnDeathParticles(uid){
+  const root=document.querySelector('.combat-table')||document.body;
+  const el=uid ? root.querySelector(`.cbt-card[data-uid="${uid}"]`) : null;
+  if(!el) return;
+  const r=el.getBoundingClientRect();
+  const cx=r.left+r.width/2, cy=r.top+r.height/2;
+  for(let i=0;i<12;i++){
+    const p=document.createElement('div');
+    p.className='cbt-death-particle';
+    const angle=(i/12)*Math.PI*2;
+    const dist=30+Math.random()*40;
+    p.style.setProperty('--dx', (Math.cos(angle)*dist)+'px');
+    p.style.setProperty('--dy', (Math.sin(angle)*dist)+'px');
+    p.style.left=cx+'px';
+    p.style.top=cy+'px';
+    p.style.animationDelay=(Math.random()*0.15)+'s';
+    document.body.appendChild(p);
+    setTimeout(()=>p.remove(), 1000);
+  }
+}
+
+/* Buff sparkles */
+function spawnBuffSparkles(uid, count=6){
+  const root=document.querySelector('.combat-table')||document.body;
+  const el=uid ? root.querySelector(`.cbt-card[data-uid="${uid}"]`) : null;
+  if(!el) return;
+  const r=el.getBoundingClientRect();
+  for(let i=0;i<count;i++){
+    const s=document.createElement('div');
+    s.className='cbt-buff-sparkle';
+    s.style.left=(r.left+Math.random()*r.width)+'px';
+    s.style.top=(r.top+Math.random()*r.height)+'px';
+    s.style.animationDelay=(i*0.1)+'s';
+    document.body.appendChild(s);
+    setTimeout(()=>s.remove(), 1200);
+  }
+}
+
+/* Strike impact effect */
+function spawnStrikeImpact(fromUid, toUid){
+  const root=document.querySelector('.combat-table')||document.body;
+  const fromEl=fromUid ? root.querySelector(`.cbt-card[data-uid="${fromUid}"]`) : null;
+  const toEl=toUid ? root.querySelector(`.cbt-card[data-uid="${toUid}"]`) : null;
+  if(!fromEl||!toEl) return;
+  const f=fromEl.getBoundingClientRect();
+  const t=toEl.getBoundingClientRect();
+  const fx=document.createElement('div');
+  fx.className='cbt-fx cbt-fx-strike';
+  fx.style.left=(f.left+f.width/2)+'px';
+  fx.style.top=(f.top+f.height/2)+'px';
+  document.body.appendChild(fx);
+  const bolt=document.createElement('i');
+  bolt.className='cbt-fx-bolt';
+  const dx=t.left+t.width/2-(f.left+f.width/2);
+  const dy=t.top+t.height/2-(f.top+f.height/2);
+  const dist=Math.hypot(dx,dy)||1;
+  bolt.style.width=dist+'px';
+  bolt.style.transform=`rotate(${Math.atan2(dy,dx)}rad)`;
+  fx.appendChild(bolt);
+  toEl.classList.add('cbt-fx-hit-strike');
+  setTimeout(()=>toEl.classList.remove('cbt-fx-hit-strike'), 520);
   setTimeout(()=>fx.remove(), 700);
 }
 function applyDamageToTarget(atkSide, target, dmg, opts={}){
@@ -1222,6 +1415,8 @@ function resolveCombatStrike(atkSide, atkUid, target){
     D.hp=Math.max(0, D.hp-atk.attack);
     const tower=atkSide==='player'?'la tour adverse':'ta tour';
     combatLog(`${atk.name} frappe ${tower} pour ${atk.attack} (${D.hp}/30).`);
+    shakeTower(defSide);
+    if(atk.attack>=4) screenShake();
     applyLifesteal(atk, atk.attack);
     triggerAfterAttack(atkSide, atk);
   } else {
@@ -1251,7 +1446,9 @@ function resolveCombatStrike(atkSide, atkUid, target){
     }
     if(dealt>0 && def.hp>0){
       applyOnAttackEffects(atk, def);
+      spawnStrikeImpact(atk.uid, def.uid);
     } else if(dealt>0 && def.hp<=0){
+      spawnStrikeImpact(atk.uid, def.uid);
       // Effets on-hit inutiles sur un cadavre — skip
     }
     if(dealt>0) applyLifesteal(atk, dealt);
@@ -1499,7 +1696,14 @@ function miniCard(c, opts={}){
     : opts.targetable ? (opts.forcedTank ? ' title="Tank — cible obligatoire"' : ' title="Cible valide — cliquer pour attaquer"')
     : opts.ready ? ' title="Prête — cliquer pour attaquer ou activer"'
     : '';
-  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${ready}${aiming}${target}${tank}${blocked}${unafford}${flash}${opts.draggable?' can-drag':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}${c.frozen?' is-frozen':''}${isStealthed(c)?' is-stealth':''}`;
+  const statusClasses=[];
+  if(hasStatus(c,'poison')) statusClasses.push('is-poisoned');
+  if(hasStatus(c,'brulant')) statusClasses.push('is-burning');
+  if(c.frozen || c.skipNextAttack) statusClasses.push('is-frozen');
+  if(c.weakened) statusClasses.push('is-weakened');
+  if(hasRole(c,'furie')) statusClasses.push('has-fury');
+  const statusCls=statusClasses.length ? ' '+statusClasses.join(' ') : '';
+  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${ready}${aiming}${target}${tank}${blocked}${unafford}${statusCls}${flash}${opts.draggable?' can-drag':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}`;
   const style=`style="--faction:${fm.color}"`;
   const badge = opts.aiming?'<em class="cbt-badge atk-badge">Vise…</em>'
     : opts.targetable && opts.forcedTank?'<em class="cbt-badge tank-badge">Tank</em>'
@@ -1732,7 +1936,7 @@ function renderCombat(){
   const enemyTowerClick = canHitFace
     ? ' onclick="confirmAttackFace()" title="Attaquer la tour adverse"'
     : (playerAiming ? ' title="Protégée par un Tank"' : '');
-  return `<section class="combat-table${playerAiming?' is-aiming':''}${mulligan?' is-mulligan':''}${aimLegal?.forcedTank?' tank-lock':''}">
+  return `<section class="${combatTableClasses(`${playerAiming?' is-aiming':''}${mulligan?' is-mulligan':''}${aimLegal?.forcedTank?' tank-lock':''}`)}">
     ${aimSvg}
     ${ended}
     <div class="cbt-meta">
@@ -1740,8 +1944,8 @@ function renderCombat(){
         const fm=FACTION_MANA[f]||{};
         return `<span class="tag" style="--faction:${fm.color||'#999'}" title="${fm.element||f}">${f}${fm.element?` · ${fm.element}`:''}</span>`;
       }).join('')}</div>
-      <div>${b.coin} · ${statusLabel}</div>
-      <button onclick="startCombat()">Reset</button>
+      <div class="cbt-status-line">${b.coin} · ${statusLabel}</div>
+      ${renderCombatConfigBar()}
     </div>
     <div class="cbt-side enemy-hud">
       <div class="${enemyTowerCls}"${enemyTowerClick}><span class="cbt-tower-label">Tour adverse</span>${renderHearts(b.enemy.hp)}</div>
@@ -1766,7 +1970,7 @@ function renderCombat(){
         });
       }).join('')}<small>Deck ${b.player.deck.length}</small></div>
     </div>
-    <aside class="cbt-log"><h3>Journal</h3>${b.log.map(x=>`<p>${x}</p>`).join('')}</aside>
+    ${ensureCombatPrefs().showLog===false?'':`<aside class="cbt-log"><h3>Journal</h3>${b.log.map(x=>`<p>${x}</p>`).join('')}</aside>`}
   </section>`;
 }
 
@@ -1855,7 +2059,18 @@ window.onBoardDragLeave=onBoardDragLeave;
 window.onBoardDrop=onBoardDrop;
 window.showCombatCardPreview=showCombatCardPreview;
 window.hideCombatCardPreview=hideCombatCardPreview;
+window.toggleCombatFullscreen=toggleCombatFullscreen;
+window.toggleCombatDensity=toggleCombatDensity;
+window.toggleCombatLog=toggleCombatLog;
+window.cycleCombatZoom=cycleCombatZoom;
+
+if(!window._cbtFsBound){
+  window._cbtFsBound=true;
+  document.addEventListener('fullscreenchange', ()=>{ if(state.tab==='combat') render(); });
+  document.addEventListener('webkitfullscreenchange', ()=>{ if(state.tab==='combat') render(); });
+}
 
 bindCombatCardPreview();
+ensureCombatPrefs();
 render();
 
