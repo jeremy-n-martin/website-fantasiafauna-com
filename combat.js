@@ -109,7 +109,7 @@ const KEYWORD_ROLES = new Set([
   'etendard','formation',
   'activer-regen','activer-tank','activer-bouclier','activer-frappe','activer-soin','activer-purge',
   'bouclier-divin','double-attaque','charge','camouflage','vol-de-vie','dernier-souffle',
-  'cri-pioche','cri-frappe','furie','allie-meurt','quand-tue','affaiblir','survie',
+  'cri-frappe','furie','allie-meurt','quand-tue','affaiblir','survie',
   'poison','brulant','gelant','fin-tour-tir','fin-tour-buff','debut-tour-soin','debut-tour-tir',
   'quand-blesse','quand-invoque','apres-attaque','jetons-1-1','donner-buff',
 ]);
@@ -265,7 +265,8 @@ function hasStatus(c, statusId){
   return !!(c && Array.isArray(c.statuses) && c.statuses.includes(statusId));
 }
 function dealDamageToCreature(who, c, dmg, opts={}){
-  const b=state.battle; if(!b||!c||dmg<=0) return 0;
+  const b=state.battle; if(!b||!c) return 0;
+  if(typeof dmg !== 'number' || isNaN(dmg) || dmg <= 0) return 0;
   if(c.divineShield){
     c.divineShield=false;
     combatLog(`${c.name} : Bouclier divin absorbe les dégâts.`);
@@ -947,10 +948,6 @@ function triggerEnterExtras(who, card){
     spawnCombatFx('etendard', card.uid, [target.uid]);
     refreshBoardAuras(who);
   }
-  if(hasRole(card,'cri-pioche')){
-    drawOne(side, who);
-    combatLog(`${card.name} (Cri de guerre) : pioche une carte.`);
-  }
   if(hasRole(card,'cri-frappe')){
     const defSide=who==='player'?'enemy':'player';
     const foes=b[defSide].board.slice();
@@ -1004,24 +1001,7 @@ function placementSlots(board){
   return slots;
 }
 function selectHandCard(uid){
-  if(_suppressClick) return;
-  const b=state.battle; if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
-  const card=b.player.hand.find(c=>c.uid===uid);
-  if(!card) return;
-  if(!canAfford(b.player, card)){ combatLog(`Pas assez de mana pour ${card.name}.`); render(); return; }
-  if(b.player.board.length>=8){ combatLog('Plateau plein (8).'); render(); return; }
-  b.selectedHandUid = b.selectedHandUid===uid ? null : uid;
-  b.insertAt = b.selectedHandUid ? placementSlots(b.player.board)[0] : null;
-  render();
-}
-let _ptrDrag = null; // { uid, startX, startY, active, ghost }
-let _suppressClick = false;
-function clearPtrDrag(){
-  if(_ptrDrag?.ghost) _ptrDrag.ghost.remove();
-  document.querySelectorAll('.cbt-row.drop-hot,.cbt-slot.drop-hot,.cbt-card.dragging').forEach(el=>{
-    el.classList.remove('drop-hot','dragging');
-  });
-  _ptrDrag = null;
+  playFromHandAt(uid, null);
 }
 function playFromHandAt(uid, idx){
   const b=state.battle;
@@ -1032,132 +1012,17 @@ function playFromHandAt(uid, idx){
   if(b.player.board.length>=8){ combatLog('Plateau plein (8).'); render(); return false; }
   const slots=placementSlots(b.player.board);
   const at = (idx==null || idx==='' || !slots.includes(Number(idx))) ? (slots[0] ?? b.player.board.length) : Number(idx);
+  hideCombatCardPreview();
   playCardOn(b.player, card, at, 'player');
   b.selectedHandUid=null; b.insertAt=null;
   render();
   return true;
 }
-function onHandPointerDown(ev, uid){
-  if(ev.button!=null && ev.button!==0) return;
-  const b=state.battle;
-  if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
-  const card=b.player.hand.find(c=>c.uid===uid);
-  if(!card || !canAfford(b.player, card) || b.player.board.length>=8) return;
-  _ptrDrag = { uid, startX: ev.clientX, startY: ev.clientY, active: false, ghost: null, el: ev.currentTarget };
-  try{ ev.currentTarget?.setPointerCapture?.(ev.pointerId); }catch(_){}
-  window.addEventListener('pointermove', onHandPointerMove);
-  window.addEventListener('pointerup', onHandPointerUp, { once: true });
-  window.addEventListener('pointercancel', onHandPointerUp, { once: true });
-}
-function onHandPointerMove(ev){
-  if(!_ptrDrag) return;
-  const dx=ev.clientX-_ptrDrag.startX, dy=ev.clientY-_ptrDrag.startY;
-  if(!_ptrDrag.active && (dx*dx+dy*dy) < 36) return;
-  if(!_ptrDrag.active){
-    _ptrDrag.active = true;
-    hideCombatCardPreview();
-    const b=state.battle;
-    if(b){
-      b.selectedHandUid=_ptrDrag.uid;
-      b.insertAt=placementSlots(b.player.board)[0] ?? 0;
-      // Affiche les slots sans re-render complet (sinon on perd le drag)
-      document.querySelectorAll('.cbt-row.player').forEach(row=>row.classList.add('drop-hot'));
-    }
-    _ptrDrag.el?.classList.add('dragging');
-    const ghost=document.createElement('div');
-    ghost.className='cbt-drag-ghost';
-    ghost.textContent = (b?.player.hand.find(c=>c.uid===_ptrDrag.uid)?.name) || 'Carte';
-    document.body.appendChild(ghost);
-    _ptrDrag.ghost = ghost;
-  }
-  if(_ptrDrag.ghost){
-    _ptrDrag.ghost.style.transform = `translate(${ev.clientX+12}px, ${ev.clientY+12}px)`;
-  }
-  document.querySelectorAll('.cbt-row.player,.cbt-slot').forEach(el=>{
-    const r=el.getBoundingClientRect();
-    const over = ev.clientX>=r.left && ev.clientX<=r.right && ev.clientY>=r.top && ev.clientY<=r.bottom;
-    el.classList.toggle('drop-hot', over);
-  });
-}
-function onHandPointerUp(ev){
-  window.removeEventListener('pointermove', onHandPointerMove);
-  if(!_ptrDrag) return;
-  const wasActive = _ptrDrag.active;
-  const uid = _ptrDrag.uid;
-  const hot = document.elementFromPoint(ev.clientX, ev.clientY);
-  const slot = hot?.closest?.('.cbt-slot');
-  const row = hot?.closest?.('.cbt-row.player');
-  clearPtrDrag();
-  if(!wasActive) return; // simple click → laisser onclick gérer
-  _suppressClick = true;
-  setTimeout(()=>{ _suppressClick = false; }, 0);
-  if(slot){
-    const idx = Number(slot.getAttribute('onclick')?.match(/playSelectedAt\((\d+)\)/)?.[1] ?? NaN);
-    playFromHandAt(uid, Number.isFinite(idx) ? idx : null);
-  } else if(row){
-    playFromHandAt(uid, null);
-  }
-}
-function onHandDragStart(ev, uid){
-  const b=state.battle;
-  if(!b||b.active!=='player'||b.phase!=='main'||b.winner){
-    ev.preventDefault();
-    return;
-  }
-  const card=b.player.hand.find(c=>c.uid===uid);
-  if(!card){ ev.preventDefault(); return; }
-  if(!canAfford(b.player, card) || b.player.board.length>=8){
-    ev.preventDefault();
-    combatLog(`Pas assez de mana pour ${card.name}.`);
-    render();
-    return;
-  }
-  // Si le drag pointeur est déjà actif, laisser le HTML5 de côté
-  if(_ptrDrag?.active){ ev.preventDefault(); return; }
-  clearPtrDrag();
-  ev.currentTarget?.querySelectorAll('img').forEach(img=>{ img.setAttribute('draggable','false'); });
-  b.selectedHandUid=uid;
-  b.insertAt=placementSlots(b.player.board)[0] ?? 0;
-  try{
-    ev.dataTransfer.setData('text/plain', uid);
-    ev.dataTransfer.setData('application/x-ff-card', uid);
-    ev.dataTransfer.effectAllowed='move';
-  }catch(_){}
-  ev.currentTarget?.classList.add('dragging');
-}
-function onHandDragEnd(ev){
-  ev.currentTarget?.classList.remove('dragging');
-  document.querySelectorAll('.cbt-row.drop-hot,.cbt-slot.drop-hot').forEach(el=>el.classList.remove('drop-hot'));
-}
-function onBoardDragOver(ev){
-  const b=state.battle;
-  if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
-  if(b.player.board.length>=8) return;
-  // Obligatoire pour autoriser le drop (sinon croix rouge).
-  ev.preventDefault();
-  if(ev.dataTransfer) ev.dataTransfer.dropEffect='move';
-  ev.currentTarget?.classList.add('drop-hot');
-}
-function onBoardDragLeave(ev){
-  // Ignore leave vers un enfant
-  if(ev.currentTarget.contains?.(ev.relatedTarget)) return;
-  ev.currentTarget?.classList.remove('drop-hot');
-}
-function onBoardDrop(ev, idx){
-  ev.preventDefault();
-  ev.stopPropagation();
-  ev.currentTarget?.classList.remove('drop-hot');
-  const b=state.battle;
-  if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
-  let uid='';
-  try{ uid=ev.dataTransfer.getData('application/x-ff-card') || ev.dataTransfer.getData('text/plain'); }catch(_){}
-  uid = uid || b.selectedHandUid;
-  playFromHandAt(uid, idx);
-}
 function playSelectedAt(idx){
   const b=state.battle; if(!b||b.active!=='player'||b.phase!=='main') return;
   const card=b.player.hand.find(c=>c.uid===b.selectedHandUid);
   if(!card) return;
+  hideCombatCardPreview();
   playCardOn(b.player, card, idx, 'player');
   b.selectedHandUid=null; b.insertAt=null;
   render();
@@ -1215,6 +1080,59 @@ function hasNoRiposte(c){
   return typeof hasAbility==='function'
     ? hasAbility(c,'sans-riposte')
     : !!(c?.roles||[]).includes('sans-riposte') || !!(c?.roles||[]).includes('ranged');
+}
+
+/** Formes plateau (type Hearthstone) — extensible par capacité. */
+const BOARD_SHAPES = {
+  oval: {
+    id:'oval',
+    label:'Portrait',
+    sprite:'ui/combat/shapes/frame_oval.png',
+    priority:0,
+  },
+  ranged: {
+    id:'ranged',
+    label:'Ranged',
+    sprite:'ui/combat/shapes/frame_ranged.png',
+    priority:10,
+    match:(c)=> isAssassin(c) || hasRole(c,'ranged'),
+  },
+  tank: {
+    id:'tank',
+    label:'Tank',
+    sprite:'ui/combat/shapes/shield_tank.png',
+    priority:20,
+    match:(c)=> isTank(c),
+  },
+};
+function boardShapeFor(c){
+  let best=BOARD_SHAPES.oval;
+  for(const shape of Object.values(BOARD_SHAPES)){
+    if(shape === best) continue;
+    if(typeof shape.match==='function' && shape.match(c) && (shape.priority||0) >= (best.priority||0)){
+      best=shape;
+    }
+  }
+  return best;
+}
+function boardTokenHtml(c){
+  const shape=boardShapeFor(c);
+  const artSrc=(typeof currentImageFor==='function' ? currentImageFor(c) : null) || c.image || '';
+  const hp=c.hp ?? c.health;
+  const atk=c.attack;
+  const maxHp=c.maxHp ?? c.health;
+  const injured=maxHp != null && hp < maxHp;
+  const img=artSrc
+    ? `<img class="cbt-token-art" src="${encodeURI(artSrc)}" alt="" width="240" height="240" decoding="async" draggable="false">`
+    : '';
+  return `<span class="cbt-shape cbt-shape-${shape.id}" data-shape="${shape.id}" aria-hidden="true">
+      <img class="cbt-shape-sprite" src="${shape.sprite}" alt="" width="128" height="128" decoding="async" draggable="false">
+    </span>
+    <span class="cbt-token-face">${img}</span>
+    <span class="cbt-token-stats" aria-label="Attaque ${atk}, points de vie ${hp}">
+      <b class="cbt-token-atk" title="Attaque">${atk}</b>
+      <b class="cbt-token-hp${injured?' is-wounded':''}" title="Points de vie">${hp}</b>
+    </span>`;
 }
 /** Cibles légales pour un assaut (Tank force le focus, sauf Assassin / Camouflage). */
 function legalAttackTargets(atkSide, atkCreature){
@@ -1675,9 +1593,14 @@ function miniCard(c, opts={}){
   const fm=typeof factionMana==='function' ? factionMana(c) : {color:'#c9aa69'};
   const sel=opts.selected?' selected':'';
   const atk=opts.attacking?' attacking':'';
-  const sick=opts.summonSick || ((c.justPlayed||!c.canAttack) && !opts.exhausted) ? ' sick':'';
+  const summonSick=!!opts.summonSick;
+  const canAtk=!!opts.canAttack;
+  const canAct=!!opts.canActivate;
+  const sick=summonSick ? ' sick':'';
   const exhausted=opts.exhausted?' exhausted':'';
-  const ready=opts.ready?' ready':'';
+  const laser = !summonSick && !opts.aiming && !opts.targetable
+    ? (canAct ? ' laser-act' : (canAtk ? ' laser-atk' : ''))
+    : '';
   const aiming=opts.aiming?' aiming':'';
   const target=opts.targetable?' cbt-target':'';
   const tank=isTank(c)?' is-tank':'';
@@ -1686,15 +1609,14 @@ function miniCard(c, opts={}){
   const unafford=opts.checkAfford && !affordable ? ' unaffordable':'';
   const flash=(state.battle && Array.isArray(state.battle.flashUids) && state.battle.flashUids.includes(c.uid)) ? ' cbt-flash' : '';
   const click=opts.onclick?`onclick="${opts.onclick}"`:'';
-  const drag=opts.draggable
-    ? `onpointerdown="onHandPointerDown(event,'${c.uid}')"`
-    : '';
-  const title = opts.summonSick ? ' title="Mal d’invocation — attaque au prochain tour"'
+  const title = summonSick ? ' title="Mal d’invocation — attaque au prochain tour"'
     : opts.exhausted ? ' title="Déjà utilisée"'
     : opts.aiming ? ' title="Attaquante — choisis une cible"'
     : opts.blocked ? (opts.stealthed ? ' title="Camouflage — impossible à cibler"' : ' title="Protégé par un Tank — cible invalide"')
     : opts.targetable ? (opts.forcedTank ? ' title="Tank — cible obligatoire"' : ' title="Cible valide — cliquer pour attaquer"')
-    : opts.ready ? ' title="Prête — cliquer pour attaquer ou activer"'
+    : opts.playable ? ' title="Cliquer pour invoquer"'
+    : canAct ? ' title="Peut être activée (ou attaquer)"'
+    : canAtk ? ' title="Peut attaquer"'
     : '';
   const statusClasses=[];
   if(hasStatus(c,'poison')) statusClasses.push('is-poisoned');
@@ -1703,18 +1625,17 @@ function miniCard(c, opts={}){
   if(c.weakened) statusClasses.push('is-weakened');
   if(hasRole(c,'furie')) statusClasses.push('has-fury');
   const statusCls=statusClasses.length ? ' '+statusClasses.join(' ') : '';
-  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${ready}${aiming}${target}${tank}${blocked}${unafford}${statusCls}${flash}${opts.draggable?' can-drag':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}`;
+  const shape=!opts.hand ? boardShapeFor(c) : null;
+  const shapeCls=shape ? ` cbt-token cbt-shape-id-${shape.id}` : '';
+  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${laser}${aiming}${target}${tank}${blocked}${unafford}${statusCls}${flash}${opts.playable?' can-play':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}${shapeCls}`;
   const style=`style="--faction:${fm.color}"`;
   const badge = opts.aiming?'<em class="cbt-badge atk-badge">Vise…</em>'
     : opts.targetable && opts.forcedTank?'<em class="cbt-badge tank-badge">Tank</em>'
     : opts.targetable?'<em class="cbt-badge target-badge">Cible</em>'
     : opts.blocked && opts.stealthed?'<em class="cbt-badge stealth-badge">Camouflage</em>'
     : opts.blocked?'<em class="cbt-badge blocked-badge">Protégé</em>'
-    : opts.summonSick?'<em class="cbt-badge sick-badge">Sommeil</em>'
-    : opts.ready?'<em class="cbt-badge ready-badge">Prête</em>'
-    : opts.exhausted?'<em class="cbt-badge done-badge">Fatiguée</em>'
     : (isStealthed(c) && !opts.hand ? '<em class="cbt-badge stealth-badge">Camouflage</em>'
-    : (isTank(c) && !opts.hand ? '<em class="cbt-badge tank-badge">Tank</em>' : ''));
+    : '');
   const marks=[];
   if(!opts.hand){
     if(c.divineShield) marks.push('<i class="cbt-mark shield" title="Bouclier divin"></i>');
@@ -1726,23 +1647,31 @@ function miniCard(c, opts={}){
     if(c.pendingTank || c.tempTank) marks.push('<i class="cbt-mark tanking" title="Tank temporaire"></i>');
   }
   const statusRow=marks.length?`<span class="cbt-marks">${marks.join('')}</span>`:'';
-  const face = typeof buildFfCardHtml==='function'
-    ? buildFfCardHtml(c, {
-        forceArchive:true,
-        frame: typeof frameFor==='function' ? frameFor(c) : {id:'normal'},
-        hp: c.hp ?? c.health,
-        maxHp: c.maxHp ?? c.health,
-        attack: c.attack,
-      })
-    : `<strong>${c.name}</strong>`;
+  const vortex=summonSick && !opts.hand
+    ? '<span class="cbt-vortex" aria-hidden="true"><i></i><i></i><i></i></span>'
+    : '';
+  const ring=(!opts.hand && laser)
+    ? `<span class="cbt-laser-ring" aria-hidden="true"></span>`
+    : '';
+  const face = opts.hand
+    ? (typeof buildFfCardHtml==='function'
+      ? buildFfCardHtml(c, {
+          forceArchive:true,
+          frame: typeof frameFor==='function' ? frameFor(c) : {id:'normal'},
+          hp: c.hp ?? c.health,
+          maxHp: c.maxHp ?? c.health,
+          attack: c.attack,
+        })
+      : `<strong>${c.name}</strong>`)
+    : boardTokenHtml(c);
   if(opts.hand){
-    return `<div role="button" tabindex="0" class="${cls}" data-uid="${c.uid}" ${style} ${click} ${drag}
+    return `<div role="button" tabindex="0" class="${cls}" data-uid="${c.uid}" ${style} ${click}${title}
       onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();${opts.onclick||''}}">
       ${face}${badge}
     </div>`;
   }
   return `<button type="button" class="${cls}" data-uid="${c.uid}" ${style} ${click}${title}>
-    ${face}${badge}${statusRow}
+    ${ring}${vortex}${face}${badge}${statusRow}
   </button>`;
 }
 function renderBoardRow(side, who){
@@ -1754,56 +1683,45 @@ function renderBoardRow(side, who){
     && b.player.board.some(c=>c.uid===b.attackSource);
   const aimAtk=playerAiming ? b.player.board.find(c=>c.uid===b.attackSource) : null;
   const legal=playerAiming ? legalAttackTargets('player', aimAtk) : null;
-  const canPlace=isPlayer && b.active==='player' && b.phase==='main' && b.selectedHandUid && !b.winner && !b.attackSource;
-  const canDrop=isPlayer && b.active==='player' && b.phase==='main' && !b.winner && board.length<8 && !b.attackSource;
-  const slots=canPlace?placementSlots(board):[];
   const parts=[];
-  for(let i=0;i<=board.length;i++){
-    if(slots.includes(i)){
-      parts.push(`<button type="button" class="cbt-slot ${b.insertAt===i?'hot':''}" onclick="playSelectedAt(${i})"
-        ondragover="onBoardDragOver(event)" ondragleave="onBoardDragLeave(event)" ondrop="onBoardDrop(event,${i})" title="Poser ici">+</button>`);
-    }
-    if(i<board.length){
-      const c=board[i];
-      const isSource=b.attackSource===c.uid;
-      if(who==='enemy' && playerAiming){
-        const ok=legal.minions.some(x=>x.uid===c.uid);
-        parts.push(miniCard(c,{
-          onclick: ok ? `confirmAttackMinion('${c.uid}')` : '',
-          targetable:ok,
-          blocked:!ok,
-          stealthed: isStealthed(c),
-          forcedTank:!!legal.forcedTank,
-          selected:false,
-        }));
-      } else if(isPlayer && b.active==='player' && b.phase==='main' && !b.winner){
-        const ready=canCreatureAttack(c) || canCreatureActivate(c);
-        const choosing=b.actionChoice===c.uid;
-        parts.push(miniCard(c,{
-          onclick:`selectAttacker('${c.uid}')`,
-          selected:isSource || choosing,
-          aiming:isSource,
-          ready:ready && !isSource && !choosing,
-          summonSick: !!c.justPlayed,
-          exhausted: !!c.exhausted && !ready,
-          attacking:isSource,
-        }));
-      } else {
-        parts.push(miniCard(c,{
-          aiming:isSource,
-          attacking:isSource,
-          summonSick: !!(c.justPlayed || (!c.canAttack && !c.exhausted)),
-          exhausted: !!c.exhausted,
-          ready: !isPlayer && canCreatureAttack(c) && aiming,
-        }));
-      }
+  for(let i=0;i<board.length;i++){
+    const c=board[i];
+    const isSource=b.attackSource===c.uid;
+    if(who==='enemy' && playerAiming){
+      const ok=legal.minions.some(x=>x.uid===c.uid);
+      parts.push(miniCard(c,{
+        onclick: ok ? `confirmAttackMinion('${c.uid}')` : '',
+        targetable:ok,
+        blocked:!ok,
+        stealthed: isStealthed(c),
+        forcedTank:!!legal.forcedTank,
+        selected:false,
+      }));
+    } else if(isPlayer && b.active==='player' && b.phase==='main' && !b.winner){
+      const canAtk=canCreatureAttack(c);
+      const canAct=canCreatureActivate(c);
+      const choosing=b.actionChoice===c.uid;
+      parts.push(miniCard(c,{
+        onclick:`selectAttacker('${c.uid}')`,
+        selected:isSource || choosing,
+        aiming:isSource,
+        canAttack:canAtk && !isSource && !choosing,
+        canActivate:canAct && !isSource && !choosing,
+        summonSick: !!c.justPlayed,
+        exhausted: !!c.exhausted && !canAtk && !canAct,
+        attacking:isSource,
+      }));
+    } else {
+      parts.push(miniCard(c,{
+        aiming:isSource,
+        attacking:isSource,
+        summonSick: !!c.justPlayed,
+        exhausted: !!c.exhausted && !c.justPlayed,
+      }));
     }
   }
-  if(!board.length && !canPlace) parts.push('<em class="cbt-empty">Terrain vide — glisse une carte ici</em>');
-  const dropAttrs=canDrop
-    ? `ondragover="onBoardDragOver(event)" ondragleave="onBoardDragLeave(event)" ondrop="onBoardDrop(event,null)"`
-    : '';
-  return `<div class="cbt-row ${who}${playerAiming?' targeting':''}${legal?.forcedTank?' tank-lock':''}" ${dropAttrs}>${parts.join('')}</div>`;
+  if(!board.length) parts.push('<em class="cbt-empty">Terrain vide — clique une carte de ta main</em>');
+  return `<div class="cbt-row ${who}${playerAiming?' targeting':''}${legal?.forcedTank?' tank-lock':''}">${parts.join('')}</div>`;
 }
 function renderHearts(hp, maxHp=30){
   const per=3;
@@ -1862,7 +1780,7 @@ function renderCombat(){
   }
   const mulligan=b.phase==='mulligan';
   const ended=b.winner?`<div class="cbt-banner ${b.winner}">${b.winner==='player'?'Victoire !':b.winner==='enemy'?'Défaite…':'Match nul'} <button onclick="startCombat()">Rejouer</button></div>`:'';
-  const handCanDrag=!mulligan && b.active==='player' && b.phase==='main' && !b.winner && !b.attackSource;
+  const handCanPlay=!mulligan && b.active==='player' && b.phase==='main' && !b.winner && !b.attackSource;
   const playerAiming=!mulligan && b.active==='player' && b.phase==='main' && !!b.attackSource
     && b.player.board.some(c=>c.uid===b.attackSource);
   const choosingAction=!mulligan && b.active==='player' && b.phase==='main' && !!b.actionChoice
@@ -1913,7 +1831,7 @@ function renderCombat(){
       </div>`
     : b.phase==='enemy_attack' ? `<span class="cbt-wait">Assaut en cours…</span>`
     : b.active==='player' && b.phase==='main' ? `
-        <span class="cbt-hint">Clique une créature <em>Prête</em> — attaque ou activation</span>
+        <span class="cbt-hint">Clique une carte de ta main pour invoquer · Clique une créature <em>Prête</em> pour agir</span>
         <button class="cbt-end" onclick="endPlayerTurn()">Fin du tour</button>
       `
     : `<span class="cbt-wait">…</span>`;
@@ -1962,9 +1880,9 @@ function renderCombat(){
         const ok=!mulligan && canAfford(b.player,c) && b.player.board.length<8;
         return miniCard(c,{
           hand:true,
-          selected:b.selectedHandUid===c.uid,
-          onclick: !mulligan && b.phase==='main' && !b.attackSource ? `selectHandCard('${c.uid}')` : '',
-          draggable: handCanDrag && ok,
+          selected:false,
+          onclick: handCanPlay ? `selectHandCard('${c.uid}')` : '',
+          playable: handCanPlay && ok,
           checkAfford:!mulligan,
           affordable: mulligan ? true : ok,
         });
@@ -1981,15 +1899,67 @@ function findCombatCardByUid(uid){
     || b.enemy.board.find(c=>c.uid===uid)
     || null;
 }
+function ensurePlayAimLayer(){
+  let svg=document.getElementById('cbt-play-aim');
+  if(svg) return svg;
+  svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.id='cbt-play-aim';
+  svg.classList.add('cbt-play-aim-layer');
+  svg.setAttribute('aria-hidden','true');
+  svg.innerHTML=`<defs>
+    <filter id="cbt-play-aim-blur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="cbt-play-aim-head" viewBox="0 0 14 14" refX="12" refY="7" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1,1 L13,7 L1,13 Z" fill="#ffe14a" stroke="#f5c518" stroke-width="1"/>
+    </marker>
+  </defs>
+  <path class="cbt-aim-glow" d="" fill="none" stroke="#ffe14a" stroke-width="11" stroke-linecap="round" opacity=".28"/>
+  <path class="cbt-aim-stroke" d="" fill="none" stroke="#ffe14a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="11 9" marker-end="url(#cbt-play-aim-head)" filter="url(#cbt-play-aim-blur)"/>`;
+  document.body.appendChild(svg);
+  return svg;
+}
+function hidePlayAim(){
+  const svg=document.getElementById('cbt-play-aim');
+  if(svg){
+    svg.classList.remove('show');
+    svg.querySelectorAll('path').forEach(p=>p.setAttribute('d',''));
+  }
+  document.querySelectorAll('.cbt-row.player.play-hot').forEach(el=>el.classList.remove('play-hot'));
+}
+function showPlayAimFrom(el){
+  const b=state.battle;
+  if(!b || b.attackSource || b.phase!=='main' || b.active!=='player' || b.winner) return;
+  if(!el?.classList.contains('can-play')) return;
+  const row=document.querySelector('.combat-table .cbt-row.player');
+  if(!row) return;
+  const from=elCenter(el);
+  const tip=elCenter(row);
+  if(!from||!tip) return;
+  const svg=ensurePlayAimLayer();
+  const path=svg.querySelector('.cbt-aim-stroke');
+  const glow=svg.querySelector('.cbt-aim-glow');
+  svg.setAttribute('viewBox', `0 0 ${window.innerWidth} ${window.innerHeight}`);
+  svg.setAttribute('width', window.innerWidth);
+  svg.setAttribute('height', window.innerHeight);
+  const d=aimCurvePath(from.x, from.y, tip.x, tip.y);
+  if(path) path.setAttribute('d', d);
+  if(glow) glow.setAttribute('d', d);
+  svg.classList.add('show');
+  row.classList.add('play-hot');
+}
 function hideCombatCardPreview(){
   const host=document.getElementById('cbt-card-preview');
-  if(!host) return;
-  host.classList.remove('show');
-  host.replaceChildren();
+  if(host){
+    host.classList.remove('show');
+    host.replaceChildren();
+  }
+  document.querySelectorAll('.cbt-card.hand-drawn').forEach(el=>el.classList.remove('hand-drawn'));
+  hidePlayAim();
 }
 function showCombatCardPreview(el){
   if(!el || state.tab!=='combat' || !state.battle) return;
-  if(_ptrDrag?.active) return;
   const uid=el.getAttribute('data-uid');
   const c=findCombatCardByUid(uid);
   if(!c || typeof buildFfCardHtml!=='function') return;
@@ -2009,12 +1979,19 @@ function showCombatCardPreview(el){
   host.style.top=y+'px';
   host.innerHTML=buildFfCardHtml(c, {
     forceArchive:true,
+    artNative:true,
     frame: typeof frameFor==='function' ? frameFor(c) : {id:'normal'},
     hp: c.hp ?? c.health,
     maxHp: c.maxHp ?? c.health,
     attack: c.attack,
     extraClass:'cbt-preview-face',
   });
+  document.querySelectorAll('.cbt-card.hand-drawn').forEach(node=>node.classList.remove('hand-drawn'));
+  hidePlayAim();
+  if(el.classList.contains('in-hand') && el.closest('.ally-hud')){
+    el.classList.add('hand-drawn');
+    if(el.classList.contains('can-play')) showPlayAimFrom(el);
+  }
 }
 function bindCombatCardPreview(){
   if(bindCombatCardPreview._ready) return;
@@ -2038,6 +2015,8 @@ function bindCombatCardPreview(){
   }, true);
 }
 
+window.BOARD_SHAPES=BOARD_SHAPES;
+window.boardShapeFor=boardShapeFor;
 window.startCombat=startCombat;
 window.keepOpeningHand=keepOpeningHand;
 window.redrawOpeningHand=redrawOpeningHand;
@@ -2051,12 +2030,6 @@ window.confirmAttackFace=confirmAttackFace;
 window.confirmAttackMinion=confirmAttackMinion;
 window.syncAttackAim=syncAttackAim;
 window.endPlayerTurn=endPlayerTurn;
-window.onHandDragStart=onHandDragStart;
-window.onHandDragEnd=onHandDragEnd;
-window.onHandPointerDown=onHandPointerDown;
-window.onBoardDragOver=onBoardDragOver;
-window.onBoardDragLeave=onBoardDragLeave;
-window.onBoardDrop=onBoardDrop;
 window.showCombatCardPreview=showCombatCardPreview;
 window.hideCombatCardPreview=hideCombatCardPreview;
 window.toggleCombatFullscreen=toggleCombatFullscreen;
