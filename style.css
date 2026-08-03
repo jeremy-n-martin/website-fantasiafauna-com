@@ -296,14 +296,147 @@ main:has(.combat-table){
 .camp-rarity-gold{color:#ffe29b;border-color:#f0d78c88}
 .camp-rarity-rosegold{color:#f0c4b0;border-color:#e6b7a088}
 .camp-rarity-obsidian{color:#e8c96a;border-color:#7a58a888;background:#1a102288}
-.camp-reward-list{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.camp-reward-list{list-style:none;margin:0 0 16px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:12px;justify-items:center}
 .camp-reward-card{
-  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
   padding:10px 12px;border-radius:12px;border:1px solid #ffffff22;background:#0006;
 }
 .camp-reward-card small{font-weight:900;letter-spacing:.04em;text-transform:uppercase}
 .camp-reward-empty{opacity:.7;padding:8px;color:#f8eedbaa}
 .camp-hub-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+
+/* —— Carte du monde (campagne) —— */
+.campaign-map-panel .section-head{align-items:flex-start;gap:12px}
+.camp-map-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.6fr) minmax(220px,.7fr);
+  gap:16px;
+  align-items:stretch;
+}
+.camp-map{
+  position:relative;
+  min-height:min(62vh,520px);
+  border-radius:18px;
+  border:1px solid #d9b45f55;
+  overflow:hidden;
+  background:#0c1010;
+  box-shadow:inset 0 0 60px #000a, 0 18px 40px #0006;
+}
+.camp-map-terrain{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 50% 40% at 20% 70%, #2a4a3288, transparent 70%),
+    radial-gradient(ellipse 45% 35% at 75% 30%, #3a281888, transparent 65%),
+    radial-gradient(ellipse 40% 30% at 55% 80%, #1a304088, transparent 60%),
+    linear-gradient(160deg, #1a2218 0%, #12161a 40%, #1c1810 100%);
+}
+.camp-map-terrain::before{
+  content:"";position:absolute;inset:0;opacity:.35;pointer-events:none;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 28px, #ffffff05 29px),
+    repeating-linear-gradient(90deg, transparent, transparent 28px, #ffffff04 29px);
+}
+.camp-map-roads{
+  position:absolute;inset:0;width:100%;height:100%;
+  pointer-events:none;z-index:1;
+}
+.camp-map-road{
+  fill:none;stroke:#c9a36a66;stroke-width:.55;stroke-linecap:round;
+  stroke-dasharray:1.8 1.4;
+}
+.camp-map-road.is-active{stroke:#ffe29baa;stroke-width:.7;filter:drop-shadow(0 0 2px #d9b45f88)}
+.camp-map-node{
+  position:absolute;z-index:3;
+  transform:translate(-50%,-50%);
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  width:auto;max-width:140px;
+  padding:0;border:none;background:transparent;color:inherit;
+  cursor:pointer;
+}
+.camp-map-pin{
+  width:22px;height:22px;border-radius:50%;
+  border:2px solid #ffe29b;
+  background:radial-gradient(circle at 35% 30%, #e8d5a0, #6a4a18 70%);
+  box-shadow:0 0 0 3px #0008, 0 6px 14px #000a;
+}
+.camp-map-node.kind-home .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #dff0ff, #3a5a78 70%);
+  border-color:#b8d4f0;
+}
+.camp-map-node.kind-shop .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #ffe9b0, #8a5a18 70%);
+}
+.camp-map-node.kind-fusion .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #e8d0ff, #5a3870 70%);
+  border-color:#c9a0e8;
+}
+.camp-map-node.kind-duel .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #ffc8b0, #7a2818 70%);
+  border-color:#e8a090;
+}
+.camp-map-label{
+  display:grid;gap:1px;justify-items:center;text-align:center;
+  padding:4px 8px;border-radius:10px;
+  background:#0a0c0cee;border:1px solid #ffffff22;
+  box-shadow:0 6px 16px #0008;
+}
+.camp-map-label b{font-family:Georgia,serif;font-size:.78rem;color:#fff6e0;line-height:1.15}
+.camp-map-label small{font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;color:#d9b45fcc;font-weight:800}
+.camp-map-node.is-here .camp-map-pin{
+  box-shadow:0 0 0 3px #ffe29b88, 0 0 18px #d9b45f88, 0 6px 14px #000a;
+  transform:scale(1.15);
+}
+.camp-map-node.is-here .camp-map-label{border-color:#d9b45f99;background:#1a140cee}
+.camp-map-node.is-reachable:not(.is-here) .camp-map-pin{
+  animation:campMapPulse 1.8s ease-in-out infinite;
+}
+.camp-map-node.is-reachable:not(.is-here):hover .camp-map-label{
+  border-color:#ffe29b88;transform:translateY(-1px);
+}
+.camp-map-node.is-locked{
+  opacity:.42;filter:grayscale(.55);cursor:not-allowed;
+}
+.camp-map-node.is-cleared .camp-map-label small{color:#adffd0cc}
+.camp-map-node.is-cleared .camp-map-pin{
+  box-shadow:0 0 0 3px #76d89655, 0 6px 14px #000a;
+}
+@keyframes campMapPulse{
+  0%,100%{box-shadow:0 0 0 3px #0008, 0 6px 14px #000a}
+  50%{box-shadow:0 0 0 4px #ffe29b55, 0 0 16px #d9b45f66, 0 6px 14px #000a}
+}
+.camp-map-pawn{
+  position:absolute;z-index:4;pointer-events:none;
+  transform:translate(-50%,-120%);
+  width:18px;height:28px;
+  filter:drop-shadow(0 4px 8px #000a);
+  transition:left .45s cubic-bezier(.22,.8,.2,1), top .45s cubic-bezier(.22,.8,.2,1);
+}
+.camp-map-pawn i{
+  display:block;width:100%;height:100%;
+  background:
+    radial-gradient(circle at 50% 22%, #fff6e0 0 28%, transparent 30%),
+    linear-gradient(180deg, #d9b45f 35%, #5a3810 100%);
+  clip-path:polygon(50% 0, 78% 28%, 70% 28%, 70% 100%, 30% 100%, 30% 28%, 22% 28%);
+  border-radius:2px;
+}
+.camp-map-dossier{
+  padding:16px 16px 14px;
+  border-radius:16px;
+  border:1px solid #d9b45f44;
+  background:linear-gradient(165deg,#2a2214ee,#100e0af2);
+  box-shadow:0 12px 28px #0006;
+}
+.camp-map-dossier h3{
+  margin:.2rem 0 .6rem;font-family:Georgia,serif;color:#ffe29b;
+  font-size:clamp(1.25rem,2.4vw,1.6rem);
+}
+.camp-map-dossier .campaign-prose{margin:0 0 8px;font-size:.95rem}
+.camp-map-diff{margin:0;color:#ffc8b0;font-weight:800;letter-spacing:.06em;font-size:.78rem}
+@media(max-width:900px){
+  .camp-map-layout{grid-template-columns:1fr}
+  .camp-map{min-height:420px}
+  .camp-map-label b{font-size:.7rem}
+}
 .camp-stats-compact{margin:0;justify-content:flex-end}
 .camp-toast{
   margin:0 0 12px;padding:8px 12px;border-radius:12px;
@@ -326,7 +459,9 @@ main:has(.combat-table){
   display:inline-block;
   vertical-align:top;
 }
-.binder-count{
+.binder-count,
+.ff-card .binder-count,
+.gallery-card .binder-count{
   position:absolute;
   right:8px;
   top:8px;
@@ -343,13 +478,39 @@ main:has(.combat-table){
   box-shadow:0 4px 12px #000a;
   pointer-events:none;
 }
+.gallery-card{position:relative}
+.binder-showcase .card-gallery{overflow:visible}
 .binder-showcase .binder-toolbar{align-items:center}
 .binder-showcase .camp-stats-compact{margin:0}
 .camp-shop-toolbar{display:flex;gap:8px;margin-bottom:10px}
 .camp-card-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
-  gap:12px;
+  grid-template-columns:repeat(auto-fill,minmax(132px,1fr));
+  gap:16px 12px;
+  align-items:start;
+  justify-items:center;
+}
+.camp-offer{
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  width:100%;max-width:150px;
+}
+.camp-ff-scale{
+  --camp-scale:.36;
+  position:relative;
+  width:calc(240px * var(--camp-scale));
+  height:calc(450px * var(--camp-scale));
+  flex:0 0 auto;
+  filter:drop-shadow(0 10px 18px #000a);
+}
+.camp-ff-scale > .ff-card{
+  position:absolute;left:0;top:0;
+  width:240px !important;min-width:240px !important;max-width:none !important;
+  min-height:450px !important;height:auto !important;
+  margin:0;
+  transform:scale(var(--camp-scale));
+  transform-origin:top left;
+  pointer-events:none;
+  box-sizing:border-box;
 }
 .camp-card{
   display:flex;flex-direction:column;gap:8px;
@@ -362,10 +523,10 @@ main:has(.combat-table){
   border:1px solid #ffffff18;
 }
 .camp-card-art img{width:100%;height:100%;object-fit:cover;display:block}
-.camp-card-meta{display:grid;gap:2px}
-.camp-card-meta strong{font-family:Georgia,serif;color:#fff6e0}
-.camp-card-meta em{font-style:normal;color:#f8eedbaa;font-weight:800}
-.camp-card-actions{display:grid;gap:6px;margin-top:auto}
+.camp-card-meta{display:grid;gap:2px;justify-items:center;text-align:center;width:100%}
+.camp-card-meta strong{font-family:Georgia,serif;color:#fff6e0;font-size:.86rem}
+.camp-card-meta em{font-style:normal;color:#f8eedbaa;font-weight:800;font-size:.82rem}
+.camp-card-actions{display:grid;gap:6px;margin-top:2px;width:100%}
 .camp-card-actions .cbt-start,
 .camp-card-actions .cbt-end{width:100%;padding:8px 10px;font-size:.78rem}
 .camp-card-actions .cbt-start:disabled{opacity:.45;cursor:not-allowed;filter:saturate(.5)}
@@ -1990,11 +2151,12 @@ body{
   align-items:start;
   justify-content:stretch;
   position:relative;
-  z-index:18;
+  z-index:40;
   flex:0 0 auto;
   margin-bottom:0;
   padding-bottom:0;
   min-height:0;
+  overflow:visible;
 }
 .ally-hud .cbt-tower{grid-area:tower;min-width:96px;padding:4px 8px}
 .ally-hud .cbt-mana-panel{grid-area:mana;justify-self:start;min-width:0}
@@ -2007,12 +2169,14 @@ body{
   justify-content:flex-start;
   width:100%;
   max-width:100%;
+  /* overflow-x:auto force overflow-y:auto → coupait le tirage ; padding = place pour lever la carte */
   overflow-x:auto;
-  overflow-y:visible;
-  padding:4px 2px 2px;
+  overflow-y:hidden;
+  padding:calc(var(--cbt-base-h, 450px) * var(--cbt-hand-scale, .32) * .55) 2px 2px;
+  margin-top:calc(var(--cbt-base-h, 450px) * var(--cbt-hand-scale, .32) * -.55);
   flex:unset;
   position:relative;
-  z-index:20;
+  z-index:40;
 }
 .ally-hud .cbt-hand .cbt-card,
 .ally-hud .cbt-hand .cbt-card.can-play{
@@ -2359,6 +2523,9 @@ body{
   animation:cbtAimDash .55s linear infinite;
   filter:drop-shadow(0 0 5px #ffe14acc);
 }
+.cbt-play-aim-layer .cbt-aim-head{
+  filter:drop-shadow(0 0 4px #ffe14acc);
+}
 .combat-table .cbt-log{position:relative;z-index:1;max-height:48px;flex:0 0 auto}
 .combat-table .cbt-meta,
 .combat-table .cbt-mid,
@@ -2378,5 +2545,6 @@ main:has(.combat-table){flex:1 1 auto;min-height:0;overflow:hidden;display:flex;
   overflow:hidden;display:flex;flex-direction:column;
 }
 .combat-table > .cbt-row.enemy,
-.combat-table > .cbt-row.player{flex:1 1 0;min-height:0}
-.combat-table > .ally-hud{flex:0 0 auto;margin-bottom:0}
+.combat-table > .cbt-row.player{flex:1 1 0;min-height:0;position:relative;z-index:1;overflow:visible}
+.combat-table > .ally-hud{flex:0 0 auto;margin-bottom:0;position:relative;z-index:40;overflow:visible}
+.combat-table > .cbt-mid{position:relative;z-index:2}

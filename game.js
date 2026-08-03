@@ -551,13 +551,15 @@ function buildFfCardHtml(c, opts={}){
   if(opts.extraClass) extras.push(opts.extraClass);
   const cls=extras.length ? ' '+extras.join(' ') : '';
   const dataId=c.id!=null ? ` data-id="${c.id}"` : '';
+  const dataExtra=opts.dataAttrs ? ` ${opts.dataAttrs}` : '';
   const onclick=opts.onclick ? ` onclick="${opts.onclick}"` : '';
   const title=opts.title ? ` title="${opts.title}"` : '';
   const natures=(c.natures||[]).join(' · ');
   const hpBar=injured
     ? `<div class="card-hp-bar" style="--hp-pct:${hpPct.toFixed(1)}%" title="${hp} / ${maxHp} PV" aria-hidden="true"><i></i></div>`
     : '';
-  return `<article class="ff-card frame-${frame.id} style-${typo.id}${cls}"${dataId} style="--faction:${color}"${onclick}${title}>
+  return `<article class="ff-card frame-${frame.id} style-${typo.id}${cls}"${dataId}${dataExtra} style="--faction:${color}"${onclick}${title}>
+    ${opts.badgeHtml||''}
     <span class="card-rim" aria-hidden="true"></span>
     <header class="card-title"><span class="card-name ${nameClassFor(c.name)}">${c.name}</span>${manaCostHtml(c)}</header>
     <div class="card-art">${img}<i>${c.capital}</i>${size?`<em class="card-size">${size}</em>`:''}${opts.artExtra||''}</div>
@@ -674,19 +676,20 @@ function cardViewBinder(entry){
   const mode=state.borderMode||'normal';
   const countBadge=`<span class="binder-count" title="${row.count} exemplaire${row.count>1?'s':''}">×${row.count}</span>`;
   const rarityLabelTxt=(typeof rarityLabel==='function'?rarityLabel(row.rarity):row.rarity);
+  const zoomTitle=`${c.name} · ${rarityLabelTxt} — cliquer pour zoomer`;
   if(mode==='jeu'){
     const color=(typeof factionMana==='function'?factionMana(c).color:null)||CAPITAL_COLORS[c.capital]||'#c9aa69';
     const zoomed=state.zoomedId===c.id?' zoomed':'';
     const view={...c, hp:displayHp(c), health:c.health};
-    return `<div class="gallery-card mode-jeu binder-entry${zoomed}" data-id="${c.id}" data-rarity="${row.rarity}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${c.name} · ${rarityLabelTxt}">${typeof miniCard==='function'?miniCard(view,{hand:true,frame}):''}${countBadge}</div>`;
+    return `<div class="gallery-card mode-jeu${zoomed}" data-id="${c.id}" data-rarity="${row.rarity}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${zoomTitle}">${typeof miniCard==='function'?miniCard(view,{hand:true,frame}):''}${countBadge}</div>`;
   }
   if(mode==='image'){
     const color=CAPITAL_COLORS[c.capital]||'#c9aa69';
     const artSrc=currentImageFor(c);
     const zoomed=state.zoomedId===c.id?' zoomed':'';
     const img=artSrc?`<img src="${encodeURI(artSrc)}" alt="${c.name}" width="240" height="240" decoding="async">`:'';
-    return `<article class="gallery-card mode-image binder-entry${zoomed}" data-id="${c.id}" data-rarity="${row.rarity}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${c.name} · ${rarityLabelTxt}">
-      <div class="image-only">${img}</div>${countBadge}
+    return `<article class="gallery-card mode-image${zoomed}" data-id="${c.id}" data-rarity="${row.rarity}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${zoomTitle}">
+      <div class="image-only">${img}${artToolsHtml(c)}</div>${countBadge}
     </article>`;
   }
   if(mode==='dense'){
@@ -694,7 +697,7 @@ function cardViewBinder(entry){
     const artSrc=currentImageFor(c);
     const zoomed=state.zoomedId===c.id?' zoomed':'';
     const img=artSrc?`<img src="${encodeURI(artSrc)}" alt="" width="240" height="240" decoding="async">`:'';
-    return `<article class="gallery-card mode-dense binder-entry${zoomed}" data-id="${c.id}" data-rarity="${row.rarity}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${c.name} · ${rarityLabelTxt}">
+    return `<article class="gallery-card mode-dense${zoomed}" data-id="${c.id}" data-rarity="${row.rarity}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${zoomTitle}">
       <div class="dense-strip">${img}</div>
       <div class="dense-meta">
         <strong class="dense-name">${c.name}</strong>
@@ -703,13 +706,16 @@ function cardViewBinder(entry){
       </div>${countBadge}
     </article>`;
   }
-  const zoomed=state.zoomedId===c.id;
-  return `<div class="binder-entry" data-id="${c.id}" data-rarity="${row.rarity}">${buildFfCardHtml(c,{
+  /* Même structure que la liste bestiaire : .ff-card enfant direct de .card-gallery */
+  return buildFfCardHtml(c, {
     frame,
-    zoomed,
-    onclick:`toggleCardZoom(${c.id}, event)`,
-    title:`${c.name} · ${rarityLabelTxt} — cliquer pour zoomer`,
-  })}${countBadge}</div>`;
+    zoomed: state.zoomedId===c.id,
+    onclick: `toggleCardZoom(${c.id}, event)`,
+    title: zoomTitle,
+    artExtra: artToolsHtml(c),
+    badgeHtml: countBadge,
+    dataAttrs: `data-rarity="${row.rarity}"`,
+  });
 }
 function renderList(opts={}){
   const binder=!!opts.binder || isBinderView();
@@ -740,7 +746,7 @@ function renderList(opts={}){
     </div>`:'';
   const backBar=binder?`
     <div class="campaign-actions binder-toolbar" style="margin:0 0 14px;justify-content:space-between">
-      <button type="button" class="cbt-end" onclick="setCampaignView('hub')">Retour tour</button>
+      <button type="button" class="cbt-end" onclick="setCampaignView('map')">Retour carte</button>
       <div class="camp-stats camp-stats-compact">
         <div class="camp-stat"><small>Or</small><b>${(typeof ensureCampaign==='function'?ensureCampaign():null)?.gold||0}</b></div>
         <div class="camp-stat"><small>Classeur</small><b>${typeof binderCount==='function'?binderCount():0}</b></div>

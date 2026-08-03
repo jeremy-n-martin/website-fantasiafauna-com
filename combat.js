@@ -118,10 +118,14 @@ function cloneCard(c){
   const roles=[...(c.roles||[])];
   const atk=c.attack||0;
   const hp=c.health||0;
+  const frameId=(typeof CARD_FRAMES!=='undefined' && CARD_FRAMES.some(f=>f.id===c.frameId))
+    ? c.frameId
+    : 'normal';
   const card={
     ...c,
     roles,
     uid: uid(),
+    frameId,
     attack: atk,
     baseAttack: atk,
     hp,
@@ -150,6 +154,22 @@ function cloneCard(c){
   if(hasRole(card,'bouclier-divin')) card.divineShield=true;
   if(hasRole(card,'camouflage')) card.stealthed=true;
   return card;
+}
+function combatFrameFor(c){
+  const id=c?.frameId || c?.cardRarity;
+  if(id && typeof CARD_FRAMES!=='undefined'){
+    const f=CARD_FRAMES.find(x=>x.id===id);
+    if(f) return f;
+  }
+  if(typeof frameFor==='function') return frameFor(c);
+  return {id:'normal'};
+}
+function stampSideFrames(side, roller){
+  if(!side) return;
+  const roll=typeof roller==='function' ? roller : ()=>'normal';
+  [...(side.deck||[]), ...(side.hand||[])].forEach(c=>{
+    if(!c.frameId || c.frameId==='normal') c.frameId=roll();
+  });
 }
 function activationSpec(c){
   for(const spec of ACTIVATION_SPECS){
@@ -801,7 +821,7 @@ function startCombat(){
 function backToCombatLobby(){
   state.combatView='lobby';
   state.battle=null;
-  if(state.campaign && state.campaign.phase==='battle') state.campaign.phase='hub';
+  if(state.campaign && state.campaign.phase==='battle') state.campaign.phase='map';
   if(typeof hideCombatCardPreview==='function') hideCombatCardPreview();
   render();
 }
@@ -1594,15 +1614,21 @@ function drawAimArrow(fromEl, tipX, tipY, hotEl){
   const svg=document.querySelector('.cbt-aim-layer');
   const path=svg?.querySelector('.cbt-aim-stroke');
   const glow=svg?.querySelector('.cbt-aim-glow');
+  const head=svg?.querySelector('.cbt-aim-head');
   if(!svg||!path||!fromEl) return;
   const from=elCenter(fromEl);
   if(!from) return;
   svg.setAttribute('viewBox', `0 0 ${window.innerWidth} ${window.innerHeight}`);
   svg.setAttribute('width', window.innerWidth);
   svg.setAttribute('height', window.innerHeight);
-  const d=aimCurvePath(from.x, from.y, tipX, tipY);
+  const tip={x:tipX,y:tipY};
+  const dx=tip.x-from.x, dy=tip.y-from.y;
+  const len=Math.hypot(dx,dy)||1;
+  const tipInset={x:tip.x-(dx/len)*16, y:tip.y-(dy/len)*16};
+  const d=aimCurvePath(from.x, from.y, tipInset.x, tipInset.y);
   path.setAttribute('d', d);
   if(glow) glow.setAttribute('d', d);
+  if(head) head.setAttribute('points', playAimHeadPoints(from, tip, 16));
   document.querySelectorAll('.cbt-target-hot').forEach(el=>el.classList.remove('cbt-target-hot'));
   if(hotEl) hotEl.classList.add('cbt-target-hot');
 }
@@ -1712,7 +1738,7 @@ function miniCard(c, opts={}){
     ? (typeof buildFfCardHtml==='function'
       ? buildFfCardHtml(c, {
           forceArchive:true,
-          frame: opts.frame || (typeof frameFor==='function' ? frameFor(c) : {id:'normal'}),
+          frame: opts.frame || combatFrameFor(c),
           hp: c.hp ?? c.health,
           maxHp: c.maxHp ?? c.health,
           attack: c.attack,
@@ -1921,18 +1947,16 @@ function renderCombat(){
       `
     : `<span class="cbt-wait">…</span>`;
   const aimSvg = b.attackSource ? `
-    <svg class="cbt-aim-layer" aria-hidden="true">
+    <svg class="cbt-aim-layer" aria-hidden="true" overflow="visible">
       <defs>
-        <filter id="cbt-aim-blur" x="-40%" y="-40%" width="180%" height="180%">
+        <filter id="cbt-aim-blur" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur"/>
           <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
         </filter>
-        <marker id="cbt-aim-head" viewBox="0 0 14 14" refX="12" refY="7" markerWidth="7" markerHeight="7" orient="auto">
-          <path d="M1,1 L13,7 L1,13 Z" fill="#ffe14a" stroke="#f5c518" stroke-width="1"/>
-        </marker>
       </defs>
-      <path class="cbt-aim-glow" d="" fill="none" stroke="#ffe14a" stroke-width="11" stroke-linecap="round" opacity=".28"/>
-      <path class="cbt-aim-stroke" d="" fill="none" stroke="#ffe14a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="11 9" marker-end="url(#cbt-aim-head)" filter="url(#cbt-aim-blur)"/>
+      <path class="cbt-aim-glow" d="" fill="none" stroke="#ffe14a" stroke-width="11" stroke-linecap="round" opacity=".28" filter="url(#cbt-aim-blur)"/>
+      <path class="cbt-aim-stroke" d="" fill="none" stroke="#ffe14a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="11 9"/>
+      <polygon class="cbt-aim-head" points="0,0 0,0 0,0" fill="#ffe14a" stroke="#f5c518" stroke-width="1"/>
     </svg>` : '';
   const canHitFace=!!(playerAiming && aimLegal?.face);
   const enemyTowerCls = `cbt-tower enemy${canHitFace?' cbt-target':''}${playerAiming && !canHitFace?' cbt-blocked':''}`;
@@ -1992,22 +2016,26 @@ function findCombatCardByUid(uid){
 }
 function ensurePlayAimLayer(){
   let svg=document.getElementById('cbt-play-aim');
+  if(svg && !svg.querySelector('.cbt-aim-head')){
+    svg.remove();
+    svg=null;
+  }
   if(svg) return svg;
   svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
   svg.id='cbt-play-aim';
   svg.classList.add('cbt-play-aim-layer');
   svg.setAttribute('aria-hidden','true');
+  svg.setAttribute('overflow','visible');
+  /* Pas de filter SVG sur le trait avec marker (Chrome masque la pointe) — glow séparé + triangle explicite */
   svg.innerHTML=`<defs>
-    <filter id="cbt-play-aim-blur" x="-40%" y="-40%" width="180%" height="180%">
+    <filter id="cbt-play-aim-blur" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <marker id="cbt-play-aim-head" viewBox="0 0 14 14" refX="12" refY="7" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M1,1 L13,7 L1,13 Z" fill="#ffe14a" stroke="#f5c518" stroke-width="1"/>
-    </marker>
   </defs>
-  <path class="cbt-aim-glow" d="" fill="none" stroke="#ffe14a" stroke-width="11" stroke-linecap="round" opacity=".28"/>
-  <path class="cbt-aim-stroke" d="" fill="none" stroke="#ffe14a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="11 9" marker-end="url(#cbt-play-aim-head)" filter="url(#cbt-play-aim-blur)"/>`;
+  <path class="cbt-aim-glow" d="" fill="none" stroke="#ffe14a" stroke-width="11" stroke-linecap="round" opacity=".28" filter="url(#cbt-play-aim-blur)"/>
+  <path class="cbt-aim-stroke" d="" fill="none" stroke="#ffe14a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="11 9"/>
+  <polygon class="cbt-aim-head" points="0,0 0,0 0,0" fill="#ffe14a" stroke="#f5c518" stroke-width="1"/>`;
   document.body.appendChild(svg);
   return svg;
 }
@@ -2016,8 +2044,24 @@ function hidePlayAim(){
   if(svg){
     svg.classList.remove('show');
     svg.querySelectorAll('path').forEach(p=>p.setAttribute('d',''));
+    const head=svg.querySelector('.cbt-aim-head');
+    if(head) head.setAttribute('points','0,0 0,0 0,0');
   }
   document.querySelectorAll('.cbt-row.player.play-hot').forEach(el=>el.classList.remove('play-hot'));
+}
+function playAimHeadPoints(from, tip, size=14){
+  const dx=tip.x-from.x, dy=tip.y-from.y;
+  const len=Math.hypot(dx,dy)||1;
+  const ux=dx/len, uy=dy/len;
+  const px=-uy, py=ux;
+  const baseX=tip.x-ux*size;
+  const baseY=tip.y-uy*size;
+  const half=size*0.55;
+  return [
+    `${tip.x},${tip.y}`,
+    `${baseX+px*half},${baseY+py*half}`,
+    `${baseX-px*half},${baseY-py*half}`,
+  ].join(' ');
 }
 function showPlayAimFrom(el){
   const b=state.battle;
@@ -2031,12 +2075,18 @@ function showPlayAimFrom(el){
   const svg=ensurePlayAimLayer();
   const path=svg.querySelector('.cbt-aim-stroke');
   const glow=svg.querySelector('.cbt-aim-glow');
+  const head=svg.querySelector('.cbt-aim-head');
   svg.setAttribute('viewBox', `0 0 ${window.innerWidth} ${window.innerHeight}`);
   svg.setAttribute('width', window.innerWidth);
   svg.setAttribute('height', window.innerHeight);
-  const d=aimCurvePath(from.x, from.y, tip.x, tip.y);
+  /* Courbe un peu avant la cible pour laisser place à la pointe */
+  const dx=tip.x-from.x, dy=tip.y-from.y;
+  const len=Math.hypot(dx,dy)||1;
+  const tipInset={x:tip.x-(dx/len)*16, y:tip.y-(dy/len)*16};
+  const d=aimCurvePath(from.x, from.y, tipInset.x, tipInset.y);
   if(path) path.setAttribute('d', d);
   if(glow) glow.setAttribute('d', d);
+  if(head) head.setAttribute('points', playAimHeadPoints(from, tip, 16));
   svg.classList.add('show');
   row.classList.add('play-hot');
 }
@@ -2069,7 +2119,7 @@ function showCombatCardPreview(el){
   host.style.setProperty('--preview-fit', '1');
   host.innerHTML=buildFfCardHtml(c, {
     forceArchive:true,
-    frame: typeof frameFor==='function' ? frameFor(c) : {id:'normal'},
+    frame: combatFrameFor(c),
     hp: c.hp ?? c.health,
     maxHp: c.maxHp ?? c.health,
     attack: c.attack,
