@@ -248,8 +248,8 @@ function makeToken11(capital){
     spell:'',
     image:'',
     quote:'« Né du combat. »',
-    costColored:0,
-    costNeutral:1,
+    costColored:1,
+    costNeutral:0,
   });
 }
 function abilityPulseSpec(c){
@@ -723,10 +723,19 @@ function colorManaTotal(p){
   return Object.values(p.colorMana||{}).reduce((a,b)=>a+b,0);
 }
 function cardManaParts(card){
-  const colored=Math.max(0, card?.costColored|0);
-  const neutral=card?.costNeutral != null
+  if(typeof normalizeManaCost==='function') return normalizeManaCost(card);
+  let colored=Math.max(0, card?.costColored|0);
+  let neutral=card?.costNeutral != null
     ? Math.max(0, card.costNeutral|0)
     : Math.max(0, (card?.cost|0) - colored);
+  // 1–3 mana spécialisé de la couleur de la créature.
+  if(colored < 1){
+    if(neutral >= 1){ colored=1; neutral-=1; }
+    else colored=1;
+  } else if(colored > 3){
+    neutral += colored - 3;
+    colored=3;
+  }
   return {colored, neutral, total: colored + neutral};
 }
 function canAfford(p, card){
@@ -1425,29 +1434,33 @@ function resolveCombatStrike(atkSide, atkUid, target){
     }
     const tankNote=isTank(def)?' (Tank)':'';
     const noRiposte=hasNoRiposte(atk);
-    const riposteDmg=def.attack||0;
+    const riposteDmg=Math.max(0, def.attack|0);
+    const dmg=Math.max(0, atk.attack|0);
+    // Coup mortel (hors bouclier divin) : pas de riposte, même si Survie ramène à 1 PV.
+    const lethalHit=!def.divineShield && dmg>0 && (def.hp|0) <= dmg;
+    const skipRiposte=noRiposte || lethalHit || riposteDmg<=0;
     let dealt=0;
-    // Dégâts d’attaque + vol de vie / on-hit avant la riposte (évite un heal post-létal)
-    if(noRiposte){
-      combatLog(`${atk.name} (${atk.attack}) frappe ${def.name}${tankNote} — sans riposte.`);
-      dealt=dealDamageToCreature(defSide, def, atk.attack);
-    } else {
-      combatLog(`${atk.name} (${atk.attack}) charge ${def.name}${tankNote} — riposte ${riposteDmg}.`);
-      dealt=dealDamageToCreature(defSide, def, atk.attack);
-    }
+    dealt=dealDamageToCreature(defSide, def, dmg);
     if(dealt>0 && def.hp>0){
       applyOnAttackEffects(atk, def);
       spawnStrikeImpact(atk.uid, def.uid);
-    } else if(dealt>0 && def.hp<=0){
+    } else if(dealt>0){
       spawnStrikeImpact(atk.uid, def.uid);
-      // Effets on-hit inutiles sur un cadavre — skip
     }
     if(dealt>0) applyLifesteal(atk, dealt);
-    if(!noRiposte && def.hp>0 && riposteDmg>0){
+    const defenderAlive=(def.hp|0)>0 && D.board.some(c=>c.uid===def.uid);
+    if(!skipRiposte && defenderAlive){
+      combatLog(`${atk.name} (${dmg}) charge ${def.name}${tankNote} — riposte ${riposteDmg}.`);
       dealDamageToCreature(atkSide, atk, riposteDmg);
+    } else if(noRiposte){
+      combatLog(`${atk.name} (${dmg}) frappe ${def.name}${tankNote} — sans riposte.`);
+    } else if(lethalHit){
+      combatLog(`${atk.name} (${dmg}) abat ${def.name}${tankNote} — pas de riposte.`);
+    } else {
+      combatLog(`${atk.name} (${dmg}) frappe ${def.name}${tankNote}.`);
     }
     flashCombatCard(def.uid);
-    const killedDef=def.hp<=0;
+    const killedDef=(def.hp|0)<=0;
     if(killedDef){
       killCreature(defSide, def);
       if(hasRole(atk,'quand-tue') && atk.hp>0 && A.board.some(x=>x.uid===atk.uid)){
@@ -1456,7 +1469,7 @@ function resolveCombatStrike(atkSide, atkUid, target){
         spawnCombatFx('etendard', atk.uid, [atk.uid]);
       }
     }
-    if(atk.hp<=0) killCreature(atkSide, atk);
+    if((atk.hp|0)<=0) killCreature(atkSide, atk);
     else triggerAfterAttack(atkSide, atk);
   }
   checkWinner();
@@ -1804,6 +1817,44 @@ function renderBoardRow(side, who){
   if(!board.length) parts.push('<em class="cbt-empty">Terrain vide — clique une carte de ta main</em>');
   return `<div class="cbt-row ${who}${playerAiming?' targeting':''}${legal?.forcedTank?' tank-lock':''}">${parts.join('')}</div>`;
 }
+function renderTowerSprite(who, opts={}){
+  const b=state.battle;
+  const side=b[who];
+  const isEnemy=who==='enemy';
+  const label=isEnemy ? 'Tour adverse' : 'Ta tour';
+  const maxHp=30;
+  const hp=Math.max(0, side.hp|0);
+  const pct=Math.max(0, Math.min(100, Math.round((hp/maxHp)*100)));
+  const cls=[
+    'cbt-tower',
+    isEnemy?'enemy':'ally',
+    opts.targetable?'cbt-target':'',
+    opts.blocked?'cbt-blocked':'',
+  ].filter(Boolean).join(' ');
+  const click=opts.onclick ? ` onclick="${opts.onclick}"` : '';
+  const title=opts.title ? ` title="${opts.title}"` : ` title="${label} — ${hp} PV"`;
+  const keep=`<span class="cbt-keep" aria-hidden="true">
+      <span class="cbt-keep-crown">
+        <i></i><i></i><i></i><i></i><i></i>
+      </span>
+      <span class="cbt-keep-shaft">
+        <em class="cbt-keep-slit"></em>
+        <em class="cbt-keep-slit"></em>
+        <em class="cbt-keep-door"></em>
+      </span>
+      <span class="cbt-keep-plinth"></span>
+    </span>`;
+  return `<button type="button" class="${cls}"${click}${title}>
+    ${keep}
+    <span class="cbt-tower-hud">
+      <span class="cbt-tower-label">${label}</span>
+      <span class="cbt-tower-life" style="--hp:${pct}%">
+        <b>${hp}</b>
+        <i><u></u></i>
+      </span>
+    </span>
+  </button>`;
+}
 function renderHearts(hp, maxHp=30){
   const per=3;
   const total=Math.ceil(maxHp/per);
@@ -1851,13 +1902,25 @@ function renderColorMana(p){
   }).join('');
 }
 function renderCombatLobby(){
+  const camp=typeof ensureCampaign==='function' ? ensureCampaign() : null;
+  const hasCamp=!!(camp && ((camp.introStep||0)>= (typeof CAMPAIGN_INTRO!=='undefined'?CAMPAIGN_INTRO.length:3) || camp.starterGranted || (camp.binder||[]).length));
+  const campLabel=hasCamp ? 'Continuer l’histoire' : 'Démarrer l’histoire';
+  const campBtns=hasCamp ? `
+      <button type="button" class="cbt-start lobby-campaign" onclick="openCampaignPanel('map')">Carte du monde</button>
+      <button type="button" class="cbt-end" onclick="openCampaignPanel('binder')">Classeur</button>
+      <button type="button" class="cbt-end" onclick="openCampaignPanel('shop')">Boutique</button>`
+    : `<button type="button" class="cbt-start lobby-campaign" onclick="startCampaign()">${campLabel}</button>`;
   return `<section class="panel combat-lobby">
     <div class="section-head">
       <div>
         <p class="eyebrow">Tour du magicien</p>
         <h2>Classeur & arène</h2>
-        <p>Tes cartes vivent dans ton classeur. Gagne or et cartes en campagne — plus tard, boutiques et fusions (5 d’une rareté → la suivante).</p>
+        <p>Combat rapide ou campagne : carte, classeur, boutique et duels.</p>
       </div>
+      ${hasCamp?`<div class="camp-stats camp-stats-compact">
+        <div class="camp-stat"><small>Or</small><b>${camp.gold||0}</b></div>
+        <div class="camp-stat"><small>Classeur</small><b>${typeof binderCount==='function'?binderCount():0}</b></div>
+      </div>`:''}
     </div>
     <div class="lobby-modes">
       <article class="lobby-mode">
@@ -1869,8 +1932,10 @@ function renderCombatLobby(){
       <article class="lobby-mode">
         <span class="lobby-mode-num">2</span>
         <h3>Histoire de la campagne</h3>
-        <p>Prologue court, puis duels façon seigneur de guerre — or, cartes, classeur.</p>
-        <button type="button" class="cbt-start lobby-campaign" onclick="startCampaign()">Démarrer l’histoire</button>
+        <p>${hasCamp
+          ? `Partie en cours — ${typeof binderCount==='function'?binderCount():0} carte(s) · ${camp.gold||0} or.`
+          : 'Prologue, carte du monde, classeur, boutique et duels.'}</p>
+        <div class="lobby-campaign-actions">${campBtns}</div>
       </article>
     </div>
   </section>`;
@@ -1959,10 +2024,19 @@ function renderCombat(){
       <polygon class="cbt-aim-head" points="0,0 0,0 0,0" fill="#ffe14a" stroke="#f5c518" stroke-width="1"/>
     </svg>` : '';
   const canHitFace=!!(playerAiming && aimLegal?.face);
-  const enemyTowerCls = `cbt-tower enemy${canHitFace?' cbt-target':''}${playerAiming && !canHitFace?' cbt-blocked':''}`;
   const enemyTowerClick = canHitFace
-    ? ' onclick="confirmAttackFace()" title="Attaquer la tour adverse"'
-    : (playerAiming ? ' title="Protégée par un Tank"' : '');
+    ? 'confirmAttackFace()'
+    : '';
+  const enemyTowerOpts={
+    targetable:canHitFace,
+    blocked:playerAiming && !canHitFace,
+    onclick:enemyTowerClick,
+    title: canHitFace
+      ? 'Attaquer la tour adverse'
+      : (playerAiming ? 'Protégée par un Tank' : undefined),
+  };
+  const logHtml=`<aside class="cbt-log"><h3>Journal</h3>${b.log.map(x=>`<p>${x}</p>`).join('')||'<p class="cbt-log-empty">Aucune action pour l’instant.</p>'}</aside>`;
+  const sideControls=`<aside class="cbt-side-rail" aria-label="Actions de tour">${midControls}</aside>`;
   return `<section class="${combatTableClasses(`${playerAiming?' is-aiming':''}${mulligan?' is-mulligan':''}${aimLegal?.forcedTank?' tank-lock':''}`)}">
     ${aimSvg}
     ${ended}
@@ -1980,30 +2054,40 @@ function renderCombat(){
       <div class="cbt-status-line">${b.coin} · ${statusLabel}</div>
       ${renderCombatConfigBar()}
     </div>
-    <div class="cbt-side enemy-hud">
-      <div class="${enemyTowerCls}"${enemyTowerClick}><span class="cbt-tower-label">Tour adverse</span>${renderHearts(b.enemy.hp)}</div>
-      ${renderManaCrystals(b.enemy)}
-      <div class="cbt-hand enemy-hand">${b.enemy.hand.map(()=>`<div class="cbt-back"></div>`).join('')}<small>Deck ${b.enemy.deck.length}</small></div>
+    <div class="cbt-body">
+      ${logHtml}
+      <div class="cbt-stage">
+        <div class="cbt-side enemy-hud">
+          ${renderManaCrystals(b.enemy)}
+          ${renderTowerSprite('enemy', enemyTowerOpts)}
+          <div class="cbt-hand enemy-hand">${b.enemy.hand.map(()=>`<div class="cbt-back"></div>`).join('')}<small>Deck ${b.enemy.deck.length}</small></div>
+        </div>
+        <div class="cbt-battlefield">
+          <div class="cbt-lane enemy">
+            ${renderBoardRow(b,'enemy')}
+          </div>
+          <div class="cbt-lane player">
+            ${renderBoardRow(b,'player')}
+          </div>
+        </div>
+        <div class="cbt-side ally-hud">
+          ${renderTowerSprite('player')}
+          ${renderManaCrystals(b.player)}
+          <div class="cbt-hand">${b.player.hand.map(c=>{
+            const ok=!mulligan && canAfford(b.player,c) && b.player.board.length<8;
+            return miniCard(c,{
+              hand:true,
+              selected:false,
+              onclick: handCanPlay ? `selectHandCard('${c.uid}')` : '',
+              playable: handCanPlay && ok,
+              checkAfford:!mulligan,
+              affordable: mulligan ? true : ok,
+            });
+          }).join('')}<small>Deck ${b.player.deck.length}</small></div>
+        </div>
+      </div>
+      ${sideControls}
     </div>
-    ${renderBoardRow(b,'enemy')}
-    <div class="cbt-mid">${midControls}</div>
-    ${renderBoardRow(b,'player')}
-    <div class="cbt-side ally-hud">
-      <div class="cbt-tower ally"><span class="cbt-tower-label">Ta tour</span>${renderHearts(b.player.hp)}</div>
-      ${renderManaCrystals(b.player)}
-      <div class="cbt-hand">${b.player.hand.map(c=>{
-        const ok=!mulligan && canAfford(b.player,c) && b.player.board.length<8;
-        return miniCard(c,{
-          hand:true,
-          selected:false,
-          onclick: handCanPlay ? `selectHandCard('${c.uid}')` : '',
-          playable: handCanPlay && ok,
-          checkAfford:!mulligan,
-          affordable: mulligan ? true : ok,
-        });
-      }).join('')}<small>Deck ${b.player.deck.length}</small></div>
-    </div>
-    ${ensureCombatPrefs().showLog===false?'':`<aside class="cbt-log"><h3>Journal</h3>${b.log.map(x=>`<p>${x}</p>`).join('')}</aside>`}
   </section>`;
 }
 

@@ -35,12 +35,13 @@ function defaultCampaign(){
     gold:50,
     binder:[], // {creatureId, name, rarity, count}
     introStep:0,
-    phase:'intro', // intro | map | battle | rewards | binder | fusion | shop
+    phase:'intro', // intro | pickFactions | map | battle | rewards | binder | fusion | shop
     battlesWon:0,
     lastRewards:null,
     shopStock:null,
     shopMsg:null,
-    playerFactions:null, // 2 factions de départ
+    lastBooster:null,
+    playerFactions:null, // [principale, secondaire]
     starterGranted:false,
     mapLocation:'tour',
     mapCleared:[],
@@ -55,7 +56,7 @@ const CAMPAIGN_MAP_NODES=[
   {id:'forge', name:'Crypte des sceaux', kind:'fusion', x:10, y:28, links:['tour','marche'],
     blurb:'Cinq cartes d’une rareté deviennent une rareté supérieure.'},
   {id:'marche', name:'Comptoir des brumes', kind:'shop', x:36, y:42, links:['tour','forge','col','gue'],
-    blurb:'Marchands itinérants : achète, vends, renouvelle l’étalage.'},
+    blurb:'Marchands itinérants : boosters (100 or / 10 cartes), ventes à l’unité, rachat.'},
   {id:'col', name:'Col des corbeaux', kind:'duel', x:32, y:74, links:['tour','marche','landes'], difficulty:1,
     blurb:'Éclaireurs du seigneur de guerre — un premier défi sur la crête.'},
   {id:'gue', name:'Gué de l’ambre', kind:'duel', x:58, y:50, links:['marche','landes','camp'], difficulty:2,
@@ -143,10 +144,20 @@ function addToBinder(creatureId, rarity='normal', count=1, opts={}){
   if(!opts.silent) saveCampaign();
   return row;
 }
-/** 15 créatures les moins chères parmi les factions données (même logique que le deck combat). */
-function pickLowestCostCreatures(factions, size=15){
+const STARTER_PRIMARY=8;
+const STARTER_SECONDARY=7;
+function campaignFactionList(){
+  return typeof allFactions==='function'
+    ? allFactions()
+    : Array.from(new Set(CREATURES.map(c=>c.capital))).sort((a,b)=>a.localeCompare(b,'fr'));
+}
+function hasChosenFactions(camp=ensureCampaign()){
+  return Array.isArray(camp.playerFactions) && camp.playerFactions.length>=2;
+}
+/** Créatures les moins chères d’une faction (uniques). */
+function pickLowestCostFromFaction(faction, size){
   const pool=CREATURES
-    .filter(c=>factions.includes(c.capital))
+    .filter(c=>c.capital===faction)
     .slice()
     .sort((a,b)=>{
       const ca=a.cost||0, cb=b.cost||0;
@@ -165,17 +176,46 @@ function pickLowestCostCreatures(factions, size=15){
   }
   return picked;
 }
-/** Donne au joueur 15 cartes normales des 2 factions de départ (une seule fois). */
+/** 15 créatures : 8 de la faction principale + 7 de la secondaire. */
+function pickLowestCostCreatures(factions, size=15){
+  const list=(factions||[]).filter(Boolean);
+  if(list.length>=2 && size===STARTER_PRIMARY+STARTER_SECONDARY){
+    return [
+      ...pickLowestCostFromFaction(list[0], STARTER_PRIMARY),
+      ...pickLowestCostFromFaction(list[1], STARTER_SECONDARY),
+    ];
+  }
+  const pool=CREATURES
+    .filter(c=>list.includes(c.capital))
+    .slice()
+    .sort((a,b)=>{
+      const ca=a.cost||0, cb=b.cost||0;
+      if(ca!==cb) return ca-cb;
+      const pa=(a.power||0)-(b.power||0);
+      if(pa) return pa;
+      return (a.name||'').localeCompare(b.name||'','fr');
+    });
+  const seen=new Set();
+  const picked=[];
+  for(const c of pool){
+    if(seen.has(c.id)) continue;
+    seen.add(c.id);
+    picked.push(c);
+    if(picked.length>=size) break;
+  }
+  return picked;
+}
+/** Donne au joueur 15 cartes normales (8+7) une fois les 2 factions choisies. */
 function grantStarterBinder(){
   const camp=ensureCampaign();
-  if(camp.starterGranted && Array.isArray(camp.playerFactions) && camp.playerFactions.length){
+  if(camp.starterGranted && hasChosenFactions(camp)){
     return camp.playerFactions;
   }
-  const all=typeof allFactions==='function' ? allFactions() : [...new Set(CREATURES.map(c=>c.capital))];
+  const all=campaignFactionList();
 
   // Sauvegarde déjà en cours : ne pas re-flooder le classeur
   if((camp.binder||[]).length>0){
-    if(!Array.isArray(camp.playerFactions) || !camp.playerFactions.length){
+    if(!hasChosenFactions(camp)){
       const caps=[...new Set((camp.binder||[]).map(r=>{
         const c=CREATURES.find(x=>x.id===r.creatureId);
         return c?.capital;
@@ -194,16 +234,32 @@ function grantStarterBinder(){
     return camp.playerFactions;
   }
 
-  let factions=Array.isArray(camp.playerFactions) && camp.playerFactions.length
-    ? camp.playerFactions.slice(0, 2)
-    : (typeof pickN==='function' ? pickN(all, Math.min(2, all.length)) : all.slice(0, 2));
-  if(!factions.length) factions=all.slice(0, Math.min(2, all.length));
-  camp.playerFactions=factions;
-  const starters=pickLowestCostCreatures(factions, 15);
+  if(!hasChosenFactions(camp)){
+    return camp.playerFactions || [];
+  }
+  const factions=camp.playerFactions.slice(0, 2);
+  const starters=pickLowestCostCreatures(factions, STARTER_PRIMARY+STARTER_SECONDARY);
   starters.forEach(c=>addToBinder(c.id, 'normal', 1, {silent:true}));
   camp.starterGranted=true;
   saveCampaign();
   return factions;
+}
+function chooseCampaignFaction(name){
+  const camp=ensureCampaign();
+  const all=campaignFactionList();
+  if(!all.includes(name)) return;
+  if(!Array.isArray(camp.playerFactions)) camp.playerFactions=[];
+  if(camp.playerFactions.includes(name)) return;
+  if(camp.playerFactions.length>=2) return;
+  camp.playerFactions.push(name);
+  camp.phase='pickFactions';
+  if(camp.playerFactions.length>=2){
+    grantStarterBinder();
+    camp.phase='map';
+    camp.mapLocation=camp.mapLocation||'tour';
+  }
+  saveCampaign();
+  render();
 }
 /** Deck joueur campagne : cartes du classeur (rareté = cadre), complété si besoin. */
 function makeCampaignPlayerSide(factions, size=15){
@@ -279,6 +335,44 @@ const SHOP_PRICES={
   rosegold:{buy:650, sell:210},
   obsidian:{buy:1500, sell:480},
 };
+const BOOSTER_PRICE=100;
+const BOOSTER_SIZE=10;
+/** Chaîne 1/5 : bronze → argent → or → or rose → obsidienne. */
+function rollBoosterRarity(){
+  let rarity='normal';
+  for(const tier of ['bronze','silver','gold','rosegold','obsidian']){
+    if(Math.random()>=1/5) break;
+    rarity=tier;
+  }
+  return rarity;
+}
+function pickBoosterCreature(){
+  if(!CREATURES.length) return null;
+  return CREATURES[Math.floor(Math.random()*CREATURES.length)];
+}
+function openCampaignBooster(){
+  const camp=ensureCampaign();
+  if((camp.gold||0)<BOOSTER_PRICE){
+    camp.shopMsg=`Il faut ${BOOSTER_PRICE} or pour un booster.`;
+    saveCampaign();
+    render();
+    return;
+  }
+  camp.gold-=BOOSTER_PRICE;
+  const cards=[];
+  for(let i=0;i<BOOSTER_SIZE;i++){
+    const c=pickBoosterCreature();
+    if(!c) continue;
+    const rarity=rollBoosterRarity();
+    addToBinder(c.id, rarity, 1, {silent:true});
+    cards.push({creatureId:c.id, name:c.name, rarity});
+  }
+  camp.lastBooster=cards;
+  const specials=cards.filter(c=>c.rarity!=='normal').length;
+  camp.shopMsg=`Booster ×${BOOSTER_SIZE} ouvert (−${BOOSTER_PRICE} or)${specials?` · ${specials} spéciale${specials>1?'s':''}`:''}.`;
+  saveCampaign();
+  render();
+}
 function shopPrice(rarity, kind='buy'){
   return (SHOP_PRICES[rarity] || SHOP_PRICES.normal)[kind];
 }
@@ -355,6 +449,12 @@ function payShopRefresh(){
 function setCampaignView(view){
   const camp=ensureCampaign();
   if((camp.introStep||0)<CAMPAIGN_INTRO.length) return;
+  if(!hasChosenFactions(camp)){
+    camp.phase='pickFactions';
+    saveCampaign();
+    render();
+    return;
+  }
   if(view==='hub') view='map';
   camp.phase=view;
   if(view==='shop') refreshShopStock(false);
@@ -373,10 +473,12 @@ function setCampaignView(view){
   saveCampaign();
   render();
 }
-function travelCampaignMap(nodeId){
+function travelCampaignMap(nodeId, opts={}){
   const camp=ensureCampaign();
   const from=camp.mapLocation||'tour';
-  if(!isMapReachable(from, nodeId)){
+  // Accès rapide (toolbar) : on peut rejoindre tour / comptoir sans être voisin
+  const freeTravel=!!opts.free || nodeId==='tour' || nodeId==='marche' || nodeId==='forge';
+  if(!freeTravel && !isMapReachable(from, nodeId)){
     camp.shopMsg='Cette route n’est pas accessible depuis ici.';
     saveCampaign();
     render();
@@ -387,6 +489,29 @@ function travelCampaignMap(nodeId){
   camp.phase='map';
   saveCampaign();
   render();
+}
+function openCampaignPanel(view){
+  const camp=ensureCampaign();
+  if((camp.introStep||0)<CAMPAIGN_INTRO.length){
+    startCampaign();
+    return;
+  }
+  if(!hasChosenFactions(camp)){
+    camp.phase='pickFactions';
+    state.tab='combat';
+    state.combatView='campagne';
+    saveCampaign();
+    render();
+    return;
+  }
+  grantStarterBinder();
+  if(view==='map' || view==='hub'){
+    setCampaignView('map');
+    return;
+  }
+  if(view==='shop') camp.mapLocation='marche';
+  if(view==='binder' || view==='fusion') camp.mapLocation=camp.mapLocation||'tour';
+  setCampaignView(view);
 }
 function mapKindLabel(kind){
   return ({home:'Refuge', shop:'Boutique', fusion:'Fusion', duel:'Duel'})[kind] || kind;
@@ -444,10 +569,15 @@ function startCampaign(){
   state.combatView='campagne';
   state.battle=null;
   const camp=ensureCampaign();
-  grantStarterBinder();
-  if(camp.phase==='battle') camp.phase='map';
-  if((camp.introStep||0)<CAMPAIGN_INTRO.length) camp.phase='intro';
-  else if(camp.phase!=='rewards') camp.phase='map';
+  if((camp.introStep||0)<CAMPAIGN_INTRO.length){
+    camp.phase='intro';
+  } else if(!hasChosenFactions(camp)){
+    camp.phase='pickFactions';
+  } else {
+    grantStarterBinder();
+    if(camp.phase==='battle') camp.phase='map';
+    else if(camp.phase!=='rewards') camp.phase='map';
+  }
   if(!camp.mapLocation) camp.mapLocation='tour';
   saveCampaign();
   if(typeof hideCombatCardPreview==='function') hideCombatCardPreview();
@@ -457,8 +587,9 @@ function advanceCampaignIntro(){
   const camp=ensureCampaign();
   camp.introStep=(camp.introStep||0)+1;
   if(camp.introStep>=CAMPAIGN_INTRO.length){
-    grantStarterBinder();
-    camp.phase='map';
+    camp.playerFactions=Array.isArray(camp.playerFactions)?camp.playerFactions:[];
+    camp.phase=hasChosenFactions(camp)?'map':'pickFactions';
+    if(hasChosenFactions(camp)) grantStarterBinder();
     camp.mapLocation=camp.mapLocation||'tour';
     saveCampaign();
     render();
@@ -469,7 +600,19 @@ function advanceCampaignIntro(){
 }
 function startCampaignBattle(fromNode){
   const camp=ensureCampaign();
+  if(!hasChosenFactions(camp)){
+    camp.phase='pickFactions';
+    saveCampaign();
+    render();
+    return;
+  }
   const playerFactions=grantStarterBinder();
+  if(!playerFactions || playerFactions.length<2){
+    camp.phase='pickFactions';
+    saveCampaign();
+    render();
+    return;
+  }
   const nodeId=fromNode || camp.mapLocation || 'col';
   const node=mapNode(nodeId);
   if(node.kind==='duel' && camp.mapLocation!==nodeId && !isMapReachable(camp.mapLocation||'tour', nodeId)){
@@ -565,13 +708,49 @@ function renderCampaignIntro(){
       <p class="campaign-prose">${page.text}</p>
       <div class="campaign-actions">
         <button type="button" class="cbt-end" onclick="backToCombatLobby()">Lobby</button>
-        <button type="button" class="cbt-start" onclick="advanceCampaignIntro()">${last?'Voir la carte':'Continuer'}</button>
+        <button type="button" class="cbt-start" onclick="advanceCampaignIntro()">${last?'Choisir tes factions':'Continuer'}</button>
+      </div>
+    </div>
+  </section>`;
+}
+function renderCampaignFactionPick(){
+  const camp=ensureCampaign();
+  const chosen=Array.isArray(camp.playerFactions)?camp.playerFactions:[];
+  const step=chosen.length; // 0 = principale, 1 = secondaire
+  const title=step===0 ? 'Faction principale' : 'Seconde faction';
+  const hint=step===0
+    ? `Clique ta faction principale — tu recevras ${STARTER_PRIMARY} cartes de cette couleur.`
+    : `Clique ta seconde faction — tu recevras ${STARTER_SECONDARY} cartes (après ${STARTER_PRIMARY} de ${chosen[0]}).`;
+  const buttons=campaignFactionList().map(f=>{
+    const fm=(typeof FACTION_MANA!=='undefined' && FACTION_MANA[f]) || {color:'#c9aa69',icon:'ui/combat/star_sm.png',element:f};
+    const taken=chosen.includes(f);
+    const disabled=taken;
+    const icon=fm.icon?`<img src="${fm.icon}" alt="" width="22" height="22" draggable="false">`:'';
+    return `<button type="button" class="camp-faction-btn${taken?' is-taken':''}" style="--faction:${fm.color}"
+      ${disabled?'disabled':''} onclick='chooseCampaignFaction(${JSON.stringify(f)})'>
+      ${icon}<b>${f}</b><small>${fm.element||f}</small>
+    </button>`;
+  }).join('');
+  const progress=chosen.map((f,i)=>{
+    const fm=(typeof FACTION_MANA!=='undefined' && FACTION_MANA[f]) || {color:'#c9aa69'};
+    const role=i===0?'Principale':'Secondaire';
+    return `<span class="camp-faction-chip" style="--faction:${fm.color}">${role} · ${f}</span>`;
+  }).join('');
+  return `<section class="panel combat-lobby campaign-story campaign-faction-pick">
+    <div class="campaign-dialog campaign-dialog-wide">
+      <p class="eyebrow">Allégeance · ${step+1}/2</p>
+      <h2>${title}</h2>
+      <p class="campaign-prose">${hint}</p>
+      ${progress?`<div class="camp-faction-chosen">${progress}</div>`:''}
+      <div class="camp-faction-grid" role="group" aria-label="Factions">${buttons}</div>
+      <div class="campaign-actions">
+        <button type="button" class="cbt-end" onclick="backToCombatLobby()">Lobby</button>
       </div>
     </div>
   </section>`;
 }
 function renderCampaignMap(){
-  grantStarterBinder();
+  if(hasChosenFactions()) grantStarterBinder();
   const camp=ensureCampaign();
   const hereId=camp.mapLocation||'tour';
   const here=mapNode(hereId);
@@ -606,8 +785,7 @@ function renderCampaignMap(){
 
   let actions='';
   if(here.kind==='home'){
-    actions=`
-      <button type="button" class="cbt-start" onclick="setCampaignView('binder')">Ouvrir le classeur</button>
+    actions=`<button type="button" class="cbt-start" onclick="setCampaignView('binder')">Ouvrir le classeur</button>
       <button type="button" class="cbt-end" onclick="setCampaignView('fusion')">Fusion</button>`;
   } else if(here.kind==='shop'){
     actions=`<button type="button" class="cbt-start" onclick="setCampaignView('shop')">Marchander</button>`;
@@ -616,6 +794,14 @@ function renderCampaignMap(){
   } else if(here.kind==='duel'){
     actions=`<button type="button" class="cbt-start" onclick="startCampaignBattle('${here.id}')">${cleared.has(here.id)?'Rejouer le duel':'Engager le combat'}</button>`;
   }
+  const quickNav=`
+    <div class="camp-quick-nav" role="navigation" aria-label="Accès campagne">
+      <button type="button" class="cbt-start" onclick="setCampaignView('binder')">▣ Classeur</button>
+      <button type="button" class="cbt-start" onclick="setCampaignView('shop')">♦ Boutique</button>
+      <button type="button" class="cbt-end" onclick="setCampaignView('fusion')">✶ Fusion</button>
+      ${here.kind!=='home'?`<button type="button" class="cbt-end" onclick="travelCampaignMap('tour',{free:true})">↩ Tour</button>`:''}
+      ${here.kind!=='shop'?`<button type="button" class="cbt-end" onclick="travelCampaignMap('marche',{free:true})">↩ Comptoir</button>`:''}
+    </div>`;
   const factions=(camp.playerFactions||[]).join(' · ') || '—';
 
   return `<section class="panel combat-lobby campaign-map-panel">
@@ -631,6 +817,7 @@ function renderCampaignMap(){
         <div class="camp-stat"><small>Victoires</small><b>${camp.battlesWon||0}</b></div>
       </div>
     </div>
+    ${quickNav}
     ${camp.shopMsg?`<p class="camp-toast">${camp.shopMsg}</p>`:''}
     <div class="camp-map-layout">
       <div class="camp-map" role="img" aria-label="Carte de campagne">
@@ -645,7 +832,7 @@ function renderCampaignMap(){
         <p class="campaign-prose">${here.blurb}</p>
         ${here.kind==='duel'?`<p class="camp-map-diff">Difficulté ${mapDifficultyLabel(here)}</p>`:''}
         <div class="campaign-actions" style="justify-content:flex-start;margin-top:12px">${actions}</div>
-        <p class="camp-muted" style="margin-top:14px">Clique un lieu relié pour voyager. Les routes grisées sont trop loin.</p>
+        <p class="camp-muted" style="margin-top:14px">Clique un lieu relié pour voyager. Classeur et boutique restent accessibles en haut.</p>
       </aside>
     </div>
     <div class="campaign-actions" style="margin-top:14px;justify-content:flex-start">
@@ -735,6 +922,7 @@ function renderCampaignFusion(){
 function renderCampaignShop(){
   const camp=ensureCampaign();
   const stock=refreshShopStock(false);
+  const canBooster=(camp.gold||0)>=BOOSTER_PRICE;
   const offers=stock.length
     ? `<div class="camp-card-grid">${stock.map(o=>{
         const can=(camp.gold||0)>=o.price;
@@ -751,11 +939,29 @@ function renderCampaignShop(){
       }).join('')}</div>`
     : `<p class="camp-muted">Étalage vide — rafraîchis pour 15 or.</p>`;
   const sellable=sortedBinder();
+  const boosterReveal=(camp.lastBooster||[]).length
+    ? `<div class="camp-card-grid camp-booster-grid">${camp.lastBooster.map(c=>`
+        <article class="camp-offer camp-rarity-${c.rarity}">
+          ${renderCampFfFace(c.creatureId, c.rarity)}
+          <div class="camp-card-meta">
+            <strong>${c.name}</strong>
+            <small class="camp-rarity camp-rarity-${c.rarity}">${rarityLabel(c.rarity)}</small>
+          </div>
+        </article>`).join('')}</div>`
+    : '';
   const body=`
-    <div class="camp-shop-toolbar">
-      <button type="button" class="cbt-end" onclick="payShopRefresh()">Rafraîchir (15 or)</button>
+    <div class="camp-booster-panel">
+      <div>
+        <h3 class="camp-subhead" style="margin-top:0">Booster ×${BOOSTER_SIZE}</h3>
+        <p class="campaign-prose" style="margin-bottom:8px">${BOOSTER_PRICE} or · 10 cartes. Chaque carte est normale, puis peut monter : bronze 1/5 → argent 1/25 → or 1/125 → or rose 1/625 → obsidienne 1/3125.</p>
+        <button type="button" class="cbt-start" ${canBooster?'':'disabled'} onclick="openCampaignBooster()">Acheter un booster (${BOOSTER_PRICE} or)</button>
+      </div>
     </div>
-    <h3 class="camp-subhead">À vendre</h3>
+    ${boosterReveal?`<h3 class="camp-subhead">Dernier booster</h3>${boosterReveal}`:''}
+    <div class="camp-shop-toolbar">
+      <button type="button" class="cbt-end" onclick="payShopRefresh()">Rafraîchir l’étalage (15 or)</button>
+    </div>
+    <h3 class="camp-subhead">À l’unité</h3>
     ${offers}
     <h3 class="camp-subhead">Vendre depuis le classeur</h3>
     ${sellable.length
@@ -796,6 +1002,10 @@ function renderCampaign(){
     camp.phase='intro';
     return renderCampaignIntro();
   }
+  if(!hasChosenFactions(camp) || camp.phase==='pickFactions'){
+    camp.phase='pickFactions';
+    return renderCampaignFactionPick();
+  }
   if(camp.phase==='rewards') return renderCampaignRewards();
   if(camp.phase==='binder') return renderCampaignBinder();
   if(camp.phase==='fusion') return renderCampaignFusion();
@@ -811,14 +1021,19 @@ window.RARITY_CRAFT_COST=RARITY_CRAFT_COST;
 window.ensureCampaign=ensureCampaign;
 window.startCampaign=startCampaign;
 window.advanceCampaignIntro=advanceCampaignIntro;
+window.chooseCampaignFaction=chooseCampaignFaction;
 window.startCampaignBattle=startCampaignBattle;
 window.claimCampaignBattleRewards=claimCampaignBattleRewards;
 window.finishCampaignRewards=finishCampaignRewards;
 window.craftBinderUpgrade=craftBinderUpgrade;
 window.setCampaignView=setCampaignView;
 window.travelCampaignMap=travelCampaignMap;
+window.openCampaignPanel=openCampaignPanel;
 window.doCraftUpgrade=doCraftUpgrade;
 window.buyShopOffer=buyShopOffer;
 window.sellBinderCard=sellBinderCard;
 window.payShopRefresh=payShopRefresh;
+window.openCampaignBooster=openCampaignBooster;
+window.BOOSTER_PRICE=BOOSTER_PRICE;
+window.BOOSTER_SIZE=BOOSTER_SIZE;
 window.renderCampaign=renderCampaign;
