@@ -6,7 +6,8 @@ const state = {
   tab: 'list', search: '', activeCapital: 'Toutes',
   artIndex: {}, frameStyle: {}, bulkFrame: 'normal',
   cardStyle: {}, bulkStyle: 'archive', zoomedId: null, borderMode: 'normal',
-  battle: null,
+  battle: null, combatView: 'lobby', campaign: null,
+  binderRarity: 'Toutes',
 };
 const CARD_FRAMES = [
   { id: 'normal', label: 'Normal' },
@@ -439,6 +440,63 @@ function cycleCardArt(id, ev){
   state.artIndex[c.id]=(currentArtIndex(c)+1)%variants.length;
   render();
 }
+function artRankButtonsHtml(c){
+  if(!c) return '';
+  return `<span class="art-rank" role="group" aria-label="Classer cette image">
+    <button type="button" class="art-rank-btn" onclick="rankCardArt(${c.id},1,event)" title="1ère meilleure image">1</button>
+    <button type="button" class="art-rank-btn" onclick="rankCardArt(${c.id},2,event)" title="2e meilleure image">2</button>
+    <button type="button" class="art-rank-btn" onclick="rankCardArt(${c.id},3,event)" title="3e meilleure image">3</button>
+  </span>`;
+}
+function artToolsHtml(c){
+  const variants=imageVariantsFor(c);
+  const artIdx=currentArtIndex(c);
+  const cycleBtn=variants.length>1
+    ? `<button type="button" class="art-cycle" onclick="cycleCardArt(${c.id}, event)" title="Image suivante (${artIdx+1}/${variants.length})" aria-label="Image suivante de ${c.name}">↻ <small>${artIdx+1}/${variants.length}</small></button>`
+    : '';
+  return `<span class="art-tools">${artRankButtonsHtml(c)}${cycleBtn}</span>`;
+}
+async function rankCardArt(id, rank, ev){
+  if(ev){ ev.preventDefault(); ev.stopPropagation(); }
+  const n=Number(rank);
+  if(![1,2,3].includes(n)) return;
+  const c=CREATURES.find(x=>x.id===Number(id));
+  if(!c) return;
+  const art=currentImageFor(c) || c.image || '';
+  const btn=ev?.currentTarget;
+  if(btn){
+    btn.classList.add('is-saving');
+    btn.disabled=true;
+  }
+  try{
+    const res=await fetch('/api/art-rank', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        rank:n,
+        creature:c.name,
+        id:c.id,
+        art,
+        artIndex:currentArtIndex(c),
+      }),
+    });
+    if(!res.ok) throw new Error('vote_failed');
+    if(btn){
+      btn.classList.remove('is-saving');
+      btn.classList.add('is-saved');
+      setTimeout(()=>btn.classList.remove('is-saved'), 900);
+    }
+  }catch(_){
+    if(btn){
+      btn.classList.remove('is-saving');
+      btn.classList.add('is-error');
+      setTimeout(()=>btn.classList.remove('is-error'), 1200);
+    }
+    console.warn('Vote art indisponible (lance python server.py pour enregistrer les notes).');
+  }finally{
+    if(btn) btn.disabled=false;
+  }
+}
 function toggleCardZoom(id, ev){
   if(ev){ ev.preventDefault(); ev.stopPropagation(); }
   const n=Number(id);
@@ -514,14 +572,11 @@ function buildFfCardHtml(c, opts={}){
   </article>`;
 }
 function cardViewNormal(c){
-  const variants=imageVariantsFor(c);
-  const artIdx=currentArtIndex(c);
-  const cycleBtn=variants.length>1?`<button type="button" class="art-cycle" onclick="cycleCardArt(${c.id}, event)" title="Image suivante (${artIdx+1}/${variants.length})" aria-label="Image suivante de ${c.name}">↻ <small>${artIdx+1}/${variants.length}</small></button>`:'';
   return buildFfCardHtml(c, {
     zoomed: state.zoomedId===c.id,
     onclick: `toggleCardZoom(${c.id}, event)`,
     title: 'Cliquer pour zoomer',
-    artExtra: cycleBtn,
+    artExtra: artToolsHtml(c),
   });
 }
 function cardViewJeu(c){
@@ -533,14 +588,11 @@ function cardViewJeu(c){
 }
 function cardViewImage(c){
   const color=CAPITAL_COLORS[c.capital]||'#c9aa69';
-  const variants=imageVariantsFor(c);
   const artSrc=currentImageFor(c);
-  const artIdx=currentArtIndex(c);
   const zoomed=state.zoomedId===c.id?' zoomed':'';
   const img=artSrc?`<img src="${encodeURI(artSrc)}" alt="${c.name}" width="240" height="240" decoding="async">`:'';
-  const cycleBtn=variants.length>1?`<button type="button" class="art-cycle" onclick="cycleCardArt(${c.id}, event)" title="Image suivante (${artIdx+1}/${variants.length})" aria-label="Image suivante de ${c.name}">↻ <small>${artIdx+1}/${variants.length}</small></button>`:'';
   return `<article class="gallery-card mode-image${zoomed}" data-id="${c.id}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${c.name} — cliquer pour zoomer">
-    <div class="image-only">${img}${cycleBtn}</div>
+    <div class="image-only">${img}${artToolsHtml(c)}</div>
   </article>`;
 }
 function cardViewDense(c){
@@ -557,43 +609,153 @@ function cardViewDense(c){
     </div>
   </article>`;
 }
+function isBinderView(){
+  return state.tab==='combat'
+    && state.combatView==='campagne'
+    && state.campaign
+    && state.campaign.phase==='binder';
+}
+function binderRows(){
+  return (typeof sortedBinder==='function') ? sortedBinder() : [];
+}
+function binderOwnedCapitals(){
+  const ids=new Set(binderRows().map(r=>r.creatureId));
+  return new Set(CREATURES.filter(c=>ids.has(c.id)).map(c=>c.capital));
+}
+function binderOwnedRarities(){
+  return new Set(binderRows().map(r=>r.rarity));
+}
 function filteredCreatures(){
   const q=state.search.trim().toLowerCase();
   return CREATURES.filter(c=>(state.activeCapital==='Toutes'||c.capital===state.activeCapital)&&(!q||[c.name,c.capital,c.origin,c.rarity,...c.roles,...c.natures].join(' ').toLowerCase().includes(q)))
     .sort((a,b)=>b.power-a.power || b.popularity-a.popularity || a.name.localeCompare(b.name,'fr'));
 }
+/** Entrées classeur (créature + rareté) filtrées comme la liste. */
+function filteredBinderEntries(){
+  const q=state.search.trim().toLowerCase();
+  const rarity=state.binderRarity||'Toutes';
+  return binderRows().filter(row=>{
+    const c=CREATURES.find(x=>x.id===row.creatureId);
+    if(!c || !(row.count>0)) return false;
+    if(rarity!=='Toutes' && row.rarity!==rarity) return false;
+    if(state.activeCapital!=='Toutes' && c.capital!==state.activeCapital) return false;
+    const hay=[c.name,c.capital,c.origin,row.rarity,...(c.roles||[]),...(c.natures||[])];
+    if(typeof rarityLabel==='function') hay.push(rarityLabel(row.rarity));
+    if(q && !hay.join(' ').toLowerCase().includes(q)) return false;
+    return true;
+  }).map(row=>({row, creature:CREATURES.find(x=>x.id===row.creatureId)}));
+}
 function setFilter(cap){
+  if(isBinderView() && cap!=='Toutes' && !binderOwnedCapitals().has(cap)) return;
   state.activeCapital=cap;
   state.zoomedId=null;
-  resetFramesToNormal();
+  if(!isBinderView()) resetFramesToNormal();
+  render();
+}
+function setBinderRarity(rarityId){
+  if(!isBinderView()) return;
+  if(rarityId!=='Toutes' && !binderOwnedRarities().has(rarityId)) return;
+  state.binderRarity=rarityId||'Toutes';
+  state.zoomedId=null;
   render();
 }
 function setSearch(v){ state.search=v; state.zoomedId=null; render(); }
 function setTab(tab){
   state.tab=tab;
   state.zoomedId=null;
+  if(tab==='combat' && !state.battle) state.combatView=state.combatView||'lobby';
   if(typeof hideCombatCardPreview==='function') hideCombatCardPreview();
   render();
 }
-function renderList(){
-  const caps=['Toutes',...Array.from(new Set(CREATURES.map(c=>c.capital))).sort((a,b)=>a.localeCompare(b,'fr'))];
-  const picks=filteredCreatures();
+function cardViewBinder(entry){
+  const c=entry.creature;
+  const row=entry.row;
+  const frame=CARD_FRAMES.find(f=>f.id===row.rarity) || CARD_FRAMES[0];
   const mode=state.borderMode||'normal';
-  const paintPalettes=mode==='normal'?`
-    <div class="frame-palette" role="group" aria-label="Peindre la rareté des cartes">
+  const countBadge=`<span class="binder-count" title="${row.count} exemplaire${row.count>1?'s':''}">×${row.count}</span>`;
+  const rarityLabelTxt=(typeof rarityLabel==='function'?rarityLabel(row.rarity):row.rarity);
+  if(mode==='jeu'){
+    const color=(typeof factionMana==='function'?factionMana(c).color:null)||CAPITAL_COLORS[c.capital]||'#c9aa69';
+    const zoomed=state.zoomedId===c.id?' zoomed':'';
+    const view={...c, hp:displayHp(c), health:c.health};
+    return `<div class="gallery-card mode-jeu binder-entry${zoomed}" data-id="${c.id}" data-rarity="${row.rarity}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${c.name} · ${rarityLabelTxt}">${typeof miniCard==='function'?miniCard(view,{hand:true,frame}):''}${countBadge}</div>`;
+  }
+  if(mode==='image'){
+    const color=CAPITAL_COLORS[c.capital]||'#c9aa69';
+    const artSrc=currentImageFor(c);
+    const zoomed=state.zoomedId===c.id?' zoomed':'';
+    const img=artSrc?`<img src="${encodeURI(artSrc)}" alt="${c.name}" width="240" height="240" decoding="async">`:'';
+    return `<article class="gallery-card mode-image binder-entry${zoomed}" data-id="${c.id}" data-rarity="${row.rarity}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${c.name} · ${rarityLabelTxt}">
+      <div class="image-only">${img}</div>${countBadge}
+    </article>`;
+  }
+  if(mode==='dense'){
+    const color=CAPITAL_COLORS[c.capital]||'#c9aa69';
+    const artSrc=currentImageFor(c);
+    const zoomed=state.zoomedId===c.id?' zoomed':'';
+    const img=artSrc?`<img src="${encodeURI(artSrc)}" alt="" width="240" height="240" decoding="async">`:'';
+    return `<article class="gallery-card mode-dense binder-entry${zoomed}" data-id="${c.id}" data-rarity="${row.rarity}" style="--faction:${color}" onclick="toggleCardZoom(${c.id}, event)" title="${c.name} · ${rarityLabelTxt}">
+      <div class="dense-strip">${img}</div>
+      <div class="dense-meta">
+        <strong class="dense-name">${c.name}</strong>
+        <span class="dense-faction">${c.capital} · ${rarityLabelTxt}</span>
+        <span class="dense-stats"><b class="dense-atk">${c.attack}</b><b class="dense-hp">${displayHp(c)}</b></span>
+      </div>${countBadge}
+    </article>`;
+  }
+  const zoomed=state.zoomedId===c.id;
+  return `<div class="binder-entry" data-id="${c.id}" data-rarity="${row.rarity}">${buildFfCardHtml(c,{
+    frame,
+    zoomed,
+    onclick:`toggleCardZoom(${c.id}, event)`,
+    title:`${c.name} · ${rarityLabelTxt} — cliquer pour zoomer`,
+  })}${countBadge}</div>`;
+}
+function renderList(opts={}){
+  const binder=!!opts.binder || isBinderView();
+  const caps=['Toutes',...Array.from(new Set(CREATURES.map(c=>c.capital))).sort((a,b)=>a.localeCompare(b,'fr'))];
+  const ownedCaps=binder?binderOwnedCapitals():null;
+  const ownedRarities=binder?binderOwnedRarities():null;
+  const picks=binder?null:filteredCreatures();
+  const binderEntries=binder?filteredBinderEntries():null;
+  const shown=binder?(binderEntries||[]).length:(picks||[]).length;
+  const mode=state.borderMode||'normal';
+  const rarityPalette=mode==='normal' || binder ? `
+    <div class="frame-palette" role="group" aria-label="${binder?'Filtrer par rareté':'Peindre la rareté des cartes'}">
       <span class="frame-palette-label">Raretés</span>
-      ${CARD_FRAMES.map(f=>`<button type="button" class="frame-swatch frame-${f.id} ${state.bulkFrame===f.id?'active':''}" onclick="paintAllFrames('${f.id}', event)" title="Appliquer ${f.label} à toutes les cartes affichées"><i></i><small>${f.label}</small></button>`).join('')}
-    </div>
+      ${binder?`<button type="button" class="frame-swatch frame-all ${(state.binderRarity||'Toutes')==='Toutes'?'active':''}" onclick="setBinderRarity('Toutes')" title="Toutes les raretés"><small>Toutes</small></button>`:''}
+      ${CARD_FRAMES.map(f=>{
+        if(binder){
+          const empty=!ownedRarities.has(f.id);
+          const active=(state.binderRarity||'Toutes')===f.id?'active':'';
+          return `<button type="button" class="frame-swatch frame-${f.id} ${active}${empty?' is-empty':''}" ${empty?'disabled aria-disabled="true"':''} onclick="setBinderRarity('${f.id}')" title="${empty?`Aucune carte ${f.label}`:`Filtrer : ${f.label}`}"><i></i><small>${f.label}</small></button>`;
+        }
+        return `<button type="button" class="frame-swatch frame-${f.id} ${state.bulkFrame===f.id?'active':''}" onclick="paintAllFrames('${f.id}', event)" title="Appliquer ${f.label} à toutes les cartes affichées"><i></i><small>${f.label}</small></button>`;
+      }).join('')}
+    </div>` : '';
+  const stylePalette=!binder && mode==='normal'?`
     <div class="frame-palette style-palette" role="group" aria-label="Peindre le style typographique">
       <span class="frame-palette-label">Styles</span>
       ${CARD_STYLES.map(s=>`<button type="button" class="frame-swatch style-swatch style-${s.id} ${state.bulkStyle===s.id?'active':''}" onclick="paintAllStyles('${s.id}', event)" title="Appliquer ${s.label} à toutes les cartes affichées"><i></i><small>${s.label}</small></button>`).join('')}
     </div>`:'';
-  return `<section class="showcase panel">
+  const backBar=binder?`
+    <div class="campaign-actions binder-toolbar" style="margin:0 0 14px;justify-content:space-between">
+      <button type="button" class="cbt-end" onclick="setCampaignView('hub')">Retour tour</button>
+      <div class="camp-stats camp-stats-compact">
+        <div class="camp-stat"><small>Or</small><b>${(typeof ensureCampaign==='function'?ensureCampaign():null)?.gold||0}</b></div>
+        <div class="camp-stat"><small>Classeur</small><b>${typeof binderCount==='function'?binderCount():0}</b></div>
+      </div>
+    </div>`:'';
+  const gallery=binder
+    ? (binderEntries||[]).map(e=>cardViewBinder(e)).join('') || '<em>Ton classeur est vide pour ce filtre. Gagne un duel ou passe à la boutique.</em>'
+    : (picks||[]).map(c=>cardView(c)).join('') || '<em>Aucune carte ne correspond à ce filtre.</em>';
+  return `<section class="showcase panel${binder?' binder-showcase':''}">
+    ${backBar}
     <div class="section-head">
       <div>
-        <p class="eyebrow">Bestiaire</p>
-        <h2>Liste des Cartes</h2>
-        <p>${picks.length} carte${picks.length>1?'s':''} affichée${picks.length>1?'s':''} — filtre par faction ou cherche un nom, un rôle, une origine.</p>
+        <p class="eyebrow">${binder?'Collection':'Bestiaire'}</p>
+        <h2>${binder?'Classeur':'Liste des Cartes'}</h2>
+        <p>${shown} carte${shown>1?'s':''} ${binder?'possédée':'affichée'}${shown>1?'s':''}${binder?' — seules tes cartes apparaissent ; les filtres sans exemplaire sont grisés.':' — filtre par faction ou cherche un nom, un rôle, une origine.'}</p>
       </div>
       <div class="searchbox">
         <input value="${state.search.replaceAll('"','&quot;')}" oninput="setSearch(this.value)" placeholder="Chercher dragon, caster, Nécropole…">
@@ -603,7 +765,8 @@ function renderList(){
       <span class="frame-palette-label">Bordure</span>
       ${BORDER_MODES.map(m=>`<button type="button" class="frame-swatch border-swatch border-${m.id} ${mode===m.id?'active':''}" onclick="setBorderMode('${m.id}')" title="${m.title}"><small>${m.label}</small></button>`).join('')}
     </div>
-    ${paintPalettes}
+    ${rarityPalette}
+    ${stylePalette}
     <div class="filters frame-palette" role="group" aria-label="Filtrer par faction">
       <span class="frame-palette-label">Faction</span>
       ${caps.map(c=>{
@@ -612,18 +775,19 @@ function renderList(){
         if(c==='Toutes'){
           return `<button type="button" class="filter-faction ${active}" onclick="setFilter('${esc}')"><small>Toutes</small></button>`;
         }
+        const empty=binder && !ownedCaps.has(c);
         const fm=FACTION_MANA[c]||{color:'#c9aa69',icon:'ui/combat/star_sm.png',element:c};
         const icon=fm.icon?`<img class="filter-mana" src="${fm.icon}" alt="" draggable="false">`:'';
-        return `<button type="button" class="filter-faction ${active}" style="--mana:${fm.color}" onclick="setFilter('${esc}')" title="${c} · ${fm.element||''}">${icon}<small>${c}</small></button>`;
+        return `<button type="button" class="filter-faction ${active}${empty?' is-empty':''}" style="--mana:${fm.color}" ${empty?'disabled aria-disabled="true"':''} onclick="setFilter('${esc}')" title="${empty?`Aucune carte ${c}`:`${c} · ${fm.element||''}`}">${icon}<small>${c}</small></button>`;
       }).join('')}
     </div>
-    <div class="card-gallery mode-${mode}">${picks.map(c=>cardView(c)).join('')||'<em>Aucune carte ne correspond à ce filtre.</em>'}</div>
+    <div class="card-gallery mode-${mode}">${gallery}</div>
   </section>`;
 }
 function render(){
   const title = state.tab==='combat' ? 'Combat' : 'Liste des Cartes';
   const sub = state.tab==='combat'
-    ? 'Duels aléatoires : 4 factions, decks de 40, tu joues en bas.'
+    ? 'Combat rapide ou campagne — decks 15 cartes / 2 factions.'
     : 'Consulte le bestiaire : factions, capacités, stats et illustrations.';
   byId('app').innerHTML=`<header class="topbar">
     <div>
@@ -650,9 +814,11 @@ window.buildFfCardHtml=buildFfCardHtml;
 window.setFilter=setFilter;
 window.setSearch=setSearch;
 window.setTab=setTab;
+window.setBinderRarity=setBinderRarity;
 window.setBorderMode=setBorderMode;
 window.toggleCardZoom=toggleCardZoom;
 window.cycleCardArt=cycleCardArt;
+window.rankCardArt=rankCardArt;
 window.cycleCardFrame=cycleCardFrame;
 window.paintAllFrames=paintAllFrames;
 window.cycleCardStyle=cycleCardStyle;

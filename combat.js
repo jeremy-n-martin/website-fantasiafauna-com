@@ -1,4 +1,4 @@
-/* Combat — plateau type Hearthstone, decks 40 / 4 factions */
+/* Combat — plateau type Hearthstone, decks 15 / 2 factions (coût bas) */
 
 const CBT_PREFS_KEY='ff-combat-prefs';
 function loadCombatPrefs(){
@@ -78,6 +78,7 @@ function renderCombatConfigBar(){
     <button type="button" class="cbt-cfg${p.showLog!==false?' on':''}" onclick="toggleCombatLog()">Journal</button>
     <button type="button" class="cbt-cfg${fs?' on':''}" onclick="toggleCombatFullscreen()">${fs?'Quitter PE':'Plein écran'}</button>
     <button type="button" class="cbt-cfg" onclick="startCombat()">Reset</button>
+    <button type="button" class="cbt-cfg" onclick="backToCombatLobby()">Lobby</button>
   </div>`;
 }
 
@@ -667,39 +668,69 @@ function tickBoardAbilities(who){
 function allFactions(){
   return Array.from(new Set(CREATURES.map(c=>c.capital))).sort((a,b)=>a.localeCompare(b,'fr'));
 }
-function buildDeck(factions, size=40){
-  const pool=CREATURES.filter(c=>factions.includes(c.capital));
-  if(pool.length < size){
-    const deck=[];
-    while(deck.length < size){
-      deck.push(...pickN(pool, Math.min(size-deck.length, pool.length)));
-    }
-    return shuffleInPlace(deck).slice(0,size).map(cloneCard);
+/** 15 créatures les moins chères parmi les factions données (uniques). */
+function buildLowCostDeck(factions, size=15){
+  const pool=CREATURES
+    .filter(c=>factions.includes(c.capital))
+    .slice()
+    .sort((a,b)=>{
+      const ca=a.cost||0, cb=b.cost||0;
+      if(ca!==cb) return ca-cb;
+      const pa=(a.power||0)-(b.power||0);
+      if(pa) return pa;
+      return (a.name||'').localeCompare(b.name||'','fr');
+    });
+  const seen=new Set();
+  const picked=[];
+  for(const c of pool){
+    if(seen.has(c.id)) continue;
+    seen.add(c.id);
+    picked.push(c);
+    if(picked.length>=size) break;
   }
-  return pickN(pool, size).map(cloneCard);
+  return shuffleInPlace(picked.map(cloneCard));
+}
+function buildDeck(factions, size=15){
+  return buildLowCostDeck(factions, size);
+}
+function sideFactions(b, who){
+  if(!b) return [];
+  if(who==='player' && Array.isArray(b.playerFactions) && b.playerFactions.length) return b.playerFactions;
+  if(who==='enemy' && Array.isArray(b.enemyFactions) && b.enemyFactions.length) return b.enemyFactions;
+  return b.factions||[];
 }
 function colorManaTotal(p){
   return Object.values(p.colorMana||{}).reduce((a,b)=>a+b,0);
 }
+function cardManaParts(card){
+  const colored=Math.max(0, card?.costColored|0);
+  const neutral=card?.costNeutral != null
+    ? Math.max(0, card.costNeutral|0)
+    : Math.max(0, (card?.cost|0) - colored);
+  return {colored, neutral, total: colored + neutral};
+}
 function canAfford(p, card){
-  const need = card.cost || 0;
-  return ((p.mana || 0) + colorManaTotal(p)) >= need;
+  if(!p || !card) return false;
+  const {colored, neutral}=cardManaParts(card);
+  const faction=card.capital;
+  const fMana=p.colorMana?.[faction] || 0;
+  if(fMana < colored) return false;
+  const leftoverFaction=fMana - colored;
+  // L’incolore se paie avec les cristaux ; le surplus de mana de la faction de la carte peut compléter.
+  return ((p.mana || 0) + leftoverFaction) >= neutral;
 }
 function payCost(p, card){
-  let need = card.cost || 0;
-  const faction = card.capital;
-  // D'abord l'élément de la faction, puis l'incolore, puis le reste.
-  const fromF = Math.min(p.colorMana[faction] || 0, need);
-  p.colorMana[faction] = (p.colorMana[faction] || 0) - fromF;
-  need -= fromF;
-  const fromN = Math.min(p.mana || 0, need);
-  p.mana -= fromN;
-  need -= fromN;
-  for (const f of Object.keys(p.colorMana || {})) {
-    if (need <= 0) break;
-    const take = Math.min(p.colorMana[f] || 0, need);
-    p.colorMana[f] -= take;
-    need -= take;
+  const {colored, neutral}=cardManaParts(card);
+  const faction=card.capital;
+  let needN=neutral;
+  p.colorMana[faction]=(p.colorMana[faction]||0) - colored;
+  const fromStars=Math.min(p.mana||0, needN);
+  p.mana-=fromStars;
+  needN-=fromStars;
+  if(needN>0){
+    const take=Math.min(p.colorMana[faction]||0, needN);
+    p.colorMana[faction]-=take;
+    needN-=take;
   }
 }
 function combatLog(msg){
@@ -720,26 +751,37 @@ function sortHand(hand){
   });
   return hand;
 }
-function makeSide(factions){
-  const deck=buildDeck(factions,40);
-  const hand=sortHand(deck.splice(0,7));
+function makeSide(factions, size=15){
+  const deck=buildLowCostDeck(factions, size);
+  const handN=Math.min(7, deck.length);
+  const hand=sortHand(deck.splice(0, handN));
   return {
     hp:30, mana:0, maxMana:0, turnCount:0,
     colorMana:Object.fromEntries(factions.map(f=>[f,0])),
     deck, hand, board:[],
+    factions:factions.slice(),
   };
 }
 function startCombat(){
-  const factions=pickN(allFactions(),4);
+  state.combatView='rapide';
+  const all=allFactions();
+  const playerFactions=pickN(all, Math.min(2, all.length));
+  const rest=all.filter(f=>!playerFactions.includes(f));
+  const enemyPool=rest.length>=2 ? rest : all;
+  const enemyFactions=pickN(enemyPool, Math.min(2, enemyPool.length));
+  const factions=[...new Set([...playerFactions, ...enemyFactions])];
   const playerFirst=Math.random()<0.5;
   state.tab='combat';
   state.battle={
+    mode:'rapide',
     factions,
+    playerFactions,
+    enemyFactions,
     turn:1,
     active: playerFirst ? 'player' : 'enemy',
     phase:'mulligan',
-    player: makeSide(factions),
-    enemy: makeSide(factions),
+    player: makeSide(playerFactions, 15),
+    enemy: makeSide(enemyFactions, 15),
     selectedHandUid:null,
     insertAt:null,
     attackSource:null,
@@ -751,8 +793,16 @@ function startCombat(){
     flashUids:null,
     firstPlayer: playerFirst ? 'player' : 'enemy',
   };
-  combatLog(`Factions: ${factions.join(', ')}. ${state.battle.coin} (pile ou face).`);
+  combatLog(`Combat rapide — Toi: ${playerFactions.join(' · ')} · Adverse: ${enemyFactions.join(' · ')}.`);
+  combatLog(`Decks: 15 cartes les moins chères. ${state.battle.coin}.`);
   combatLog(`Main d’ouverture (${state.battle.player.hand.length}) — garde ou repioche une fois.`);
+  render();
+}
+function backToCombatLobby(){
+  state.combatView='lobby';
+  state.battle=null;
+  if(state.campaign && state.campaign.phase==='battle') state.campaign.phase='hub';
+  if(typeof hideCombatCardPreview==='function') hideCombatCardPreview();
   render();
 }
 function keepOpeningHand(){
@@ -809,11 +859,14 @@ function beginTurn(who, isOpening=false){
   p.turnCount += 1;
   p.maxMana=Math.min(10, p.turnCount);
   p.mana=p.maxMana;
-  const fi=(p.turnCount-1) % b.factions.length;
-  const col=b.factions[fi];
-  if(colorManaTotal(p)<10){
-    p.colorMana[col]=(p.colorMana[col]||0)+1;
-    combatLog(`${who==='player'?'Toi':'Adverse'} : +1 mana ${col}.`);
+  const cols=sideFactions(b, who);
+  if(cols.length){
+    const fi=(p.turnCount-1) % cols.length;
+    const col=cols[fi];
+    if(colorManaTotal(p)<10){
+      p.colorMana[col]=(p.colorMana[col]||0)+1;
+      combatLog(`${who==='player'?'Toi':'Adverse'} : +1 mana ${col}.`);
+    }
   }
   const draws = isOpening ? 0 : 2;
   for(let i=0;i<draws;i++) drawOne(p, who);
@@ -1446,8 +1499,10 @@ function endPlayerTurn(){
 function enemyTurn(){
   const b=state.battle; if(!b||b.winner||b.active!=='enemy') return;
   let plays=0;
-  while(plays<4 && b.enemy.board.length<8){
-    const playable=b.enemy.hand.filter(c=>canAfford(b.enemy,c)).sort((a,c)=>a.cost-c.cost||c.attack-a.attack);
+  while(plays<8 && b.enemy.board.length<8){
+    const playable=b.enemy.hand
+      .filter(c=>canAfford(b.enemy,c))
+      .sort((a,c)=>cardManaParts(a).total-cardManaParts(c).total || c.attack-a.attack);
     if(!playable.length) break;
     const card=playable[0];
     const slots=placementSlots(b.enemy.board);
@@ -1657,7 +1712,7 @@ function miniCard(c, opts={}){
     ? (typeof buildFfCardHtml==='function'
       ? buildFfCardHtml(c, {
           forceArchive:true,
-          frame: typeof frameFor==='function' ? frameFor(c) : {id:'normal'},
+          frame: opts.frame || (typeof frameFor==='function' ? frameFor(c) : {id:'normal'}),
           hp: c.hp ?? c.health,
           maxHp: c.maxHp ?? c.health,
           attack: c.attack,
@@ -1769,17 +1824,47 @@ function renderColorMana(p){
     </span>`;
   }).join('');
 }
+function renderCombatLobby(){
+  return `<section class="panel combat-lobby">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Tour du magicien</p>
+        <h2>Classeur & arène</h2>
+        <p>Tes cartes vivent dans ton classeur. Gagne or et cartes en campagne — plus tard, boutiques et fusions (5 d’une rareté → la suivante).</p>
+      </div>
+    </div>
+    <div class="lobby-modes">
+      <article class="lobby-mode">
+        <span class="lobby-mode-num">1</span>
+        <h3>Combat rapide</h3>
+        <p>Deux factions au hasard · les 15 cartes les moins chères · duel contre l’IA.</p>
+        <button type="button" class="cbt-start" onclick="startCombat()">Lancer un combat</button>
+      </article>
+      <article class="lobby-mode">
+        <span class="lobby-mode-num">2</span>
+        <h3>Histoire de la campagne</h3>
+        <p>Prologue court, puis duels façon seigneur de guerre — or, cartes, classeur.</p>
+        <button type="button" class="cbt-start lobby-campaign" onclick="startCampaign()">Démarrer l’histoire</button>
+      </article>
+    </div>
+  </section>`;
+}
 function renderCombat(){
+  if(state.combatView==='campagne' && !state.battle){
+    if(typeof renderCampaign==='function') return renderCampaign();
+    return renderCombatLobby();
+  }
   const b=state.battle;
   if(!b){
-    return `<section class="panel combat-lobby">
-      <div class="section-head"><div><p class="eyebrow">Arène</p><h2>Combat aléatoire</h2>
-      <p>Decks aléatoires · Attaque ou activation · Charge, vol de vie, dernier souffle, furie, statuses…</p></div>
-      <button class="cbt-start" onclick="startCombat()">Nouveau combat</button></div>
-    </section>`;
+    return renderCombatLobby();
   }
   const mulligan=b.phase==='mulligan';
-  const ended=b.winner?`<div class="cbt-banner ${b.winner}">${b.winner==='player'?'Victoire !':b.winner==='enemy'?'Défaite…':'Match nul'} <button onclick="startCombat()">Rejouer</button></div>`:'';
+  const campEnd=b.mode==='campagne' && b.winner;
+  const ended=b.winner?`<div class="cbt-banner ${b.winner}">${b.winner==='player'?'Victoire !':b.winner==='enemy'?'Défaite…':'Match nul'} ${
+    campEnd
+      ? `<button class="cbt-start" onclick="claimCampaignBattleRewards()">Voir le butin</button>`
+      : `<button onclick="startCombat()">Rejouer</button> <button class="cbt-end" onclick="backToCombatLobby()">Lobby</button>`
+  }</div>`:'';
   const handCanPlay=!mulligan && b.active==='player' && b.phase==='main' && !b.winner && !b.attackSource;
   const playerAiming=!mulligan && b.active==='player' && b.phase==='main' && !!b.attackSource
     && b.player.board.some(c=>c.uid===b.attackSource);
@@ -1858,10 +1943,16 @@ function renderCombat(){
     ${aimSvg}
     ${ended}
     <div class="cbt-meta">
-      <div><b>Factions</b> ${b.factions.map(f=>{
-        const fm=FACTION_MANA[f]||{};
-        return `<span class="tag" style="--faction:${fm.color||'#999'}" title="${fm.element||f}">${f}${fm.element?` · ${fm.element}`:''}</span>`;
-      }).join('')}</div>
+      <div><b>Factions</b>
+        <span class="cbt-faction-side">Toi: ${(b.playerFactions||b.factions||[]).map(f=>{
+          const fm=FACTION_MANA[f]||{};
+          return `<span class="tag" style="--faction:${fm.color||'#999'}" title="${fm.element||f}">${f}</span>`;
+        }).join('')}</span>
+        <span class="cbt-faction-side">Adverse: ${(b.enemyFactions||b.factions||[]).map(f=>{
+          const fm=FACTION_MANA[f]||{};
+          return `<span class="tag" style="--faction:${fm.color||'#999'}" title="${fm.element||f}">${f}</span>`;
+        }).join('')}</span>
+      </div>
       <div class="cbt-status-line">${b.coin} · ${statusLabel}</div>
       ${renderCombatConfigBar()}
     </div>
@@ -1974,17 +2065,22 @@ function showCombatCardPreview(el){
     document.body.appendChild(host);
   }
   host.className='cbt-card-preview show side-'+side;
-  const midY=r.top + r.height/2;
-  const y=Math.max(24, Math.min(window.innerHeight - 24, midY));
-  host.style.top=y+'px';
+  host.style.top='50%';
+  host.style.setProperty('--preview-fit', '1');
   host.innerHTML=buildFfCardHtml(c, {
     forceArchive:true,
-    artNative:true,
     frame: typeof frameFor==='function' ? frameFor(c) : {id:'normal'},
     hp: c.hp ?? c.health,
     maxHp: c.maxHp ?? c.health,
     attack: c.attack,
     extraClass:'cbt-preview-face',
+  });
+  requestAnimationFrame(()=>{
+    const preview=document.getElementById('cbt-card-preview');
+    if(!preview?.classList.contains('show')) return;
+    const h=preview.offsetHeight || 1;
+    const maxH=window.innerHeight * 0.9;
+    preview.style.setProperty('--preview-fit', h > maxH ? String(maxH / h) : '1');
   });
   document.querySelectorAll('.cbt-card.hand-drawn').forEach(node=>node.classList.remove('hand-drawn'));
   hidePlayAim();
@@ -2018,6 +2114,7 @@ function bindCombatCardPreview(){
 window.BOARD_SHAPES=BOARD_SHAPES;
 window.boardShapeFor=boardShapeFor;
 window.startCombat=startCombat;
+window.backToCombatLobby=backToCombatLobby;
 window.keepOpeningHand=keepOpeningHand;
 window.redrawOpeningHand=redrawOpeningHand;
 window.selectHandCard=selectHandCard;
