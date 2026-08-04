@@ -15,6 +15,43 @@ const state = {
   sortOrder: 'cost-desc',
   costFilter: 'Toutes',
 };
+const ART_BUST_KEY = 'ff-art-bust';
+function loadArtBust(){
+  try{
+    const raw=localStorage.getItem(ART_BUST_KEY);
+    const local=raw ? JSON.parse(raw) : {};
+    if(local && typeof local==='object') state.artBust={...local};
+  }catch(_){ /* ignore */ }
+}
+function persistArtBust(base, bust){
+  if(!base || !bust) return;
+  state.artBust[base]=bust;
+  try{
+    localStorage.setItem(ART_BUST_KEY, JSON.stringify(state.artBust));
+  }catch(_){ /* ignore */ }
+}
+async function syncArtBustFromServer(){
+  try{
+    const res=await fetch(`art_bust.json?v=${Date.now()}`, {cache:'no-store'});
+    if(!res.ok) return;
+    const data=await res.json();
+    if(!data || typeof data!=='object') return;
+    let changed=false;
+    for(const [base, bust] of Object.entries(data)){
+      const n=Number(bust);
+      if(!base || !n) continue;
+      if((state.artBust[base]|0) < n){
+        state.artBust[base]=n;
+        changed=true;
+      }
+    }
+    if(changed){
+      try{ localStorage.setItem(ART_BUST_KEY, JSON.stringify(state.artBust)); }catch(_){}
+      render();
+    }
+  }catch(_){ /* fichier absent = normal */ }
+}
+loadArtBust();
 const CARD_FRAMES = [
   { id: 'normal', label: 'Normal' },
   { id: 'bronze', label: 'Bronze' },
@@ -589,22 +626,32 @@ async function rankCardArt(id, ev){
     });
     const data=await res.json().catch(()=>({}));
     if(!res.ok || !data.ok) throw new Error(data.error||'vote_failed');
-    // Afficher la nouvelle n°1 et forcer le rechargement des fichiers échangés
+    // Ancien serveur (log seul) renvoie ok sans « swapped » — refuse le faux succès
+    if(typeof data.swapped!=='boolean'){
+      throw new Error('server_outdated');
+    }
+    // Afficher la nouvelle n°1 et forcer le rechargement (persistant après F5)
     state.artIndex[c.id]=0;
-    state.artBust[parsed.base]=Date.now();
+    const bust=Number(data.bust)||Date.now();
+    persistArtBust(parsed.base, bust);
     if(btn){
       btn.classList.remove('is-saving');
       btn.classList.add('is-saved');
     }
     render();
-  }catch(_){
+  }catch(err){
     if(btn){
       btn.classList.remove('is-saving');
       btn.classList.add('is-error');
       setTimeout(()=>btn.classList.remove('is-error'), 1200);
       btn.disabled=false;
     }
-    console.warn('Promotion art indisponible (lance python server.py).');
+    const why=err?.message||'';
+    if(why==='server_outdated'){
+      console.warn('Serveur trop ancien : relance `python server.py` pour activer le renommage des images.');
+    } else {
+      console.warn('Promotion art échouée — lance `python server.py` (port 5500).', why);
+    }
   }
 }
 function toggleCardZoom(id, ev){
@@ -1033,3 +1080,4 @@ document.addEventListener('click', ()=>clearCardZoom());
 window.addEventListener('keydown', e=>{ if(e.key==='Escape') clearCardZoom(); });
 window.addEventListener('scroll', scheduleCardShine, {passive:true});
 window.addEventListener('resize', scheduleCardShine);
+syncArtBustFromServer();

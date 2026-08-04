@@ -14,8 +14,25 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parent
 IMG_DIR = ROOT / "img"
 LOG_FILE = ROOT / "art_ranks.log"
+BUST_FILE = ROOT / "art_bust.json"
 PORT = int(os.environ.get("PORT", "5500"))
 ART_RE = re.compile(r"^img/(.+) (\d+)\.png$", re.IGNORECASE)
+
+
+def load_art_bust() -> dict:
+    try:
+        if BUST_FILE.is_file():
+            data = json.loads(BUST_FILE.read_text(encoding="utf-8"))
+            return data if isinstance(data, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        pass
+    return {}
+
+
+def save_art_bust(base: str, bust: int) -> None:
+    data = load_art_bust()
+    data[base] = int(bust)
+    BUST_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
 
 
 def client_ip(handler: SimpleHTTPRequestHandler) -> str:
@@ -42,10 +59,10 @@ def safe_img_file(base: str, num: int) -> Path | None:
     path = IMG_DIR / f"{base} {num}.png"
     try:
         resolved = path.resolve()
-        if not str(resolved).startswith(str(IMG_DIR.resolve())):
-            return None
+        img_root = IMG_DIR.resolve()
+        resolved.relative_to(img_root)
         return resolved
-    except OSError:
+    except (OSError, ValueError):
         return None
 
 
@@ -78,6 +95,10 @@ def promote_art_to_first(art: str) -> dict:
         first.rename(tmp)
         current.rename(first)
         tmp.rename(current)
+        # Force un nouveau Last-Modified (sinon le cache navigateur garde l’ancienne n°1)
+        now = time.time()
+        os.utime(first, (now, now))
+        os.utime(current, (now, now))
     except OSError as e:
         # best-effort rollback
         try:
@@ -87,12 +108,19 @@ def promote_art_to_first(art: str) -> dict:
             pass
         return {"ok": False, "error": f"rename_failed:{e}"}
 
+    bust = int(time.time() * 1000)
+    try:
+        save_art_bust(base, bust)
+    except OSError:
+        pass
+
     return {
         "ok": True,
         "swapped": True,
         "base": base,
         "from": num,
         "to": 1,
+        "bust": bust,
         "art": f"img/{base} 1.png",
         "formerFirst": f"img/{base} {num}.png",
     }
@@ -103,9 +131,12 @@ class Handler(SimpleHTTPRequestHandler):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
     def end_headers(self):
-        # Évite le cache agressif en local pendant le dev.
-        if self.path.startswith("/api/"):
-            self.send_header("Cache-Control", "no-store")
+        # Évite le cache agressif en local (surtout après swap d’images).
+        path = urlparse(self.path).path
+        if path.startswith("/api/") or path.startswith("/img/") or path.endswith("art_bust.json"):
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
         super().end_headers()
 
     def _json(self, code: int, payload: dict):

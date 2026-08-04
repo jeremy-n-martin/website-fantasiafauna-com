@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test sons — Fantasia Fauna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg0:#120e0a; --bg1:#1c1610; --ink:#f3e6c8; --muted:#cbb892; --line:#d9b45f55;
+      --gilt:#d9b45f; --ok:#76d896; --err:#ff8f7a; --chip:#0008;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:
+      radial-gradient(ellipse at 20% 0%, #3a2a1466, transparent 42%),
+      radial-gradient(ellipse at 90% 10%, #1a304044, transparent 40%),
+      linear-gradient(180deg,var(--bg1),var(--bg0));
+      color:var(--ink);font:16px/1.4 "Source Sans 3",system-ui,sans-serif}
+    a{color:var(--gilt)}
+    header{
+      position:sticky;top:0;z-index:5;
+      display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;justify-content:space-between;
+      padding:14px 18px;border-bottom:1px solid var(--line);
+      background:color-mix(in srgb, var(--bg0) 88%, transparent);
+      backdrop-filter:blur(10px);
+    }
+    header h1{margin:0;font:700 1.15rem/1.2 Cinzel,Georgia,serif;letter-spacing:.04em}
+    header p{margin:2px 0 0;color:var(--muted);font-size:.88rem}
+    .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+    .toolbar input[type="search"],
+    .toolbar select{
+      border:1px solid var(--line);border-radius:10px;background:#0007;color:var(--ink);
+      padding:8px 10px;min-width:12rem;
+    }
+    .toolbar label{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:.88rem}
+    .toolbar button,
+    .sfx-btn{
+      border:1px solid var(--line);border-radius:999px;background:#0006;color:var(--ink);
+      padding:7px 12px;font-weight:700;cursor:pointer;
+    }
+    .toolbar button:hover,.sfx-btn:hover{border-color:var(--gilt);background:#1a140ccc}
+    .sfx-btn.is-playing{border-color:var(--ok);color:#adffd0;background:#14301a88}
+    .sfx-btn.is-missing{border-color:var(--err);color:#ffd0c8;opacity:.7}
+    .sfx-btn small{display:block;font-weight:600;opacity:.75;font-size:.68rem}
+    main{padding:18px;max-width:1200px;margin:0 auto}
+    .stats{color:var(--muted);margin:0 0 14px;font-size:.92rem}
+    .grid{display:grid;gap:10px}
+    .card{
+      display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center;
+      border:1px solid var(--line);border-radius:14px;padding:10px 12px;background:var(--chip);
+    }
+    .card img{
+      width:72px;height:72px;object-fit:cover;border-radius:10px;background:#000;
+      border:1px solid #ffffff22;
+    }
+    .card .meta b{display:block;font-family:Cinzel,Georgia,serif;font-size:1rem}
+    .card .meta span{display:block;color:var(--muted);font-size:.82rem;margin-top:2px}
+    .card .actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+    .pack-note{font-size:.75rem;color:#9ad0ffbb}
+    .empty{padding:40px 10px;text-align:center;color:var(--muted)}
+    .now-playing{
+      position:fixed;right:14px;bottom:14px;z-index:6;
+      border:1px solid var(--line);border-radius:12px;padding:8px 12px;
+      background:#0a0806ee;color:var(--ink);font-size:.85rem;max-width:min(360px,90vw);
+      box-shadow:0 10px 30px #0008;display:none;
+    }
+    .now-playing.show{display:block}
+    @media(max-width:640px){
+      .card{grid-template-columns:56px 1fr}
+      .card img{width:56px;height:56px}
+      .toolbar input[type="search"],.toolbar select{min-width:0;flex:1}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Test des sons</h1>
+      <p>Fantasia Fauna — un bouton par son (attaque, défense, invocation, blessure).</p>
+    </div>
+    <div class="toolbar">
+      <a href="index.html">← Jeu</a>
+      <input type="search" id="q" placeholder="Chercher une créature…" autocomplete="off">
+      <select id="faction" aria-label="Faction"><option value="">Toutes factions</option></select>
+      <label><input type="checkbox" id="unique"> Sources uniques</label>
+      <label>Vol. <input type="range" id="vol" min="0" max="100" value="80"></label>
+      <button type="button" id="stop">Stop</button>
+    </div>
+  </header>
+  <main>
+    <p class="stats" id="stats">Chargement…</p>
+    <div class="grid" id="list"></div>
+    <p class="empty" id="empty" hidden>Aucune créature ne correspond.</p>
+  </main>
+  <div class="now-playing" id="now" aria-live="polite"></div>
+
+  <script src="creatures-data.js?v=20260804g"></script>
+  <script>
+(function(){
+  const ACTIONS = [
+    {id:'attack', label:'Attaque'},
+    {id:'defend', label:'Défense'},
+    {id:'move', label:'Invocation'},
+    {id:'wince', label:'Blessure'},
+  ];
+  const listEl = document.getElementById('list');
+  const statsEl = document.getElementById('stats');
+  const emptyEl = document.getElementById('empty');
+  const nowEl = document.getElementById('now');
+  const qEl = document.getElementById('q');
+  const factionEl = document.getElementById('faction');
+  const uniqueEl = document.getElementById('unique');
+  const volEl = document.getElementById('vol');
+  const stopEl = document.getElementById('stop');
+
+  let catalog = null;
+  let rows = [];
+  let currentAudio = null;
+  let playingBtn = null;
+
+  function capitalOf(id, name){
+    if(typeof CREATURES === 'undefined') return '';
+    const c = CREATURES.find(x => String(x.id) === String(id) || x.name === name);
+    return c?.capital || '';
+  }
+  function imageOf(id, name){
+    if(typeof CREATURES === 'undefined') return '';
+    const c = CREATURES.find(x => String(x.id) === String(id) || x.name === name);
+    return c?.image || '';
+  }
+
+  function stopAll(){
+    if(currentAudio){
+      try{ currentAudio.pause(); currentAudio.currentTime = 0; }catch(_){}
+      currentAudio = null;
+    }
+    if(playingBtn){ playingBtn.classList.remove('is-playing'); playingBtn = null; }
+    nowEl.classList.remove('show');
+    nowEl.textContent = '';
+  }
+
+  function playSrc(src, btn, label){
+    stopAll();
+    if(!src){
+      if(btn) btn.classList.add('is-missing');
+      return;
+    }
+    const audio = new Audio(encodeURI(src));
+    audio.volume = Math.max(0, Math.min(1, Number(volEl.value) / 100));
+    currentAudio = audio;
+    if(btn){ playingBtn = btn; btn.classList.add('is-playing'); }
+    nowEl.textContent = `▶ ${label}`;
+    nowEl.classList.add('show');
+    audio.addEventListener('ended', () => {
+      if(playingBtn) playingBtn.classList.remove('is-playing');
+      playingBtn = null;
+      currentAudio = null;
+      nowEl.classList.remove('show');
+    });
+    audio.play().catch(err => {
+      console.warn('play fail', src, err);
+      if(btn){ btn.classList.remove('is-playing'); btn.classList.add('is-missing'); }
+      nowEl.textContent = `Échec : ${src}`;
+    });
+  }
+
+  function buildRows(){
+    const byId = catalog?.byId || {};
+    const all = Object.entries(byId).map(([id, e]) => ({
+      id,
+      name: e.name || ('#'+id),
+      source: e.source || '?',
+      sourceName: e.sourceName || '',
+      match: e.match || '',
+      capital: capitalOf(id, e.name),
+      image: imageOf(id, e.name),
+      files: Object.fromEntries(ACTIONS.map(a => [a.id, e[a.id] || ''])),
+    })).sort((a,b) => a.name.localeCompare(b.name, 'fr'));
+
+    if(!uniqueEl.checked) return all;
+
+    const seen = new Set();
+    const unique = [];
+    for(const row of all){
+      const key = row.source || JSON.stringify(row.files);
+      if(seen.has(key)) continue;
+      seen.add(key);
+      unique.push({
+        ...row,
+        name: `${row.sourceName || row.source} (${row.source})`,
+        packNote: `Pack partagé — ex. ${row.name}`,
+      });
+    }
+    return unique.sort((a,b) => a.source.localeCompare(b.source));
+  }
+
+  function filtered(){
+    const q = qEl.value.trim().toLowerCase();
+    const fac = factionEl.value;
+    return rows.filter(r => {
+      if(fac && r.capital !== fac) return false;
+      if(!q) return true;
+      return [r.name, r.source, r.sourceName, r.capital, r.match].join(' ').toLowerCase().includes(q);
+    });
+  }
+
+  function esc(s){
+    return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function escAttr(s){
+    return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+  }
+
+  function render(){
+    const shown = filtered();
+    const totalFiles = shown.reduce((n,r) => n + ACTIONS.filter(a => r.files[a.id]).length, 0);
+    statsEl.textContent = `${shown.length} entrée${shown.length>1?'s':''} · ${totalFiles} boutons son · ${rows.length} au total${uniqueEl.checked?' (sources uniques)':''}`;
+    emptyEl.hidden = shown.length > 0;
+    listEl.innerHTML = shown.map(r => {
+      const img = r.image
+        ? `<img src="${encodeURI(r.image)}" alt="" width="72" height="72" loading="lazy">`
+        : `<img alt="" width="72" height="72">`;
+      const metaBits = [r.capital, r.match, r.source].filter(Boolean).join(' · ');
+      const note = r.packNote ? `<span class="pack-note">${esc(r.packNote)}</span>` : '';
+      const btns = ACTIONS.map(a => {
+        const src = r.files[a.id];
+        const miss = src ? '' : ' is-missing';
+        return `<button type="button" class="sfx-btn${miss}" data-src="${escAttr(src||'')}" data-label="${escAttr(`${r.name} — ${a.label}`)}" title="${escAttr(src || 'Fichier manquant')}" ${src?'':'disabled'}>${a.label}<small>${a.id}</small></button>`;
+      }).join('');
+      return `<article class="card">${img}<div class="meta"><b>${esc(r.name)}</b><span>${esc(metaBits)}</span>${note}<div class="actions">${btns}</div></div></article>`;
+    }).join('');
+  }
+
+  listEl.addEventListener('click', (ev) => {
+    const btn = ev.target.closest('.sfx-btn');
+    if(!btn || btn.disabled) return;
+    playSrc(btn.getAttribute('data-src') || '', btn, btn.getAttribute('data-label') || 'Son');
+  });
+
+  function fillFactions(){
+    const caps = [...new Set(rows.map(r => r.capital).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'fr'));
+    factionEl.innerHTML = `<option value="">Toutes factions</option>` +
+      caps.map(c => `<option value="${c}">${c}</option>`).join('');
+  }
+
+  stopEl.addEventListener('click', stopAll);
+  volEl.addEventListener('input', () => {
+    if(currentAudio) currentAudio.volume = Math.max(0, Math.min(1, Number(volEl.value)/100));
+  });
+  qEl.addEventListener('input', render);
+  factionEl.addEventListener('change', render);
+  uniqueEl.addEventListener('change', () => {
+    rows = buildRows();
+    fillFactions();
+    render();
+  });
+
+  fetch('creature_sounds.json?v=' + Date.now())
+    .then(r => {
+      if(!r.ok) throw new Error('creature_sounds.json ' + r.status);
+      return r.json();
+    })
+    .then(data => {
+      catalog = data;
+      rows = buildRows();
+      fillFactions();
+      render();
+    })
+    .catch(err => {
+      statsEl.textContent = 'Impossible de charger creature_sounds.json — lance python server.py';
+      console.error(err);
+    });
+})();
+  </script>
+</body>
+</html>
