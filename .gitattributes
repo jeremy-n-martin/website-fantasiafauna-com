@@ -1,0 +1,2 @@
+sons/**/*.wav filter=lfs diff=lfs merge=lfs -text
+sons/**/*.mp3 filter=lfs diff=lfs merge=lfs -text

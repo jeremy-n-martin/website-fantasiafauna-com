@@ -1,0 +1,3423 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-04",
+  "note": "Mapping logique créature → sons (attack/defend/move/wince). Plusieurs cartes peuvent partager le même pack.",
+  "stats": {
+    "exact": 30,
+    "alias": 282,
+    "theme": 29,
+    "fallback": 0
+  },
+  "byId": {
+    "1": {
+      "name": "Ange",
+      "source": "ANGL",
+      "sourceName": "Angel",
+      "match": "exact",
+      "attack": "sons/creatures/angl_attack.wav",
+      "defend": "sons/creatures/angl_defend.wav",
+      "move": "sons/creatures/angl_move.wav",
+      "wince": "sons/creatures/angl_wince.wav"
+    },
+    "2": {
+      "name": "Valkyrie",
+      "source": "ANGL",
+      "sourceName": "Angel",
+      "match": "alias",
+      "attack": "sons/creatures/angl_attack.wav",
+      "defend": "sons/creatures/angl_defend.wav",
+      "move": "sons/creatures/angl_move.wav",
+      "wince": "sons/creatures/angl_wince.wav"
+    },
+    "3": {
+      "name": "Pégase",
+      "source": "PEGA",
+      "sourceName": "Pegasus",
+      "match": "alias",
+      "attack": "sons/creatures/pega_attack.wav",
+      "defend": "sons/creatures/pega_defend.wav",
+      "move": "sons/creatures/pega_move.wav",
+      "wince": "sons/creatures/pega_wince.wav"
+    },
+    "4": {
+      "name": "Griffon",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "alias",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "5": {
+      "name": "Exorciste",
+      "source": "MONK",
+      "sourceName": "Monk",
+      "match": "alias",
+      "attack": "sons/creatures/monk_attack.wav",
+      "defend": "sons/creatures/monk_defend.wav",
+      "move": "sons/creatures/monk_move.wav",
+      "wince": "sons/creatures/monk_wince.wav"
+    },
+    "6": {
+      "name": "Chevalier",
+      "source": "SWRD",
+      "sourceName": "Swordsman",
+      "match": "alias",
+      "attack": "sons/creatures/swrd_attack.wav",
+      "defend": "sons/creatures/swrd_defend.wav",
+      "move": "sons/creatures/swrd_move.wav",
+      "wince": "sons/creatures/swrd_wince.wav"
+    },
+    "7": {
+      "name": "Paladin",
+      "source": "CRUS",
+      "sourceName": "Crusader",
+      "match": "alias",
+      "attack": "sons/creatures/crus_attack.wav",
+      "defend": "sons/creatures/crus_defend.wav",
+      "move": "sons/creatures/crus_move.wav",
+      "wince": "sons/creatures/crus_wince.wav"
+    },
+    "8": {
+      "name": "Archer",
+      "source": "AGRM",
+      "sourceName": "Archer",
+      "match": "exact",
+      "attack": "sons/creatures/agrm_attack.wav",
+      "defend": "sons/creatures/agrm_defend.wav",
+      "move": "sons/creatures/agrm_move.wav",
+      "wince": "sons/creatures/agrm_wince.wav"
+    },
+    "9": {
+      "name": "Templier",
+      "source": "CRUS",
+      "sourceName": "Crusader",
+      "match": "alias",
+      "attack": "sons/creatures/crus_attack.wav",
+      "defend": "sons/creatures/crus_defend.wav",
+      "move": "sons/creatures/crus_move.wav",
+      "wince": "sons/creatures/crus_wince.wav"
+    },
+    "10": {
+      "name": "Guerrier",
+      "source": "SWRD",
+      "sourceName": "Swordsman",
+      "match": "alias",
+      "attack": "sons/creatures/swrd_attack.wav",
+      "defend": "sons/creatures/swrd_defend.wav",
+      "move": "sons/creatures/swrd_move.wav",
+      "wince": "sons/creatures/swrd_wince.wav"
+    },
+    "11": {
+      "name": "Prêtre",
+      "source": "MONK",
+      "sourceName": "Monk",
+      "match": "alias",
+      "attack": "sons/creatures/monk_attack.wav",
+      "defend": "sons/creatures/monk_defend.wav",
+      "move": "sons/creatures/monk_move.wav",
+      "wince": "sons/creatures/monk_wince.wav"
+    },
+    "12": {
+      "name": "Spadassin",
+      "source": "SWRD",
+      "sourceName": "Swordsman",
+      "match": "alias",
+      "attack": "sons/creatures/swrd_attack.wav",
+      "defend": "sons/creatures/swrd_defend.wav",
+      "move": "sons/creatures/swrd_move.wav",
+      "wince": "sons/creatures/swrd_wince.wav"
+    },
+    "13": {
+      "name": "Kenku",
+      "source": "HARP",
+      "sourceName": "Harpy",
+      "match": "alias",
+      "attack": "sons/creatures/harp_attack.wav",
+      "defend": "sons/creatures/harp_defend.wav",
+      "move": "sons/creatures/harp_move.wav",
+      "wince": "sons/creatures/harp_wince.wav"
+    },
+    "14": {
+      "name": "Clerc",
+      "source": "MONK",
+      "sourceName": "Monk",
+      "match": "alias",
+      "attack": "sons/creatures/monk_attack.wav",
+      "defend": "sons/creatures/monk_defend.wav",
+      "move": "sons/creatures/monk_move.wav",
+      "wince": "sons/creatures/monk_wince.wav"
+    },
+    "15": {
+      "name": "Page",
+      "source": "PIKE",
+      "sourceName": "Pikeman",
+      "match": "alias",
+      "attack": "sons/creatures/pike_attack.wav",
+      "defend": "sons/creatures/pike_defend.wav",
+      "move": "sons/creatures/pike_move.wav",
+      "wince": "sons/creatures/pike_wince.wav"
+    },
+    "16": {
+      "name": "Arbalétrier",
+      "source": "HCRS",
+      "sourceName": "Crossbowman",
+      "match": "alias",
+      "attack": "sons/creatures/hcrs_attack.wav",
+      "defend": "sons/creatures/hcrs_defend.wav",
+      "move": "sons/creatures/hcrs_move.wav",
+      "wince": "sons/creatures/hcrs_wince.wav"
+    },
+    "17": {
+      "name": "Moine",
+      "source": "MONK",
+      "sourceName": "Monk",
+      "match": "alias",
+      "attack": "sons/creatures/monk_attack.wav",
+      "defend": "sons/creatures/monk_defend.wav",
+      "move": "sons/creatures/monk_move.wav",
+      "wince": "sons/creatures/monk_wince.wav"
+    },
+    "18": {
+      "name": "Acolyte",
+      "source": "MONK",
+      "sourceName": "Monk",
+      "match": "alias",
+      "attack": "sons/creatures/monk_attack.wav",
+      "defend": "sons/creatures/monk_defend.wav",
+      "move": "sons/creatures/monk_move.wav",
+      "wince": "sons/creatures/monk_wince.wav"
+    },
+    "19": {
+      "name": "Aasimar",
+      "source": "ANGL",
+      "sourceName": "Angel",
+      "match": "alias",
+      "attack": "sons/creatures/angl_attack.wav",
+      "defend": "sons/creatures/angl_defend.wav",
+      "move": "sons/creatures/angl_move.wav",
+      "wince": "sons/creatures/angl_wince.wav"
+    },
+    "20": {
+      "name": "Ecuyer",
+      "source": "PIKE",
+      "sourceName": "Pikeman",
+      "match": "alias",
+      "attack": "sons/creatures/pike_attack.wav",
+      "defend": "sons/creatures/pike_defend.wav",
+      "move": "sons/creatures/pike_move.wav",
+      "wince": "sons/creatures/pike_wince.wav"
+    },
+    "21": {
+      "name": "Alérion",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "alias",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "22": {
+      "name": "Voleur",
+      "source": "ROGU",
+      "sourceName": "Rogue",
+      "match": "alias",
+      "attack": "sons/creatures/rogu_attack.wav",
+      "defend": "sons/creatures/rogu_defend.wav",
+      "move": "sons/creatures/rogu_move.wav",
+      "wince": "sons/creatures/rogu_wince.wav"
+    },
+    "23": {
+      "name": "Elfe",
+      "source": "WELF",
+      "sourceName": "Wood Elf",
+      "match": "alias",
+      "attack": "sons/creatures/welf_attack.wav",
+      "defend": "sons/creatures/welf_defend.wav",
+      "move": "sons/creatures/welf_move.wav",
+      "wince": "sons/creatures/welf_wince.wav"
+    },
+    "24": {
+      "name": "Licorne",
+      "source": "UNIC",
+      "sourceName": "Unicorn",
+      "match": "alias",
+      "attack": "sons/creatures/unic_attack.wav",
+      "defend": "sons/creatures/unic_defend.wav",
+      "move": "sons/creatures/unic_move.wav",
+      "wince": "sons/creatures/unic_wince.wav"
+    },
+    "25": {
+      "name": "Centaure",
+      "source": "CNTR",
+      "sourceName": "Centaur",
+      "match": "exact",
+      "attack": "sons/creatures/cntr_attack.wav",
+      "defend": "sons/creatures/cntr_defend.wav",
+      "move": "sons/creatures/cntr_move.wav",
+      "wince": "sons/creatures/cntr_wince.wav"
+    },
+    "26": {
+      "name": "Druide",
+      "source": "WELF",
+      "sourceName": "Wood Elf",
+      "match": "alias",
+      "attack": "sons/creatures/welf_attack.wav",
+      "defend": "sons/creatures/welf_defend.wav",
+      "move": "sons/creatures/welf_move.wav",
+      "wince": "sons/creatures/welf_wince.wav"
+    },
+    "27": {
+      "name": "Hippogriffe",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "alias",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "28": {
+      "name": "Dragon vert",
+      "source": "GRDR",
+      "sourceName": "Green Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/grdr_attack.wav",
+      "defend": "sons/creatures/grdr_defend.wav",
+      "move": "sons/creatures/grdr_move.wav",
+      "wince": "sons/creatures/grdr_wince.wav"
+    },
+    "29": {
+      "name": "Demi-elfe",
+      "source": "WELF",
+      "sourceName": "Wood Elf",
+      "match": "alias",
+      "attack": "sons/creatures/welf_attack.wav",
+      "defend": "sons/creatures/welf_defend.wav",
+      "move": "sons/creatures/welf_move.wav",
+      "wince": "sons/creatures/welf_wince.wav"
+    },
+    "30": {
+      "name": "Tréant",
+      "source": "TREE",
+      "sourceName": "Treant",
+      "match": "exact",
+      "attack": "sons/creatures/tree_attack.wav",
+      "defend": "sons/creatures/tree_defend.wav",
+      "move": "sons/creatures/tree_move.wav",
+      "wince": "sons/creatures/tree_wince.wav"
+    },
+    "31": {
+      "name": "Faune",
+      "source": "CNTR",
+      "sourceName": "Centaur",
+      "match": "alias",
+      "attack": "sons/creatures/cntr_attack.wav",
+      "defend": "sons/creatures/cntr_defend.wav",
+      "move": "sons/creatures/cntr_move.wav",
+      "wince": "sons/creatures/cntr_wince.wav"
+    },
+    "32": {
+      "name": "Rôdeur",
+      "source": "LCRS",
+      "sourceName": "Sharpshooter",
+      "match": "alias",
+      "attack": "sons/creatures/lcrs_attack.wav",
+      "defend": "sons/creatures/lcrs_defend.wav",
+      "move": "sons/creatures/lcrs_move.wav",
+      "wince": "sons/creatures/lcrs_wince.wav"
+    },
+    "33": {
+      "name": "Dryade",
+      "source": "DHDM",
+      "sourceName": "Dendroid",
+      "match": "alias",
+      "attack": "sons/creatures/dhdm_attack.wav",
+      "defend": "sons/creatures/dhdm_defend.wav",
+      "move": "sons/creatures/dhdm_move.wav",
+      "wince": "sons/creatures/dhdm_wince.wav"
+    },
+    "34": {
+      "name": "Satyre",
+      "source": "CNTR",
+      "sourceName": "Centaur",
+      "match": "alias",
+      "attack": "sons/creatures/cntr_attack.wav",
+      "defend": "sons/creatures/cntr_defend.wav",
+      "move": "sons/creatures/cntr_move.wav",
+      "wince": "sons/creatures/cntr_wince.wav"
+    },
+    "35": {
+      "name": "Elfe des neiges",
+      "source": "GELF",
+      "sourceName": "Grand Elf",
+      "match": "alias",
+      "attack": "sons/creatures/gelf_attack.wav",
+      "defend": "sons/creatures/gelf_defend.wav",
+      "move": "sons/creatures/gelf_move.wav",
+      "wince": "sons/creatures/gelf_wince.wav"
+    },
+    "36": {
+      "name": "Leshy",
+      "source": "DHDM",
+      "sourceName": "Dendroid",
+      "match": "alias",
+      "attack": "sons/creatures/dhdm_attack.wav",
+      "defend": "sons/creatures/dhdm_defend.wav",
+      "move": "sons/creatures/dhdm_move.wav",
+      "wince": "sons/creatures/dhdm_wince.wav"
+    },
+    "37": {
+      "name": "Ours-hibou",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "38": {
+      "name": "Vouivre",
+      "source": "WYVN",
+      "sourceName": "Wyvern",
+      "match": "alias",
+      "attack": "sons/creatures/wyvn_attack.wav",
+      "defend": "sons/creatures/wyvn_defend.wav",
+      "move": "sons/creatures/wyvn_move.wav",
+      "wince": "sons/creatures/wyvn_wince.wav"
+    },
+    "39": {
+      "name": "Firbolg",
+      "source": "DHDM",
+      "sourceName": "Dendroid",
+      "match": "alias",
+      "attack": "sons/creatures/dhdm_attack.wav",
+      "defend": "sons/creatures/dhdm_defend.wav",
+      "move": "sons/creatures/dhdm_move.wav",
+      "wince": "sons/creatures/dhdm_wince.wav"
+    },
+    "40": {
+      "name": "Amphiptère",
+      "source": "WYVN",
+      "sourceName": "Wyvern",
+      "match": "alias",
+      "attack": "sons/creatures/wyvn_attack.wav",
+      "defend": "sons/creatures/wyvn_defend.wav",
+      "move": "sons/creatures/wyvn_move.wav",
+      "wince": "sons/creatures/wyvn_wince.wav"
+    },
+    "41": {
+      "name": "Basajaun",
+      "source": "DHDM",
+      "sourceName": "Dendroid",
+      "match": "alias",
+      "attack": "sons/creatures/dhdm_attack.wav",
+      "defend": "sons/creatures/dhdm_defend.wav",
+      "move": "sons/creatures/dhdm_move.wav",
+      "wince": "sons/creatures/dhdm_wince.wav"
+    },
+    "42": {
+      "name": "Nain",
+      "source": "DWRF",
+      "sourceName": "Dwarf",
+      "match": "alias",
+      "attack": "sons/creatures/dwrf_attack.wav",
+      "defend": "sons/creatures/dwrf_defend.wav",
+      "move": "sons/creatures/dwrf_move.wav",
+      "wince": "sons/creatures/dwrf_wince.wav"
+    },
+    "43": {
+      "name": "Runiste",
+      "source": "BTRE",
+      "sourceName": "Battle Dwarf",
+      "match": "alias",
+      "attack": "sons/creatures/btre_attack.wav",
+      "defend": "sons/creatures/btre_defend.wav",
+      "move": "sons/creatures/btre_move.wav",
+      "wince": "sons/creatures/btre_wince.wav"
+    },
+    "44": {
+      "name": "Xorn",
+      "source": "EELM",
+      "sourceName": "Earth Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/eelm_attack.wav",
+      "defend": "sons/creatures/eelm_defend.wav",
+      "move": "sons/creatures/eelm_move.wav",
+      "wince": "sons/creatures/eelm_wince.wav"
+    },
+    "45": {
+      "name": "Dao",
+      "source": "EELM",
+      "sourceName": "Earth Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/eelm_attack.wav",
+      "defend": "sons/creatures/eelm_defend.wav",
+      "move": "sons/creatures/eelm_move.wav",
+      "wince": "sons/creatures/eelm_wince.wav"
+    },
+    "46": {
+      "name": "Tatzelwurm",
+      "source": "WYVN",
+      "sourceName": "Wyvern",
+      "match": "alias",
+      "attack": "sons/creatures/wyvn_attack.wav",
+      "defend": "sons/creatures/wyvn_defend.wav",
+      "move": "sons/creatures/wyvn_move.wav",
+      "wince": "sons/creatures/wyvn_wince.wav"
+    },
+    "47": {
+      "name": "Halfling",
+      "source": "HALF",
+      "sourceName": "Halfling",
+      "match": "exact",
+      "attack": "sons/creatures/half_attack.wav",
+      "defend": "sons/creatures/half_defend.wav",
+      "move": "sons/creatures/half_move.wav",
+      "wince": "sons/creatures/half_wince.wav"
+    },
+    "48": {
+      "name": "Jackalope",
+      "source": "BOAR",
+      "sourceName": "Boar",
+      "match": "alias",
+      "attack": "sons/creatures/boar_attack.wav",
+      "defend": "sons/creatures/boar_defend.wav",
+      "move": "sons/creatures/boar_move.wav",
+      "wince": "sons/creatures/boar_wince.wav"
+    },
+    "49": {
+      "name": "Barde",
+      "source": "ENCH",
+      "sourceName": "Enchanter",
+      "match": "alias",
+      "attack": "sons/creatures/ench_attack.wav",
+      "defend": "sons/creatures/ench_defend.wav",
+      "move": "sons/creatures/ench_move.wav",
+      "wince": "sons/creatures/ench_wince.wav"
+    },
+    "50": {
+      "name": "Kikimora",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "alias",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "51": {
+      "name": "Tomte",
+      "source": "HALF",
+      "sourceName": "Halfling",
+      "match": "alias",
+      "attack": "sons/creatures/half_attack.wav",
+      "defend": "sons/creatures/half_defend.wav",
+      "move": "sons/creatures/half_move.wav",
+      "wince": "sons/creatures/half_wince.wav"
+    },
+    "52": {
+      "name": "Boggart",
+      "source": "IMPP",
+      "sourceName": "Imp",
+      "match": "alias",
+      "attack": "sons/creatures/impp_attack.wav",
+      "defend": "sons/creatures/impp_defend.wav",
+      "move": "sons/creatures/impp_move.wav",
+      "wince": "sons/creatures/impp_wince.wav"
+    },
+    "53": {
+      "name": "Nisse",
+      "source": "HALF",
+      "sourceName": "Halfling",
+      "match": "alias",
+      "attack": "sons/creatures/half_attack.wav",
+      "defend": "sons/creatures/half_defend.wav",
+      "move": "sons/creatures/half_move.wav",
+      "wince": "sons/creatures/half_wince.wav"
+    },
+    "54": {
+      "name": "Brownie",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "alias",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "55": {
+      "name": "Aitvaras",
+      "source": "DFLY",
+      "sourceName": "Dragon Fly",
+      "match": "alias",
+      "attack": "sons/creatures/dfly_attack.wav",
+      "defend": "sons/creatures/dfly_defend.wav",
+      "move": "sons/creatures/dfly_move.wav",
+      "wince": "sons/creatures/dfly_wince.wav"
+    },
+    "56": {
+      "name": "Vampire",
+      "source": "VAMP",
+      "sourceName": "Vampire",
+      "match": "exact",
+      "attack": "sons/creatures/vamp_attack.wav",
+      "defend": "sons/creatures/vamp_defend.wav",
+      "move": "sons/creatures/vamp_move.wav",
+      "wince": "sons/creatures/vamp_wince.wav"
+    },
+    "57": {
+      "name": "Zombie",
+      "source": "ZOMB",
+      "sourceName": "Zombie",
+      "match": "exact",
+      "attack": "sons/creatures/zomb_attack.wav",
+      "defend": "sons/creatures/zomb_defend.wav",
+      "move": "sons/creatures/zomb_move.wav",
+      "wince": "sons/creatures/zomb_wince.wav"
+    },
+    "58": {
+      "name": "Fantôme",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "59": {
+      "name": "Squelette",
+      "source": "SKEL",
+      "sourceName": "Skeleton",
+      "match": "alias",
+      "attack": "sons/creatures/skel_attack.wav",
+      "defend": "sons/creatures/skel_defend.wav",
+      "move": "sons/creatures/skel_move.wav",
+      "wince": "sons/creatures/skel_wince.wav"
+    },
+    "60": {
+      "name": "Liche",
+      "source": "LICH",
+      "sourceName": "Lich",
+      "match": "exact",
+      "attack": "sons/creatures/lich_attack.wav",
+      "defend": "sons/creatures/lich_defend.wav",
+      "move": "sons/creatures/lich_move.wav",
+      "wince": "sons/creatures/lich_wince.wav"
+    },
+    "61": {
+      "name": "Momie",
+      "source": "MUMY",
+      "sourceName": "Mummy",
+      "match": "alias",
+      "attack": "sons/creatures/mumy_attack.wav",
+      "defend": "sons/creatures/mumy_defend.wav",
+      "move": "sons/creatures/mumy_move.wav",
+      "wince": "sons/creatures/mumy_wince.wav"
+    },
+    "62": {
+      "name": "Nosferatu",
+      "source": "NOSF",
+      "sourceName": "Nosferatu",
+      "match": "exact",
+      "attack": "sons/creatures/nosf_attack.wav",
+      "defend": "sons/creatures/nosf_defend.wav",
+      "move": "sons/creatures/nosf_move.wav",
+      "wince": "sons/creatures/nosf_wince.wav"
+    },
+    "63": {
+      "name": "Nécromancien",
+      "source": "LICH",
+      "sourceName": "Lich",
+      "match": "alias",
+      "attack": "sons/creatures/lich_attack.wav",
+      "defend": "sons/creatures/lich_defend.wav",
+      "move": "sons/creatures/lich_move.wav",
+      "wince": "sons/creatures/lich_wince.wav"
+    },
+    "64": {
+      "name": "Wendigo",
+      "source": "WGHT",
+      "sourceName": "Wight",
+      "match": "alias",
+      "attack": "sons/creatures/wght_attack.wav",
+      "defend": "sons/creatures/wght_defend.wav",
+      "move": "sons/creatures/wght_move.wav",
+      "wince": "sons/creatures/wght_wince.wav"
+    },
+    "65": {
+      "name": "Poltergeist",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "66": {
+      "name": "Banshee",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "67": {
+      "name": "Chevalier de la mort",
+      "source": "BKNT",
+      "sourceName": "Black Knight",
+      "match": "alias",
+      "attack": "sons/creatures/bknt_attack.wav",
+      "defend": "sons/creatures/bknt_defend.wav",
+      "move": "sons/creatures/bknt_move.wav",
+      "wince": "sons/creatures/bknt_wince.wav"
+    },
+    "68": {
+      "name": "Goule",
+      "source": "ZOMB",
+      "sourceName": "Zombie",
+      "match": "alias",
+      "attack": "sons/creatures/zomb_attack.wav",
+      "defend": "sons/creatures/zomb_defend.wav",
+      "move": "sons/creatures/zomb_move.wav",
+      "wince": "sons/creatures/zomb_wince.wav"
+    },
+    "69": {
+      "name": "Spectre",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "70": {
+      "name": "Revenant",
+      "source": "WGHT",
+      "sourceName": "Wight",
+      "match": "alias",
+      "attack": "sons/creatures/wght_attack.wav",
+      "defend": "sons/creatures/wght_defend.wav",
+      "move": "sons/creatures/wght_move.wav",
+      "wince": "sons/creatures/wght_wince.wav"
+    },
+    "71": {
+      "name": "Wraith",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "exact",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "72": {
+      "name": "Dullahan",
+      "source": "BKNT",
+      "sourceName": "Black Knight",
+      "match": "alias",
+      "attack": "sons/creatures/bknt_attack.wav",
+      "defend": "sons/creatures/bknt_defend.wav",
+      "move": "sons/creatures/bknt_move.wav",
+      "wince": "sons/creatures/bknt_wince.wav"
+    },
+    "73": {
+      "name": "Dracoliche",
+      "source": "BHDR",
+      "sourceName": "Black Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/bhdr_attack.wav",
+      "defend": "sons/creatures/bhdr_defend.wav",
+      "move": "sons/creatures/bhdr_move.wav",
+      "wince": "sons/creatures/bhdr_wince.wav"
+    },
+    "74": {
+      "name": "Nidhogg",
+      "source": "BHDR",
+      "sourceName": "Black Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/bhdr_attack.wav",
+      "defend": "sons/creatures/bhdr_defend.wav",
+      "move": "sons/creatures/bhdr_move.wav",
+      "wince": "sons/creatures/bhdr_wince.wav"
+    },
+    "75": {
+      "name": "Strigoi",
+      "source": "VAMP",
+      "sourceName": "Vampire",
+      "match": "alias",
+      "attack": "sons/creatures/vamp_attack.wav",
+      "defend": "sons/creatures/vamp_defend.wav",
+      "move": "sons/creatures/vamp_move.wav",
+      "wince": "sons/creatures/vamp_wince.wav"
+    },
+    "76": {
+      "name": "Draugr",
+      "source": "WGHT",
+      "sourceName": "Wight",
+      "match": "alias",
+      "attack": "sons/creatures/wght_attack.wav",
+      "defend": "sons/creatures/wght_defend.wav",
+      "move": "sons/creatures/wght_move.wav",
+      "wince": "sons/creatures/wght_wince.wav"
+    },
+    "77": {
+      "name": "Mort-vivant",
+      "source": "ZOMB",
+      "sourceName": "Zombie",
+      "match": "alias",
+      "attack": "sons/creatures/zomb_attack.wav",
+      "defend": "sons/creatures/zomb_defend.wav",
+      "move": "sons/creatures/zomb_move.wav",
+      "wince": "sons/creatures/zomb_wince.wav"
+    },
+    "78": {
+      "name": "Dame Blanche",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "79": {
+      "name": "Ombre",
+      "source": "SHDM",
+      "sourceName": "Shadow",
+      "match": "alias",
+      "attack": "sons/creatures/shdm_attack.wav",
+      "defend": "sons/creatures/shdm_defend.wav",
+      "move": "sons/creatures/shdm_move.wav",
+      "wince": "sons/creatures/shdm_wince.wav"
+    },
+    "80": {
+      "name": "Wight",
+      "source": "WGHT",
+      "sourceName": "Wight",
+      "match": "exact",
+      "attack": "sons/creatures/wght_attack.wav",
+      "defend": "sons/creatures/wght_defend.wav",
+      "move": "sons/creatures/wght_move.wav",
+      "wince": "sons/creatures/wght_wince.wav"
+    },
+    "81": {
+      "name": "Preta",
+      "source": "WGHT",
+      "sourceName": "Wight",
+      "match": "alias",
+      "attack": "sons/creatures/wght_attack.wav",
+      "defend": "sons/creatures/wght_defend.wav",
+      "move": "sons/creatures/wght_move.wav",
+      "wince": "sons/creatures/wght_wince.wav"
+    },
+    "82": {
+      "name": "Sluagh",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "83": {
+      "name": "Varcolac",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "84": {
+      "name": "Ghast",
+      "source": "ZOMB",
+      "sourceName": "Zombie",
+      "match": "alias",
+      "attack": "sons/creatures/zomb_attack.wav",
+      "defend": "sons/creatures/zomb_defend.wav",
+      "move": "sons/creatures/zomb_move.wav",
+      "wince": "sons/creatures/zomb_wince.wav"
+    },
+    "85": {
+      "name": "Alp",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "86": {
+      "name": "Strige",
+      "source": "HARP",
+      "sourceName": "Harpy",
+      "match": "alias",
+      "attack": "sons/creatures/harp_attack.wav",
+      "defend": "sons/creatures/harp_defend.wav",
+      "move": "sons/creatures/harp_move.wav",
+      "wince": "sons/creatures/harp_wince.wav"
+    },
+    "87": {
+      "name": "Valravn",
+      "source": "HARP",
+      "sourceName": "Harpy",
+      "match": "alias",
+      "attack": "sons/creatures/harp_attack.wav",
+      "defend": "sons/creatures/harp_defend.wav",
+      "move": "sons/creatures/harp_move.wav",
+      "wince": "sons/creatures/harp_wince.wav"
+    },
+    "88": {
+      "name": "Ankou",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "89": {
+      "name": "Vétala",
+      "source": "VAMP",
+      "sourceName": "Vampire",
+      "match": "alias",
+      "attack": "sons/creatures/vamp_attack.wav",
+      "defend": "sons/creatures/vamp_defend.wav",
+      "move": "sons/creatures/vamp_move.wav",
+      "wince": "sons/creatures/vamp_wince.wav"
+    },
+    "90": {
+      "name": "Méduse",
+      "source": "MEDU",
+      "sourceName": "Medusa",
+      "match": "alias",
+      "attack": "sons/creatures/medu_attack.wav",
+      "defend": "sons/creatures/medu_defend.wav",
+      "move": "sons/creatures/medu_move.wav",
+      "wince": "sons/creatures/medu_wince.wav"
+    },
+    "91": {
+      "name": "Gorgone",
+      "source": "BGOR",
+      "sourceName": "Gorgon",
+      "match": "exact",
+      "attack": "sons/creatures/bgor_attack.wav",
+      "defend": "sons/creatures/bgor_defend.wav",
+      "move": "sons/creatures/bgor_move.wav",
+      "wince": "sons/creatures/bgor_wince.wav"
+    },
+    "92": {
+      "name": "Assassin",
+      "source": "ROGU",
+      "sourceName": "Rogue",
+      "match": "alias",
+      "attack": "sons/creatures/rogu_attack.wav",
+      "defend": "sons/creatures/rogu_defend.wav",
+      "move": "sons/creatures/rogu_move.wav",
+      "wince": "sons/creatures/rogu_wince.wav"
+    },
+    "93": {
+      "name": "Mothman",
+      "source": "HARP",
+      "sourceName": "Harpy",
+      "match": "alias",
+      "attack": "sons/creatures/harp_attack.wav",
+      "defend": "sons/creatures/harp_defend.wav",
+      "move": "sons/creatures/harp_move.wav",
+      "wince": "sons/creatures/harp_wince.wav"
+    },
+    "94": {
+      "name": "Araignée géante",
+      "source": "SCRP",
+      "sourceName": "Serpent Fly",
+      "match": "alias",
+      "attack": "sons/creatures/scrp_attack.wav",
+      "defend": "sons/creatures/scrp_defend.wav",
+      "move": "sons/creatures/scrp_move.wav",
+      "wince": "sons/creatures/scrp_wince.wav"
+    },
+    "95": {
+      "name": "Doppelganger",
+      "source": "ROGU",
+      "sourceName": "Rogue",
+      "match": "alias",
+      "attack": "sons/creatures/rogu_attack.wav",
+      "defend": "sons/creatures/rogu_defend.wav",
+      "move": "sons/creatures/rogu_move.wav",
+      "wince": "sons/creatures/rogu_wince.wav"
+    },
+    "96": {
+      "name": "Illithid",
+      "source": "EVLI",
+      "sourceName": "Evil Eye",
+      "match": "alias",
+      "attack": "sons/creatures/evli_attack.wav",
+      "defend": "sons/creatures/evli_defend.wav",
+      "move": "sons/creatures/evli_move.wav",
+      "wince": "sons/creatures/evli_wince.wav"
+    },
+    "97": {
+      "name": "Mimique",
+      "source": "TROG",
+      "sourceName": "Troglodyte",
+      "match": "alias",
+      "attack": "sons/creatures/trog_attack.wav",
+      "defend": "sons/creatures/trog_defend.wav",
+      "move": "sons/creatures/trog_move.wav",
+      "wince": "sons/creatures/trog_wince.wav"
+    },
+    "98": {
+      "name": "Tyrannoeil",
+      "source": "EVLI",
+      "sourceName": "Evil Eye",
+      "match": "alias",
+      "attack": "sons/creatures/evli_attack.wav",
+      "defend": "sons/creatures/evli_defend.wav",
+      "move": "sons/creatures/evli_move.wav",
+      "wince": "sons/creatures/evli_wince.wav"
+    },
+    "99": {
+      "name": "Basilic",
+      "source": "BASL",
+      "sourceName": "Basilisk",
+      "match": "alias",
+      "attack": "sons/creatures/basl_attack.wav",
+      "defend": "sons/creatures/basl_defend.wav",
+      "move": "sons/creatures/basl_move.wav",
+      "wince": "sons/creatures/basl_wince.wav"
+    },
+    "100": {
+      "name": "Dragon d'ombre",
+      "source": "SHDM",
+      "sourceName": "Shadow",
+      "match": "alias",
+      "attack": "sons/creatures/shdm_attack.wav",
+      "defend": "sons/creatures/shdm_defend.wav",
+      "move": "sons/creatures/shdm_move.wav",
+      "wince": "sons/creatures/shdm_wince.wav"
+    },
+    "101": {
+      "name": "Shoggoth",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "102": {
+      "name": "Drow",
+      "source": "WELF",
+      "sourceName": "Wood Elf",
+      "match": "alias",
+      "attack": "sons/creatures/welf_attack.wav",
+      "defend": "sons/creatures/welf_defend.wav",
+      "move": "sons/creatures/welf_move.wav",
+      "wince": "sons/creatures/welf_wince.wav"
+    },
+    "103": {
+      "name": "Occultiste",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "alias",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "104": {
+      "name": "Svartalf",
+      "source": "DWRF",
+      "sourceName": "Dwarf",
+      "match": "alias",
+      "attack": "sons/creatures/dwrf_attack.wav",
+      "defend": "sons/creatures/dwrf_defend.wav",
+      "move": "sons/creatures/dwrf_move.wav",
+      "wince": "sons/creatures/dwrf_wince.wav"
+    },
+    "105": {
+      "name": "Umber Hulk",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "106": {
+      "name": "Monstre rouilleur",
+      "source": "RUST",
+      "sourceName": "Rust Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/rust_attack.wav",
+      "defend": "sons/creatures/rust_defend.wav",
+      "move": "sons/creatures/rust_move.wav",
+      "wince": "sons/creatures/rust_wince.wav"
+    },
+    "107": {
+      "name": "Cube gélatineux",
+      "source": "EVLI",
+      "sourceName": "Evil Eye",
+      "match": "theme",
+      "attack": "sons/creatures/evli_attack.wav",
+      "defend": "sons/creatures/evli_defend.wav",
+      "move": "sons/creatures/evli_move.wav",
+      "wince": "sons/creatures/evli_wince.wav"
+    },
+    "108": {
+      "name": "Arachne",
+      "source": "MEDU",
+      "sourceName": "Medusa",
+      "match": "alias",
+      "attack": "sons/creatures/medu_attack.wav",
+      "defend": "sons/creatures/medu_defend.wav",
+      "move": "sons/creatures/medu_move.wav",
+      "wince": "sons/creatures/medu_wince.wav"
+    },
+    "109": {
+      "name": "Otyugh",
+      "source": "OGRE",
+      "sourceName": "Ogre",
+      "match": "alias",
+      "attack": "sons/creatures/ogre_attack.wav",
+      "defend": "sons/creatures/ogre_defend.wav",
+      "move": "sons/creatures/ogre_move.wav",
+      "wince": "sons/creatures/ogre_wince.wav"
+    },
+    "110": {
+      "name": "Gibbering Mouther",
+      "source": "EVLI",
+      "sourceName": "Evil Eye",
+      "match": "alias",
+      "attack": "sons/creatures/evli_attack.wav",
+      "defend": "sons/creatures/evli_defend.wav",
+      "move": "sons/creatures/evli_move.wav",
+      "wince": "sons/creatures/evli_wince.wav"
+    },
+    "111": {
+      "name": "Myconide",
+      "source": "DHDM",
+      "sourceName": "Dendroid",
+      "match": "alias",
+      "attack": "sons/creatures/dhdm_attack.wav",
+      "defend": "sons/creatures/dhdm_defend.wav",
+      "move": "sons/creatures/dhdm_move.wav",
+      "wince": "sons/creatures/dhdm_wince.wav"
+    },
+    "112": {
+      "name": "Péryton",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "alias",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "113": {
+      "name": "Troglodyte",
+      "source": "TROG",
+      "sourceName": "Troglodyte",
+      "match": "exact",
+      "attack": "sons/creatures/trog_attack.wav",
+      "defend": "sons/creatures/trog_defend.wav",
+      "move": "sons/creatures/trog_move.wav",
+      "wince": "sons/creatures/trog_wince.wav"
+    },
+    "114": {
+      "name": "Slaad",
+      "source": "TROG",
+      "sourceName": "Troglodyte",
+      "match": "alias",
+      "attack": "sons/creatures/trog_attack.wav",
+      "defend": "sons/creatures/trog_defend.wav",
+      "move": "sons/creatures/trog_move.wav",
+      "wince": "sons/creatures/trog_wince.wav"
+    },
+    "115": {
+      "name": "Fauve désagrégateur",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "116": {
+      "name": "Flumph",
+      "source": "AELM",
+      "sourceName": "Air Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/aelm_attack.wav",
+      "defend": "sons/creatures/aelm_defend.wav",
+      "move": "sons/creatures/aelm_move.wav",
+      "wince": "sons/creatures/aelm_wince.wav"
+    },
+    "117": {
+      "name": "Guêteur",
+      "source": "EVLI",
+      "sourceName": "Evil Eye",
+      "match": "alias",
+      "attack": "sons/creatures/evli_attack.wav",
+      "defend": "sons/creatures/evli_defend.wav",
+      "move": "sons/creatures/evli_move.wav",
+      "wince": "sons/creatures/evli_wince.wav"
+    },
+    "118": {
+      "name": "Grell",
+      "source": "EVLI",
+      "sourceName": "Evil Eye",
+      "match": "alias",
+      "attack": "sons/creatures/evli_attack.wav",
+      "defend": "sons/creatures/evli_defend.wav",
+      "move": "sons/creatures/evli_move.wav",
+      "wince": "sons/creatures/evli_wince.wav"
+    },
+    "119": {
+      "name": "Amphisbène",
+      "source": "SCRP",
+      "sourceName": "Serpent Fly",
+      "match": "alias",
+      "attack": "sons/creatures/scrp_attack.wav",
+      "defend": "sons/creatures/scrp_defend.wav",
+      "move": "sons/creatures/scrp_move.wav",
+      "wince": "sons/creatures/scrp_wince.wav"
+    },
+    "120": {
+      "name": "Orc",
+      "source": "ORCC",
+      "sourceName": "Orc",
+      "match": "exact",
+      "attack": "sons/creatures/orcc_attack.wav",
+      "defend": "sons/creatures/orcc_defend.wav",
+      "move": "sons/creatures/orcc_move.wav",
+      "wince": "sons/creatures/orcc_wince.wav"
+    },
+    "121": {
+      "name": "Minotaure",
+      "source": "MINO",
+      "sourceName": "Minotaur",
+      "match": "exact",
+      "attack": "sons/creatures/mino_attack.wav",
+      "defend": "sons/creatures/mino_defend.wav",
+      "move": "sons/creatures/mino_move.wav",
+      "wince": "sons/creatures/mino_wince.wav"
+    },
+    "122": {
+      "name": "Warg",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "123": {
+      "name": "Wyverne",
+      "source": "WYVN",
+      "sourceName": "Wyvern",
+      "match": "exact",
+      "attack": "sons/creatures/wyvn_attack.wav",
+      "defend": "sons/creatures/wyvn_defend.wav",
+      "move": "sons/creatures/wyvn_move.wav",
+      "wince": "sons/creatures/wyvn_wince.wav"
+    },
+    "124": {
+      "name": "Barbare",
+      "source": "OGRE",
+      "sourceName": "Ogre",
+      "match": "alias",
+      "attack": "sons/creatures/ogre_attack.wav",
+      "defend": "sons/creatures/ogre_defend.wav",
+      "move": "sons/creatures/ogre_move.wav",
+      "wince": "sons/creatures/ogre_wince.wav"
+    },
+    "125": {
+      "name": "Béhémoth",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "exact",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "126": {
+      "name": "Berserker",
+      "source": "OGRE",
+      "sourceName": "Ogre",
+      "match": "alias",
+      "attack": "sons/creatures/ogre_attack.wav",
+      "defend": "sons/creatures/ogre_defend.wav",
+      "move": "sons/creatures/ogre_move.wav",
+      "wince": "sons/creatures/ogre_wince.wav"
+    },
+    "127": {
+      "name": "Chupacabra",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "128": {
+      "name": "Demi-orc",
+      "source": "ORCC",
+      "sourceName": "Orc",
+      "match": "alias",
+      "attack": "sons/creatures/orcc_attack.wav",
+      "defend": "sons/creatures/orcc_defend.wav",
+      "move": "sons/creatures/orcc_move.wav",
+      "wince": "sons/creatures/orcc_wince.wav"
+    },
+    "129": {
+      "name": "Drake",
+      "source": "WYVN",
+      "sourceName": "Wyvern",
+      "match": "alias",
+      "attack": "sons/creatures/wyvn_attack.wav",
+      "defend": "sons/creatures/wyvn_defend.wav",
+      "move": "sons/creatures/wyvn_move.wav",
+      "wince": "sons/creatures/wyvn_wince.wav"
+    },
+    "130": {
+      "name": "Tigre-garou",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "131": {
+      "name": "Gnoll",
+      "source": "GNOL",
+      "sourceName": "Gnoll",
+      "match": "exact",
+      "attack": "sons/creatures/gnol_attack.wav",
+      "defend": "sons/creatures/gnol_defend.wav",
+      "move": "sons/creatures/gnol_move.wav",
+      "wince": "sons/creatures/gnol_wince.wav"
+    },
+    "132": {
+      "name": "Cynocéphale",
+      "source": "GNOL",
+      "sourceName": "Gnoll",
+      "match": "alias",
+      "attack": "sons/creatures/gnol_attack.wav",
+      "defend": "sons/creatures/gnol_defend.wav",
+      "move": "sons/creatures/gnol_move.wav",
+      "wince": "sons/creatures/gnol_wince.wav"
+    },
+    "133": {
+      "name": "Sciapode",
+      "source": "HALF",
+      "sourceName": "Halfling",
+      "match": "alias",
+      "attack": "sons/creatures/half_attack.wav",
+      "defend": "sons/creatures/half_defend.wav",
+      "move": "sons/creatures/half_move.wav",
+      "wince": "sons/creatures/half_wince.wav"
+    },
+    "134": {
+      "name": "Blemmye",
+      "source": "OGRE",
+      "sourceName": "Ogre",
+      "match": "alias",
+      "attack": "sons/creatures/ogre_attack.wav",
+      "defend": "sons/creatures/ogre_defend.wav",
+      "move": "sons/creatures/ogre_move.wav",
+      "wince": "sons/creatures/ogre_wince.wav"
+    },
+    "135": {
+      "name": "Arimaspe",
+      "source": "CYCL",
+      "sourceName": "Cyclops",
+      "match": "alias",
+      "attack": "sons/creatures/cycl_attack.wav",
+      "defend": "sons/creatures/cycl_defend.wav",
+      "move": "sons/creatures/cycl_move.wav",
+      "wince": "sons/creatures/cycl_wince.wav"
+    },
+    "136": {
+      "name": "Diable",
+      "source": "DEVL",
+      "sourceName": "Devil",
+      "match": "alias",
+      "attack": "sons/creatures/devl_attack.wav",
+      "defend": "sons/creatures/devl_defend.wav",
+      "move": "sons/creatures/devl_move.wav",
+      "wince": "sons/creatures/devl_wince.wav"
+    },
+    "137": {
+      "name": "Démon",
+      "source": "ADVL",
+      "sourceName": "Archdevil",
+      "match": "alias",
+      "attack": "sons/creatures/advl_attack.wav",
+      "defend": "sons/creatures/advl_defend.wav",
+      "move": "sons/creatures/advl_move.wav",
+      "wince": "sons/creatures/advl_wince.wav"
+    },
+    "138": {
+      "name": "Cerbère",
+      "source": "CERB",
+      "sourceName": "Cerberus",
+      "match": "alias",
+      "attack": "sons/creatures/cerb_attack.wav",
+      "defend": "sons/creatures/cerb_defend.wav",
+      "move": "sons/creatures/cerb_move.wav",
+      "wince": "sons/creatures/cerb_wince.wav"
+    },
+    "139": {
+      "name": "Typhon",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "140": {
+      "name": "Succube",
+      "source": "DEVL",
+      "sourceName": "Devil",
+      "match": "alias",
+      "attack": "sons/creatures/devl_attack.wav",
+      "defend": "sons/creatures/devl_defend.wav",
+      "move": "sons/creatures/devl_move.wav",
+      "wince": "sons/creatures/devl_wince.wav"
+    },
+    "141": {
+      "name": "Oni",
+      "source": "DHDM",
+      "sourceName": "Dendroid",
+      "match": "alias",
+      "attack": "sons/creatures/dhdm_attack.wav",
+      "defend": "sons/creatures/dhdm_defend.wav",
+      "move": "sons/creatures/dhdm_move.wav",
+      "wince": "sons/creatures/dhdm_wince.wav"
+    },
+    "142": {
+      "name": "Harpie",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "theme",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "143": {
+      "name": "Manticore",
+      "source": "MANT",
+      "sourceName": "Manticore",
+      "match": "exact",
+      "attack": "sons/creatures/mant_attack.wav",
+      "defend": "sons/creatures/mant_defend.wav",
+      "move": "sons/creatures/mant_move.wav",
+      "wince": "sons/creatures/mant_wince.wav"
+    },
+    "144": {
+      "name": "Ifrit",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "theme",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "145": {
+      "name": "Chimère",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "theme",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "146": {
+      "name": "Incube",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "theme",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "147": {
+      "name": "Archidémon",
+      "source": "ADVL",
+      "sourceName": "Archdevil",
+      "match": "alias",
+      "attack": "sons/creatures/advl_attack.wav",
+      "defend": "sons/creatures/advl_defend.wav",
+      "move": "sons/creatures/advl_move.wav",
+      "wince": "sons/creatures/advl_wince.wav"
+    },
+    "148": {
+      "name": "Rakshasa",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "alias",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "149": {
+      "name": "Érinye",
+      "source": "DEVL",
+      "sourceName": "Devil",
+      "match": "alias",
+      "attack": "sons/creatures/devl_attack.wav",
+      "defend": "sons/creatures/devl_defend.wav",
+      "move": "sons/creatures/devl_move.wav",
+      "wince": "sons/creatures/devl_wince.wav"
+    },
+    "150": {
+      "name": "Diablotin",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "theme",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "151": {
+      "name": "Furie",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "theme",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "152": {
+      "name": "Marilith",
+      "source": "ADVL",
+      "sourceName": "Archdevil",
+      "match": "alias",
+      "attack": "sons/creatures/advl_attack.wav",
+      "defend": "sons/creatures/advl_defend.wav",
+      "move": "sons/creatures/advl_move.wav",
+      "wince": "sons/creatures/advl_wince.wav"
+    },
+    "153": {
+      "name": "Archidiable",
+      "source": "DEVL",
+      "sourceName": "Devil",
+      "match": "alias",
+      "attack": "sons/creatures/devl_attack.wav",
+      "defend": "sons/creatures/devl_defend.wav",
+      "move": "sons/creatures/devl_move.wav",
+      "wince": "sons/creatures/devl_wince.wav"
+    },
+    "154": {
+      "name": "Tieffelin",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "theme",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "155": {
+      "name": "Chien de l'enfer",
+      "source": "DEVL",
+      "sourceName": "Devil",
+      "match": "theme",
+      "attack": "sons/creatures/devl_attack.wav",
+      "defend": "sons/creatures/devl_defend.wav",
+      "move": "sons/creatures/devl_move.wav",
+      "wince": "sons/creatures/devl_wince.wav"
+    },
+    "156": {
+      "name": "Manananggal",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "theme",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "157": {
+      "name": "Lamie",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "theme",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "158": {
+      "name": "Cauchemar",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "theme",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "159": {
+      "name": "Cacodémon",
+      "source": "ADVL",
+      "sourceName": "Archdevil",
+      "match": "alias",
+      "attack": "sons/creatures/advl_attack.wav",
+      "defend": "sons/creatures/advl_defend.wav",
+      "move": "sons/creatures/advl_move.wav",
+      "wince": "sons/creatures/advl_wince.wav"
+    },
+    "160": {
+      "name": "Orthros",
+      "source": "DEVL",
+      "sourceName": "Devil",
+      "match": "theme",
+      "attack": "sons/creatures/devl_attack.wav",
+      "defend": "sons/creatures/devl_defend.wav",
+      "move": "sons/creatures/devl_move.wav",
+      "wince": "sons/creatures/devl_wince.wav"
+    },
+    "161": {
+      "name": "Démonologue",
+      "source": "ADVL",
+      "sourceName": "Archdevil",
+      "match": "alias",
+      "attack": "sons/creatures/advl_attack.wav",
+      "defend": "sons/creatures/advl_defend.wav",
+      "move": "sons/creatures/advl_move.wav",
+      "wince": "sons/creatures/advl_wince.wav"
+    },
+    "162": {
+      "name": "Vrock",
+      "source": "ROCC",
+      "sourceName": "Roc",
+      "match": "exact",
+      "attack": "sons/creatures/rocc_attack.wav",
+      "defend": "sons/creatures/rocc_defend.wav",
+      "move": "sons/creatures/rocc_move.wav",
+      "wince": "sons/creatures/rocc_wince.wav"
+    },
+    "163": {
+      "name": "Cambion",
+      "source": "DEVL",
+      "sourceName": "Devil",
+      "match": "alias",
+      "attack": "sons/creatures/devl_attack.wav",
+      "defend": "sons/creatures/devl_defend.wav",
+      "move": "sons/creatures/devl_move.wav",
+      "wince": "sons/creatures/devl_wince.wav"
+    },
+    "164": {
+      "name": "Nuckelavee",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "theme",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "165": {
+      "name": "Glabrezu",
+      "source": "ADVL",
+      "sourceName": "Archdevil",
+      "match": "alias",
+      "attack": "sons/creatures/advl_attack.wav",
+      "defend": "sons/creatures/advl_defend.wav",
+      "move": "sons/creatures/advl_move.wav",
+      "wince": "sons/creatures/advl_wince.wav"
+    },
+    "166": {
+      "name": "Balor",
+      "source": "ADVL",
+      "sourceName": "Archdevil",
+      "match": "alias",
+      "attack": "sons/creatures/advl_attack.wav",
+      "defend": "sons/creatures/advl_defend.wav",
+      "move": "sons/creatures/advl_move.wav",
+      "wince": "sons/creatures/advl_wince.wav"
+    },
+    "167": {
+      "name": "Lémure",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "theme",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "168": {
+      "name": "Div",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "theme",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "169": {
+      "name": "Chort",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "theme",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "170": {
+      "name": "Golem",
+      "source": "SGLM",
+      "sourceName": "Stone Golem",
+      "match": "alias",
+      "attack": "sons/creatures/sglm_attack.wav",
+      "defend": "sons/creatures/sglm_defend.wav",
+      "move": "sons/creatures/sglm_move.wav",
+      "wince": "sons/creatures/sglm_wince.wav"
+    },
+    "171": {
+      "name": "Alchimiste",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "theme",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "172": {
+      "name": "Gargouille",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "theme",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "173": {
+      "name": "Gnome",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "theme",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "174": {
+      "name": "Golem de chair",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "theme",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "175": {
+      "name": "Talos",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "theme",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "176": {
+      "name": "Gremlin",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "theme",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "177": {
+      "name": "Golem de pierre",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "theme",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "178": {
+      "name": "Colosse",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "theme",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "179": {
+      "name": "Golem de fer",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "theme",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "180": {
+      "name": "Artificier",
+      "source": "AGRM",
+      "sourceName": "Archer",
+      "match": "theme",
+      "attack": "sons/creatures/agrm_attack.wav",
+      "defend": "sons/creatures/agrm_defend.wav",
+      "move": "sons/creatures/agrm_move.wav",
+      "wince": "sons/creatures/agrm_wince.wav"
+    },
+    "181": {
+      "name": "Automate",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "alias",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "182": {
+      "name": "Homoncule",
+      "source": "FMLR",
+      "sourceName": "Familiar",
+      "match": "alias",
+      "attack": "sons/creatures/fmlr_attack.wav",
+      "defend": "sons/creatures/fmlr_defend.wav",
+      "move": "sons/creatures/fmlr_move.wav",
+      "wince": "sons/creatures/fmlr_wince.wav"
+    },
+    "183": {
+      "name": "Warforged",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "theme",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "184": {
+      "name": "Svirfneblin",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "theme",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "185": {
+      "name": "Modron",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "alias",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "186": {
+      "name": "Dactyle",
+      "source": "DWRF",
+      "sourceName": "Dwarf",
+      "match": "alias",
+      "attack": "sons/creatures/dwrf_attack.wav",
+      "defend": "sons/creatures/dwrf_defend.wav",
+      "move": "sons/creatures/dwrf_move.wav",
+      "wince": "sons/creatures/dwrf_wince.wav"
+    },
+    "187": {
+      "name": "Forgelet",
+      "source": "ITRG",
+      "sourceName": "Iron Golem",
+      "match": "alias",
+      "attack": "sons/creatures/itrg_attack.wav",
+      "defend": "sons/creatures/itrg_defend.wav",
+      "move": "sons/creatures/itrg_move.wav",
+      "wince": "sons/creatures/itrg_wince.wav"
+    },
+    "188": {
+      "name": "Cabire",
+      "source": "DWRF",
+      "sourceName": "Dwarf",
+      "match": "alias",
+      "attack": "sons/creatures/dwrf_attack.wav",
+      "defend": "sons/creatures/dwrf_defend.wav",
+      "move": "sons/creatures/dwrf_move.wav",
+      "wince": "sons/creatures/dwrf_wince.wav"
+    },
+    "189": {
+      "name": "Gobelin",
+      "source": "GBLN",
+      "sourceName": "Goblin",
+      "match": "alias",
+      "attack": "sons/creatures/gbln_attack.wav",
+      "defend": "sons/creatures/gbln_defend.wav",
+      "move": "sons/creatures/gbln_move.wav",
+      "wince": "sons/creatures/gbln_wince.wav"
+    },
+    "190": {
+      "name": "Kobold",
+      "source": "GBLN",
+      "sourceName": "Goblin",
+      "match": "alias",
+      "attack": "sons/creatures/gbln_attack.wav",
+      "defend": "sons/creatures/gbln_defend.wav",
+      "move": "sons/creatures/gbln_move.wav",
+      "wince": "sons/creatures/gbln_wince.wav"
+    },
+    "191": {
+      "name": "Hobgobelin",
+      "source": "HGOB",
+      "sourceName": "Hobgoblin",
+      "match": "alias",
+      "attack": "sons/creatures/hgob_attack.wav",
+      "defend": "sons/creatures/hgob_defend.wav",
+      "move": "sons/creatures/hgob_move.wav",
+      "wince": "sons/creatures/hgob_wince.wav"
+    },
+    "192": {
+      "name": "Cocatrix",
+      "source": "SCRP",
+      "sourceName": "Serpent Fly",
+      "match": "alias",
+      "attack": "sons/creatures/scrp_attack.wav",
+      "defend": "sons/creatures/scrp_defend.wav",
+      "move": "sons/creatures/scrp_move.wav",
+      "wince": "sons/creatures/scrp_wince.wav"
+    },
+    "193": {
+      "name": "Redcap",
+      "source": "GBLN",
+      "sourceName": "Goblin",
+      "match": "alias",
+      "attack": "sons/creatures/gbln_attack.wav",
+      "defend": "sons/creatures/gbln_defend.wav",
+      "move": "sons/creatures/gbln_move.wav",
+      "wince": "sons/creatures/gbln_wince.wav"
+    },
+    "194": {
+      "name": "Homme-rat",
+      "source": "GNOL",
+      "sourceName": "Gnoll",
+      "match": "alias",
+      "attack": "sons/creatures/gnol_attack.wav",
+      "defend": "sons/creatures/gnol_defend.wav",
+      "move": "sons/creatures/gnol_move.wav",
+      "wince": "sons/creatures/gnol_wince.wav"
+    },
+    "195": {
+      "name": "Bulette",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "196": {
+      "name": "Gobelours",
+      "source": "OGRE",
+      "sourceName": "Ogre",
+      "match": "alias",
+      "attack": "sons/creatures/ogre_attack.wav",
+      "defend": "sons/creatures/ogre_defend.wav",
+      "move": "sons/creatures/ogre_move.wav",
+      "wince": "sons/creatures/ogre_wince.wav"
+    },
+    "197": {
+      "name": "Barghest",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "198": {
+      "name": "Trow",
+      "source": "TRLL",
+      "sourceName": "Troll",
+      "match": "alias",
+      "attack": "sons/creatures/trll_attack.wav",
+      "defend": "sons/creatures/trll_defend.wav",
+      "move": "sons/creatures/trll_move.wav",
+      "wince": "sons/creatures/trll_wince.wav"
+    },
+    "199": {
+      "name": "Dragon",
+      "source": "BKDR",
+      "sourceName": "Red Dragon",
+      "match": "exact",
+      "attack": "sons/creatures/bkdr_attack.wav",
+      "defend": "sons/creatures/bkdr_defend.wav",
+      "move": "sons/creatures/bkdr_move.wav",
+      "wince": "sons/creatures/bkdr_wince.wav"
+    },
+    "200": {
+      "name": "Phénix",
+      "source": "PHOE",
+      "sourceName": "Phoenix",
+      "match": "alias",
+      "attack": "sons/creatures/phoe_attack.wav",
+      "defend": "sons/creatures/phoe_defend.wav",
+      "move": "sons/creatures/phoe_move.wav",
+      "wince": "sons/creatures/phoe_wince.wav"
+    },
+    "201": {
+      "name": "Titan",
+      "source": "GTIT",
+      "sourceName": "Giant Titan",
+      "match": "exact",
+      "attack": "sons/creatures/gtit_attack.wav",
+      "defend": "sons/creatures/gtit_defend.wav",
+      "move": "sons/creatures/gtit_move.wav",
+      "wince": "sons/creatures/gtit_wince.wav"
+    },
+    "202": {
+      "name": "Sphinx",
+      "source": "MANT",
+      "sourceName": "Manticore",
+      "match": "alias",
+      "attack": "sons/creatures/mant_attack.wav",
+      "defend": "sons/creatures/mant_defend.wav",
+      "move": "sons/creatures/mant_move.wav",
+      "wince": "sons/creatures/mant_wince.wav"
+    },
+    "203": {
+      "name": "Djinn",
+      "source": "GENI",
+      "sourceName": "Genie",
+      "match": "alias",
+      "attack": "sons/creatures/geni_attack.wav",
+      "defend": "sons/creatures/geni_defend.wav",
+      "move": "sons/creatures/geni_move.wav",
+      "wince": "sons/creatures/geni_wince.wav"
+    },
+    "204": {
+      "name": "Dragon rouge",
+      "source": "RDDR",
+      "sourceName": "Red Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/rddr_attack.wav",
+      "defend": "sons/creatures/rddr_defend.wav",
+      "move": "sons/creatures/rddr_move.wav",
+      "wince": "sons/creatures/rddr_wince.wav"
+    },
+    "205": {
+      "name": "Quetzalcoatl",
+      "source": "TBRD",
+      "sourceName": "Thunderbird",
+      "match": "alias",
+      "attack": "sons/creatures/tbrd_attack.wav",
+      "defend": "sons/creatures/tbrd_defend.wav",
+      "move": "sons/creatures/tbrd_move.wav",
+      "wince": "sons/creatures/tbrd_wince.wav"
+    },
+    "206": {
+      "name": "Dragon d'or",
+      "source": "AZUR",
+      "sourceName": "Azure Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/azur_attack.wav",
+      "defend": "sons/creatures/azur_defend.wav",
+      "move": "sons/creatures/azur_move.wav",
+      "wince": "sons/creatures/azur_wince.wav"
+    },
+    "207": {
+      "name": "Dragon bleu",
+      "source": "AZUR",
+      "sourceName": "Azure Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/azur_attack.wav",
+      "defend": "sons/creatures/azur_defend.wav",
+      "move": "sons/creatures/azur_move.wav",
+      "wince": "sons/creatures/azur_wince.wav"
+    },
+    "208": {
+      "name": "Dragon d'argent",
+      "source": "AZUR",
+      "sourceName": "Azure Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/azur_attack.wav",
+      "defend": "sons/creatures/azur_defend.wav",
+      "move": "sons/creatures/azur_move.wav",
+      "wince": "sons/creatures/azur_wince.wav"
+    },
+    "209": {
+      "name": "Archimage",
+      "source": "AMAG",
+      "sourceName": "Archmage",
+      "match": "alias",
+      "attack": "sons/creatures/amag_attack.wav",
+      "defend": "sons/creatures/amag_defend.wav",
+      "move": "sons/creatures/amag_move.wav",
+      "wince": "sons/creatures/amag_wince.wav"
+    },
+    "210": {
+      "name": "Dragon d'airain",
+      "source": "AZUR",
+      "sourceName": "Azure Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/azur_attack.wav",
+      "defend": "sons/creatures/azur_defend.wav",
+      "move": "sons/creatures/azur_move.wav",
+      "wince": "sons/creatures/azur_wince.wav"
+    },
+    "211": {
+      "name": "Élémentaire",
+      "source": "EELM",
+      "sourceName": "Earth Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/eelm_attack.wav",
+      "defend": "sons/creatures/eelm_defend.wav",
+      "move": "sons/creatures/eelm_move.wav",
+      "wince": "sons/creatures/eelm_wince.wav"
+    },
+    "212": {
+      "name": "Garuda",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "alias",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "213": {
+      "name": "Qilin",
+      "source": "UNIC",
+      "sourceName": "Unicorn",
+      "match": "alias",
+      "attack": "sons/creatures/unic_attack.wav",
+      "defend": "sons/creatures/unic_defend.wav",
+      "move": "sons/creatures/unic_move.wav",
+      "wince": "sons/creatures/unic_wince.wav"
+    },
+    "214": {
+      "name": "Dragon de cuivre",
+      "source": "RDDR",
+      "sourceName": "Red Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/rddr_attack.wav",
+      "defend": "sons/creatures/rddr_defend.wav",
+      "move": "sons/creatures/rddr_move.wav",
+      "wince": "sons/creatures/rddr_wince.wav"
+    },
+    "215": {
+      "name": "Enchanteresse",
+      "source": "ENCH",
+      "sourceName": "Enchanter",
+      "match": "exact",
+      "attack": "sons/creatures/ench_attack.wav",
+      "defend": "sons/creatures/ench_defend.wav",
+      "move": "sons/creatures/ench_move.wav",
+      "wince": "sons/creatures/ench_wince.wav"
+    },
+    "216": {
+      "name": "Nephilim",
+      "source": "ANGL",
+      "sourceName": "Angel",
+      "match": "alias",
+      "attack": "sons/creatures/angl_attack.wav",
+      "defend": "sons/creatures/angl_defend.wav",
+      "move": "sons/creatures/angl_move.wav",
+      "wince": "sons/creatures/angl_wince.wav"
+    },
+    "217": {
+      "name": "Oracle",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "alias",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "218": {
+      "name": "Lamassu",
+      "source": "GRIF",
+      "sourceName": "Griffin",
+      "match": "alias",
+      "attack": "sons/creatures/grif_attack.wav",
+      "defend": "sons/creatures/grif_defend.wav",
+      "move": "sons/creatures/grif_move.wav",
+      "wince": "sons/creatures/grif_wince.wav"
+    },
+    "219": {
+      "name": "Pyromancien",
+      "source": "FELM",
+      "sourceName": "Fire Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/felm_attack.wav",
+      "defend": "sons/creatures/felm_defend.wav",
+      "move": "sons/creatures/felm_move.wav",
+      "wince": "sons/creatures/felm_wince.wav"
+    },
+    "220": {
+      "name": "Enchanteur",
+      "source": "ENCH",
+      "sourceName": "Enchanter",
+      "match": "alias",
+      "attack": "sons/creatures/ench_attack.wav",
+      "defend": "sons/creatures/ench_defend.wav",
+      "move": "sons/creatures/ench_move.wav",
+      "wince": "sons/creatures/ench_wince.wav"
+    },
+    "221": {
+      "name": "Sleipnir",
+      "source": "CAVA",
+      "sourceName": "Cavalier",
+      "match": "alias",
+      "attack": "sons/creatures/cava_attack.wav",
+      "defend": "sons/creatures/cava_defend.wav",
+      "move": "sons/creatures/cava_move.wav",
+      "wince": "sons/creatures/cava_wince.wav"
+    },
+    "222": {
+      "name": "Norne",
+      "source": "ENCH",
+      "sourceName": "Enchanter",
+      "match": "alias",
+      "attack": "sons/creatures/ench_attack.wav",
+      "defend": "sons/creatures/ench_defend.wav",
+      "move": "sons/creatures/ench_move.wav",
+      "wince": "sons/creatures/ench_wince.wav"
+    },
+    "223": {
+      "name": "Oiseau-tonnerre",
+      "source": "TBRD",
+      "sourceName": "Thunderbird",
+      "match": "alias",
+      "attack": "sons/creatures/tbrd_attack.wav",
+      "defend": "sons/creatures/tbrd_defend.wav",
+      "move": "sons/creatures/tbrd_move.wav",
+      "wince": "sons/creatures/tbrd_wince.wav"
+    },
+    "224": {
+      "name": "Salamandre",
+      "source": "FELM",
+      "sourceName": "Fire Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/felm_attack.wav",
+      "defend": "sons/creatures/felm_defend.wav",
+      "move": "sons/creatures/felm_move.wav",
+      "wince": "sons/creatures/felm_wince.wav"
+    },
+    "225": {
+      "name": "Ensorceleur",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "alias",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "226": {
+      "name": "Simurgh",
+      "source": "PHOE",
+      "sourceName": "Phoenix",
+      "match": "alias",
+      "attack": "sons/creatures/phoe_attack.wav",
+      "defend": "sons/creatures/phoe_defend.wav",
+      "move": "sons/creatures/phoe_move.wav",
+      "wince": "sons/creatures/phoe_wince.wav"
+    },
+    "227": {
+      "name": "Asura",
+      "source": "AAGL",
+      "sourceName": "Archangel",
+      "match": "alias",
+      "attack": "sons/creatures/aagl_attack.wav",
+      "defend": "sons/creatures/aagl_defend.wav",
+      "move": "sons/creatures/aagl_move.wav",
+      "wince": "sons/creatures/aagl_wince.wav"
+    },
+    "228": {
+      "name": "Mage",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "exact",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "229": {
+      "name": "Apsara",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "alias",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "230": {
+      "name": "Illusionniste",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "alias",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "231": {
+      "name": "Péri",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "alias",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "232": {
+      "name": "Yaksha",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "233": {
+      "name": "Chronomancien",
+      "source": "PSYC",
+      "sourceName": "Psychic Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/psyc_attack.wav",
+      "defend": "sons/creatures/psyc_defend.wav",
+      "move": "sons/creatures/psyc_move.wav",
+      "wince": "sons/creatures/psyc_wince.wav"
+    },
+    "234": {
+      "name": "Anzu",
+      "source": "TBRD",
+      "sourceName": "Thunderbird",
+      "match": "alias",
+      "attack": "sons/creatures/tbrd_attack.wav",
+      "defend": "sons/creatures/tbrd_defend.wav",
+      "move": "sons/creatures/tbrd_move.wav",
+      "wince": "sons/creatures/tbrd_wince.wav"
+    },
+    "235": {
+      "name": "Invocateur",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "alias",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "236": {
+      "name": "Mushussu",
+      "source": "AZUR",
+      "sourceName": "Azure Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/azur_attack.wav",
+      "defend": "sons/creatures/azur_defend.wav",
+      "move": "sons/creatures/azur_move.wav",
+      "wince": "sons/creatures/azur_wince.wav"
+    },
+    "237": {
+      "name": "Volva",
+      "source": "HHAG",
+      "sourceName": "Hag",
+      "match": "alias",
+      "attack": "sons/creatures/hhag_attack.wav",
+      "defend": "sons/creatures/hhag_defend.wav",
+      "move": "sons/creatures/hhag_move.wav",
+      "wince": "sons/creatures/hhag_wince.wav"
+    },
+    "238": {
+      "name": "Cryomancien",
+      "source": "ICEL",
+      "sourceName": "Ice Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/icel_attack.wav",
+      "defend": "sons/creatures/icel_defend.wav",
+      "move": "sons/creatures/icel_move.wav",
+      "wince": "sons/creatures/icel_wince.wav"
+    },
+    "239": {
+      "name": "Jann",
+      "source": "GENI",
+      "sourceName": "Genie",
+      "match": "alias",
+      "attack": "sons/creatures/geni_attack.wav",
+      "defend": "sons/creatures/geni_defend.wav",
+      "move": "sons/creatures/geni_move.wav",
+      "wince": "sons/creatures/geni_wince.wav"
+    },
+    "240": {
+      "name": "Sylphe",
+      "source": "AELM",
+      "sourceName": "Air Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/aelm_attack.wav",
+      "defend": "sons/creatures/aelm_defend.wav",
+      "move": "sons/creatures/aelm_move.wav",
+      "wince": "sons/creatures/aelm_wince.wav"
+    },
+    "241": {
+      "name": "Genasi",
+      "source": "ENER",
+      "sourceName": "Energy Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/ener_attack.wav",
+      "defend": "sons/creatures/ener_defend.wav",
+      "move": "sons/creatures/ener_move.wav",
+      "wince": "sons/creatures/ener_wince.wav"
+    },
+    "242": {
+      "name": "Githyanki",
+      "source": "PSYC",
+      "sourceName": "Psychic Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/psyc_attack.wav",
+      "defend": "sons/creatures/psyc_defend.wav",
+      "move": "sons/creatures/psyc_move.wav",
+      "wince": "sons/creatures/psyc_wince.wav"
+    },
+    "243": {
+      "name": "Aarakocra",
+      "source": "HARP",
+      "sourceName": "Harpy",
+      "match": "alias",
+      "attack": "sons/creatures/harp_attack.wav",
+      "defend": "sons/creatures/harp_defend.wav",
+      "move": "sons/creatures/harp_move.wav",
+      "wince": "sons/creatures/harp_wince.wav"
+    },
+    "244": {
+      "name": "Ziz",
+      "source": "ROCC",
+      "sourceName": "Roc",
+      "match": "alias",
+      "attack": "sons/creatures/rocc_attack.wav",
+      "defend": "sons/creatures/rocc_defend.wav",
+      "move": "sons/creatures/rocc_move.wav",
+      "wince": "sons/creatures/rocc_wince.wav"
+    },
+    "245": {
+      "name": "Githzerai",
+      "source": "PSYC",
+      "sourceName": "Psychic Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/psyc_attack.wav",
+      "defend": "sons/creatures/psyc_defend.wav",
+      "move": "sons/creatures/psyc_move.wav",
+      "wince": "sons/creatures/psyc_wince.wav"
+    },
+    "246": {
+      "name": "Augure",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "alias",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "247": {
+      "name": "Thaumaturge",
+      "source": "AMAG",
+      "sourceName": "Archmage",
+      "match": "alias",
+      "attack": "sons/creatures/amag_attack.wav",
+      "defend": "sons/creatures/amag_defend.wav",
+      "move": "sons/creatures/amag_move.wav",
+      "wince": "sons/creatures/amag_wince.wav"
+    },
+    "248": {
+      "name": "Troll",
+      "source": "TRLL",
+      "sourceName": "Troll",
+      "match": "exact",
+      "attack": "sons/creatures/trll_attack.wav",
+      "defend": "sons/creatures/trll_defend.wav",
+      "move": "sons/creatures/trll_move.wav",
+      "wince": "sons/creatures/trll_wince.wav"
+    },
+    "249": {
+      "name": "Géant",
+      "source": "CYCL",
+      "sourceName": "Cyclops",
+      "match": "alias",
+      "attack": "sons/creatures/cycl_attack.wav",
+      "defend": "sons/creatures/cycl_defend.wav",
+      "move": "sons/creatures/cycl_move.wav",
+      "wince": "sons/creatures/cycl_wince.wav"
+    },
+    "250": {
+      "name": "Yéti",
+      "source": "ICEL",
+      "sourceName": "Ice Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/icel_attack.wav",
+      "defend": "sons/creatures/icel_defend.wav",
+      "move": "sons/creatures/icel_move.wav",
+      "wince": "sons/creatures/icel_wince.wav"
+    },
+    "251": {
+      "name": "Ogre",
+      "source": "OGRE",
+      "sourceName": "Ogre",
+      "match": "exact",
+      "attack": "sons/creatures/ogre_attack.wav",
+      "defend": "sons/creatures/ogre_defend.wav",
+      "move": "sons/creatures/ogre_move.wav",
+      "wince": "sons/creatures/ogre_wince.wav"
+    },
+    "252": {
+      "name": "Cyclope",
+      "source": "CYCL",
+      "sourceName": "Cyclops",
+      "match": "alias",
+      "attack": "sons/creatures/cycl_attack.wav",
+      "defend": "sons/creatures/cycl_defend.wav",
+      "move": "sons/creatures/cycl_move.wav",
+      "wince": "sons/creatures/cycl_wince.wav"
+    },
+    "253": {
+      "name": "Fenrir",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "254": {
+      "name": "Sasquatch",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "255": {
+      "name": "Wyrm",
+      "source": "WYVN",
+      "sourceName": "Wyvern",
+      "match": "alias",
+      "attack": "sons/creatures/wyvn_attack.wav",
+      "defend": "sons/creatures/wyvn_defend.wav",
+      "move": "sons/creatures/wyvn_move.wav",
+      "wince": "sons/creatures/wyvn_wince.wav"
+    },
+    "256": {
+      "name": "Grendel",
+      "source": "OGRE",
+      "sourceName": "Ogre",
+      "match": "alias",
+      "attack": "sons/creatures/ogre_attack.wav",
+      "defend": "sons/creatures/ogre_defend.wav",
+      "move": "sons/creatures/ogre_move.wav",
+      "wince": "sons/creatures/ogre_wince.wav"
+    },
+    "257": {
+      "name": "Jotunn",
+      "source": "CYCL",
+      "sourceName": "Cyclops",
+      "match": "alias",
+      "attack": "sons/creatures/cycl_attack.wav",
+      "defend": "sons/creatures/cycl_defend.wav",
+      "move": "sons/creatures/cycl_move.wav",
+      "wince": "sons/creatures/cycl_wince.wav"
+    },
+    "258": {
+      "name": "Yuki-onna",
+      "source": "ICEL",
+      "sourceName": "Ice Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/icel_attack.wav",
+      "defend": "sons/creatures/icel_defend.wav",
+      "move": "sons/creatures/icel_move.wav",
+      "wince": "sons/creatures/icel_wince.wav"
+    },
+    "259": {
+      "name": "Roc",
+      "source": "ROCC",
+      "sourceName": "Roc",
+      "match": "exact",
+      "attack": "sons/creatures/rocc_attack.wav",
+      "defend": "sons/creatures/rocc_defend.wav",
+      "move": "sons/creatures/rocc_move.wav",
+      "wince": "sons/creatures/rocc_wince.wav"
+    },
+    "260": {
+      "name": "Lindworm",
+      "source": "WYVN",
+      "sourceName": "Wyvern",
+      "match": "alias",
+      "attack": "sons/creatures/wyvn_attack.wav",
+      "defend": "sons/creatures/wyvn_defend.wav",
+      "move": "sons/creatures/wyvn_move.wav",
+      "wince": "sons/creatures/wyvn_wince.wav"
+    },
+    "261": {
+      "name": "Tarasque",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "262": {
+      "name": "Zmey",
+      "source": "GRDR",
+      "sourceName": "Green Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/grdr_attack.wav",
+      "defend": "sons/creatures/grdr_defend.wav",
+      "move": "sons/creatures/grdr_move.wav",
+      "wince": "sons/creatures/grdr_wince.wav"
+    },
+    "263": {
+      "name": "Géant des glaces",
+      "source": "ICEL",
+      "sourceName": "Ice Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/icel_attack.wav",
+      "defend": "sons/creatures/icel_defend.wav",
+      "move": "sons/creatures/icel_move.wav",
+      "wince": "sons/creatures/icel_wince.wav"
+    },
+    "264": {
+      "name": "Oréade",
+      "source": "EELM",
+      "sourceName": "Earth Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/eelm_attack.wav",
+      "defend": "sons/creatures/eelm_defend.wav",
+      "move": "sons/creatures/eelm_move.wav",
+      "wince": "sons/creatures/eelm_wince.wav"
+    },
+    "265": {
+      "name": "Fomorien",
+      "source": "CYCL",
+      "sourceName": "Cyclops",
+      "match": "alias",
+      "attack": "sons/creatures/cycl_attack.wav",
+      "defend": "sons/creatures/cycl_defend.wav",
+      "move": "sons/creatures/cycl_move.wav",
+      "wince": "sons/creatures/cycl_wince.wav"
+    },
+    "266": {
+      "name": "Ettin",
+      "source": "OGRE",
+      "sourceName": "Ogre",
+      "match": "alias",
+      "attack": "sons/creatures/ogre_attack.wav",
+      "defend": "sons/creatures/ogre_defend.wav",
+      "move": "sons/creatures/ogre_move.wav",
+      "wince": "sons/creatures/ogre_wince.wav"
+    },
+    "267": {
+      "name": "Goliath",
+      "source": "CYCL",
+      "sourceName": "Cyclops",
+      "match": "alias",
+      "attack": "sons/creatures/cycl_attack.wav",
+      "defend": "sons/creatures/cycl_defend.wav",
+      "move": "sons/creatures/cycl_move.wav",
+      "wince": "sons/creatures/cycl_wince.wav"
+    },
+    "268": {
+      "name": "Hécatonchire",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "269": {
+      "name": "Amarok",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "270": {
+      "name": "Barbegazi",
+      "source": "ICEL",
+      "sourceName": "Ice Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/icel_attack.wav",
+      "defend": "sons/creatures/icel_defend.wav",
+      "move": "sons/creatures/icel_move.wav",
+      "wince": "sons/creatures/icel_wince.wav"
+    },
+    "271": {
+      "name": "Sorcière",
+      "source": "HHAG",
+      "sourceName": "Hag",
+      "match": "alias",
+      "attack": "sons/creatures/hhag_attack.wav",
+      "defend": "sons/creatures/hhag_defend.wav",
+      "move": "sons/creatures/hhag_move.wav",
+      "wince": "sons/creatures/hhag_wince.wav"
+    },
+    "272": {
+      "name": "Loup-garou",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "273": {
+      "name": "Fée",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "alias",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "274": {
+      "name": "Leprechaun",
+      "source": "HALF",
+      "sourceName": "Halfling",
+      "match": "alias",
+      "attack": "sons/creatures/half_attack.wav",
+      "defend": "sons/creatures/half_defend.wav",
+      "move": "sons/creatures/half_move.wav",
+      "wince": "sons/creatures/half_wince.wav"
+    },
+    "275": {
+      "name": "Sorcier",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "alias",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "276": {
+      "name": "Baba Yaga",
+      "source": "HHAG",
+      "sourceName": "Hag",
+      "match": "alias",
+      "attack": "sons/creatures/hhag_attack.wav",
+      "defend": "sons/creatures/hhag_defend.wav",
+      "move": "sons/creatures/hhag_move.wav",
+      "wince": "sons/creatures/hhag_wince.wav"
+    },
+    "277": {
+      "name": "Kitsune",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "278": {
+      "name": "Lycanthrope",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "279": {
+      "name": "Mandragore",
+      "source": "DHDM",
+      "sourceName": "Dendroid",
+      "match": "alias",
+      "attack": "sons/creatures/dhdm_attack.wav",
+      "defend": "sons/creatures/dhdm_defend.wav",
+      "move": "sons/creatures/dhdm_move.wav",
+      "wince": "sons/creatures/dhdm_wince.wav"
+    },
+    "280": {
+      "name": "Tanuki",
+      "source": "BOAR",
+      "sourceName": "Boar",
+      "match": "alias",
+      "attack": "sons/creatures/boar_attack.wav",
+      "defend": "sons/creatures/boar_defend.wav",
+      "move": "sons/creatures/boar_move.wav",
+      "wince": "sons/creatures/boar_wince.wav"
+    },
+    "281": {
+      "name": "Pixie",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "exact",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "282": {
+      "name": "Yokai",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "283": {
+      "name": "Nekomata",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "284": {
+      "name": "Jabberwock",
+      "source": "CHYD",
+      "sourceName": "Chaos Hydra",
+      "match": "alias",
+      "attack": "sons/creatures/chyd_attack.wav",
+      "defend": "sons/creatures/chyd_defend.wav",
+      "move": "sons/creatures/chyd_move.wav",
+      "wince": "sons/creatures/chyd_wince.wav"
+    },
+    "285": {
+      "name": "Tengu",
+      "source": "HARP",
+      "sourceName": "Harpy",
+      "match": "alias",
+      "attack": "sons/creatures/harp_attack.wav",
+      "defend": "sons/creatures/harp_defend.wav",
+      "move": "sons/creatures/harp_move.wav",
+      "wince": "sons/creatures/harp_wince.wav"
+    },
+    "286": {
+      "name": "Baku",
+      "source": "MANT",
+      "sourceName": "Manticore",
+      "match": "alias",
+      "attack": "sons/creatures/mant_attack.wav",
+      "defend": "sons/creatures/mant_defend.wav",
+      "move": "sons/creatures/mant_move.wav",
+      "wince": "sons/creatures/mant_wince.wav"
+    },
+    "287": {
+      "name": "Changeling",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "288": {
+      "name": "Sprite",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "exact",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "289": {
+      "name": "Chaman",
+      "source": "MGEL",
+      "sourceName": "Mage",
+      "match": "alias",
+      "attack": "sons/creatures/mgel_attack.wav",
+      "defend": "sons/creatures/mgel_defend.wav",
+      "move": "sons/creatures/mgel_move.wav",
+      "wince": "sons/creatures/mgel_wince.wav"
+    },
+    "290": {
+      "name": "Rokurokubi",
+      "source": "HHAG",
+      "sourceName": "Hag",
+      "match": "alias",
+      "attack": "sons/creatures/hhag_attack.wav",
+      "defend": "sons/creatures/hhag_defend.wav",
+      "move": "sons/creatures/hhag_move.wav",
+      "wince": "sons/creatures/hhag_wince.wav"
+    },
+    "291": {
+      "name": "Nymphe",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "292": {
+      "name": "Guenaude",
+      "source": "HHAG",
+      "sourceName": "Hag",
+      "match": "alias",
+      "attack": "sons/creatures/hhag_attack.wav",
+      "defend": "sons/creatures/hhag_defend.wav",
+      "move": "sons/creatures/hhag_move.wav",
+      "wince": "sons/creatures/hhag_wince.wav"
+    },
+    "293": {
+      "name": "Pooka",
+      "source": "BOAR",
+      "sourceName": "Boar",
+      "match": "alias",
+      "attack": "sons/creatures/boar_attack.wav",
+      "defend": "sons/creatures/boar_defend.wav",
+      "move": "sons/creatures/boar_move.wav",
+      "wince": "sons/creatures/boar_wince.wav"
+    },
+    "294": {
+      "name": "Sidhe",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "295": {
+      "name": "Lutin",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "alias",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "296": {
+      "name": "Spriggan",
+      "source": "DHDM",
+      "sourceName": "Dendroid",
+      "match": "alias",
+      "attack": "sons/creatures/dhdm_attack.wav",
+      "defend": "sons/creatures/dhdm_defend.wav",
+      "move": "sons/creatures/dhdm_move.wav",
+      "wince": "sons/creatures/dhdm_wince.wav"
+    },
+    "297": {
+      "name": "Fée-dragon",
+      "source": "FAER",
+      "sourceName": "Fairy Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/faer_attack.wav",
+      "defend": "sons/creatures/faer_defend.wav",
+      "move": "sons/creatures/faer_move.wav",
+      "wince": "sons/creatures/faer_wince.wav"
+    },
+    "298": {
+      "name": "Huldra",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "299": {
+      "name": "Mara",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "300": {
+      "name": "Korrigan",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "alias",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "301": {
+      "name": "Bête du Gévaudan",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "302": {
+      "name": "Tabaxi",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "303": {
+      "name": "Farfadet",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "alias",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "304": {
+      "name": "Vila",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "305": {
+      "name": "Croquemitaine",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "306": {
+      "name": "Cu-sith",
+      "source": "HHND",
+      "sourceName": "Hell Hound",
+      "match": "alias",
+      "attack": "sons/creatures/hhnd_attack.wav",
+      "defend": "sons/creatures/hhnd_defend.wav",
+      "move": "sons/creatures/hhnd_move.wav",
+      "wince": "sons/creatures/hhnd_wince.wav"
+    },
+    "307": {
+      "name": "Bucca",
+      "source": "PIXI",
+      "sourceName": "Pixie",
+      "match": "alias",
+      "attack": "sons/creatures/pixi_attack.wav",
+      "defend": "sons/creatures/pixi_defend.wav",
+      "move": "sons/creatures/pixi_move.wav",
+      "wince": "sons/creatures/pixi_wince.wav"
+    },
+    "308": {
+      "name": "Kraken",
+      "source": "SGRG",
+      "sourceName": "Sea Serpent",
+      "match": "alias",
+      "attack": "sons/creatures/sgrg_attack.wav",
+      "defend": "sons/creatures/sgrg_defend.wav",
+      "move": "sons/creatures/sgrg_move.wav",
+      "wince": "sons/creatures/sgrg_wince.wav"
+    },
+    "309": {
+      "name": "Léviathan",
+      "source": "SGRG",
+      "sourceName": "Sea Serpent",
+      "match": "alias",
+      "attack": "sons/creatures/sgrg_attack.wav",
+      "defend": "sons/creatures/sgrg_defend.wav",
+      "move": "sons/creatures/sgrg_move.wav",
+      "wince": "sons/creatures/sgrg_wince.wav"
+    },
+    "310": {
+      "name": "Hydre",
+      "source": "HYDR",
+      "sourceName": "Hydra",
+      "match": "alias",
+      "attack": "sons/creatures/hydr_attack.wav",
+      "defend": "sons/creatures/hydr_defend.wav",
+      "move": "sons/creatures/hydr_move.wav",
+      "wince": "sons/creatures/hydr_wince.wav"
+    },
+    "311": {
+      "name": "Jormungandr",
+      "source": "SGRG",
+      "sourceName": "Sea Serpent",
+      "match": "alias",
+      "attack": "sons/creatures/sgrg_attack.wav",
+      "defend": "sons/creatures/sgrg_defend.wav",
+      "move": "sons/creatures/sgrg_move.wav",
+      "wince": "sons/creatures/sgrg_wince.wav"
+    },
+    "312": {
+      "name": "Kappa",
+      "source": "TROG",
+      "sourceName": "Troglodyte",
+      "match": "alias",
+      "attack": "sons/creatures/trog_attack.wav",
+      "defend": "sons/creatures/trog_defend.wav",
+      "move": "sons/creatures/trog_move.wav",
+      "wince": "sons/creatures/trog_wince.wav"
+    },
+    "313": {
+      "name": "Dragon noir",
+      "source": "BHDR",
+      "sourceName": "Black Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/bhdr_attack.wav",
+      "defend": "sons/creatures/bhdr_defend.wav",
+      "move": "sons/creatures/bhdr_move.wav",
+      "wince": "sons/creatures/bhdr_wince.wav"
+    },
+    "314": {
+      "name": "Sirène",
+      "source": "SPRT",
+      "sourceName": "Sprite",
+      "match": "alias",
+      "attack": "sons/creatures/sprt_attack.wav",
+      "defend": "sons/creatures/sprt_defend.wav",
+      "move": "sons/creatures/sprt_move.wav",
+      "wince": "sons/creatures/sprt_wince.wav"
+    },
+    "315": {
+      "name": "Dragon marin",
+      "source": "SGRG",
+      "sourceName": "Sea Serpent",
+      "match": "alias",
+      "attack": "sons/creatures/sgrg_attack.wav",
+      "defend": "sons/creatures/sgrg_defend.wav",
+      "move": "sons/creatures/sgrg_move.wav",
+      "wince": "sons/creatures/sgrg_wince.wav"
+    },
+    "316": {
+      "name": "Dragon de bronze",
+      "source": "AZUR",
+      "sourceName": "Azure Dragon",
+      "match": "alias",
+      "attack": "sons/creatures/azur_attack.wav",
+      "defend": "sons/creatures/azur_defend.wav",
+      "move": "sons/creatures/azur_move.wav",
+      "wince": "sons/creatures/azur_wince.wav"
+    },
+    "317": {
+      "name": "Kelpie",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "318": {
+      "name": "Naga",
+      "source": "NSEN",
+      "sourceName": "Naga",
+      "match": "exact",
+      "attack": "sons/creatures/nsen_attack.wav",
+      "defend": "sons/creatures/nsen_defend.wav",
+      "move": "sons/creatures/nsen_move.wav",
+      "wince": "sons/creatures/nsen_wince.wav"
+    },
+    "319": {
+      "name": "Scylla",
+      "source": "SGRG",
+      "sourceName": "Sea Serpent",
+      "match": "alias",
+      "attack": "sons/creatures/sgrg_attack.wav",
+      "defend": "sons/creatures/sgrg_defend.wav",
+      "move": "sons/creatures/sgrg_move.wav",
+      "wince": "sons/creatures/sgrg_wince.wav"
+    },
+    "320": {
+      "name": "Rusalka",
+      "source": "WRTH",
+      "sourceName": "Wraith",
+      "match": "alias",
+      "attack": "sons/creatures/wrth_attack.wav",
+      "defend": "sons/creatures/wrth_defend.wav",
+      "move": "sons/creatures/wrth_move.wav",
+      "wince": "sons/creatures/wrth_wince.wav"
+    },
+    "321": {
+      "name": "Mélusine",
+      "source": "NSEN",
+      "sourceName": "Naga",
+      "match": "alias",
+      "attack": "sons/creatures/nsen_attack.wav",
+      "defend": "sons/creatures/nsen_defend.wav",
+      "move": "sons/creatures/nsen_move.wav",
+      "wince": "sons/creatures/nsen_wince.wav"
+    },
+    "322": {
+      "name": "Selkie",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "323": {
+      "name": "Triton",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "324": {
+      "name": "Yuan-ti",
+      "source": "NSEN",
+      "sourceName": "Naga",
+      "match": "alias",
+      "attack": "sons/creatures/nsen_attack.wav",
+      "defend": "sons/creatures/nsen_defend.wav",
+      "move": "sons/creatures/nsen_move.wav",
+      "wince": "sons/creatures/nsen_wince.wav"
+    },
+    "325": {
+      "name": "Homme-lézard",
+      "source": "ALIZ",
+      "sourceName": "Alizard",
+      "match": "alias",
+      "attack": "sons/creatures/aliz_attack.wav",
+      "defend": "sons/creatures/aliz_defend.wav",
+      "move": "sons/creatures/aliz_move.wav",
+      "wince": "sons/creatures/aliz_wince.wav"
+    },
+    "326": {
+      "name": "Naiade",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "327": {
+      "name": "Ondine",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "328": {
+      "name": "Hippocampe",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "329": {
+      "name": "Néréide",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "330": {
+      "name": "Marid",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "331": {
+      "name": "Grindylow",
+      "source": "TROG",
+      "sourceName": "Troglodyte",
+      "match": "alias",
+      "attack": "sons/creatures/trog_attack.wav",
+      "defend": "sons/creatures/trog_defend.wav",
+      "move": "sons/creatures/trog_move.wav",
+      "wince": "sons/creatures/trog_wince.wav"
+    },
+    "332": {
+      "name": "Nixe",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "333": {
+      "name": "Sahuagin",
+      "source": "TROG",
+      "sourceName": "Troglodyte",
+      "match": "alias",
+      "attack": "sons/creatures/trog_attack.wav",
+      "defend": "sons/creatures/trog_defend.wav",
+      "move": "sons/creatures/trog_move.wav",
+      "wince": "sons/creatures/trog_wince.wav"
+    },
+    "334": {
+      "name": "Vodyanoi",
+      "source": "WELM",
+      "sourceName": "Water Elemental",
+      "match": "alias",
+      "attack": "sons/creatures/welm_attack.wav",
+      "defend": "sons/creatures/welm_defend.wav",
+      "move": "sons/creatures/welm_move.wav",
+      "wince": "sons/creatures/welm_wince.wav"
+    },
+    "335": {
+      "name": "Kuo-toa",
+      "source": "TROG",
+      "sourceName": "Troglodyte",
+      "match": "alias",
+      "attack": "sons/creatures/trog_attack.wav",
+      "defend": "sons/creatures/trog_defend.wav",
+      "move": "sons/creatures/trog_move.wav",
+      "wince": "sons/creatures/trog_wince.wav"
+    },
+    "336": {
+      "name": "Aspidochelone",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "337": {
+      "name": "Lusca",
+      "source": "SGRG",
+      "sourceName": "Sea Serpent",
+      "match": "alias",
+      "attack": "sons/creatures/sgrg_attack.wav",
+      "defend": "sons/creatures/sgrg_defend.wav",
+      "move": "sons/creatures/sgrg_move.wav",
+      "wince": "sons/creatures/sgrg_wince.wav"
+    },
+    "338": {
+      "name": "Peluda",
+      "source": "WYVN",
+      "sourceName": "Wyvern",
+      "match": "alias",
+      "attack": "sons/creatures/wyvn_attack.wav",
+      "defend": "sons/creatures/wyvn_defend.wav",
+      "move": "sons/creatures/wyvn_move.wav",
+      "wince": "sons/creatures/wyvn_wince.wav"
+    },
+    "339": {
+      "name": "Aboleth",
+      "source": "EVLI",
+      "sourceName": "Evil Eye",
+      "match": "alias",
+      "attack": "sons/creatures/evli_attack.wav",
+      "defend": "sons/creatures/evli_defend.wav",
+      "move": "sons/creatures/evli_move.wav",
+      "wince": "sons/creatures/evli_wince.wav"
+    },
+    "340": {
+      "name": "Catoblépas",
+      "source": "BMTH",
+      "sourceName": "Behemoth",
+      "match": "alias",
+      "attack": "sons/creatures/bmth_attack.wav",
+      "defend": "sons/creatures/bmth_defend.wav",
+      "move": "sons/creatures/bmth_move.wav",
+      "wince": "sons/creatures/bmth_wince.wav"
+    },
+    "341": {
+      "name": "Chuul",
+      "source": "TROG",
+      "sourceName": "Troglodyte",
+      "match": "alias",
+      "attack": "sons/creatures/trog_attack.wav",
+      "defend": "sons/creatures/trog_defend.wav",
+      "move": "sons/creatures/trog_move.wav",
+      "wince": "sons/creatures/trog_wince.wav"
+    }
+  }
+}

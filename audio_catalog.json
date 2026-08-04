@@ -1,0 +1,6592 @@
+{
+  "metadata": {
+    "total_files": 1165,
+    "source": "",
+    "formats": [
+      "wav",
+      "mp3"
+    ],
+    "by_category": {
+      "creatures": 763,
+      "spells": 31,
+      "battle": 78,
+      "ui": 214,
+      "music": 79
+    }
+  },
+  "creatures": {
+    "AAGL": {
+      "name": "Archangel",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/aagl_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/aagl_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/aagl_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/aagl_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/aagl_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ABVO": {
+      "name": "ABVO",
+      "sounds": {
+        "extended": {
+          "action_name": "extended",
+          "file": "sons/creatures/abvo_extended.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ADVL": {
+      "name": "Archdevil",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/advl_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/advl_defend.wav",
+          "format": "wav"
+        },
+        "EXT1": {
+          "action_name": "special_1",
+          "file": "sons/creatures/advl_special_1.wav",
+          "format": "wav"
+        },
+        "EXT2": {
+          "action_name": "special_2",
+          "file": "sons/creatures/advl_special_2.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/advl_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/advl_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/advl_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "AELM": {
+      "name": "Air Elemental",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/aelm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/aelm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/aelm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/aelm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/aelm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "AGRM": {
+      "name": "Archer",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/agrm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/agrm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/agrm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/agrm_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/agrm_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/agrm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ALIZ": {
+      "name": "Alizard",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/aliz_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/aliz_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/aliz_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/aliz_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/aliz_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/aliz_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "AMAG": {
+      "name": "Archmage",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/amag_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/amag_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/amag_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/amag_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/amag_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/amag_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ANGL": {
+      "name": "Angel",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/angl_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/angl_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/angl_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/angl_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/angl_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "APEG": {
+      "name": "Pegasus",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/apeg_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/apeg_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/apeg_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/apeg_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/apeg_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "AZUR": {
+      "name": "Azure Dragon",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/azur_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/azur_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/azur_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/azur_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/azur_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BALL": {
+      "name": "Ballista",
+      "sounds": {
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ball_death.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/ball_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ball_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BASL": {
+      "name": "Basilisk",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/basl_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/basl_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/basl_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/basl_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/basl_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BDRF": {
+      "name": "Dwarfs",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/bdrf_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/bdrf_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/bdrf_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/bdrf_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/bdrf_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BGOR": {
+      "name": "Gorgon",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/bgor_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/bgor_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/bgor_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/bgor_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/bgor_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BHDR": {
+      "name": "Black Dragon",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/bhdr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/bhdr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/bhdr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/bhdr_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/bhdr_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/bhdr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BKDR": {
+      "name": "Red Dragon",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/bkdr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/bkdr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/bkdr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/bkdr_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/bkdr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BKNT": {
+      "name": "Black Knight",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/bknt_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/bknt_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/bknt_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/bknt_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/bknt_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BLRD": {
+      "name": "Lord",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/blrd_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/blrd_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/blrd_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/blrd_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/blrd_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BMTH": {
+      "name": "Behemoth",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/bmth_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/bmth_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/bmth_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/bmth_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/bmth_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BOAR": {
+      "name": "Boar",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/boar_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/boar_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/boar_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/boar_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/boar_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BODR": {
+      "name": "Gold Dragon",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/bodr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/bodr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/bodr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/bodr_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/bodr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "BTRE": {
+      "name": "Battle Dwarf",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/btre_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/btre_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/btre_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/btre_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/btre_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CALF": {
+      "name": "Cavalier",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/calf_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/calf_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/calf_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/calf_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/calf_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/calf_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CART": {
+      "name": "Caravan",
+      "sounds": {
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/cart_death.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/cart_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CATA": {
+      "name": "Catapult",
+      "sounds": {
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/cata_death.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/cata_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/cata_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CAVA": {
+      "name": "Cavalier",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/cava_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/cava_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/cava_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/cava_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/cava_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CCYC": {
+      "name": "Cyclop",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ccyc_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ccyc_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ccyc_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ccyc_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/ccyc_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ccyc_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CERB": {
+      "name": "Cerberus",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/cerb_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/cerb_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/cerb_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/cerb_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/cerb_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CGOR": {
+      "name": "Gorgon",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/cgor_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/cgor_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/cgor_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/cgor_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/cgor_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CHMP": {
+      "name": "Champion",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/chmp_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/chmp_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/chmp_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/chmp_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/chmp_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CHYD": {
+      "name": "CHYD",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/chyd_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/chyd_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/chyd_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/chyd_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/chyd_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CNTR": {
+      "name": "Centaur",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/cntr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/cntr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/cntr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/cntr_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/cntr_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/cntr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CRUS": {
+      "name": "Crusader",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/crus_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/crus_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/crus_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/crus_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/crus_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CRYS": {
+      "name": "CRYS",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/crys_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/crys_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/crys_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/crys_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/crys_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "CYCL": {
+      "name": "Cyclops",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/cycl_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/cycl_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/cycl_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/cycl_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/cycl_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/cycl_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "DEVL": {
+      "name": "Devil",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/devl_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/devl_defend.wav",
+          "format": "wav"
+        },
+        "EXT1": {
+          "action_name": "special_1",
+          "file": "sons/creatures/devl_special_1.wav",
+          "format": "wav"
+        },
+        "EXT2": {
+          "action_name": "special_2",
+          "file": "sons/creatures/devl_special_2.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/devl_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/devl_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/devl_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "DFLY": {
+      "name": "DFLY",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/dfly_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/dfly_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/dfly_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/dfly_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/dfly_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "DGLM": {
+      "name": "DGLM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/dglm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/dglm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/dglm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/dglm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/dglm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "DHDM": {
+      "name": "DHDM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/dhdm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/dhdm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/dhdm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/dhdm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/dhdm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "DWRF": {
+      "name": "DWRF",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/dwrf_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/dwrf_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/dwrf_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/dwrf_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/dwrf_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ECNT": {
+      "name": "ECNT",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ecnt_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ecnt_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ecnt_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ecnt_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ecnt_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "EELM": {
+      "name": "EELM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/eelm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/eelm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/eelm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/eelm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/eelm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "EFRT": {
+      "name": "EFRT",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/efrt_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/efrt_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/efrt_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/efrt_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/efrt_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ENCH": {
+      "name": "Enchanter",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ench_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ench_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ench_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ench_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/ench_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ench_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ENER": {
+      "name": "ENER",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ener_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ener_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ener_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ener_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ener_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ESUL": {
+      "name": "Sultan",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/esul_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/esul_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/esul_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/esul_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/esul_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/esul_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "EVLI": {
+      "name": "Evil Eye",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/evli_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/evli_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/evli_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/evli_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/evli_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/evli_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "FAER": {
+      "name": "Fairy Dragon",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/faer_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/faer_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/faer_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/faer_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/faer_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/faer_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "FAID": {
+      "name": "FAID",
+      "sounds": {
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/faid_death.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/faid_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "FDFL": {
+      "name": "Firebird",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/fdfl_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/fdfl_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/fdfl_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/fdfl_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/fdfl_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/fdfl_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "FELM": {
+      "name": "FELM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/felm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/felm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/felm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/felm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/felm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "FIRB": {
+      "name": "FIRB",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/firb_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/firb_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/firb_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/firb_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/firb_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "FMLR": {
+      "name": "FMLR",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/fmlr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/fmlr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/fmlr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/fmlr_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/fmlr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GBAS": {
+      "name": "GBAS",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/gbas_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/gbas_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/gbas_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/gbas_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/gbas_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GBLN": {
+      "name": "GBLN",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/gbln_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/gbln_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/gbln_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/gbln_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/gbln_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GELF": {
+      "name": "Grand Elf",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/gelf_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/gelf_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/gelf_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/gelf_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/gelf_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/gelf_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GENI": {
+      "name": "GENI",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/geni_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/geni_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/geni_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/geni_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/geni_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GGLM": {
+      "name": "GGLM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/gglm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/gglm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/gglm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/gglm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/gglm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GHDR": {
+      "name": "GHDR",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ghdr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ghdr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ghdr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ghdr_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ghdr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GNLM": {
+      "name": "GNLM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/gnlm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/gnlm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/gnlm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/gnlm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/gnlm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GNOL": {
+      "name": "GNOL",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/gnol_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/gnol_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/gnol_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/gnol_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/gnol_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GODR": {
+      "name": "GODR",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/godr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/godr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/godr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/godr_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/godr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GOGG": {
+      "name": "Gog",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/gogg_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/gogg_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/gogg_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/gogg_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/gogg_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/gogg_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GRDR": {
+      "name": "GRDR",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/grdr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/grdr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/grdr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/grdr_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/grdr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GRIF": {
+      "name": "Griffin",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/grif_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/grif_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/grif_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/grif_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/grif_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GTIT": {
+      "name": "Titan",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/gtit_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/gtit_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/gtit_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/gtit_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/gtit_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/gtit_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "GWRD": {
+      "name": "GWRD",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/gwrd_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/gwrd_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/gwrd_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/gwrd_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/gwrd_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "HALB": {
+      "name": "HALB",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/halb_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/halb_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/halb_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/halb_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/halb_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "HALF": {
+      "name": "Halfling",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/half_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/half_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/half_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/half_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/half_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/half_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "HARP": {
+      "name": "HARP",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/harp_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/harp_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/harp_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/harp_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/harp_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "HCRS": {
+      "name": "Crossbowman",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/hcrs_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/hcrs_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/hcrs_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/hcrs_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/hcrs_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/hcrs_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "HGOB": {
+      "name": "HGOB",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/hgob_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/hgob_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/hgob_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/hgob_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/hgob_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "HGWR": {
+      "name": "HGWR",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/hgwr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/hgwr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/hgwr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/hgwr_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/hgwr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "HHAG": {
+      "name": "Hag",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/hhag_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/hhag_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/hhag_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/hhag_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/hhag_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/hhag_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "HHND": {
+      "name": "HHND",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/hhnd_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/hhnd_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/hhnd_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/hhnd_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/hhnd_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "HYDR": {
+      "name": "Hydra",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/hydr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/hydr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/hydr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/hydr_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/hydr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ICEL": {
+      "name": "Ice Elemental",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/icel_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/icel_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/icel_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/icel_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/icel_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/icel_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "IGLM": {
+      "name": "IGLM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/iglm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/iglm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/iglm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/iglm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/iglm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "IMPP": {
+      "name": "IMPP",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/impp_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/impp_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/impp_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/impp_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/impp_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ITRG": {
+      "name": "ITRG",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/itrg_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/itrg_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/itrg_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/itrg_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/itrg_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "KEEP": {
+      "name": "KEEP",
+      "sounds": {
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/keep_shoot.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "LAND": {
+      "name": "LAND",
+      "sounds": {
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/land_death.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "LCRS": {
+      "name": "Sharpshooter",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/lcrs_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/lcrs_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/lcrs_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/lcrs_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/lcrs_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/lcrs_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "LICH": {
+      "name": "Lich",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/lich_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/lich_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/lich_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/lich_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/lich_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/lich_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "LTIT": {
+      "name": "LTIT",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ltit_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ltit_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ltit_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ltit_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ltit_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MAGE": {
+      "name": "Mage",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/mage_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/mage_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/mage_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/mage_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/mage_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/mage_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MAGM": {
+      "name": "MAGM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/magm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/magm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/magm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/magm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/magm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MANT": {
+      "name": "Manticore",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/mant_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/mant_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/mant_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/mant_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/mant_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/mant_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MEDQ": {
+      "name": "Medusa Queen",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/medq_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/medq_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/medq_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/medq_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/medq_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/medq_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MEDU": {
+      "name": "Medusa",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/medu_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/medu_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/medu_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/medu_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/medu_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/medu_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MGEL": {
+      "name": "MGEL",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/mgel_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/mgel_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/mgel_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/mgel_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/mgel_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MGOG": {
+      "name": "Magog",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/mgog_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/mgog_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/mgog_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/mgog_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/mgog_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/mgog_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MGRM": {
+      "name": "Gremel",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/mgrm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/mgrm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/mgrm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/mgrm_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/mgrm_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/mgrm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MINK": {
+      "name": "Minotaur King",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/mink_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/mink_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/mink_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/mink_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/mink_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/mink_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MINO": {
+      "name": "Minotaur",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/mino_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/mino_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/mino_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/mino_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/mino_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MONK": {
+      "name": "Monk",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/monk_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/monk_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/monk_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/monk_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/monk_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/monk_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "MUMY": {
+      "name": "Mummy",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/mumy_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/mumy_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/mumy_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/mumy_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/mumy_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "NGRD": {
+      "name": "NGRD",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ngrd_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ngrd_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ngrd_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ngrd_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ngrd_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "NMAD": {
+      "name": "NMAD",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/nmad_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/nmad_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/nmad_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/nmad_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/nmad_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "NOSF": {
+      "name": "Nosferatu",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/nosf_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/nosf_defend.wav",
+          "format": "wav"
+        },
+        "EXT1": {
+          "action_name": "special_1",
+          "file": "sons/creatures/nosf_special_1.wav",
+          "format": "wav"
+        },
+        "EXT2": {
+          "action_name": "special_2",
+          "file": "sons/creatures/nosf_special_2.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/nosf_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/nosf_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/nosf_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/nosf_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "NSEN": {
+      "name": "NSEN",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/nsen_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/nsen_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/nsen_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/nsen_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/nsen_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "OGRE": {
+      "name": "Ogre",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ogre_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ogre_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ogre_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ogre_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ogre_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "OGRG": {
+      "name": "OGRG",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ogrg_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ogrg_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ogrg_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ogrg_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ogrg_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "OGRM": {
+      "name": "OGRM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ogrm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ogrm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ogrm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ogrm_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/ogrm_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ogrm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "OORC": {
+      "name": "OORC",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/oorc_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/oorc_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/oorc_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/oorc_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/oorc_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/oorc_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ORCC": {
+      "name": "ORCC",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/orcc_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/orcc_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/orcc_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/orcc_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/orcc_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/orcc_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PEGA": {
+      "name": "PEGA",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/pega_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/pega_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/pega_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/pega_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/pega_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PFND": {
+      "name": "PFND",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/pfnd_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/pfnd_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/pfnd_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/pfnd_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/pfnd_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PFOE": {
+      "name": "PFOE",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/pfoe_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/pfoe_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/pfoe_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/pfoe_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/pfoe_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PHOE": {
+      "name": "Phoenix",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/phoe_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/phoe_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/phoe_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/phoe_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/phoe_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PIKE": {
+      "name": "Pikeman",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/pike_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/pike_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/pike_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/pike_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/pike_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PIXI": {
+      "name": "PIXI",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/pixi_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/pixi_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/pixi_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/pixi_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/pixi_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PLCH": {
+      "name": "PLCH",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/plch_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/plch_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/plch_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/plch_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/plch_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/plch_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PLIZ": {
+      "name": "PLIZ",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/pliz_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/pliz_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/pliz_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/pliz_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/pliz_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/pliz_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PSNT": {
+      "name": "PSNT",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/psnt_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/psnt_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/psnt_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/psnt_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/psnt_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "PSYC": {
+      "name": "PSYC",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/psyc_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/psyc_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/psyc_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/psyc_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/psyc_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "RDDR": {
+      "name": "RDDR",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/rddr_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/rddr_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/rddr_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/rddr_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/rddr_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "RGRF": {
+      "name": "RGRF",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/rgrf_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/rgrf_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/rgrf_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/rgrf_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/rgrf_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ROCC": {
+      "name": "ROCC",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/rocc_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/rocc_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/rocc_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/rocc_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/rocc_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ROGU": {
+      "name": "Rogue",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/rogu_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/rogu_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/rogu_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/rogu_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/rogu_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "RUST": {
+      "name": "RUST",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/rust_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/rust_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/rust_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/rust_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/rust_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "SACR": {
+      "name": "SACR",
+      "sounds": {
+        "extended": {
+          "action_name": "extended",
+          "file": "sons/creatures/sacr_extended.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "SCRP": {
+      "name": "SCRP",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/scrp_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/scrp_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/scrp_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/scrp_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/scrp_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/scrp_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "SGLM": {
+      "name": "SGLM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/sglm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/sglm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/sglm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/sglm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/sglm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "SGRG": {
+      "name": "SGRG",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/sgrg_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/sgrg_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/sgrg_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/sgrg_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/sgrg_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "SHDM": {
+      "name": "SHDM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/shdm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/shdm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/shdm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/shdm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/shdm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "SKEL": {
+      "name": "Skeleton",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/skel_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/skel_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/skel_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/skel_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/skel_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "SKLW": {
+      "name": "SKLW",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/sklw_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/sklw_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/sklw_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/sklw_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/sklw_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "SPRT": {
+      "name": "SPRT",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/sprt_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/sprt_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/sprt_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/sprt_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/sprt_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "STOR": {
+      "name": "STOR",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/stor_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/stor_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/stor_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/stor_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/stor_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/stor_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "SWRD": {
+      "name": "SWRD",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/swrd_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/swrd_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/swrd_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/swrd_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/swrd_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "TBRD": {
+      "name": "TBRD",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/tbrd_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/tbrd_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/tbrd_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/tbrd_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/tbrd_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "TREE": {
+      "name": "TREE",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/tree_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/tree_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/tree_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/tree_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/tree_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "TRLL": {
+      "name": "TRLL",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/trll_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/trll_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/trll_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/trll_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/trll_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "TROG": {
+      "name": "TROG",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/trog_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/trog_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/trog_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/trog_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/trog_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "UNIC": {
+      "name": "Unicorn",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/unic_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/unic_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/unic_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/unic_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/unic_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "VAMP": {
+      "name": "Vampire",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/vamp_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/vamp_defend.wav",
+          "format": "wav"
+        },
+        "EXT1": {
+          "action_name": "special_1",
+          "file": "sons/creatures/vamp_special_1.wav",
+          "format": "wav"
+        },
+        "EXT2": {
+          "action_name": "special_2",
+          "file": "sons/creatures/vamp_special_2.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/vamp_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/vamp_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/vamp_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "WELF": {
+      "name": "Wood Elf",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/welf_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/welf_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/welf_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/welf_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/welf_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/welf_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "WELM": {
+      "name": "WELM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/welm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/welm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/welm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/welm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/welm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "WGHT": {
+      "name": "Wight",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/wght_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/wght_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/wght_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/wght_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/wght_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "WRTH": {
+      "name": "WRTH",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/wrth_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/wrth_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/wrth_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/wrth_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/wrth_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "WUNC": {
+      "name": "WUNC",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/wunc_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/wunc_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/wunc_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/wunc_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/wunc_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/wunc_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "WYVM": {
+      "name": "WYVM",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/wyvm_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/wyvm_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/wyvm_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/wyvm_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/wyvm_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "WYVN": {
+      "name": "WYVN",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/wyvn_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/wyvn_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/wyvn_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/wyvn_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/wyvn_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "YBMH": {
+      "name": "YBMH",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/ybmh_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/ybmh_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/ybmh_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/ybmh_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/ybmh_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ZELT": {
+      "name": "ZELT",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/zelt_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/zelt_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/zelt_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/zelt_move.wav",
+          "format": "wav"
+        },
+        "SHOT": {
+          "action_name": "shoot",
+          "file": "sons/creatures/zelt_shoot.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/zelt_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ZMBL": {
+      "name": "ZMBL",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/zmbl_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/zmbl_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/zmbl_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/zmbl_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/zmbl_wince.wav",
+          "format": "wav"
+        }
+      }
+    },
+    "ZOMB": {
+      "name": "Zombie",
+      "sounds": {
+        "ATTK": {
+          "action_name": "attack",
+          "file": "sons/creatures/zomb_attack.wav",
+          "format": "wav"
+        },
+        "DFND": {
+          "action_name": "defend",
+          "file": "sons/creatures/zomb_defend.wav",
+          "format": "wav"
+        },
+        "KILL": {
+          "action_name": "death",
+          "file": "sons/creatures/zomb_death.wav",
+          "format": "wav"
+        },
+        "MOVE": {
+          "action_name": "move",
+          "file": "sons/creatures/zomb_move.wav",
+          "format": "wav"
+        },
+        "WNCE": {
+          "action_name": "wince",
+          "file": "sons/creatures/zomb_wince.wav",
+          "format": "wav"
+        }
+      }
+    }
+  },
+  "spells": {
+    "AIRSHELD": {
+      "name": "AIRSHELD",
+      "file": "sons/spells/spell_airsheld.wav",
+      "format": "wav"
+    },
+    "ANIMDEAD": {
+      "name": "ANIMDEAD",
+      "file": "sons/spells/spell_animdead.wav",
+      "format": "wav"
+    },
+    "ANTIMAGK": {
+      "name": "ANTIMAGK",
+      "file": "sons/spells/spell_antimagk.wav",
+      "format": "wav"
+    },
+    "ARMGEDN": {
+      "name": "ARMGEDN",
+      "file": "sons/spells/spell_armgedn.wav",
+      "format": "wav"
+    },
+    "BACKLASH": {
+      "name": "BACKLASH",
+      "file": "sons/spells/spell_backlash.wav",
+      "format": "wav"
+    },
+    "BADLUCK": {
+      "name": "BADLUCK",
+      "file": "sons/spells/spell_badluck.wav",
+      "format": "wav"
+    },
+    "BADMRLE": {
+      "name": "BADMRLE",
+      "file": "sons/spells/spell_badmrle.wav",
+      "format": "wav"
+    },
+    "BERSERK": {
+      "name": "BERSERK",
+      "file": "sons/spells/spell_berserk.wav",
+      "format": "wav"
+    },
+    "BIND": {
+      "name": "BIND",
+      "file": "sons/spells/spell_bind.wav",
+      "format": "wav"
+    },
+    "BLIND": {
+      "name": "BLIND",
+      "file": "sons/spells/spell_blind.wav",
+      "format": "wav"
+    },
+    "BLOODLUS": {
+      "name": "BLOODLUS",
+      "file": "sons/spells/spell_bloodlus.wav",
+      "format": "wav"
+    },
+    "CLONE": {
+      "name": "CLONE",
+      "file": "sons/spells/spell_clone.wav",
+      "format": "wav"
+    },
+    "CURE": {
+      "name": "CURE",
+      "file": "sons/spells/spell_cure.wav",
+      "format": "wav"
+    },
+    "CURSE": {
+      "name": "CURSE",
+      "file": "sons/spells/spell_curse.wav",
+      "format": "wav"
+    },
+    "DISGUISE": {
+      "name": "DISGUISE",
+      "file": "sons/spells/spell_disguise.wav",
+      "format": "wav"
+    },
+    "FIREBALL": {
+      "name": "FIREBALL",
+      "file": "sons/spells/spell_fireball.wav",
+      "format": "wav"
+    },
+    "FIREWALL": {
+      "name": "FIREWALL",
+      "file": "sons/spells/spell_firewall.wav",
+      "format": "wav"
+    },
+    "FORGET": {
+      "name": "FORGET",
+      "file": "sons/spells/spell_forget.wav",
+      "format": "wav"
+    },
+    "FORTUNE": {
+      "name": "FORTUNE",
+      "file": "sons/spells/spell_fortune.wav",
+      "format": "wav"
+    },
+    "FRENZY": {
+      "name": "FRENZY",
+      "file": "sons/spells/spell_frenzy.wav",
+      "format": "wav"
+    },
+    "HASTE": {
+      "name": "HASTE",
+      "file": "sons/spells/spell_haste.wav",
+      "format": "wav"
+    },
+    "LANDMINE": {
+      "name": "LANDMINE",
+      "file": "sons/spells/spell_landmine.wav",
+      "format": "wav"
+    },
+    "METEOR": {
+      "name": "METEOR",
+      "file": "sons/spells/spell_meteor.wav",
+      "format": "wav"
+    },
+    "MIRTH": {
+      "name": "MIRTH",
+      "file": "sons/spells/spell_mirth.wav",
+      "format": "wav"
+    },
+    "MISFORT": {
+      "name": "MISFORT",
+      "file": "sons/spells/spell_misfort.wav",
+      "format": "wav"
+    },
+    "PRAYER": {
+      "name": "PRAYER",
+      "file": "sons/spells/spell_prayer.wav",
+      "format": "wav"
+    },
+    "PROTECT": {
+      "name": "PROTECT",
+      "file": "sons/spells/spell_protect.wav",
+      "format": "wav"
+    },
+    "SHIELD": {
+      "name": "SHIELD",
+      "file": "sons/spells/spell_shield.wav",
+      "format": "wav"
+    },
+    "SLAYER": {
+      "name": "SLAYER",
+      "file": "sons/spells/spell_slayer.wav",
+      "format": "wav"
+    },
+    "SORROW": {
+      "name": "SORROW",
+      "file": "sons/spells/spell_sorrow.wav",
+      "format": "wav"
+    },
+    "WEAKNESS": {
+      "name": "WEAKNESS",
+      "file": "sons/spells/spell_weakness.wav",
+      "format": "wav"
+    }
+  },
+  "battle": [
+    {
+      "file": "sons/battle/battle00.wav",
+      "name": "BATTLE00",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/battle01.wav",
+      "name": "BATTLE01",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/battle02.wav",
+      "name": "BATTLE02",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/battle03.wav",
+      "name": "BATTLE03",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/battle04.wav",
+      "name": "BATTLE04",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/battle05.wav",
+      "name": "BATTLE05",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/battle06.wav",
+      "name": "BATTLE06",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/battle07.wav",
+      "name": "BATTLE07",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopair.wav",
+      "name": "LOOPAIR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopanim.wav",
+      "name": "LOOPANIM",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looparch.wav",
+      "name": "LOOPARCH",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looparen.wav",
+      "name": "LOOPAREN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopbehe.wav",
+      "name": "LOOPBEHE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopbird.wav",
+      "name": "LOOPBIRD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopbuoy.wav",
+      "name": "LOOPBUOY",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopcamp.wav",
+      "name": "LOOPCAMP",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopcave.wav",
+      "name": "LOOPCAVE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopcrys.wav",
+      "name": "LOOPCRYS",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopcurs.wav",
+      "name": "LOOPCURS",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopdead.wav",
+      "name": "LOOPDEAD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopden.wav",
+      "name": "LOOPDEN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopdevl.wav",
+      "name": "LOOPDEVL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopdog.wav",
+      "name": "LOOPDOG",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopdrag.wav",
+      "name": "LOOPDRAG",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopdwar.wav",
+      "name": "LOOPDWAR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopeart.wav",
+      "name": "LOOPEART",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopelf.wav",
+      "name": "LOOPELF",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopfact.wav",
+      "name": "LOOPFACT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopfaer.wav",
+      "name": "LOOPFAER",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopfall.wav",
+      "name": "LOOPFALL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopfire.wav",
+      "name": "LOOPFIRE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopflag.wav",
+      "name": "LOOPFLAG",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopfoun.wav",
+      "name": "LOOPFOUN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopgard.wav",
+      "name": "LOOPGARD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopgate.wav",
+      "name": "LOOPGATE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopgemp.wav",
+      "name": "LOOPGEMP",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopgobl.wav",
+      "name": "LOOPGOBL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopgrem.wav",
+      "name": "LOOPGREM",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopgrif.wav",
+      "name": "LOOPGRIF",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopharp.wav",
+      "name": "LOOPHARP",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loophors.wav",
+      "name": "LOOPHORS",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loophydr.wav",
+      "name": "LOOPHYDR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looplear.wav",
+      "name": "LOOPLEAR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looplepr.wav",
+      "name": "LOOPLEPR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looplumb.wav",
+      "name": "LOOPLUMB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmagi.wav",
+      "name": "LOOPMAGI",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmant.wav",
+      "name": "LOOPMANT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmark.wav",
+      "name": "LOOPMARK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmedu.wav",
+      "name": "LOOPMEDU",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmerc.wav",
+      "name": "LOOPMERC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmill.wav",
+      "name": "LOOPMILL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmine.wav",
+      "name": "LOOPMINE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmon1.wav",
+      "name": "LOOPMON1",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmon2.wav",
+      "name": "LOOPMON2",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmonk.wav",
+      "name": "LOOPMONK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopmons.wav",
+      "name": "LOOPMONS",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopnaga.wav",
+      "name": "LOOPNAGA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopocea.wav",
+      "name": "LOOPOCEA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopogre.wav",
+      "name": "LOOPOGRE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looporc.wav",
+      "name": "LOOPORC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looppega.wav",
+      "name": "LOOPPEGA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looppike.wav",
+      "name": "LOOPPIKE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopsanc.wav",
+      "name": "LOOPSANC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopshrin.wav",
+      "name": "LOOPSHRIN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopsire.wav",
+      "name": "LOOPSIRE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopskel.wav",
+      "name": "LOOPSKEL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopstar.wav",
+      "name": "LOOPSTAR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopsulf.wav",
+      "name": "LOOPSULF",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopswar.wav",
+      "name": "LOOPSWAR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopswor.wav",
+      "name": "LOOPSWOR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looptav.wav",
+      "name": "LOOPTAV",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/looptita.wav",
+      "name": "LOOPTITA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopunic.wav",
+      "name": "LOOPUNIC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopvent.wav",
+      "name": "LOOPVENT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopvolc.wav",
+      "name": "LOOPVOLC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopwhir.wav",
+      "name": "LOOPWHIR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopwind.wav",
+      "name": "LOOPWIND",
+      "format": "wav"
+    },
+    {
+      "file": "sons/battle/loopwolf.wav",
+      "name": "LOOPWOLF",
+      "format": "wav"
+    }
+  ],
+  "ui": [
+    {
+      "file": "sons/ui/acid.wav",
+      "name": "ACID",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/age.wav",
+      "name": "AGE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/bhdrdeth.wav",
+      "name": "BHDRDETH",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/bless.wav",
+      "name": "BLESS",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/buildtwn.wav",
+      "name": "BUILDTWN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/button.wav",
+      "name": "BUTTON",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/cavehead.wav",
+      "name": "CAVEHEAD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/chainlte.wav",
+      "name": "CHAINLTE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/chat.wav",
+      "name": "CHAT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/chest.wav",
+      "name": "CHEST",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/climax.wav",
+      "name": "CLIMAX",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/cntrstrk.wav",
+      "name": "CNTRSTRK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/coldray.wav",
+      "name": "COLDRAY",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/coldring.wav",
+      "name": "COLDRING",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/danger.wav",
+      "name": "DANGER",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/deathblo.wav",
+      "name": "DEATHBLO",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/deathcld.wav",
+      "name": "DEATHCLD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/deathrip.wav",
+      "name": "DEATHRIP",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/deathstr.wav",
+      "name": "DEATHSTR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/decay.wav",
+      "name": "DECAY",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/default.wav",
+      "name": "DEFAULT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/digsound.wav",
+      "name": "DIGSOUND",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/dipmagk.wav",
+      "name": "DIPMAGK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/disease.wav",
+      "name": "DISEASE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/dispell.wav",
+      "name": "DISPELL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/disruptr.wav",
+      "name": "DISRUPTR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/dragon.wav",
+      "name": "DRAGON",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/drainlif.wav",
+      "name": "DRAINLIF",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/drawbrg.wav",
+      "name": "DRAWBRG",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/drgnslay.wav",
+      "name": "DRGNSLAY",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/e1a.wav",
+      "name": "E1A",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/e1b.wav",
+      "name": "E1B",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/e1c.wav",
+      "name": "E1C",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/e2a.wav",
+      "name": "E2A",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/e2ae.wav",
+      "name": "E2AE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/e2b.wav",
+      "name": "E2B",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/e2c.wav",
+      "name": "E2C",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/e2d.wav",
+      "name": "E2D",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/erthquak.wav",
+      "name": "ERTHQUAK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/evlideth.wav",
+      "name": "EVLIDETH",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/expernce.wav",
+      "name": "EXPERNCE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/faerie.wav",
+      "name": "FAERIE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/fear.wav",
+      "name": "FEAR",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/fireblst.wav",
+      "name": "FIREBLST",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/fireshie.wav",
+      "name": "FIRESHIE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/fireshld.wav",
+      "name": "FIRESHLD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/firestrm.wav",
+      "name": "FIRESTRM",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/flagmine.wav",
+      "name": "FLAGMINE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/flyspell.wav",
+      "name": "FLYSPELL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/forcefld.wav",
+      "name": "FORCEFLD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/frosting.wav",
+      "name": "FROSTING",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g1a.wav",
+      "name": "G1A",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g1b.wav",
+      "name": "G1B",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g1c.wav",
+      "name": "G1C",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g2a.wav",
+      "name": "G2A",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g2b.wav",
+      "name": "G2B",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g2c.wav",
+      "name": "G2C",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g2d.wav",
+      "name": "G2D",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g3a.wav",
+      "name": "G3A",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g3b.wav",
+      "name": "G3B",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/g3c.wav",
+      "name": "G3C",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/gazebo.wav",
+      "name": "GAZEBO",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/genie.wav",
+      "name": "GENIE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/getprotection.wav",
+      "name": "GETPROTECTION",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/gogflame.wav",
+      "name": "GOGFLAME",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/goodluck.wav",
+      "name": "GOODLUCK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/goodmrle.wav",
+      "name": "GOODMRLE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/graveyard.wav",
+      "name": "GRAVEYARD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2bba.wav",
+      "name": "H3X2BBA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2bbb.wav",
+      "name": "H3X2BBB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2bbc.wav",
+      "name": "H3X2BBC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2bbd.wav",
+      "name": "H3X2BBD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2bbe.wav",
+      "name": "H3X2BBE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2bbf.wav",
+      "name": "H3X2BBF",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2ela.wav",
+      "name": "H3X2ELA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2elb.wav",
+      "name": "H3X2ELB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2elc.wav",
+      "name": "H3X2ELC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2eld.wav",
+      "name": "H3X2ELD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2ele.wav",
+      "name": "H3X2ELE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2hsa.wav",
+      "name": "H3X2HSA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2hsb.wav",
+      "name": "H3X2HSB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2hsc.wav",
+      "name": "H3X2HSC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2hsd.wav",
+      "name": "H3X2HSD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2hse.wav",
+      "name": "H3X2HSE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2nba.wav",
+      "name": "H3X2NBA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2nbb.wav",
+      "name": "H3X2NBB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2nbc.wav",
+      "name": "H3X2NBC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2nbd.wav",
+      "name": "H3X2NBD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2nbe.wav",
+      "name": "H3X2NBE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2rna.wav",
+      "name": "H3X2RNA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2rnb.wav",
+      "name": "H3X2RNB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2rnc.wav",
+      "name": "H3X2RNC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2rnd.wav",
+      "name": "H3X2RND",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2rne.wav",
+      "name": "H3X2RNE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2spa.wav",
+      "name": "H3X2SPA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2spb.wav",
+      "name": "H3X2SPB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2spc.wav",
+      "name": "H3X2SPC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2spd.wav",
+      "name": "H3X2SPD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2spe.wav",
+      "name": "H3X2SPE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uaa.wav",
+      "name": "H3X2UAA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uab.wav",
+      "name": "H3X2UAB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uac.wav",
+      "name": "H3X2UAC",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uad.wav",
+      "name": "H3X2UAD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uae.wav",
+      "name": "H3X2UAE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uaf.wav",
+      "name": "H3X2UAF",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uag.wav",
+      "name": "H3X2UAG",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uah.wav",
+      "name": "H3X2UAH",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uai.wav",
+      "name": "H3X2UAI",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uaj.wav",
+      "name": "H3X2UAJ",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uak.wav",
+      "name": "H3X2UAK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2ual.wav",
+      "name": "H3X2UAL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/h3x2uam.wav",
+      "name": "H3X2UAM",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse00.wav",
+      "name": "HORSE00",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse01.wav",
+      "name": "HORSE01",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse02.wav",
+      "name": "HORSE02",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse03.wav",
+      "name": "HORSE03",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse04.wav",
+      "name": "HORSE04",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse05.wav",
+      "name": "HORSE05",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse06.wav",
+      "name": "HORSE06",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse07.wav",
+      "name": "HORSE07",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse08.wav",
+      "name": "HORSE08",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse09.wav",
+      "name": "HORSE09",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse10.wav",
+      "name": "HORSE10",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse20.wav",
+      "name": "HORSE20",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse21.wav",
+      "name": "HORSE21",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse22.wav",
+      "name": "HORSE22",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse23.wav",
+      "name": "HORSE23",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse24.wav",
+      "name": "HORSE24",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse25.wav",
+      "name": "HORSE25",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse26.wav",
+      "name": "HORSE26",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse27.wav",
+      "name": "HORSE27",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/horse29.wav",
+      "name": "HORSE29",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/hypnotiz.wav",
+      "name": "HYPNOTIZ",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/iceray.wav",
+      "name": "ICERAY",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/icerayex.wav",
+      "name": "ICERAYEX",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/killfade.wav",
+      "name": "KILLFADE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/lichatk2.wav",
+      "name": "LICHATK2",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/lightblt.wav",
+      "name": "LIGHTBLT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/lighthouse.wav",
+      "name": "LIGHTHOUSE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/luck.wav",
+      "name": "LUCK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/magcarow.wav",
+      "name": "MAGCAROW",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/magchdrn.wav",
+      "name": "MAGCHDRN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/magchfil.wav",
+      "name": "MAGCHFIL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/magicblt.wav",
+      "name": "MAGICBLT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/magicres.wav",
+      "name": "MAGICRES",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/manadrai.wav",
+      "name": "MANADRAI",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/military.wav",
+      "name": "MILITARY",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/mirrorim.wav",
+      "name": "MIRRORIM",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/mnrdeath.wav",
+      "name": "MNRDEATH",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/morale.wav",
+      "name": "MORALE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/muckmire.wav",
+      "name": "MUCKMIRE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/mystery.wav",
+      "name": "MYSTERY",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/n1a.wav",
+      "name": "N1A",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/n1b.wav",
+      "name": "N1B",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/n1c_d.wav",
+      "name": "N1C_D",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/newday.wav",
+      "name": "NEWDAY",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/newmonth.wav",
+      "name": "NEWMONTH",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/newweek.wav",
+      "name": "NEWWEEK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/nomad.wav",
+      "name": "NOMAD",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/nwherolv.wav",
+      "name": "NWHEROLV",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/obelisk.wav",
+      "name": "OBELISK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/paralyze.wav",
+      "name": "PARALYZE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/pickup01.wav",
+      "name": "PICKUP01",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/pickup02.wav",
+      "name": "PICKUP02",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/pickup03.wav",
+      "name": "PICKUP03",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/pickup04.wav",
+      "name": "PICKUP04",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/pickup05.wav",
+      "name": "PICKUP05",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/pickup06.wav",
+      "name": "PICKUP06",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/pickup07.wav",
+      "name": "PICKUP07",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/playcome.wav",
+      "name": "PLAYCOME",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/playexit.wav",
+      "name": "PLAYEXIT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/playturn.wav",
+      "name": "PLAYTURN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/poison.wav",
+      "name": "POISON",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/precison.wav",
+      "name": "PRECISON",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/protecta.wav",
+      "name": "PROTECTA",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/protecte.wav",
+      "name": "PROTECTE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/protectf.wav",
+      "name": "PROTECTF",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/protectw.wav",
+      "name": "PROTECTW",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/quest.wav",
+      "name": "QUEST",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/quiksand.wav",
+      "name": "QUIKSAND",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/regener.wav",
+      "name": "REGENER",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/removeob.wav",
+      "name": "REMOVEOB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/resurect.wav",
+      "name": "RESURECT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/rogue.wav",
+      "name": "ROGUE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/rsbryfzl.wav",
+      "name": "RSBRYFZL",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/s1a.wav",
+      "name": "S1A",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/s1b.wav",
+      "name": "S1B",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/s1c.wav",
+      "name": "S1C",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/sacbreth.wav",
+      "name": "SACBRETH",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/scutboat.wav",
+      "name": "SCUTBOAT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/spontcomb.wav",
+      "name": "SPONTCOMB",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/store.wav",
+      "name": "STORE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/storm.wav",
+      "name": "STORM",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/summboat.wav",
+      "name": "SUMMBOAT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/sumnelm.wav",
+      "name": "SUMNELM",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/sysmsg.wav",
+      "name": "SYSMSG",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/tailwind.wav",
+      "name": "TAILWIND",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/telein.wav",
+      "name": "TELEIN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/telptin.wav",
+      "name": "TELPTIN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/telptout.wav",
+      "name": "TELPTOUT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/temple.wav",
+      "name": "TEMPLE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/timeover.wav",
+      "name": "TIMEOVER",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/treasure.wav",
+      "name": "TREASURE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/tuffskin.wav",
+      "name": "TUFFSKIN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/ultimateartifact.wav",
+      "name": "ULTIMATEARTIFACT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/view.wav",
+      "name": "VIEW",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/visions.wav",
+      "name": "VISIONS",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/wallhit.wav",
+      "name": "WALLHIT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/wallmiss.wav",
+      "name": "WALLMISS",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/watrwalk.wav",
+      "name": "WATRWALK",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/autorun.wav",
+      "name": "AUTORUN",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/exit.wav",
+      "name": "EXIT",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/highlite.wav",
+      "name": "HIGHLITE",
+      "format": "wav"
+    },
+    {
+      "file": "sons/ui/hotclik.wav",
+      "name": "HOTCLIK",
+      "format": "wav"
+    }
+  ],
+  "music": [
+    {
+      "file": "sons/music/aitheme0.mp3",
+      "name": "AITheme0",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/aitheme1.mp3",
+      "name": "AITHEME1",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/aitheme2.mp3",
+      "name": "AITHEME2",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/bladeabcampaign.mp3",
+      "name": "BladeABCampaign",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/bladedbcampaign.mp3",
+      "name": "BladeDBCampaign",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/bladedscampaign.mp3",
+      "name": "BladeDSCampaign",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/bladeflcampaign.mp3",
+      "name": "BladeFLCampaign",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/bladefwcampaign.mp3",
+      "name": "BladeFWCampaign",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/bladepfcampaign.mp3",
+      "name": "BladePFCampaign",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/bulwarktown.mp3",
+      "name": "BulwarkTown",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic01.mp3",
+      "name": "CampainMusic01",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic02.mp3",
+      "name": "CampainMusic02",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic03.mp3",
+      "name": "CampainMusic03",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic04.mp3",
+      "name": "CampainMusic04",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic05.mp3",
+      "name": "CampainMusic05",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic06.mp3",
+      "name": "CampainMusic06",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic07.mp3",
+      "name": "CampainMusic07",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic08.mp3",
+      "name": "CampainMusic08",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic09.mp3",
+      "name": "CampainMusic09",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic10.mp3",
+      "name": "CampainMusic10",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/campainmusic11.mp3",
+      "name": "CampainMusic11",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/combat01.mp3",
+      "name": "COMBAT01",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/combat02.mp3",
+      "name": "COMBAT02",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/combat03.mp3",
+      "name": "COMBAT03",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/combat04.mp3",
+      "name": "COMBAT04",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/covetown.mp3",
+      "name": "CoveTown",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/cstletown.mp3",
+      "name": "CstleTown",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/dargemcampaigntheme.mp3",
+      "name": "DargemCampaignTheme",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/dargemintro1.mp3",
+      "name": "DargemIntro1",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/dargemintro2.mp3",
+      "name": "DargemIntro2",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/dargemintro3.mp3",
+      "name": "DargemIntro3",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/dargemintro4.mp3",
+      "name": "DargemIntro4",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/dargemintro5.mp3",
+      "name": "DargemIntro5",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/dargemoutro5.mp3",
+      "name": "DargemOutro5",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/defend_castle.mp3",
+      "name": "Defend Castle",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/dirt.mp3",
+      "name": "DIRT",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/dungeon.mp3",
+      "name": "DUNGEON",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/elemtown.mp3",
+      "name": "ElemTown",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/eviltheme.mp3",
+      "name": "EvilTheme",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/factorycampaign.mp3",
+      "name": "FactoryCampaign",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/factorytown.mp3",
+      "name": "FactoryTown",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/fortresstown.mp3",
+      "name": "FortressTown",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/goodtheme.mp3",
+      "name": "GoodTheme",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/grass.mp3",
+      "name": "GRASS",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/highlands.mp3",
+      "name": "HIGHLANDS",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/hotacamptheme01.mp3",
+      "name": "HotACampTheme01",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/hotacamptheme02.mp3",
+      "name": "HotACampTheme02",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/hotacamptheme03.mp3",
+      "name": "HotACampTheme03",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/hotacamptheme04.mp3",
+      "name": "HotACampTheme04",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/hotacamptheme05.mp3",
+      "name": "HotACampTheme05",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/hotacamptheme06.mp3",
+      "name": "HotACampTheme06",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/hotacamptheme07.mp3",
+      "name": "HotACampTheme07",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/hotacamptheme08.mp3",
+      "name": "HotACampTheme08",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/hotacamptheme09.mp3",
+      "name": "HotACampTheme09",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/infernotown.mp3",
+      "name": "InfernoTown",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/lava.mp3",
+      "name": "LAVA",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/looplepr.mp3",
+      "name": "LoopLepr",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/lose_campain.mp3",
+      "name": "Lose Campain",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/losecastle.mp3",
+      "name": "LoseCastle",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/losecombat.mp3",
+      "name": "LoseCombat",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/mainmenu.mp3",
+      "name": "MAINMENU",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/necrotown.mp3",
+      "name": "necroTown",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/neutraltheme.mp3",
+      "name": "NeutralTheme",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/rampart.mp3",
+      "name": "RAMPART",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/retreat_battle.mp3",
+      "name": "Retreat Battle",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/rough.mp3",
+      "name": "ROUGH",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/sand.mp3",
+      "name": "SAND",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/secrettheme.mp3",
+      "name": "SecretTheme",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/snow.mp3",
+      "name": "SNOW",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/stronghold.mp3",
+      "name": "StrongHold",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/surrender_battle.mp3",
+      "name": "Surrender Battle",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/swamp.mp3",
+      "name": "SWAMP",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/towertown.mp3",
+      "name": "TowerTown",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/ultimatelose.mp3",
+      "name": "UltimateLose",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/underground.mp3",
+      "name": "Underground",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/wasteland.mp3",
+      "name": "WASTELAND",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/water.mp3",
+      "name": "WATER",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/win_battle.mp3",
+      "name": "Win Battle",
+      "format": "mp3"
+    },
+    {
+      "file": "sons/music/win_scenario.mp3",
+      "name": "Win Scenario",
+      "format": "mp3"
+    }
+  ]
+}

@@ -285,9 +285,13 @@ function abilitiesHtml(c, opts={}){
   const ids=creatureAbilityIds(c);
   if(!ids.length) return '';
   const extra=opts.className ? ' '+opts.className : '';
-  return '<div class="ability-row'+extra+'">'+ids.map(id=>{
+  const expanded=!!opts.expanded;
+  return '<div class="ability-row'+(expanded?' is-expanded':'')+extra+'">'+ids.map(id=>{
     const a=ABILITIES[id];
     const act=id.startsWith('activer-') ? ' is-activate' : '';
+    if(expanded){
+      return '<div class="ability-detail ability-'+id+act+'" data-ability="'+id+'"><em>'+a.label+'</em><p>'+a.description+'</p></div>';
+    }
     return '<span class="ability-tag ability-'+id+act+'" tabindex="0" data-ability="'+id+'" aria-label="'+a.label+': '+a.description+'" onclick="event.stopPropagation()" onpointerdown="event.stopPropagation()"><em>'+a.label+'</em><span class="ability-tip" role="tooltip"><b>'+a.label+'</b>'+a.description+'</span></span>';
   }).join('')+'</div>';
 }
@@ -563,6 +567,8 @@ function buildFfCardHtml(c, opts={}){
   if(opts.zoomed) extras.push('zoomed');
   if(injured) extras.push('is-wounded');
   if(opts.extraClass) extras.push(opts.extraClass);
+  const previewExpanded=!!opts.previewExpanded;
+  if(previewExpanded) extras.push('is-preview-expanded');
   const cls=extras.length ? ' '+extras.join(' ') : '';
   const dataId=c.id!=null ? ` data-id="${c.id}"` : '';
   const dataExtra=opts.dataAttrs ? ` ${opts.dataAttrs}` : '';
@@ -572,6 +578,24 @@ function buildFfCardHtml(c, opts={}){
   const hpBar=injured
     ? `<div class="card-hp-bar" style="--hp-pct:${hpPct.toFixed(1)}%" title="${hp} / ${maxHp} PV" aria-hidden="true"><i></i></div>`
     : '';
+  const abilHtml=abilitiesHtml(c, {expanded: previewExpanded || !!opts.abilitiesExpanded});
+  const statsBlock=previewExpanded
+    ? `<div class="card-preview-footer">
+      <div class="card-stats-expanded" aria-label="Attaque ${atk}, points de vie ${hp}${injured?` sur ${maxHp}`:''}">
+        <div class="stat-col">
+          <span class="stat-atk${opts.atkBuffed?' is-buffed':''}${opts.atkDebuffed?' is-debuffed':''}"><b>${atk}</b></span>
+          ${opts.atkModListHtml||'<span class="stat-mod-empty">ATQ de base</span>'}
+        </div>
+        <div class="stat-col">
+          <span class="stat-hp${injured?' is-wounded':''}${opts.hpBuffed?' is-buffed':''}${opts.hpDebuffed?' is-debuffed':''}"><b>${hp}</b></span>
+          ${opts.hpModListHtml||'<span class="stat-mod-empty">PV de base</span>'}
+        </div>
+      </div>
+    </div>`
+    : `<div class="card-stats" aria-label="Attaque ${atk}, points de vie ${hp}${injured?` sur ${maxHp}`:''}">
+      <span class="stat-atk${opts.atkBuffed?' is-buffed':''}${opts.atkDebuffed?' is-debuffed':''}" title="${opts.atkTitle?String(opts.atkTitle).replaceAll('"','&quot;'):'Attaque'}"><b>${atk}</b>${opts.atkModTipHtml||''}</span>
+      <span class="stat-hp${injured?' is-wounded':''}${opts.hpBuffed?' is-buffed':''}${opts.hpDebuffed?' is-debuffed':''}" title="${opts.hpTitle?String(opts.hpTitle).replaceAll('"','&quot;'):`Points de vie${injured?` (${hp}/${maxHp})`:''}`}"><b>${hp}</b>${opts.hpModTipHtml||''}</span>
+    </div>`;
   return `<article class="ff-card frame-${frame.id} style-${typo.id}${cls}"${dataId}${dataExtra} style="--faction:${color}"${onclick}${title}>
     ${opts.badgeHtml||''}
     <span class="card-rim" aria-hidden="true"></span>
@@ -579,12 +603,9 @@ function buildFfCardHtml(c, opts={}){
     <div class="card-art">${img}<i>${c.capital}</i>${size?`<em class="card-size">${size}</em>`:''}${opts.artExtra||''}</div>
     ${hpBar}
     <div class="type-line">${c.origin||''} · ${natures}</div>
-    ${abilitiesHtml(c)}
+    ${abilHtml}
     <blockquote>${quoteFor(c)}</blockquote>
-    <div class="card-stats" aria-label="Attaque ${atk}, points de vie ${hp}${injured?` sur ${maxHp}`:''}">
-      <span class="stat-atk" title="Attaque"><b>${atk}</b></span>
-      <span class="stat-hp${injured?' is-wounded':''}" title="Points de vie${injured?` (${hp}/${maxHp})`:''}"><b>${hp}</b></span>
-    </div>
+    ${statsBlock}
   </article>`;
 }
 function cardViewNormal(c){
@@ -807,7 +828,7 @@ function renderList(opts={}){
 function render(){
   const title = state.tab==='combat' ? 'Combat' : 'Liste des Cartes';
   const sub = state.tab==='combat'
-    ? 'Combat rapide ou campagne — decks 15 cartes / 2 factions.'
+    ? 'Combat rapide ou campagne — decks 60 cartes (15×4) / 2 factions.'
     : 'Consulte le bestiaire : factions, capacités, stats et illustrations.';
   byId('app').innerHTML=`<header class="topbar">
     <div>

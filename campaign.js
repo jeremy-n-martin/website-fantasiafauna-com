@@ -43,6 +43,7 @@ function defaultCampaign(){
     lastBooster:null,
     playerFactions:null, // [principale, secondaire]
     starterGranted:false,
+    starterQuadGranted:false,
     mapLocation:'tour',
     mapCleared:[],
     battleNode:null,
@@ -146,6 +147,8 @@ function addToBinder(creatureId, rarity='normal', count=1, opts={}){
 }
 const STARTER_PRIMARY=8;
 const STARTER_SECONDARY=7;
+const STARTER_COPIES=4; // 15 modèles × 4 = 60 cartes
+const CAMPAIGN_DECK_SIZE=STARTER_PRIMARY+STARTER_SECONDARY; // modèles uniques
 function campaignFactionList(){
   return typeof allFactions==='function'
     ? allFactions()
@@ -205,10 +208,11 @@ function pickLowestCostCreatures(factions, size=15){
   }
   return picked;
 }
-/** Donne au joueur 15 cartes normales (8+7) une fois les 2 factions choisies. */
+/** Donne au joueur 15 modèles × 4 exemplaires (60 cartes) une fois les 2 factions choisies. */
 function grantStarterBinder(){
   const camp=ensureCampaign();
   if(camp.starterGranted && hasChosenFactions(camp)){
+    ensureStarterQuadCopies();
     return camp.playerFactions;
   }
   const all=campaignFactionList();
@@ -230,6 +234,7 @@ function grantStarterBinder(){
       }
     }
     camp.starterGranted=true;
+    ensureStarterQuadCopies();
     saveCampaign();
     return camp.playerFactions;
   }
@@ -239,10 +244,27 @@ function grantStarterBinder(){
   }
   const factions=camp.playerFactions.slice(0, 2);
   const starters=pickLowestCostCreatures(factions, STARTER_PRIMARY+STARTER_SECONDARY);
-  starters.forEach(c=>addToBinder(c.id, 'normal', 1, {silent:true}));
+  starters.forEach(c=>addToBinder(c.id, 'normal', STARTER_COPIES, {silent:true}));
   camp.starterGranted=true;
+  camp.starterQuadGranted=true;
   saveCampaign();
   return factions;
+}
+/** Migre les vieilles sauvegardes (1×) vers 4 exemplaires des 15 cartes de départ. */
+function ensureStarterQuadCopies(){
+  const camp=ensureCampaign();
+  if(camp.starterQuadGranted || !hasChosenFactions(camp)) return;
+  const starters=pickLowestCostCreatures(camp.playerFactions.slice(0, 2), STARTER_PRIMARY+STARTER_SECONDARY);
+  for(const c of starters){
+    let row=(camp.binder||[]).find(e=>e.creatureId===c.id && e.rarity==='normal');
+    if(!row){
+      addToBinder(c.id, 'normal', STARTER_COPIES, {silent:true});
+    } else if((row.count||0) < STARTER_COPIES){
+      row.count=STARTER_COPIES;
+    }
+  }
+  camp.starterQuadGranted=true;
+  saveCampaign();
 }
 function chooseCampaignFaction(name){
   const camp=ensureCampaign();
@@ -261,34 +283,23 @@ function chooseCampaignFaction(name){
   saveCampaign();
   render();
 }
-/** Deck joueur campagne : cartes du classeur (rareté = cadre), complété si besoin. */
-function makeCampaignPlayerSide(factions, size=15){
-  const camp=ensureCampaign();
-  const cards=[];
-  const used=new Set();
-  const rows=sortedBinder().filter(row=>{
-    const c=CREATURES.find(x=>x.id===row.creatureId);
-    return c && factions.includes(c.capital) && row.count>0;
-  });
-  for(const row of rows){
-    const c=CREATURES.find(x=>x.id===row.creatureId);
-    if(!c || used.has(c.id)) continue;
-    const card=typeof cloneCard==='function' ? cloneCard(c) : {...c};
-    card.frameId=row.rarity || 'normal';
-    cards.push(card);
-    used.add(c.id);
-    if(cards.length>=size) break;
-  }
-  if(cards.length<size && typeof buildLowCostDeck==='function'){
-    for(const c of buildLowCostDeck(factions, size)){
-      if(used.has(c.id)) continue;
-      c.frameId=c.frameId||'normal';
-      cards.push(c);
-      used.add(c.id);
-      if(cards.length>=size) break;
+/** Deck campagne : N modèles × 4 exemplaires. */
+function buildCampaignDeck(factions, unique=CAMPAIGN_DECK_SIZE, copies=STARTER_COPIES){
+  const base=typeof buildLowCostDeck==='function' ? buildLowCostDeck(factions, unique) : [];
+  const out=[];
+  for(const c of base){
+    for(let i=0;i<copies;i++){
+      const card=typeof cloneCard==='function' ? cloneCard(c) : {...c};
+      card.frameId=card.frameId||'normal';
+      out.push(card);
     }
   }
-  const deck=typeof shuffleInPlace==='function' ? shuffleInPlace(cards) : cards;
+  return out;
+}
+function makeCampaignSideFromDeck(factions, cards){
+  const pool=cards.slice();
+  const startingDeckSize=pool.length;
+  const deck=typeof shuffleInPlace==='function' ? shuffleInPlace(pool) : pool;
   const handN=Math.min(7, deck.length);
   const hand=typeof sortHand==='function' ? sortHand(deck.splice(0, handN)) : deck.splice(0, handN);
   return {
@@ -296,7 +307,36 @@ function makeCampaignPlayerSide(factions, size=15){
     colorMana:Object.fromEntries(factions.map(f=>[f,0])),
     deck, hand, board:[],
     factions:factions.slice(),
+    startingDeckSize,
   };
+}
+/** Deck joueur campagne : tous les exemplaires du classeur (rareté = cadre). */
+function makeCampaignPlayerSide(factions, size=null){
+  const camp=ensureCampaign();
+  ensureStarterQuadCopies();
+  const cards=[];
+  const rows=sortedBinder().filter(row=>{
+    const c=CREATURES.find(x=>x.id===row.creatureId);
+    return c && factions.includes(c.capital) && row.count>0;
+  });
+  for(const row of rows){
+    const c=CREATURES.find(x=>x.id===row.creatureId);
+    if(!c) continue;
+    const n=row.count|0;
+    for(let i=0;i<n;i++){
+      const card=typeof cloneCard==='function' ? cloneCard(c) : {...c};
+      card.frameId=row.rarity || 'normal';
+      cards.push(card);
+    }
+  }
+  const target=size != null ? size : Math.max(CAMPAIGN_DECK_SIZE*STARTER_COPIES, cards.length);
+  if(cards.length<target){
+    for(const c of buildCampaignDeck(factions, CAMPAIGN_DECK_SIZE, STARTER_COPIES)){
+      cards.push(c);
+      if(cards.length>=target) break;
+    }
+  }
+  return makeCampaignSideFromDeck(factions, cards);
 }
 /** Fusionne 5 cartes (même créature + rareté) → 1 de rareté supérieure. */
 function craftBinderUpgrade(creatureId, rarity){
@@ -634,8 +674,9 @@ function startCampaignBattle(fromNode){
   const factions=[...new Set([...playerFactions, ...enemyFactions])];
   const playerFirst=Math.random()<0.5;
   const playerSide=typeof makeCampaignPlayerSide==='function'
-    ? makeCampaignPlayerSide(playerFactions, 15)
-    : makeSide(playerFactions, 15);
+    ? makeCampaignPlayerSide(playerFactions)
+    : makeSide(playerFactions, CAMPAIGN_DECK_SIZE*STARTER_COPIES);
+  const enemySide=makeCampaignSideFromDeck(enemyFactions, buildCampaignDeck(enemyFactions));
   state.tab='combat';
   state.battle={
     mode:'campagne',
@@ -646,7 +687,7 @@ function startCampaignBattle(fromNode){
     active: playerFirst ? 'player' : 'enemy',
     phase:'mulligan',
     player: playerSide,
-    enemy: makeSide(enemyFactions, 15),
+    enemy: enemySide,
     selectedHandUid:null,
     insertAt:null,
     attackSource:null,
@@ -662,7 +703,7 @@ function startCampaignBattle(fromNode){
     mapNode:camp.battleNode,
   };
   combatLog(`Campagne — ${mapNode(camp.battleNode).name}. Toi: ${playerFactions.join(' · ')} · Adverse: ${enemyFactions.join(' · ')}.`);
-  combatLog(`Deck depuis le classeur (${binderCount()} cartes). ${state.battle.coin}.`);
+  combatLog(`Decks 60 cartes (classeur ${binderCount()}) — main 7 → pile ${playerSide.deck.length}/${playerSide.startingDeckSize}. ${state.battle.coin}.`);
   if(typeof stampSideFrames==='function'){
     stampSideFrames(state.battle.enemy, typeof rollCampaignRarity==='function'?rollCampaignRarity:null);
   }
@@ -719,8 +760,8 @@ function renderCampaignFactionPick(){
   const step=chosen.length; // 0 = principale, 1 = secondaire
   const title=step===0 ? 'Faction principale' : 'Seconde faction';
   const hint=step===0
-    ? `Clique ta faction principale — tu recevras ${STARTER_PRIMARY} cartes de cette couleur.`
-    : `Clique ta seconde faction — tu recevras ${STARTER_SECONDARY} cartes (après ${STARTER_PRIMARY} de ${chosen[0]}).`;
+    ? `Clique ta faction principale — tu recevras ${STARTER_PRIMARY} cartes ×${STARTER_COPIES} exemplaires.`
+    : `Clique ta seconde faction — ${STARTER_SECONDARY} cartes ×${STARTER_COPIES} (après ${STARTER_PRIMARY} de ${chosen[0]}). Total : ${CAMPAIGN_DECK_SIZE*STARTER_COPIES} cartes.`;
   const buttons=campaignFactionList().map(f=>{
     const fm=(typeof FACTION_MANA!=='undefined' && FACTION_MANA[f]) || {color:'#c9aa69',icon:'ui/combat/star_sm.png',element:f};
     const taken=chosen.includes(f);
