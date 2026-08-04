@@ -1,6 +1,8 @@
 /* Combat — plateau type Hearthstone, decks 60 (15×4) / 2 factions */
 
 const CBT_PREFS_KEY='ff-combat-prefs';
+/** Taille max de la main (au-delà, on ne pioche plus). */
+const HAND_MAX=8;
 function loadCombatPrefs(){
   const defaults={ density:'compact', zoom:'md', showLog:true };
   try{
@@ -113,13 +115,15 @@ const KEYWORD_ROLES = new Set([
   'soin','soin-mod','soin-max','invocation','invocation-rapide','invocation-intime',
   'etendard','formation',
   'activer-regen','activer-tank','activer-bouclier','activer-frappe','activer-soin','activer-purge',
-  'bouclier-divin','double-attaque','charge','camouflage','vol-de-vie','dernier-souffle',
+  'bouclier-divin','double-attaque','charge','celerite','camouflage','vol-de-vie','lien-de-vie',
+  'pietinement','contact-mortel','dernier-souffle',
   'cri-frappe','furie','allie-meurt','quand-tue','affaiblir','survie',
   'poison','brulant','gelant','fin-tour-tir','fin-tour-buff','debut-tour-soin','debut-tour-tir',
-  'quand-blesse','quand-invoque','apres-attaque','jetons-1-1','donner-buff',
+  'quand-blesse','quand-invoque','apres-attaque','jetons-1-1','donner-buff','soutient','soutient-2','vol',
 ]);
 function cloneCard(c){
   const roles=[...(c.roles||[])];
+  const abilities=[...(c.abilities||[])];
   const atk=c.attack||0;
   const hp=c.health||0;
   const frameId=(typeof CARD_FRAMES!=='undefined' && CARD_FRAMES.some(f=>f.id===c.frameId))
@@ -128,6 +132,7 @@ function cloneCard(c){
   const card={
     ...c,
     roles,
+    abilities,
     uid: uid(),
     frameId,
     attack: atk,
@@ -145,6 +150,7 @@ function cloneCard(c){
     canAttack: false,
     exhausted: false,
     justPlayed: true,
+    noActivateThisTurn: false,
     abilityCD: null,
     summoned: false,
     attacksThisTurn: 0,
@@ -187,7 +193,14 @@ function activationSpec(c){
   return null;
 }
 function maxAttacks(c){
+  // Double attaque = 2 frappes dans la même action, pas 2 actions d’attaque.
+  return 1;
+}
+function strikeCount(c){
   return hasRole(c,'double-attaque') ? 2 : 1;
+}
+function hasRush(c){
+  return hasRole(c,'charge') || hasRole(c,'celerite');
 }
 function buffCreature(c, atk=0, hp=0, opts={}){
   if(!c) return;
@@ -372,6 +385,7 @@ function makeToken11(capital){
     capital: capital||'Hameau',
     size:'0,5',
     roles:[],
+    abilities:[],
     natures:['vivant'],
     origin:'Invocation',
     power:1,
@@ -388,13 +402,13 @@ function makeToken11(capital){
   });
 }
 function abilityPulseSpec(c){
-  const roles=c?.roles||[];
-  const has=(id)=>roles.includes(id);
-  if(has('lancer-max')) return {kind:'dmg', dmg:2, targets:2, period:1, vfx:'lancer', label:'Salve de lancer'};
+  const has=(id)=> typeof hasAbility==='function' ? hasAbility(c, id)
+    : !!(c?.abilities||[]).includes(id) || !!(c?.roles||[]).includes(id);
+  if(has('lancer-max')) return {kind:'dmg', dmg:2, targets:2, period:1, vfx:'lancer', label:'Rafale majeure'};
   if(has('sort-degat-max')) return {kind:'dmg', dmg:2, targets:2, period:1, vfx:'sort', label:'Tempête de sorts'};
-  if(has('lancer-mod')) return {kind:'dmg', dmg:1, targets:1, period:1, vfx:'lancer', label:'Arme de lancer+'};
+  if(has('lancer-mod')) return {kind:'dmg', dmg:1, targets:1, period:1, vfx:'lancer', label:'Rafale+'};
   if(has('sort-degat-mod')) return {kind:'dmg', dmg:1, targets:1, period:1, vfx:'sort', label:'Sort de dégât+'};
-  if(has('lancer')) return {kind:'dmg', dmg:1, targets:1, period:2, vfx:'lancer', label:'Arme de lancer'};
+  if(has('lancer')) return {kind:'dmg', dmg:1, targets:1, period:2, vfx:'lancer', label:'Rafale'};
   if(has('sort-degat')) return {kind:'dmg', dmg:1, targets:1, period:2, vfx:'sort', label:'Sort de dégât'};
   if(has('soin-max')) return {kind:'heal', amount:2, targets:2, period:1, vfx:'soin', label:'Soin majeur'};
   if(has('soin-mod')) return {kind:'heal', amount:1, targets:1, period:1, vfx:'soin', label:'Soin+'};
@@ -404,13 +418,15 @@ function abilityPulseSpec(c){
   if(has('invocation')) return {kind:'summon', period:3, vfx:'invocation', label:'Invocation'};
   return null;
 }
-function stripPulseRoles(roles){
-  return (roles||[]).filter(r=>!KEYWORD_ROLES.has(r));
+function stripPulseKeywords(list){
+  return (list||[]).filter(r=>!KEYWORD_ROLES.has(r));
 }
+/** @deprecated nom historique — filtre les keywords périodiques */
+function stripPulseRoles(list){ return stripPulseKeywords(list); }
 function hasRole(c, id){
   if(!c) return false;
   if(typeof hasAbility==='function') return hasAbility(c, id);
-  return !!(c.roles||[]).includes(id);
+  return !!(c.abilities||[]).includes(id) || !!(c.roles||[]).includes(id);
 }
 function applyStatus(c, statusId){
   if(!c) return;
@@ -430,6 +446,7 @@ function dealDamageToCreature(who, c, dmg, opts={}){
     return 0;
   }
   c.hp-=dmg;
+  if(opts.deathtouch && c.hp>0) c.hp=0;
   spawnDamageFloat(c.uid, dmg, 'damage');
   if(c.hp>0) playCreatureSfx(c, 'defend');
   if(c.hp<=0 && hasRole(c,'survie') && !c.survieUsed){
@@ -776,7 +793,8 @@ function makeSummonedCreature(source){
   if(!pool.length) pool=[source];
   const base=pickN(pool,1)[0];
   const token=cloneCard(base);
-  token.roles=stripPulseRoles(token.roles);
+  token.roles=stripPulseKeywords(token.roles);
+  token.abilities=stripPulseKeywords(token.abilities);
   token.summoned=true;
   token.justPlayed=true;
   token.canAttack=false;
@@ -981,6 +999,36 @@ function deckCountLabel(side){
   const total=side.startingDeckSize || (left+(side.hand?.length||0));
   return `Deck ${left}/${total}`;
 }
+/** Verso de carte — thème orfèvrerie / socle. */
+function cardBackHtml(opts={}){
+  const extra=opts.className ? ` ${opts.className}` : '';
+  const style=opts.layer!=null ? ` style="--layer:${opts.layer}"` : '';
+  return `<div class="cbt-card-back${extra}"${style} aria-hidden="true">
+    <span class="cbt-back-rim"></span>
+    <span class="cbt-back-plate"></span>
+    <span class="cbt-back-bevel"></span>
+    <span class="cbt-back-pattern"></span>
+    <span class="cbt-back-gems"><i></i><i></i><i></i><i></i></span>
+    <span class="cbt-back-sigil"><em>FF</em></span>
+  </div>`;
+}
+/** Tas de pioche (bas-droite joueur). */
+function renderDeckPile(side){
+  const n=side?.deck?.length||0;
+  // Toujours un vrai tas visible (plusieurs versos décalés), sauf pioche vide
+  const layers=n<=0 ? 1 : Math.min(7, Math.max(4, 3+Math.ceil(n/12)));
+  const backs=[];
+  for(let i=0;i<layers;i++){
+    backs.push(cardBackHtml({
+      layer:i,
+      className: n<=0 ? 'is-ghost' : `layer-${i}`,
+    }));
+  }
+  return `<div class="cbt-deck-pile${n<=0?' is-empty':''}" title="Pioche : ${n} carte${n===1?'':'s'}" aria-label="Pioche, ${n} cartes">
+    <div class="cbt-deck-stack" style="--deck-layers:${layers}">${backs.join('')}</div>
+    <b class="cbt-deck-count">${n}</b>
+  </div>`;
+}
 function makeSide(factions, unique=15, copies=1){
   const deck=(copies|0)>1
     ? buildQuadDeck(factions, unique, copies)
@@ -1110,6 +1158,7 @@ function beginTurn(who, isOpening=false){
     const c=p.board.find(x=>x.uid===uid);
     if(!c) continue;
     c.justPlayed=false;
+    c.noActivateThisTurn=false;
     c.activatedThisTurn=false;
     c.attacksThisTurn=0;
     // Tank temporaire : appliqué au début du tour suivant l’activation, retiré en fin de ce tour
@@ -1236,6 +1285,20 @@ function triggerEnterExtras(who, card){
     spawnCombatFx('etendard', card.uid, [target.uid]);
     refreshBoardAuras(who);
   }
+  if(hasRole(card,'soutient-2') || hasRole(card,'soutient')){
+    const n=hasRole(card,'soutient-2') ? 2 : 1;
+    const label=n>1 ? 'Soutien 2' : 'Soutien';
+    const others=side.board.filter(c=>c.uid!==card.uid);
+    let targets=pickRandom(others, n);
+    if(!targets.length) targets=[card];
+    targets.forEach(target=>{
+      buffCreature(target, 0, 1, {label, from:card.name, fromUid:card.uid, fromSide:who});
+    });
+    const names=targets.map(cardLogName).join(', ');
+    combatLog(`${cardLogName(card)} (${label}) : +1 PV max à ${names}.`);
+    spawnCombatFx('soin', card.uid, targets.map(t=>t.uid));
+    refreshBoardAuras(who);
+  }
   if(hasRole(card,'cri-frappe')){
     const defSide=who==='player'?'enemy':'player';
     const foes=b[defSide].board.slice();
@@ -1263,15 +1326,16 @@ function notifySummonTriggers(who, summoned){
   });
 }
 function drawOne(p, who){
+  if(p.hand.length>=HAND_MAX) return false;
   if(!p.deck.length){
     p.hp=Math.max(0,p.hp-1);
     combatLog(`${who==='player'?'Tu':'Il'} fatigue (-1 tour).`);
     checkWinner();
-    return;
+    return false;
   }
-  if(p.hand.length>=10){ p.deck.shift(); combatLog('Main pleine: carte brûlée.'); return; }
   p.hand.push(p.deck.shift());
   sortHand(p.hand);
+  return true;
 }
 function checkWinner(){
   const b=state.battle; if(!b) return;
@@ -1322,15 +1386,19 @@ function playCardOn(side, card, idx, who){
   const i=Math.max(0, Math.min(idx, side.board.length));
   side.board.splice(i, 0, card);
   ensureArriveSeq(card);
-  if(hasRole(card,'charge')){
+  if(hasRush(card)){
     card.justPlayed=false;
     card.canAttack=true;
     card.exhausted=false;
+    // Charge : attaque OK ; Célérité : attaque + activation
+    card.noActivateThisTurn = !hasRole(card,'celerite');
   } else {
     card.justPlayed=true;
     card.canAttack=false;
+    card.noActivateThisTurn=true;
   }
-  combatLog(`${who==='player'?'Tu invoques':'Adverse invoque'} ${cardLogName(card)} (${card.cost})${hasRole(card,'charge')?' — Charge !':''}.`);
+  const rushNote=hasRole(card,'celerite')?' — Célérité !':hasRole(card,'charge')?' — Charge !':'';
+  combatLog(`${who==='player'?'Tu invoques':'Adverse invoque'} ${cardLogName(card)} (${card.cost})${rushNote}.`);
   playCreatureSfx(card, 'move');
   flashCombatCard(card.uid, 520);
   triggerEnterExtras(who, card);
@@ -1356,7 +1424,10 @@ function canCreatureAttack(c){
   return used < maxAttacks(c) && !c.exhausted;
 }
 function canCreatureActivate(c){
-  return !!(c && !c.justPlayed && !c.activatedThisTurn && !(c.attacksThisTurn>0) && activationSpec(c));
+  if(!c || c.activatedThisTurn || (c.attacksThisTurn>0) || !activationSpec(c)) return false;
+  if(c.justPlayed) return false;
+  if(c.noActivateThisTurn) return false;
+  return true;
 }
 function isTank(c){
   return !!(c && (hasRole(c,'tank') || c.tempTank));
@@ -1566,14 +1637,8 @@ function cancelAttack(){
 }
 function markAttackUsed(atk){
   atk.attacksThisTurn=(atk.attacksThisTurn||0)+1;
-  if(atk.attacksThisTurn>=maxAttacks(atk)){
-    atk.exhausted=true;
-    atk.canAttack=false;
-  } else {
-    atk.exhausted=false;
-    atk.canAttack=true;
-    combatLog(`${cardLogName(atk)} (Double attaque) : encore une attaque possible.`);
-  }
+  atk.exhausted=true;
+  atk.canAttack=false;
 }
 function applyOnAttackEffects(atk, def, atkSide){
   if(!def) return;
@@ -1600,6 +1665,23 @@ function applyLifesteal(atk, amount){
     combatLog(`${cardLogName(atk)} (Vol de vie) : +${healed} PV.`);
     spawnCombatFx('soin', atk.uid, [atk.uid]);
   }
+}
+function applyLifelink(atk, atkSide, amount){
+  if(!atk || amount<=0 || !hasRole(atk,'lien-de-vie')) return;
+  const b=state.battle; if(!b) return;
+  const side=b[atkSide];
+  if(!side) return;
+  const before=side.hp|0;
+  side.hp=Math.min(30, before+amount);
+  const gained=side.hp-before;
+  if(gained>0){
+    combatLog(`${cardLogName(atk)} (Lien de vie) : +${gained} PV à la tour.`);
+    spawnCombatFx('soin', atk.uid, [`face-${atkSide}`]);
+  }
+}
+function applyCombatHeals(atk, atkSide, amount){
+  applyLifesteal(atk, amount);
+  applyLifelink(atk, atkSide, amount);
 }
 function triggerAfterAttack(who, atk){
   if(!hasRole(atk,'apres-attaque')) return;
@@ -1638,60 +1720,88 @@ function resolveCombatStrike(atkSide, atkUid, target){
   breakStealth(atk, 'attaque');
   flashCombatCard(atk.uid);
   playCreatureSfx(atk, 'attack');
+  const hits=strikeCount(atk);
+  const dmgEach=Math.max(0, atk.attack|0);
   if(target.type==='face'){
-    D.hp=Math.max(0, D.hp-atk.attack);
+    const total=dmgEach*hits;
+    D.hp=Math.max(0, D.hp-total);
     const tower=atkSide==='player'?'la tour adverse':'ta tour';
-    combatLog(`${cardLogName(atk)} frappe ${tower} pour ${atk.attack} (${D.hp}/30).`);
+    const multi=hits>1?` ×${hits}`:'';
+    combatLog(`${cardLogName(atk)} frappe ${tower} pour ${total}${multi} (${D.hp}/30).`);
     shakeTower(defSide);
-    if(atk.attack>=4) screenShake();
-    applyLifesteal(atk, atk.attack);
+    if(total>=4) screenShake();
+    applyCombatHeals(atk, atkSide, total);
     triggerAfterAttack(atkSide, atk);
   } else {
-    const def=D.board.find(c=>c.uid===target.uid);
-    if(!def){
-      atk.attacksThisTurn=Math.max(0,(atk.attacksThisTurn||1)-1);
-      atk.exhausted=false; atk.canAttack=true;
-      return false;
-    }
-    if(isStealthed(def)){
-      combatLog(`${cardLogName(def)} est camouflée — cible invalide.`);
-      atk.attacksThisTurn=Math.max(0,(atk.attacksThisTurn||1)-1);
-      atk.exhausted=false; atk.canAttack=true;
-      return false;
-    }
-    const tankNote=isTank(def)?' (Tank)':'';
     const noRiposte=hasNoRiposte(atk);
-    const riposteDmg=Math.max(0, def.attack|0);
-    const dmg=Math.max(0, atk.attack|0);
-    let dealt=0;
-    // Mêlée : riposte toujours (même si la cible meurt). Ranged / sans-riposte : aucune.
-    if(noRiposte){
-      combatLog(`${cardLogName(atk)} frappe ${cardLogName(def)}${tankNote} — sans riposte.`);
-      dealt=dealDamageToCreature(defSide, def, dmg);
-    } else {
-      combatLog(`${cardLogName(atk)} charge ${cardLogName(def)}${tankNote} — riposte ${riposteDmg}.`);
-      dealt=dealDamageToCreature(defSide, def, dmg);
-    }
-    if(dealt>0 && def.hp>0){
-      applyOnAttackEffects(atk, def, atkSide);
-      spawnStrikeImpact(atk.uid, def.uid);
-    } else if(dealt>0){
-      spawnStrikeImpact(atk.uid, def.uid);
-    }
-    if(dealt>0) applyLifesteal(atk, dealt);
-    if(!noRiposte && riposteDmg>0){
-      dealDamageToCreature(atkSide, atk, riposteDmg);
-    }
-    flashCombatCard(def.uid);
-    const killedDef=(def.hp|0)<=0;
-    if(killedDef){
-      killCreature(defSide, def);
-      if(hasRole(atk,'quand-tue') && (atk.hp|0)>0 && A.board.some(x=>x.uid===atk.uid)){
-        buffCreature(atk, 1, 1, {label:'Exécution', from:atk.name, fromUid:atk.uid, fromSide:atkSide});
-        combatLog(`${cardLogName(atk)} (Exécution) : +1/+1.`);
-        spawnCombatFx('etendard', atk.uid, [atk.uid]);
+    const deathtouch=hasRole(atk,'contact-mortel');
+    const trample=hasRole(atk,'pietinement');
+    const tankNote=(()=>{
+      const d0=D.board.find(c=>c.uid===target.uid);
+      return isTank(d0)?' (Tank)':'';
+    })();
+    let totalCreatureDealt=0;
+    let totalFaceOverflow=0;
+    if(hits>1) combatLog(`${cardLogName(atk)} (Double attaque) : ${hits} frappes sur la même cible.`);
+    for(let i=0;i<hits;i++){
+      if((atk.hp|0)<=0) break;
+      let def=D.board.find(c=>c.uid===target.uid);
+      if(!def || (def.hp|0)<=0){
+        if(trample && dmgEach>0){
+          D.hp=Math.max(0, D.hp-dmgEach);
+          totalFaceOverflow+=dmgEach;
+        }
+        continue;
+      }
+      if(isStealthed(def)){
+        combatLog(`${cardLogName(def)} est camouflée — cible invalide.`);
+        if(i===0){
+          atk.attacksThisTurn=Math.max(0,(atk.attacksThisTurn||1)-1);
+          atk.exhausted=false; atk.canAttack=true;
+          return false;
+        }
+        break;
+      }
+      const hpBefore=def.hp|0;
+      const hadShield=!!def.divineShield;
+      const riposteDmg=Math.max(0, def.attack|0);
+      if(i===0){
+        if(noRiposte) combatLog(`${cardLogName(atk)} frappe ${cardLogName(def)}${tankNote} — sans riposte.`);
+        else combatLog(`${cardLogName(atk)} charge ${cardLogName(def)}${tankNote} — riposte ${riposteDmg}.`);
+      }
+      const dealt=dealDamageToCreature(defSide, def, dmgEach, {deathtouch});
+      if(dealt>0){
+        totalCreatureDealt+=dealt;
+        applyOnAttackEffects(atk, def, atkSide);
+        spawnStrikeImpact(atk.uid, def.uid);
+      }
+      if(trample && !hadShield && dmgEach>0){
+        const needed=deathtouch ? 1 : hpBefore;
+        const excess=Math.max(0, dmgEach-needed);
+        if(excess>0){
+          D.hp=Math.max(0, D.hp-excess);
+          totalFaceOverflow+=excess;
+        }
+      }
+      if(!noRiposte && riposteDmg>0 && (atk.hp|0)>0){
+        dealDamageToCreature(atkSide, atk, riposteDmg);
+      }
+      flashCombatCard(def.uid);
+      if((def.hp|0)<=0){
+        killCreature(defSide, def);
+        if(hasRole(atk,'quand-tue') && (atk.hp|0)>0 && A.board.some(x=>x.uid===atk.uid)){
+          buffCreature(atk, 1, 1, {label:'Exécution', from:atk.name, fromUid:atk.uid, fromSide:atkSide});
+          combatLog(`${cardLogName(atk)} (Exécution) : +1/+1.`);
+          spawnCombatFx('etendard', atk.uid, [atk.uid]);
+        }
       }
     }
+    if(totalFaceOverflow>0){
+      combatLog(`${cardLogName(atk)} (Piétinement) : ${totalFaceOverflow} à la tour (${D.hp}/30).`);
+      shakeTower(defSide);
+    }
+    const healAmt=totalCreatureDealt+totalFaceOverflow;
+    if(healAmt>0) applyCombatHeals(atk, atkSide, healAmt);
     if((atk.hp|0)<=0) killCreature(atkSide, atk);
     else triggerAfterAttack(atkSide, atk);
   }
@@ -1784,7 +1894,6 @@ function enemyTurn(){
   b.enemy.board.forEach(c=>{
     if(!canCreatureAttack(c)) return;
     attackers.push(c.uid);
-    if(hasRole(c,'double-attaque') && maxAttacks(c)>1) attackers.push(c.uid);
   });
   if(!attackers.length){
     checkWinner();
@@ -2028,7 +2137,8 @@ function renderBoardRow(side, who){
         aiming:isSource,
         canAttack:canAtk && !isSource && !choosing,
         canActivate:canAct && !isSource && !choosing,
-        summonSick: !!c.justPlayed,
+        // Vortex seulement pendant le tour d’invocation ; justPlayed reste pour le mal d’attaque
+        summonSick: !!c.justPlayed && b.active===who,
         exhausted: !!c.exhausted && !canAtk && !canAct,
         attacking:isSource,
       }));
@@ -2036,7 +2146,7 @@ function renderBoardRow(side, who){
       parts.push(miniCard(c,{
         aiming:isSource,
         attacking:isSource,
-        summonSick: !!c.justPlayed,
+        summonSick: !!c.justPlayed && b.active===who,
         exhausted: !!c.exhausted && !c.justPlayed,
       }));
     }
@@ -2133,6 +2243,11 @@ function renderCombatLobby(){
       <button type="button" class="cbt-end" onclick="openCampaignPanel('binder')">Classeur</button>
       <button type="button" class="cbt-end" onclick="openCampaignPanel('shop')">Boutique</button>`
     : `<button type="button" class="cbt-start lobby-campaign" onclick="startCampaign()">${campLabel}</button>`;
+  const monoOn=typeof isMonoFactionCheat==='function' && isMonoFactionCheat();
+  const testBtns=`
+      <button type="button" class="cbt-end lobby-test${monoOn?' is-on':''}" onclick="toggleMonoFactionCheat()">${typeof monoFactionCheatLabel==='function'?monoFactionCheatLabel():'Cheat mono-faction'}</button>
+      <button type="button" class="cbt-end lobby-test" onclick="openFreeTestBooster()">Acheter un booster : gratuit</button>
+      <button type="button" class="cbt-end lobby-test lobby-test-reset" onclick="resetCampaign()">Reset la campagne</button>`;
   return `<section class="panel combat-lobby">
     <div class="section-head">
       <div>
@@ -2158,7 +2273,7 @@ function renderCombatLobby(){
         <p>${hasCamp
           ? `Partie en cours — ${typeof binderCount==='function'?binderCount():0} carte(s) · ${camp.gold||0} or.`
           : 'Prologue, carte du monde, classeur, boutique et duels.'}</p>
-        <div class="lobby-campaign-actions">${campBtns}</div>
+        <div class="lobby-campaign-actions">${campBtns}${testBtns}</div>
       </article>
     </div>
   </section>`;
@@ -2270,7 +2385,7 @@ function renderCombat(){
               checkAfford:!mulligan,
               affordable: mulligan ? true : ok,
             });
-          }).join('')}<small>${deckCountLabel(b.player)}</small></div>`;
+          }).join('')}</div>`;
   return `<section class="${combatTableClasses(`${playerAiming?' is-aiming':''}${mulligan?' is-mulligan':''}${aimLegal?.forcedTank?' tank-lock':''}`)}">
     ${aimSvg}
     ${ended}
@@ -2294,7 +2409,7 @@ function renderCombat(){
         <div class="cbt-side enemy-hud">
           ${renderManaCrystals(b.enemy)}
           ${renderTowerSprite('enemy', enemyTowerOpts)}
-          <div class="cbt-hand enemy-hand">${b.enemy.hand.map(()=>`<div class="cbt-back"></div>`).join('')}<small>${deckCountLabel(b.enemy)}</small></div>
+          <div class="cbt-hand enemy-hand">${b.enemy.hand.map(()=>cardBackHtml({className:'is-mini'})).join('')}<small>${deckCountLabel(b.enemy)}</small></div>
         </div>
         <div class="cbt-battlefield">
           <div class="cbt-lane enemy">
@@ -2312,6 +2427,7 @@ function renderCombat(){
       ${sideControls}
     </div>
     ${playerHandHtml}
+    ${renderDeckPile(b.player)}
   </section>`;
 }
 
@@ -2408,6 +2524,22 @@ function hideCombatCardPreview(){
   document.querySelectorAll('.cbt-card.hand-drawn').forEach(el=>el.classList.remove('hand-drawn'));
   hidePlayAim();
 }
+/** Ancre l’aperçu au bord droit du plateau (évite le coin écran en F11 / grand moniteur). */
+function placeCombatCardPreviewHost(host){
+  if(!host) return;
+  host.className='cbt-card-preview show side-right';
+  host.style.left='auto';
+  host.style.top='50%';
+  const table=document.querySelector('.combat-table');
+  if(table){
+    const rect=table.getBoundingClientRect();
+    const inset=12;
+    const right=Math.max(inset, window.innerWidth - rect.right + inset);
+    host.style.right=`${Math.round(right)}px`;
+  } else {
+    host.style.right='max(12px, 2vw)';
+  }
+}
 function showCombatCardPreview(el){
   if(!el || state.tab!=='combat' || !state.battle) return;
   const uid=el.getAttribute('data-uid');
@@ -2420,11 +2552,7 @@ function showCombatCardPreview(el){
     host.setAttribute('aria-hidden','true');
     document.body.appendChild(host);
   }
-  /* Toujours à l’ouest, centre vertical ; si trop haut → recentrage + scale */
-  host.className='cbt-card-preview show side-west';
-  host.style.top='50%';
-  host.style.left='max(10px, 1.2vw)';
-  host.style.right='auto';
+  placeCombatCardPreviewHost(host);
   host.style.setProperty('--preview-fit', '1');
   host.innerHTML=buildFfCardHtml(c, {
     forceArchive:true,
@@ -2436,6 +2564,7 @@ function showCombatCardPreview(el){
   requestAnimationFrame(()=>{
     const preview=document.getElementById('cbt-card-preview');
     if(!preview?.classList.contains('show')) return;
+    placeCombatCardPreviewHost(preview);
     const h=preview.offsetHeight || 1;
     const maxH=window.innerHeight * 0.94;
     const fit=h > maxH ? (maxH / h) : 1;
@@ -2473,6 +2602,9 @@ function bindCombatCardPreview(){
 }
 
 window.BOARD_SHAPES=BOARD_SHAPES;
+window.HAND_MAX=HAND_MAX;
+window.cardBackHtml=cardBackHtml;
+window.renderDeckPile=renderDeckPile;
 window.boardShapeFor=boardShapeFor;
 window.startCombat=startCombat;
 window.backToCombatLobby=backToCombatLobby;

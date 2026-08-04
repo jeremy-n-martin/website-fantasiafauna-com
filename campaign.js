@@ -1,6 +1,7 @@
 /* Campagne — Puzzle Quest / tour du magicien, combats de cartes */
 
 const CAMPAIGN_KEY='ff-campaign-v1';
+const CAMP_CHEATS_KEY='ff-campaign-cheats';
 /** Échelle boutique / craft : 5 cartes d’une rareté → 1 de la rareté supérieure. */
 const CAMPAIGN_RARITIES=[
   {id:'normal', label:'Normale', weight:55},
@@ -107,6 +108,42 @@ function loadCampaign(){
 }
 function saveCampaign(){
   try{ localStorage.setItem(CAMPAIGN_KEY, JSON.stringify(ensureCampaign())); }catch(_){}
+}
+function loadCampCheats(){
+  try{
+    const raw=localStorage.getItem(CAMP_CHEATS_KEY);
+    if(!raw) return {monoFaction:false};
+    return {monoFaction:false, ...JSON.parse(raw)};
+  }catch(_){
+    return {monoFaction:false};
+  }
+}
+function saveCampCheats(cheats){
+  try{ localStorage.setItem(CAMP_CHEATS_KEY, JSON.stringify(cheats||loadCampCheats())); }catch(_){}
+}
+function isMonoFactionCheat(){
+  return !!loadCampCheats().monoFaction;
+}
+/** Factions réellement utilisées en combat (cheat = faction principale seule). */
+function campaignPlayFactions(playerFactions){
+  const list=Array.isArray(playerFactions) ? playerFactions.filter(Boolean) : [];
+  if(!list.length) return list;
+  if(isMonoFactionCheat()) return [list[0]];
+  return list.slice();
+}
+function toggleMonoFactionCheat(){
+  const cheats=loadCampCheats();
+  cheats.monoFaction=!cheats.monoFaction;
+  saveCampCheats(cheats);
+  if(typeof render==='function') render();
+}
+function monoFactionCheatLabel(){
+  const on=isMonoFactionCheat();
+  const camp=typeof ensureCampaign==='function' ? ensureCampaign() : null;
+  const primary=(camp?.playerFactions||[])[0] || 'ta faction principale';
+  return on
+    ? `Cheat mono-faction : ON (${primary})`
+    : 'Cheat mono-faction : OFF';
 }
 function rarityIndex(id){
   return CAMPAIGN_RARITIES.findIndex(r=>r.id===id);
@@ -390,15 +427,16 @@ function pickBoosterCreature(){
   if(!CREATURES.length) return null;
   return CREATURES[Math.floor(Math.random()*CREATURES.length)];
 }
-function openCampaignBooster(){
+function openCampaignBooster(opts={}){
   const camp=ensureCampaign();
-  if((camp.gold||0)<BOOSTER_PRICE){
+  const free=!!opts.free;
+  if(!free && (camp.gold||0)<BOOSTER_PRICE){
     camp.shopMsg=`Il faut ${BOOSTER_PRICE} or pour un booster.`;
     saveCampaign();
     render();
     return;
   }
-  camp.gold-=BOOSTER_PRICE;
+  if(!free) camp.gold-=BOOSTER_PRICE;
   const cards=[];
   for(let i=0;i<BOOSTER_SIZE;i++){
     const c=pickBoosterCreature();
@@ -409,8 +447,23 @@ function openCampaignBooster(){
   }
   camp.lastBooster=cards;
   const specials=cards.filter(c=>c.rarity!=='normal').length;
-  camp.shopMsg=`Booster ×${BOOSTER_SIZE} ouvert (−${BOOSTER_PRICE} or)${specials?` · ${specials} spéciale${specials>1?'s':''}`:''}.`;
+  camp.shopMsg=free
+    ? `Booster test ×${BOOSTER_SIZE} (gratuit)${specials?` · ${specials} spéciale${specials>1?'s':''}`:''}.`
+    : `Booster ×${BOOSTER_SIZE} ouvert (−${BOOSTER_PRICE} or)${specials?` · ${specials} spéciale${specials>1?'s':''}`:''}.`;
   saveCampaign();
+  render();
+}
+function openFreeTestBooster(){
+  openCampaignBooster({free:true});
+}
+function resetCampaign(){
+  if(!confirm('Réinitialiser la campagne ? Or, classeur, carte et progression seront effacés.')) return;
+  try{ localStorage.removeItem(CAMPAIGN_KEY); }catch(_){}
+  state.campaign=defaultCampaign();
+  state.battle=null;
+  state.combatView='lobby';
+  state.tab='combat';
+  if(typeof hideCombatCardPreview==='function') hideCombatCardPreview();
   render();
 }
 function shopPrice(rarity, kind='buy'){
@@ -673,15 +726,17 @@ function startCampaignBattle(fromNode){
   const enemyFactions=pickN(enemyPool, Math.min(2, enemyPool.length));
   const factions=[...new Set([...playerFactions, ...enemyFactions])];
   const playerFirst=Math.random()<0.5;
+  const playFactions=campaignPlayFactions(playerFactions);
   const playerSide=typeof makeCampaignPlayerSide==='function'
-    ? makeCampaignPlayerSide(playerFactions)
-    : makeSide(playerFactions, CAMPAIGN_DECK_SIZE*STARTER_COPIES);
+    ? makeCampaignPlayerSide(playFactions)
+    : makeSide(playFactions, CAMPAIGN_DECK_SIZE*STARTER_COPIES);
   const enemySide=makeCampaignSideFromDeck(enemyFactions, buildCampaignDeck(enemyFactions));
   state.tab='combat';
   state.battle={
     mode:'campagne',
     factions,
-    playerFactions,
+    playerFactions: playFactions,
+    chosenFactions: playerFactions.slice(),
     enemyFactions,
     turn:1,
     active: playerFirst ? 'player' : 'enemy',
@@ -703,6 +758,9 @@ function startCampaignBattle(fromNode){
     mapNode:camp.battleNode,
   };
   combatLog(`Campagne — ${mapNode(camp.battleNode).name}. Toi: ${playerFactions.join(' · ')} · Adverse: ${enemyFactions.join(' · ')}.`);
+  if(isMonoFactionCheat()){
+    combatLog(`Cheat mono-faction : deck limité à ${playFactions[0]||'—'}.`);
+  }
   combatLog(`Decks 60 cartes (classeur ${binderCount()}) — main 7 → pile ${playerSide.deck.length}/${playerSide.startingDeckSize}. ${state.battle.coin}.`);
   if(typeof stampSideFrames==='function'){
     stampSideFrames(state.battle.enemy, typeof rollCampaignRarity==='function'?rollCampaignRarity:null);
@@ -1075,6 +1133,12 @@ window.buyShopOffer=buyShopOffer;
 window.sellBinderCard=sellBinderCard;
 window.payShopRefresh=payShopRefresh;
 window.openCampaignBooster=openCampaignBooster;
+window.openFreeTestBooster=openFreeTestBooster;
+window.resetCampaign=resetCampaign;
+window.toggleMonoFactionCheat=toggleMonoFactionCheat;
+window.isMonoFactionCheat=isMonoFactionCheat;
+window.monoFactionCheatLabel=monoFactionCheatLabel;
+window.campaignPlayFactions=campaignPlayFactions;
 window.BOOSTER_PRICE=BOOSTER_PRICE;
 window.BOOSTER_SIZE=BOOSTER_SIZE;
 window.renderCampaign=renderCampaign;

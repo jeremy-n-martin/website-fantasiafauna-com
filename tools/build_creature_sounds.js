@@ -7,8 +7,8 @@ const path = require('path');
 
 const root = path.join(__dirname, '..');
 const cat = require(path.join(root, 'audio_catalog.json'));
-const g = fs.readFileSync(path.join(root, 'game.js'), 'utf8');
-const creatures = eval(g.match(/const CREATURES = (\[.*?\]);/s)[1]);
+const dataSrc = fs.readFileSync(path.join(root, 'creatures-data.js'), 'utf8');
+const creatures = eval(dataSrc.match(/const CREATURES = (\[.*?\]);/s)[1]);
 
 const CODE_NAMES = {
   AAGL:'Archangel', ADVL:'Archdevil', AELM:'Air Elemental', AGRM:'Archer', ALIZ:'Alizard',
@@ -187,9 +187,10 @@ const THEMES = [
   { test: c => /dragon/i.test(c.name), pack: 'Azure Dragon' },
   { test: c => (c.natures || []).includes('mort-vivant'), pack: 'Skeleton' },
   { test: c => (c.natures || []).includes('méchanique') || /goleme|automate|modron|forgelet/i.test(c.name), pack: 'Iron Golem' },
-  { test: c => (c.roles || []).includes('volant') && /(aarak|harpy|phénix|phenix|roc|ziz|oiseau)/i.test(c.name), pack: 'Harpy' },
-  { test: c => (c.roles || []).includes('volant'), pack: 'Griffin' },
-  { test: c => (c.roles || []).includes('ranged') || (c.roles || []).includes('lancer'), pack: 'Archer' },
+  { test: c => ((c.abilities || []).includes('vol') || (c.roles || []).includes('volant')) && /(aarak|harpy|phénix|phenix|roc|ziz|oiseau)/i.test(c.name), pack: 'Harpy' },
+  { test: c => (c.abilities || []).includes('vol') || (c.roles || []).includes('volant'), pack: 'Griffin' },
+  { test: c => (c.abilities || []).includes('ranged') || (c.abilities || []).includes('lancer')
+    || (c.roles || []).includes('ranged') || (c.roles || []).includes('lancer'), pack: 'Archer' },
   { test: c => (c.roles || []).includes('caster') && /(mage|sorc|oracle|archimage|illusion)/i.test(c.name), pack: 'Mage' },
   { test: c => (c.roles || []).includes('caster'), pack: 'Mage' },
   { test: c => (c.natures || []).includes('végétal'), pack: 'Treant' },
@@ -201,7 +202,7 @@ const THEMES = [
   { test: c => c.origin === 'Infernal' || c.origin === 'Abyssal', pack: 'Devil' },
   { test: c => c.origin === 'Céleste' || c.origin === 'Empyréen', pack: 'Angel' },
   { test: c => c.origin === 'Nécrotique', pack: 'Skeleton' },
-  { test: c => (c.roles || []).includes('tank'), pack: 'Behemoth' },
+  { test: c => (c.abilities || []).includes('tank') || (c.roles || []).includes('tank'), pack: 'Behemoth' },
   { test: c => true, pack: 'Swordsman' },
 ];
 
@@ -230,15 +231,16 @@ for (const c of creatures){
     how = 'fallback';
   }
   stats[how] = (stats[how] || 0) + 1;
+  const toOgg = (p) => (typeof p === 'string' && p.toLowerCase().endsWith('.wav')) ? p.slice(0, -4) + '.ogg' : p;
   mapping[c.id] = {
     name: c.name,
     source: pack.code,
     sourceName: pack.pretty,
     match: how,
-    attack: pack.core.attack,
-    defend: pack.core.defend,
-    move: pack.core.move,
-    wince: pack.core.wince,
+    attack: toOgg(pack.core.attack),
+    defend: toOgg(pack.core.defend),
+    move: toOgg(pack.core.move),
+    wince: toOgg(pack.core.wince),
   };
 }
 
