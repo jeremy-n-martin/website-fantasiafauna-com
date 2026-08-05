@@ -120,8 +120,8 @@ const KEYWORD_ROLES = new Set([
   'etendard','formation',
   'activer-regen','activer-tank','activer-bouclier','activer-frappe','activer-soin','activer-purge',
   'bouclier-divin','double-attaque','charge','celerite','camouflage','vol-de-vie','lien-de-vie',
-  'pietinement','contact-mortel','dernier-souffle',
-  'cri-frappe','furie','allie-meurt','quand-tue','affaiblir','survie',
+  'pietinement','transpercer','contact-mortel','dernier-souffle',
+  'cri-frappe','cri-exorcisme','furie','allie-meurt','quand-tue','affaiblir','survie',
   'poison','brulant','gelant','fin-tour-tir','fin-tour-buff','debut-tour-soin','debut-tour-tir',
   'quand-blesse','quand-invoque','apres-attaque','jetons-1-1','donner-buff','soutient','soutient-2','vol',
 ]);
@@ -375,6 +375,51 @@ function clearCreatureStatuses(c){
   if(c.frozen || c.skipNextAttack){
     c.frozen=false;
     c.skipNextAttack=false;
+    changed=true;
+  }
+  return changed;
+}
+/** Retire les bonus permanents positifs (+ATQ/+PV) et le Bouclier divin. */
+function stripPositiveBuffs(c){
+  if(!c) return false;
+  let changed=false;
+  const mods=Array.isArray(c.permMods) ? c.permMods : [];
+  const keep=[];
+  mods.forEach(m=>{
+    const atk=m.atk|0;
+    const hp=m.hp|0;
+    const posAtk=Math.max(0, atk);
+    const posHp=Math.max(0, hp);
+    const negAtk=Math.min(0, atk);
+    const negHp=Math.min(0, hp);
+    if(posAtk){
+      c.baseAttack=(c.baseAttack||0)-posAtk;
+      c.attack=(c.attack||0)-posAtk;
+      if(c.attack<0) c.attack=0;
+      if(c.baseAttack<0) c.baseAttack=0;
+      changed=true;
+    }
+    if(posHp){
+      c.baseMaxHp=(c.baseMaxHp||0)-posHp;
+      c.maxHp=(c.maxHp||0)-posHp;
+      if(c.baseMaxHp<1) c.baseMaxHp=1;
+      if(c.maxHp<1) c.maxHp=1;
+      c.hp=Math.min(c.hp||0, c.maxHp);
+      if(c.hp<1) c.hp=1;
+      changed=true;
+    }
+    if(negAtk || negHp){
+      keep.push({...m, atk:negAtk, hp:negHp});
+    }
+  });
+  c.permMods=keep;
+  if(c.divineShield){
+    c.divineShield=false;
+    changed=true;
+  }
+  if(c.tempTank || c.pendingTank){
+    c.tempTank=false;
+    c.pendingTank=false;
     changed=true;
   }
   return changed;
@@ -1613,8 +1658,8 @@ function triggerEnterExtras(who, card){
   if(hasRole(card,'donner-buff')){
     const allies=side.board.slice();
     const target=pickRandom(allies,1)[0]||card;
-    buffCreature(target, 2, 2, {label:'Bénédiction', from:card.name, fromUid:card.uid, fromSide:who});
-    combatLog(`${cardLogName(card)} (Bénédiction) : +2/+2 à ${cardLogName(target)}.`);
+    buffCreature(target, 1, 1, {label:'Bénédiction', from:card.name, fromUid:card.uid, fromSide:who});
+    combatLog(`${cardLogName(card)} (Bénédiction) : +1/+1 à ${cardLogName(target)}.`);
     spawnCombatFx('etendard', card.uid, [target.uid]);
     refreshBoardAuras(who);
   }
@@ -1662,6 +1707,25 @@ function triggerEnterExtras(who, card){
       spawnCombatFx('sort', card.uid, keys);
       sweepDead(defSide);
     }
+  }
+  if(hasRole(card,'cri-exorcisme')){
+    const defSide=who==='player'?'enemy':'player';
+    const foes=b[defSide].board.slice();
+    const cleaned=[];
+    foes.forEach(f=>{
+      if(stripPositiveBuffs(f)) cleaned.push(f.uid);
+    });
+    if(cleaned.length){
+      combatLog(`${cardLogName(card)} (Exorcisme) : buffs retirés sur ${cleaned.length} créature(s) adverse(s).`);
+      spawnCombatFx('soin', card.uid, cleaned);
+      cleaned.forEach(uid=>{
+        flashCombatCard(uid, 480);
+        if(typeof spawnBuffSparkles==='function') spawnBuffSparkles(uid, 4);
+      });
+    } else {
+      combatLog(`${cardLogName(card)} (Exorcisme) : aucun buff adverse à retirer.`);
+    }
+    refreshBoardAuras(defSide);
   }
   notifySummonTriggers(who, card);
 }
@@ -1794,6 +1858,9 @@ function canCreatureActivate(c){
 function isTank(c){
   return !!(c && (hasRole(c,'tank') || c.tempTank));
 }
+function hasVol(c){
+  return !!(c && hasRole(c,'vol'));
+}
 function isAssassin(c){
   return typeof hasAbility==='function'
     ? hasAbility(c,'assassin')
@@ -1860,6 +1927,7 @@ function boardTokenHtml(c){
   const socle=`<span class="cbt-shape cbt-shape-${shape.id}" data-shape="${shape.id}" aria-hidden="true">
       <span class="cbt-socle">
         <span class="cbt-socle-glow"></span>
+        <span class="cbt-socle-air"></span>
         <span class="cbt-socle-rim"></span>
         <span class="cbt-socle-plate"></span>
         <span class="cbt-socle-bevel"></span>
@@ -1874,7 +1942,10 @@ function boardTokenHtml(c){
       <b class="${hpCls}" title="${attrEsc(creatureStatTitle(c,'hp'))}">${hp}${creatureModTipHtml(c,'hp')}</b>
     </span>`;
 }
-/** Cibles légales pour un assaut (Tank force le focus, sauf Assassin / Camouflage). */
+/** Cibles légales pour un assaut (Tank, Vol, Assassin / Camouflage).
+ * Vol : seules les créatures avec Vol peuvent attaquer une créature volante.
+ * Une attaquante volante n’est bloquée que par Tank ou Vol (ignore le reste pour aller au visage / choisir).
+ */
 function legalAttackTargets(atkSide, atkCreature){
   const b=state.battle;
   const defSide=atkSide==='player'?'enemy':'player';
@@ -1883,14 +1954,32 @@ function legalAttackTargets(atkSide, atkCreature){
   const atk=atkCreature || (b.attackSource
     ? b[atkSide].board.find(c=>c.uid===b.attackSource)
     : null);
+  const atkFlying=hasVol(atk);
+
+  // Volantes attaquables seulement par Vol — exception : les Tanks restent toujours ciblables
+  let pool=visible.filter(c=>atkFlying || !hasVol(c) || isTank(c));
+
   if(atk && isAssassin(atk)){
-    return { face:true, minions:visible.slice(), forcedTank:false, assassin:true };
+    return { face:true, minions:pool.slice(), forcedTank:false, assassin:true, flying:atkFlying };
   }
-  const tanks=visible.filter(isTank);
+
+  const tanks=pool.filter(isTank);
   if(tanks.length){
-    return { face:false, minions:tanks, forcedTank:true, assassin:false };
+    // Les Tanks bloquent aussi les volants
+    return { face:false, minions:tanks, forcedTank:true, assassin:false, flying:atkFlying };
   }
-  return { face:true, minions:visible.slice(), forcedTank:false, assassin:false };
+
+  if(atkFlying){
+    // Bloqueurs aériens : autres volants (sans tank déjà géré)
+    const flyers=pool.filter(hasVol);
+    if(flyers.length){
+      return { face:false, minions:flyers, forcedTank:false, assassin:false, flying:true, forcedFlyer:true };
+    }
+    // Pas de tank ni de vol adverse : peut frapper le visage ou les créatures au sol
+    return { face:true, minions:pool.slice(), forcedTank:false, assassin:false, flying:true };
+  }
+
+  return { face:true, minions:pool.slice(), forcedTank:false, assassin:false, flying:false };
 }
 function selectAttacker(uid){
   const b=state.battle; if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
@@ -1947,6 +2036,8 @@ function startSmartAim(uid){
       ? `${c.name} vise… Ranged : les Tanks ne te bloquent pas.`
       : legal.forcedTank
         ? `${c.name} vise… un Tank adverse protège le reste — cible-le.`
+        : legal.forcedFlyer
+          ? `${c.name} vise… une créature volante te bloque — cible-la.`
         : `${c.name} vise… choisis une cible (tour ou mignon).`);
   }
   render();
@@ -2177,7 +2268,7 @@ function resolveCombatStrike(atkSide, atkUid, target){
   } else {
     const noRiposte=hasNoRiposte(atk);
     const deathtouch=hasRole(atk,'contact-mortel');
-    const trample=hasRole(atk,'pietinement');
+    const trample=hasRole(atk,'pietinement')||hasRole(atk,'transpercer');
     const tankNote=(()=>{
       const d0=D.board.find(c=>c.uid===target.uid);
       return isTank(d0)?' (Tank)':'';
@@ -2239,7 +2330,8 @@ function resolveCombatStrike(atkSide, atkUid, target){
       }
     }
     if(totalFaceOverflow>0){
-      combatLog(`${cardLogName(atk)} (Piétinement) : ${totalFaceOverflow} à la tour (${D.hp}/30).`);
+      const tramLabel=hasRole(atk,'transpercer')?'Transpercer':'Piétinement';
+      combatLog(`${cardLogName(atk)} (${tramLabel}) : ${totalFaceOverflow} à la tour (${D.hp}/30).`);
       shakeTower(defSide);
     }
     const healAmt=totalCreatureDealt+totalFaceOverflow;
@@ -2255,7 +2347,10 @@ function confirmAttackFace(){
   if(!b||b.active!=='player'||b.phase!=='main'||!b.attackSource) return;
   const atk=b.player.board.find(c=>c.uid===b.attackSource);
   if(!legalAttackTargets('player', atk).face){
-    combatLog('Un Tank adverse te barre la route vers la tour.');
+    const legal=legalAttackTargets('player', atk);
+    combatLog(legal.forcedFlyer
+      ? 'Une créature volante adverse te barre la route vers la tour.'
+      : 'Un Tank adverse te barre la route vers la tour.');
     render();
     return;
   }
@@ -2271,9 +2366,12 @@ function confirmAttackMinion(uid){
   const atk=b.player.board.find(c=>c.uid===b.attackSource);
   const legal=legalAttackTargets('player', atk);
   if(!legal.minions.some(c=>c.uid===uid)){
-    combatLog(legal.forcedTank
-      ? 'Cible invalide : attaque un Tank.'
-      : 'Cible invalide.');
+    const def=b.enemy.board.find(c=>c.uid===uid);
+    let why='Cible invalide.';
+    if(legal.forcedTank) why='Cible invalide : attaque un Tank.';
+    else if(legal.forcedFlyer) why='Cible invalide : une créature volante te bloque.';
+    else if(def && hasVol(def) && !hasVol(atk) && !isTank(def)) why='Cible invalide : il faut Vol pour attaquer une créature volante.';
+    combatLog(why);
     render();
     return;
   }
@@ -2289,7 +2387,7 @@ function chooseEnemyTarget(atk){
   if(!board.length) return legal.face ? {type:'face'} : {type:'face'};
   const lethal=board.filter(c=>c.hp<=atk.attack).sort((a,c)=>c.attack-a.attack || a.hp-c.hp);
   if(lethal.length && Math.random()<0.8) return {type:'minion', uid:lethal[0].uid};
-  if(legal.forcedTank || Math.random()<0.55){
+  if(legal.forcedTank || legal.forcedFlyer || Math.random()<0.55){
     const soft=board.slice().sort((a,c)=>a.hp-c.hp || c.attack-a.attack)[0];
     return {type:'minion', uid:soft.uid};
   }
@@ -2517,6 +2615,7 @@ function miniCard(c, opts={}){
   const aiming=opts.aiming?' aiming':'';
   const target=opts.targetable?' cbt-target':'';
   const tank=isTank(c)?' is-tank':'';
+  const flying=(!opts.hand && hasVol(c))?' has-vol':'';
   const blocked=opts.blocked?' cbt-blocked':'';
   const affordable=opts.affordable!==false;
   const unafford=opts.checkAfford && !affordable ? ' unaffordable':'';
@@ -2525,8 +2624,8 @@ function miniCard(c, opts={}){
   const title = summonSick ? ' title="Mal d’invocation — attaque au prochain tour"'
     : opts.exhausted ? ' title="Déjà utilisée"'
     : opts.aiming ? ' title="Attaquante — choisis une cible"'
-    : opts.blocked ? (opts.stealthed ? ' title="Camouflage — impossible à cibler"' : ' title="Protégé par un Tank — cible invalide"')
-    : opts.targetable ? (opts.forcedTank ? ' title="Tank — cible obligatoire"' : ' title="Cible valide — cliquer pour attaquer"')
+    : opts.blocked ? (opts.stealthed ? ' title="Camouflage — impossible à cibler"' : opts.needVol ? ' title="Vol requise pour attaquer cette créature"' : ' title="Protégé par un Tank ou une créature volante — cible invalide"')
+    : opts.targetable ? (opts.forcedTank ? ' title="Tank — cible obligatoire"' : opts.forcedFlyer ? ' title="Vol — cible obligatoire"' : ' title="Cible valide — cliquer pour attaquer"')
     : opts.playable ? ' title="Cliquer pour invoquer"'
     : canAct ? ' title="Peut être activée (ou attaquer)"'
     : canAtk ? ' title="Peut attaquer"'
@@ -2540,7 +2639,7 @@ function miniCard(c, opts={}){
   const statusCls=statusClasses.length ? ' '+statusClasses.join(' ') : '';
   const shape=!opts.hand ? boardShapeFor(c) : null;
   const shapeCls=shape ? ` cbt-token cbt-shape-id-${shape.id}` : '';
-  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${laser}${aiming}${target}${tank}${blocked}${unafford}${statusCls}${flash}${opts.playable?' can-play':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}${shapeCls}`;
+  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${laser}${aiming}${target}${tank}${flying}${blocked}${unafford}${statusCls}${flash}${opts.playable?' can-play':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}${shapeCls}`;
   const style=`style="--faction:${fm.color}"`;
   const badge = opts.aiming?'<em class="cbt-badge atk-badge">Vise…</em>'
     : opts.targetable && opts.forcedTank?'<em class="cbt-badge tank-badge">Tank</em>'
@@ -2615,7 +2714,9 @@ function renderBoardRow(side, who){
         targetable:ok,
         blocked:playerAiming && !ok,
         stealthed: isStealthed(c),
+        needVol: !!(playerAiming && !ok && hasVol(c) && aimAtk && !hasVol(aimAtk) && !isTank(c)),
         forcedTank:!!(legal && legal.forcedTank && pol!=='aggressive' && canAtkSrc),
+        forcedFlyer:!!(legal && legal.forcedFlyer && pol!=='aggressive' && canAtkSrc),
         selected:false,
       }));
     } else if(isPlayer && b.active==='player' && b.phase==='main' && !b.winner){
@@ -2771,6 +2872,7 @@ function renderCombatLobby(){
   const campBtns=hasCamp ? `
       <button type="button" class="cbt-start lobby-campaign" onclick="openCampaignPanel('map')">Carte du monde</button>
       <button type="button" class="cbt-end" onclick="openCampaignPanel('binder')">Classeur</button>
+      <button type="button" class="cbt-end" onclick="openCampaignPanel('deck')">Créer un deck</button>
       <button type="button" class="cbt-end" onclick="openCampaignPanel('shop')">Boutique</button>`
     : `<button type="button" class="cbt-start lobby-campaign" onclick="startCampaign()">${campLabel}</button>`;
   const monoOn=typeof isMonoFactionCheat==='function' && isMonoFactionCheat();
@@ -2848,6 +2950,8 @@ function renderCombat(){
         ? `<strong>Ranged</strong> : ignore les Tanks et n’encaisse pas de riposte.`
         : aimLegal?.forcedTank
           ? `Un <strong>Tank</strong> protège le camp adverse — tu dois le frapper.`
+          : aimLegal?.forcedFlyer
+            ? `Une créature <strong>volante</strong> te bloque — tu dois la frapper.`
           : `Pointe la <strong>tour adverse</strong> ou un <strong>mignon</strong> — la flèche jaune suit ton geste.`;
   const midControls = b.winner ? `<span class="cbt-wait">Partie terminée</span>`
     : mulligan ? `
@@ -2861,7 +2965,7 @@ function renderCombat(){
       </div>`
     : playerAiming ? `
       <div class="cbt-aim-panel${aimLegal?.forcedTank && aimPol!=='aggressive'?' tank-lock':''}${aimLegal?.assassin?' assassin-lock':''}">
-        <b>${aimPol==='aggressive'?(aimSpec?.label||'Sort agressif'):aimPol==='positive'?(aimSpec?.label||'Sort positif'):aimLegal?.assassin?'Ranged — libre':aimLegal?.forcedTank?'Tank adverse !':'Choisis une cible'}</b>
+        <b>${aimPol==='aggressive'?(aimSpec?.label||'Sort agressif'):aimPol==='positive'?(aimSpec?.label||'Sort positif'):aimLegal?.assassin?'Ranged — libre':aimLegal?.forcedTank?'Tank adverse !':aimLegal?.forcedFlyer?'Vol adverse !':'Choisis une cible'}</b>
         <p>${aimHint}</p>
         <button class="cbt-end" type="button" onclick="cancelAttack()">Annuler (Échap)</button>
       </div>`
@@ -3068,20 +3172,38 @@ function hideCombatCardPreview(){
   document.querySelectorAll('.cbt-card.hand-drawn').forEach(el=>el.classList.remove('hand-drawn'));
   hidePlayAim();
 }
-/** Ancre l’aperçu au bord droit du plateau (évite le coin écran en F11 / grand moniteur). */
-function placeCombatCardPreviewHost(host){
+/** Ancre l’aperçu : à gauche si la source est dans le quart droit de l’écran. */
+function placeCombatCardPreviewHost(host, sourceEl){
   if(!host) return;
-  host.className='cbt-card-preview show side-right';
-  host.style.left='auto';
-  host.style.top='50%';
   const table=document.querySelector('.combat-table');
-  if(table){
-    const rect=table.getBoundingClientRect();
-    const inset=12;
-    const right=Math.max(inset, window.innerWidth - rect.right + inset);
-    host.style.right=`${Math.round(right)}px`;
+  const inset=12;
+  let preferLeft=false;
+  if(sourceEl && typeof sourceEl.getBoundingClientRect==='function'){
+    const r=sourceEl.getBoundingClientRect();
+    const mid=(r.left+r.right)/2;
+    preferLeft = mid >= window.innerWidth * 0.75;
+  }
+  host.style.top='50%';
+  if(preferLeft){
+    host.className='cbt-card-preview show side-left';
+    host.style.right='auto';
+    if(table){
+      const rect=table.getBoundingClientRect();
+      const left=Math.max(inset, Math.round(rect.left + inset));
+      host.style.left=`${left}px`;
+    } else {
+      host.style.left='';
+    }
   } else {
-    host.style.right='max(12px, 2vw)';
+    host.className='cbt-card-preview show side-right';
+    host.style.left='auto';
+    if(table){
+      const rect=table.getBoundingClientRect();
+      const right=Math.max(inset, window.innerWidth - rect.right + inset);
+      host.style.right=`${Math.round(right)}px`;
+    } else {
+      host.style.right='';
+    }
   }
 }
 function showCombatCardPreview(el){
@@ -3096,7 +3218,7 @@ function showCombatCardPreview(el){
     host.setAttribute('aria-hidden','true');
     document.body.appendChild(host);
   }
-  placeCombatCardPreviewHost(host);
+  placeCombatCardPreviewHost(host, el);
   host.style.setProperty('--preview-fit', '1');
   host.innerHTML=buildFfCardHtml(c, {
     forceArchive:true,
@@ -3108,7 +3230,7 @@ function showCombatCardPreview(el){
   requestAnimationFrame(()=>{
     const preview=document.getElementById('cbt-card-preview');
     if(!preview?.classList.contains('show')) return;
-    placeCombatCardPreviewHost(preview);
+    placeCombatCardPreviewHost(preview, el);
     const h=preview.offsetHeight || 1;
     const maxH=window.innerHeight * 0.94;
     const fit=h > maxH ? (maxH / h) : 1;

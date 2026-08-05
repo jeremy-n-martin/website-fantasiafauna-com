@@ -35,8 +35,11 @@ function defaultCampaign(){
   return {
     gold:50,
     binder:[], // {creatureId, name, rarity, count}
+    decks:[], // {id, name, cards:[{creatureId, count}]} — max 15 uniques × 4
+    activeDeckId:null,
+    editingDeckId:null,
     introStep:0,
-    phase:'intro', // intro | pickFactions | map | battle | rewards | binder | fusion | shop
+    phase:'intro', // intro | pickFactions | map | battle | rewards | binder | fusion | shop | deck
     battlesWon:0,
     lastRewards:null,
     shopStock:null,
@@ -93,18 +96,21 @@ function mapRoadPairs(){
   }
   return pairs;
 }
-function ensureCampaign(){
-  if(!state.campaign) state.campaign=loadCampaign();
-  return state.campaign;
-}
 function loadCampaign(){
   try{
     const raw=localStorage.getItem(CAMPAIGN_KEY);
     if(!raw) return defaultCampaign();
-    return {...defaultCampaign(), ...JSON.parse(raw)};
+    const camp={...defaultCampaign(), ...JSON.parse(raw)};
+    migrateCampaignDecks(camp);
+    return camp;
   }catch(_){
     return defaultCampaign();
   }
+}
+function ensureCampaign(){
+  if(!state.campaign) state.campaign=loadCampaign();
+  migrateCampaignDecks(state.campaign);
+  return state.campaign;
 }
 function saveCampaign(){
   try{ localStorage.setItem(CAMPAIGN_KEY, JSON.stringify(ensureCampaign())); }catch(_){}
@@ -186,6 +192,271 @@ const STARTER_PRIMARY=8;
 const STARTER_SECONDARY=7;
 const STARTER_COPIES=4; // 15 modèles × 4 = 60 cartes
 const CAMPAIGN_DECK_SIZE=STARTER_PRIMARY+STARTER_SECONDARY; // modèles uniques
+const DECK_MAX_UNIQUES=15;
+const DECK_MAX_COPIES=4;
+
+function migrateCampaignDecks(camp){
+  if(!camp) return;
+  if(!Array.isArray(camp.decks)) camp.decks=[];
+  camp.decks=camp.decks.filter(d=>d && d.id);
+  for(const d of camp.decks){
+    if(!Array.isArray(d.cards)) d.cards=[];
+    d.cards=d.cards
+      .filter(e=>e && e.creatureId!=null)
+      .map(e=>({creatureId:Number(e.creatureId), count:Math.max(1, Math.min(DECK_MAX_COPIES, e.count|0||1))}))
+      .slice(0, DECK_MAX_UNIQUES);
+  }
+  if(camp.activeDeckId && !camp.decks.some(d=>d.id===camp.activeDeckId)) camp.activeDeckId=null;
+  if(!camp.activeDeckId && camp.decks.length) camp.activeDeckId=camp.decks[0].id;
+  if(camp.editingDeckId && !camp.decks.some(d=>d.id===camp.editingDeckId)) camp.editingDeckId=null;
+}
+function newDeckId(){
+  return `deck-${Date.now().toString(36)}-${Math.random().toString(36).slice(2,7)}`;
+}
+function getDeckById(id){
+  const camp=ensureCampaign();
+  return (camp.decks||[]).find(d=>d.id===id) || null;
+}
+function getActiveDeck(){
+  const camp=ensureCampaign();
+  return getDeckById(camp.activeDeckId) || camp.decks[0] || null;
+}
+function getEditingDeck(){
+  const camp=ensureCampaign();
+  return getDeckById(camp.editingDeckId) || getActiveDeck();
+}
+function deckUniqueCount(deck){
+  return (deck?.cards||[]).length;
+}
+function deckTotalCount(deck){
+  return (deck?.cards||[]).reduce((s,e)=>s+(e.count|0), 0);
+}
+function binderOwnedForCreature(creatureId){
+  const id=Number(creatureId);
+  return ensureCampaign().binder
+    .filter(r=>Number(r.creatureId)===id)
+    .reduce((s,r)=>s+(r.count|0), 0);
+}
+/** Exemplaires du classeur triés rareté desc. pour matérialiser le cadre. */
+function binderCopiesForCreature(creatureId){
+  const id=Number(creatureId);
+  const rows=ensureCampaign().binder
+    .filter(r=>Number(r.creatureId)===id && (r.count|0)>0)
+    .slice()
+    .sort((a,b)=>rarityIndex(b.rarity)-rarityIndex(a.rarity));
+  const out=[];
+  for(const row of rows){
+    for(let i=0;i<(row.count|0);i++) out.push(row.rarity||'normal');
+  }
+  return out;
+}
+function deckEntry(deck, creatureId){
+  const id=Number(creatureId);
+  return (deck.cards||[]).find(e=>Number(e.creatureId)===id) || null;
+}
+function createEmptyDeck(name){
+  const camp=ensureCampaign();
+  const n=(camp.decks||[]).length+1;
+  const deck={
+    id:newDeckId(),
+    name:name || `Deck ${n}`,
+    cards:[],
+  };
+  camp.decks.push(deck);
+  camp.activeDeckId=deck.id;
+  camp.editingDeckId=deck.id;
+  saveCampaign();
+  return deck;
+}
+function setActiveDeck(deckId){
+  const camp=ensureCampaign();
+  if(!getDeckById(deckId)) return;
+  camp.activeDeckId=deckId;
+  saveCampaign();
+  render();
+}
+function openDeckEditor(deckId){
+  const camp=ensureCampaign();
+  const deck=deckId ? getDeckById(deckId) : null;
+  if(deck) camp.editingDeckId=deck.id;
+  else if(!camp.editingDeckId){
+    const d=createEmptyDeck();
+    camp.editingDeckId=d.id;
+  }
+  setCampaignView('deck');
+}
+function deleteDeck(deckId){
+  const camp=ensureCampaign();
+  camp.decks=(camp.decks||[]).filter(d=>d.id!==deckId);
+  if(camp.activeDeckId===deckId) camp.activeDeckId=camp.decks[0]?.id||null;
+  if(camp.editingDeckId===deckId) camp.editingDeckId=camp.activeDeckId;
+  saveCampaign();
+  render();
+}
+function renameEditingDeck(name){
+  const deck=getEditingDeck();
+  if(!deck) return;
+  const cleaned=String(name||'').trim().slice(0, 40);
+  if(!cleaned) return;
+  deck.name=cleaned;
+  saveCampaign();
+  render();
+}
+function deckAddCreature(creatureId, delta=1){
+  const camp=ensureCampaign();
+  let deck=getEditingDeck();
+  if(!deck) deck=createEmptyDeck();
+  const id=Number(creatureId);
+  const owned=binderOwnedForCreature(id);
+  if(owned<=0){
+    camp.shopMsg='Cette carte n’est pas dans ton classeur.';
+    saveCampaign();
+    render();
+    return;
+  }
+  let entry=deckEntry(deck, id);
+  if(!entry){
+    if(deckUniqueCount(deck)>=DECK_MAX_UNIQUES){
+      camp.shopMsg=`Deck plein : ${DECK_MAX_UNIQUES} créatures max.`;
+      saveCampaign();
+      render();
+      return;
+    }
+    entry={creatureId:id, count:0};
+    deck.cards.push(entry);
+  }
+  const next=Math.min(DECK_MAX_COPIES, owned, (entry.count|0)+delta);
+  entry.count=Math.max(0, next);
+  if(entry.count<=0) deck.cards=deck.cards.filter(e=>e!==entry);
+  camp.shopMsg=null;
+  saveCampaign();
+  render();
+}
+function deckSetCreatureCount(creatureId, count){
+  const camp=ensureCampaign();
+  const deck=getEditingDeck();
+  if(!deck) return;
+  const id=Number(creatureId);
+  const owned=binderOwnedForCreature(id);
+  let entry=deckEntry(deck, id);
+  const n=Math.max(0, Math.min(DECK_MAX_COPIES, owned, count|0));
+  if(n<=0){
+    deck.cards=(deck.cards||[]).filter(e=>Number(e.creatureId)!==id);
+  } else if(!entry){
+    if(deckUniqueCount(deck)>=DECK_MAX_UNIQUES){
+      camp.shopMsg=`Deck plein : ${DECK_MAX_UNIQUES} créatures max.`;
+      saveCampaign();
+      render();
+      return;
+    }
+    deck.cards.push({creatureId:id, count:n});
+  } else {
+    entry.count=n;
+  }
+  saveCampaign();
+  render();
+}
+function materializeDeckCards(deck){
+  const cards=[];
+  for(const entry of deck.cards||[]){
+    const c=CREATURES.find(x=>x.id===Number(entry.creatureId));
+    if(!c) continue;
+    const need=Math.max(0, Math.min(DECK_MAX_COPIES, entry.count|0));
+    const frames=binderCopiesForCreature(c.id);
+    for(let i=0;i<need;i++){
+      const card=typeof cloneCard==='function' ? cloneCard(c) : {...c};
+      card.frameId=frames[i] || frames[frames.length-1] || 'normal';
+      cards.push(card);
+    }
+  }
+  return cards;
+}
+/** Construit un deck auto : jusqu’à 15 uniques × min(4, stock classeur), factions du joueur prioritaires. */
+function autoBuildDeckFromBinder(opts={}){
+  const camp=ensureCampaign();
+  ensureStarterQuadCopies();
+  const factions=camp.playerFactions||[];
+  const ownedIds=[...new Set((camp.binder||[])
+    .filter(r=>(r.count|0)>0)
+    .map(r=>Number(r.creatureId)))];
+  const models=ownedIds
+    .map(id=>CREATURES.find(c=>c.id===id))
+    .filter(Boolean)
+    .sort((a,b)=>{
+      const af=factions.includes(a.capital)?0:1;
+      const bf=factions.includes(b.capital)?0:1;
+      if(af!==bf) return af-bf;
+      const ca=(a.costColored||0)+(a.costNeutral||0)||a.cost||0;
+      const cb=(b.costColored||0)+(b.costNeutral||0)||b.cost||0;
+      if(ca!==cb) return ca-cb;
+      return (a.name||'').localeCompare(b.name||'','fr');
+    });
+  const cards=[];
+  for(const c of models){
+    if(cards.length>=DECK_MAX_UNIQUES) break;
+    const owned=binderOwnedForCreature(c.id);
+    if(owned<=0) continue;
+    cards.push({creatureId:c.id, count:Math.min(DECK_MAX_COPIES, owned)});
+  }
+  const deck=opts.replace && getEditingDeck()
+    ? getEditingDeck()
+    : createEmptyDeck(opts.name || 'Deck auto');
+  deck.cards=cards;
+  if(opts.name) deck.name=opts.name;
+  camp.activeDeckId=deck.id;
+  camp.editingDeckId=deck.id;
+  camp.shopMsg=`Deck auto : ${deckUniqueCount(deck)} créatures · ${deckTotalCount(deck)} cartes.`;
+  saveCampaign();
+  return deck;
+}
+function autoBuildAndOpenDeck(){
+  autoBuildDeckFromBinder({replace:false, name:'Deck auto'});
+  setCampaignView('deck');
+}
+function newDeckAndEdit(){
+  createEmptyDeck('Mon deck');
+  setCampaignView('deck');
+}
+function autoFillEditingDeck(){
+  autoBuildDeckFromBinder({replace:true, name:null});
+  render();
+}
+
+/** Deck joueur campagne : deck actif (15×4) sinon classeur filtré. */
+function makeCampaignPlayerSide(factions, size=null){
+  const camp=ensureCampaign();
+  ensureStarterQuadCopies();
+  const active=getActiveDeck();
+  if(active && (active.cards||[]).length){
+    const fromDeck=materializeDeckCards(active);
+    if(fromDeck.length){
+      return makeCampaignSideFromDeck(factions, fromDeck);
+    }
+  }
+  const cards=[];
+  const rows=sortedBinder().filter(row=>{
+    const c=CREATURES.find(x=>x.id===row.creatureId);
+    return c && factions.includes(c.capital) && row.count>0;
+  });
+  for(const row of rows){
+    const c=CREATURES.find(x=>x.id===row.creatureId);
+    if(!c) continue;
+    const n=row.count|0;
+    for(let i=0;i<n;i++){
+      const card=typeof cloneCard==='function' ? cloneCard(c) : {...c};
+      card.frameId=row.rarity || 'normal';
+      cards.push(card);
+    }
+  }
+  const target=size != null ? size : Math.max(CAMPAIGN_DECK_SIZE*STARTER_COPIES, cards.length);
+  if(cards.length<target){
+    for(const c of buildCampaignDeck(factions, CAMPAIGN_DECK_SIZE, STARTER_COPIES)){
+      cards.push(c);
+      if(cards.length>=target) break;
+    }
+  }
+  return makeCampaignSideFromDeck(factions, cards);
+}
 function campaignFactionList(){
   return typeof allFactions==='function'
     ? allFactions()
@@ -348,34 +619,6 @@ function makeCampaignSideFromDeck(factions, cards){
     factions:factions.slice(),
     startingDeckSize,
   };
-}
-/** Deck joueur campagne : tous les exemplaires du classeur (rareté = cadre). */
-function makeCampaignPlayerSide(factions, size=null){
-  const camp=ensureCampaign();
-  ensureStarterQuadCopies();
-  const cards=[];
-  const rows=sortedBinder().filter(row=>{
-    const c=CREATURES.find(x=>x.id===row.creatureId);
-    return c && factions.includes(c.capital) && row.count>0;
-  });
-  for(const row of rows){
-    const c=CREATURES.find(x=>x.id===row.creatureId);
-    if(!c) continue;
-    const n=row.count|0;
-    for(let i=0;i<n;i++){
-      const card=typeof cloneCard==='function' ? cloneCard(c) : {...c};
-      card.frameId=row.rarity || 'normal';
-      cards.push(card);
-    }
-  }
-  const target=size != null ? size : Math.max(CAMPAIGN_DECK_SIZE*STARTER_COPIES, cards.length);
-  if(cards.length<target){
-    for(const c of buildCampaignDeck(factions, CAMPAIGN_DECK_SIZE, STARTER_COPIES)){
-      cards.push(c);
-      if(cards.length>=target) break;
-    }
-  }
-  return makeCampaignSideFromDeck(factions, cards);
 }
 /** Fusionne 5 cartes (même créature + rareté) → 1 de rareté supérieure. */
 function craftBinderUpgrade(creatureId, rarity){
@@ -605,7 +848,7 @@ function openCampaignPanel(view){
     return;
   }
   if(view==='shop') camp.mapLocation='marche';
-  if(view==='binder' || view==='fusion') camp.mapLocation=camp.mapLocation||'tour';
+  if(view==='binder' || view==='fusion' || view==='deck') camp.mapLocation=camp.mapLocation||'tour';
   setCampaignView(view);
 }
 function mapKindLabel(kind){
@@ -888,6 +1131,7 @@ function renderCampaignMap(){
   let actions='';
   if(here.kind==='home'){
     actions=`<button type="button" class="cbt-start" onclick="setCampaignView('binder')">Ouvrir le classeur</button>
+      <button type="button" class="cbt-start" onclick="setCampaignView('deck')">Créer un deck</button>
       <button type="button" class="cbt-end" onclick="setCampaignView('fusion')">Fusion</button>`;
   } else if(here.kind==='shop'){
     actions=`<button type="button" class="cbt-start" onclick="setCampaignView('shop')">Marchander</button>`;
@@ -899,6 +1143,7 @@ function renderCampaignMap(){
   const quickNav=`
     <div class="camp-quick-nav" role="navigation" aria-label="Accès campagne">
       <button type="button" class="cbt-start" onclick="setCampaignView('binder')">▣ Classeur</button>
+      <button type="button" class="cbt-start" onclick="setCampaignView('deck')">☰ Deck</button>
       <button type="button" class="cbt-start" onclick="setCampaignView('shop')">♦ Boutique</button>
       <button type="button" class="cbt-end" onclick="setCampaignView('fusion')">✶ Fusion</button>
       ${here.kind!=='home'?`<button type="button" class="cbt-end" onclick="travelCampaignMap('tour',{free:true})">↩ Tour</button>`:''}
@@ -1005,6 +1250,124 @@ function renderCampaignBinder(){
   if(typeof renderList==='function') return renderList({binder:true});
   return renderCampaignShell('Classeur', 'Collection', '<p class="campaign-prose">Classeur indisponible.</p>');
 }
+function renderCampaignDeckBuilder(){
+  const camp=ensureCampaign();
+  let deck=getEditingDeck();
+  if(!deck){
+    deck=createEmptyDeck('Mon deck');
+  }
+  const uniques=deckUniqueCount(deck);
+  const total=deckTotalCount(deck);
+  const deckList=(camp.decks||[]).map(d=>{
+    const active=d.id===camp.activeDeckId;
+    const editing=d.id===camp.editingDeckId;
+    return `<div class="camp-deck-tab${editing?' is-editing':''}${active?' is-active':''}">
+      <button type="button" class="camp-deck-tab-main" onclick="openDeckEditor('${d.id}')">${d.name}</button>
+      <button type="button" class="camp-deck-tab-use${active?' on':''}" onclick="setActiveDeck('${d.id}')" title="Deck actif">${active?'★':'☆'}</button>
+      <button type="button" class="camp-deck-tab-del" onclick="deleteDeck('${d.id}')" title="Supprimer">×</button>
+    </div>`;
+  }).join('') || '<em class="camp-deck-empty">Aucun deck — crée-en un ou génère automatiquement.</em>';
+
+  const deckCards=(deck.cards||[]).slice().sort((a,b)=>{
+    const ca=CREATURES.find(x=>x.id===Number(a.creatureId));
+    const cb=CREATURES.find(x=>x.id===Number(b.creatureId));
+    return (ca?.name||'').localeCompare(cb?.name||'','fr');
+  }).map(entry=>{
+    const c=CREATURES.find(x=>x.id===Number(entry.creatureId));
+    if(!c) return '';
+    const owned=binderOwnedForCreature(c.id);
+    const art=creatureArt(c.id);
+    return `<article class="camp-deck-slot">
+      <img src="${encodeURI(art)}" alt="" width="64" height="64" loading="lazy">
+      <div class="camp-deck-slot-meta">
+        <b>${c.name}</b>
+        <small>${c.capital} · stock ${owned}</small>
+      </div>
+      <div class="camp-deck-slot-qty">
+        <button type="button" onclick="deckAddCreature(${c.id}, -1)">−</button>
+        <span>${entry.count}</span>
+        <button type="button" onclick="deckAddCreature(${c.id}, 1)" ${entry.count>=DECK_MAX_COPIES||entry.count>=owned?'disabled':''}>+</button>
+      </div>
+    </article>`;
+  }).join('') || '<p class="camp-deck-hint">Ajoute des cartes depuis ton classeur (colonne de droite).</p>';
+
+  // Binder aggregé par créature
+  const byId=new Map();
+  for(const row of camp.binder||[]){
+    if((row.count|0)<=0) continue;
+    const id=Number(row.creatureId);
+    const cur=byId.get(id) || {creatureId:id, count:0};
+    cur.count+=row.count|0;
+    byId.set(id, cur);
+  }
+  const factions=camp.playerFactions||[];
+  const binderPool=[...byId.values()]
+    .map(e=>{
+      const c=CREATURES.find(x=>x.id===e.creatureId);
+      return c ? {c, owned:e.count, inDeck:deckEntry(deck, e.creatureId)?.count||0} : null;
+    })
+    .filter(Boolean)
+    .sort((a,b)=>{
+      const af=factions.includes(a.c.capital)?0:1;
+      const bf=factions.includes(b.c.capital)?0:1;
+      if(af!==bf) return af-bf;
+      return (a.c.name||'').localeCompare(b.c.name||'','fr');
+    });
+
+  const binderHtml=binderPool.map(({c, owned, inDeck})=>{
+    const full=uniques>=DECK_MAX_UNIQUES && inDeck===0;
+    const maxed=inDeck>=DECK_MAX_COPIES || inDeck>=owned;
+    const picked=inDeck>0;
+    return `<button type="button" class="camp-deck-pick${picked?' picked':''}${full||maxed?' is-max':''}"
+      onclick="deckAddCreature(${c.id}, 1)" ${full||maxed?'disabled':''}
+      title="${full?'Deck plein (15 créatures)':maxed?'Maximum d’exemplaires':'Ajouter au deck'}">
+      <img src="${encodeURI(creatureArt(c.id))}" alt="" width="72" height="72" loading="lazy">
+      <span class="camp-deck-pick-name">${c.name}</span>
+      <span class="camp-deck-pick-meta">${c.capital} · ×${owned}${inDeck?` · deck ${inDeck}`:''}</span>
+    </button>`;
+  }).join('') || '<em>Classeur vide.</em>';
+
+  return `<section class="panel campaign-panel camp-deck-panel">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Construction</p>
+        <h2>Créer un deck</h2>
+        <p>Jusqu’à <strong>${DECK_MAX_UNIQUES} créatures</strong> · <strong>${DECK_MAX_COPIES} exemplaires</strong> max chacune (stock classeur).</p>
+      </div>
+      <div class="camp-stats camp-stats-compact">
+        <div class="camp-stat"><small>Uniques</small><b>${uniques}/${DECK_MAX_UNIQUES}</b></div>
+        <div class="camp-stat"><small>Cartes</small><b>${total}/${DECK_MAX_UNIQUES*DECK_MAX_COPIES}</b></div>
+      </div>
+    </div>
+    ${camp.shopMsg?`<p class="camp-toast">${camp.shopMsg}</p>`:''}
+    <div class="camp-deck-toolbar">
+      <div class="camp-deck-tabs">${deckList}</div>
+      <div class="camp-deck-actions">
+        <button type="button" class="cbt-end" onclick="newDeckAndEdit()">+ Nouveau deck</button>
+        <button type="button" class="cbt-start" onclick="autoBuildAndOpenDeck()">Créer automatiquement</button>
+        <button type="button" class="cbt-end" onclick="autoFillEditingDeck()">Remplir ce deck (auto)</button>
+        <button type="button" class="cbt-end" onclick="setCampaignView('map')">↩ Carte</button>
+      </div>
+    </div>
+    <div class="camp-deck-rename">
+      <label>Nom du deck
+        <input type="text" maxlength="40" value="${(deck.name||'').replace(/"/g,'&quot;')}"
+          onchange="renameEditingDeck(this.value)" onkeydown="if(event.key==='Enter'){event.preventDefault();renameEditingDeck(this.value)}">
+      </label>
+      <button type="button" class="cbt-start" onclick="setActiveDeck('${deck.id}')">Utiliser ce deck</button>
+    </div>
+    <div class="camp-deck-grid">
+      <div class="camp-deck-col">
+        <h3>Ton deck</h3>
+        <div class="camp-deck-slots">${deckCards}</div>
+      </div>
+      <div class="camp-deck-col">
+        <h3>Classeur</h3>
+        <div class="camp-deck-picks">${binderHtml}</div>
+      </div>
+    </div>
+  </section>`;
+}
 function renderCampaignFusion(){
   const craftable=sortedBinder().filter(r=>nextRarity(r.rarity) && r.count>=RARITY_CRAFT_COST);
   const almost=sortedBinder().filter(r=>nextRarity(r.rarity) && r.count>0 && r.count<RARITY_CRAFT_COST);
@@ -1110,6 +1473,7 @@ function renderCampaign(){
   }
   if(camp.phase==='rewards') return renderCampaignRewards();
   if(camp.phase==='binder') return renderCampaignBinder();
+  if(camp.phase==='deck') return renderCampaignDeckBuilder();
   if(camp.phase==='fusion') return renderCampaignFusion();
   if(camp.phase==='shop') return renderCampaignShop();
   if(camp.phase==='battle' && !state.battle) camp.phase='map';
@@ -1145,3 +1509,15 @@ window.campaignPlayFactions=campaignPlayFactions;
 window.BOOSTER_PRICE=BOOSTER_PRICE;
 window.BOOSTER_SIZE=BOOSTER_SIZE;
 window.renderCampaign=renderCampaign;
+window.openDeckEditor=openDeckEditor;
+window.setActiveDeck=setActiveDeck;
+window.deleteDeck=deleteDeck;
+window.renameEditingDeck=renameEditingDeck;
+window.deckAddCreature=deckAddCreature;
+window.deckSetCreatureCount=deckSetCreatureCount;
+window.createEmptyDeck=createEmptyDeck;
+window.autoBuildAndOpenDeck=autoBuildAndOpenDeck;
+window.autoFillEditingDeck=autoFillEditingDeck;
+window.newDeckAndEdit=newDeckAndEdit;
+window.DECK_MAX_UNIQUES=DECK_MAX_UNIQUES;
+window.DECK_MAX_COPIES=DECK_MAX_COPIES;

@@ -242,7 +242,7 @@ Ids définis dans [`game.js`](./game.js) (à jour avec le code) :
 |---|---|
 | `tank` | Tank |
 | `ranged` | Ranged |
-| `vol` | Vol |
+| `vol` | Vol (seuls Vol peuvent attaquer Vol ; Tank/Vol bloquent les volants) |
 | `lancer` / `lancer-mod` / `lancer-max` | Rafale (+ / majeure) |
 | `sort-degat` / `sort-degat-mod` / `sort-degat-max` | Sort de dégât (+ / Tempête) |
 | `soin` / `soin-mod` / `soin-max` | Soin (+ / majeur) — legacy |
@@ -259,6 +259,7 @@ Ids définis dans [`game.js`](./game.js) (à jour avec le code) :
 | `bouclier-divin` | Bouclier divin |
 | `double-attaque` | Double attaque |
 | `pietinement` | Piétinement |
+| `transpercer` | Transpercer (surplus → tour, comme Piétinement) |
 | `contact-mortel` | Contact mortel |
 | `celerite` | Célérité |
 | `lien-de-vie` | Lien de vie |
@@ -281,6 +282,7 @@ Ids définis dans [`game.js`](./game.js) (à jour avec le code) :
 | `vol-de-vie` | Vol de vie |
 | `dernier-souffle` | Dernier souffle |
 | `cri-frappe` | Cri de guerre : Frappe |
+| `cri-exorcisme` | Exorcisme (retire buffs adverses à l’arrivée) |
 | `furie` | Furie |
 | `allie-meurt` | Deuil |
 | `quand-tue` | Exécution |

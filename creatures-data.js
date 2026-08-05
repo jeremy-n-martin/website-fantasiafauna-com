@@ -13,10 +13,8 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "bouclier-divin",
-      "soin",
-      "activer-purge",
-      "vol"
+      "vol",
+      "transpercer"
     ],
     "natures": [
       "vivant",
@@ -25,15 +23,15 @@ const CREATURES = [
     "origin": "Céleste",
     "power": 72,
     "popularity": 93,
-    "cost": 6,
+    "cost": 8,
     "attack": 8,
-    "health": 6,
+    "health": 9,
     "rarity": "mythique",
-    "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
+    "spell": "Transpercer : le surplus de dégâts atteint la tour.",
     "image": "img/Ange 1.png",
     "quote": "« Rien n'est plus terrifiant qu'une lumière qui refuse de pardonner. »",
     "costColored": 2,
-    "costNeutral": 4
+    "costNeutral": 6
   },
   {
     "id": 2,
@@ -44,10 +42,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "bouclier-divin",
-      "activer-purge",
-      "donner-buff",
-      "vol"
+      "donner-buff"
     ],
     "natures": [
       "vivant",
@@ -57,10 +52,10 @@ const CREATURES = [
     "power": 52,
     "popularity": 86,
     "cost": 6,
-    "attack": 8,
-    "health": 6,
+    "attack": 6,
+    "health": 10,
     "rarity": "rare",
-    "spell": "Vol: ignore le premier bloqueur adverse.",
+    "spell": "À l’arrivée : +1/+1 à une créature alliée.",
     "image": "img/Valkyrie 1.png",
     "quote": "« Elles ne choisissent pas les vainqueurs, elles choisissent les morts. »",
     "costColored": 2,
@@ -75,9 +70,6 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "bouclier-divin",
-      "charge",
-      "activer-purge",
       "vol"
     ],
     "natures": [
@@ -87,8 +79,8 @@ const CREATURES = [
     "power": 30,
     "popularity": 79,
     "cost": 3,
-    "attack": 4,
-    "health": 5,
+    "attack": 2,
+    "health": 4,
     "rarity": "rare",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Pégase 1.png",
@@ -105,9 +97,6 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "bouclier-divin",
-      "charge",
-      "activer-purge",
       "vol"
     ],
     "natures": [
@@ -117,8 +106,8 @@ const CREATURES = [
     "power": 32,
     "popularity": 77,
     "cost": 4,
-    "attack": 4,
-    "health": 6,
+    "attack": 2,
+    "health": 5,
     "rarity": "rare",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Griffon 1.png",
@@ -135,21 +124,19 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "bouclier-divin",
-      "activer-purge",
-      "donner-buff"
+      "cri-exorcisme"
     ],
     "natures": [
-      "vivant"
+      "Vivant"
     ],
-    "origin": "Céleste",
+    "origin": "Humain",
     "power": 44,
     "popularity": 74,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 4,
+    "health": 6,
     "rarity": "inhabituelle",
-    "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
+    "spell": "À l’arrivée : retire tous les buffs des créatures adverses.",
     "image": "img/Exorciste 1.png",
     "quote": "« La foi est un bouclier, le mot est un glaive. »",
     "costColored": 1,
@@ -167,14 +154,14 @@ const CREATURES = [
       "survie"
     ],
     "natures": [
-      "vivant"
+      "Vivant"
     ],
-    "origin": "Axiomatique",
+    "origin": "Humain",
     "power": 36,
     "popularity": 69,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Chevalier 1.png",
@@ -191,21 +178,20 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "bouclier-divin",
-      "activer-purge",
-      "survie"
+      "soin",
+      "bouclier-divin"
     ],
     "natures": [
-      "vivant"
+      "Vivant"
     ],
-    "origin": "Céleste",
+    "origin": "Humain",
     "power": 48,
     "popularity": 68,
     "cost": 5,
-    "attack": 5,
-    "health": 9,
+    "attack": 4,
+    "health": 7,
     "rarity": "inhabituelle",
-    "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
+    "spell": "Soin et Bouclier divin.",
     "image": "img/Paladin 1.png",
     "quote": "« La grâce divine portée par cent kilos d'acier. »",
     "costColored": 1,
@@ -220,17 +206,17 @@ const CREATURES = [
       "ranged"
     ],
     "abilities": [
-      "debut-tour-tir",
+      "debut-tour-tir"
     ],
     "natures": [
-      "vivant"
+      "Vivant"
     ],
-    "origin": "Axiomatique",
+    "origin": "Humain",
     "power": 10,
     "popularity": 50,
     "cost": 2,
     "attack": 2,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Archer 1.png",
@@ -244,17 +230,13 @@ const CREATURES = [
     "capital": "Citadelle",
     "size": "1,8",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "bouclier-divin",
-      "activer-purge",
-      "donner-buff"
-    ],
+    "abilities": [],
     "natures": [
-      "vivant"
+      "Vivant"
     ],
-    "origin": "Céleste",
+    "origin": "Humain",
     "power": 42,
     "popularity": 42,
     "cost": 5,
@@ -277,14 +259,14 @@ const CREATURES = [
     ],
     "abilities": [],
     "natures": [
-      "Humain"
+      "Vivant"
     ],
-    "origin": "Vivant",
+    "origin": "Humain",
     "power": 20,
     "popularity": 40,
     "cost": 2,
-    "attack": 2,
-    "health": 5,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Guerrier 1.png",
@@ -302,12 +284,12 @@ const CREATURES = [
     ],
     "abilities": [
       "soin",
-      "bouclier-divin",
+      "bouclier-divin"
     ],
     "natures": [
-      "Humain"
+      "Vivant"
     ],
-    "origin": "vivant",
+    "origin": "Humain",
     "power": 18,
     "popularity": 38,
     "cost": 2,
@@ -332,14 +314,14 @@ const CREATURES = [
       "activer-tank"
     ],
     "natures": [
-      "vivant"
+      "Vivant"
     ],
     "origin": "Humain",
     "power": 28,
     "popularity": 36,
     "cost": 3,
-    "attack": 4,
-    "health": 5,
+    "attack": 3,
+    "health": 4,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Spadassin 1.png",
@@ -365,10 +347,10 @@ const CREATURES = [
     "power": 11,
     "popularity": 35,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 2,
+    "health": 5,
     "rarity": "commune",
-    "spell": "Rafale : lance 1 couteau (1 dégât) à l’arrivée, puis tous les 2 tours.",
+    "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Kenku 1.png",
     "quote": "« L'imitation du chant des oiseaux précède souvent le silence de la mort. »",
     "costColored": 1,
@@ -383,14 +365,12 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "bouclier-divin",
-      "soin",
-      "activer-purge"
+      "soin"
     ],
     "natures": [
-      "vivant"
+      "Vivant"
     ],
-    "origin": "Céleste",
+    "origin": "Humain",
     "power": 24,
     "popularity": 34,
     "cost": 3,
@@ -415,9 +395,9 @@ const CREATURES = [
       "soutient-2"
     ],
     "natures": [
-      "Humain"
+      "Vivant"
     ],
-    "origin": "Vivant",
+    "origin": "Humain",
     "power": 3,
     "popularity": 28,
     "cost": 1,
@@ -436,26 +416,26 @@ const CREATURES = [
     "capital": "Citadelle",
     "size": "1,7",
     "roles": [
-      "normal"
+      "ranged"
     ],
     "abilities": [
-      "debut-tour-tir",
+      "debut-tour-tir"
     ],
     "natures": [
-      "vivant"
+      "Vivant"
     ],
-    "origin": "Axiomatique",
+    "origin": "Humain",
     "power": 10,
     "popularity": 26,
-    "cost": 2,
-    "attack": 2,
-    "health": 2,
+    "cost": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Arbalétrier 1.png",
     "quote": "« La corde claque, la querelle fend l'air, le destin s'accomplit. »",
     "costColored": 1,
-    "costNeutral": 1
+    "costNeutral": 2
   },
   {
     "id": 17,
@@ -466,17 +446,15 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "bouclier-divin",
-      "soin",
-      "activer-purge"
+      "bouclier-divin"
     ],
     "natures": [
-      "vivant"
+      "Vivant"
     ],
-    "origin": "Axiomatique",
+    "origin": "Humain",
     "power": 32,
     "popularity": 25,
-    "cost": 4,
+    "cost": 3,
     "attack": 4,
     "health": 6,
     "rarity": "commune",
@@ -484,7 +462,7 @@ const CREATURES = [
     "image": "img/Moine 1.png",
     "quote": "« La discipline de l'esprit transforme le poing en acier. »",
     "costColored": 1,
-    "costNeutral": 3
+    "costNeutral": 2
   },
   {
     "id": 18,
@@ -498,9 +476,9 @@ const CREATURES = [
       "soins-leger"
     ],
     "natures": [
-      "Humain"
+      "Vivant"
     ],
-    "origin": "Vivant",
+    "origin": "Humain",
     "power": 5,
     "popularity": 20,
     "cost": 1,
@@ -528,15 +506,15 @@ const CREATURES = [
     "origin": "Céleste",
     "power": 24,
     "popularity": 18,
-    "cost": 3,
+    "cost": 4,
     "attack": 4,
-    "health": 3,
+    "health": 7,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Aasimar 1.png",
     "quote": "« Le sang des anges ne garantit pas la paix, il la conquiert. »",
     "costColored": 1,
-    "costNeutral": 2
+    "costNeutral": 3
   },
   {
     "id": 20,
@@ -548,14 +526,14 @@ const CREATURES = [
     ],
     "abilities": [],
     "natures": [
-      "Humain"
+      "Vivant"
     ],
-    "origin": "Vivant",
+    "origin": "Humain",
     "power": 8,
     "popularity": 18,
     "cost": 1,
     "attack": 1,
-    "health": 3,
+    "health": 2,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Ecuyer 1.png",
@@ -569,11 +547,9 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "1,2",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -596,12 +572,9 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "1,7",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "camouflage",
-      "affaiblir"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -609,7 +582,7 @@ const CREATURES = [
     "power": 12,
     "popularity": 6,
     "cost": 1,
-    "attack": 3,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
@@ -626,11 +599,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-soin",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -639,7 +608,7 @@ const CREATURES = [
     "popularity": 90,
     "cost": 3,
     "attack": 3,
-    "health": 3,
+    "health": 5,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Elfe 1.png",
@@ -656,9 +625,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "soutient"
     ],
     "natures": [
       "vivant"
@@ -667,8 +634,8 @@ const CREATURES = [
     "power": 39,
     "popularity": 85,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Licorne 1.png",
@@ -684,11 +651,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "charge",
-      "double-attaque",
-      "soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -696,8 +659,8 @@ const CREATURES = [
     "power": 14,
     "popularity": 69,
     "cost": 1,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 1,
     "rarity": "inhabituelle",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Centaure 1.png",
@@ -714,9 +677,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-soin",
-      "debut-tour-soin"
+      "vol"
     ],
     "natures": [
       "vivant"
@@ -725,8 +686,8 @@ const CREATURES = [
     "power": 38,
     "popularity": 68,
     "cost": 5,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Druide 1.png",
@@ -740,12 +701,9 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "3",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin",
       "vol"
     ],
     "natures": [
@@ -755,7 +713,7 @@ const CREATURES = [
     "power": 25,
     "popularity": 67,
     "cost": 4,
-    "attack": 4,
+    "attack": 2,
     "health": 6,
     "rarity": "inhabituelle",
     "spell": "Vol: ignore le premier bloqueur adverse.",
@@ -773,8 +731,6 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "etendard",
-      "quand-tue",
       "vol"
     ],
     "natures": [
@@ -784,8 +740,8 @@ const CREATURES = [
     "power": 74,
     "popularity": 66,
     "cost": 8,
-    "attack": 5,
-    "health": 9,
+    "attack": 4,
+    "health": 10,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dragon vert 1.png",
@@ -801,11 +757,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "soin",
-      "activer-soin",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -814,7 +766,7 @@ const CREATURES = [
     "popularity": 58,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Demi-elfe 1.png",
@@ -831,9 +783,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "poison"
     ],
     "natures": [
       "vivant",
@@ -843,8 +793,8 @@ const CREATURES = [
     "power": 55,
     "popularity": 56,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 7,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Tréant 1.png",
@@ -860,11 +810,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -872,7 +818,7 @@ const CREATURES = [
     "power": 17,
     "popularity": 52,
     "cost": 2,
-    "attack": 3,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
@@ -887,13 +833,9 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "1,75",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -901,8 +843,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 52,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 1,
+    "health": 6,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Rodeur 1.png",
@@ -918,11 +860,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "végétal"
@@ -931,8 +869,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 50,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 7,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dryade 1.png",
@@ -948,11 +886,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -960,8 +894,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 50,
     "cost": 2,
-    "attack": 3,
-    "health": 3,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Satyre 1.png",
@@ -978,9 +912,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-soin",
-      "debut-tour-soin"
+      "furie"
     ],
     "natures": [
       "vivant"
@@ -989,8 +921,8 @@ const CREATURES = [
     "power": 21,
     "popularity": 48,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Elfe des neiges 1.png",
@@ -1007,9 +939,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "apres-attaque"
     ],
     "natures": [
       "éthéré",
@@ -1020,7 +950,7 @@ const CREATURES = [
     "popularity": 40,
     "cost": 6,
     "attack": 4,
-    "health": 7,
+    "health": 8,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Leshy 1.png",
@@ -1034,11 +964,10 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "2,5",
     "roles": [
-      "tank"
+      "normal"
     ],
     "abilities": [
-      "furie",
-      "activer-tank"
+      "poison"
     ],
     "natures": [
       "vivant"
@@ -1047,8 +976,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 40,
     "cost": 3,
-    "attack": 2,
-    "health": 5,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Ours-hibou 1.png",
@@ -1062,12 +991,9 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "5",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin",
       "vol"
     ],
     "natures": [
@@ -1077,8 +1003,8 @@ const CREATURES = [
     "power": 44,
     "popularity": 38,
     "cost": 5,
-    "attack": 5,
-    "health": 6,
+    "attack": 2,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Vouivre 1.png",
@@ -1094,11 +1020,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -1106,7 +1028,7 @@ const CREATURES = [
     "power": 30,
     "popularity": 16,
     "cost": 4,
-    "attack": 3,
+    "attack": 2,
     "health": 7,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -1123,12 +1045,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -1137,7 +1054,7 @@ const CREATURES = [
     "popularity": 7,
     "cost": 3,
     "attack": 3,
-    "health": 4,
+    "health": 5,
     "rarity": "commune",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Amphiptère 1.png",
@@ -1151,13 +1068,9 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "2,4",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -1165,7 +1078,7 @@ const CREATURES = [
     "power": 15,
     "popularity": 7,
     "cost": 2,
-    "attack": 1,
+    "attack": 2,
     "health": 4,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -1180,7 +1093,7 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "1,35",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -1215,7 +1128,7 @@ const CREATURES = [
     "power": 32,
     "popularity": 34,
     "cost": 2,
-    "attack": 3,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -1230,9 +1143,11 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "1,5",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "survie"
+    ],
     "natures": [
       "aberration"
     ],
@@ -1240,8 +1155,8 @@ const CREATURES = [
     "power": 40,
     "popularity": 26,
     "cost": 4,
-    "attack": 3,
-    "health": 6,
+    "attack": 1,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Xorn 1.png",
@@ -1266,8 +1181,8 @@ const CREATURES = [
     "power": 57,
     "popularity": 22,
     "cost": 5,
-    "attack": 4,
-    "health": 7,
+    "attack": 3,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dao 1.png",
@@ -1281,7 +1196,7 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "1,5",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -1292,7 +1207,7 @@ const CREATURES = [
     "popularity": 16,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Tatzelwurm 1.png",
@@ -1306,7 +1221,7 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "1",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -1316,8 +1231,8 @@ const CREATURES = [
     "power": 12,
     "popularity": 64,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Halfling 1.png",
@@ -1359,8 +1274,7 @@ const CREATURES = [
       "ranged"
     ],
     "abilities": [
-      "activer-frappe",
-      "sort-degat"
+      "donner-buff"
     ],
     "natures": [
       "vivant"
@@ -1369,7 +1283,7 @@ const CREATURES = [
     "power": 15,
     "popularity": 37,
     "cost": 2,
-    "attack": 3,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -1394,8 +1308,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 32,
     "cost": 3,
-    "attack": 3,
-    "health": 3,
+    "attack": 2,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Kikimora 1.png",
@@ -1419,8 +1333,8 @@ const CREATURES = [
     "power": 10,
     "popularity": 30,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Tomte 1.png",
@@ -1444,8 +1358,8 @@ const CREATURES = [
     "power": 10,
     "popularity": 26,
     "cost": 2,
-    "attack": 1,
-    "health": 2,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Boggart 1.png",
@@ -1470,7 +1384,7 @@ const CREATURES = [
     "popularity": 26,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Nisse 1.png",
@@ -1513,7 +1427,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol"
+      "donner-buff"
     ],
     "natures": [
       "éthéré"
@@ -1522,8 +1436,8 @@ const CREATURES = [
     "power": 14,
     "popularity": 7,
     "cost": 2,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Aitvaras 1.png",
@@ -1540,9 +1454,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "vol-de-vie"
     ],
     "natures": [
       "mort-vivant"
@@ -1551,8 +1463,8 @@ const CREATURES = [
     "power": 68,
     "popularity": 95,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Vampire 1.png",
@@ -1568,11 +1480,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
-    ],
+    "abilities": [],
     "natures": [
       "mort-vivant"
     ],
@@ -1598,9 +1506,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "gelant",
-      "vol-de-vie",
-      "allie-meurt"
+      "vol"
     ],
     "natures": [
       "mort-vivant",
@@ -1610,7 +1516,7 @@ const CREATURES = [
     "power": 22,
     "popularity": 86,
     "cost": 2,
-    "attack": 3,
+    "attack": 1,
     "health": 2,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -1628,9 +1534,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "poison"
     ],
     "natures": [
       "mort-vivant"
@@ -1657,8 +1561,7 @@ const CREATURES = [
       "ranged"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt"
+      "vol"
     ],
     "natures": [
       "mort-vivant"
@@ -1667,8 +1570,8 @@ const CREATURES = [
     "power": 86,
     "popularity": 80,
     "cost": 7,
-    "attack": 8,
-    "health": 6,
+    "attack": 4,
+    "health": 8,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Liche 1.png",
@@ -1682,12 +1585,10 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "1,75",
     "roles": [
-      "caster"
+      "tank"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "vol"
     ],
     "natures": [
       "mort-vivant"
@@ -1714,9 +1615,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "quand-tue"
     ],
     "natures": [
       "mort-vivant"
@@ -1725,8 +1624,8 @@ const CREATURES = [
     "power": 45,
     "popularity": 70,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Nosferatu 1.png",
@@ -1742,7 +1641,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "quand-blesse"
+    ],
     "natures": [
       "vivant"
     ],
@@ -1750,8 +1651,8 @@ const CREATURES = [
     "power": 46,
     "popularity": 67,
     "cost": 5,
-    "attack": 5,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Nécromancien 1.png",
@@ -1767,7 +1668,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "aberration",
       "éthéré"
@@ -1776,8 +1679,8 @@ const CREATURES = [
     "power": 45,
     "popularity": 65,
     "cost": 5,
-    "attack": 5,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Wendigo 1.png",
@@ -1794,9 +1697,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "furie"
     ],
     "natures": [
       "éthéré",
@@ -1806,8 +1707,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 63,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Poltergeist 1.png",
@@ -1824,10 +1725,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle",
-      "vol"
+      "vol-de-vie"
     ],
     "natures": [
       "mort-vivant",
@@ -1837,8 +1735,8 @@ const CREATURES = [
     "power": 42,
     "popularity": 61,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Banshee 1.png",
@@ -1852,11 +1750,10 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "1,9",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt"
+      "dernier-souffle"
     ],
     "natures": [
       "mort-vivant"
@@ -1865,8 +1762,8 @@ const CREATURES = [
     "power": 76,
     "popularity": 61,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 7,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Chevalier de la mort 1.png",
@@ -1882,11 +1779,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -1912,9 +1805,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "vol"
     ],
     "natures": [
       "mort-vivant",
@@ -1924,8 +1815,8 @@ const CREATURES = [
     "power": 19,
     "popularity": 60,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Spectre 1.png",
@@ -1939,13 +1830,9 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "1,8",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
-    ],
+    "abilities": [],
     "natures": [
       "mort-vivant"
     ],
@@ -1953,8 +1840,8 @@ const CREATURES = [
     "power": 32,
     "popularity": 56,
     "cost": 3,
-    "attack": 3,
-    "health": 6,
+    "attack": 2,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Revenant 1.png",
@@ -1970,12 +1857,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "mort-vivant",
       "éthéré"
@@ -1984,8 +1866,8 @@ const CREATURES = [
     "power": 40,
     "popularity": 55,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Wraith 1.png",
@@ -2002,9 +1884,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "quand-tue"
     ],
     "natures": [
       "mort-vivant",
@@ -2014,8 +1894,8 @@ const CREATURES = [
     "power": 42,
     "popularity": 52,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dullahan 1.png",
@@ -2029,12 +1909,9 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "20",
     "roles": [
-      "caster"
+      "tank"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle",
       "vol"
     ],
     "natures": [
@@ -2045,7 +1922,7 @@ const CREATURES = [
     "popularity": 48,
     "cost": 8,
     "attack": 5,
-    "health": 9,
+    "health": 11,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dracoliche 1.png",
@@ -2059,10 +1936,10 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "30",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
-      "vol"
+      "poison"
     ],
     "natures": [
       "vivant"
@@ -2071,8 +1948,8 @@ const CREATURES = [
     "power": 91,
     "popularity": 48,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 7,
     "rarity": "mythique",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Nidhogg 1.png",
@@ -2089,9 +1966,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "vol-de-vie"
     ],
     "natures": [
       "mort-vivant"
@@ -2100,8 +1975,8 @@ const CREATURES = [
     "power": 28,
     "popularity": 46,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Strigoi 1.png",
@@ -2115,13 +1990,9 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "2,1",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
-    ],
+    "abilities": [],
     "natures": [
       "mort-vivant"
     ],
@@ -2129,8 +2000,8 @@ const CREATURES = [
     "power": 31,
     "popularity": 40,
     "cost": 3,
-    "attack": 2,
-    "health": 5,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Draugr 1.png",
@@ -2144,13 +2015,9 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "1,75",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
-    ],
+    "abilities": [],
     "natures": [
       "mort-vivant"
     ],
@@ -2158,7 +2025,7 @@ const CREATURES = [
     "power": 18,
     "popularity": 40,
     "cost": 2,
-    "attack": 1,
+    "attack": 2,
     "health": 4,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -2175,11 +2042,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré",
       "mort-vivant"
@@ -2188,7 +2051,7 @@ const CREATURES = [
     "power": 24,
     "popularity": 32,
     "cost": 2,
-    "attack": 3,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -2205,11 +2068,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "camouflage",
-      "vol-de-vie",
-      "allie-meurt"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré",
       "mort-vivant"
@@ -2236,9 +2095,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "allie-meurt"
     ],
     "natures": [
       "mort-vivant"
@@ -2247,8 +2104,8 @@ const CREATURES = [
     "power": 32,
     "popularity": 30,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 6,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Wight 1.png",
@@ -2264,11 +2121,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
-    ],
+    "abilities": [],
     "natures": [
       "mort-vivant"
     ],
@@ -2294,10 +2147,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle",
-      "vol"
+      "furie"
     ],
     "natures": [
       "mort-vivant",
@@ -2324,7 +2174,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "bouclier-divin"
+    ],
     "natures": [
       "vivant",
       "aberration"
@@ -2333,8 +2185,8 @@ const CREATURES = [
     "power": 38,
     "popularity": 26,
     "cost": 3,
-    "attack": 4,
-    "health": 7,
+    "attack": 2,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Varcolac 1.png",
@@ -2348,12 +2200,10 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "1,8",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "vol-de-vie"
     ],
     "natures": [
       "mort-vivant"
@@ -2362,8 +2212,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 22,
     "cost": 2,
-    "attack": 2,
-    "health": 4,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Ghast 1.png",
@@ -2387,8 +2237,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 18,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Alp 1.png",
@@ -2414,8 +2264,8 @@ const CREATURES = [
     "power": 14,
     "popularity": 18,
     "cost": 2,
-    "attack": 2,
-    "health": 3,
+    "attack": 1,
+    "health": 2,
     "rarity": "commune",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Strige 1.png",
@@ -2429,10 +2279,10 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "1,2",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
-      "vol"
+      "activer-tank"
     ],
     "natures": [
       "vivant",
@@ -2442,8 +2292,8 @@ const CREATURES = [
     "power": 26,
     "popularity": 18,
     "cost": 4,
-    "attack": 4,
-    "health": 5,
+    "attack": 2,
+    "health": 6,
     "rarity": "commune",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Valravn 1.png",
@@ -2460,9 +2310,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
+      "charge"
     ],
     "natures": [
       "mort-vivant",
@@ -2472,8 +2320,8 @@ const CREATURES = [
     "power": 52,
     "popularity": 16,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Ankou 1.png",
@@ -2489,11 +2337,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
-    ],
+    "abilities": [],
     "natures": [
       "mort-vivant",
       "éthéré"
@@ -2502,8 +2346,8 @@ const CREATURES = [
     "power": 32,
     "popularity": 16,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Vétala 1.png",
@@ -2519,11 +2363,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "camouflage",
-      "poison",
-      "affaiblir"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "aberration"
@@ -2532,8 +2372,8 @@ const CREATURES = [
     "power": 43,
     "popularity": 88,
     "cost": 5,
-    "attack": 5,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Méduse 1.png",
@@ -2549,7 +2389,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "activer-tank"
+    ],
     "natures": [
       "vivant"
     ],
@@ -2557,8 +2399,8 @@ const CREATURES = [
     "power": 45,
     "popularity": 82,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 6,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Gorgone 1.png",
@@ -2575,9 +2417,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "camouflage",
-      "quand-tue",
-      "affaiblir"
+      "camouflage"
     ],
     "natures": [
       "vivant"
@@ -2586,8 +2426,8 @@ const CREATURES = [
     "power": 38,
     "popularity": 74,
     "cost": 4,
-    "attack": 6,
-    "health": 4,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Assassin 1.png",
@@ -2604,10 +2444,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison",
-      "vol"
+      "affaiblir"
     ],
     "natures": [
       "vivant",
@@ -2617,7 +2454,7 @@ const CREATURES = [
     "power": 24,
     "popularity": 68,
     "cost": 3,
-    "attack": 3,
+    "attack": 2,
     "health": 4,
     "rarity": "inhabituelle",
     "spell": "Vol: ignore le premier bloqueur adverse.",
@@ -2634,11 +2471,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "jetons-1-1",
-      "poison",
-      "affaiblir"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -2646,7 +2479,7 @@ const CREATURES = [
     "power": 14,
     "popularity": 66,
     "cost": 1,
-    "attack": 2,
+    "attack": 1,
     "health": 2,
     "rarity": "inhabituelle",
     "spell": "Tir: attaque sans subir de riposte une fois.",
@@ -2678,7 +2511,7 @@ const CREATURES = [
     "image": "img/Doppelganger 1.png",
     "quote": "« Prendre votre visage pour mieux vous prendre votre vie. »",
     "costColored": 1,
-    "costNeutral": 2
+    "costNeutral": 1
   },
   {
     "id": 96,
@@ -2689,9 +2522,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
+      "vol"
     ],
     "natures": [
       "vivant",
@@ -2701,8 +2532,8 @@ const CREATURES = [
     "power": 47,
     "popularity": 62,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 2,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Illithid 1.png",
@@ -2719,9 +2550,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
+      "camouflage"
     ],
     "natures": [
       "vivant",
@@ -2732,7 +2561,7 @@ const CREATURES = [
     "popularity": 62,
     "cost": 2,
     "attack": 2,
-    "health": 4,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Mimique 1.png",
@@ -2748,12 +2577,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "aberration"
     ],
@@ -2761,8 +2585,8 @@ const CREATURES = [
     "power": 66,
     "popularity": 62,
     "cost": 6,
-    "attack": 8,
-    "health": 6,
+    "attack": 4,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Tyrannoeil 1.png",
@@ -2778,11 +2602,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "camouflage",
-      "poison",
-      "affaiblir"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -2790,7 +2610,7 @@ const CREATURES = [
     "power": 30,
     "popularity": 56,
     "cost": 3,
-    "attack": 5,
+    "attack": 1,
     "health": 4,
     "rarity": "inhabituelle",
     "spell": "Tir: attaque sans subir de riposte une fois.",
@@ -2808,8 +2628,6 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "camouflage",
-      "etendard",
       "vol"
     ],
     "natures": [
@@ -2820,8 +2638,8 @@ const CREATURES = [
     "power": 84,
     "popularity": 52,
     "cost": 8,
-    "attack": 8,
-    "health": 6,
+    "attack": 4,
+    "health": 11,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dragon d'ombre 1.png",
@@ -2835,13 +2653,9 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "4,6",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
-    ],
+    "abilities": [],
     "natures": [
       "aberration"
     ],
@@ -2849,7 +2663,7 @@ const CREATURES = [
     "power": 78,
     "popularity": 52,
     "cost": 7,
-    "attack": 5,
+    "attack": 4,
     "health": 9,
     "rarity": "mythique",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -2866,11 +2680,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -2878,8 +2688,8 @@ const CREATURES = [
     "power": 22,
     "popularity": 45,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Drow 1.png",
@@ -2896,8 +2706,6 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
       "poison"
     ],
     "natures": [
@@ -2907,8 +2715,8 @@ const CREATURES = [
     "power": 30,
     "popularity": 44,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Occultiste 1.png",
@@ -2932,8 +2740,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 40,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Svartalf 1.png",
@@ -2947,11 +2755,9 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "2,5",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
       "poison"
     ],
     "natures": [
@@ -2961,8 +2767,8 @@ const CREATURES = [
     "power": 40,
     "popularity": 36,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 1,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Umber Hulk 1.png",
@@ -2976,12 +2782,10 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "1,5",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
+      "affaiblir"
     ],
     "natures": [
       "vivant",
@@ -3006,13 +2810,9 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "3",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
-    ],
+    "abilities": [],
     "natures": [
       "aberration"
     ],
@@ -3021,7 +2821,7 @@ const CREATURES = [
     "popularity": 31,
     "cost": 2,
     "attack": 1,
-    "health": 3,
+    "health": 4,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Cube gélatineux 1.png",
@@ -3038,9 +2838,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
+      "camouflage"
     ],
     "natures": [
       "vivant",
@@ -3050,8 +2848,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 30,
     "cost": 3,
-    "attack": 3,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Arachne 1.png",
@@ -3065,13 +2863,9 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "2,4",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
-    ],
+    "abilities": [],
     "natures": [
       "aberration"
     ],
@@ -3079,7 +2873,7 @@ const CREATURES = [
     "power": 31,
     "popularity": 24,
     "cost": 4,
-    "attack": 3,
+    "attack": 1,
     "health": 6,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -3096,11 +2890,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
-    ],
+    "abilities": [],
     "natures": [
       "aberration"
     ],
@@ -3109,7 +2899,7 @@ const CREATURES = [
     "popularity": 24,
     "cost": 3,
     "attack": 2,
-    "health": 5,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Gibbering Mouther 1.png",
@@ -3123,11 +2913,9 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "1,4",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
       "poison"
     ],
     "natures": [
@@ -3155,9 +2943,6 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison",
       "vol"
     ],
     "natures": [
@@ -3167,8 +2952,8 @@ const CREATURES = [
     "power": 22,
     "popularity": 22,
     "cost": 2,
-    "attack": 2,
-    "health": 4,
+    "attack": 1,
+    "health": 1,
     "rarity": "commune",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Péryton 1.png",
@@ -3184,11 +2969,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -3197,7 +2978,7 @@ const CREATURES = [
     "popularity": 22,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Troglodyte 1.png",
@@ -3214,9 +2995,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
+      "vol"
     ],
     "natures": [
       "aberration"
@@ -3225,8 +3004,8 @@ const CREATURES = [
     "power": 47,
     "popularity": 20,
     "cost": 5,
-    "attack": 4,
-    "health": 7,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Slaad 1.png",
@@ -3242,7 +3021,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "vivant"
     ],
@@ -3250,7 +3031,7 @@ const CREATURES = [
     "power": 34,
     "popularity": 18,
     "cost": 5,
-    "attack": 3,
+    "attack": 2,
     "health": 7,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -3265,12 +3046,9 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "0,8",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison",
       "vol"
     ],
     "natures": [
@@ -3281,7 +3059,7 @@ const CREATURES = [
     "popularity": 14,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 1,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Flumph 1.png",
@@ -3298,9 +3076,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison"
+      "gelant"
     ],
     "natures": [
       "aberration"
@@ -3310,7 +3086,7 @@ const CREATURES = [
     "popularity": 14,
     "cost": 6,
     "attack": 4,
-    "health": 7,
+    "health": 8,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Guêteur 1.png",
@@ -3327,10 +3103,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
-      "poison",
-      "vol"
+      "dernier-souffle"
     ],
     "natures": [
       "aberration"
@@ -3339,8 +3112,8 @@ const CREATURES = [
     "power": 34,
     "popularity": 12,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 6,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Grell 1.png",
@@ -3357,8 +3130,6 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
       "poison"
     ],
     "natures": [
@@ -3387,7 +3158,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "furie"
+      "etendard"
     ],
     "natures": [
       "vivant"
@@ -3397,7 +3168,7 @@ const CREATURES = [
     "popularity": 86,
     "cost": 2,
     "attack": 1,
-    "health": 4,
+    "health": 3,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Orc 1.png",
@@ -3411,11 +3182,9 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "2,3",
     "roles": [
-      "tank"
+      "normal"
     ],
-    "abilities": [
-      "furie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "aberration"
@@ -3424,8 +3193,8 @@ const CREATURES = [
     "power": 39,
     "popularity": 82,
     "cost": 5,
-    "attack": 4,
-    "health": 7,
+    "attack": 2,
+    "health": 6,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Minotaure 1.png",
@@ -3449,8 +3218,8 @@ const CREATURES = [
     "power": 16,
     "popularity": 70,
     "cost": 3,
-    "attack": 2,
-    "health": 4,
+    "attack": 3,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Warg 1.png",
@@ -3476,7 +3245,7 @@ const CREATURES = [
     "power": 44,
     "popularity": 70,
     "cost": 5,
-    "attack": 5,
+    "attack": 2,
     "health": 6,
     "rarity": "inhabituelle",
     "spell": "Vol: ignore le premier bloqueur adverse.",
@@ -3494,9 +3263,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "charge",
-      "furie",
-      "quand-tue"
+      "survie"
     ],
     "natures": [
       "vivant"
@@ -3505,8 +3272,8 @@ const CREATURES = [
     "power": 26,
     "popularity": 54,
     "cost": 3,
-    "attack": 3,
-    "health": 6,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Barbare 1.png",
@@ -3523,8 +3290,7 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "activer-tank",
-      "survie"
+      "vol"
     ],
     "natures": [
       "vivant"
@@ -3534,7 +3300,7 @@ const CREATURES = [
     "popularity": 54,
     "cost": 8,
     "attack": 5,
-    "health": 9,
+    "health": 11,
     "rarity": "mythique",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Béhémoth 1.png",
@@ -3548,7 +3314,7 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "1,8",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -3558,7 +3324,7 @@ const CREATURES = [
     "power": 30,
     "popularity": 53,
     "cost": 4,
-    "attack": 3,
+    "attack": 2,
     "health": 7,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -3573,7 +3339,7 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "1,2",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -3584,8 +3350,8 @@ const CREATURES = [
     "power": 10,
     "popularity": 51,
     "cost": 2,
-    "attack": 2,
-    "health": 3,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Chupacabra 1.png",
@@ -3601,9 +3367,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "furie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -3628,9 +3392,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -3638,8 +3400,8 @@ const CREATURES = [
     "power": 29,
     "popularity": 50,
     "cost": 4,
-    "attack": 4,
-    "health": 5,
+    "attack": 2,
+    "health": 6,
     "rarity": "commune",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Drake 1.png",
@@ -3653,13 +3415,9 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "2,1",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "charge",
-      "quand-tue",
-      "double-attaque"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -3667,7 +3425,7 @@ const CREATURES = [
     "power": 35,
     "popularity": 32,
     "cost": 5,
-    "attack": 3,
+    "attack": 2,
     "health": 7,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -3684,7 +3442,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "activer-tank"
+    ],
     "natures": [
       "vivant"
     ],
@@ -3692,7 +3452,7 @@ const CREATURES = [
     "power": 15,
     "popularity": 30,
     "cost": 2,
-    "attack": 3,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
@@ -3707,7 +3467,7 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "1,8",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -3717,8 +3477,8 @@ const CREATURES = [
     "power": 9,
     "popularity": 15,
     "cost": 2,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Cynocéphale 1.png",
@@ -3743,7 +3503,7 @@ const CREATURES = [
     "popularity": 14,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Sciapode 1.png",
@@ -3769,7 +3529,7 @@ const CREATURES = [
     "popularity": 10,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Blemmye 1.png",
@@ -3793,8 +3553,8 @@ const CREATURES = [
     "power": 8,
     "popularity": 8,
     "cost": 1,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Arimaspe 1.png",
@@ -3808,12 +3568,9 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "1,9",
     "roles": [
-      "caster"
+      "tank"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "éthéré"
@@ -3822,8 +3579,8 @@ const CREATURES = [
     "power": 48,
     "popularity": 93,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 7,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Diable 1.png",
@@ -3840,9 +3597,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
+      "brulant"
     ],
     "natures": [
       "vivant",
@@ -3852,8 +3607,8 @@ const CREATURES = [
     "power": 48,
     "popularity": 87,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 6,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Démon 1.png",
@@ -3870,8 +3625,7 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "activer-tank",
-      "survie"
+      "vol"
     ],
     "natures": [
       "vivant"
@@ -3880,8 +3634,8 @@ const CREATURES = [
     "power": 66,
     "popularity": 77,
     "cost": 6,
-    "attack": 4,
-    "health": 7,
+    "attack": 3,
+    "health": 8,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Cerbère 1.png",
@@ -3897,7 +3651,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "vivant",
       "aberration"
@@ -3906,7 +3662,7 @@ const CREATURES = [
     "power": 94,
     "popularity": 70,
     "cost": 7,
-    "attack": 5,
+    "attack": 4,
     "health": 9,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -3921,13 +3677,10 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "1,7",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
-      "vol"
+      "furie"
     ],
     "natures": [
       "éthéré"
@@ -3936,7 +3689,7 @@ const CREATURES = [
     "power": 41,
     "popularity": 68,
     "cost": 3,
-    "attack": 3,
+    "attack": 1,
     "health": 3,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -3954,8 +3707,6 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "brulant",
-      "furie",
       "vol-de-vie"
     ],
     "natures": [
@@ -3965,10 +3716,10 @@ const CREATURES = [
     "power": 38,
     "popularity": 61,
     "cost": 4,
-    "attack": 4,
-    "health": 7,
+    "attack": 3,
+    "health": 5,
     "rarity": "inhabituelle",
-    "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
+    "spell": "Vol de vie: se soigne des dégâts infligés.",
     "image": "img/Oni 1.png",
     "quote": "« Le démon rouge de l'Orient, armé de sa masse de fer. »",
     "costColored": 1,
@@ -3983,8 +3734,6 @@ const CREATURES = [
       "ranged"
     ],
     "abilities": [
-      "camouflage",
-      "affaiblir",
       "vol"
     ],
     "natures": [
@@ -3994,8 +3743,8 @@ const CREATURES = [
     "power": 20,
     "popularity": 60,
     "cost": 3,
-    "attack": 3,
-    "health": 4,
+    "attack": 1,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Harpie 1.png",
@@ -4011,7 +3760,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "survie"
+    ],
     "natures": [
       "vivant",
       "aberration"
@@ -4020,7 +3771,7 @@ const CREATURES = [
     "power": 39,
     "popularity": 60,
     "cost": 3,
-    "attack": 5,
+    "attack": 2,
     "health": 4,
     "rarity": "inhabituelle",
     "spell": "Tir: attaque sans subir de riposte une fois.",
@@ -4035,11 +3786,9 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "4",
     "roles": [
-      "caster"
+      "normal"
     ],
-    "abilities": [
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -4047,8 +3796,8 @@ const CREATURES = [
     "power": 64,
     "popularity": 58,
     "cost": 6,
-    "attack": 6,
-    "health": 5,
+    "attack": 4,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Ifrit 1.png",
@@ -4062,7 +3811,7 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "4",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
       "vol"
@@ -4075,7 +3824,7 @@ const CREATURES = [
     "power": 42,
     "popularity": 56,
     "cost": 4,
-    "attack": 3,
+    "attack": 2,
     "health": 6,
     "rarity": "inhabituelle",
     "spell": "Vol: ignore le premier bloqueur adverse.",
@@ -4090,14 +3839,9 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "1,8",
     "roles": [
-      "caster"
+      "tank"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -4105,8 +3849,8 @@ const CREATURES = [
     "power": 43,
     "popularity": 45,
     "cost": 4,
-    "attack": 4,
-    "health": 4,
+    "attack": 1,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Incube 1.png",
@@ -4120,13 +3864,10 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "4",
     "roles": [
-      "caster"
+      "tank"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
-      "vol"
+      "contact-mortel"
     ],
     "natures": [
       "vivant",
@@ -4137,7 +3878,7 @@ const CREATURES = [
     "popularity": 44,
     "cost": 8,
     "attack": 5,
-    "health": 9,
+    "health": 11,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Archidémon 1.png",
@@ -4161,8 +3902,8 @@ const CREATURES = [
     "power": 46,
     "popularity": 44,
     "cost": 6,
-    "attack": 8,
-    "health": 6,
+    "attack": 5,
+    "health": 9,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Rakshasa 1.png",
@@ -4189,8 +3930,8 @@ const CREATURES = [
     "power": 58,
     "popularity": 44,
     "cost": 5,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Érinye 1.png",
@@ -4206,12 +3947,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "éthéré"
@@ -4221,7 +3957,7 @@ const CREATURES = [
     "popularity": 42,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Diablotin 1.png",
@@ -4237,9 +3973,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "éthéré"
@@ -4248,8 +3982,8 @@ const CREATURES = [
     "power": 58,
     "popularity": 42,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Furie 1.png",
@@ -4266,9 +4000,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
+      "apres-attaque"
     ],
     "natures": [
       "éthéré",
@@ -4278,8 +4010,8 @@ const CREATURES = [
     "power": 75,
     "popularity": 42,
     "cost": 5,
-    "attack": 4,
-    "health": 7,
+    "attack": 2,
+    "health": 6,
     "rarity": "mythique",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Marilith 1.png",
@@ -4296,9 +4028,6 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
       "vol"
     ],
     "natures": [
@@ -4326,8 +4055,6 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
       "furie"
     ],
     "natures": [
@@ -4337,7 +4064,7 @@ const CREATURES = [
     "power": 24,
     "popularity": 40,
     "cost": 2,
-    "attack": 3,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -4352,13 +4079,9 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "1,4",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -4366,8 +4089,8 @@ const CREATURES = [
     "power": 22,
     "popularity": 39,
     "cost": 2,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Chien de l'enfer 1.png",
@@ -4383,12 +4106,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "aberration"
@@ -4398,7 +4116,7 @@ const CREATURES = [
     "popularity": 38,
     "cost": 3,
     "attack": 3,
-    "health": 4,
+    "health": 5,
     "rarity": "commune",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Manananggal 1.png",
@@ -4414,11 +4132,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "aberration"
@@ -4427,8 +4141,8 @@ const CREATURES = [
     "power": 34,
     "popularity": 35,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Lamie 1.png",
@@ -4442,14 +4156,9 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "2",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "éthéré"
@@ -4458,7 +4167,7 @@ const CREATURES = [
     "power": 23,
     "popularity": 34,
     "cost": 2,
-    "attack": 2,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Vol: ignore le premier bloqueur adverse.",
@@ -4476,10 +4185,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
-      "vol"
+      "brulant"
     ],
     "natures": [
       "éthéré",
@@ -4489,8 +4195,8 @@ const CREATURES = [
     "power": 22,
     "popularity": 33,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Cacodémon 1.png",
@@ -4507,8 +4213,6 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
       "furie"
     ],
     "natures": [
@@ -4518,7 +4222,7 @@ const CREATURES = [
     "power": 34,
     "popularity": 26,
     "cost": 3,
-    "attack": 1,
+    "attack": 2,
     "health": 4,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -4535,11 +4239,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -4547,8 +4247,8 @@ const CREATURES = [
     "power": 42,
     "popularity": 25,
     "cost": 3,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Démonologue 1.png",
@@ -4562,12 +4262,9 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "2,4",
     "roles": [
-      "caster"
+      "tank"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
       "vol"
     ],
     "natures": [
@@ -4577,8 +4274,8 @@ const CREATURES = [
     "power": 44,
     "popularity": 22,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Vrock 1.png",
@@ -4594,12 +4291,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -4607,8 +4299,8 @@ const CREATURES = [
     "power": 30,
     "popularity": 21,
     "cost": 2,
-    "attack": 3,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Cambion 1.png",
@@ -4625,9 +4317,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
+      "apres-attaque"
     ],
     "natures": [
       "aberration"
@@ -4636,8 +4326,8 @@ const CREATURES = [
     "power": 48,
     "popularity": 20,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Nuckelavee 1.png",
@@ -4654,9 +4344,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
+      "vol"
     ],
     "natures": [
       "vivant",
@@ -4666,7 +4354,7 @@ const CREATURES = [
     "power": 54,
     "popularity": 16,
     "cost": 5,
-    "attack": 4,
+    "attack": 2,
     "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -4684,9 +4372,6 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie",
       "vol"
     ],
     "natures": [
@@ -4696,8 +4381,8 @@ const CREATURES = [
     "power": 83,
     "popularity": 15,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 8,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Balor 1.png",
@@ -4714,9 +4399,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
+      "charge"
     ],
     "natures": [
       "éthéré"
@@ -4726,7 +4409,7 @@ const CREATURES = [
     "popularity": 15,
     "cost": 1,
     "attack": 1,
-    "health": 3,
+    "health": 1,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Lémure 1.png",
@@ -4742,11 +4425,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "éthéré"
@@ -4756,7 +4435,7 @@ const CREATURES = [
     "popularity": 14,
     "cost": 5,
     "attack": 4,
-    "health": 7,
+    "health": 8,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Div 1.png",
@@ -4772,11 +4451,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "brulant",
-      "vol-de-vie",
-      "furie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "éthéré"
@@ -4786,7 +4461,7 @@ const CREATURES = [
     "popularity": 7,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Chort 1.png",
@@ -4803,8 +4478,7 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "dernier-souffle",
-      "survie"
+      "brulant"
     ],
     "natures": [
       "méchanique"
@@ -4813,8 +4487,8 @@ const CREATURES = [
     "power": 45,
     "popularity": 75,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 1,
+    "health": 5,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Golem 1.png",
@@ -4830,7 +4504,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "double-attaque"
+    ],
     "natures": [
       "vivant"
     ],
@@ -4838,8 +4514,8 @@ const CREATURES = [
     "power": 14,
     "popularity": 72,
     "cost": 2,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Alchimiste 1.png",
@@ -4865,7 +4541,7 @@ const CREATURES = [
     "power": 26,
     "popularity": 70,
     "cost": 3,
-    "attack": 2,
+    "attack": 1,
     "health": 4,
     "rarity": "inhabituelle",
     "spell": "Vol: ignore le premier bloqueur adverse.",
@@ -4890,8 +4566,8 @@ const CREATURES = [
     "power": 13,
     "popularity": 70,
     "cost": 2,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Gnome 1.png",
@@ -4908,8 +4584,7 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "dernier-souffle",
-      "survie"
+      "vol"
     ],
     "natures": [
       "méchanique"
@@ -4918,8 +4593,8 @@ const CREATURES = [
     "power": 38,
     "popularity": 58,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 1,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Golem de chair 1.png",
@@ -4933,11 +4608,10 @@ const CREATURES = [
     "capital": "Manufacture",
     "size": "2,5",
     "roles": [
-      "tank"
+      "normal"
     ],
     "abilities": [
-      "activer-tank",
-      "survie"
+      "quand-tue"
     ],
     "natures": [
       "méchanique"
@@ -4946,8 +4620,8 @@ const CREATURES = [
     "power": 70,
     "popularity": 58,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 7,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Talos 1.png",
@@ -4989,8 +4663,7 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "dernier-souffle",
-      "survie"
+      "vol"
     ],
     "natures": [
       "méchanique"
@@ -4999,7 +4672,7 @@ const CREATURES = [
     "power": 57,
     "popularity": 52,
     "cost": 5,
-    "attack": 4,
+    "attack": 3,
     "health": 7,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -5014,11 +4687,10 @@ const CREATURES = [
     "capital": "Manufacture",
     "size": "30",
     "roles": [
-      "tank"
+      "normal"
     ],
     "abilities": [
-      "etendard",
-      "activer-tank"
+      "vol"
     ],
     "natures": [
       "méchanique"
@@ -5027,7 +4699,7 @@ const CREATURES = [
     "power": 62,
     "popularity": 47,
     "cost": 5,
-    "attack": 4,
+    "attack": 3,
     "health": 7,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -5045,8 +4717,7 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "dernier-souffle",
-      "survie"
+      "fin-tour-buff"
     ],
     "natures": [
       "méchanique"
@@ -5055,8 +4726,8 @@ const CREATURES = [
     "power": 71,
     "popularity": 46,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 7,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Golem de fer 1.png",
@@ -5072,10 +4743,7 @@ const CREATURES = [
     "roles": [
       "ranged"
     ],
-    "abilities": [
-      "activer-frappe",
-      "sort-degat"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -5083,8 +4751,8 @@ const CREATURES = [
     "power": 16,
     "popularity": 40,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Artificier 1.png",
@@ -5098,7 +4766,7 @@ const CREATURES = [
     "capital": "Manufacture",
     "size": "1,9",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -5125,12 +4793,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "jetons-1-1",
-      "poison",
-      "invocation",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "méchanique"
     ],
@@ -5153,9 +4816,11 @@ const CREATURES = [
     "capital": "Manufacture",
     "size": "1,9",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "double-attaque"
+    ],
     "natures": [
       "vivant",
       "méchanique"
@@ -5165,7 +4830,7 @@ const CREATURES = [
     "popularity": 34,
     "cost": 2,
     "attack": 1,
-    "health": 4,
+    "health": 3,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Warforged 1.png",
@@ -5190,7 +4855,7 @@ const CREATURES = [
     "popularity": 26,
     "cost": 2,
     "attack": 1,
-    "health": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Svirfneblin 1.png",
@@ -5206,7 +4871,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "fin-tour-buff"
+    ],
     "natures": [
       "méchanique"
     ],
@@ -5241,7 +4908,7 @@ const CREATURES = [
     "popularity": 15,
     "cost": 3,
     "attack": 3,
-    "health": 3,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dactyle 1.png",
@@ -5257,7 +4924,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "quand-tue"
+    ],
     "natures": [
       "méchanique",
       "vivant"
@@ -5283,7 +4952,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "brulant"
+    ],
     "natures": [
       "vivant",
       "éthéré"
@@ -5292,8 +4963,8 @@ const CREATURES = [
     "power": 38,
     "popularity": 8,
     "cost": 4,
-    "attack": 4,
-    "health": 4,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Cabire 1.png",
@@ -5309,11 +4980,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "jetons-1-1",
-      "poison",
-      "invocation"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -5321,8 +4988,8 @@ const CREATURES = [
     "power": 9,
     "popularity": 74,
     "cost": 1,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Gobelin 1.png",
@@ -5346,8 +5013,8 @@ const CREATURES = [
     "power": 8,
     "popularity": 55,
     "cost": 1,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Kobold 1.png",
@@ -5372,7 +5039,7 @@ const CREATURES = [
     "popularity": 44,
     "cost": 1,
     "attack": 1,
-    "health": 3,
+    "health": 2,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Hobgobelin 1.png",
@@ -5389,7 +5056,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "vol"
+      "affaiblir"
     ],
     "natures": [
       "vivant",
@@ -5399,8 +5066,8 @@ const CREATURES = [
     "power": 22,
     "popularity": 36,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Cocatrix 1.png",
@@ -5416,7 +5083,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "furie"
+    ],
     "natures": [
       "vivant"
     ],
@@ -5424,8 +5093,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 30,
     "cost": 2,
-    "attack": 2,
-    "health": 4,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Redcap 1.png",
@@ -5439,7 +5108,7 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "1,6",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -5449,8 +5118,8 @@ const CREATURES = [
     "power": 14,
     "popularity": 28,
     "cost": 2,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Homme-rat 1.png",
@@ -5474,7 +5143,7 @@ const CREATURES = [
     "power": 30,
     "popularity": 27,
     "cost": 3,
-    "attack": 2,
+    "attack": 3,
     "health": 5,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -5489,7 +5158,7 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "2,1",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -5500,7 +5169,7 @@ const CREATURES = [
     "popularity": 26,
     "cost": 2,
     "attack": 1,
-    "health": 4,
+    "health": 2,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Gobelours 1.png",
@@ -5516,7 +5185,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "poison"
+    ],
     "natures": [
       "vivant",
       "éthéré"
@@ -5525,8 +5196,8 @@ const CREATURES = [
     "power": 28,
     "popularity": 19,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Barghest 1.png",
@@ -5542,7 +5213,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "affaiblir"
+    ],
     "natures": [
       "éthéré"
     ],
@@ -5550,8 +5223,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 14,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Trow 1.png",
@@ -5565,10 +5238,9 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "18",
     "roles": [
-      "tank"
+      "normal"
     ],
     "abilities": [
-      "etendard",
       "vol"
     ],
     "natures": [
@@ -5578,8 +5250,8 @@ const CREATURES = [
     "power": 74,
     "popularity": 98,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 7,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dragon 1.png",
@@ -5593,11 +5265,9 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "3",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [
-      "brulant",
-      "dernier-souffle",
       "vol"
     ],
     "natures": [
@@ -5608,8 +5278,8 @@ const CREATURES = [
     "power": 86,
     "popularity": 88,
     "cost": 7,
-    "attack": 8,
-    "health": 6,
+    "attack": 4,
+    "health": 8,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Phénix 1.png",
@@ -5626,8 +5296,7 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "etendard",
-      "activer-tank"
+      "quand-blesse"
     ],
     "natures": [
       "vivant"
@@ -5636,8 +5305,8 @@ const CREATURES = [
     "power": 88,
     "popularity": 85,
     "cost": 8,
-    "attack": 5,
-    "health": 9,
+    "attack": 4,
+    "health": 10,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Titan 1.png",
@@ -5653,7 +5322,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "vivant"
     ],
@@ -5661,7 +5332,7 @@ const CREATURES = [
     "power": 64,
     "popularity": 82,
     "cost": 6,
-    "attack": 4,
+    "attack": 3,
     "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -5689,8 +5360,8 @@ const CREATURES = [
     "power": 55,
     "popularity": 80,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 1,
+    "health": 5,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Djinn 1.png",
@@ -5707,8 +5378,6 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "brulant",
-      "etendard",
       "vol"
     ],
     "natures": [
@@ -5718,8 +5387,8 @@ const CREATURES = [
     "power": 85,
     "popularity": 78,
     "cost": 6,
-    "attack": 4,
-    "health": 7,
+    "attack": 3,
+    "health": 8,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dragon rouge 1.png",
@@ -5733,10 +5402,10 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "15",
     "roles": [
-      "caster"
+      "tank"
     ],
     "abilities": [
-      "vol"
+      "furie"
     ],
     "natures": [
       "éthéré"
@@ -5745,8 +5414,8 @@ const CREATURES = [
     "power": 94,
     "popularity": 74,
     "cost": 8,
-    "attack": 8,
-    "health": 6,
+    "attack": 4,
+    "health": 10,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Quetzalcoatl 1.png",
@@ -5763,8 +5432,6 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "etendard",
-      "quand-tue",
       "vol"
     ],
     "natures": [
@@ -5773,15 +5440,15 @@ const CREATURES = [
     "origin": "Céleste",
     "power": 86,
     "popularity": 72,
-    "cost": 8,
-    "attack": 5,
-    "health": 9,
+    "cost": 7,
+    "attack": 7,
+    "health": 7,
     "rarity": "mythique",
-    "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
+    "spell": "Vol et Tank.",
     "image": "img/Dragon d'or 1.png",
     "quote": "« La noblesse écarlate et le souffle d'or pur. »",
     "costColored": 3,
-    "costNeutral": 5
+    "costNeutral": 4
   },
   {
     "id": 207,
@@ -5792,8 +5459,6 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "gelant",
-      "etendard",
       "vol"
     ],
     "natures": [
@@ -5803,8 +5468,8 @@ const CREATURES = [
     "power": 76,
     "popularity": 70,
     "cost": 6,
-    "attack": 4,
-    "health": 7,
+    "attack": 3,
+    "health": 8,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dragon bleu 1.png",
@@ -5818,11 +5483,9 @@ const CREATURES = [
     "capital": "Citadelle",
     "size": "19",
     "roles": [
-      "tank"
+      "normal"
     ],
     "abilities": [
-      "etendard",
-      "quand-tue",
       "vol"
     ],
     "natures": [
@@ -5831,15 +5494,15 @@ const CREATURES = [
     "origin": "Céleste",
     "power": 82,
     "popularity": 64,
-    "cost": 7,
-    "attack": 4,
-    "health": 7,
+    "cost": 6,
+    "attack": 6,
+    "health": 6,
     "rarity": "mythique",
-    "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
+    "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Dragon d'argent 1.png",
     "quote": "« La brume argentée et le souffle de glace. »",
     "costColored": 2,
-    "costNeutral": 5
+    "costNeutral": 4
   },
   {
     "id": 209,
@@ -5847,12 +5510,10 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "1,8",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [
-      "etendard",
-      "activer-frappe",
-      "sort-degat"
+      "vol"
     ],
     "natures": [
       "vivant"
@@ -5861,8 +5522,8 @@ const CREATURES = [
     "power": 75,
     "popularity": 63,
     "cost": 7,
-    "attack": 8,
-    "health": 6,
+    "attack": 4,
+    "health": 8,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Archimage 1.png",
@@ -5876,11 +5537,9 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "16",
     "roles": [
-      "tank"
+      "normal"
     ],
     "abilities": [
-      "etendard",
-      "quand-tue",
       "vol"
     ],
     "natures": [
@@ -5890,8 +5549,8 @@ const CREATURES = [
     "power": 70,
     "popularity": 62,
     "cost": 7,
-    "attack": 3,
-    "health": 7,
+    "attack": 4,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dragon d'airain 1.png",
@@ -5905,9 +5564,11 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "3",
     "roles": [
-      "caster"
+      "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "éthéré"
     ],
@@ -5915,8 +5576,8 @@ const CREATURES = [
     "power": 43,
     "popularity": 60,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 1,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Elémentaire 1.png",
@@ -5943,7 +5604,7 @@ const CREATURES = [
     "power": 88,
     "popularity": 58,
     "cost": 6,
-    "attack": 4,
+    "attack": 3,
     "health": 7,
     "rarity": "mythique",
     "spell": "Vol: ignore le premier bloqueur adverse.",
@@ -5968,8 +5629,8 @@ const CREATURES = [
     "power": 58,
     "popularity": 56,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 4,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Qilin 1.png",
@@ -5983,11 +5644,9 @@ const CREATURES = [
     "capital": "Manufacture",
     "size": "17",
     "roles": [
-      "tank"
+      "normal"
     ],
     "abilities": [
-      "etendard",
-      "quand-tue",
       "vol"
     ],
     "natures": [
@@ -5997,8 +5656,8 @@ const CREATURES = [
     "power": 72,
     "popularity": 55,
     "cost": 7,
-    "attack": 3,
-    "health": 7,
+    "attack": 4,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dragon de cuivre 1.png",
@@ -6022,7 +5681,7 @@ const CREATURES = [
     "power": 40,
     "popularity": 55,
     "cost": 3,
-    "attack": 5,
+    "attack": 2,
     "health": 4,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -6037,9 +5696,11 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "3,2",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "camouflage"
+    ],
     "natures": [
       "vivant"
     ],
@@ -6047,8 +5708,8 @@ const CREATURES = [
     "power": 45,
     "popularity": 54,
     "cost": 4,
-    "attack": 3,
-    "health": 6,
+    "attack": 1,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Nephilim 1.png",
@@ -6064,10 +5725,7 @@ const CREATURES = [
     "roles": [
       "ranged"
     ],
-    "abilities": [
-      "activer-frappe",
-      "sort-degat"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -6076,7 +5734,7 @@ const CREATURES = [
     "popularity": 53,
     "cost": 3,
     "attack": 3,
-    "health": 3,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Oracle 1.png",
@@ -6093,7 +5751,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol"
+      "poison"
     ],
     "natures": [
       "éthéré"
@@ -6102,7 +5760,7 @@ const CREATURES = [
     "power": 64,
     "popularity": 50,
     "cost": 5,
-    "attack": 4,
+    "attack": 3,
     "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -6119,7 +5777,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "survie"
+    ],
     "natures": [
       "vivant"
     ],
@@ -6127,8 +5787,8 @@ const CREATURES = [
     "power": 36,
     "popularity": 50,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Pyromancien 1.png",
@@ -6152,8 +5812,8 @@ const CREATURES = [
     "power": 40,
     "popularity": 48,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Enchanteur 1.png",
@@ -6167,7 +5827,7 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "2",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -6177,8 +5837,8 @@ const CREATURES = [
     "power": 57,
     "popularity": 48,
     "cost": 4,
-    "attack": 6,
-    "health": 4,
+    "attack": 1,
+    "health": 6,
     "rarity": "rare",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Sleipnir 1.png",
@@ -6194,7 +5854,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "éthéré"
     ],
@@ -6202,8 +5864,8 @@ const CREATURES = [
     "power": 82,
     "popularity": 46,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Norne 1.png",
@@ -6220,9 +5882,6 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin",
       "vol"
     ],
     "natures": [
@@ -6232,8 +5891,8 @@ const CREATURES = [
     "power": 72,
     "popularity": 46,
     "cost": 7,
-    "attack": 8,
-    "health": 6,
+    "attack": 4,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Oiseau-tonnerre 1.png",
@@ -6249,10 +5908,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "brulant",
-      "activer-frappe"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -6260,8 +5916,8 @@ const CREATURES = [
     "power": 28,
     "popularity": 44,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Salamandre 1.png",
@@ -6285,8 +5941,8 @@ const CREATURES = [
     "power": 50,
     "popularity": 42,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Ensorceleur 1.png",
@@ -6300,10 +5956,10 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "8",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [
-      "vol"
+      "soutient"
     ],
     "natures": [
       "vivant"
@@ -6312,8 +5968,8 @@ const CREATURES = [
     "power": 73,
     "popularity": 40,
     "cost": 6,
-    "attack": 6,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Simurgh 1.png",
@@ -6327,7 +5983,7 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "2,5",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -6338,7 +5994,7 @@ const CREATURES = [
     "power": 65,
     "popularity": 38,
     "cost": 5,
-    "attack": 3,
+    "attack": 2,
     "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -6355,9 +6011,7 @@ const CREATURES = [
     "roles": [
       "ranged"
     ],
-    "abilities": [
-      "activer-frappe"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -6365,8 +6019,8 @@ const CREATURES = [
     "power": 52,
     "popularity": 38,
     "cost": 4,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Mage 1.png",
@@ -6382,9 +6036,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -6392,8 +6044,8 @@ const CREATURES = [
     "power": 28,
     "popularity": 34,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Apsara 1.png",
@@ -6409,7 +6061,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "celerite"
+    ],
     "natures": [
       "vivant"
     ],
@@ -6417,8 +6071,8 @@ const CREATURES = [
     "power": 48,
     "popularity": 30,
     "cost": 4,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Illusionniste 1.png",
@@ -6434,9 +6088,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -6444,8 +6096,8 @@ const CREATURES = [
     "power": 31,
     "popularity": 30,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Péri 1.png",
@@ -6461,7 +6113,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "donner-buff"
+    ],
     "natures": [
       "éthéré"
     ],
@@ -6469,8 +6123,8 @@ const CREATURES = [
     "power": 42,
     "popularity": 30,
     "cost": 3,
-    "attack": 3,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Yaksha 1.png",
@@ -6494,8 +6148,8 @@ const CREATURES = [
     "power": 62,
     "popularity": 29,
     "cost": 5,
-    "attack": 5,
-    "health": 4,
+    "attack": 4,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Chronomancien 1.png",
@@ -6509,7 +6163,7 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "8",
     "roles": [
-      "caster"
+      "tank"
     ],
     "abilities": [
       "vol"
@@ -6521,8 +6175,8 @@ const CREATURES = [
     "power": 83,
     "popularity": 28,
     "cost": 8,
-    "attack": 5,
-    "health": 9,
+    "attack": 4,
+    "health": 11,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Anzu 1.png",
@@ -6546,8 +6200,8 @@ const CREATURES = [
     "power": 55,
     "popularity": 28,
     "cost": 5,
-    "attack": 5,
-    "health": 4,
+    "attack": 4,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Invocateur 1.png",
@@ -6561,7 +6215,7 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "4",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -6572,8 +6226,8 @@ const CREATURES = [
     "power": 47,
     "popularity": 28,
     "cost": 3,
-    "attack": 2,
-    "health": 5,
+    "attack": 1,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Mushussu 1.png",
@@ -6589,11 +6243,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "gelant",
-      "activer-frappe",
-      "sort-degat"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -6602,7 +6252,7 @@ const CREATURES = [
     "popularity": 28,
     "cost": 3,
     "attack": 3,
-    "health": 3,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Volva 1.png",
@@ -6626,8 +6276,8 @@ const CREATURES = [
     "power": 36,
     "popularity": 25,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Cryomancien 1.png",
@@ -6651,8 +6301,8 @@ const CREATURES = [
     "power": 39,
     "popularity": 25,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Jann 1.png",
@@ -6678,8 +6328,8 @@ const CREATURES = [
     "power": 25,
     "popularity": 25,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Sylphe 1.png",
@@ -6729,8 +6379,8 @@ const CREATURES = [
     "power": 30,
     "popularity": 24,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Githyanki 1.png",
@@ -6744,11 +6394,9 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "1,5",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -6756,7 +6404,7 @@ const CREATURES = [
     "power": 12,
     "popularity": 22,
     "cost": 1,
-    "attack": 2,
+    "attack": 1,
     "health": 2,
     "rarity": "commune",
     "spell": "Vol: ignore le premier bloqueur adverse.",
@@ -6771,11 +6419,9 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "100",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -6784,7 +6430,7 @@ const CREATURES = [
     "popularity": 22,
     "cost": 8,
     "attack": 5,
-    "health": 9,
+    "health": 11,
     "rarity": "mythique",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Ziz 1.png",
@@ -6810,7 +6456,7 @@ const CREATURES = [
     "popularity": 20,
     "cost": 2,
     "attack": 1,
-    "health": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Githzerai 1.png",
@@ -6826,7 +6472,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "gelant"
+    ],
     "natures": [
       "vivant"
     ],
@@ -6859,8 +6507,8 @@ const CREATURES = [
     "power": 36,
     "popularity": 10,
     "cost": 3,
-    "attack": 3,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Thaumaturge 1.png",
@@ -6874,12 +6522,9 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "2,7",
     "roles": [
-      "tank"
+      "normal"
     ],
-    "abilities": [
-      "furie",
-      "activer-regen"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -6887,8 +6532,8 @@ const CREATURES = [
     "power": 40,
     "popularity": 80,
     "cost": 3,
-    "attack": 2,
-    "health": 5,
+    "attack": 1,
+    "health": 3,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Troll 1.png",
@@ -6904,10 +6549,7 @@ const CREATURES = [
     "roles": [
       "tank"
     ],
-    "abilities": [
-      "activer-tank",
-      "survie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -6915,8 +6557,8 @@ const CREATURES = [
     "power": 55,
     "popularity": 79,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 1,
+    "health": 5,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Géant 1.png",
@@ -6933,7 +6575,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "gelant"
+      "quand-blesse"
     ],
     "natures": [
       "vivant"
@@ -6957,9 +6599,11 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "2,8",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "pietinement"
+    ],
     "natures": [
       "vivant"
     ],
@@ -6968,7 +6612,7 @@ const CREATURES = [
     "popularity": 77,
     "cost": 2,
     "attack": 1,
-    "health": 4,
+    "health": 3,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Ogre 1.png",
@@ -6982,7 +6626,7 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "4,5",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -6992,8 +6636,8 @@ const CREATURES = [
     "power": 34,
     "popularity": 71,
     "cost": 2,
-    "attack": 2,
-    "health": 4,
+    "attack": 1,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Cyclope 1.png",
@@ -7009,7 +6653,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "survie"
+    ],
     "natures": [
       "vivant"
     ],
@@ -7017,8 +6663,8 @@ const CREATURES = [
     "power": 92,
     "popularity": 70,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 4,
+    "health": 8,
     "rarity": "mythique",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Fenrir 1.png",
@@ -7043,7 +6689,7 @@ const CREATURES = [
     "popularity": 70,
     "cost": 1,
     "attack": 1,
-    "health": 3,
+    "health": 2,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Sasquatch 1.png",
@@ -7059,7 +6705,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "vivant"
     ],
@@ -7067,8 +6715,8 @@ const CREATURES = [
     "power": 70,
     "popularity": 58,
     "cost": 6,
-    "attack": 4,
-    "health": 7,
+    "attack": 3,
+    "health": 8,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Wyrm 1.png",
@@ -7082,7 +6730,7 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "3,5",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -7093,8 +6741,8 @@ const CREATURES = [
     "power": 50,
     "popularity": 54,
     "cost": 4,
-    "attack": 3,
-    "health": 6,
+    "attack": 2,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Grendel 1.png",
@@ -7110,7 +6758,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "vivant"
     ],
@@ -7143,8 +6793,8 @@ const CREATURES = [
     "power": 38,
     "popularity": 50,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Yuki-onna 1.png",
@@ -7170,8 +6820,8 @@ const CREATURES = [
     "power": 69,
     "popularity": 46,
     "cost": 5,
-    "attack": 4,
-    "health": 7,
+    "attack": 2,
+    "health": 6,
     "rarity": "rare",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Roc 1.png",
@@ -7187,7 +6837,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "activer-tank"
+    ],
     "natures": [
       "vivant"
     ],
@@ -7195,7 +6847,7 @@ const CREATURES = [
     "power": 47,
     "popularity": 45,
     "cost": 4,
-    "attack": 3,
+    "attack": 2,
     "health": 6,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -7210,9 +6862,11 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "7",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "vivant"
     ],
@@ -7247,8 +6901,8 @@ const CREATURES = [
     "power": 65,
     "popularity": 42,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 2,
+    "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Zmey 1.png",
@@ -7262,12 +6916,9 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "6,5",
     "roles": [
-      "tank"
+      "normal"
     ],
-    "abilities": [
-      "activer-tank",
-      "survie"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -7275,8 +6926,8 @@ const CREATURES = [
     "power": 58,
     "popularity": 28,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 1,
+    "health": 5,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Géant des glaces 1.png",
@@ -7300,8 +6951,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 28,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Oréade 1.png",
@@ -7325,8 +6976,8 @@ const CREATURES = [
     "power": 46,
     "popularity": 26,
     "cost": 3,
-    "attack": 3,
-    "health": 6,
+    "attack": 2,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Fomorien 1.png",
@@ -7342,7 +6993,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "activer-tank"
+    ],
     "natures": [
       "vivant"
     ],
@@ -7350,8 +7003,8 @@ const CREATURES = [
     "power": 40,
     "popularity": 24,
     "cost": 3,
-    "attack": 2,
-    "health": 5,
+    "attack": 1,
+    "health": 3,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Ettin 1.png",
@@ -7376,7 +7029,7 @@ const CREATURES = [
     "popularity": 24,
     "cost": 2,
     "attack": 1,
-    "health": 4,
+    "health": 3,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Goliath 1.png",
@@ -7390,9 +7043,11 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "25",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "quand-blesse"
+    ],
     "natures": [
       "vivant",
       "aberration"
@@ -7402,7 +7057,7 @@ const CREATURES = [
     "popularity": 18,
     "cost": 8,
     "attack": 5,
-    "health": 9,
+    "health": 11,
     "rarity": "mythique",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Hécatonchire 1.png",
@@ -7426,7 +7081,7 @@ const CREATURES = [
     "power": 30,
     "popularity": 16,
     "cost": 2,
-    "attack": 2,
+    "attack": 1,
     "health": 4,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -7452,7 +7107,7 @@ const CREATURES = [
     "popularity": 5,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Barbegazi 1.png",
@@ -7468,11 +7123,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "poison",
-      "activer-frappe",
-      "affaiblir"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -7480,8 +7131,8 @@ const CREATURES = [
     "power": 28,
     "popularity": 90,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 6,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Sorcière 1.png",
@@ -7498,9 +7149,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "charge",
-      "quand-tue",
-      "double-attaque"
+      "survie"
     ],
     "natures": [
       "vivant"
@@ -7537,8 +7186,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 83,
     "cost": 3,
-    "attack": 3,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Fée 1.png",
@@ -7562,8 +7211,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 78,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Leprechaun 1.png",
@@ -7579,7 +7228,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "bouclier-divin"
+    ],
     "natures": [
       "vivant"
     ],
@@ -7587,7 +7238,7 @@ const CREATURES = [
     "power": 28,
     "popularity": 76,
     "cost": 2,
-    "attack": 3,
+    "attack": 1,
     "health": 3,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -7605,7 +7256,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol"
+      "fin-tour-buff"
     ],
     "natures": [
       "vivant"
@@ -7614,8 +7265,8 @@ const CREATURES = [
     "power": 72,
     "popularity": 74,
     "cost": 8,
-    "attack": 8,
-    "health": 6,
+    "attack": 5,
+    "health": 11,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Baba Yaga 1.png",
@@ -7639,8 +7290,8 @@ const CREATURES = [
     "power": 34,
     "popularity": 74,
     "cost": 3,
-    "attack": 5,
-    "health": 4,
+    "attack": 3,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Kitsune 1.png",
@@ -7656,7 +7307,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "quand-tue"
+    ],
     "natures": [
       "vivant"
     ],
@@ -7664,8 +7317,8 @@ const CREATURES = [
     "power": 34,
     "popularity": 68,
     "cost": 3,
-    "attack": 3,
-    "health": 6,
+    "attack": 2,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Lycanthrope 1.png",
@@ -7681,11 +7334,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "végétal"
     ],
@@ -7693,8 +7342,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 58,
     "cost": 3,
-    "attack": 3,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Mandragore 1.png",
@@ -7708,7 +7357,7 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "0,6",
     "roles": [
-      "caster"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -7719,8 +7368,8 @@ const CREATURES = [
     "power": 30,
     "popularity": 58,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Tanuki 1.png",
@@ -7737,7 +7386,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "vol"
+      "pietinement"
     ],
     "natures": [
       "vivant"
@@ -7771,8 +7420,8 @@ const CREATURES = [
     "power": 30,
     "popularity": 52,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 6,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Yokai 1.png",
@@ -7789,9 +7438,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "soutient-2"
     ],
     "natures": [
       "vivant"
@@ -7800,8 +7447,8 @@ const CREATURES = [
     "power": 19,
     "popularity": 50,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Nekomata 1.png",
@@ -7815,12 +7462,9 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "5",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin",
       "vol"
     ],
     "natures": [
@@ -7831,8 +7475,8 @@ const CREATURES = [
     "power": 58,
     "popularity": 48,
     "cost": 8,
-    "attack": 8,
-    "health": 6,
+    "attack": 4,
+    "health": 10,
     "rarity": "rare",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Jabberwock 1.png",
@@ -7846,14 +7490,9 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "1,8",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "éthéré"
@@ -7862,8 +7501,8 @@ const CREATURES = [
     "power": 38,
     "popularity": 48,
     "cost": 6,
-    "attack": 6,
-    "health": 5,
+    "attack": 4,
+    "health": 8,
     "rarity": "inhabituelle",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Tengu 1.png",
@@ -7877,13 +7516,9 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "2",
     "roles": [
-      "caster"
+      "tank"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "éthéré"
@@ -7892,8 +7527,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 46,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 7,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Baku 1.png",
@@ -7910,9 +7545,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "vol"
     ],
     "natures": [
       "vivant"
@@ -7938,12 +7571,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -7951,8 +7579,8 @@ const CREATURES = [
     "power": 10,
     "popularity": 46,
     "cost": 1,
-    "attack": 2,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Sprite 1.png",
@@ -7976,8 +7604,8 @@ const CREATURES = [
     "power": 22,
     "popularity": 41,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Chaman 1.png",
@@ -7991,12 +7619,10 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "1,7",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "soutient"
     ],
     "natures": [
       "aberration"
@@ -8005,8 +7631,8 @@ const CREATURES = [
     "power": 17,
     "popularity": 40,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Rokurokubi 1.png",
@@ -8023,9 +7649,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "soutient-2"
     ],
     "natures": [
       "éthéré"
@@ -8034,8 +7658,8 @@ const CREATURES = [
     "power": 23,
     "popularity": 38,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 6,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Nymphe 1.png",
@@ -8049,12 +7673,10 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "1,7",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "vol"
     ],
     "natures": [
       "vivant"
@@ -8063,8 +7685,8 @@ const CREATURES = [
     "power": 40,
     "popularity": 36,
     "cost": 7,
-    "attack": 8,
-    "health": 6,
+    "attack": 4,
+    "health": 8,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Guenaude 1.png",
@@ -8080,11 +7702,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -8092,8 +7710,8 @@ const CREATURES = [
     "power": 21,
     "popularity": 36,
     "cost": 3,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Pooka 1.png",
@@ -8107,12 +7725,10 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "1,8",
     "roles": [
-      "caster"
+      "normal"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "poison"
     ],
     "natures": [
       "éthéré"
@@ -8121,8 +7737,8 @@ const CREATURES = [
     "power": 39,
     "popularity": 36,
     "cost": 6,
-    "attack": 8,
-    "health": 6,
+    "attack": 3,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Sidhe 1.png",
@@ -8138,11 +7754,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -8150,8 +7762,8 @@ const CREATURES = [
     "power": 14,
     "popularity": 35,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Lutin 1.png",
@@ -8168,9 +7780,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "vol"
     ],
     "natures": [
       "vivant"
@@ -8179,8 +7789,8 @@ const CREATURES = [
     "power": 20,
     "popularity": 34,
     "cost": 3,
-    "attack": 2,
-    "health": 5,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Spriggan 1.png",
@@ -8197,8 +7807,6 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "etendard",
-      "quand-tue",
       "vol"
     ],
     "natures": [
@@ -8208,8 +7816,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 32,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 1,
+    "health": 6,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Fée-dragon 1.png",
@@ -8225,11 +7833,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -8237,8 +7841,8 @@ const CREATURES = [
     "power": 22,
     "popularity": 30,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 7,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Huldra 1.png",
@@ -8254,11 +7858,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -8266,8 +7866,8 @@ const CREATURES = [
     "power": 29,
     "popularity": 30,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 4,
+    "health": 8,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Mara 1.png",
@@ -8283,11 +7883,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -8295,8 +7891,8 @@ const CREATURES = [
     "power": 18,
     "popularity": 28,
     "cost": 2,
-    "attack": 3,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Korrigan 1.png",
@@ -8312,7 +7908,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "camouflage"
+    ],
     "natures": [
       "vivant"
     ],
@@ -8320,7 +7918,7 @@ const CREATURES = [
     "power": 18,
     "popularity": 24,
     "cost": 2,
-    "attack": 2,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
@@ -8337,11 +7935,7 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -8349,8 +7943,8 @@ const CREATURES = [
     "power": 20,
     "popularity": 24,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
     "image": "img/Tabaxi 1.png",
@@ -8366,11 +7960,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -8393,14 +7983,9 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "1,7",
     "roles": [
-      "caster"
+      "normal"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin",
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -8408,8 +7993,8 @@ const CREATURES = [
     "power": 35,
     "popularity": 20,
     "cost": 5,
-    "attack": 6,
-    "health": 5,
+    "attack": 2,
+    "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Vila 1.png",
@@ -8423,13 +8008,9 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "2",
     "roles": [
-      "caster"
+      "tank"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -8437,8 +8018,8 @@ const CREATURES = [
     "power": 16,
     "popularity": 17,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Croquemitaine 1.png",
@@ -8454,11 +8035,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant",
       "éthéré"
@@ -8467,8 +8044,8 @@ const CREATURES = [
     "power": 25,
     "popularity": 9,
     "cost": 5,
-    "attack": 5,
-    "health": 5,
+    "attack": 3,
+    "health": 7,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Cu-sith 1.png",
@@ -8484,11 +8061,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "éthéré"
     ],
@@ -8496,8 +8069,8 @@ const CREATURES = [
     "power": 12,
     "popularity": 4,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Bucca 1.png",
@@ -8513,7 +8086,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol-de-vie"
+    ],
     "natures": [
       "vivant"
     ],
@@ -8521,7 +8096,7 @@ const CREATURES = [
     "power": 82,
     "popularity": 85,
     "cost": 6,
-    "attack": 4,
+    "attack": 3,
     "health": 7,
     "rarity": "mythique",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -8536,9 +8111,11 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "100",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "vivant",
       "aberration"
@@ -8565,9 +8142,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "jetons-1-1",
-      "dernier-souffle",
-      "activer-regen"
+      "bouclier-divin"
     ],
     "natures": [
       "vivant"
@@ -8576,8 +8151,8 @@ const CREATURES = [
     "power": 51,
     "popularity": 78,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 7,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Hydre 1.png",
@@ -8591,9 +8166,11 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "40000000",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "affaiblir"
+    ],
     "natures": [
       "vivant",
       "aberration"
@@ -8602,8 +8179,8 @@ const CREATURES = [
     "power": 98,
     "popularity": 76,
     "cost": 8,
-    "attack": 5,
-    "health": 9,
+    "attack": 4,
+    "health": 10,
     "rarity": "mythique",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Jormungandr 1.png",
@@ -8620,9 +8197,7 @@ const CREATURES = [
       "normal"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "poison"
     ],
     "natures": [
       "vivant",
@@ -8632,8 +8207,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 72,
     "cost": 3,
-    "attack": 4,
-    "health": 5,
+    "attack": 2,
+    "health": 4,
     "rarity": "inhabituelle",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Kappa 1.png",
@@ -8647,11 +8222,9 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "17",
     "roles": [
-      "tank"
+      "normal"
     ],
     "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
       "vol"
     ],
     "natures": [
@@ -8661,8 +8234,8 @@ const CREATURES = [
     "power": 72,
     "popularity": 70,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 7,
     "rarity": "rare",
     "spell": "Vol: ignore le premier bloqueur adverse.",
     "image": "img/Dragon noir 1.png",
@@ -8678,9 +8251,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "vol"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -8688,8 +8259,8 @@ const CREATURES = [
     "power": 26,
     "popularity": 67,
     "cost": 3,
-    "attack": 3,
-    "health": 3,
+    "attack": 2,
+    "health": 5,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Sirène 1.png",
@@ -8703,11 +8274,10 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "22",
     "roles": [
-      "tank"
+      "normal"
     ],
     "abilities": [
-      "etendard",
-      "quand-tue"
+      "vol"
     ],
     "natures": [
       "vivant"
@@ -8716,8 +8286,8 @@ const CREATURES = [
     "power": 78,
     "popularity": 66,
     "cost": 5,
-    "attack": 5,
-    "health": 9,
+    "attack": 2,
+    "health": 6,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dragon marin 1.png",
@@ -8734,8 +8304,6 @@ const CREATURES = [
       "tank"
     ],
     "abilities": [
-      "etendard",
-      "quand-tue",
       "vol"
     ],
     "natures": [
@@ -8745,8 +8313,8 @@ const CREATURES = [
     "power": 76,
     "popularity": 60,
     "cost": 7,
-    "attack": 4,
-    "health": 7,
+    "attack": 5,
+    "health": 9,
     "rarity": "mythique",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Dragon de bronze 1.png",
@@ -8760,7 +8328,7 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "1,7",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -8770,7 +8338,7 @@ const CREATURES = [
     "power": 29,
     "popularity": 58,
     "cost": 4,
-    "attack": 3,
+    "attack": 2,
     "health": 6,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -8788,8 +8356,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "poison",
-      "affaiblir"
+      "brulant"
     ],
     "natures": [
       "vivant"
@@ -8798,7 +8365,7 @@ const CREATURES = [
     "power": 52,
     "popularity": 56,
     "cost": 5,
-    "attack": 4,
+    "attack": 3,
     "health": 7,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -8815,7 +8382,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "gelant"
+    ],
     "natures": [
       "aberration"
     ],
@@ -8823,8 +8392,8 @@ const CREATURES = [
     "power": 68,
     "popularity": 54,
     "cost": 5,
-    "attack": 3,
-    "health": 7,
+    "attack": 2,
+    "health": 6,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Scylla 1.png",
@@ -8840,11 +8409,7 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [
-      "vol-de-vie",
-      "allie-meurt",
-      "dernier-souffle"
-    ],
+    "abilities": [],
     "natures": [
       "mort-vivant",
       "éthéré"
@@ -8853,8 +8418,8 @@ const CREATURES = [
     "power": 22,
     "popularity": 46,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Rusalka 1.png",
@@ -8870,7 +8435,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "soutient"
+    ],
     "natures": [
       "éthéré"
     ],
@@ -8878,8 +8445,8 @@ const CREATURES = [
     "power": 32,
     "popularity": 44,
     "cost": 4,
-    "attack": 5,
-    "health": 5,
+    "attack": 2,
+    "health": 6,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Mélusine 1.png",
@@ -8896,9 +8463,7 @@ const CREATURES = [
       "caster"
     ],
     "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
+      "soutient"
     ],
     "natures": [
       "vivant"
@@ -8907,8 +8472,8 @@ const CREATURES = [
     "power": 16,
     "popularity": 44,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Selkie 1.png",
@@ -8924,7 +8489,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol-de-vie"
+    ],
     "natures": [
       "vivant"
     ],
@@ -8932,8 +8499,8 @@ const CREATURES = [
     "power": 28,
     "popularity": 44,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Triton 1.png",
@@ -8949,7 +8516,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "camouflage"
+    ],
     "natures": [
       "vivant",
       "aberration"
@@ -8958,8 +8527,8 @@ const CREATURES = [
     "power": 47,
     "popularity": 38,
     "cost": 4,
-    "attack": 5,
-    "health": 4,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Yuan-ti 1.png",
@@ -8973,7 +8542,7 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "2",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -8984,7 +8553,7 @@ const CREATURES = [
     "popularity": 36,
     "cost": 2,
     "attack": 1,
-    "health": 3,
+    "health": 4,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Homme-lézard 1.png",
@@ -9008,8 +8577,8 @@ const CREATURES = [
     "power": 24,
     "popularity": 36,
     "cost": 2,
-    "attack": 3,
-    "health": 3,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Naiade 1.png",
@@ -9033,8 +8602,8 @@ const CREATURES = [
     "power": 21,
     "popularity": 36,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Ondine 1.png",
@@ -9058,7 +8627,7 @@ const CREATURES = [
     "power": 24,
     "popularity": 35,
     "cost": 2,
-    "attack": 2,
+    "attack": 1,
     "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
@@ -9075,7 +8644,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol-de-vie"
+    ],
     "natures": [
       "éthéré"
     ],
@@ -9083,8 +8654,8 @@ const CREATURES = [
     "power": 27,
     "popularity": 34,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 2,
+    "health": 4,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Néréide 1.png",
@@ -9100,7 +8671,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "camouflage"
+    ],
     "natures": [
       "éthéré"
     ],
@@ -9108,7 +8681,7 @@ const CREATURES = [
     "power": 69,
     "popularity": 32,
     "cost": 5,
-    "attack": 4,
+    "attack": 3,
     "health": 7,
     "rarity": "rare",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
@@ -9123,13 +8696,9 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "1,2",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [
-      "soin",
-      "activer-regen",
-      "debut-tour-soin"
-    ],
+    "abilities": [],
     "natures": [
       "vivant"
     ],
@@ -9138,7 +8707,7 @@ const CREATURES = [
     "popularity": 30,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Grindylow 1.png",
@@ -9154,7 +8723,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "affaiblir"
+    ],
     "natures": [
       "éthéré"
     ],
@@ -9162,8 +8733,8 @@ const CREATURES = [
     "power": 22,
     "popularity": 30,
     "cost": 2,
-    "attack": 3,
-    "health": 2,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Nixe 1.png",
@@ -9179,7 +8750,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "pietinement"
+    ],
     "natures": [
       "vivant"
     ],
@@ -9187,7 +8760,7 @@ const CREATURES = [
     "power": 11,
     "popularity": 28,
     "cost": 1,
-    "attack": 2,
+    "attack": 1,
     "health": 2,
     "rarity": "commune",
     "spell": "Tir: attaque sans subir de riposte une fois.",
@@ -9212,8 +8785,8 @@ const CREATURES = [
     "power": 28,
     "popularity": 28,
     "cost": 3,
-    "attack": 4,
-    "health": 3,
+    "attack": 3,
+    "health": 5,
     "rarity": "commune",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Vodyanoi 1.png",
@@ -9239,7 +8812,7 @@ const CREATURES = [
     "popularity": 22,
     "cost": 1,
     "attack": 1,
-    "health": 2,
+    "health": 3,
     "rarity": "commune",
     "spell": "Charge: +1 attaque au tour d’invocation.",
     "image": "img/Kuo-toa 1.png",
@@ -9255,7 +8828,9 @@ const CREATURES = [
     "roles": [
       "normal"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "vivant"
     ],
@@ -9263,8 +8838,8 @@ const CREATURES = [
     "power": 84,
     "popularity": 20,
     "cost": 6,
-    "attack": 5,
-    "health": 9,
+    "attack": 3,
+    "health": 8,
     "rarity": "mythique",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Aspidochelone 1.png",
@@ -9278,9 +8853,11 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "23",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "camouflage"
+    ],
     "natures": [
       "vivant",
       "aberration"
@@ -9289,8 +8866,8 @@ const CREATURES = [
     "power": 64,
     "popularity": 20,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 2,
+    "health": 6,
     "rarity": "rare",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Lusca 1.png",
@@ -9304,9 +8881,11 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "2,2",
     "roles": [
-      "normal"
+      "tank"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "vivant"
     ],
@@ -9314,7 +8893,7 @@ const CREATURES = [
     "power": 39,
     "popularity": 16,
     "cost": 4,
-    "attack": 3,
+    "attack": 1,
     "health": 6,
     "rarity": "inhabituelle",
     "spell": "Garde: absorbe les attaques prioritaires.",
@@ -9331,7 +8910,9 @@ const CREATURES = [
     "roles": [
       "caster"
     ],
-    "abilities": [],
+    "abilities": [
+      "vol"
+    ],
     "natures": [
       "aberration"
     ],
@@ -9339,8 +8920,8 @@ const CREATURES = [
     "power": 52,
     "popularity": 14,
     "cost": 4,
-    "attack": 3,
-    "health": 7,
+    "attack": 2,
+    "health": 6,
     "rarity": "inhabituelle",
     "spell": "Déclenchement: inflige 2 dégâts à une cible aléatoire.",
     "image": "img/Aboleth 1.png",
@@ -9365,7 +8946,7 @@ const CREATURES = [
     "popularity": 13,
     "cost": 3,
     "attack": 3,
-    "health": 6,
+    "health": 5,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Catoblépas 1.png",
@@ -9379,7 +8960,7 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "3",
     "roles": [
-      "normal"
+      "tank"
     ],
     "abilities": [],
     "natures": [
@@ -9389,8 +8970,8 @@ const CREATURES = [
     "power": 27,
     "popularity": 10,
     "cost": 2,
-    "attack": 2,
-    "health": 4,
+    "attack": 1,
+    "health": 3,
     "rarity": "commune",
     "spell": "Garde: absorbe les attaques prioritaires.",
     "image": "img/Chuul 1.png",

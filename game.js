@@ -95,7 +95,7 @@ const ABILITIES = {
   vol: {
     id: 'vol',
     label: 'Vol',
-    description: 'Créature volante : ignore le premier bloqueur adverse.',
+    description: 'Volante : seules les créatures avec Vol peuvent l’attaquer. Elle ignore les bloqueurs sans Tank ni Vol (seuls Tank ou Vol peuvent la bloquer).',
   },
   lancer: {
     id: 'lancer',
@@ -212,6 +212,11 @@ const ABILITIES = {
     label: 'Piétinement',
     description: 'Les dégâts qui dépassent les PV du bloqueur sont infligés à la tour adverse.',
   },
+  transpercer: {
+    id: 'transpercer',
+    label: 'Transpercer',
+    description: 'Les dégâts qui dépassent les PV du bloqueur sont infligés à la tour adverse.',
+  },
   'contact-mortel': {
     id: 'contact-mortel',
     label: 'Contact mortel',
@@ -275,7 +280,7 @@ const ABILITIES = {
   'donner-buff': {
     id: 'donner-buff',
     label: 'Bénédiction',
-    description: 'À l’arrivée en jeu : donne +2/+2 à une créature alliée aléatoire (ou à elle-même).',
+    description: 'À l’arrivée en jeu : donne +1/+1 à une créature alliée aléatoire (ou à elle-même).',
   },
   soutient: {
     id: 'soutient',
@@ -311,6 +316,11 @@ const ABILITIES = {
     id: 'cri-frappe',
     label: 'Cri de guerre : Frappe',
     description: 'À l’arrivée en jeu : inflige 1 dégât à toutes les créatures adverses.',
+  },
+  'cri-exorcisme': {
+    id: 'cri-exorcisme',
+    label: 'Exorcisme',
+    description: 'À l’arrivée en jeu : retire tous les buffs des créatures adverses (bonus ATQ/PV et Bouclier divin).',
   },
   furie: {
     id: 'furie',
