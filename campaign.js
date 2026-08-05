@@ -343,6 +343,8 @@ function makeCampaignSideFromDeck(factions, cards){
     hp:30, mana:0, maxMana:0, turnCount:0,
     colorMana:Object.fromEntries(factions.map(f=>[f,0])),
     deck, hand, board:[],
+    prayer:[null, null, null],
+    prayedThisTurn:false,
     factions:factions.slice(),
     startingDeckSize,
   };
@@ -765,6 +767,7 @@ function startCampaignBattle(fromNode){
   if(typeof stampSideFrames==='function'){
     stampSideFrames(state.battle.enemy, typeof rollCampaignRarity==='function'?rollCampaignRarity:null);
   }
+  if(typeof preloadBattleSounds==='function') preloadBattleSounds(state.battle);
   render();
 }
 function claimCampaignBattleRewards(){

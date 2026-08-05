@@ -5,6 +5,7 @@
     defend: 'defend', dfnd: 'defend', hit: 'defend',
     move: 'move', play: 'move', summon: 'move',
     wince: 'wince', wnce: 'wince', death: 'wince', die: 'wince', kill: 'wince',
+    shoot: 'shoot', shot: 'shoot', ranged: 'shoot', cast: 'shoot', spell: 'shoot',
   };
   const PREFS_KEY = 'ff-audio-prefs';
 
@@ -101,6 +102,27 @@
     return null;
   }
 
+  function prefersRangedSfx(card){
+    if(!card) return false;
+    const tags = [...(card.roles||[]), ...(card.abilities||[])];
+    return tags.some(t =>
+      t==='caster' || t==='ranged' || t==='assassin' || t==='lancer' || t==='lancer-mod' || t==='lancer-max'
+      || t==='sort-degat' || t==='sort-degat-mod' || t==='sort-degat-max'
+    );
+  }
+
+  function resolveSoundFile(card, act){
+    const entry = entryFor(card);
+    if(!entry) return null;
+    if(act==='attack'){
+      // Caster / ranged : préférer shoot (Evil Eye, archers…) quand dispo
+      if(prefersRangedSfx(card) && entry.shoot) return entry.shoot;
+      return entry.attack || entry.shoot || entry.move || null;
+    }
+    if(act==='shoot') return entry.shoot || entry.attack || null;
+    return entry[act] || null;
+  }
+
   function playFile(src, {volume: volScale=1, throttleMs=60}={}){
     if(!src) return;
     const vol = effectiveVolume() * Math.max(0, Math.min(1, volScale));
@@ -110,20 +132,76 @@
     if(now - prev < throttleMs) return;
     lastPlay.set(src, now);
     try{
+      ensureCachedAudio(src); // préchauffe le cache navigateur
       const node = new Audio(encodeURI(src));
       node.preload = 'auto';
       node.volume = Math.max(0, Math.min(1, vol));
-      const p = node.play();
-      if(p && p.catch) p.catch(err => console.warn('[audio] play fail', src, err));
+      const start = ()=>{
+        try{
+          node.currentTime = 0;
+          const p = node.play();
+          if(p && p.catch) p.catch(err => console.warn('[audio] play fail', src, err));
+        }catch(err){
+          console.warn('[audio] play error', src, err);
+        }
+      };
+      if(node.readyState >= 2) start();
+      else {
+        node.addEventListener('canplay', start, {once:true});
+        node.addEventListener('error', ()=>console.warn('[audio] load fail', src), {once:true});
+        try{ node.load(); }catch(_){}
+      }
     }catch(err){
       console.warn('[audio] play error', src, err);
     }
   }
 
-  function playFromEntry(card, act, opts){
+  const audioCache = new Map();
+  function ensureCachedAudio(src){
+    let node = audioCache.get(src);
+    if(node) return node;
+    node = new Audio(encodeURI(src));
+    node.preload = 'auto';
+    try{ node.load(); }catch(_){}
+    audioCache.set(src, node);
+    return node;
+  }
+
+  function urlsForCard(card){
     const entry = entryFor(card);
-    if(!entry) return;
-    const file = entry[act];
+    if(!entry) return [];
+    return ['attack','defend','move','wince','shoot']
+      .map(k => entry[k])
+      .filter(Boolean);
+  }
+
+  /** Précharge le catalogue + les OGG des cartes données (decks / mains de combat). */
+  function preloadCreatureSounds(cards, opts={}){
+    const list = Array.isArray(cards) ? cards : [];
+    const timeoutMs = opts.timeoutMs ?? 4000;
+    return ensureCatalog().then(()=>{
+      const urls = new Set();
+      list.forEach(c => urlsForCard(c).forEach(u => urls.add(u)));
+      if(!urls.size) return {loaded:0};
+      const jobs = [...urls].map(src => new Promise(resolve=>{
+        const node = ensureCachedAudio(src);
+        if(node.readyState >= 3){ resolve(true); return; }
+        let done=false;
+        const finish=(ok)=>{
+          if(done) return;
+          done=true;
+          resolve(!!ok);
+        };
+        node.addEventListener('canplaythrough', ()=>finish(true), {once:true});
+        node.addEventListener('error', ()=>finish(false), {once:true});
+        setTimeout(()=>finish(node.readyState>=2), timeoutMs);
+      }));
+      return Promise.all(jobs).then(results=>({loaded: results.filter(Boolean).length, total: urls.size}));
+    });
+  }
+
+  function playFromEntry(card, act, opts){
+    const file = resolveSoundFile(card, act);
     if(!file) return;
     playFile(file, opts);
   }
@@ -214,6 +292,7 @@
 
   window.FFAudio = {
     ensureCatalog,
+    preloadCreatureSounds,
     playCreatureSound,
     unlockAudio,
     getState,

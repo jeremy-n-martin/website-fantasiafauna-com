@@ -149,9 +149,12 @@ function catalogEntries(){
   return Object.entries(cat.creatures).map(([code, data]) => {
     const pretty = CODE_NAMES[code] || data.name;
     const core = {};
-    for (const [k, act] of [['attack','ATTK'],['defend','DFND'],['move','MOVE'],['wince','WNCE'],['death','KILL']]){
+    for (const [k, act] of [['attack','ATTK'],['defend','DFND'],['move','MOVE'],['wince','WNCE'],['death','KILL'],['shoot','SHOT']]){
       if (data.sounds?.[act]?.file) core[k] = data.sounds[act].file;
     }
+    // Fallbacks croisés ATTK ↔ SHOT (Evil Eye, archers, etc.)
+    if (!core.attack && core.shoot) core.attack = core.shoot;
+    if (!core.shoot && core.attack) core.shoot = core.attack;
     if (!core.wince && core.death) core.wince = core.death;
     if (!core.defend && core.wince) core.defend = core.wince;
     if (!core.move && core.attack) core.move = core.attack;
@@ -241,13 +244,14 @@ for (const c of creatures){
     defend: toOgg(pack.core.defend),
     move: toOgg(pack.core.move),
     wince: toOgg(pack.core.wince),
+    shoot: toOgg(pack.core.shoot || pack.core.attack),
   };
 }
 
 const out = {
   version: 1,
   generatedAt: new Date().toISOString().slice(0, 10),
-  note: 'Mapping logique créature → sons (attack/defend/move/wince). Plusieurs cartes peuvent partager le même pack.',
+  note: 'Mapping logique créature → sons (attack/defend/move/wince/shoot). Plusieurs cartes peuvent partager le même pack.',
   stats,
   byId: mapping,
 };

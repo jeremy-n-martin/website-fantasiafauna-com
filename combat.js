@@ -4,11 +4,13 @@ const CBT_PREFS_KEY='ff-combat-prefs';
 /** Taille max de la main (au-delà, on ne pioche plus). */
 const HAND_MAX=8;
 function loadCombatPrefs(){
-  const defaults={ density:'compact', zoom:'md', showLog:true };
+  const defaults={ density:'compact', zoom:'md', showLog:true, leftSplit:'half' };
   try{
     const raw=localStorage.getItem(CBT_PREFS_KEY);
     if(!raw) return {...defaults};
-    return {...defaults, ...JSON.parse(raw)};
+    const parsed={...defaults, ...JSON.parse(raw)};
+    if(!['logs','half','tuto'].includes(parsed.leftSplit)) parsed.leftSplit='half';
+    return parsed;
   }catch(_){ return {...defaults}; }
 }
 function saveCombatPrefs(){
@@ -39,13 +41,17 @@ function toggleCombatLog(){
   const p=ensureCombatPrefs();
   setCombatPref('showLog', !p.showLog);
 }
+function setCombatLeftSplit(mode){
+  if(!['logs','half','tuto'].includes(mode)) mode='half';
+  setCombatPref('leftSplit', mode);
+}
 function playCreatureSfx(card, action){
   if(typeof playCreatureSound==='function') playCreatureSound(card, action);
   else if(window.FFAudio?.playCreatureSound) window.FFAudio.playCreatureSound(card, action);
 }
 async function toggleCombatFullscreen(){
-  const el=document.querySelector('.combat-table');
-  if(!el) return;
+  /* Plein écran sur #app (survit au render) — pas .combat-table, détruit à chaque render. */
+  const el=document.getElementById('app') || document.documentElement;
   try{
     if(document.fullscreenElement || document.webkitFullscreenElement){
       if(document.exitFullscreen) await document.exitFullscreen();
@@ -56,8 +62,8 @@ async function toggleCombatFullscreen(){
     }
   }catch(err){
     combatLog('Plein écran indisponible sur ce navigateur.');
+    if(state.tab==='combat') render();
   }
-  render();
 }
 function isCombatFullscreen(){
   return !!(document.fullscreenElement || document.webkitFullscreenElement);
@@ -67,7 +73,8 @@ function combatTableClasses(extra=''){
   const dens=p.density==='comfort' ? 'cbt-density-comfort' : 'cbt-density-compact';
   const zoom=`cbt-zoom-${p.zoom||'md'}`;
   const log=p.showLog===false ? 'cbt-log-hidden' : '';
-  return ['combat-table', dens, zoom, log, extra].filter(Boolean).join(' ');
+  const split=`cbt-split-${p.leftSplit||'half'}`;
+  return ['combat-table', dens, zoom, log, split, extra].filter(Boolean).join(' ');
 }
 function renderCombatConfigBar(){
   const p=ensureCombatPrefs();
@@ -832,6 +839,7 @@ function triggerCreaturePulse(who, card, opts={}){
       if(res) hits.push(res);
     }
     if(hits.length){
+      playCreatureSfx(card, 'attack');
       combatLog(`${cardLogName(card)} (${spec.label}) : ${spec.dmg} dégât(s) → ${hits.map(h=>h.label).join(', ')}.`);
       spawnCombatFx(spec.vfx, card.uid, hits.map(h=>h.key));
       hits.forEach(h=>{ if(h.key && !String(h.key).startsWith('face')) flashCombatCard(h.key, 380); });
@@ -852,6 +860,11 @@ function triggerCreaturePulse(who, card, opts={}){
       hits.forEach(h=>flashCombatCard(h.key, 380));
     }
   } else if(spec.kind==='summon'){
+    // À l’arrivée : arme seulement le compteur (pas d’invocation gratuite ETB).
+    if(opts.enter){
+      card.abilityCD=spec.period;
+      return;
+    }
     const token=summonBeside(side, card, who);
     if(token) spawnCombatFx('invocation', card.uid, [token.uid]);
   }
@@ -934,6 +947,77 @@ function sideFactions(b, who){
 }
 function colorManaTotal(p){
   return Object.values(p.colorMana||{}).reduce((a,b)=>a+b,0);
+}
+function ensurePrayerSide(p){
+  if(!p) return;
+  if(!Array.isArray(p.prayer) || p.prayer.length!==3) p.prayer=[null, null, null];
+  if(typeof p.prayedThisTurn!=='boolean') p.prayedThisTurn=false;
+}
+function addColorMana(p, faction, amount=1){
+  if(!p || !faction || amount<=0) return 0;
+  if(!p.colorMana) p.colorMana={};
+  let added=0;
+  for(let i=0;i<amount;i++){
+    if(colorManaTotal(p)>=10) break;
+    p.colorMana[faction]=(p.colorMana[faction]||0)+1;
+    added++;
+  }
+  return added;
+}
+function grantPrayerMana(who){
+  const b=state.battle; if(!b) return;
+  const p=b[who];
+  ensurePrayerSide(p);
+  p.prayer.forEach(card=>{
+    if(!card?.capital) return;
+    const n=addColorMana(p, card.capital, 1);
+    if(n>0) combatLog(`${cardLogName(card)} (Prière) : +${n} mana ${card.capital}.`);
+  });
+}
+function placePrayer(who, handUid, slotIndex){
+  const b=state.battle; if(!b||b.winner) return false;
+  if(b.phase!=='main' || b.active!==who) return false;
+  const p=b[who];
+  ensurePrayerSide(p);
+  const idx=slotIndex|0;
+  if(idx<0 || idx>2) return false;
+  if(p.prayer[idx]) return false;
+  if(p.prayedThisTurn){
+    if(who==='player') combatLog('Tu as déjà placé une prière ce tour.');
+    return false;
+  }
+  const card=p.hand.find(c=>c.uid===handUid);
+  if(!card) return false;
+  p.hand=p.hand.filter(c=>c.uid!==handUid);
+  p.prayer[idx]=card;
+  p.prayedThisTurn=true;
+  const n=addColorMana(p, card.capital, 1);
+  combatLog(`${who==='player'?'Tu places':'Adverse place'} ${cardLogName(card)} en prière${n?` (+${n} mana ${card.capital})`:''}.`);
+  if(who==='player'){ b.selectedHandUid=null; b.insertAt=null; }
+  return true;
+}
+function removePrayer(who, slotIndex){
+  const b=state.battle; if(!b||b.winner) return false;
+  if(b.phase!=='main' || b.active!==who) return false;
+  const p=b[who];
+  ensurePrayerSide(p);
+  const idx=slotIndex|0;
+  if(idx<0 || idx>2) return false;
+  const card=p.prayer[idx];
+  if(!card) return false;
+  p.prayer[idx]=null;
+  combatLog(`${who==='player'?'Tu retires':'Adverse retire'} ${cardLogName(card)} de la prière (hors jeu).`);
+  return true;
+}
+function tryPlaceSelectedPrayer(slotIndex){
+  const b=state.battle;
+  if(!b||b.active!=='player'||b.phase!=='main'||!b.selectedHandUid) return;
+  if(placePrayer('player', b.selectedHandUid, slotIndex)) render();
+}
+function tryRemovePrayer(slotIndex){
+  const b=state.battle;
+  if(!b||b.active!=='player'||b.phase!=='main') return;
+  if(removePrayer('player', slotIndex)) render();
 }
 function cardManaParts(card){
   if(typeof normalizeManaCost==='function') return normalizeManaCost(card);
@@ -1040,9 +1124,22 @@ function makeSide(factions, unique=15, copies=1){
     hp:30, mana:0, maxMana:0, turnCount:0,
     colorMana:Object.fromEntries(factions.map(f=>[f,0])),
     deck, hand, board:[],
+    prayer:[null, null, null],
+    prayedThisTurn:false,
     factions:factions.slice(),
     startingDeckSize,
   };
+}
+function preloadBattleSounds(battle){
+  if(!battle || typeof window.FFAudio?.preloadCreatureSounds!=='function') return;
+  const cards=[
+    ...(battle.player?.deck||[]),
+    ...(battle.player?.hand||[]),
+    ...(battle.enemy?.deck||[]),
+    ...(battle.enemy?.hand||[]),
+  ];
+  window.FFAudio.unlockAudio?.();
+  window.FFAudio.preloadCreatureSounds(cards).catch(()=>{});
 }
 function startCombat(){
   state.combatView='rapide';
@@ -1078,6 +1175,7 @@ function startCombat(){
   combatLog(`Combat rapide — Toi: ${playerFactions.join(' · ')} · Adverse: ${enemyFactions.join(' · ')}.`);
   combatLog(`Decks: 60 cartes (15×4, 2 factions). ${state.battle.coin}.`);
   combatLog(`Main d’ouverture (${state.battle.player.hand.length}) — garde ou repioche une fois.`);
+  preloadBattleSounds(state.battle);
   render();
 }
 function backToCombatLobby(){
@@ -1138,18 +1236,12 @@ function beginTurn(who, isOpening=false){
   b.active=who; b.phase='main'; b.selectedHandUid=null; b.insertAt=null;
   b.attackSource=null; b.aimLock=null; b.actionChoice=null;
   const p=b[who];
+  ensurePrayerSide(p);
   p.turnCount += 1;
   p.maxMana=Math.min(10, p.turnCount);
   p.mana=p.maxMana;
-  const cols=sideFactions(b, who);
-  if(cols.length){
-    const fi=(p.turnCount-1) % cols.length;
-    const col=cols[fi];
-    if(colorManaTotal(p)<10){
-      p.colorMana[col]=(p.colorMana[col]||0)+1;
-      combatLog(`${who==='player'?'Toi':'Adverse'} : +1 mana ${col}.`);
-    }
-  }
+  p.prayedThisTurn=false;
+  grantPrayerMana(who);
   const draws = isOpening ? 0 : 2;
   for(let i=0;i<draws;i++) drawOne(p, who);
   // Reset d’assaut + effets de début de tour
@@ -1353,7 +1445,19 @@ function placementSlots(board){
   return slots;
 }
 function selectHandCard(uid){
-  playFromHandAt(uid, null);
+  if(window._cbtSuppressHandClick) return;
+  const b=state.battle;
+  if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
+  const card=b.player.hand.find(c=>c.uid===uid);
+  if(!card) return;
+  // Clic court : invoquer si possible, sinon sélection pour la prière
+  if(canAfford(b.player, card) && b.player.board.length<8){
+    playFromHandAt(uid, null);
+    return;
+  }
+  b.selectedHandUid = b.selectedHandUid===uid ? null : uid;
+  b.insertAt=null;
+  render();
 }
 function playFromHandAt(uid, idx){
   const b=state.battle;
@@ -1596,6 +1700,7 @@ function applyActivationEffect(who, c, spec){
       if(res) hits.push(res);
     }
     if(hits.length){
+      playCreatureSfx(c, 'attack');
       combatLog(`${cardLogName(c)} s’active : 2 dégâts → ${hits.map(h=>h.label).join(', ')}.`);
       spawnCombatFx('sort', c.uid, hits.map(h=>h.key));
     }
@@ -1864,22 +1969,62 @@ function endPlayerTurn(){
 }
 function enemyTurn(){
   const b=state.battle; if(!b||b.winner||b.active!=='enemy') return;
-  let plays=0;
-  while(plays<8 && b.enemy.board.length<8){
-    let playable=b.enemy.hand.filter(c=>canAfford(b.enemy,c));
-    if(!playable.length) break;
-    // Tôt dans la partie : éviter les invocateurs de rejetons (1 carte → 3 corps).
-    if((b.enemy.turnCount||0)<=2){
+  if(b._enemyBusy) return;
+  ensurePrayerSide(b.enemy);
+  // IA : placer 1 prière / tour si slot libre
+  if(!b.enemy.prayedThisTurn){
+    const emptyIdx=b.enemy.prayer.findIndex(x=>!x);
+    if(emptyIdx>=0 && b.enemy.hand.length){
+      const factions=sideFactions(b,'enemy');
+      const candidates=b.enemy.hand.slice().sort((a,c)=>{
+        const af=factions.includes(a.capital)?0:1;
+        const cf=factions.includes(c.capital)?0:1;
+        if(af!==cf) return af-cf;
+        return (a.cost|0)-(c.cost|0) || (c.power|0)-(a.power|0);
+      });
+      const pick=candidates[0];
+      if(pick) placePrayer('enemy', pick.uid, emptyIdx);
+    }
+  }
+  b._enemyBusy=true;
+  const playNext=()=>{
+    const battle=state.battle;
+    if(!battle||battle.winner||battle.active!=='enemy'){
+      if(battle) battle._enemyBusy=false;
+      return;
+    }
+    if(battle.enemy.board.length>=8){
+      finishEnemyPlays();
+      return;
+    }
+    let playable=battle.enemy.hand.filter(c=>canAfford(battle.enemy,c));
+    if(!playable.length){
+      finishEnemyPlays();
+      return;
+    }
+    if((battle.enemy.turnCount||0)<=2){
       const simple=playable.filter(c=>!hasRole(c,'jetons-1-1'));
       if(simple.length) playable=simple;
     }
     playable.sort((a,c)=>cardManaParts(a).total-cardManaParts(c).total || c.attack-a.attack);
     const card=playable[0];
-    const slots=placementSlots(b.enemy.board);
-    const idx=slots[Math.floor(slots.length/2)] ?? b.enemy.board.length;
-    if(!playCardOn(b.enemy, card, idx, 'enemy')) break;
-    plays++;
-  }
+    const slots=placementSlots(battle.enemy.board);
+    const idx=slots[Math.floor(slots.length/2)] ?? battle.enemy.board.length;
+    if(!playCardOn(battle.enemy, card, idx, 'enemy')){
+      finishEnemyPlays();
+      return;
+    }
+    render();
+    setTimeout(playNext, 320);
+  };
+  render();
+  setTimeout(playNext, 180);
+}
+function finishEnemyPlays(){
+  const b=state.battle;
+  if(!b) return;
+  b._enemyBusy=false;
+  if(b.winner||b.active!=='enemy') return;
   // IA : parfois activer plutôt qu’attaquer
   b.enemy.board.forEach(c=>{
     if(!canCreatureActivate(c)) return;
@@ -1903,6 +2048,7 @@ function enemyTurn(){
   }
   b.phase='enemy_attack';
   combatLog(`L’adversaire engage ${attackers.length} assaut(s).`);
+  render();
   playEnemyAttacks(attackers, 0);
 }
 function playEnemyAttacks(uids, i){
@@ -2151,8 +2297,9 @@ function renderBoardRow(side, who){
       }));
     }
   }
-  if(!board.length) parts.push('<span class="cbt-drop-slot" title="Terrain vide — clique une carte de ta main" aria-label="Emplacement d’invocation"></span>');
-  return `<div class="cbt-row ${who}${playerAiming?' targeting':''}${legal?.forcedTank?' tank-lock':''}">${parts.join('')}</div>`;
+  if(!board.length) parts.push('<span class="cbt-drop-slot" title="Terrain vide — glisse ou clique une carte de ta main" aria-label="Emplacement d’invocation"></span>');
+  const dropAttr=isPlayer ? ' data-drop-board="player"' : '';
+  return `<div class="cbt-row ${who}${playerAiming?' targeting':''}${legal?.forcedTank?' tank-lock':''}"${dropAttr}>${parts.join('')}</div>`;
 }
 function renderTowerSprite(who, opts={}){
   const b=state.battle;
@@ -2233,6 +2380,47 @@ function renderColorMana(p){
       <b>${n}</b>
     </span>`;
   }).join('');
+}
+/** Rangée de 3 slots de prière (mana couleur). */
+function renderPrayerRow(who){
+  const b=state.battle; if(!b) return '';
+  const p=b[who];
+  ensurePrayerSide(p);
+  const isPlayer=who==='player';
+  const canAct=isPlayer && b.active==='player' && b.phase==='main' && !b.winner && !b.attackSource;
+  const handSel=canAct && b.selectedHandUid && p.hand.some(c=>c.uid===b.selectedHandUid);
+  const canPlace=handSel && !p.prayedThisTurn;
+  const slots=p.prayer.map((card, i)=>{
+    if(card){
+      const art=(typeof currentImageFor==='function' ? currentImageFor(card,{raw:true}) : null) || card.image || '';
+      const fm=FACTION_MANA[card.capital]||{color:'#888'};
+      const removeBtn=canAct
+        ? `<button type="button" class="cbt-prayer-remove" onclick="tryRemovePrayer(${i})" title="Retirer (hors jeu)">×</button>`
+        : '';
+      const img=art?`<img src="${encodeURI(art)}" alt="" draggable="false">`:'';
+      return `<div class="cbt-prayer-slot filled" style="--mana:${fm.color}" title="${card.name} · Prière (+1 ${card.capital}/tour)">
+        ${img}<span class="cbt-prayer-name">${card.name}</span>${removeBtn}
+      </div>`;
+    }
+    const acceptDrop=canAct && !p.prayedThisTurn;
+    const hot=canPlace?' is-hot':'';
+    const locked=canAct && p.prayedThisTurn?' is-locked':'';
+    const click=canPlace?` onclick="tryPlaceSelectedPrayer(${i})"`:'';
+    const title=canPlace
+      ? 'Placer la carte sélectionnée en prière'
+      : acceptDrop
+        ? 'Glisse une carte de ta main ici (prière)'
+        : p.prayedThisTurn
+          ? 'Déjà une prière ce tour'
+          : 'Glisse une carte ici pour prier';
+    return `<button type="button" class="cbt-prayer-slot empty${hot}${locked}" data-drop-prayer="${i}"${click} ${canPlace||acceptDrop?'':'disabled'} title="${title}" aria-label="Emplacement de prière ${i+1}">
+      <small>Prière</small>
+    </button>`;
+  }).join('');
+  return `<div class="cbt-prayer-row" data-prayer-owner="${who}" role="group" aria-label="Emplacements de prière · +1 mana couleur / tour">
+    <span class="cbt-prayer-label" title="+1 mana couleur / tour">Prière</span>
+    ${slots}
+  </div>`;
 }
 function renderCombatLobby(){
   const camp=typeof ensureCampaign==='function' ? ensureCampaign() : null;
@@ -2373,13 +2561,32 @@ function renderCombat(){
       ? 'Attaquer la tour adverse'
       : (playerAiming ? 'Protégée par un Tank' : undefined),
   };
-  const logHtml=`<aside class="cbt-log"><h3>Journal</h3>${b.log.map(x=>`<p>${x}</p>`).join('')||'<p class="cbt-log-empty">Aucune action pour l’instant.</p>'}</aside>`;
-  const sideControls=`<aside class="cbt-side-rail" aria-label="Actions de tour">${midControls}</aside>`;
+  const logHtml=`<aside class="cbt-log" aria-label="Journal de combat">
+    <h3>Journal</h3>
+    <div class="cbt-log-scroll">${b.log.map(x=>`<p>${x}</p>`).join('')||'<p class="cbt-log-empty">Aucune action pour l’instant.</p>'}</div>
+  </aside>`;
+  const split=ensureCombatPrefs().leftSplit||'half';
+  const dockTools=`<div class="cbt-dock-tools" role="toolbar" aria-label="Répartition journal / aide">
+    <button type="button" class="cbt-dock-btn${split==='logs'?' on':''}" onclick="setCombatLeftSplit('logs')" title="Agrandir le journal (aide en barre)" aria-pressed="${split==='logs'?'true':'false'}">Logs</button>
+    <button type="button" class="cbt-dock-btn${split==='half'?' on':''}" onclick="setCombatLeftSplit('half')" title="50% journal / 50% aide" aria-pressed="${split==='half'?'true':'false'}">50/50</button>
+    <button type="button" class="cbt-dock-btn${split==='tuto'?' on':''}" onclick="setCombatLeftSplit('tuto')" title="Minimiser le journal (agrandir l’aide)" aria-pressed="${split==='tuto'?'true':'false'}">Aide</button>
+  </div>`;
+  const sideControls=`<aside class="cbt-side-rail" aria-label="Aide et actions de tour">
+    <div class="cbt-rail-head"><span>Aide</span></div>
+    <div class="cbt-rail-body">${midControls}</div>
+  </aside>`;
+  const leftDock=`<div class="cbt-left-dock" aria-label="Journal et aide">
+    ${dockTools}
+    ${logHtml}
+    ${sideControls}
+  </div>`;
+  const showDock=ensureCombatPrefs().showLog!==false;
+  const floatActions=!showDock ? `<div class="cbt-float-actions" aria-label="Actions de tour">${midControls}</div>` : '';
   const playerHandHtml=`<div class="cbt-hand-bar" aria-label="Main">${b.player.hand.map(c=>{
             const ok=!mulligan && canAfford(b.player,c) && b.player.board.length<8;
             return miniCard(c,{
               hand:true,
-              selected:false,
+              selected: b.selectedHandUid===c.uid,
               onclick: handCanPlay ? `selectHandCard('${c.uid}')` : '',
               playable: handCanPlay && ok,
               checkAfford:!mulligan,
@@ -2404,10 +2611,14 @@ function renderCombat(){
       ${renderCombatConfigBar()}
     </div>
     <div class="cbt-body">
-      ${logHtml}
+      ${showDock?leftDock:''}
       <div class="cbt-stage">
+        ${floatActions}
         <div class="cbt-side enemy-hud">
-          ${renderManaCrystals(b.enemy)}
+          <div class="cbt-enemy-res">
+            ${renderManaCrystals(b.enemy)}
+            ${renderPrayerRow('enemy')}
+          </div>
           ${renderTowerSprite('enemy', enemyTowerOpts)}
           <div class="cbt-hand enemy-hand">${b.enemy.hand.map(()=>cardBackHtml({className:'is-mini'})).join('')}<small>${deckCountLabel(b.enemy)}</small></div>
         </div>
@@ -2422,9 +2633,9 @@ function renderCombat(){
         <div class="cbt-side ally-hud">
           ${renderTowerSprite('player')}
           ${renderManaCrystals(b.player)}
+          ${renderPrayerRow('player')}
         </div>
       </div>
-      ${sideControls}
     </div>
     ${playerHandHtml}
     ${renderDeckPile(b.player)}
@@ -2583,6 +2794,7 @@ function bindCombatCardPreview(){
   if(bindCombatCardPreview._ready) return;
   bindCombatCardPreview._ready=true;
   document.addEventListener('pointerover', (ev)=>{
+    if(window._cbtHandDrag?.active) return;
     const el=ev.target?.closest?.('.combat-table .cbt-card');
     if(!el) return;
     const from=ev.relatedTarget;
@@ -2590,6 +2802,7 @@ function bindCombatCardPreview(){
     showCombatCardPreview(el);
   });
   document.addEventListener('pointerout', (ev)=>{
+    if(window._cbtHandDrag?.active) return;
     const el=ev.target?.closest?.('.combat-table .cbt-card');
     if(!el) return;
     const to=ev.relatedTarget;
@@ -2599,6 +2812,118 @@ function bindCombatCardPreview(){
   document.addEventListener('pointerdown', (ev)=>{
     if(ev.target?.closest?.('.combat-table .cbt-card')) hideCombatCardPreview();
   }, true);
+}
+
+/** Drag & drop : main → plateau (invoquer) ou slot de prière. */
+const HAND_DRAG_THRESHOLD=8;
+function clearHandDragHighlights(){
+  document.querySelectorAll('.drop-hot').forEach(el=>el.classList.remove('drop-hot'));
+}
+function endHandDragVisual(){
+  const d=window._cbtHandDrag;
+  if(d?.ghost){ d.ghost.remove(); d.ghost=null; }
+  if(d?.el) d.el.classList.remove('is-dragging');
+  clearHandDragHighlights();
+  document.body.classList.remove('is-cbt-dragging');
+}
+function handDragHitTarget(clientX, clientY){
+  const stack=document.elementsFromPoint(clientX, clientY);
+  for(const el of stack){
+    if(!el || el===document.body || el===document.documentElement) continue;
+    if(el.classList?.contains('cbt-drag-ghost')) continue;
+    const prayer=el.closest?.('[data-drop-prayer]');
+    if(prayer){
+      const idx=Number(prayer.getAttribute('data-drop-prayer'));
+      if(Number.isFinite(idx)) return {kind:'prayer', index:idx, el:prayer};
+    }
+    const board=el.closest?.('[data-drop-board="player"]');
+    if(board) return {kind:'board', el:board};
+  }
+  return null;
+}
+function updateHandDragHighlights(target){
+  clearHandDragHighlights();
+  if(!target?.el) return;
+  target.el.classList.add('drop-hot');
+  if(target.kind==='board') target.el.classList.add('play-hot');
+}
+function finishHandDrag(clientX, clientY){
+  const d=window._cbtHandDrag;
+  if(!d) return;
+  const moved=d.moved;
+  const uid=d.uid;
+  endHandDragVisual();
+  window._cbtHandDrag=null;
+  if(!moved) return;
+  window._cbtSuppressHandClick=true;
+  setTimeout(()=>{ window._cbtSuppressHandClick=false; }, 0);
+  const b=state.battle;
+  if(!b||b.active!=='player'||b.phase!=='main'||b.winner||!uid) return;
+  if(!b.player.hand.some(c=>c.uid===uid)) return;
+  const hit=handDragHitTarget(clientX, clientY);
+  if(!hit) return;
+  if(hit.kind==='prayer'){
+    if(placePrayer('player', uid, hit.index)) render();
+    return;
+  }
+  if(hit.kind==='board'){
+    playFromHandAt(uid, null);
+  }
+}
+function bindHandDrag(){
+  if(bindHandDrag._ready) return;
+  bindHandDrag._ready=true;
+  document.addEventListener('pointerdown', (ev)=>{
+    if(ev.button!=null && ev.button!==0) return;
+    if(ev.target?.closest?.('.cbt-prayer-remove')) return;
+    const el=ev.target?.closest?.('.cbt-hand-bar .cbt-card.in-hand');
+    if(!el) return;
+    const b=state.battle;
+    if(!b||b.active!=='player'||b.phase!=='main'||b.winner||b.attackSource) return;
+    const uid=el.getAttribute('data-uid');
+    if(!uid || !b.player.hand.some(c=>c.uid===uid)) return;
+    window._cbtHandDrag={
+      uid, el, pointerId:ev.pointerId,
+      startX:ev.clientX, startY:ev.clientY,
+      moved:false, active:false, ghost:null,
+    };
+  }, true);
+  document.addEventListener('pointermove', (ev)=>{
+    const d=window._cbtHandDrag;
+    if(!d || d.pointerId!==ev.pointerId) return;
+    const dx=ev.clientX-d.startX, dy=ev.clientY-d.startY;
+    if(!d.moved && Math.hypot(dx, dy)<HAND_DRAG_THRESHOLD) return;
+    if(!d.moved){
+      d.moved=true;
+      d.active=true;
+      hideCombatCardPreview();
+      document.body.classList.add('is-cbt-dragging');
+      d.el.classList.add('is-dragging');
+      const card=state.battle?.player?.hand?.find(c=>c.uid===d.uid);
+      const ghost=document.createElement('div');
+      ghost.className='cbt-drag-ghost';
+      ghost.textContent=card?.name || 'Carte';
+      document.body.appendChild(ghost);
+      d.ghost=ghost;
+      try{ d.el.setPointerCapture?.(ev.pointerId); }catch(_){}
+    }
+    ev.preventDefault();
+    if(d.ghost){
+      d.ghost.style.transform=`translate(${ev.clientX+12}px, ${ev.clientY+12}px)`;
+    }
+    updateHandDragHighlights(handDragHitTarget(ev.clientX, ev.clientY));
+  });
+  const stop=(ev)=>{
+    const d=window._cbtHandDrag;
+    if(!d || (ev.pointerId!=null && d.pointerId!==ev.pointerId)) return;
+    if(d.moved) finishHandDrag(ev.clientX, ev.clientY);
+    else {
+      endHandDragVisual();
+      window._cbtHandDrag=null;
+    }
+  };
+  document.addEventListener('pointerup', stop, true);
+  document.addEventListener('pointercancel', stop, true);
 }
 
 window.BOARD_SHAPES=BOARD_SHAPES;
@@ -2620,11 +2945,16 @@ window.confirmAttackFace=confirmAttackFace;
 window.confirmAttackMinion=confirmAttackMinion;
 window.syncAttackAim=syncAttackAim;
 window.endPlayerTurn=endPlayerTurn;
+window.tryPlaceSelectedPrayer=tryPlaceSelectedPrayer;
+window.tryRemovePrayer=tryRemovePrayer;
+window.placePrayer=placePrayer;
+window.removePrayer=removePrayer;
 window.showCombatCardPreview=showCombatCardPreview;
 window.hideCombatCardPreview=hideCombatCardPreview;
 window.toggleCombatFullscreen=toggleCombatFullscreen;
 window.toggleCombatDensity=toggleCombatDensity;
 window.toggleCombatLog=toggleCombatLog;
+window.setCombatLeftSplit=setCombatLeftSplit;
 window.cycleCombatZoom=cycleCombatZoom;
 
 if(!window._cbtFsBound){
@@ -2634,6 +2964,7 @@ if(!window._cbtFsBound){
 }
 
 bindCombatCardPreview();
+bindHandDrag();
 ensureCombatPrefs();
 render();
 

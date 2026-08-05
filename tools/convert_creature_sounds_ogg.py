@@ -58,7 +58,7 @@ def main() -> int:
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
     changed = 0
     for entry in (data.get("byId") or {}).values():
-        for key in ("attack", "defend", "move", "wince"):
+        for key in ("attack", "defend", "move", "wince", "shoot"):
             p = entry.get(key)
             if isinstance(p, str) and p.lower().endswith(".wav"):
                 entry[key] = p[:-4] + ".ogg"

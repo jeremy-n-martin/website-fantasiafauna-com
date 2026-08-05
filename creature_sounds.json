@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-04",
-  "note": "Mapping creature -> sons OGG (attack/defend/move/wince). Convertis depuis WAV ADPCM pour compatibilite navigateur.",
+  "generatedAt": "2026-08-05",
+  "note": "Mapping logique créature → sons (attack/defend/move/wince/shoot). Plusieurs cartes peuvent partager le même pack.",
   "stats": {
     "exact": 30,
     "alias": 282,
@@ -17,7 +17,8 @@
       "attack": "sons/creatures/angl_attack.ogg",
       "defend": "sons/creatures/angl_defend.ogg",
       "move": "sons/creatures/angl_move.ogg",
-      "wince": "sons/creatures/angl_wince.ogg"
+      "wince": "sons/creatures/angl_wince.ogg",
+      "shoot": "sons/creatures/angl_attack.ogg"
     },
     "2": {
       "name": "Valkyrie",
@@ -27,7 +28,8 @@
       "attack": "sons/creatures/angl_attack.ogg",
       "defend": "sons/creatures/angl_defend.ogg",
       "move": "sons/creatures/angl_move.ogg",
-      "wince": "sons/creatures/angl_wince.ogg"
+      "wince": "sons/creatures/angl_wince.ogg",
+      "shoot": "sons/creatures/angl_attack.ogg"
     },
     "3": {
       "name": "Pégase",
@@ -37,7 +39,8 @@
       "attack": "sons/creatures/pega_attack.ogg",
       "defend": "sons/creatures/pega_defend.ogg",
       "move": "sons/creatures/pega_move.ogg",
-      "wince": "sons/creatures/pega_wince.ogg"
+      "wince": "sons/creatures/pega_wince.ogg",
+      "shoot": "sons/creatures/pega_attack.ogg"
     },
     "4": {
       "name": "Griffon",
@@ -47,7 +50,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "5": {
       "name": "Exorciste",
@@ -57,7 +61,8 @@
       "attack": "sons/creatures/monk_attack.ogg",
       "defend": "sons/creatures/monk_defend.ogg",
       "move": "sons/creatures/monk_move.ogg",
-      "wince": "sons/creatures/monk_wince.ogg"
+      "wince": "sons/creatures/monk_wince.ogg",
+      "shoot": "sons/creatures/monk_shoot.ogg"
     },
     "6": {
       "name": "Chevalier",
@@ -67,7 +72,8 @@
       "attack": "sons/creatures/swrd_attack.ogg",
       "defend": "sons/creatures/swrd_defend.ogg",
       "move": "sons/creatures/swrd_move.ogg",
-      "wince": "sons/creatures/swrd_wince.ogg"
+      "wince": "sons/creatures/swrd_wince.ogg",
+      "shoot": "sons/creatures/swrd_attack.ogg"
     },
     "7": {
       "name": "Paladin",
@@ -77,7 +83,8 @@
       "attack": "sons/creatures/crus_attack.ogg",
       "defend": "sons/creatures/crus_defend.ogg",
       "move": "sons/creatures/crus_move.ogg",
-      "wince": "sons/creatures/crus_wince.ogg"
+      "wince": "sons/creatures/crus_wince.ogg",
+      "shoot": "sons/creatures/crus_attack.ogg"
     },
     "8": {
       "name": "Archer",
@@ -87,7 +94,8 @@
       "attack": "sons/creatures/agrm_attack.ogg",
       "defend": "sons/creatures/agrm_defend.ogg",
       "move": "sons/creatures/agrm_move.ogg",
-      "wince": "sons/creatures/agrm_wince.ogg"
+      "wince": "sons/creatures/agrm_wince.ogg",
+      "shoot": "sons/creatures/agrm_shoot.ogg"
     },
     "9": {
       "name": "Templier",
@@ -97,7 +105,8 @@
       "attack": "sons/creatures/crus_attack.ogg",
       "defend": "sons/creatures/crus_defend.ogg",
       "move": "sons/creatures/crus_move.ogg",
-      "wince": "sons/creatures/crus_wince.ogg"
+      "wince": "sons/creatures/crus_wince.ogg",
+      "shoot": "sons/creatures/crus_attack.ogg"
     },
     "10": {
       "name": "Guerrier",
@@ -107,7 +116,8 @@
       "attack": "sons/creatures/swrd_attack.ogg",
       "defend": "sons/creatures/swrd_defend.ogg",
       "move": "sons/creatures/swrd_move.ogg",
-      "wince": "sons/creatures/swrd_wince.ogg"
+      "wince": "sons/creatures/swrd_wince.ogg",
+      "shoot": "sons/creatures/swrd_attack.ogg"
     },
     "11": {
       "name": "Prêtre",
@@ -117,7 +127,8 @@
       "attack": "sons/creatures/monk_attack.ogg",
       "defend": "sons/creatures/monk_defend.ogg",
       "move": "sons/creatures/monk_move.ogg",
-      "wince": "sons/creatures/monk_wince.ogg"
+      "wince": "sons/creatures/monk_wince.ogg",
+      "shoot": "sons/creatures/monk_shoot.ogg"
     },
     "12": {
       "name": "Spadassin",
@@ -127,7 +138,8 @@
       "attack": "sons/creatures/swrd_attack.ogg",
       "defend": "sons/creatures/swrd_defend.ogg",
       "move": "sons/creatures/swrd_move.ogg",
-      "wince": "sons/creatures/swrd_wince.ogg"
+      "wince": "sons/creatures/swrd_wince.ogg",
+      "shoot": "sons/creatures/swrd_attack.ogg"
     },
     "13": {
       "name": "Kenku",
@@ -137,7 +149,8 @@
       "attack": "sons/creatures/harp_attack.ogg",
       "defend": "sons/creatures/harp_defend.ogg",
       "move": "sons/creatures/harp_move.ogg",
-      "wince": "sons/creatures/harp_wince.ogg"
+      "wince": "sons/creatures/harp_wince.ogg",
+      "shoot": "sons/creatures/harp_attack.ogg"
     },
     "14": {
       "name": "Clerc",
@@ -147,7 +160,8 @@
       "attack": "sons/creatures/monk_attack.ogg",
       "defend": "sons/creatures/monk_defend.ogg",
       "move": "sons/creatures/monk_move.ogg",
-      "wince": "sons/creatures/monk_wince.ogg"
+      "wince": "sons/creatures/monk_wince.ogg",
+      "shoot": "sons/creatures/monk_shoot.ogg"
     },
     "15": {
       "name": "Page",
@@ -157,7 +171,8 @@
       "attack": "sons/creatures/pike_attack.ogg",
       "defend": "sons/creatures/pike_defend.ogg",
       "move": "sons/creatures/pike_move.ogg",
-      "wince": "sons/creatures/pike_wince.ogg"
+      "wince": "sons/creatures/pike_wince.ogg",
+      "shoot": "sons/creatures/pike_attack.ogg"
     },
     "16": {
       "name": "Arbalétrier",
@@ -167,7 +182,8 @@
       "attack": "sons/creatures/hcrs_attack.ogg",
       "defend": "sons/creatures/hcrs_defend.ogg",
       "move": "sons/creatures/hcrs_move.ogg",
-      "wince": "sons/creatures/hcrs_wince.ogg"
+      "wince": "sons/creatures/hcrs_wince.ogg",
+      "shoot": "sons/creatures/hcrs_shoot.ogg"
     },
     "17": {
       "name": "Moine",
@@ -177,7 +193,8 @@
       "attack": "sons/creatures/monk_attack.ogg",
       "defend": "sons/creatures/monk_defend.ogg",
       "move": "sons/creatures/monk_move.ogg",
-      "wince": "sons/creatures/monk_wince.ogg"
+      "wince": "sons/creatures/monk_wince.ogg",
+      "shoot": "sons/creatures/monk_shoot.ogg"
     },
     "18": {
       "name": "Acolyte",
@@ -187,7 +204,8 @@
       "attack": "sons/creatures/monk_attack.ogg",
       "defend": "sons/creatures/monk_defend.ogg",
       "move": "sons/creatures/monk_move.ogg",
-      "wince": "sons/creatures/monk_wince.ogg"
+      "wince": "sons/creatures/monk_wince.ogg",
+      "shoot": "sons/creatures/monk_shoot.ogg"
     },
     "19": {
       "name": "Aasimar",
@@ -197,7 +215,8 @@
       "attack": "sons/creatures/angl_attack.ogg",
       "defend": "sons/creatures/angl_defend.ogg",
       "move": "sons/creatures/angl_move.ogg",
-      "wince": "sons/creatures/angl_wince.ogg"
+      "wince": "sons/creatures/angl_wince.ogg",
+      "shoot": "sons/creatures/angl_attack.ogg"
     },
     "20": {
       "name": "Ecuyer",
@@ -207,7 +226,8 @@
       "attack": "sons/creatures/pike_attack.ogg",
       "defend": "sons/creatures/pike_defend.ogg",
       "move": "sons/creatures/pike_move.ogg",
-      "wince": "sons/creatures/pike_wince.ogg"
+      "wince": "sons/creatures/pike_wince.ogg",
+      "shoot": "sons/creatures/pike_attack.ogg"
     },
     "21": {
       "name": "Alérion",
@@ -217,7 +237,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "22": {
       "name": "Voleur",
@@ -227,7 +248,8 @@
       "attack": "sons/creatures/rogu_attack.ogg",
       "defend": "sons/creatures/rogu_defend.ogg",
       "move": "sons/creatures/rogu_move.ogg",
-      "wince": "sons/creatures/rogu_wince.ogg"
+      "wince": "sons/creatures/rogu_wince.ogg",
+      "shoot": "sons/creatures/rogu_attack.ogg"
     },
     "23": {
       "name": "Elfe",
@@ -237,7 +259,8 @@
       "attack": "sons/creatures/welf_attack.ogg",
       "defend": "sons/creatures/welf_defend.ogg",
       "move": "sons/creatures/welf_move.ogg",
-      "wince": "sons/creatures/welf_wince.ogg"
+      "wince": "sons/creatures/welf_wince.ogg",
+      "shoot": "sons/creatures/welf_shoot.ogg"
     },
     "24": {
       "name": "Licorne",
@@ -247,7 +270,8 @@
       "attack": "sons/creatures/unic_attack.ogg",
       "defend": "sons/creatures/unic_defend.ogg",
       "move": "sons/creatures/unic_move.ogg",
-      "wince": "sons/creatures/unic_wince.ogg"
+      "wince": "sons/creatures/unic_wince.ogg",
+      "shoot": "sons/creatures/unic_attack.ogg"
     },
     "25": {
       "name": "Centaure",
@@ -257,7 +281,8 @@
       "attack": "sons/creatures/cntr_attack.ogg",
       "defend": "sons/creatures/cntr_defend.ogg",
       "move": "sons/creatures/cntr_move.ogg",
-      "wince": "sons/creatures/cntr_wince.ogg"
+      "wince": "sons/creatures/cntr_wince.ogg",
+      "shoot": "sons/creatures/cntr_shoot.ogg"
     },
     "26": {
       "name": "Druide",
@@ -267,7 +292,8 @@
       "attack": "sons/creatures/welf_attack.ogg",
       "defend": "sons/creatures/welf_defend.ogg",
       "move": "sons/creatures/welf_move.ogg",
-      "wince": "sons/creatures/welf_wince.ogg"
+      "wince": "sons/creatures/welf_wince.ogg",
+      "shoot": "sons/creatures/welf_shoot.ogg"
     },
     "27": {
       "name": "Hippogriffe",
@@ -277,7 +303,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "28": {
       "name": "Dragon vert",
@@ -287,7 +314,8 @@
       "attack": "sons/creatures/grdr_attack.ogg",
       "defend": "sons/creatures/grdr_defend.ogg",
       "move": "sons/creatures/grdr_move.ogg",
-      "wince": "sons/creatures/grdr_wince.ogg"
+      "wince": "sons/creatures/grdr_wince.ogg",
+      "shoot": "sons/creatures/grdr_attack.ogg"
     },
     "29": {
       "name": "Demi-elfe",
@@ -297,7 +325,8 @@
       "attack": "sons/creatures/welf_attack.ogg",
       "defend": "sons/creatures/welf_defend.ogg",
       "move": "sons/creatures/welf_move.ogg",
-      "wince": "sons/creatures/welf_wince.ogg"
+      "wince": "sons/creatures/welf_wince.ogg",
+      "shoot": "sons/creatures/welf_shoot.ogg"
     },
     "30": {
       "name": "Tréant",
@@ -307,7 +336,8 @@
       "attack": "sons/creatures/tree_attack.ogg",
       "defend": "sons/creatures/tree_defend.ogg",
       "move": "sons/creatures/tree_move.ogg",
-      "wince": "sons/creatures/tree_wince.ogg"
+      "wince": "sons/creatures/tree_wince.ogg",
+      "shoot": "sons/creatures/tree_attack.ogg"
     },
     "31": {
       "name": "Faune",
@@ -317,7 +347,8 @@
       "attack": "sons/creatures/cntr_attack.ogg",
       "defend": "sons/creatures/cntr_defend.ogg",
       "move": "sons/creatures/cntr_move.ogg",
-      "wince": "sons/creatures/cntr_wince.ogg"
+      "wince": "sons/creatures/cntr_wince.ogg",
+      "shoot": "sons/creatures/cntr_shoot.ogg"
     },
     "32": {
       "name": "Rôdeur",
@@ -327,7 +358,8 @@
       "attack": "sons/creatures/lcrs_attack.ogg",
       "defend": "sons/creatures/lcrs_defend.ogg",
       "move": "sons/creatures/lcrs_move.ogg",
-      "wince": "sons/creatures/lcrs_wince.ogg"
+      "wince": "sons/creatures/lcrs_wince.ogg",
+      "shoot": "sons/creatures/lcrs_shoot.ogg"
     },
     "33": {
       "name": "Dryade",
@@ -337,7 +369,8 @@
       "attack": "sons/creatures/dhdm_attack.ogg",
       "defend": "sons/creatures/dhdm_defend.ogg",
       "move": "sons/creatures/dhdm_move.ogg",
-      "wince": "sons/creatures/dhdm_wince.ogg"
+      "wince": "sons/creatures/dhdm_wince.ogg",
+      "shoot": "sons/creatures/dhdm_attack.ogg"
     },
     "34": {
       "name": "Satyre",
@@ -347,7 +380,8 @@
       "attack": "sons/creatures/cntr_attack.ogg",
       "defend": "sons/creatures/cntr_defend.ogg",
       "move": "sons/creatures/cntr_move.ogg",
-      "wince": "sons/creatures/cntr_wince.ogg"
+      "wince": "sons/creatures/cntr_wince.ogg",
+      "shoot": "sons/creatures/cntr_shoot.ogg"
     },
     "35": {
       "name": "Elfe des neiges",
@@ -357,7 +391,8 @@
       "attack": "sons/creatures/gelf_attack.ogg",
       "defend": "sons/creatures/gelf_defend.ogg",
       "move": "sons/creatures/gelf_move.ogg",
-      "wince": "sons/creatures/gelf_wince.ogg"
+      "wince": "sons/creatures/gelf_wince.ogg",
+      "shoot": "sons/creatures/gelf_shoot.ogg"
     },
     "36": {
       "name": "Leshy",
@@ -367,7 +402,8 @@
       "attack": "sons/creatures/dhdm_attack.ogg",
       "defend": "sons/creatures/dhdm_defend.ogg",
       "move": "sons/creatures/dhdm_move.ogg",
-      "wince": "sons/creatures/dhdm_wince.ogg"
+      "wince": "sons/creatures/dhdm_wince.ogg",
+      "shoot": "sons/creatures/dhdm_attack.ogg"
     },
     "37": {
       "name": "Ours-hibou",
@@ -377,7 +413,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "38": {
       "name": "Vouivre",
@@ -387,7 +424,8 @@
       "attack": "sons/creatures/wyvn_attack.ogg",
       "defend": "sons/creatures/wyvn_defend.ogg",
       "move": "sons/creatures/wyvn_move.ogg",
-      "wince": "sons/creatures/wyvn_wince.ogg"
+      "wince": "sons/creatures/wyvn_wince.ogg",
+      "shoot": "sons/creatures/wyvn_attack.ogg"
     },
     "39": {
       "name": "Firbolg",
@@ -397,7 +435,8 @@
       "attack": "sons/creatures/dhdm_attack.ogg",
       "defend": "sons/creatures/dhdm_defend.ogg",
       "move": "sons/creatures/dhdm_move.ogg",
-      "wince": "sons/creatures/dhdm_wince.ogg"
+      "wince": "sons/creatures/dhdm_wince.ogg",
+      "shoot": "sons/creatures/dhdm_attack.ogg"
     },
     "40": {
       "name": "Amphiptère",
@@ -407,7 +446,8 @@
       "attack": "sons/creatures/wyvn_attack.ogg",
       "defend": "sons/creatures/wyvn_defend.ogg",
       "move": "sons/creatures/wyvn_move.ogg",
-      "wince": "sons/creatures/wyvn_wince.ogg"
+      "wince": "sons/creatures/wyvn_wince.ogg",
+      "shoot": "sons/creatures/wyvn_attack.ogg"
     },
     "41": {
       "name": "Basajaun",
@@ -417,7 +457,8 @@
       "attack": "sons/creatures/dhdm_attack.ogg",
       "defend": "sons/creatures/dhdm_defend.ogg",
       "move": "sons/creatures/dhdm_move.ogg",
-      "wince": "sons/creatures/dhdm_wince.ogg"
+      "wince": "sons/creatures/dhdm_wince.ogg",
+      "shoot": "sons/creatures/dhdm_attack.ogg"
     },
     "42": {
       "name": "Nain",
@@ -427,7 +468,8 @@
       "attack": "sons/creatures/dwrf_attack.ogg",
       "defend": "sons/creatures/dwrf_defend.ogg",
       "move": "sons/creatures/dwrf_move.ogg",
-      "wince": "sons/creatures/dwrf_wince.ogg"
+      "wince": "sons/creatures/dwrf_wince.ogg",
+      "shoot": "sons/creatures/dwrf_attack.ogg"
     },
     "43": {
       "name": "Runiste",
@@ -437,7 +479,8 @@
       "attack": "sons/creatures/btre_attack.ogg",
       "defend": "sons/creatures/btre_defend.ogg",
       "move": "sons/creatures/btre_move.ogg",
-      "wince": "sons/creatures/btre_wince.ogg"
+      "wince": "sons/creatures/btre_wince.ogg",
+      "shoot": "sons/creatures/btre_attack.ogg"
     },
     "44": {
       "name": "Xorn",
@@ -447,7 +490,8 @@
       "attack": "sons/creatures/eelm_attack.ogg",
       "defend": "sons/creatures/eelm_defend.ogg",
       "move": "sons/creatures/eelm_move.ogg",
-      "wince": "sons/creatures/eelm_wince.ogg"
+      "wince": "sons/creatures/eelm_wince.ogg",
+      "shoot": "sons/creatures/eelm_attack.ogg"
     },
     "45": {
       "name": "Dao",
@@ -457,7 +501,8 @@
       "attack": "sons/creatures/eelm_attack.ogg",
       "defend": "sons/creatures/eelm_defend.ogg",
       "move": "sons/creatures/eelm_move.ogg",
-      "wince": "sons/creatures/eelm_wince.ogg"
+      "wince": "sons/creatures/eelm_wince.ogg",
+      "shoot": "sons/creatures/eelm_attack.ogg"
     },
     "46": {
       "name": "Tatzelwurm",
@@ -467,7 +512,8 @@
       "attack": "sons/creatures/wyvn_attack.ogg",
       "defend": "sons/creatures/wyvn_defend.ogg",
       "move": "sons/creatures/wyvn_move.ogg",
-      "wince": "sons/creatures/wyvn_wince.ogg"
+      "wince": "sons/creatures/wyvn_wince.ogg",
+      "shoot": "sons/creatures/wyvn_attack.ogg"
     },
     "47": {
       "name": "Halfling",
@@ -477,7 +523,8 @@
       "attack": "sons/creatures/half_attack.ogg",
       "defend": "sons/creatures/half_defend.ogg",
       "move": "sons/creatures/half_move.ogg",
-      "wince": "sons/creatures/half_wince.ogg"
+      "wince": "sons/creatures/half_wince.ogg",
+      "shoot": "sons/creatures/half_shoot.ogg"
     },
     "48": {
       "name": "Jackalope",
@@ -487,7 +534,8 @@
       "attack": "sons/creatures/boar_attack.ogg",
       "defend": "sons/creatures/boar_defend.ogg",
       "move": "sons/creatures/boar_move.ogg",
-      "wince": "sons/creatures/boar_wince.ogg"
+      "wince": "sons/creatures/boar_wince.ogg",
+      "shoot": "sons/creatures/boar_attack.ogg"
     },
     "49": {
       "name": "Barde",
@@ -497,7 +545,8 @@
       "attack": "sons/creatures/ench_attack.ogg",
       "defend": "sons/creatures/ench_defend.ogg",
       "move": "sons/creatures/ench_move.ogg",
-      "wince": "sons/creatures/ench_wince.ogg"
+      "wince": "sons/creatures/ench_wince.ogg",
+      "shoot": "sons/creatures/ench_shoot.ogg"
     },
     "50": {
       "name": "Kikimora",
@@ -507,7 +556,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "51": {
       "name": "Tomte",
@@ -517,7 +567,8 @@
       "attack": "sons/creatures/half_attack.ogg",
       "defend": "sons/creatures/half_defend.ogg",
       "move": "sons/creatures/half_move.ogg",
-      "wince": "sons/creatures/half_wince.ogg"
+      "wince": "sons/creatures/half_wince.ogg",
+      "shoot": "sons/creatures/half_shoot.ogg"
     },
     "52": {
       "name": "Boggart",
@@ -527,7 +578,8 @@
       "attack": "sons/creatures/impp_attack.ogg",
       "defend": "sons/creatures/impp_defend.ogg",
       "move": "sons/creatures/impp_move.ogg",
-      "wince": "sons/creatures/impp_wince.ogg"
+      "wince": "sons/creatures/impp_wince.ogg",
+      "shoot": "sons/creatures/impp_attack.ogg"
     },
     "53": {
       "name": "Nisse",
@@ -537,7 +589,8 @@
       "attack": "sons/creatures/half_attack.ogg",
       "defend": "sons/creatures/half_defend.ogg",
       "move": "sons/creatures/half_move.ogg",
-      "wince": "sons/creatures/half_wince.ogg"
+      "wince": "sons/creatures/half_wince.ogg",
+      "shoot": "sons/creatures/half_shoot.ogg"
     },
     "54": {
       "name": "Brownie",
@@ -547,7 +600,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "55": {
       "name": "Aitvaras",
@@ -557,7 +611,8 @@
       "attack": "sons/creatures/dfly_attack.ogg",
       "defend": "sons/creatures/dfly_defend.ogg",
       "move": "sons/creatures/dfly_move.ogg",
-      "wince": "sons/creatures/dfly_wince.ogg"
+      "wince": "sons/creatures/dfly_wince.ogg",
+      "shoot": "sons/creatures/dfly_attack.ogg"
     },
     "56": {
       "name": "Vampire",
@@ -567,7 +622,8 @@
       "attack": "sons/creatures/vamp_attack.ogg",
       "defend": "sons/creatures/vamp_defend.ogg",
       "move": "sons/creatures/vamp_move.ogg",
-      "wince": "sons/creatures/vamp_wince.ogg"
+      "wince": "sons/creatures/vamp_wince.ogg",
+      "shoot": "sons/creatures/vamp_attack.ogg"
     },
     "57": {
       "name": "Zombie",
@@ -577,7 +633,8 @@
       "attack": "sons/creatures/zomb_attack.ogg",
       "defend": "sons/creatures/zomb_defend.ogg",
       "move": "sons/creatures/zomb_move.ogg",
-      "wince": "sons/creatures/zomb_wince.ogg"
+      "wince": "sons/creatures/zomb_wince.ogg",
+      "shoot": "sons/creatures/zomb_attack.ogg"
     },
     "58": {
       "name": "Fantôme",
@@ -587,7 +644,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "59": {
       "name": "Squelette",
@@ -597,7 +655,8 @@
       "attack": "sons/creatures/skel_attack.ogg",
       "defend": "sons/creatures/skel_defend.ogg",
       "move": "sons/creatures/skel_move.ogg",
-      "wince": "sons/creatures/skel_wince.ogg"
+      "wince": "sons/creatures/skel_wince.ogg",
+      "shoot": "sons/creatures/skel_attack.ogg"
     },
     "60": {
       "name": "Liche",
@@ -607,7 +666,8 @@
       "attack": "sons/creatures/lich_attack.ogg",
       "defend": "sons/creatures/lich_defend.ogg",
       "move": "sons/creatures/lich_move.ogg",
-      "wince": "sons/creatures/lich_wince.ogg"
+      "wince": "sons/creatures/lich_wince.ogg",
+      "shoot": "sons/creatures/lich_shoot.ogg"
     },
     "61": {
       "name": "Momie",
@@ -617,7 +677,8 @@
       "attack": "sons/creatures/mumy_attack.ogg",
       "defend": "sons/creatures/mumy_defend.ogg",
       "move": "sons/creatures/mumy_move.ogg",
-      "wince": "sons/creatures/mumy_wince.ogg"
+      "wince": "sons/creatures/mumy_wince.ogg",
+      "shoot": "sons/creatures/mumy_attack.ogg"
     },
     "62": {
       "name": "Nosferatu",
@@ -627,7 +688,8 @@
       "attack": "sons/creatures/nosf_attack.ogg",
       "defend": "sons/creatures/nosf_defend.ogg",
       "move": "sons/creatures/nosf_move.ogg",
-      "wince": "sons/creatures/nosf_wince.ogg"
+      "wince": "sons/creatures/nosf_wince.ogg",
+      "shoot": "sons/creatures/nosf_shoot.ogg"
     },
     "63": {
       "name": "Nécromancien",
@@ -637,7 +699,8 @@
       "attack": "sons/creatures/lich_attack.ogg",
       "defend": "sons/creatures/lich_defend.ogg",
       "move": "sons/creatures/lich_move.ogg",
-      "wince": "sons/creatures/lich_wince.ogg"
+      "wince": "sons/creatures/lich_wince.ogg",
+      "shoot": "sons/creatures/lich_shoot.ogg"
     },
     "64": {
       "name": "Wendigo",
@@ -647,7 +710,8 @@
       "attack": "sons/creatures/wght_attack.ogg",
       "defend": "sons/creatures/wght_defend.ogg",
       "move": "sons/creatures/wght_move.ogg",
-      "wince": "sons/creatures/wght_wince.ogg"
+      "wince": "sons/creatures/wght_wince.ogg",
+      "shoot": "sons/creatures/wght_attack.ogg"
     },
     "65": {
       "name": "Poltergeist",
@@ -657,7 +721,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "66": {
       "name": "Banshee",
@@ -667,7 +732,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "67": {
       "name": "Chevalier de la mort",
@@ -677,7 +743,8 @@
       "attack": "sons/creatures/bknt_attack.ogg",
       "defend": "sons/creatures/bknt_defend.ogg",
       "move": "sons/creatures/bknt_move.ogg",
-      "wince": "sons/creatures/bknt_wince.ogg"
+      "wince": "sons/creatures/bknt_wince.ogg",
+      "shoot": "sons/creatures/bknt_attack.ogg"
     },
     "68": {
       "name": "Goule",
@@ -687,7 +754,8 @@
       "attack": "sons/creatures/zomb_attack.ogg",
       "defend": "sons/creatures/zomb_defend.ogg",
       "move": "sons/creatures/zomb_move.ogg",
-      "wince": "sons/creatures/zomb_wince.ogg"
+      "wince": "sons/creatures/zomb_wince.ogg",
+      "shoot": "sons/creatures/zomb_attack.ogg"
     },
     "69": {
       "name": "Spectre",
@@ -697,7 +765,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "70": {
       "name": "Revenant",
@@ -707,7 +776,8 @@
       "attack": "sons/creatures/wght_attack.ogg",
       "defend": "sons/creatures/wght_defend.ogg",
       "move": "sons/creatures/wght_move.ogg",
-      "wince": "sons/creatures/wght_wince.ogg"
+      "wince": "sons/creatures/wght_wince.ogg",
+      "shoot": "sons/creatures/wght_attack.ogg"
     },
     "71": {
       "name": "Wraith",
@@ -717,7 +787,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "72": {
       "name": "Dullahan",
@@ -727,7 +798,8 @@
       "attack": "sons/creatures/bknt_attack.ogg",
       "defend": "sons/creatures/bknt_defend.ogg",
       "move": "sons/creatures/bknt_move.ogg",
-      "wince": "sons/creatures/bknt_wince.ogg"
+      "wince": "sons/creatures/bknt_wince.ogg",
+      "shoot": "sons/creatures/bknt_attack.ogg"
     },
     "73": {
       "name": "Dracoliche",
@@ -737,7 +809,8 @@
       "attack": "sons/creatures/bhdr_attack.ogg",
       "defend": "sons/creatures/bhdr_defend.ogg",
       "move": "sons/creatures/bhdr_move.ogg",
-      "wince": "sons/creatures/bhdr_wince.ogg"
+      "wince": "sons/creatures/bhdr_wince.ogg",
+      "shoot": "sons/creatures/bhdr_shoot.ogg"
     },
     "74": {
       "name": "Nidhogg",
@@ -747,7 +820,8 @@
       "attack": "sons/creatures/bhdr_attack.ogg",
       "defend": "sons/creatures/bhdr_defend.ogg",
       "move": "sons/creatures/bhdr_move.ogg",
-      "wince": "sons/creatures/bhdr_wince.ogg"
+      "wince": "sons/creatures/bhdr_wince.ogg",
+      "shoot": "sons/creatures/bhdr_shoot.ogg"
     },
     "75": {
       "name": "Strigoi",
@@ -757,7 +831,8 @@
       "attack": "sons/creatures/vamp_attack.ogg",
       "defend": "sons/creatures/vamp_defend.ogg",
       "move": "sons/creatures/vamp_move.ogg",
-      "wince": "sons/creatures/vamp_wince.ogg"
+      "wince": "sons/creatures/vamp_wince.ogg",
+      "shoot": "sons/creatures/vamp_attack.ogg"
     },
     "76": {
       "name": "Draugr",
@@ -767,7 +842,8 @@
       "attack": "sons/creatures/wght_attack.ogg",
       "defend": "sons/creatures/wght_defend.ogg",
       "move": "sons/creatures/wght_move.ogg",
-      "wince": "sons/creatures/wght_wince.ogg"
+      "wince": "sons/creatures/wght_wince.ogg",
+      "shoot": "sons/creatures/wght_attack.ogg"
     },
     "77": {
       "name": "Mort-vivant",
@@ -777,7 +853,8 @@
       "attack": "sons/creatures/zomb_attack.ogg",
       "defend": "sons/creatures/zomb_defend.ogg",
       "move": "sons/creatures/zomb_move.ogg",
-      "wince": "sons/creatures/zomb_wince.ogg"
+      "wince": "sons/creatures/zomb_wince.ogg",
+      "shoot": "sons/creatures/zomb_attack.ogg"
     },
     "78": {
       "name": "Dame Blanche",
@@ -787,7 +864,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "79": {
       "name": "Ombre",
@@ -797,7 +875,8 @@
       "attack": "sons/creatures/shdm_attack.ogg",
       "defend": "sons/creatures/shdm_defend.ogg",
       "move": "sons/creatures/shdm_move.ogg",
-      "wince": "sons/creatures/shdm_wince.ogg"
+      "wince": "sons/creatures/shdm_wince.ogg",
+      "shoot": "sons/creatures/shdm_attack.ogg"
     },
     "80": {
       "name": "Wight",
@@ -807,7 +886,8 @@
       "attack": "sons/creatures/wght_attack.ogg",
       "defend": "sons/creatures/wght_defend.ogg",
       "move": "sons/creatures/wght_move.ogg",
-      "wince": "sons/creatures/wght_wince.ogg"
+      "wince": "sons/creatures/wght_wince.ogg",
+      "shoot": "sons/creatures/wght_attack.ogg"
     },
     "81": {
       "name": "Preta",
@@ -817,7 +897,8 @@
       "attack": "sons/creatures/wght_attack.ogg",
       "defend": "sons/creatures/wght_defend.ogg",
       "move": "sons/creatures/wght_move.ogg",
-      "wince": "sons/creatures/wght_wince.ogg"
+      "wince": "sons/creatures/wght_wince.ogg",
+      "shoot": "sons/creatures/wght_attack.ogg"
     },
     "82": {
       "name": "Sluagh",
@@ -827,7 +908,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "83": {
       "name": "Varcolac",
@@ -837,7 +919,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "84": {
       "name": "Ghast",
@@ -847,7 +930,8 @@
       "attack": "sons/creatures/zomb_attack.ogg",
       "defend": "sons/creatures/zomb_defend.ogg",
       "move": "sons/creatures/zomb_move.ogg",
-      "wince": "sons/creatures/zomb_wince.ogg"
+      "wince": "sons/creatures/zomb_wince.ogg",
+      "shoot": "sons/creatures/zomb_attack.ogg"
     },
     "85": {
       "name": "Alp",
@@ -857,7 +941,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "86": {
       "name": "Strige",
@@ -867,7 +952,8 @@
       "attack": "sons/creatures/harp_attack.ogg",
       "defend": "sons/creatures/harp_defend.ogg",
       "move": "sons/creatures/harp_move.ogg",
-      "wince": "sons/creatures/harp_wince.ogg"
+      "wince": "sons/creatures/harp_wince.ogg",
+      "shoot": "sons/creatures/harp_attack.ogg"
     },
     "87": {
       "name": "Valravn",
@@ -877,7 +963,8 @@
       "attack": "sons/creatures/harp_attack.ogg",
       "defend": "sons/creatures/harp_defend.ogg",
       "move": "sons/creatures/harp_move.ogg",
-      "wince": "sons/creatures/harp_wince.ogg"
+      "wince": "sons/creatures/harp_wince.ogg",
+      "shoot": "sons/creatures/harp_attack.ogg"
     },
     "88": {
       "name": "Ankou",
@@ -887,7 +974,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "89": {
       "name": "Vétala",
@@ -897,7 +985,8 @@
       "attack": "sons/creatures/vamp_attack.ogg",
       "defend": "sons/creatures/vamp_defend.ogg",
       "move": "sons/creatures/vamp_move.ogg",
-      "wince": "sons/creatures/vamp_wince.ogg"
+      "wince": "sons/creatures/vamp_wince.ogg",
+      "shoot": "sons/creatures/vamp_attack.ogg"
     },
     "90": {
       "name": "Méduse",
@@ -907,7 +996,8 @@
       "attack": "sons/creatures/medu_attack.ogg",
       "defend": "sons/creatures/medu_defend.ogg",
       "move": "sons/creatures/medu_move.ogg",
-      "wince": "sons/creatures/medu_wince.ogg"
+      "wince": "sons/creatures/medu_wince.ogg",
+      "shoot": "sons/creatures/medu_shoot.ogg"
     },
     "91": {
       "name": "Gorgone",
@@ -917,7 +1007,8 @@
       "attack": "sons/creatures/bgor_attack.ogg",
       "defend": "sons/creatures/bgor_defend.ogg",
       "move": "sons/creatures/bgor_move.ogg",
-      "wince": "sons/creatures/bgor_wince.ogg"
+      "wince": "sons/creatures/bgor_wince.ogg",
+      "shoot": "sons/creatures/bgor_attack.ogg"
     },
     "92": {
       "name": "Assassin",
@@ -927,7 +1018,8 @@
       "attack": "sons/creatures/rogu_attack.ogg",
       "defend": "sons/creatures/rogu_defend.ogg",
       "move": "sons/creatures/rogu_move.ogg",
-      "wince": "sons/creatures/rogu_wince.ogg"
+      "wince": "sons/creatures/rogu_wince.ogg",
+      "shoot": "sons/creatures/rogu_attack.ogg"
     },
     "93": {
       "name": "Mothman",
@@ -937,7 +1029,8 @@
       "attack": "sons/creatures/harp_attack.ogg",
       "defend": "sons/creatures/harp_defend.ogg",
       "move": "sons/creatures/harp_move.ogg",
-      "wince": "sons/creatures/harp_wince.ogg"
+      "wince": "sons/creatures/harp_wince.ogg",
+      "shoot": "sons/creatures/harp_attack.ogg"
     },
     "94": {
       "name": "Araignée géante",
@@ -947,7 +1040,8 @@
       "attack": "sons/creatures/scrp_attack.ogg",
       "defend": "sons/creatures/scrp_defend.ogg",
       "move": "sons/creatures/scrp_move.ogg",
-      "wince": "sons/creatures/scrp_wince.ogg"
+      "wince": "sons/creatures/scrp_wince.ogg",
+      "shoot": "sons/creatures/scrp_shoot.ogg"
     },
     "95": {
       "name": "Doppelganger",
@@ -957,7 +1051,8 @@
       "attack": "sons/creatures/rogu_attack.ogg",
       "defend": "sons/creatures/rogu_defend.ogg",
       "move": "sons/creatures/rogu_move.ogg",
-      "wince": "sons/creatures/rogu_wince.ogg"
+      "wince": "sons/creatures/rogu_wince.ogg",
+      "shoot": "sons/creatures/rogu_attack.ogg"
     },
     "96": {
       "name": "Illithid",
@@ -967,7 +1062,8 @@
       "attack": "sons/creatures/evli_attack.ogg",
       "defend": "sons/creatures/evli_defend.ogg",
       "move": "sons/creatures/evli_move.ogg",
-      "wince": "sons/creatures/evli_wince.ogg"
+      "wince": "sons/creatures/evli_wince.ogg",
+      "shoot": "sons/creatures/evli_shoot.ogg"
     },
     "97": {
       "name": "Mimique",
@@ -977,7 +1073,8 @@
       "attack": "sons/creatures/trog_attack.ogg",
       "defend": "sons/creatures/trog_defend.ogg",
       "move": "sons/creatures/trog_move.ogg",
-      "wince": "sons/creatures/trog_wince.ogg"
+      "wince": "sons/creatures/trog_wince.ogg",
+      "shoot": "sons/creatures/trog_attack.ogg"
     },
     "98": {
       "name": "Tyrannoeil",
@@ -987,7 +1084,8 @@
       "attack": "sons/creatures/evli_attack.ogg",
       "defend": "sons/creatures/evli_defend.ogg",
       "move": "sons/creatures/evli_move.ogg",
-      "wince": "sons/creatures/evli_wince.ogg"
+      "wince": "sons/creatures/evli_wince.ogg",
+      "shoot": "sons/creatures/evli_shoot.ogg"
     },
     "99": {
       "name": "Basilic",
@@ -997,7 +1095,8 @@
       "attack": "sons/creatures/basl_attack.ogg",
       "defend": "sons/creatures/basl_defend.ogg",
       "move": "sons/creatures/basl_move.ogg",
-      "wince": "sons/creatures/basl_wince.ogg"
+      "wince": "sons/creatures/basl_wince.ogg",
+      "shoot": "sons/creatures/basl_attack.ogg"
     },
     "100": {
       "name": "Dragon d'ombre",
@@ -1007,7 +1106,8 @@
       "attack": "sons/creatures/shdm_attack.ogg",
       "defend": "sons/creatures/shdm_defend.ogg",
       "move": "sons/creatures/shdm_move.ogg",
-      "wince": "sons/creatures/shdm_wince.ogg"
+      "wince": "sons/creatures/shdm_wince.ogg",
+      "shoot": "sons/creatures/shdm_attack.ogg"
     },
     "101": {
       "name": "Shoggoth",
@@ -1017,7 +1117,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "102": {
       "name": "Drow",
@@ -1027,7 +1128,8 @@
       "attack": "sons/creatures/welf_attack.ogg",
       "defend": "sons/creatures/welf_defend.ogg",
       "move": "sons/creatures/welf_move.ogg",
-      "wince": "sons/creatures/welf_wince.ogg"
+      "wince": "sons/creatures/welf_wince.ogg",
+      "shoot": "sons/creatures/welf_shoot.ogg"
     },
     "103": {
       "name": "Occultiste",
@@ -1037,7 +1139,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "104": {
       "name": "Svartalf",
@@ -1047,7 +1150,8 @@
       "attack": "sons/creatures/dwrf_attack.ogg",
       "defend": "sons/creatures/dwrf_defend.ogg",
       "move": "sons/creatures/dwrf_move.ogg",
-      "wince": "sons/creatures/dwrf_wince.ogg"
+      "wince": "sons/creatures/dwrf_wince.ogg",
+      "shoot": "sons/creatures/dwrf_attack.ogg"
     },
     "105": {
       "name": "Umber Hulk",
@@ -1057,7 +1161,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "106": {
       "name": "Monstre rouilleur",
@@ -1067,7 +1172,8 @@
       "attack": "sons/creatures/rust_attack.ogg",
       "defend": "sons/creatures/rust_defend.ogg",
       "move": "sons/creatures/rust_move.ogg",
-      "wince": "sons/creatures/rust_wince.ogg"
+      "wince": "sons/creatures/rust_wince.ogg",
+      "shoot": "sons/creatures/rust_attack.ogg"
     },
     "107": {
       "name": "Cube gélatineux",
@@ -1077,7 +1183,8 @@
       "attack": "sons/creatures/evli_attack.ogg",
       "defend": "sons/creatures/evli_defend.ogg",
       "move": "sons/creatures/evli_move.ogg",
-      "wince": "sons/creatures/evli_wince.ogg"
+      "wince": "sons/creatures/evli_wince.ogg",
+      "shoot": "sons/creatures/evli_shoot.ogg"
     },
     "108": {
       "name": "Arachne",
@@ -1087,7 +1194,8 @@
       "attack": "sons/creatures/medu_attack.ogg",
       "defend": "sons/creatures/medu_defend.ogg",
       "move": "sons/creatures/medu_move.ogg",
-      "wince": "sons/creatures/medu_wince.ogg"
+      "wince": "sons/creatures/medu_wince.ogg",
+      "shoot": "sons/creatures/medu_shoot.ogg"
     },
     "109": {
       "name": "Otyugh",
@@ -1097,7 +1205,8 @@
       "attack": "sons/creatures/ogre_attack.ogg",
       "defend": "sons/creatures/ogre_defend.ogg",
       "move": "sons/creatures/ogre_move.ogg",
-      "wince": "sons/creatures/ogre_wince.ogg"
+      "wince": "sons/creatures/ogre_wince.ogg",
+      "shoot": "sons/creatures/ogre_attack.ogg"
     },
     "110": {
       "name": "Gibbering Mouther",
@@ -1107,7 +1216,8 @@
       "attack": "sons/creatures/evli_attack.ogg",
       "defend": "sons/creatures/evli_defend.ogg",
       "move": "sons/creatures/evli_move.ogg",
-      "wince": "sons/creatures/evli_wince.ogg"
+      "wince": "sons/creatures/evli_wince.ogg",
+      "shoot": "sons/creatures/evli_shoot.ogg"
     },
     "111": {
       "name": "Myconide",
@@ -1117,7 +1227,8 @@
       "attack": "sons/creatures/dhdm_attack.ogg",
       "defend": "sons/creatures/dhdm_defend.ogg",
       "move": "sons/creatures/dhdm_move.ogg",
-      "wince": "sons/creatures/dhdm_wince.ogg"
+      "wince": "sons/creatures/dhdm_wince.ogg",
+      "shoot": "sons/creatures/dhdm_attack.ogg"
     },
     "112": {
       "name": "Péryton",
@@ -1127,7 +1238,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "113": {
       "name": "Troglodyte",
@@ -1137,7 +1249,8 @@
       "attack": "sons/creatures/trog_attack.ogg",
       "defend": "sons/creatures/trog_defend.ogg",
       "move": "sons/creatures/trog_move.ogg",
-      "wince": "sons/creatures/trog_wince.ogg"
+      "wince": "sons/creatures/trog_wince.ogg",
+      "shoot": "sons/creatures/trog_attack.ogg"
     },
     "114": {
       "name": "Slaad",
@@ -1147,7 +1260,8 @@
       "attack": "sons/creatures/trog_attack.ogg",
       "defend": "sons/creatures/trog_defend.ogg",
       "move": "sons/creatures/trog_move.ogg",
-      "wince": "sons/creatures/trog_wince.ogg"
+      "wince": "sons/creatures/trog_wince.ogg",
+      "shoot": "sons/creatures/trog_attack.ogg"
     },
     "115": {
       "name": "Fauve désagrégateur",
@@ -1157,7 +1271,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "116": {
       "name": "Flumph",
@@ -1167,7 +1282,8 @@
       "attack": "sons/creatures/aelm_attack.ogg",
       "defend": "sons/creatures/aelm_defend.ogg",
       "move": "sons/creatures/aelm_move.ogg",
-      "wince": "sons/creatures/aelm_wince.ogg"
+      "wince": "sons/creatures/aelm_wince.ogg",
+      "shoot": "sons/creatures/aelm_attack.ogg"
     },
     "117": {
       "name": "Guêteur",
@@ -1177,7 +1293,8 @@
       "attack": "sons/creatures/evli_attack.ogg",
       "defend": "sons/creatures/evli_defend.ogg",
       "move": "sons/creatures/evli_move.ogg",
-      "wince": "sons/creatures/evli_wince.ogg"
+      "wince": "sons/creatures/evli_wince.ogg",
+      "shoot": "sons/creatures/evli_shoot.ogg"
     },
     "118": {
       "name": "Grell",
@@ -1187,7 +1304,8 @@
       "attack": "sons/creatures/evli_attack.ogg",
       "defend": "sons/creatures/evli_defend.ogg",
       "move": "sons/creatures/evli_move.ogg",
-      "wince": "sons/creatures/evli_wince.ogg"
+      "wince": "sons/creatures/evli_wince.ogg",
+      "shoot": "sons/creatures/evli_shoot.ogg"
     },
     "119": {
       "name": "Amphisbène",
@@ -1197,7 +1315,8 @@
       "attack": "sons/creatures/scrp_attack.ogg",
       "defend": "sons/creatures/scrp_defend.ogg",
       "move": "sons/creatures/scrp_move.ogg",
-      "wince": "sons/creatures/scrp_wince.ogg"
+      "wince": "sons/creatures/scrp_wince.ogg",
+      "shoot": "sons/creatures/scrp_shoot.ogg"
     },
     "120": {
       "name": "Orc",
@@ -1207,7 +1326,8 @@
       "attack": "sons/creatures/orcc_attack.ogg",
       "defend": "sons/creatures/orcc_defend.ogg",
       "move": "sons/creatures/orcc_move.ogg",
-      "wince": "sons/creatures/orcc_wince.ogg"
+      "wince": "sons/creatures/orcc_wince.ogg",
+      "shoot": "sons/creatures/orcc_shoot.ogg"
     },
     "121": {
       "name": "Minotaure",
@@ -1217,7 +1337,8 @@
       "attack": "sons/creatures/mino_attack.ogg",
       "defend": "sons/creatures/mino_defend.ogg",
       "move": "sons/creatures/mino_move.ogg",
-      "wince": "sons/creatures/mino_wince.ogg"
+      "wince": "sons/creatures/mino_wince.ogg",
+      "shoot": "sons/creatures/mino_attack.ogg"
     },
     "122": {
       "name": "Warg",
@@ -1227,7 +1348,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "123": {
       "name": "Wyverne",
@@ -1237,7 +1359,8 @@
       "attack": "sons/creatures/wyvn_attack.ogg",
       "defend": "sons/creatures/wyvn_defend.ogg",
       "move": "sons/creatures/wyvn_move.ogg",
-      "wince": "sons/creatures/wyvn_wince.ogg"
+      "wince": "sons/creatures/wyvn_wince.ogg",
+      "shoot": "sons/creatures/wyvn_attack.ogg"
     },
     "124": {
       "name": "Barbare",
@@ -1247,7 +1370,8 @@
       "attack": "sons/creatures/ogre_attack.ogg",
       "defend": "sons/creatures/ogre_defend.ogg",
       "move": "sons/creatures/ogre_move.ogg",
-      "wince": "sons/creatures/ogre_wince.ogg"
+      "wince": "sons/creatures/ogre_wince.ogg",
+      "shoot": "sons/creatures/ogre_attack.ogg"
     },
     "125": {
       "name": "Béhémoth",
@@ -1257,7 +1381,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "126": {
       "name": "Berserker",
@@ -1267,7 +1392,8 @@
       "attack": "sons/creatures/ogre_attack.ogg",
       "defend": "sons/creatures/ogre_defend.ogg",
       "move": "sons/creatures/ogre_move.ogg",
-      "wince": "sons/creatures/ogre_wince.ogg"
+      "wince": "sons/creatures/ogre_wince.ogg",
+      "shoot": "sons/creatures/ogre_attack.ogg"
     },
     "127": {
       "name": "Chupacabra",
@@ -1277,7 +1403,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "128": {
       "name": "Demi-orc",
@@ -1287,7 +1414,8 @@
       "attack": "sons/creatures/orcc_attack.ogg",
       "defend": "sons/creatures/orcc_defend.ogg",
       "move": "sons/creatures/orcc_move.ogg",
-      "wince": "sons/creatures/orcc_wince.ogg"
+      "wince": "sons/creatures/orcc_wince.ogg",
+      "shoot": "sons/creatures/orcc_shoot.ogg"
     },
     "129": {
       "name": "Drake",
@@ -1297,7 +1425,8 @@
       "attack": "sons/creatures/wyvn_attack.ogg",
       "defend": "sons/creatures/wyvn_defend.ogg",
       "move": "sons/creatures/wyvn_move.ogg",
-      "wince": "sons/creatures/wyvn_wince.ogg"
+      "wince": "sons/creatures/wyvn_wince.ogg",
+      "shoot": "sons/creatures/wyvn_attack.ogg"
     },
     "130": {
       "name": "Tigre-garou",
@@ -1307,7 +1436,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "131": {
       "name": "Gnoll",
@@ -1317,7 +1447,8 @@
       "attack": "sons/creatures/gnol_attack.ogg",
       "defend": "sons/creatures/gnol_defend.ogg",
       "move": "sons/creatures/gnol_move.ogg",
-      "wince": "sons/creatures/gnol_wince.ogg"
+      "wince": "sons/creatures/gnol_wince.ogg",
+      "shoot": "sons/creatures/gnol_attack.ogg"
     },
     "132": {
       "name": "Cynocéphale",
@@ -1327,7 +1458,8 @@
       "attack": "sons/creatures/gnol_attack.ogg",
       "defend": "sons/creatures/gnol_defend.ogg",
       "move": "sons/creatures/gnol_move.ogg",
-      "wince": "sons/creatures/gnol_wince.ogg"
+      "wince": "sons/creatures/gnol_wince.ogg",
+      "shoot": "sons/creatures/gnol_attack.ogg"
     },
     "133": {
       "name": "Sciapode",
@@ -1337,7 +1469,8 @@
       "attack": "sons/creatures/half_attack.ogg",
       "defend": "sons/creatures/half_defend.ogg",
       "move": "sons/creatures/half_move.ogg",
-      "wince": "sons/creatures/half_wince.ogg"
+      "wince": "sons/creatures/half_wince.ogg",
+      "shoot": "sons/creatures/half_shoot.ogg"
     },
     "134": {
       "name": "Blemmye",
@@ -1347,7 +1480,8 @@
       "attack": "sons/creatures/ogre_attack.ogg",
       "defend": "sons/creatures/ogre_defend.ogg",
       "move": "sons/creatures/ogre_move.ogg",
-      "wince": "sons/creatures/ogre_wince.ogg"
+      "wince": "sons/creatures/ogre_wince.ogg",
+      "shoot": "sons/creatures/ogre_attack.ogg"
     },
     "135": {
       "name": "Arimaspe",
@@ -1357,7 +1491,8 @@
       "attack": "sons/creatures/cycl_attack.ogg",
       "defend": "sons/creatures/cycl_defend.ogg",
       "move": "sons/creatures/cycl_move.ogg",
-      "wince": "sons/creatures/cycl_wince.ogg"
+      "wince": "sons/creatures/cycl_wince.ogg",
+      "shoot": "sons/creatures/cycl_shoot.ogg"
     },
     "136": {
       "name": "Diable",
@@ -1367,7 +1502,8 @@
       "attack": "sons/creatures/devl_attack.ogg",
       "defend": "sons/creatures/devl_defend.ogg",
       "move": "sons/creatures/devl_move.ogg",
-      "wince": "sons/creatures/devl_wince.ogg"
+      "wince": "sons/creatures/devl_wince.ogg",
+      "shoot": "sons/creatures/devl_attack.ogg"
     },
     "137": {
       "name": "Démon",
@@ -1377,7 +1513,8 @@
       "attack": "sons/creatures/advl_attack.ogg",
       "defend": "sons/creatures/advl_defend.ogg",
       "move": "sons/creatures/advl_move.ogg",
-      "wince": "sons/creatures/advl_wince.ogg"
+      "wince": "sons/creatures/advl_wince.ogg",
+      "shoot": "sons/creatures/advl_attack.ogg"
     },
     "138": {
       "name": "Cerbère",
@@ -1387,7 +1524,8 @@
       "attack": "sons/creatures/cerb_attack.ogg",
       "defend": "sons/creatures/cerb_defend.ogg",
       "move": "sons/creatures/cerb_move.ogg",
-      "wince": "sons/creatures/cerb_wince.ogg"
+      "wince": "sons/creatures/cerb_wince.ogg",
+      "shoot": "sons/creatures/cerb_attack.ogg"
     },
     "139": {
       "name": "Typhon",
@@ -1397,7 +1535,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "140": {
       "name": "Succube",
@@ -1407,7 +1546,8 @@
       "attack": "sons/creatures/devl_attack.ogg",
       "defend": "sons/creatures/devl_defend.ogg",
       "move": "sons/creatures/devl_move.ogg",
-      "wince": "sons/creatures/devl_wince.ogg"
+      "wince": "sons/creatures/devl_wince.ogg",
+      "shoot": "sons/creatures/devl_attack.ogg"
     },
     "141": {
       "name": "Oni",
@@ -1417,7 +1557,8 @@
       "attack": "sons/creatures/dhdm_attack.ogg",
       "defend": "sons/creatures/dhdm_defend.ogg",
       "move": "sons/creatures/dhdm_move.ogg",
-      "wince": "sons/creatures/dhdm_wince.ogg"
+      "wince": "sons/creatures/dhdm_wince.ogg",
+      "shoot": "sons/creatures/dhdm_attack.ogg"
     },
     "142": {
       "name": "Harpie",
@@ -1427,7 +1568,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "143": {
       "name": "Manticore",
@@ -1437,7 +1579,8 @@
       "attack": "sons/creatures/mant_attack.ogg",
       "defend": "sons/creatures/mant_defend.ogg",
       "move": "sons/creatures/mant_move.ogg",
-      "wince": "sons/creatures/mant_wince.ogg"
+      "wince": "sons/creatures/mant_wince.ogg",
+      "shoot": "sons/creatures/mant_shoot.ogg"
     },
     "144": {
       "name": "Ifrit",
@@ -1447,7 +1590,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "145": {
       "name": "Chimère",
@@ -1457,7 +1601,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "146": {
       "name": "Incube",
@@ -1467,7 +1612,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "147": {
       "name": "Archidémon",
@@ -1477,7 +1623,8 @@
       "attack": "sons/creatures/advl_attack.ogg",
       "defend": "sons/creatures/advl_defend.ogg",
       "move": "sons/creatures/advl_move.ogg",
-      "wince": "sons/creatures/advl_wince.ogg"
+      "wince": "sons/creatures/advl_wince.ogg",
+      "shoot": "sons/creatures/advl_attack.ogg"
     },
     "148": {
       "name": "Rakshasa",
@@ -1487,7 +1634,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "149": {
       "name": "Érinye",
@@ -1497,7 +1645,8 @@
       "attack": "sons/creatures/devl_attack.ogg",
       "defend": "sons/creatures/devl_defend.ogg",
       "move": "sons/creatures/devl_move.ogg",
-      "wince": "sons/creatures/devl_wince.ogg"
+      "wince": "sons/creatures/devl_wince.ogg",
+      "shoot": "sons/creatures/devl_attack.ogg"
     },
     "150": {
       "name": "Diablotin",
@@ -1507,7 +1656,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "151": {
       "name": "Furie",
@@ -1517,7 +1667,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "152": {
       "name": "Marilith",
@@ -1527,7 +1678,8 @@
       "attack": "sons/creatures/advl_attack.ogg",
       "defend": "sons/creatures/advl_defend.ogg",
       "move": "sons/creatures/advl_move.ogg",
-      "wince": "sons/creatures/advl_wince.ogg"
+      "wince": "sons/creatures/advl_wince.ogg",
+      "shoot": "sons/creatures/advl_attack.ogg"
     },
     "153": {
       "name": "Archidiable",
@@ -1537,7 +1689,8 @@
       "attack": "sons/creatures/devl_attack.ogg",
       "defend": "sons/creatures/devl_defend.ogg",
       "move": "sons/creatures/devl_move.ogg",
-      "wince": "sons/creatures/devl_wince.ogg"
+      "wince": "sons/creatures/devl_wince.ogg",
+      "shoot": "sons/creatures/devl_attack.ogg"
     },
     "154": {
       "name": "Tieffelin",
@@ -1547,7 +1700,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "155": {
       "name": "Chien de l'enfer",
@@ -1557,7 +1711,8 @@
       "attack": "sons/creatures/devl_attack.ogg",
       "defend": "sons/creatures/devl_defend.ogg",
       "move": "sons/creatures/devl_move.ogg",
-      "wince": "sons/creatures/devl_wince.ogg"
+      "wince": "sons/creatures/devl_wince.ogg",
+      "shoot": "sons/creatures/devl_attack.ogg"
     },
     "156": {
       "name": "Manananggal",
@@ -1567,7 +1722,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "157": {
       "name": "Lamie",
@@ -1577,7 +1733,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "158": {
       "name": "Cauchemar",
@@ -1587,7 +1744,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "159": {
       "name": "Cacodémon",
@@ -1597,7 +1755,8 @@
       "attack": "sons/creatures/advl_attack.ogg",
       "defend": "sons/creatures/advl_defend.ogg",
       "move": "sons/creatures/advl_move.ogg",
-      "wince": "sons/creatures/advl_wince.ogg"
+      "wince": "sons/creatures/advl_wince.ogg",
+      "shoot": "sons/creatures/advl_attack.ogg"
     },
     "160": {
       "name": "Orthros",
@@ -1607,7 +1766,8 @@
       "attack": "sons/creatures/devl_attack.ogg",
       "defend": "sons/creatures/devl_defend.ogg",
       "move": "sons/creatures/devl_move.ogg",
-      "wince": "sons/creatures/devl_wince.ogg"
+      "wince": "sons/creatures/devl_wince.ogg",
+      "shoot": "sons/creatures/devl_attack.ogg"
     },
     "161": {
       "name": "Démonologue",
@@ -1617,7 +1777,8 @@
       "attack": "sons/creatures/advl_attack.ogg",
       "defend": "sons/creatures/advl_defend.ogg",
       "move": "sons/creatures/advl_move.ogg",
-      "wince": "sons/creatures/advl_wince.ogg"
+      "wince": "sons/creatures/advl_wince.ogg",
+      "shoot": "sons/creatures/advl_attack.ogg"
     },
     "162": {
       "name": "Vrock",
@@ -1627,7 +1788,8 @@
       "attack": "sons/creatures/rocc_attack.ogg",
       "defend": "sons/creatures/rocc_defend.ogg",
       "move": "sons/creatures/rocc_move.ogg",
-      "wince": "sons/creatures/rocc_wince.ogg"
+      "wince": "sons/creatures/rocc_wince.ogg",
+      "shoot": "sons/creatures/rocc_attack.ogg"
     },
     "163": {
       "name": "Cambion",
@@ -1637,7 +1799,8 @@
       "attack": "sons/creatures/devl_attack.ogg",
       "defend": "sons/creatures/devl_defend.ogg",
       "move": "sons/creatures/devl_move.ogg",
-      "wince": "sons/creatures/devl_wince.ogg"
+      "wince": "sons/creatures/devl_wince.ogg",
+      "shoot": "sons/creatures/devl_attack.ogg"
     },
     "164": {
       "name": "Nuckelavee",
@@ -1647,7 +1810,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "165": {
       "name": "Glabrezu",
@@ -1657,7 +1821,8 @@
       "attack": "sons/creatures/advl_attack.ogg",
       "defend": "sons/creatures/advl_defend.ogg",
       "move": "sons/creatures/advl_move.ogg",
-      "wince": "sons/creatures/advl_wince.ogg"
+      "wince": "sons/creatures/advl_wince.ogg",
+      "shoot": "sons/creatures/advl_attack.ogg"
     },
     "166": {
       "name": "Balor",
@@ -1667,7 +1832,8 @@
       "attack": "sons/creatures/advl_attack.ogg",
       "defend": "sons/creatures/advl_defend.ogg",
       "move": "sons/creatures/advl_move.ogg",
-      "wince": "sons/creatures/advl_wince.ogg"
+      "wince": "sons/creatures/advl_wince.ogg",
+      "shoot": "sons/creatures/advl_attack.ogg"
     },
     "167": {
       "name": "Lémure",
@@ -1677,7 +1843,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "168": {
       "name": "Div",
@@ -1687,7 +1854,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "169": {
       "name": "Chort",
@@ -1697,7 +1865,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "170": {
       "name": "Golem",
@@ -1707,7 +1876,8 @@
       "attack": "sons/creatures/sglm_attack.ogg",
       "defend": "sons/creatures/sglm_defend.ogg",
       "move": "sons/creatures/sglm_move.ogg",
-      "wince": "sons/creatures/sglm_wince.ogg"
+      "wince": "sons/creatures/sglm_wince.ogg",
+      "shoot": "sons/creatures/sglm_attack.ogg"
     },
     "171": {
       "name": "Alchimiste",
@@ -1717,7 +1887,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "172": {
       "name": "Gargouille",
@@ -1727,7 +1898,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "173": {
       "name": "Gnome",
@@ -1737,7 +1909,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "174": {
       "name": "Golem de chair",
@@ -1747,7 +1920,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "175": {
       "name": "Talos",
@@ -1757,7 +1931,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "176": {
       "name": "Gremlin",
@@ -1767,7 +1942,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "177": {
       "name": "Golem de pierre",
@@ -1777,7 +1953,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "178": {
       "name": "Colosse",
@@ -1787,7 +1964,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "179": {
       "name": "Golem de fer",
@@ -1797,7 +1975,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "180": {
       "name": "Artificier",
@@ -1807,7 +1986,8 @@
       "attack": "sons/creatures/agrm_attack.ogg",
       "defend": "sons/creatures/agrm_defend.ogg",
       "move": "sons/creatures/agrm_move.ogg",
-      "wince": "sons/creatures/agrm_wince.ogg"
+      "wince": "sons/creatures/agrm_wince.ogg",
+      "shoot": "sons/creatures/agrm_shoot.ogg"
     },
     "181": {
       "name": "Automate",
@@ -1817,7 +1997,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "182": {
       "name": "Homoncule",
@@ -1827,7 +2008,8 @@
       "attack": "sons/creatures/fmlr_attack.ogg",
       "defend": "sons/creatures/fmlr_defend.ogg",
       "move": "sons/creatures/fmlr_move.ogg",
-      "wince": "sons/creatures/fmlr_wince.ogg"
+      "wince": "sons/creatures/fmlr_wince.ogg",
+      "shoot": "sons/creatures/fmlr_attack.ogg"
     },
     "183": {
       "name": "Warforged",
@@ -1837,7 +2019,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "184": {
       "name": "Svirfneblin",
@@ -1847,7 +2030,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "185": {
       "name": "Modron",
@@ -1857,7 +2041,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "186": {
       "name": "Dactyle",
@@ -1867,7 +2052,8 @@
       "attack": "sons/creatures/dwrf_attack.ogg",
       "defend": "sons/creatures/dwrf_defend.ogg",
       "move": "sons/creatures/dwrf_move.ogg",
-      "wince": "sons/creatures/dwrf_wince.ogg"
+      "wince": "sons/creatures/dwrf_wince.ogg",
+      "shoot": "sons/creatures/dwrf_attack.ogg"
     },
     "187": {
       "name": "Forgelet",
@@ -1877,7 +2063,8 @@
       "attack": "sons/creatures/itrg_attack.ogg",
       "defend": "sons/creatures/itrg_defend.ogg",
       "move": "sons/creatures/itrg_move.ogg",
-      "wince": "sons/creatures/itrg_wince.ogg"
+      "wince": "sons/creatures/itrg_wince.ogg",
+      "shoot": "sons/creatures/itrg_attack.ogg"
     },
     "188": {
       "name": "Cabire",
@@ -1887,7 +2074,8 @@
       "attack": "sons/creatures/dwrf_attack.ogg",
       "defend": "sons/creatures/dwrf_defend.ogg",
       "move": "sons/creatures/dwrf_move.ogg",
-      "wince": "sons/creatures/dwrf_wince.ogg"
+      "wince": "sons/creatures/dwrf_wince.ogg",
+      "shoot": "sons/creatures/dwrf_attack.ogg"
     },
     "189": {
       "name": "Gobelin",
@@ -1897,7 +2085,8 @@
       "attack": "sons/creatures/gbln_attack.ogg",
       "defend": "sons/creatures/gbln_defend.ogg",
       "move": "sons/creatures/gbln_move.ogg",
-      "wince": "sons/creatures/gbln_wince.ogg"
+      "wince": "sons/creatures/gbln_wince.ogg",
+      "shoot": "sons/creatures/gbln_attack.ogg"
     },
     "190": {
       "name": "Kobold",
@@ -1907,7 +2096,8 @@
       "attack": "sons/creatures/gbln_attack.ogg",
       "defend": "sons/creatures/gbln_defend.ogg",
       "move": "sons/creatures/gbln_move.ogg",
-      "wince": "sons/creatures/gbln_wince.ogg"
+      "wince": "sons/creatures/gbln_wince.ogg",
+      "shoot": "sons/creatures/gbln_attack.ogg"
     },
     "191": {
       "name": "Hobgobelin",
@@ -1917,7 +2107,8 @@
       "attack": "sons/creatures/hgob_attack.ogg",
       "defend": "sons/creatures/hgob_defend.ogg",
       "move": "sons/creatures/hgob_move.ogg",
-      "wince": "sons/creatures/hgob_wince.ogg"
+      "wince": "sons/creatures/hgob_wince.ogg",
+      "shoot": "sons/creatures/hgob_attack.ogg"
     },
     "192": {
       "name": "Cocatrix",
@@ -1927,7 +2118,8 @@
       "attack": "sons/creatures/scrp_attack.ogg",
       "defend": "sons/creatures/scrp_defend.ogg",
       "move": "sons/creatures/scrp_move.ogg",
-      "wince": "sons/creatures/scrp_wince.ogg"
+      "wince": "sons/creatures/scrp_wince.ogg",
+      "shoot": "sons/creatures/scrp_shoot.ogg"
     },
     "193": {
       "name": "Redcap",
@@ -1937,7 +2129,8 @@
       "attack": "sons/creatures/gbln_attack.ogg",
       "defend": "sons/creatures/gbln_defend.ogg",
       "move": "sons/creatures/gbln_move.ogg",
-      "wince": "sons/creatures/gbln_wince.ogg"
+      "wince": "sons/creatures/gbln_wince.ogg",
+      "shoot": "sons/creatures/gbln_attack.ogg"
     },
     "194": {
       "name": "Homme-rat",
@@ -1947,7 +2140,8 @@
       "attack": "sons/creatures/gnol_attack.ogg",
       "defend": "sons/creatures/gnol_defend.ogg",
       "move": "sons/creatures/gnol_move.ogg",
-      "wince": "sons/creatures/gnol_wince.ogg"
+      "wince": "sons/creatures/gnol_wince.ogg",
+      "shoot": "sons/creatures/gnol_attack.ogg"
     },
     "195": {
       "name": "Bulette",
@@ -1957,7 +2151,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "196": {
       "name": "Gobelours",
@@ -1967,7 +2162,8 @@
       "attack": "sons/creatures/ogre_attack.ogg",
       "defend": "sons/creatures/ogre_defend.ogg",
       "move": "sons/creatures/ogre_move.ogg",
-      "wince": "sons/creatures/ogre_wince.ogg"
+      "wince": "sons/creatures/ogre_wince.ogg",
+      "shoot": "sons/creatures/ogre_attack.ogg"
     },
     "197": {
       "name": "Barghest",
@@ -1977,7 +2173,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "198": {
       "name": "Trow",
@@ -1987,7 +2184,8 @@
       "attack": "sons/creatures/trll_attack.ogg",
       "defend": "sons/creatures/trll_defend.ogg",
       "move": "sons/creatures/trll_move.ogg",
-      "wince": "sons/creatures/trll_wince.ogg"
+      "wince": "sons/creatures/trll_wince.ogg",
+      "shoot": "sons/creatures/trll_attack.ogg"
     },
     "199": {
       "name": "Dragon",
@@ -1997,7 +2195,8 @@
       "attack": "sons/creatures/bkdr_attack.ogg",
       "defend": "sons/creatures/bkdr_defend.ogg",
       "move": "sons/creatures/bkdr_move.ogg",
-      "wince": "sons/creatures/bkdr_wince.ogg"
+      "wince": "sons/creatures/bkdr_wince.ogg",
+      "shoot": "sons/creatures/bkdr_attack.ogg"
     },
     "200": {
       "name": "Phénix",
@@ -2007,7 +2206,8 @@
       "attack": "sons/creatures/phoe_attack.ogg",
       "defend": "sons/creatures/phoe_defend.ogg",
       "move": "sons/creatures/phoe_move.ogg",
-      "wince": "sons/creatures/phoe_wince.ogg"
+      "wince": "sons/creatures/phoe_wince.ogg",
+      "shoot": "sons/creatures/phoe_attack.ogg"
     },
     "201": {
       "name": "Titan",
@@ -2017,7 +2217,8 @@
       "attack": "sons/creatures/gtit_attack.ogg",
       "defend": "sons/creatures/gtit_defend.ogg",
       "move": "sons/creatures/gtit_move.ogg",
-      "wince": "sons/creatures/gtit_wince.ogg"
+      "wince": "sons/creatures/gtit_wince.ogg",
+      "shoot": "sons/creatures/gtit_shoot.ogg"
     },
     "202": {
       "name": "Sphinx",
@@ -2027,7 +2228,8 @@
       "attack": "sons/creatures/mant_attack.ogg",
       "defend": "sons/creatures/mant_defend.ogg",
       "move": "sons/creatures/mant_move.ogg",
-      "wince": "sons/creatures/mant_wince.ogg"
+      "wince": "sons/creatures/mant_wince.ogg",
+      "shoot": "sons/creatures/mant_shoot.ogg"
     },
     "203": {
       "name": "Djinn",
@@ -2037,7 +2239,8 @@
       "attack": "sons/creatures/geni_attack.ogg",
       "defend": "sons/creatures/geni_defend.ogg",
       "move": "sons/creatures/geni_move.ogg",
-      "wince": "sons/creatures/geni_wince.ogg"
+      "wince": "sons/creatures/geni_wince.ogg",
+      "shoot": "sons/creatures/geni_attack.ogg"
     },
     "204": {
       "name": "Dragon rouge",
@@ -2047,7 +2250,8 @@
       "attack": "sons/creatures/rddr_attack.ogg",
       "defend": "sons/creatures/rddr_defend.ogg",
       "move": "sons/creatures/rddr_move.ogg",
-      "wince": "sons/creatures/rddr_wince.ogg"
+      "wince": "sons/creatures/rddr_wince.ogg",
+      "shoot": "sons/creatures/rddr_attack.ogg"
     },
     "205": {
       "name": "Quetzalcoatl",
@@ -2057,7 +2261,8 @@
       "attack": "sons/creatures/tbrd_attack.ogg",
       "defend": "sons/creatures/tbrd_defend.ogg",
       "move": "sons/creatures/tbrd_move.ogg",
-      "wince": "sons/creatures/tbrd_wince.ogg"
+      "wince": "sons/creatures/tbrd_wince.ogg",
+      "shoot": "sons/creatures/tbrd_attack.ogg"
     },
     "206": {
       "name": "Dragon d'or",
@@ -2067,7 +2272,8 @@
       "attack": "sons/creatures/azur_attack.ogg",
       "defend": "sons/creatures/azur_defend.ogg",
       "move": "sons/creatures/azur_move.ogg",
-      "wince": "sons/creatures/azur_wince.ogg"
+      "wince": "sons/creatures/azur_wince.ogg",
+      "shoot": "sons/creatures/azur_attack.ogg"
     },
     "207": {
       "name": "Dragon bleu",
@@ -2077,7 +2283,8 @@
       "attack": "sons/creatures/azur_attack.ogg",
       "defend": "sons/creatures/azur_defend.ogg",
       "move": "sons/creatures/azur_move.ogg",
-      "wince": "sons/creatures/azur_wince.ogg"
+      "wince": "sons/creatures/azur_wince.ogg",
+      "shoot": "sons/creatures/azur_attack.ogg"
     },
     "208": {
       "name": "Dragon d'argent",
@@ -2087,7 +2294,8 @@
       "attack": "sons/creatures/azur_attack.ogg",
       "defend": "sons/creatures/azur_defend.ogg",
       "move": "sons/creatures/azur_move.ogg",
-      "wince": "sons/creatures/azur_wince.ogg"
+      "wince": "sons/creatures/azur_wince.ogg",
+      "shoot": "sons/creatures/azur_attack.ogg"
     },
     "209": {
       "name": "Archimage",
@@ -2097,7 +2305,8 @@
       "attack": "sons/creatures/amag_attack.ogg",
       "defend": "sons/creatures/amag_defend.ogg",
       "move": "sons/creatures/amag_move.ogg",
-      "wince": "sons/creatures/amag_wince.ogg"
+      "wince": "sons/creatures/amag_wince.ogg",
+      "shoot": "sons/creatures/amag_shoot.ogg"
     },
     "210": {
       "name": "Dragon d'airain",
@@ -2107,7 +2316,8 @@
       "attack": "sons/creatures/azur_attack.ogg",
       "defend": "sons/creatures/azur_defend.ogg",
       "move": "sons/creatures/azur_move.ogg",
-      "wince": "sons/creatures/azur_wince.ogg"
+      "wince": "sons/creatures/azur_wince.ogg",
+      "shoot": "sons/creatures/azur_attack.ogg"
     },
     "211": {
       "name": "Élémentaire",
@@ -2117,7 +2327,8 @@
       "attack": "sons/creatures/eelm_attack.ogg",
       "defend": "sons/creatures/eelm_defend.ogg",
       "move": "sons/creatures/eelm_move.ogg",
-      "wince": "sons/creatures/eelm_wince.ogg"
+      "wince": "sons/creatures/eelm_wince.ogg",
+      "shoot": "sons/creatures/eelm_attack.ogg"
     },
     "212": {
       "name": "Garuda",
@@ -2127,7 +2338,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "213": {
       "name": "Qilin",
@@ -2137,7 +2349,8 @@
       "attack": "sons/creatures/unic_attack.ogg",
       "defend": "sons/creatures/unic_defend.ogg",
       "move": "sons/creatures/unic_move.ogg",
-      "wince": "sons/creatures/unic_wince.ogg"
+      "wince": "sons/creatures/unic_wince.ogg",
+      "shoot": "sons/creatures/unic_attack.ogg"
     },
     "214": {
       "name": "Dragon de cuivre",
@@ -2147,7 +2360,8 @@
       "attack": "sons/creatures/rddr_attack.ogg",
       "defend": "sons/creatures/rddr_defend.ogg",
       "move": "sons/creatures/rddr_move.ogg",
-      "wince": "sons/creatures/rddr_wince.ogg"
+      "wince": "sons/creatures/rddr_wince.ogg",
+      "shoot": "sons/creatures/rddr_attack.ogg"
     },
     "215": {
       "name": "Enchanteresse",
@@ -2157,7 +2371,8 @@
       "attack": "sons/creatures/ench_attack.ogg",
       "defend": "sons/creatures/ench_defend.ogg",
       "move": "sons/creatures/ench_move.ogg",
-      "wince": "sons/creatures/ench_wince.ogg"
+      "wince": "sons/creatures/ench_wince.ogg",
+      "shoot": "sons/creatures/ench_shoot.ogg"
     },
     "216": {
       "name": "Nephilim",
@@ -2167,7 +2382,8 @@
       "attack": "sons/creatures/angl_attack.ogg",
       "defend": "sons/creatures/angl_defend.ogg",
       "move": "sons/creatures/angl_move.ogg",
-      "wince": "sons/creatures/angl_wince.ogg"
+      "wince": "sons/creatures/angl_wince.ogg",
+      "shoot": "sons/creatures/angl_attack.ogg"
     },
     "217": {
       "name": "Oracle",
@@ -2177,7 +2393,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "218": {
       "name": "Lamassu",
@@ -2187,7 +2404,8 @@
       "attack": "sons/creatures/grif_attack.ogg",
       "defend": "sons/creatures/grif_defend.ogg",
       "move": "sons/creatures/grif_move.ogg",
-      "wince": "sons/creatures/grif_wince.ogg"
+      "wince": "sons/creatures/grif_wince.ogg",
+      "shoot": "sons/creatures/grif_attack.ogg"
     },
     "219": {
       "name": "Pyromancien",
@@ -2197,7 +2415,8 @@
       "attack": "sons/creatures/felm_attack.ogg",
       "defend": "sons/creatures/felm_defend.ogg",
       "move": "sons/creatures/felm_move.ogg",
-      "wince": "sons/creatures/felm_wince.ogg"
+      "wince": "sons/creatures/felm_wince.ogg",
+      "shoot": "sons/creatures/felm_attack.ogg"
     },
     "220": {
       "name": "Enchanteur",
@@ -2207,7 +2426,8 @@
       "attack": "sons/creatures/ench_attack.ogg",
       "defend": "sons/creatures/ench_defend.ogg",
       "move": "sons/creatures/ench_move.ogg",
-      "wince": "sons/creatures/ench_wince.ogg"
+      "wince": "sons/creatures/ench_wince.ogg",
+      "shoot": "sons/creatures/ench_shoot.ogg"
     },
     "221": {
       "name": "Sleipnir",
@@ -2217,7 +2437,8 @@
       "attack": "sons/creatures/cava_attack.ogg",
       "defend": "sons/creatures/cava_defend.ogg",
       "move": "sons/creatures/cava_move.ogg",
-      "wince": "sons/creatures/cava_wince.ogg"
+      "wince": "sons/creatures/cava_wince.ogg",
+      "shoot": "sons/creatures/cava_attack.ogg"
     },
     "222": {
       "name": "Norne",
@@ -2227,7 +2448,8 @@
       "attack": "sons/creatures/ench_attack.ogg",
       "defend": "sons/creatures/ench_defend.ogg",
       "move": "sons/creatures/ench_move.ogg",
-      "wince": "sons/creatures/ench_wince.ogg"
+      "wince": "sons/creatures/ench_wince.ogg",
+      "shoot": "sons/creatures/ench_shoot.ogg"
     },
     "223": {
       "name": "Oiseau-tonnerre",
@@ -2237,7 +2459,8 @@
       "attack": "sons/creatures/tbrd_attack.ogg",
       "defend": "sons/creatures/tbrd_defend.ogg",
       "move": "sons/creatures/tbrd_move.ogg",
-      "wince": "sons/creatures/tbrd_wince.ogg"
+      "wince": "sons/creatures/tbrd_wince.ogg",
+      "shoot": "sons/creatures/tbrd_attack.ogg"
     },
     "224": {
       "name": "Salamandre",
@@ -2247,7 +2470,8 @@
       "attack": "sons/creatures/felm_attack.ogg",
       "defend": "sons/creatures/felm_defend.ogg",
       "move": "sons/creatures/felm_move.ogg",
-      "wince": "sons/creatures/felm_wince.ogg"
+      "wince": "sons/creatures/felm_wince.ogg",
+      "shoot": "sons/creatures/felm_attack.ogg"
     },
     "225": {
       "name": "Ensorceleur",
@@ -2257,7 +2481,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "226": {
       "name": "Simurgh",
@@ -2267,7 +2492,8 @@
       "attack": "sons/creatures/phoe_attack.ogg",
       "defend": "sons/creatures/phoe_defend.ogg",
       "move": "sons/creatures/phoe_move.ogg",
-      "wince": "sons/creatures/phoe_wince.ogg"
+      "wince": "sons/creatures/phoe_wince.ogg",
+      "shoot": "sons/creatures/phoe_attack.ogg"
     },
     "227": {
       "name": "Asura",
@@ -2277,7 +2503,8 @@
       "attack": "sons/creatures/aagl_attack.ogg",
       "defend": "sons/creatures/aagl_defend.ogg",
       "move": "sons/creatures/aagl_move.ogg",
-      "wince": "sons/creatures/aagl_wince.ogg"
+      "wince": "sons/creatures/aagl_wince.ogg",
+      "shoot": "sons/creatures/aagl_attack.ogg"
     },
     "228": {
       "name": "Mage",
@@ -2287,7 +2514,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "229": {
       "name": "Apsara",
@@ -2297,7 +2525,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "230": {
       "name": "Illusionniste",
@@ -2307,7 +2536,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "231": {
       "name": "Péri",
@@ -2317,7 +2547,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "232": {
       "name": "Yaksha",
@@ -2327,7 +2558,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "233": {
       "name": "Chronomancien",
@@ -2337,7 +2569,8 @@
       "attack": "sons/creatures/psyc_attack.ogg",
       "defend": "sons/creatures/psyc_defend.ogg",
       "move": "sons/creatures/psyc_move.ogg",
-      "wince": "sons/creatures/psyc_wince.ogg"
+      "wince": "sons/creatures/psyc_wince.ogg",
+      "shoot": "sons/creatures/psyc_attack.ogg"
     },
     "234": {
       "name": "Anzu",
@@ -2347,7 +2580,8 @@
       "attack": "sons/creatures/tbrd_attack.ogg",
       "defend": "sons/creatures/tbrd_defend.ogg",
       "move": "sons/creatures/tbrd_move.ogg",
-      "wince": "sons/creatures/tbrd_wince.ogg"
+      "wince": "sons/creatures/tbrd_wince.ogg",
+      "shoot": "sons/creatures/tbrd_attack.ogg"
     },
     "235": {
       "name": "Invocateur",
@@ -2357,7 +2591,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "236": {
       "name": "Mushussu",
@@ -2367,7 +2602,8 @@
       "attack": "sons/creatures/azur_attack.ogg",
       "defend": "sons/creatures/azur_defend.ogg",
       "move": "sons/creatures/azur_move.ogg",
-      "wince": "sons/creatures/azur_wince.ogg"
+      "wince": "sons/creatures/azur_wince.ogg",
+      "shoot": "sons/creatures/azur_attack.ogg"
     },
     "237": {
       "name": "Volva",
@@ -2377,7 +2613,8 @@
       "attack": "sons/creatures/hhag_attack.ogg",
       "defend": "sons/creatures/hhag_defend.ogg",
       "move": "sons/creatures/hhag_move.ogg",
-      "wince": "sons/creatures/hhag_wince.ogg"
+      "wince": "sons/creatures/hhag_wince.ogg",
+      "shoot": "sons/creatures/hhag_shoot.ogg"
     },
     "238": {
       "name": "Cryomancien",
@@ -2387,7 +2624,8 @@
       "attack": "sons/creatures/icel_attack.ogg",
       "defend": "sons/creatures/icel_defend.ogg",
       "move": "sons/creatures/icel_move.ogg",
-      "wince": "sons/creatures/icel_wince.ogg"
+      "wince": "sons/creatures/icel_wince.ogg",
+      "shoot": "sons/creatures/icel_shoot.ogg"
     },
     "239": {
       "name": "Jann",
@@ -2397,7 +2635,8 @@
       "attack": "sons/creatures/geni_attack.ogg",
       "defend": "sons/creatures/geni_defend.ogg",
       "move": "sons/creatures/geni_move.ogg",
-      "wince": "sons/creatures/geni_wince.ogg"
+      "wince": "sons/creatures/geni_wince.ogg",
+      "shoot": "sons/creatures/geni_attack.ogg"
     },
     "240": {
       "name": "Sylphe",
@@ -2407,7 +2646,8 @@
       "attack": "sons/creatures/aelm_attack.ogg",
       "defend": "sons/creatures/aelm_defend.ogg",
       "move": "sons/creatures/aelm_move.ogg",
-      "wince": "sons/creatures/aelm_wince.ogg"
+      "wince": "sons/creatures/aelm_wince.ogg",
+      "shoot": "sons/creatures/aelm_attack.ogg"
     },
     "241": {
       "name": "Genasi",
@@ -2417,7 +2657,8 @@
       "attack": "sons/creatures/ener_attack.ogg",
       "defend": "sons/creatures/ener_defend.ogg",
       "move": "sons/creatures/ener_move.ogg",
-      "wince": "sons/creatures/ener_wince.ogg"
+      "wince": "sons/creatures/ener_wince.ogg",
+      "shoot": "sons/creatures/ener_attack.ogg"
     },
     "242": {
       "name": "Githyanki",
@@ -2427,7 +2668,8 @@
       "attack": "sons/creatures/psyc_attack.ogg",
       "defend": "sons/creatures/psyc_defend.ogg",
       "move": "sons/creatures/psyc_move.ogg",
-      "wince": "sons/creatures/psyc_wince.ogg"
+      "wince": "sons/creatures/psyc_wince.ogg",
+      "shoot": "sons/creatures/psyc_attack.ogg"
     },
     "243": {
       "name": "Aarakocra",
@@ -2437,7 +2679,8 @@
       "attack": "sons/creatures/harp_attack.ogg",
       "defend": "sons/creatures/harp_defend.ogg",
       "move": "sons/creatures/harp_move.ogg",
-      "wince": "sons/creatures/harp_wince.ogg"
+      "wince": "sons/creatures/harp_wince.ogg",
+      "shoot": "sons/creatures/harp_attack.ogg"
     },
     "244": {
       "name": "Ziz",
@@ -2447,7 +2690,8 @@
       "attack": "sons/creatures/rocc_attack.ogg",
       "defend": "sons/creatures/rocc_defend.ogg",
       "move": "sons/creatures/rocc_move.ogg",
-      "wince": "sons/creatures/rocc_wince.ogg"
+      "wince": "sons/creatures/rocc_wince.ogg",
+      "shoot": "sons/creatures/rocc_attack.ogg"
     },
     "245": {
       "name": "Githzerai",
@@ -2457,7 +2701,8 @@
       "attack": "sons/creatures/psyc_attack.ogg",
       "defend": "sons/creatures/psyc_defend.ogg",
       "move": "sons/creatures/psyc_move.ogg",
-      "wince": "sons/creatures/psyc_wince.ogg"
+      "wince": "sons/creatures/psyc_wince.ogg",
+      "shoot": "sons/creatures/psyc_attack.ogg"
     },
     "246": {
       "name": "Augure",
@@ -2467,7 +2712,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "247": {
       "name": "Thaumaturge",
@@ -2477,7 +2723,8 @@
       "attack": "sons/creatures/amag_attack.ogg",
       "defend": "sons/creatures/amag_defend.ogg",
       "move": "sons/creatures/amag_move.ogg",
-      "wince": "sons/creatures/amag_wince.ogg"
+      "wince": "sons/creatures/amag_wince.ogg",
+      "shoot": "sons/creatures/amag_shoot.ogg"
     },
     "248": {
       "name": "Troll",
@@ -2487,7 +2734,8 @@
       "attack": "sons/creatures/trll_attack.ogg",
       "defend": "sons/creatures/trll_defend.ogg",
       "move": "sons/creatures/trll_move.ogg",
-      "wince": "sons/creatures/trll_wince.ogg"
+      "wince": "sons/creatures/trll_wince.ogg",
+      "shoot": "sons/creatures/trll_attack.ogg"
     },
     "249": {
       "name": "Géant",
@@ -2497,7 +2745,8 @@
       "attack": "sons/creatures/cycl_attack.ogg",
       "defend": "sons/creatures/cycl_defend.ogg",
       "move": "sons/creatures/cycl_move.ogg",
-      "wince": "sons/creatures/cycl_wince.ogg"
+      "wince": "sons/creatures/cycl_wince.ogg",
+      "shoot": "sons/creatures/cycl_shoot.ogg"
     },
     "250": {
       "name": "Yéti",
@@ -2507,7 +2756,8 @@
       "attack": "sons/creatures/icel_attack.ogg",
       "defend": "sons/creatures/icel_defend.ogg",
       "move": "sons/creatures/icel_move.ogg",
-      "wince": "sons/creatures/icel_wince.ogg"
+      "wince": "sons/creatures/icel_wince.ogg",
+      "shoot": "sons/creatures/icel_shoot.ogg"
     },
     "251": {
       "name": "Ogre",
@@ -2517,7 +2767,8 @@
       "attack": "sons/creatures/ogre_attack.ogg",
       "defend": "sons/creatures/ogre_defend.ogg",
       "move": "sons/creatures/ogre_move.ogg",
-      "wince": "sons/creatures/ogre_wince.ogg"
+      "wince": "sons/creatures/ogre_wince.ogg",
+      "shoot": "sons/creatures/ogre_attack.ogg"
     },
     "252": {
       "name": "Cyclope",
@@ -2527,7 +2778,8 @@
       "attack": "sons/creatures/cycl_attack.ogg",
       "defend": "sons/creatures/cycl_defend.ogg",
       "move": "sons/creatures/cycl_move.ogg",
-      "wince": "sons/creatures/cycl_wince.ogg"
+      "wince": "sons/creatures/cycl_wince.ogg",
+      "shoot": "sons/creatures/cycl_shoot.ogg"
     },
     "253": {
       "name": "Fenrir",
@@ -2537,7 +2789,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "254": {
       "name": "Sasquatch",
@@ -2547,7 +2800,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "255": {
       "name": "Wyrm",
@@ -2557,7 +2811,8 @@
       "attack": "sons/creatures/wyvn_attack.ogg",
       "defend": "sons/creatures/wyvn_defend.ogg",
       "move": "sons/creatures/wyvn_move.ogg",
-      "wince": "sons/creatures/wyvn_wince.ogg"
+      "wince": "sons/creatures/wyvn_wince.ogg",
+      "shoot": "sons/creatures/wyvn_attack.ogg"
     },
     "256": {
       "name": "Grendel",
@@ -2567,7 +2822,8 @@
       "attack": "sons/creatures/ogre_attack.ogg",
       "defend": "sons/creatures/ogre_defend.ogg",
       "move": "sons/creatures/ogre_move.ogg",
-      "wince": "sons/creatures/ogre_wince.ogg"
+      "wince": "sons/creatures/ogre_wince.ogg",
+      "shoot": "sons/creatures/ogre_attack.ogg"
     },
     "257": {
       "name": "Jotunn",
@@ -2577,7 +2833,8 @@
       "attack": "sons/creatures/cycl_attack.ogg",
       "defend": "sons/creatures/cycl_defend.ogg",
       "move": "sons/creatures/cycl_move.ogg",
-      "wince": "sons/creatures/cycl_wince.ogg"
+      "wince": "sons/creatures/cycl_wince.ogg",
+      "shoot": "sons/creatures/cycl_shoot.ogg"
     },
     "258": {
       "name": "Yuki-onna",
@@ -2587,7 +2844,8 @@
       "attack": "sons/creatures/icel_attack.ogg",
       "defend": "sons/creatures/icel_defend.ogg",
       "move": "sons/creatures/icel_move.ogg",
-      "wince": "sons/creatures/icel_wince.ogg"
+      "wince": "sons/creatures/icel_wince.ogg",
+      "shoot": "sons/creatures/icel_shoot.ogg"
     },
     "259": {
       "name": "Roc",
@@ -2597,7 +2855,8 @@
       "attack": "sons/creatures/rocc_attack.ogg",
       "defend": "sons/creatures/rocc_defend.ogg",
       "move": "sons/creatures/rocc_move.ogg",
-      "wince": "sons/creatures/rocc_wince.ogg"
+      "wince": "sons/creatures/rocc_wince.ogg",
+      "shoot": "sons/creatures/rocc_attack.ogg"
     },
     "260": {
       "name": "Lindworm",
@@ -2607,7 +2866,8 @@
       "attack": "sons/creatures/wyvn_attack.ogg",
       "defend": "sons/creatures/wyvn_defend.ogg",
       "move": "sons/creatures/wyvn_move.ogg",
-      "wince": "sons/creatures/wyvn_wince.ogg"
+      "wince": "sons/creatures/wyvn_wince.ogg",
+      "shoot": "sons/creatures/wyvn_attack.ogg"
     },
     "261": {
       "name": "Tarasque",
@@ -2617,7 +2877,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "262": {
       "name": "Zmey",
@@ -2627,7 +2888,8 @@
       "attack": "sons/creatures/grdr_attack.ogg",
       "defend": "sons/creatures/grdr_defend.ogg",
       "move": "sons/creatures/grdr_move.ogg",
-      "wince": "sons/creatures/grdr_wince.ogg"
+      "wince": "sons/creatures/grdr_wince.ogg",
+      "shoot": "sons/creatures/grdr_attack.ogg"
     },
     "263": {
       "name": "Géant des glaces",
@@ -2637,7 +2899,8 @@
       "attack": "sons/creatures/icel_attack.ogg",
       "defend": "sons/creatures/icel_defend.ogg",
       "move": "sons/creatures/icel_move.ogg",
-      "wince": "sons/creatures/icel_wince.ogg"
+      "wince": "sons/creatures/icel_wince.ogg",
+      "shoot": "sons/creatures/icel_shoot.ogg"
     },
     "264": {
       "name": "Oréade",
@@ -2647,7 +2910,8 @@
       "attack": "sons/creatures/eelm_attack.ogg",
       "defend": "sons/creatures/eelm_defend.ogg",
       "move": "sons/creatures/eelm_move.ogg",
-      "wince": "sons/creatures/eelm_wince.ogg"
+      "wince": "sons/creatures/eelm_wince.ogg",
+      "shoot": "sons/creatures/eelm_attack.ogg"
     },
     "265": {
       "name": "Fomorien",
@@ -2657,7 +2921,8 @@
       "attack": "sons/creatures/cycl_attack.ogg",
       "defend": "sons/creatures/cycl_defend.ogg",
       "move": "sons/creatures/cycl_move.ogg",
-      "wince": "sons/creatures/cycl_wince.ogg"
+      "wince": "sons/creatures/cycl_wince.ogg",
+      "shoot": "sons/creatures/cycl_shoot.ogg"
     },
     "266": {
       "name": "Ettin",
@@ -2667,7 +2932,8 @@
       "attack": "sons/creatures/ogre_attack.ogg",
       "defend": "sons/creatures/ogre_defend.ogg",
       "move": "sons/creatures/ogre_move.ogg",
-      "wince": "sons/creatures/ogre_wince.ogg"
+      "wince": "sons/creatures/ogre_wince.ogg",
+      "shoot": "sons/creatures/ogre_attack.ogg"
     },
     "267": {
       "name": "Goliath",
@@ -2677,7 +2943,8 @@
       "attack": "sons/creatures/cycl_attack.ogg",
       "defend": "sons/creatures/cycl_defend.ogg",
       "move": "sons/creatures/cycl_move.ogg",
-      "wince": "sons/creatures/cycl_wince.ogg"
+      "wince": "sons/creatures/cycl_wince.ogg",
+      "shoot": "sons/creatures/cycl_shoot.ogg"
     },
     "268": {
       "name": "Hécatonchire",
@@ -2687,7 +2954,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "269": {
       "name": "Amarok",
@@ -2697,7 +2965,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "270": {
       "name": "Barbegazi",
@@ -2707,7 +2976,8 @@
       "attack": "sons/creatures/icel_attack.ogg",
       "defend": "sons/creatures/icel_defend.ogg",
       "move": "sons/creatures/icel_move.ogg",
-      "wince": "sons/creatures/icel_wince.ogg"
+      "wince": "sons/creatures/icel_wince.ogg",
+      "shoot": "sons/creatures/icel_shoot.ogg"
     },
     "271": {
       "name": "Sorcière",
@@ -2717,7 +2987,8 @@
       "attack": "sons/creatures/hhag_attack.ogg",
       "defend": "sons/creatures/hhag_defend.ogg",
       "move": "sons/creatures/hhag_move.ogg",
-      "wince": "sons/creatures/hhag_wince.ogg"
+      "wince": "sons/creatures/hhag_wince.ogg",
+      "shoot": "sons/creatures/hhag_shoot.ogg"
     },
     "272": {
       "name": "Loup-garou",
@@ -2727,7 +2998,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "273": {
       "name": "Fée",
@@ -2737,7 +3009,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "274": {
       "name": "Leprechaun",
@@ -2747,7 +3020,8 @@
       "attack": "sons/creatures/half_attack.ogg",
       "defend": "sons/creatures/half_defend.ogg",
       "move": "sons/creatures/half_move.ogg",
-      "wince": "sons/creatures/half_wince.ogg"
+      "wince": "sons/creatures/half_wince.ogg",
+      "shoot": "sons/creatures/half_shoot.ogg"
     },
     "275": {
       "name": "Sorcier",
@@ -2757,7 +3031,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "276": {
       "name": "Baba Yaga",
@@ -2767,7 +3042,8 @@
       "attack": "sons/creatures/hhag_attack.ogg",
       "defend": "sons/creatures/hhag_defend.ogg",
       "move": "sons/creatures/hhag_move.ogg",
-      "wince": "sons/creatures/hhag_wince.ogg"
+      "wince": "sons/creatures/hhag_wince.ogg",
+      "shoot": "sons/creatures/hhag_shoot.ogg"
     },
     "277": {
       "name": "Kitsune",
@@ -2777,7 +3053,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "278": {
       "name": "Lycanthrope",
@@ -2787,7 +3064,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "279": {
       "name": "Mandragore",
@@ -2797,7 +3075,8 @@
       "attack": "sons/creatures/dhdm_attack.ogg",
       "defend": "sons/creatures/dhdm_defend.ogg",
       "move": "sons/creatures/dhdm_move.ogg",
-      "wince": "sons/creatures/dhdm_wince.ogg"
+      "wince": "sons/creatures/dhdm_wince.ogg",
+      "shoot": "sons/creatures/dhdm_attack.ogg"
     },
     "280": {
       "name": "Tanuki",
@@ -2807,7 +3086,8 @@
       "attack": "sons/creatures/boar_attack.ogg",
       "defend": "sons/creatures/boar_defend.ogg",
       "move": "sons/creatures/boar_move.ogg",
-      "wince": "sons/creatures/boar_wince.ogg"
+      "wince": "sons/creatures/boar_wince.ogg",
+      "shoot": "sons/creatures/boar_attack.ogg"
     },
     "281": {
       "name": "Pixie",
@@ -2817,7 +3097,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "282": {
       "name": "Yokai",
@@ -2827,7 +3108,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "283": {
       "name": "Nekomata",
@@ -2837,7 +3119,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "284": {
       "name": "Jabberwock",
@@ -2847,7 +3130,8 @@
       "attack": "sons/creatures/chyd_attack.ogg",
       "defend": "sons/creatures/chyd_defend.ogg",
       "move": "sons/creatures/chyd_move.ogg",
-      "wince": "sons/creatures/chyd_wince.ogg"
+      "wince": "sons/creatures/chyd_wince.ogg",
+      "shoot": "sons/creatures/chyd_attack.ogg"
     },
     "285": {
       "name": "Tengu",
@@ -2857,7 +3141,8 @@
       "attack": "sons/creatures/harp_attack.ogg",
       "defend": "sons/creatures/harp_defend.ogg",
       "move": "sons/creatures/harp_move.ogg",
-      "wince": "sons/creatures/harp_wince.ogg"
+      "wince": "sons/creatures/harp_wince.ogg",
+      "shoot": "sons/creatures/harp_attack.ogg"
     },
     "286": {
       "name": "Baku",
@@ -2867,7 +3152,8 @@
       "attack": "sons/creatures/mant_attack.ogg",
       "defend": "sons/creatures/mant_defend.ogg",
       "move": "sons/creatures/mant_move.ogg",
-      "wince": "sons/creatures/mant_wince.ogg"
+      "wince": "sons/creatures/mant_wince.ogg",
+      "shoot": "sons/creatures/mant_shoot.ogg"
     },
     "287": {
       "name": "Changeling",
@@ -2877,7 +3163,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "288": {
       "name": "Sprite",
@@ -2887,7 +3174,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "289": {
       "name": "Chaman",
@@ -2897,7 +3185,8 @@
       "attack": "sons/creatures/mgel_attack.ogg",
       "defend": "sons/creatures/mgel_defend.ogg",
       "move": "sons/creatures/mgel_move.ogg",
-      "wince": "sons/creatures/mgel_wince.ogg"
+      "wince": "sons/creatures/mgel_wince.ogg",
+      "shoot": "sons/creatures/mgel_attack.ogg"
     },
     "290": {
       "name": "Rokurokubi",
@@ -2907,7 +3196,8 @@
       "attack": "sons/creatures/hhag_attack.ogg",
       "defend": "sons/creatures/hhag_defend.ogg",
       "move": "sons/creatures/hhag_move.ogg",
-      "wince": "sons/creatures/hhag_wince.ogg"
+      "wince": "sons/creatures/hhag_wince.ogg",
+      "shoot": "sons/creatures/hhag_shoot.ogg"
     },
     "291": {
       "name": "Nymphe",
@@ -2917,7 +3207,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "292": {
       "name": "Guenaude",
@@ -2927,7 +3218,8 @@
       "attack": "sons/creatures/hhag_attack.ogg",
       "defend": "sons/creatures/hhag_defend.ogg",
       "move": "sons/creatures/hhag_move.ogg",
-      "wince": "sons/creatures/hhag_wince.ogg"
+      "wince": "sons/creatures/hhag_wince.ogg",
+      "shoot": "sons/creatures/hhag_shoot.ogg"
     },
     "293": {
       "name": "Pooka",
@@ -2937,7 +3229,8 @@
       "attack": "sons/creatures/boar_attack.ogg",
       "defend": "sons/creatures/boar_defend.ogg",
       "move": "sons/creatures/boar_move.ogg",
-      "wince": "sons/creatures/boar_wince.ogg"
+      "wince": "sons/creatures/boar_wince.ogg",
+      "shoot": "sons/creatures/boar_attack.ogg"
     },
     "294": {
       "name": "Sidhe",
@@ -2947,7 +3240,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "295": {
       "name": "Lutin",
@@ -2957,7 +3251,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "296": {
       "name": "Spriggan",
@@ -2967,7 +3262,8 @@
       "attack": "sons/creatures/dhdm_attack.ogg",
       "defend": "sons/creatures/dhdm_defend.ogg",
       "move": "sons/creatures/dhdm_move.ogg",
-      "wince": "sons/creatures/dhdm_wince.ogg"
+      "wince": "sons/creatures/dhdm_wince.ogg",
+      "shoot": "sons/creatures/dhdm_attack.ogg"
     },
     "297": {
       "name": "Fée-dragon",
@@ -2977,7 +3273,8 @@
       "attack": "sons/creatures/faer_attack.ogg",
       "defend": "sons/creatures/faer_defend.ogg",
       "move": "sons/creatures/faer_move.ogg",
-      "wince": "sons/creatures/faer_wince.ogg"
+      "wince": "sons/creatures/faer_wince.ogg",
+      "shoot": "sons/creatures/faer_shoot.ogg"
     },
     "298": {
       "name": "Huldra",
@@ -2987,7 +3284,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "299": {
       "name": "Mara",
@@ -2997,7 +3295,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "300": {
       "name": "Korrigan",
@@ -3007,7 +3306,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "301": {
       "name": "Bête du Gévaudan",
@@ -3017,7 +3317,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "302": {
       "name": "Tabaxi",
@@ -3027,7 +3328,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "303": {
       "name": "Farfadet",
@@ -3037,7 +3339,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "304": {
       "name": "Vila",
@@ -3047,7 +3350,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "305": {
       "name": "Croquemitaine",
@@ -3057,7 +3361,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "306": {
       "name": "Cu-sith",
@@ -3067,7 +3372,8 @@
       "attack": "sons/creatures/hhnd_attack.ogg",
       "defend": "sons/creatures/hhnd_defend.ogg",
       "move": "sons/creatures/hhnd_move.ogg",
-      "wince": "sons/creatures/hhnd_wince.ogg"
+      "wince": "sons/creatures/hhnd_wince.ogg",
+      "shoot": "sons/creatures/hhnd_attack.ogg"
     },
     "307": {
       "name": "Bucca",
@@ -3077,7 +3383,8 @@
       "attack": "sons/creatures/pixi_attack.ogg",
       "defend": "sons/creatures/pixi_defend.ogg",
       "move": "sons/creatures/pixi_move.ogg",
-      "wince": "sons/creatures/pixi_wince.ogg"
+      "wince": "sons/creatures/pixi_wince.ogg",
+      "shoot": "sons/creatures/pixi_attack.ogg"
     },
     "308": {
       "name": "Kraken",
@@ -3087,7 +3394,8 @@
       "attack": "sons/creatures/sgrg_attack.ogg",
       "defend": "sons/creatures/sgrg_defend.ogg",
       "move": "sons/creatures/sgrg_move.ogg",
-      "wince": "sons/creatures/sgrg_wince.ogg"
+      "wince": "sons/creatures/sgrg_wince.ogg",
+      "shoot": "sons/creatures/sgrg_attack.ogg"
     },
     "309": {
       "name": "Léviathan",
@@ -3097,7 +3405,8 @@
       "attack": "sons/creatures/sgrg_attack.ogg",
       "defend": "sons/creatures/sgrg_defend.ogg",
       "move": "sons/creatures/sgrg_move.ogg",
-      "wince": "sons/creatures/sgrg_wince.ogg"
+      "wince": "sons/creatures/sgrg_wince.ogg",
+      "shoot": "sons/creatures/sgrg_attack.ogg"
     },
     "310": {
       "name": "Hydre",
@@ -3107,7 +3416,8 @@
       "attack": "sons/creatures/hydr_attack.ogg",
       "defend": "sons/creatures/hydr_defend.ogg",
       "move": "sons/creatures/hydr_move.ogg",
-      "wince": "sons/creatures/hydr_wince.ogg"
+      "wince": "sons/creatures/hydr_wince.ogg",
+      "shoot": "sons/creatures/hydr_attack.ogg"
     },
     "311": {
       "name": "Jormungandr",
@@ -3117,7 +3427,8 @@
       "attack": "sons/creatures/sgrg_attack.ogg",
       "defend": "sons/creatures/sgrg_defend.ogg",
       "move": "sons/creatures/sgrg_move.ogg",
-      "wince": "sons/creatures/sgrg_wince.ogg"
+      "wince": "sons/creatures/sgrg_wince.ogg",
+      "shoot": "sons/creatures/sgrg_attack.ogg"
     },
     "312": {
       "name": "Kappa",
@@ -3127,7 +3438,8 @@
       "attack": "sons/creatures/trog_attack.ogg",
       "defend": "sons/creatures/trog_defend.ogg",
       "move": "sons/creatures/trog_move.ogg",
-      "wince": "sons/creatures/trog_wince.ogg"
+      "wince": "sons/creatures/trog_wince.ogg",
+      "shoot": "sons/creatures/trog_attack.ogg"
     },
     "313": {
       "name": "Dragon noir",
@@ -3137,7 +3449,8 @@
       "attack": "sons/creatures/bhdr_attack.ogg",
       "defend": "sons/creatures/bhdr_defend.ogg",
       "move": "sons/creatures/bhdr_move.ogg",
-      "wince": "sons/creatures/bhdr_wince.ogg"
+      "wince": "sons/creatures/bhdr_wince.ogg",
+      "shoot": "sons/creatures/bhdr_shoot.ogg"
     },
     "314": {
       "name": "Sirène",
@@ -3147,7 +3460,8 @@
       "attack": "sons/creatures/sprt_attack.ogg",
       "defend": "sons/creatures/sprt_defend.ogg",
       "move": "sons/creatures/sprt_move.ogg",
-      "wince": "sons/creatures/sprt_wince.ogg"
+      "wince": "sons/creatures/sprt_wince.ogg",
+      "shoot": "sons/creatures/sprt_attack.ogg"
     },
     "315": {
       "name": "Dragon marin",
@@ -3157,7 +3471,8 @@
       "attack": "sons/creatures/sgrg_attack.ogg",
       "defend": "sons/creatures/sgrg_defend.ogg",
       "move": "sons/creatures/sgrg_move.ogg",
-      "wince": "sons/creatures/sgrg_wince.ogg"
+      "wince": "sons/creatures/sgrg_wince.ogg",
+      "shoot": "sons/creatures/sgrg_attack.ogg"
     },
     "316": {
       "name": "Dragon de bronze",
@@ -3167,7 +3482,8 @@
       "attack": "sons/creatures/azur_attack.ogg",
       "defend": "sons/creatures/azur_defend.ogg",
       "move": "sons/creatures/azur_move.ogg",
-      "wince": "sons/creatures/azur_wince.ogg"
+      "wince": "sons/creatures/azur_wince.ogg",
+      "shoot": "sons/creatures/azur_attack.ogg"
     },
     "317": {
       "name": "Kelpie",
@@ -3177,7 +3493,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "318": {
       "name": "Naga",
@@ -3187,7 +3504,8 @@
       "attack": "sons/creatures/nsen_attack.ogg",
       "defend": "sons/creatures/nsen_defend.ogg",
       "move": "sons/creatures/nsen_move.ogg",
-      "wince": "sons/creatures/nsen_wince.ogg"
+      "wince": "sons/creatures/nsen_wince.ogg",
+      "shoot": "sons/creatures/nsen_attack.ogg"
     },
     "319": {
       "name": "Scylla",
@@ -3197,7 +3515,8 @@
       "attack": "sons/creatures/sgrg_attack.ogg",
       "defend": "sons/creatures/sgrg_defend.ogg",
       "move": "sons/creatures/sgrg_move.ogg",
-      "wince": "sons/creatures/sgrg_wince.ogg"
+      "wince": "sons/creatures/sgrg_wince.ogg",
+      "shoot": "sons/creatures/sgrg_attack.ogg"
     },
     "320": {
       "name": "Rusalka",
@@ -3207,7 +3526,8 @@
       "attack": "sons/creatures/wrth_attack.ogg",
       "defend": "sons/creatures/wrth_defend.ogg",
       "move": "sons/creatures/wrth_move.ogg",
-      "wince": "sons/creatures/wrth_wince.ogg"
+      "wince": "sons/creatures/wrth_wince.ogg",
+      "shoot": "sons/creatures/wrth_attack.ogg"
     },
     "321": {
       "name": "Mélusine",
@@ -3217,7 +3537,8 @@
       "attack": "sons/creatures/nsen_attack.ogg",
       "defend": "sons/creatures/nsen_defend.ogg",
       "move": "sons/creatures/nsen_move.ogg",
-      "wince": "sons/creatures/nsen_wince.ogg"
+      "wince": "sons/creatures/nsen_wince.ogg",
+      "shoot": "sons/creatures/nsen_attack.ogg"
     },
     "322": {
       "name": "Selkie",
@@ -3227,7 +3548,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "323": {
       "name": "Triton",
@@ -3237,7 +3559,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "324": {
       "name": "Yuan-ti",
@@ -3247,7 +3570,8 @@
       "attack": "sons/creatures/nsen_attack.ogg",
       "defend": "sons/creatures/nsen_defend.ogg",
       "move": "sons/creatures/nsen_move.ogg",
-      "wince": "sons/creatures/nsen_wince.ogg"
+      "wince": "sons/creatures/nsen_wince.ogg",
+      "shoot": "sons/creatures/nsen_attack.ogg"
     },
     "325": {
       "name": "Homme-lézard",
@@ -3257,7 +3581,8 @@
       "attack": "sons/creatures/aliz_attack.ogg",
       "defend": "sons/creatures/aliz_defend.ogg",
       "move": "sons/creatures/aliz_move.ogg",
-      "wince": "sons/creatures/aliz_wince.ogg"
+      "wince": "sons/creatures/aliz_wince.ogg",
+      "shoot": "sons/creatures/aliz_shoot.ogg"
     },
     "326": {
       "name": "Naiade",
@@ -3267,7 +3592,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "327": {
       "name": "Ondine",
@@ -3277,7 +3603,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "328": {
       "name": "Hippocampe",
@@ -3287,7 +3614,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "329": {
       "name": "Néréide",
@@ -3297,7 +3625,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "330": {
       "name": "Marid",
@@ -3307,7 +3636,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "331": {
       "name": "Grindylow",
@@ -3317,7 +3647,8 @@
       "attack": "sons/creatures/trog_attack.ogg",
       "defend": "sons/creatures/trog_defend.ogg",
       "move": "sons/creatures/trog_move.ogg",
-      "wince": "sons/creatures/trog_wince.ogg"
+      "wince": "sons/creatures/trog_wince.ogg",
+      "shoot": "sons/creatures/trog_attack.ogg"
     },
     "332": {
       "name": "Nixe",
@@ -3327,7 +3658,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "333": {
       "name": "Sahuagin",
@@ -3337,7 +3669,8 @@
       "attack": "sons/creatures/trog_attack.ogg",
       "defend": "sons/creatures/trog_defend.ogg",
       "move": "sons/creatures/trog_move.ogg",
-      "wince": "sons/creatures/trog_wince.ogg"
+      "wince": "sons/creatures/trog_wince.ogg",
+      "shoot": "sons/creatures/trog_attack.ogg"
     },
     "334": {
       "name": "Vodyanoi",
@@ -3347,7 +3680,8 @@
       "attack": "sons/creatures/welm_attack.ogg",
       "defend": "sons/creatures/welm_defend.ogg",
       "move": "sons/creatures/welm_move.ogg",
-      "wince": "sons/creatures/welm_wince.ogg"
+      "wince": "sons/creatures/welm_wince.ogg",
+      "shoot": "sons/creatures/welm_attack.ogg"
     },
     "335": {
       "name": "Kuo-toa",
@@ -3357,7 +3691,8 @@
       "attack": "sons/creatures/trog_attack.ogg",
       "defend": "sons/creatures/trog_defend.ogg",
       "move": "sons/creatures/trog_move.ogg",
-      "wince": "sons/creatures/trog_wince.ogg"
+      "wince": "sons/creatures/trog_wince.ogg",
+      "shoot": "sons/creatures/trog_attack.ogg"
     },
     "336": {
       "name": "Aspidochelone",
@@ -3367,7 +3702,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "337": {
       "name": "Lusca",
@@ -3377,7 +3713,8 @@
       "attack": "sons/creatures/sgrg_attack.ogg",
       "defend": "sons/creatures/sgrg_defend.ogg",
       "move": "sons/creatures/sgrg_move.ogg",
-      "wince": "sons/creatures/sgrg_wince.ogg"
+      "wince": "sons/creatures/sgrg_wince.ogg",
+      "shoot": "sons/creatures/sgrg_attack.ogg"
     },
     "338": {
       "name": "Peluda",
@@ -3387,7 +3724,8 @@
       "attack": "sons/creatures/wyvn_attack.ogg",
       "defend": "sons/creatures/wyvn_defend.ogg",
       "move": "sons/creatures/wyvn_move.ogg",
-      "wince": "sons/creatures/wyvn_wince.ogg"
+      "wince": "sons/creatures/wyvn_wince.ogg",
+      "shoot": "sons/creatures/wyvn_attack.ogg"
     },
     "339": {
       "name": "Aboleth",
@@ -3397,7 +3735,8 @@
       "attack": "sons/creatures/evli_attack.ogg",
       "defend": "sons/creatures/evli_defend.ogg",
       "move": "sons/creatures/evli_move.ogg",
-      "wince": "sons/creatures/evli_wince.ogg"
+      "wince": "sons/creatures/evli_wince.ogg",
+      "shoot": "sons/creatures/evli_shoot.ogg"
     },
     "340": {
       "name": "Catoblépas",
@@ -3407,7 +3746,8 @@
       "attack": "sons/creatures/bmth_attack.ogg",
       "defend": "sons/creatures/bmth_defend.ogg",
       "move": "sons/creatures/bmth_move.ogg",
-      "wince": "sons/creatures/bmth_wince.ogg"
+      "wince": "sons/creatures/bmth_wince.ogg",
+      "shoot": "sons/creatures/bmth_attack.ogg"
     },
     "341": {
       "name": "Chuul",
@@ -3417,7 +3757,8 @@
       "attack": "sons/creatures/trog_attack.ogg",
       "defend": "sons/creatures/trog_defend.ogg",
       "move": "sons/creatures/trog_move.ogg",
-      "wince": "sons/creatures/trog_wince.ogg"
+      "wince": "sons/creatures/trog_wince.ogg",
+      "shoot": "sons/creatures/trog_attack.ogg"
     }
   }
 }
