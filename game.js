@@ -100,7 +100,7 @@ const ABILITIES = {
   lancer: {
     id: 'lancer',
     label: 'Rafale',
-    description: 'À l’arrivée en jeu, puis tous les 2 tours : inflige 1 dégât à une cible adverse aléatoire.',
+    description: 'À l’arrivée en jeu, puis tous les 2 tours : lance 1 couteau qui inflige 1 dégât à une cible adverse aléatoire.',
   },
   'lancer-mod': {
     id: 'lancer-mod',
@@ -141,6 +141,21 @@ const ABILITIES = {
     id: 'soin-max',
     label: 'Soin majeur',
     description: 'À l’arrivée en jeu, puis chaque tour : soigne 2 PV sur 2 alliés blessés aléatoires.',
+  },
+  'soins-leger': {
+    id: 'soins-leger',
+    label: 'Soins légers',
+    description: 'À l’arrivée en jeu, puis tous les 3 tours : soigne 1 PV d’un allié blessé aléatoire (ou elle-même).',
+  },
+  'soins-moyen': {
+    id: 'soins-moyen',
+    label: 'Soins moyens',
+    description: 'À l’arrivée en jeu, puis tous les 2 tours : soigne 1 PV d’un allié blessé aléatoire (ou elle-même).',
+  },
+  'soins-avances': {
+    id: 'soins-avances',
+    label: 'Soins avancés',
+    description: 'À l’arrivée en jeu, puis chaque tour : soigne 1 PV d’un allié blessé aléatoire (ou elle-même).',
   },
   invocation: {
     id: 'invocation',
@@ -270,7 +285,7 @@ const ABILITIES = {
   'soutient-2': {
     id: 'soutient-2',
     label: 'Soutien 2',
-    description: 'À l’arrivée en jeu : donne +1 PV max à 2 créatures alliées aléatoires différentes (ou à elle-même s’il n’y a pas d’autre alliée).',
+    description: 'À l’arrivée en jeu : donne +1 PV max à 2 créatures alliées aléatoires sur le terrain (elle-même peut être choisie). S’il n’y a qu’une créature, elle reçoit +1 PV max.',
   },
   charge: {
     id: 'charge',
@@ -1035,6 +1050,10 @@ function render(){
   const sub = state.tab==='combat'
     ? 'Combat rapide ou campagne — decks 60 cartes (15×4) / 2 factions.'
     : 'Consulte le bestiaire : factions, capacités, stats et illustrations.';
+  const fsOn = typeof isCombatFullscreen==='function' && isCombatFullscreen();
+  const fsBtn = state.tab==='combat'
+    ? `<button type="button" class="topbar-fs${fsOn?' on':''}" onclick="toggleCombatFullscreen()" title="${fsOn?'Quitter le plein écran':'Plein écran'}" aria-pressed="${fsOn?'true':'false'}">${fsOn?'Quitter PE':'Plein écran'}</button>`
+    : '';
   byId('app').innerHTML=`<header class="topbar">
     <div>
       <p class="eyebrow">Fantasia Fauna</p>
@@ -1046,6 +1065,7 @@ function render(){
       <button class="${state.tab==='combat'?'active':''}" onclick="setTab('combat')">Combat</button>
     </nav>
     <div class="topbar-end">
+      ${fsBtn}
       ${typeof FFAudio?.volumeControlHtml==='function' ? FFAudio.volumeControlHtml() : ''}
       <div class="stats"><span>${CREATURES.length} créatures</span>${state.tab==='list'?`<span>${filteredCreatures().length} affichées</span>`:''}</div>
     </div>

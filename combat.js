@@ -72,13 +72,11 @@ function combatTableClasses(extra=''){
   const p=ensureCombatPrefs();
   const dens=p.density==='comfort' ? 'cbt-density-comfort' : 'cbt-density-compact';
   const zoom=`cbt-zoom-${p.zoom||'md'}`;
-  const log=p.showLog===false ? 'cbt-log-hidden' : '';
   const split=`cbt-split-${p.leftSplit||'half'}`;
-  return ['combat-table', dens, zoom, log, split, extra].filter(Boolean).join(' ');
+  return ['combat-table', dens, zoom, split, extra].filter(Boolean).join(' ');
 }
 function renderCombatConfigBar(){
   const p=ensureCombatPrefs();
-  const fs=isCombatFullscreen();
   const densLabel=p.density==='comfort' ? 'Confort' : 'Compact';
   const zoomLabel=(p.zoom||'md').toUpperCase();
   return `<div class="cbt-meta-actions">
@@ -88,8 +86,6 @@ function renderCombatConfigBar(){
       <button type="button" class="cbt-cfg" onclick="cycleCombatZoom(1)" aria-label="Zoom plus">+</button>
     </div>
     <button type="button" class="cbt-cfg${p.density==='comfort'?' on':''}" onclick="toggleCombatDensity()">${densLabel}</button>
-    <button type="button" class="cbt-cfg${p.showLog!==false?' on':''}" onclick="toggleCombatLog()">Journal</button>
-    <button type="button" class="cbt-cfg${fs?' on':''}" onclick="toggleCombatFullscreen()">${fs?'Quitter PE':'Plein écran'}</button>
     <button type="button" class="cbt-cfg" onclick="startCombat()">Reset</button>
     <button type="button" class="cbt-cfg" onclick="backToCombatLobby()">Lobby</button>
   </div>`;
@@ -119,7 +115,8 @@ const ON_HIT_EFFECTS = [
 ];
 const KEYWORD_ROLES = new Set([
   'lancer','lancer-mod','lancer-max','sort-degat','sort-degat-mod','sort-degat-max',
-  'soin','soin-mod','soin-max','invocation','invocation-rapide','invocation-intime',
+  'soin','soin-mod','soin-max','soins-leger','soins-moyen','soins-avances',
+  'invocation','invocation-rapide','invocation-intime',
   'etendard','formation',
   'activer-regen','activer-tank','activer-bouclier','activer-frappe','activer-soin','activer-purge',
   'bouclier-divin','double-attaque','charge','celerite','camouflage','vol-de-vie','lien-de-vie',
@@ -198,6 +195,12 @@ function activationSpec(c){
     if(hasRole(c, spec.id)) return spec;
   }
   return null;
+}
+/** Polarité d’une activation : agressive (ennemi) ou positive (allié). */
+function activationPolarity(spec){
+  if(!spec) return null;
+  if(spec.effect==='strike') return 'aggressive';
+  return 'positive';
 }
 function maxAttacks(c){
   // Double attaque = 2 frappes dans la même action, pas 2 actions d’attaque.
@@ -353,13 +356,13 @@ function combatCardStatOpts(c){
     hpModListHtml: creatureModListHtml(c,'hp'),
   };
 }
-function healCreature(c, amount){
+function healCreature(c, amount, opts={}){
   if(!c || amount<=0) return 0;
   const max=c.maxHp??c.baseMaxHp??c.health??c.hp;
   const before=c.hp??0;
   c.hp=Math.min(max, before+amount);
   const healed=c.hp-before;
-  if(healed>0) spawnDamageFloat(c.uid, healed, 'heal');
+  if(healed>0 && !opts.silent) spawnDamageFloat(c.uid, healed, 'heal');
   return healed;
 }
 function clearCreatureStatuses(c){
@@ -417,6 +420,9 @@ function abilityPulseSpec(c){
   if(has('sort-degat-mod')) return {kind:'dmg', dmg:1, targets:1, period:1, vfx:'sort', label:'Sort de dégât+'};
   if(has('lancer')) return {kind:'dmg', dmg:1, targets:1, period:2, vfx:'lancer', label:'Rafale'};
   if(has('sort-degat')) return {kind:'dmg', dmg:1, targets:1, period:2, vfx:'sort', label:'Sort de dégât'};
+  if(has('soins-avances')) return {kind:'heal', amount:1, targets:1, period:1, vfx:'soin', label:'Soins avancés'};
+  if(has('soins-moyen')) return {kind:'heal', amount:1, targets:1, period:2, vfx:'soin', label:'Soins moyens'};
+  if(has('soins-leger')) return {kind:'heal', amount:1, targets:1, period:3, vfx:'soin', label:'Soins légers'};
   if(has('soin-max')) return {kind:'heal', amount:2, targets:2, period:1, vfx:'soin', label:'Soin majeur'};
   if(has('soin-mod')) return {kind:'heal', amount:1, targets:1, period:1, vfx:'soin', label:'Soin+'};
   if(has('soin')) return {kind:'heal', amount:1, targets:1, period:2, vfx:'soin', label:'Soin'};
@@ -628,6 +634,10 @@ function pickRandom(arr, n){
   return copy.slice(0, Math.max(0, n));
 }
 function spawnCombatFx(vfx, fromUid, toKeys){
+  if(vfx==='lancer'){
+    spawnKnifeThrowFx(fromUid, toKeys);
+    return;
+  }
   const root=document.querySelector('.combat-table')||document.body;
   const fromEl=fromUid ? root.querySelector(`.cbt-card[data-uid="${fromUid}"]`) : null;
   const from=fromEl ? fromEl.getBoundingClientRect() : {left:window.innerWidth/2, top:window.innerHeight/2, width:40, height:40};
@@ -660,6 +670,222 @@ function spawnCombatFx(vfx, fromUid, toKeys){
     }
   });
   setTimeout(()=>fx.remove(), 700);
+}
+/** Rafale : couteau pixel qui file vers la cible (sprite ui/sprites/tools/knife.png). */
+function spawnKnifeThrowFx(fromUid, toKeys){
+  const root=document.querySelector('.combat-table')||document.body;
+  const fromEl=fromUid ? root.querySelector(`.cbt-card[data-uid="${fromUid}"]`) : null;
+  const from=elCenter(fromEl) || {x:window.innerWidth/2, y:window.innerHeight/2};
+  const ids=Array.isArray(toKeys) ? toKeys : [];
+  const SPRITE='ui/combat/knife.png';
+  ids.forEach((key, i)=>{
+    let tipEl=null;
+    if(key==='face-enemy') tipEl=document.querySelector('.cbt-tower.enemy');
+    else if(key==='face-player') tipEl=document.querySelector('.cbt-tower.ally');
+    else tipEl=root.querySelector(`.cbt-card[data-uid="${key}"]`);
+    const tip=elCenter(tipEl) || {x:from.x+80, y:from.y-40};
+    const dx=tip.x-from.x, dy=tip.y-from.y;
+    const dist=Math.hypot(dx,dy)||1;
+    const angle=Math.atan2(dy, dx);
+    // Sprite vertical pointe vers le haut → +90° pour pointer dans le sens du vol
+    const flightDeg=(angle*180/Math.PI)+90;
+    const delay=i*100;
+    const flightMs=Math.min(620, Math.max(380, dist*0.55));
+
+    setTimeout(()=>{
+      const wrap=document.createElement('div');
+      wrap.className='cbt-knife-throw';
+      wrap.style.left=`${from.x}px`;
+      wrap.style.top=`${from.y}px`;
+      wrap.style.setProperty('--kx', `${dx}px`);
+      wrap.style.setProperty('--ky', `${dy}px`);
+      wrap.style.setProperty('--krot', `${flightDeg}deg`);
+      wrap.style.setProperty('--kspin', `${flightDeg + 360}deg`);
+      wrap.style.setProperty('--kdur', `${flightMs}ms`);
+
+      const trail=document.createElement('div');
+      trail.className='cbt-knife-trail';
+      wrap.appendChild(trail);
+
+      const img=document.createElement('img');
+      img.className='cbt-knife-sprite';
+      img.src=SPRITE;
+      img.alt='';
+      img.draggable=false;
+      wrap.appendChild(img);
+
+      const spark=document.createElement('div');
+      spark.className='cbt-knife-spark';
+      wrap.appendChild(spark);
+
+      document.body.appendChild(wrap);
+      // Force reflow puis lance l’anim
+      void wrap.offsetWidth;
+      wrap.classList.add('is-flying');
+
+      setTimeout(()=>{
+        wrap.classList.add('is-impact');
+        if(tipEl){
+          tipEl.classList.add('cbt-fx-hit-lancer');
+          setTimeout(()=>tipEl.classList.remove('cbt-fx-hit-lancer'), 520);
+        }
+        // Éclats d’impact
+        for(let s=0;s<5;s++){
+          const shard=document.createElement('i');
+          shard.className='cbt-knife-shard';
+          const a=(Math.PI*2*s)/5 + Math.random()*0.4;
+          const rad=18+Math.random()*22;
+          shard.style.setProperty('--sx', `${Math.cos(a)*rad}px`);
+          shard.style.setProperty('--sy', `${Math.sin(a)*rad}px`);
+          shard.style.left=`${tip.x}px`;
+          shard.style.top=`${tip.y}px`;
+          document.body.appendChild(shard);
+          setTimeout(()=>shard.remove(), 480);
+        }
+      }, flightMs);
+
+      setTimeout(()=>wrap.remove(), flightMs+420);
+    }, delay);
+  });
+}
+/** Cordellettes de LEDs : du lanceur vers chaque cible de Soutien. */
+function spawnSoutienLedFx(fromUid, toUids){
+  const root=document.querySelector('.combat-table')||document.body;
+  const fromEl=fromUid ? root.querySelector(`.cbt-card[data-uid="${fromUid}"]`) : null;
+  const from=elCenter(fromEl) || {x:window.innerWidth/2, y:window.innerHeight/2};
+  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.classList.add('cbt-soutien-led-layer');
+  svg.setAttribute('aria-hidden','true');
+  svg.setAttribute('viewBox', `0 0 ${window.innerWidth} ${window.innerHeight}`);
+  svg.setAttribute('width', window.innerWidth);
+  svg.setAttribute('height', window.innerHeight);
+  const ids=Array.isArray(toUids) ? toUids : [];
+  const paths=[];
+  ids.forEach((uid, i)=>{
+    const tipEl=root.querySelector(`.cbt-card[data-uid="${uid}"]`);
+    if(tipEl){
+      tipEl.classList.add('cbt-fx-hit-soutien');
+      setTimeout(()=>tipEl.classList.remove('cbt-fx-hit-soutien'), 700);
+    }
+    // Pas de corde vers soi : juste le flash / heal float
+    if(uid===fromUid) return;
+    const tip=elCenter(tipEl);
+    if(!tip) return;
+    const d=aimCurvePath(from.x, from.y, tip.x, tip.y);
+    const glow=document.createElementNS('http://www.w3.org/2000/svg','path');
+    glow.setAttribute('d', d);
+    glow.setAttribute('class', 'cbt-soutien-led-glow');
+    svg.appendChild(glow);
+    const led=document.createElementNS('http://www.w3.org/2000/svg','path');
+    led.setAttribute('d', d);
+    led.setAttribute('class', 'cbt-soutien-led');
+    svg.appendChild(led);
+    paths.push({glow, led, delay:i*80});
+  });
+  const origin=document.createElement('div');
+  origin.className='cbt-soutien-origin';
+  origin.style.left=`${from.x}px`;
+  origin.style.top=`${from.y}px`;
+  document.body.appendChild(svg);
+  document.body.appendChild(origin);
+  requestAnimationFrame(()=>{
+    paths.forEach(({glow, led, delay})=>{
+      const len=Math.max(1, led.getTotalLength?.() || 240);
+      [glow, led].forEach((p)=>{
+        // Trait plein qui s’étend, puis (LED) bascule en perles
+        p.style.strokeDasharray = String(len);
+        p.style.strokeDashoffset = String(len);
+        p.style.transition = `stroke-dashoffset .58s cubic-bezier(.15,.85,.2,1) ${delay}ms, opacity .18s ease ${delay}ms`;
+        p.style.opacity = '0';
+        requestAnimationFrame(()=>{
+          p.style.opacity = '1';
+          p.style.strokeDashoffset = '0';
+        });
+      });
+      setTimeout(()=>{
+        led.style.transition = 'none';
+        led.style.strokeDasharray = '4.5 10';
+        led.classList.add('is-lit');
+      }, delay+600);
+    });
+  });
+  setTimeout(()=>{ svg.remove(); origin.remove(); }, 1100);
+}
+
+/** Soins : faisceaux de lumière curative + motes vers les alliés soignés. */
+function spawnSoinFx(fromUid, toUids){
+  const root=document.querySelector('.combat-table')||document.body;
+  const fromEl=fromUid ? root.querySelector(`.cbt-card[data-uid="${fromUid}"]`) : null;
+  const from=elCenter(fromEl) || {x:window.innerWidth/2, y:window.innerHeight/2};
+  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.classList.add('cbt-soin-beam-layer');
+  svg.setAttribute('aria-hidden','true');
+  svg.setAttribute('viewBox', `0 0 ${window.innerWidth} ${window.innerHeight}`);
+  svg.setAttribute('width', window.innerWidth);
+  svg.setAttribute('height', window.innerHeight);
+  const ids=Array.isArray(toUids) ? toUids : [];
+  const paths=[];
+  ids.forEach((uid, i)=>{
+    const tipEl=root.querySelector(`.cbt-card[data-uid="${uid}"]`);
+    if(tipEl){
+      tipEl.classList.add('cbt-fx-hit-soin');
+      setTimeout(()=>tipEl.classList.remove('cbt-fx-hit-soin'), 700);
+      // Motions de lumière qui montent sur la cible
+      for(let m=0; m<5; m++){
+        const mote=document.createElement('div');
+        mote.className='cbt-soin-mote';
+        const tip=elCenter(tipEl);
+        if(!tip) break;
+        mote.style.left=`${tip.x + (Math.random()*28-14)}px`;
+        mote.style.top=`${tip.y + 10 + Math.random()*18}px`;
+        mote.style.animationDelay=`${i*40 + m*55}ms`;
+        document.body.appendChild(mote);
+        setTimeout(()=>mote.remove(), 980);
+      }
+    }
+    if(uid===fromUid){
+      // Auto-soin : halo autour du lanceur
+      if(fromEl){
+        fromEl.classList.add('cbt-soin-self');
+        setTimeout(()=>fromEl.classList.remove('cbt-soin-self'), 720);
+      }
+      return;
+    }
+    const tip=elCenter(tipEl);
+    if(!tip) return;
+    const d=aimCurvePath(from.x, from.y, tip.x, tip.y);
+    const glow=document.createElementNS('http://www.w3.org/2000/svg','path');
+    glow.setAttribute('d', d);
+    glow.setAttribute('class', 'cbt-soin-beam-glow');
+    svg.appendChild(glow);
+    const beam=document.createElementNS('http://www.w3.org/2000/svg','path');
+    beam.setAttribute('d', d);
+    beam.setAttribute('class', 'cbt-soin-beam');
+    svg.appendChild(beam);
+    paths.push({glow, beam, delay:i*70});
+  });
+  const origin=document.createElement('div');
+  origin.className='cbt-soin-origin';
+  origin.style.left=`${from.x}px`;
+  origin.style.top=`${from.y}px`;
+  document.body.appendChild(svg);
+  document.body.appendChild(origin);
+  requestAnimationFrame(()=>{
+    paths.forEach(({glow, beam, delay})=>{
+      const len=Math.max(1, beam.getTotalLength?.() || 240);
+      [glow, beam].forEach((p)=>{
+        p.style.strokeDasharray = String(len);
+        p.style.strokeDashoffset = String(len);
+        p.style.transition = `stroke-dashoffset .52s cubic-bezier(.15,.85,.2,1) ${delay}ms, opacity .16s ease ${delay}ms`;
+        p.style.opacity = '0';
+        requestAnimationFrame(()=>{
+          p.style.opacity = '1';
+          p.style.strokeDashoffset = '0';
+        });
+      });
+    });
+  });
+  setTimeout(()=>{ svg.remove(); origin.remove(); }, 980);
 }
 
 /* Floating damage/heal numbers */
@@ -841,8 +1067,14 @@ function triggerCreaturePulse(who, card, opts={}){
     if(hits.length){
       playCreatureSfx(card, 'attack');
       combatLog(`${cardLogName(card)} (${spec.label}) : ${spec.dmg} dégât(s) → ${hits.map(h=>h.label).join(', ')}.`);
-      spawnCombatFx(spec.vfx, card.uid, hits.map(h=>h.key));
-      hits.forEach(h=>{ if(h.key && !String(h.key).startsWith('face')) flashCombatCard(h.key, 380); });
+      const fromUid=card.uid;
+      const keys=hits.map(h=>h.key);
+      const runFx=()=>{
+        spawnCombatFx(spec.vfx, fromUid, keys);
+        hits.forEach(h=>{ if(h.key && !String(h.key).startsWith('face')) flashCombatCard(h.key, 380); });
+      };
+      if(opts.enter) setTimeout(runFx, 55);
+      else runFx();
       checkWinner();
     }
   } else if(spec.kind==='heal'){
@@ -851,13 +1083,22 @@ function triggerCreaturePulse(who, card, opts={}){
       if(opts.enter) combatLog(`${cardLogName(card)} (${spec.label}) : aucun allié blessé.`);
     } else {
       for(const ally of wounded){
-        const max=ally.maxHp??ally.health;
-        ally.hp=Math.min(max, (ally.hp??ally.health)+spec.amount);
-        hits.push({key:ally.uid, label:`${cardLogName(ally)} +${spec.amount}`});
+        const healed=healCreature(ally, spec.amount, {silent:true});
+        if(healed>0) hits.push({key:ally.uid, label:`${cardLogName(ally)} +${healed}`, healed});
       }
-      combatLog(`${cardLogName(card)} (${spec.label}) soigne : ${hits.map(h=>h.label).join(', ')}.`);
-      spawnCombatFx('soin', card.uid, hits.map(h=>h.key));
-      hits.forEach(h=>flashCombatCard(h.key, 380));
+      if(hits.length){
+        combatLog(`${cardLogName(card)} (${spec.label}) soigne : ${hits.map(h=>h.label).join(', ')}.`);
+        const fromUid=card.uid;
+        const runFx=()=>{
+          spawnSoinFx(fromUid, hits.map(h=>h.key));
+          hits.forEach(h=>{
+            spawnDamageFloat(h.key, h.healed, 'heal');
+            flashCombatCard(h.key, 420);
+          });
+        };
+        if(opts.enter) setTimeout(runFx, 55);
+        else runFx();
+      }
     }
   } else if(spec.kind==='summon'){
     // À l’arrivée : arme seulement le compteur (pas d’invocation gratuite ETB).
@@ -1380,16 +1621,33 @@ function triggerEnterExtras(who, card){
   if(hasRole(card,'soutient-2') || hasRole(card,'soutient')){
     const n=hasRole(card,'soutient-2') ? 2 : 1;
     const label=n>1 ? 'Soutien 2' : 'Soutien';
-    const others=side.board.filter(c=>c.uid!==card.uid);
-    let targets=pickRandom(others, n);
+    // Pool = tout le plateau allié (y compris la source)
+    const pool=side.board.slice();
+    let targets=pickRandom(pool, n);
     if(!targets.length) targets=[card];
     targets.forEach(target=>{
-      buffCreature(target, 0, 1, {label, from:card.name, fromUid:card.uid, fromSide:who});
+      buffCreature(target, 0, 1, {
+        label,
+        from:card.name,
+        fromUid:card.uid,
+        fromSide:who,
+        silent:true,
+      });
     });
     const names=targets.map(cardLogName).join(', ');
     combatLog(`${cardLogName(card)} (${label}) : +1 PV max à ${names}.`);
-    spawnCombatFx('soin', card.uid, targets.map(t=>t.uid));
     refreshBoardAuras(who);
+    const fromUid=card.uid;
+    const toUids=targets.map(t=>t.uid);
+    // Après le render (carte posée) : cordes LED + flottants
+    setTimeout(()=>{
+      spawnSoutienLedFx(fromUid, toUids);
+      toUids.forEach(uid=>{
+        spawnDamageFloat(uid, 1, 'heal');
+        if(typeof spawnBuffSparkles==='function') spawnBuffSparkles(uid, 5);
+        flashCombatCard(uid, 480);
+      });
+    }, 50);
   }
   if(hasRole(card,'cri-frappe')){
     const defSide=who==='player'?'enemy':'player';
@@ -1650,35 +1908,52 @@ function selectAttacker(uid){
     return;
   }
   b.selectedHandUid=null; b.insertAt=null;
-  // Créature activable : choix Attaquer / Activer
-  if(canAct){
-    if(b.actionChoice===uid && !b.attackSource){ b.actionChoice=null; render(); return; }
-    b.actionChoice=uid;
-    b.attackSource=null; b.aimLock=null;
-    teardownAim();
-    combatLog(`${cardLogName(c)} : choisis Attaquer ou Activer (${activationSpec(c).label}).`);
-    render();
+  b.actionChoice=null;
+  // Re-clic sur la même créature déjà sélectionnée
+  if(b.attackSource===uid){
+    const pol=canAct ? activationPolarity(activationSpec(c)) : null;
+    if(pol==='positive'){
+      activateCreature(uid, {targetAllyUid:uid});
+      return;
+    }
+    cancelAttack();
     return;
   }
-  startAttackAim(uid);
+  startSmartAim(uid);
 }
-function startAttackAim(uid){
+function startSmartAim(uid){
   const b=state.battle; if(!b) return;
   const c=b.player.board.find(x=>x.uid===uid);
-  if(!c || !canCreatureAttack(c)) return;
-  if(b.attackSource===uid){ cancelAttack(); return; }
+  if(!c) return;
+  const canAtk=canCreatureAttack(c);
+  const canAct=canCreatureActivate(c);
+  if(!canAtk && !canAct) return;
   b.actionChoice=null;
   b.selectedHandUid=null; b.insertAt=null;
   b.attackSource=uid; b.aimLock=null;
-  const legal=legalAttackTargets('player', c);
-  combatLog(legal.assassin || isAssassin(c)
-    ? `${c.name} vise… Ranged : les Tanks ne te bloquent pas.`
-    : legal.forcedTank
-      ? `${c.name} vise… un Tank adverse protège le reste — cible-le.`
-      : `${c.name} vise… choisis une cible (tour ou mignon).`);
+  const spec=canAct ? activationSpec(c) : null;
+  const pol=activationPolarity(spec);
+  if(canAct && pol==='aggressive' && canAtk){
+    combatLog(`${cardLogName(c)} : clic ennemi = ${spec.label} (ou attaque si déjà utilisée) · Échap pour annuler.`);
+  } else if(canAct && pol==='aggressive'){
+    combatLog(`${cardLogName(c)} : clique un ennemi pour ${spec.label}.`);
+  } else if(canAct && pol==='positive' && canAtk){
+    combatLog(`${cardLogName(c)} : clic allié = ${spec.label} · clic ennemi = attaque.`);
+  } else if(canAct && pol==='positive'){
+    combatLog(`${cardLogName(c)} : clique un allié (ou toi-même) pour ${spec.label}.`);
+  } else {
+    const legal=legalAttackTargets('player', c);
+    combatLog(legal.assassin || isAssassin(c)
+      ? `${c.name} vise… Ranged : les Tanks ne te bloquent pas.`
+      : legal.forcedTank
+        ? `${c.name} vise… un Tank adverse protège le reste — cible-le.`
+        : `${c.name} vise… choisis une cible (tour ou mignon).`);
+  }
   render();
 }
-function applyActivationEffect(who, c, spec){
+/** @deprecated alias — le choix passe par le clic intelligent */
+function startAttackAim(uid){ startSmartAim(uid); }
+function applyActivationEffect(who, c, spec, opts={}){
   if(!c || !spec) return;
   breakStealth(c, 'activation');
   if(spec.effect==='regen'){
@@ -1695,7 +1970,13 @@ function applyActivationEffect(who, c, spec){
     spawnCombatFx('bouclier', c.uid, [c.uid]);
   } else if(spec.effect==='strike'){
     const hits=[];
-    for(const t of randomEnemyTargets(who, 1)){
+    let targets;
+    if(opts.target && (opts.target.type==='minion' || opts.target.type==='face')){
+      targets=[opts.target];
+    } else {
+      targets=randomEnemyTargets(who, 1);
+    }
+    for(const t of targets){
       const res=applyDamageToTarget(who, t, 2);
       if(res) hits.push(res);
     }
@@ -1712,7 +1993,8 @@ function applyActivationEffect(who, c, spec){
       if(healCreature(ally, 1)) keys.push(ally.uid);
     });
     combatLog(`${cardLogName(c)} s’active : soigne les alliés (+1 PV).`);
-    if(keys.length) spawnCombatFx('soin', c.uid, keys);
+    if(keys.length) spawnSoinFx(c.uid, keys);
+    else if(opts.targetAllyUid) spawnCombatFx('soin', c.uid, [opts.targetAllyUid]);
   } else if(spec.effect==='purge'){
     const cleaned=clearCreatureStatuses(c);
     const healed=healCreature(c, 2);
@@ -1720,7 +2002,7 @@ function applyActivationEffect(who, c, spec){
     spawnCombatFx('soin', c.uid, [c.uid]);
   }
 }
-function activateCreature(uid){
+function activateCreature(uid, opts={}){
   const b=state.battle; if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
   const c=b.player.board.find(x=>x.uid===uid);
   if(!c || !canCreatureActivate(c)) return;
@@ -1730,8 +2012,63 @@ function activateCreature(uid){
   c.exhausted=true;
   b.actionChoice=null;
   b.attackSource=null;
-  applyActivationEffect('player', c, spec);
+  teardownAim();
+  applyActivationEffect('player', c, spec, opts);
+  checkWinner();
   render();
+}
+function smartClickEnemy(uid){
+  const b=state.battle;
+  if(!b||b.active!=='player'||b.phase!=='main'||!b.attackSource||b.winner) return;
+  const src=b.player.board.find(c=>c.uid===b.attackSource);
+  if(!src) return;
+  const spec=activationSpec(src);
+  if(canCreatureActivate(src) && activationPolarity(spec)==='aggressive'){
+    activateCreature(src.uid, {target:{type:'minion', uid}});
+    return;
+  }
+  if(canCreatureAttack(src)){
+    confirmAttackMinion(uid);
+    return;
+  }
+  combatLog(`${cardLogName(src)} ne peut pas agir sur cette cible.`);
+  render();
+}
+function smartClickFace(){
+  const b=state.battle;
+  if(!b||b.active!=='player'||b.phase!=='main'||!b.attackSource||b.winner) return;
+  const src=b.player.board.find(c=>c.uid===b.attackSource);
+  if(!src) return;
+  const spec=activationSpec(src);
+  if(canCreatureActivate(src) && activationPolarity(spec)==='aggressive'){
+    activateCreature(src.uid, {target:{type:'face'}});
+    return;
+  }
+  if(canCreatureAttack(src)){
+    confirmAttackFace();
+    return;
+  }
+  combatLog(`${cardLogName(src)} ne peut pas frapper la tour.`);
+  render();
+}
+function smartClickAlly(uid){
+  const b=state.battle;
+  if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
+  if(b.attackSource){
+    const src=b.player.board.find(c=>c.uid===b.attackSource);
+    if(src){
+      const spec=activationSpec(src);
+      if(canCreatureActivate(src) && activationPolarity(spec)==='positive'){
+        activateCreature(src.uid, {targetAllyUid:uid});
+        return;
+      }
+      if(b.attackSource===uid){
+        cancelAttack();
+        return;
+      }
+    }
+  }
+  selectAttacker(uid);
 }
 function cancelAttack(){
   const b=state.battle; if(!b) return;
@@ -2264,25 +2601,32 @@ function renderBoardRow(side, who){
     const c=board[i];
     const isSource=b.attackSource===c.uid;
     if(who==='enemy' && playerAiming){
-      const ok=legal.minions.some(x=>x.uid===c.uid);
+      const canAct=aimAtk && canCreatureActivate(aimAtk);
+      const canAtkSrc=aimAtk && canCreatureAttack(aimAtk);
+      const pol=canAct ? activationPolarity(activationSpec(aimAtk)) : null;
+      let ok=false;
+      if(pol==='aggressive'){
+        ok=!isStealthed(c);
+      } else if(canAtkSrc && legal){
+        ok=legal.minions.some(x=>x.uid===c.uid);
+      }
       parts.push(miniCard(c,{
-        onclick: ok ? `confirmAttackMinion('${c.uid}')` : '',
+        onclick: ok ? `smartClickEnemy('${c.uid}')` : '',
         targetable:ok,
-        blocked:!ok,
+        blocked:playerAiming && !ok,
         stealthed: isStealthed(c),
-        forcedTank:!!legal.forcedTank,
+        forcedTank:!!(legal && legal.forcedTank && pol!=='aggressive' && canAtkSrc),
         selected:false,
       }));
     } else if(isPlayer && b.active==='player' && b.phase==='main' && !b.winner){
       const canAtk=canCreatureAttack(c);
       const canAct=canCreatureActivate(c);
-      const choosing=b.actionChoice===c.uid;
       parts.push(miniCard(c,{
-        onclick:`selectAttacker('${c.uid}')`,
-        selected:isSource || choosing,
+        onclick: playerAiming ? `smartClickAlly('${c.uid}')` : `selectAttacker('${c.uid}')`,
+        selected:isSource,
         aiming:isSource,
-        canAttack:canAtk && !isSource && !choosing,
-        canActivate:canAct && !isSource && !choosing,
+        canAttack:canAtk && !isSource,
+        canActivate:canAct && !isSource,
         // Vortex seulement pendant le tour d’invocation ; justPlayed reste pour le mal d’attaque
         summonSick: !!c.justPlayed && b.active===who,
         exhausted: !!c.exhausted && !canAtk && !canAct,
@@ -2352,17 +2696,15 @@ function renderHearts(hp, maxHp=30){
 function renderManaCrystals(p){
   const cur=p.mana||0;
   const max=p.maxMana||0;
-  let crystals='';
-  for(let i=0;i<10;i++){
-    let src='ui/combat/star_03.png';
-    let cls='off locked';
-    if(i < cur){ src='ui/combat/star_01.png'; cls='on'; }
-    else if(i < max){ src='ui/combat/star_03.png'; cls='off'; }
-    crystals+=`<img class="cbt-crystal ${cls}" src="${src}" alt="" width="14" height="13" title="Mana ${cur}/${max}">`;
-  }
+  const neutral=`<span class="cbt-colorman cbt-neutralman ${cur>0?'on':''}" style="--mana:#6eb8e8" title="Mana neutre ${cur}/${max}">
+      <span class="cbt-mana-gem cbt-mana-gem-oval">
+        <img src="ui/combat/star_sm.png" alt="Mana" draggable="false">
+        <i class="cbt-mana-shine" aria-hidden="true"></i>
+      </span>
+      <b>${cur}</b><em class="cbt-mana-max">/${max}</em>
+    </span>`;
   return `<div class="cbt-mana-panel">
-    <div class="cbt-crystals" title="Mana de base ${cur}/${max}">${crystals}<span class="cbt-mana-num">${cur}/${max}</span></div>
-    <div class="cbt-color-row">${renderColorMana(p)}</div>
+    <div class="cbt-color-row">${neutral}${renderColorMana(p)}</div>
   </div>`;
 }
 function renderColorMana(p){
@@ -2485,26 +2827,28 @@ function renderCombat(){
   const handCanPlay=!mulligan && b.active==='player' && b.phase==='main' && !b.winner && !b.attackSource;
   const playerAiming=!mulligan && b.active==='player' && b.phase==='main' && !!b.attackSource
     && b.player.board.some(c=>c.uid===b.attackSource);
-  const choosingAction=!mulligan && b.active==='player' && b.phase==='main' && !!b.actionChoice
-    && !b.attackSource && b.player.board.some(c=>c.uid===b.actionChoice);
-  const actionCard=choosingAction ? b.player.board.find(c=>c.uid===b.actionChoice) : null;
-  const actionSpec=actionCard ? activationSpec(actionCard) : null;
   const aimAtk=playerAiming ? b.player.board.find(c=>c.uid===b.attackSource) : null;
   const aimLegal=playerAiming ? legalAttackTargets('player', aimAtk) : null;
+  const aimCanAct=!!(aimAtk && canCreatureActivate(aimAtk));
+  const aimPol=aimCanAct ? activationPolarity(activationSpec(aimAtk)) : null;
+  const aimSpec=aimCanAct ? activationSpec(aimAtk) : null;
   const aimName=b.attackSource
     ? (b.player.board.find(c=>c.uid===b.attackSource)||b.enemy.board.find(c=>c.uid===b.attackSource))?.name
     : null;
   const statusLabel = b.winner ? 'Partie terminée'
     : mulligan ? 'Main d’ouverture'
     : b.phase==='enemy_attack' ? 'Assaut adverse'
-    : choosingAction ? `Action — ${actionCard?.name||'créature'}`
     : playerAiming ? `Visée — ${aimName||'créature'}`
     : b.active==='player' ? 'Ton tour' : 'Tour adverse';
-  const aimHint = aimLegal?.assassin
-    ? `<strong>Ranged</strong> : ignore les Tanks et n’encaisse pas de riposte.`
-    : aimLegal?.forcedTank
-      ? `Un <strong>Tank</strong> protège le camp adverse — tu dois le frapper.`
-      : `Pointe la <strong>tour adverse</strong> ou un <strong>mignon</strong> — la flèche jaune suit ton geste.`;
+  const aimHint = aimPol==='aggressive'
+    ? `Clique un <strong>ennemi</strong> pour <strong>${aimSpec?.label||'Activer'}</strong>${canCreatureAttack(aimAtk)?' (prioritaire sur l’attaque)':''}.`
+    : aimPol==='positive'
+      ? `Clique un <strong>allié</strong> pour <strong>${aimSpec?.label||'Activer'}</strong>${canCreatureAttack(aimAtk)?' · un ennemi pour attaquer':''}.`
+      : aimLegal?.assassin
+        ? `<strong>Ranged</strong> : ignore les Tanks et n’encaisse pas de riposte.`
+        : aimLegal?.forcedTank
+          ? `Un <strong>Tank</strong> protège le camp adverse — tu dois le frapper.`
+          : `Pointe la <strong>tour adverse</strong> ou un <strong>mignon</strong> — la flèche jaune suit ton geste.`;
   const midControls = b.winner ? `<span class="cbt-wait">Partie terminée</span>`
     : mulligan ? `
       <div class="cbt-mulligan-panel">
@@ -2515,19 +2859,9 @@ function renderCombat(){
           <button class="cbt-start" type="button" onclick="redrawOpeningHand()">Repiocher</button>
         </div>
       </div>`
-    : choosingAction ? `
-      <div class="cbt-aim-panel cbt-action-panel">
-        <b>${actionCard.name}</b>
-        <p>Attaquer, ou <strong>Activer : ${actionSpec?.label||'effet'}</strong> (ne pourra plus attaquer ce tour).</p>
-        <div class="cbt-mulligan-actions">
-          ${canCreatureAttack(actionCard)?`<button class="cbt-start" type="button" onclick="startAttackAim('${actionCard.uid}')">Attaquer</button>`:''}
-          <button class="cbt-end" type="button" onclick="activateCreature('${actionCard.uid}')">Activer</button>
-          <button class="cbt-end" type="button" onclick="cancelAttack()">Annuler</button>
-        </div>
-      </div>`
     : playerAiming ? `
-      <div class="cbt-aim-panel${aimLegal?.forcedTank?' tank-lock':''}${aimLegal?.assassin?' assassin-lock':''}">
-        <b>${aimLegal?.assassin?'Ranged — libre':aimLegal?.forcedTank?'Tank adverse !':'Choisis une cible'}</b>
+      <div class="cbt-aim-panel${aimLegal?.forcedTank && aimPol!=='aggressive'?' tank-lock':''}${aimLegal?.assassin?' assassin-lock':''}">
+        <b>${aimPol==='aggressive'?(aimSpec?.label||'Sort agressif'):aimPol==='positive'?(aimSpec?.label||'Sort positif'):aimLegal?.assassin?'Ranged — libre':aimLegal?.forcedTank?'Tank adverse !':'Choisis une cible'}</b>
         <p>${aimHint}</p>
         <button class="cbt-end" type="button" onclick="cancelAttack()">Annuler (Échap)</button>
       </div>`
@@ -2549,16 +2883,18 @@ function renderCombat(){
       <path class="cbt-aim-stroke" d="" fill="none" stroke="#ffe14a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="11 9"/>
       <polygon class="cbt-aim-head" points="0,0 0,0 0,0" fill="#ffe14a" stroke="#f5c518" stroke-width="1"/>
     </svg>` : '';
-  const canHitFace=!!(playerAiming && aimLegal?.face);
+  const canHitFace=!!(playerAiming && (
+    aimPol==='aggressive' || (canCreatureAttack(aimAtk) && aimLegal?.face)
+  ));
   const enemyTowerClick = canHitFace
-    ? 'confirmAttackFace()'
+    ? 'smartClickFace()'
     : '';
   const enemyTowerOpts={
     targetable:canHitFace,
     blocked:playerAiming && !canHitFace,
     onclick:enemyTowerClick,
     title: canHitFace
-      ? 'Attaquer la tour adverse'
+      ? (aimPol==='aggressive' ? `${aimSpec?.label||'Activer'} — tour adverse` : 'Attaquer la tour adverse')
       : (playerAiming ? 'Protégée par un Tank' : undefined),
   };
   const logHtml=`<aside class="cbt-log" aria-label="Journal de combat">
@@ -2580,8 +2916,6 @@ function renderCombat(){
     ${logHtml}
     ${sideControls}
   </div>`;
-  const showDock=ensureCombatPrefs().showLog!==false;
-  const floatActions=!showDock ? `<div class="cbt-float-actions" aria-label="Actions de tour">${midControls}</div>` : '';
   const playerHandHtml=`<div class="cbt-hand-bar" aria-label="Main">${b.player.hand.map(c=>{
             const ok=!mulligan && canAfford(b.player,c) && b.player.board.length<8;
             return miniCard(c,{
@@ -2611,9 +2945,8 @@ function renderCombat(){
       ${renderCombatConfigBar()}
     </div>
     <div class="cbt-body">
-      ${showDock?leftDock:''}
+      ${leftDock}
       <div class="cbt-stage">
-        ${floatActions}
         <div class="cbt-side enemy-hud">
           <div class="cbt-enemy-res">
             ${renderManaCrystals(b.enemy)}
@@ -2631,9 +2964,9 @@ function renderCombat(){
           </div>
         </div>
         <div class="cbt-side ally-hud">
-          ${renderTowerSprite('player')}
-          ${renderManaCrystals(b.player)}
           ${renderPrayerRow('player')}
+          ${renderManaCrystals(b.player)}
+          ${renderTowerSprite('player')}
         </div>
       </div>
     </div>
@@ -2943,6 +3276,9 @@ window.activateCreature=activateCreature;
 window.cancelAttack=cancelAttack;
 window.confirmAttackFace=confirmAttackFace;
 window.confirmAttackMinion=confirmAttackMinion;
+window.smartClickEnemy=smartClickEnemy;
+window.smartClickAlly=smartClickAlly;
+window.smartClickFace=smartClickFace;
 window.syncAttackAim=syncAttackAim;
 window.endPlayerTurn=endPlayerTurn;
 window.tryPlaceSelectedPrayer=tryPlaceSelectedPrayer;
@@ -2952,6 +3288,7 @@ window.removePrayer=removePrayer;
 window.showCombatCardPreview=showCombatCardPreview;
 window.hideCombatCardPreview=hideCombatCardPreview;
 window.toggleCombatFullscreen=toggleCombatFullscreen;
+window.isCombatFullscreen=isCombatFullscreen;
 window.toggleCombatDensity=toggleCombatDensity;
 window.toggleCombatLog=toggleCombatLog;
 window.setCombatLeftSplit=setCombatLeftSplit;

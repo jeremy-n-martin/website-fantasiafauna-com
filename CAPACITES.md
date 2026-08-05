@@ -245,7 +245,8 @@ Ids définis dans [`game.js`](./game.js) (à jour avec le code) :
 | `vol` | Vol |
 | `lancer` / `lancer-mod` / `lancer-max` | Rafale (+ / majeure) |
 | `sort-degat` / `sort-degat-mod` / `sort-degat-max` | Sort de dégât (+ / Tempête) |
-| `soin` / `soin-mod` / `soin-max` | Soin (+ / majeur) |
+| `soin` / `soin-mod` / `soin-max` | Soin (+ / majeur) — legacy |
+| `soins-leger` / `soins-moyen` / `soins-avances` | Soins légers (3 tours) / moyens (2) / avancés (1) |
 | `invocation` / `invocation-rapide` / `invocation-intime` | Invocation (rapide / incessante) |
 | `etendard` | Étendard |
 | `formation` | Formation |
