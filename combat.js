@@ -3,6 +3,7 @@
 const CBT_PREFS_KEY='ff-combat-prefs';
 /** Taille max de la main (au-delà, on ne pioche plus). */
 const HAND_MAX=8;
+const PRAYER_SLOTS=5;
 function loadCombatPrefs(){
   const defaults={ density:'compact', zoom:'md', showLog:true, leftSplit:'half' };
   try{
@@ -99,31 +100,32 @@ function shuffleInPlace(arr){
 function pickN(arr,n){
   const copy=arr.slice(); shuffleInPlace(copy); return copy.slice(0,n);
 }
-const ACTIVATION_SPECS = [
-  {id:'activer-regen', label:'Régénération', effect:'regen'},
-  {id:'activer-tank', label:'Rempart', effect:'tank'},
-  {id:'activer-bouclier', label:'Bouclier divin', effect:'shield'},
-  {id:'activer-frappe', label:'Frappe', effect:'strike'},
-  {id:'activer-soin', label:'Soins', effect:'healAll'},
-  {id:'activer-purge', label:'Purification', effect:'purge'},
-];
+const ACTIVATION_SPECS = [];
 const ON_HIT_EFFECTS = [
   {role:'poison', status:'poison', label:'Poison', vfx:'poison'},
-  {role:'brulant', status:'brulant', label:'Feu', vfx:'brulant'},
-  {role:'gelant', freeze:true, label:'Gel', vfx:'gelant'},
-  {role:'affaiblir', weaken:1, label:'Affaibli', vfx:'affaiblir'},
 ];
+/** Sorts utilisables seuls (à la pose) ou via Invocation : X / Canalisation N : X. */
+const SPELL_DEFS = {
+  entrave: { id:'entrave', label:'Entrave' },
+  rappel: { id:'rappel', label:'Rappel' },
+};
+const PULSE_INVOCATION_IDS = new Set(['invocation','invocation-rapide','invocation-intime']);
+function parseModifierAbility(id){
+  if(!id || PULSE_INVOCATION_IDS.has(id)) return null;
+  // Sort nu = lancé à l’arrivée (pas d’attaque requise)
+  if(SPELL_DEFS[id]) return { kind:'battlecry', spell:id, id };
+  let m = String(id).match(/^invocation-(.+)$/);
+  if(m && SPELL_DEFS[m[1]]) return { kind:'battlecry', spell:m[1], id };
+  m = String(id).match(/^canalisation-([123])-(.+)$/);
+  if(m && SPELL_DEFS[m[2]]) return { kind:'channel', turns:Number(m[1]), spell:m[2], id };
+  return null;
+}
+function modifierAbilitiesOn(c){
+  const list = typeof creatureAbilityList==='function' ? creatureAbilityList(c) : (c?.abilities||[]);
+  return list.map(parseModifierAbility).filter(Boolean);
+}
 const KEYWORD_ROLES = new Set([
-  'lancer','lancer-mod','lancer-max','sort-degat','sort-degat-mod','sort-degat-max',
-  'soin','soin-mod','soin-max','soins-leger','soins-moyen','soins-avances',
-  'invocation','invocation-rapide','invocation-intime',
-  'etendard','formation',
-  'activer-regen','activer-tank','activer-bouclier','activer-frappe','activer-soin','activer-purge',
-  'bouclier-divin','double-attaque','charge','celerite','camouflage','vol-de-vie','lien-de-vie',
-  'pietinement','transpercer','contact-mortel','dernier-souffle',
-  'cri-frappe','cri-exorcisme','furie','allie-meurt','quand-tue','affaiblir','survie',
-  'poison','brulant','gelant','fin-tour-tir','fin-tour-buff','debut-tour-soin','debut-tour-tir',
-  'quand-blesse','quand-invoque','apres-attaque','jetons-1-1','donner-buff','soutient','soutient-2','vol',
+  'tank','ranged','vol','pietinement','poison','bouclier-divin',
 ]);
 function cloneCard(c){
   const roles=[...(c.roles||[])];
@@ -165,6 +167,7 @@ function cloneCard(c){
     pendingTank: false,
     frozen: false,
     skipNextAttack: false,
+    channel: null,
     survieUsed: false,
     stealthed: false,
     statuses: [],
@@ -533,10 +536,11 @@ function dealDamageToCreature(who, c, dmg, opts={}){
   }
   return dmg;
 }
-function killCreature(who, c, reason='') {
+function killCreature(who, c, reason='', killer=null) {
   const b=state.battle; if(!b||!c) return false;
   const side=b[who];
   if(!side.board.some(x=>x.uid===c.uid)) return false;
+  window.FFBalance?.trackKill?.(who, c, killer||null);
   playCreatureSfx(c, 'wince');
   side.board=side.board.filter(x=>x.uid!==c.uid);
   combatLog(`${cardLogName(c)} meurt${reason?` (${reason})`:''}.`);
@@ -1236,7 +1240,10 @@ function colorManaTotal(p){
 }
 function ensurePrayerSide(p){
   if(!p) return;
-  if(!Array.isArray(p.prayer) || p.prayer.length!==3) p.prayer=[null, null, null];
+  if(!Array.isArray(p.prayer) || p.prayer.length!==PRAYER_SLOTS){
+    const next=Array.from({length:PRAYER_SLOTS}, (_,i)=> (Array.isArray(p.prayer) ? p.prayer[i] : null) ?? null);
+    p.prayer=next;
+  }
   if(typeof p.prayedThisTurn!=='boolean') p.prayedThisTurn=false;
 }
 function addColorMana(p, faction, amount=1){
@@ -1266,7 +1273,7 @@ function placePrayer(who, handUid, slotIndex){
   const p=b[who];
   ensurePrayerSide(p);
   const idx=slotIndex|0;
-  if(idx<0 || idx>2) return false;
+  if(idx<0 || idx>=PRAYER_SLOTS) return false;
   if(p.prayer[idx]) return false;
   if(p.prayedThisTurn){
     if(who==='player') combatLog('Tu as déjà placé une prière ce tour.');
@@ -1288,7 +1295,7 @@ function removePrayer(who, slotIndex){
   const p=b[who];
   ensurePrayerSide(p);
   const idx=slotIndex|0;
-  if(idx<0 || idx>2) return false;
+  if(idx<0 || idx>=PRAYER_SLOTS) return false;
   const card=p.prayer[idx];
   if(!card) return false;
   p.prayer[idx]=null;
@@ -1348,6 +1355,7 @@ function payCost(p, card){
 function combatLog(msg){
   const b=state.battle;
   if(!b) return;
+  if(b.autoplay?.headless) return;
   b.log.unshift(msg);
   b.log=b.log.slice(0,40);
 }
@@ -1410,7 +1418,7 @@ function makeSide(factions, unique=15, copies=1){
     hp:30, mana:0, maxMana:0, turnCount:0,
     colorMana:Object.fromEntries(factions.map(f=>[f,0])),
     deck, hand, board:[],
-    prayer:[null, null, null],
+    prayer:Array.from({length:PRAYER_SLOTS}, ()=>null),
     prayedThisTurn:false,
     factions:factions.slice(),
     startingDeckSize,
@@ -1465,6 +1473,7 @@ function startCombat(){
   render();
 }
 function backToCombatLobby(){
+  if(state.balanceSession?.status==='running') window.FFBalance?.abortSession?.();
   state.combatView='lobby';
   state.battle=null;
   if(state.campaign && state.campaign.phase==='battle') state.campaign.phase='map';
@@ -1524,7 +1533,7 @@ function beginTurn(who, isOpening=false){
   const p=b[who];
   ensurePrayerSide(p);
   p.turnCount += 1;
-  p.maxMana=Math.min(10, p.turnCount);
+  p.maxMana=Math.min(10, Math.max(0, p.turnCount-1));
   p.mana=p.maxMana;
   p.prayedThisTurn=false;
   grantPrayerMana(who);
@@ -1554,7 +1563,7 @@ function beginTurn(who, isOpening=false){
     if(c.skipNextAttack){
       c.frozen=true;
       c.skipNextAttack=false;
-      combatLog(`${cardLogName(c)} est gelé et ne peut pas attaquer.`);
+      combatLog(`${cardLogName(c)} est entravé et ne peut pas attaquer.`);
     } else {
       c.frozen=false;
     }
@@ -1581,13 +1590,32 @@ function beginTurn(who, isOpening=false){
         spawnCombatFx('lancer', c.uid, hits.map(h=>h.key));
       }
     }
+    // Canalisation : décompte au début du tour du propriétaire
+    if(!isOpening && c.channel && c.channel.spell){
+      c.channel.turnsLeft = Math.max(0, (c.channel.turnsLeft|0) - 1);
+      if(c.channel.turnsLeft<=0){
+        const spell=c.channel.spell;
+        const turns=c.channel.turnsTotal|0;
+        c.channel=null;
+        combatLog(`${cardLogName(c)} termine sa canalisation (${turns}) : ${SPELL_DEFS[spell]?.label||spell}.`);
+        castSpellEffect(who, c, spell, {via:'canalisation'});
+      } else {
+        combatLog(`${cardLogName(c)} canalise… (${c.channel.turnsLeft} tour(s)).`);
+      }
+    }
     c.canAttack=!c.frozen;
     c.exhausted=!!c.frozen;
   }
   if(!isOpening) tickBoardAbilities(who);
   checkWinner();
-  combatLog(`Tour ${p.turnCount} — ${who==='player'?'à toi':'adversaire'} (mana ${p.mana}/${p.maxMana}).`);
-  if(who==='enemy') setTimeout(()=>enemyTurn(), 350);
+  const dual=!!b.autoplay?.dual;
+  const whoLabel=dual
+    ? (who==='player'?'Camp A':'Camp B')
+    : (who==='player'?'à toi':'adversaire');
+  combatLog(`Tour ${p.turnCount} — ${whoLabel} (mana ${p.mana}/${p.maxMana}).`);
+  if(b.winner) return;
+  if(who==='enemy') setTimeout(()=>enemyTurn(), aiDelay(350));
+  else if(dual) setTimeout(()=>aiTurn('player'), aiDelay(350));
 }
 function runEndOfTurnEffects(who){
   const b=state.battle; if(!b) return;
@@ -1596,11 +1624,6 @@ function runEndOfTurnEffects(who){
   for(const uid of uids){
     const c=side.board.find(x=>x.uid===uid);
     if(!c) continue;
-    if(hasStatus(c,'brulant')){
-      dealDamageToCreature(who, c, 1, {fromStrike:false, skipFury:false});
-      combatLog(`${cardLogName(c)} brûle (1 dégât).`);
-      if(c.hp<=0){ killCreature(who, c, 'feu'); continue; }
-    }
     if(hasRole(c,'fin-tour-tir')){
       const hits=[];
       for(const t of randomEnemyTargets(who, 1)){
@@ -1624,6 +1647,93 @@ function runEndOfTurnEffects(who){
     }
   }
   checkWinner();
+}
+function applyEntrave(def, fromCard){
+  if(!def) return false;
+  def.skipNextAttack=true;
+  combatLog(`${cardLogName(def)} est entravé${fromCard?` (${cardLogName(fromCard)})`:''}.`);
+  spawnCombatFx('entrave', fromCard?.uid||def.uid, [def.uid]);
+  return true;
+}
+function bounceCreatureToHand(ownerSide, creature, fromCard){
+  const b=state.battle; if(!b||!creature) return false;
+  const side=b[ownerSide];
+  if(!side.board.some(x=>x.uid===creature.uid)) return false;
+  if(side.hand.length>=HAND_MAX){
+    combatLog(`Rappel échoué : main pleine (${cardLogName(creature)}).`);
+    return false;
+  }
+  side.board=side.board.filter(x=>x.uid!==creature.uid);
+  // Remise en main : reset d’état de plateau
+  creature.justPlayed=true;
+  creature.canAttack=false;
+  creature.exhausted=false;
+  creature.activatedThisTurn=false;
+  creature.attacksThisTurn=0;
+  creature.frozen=false;
+  creature.skipNextAttack=false;
+  creature.channel=null;
+  creature.tempTank=false;
+  creature.pendingTank=false;
+  creature.pendingRegen=false;
+  creature.stealthed=hasRole(creature,'camouflage');
+  creature.divineShield=hasRole(creature,'bouclier-divin');
+  creature.statuses=[];
+  creature.auraAtk=0;
+  creature.auraHp=0;
+  creature.auraMods=[];
+  creature._appliedAuraHp=0;
+  creature.hp=creature.printedHealth ?? creature.baseMaxHp ?? creature.health ?? creature.hp;
+  creature.maxHp=creature.printedHealth ?? creature.baseMaxHp ?? creature.health ?? creature.maxHp;
+  creature.attack=creature.printedAttack ?? creature.baseAttack ?? creature.attack;
+  creature.baseAttack=creature.printedAttack ?? creature.baseAttack ?? creature.attack;
+  creature.baseMaxHp=creature.printedHealth ?? creature.baseMaxHp ?? creature.maxHp;
+  side.hand.push(creature);
+  sortHand(side.hand);
+  combatLog(`${cardLogName(creature)} est rappelé en main${fromCard?` (${cardLogName(fromCard)})`:''}.`);
+  spawnCombatFx('sort', fromCard?.uid||creature.uid, [creature.uid]);
+  refreshBoardAuras(ownerSide);
+  return true;
+}
+function castSpellEffect(casterSide, caster, spellId, opts={}){
+  const b=state.battle; if(!b||!spellId) return false;
+  const defSide=casterSide==='player'?'enemy':'player';
+  const foes=b[defSide].board.filter(c=>!isStealthed(c));
+  if(spellId==='entrave'){
+    const target=pickRandom(foes,1)[0];
+    if(!target){
+      combatLog(`${cardLogName(caster)} (Entrave) : aucune cible.`);
+      return false;
+    }
+    return applyEntrave(target, caster);
+  }
+  if(spellId==='rappel'){
+    const target=pickRandom(foes,1)[0];
+    if(!target){
+      combatLog(`${cardLogName(caster)} (Rappel) : aucune cible.`);
+      return false;
+    }
+    return bounceCreatureToHand(defSide, target, caster);
+  }
+  combatLog(`Sort inconnu : ${spellId}`);
+  return false;
+}
+function startChannelFromCard(who, card){
+  const mods=modifierAbilitiesOn(card).filter(m=>m.kind==='channel');
+  if(!mods.length) return;
+  // Une seule canalisation active (la première)
+  const m=mods[0];
+  card.channel={ spell:m.spell, turnsLeft:m.turns, turnsTotal:m.turns };
+  combatLog(`${cardLogName(card)} canalise ${SPELL_DEFS[m.spell]?.label||m.spell} (${m.turns} tour(s)).`);
+}
+function triggerBattlecryModifiers(who, card){
+  const mods=modifierAbilitiesOn(card).filter(m=>m.kind==='battlecry');
+  mods.forEach(m=>{
+    const label=SPELL_DEFS[m.spell]?.label||m.spell;
+    const via=String(m.id).startsWith('invocation-') ? `Invocation : ${label}` : label;
+    combatLog(`${cardLogName(card)} (${via}).`);
+    castSpellEffect(who, card, m.spell, {via: String(m.id).startsWith('invocation-') ? 'invocation' : 'spell'});
+  });
 }
 function triggerEnterExtras(who, card){
   const b=state.battle; if(!b||!card) return;
@@ -1727,6 +1837,8 @@ function triggerEnterExtras(who, card){
     }
     refreshBoardAuras(defSide);
   }
+  triggerBattlecryModifiers(who, card);
+  startChannelFromCard(who, card);
   notifySummonTriggers(who, card);
 }
 function notifySummonTriggers(who, summoned){
@@ -1753,10 +1865,23 @@ function drawOne(p, who){
 }
 function checkWinner(){
   const b=state.battle; if(!b) return;
+  if(b.winner) return;
   const pDead=b.player.hp<=0, eDead=b.enemy.hp<=0;
   if(pDead && eDead){ b.winner='draw'; b.phase='ended'; combatLog('Match nul: les deux tours tombent.'); }
-  else if(pDead){ b.winner='enemy'; b.phase='ended'; combatLog('Défaite: ta tour est détruite.'); }
-  else if(eDead){ b.winner='player'; b.phase='ended'; combatLog('Victoire: la tour adverse tombe.'); }
+  else if(pDead){ b.winner='enemy'; b.phase='ended'; combatLog(b.autoplay?.dual?'Camp B gagne: tour A détruite.':'Défaite: ta tour est détruite.'); }
+  else if(eDead){ b.winner='player'; b.phase='ended'; combatLog(b.autoplay?.dual?'Camp A gagne: tour B détruite.':'Victoire: la tour adverse tombe.'); }
+  else if(b.autoplay?.dual){
+    const turns=(b.player.turnCount|0)+(b.enemy.turnCount|0);
+    if(turns>=50){
+      if(b.player.hp===b.enemy.hp){ b.winner='draw'; combatLog('Limite de tours — match nul.'); }
+      else if(b.player.hp>b.enemy.hp){ b.winner='player'; combatLog('Limite de tours — Camp A mène aux PV.'); }
+      else { b.winner='enemy'; combatLog('Limite de tours — Camp B mène aux PV.'); }
+      b.phase='ended';
+    }
+  }
+  if(b.winner && b.autoplay?.dual && !b._balanceRecorded){
+    setTimeout(()=>window.FFBalance?.onMatchEnd?.(), aiDelay(700));
+  }
 }
 function placementSlots(board){
   const n=board.length;
@@ -1769,7 +1894,7 @@ function placementSlots(board){
 function selectHandCard(uid){
   if(window._cbtSuppressHandClick) return;
   const b=state.battle;
-  if(!b||b.active!=='player'||b.phase!=='main'||b.winner) return;
+  if(!b||b.autoplay?.dual||b.active!=='player'||b.phase!=='main'||b.winner) return;
   const card=b.player.hand.find(c=>c.uid===uid);
   if(!card) return;
   // Clic court : invoquer si possible, sinon sélection pour la prière
@@ -1823,13 +1948,18 @@ function playCardOn(side, card, idx, who){
     card.canAttack=false;
     card.noActivateThisTurn=true;
   }
+  const dual=!!state.battle?.autoplay?.dual;
+  const whoLabel=dual
+    ? (who==='player'?'Camp A invoque':'Camp B invoque')
+    : (who==='player'?'Tu invoques':'Adverse invoque');
   const rushNote=hasRole(card,'celerite')?' — Célérité !':hasRole(card,'charge')?' — Charge !':'';
-  combatLog(`${who==='player'?'Tu invoques':'Adverse invoque'} ${cardLogName(card)} (${card.cost})${rushNote}.`);
+  combatLog(`${whoLabel} ${cardLogName(card)} (${card.cost})${rushNote}.`);
   playCreatureSfx(card, 'move');
   flashCombatCard(card.uid, 520);
   triggerEnterExtras(who, card);
   triggerCreaturePulse(who, card, {enter:true});
   refreshBoardAuras(who, {fxSource: card});
+  window.FFBalance?.trackPlay?.(who, card);
   return true;
 }
 /* —— Ciblage type Hearthstone : flèche jaune vers tour ou mignon —— */
@@ -1943,7 +2073,7 @@ function boardTokenHtml(c){
     </span>`;
 }
 /** Cibles légales pour un assaut (Tank, Vol, Assassin / Camouflage).
- * Vol : seules les créatures avec Vol peuvent attaquer une créature volante.
+ * Vol : seules Vol ou Ranged peuvent attaquer une créature volante.
  * Une attaquante volante n’est bloquée que par Tank ou Vol (ignore le reste pour aller au visage / choisir).
  */
 function legalAttackTargets(atkSide, atkCreature){
@@ -1955,17 +2085,18 @@ function legalAttackTargets(atkSide, atkCreature){
     ? b[atkSide].board.find(c=>c.uid===b.attackSource)
     : null);
   const atkFlying=hasVol(atk);
+  const atkRanged=!!(atk && isAssassin(atk));
 
-  // Volantes attaquables seulement par Vol — exception : les Tanks restent toujours ciblables
-  let pool=visible.filter(c=>atkFlying || !hasVol(c) || isTank(c));
+  // Volantes attaquables par Vol ou Ranged — exception : les Tanks restent toujours ciblables
+  let pool=visible.filter(c=>atkFlying || atkRanged || !hasVol(c) || isTank(c));
 
-  if(atk && isAssassin(atk)){
+  // Ranged seul ignore les Tanks ; Vol (sans Ranged) reste forcé de les attaquer
+  if(atkRanged){
     return { face:true, minions:pool.slice(), forcedTank:false, assassin:true, flying:atkFlying };
   }
 
   const tanks=pool.filter(isTank);
   if(tanks.length){
-    // Les Tanks bloquent aussi les volants
     return { face:false, minions:tanks, forcedTank:true, assassin:false, flying:atkFlying };
   }
 
@@ -1990,7 +2121,7 @@ function selectAttacker(uid){
   if(!canAtk && !canAct){
     combatLog(c.justPlayed
       ? `${c.name} a le mal d’invocation.`
-      : c.frozen ? `${c.name} est gelé.`
+      : c.frozen ? `${c.name} est entravé.`
       : c.activatedThisTurn ? `${c.name} s’est déjà activée.`
       : `${c.name} a déjà agi ce tour.`);
     render();
@@ -2033,7 +2164,7 @@ function startSmartAim(uid){
   } else {
     const legal=legalAttackTargets('player', c);
     combatLog(legal.assassin || isAssassin(c)
-      ? `${c.name} vise… Ranged : les Tanks ne te bloquent pas.`
+      ? `${c.name} vise… Ranged : ignore les Tanks, peut cibler les Vol.`
       : legal.forcedTank
         ? `${c.name} vise… un Tank adverse protège le reste — cible-le.`
         : legal.forcedFlyer
@@ -2258,17 +2389,21 @@ function resolveCombatStrike(atkSide, atkUid, target){
   if(target.type==='face'){
     const total=dmgEach*hits;
     D.hp=Math.max(0, D.hp-total);
-    const tower=atkSide==='player'?'la tour adverse':'ta tour';
+    const dual=!!b.autoplay?.dual;
+    const tower=dual
+      ? (atkSide==='player'?'la tour B':'la tour A')
+      : (atkSide==='player'?'la tour adverse':'ta tour');
     const multi=hits>1?` ×${hits}`:'';
     combatLog(`${cardLogName(atk)} frappe ${tower} pour ${total}${multi} (${D.hp}/30).`);
     shakeTower(defSide);
     if(total>=4) screenShake();
     applyCombatHeals(atk, atkSide, total);
     triggerAfterAttack(atkSide, atk);
+    window.FFBalance?.trackStrike?.(atkSide, atk, target, 0, total, false);
   } else {
     const noRiposte=hasNoRiposte(atk);
     const deathtouch=hasRole(atk,'contact-mortel');
-    const trample=hasRole(atk,'pietinement')||hasRole(atk,'transpercer');
+    const trample=hasRole(atk,'pietinement');
     const tankNote=(()=>{
       const d0=D.board.find(c=>c.uid===target.uid);
       return isTank(d0)?' (Tank)':'';
@@ -2321,7 +2456,7 @@ function resolveCombatStrike(atkSide, atkUid, target){
       }
       flashCombatCard(def.uid);
       if((def.hp|0)<=0){
-        killCreature(defSide, def);
+        killCreature(defSide, def, '', atk);
         if(hasRole(atk,'quand-tue') && (atk.hp|0)>0 && A.board.some(x=>x.uid===atk.uid)){
           buffCreature(atk, 1, 1, {label:'Exécution', from:atk.name, fromUid:atk.uid, fromSide:atkSide});
           combatLog(`${cardLogName(atk)} (Exécution) : +1/+1.`);
@@ -2330,12 +2465,13 @@ function resolveCombatStrike(atkSide, atkUid, target){
       }
     }
     if(totalFaceOverflow>0){
-      const tramLabel=hasRole(atk,'transpercer')?'Transpercer':'Piétinement';
+      const tramLabel='Piétinement';
       combatLog(`${cardLogName(atk)} (${tramLabel}) : ${totalFaceOverflow} à la tour (${D.hp}/30).`);
       shakeTower(defSide);
     }
     const healAmt=totalCreatureDealt+totalFaceOverflow;
     if(healAmt>0) applyCombatHeals(atk, atkSide, healAmt);
+    window.FFBalance?.trackStrike?.(atkSide, atk, target, totalCreatureDealt, totalFaceOverflow, !!target._lethal);
     if((atk.hp|0)<=0) killCreature(atkSide, atk);
     else triggerAfterAttack(atkSide, atk);
   }
@@ -2370,7 +2506,7 @@ function confirmAttackMinion(uid){
     let why='Cible invalide.';
     if(legal.forcedTank) why='Cible invalide : attaque un Tank.';
     else if(legal.forcedFlyer) why='Cible invalide : une créature volante te bloque.';
-    else if(def && hasVol(def) && !hasVol(atk) && !isTank(def)) why='Cible invalide : il faut Vol pour attaquer une créature volante.';
+    else if(def && hasVol(def) && !hasVol(atk) && !isAssassin(atk) && !isTank(def)) why='Cible invalide : il faut Vol ou Ranged pour attaquer une créature volante.';
     combatLog(why);
     render();
     return;
@@ -2381,128 +2517,224 @@ function confirmAttackMinion(uid){
   resolveCombatStrike('player', src, {type:'minion', uid});
   render();
 }
-function chooseEnemyTarget(atk){
-  const legal=legalAttackTargets('enemy', atk);
+/** Profils IA — novice / standard / sharp (utilisés aussi par le mode équilibre). */
+const AI_PROFILES={
+  novice:{
+    activateRate:0.12, lethalRate:0.35, tradeRate:0.30, faceBias:0.72,
+    randomPlay:true, avoidTokensEarly:false, valueTrade:false, tempoPlay:false,
+  },
+  standard:{
+    activateRate:0.35, lethalRate:0.80, tradeRate:0.55, faceBias:0.45,
+    randomPlay:false, avoidTokensEarly:true, valueTrade:false, tempoPlay:false,
+  },
+  sharp:{
+    activateRate:0.55, lethalRate:1.0, tradeRate:0.88, faceBias:0.22,
+    randomPlay:false, avoidTokensEarly:true, valueTrade:true, tempoPlay:true,
+  },
+};
+function aiProfileName(who){
+  const b=state.battle;
+  return b?.autoplay?.ai?.[who] || 'standard';
+}
+function aiProfile(who){
+  return AI_PROFILES[aiProfileName(who)] || AI_PROFILES.standard;
+}
+function aiDelay(baseMs){
+  if(state.battle?.autoplay?.headless) return 0;
+  const pace=state.battle?.autoplay?.pace;
+  const m=(typeof pace==='number' && pace>0) ? pace : 1;
+  return Math.max(40, Math.round(baseMs*m));
+}
+function aiBusyKey(who){
+  return who==='player' ? '_playerAiBusy' : '_enemyBusy';
+}
+function chooseAiTarget(who, atk){
+  const legal=legalAttackTargets(who, atk);
   const board=legal.minions;
-  if(!board.length) return legal.face ? {type:'face'} : {type:'face'};
-  const lethal=board.filter(c=>c.hp<=atk.attack).sort((a,c)=>c.attack-a.attack || a.hp-c.hp);
-  if(lethal.length && Math.random()<0.8) return {type:'minion', uid:lethal[0].uid};
-  if(legal.forcedTank || legal.forcedFlyer || Math.random()<0.55){
-    const soft=board.slice().sort((a,c)=>a.hp-c.hp || c.attack-a.attack)[0];
+  const prof=aiProfile(who);
+  if(!board.length) return {type:'face'};
+  if(prof.randomPlay && Math.random()<0.55){
+    if(legal.face && Math.random()<0.5) return {type:'face'};
+    return {type:'minion', uid:board[Math.floor(Math.random()*board.length)].uid};
+  }
+  const lethal=board.filter(c=>c.hp<=atk.attack).sort((a,c)=>{
+    if(prof.valueTrade) return c.attack-a.attack || c.hp-a.hp;
+    return c.attack-a.attack || a.hp-c.hp;
+  });
+  if(lethal.length && Math.random()<prof.lethalRate){
+    return {type:'minion', uid:lethal[0].uid, _lethal:true};
+  }
+  if(legal.forcedTank || legal.forcedFlyer || Math.random()<prof.tradeRate){
+    const soft=board.slice().sort((a,c)=>{
+      if(prof.valueTrade){
+        const va=(a.attack||0)/(Math.max(1,a.hp));
+        const vc=(c.attack||0)/(Math.max(1,c.hp));
+        return vc-va || a.hp-c.hp;
+      }
+      return a.hp-c.hp || c.attack-a.attack;
+    })[0];
     return {type:'minion', uid:soft.uid};
   }
+  if(legal.face && Math.random()<prof.faceBias) return {type:'face'};
   if(legal.face) return {type:'face'};
   return {type:'minion', uid:board[0].uid};
+}
+function chooseEnemyTarget(atk){
+  return chooseAiTarget('enemy', atk);
 }
 function endPlayerTurn(){
   const b=state.battle; if(!b||b.active!=='player'||b.winner) return;
   if(b.phase!=='main') return;
+  if(b.autoplay?.dual) return;
   b.selectedHandUid=null; b.attackSource=null; b.aimLock=null; b.actionChoice=null;
   teardownAim();
   beginTurn('enemy');
   render();
 }
-function enemyTurn(){
-  const b=state.battle; if(!b||b.winner||b.active!=='enemy') return;
-  if(b._enemyBusy) return;
-  ensurePrayerSide(b.enemy);
-  // IA : placer 1 prière / tour si slot libre
-  if(!b.enemy.prayedThisTurn){
-    const emptyIdx=b.enemy.prayer.findIndex(x=>!x);
-    if(emptyIdx>=0 && b.enemy.hand.length){
-      const factions=sideFactions(b,'enemy');
-      const candidates=b.enemy.hand.slice().sort((a,c)=>{
-        const af=factions.includes(a.capital)?0:1;
-        const cf=factions.includes(c.capital)?0:1;
-        if(af!==cf) return af-cf;
-        return (a.cost|0)-(c.cost|0) || (c.power|0)-(a.power|0);
-      });
+function pickAiCardToPlay(who, playable){
+  const b=state.battle;
+  const side=b[who];
+  const prof=aiProfile(who);
+  let pool=playable.slice();
+  if(prof.avoidTokensEarly && (side.turnCount||0)<=2){
+    const simple=pool.filter(c=>!hasRole(c,'jetons-1-1'));
+    if(simple.length) pool=simple;
+  }
+  if(prof.randomPlay){
+    return pool[Math.floor(Math.random()*pool.length)];
+  }
+  if(prof.tempoPlay){
+    // Sharp : dépenser le plus de mana utile, puis ATQ
+    pool.sort((a,c)=>{
+      const pa=cardManaParts(a).total, pc=cardManaParts(c).total;
+      const fitA=pa<=side.mana ? 0 : 1;
+      const fitC=pc<=side.mana ? 0 : 1;
+      if(fitA!==fitC) return fitA-fitC;
+      return pc-pa || c.attack-a.attack || (c.health|0)-(a.health|0);
+    });
+    return pool[0];
+  }
+  pool.sort((a,c)=>cardManaParts(a).total-cardManaParts(c).total || c.attack-a.attack);
+  return pool[0];
+}
+function aiTurn(who){
+  const b=state.battle; if(!b||b.winner||b.active!==who) return;
+  const busy=aiBusyKey(who);
+  if(b[busy]) return;
+  const side=b[who];
+  ensurePrayerSide(side);
+  if(!side.prayedThisTurn){
+    const emptyIdx=side.prayer.findIndex(x=>!x);
+    if(emptyIdx>=0 && side.hand.length){
+      const factions=sideFactions(b, who);
+      const prof=aiProfile(who);
+      let candidates=side.hand.slice();
+      if(prof.randomPlay){
+        candidates=shuffleInPlace(candidates.slice());
+      } else {
+        candidates.sort((a,c)=>{
+          const af=factions.includes(a.capital)?0:1;
+          const cf=factions.includes(c.capital)?0:1;
+          if(af!==cf) return af-cf;
+          return (a.cost|0)-(c.cost|0) || (c.power|0)-(a.power|0);
+        });
+      }
       const pick=candidates[0];
-      if(pick) placePrayer('enemy', pick.uid, emptyIdx);
+      if(pick) placePrayer(who, pick.uid, emptyIdx);
     }
   }
-  b._enemyBusy=true;
+  b[busy]=true;
   const playNext=()=>{
     const battle=state.battle;
-    if(!battle||battle.winner||battle.active!=='enemy'){
-      if(battle) battle._enemyBusy=false;
+    if(!battle||battle.winner||battle.active!==who){
+      if(battle) battle[busy]=false;
       return;
     }
-    if(battle.enemy.board.length>=8){
-      finishEnemyPlays();
+    const s=battle[who];
+    if(s.board.length>=8){
+      finishAiPlays(who);
       return;
     }
-    let playable=battle.enemy.hand.filter(c=>canAfford(battle.enemy,c));
+    const playable=s.hand.filter(c=>canAfford(s,c));
     if(!playable.length){
-      finishEnemyPlays();
+      finishAiPlays(who);
       return;
     }
-    if((battle.enemy.turnCount||0)<=2){
-      const simple=playable.filter(c=>!hasRole(c,'jetons-1-1'));
-      if(simple.length) playable=simple;
+    const card=pickAiCardToPlay(who, playable);
+    if(aiProfile(who).randomPlay && battle.balanceStats){
+      battle.balanceStats.decisions[who].randomPlays+=1;
     }
-    playable.sort((a,c)=>cardManaParts(a).total-cardManaParts(c).total || c.attack-a.attack);
-    const card=playable[0];
-    const slots=placementSlots(battle.enemy.board);
-    const idx=slots[Math.floor(slots.length/2)] ?? battle.enemy.board.length;
-    if(!playCardOn(battle.enemy, card, idx, 'enemy')){
-      finishEnemyPlays();
+    const slots=placementSlots(s.board);
+    const idx=slots[Math.floor(slots.length/2)] ?? s.board.length;
+    if(!playCardOn(s, card, idx, who)){
+      finishAiPlays(who);
       return;
     }
     render();
-    setTimeout(playNext, 320);
+    setTimeout(playNext, aiDelay(320));
   };
   render();
-  setTimeout(playNext, 180);
+  setTimeout(playNext, aiDelay(180));
 }
-function finishEnemyPlays(){
+function enemyTurn(){
+  aiTurn('enemy');
+}
+function finishAiPlays(who){
   const b=state.battle;
   if(!b) return;
-  b._enemyBusy=false;
-  if(b.winner||b.active!=='enemy') return;
-  // IA : parfois activer plutôt qu’attaquer
-  b.enemy.board.forEach(c=>{
+  b[aiBusyKey(who)]=false;
+  if(b.winner||b.active!==who) return;
+  const side=b[who];
+  const prof=aiProfile(who);
+  const label=who==='player' ? (b.autoplay?.dual ? 'Camp A' : 'Tu') : (b.autoplay?.dual ? 'Camp B' : 'Adverse');
+  side.board.forEach(c=>{
     if(!canCreatureActivate(c)) return;
-    if(Math.random()<0.35){
+    if(Math.random()<prof.activateRate){
       const spec=activationSpec(c);
       c.activatedThisTurn=true; c.canAttack=false; c.exhausted=true;
-      applyActivationEffect('enemy', c, spec);
-      combatLog(`Adverse active ${cardLogName(c)} (${spec.label}).`);
+      applyActivationEffect(who, c, spec);
+      combatLog(`${label} active ${cardLogName(c)} (${spec.label}).`);
+      window.FFBalance?.trackActivate?.(who);
     }
   });
   const attackers=[];
-  b.enemy.board.forEach(c=>{
+  side.board.forEach(c=>{
     if(!canCreatureAttack(c)) return;
     attackers.push(c.uid);
   });
+  const next=who==='player'?'enemy':'player';
   if(!attackers.length){
     checkWinner();
     render();
-    if(!b.winner) setTimeout(()=>{ beginTurn('player'); render(); }, 450);
+    if(!b.winner) setTimeout(()=>{ beginTurn(next); render(); }, aiDelay(450));
     return;
   }
-  b.phase='enemy_attack';
-  combatLog(`L’adversaire engage ${attackers.length} assaut(s).`);
+  b.phase= who==='enemy' ? 'enemy_attack' : 'main';
+  combatLog(`${label} engage ${attackers.length} assaut(s).`);
   render();
-  playEnemyAttacks(attackers, 0);
+  playAiAttacks(who, attackers, 0);
 }
-function playEnemyAttacks(uids, i){
+function finishEnemyPlays(){
+  finishAiPlays('enemy');
+}
+function playAiAttacks(who, uids, i){
   const b=state.battle;
+  const next=who==='player'?'enemy':'player';
   if(!b||b.winner){ teardownAim(); render(); return; }
   if(i>=uids.length){
     b.phase='main'; b.attackSource=null; b.aimLock=null;
     teardownAim();
     render();
-    if(!b.winner) setTimeout(()=>{ beginTurn('player'); render(); }, 420);
+    if(!b.winner) setTimeout(()=>{ beginTurn(next); render(); }, aiDelay(420));
     return;
   }
   const atkUid=uids[i];
-  const atk=b.enemy.board.find(c=>c.uid===atkUid);
+  const atk=b[who].board.find(c=>c.uid===atkUid);
   if(!atk || !canCreatureAttack(atk)){
-    playEnemyAttacks(uids, i+1);
+    playAiAttacks(who, uids, i+1);
     return;
   }
-  const target=chooseEnemyTarget(atk);
+  const target=chooseAiTarget(who, atk);
   b.attackSource=atkUid;
   b.aimLock=target;
   render();
@@ -2511,10 +2743,13 @@ function playEnemyAttacks(uids, i){
     if(!still||still.winner){ teardownAim(); render(); return; }
     still.attackSource=null; still.aimLock=null;
     teardownAim();
-    resolveCombatStrike('enemy', atkUid, target);
+    resolveCombatStrike(who, atkUid, target);
     render();
-    setTimeout(()=>playEnemyAttacks(uids, i+1), 360);
-  }, 580);
+    setTimeout(()=>playAiAttacks(who, uids, i+1), aiDelay(360));
+  }, aiDelay(580));
+}
+function playEnemyAttacks(uids, i){
+  playAiAttacks('enemy', uids, i);
 }
 function aimCurvePath(x1,y1,x2,y2){
   const dx=x2-x1, dy=y2-y1;
@@ -2624,7 +2859,7 @@ function miniCard(c, opts={}){
   const title = summonSick ? ' title="Mal d’invocation — attaque au prochain tour"'
     : opts.exhausted ? ' title="Déjà utilisée"'
     : opts.aiming ? ' title="Attaquante — choisis une cible"'
-    : opts.blocked ? (opts.stealthed ? ' title="Camouflage — impossible à cibler"' : opts.needVol ? ' title="Vol requise pour attaquer cette créature"' : ' title="Protégé par un Tank ou une créature volante — cible invalide"')
+    : opts.blocked ? (opts.stealthed ? ' title="Camouflage — impossible à cibler"' : opts.needVol ? ' title="Vol ou Ranged requis pour attaquer cette créature"' : ' title="Protégé par un Tank ou une créature volante — cible invalide"')
     : opts.targetable ? (opts.forcedTank ? ' title="Tank — cible obligatoire"' : opts.forcedFlyer ? ' title="Vol — cible obligatoire"' : ' title="Cible valide — cliquer pour attaquer"')
     : opts.playable ? ' title="Cliquer pour invoquer"'
     : canAct ? ' title="Peut être activée (ou attaquer)"'
@@ -2632,7 +2867,6 @@ function miniCard(c, opts={}){
     : '';
   const statusClasses=[];
   if(hasStatus(c,'poison')) statusClasses.push('is-poisoned');
-  if(hasStatus(c,'brulant')) statusClasses.push('is-burning');
   if(c.frozen || c.skipNextAttack) statusClasses.push('is-frozen');
   if(c.weakened) statusClasses.push('is-weakened');
   if(hasRole(c,'furie')) statusClasses.push('has-fury');
@@ -2653,8 +2887,10 @@ function miniCard(c, opts={}){
     if(c.divineShield) marks.push('<i class="cbt-mark shield" title="Bouclier divin"></i>');
     if(isStealthed(c)) marks.push('<i class="cbt-mark stealth" title="Camouflage"></i>');
     if(hasStatus(c,'poison')) marks.push('<i class="cbt-mark poison" title="Poison"></i>');
-    if(hasStatus(c,'brulant')) marks.push('<i class="cbt-mark burn" title="Feu"></i>');
-    if(c.frozen || c.skipNextAttack) marks.push('<i class="cbt-mark freeze" title="Gel"></i>');
+    if(c.frozen || c.skipNextAttack) marks.push('<i class="cbt-mark freeze" title="Entrave"></i>');
+    if(c.channel && c.channel.turnsLeft>0){
+      marks.push(`<i class="cbt-mark channel" title="Canalisation ${c.channel.turnsLeft} : ${SPELL_DEFS[c.channel.spell]?.label||c.channel.spell}">${c.channel.turnsLeft}</i>`);
+    }
     if(c.pendingRegen) marks.push('<i class="cbt-mark regen" title="Régénère au prochain tour"></i>');
     if(c.pendingTank || c.tempTank) marks.push('<i class="cbt-mark tanking" title="Tank temporaire"></i>');
   }
@@ -2714,7 +2950,7 @@ function renderBoardRow(side, who){
         targetable:ok,
         blocked:playerAiming && !ok,
         stealthed: isStealthed(c),
-        needVol: !!(playerAiming && !ok && hasVol(c) && aimAtk && !hasVol(aimAtk) && !isTank(c)),
+        needVol: !!(playerAiming && !ok && hasVol(c) && aimAtk && !hasVol(aimAtk) && !isAssassin(aimAtk) && !isTank(c)),
         forcedTank:!!(legal && legal.forcedTank && pol!=='aggressive' && canAtkSrc),
         forcedFlyer:!!(legal && legal.forcedFlyer && pol!=='aggressive' && canAtkSrc),
         selected:false,
@@ -2750,7 +2986,10 @@ function renderTowerSprite(who, opts={}){
   const b=state.battle;
   const side=b[who];
   const isEnemy=who==='enemy';
-  const label=isEnemy ? 'Tour adverse' : 'Ta tour';
+  const dual=!!b.autoplay?.dual;
+  const label=dual
+    ? (isEnemy ? 'Tour B' : 'Tour A')
+    : (isEnemy ? 'Tour adverse' : 'Ta tour');
   const maxHp=30;
   const hp=Math.max(0, side.hp|0);
   const cls=[
@@ -2824,7 +3063,7 @@ function renderColorMana(p){
     </span>`;
   }).join('');
 }
-/** Rangée de 3 slots de prière (mana couleur). */
+/** Rangée de slots de prière (mana couleur) — PRAYER_SLOTS. */
 function renderPrayerRow(who){
   const b=state.battle; if(!b) return '';
   const p=b[who];
@@ -2885,7 +3124,7 @@ function renderCombatLobby(){
       <div>
         <p class="eyebrow">Tour du magicien</p>
         <h2>Classeur & arène</h2>
-        <p>Combat rapide ou campagne : carte, classeur, boutique et duels.</p>
+        <p>Combat rapide, campagne, ou mode équilibre (dual IA spectateur).</p>
       </div>
       ${hasCamp?`<div class="camp-stats camp-stats-compact">
         <div class="camp-stat"><small>Or</small><b>${camp.gold||0}</b></div>
@@ -2899,8 +3138,14 @@ function renderCombatLobby(){
         <p>Deux factions au hasard · 60 cartes (15×4) · duel contre l’IA.</p>
         <button type="button" class="cbt-start" onclick="startCombat()">Lancer un combat</button>
       </article>
-      <article class="lobby-mode">
+      <article class="lobby-mode lobby-mode-balance">
         <span class="lobby-mode-num">2</span>
+        <h3>Équilibre auto</h3>
+        <p>Tu regardes · les 2 camps jouent seuls · 2 parties · log <code>balance_sessions.jsonl</code> (IA + balance).</p>
+        <button type="button" class="cbt-start" onclick="startBalanceSession()">Lancer une session (2 parties)</button>
+      </article>
+      <article class="lobby-mode">
+        <span class="lobby-mode-num">3</span>
         <h3>Histoire de la campagne</h3>
         <p>${hasCamp
           ? `Partie en cours — ${typeof binderCount==='function'?binderCount():0} carte(s) · ${camp.gold||0} or.`
@@ -2920,14 +3165,24 @@ function renderCombat(){
     return renderCombatLobby();
   }
   const mulligan=b.phase==='mulligan';
+  const dual=!!b.autoplay?.dual;
   const campEnd=b.mode==='campagne' && b.winner;
-  const ended=b.winner?`<div class="cbt-banner ${b.winner}">${b.winner==='player'?'Victoire !':b.winner==='enemy'?'Défaite…':'Match nul'} ${
+  const balDone=state.balanceSession?.status==='done';
+  const ended=b.winner?`<div class="cbt-banner ${b.winner}">${
+    dual
+      ? (b.winner==='player'?'Camp A gagne !':b.winner==='enemy'?'Camp B gagne !':'Match nul')
+      : (b.winner==='player'?'Victoire !':b.winner==='enemy'?'Défaite…':'Match nul')
+  } ${
     campEnd
       ? `<button class="cbt-start" onclick="claimCampaignBattleRewards()">Voir le butin</button>`
-      : `<button onclick="startCombat()">Rejouer</button> <button class="cbt-end" onclick="backToCombatLobby()">Lobby</button>`
+      : dual
+        ? (balDone
+          ? `<button class="cbt-start" onclick="startBalanceSession()">Relancer session</button> <button class="cbt-end" onclick="backToCombatLobby()">Lobby</button>`
+          : `<span class="cbt-wait">Prochaine partie…</span>`)
+        : `<button onclick="startCombat()">Rejouer</button> <button class="cbt-end" onclick="backToCombatLobby()">Lobby</button>`
   }</div>`:'';
-  const handCanPlay=!mulligan && b.active==='player' && b.phase==='main' && !b.winner && !b.attackSource;
-  const playerAiming=!mulligan && b.active==='player' && b.phase==='main' && !!b.attackSource
+  const handCanPlay=!dual && !mulligan && b.active==='player' && b.phase==='main' && !b.winner && !b.attackSource;
+  const playerAiming=!dual && !mulligan && b.active==='player' && b.phase==='main' && !!b.attackSource
     && b.player.board.some(c=>c.uid===b.attackSource);
   const aimAtk=playerAiming ? b.player.board.find(c=>c.uid===b.attackSource) : null;
   const aimLegal=playerAiming ? legalAttackTargets('player', aimAtk) : null;
@@ -2939,6 +3194,7 @@ function renderCombat(){
     : null;
   const statusLabel = b.winner ? 'Partie terminée'
     : mulligan ? 'Main d’ouverture'
+    : dual ? (b.active==='player' ? `IA A (${b.autoplay?.ai?.player||'standard'})` : `IA B (${b.autoplay?.ai?.enemy||'standard'})`)
     : b.phase==='enemy_attack' ? 'Assaut adverse'
     : playerAiming ? `Visée — ${aimName||'créature'}`
     : b.active==='player' ? 'Ton tour' : 'Tour adverse';
@@ -2954,6 +3210,7 @@ function renderCombat(){
             ? `Une créature <strong>volante</strong> te bloque — tu dois la frapper.`
           : `Pointe la <strong>tour adverse</strong> ou un <strong>mignon</strong> — la flèche jaune suit ton geste.`;
   const midControls = b.winner ? `<span class="cbt-wait">Partie terminée</span>`
+    : dual ? `<span class="cbt-wait">Spectateur — dual IA en cours…</span>`
     : mulligan ? `
       <div class="cbt-mulligan-panel">
         <b>Main d’ouverture</b>
@@ -3031,19 +3288,20 @@ function renderCombat(){
               affordable: mulligan ? true : ok,
             });
           }).join('')}</div>`;
-  return `<section class="${combatTableClasses(`${playerAiming?' is-aiming':''}${mulligan?' is-mulligan':''}${aimLegal?.forcedTank?' tank-lock':''}`)}">
+  return `<section class="${combatTableClasses(`${playerAiming?' is-aiming':''}${mulligan?' is-mulligan':''}${dual?' is-balance':''}${aimLegal?.forcedTank?' tank-lock':''}`)}">
     ${aimSvg}
+    ${typeof window.FFBalance?.statusBannerHtml==='function' ? window.FFBalance.statusBannerHtml() : ''}
     ${ended}
     <div class="cbt-meta">
       <div><b>Factions</b>
-        <span class="cbt-faction-side">Toi: ${(b.playerFactions||b.factions||[]).map(f=>{
+        <span class="cbt-faction-side">${dual?'A':'Toi'}: ${(b.playerFactions||b.factions||[]).map(f=>{
           const fm=FACTION_MANA[f]||{};
           return `<span class="tag" style="--faction:${fm.color||'#999'}" title="${fm.element||f}">${f}</span>`;
-        }).join('')}</span>
-        <span class="cbt-faction-side">Adverse: ${(b.enemyFactions||b.factions||[]).map(f=>{
+        }).join('')}${dual?` <small class="cbt-ai-tag">[${b.autoplay?.ai?.player||'standard'}]</small>`:''}</span>
+        <span class="cbt-faction-side">${dual?'B':'Adverse'}: ${(b.enemyFactions||b.factions||[]).map(f=>{
           const fm=FACTION_MANA[f]||{};
           return `<span class="tag" style="--faction:${fm.color||'#999'}" title="${fm.element||f}">${f}</span>`;
-        }).join('')}</span>
+        }).join('')}${dual?` <small class="cbt-ai-tag">[${b.autoplay?.ai?.enemy||'standard'}]</small>`:''}</span>
       </div>
       <div class="cbt-status-line">${b.coin} · ${statusLabel}</div>
       ${renderCombatConfigBar()}

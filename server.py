@@ -14,9 +14,11 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parent
 IMG_DIR = ROOT / "img"
 LOG_FILE = ROOT / "art_ranks.log"
+BALANCE_LOG_FILE = ROOT / "balance_sessions.jsonl"
 BUST_FILE = ROOT / "art_bust.json"
 PORT = int(os.environ.get("PORT", "5500"))
 ART_RE = re.compile(r"^img/(.+) (\d+)\.png$", re.IGNORECASE)
+API_POST_PATHS = {"/api/art-rank", "/api/balance-log"}
 
 
 def load_art_bust() -> dict:
@@ -149,7 +151,8 @@ class Handler(SimpleHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_OPTIONS(self):
-        if urlparse(self.path).path == "/api/art-rank":
+        path = urlparse(self.path).path
+        if path in API_POST_PATHS:
             self.send_response(204)
             self.send_header("Access-Control-Allow-Origin", "*")
             self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
@@ -160,6 +163,9 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         path = urlparse(self.path).path
+        if path == "/api/balance-log":
+            self._handle_balance_log()
+            return
         if path != "/api/art-rank":
             self.send_error(404)
             return
@@ -207,6 +213,34 @@ class Handler(SimpleHTTPRequestHandler):
         result["ip"] = ip
         self._json(200, result)
 
+    def _handle_balance_log(self):
+        """Append une session d’équilibre (JSONL) pour analyse IA / balance."""
+        try:
+            length = int(self.headers.get("Content-Length") or "0")
+            raw = self.rfile.read(max(0, min(length, 512_000)))
+            data = json.loads(raw.decode("utf-8") or "{}")
+        except Exception:
+            self._json(400, {"ok": False, "error": "invalid_json"})
+            return
+        if not isinstance(data, dict):
+            self._json(400, {"ok": False, "error": "expected_object"})
+            return
+        ip = client_ip(self)
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        entry = {
+            "ts": ts,
+            "ip": ip,
+            **{k: v for k, v in data.items() if k not in ("ts", "ip")},
+        }
+        line = json.dumps(entry, ensure_ascii=False, separators=(",", ":")) + "\n"
+        try:
+            with BALANCE_LOG_FILE.open("a", encoding="utf-8") as f:
+                f.write(line)
+        except OSError:
+            self._json(500, {"ok": False, "error": "write_failed"})
+            return
+        self._json(200, {"ok": True, "file": BALANCE_LOG_FILE.name, "bytes": len(line.encode("utf-8"))})
+
     def log_message(self, fmt, *args):
         # Garde les logs serveur discrets.
         if str(args[0]).startswith("POST"):
@@ -217,6 +251,7 @@ def main():
     httpd = ThreadingHTTPServer(("0.0.0.0", PORT), Handler)
     print(f"Fantasia Fauna — http://localhost:{PORT}/")
     print(f"Promotion art (#1) -> {LOG_FILE}")
+    print(f"Équilibre sessions -> {BALANCE_LOG_FILE}")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:

@@ -239,6 +239,39 @@ main:has(.combat-table){
   gap:16px;
   margin-top:18px;
 }
+.lobby-mode-balance{
+  border-color:#7ec8a855;
+  background:linear-gradient(160deg,#1a2a22cc,#0a1210cc);
+}
+.lobby-mode-balance h3{color:#c8f0d8}
+.lobby-mode-balance .cbt-start{
+  background:linear-gradient(#6dbf8a,#2a6b45);
+  border-color:#9fe0b899;
+  color:#07140c;
+}
+.cbt-balance-banner{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px 14px;
+  margin:0 0 8px;
+  padding:8px 12px;
+  border:1px solid #7ec8a866;
+  border-radius:12px;
+  background:linear-gradient(90deg,#143028ee,#0c1814ee);
+  color:#d8f5e6;
+  font-size:.9rem;
+}
+.cbt-balance-banner.done{
+  border-color:#d9b45f88;
+  background:linear-gradient(90deg,#2a2214ee,#14100cee);
+  color:#ffe9c2;
+}
+.cbt-balance-banner b{color:#e8fff2}
+.cbt-balance-banner .cbt-start,
+.cbt-balance-banner .cbt-end{width:auto;padding:6px 12px;font-size:.85rem}
+.cbt-ai-tag{opacity:.75;margin-left:4px}
+.combat-table.is-balance .cbt-hand-bar{pointer-events:none;opacity:.72}
 .lobby-mode{
   position:relative;
   padding:18px 18px 16px;
@@ -1615,7 +1648,7 @@ body::before{
 }
 .cbt-prayer-slot{
   position:relative;
-  width:56px;min-height:64px;
+  width:48px;min-height:58px;
   border:1px dashed color-mix(in srgb,var(--ff-gilt) 40%, transparent);
   border-radius:10px;
   background:#0006;
@@ -2854,8 +2887,7 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
   background:linear-gradient(135deg,#3a2018cc,#120a08ee);
   box-shadow:0 0 12px #e0705033;
 }
-.ability-tag.ability-pietinement,
-.ability-tag.ability-transpercer{
+.ability-tag.ability-pietinement{
   border-color:#c4a06aaa;color:#ffe6c8;
   background:linear-gradient(135deg,#3a2814cc,#140e08ee);
   box-shadow:0 0 12px #c4a06a33;
@@ -2883,9 +2915,21 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
   border-color:#e08050aa;color:#ffe0c8;
   background:linear-gradient(135deg,#3a1c10cc,#140a06ee);
 }
-.ability-tag.ability-gelant{
+.ability-tag.ability-entrave,
+.ability-tag.ability-invocation-entrave,
+.ability-tag.ability-canalisation-1-entrave,
+.ability-tag.ability-canalisation-2-entrave,
+.ability-tag.ability-canalisation-3-entrave{
   border-color:#7ec8e0aa;color:#dff6ff;
   background:linear-gradient(135deg,#183040cc,#0a1418ee);
+}
+.ability-tag.ability-rappel,
+.ability-tag.ability-invocation-rappel,
+.ability-tag.ability-canalisation-1-rappel,
+.ability-tag.ability-canalisation-2-rappel,
+.ability-tag.ability-canalisation-3-rappel{
+  border-color:#c0a0e0aa;color:#f0e8ff;
+  background:linear-gradient(135deg,#2a1a38cc,#120a1aee);
 }
 .ability-tag.ability-fin-tour-tir,
 .ability-tag.ability-fin-tour-buff,
@@ -2903,7 +2947,6 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
 .ability-tag.ability-vol-de-vie,
 .ability-tag.ability-lien-de-vie,
 .ability-tag.ability-pietinement,
-.ability-tag.ability-transpercer,
 .ability-tag.ability-contact-mortel,
 .ability-tag.ability-dernier-souffle,
 .ability-tag.ability-cri-frappe,
@@ -3176,13 +3219,15 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
 .cbt-fx-poison .cbt-fx-bolt,
 .cbt-fx-brulant .cbt-fx-bolt,
 .cbt-fx-gelant .cbt-fx-bolt,
+.cbt-fx-entrave .cbt-fx-bolt,
 .cbt-fx-affaiblir .cbt-fx-bolt{
   height:4px;
 }
 .cbt-fx-bouclier .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#ffe29b 30%,#fff8);box-shadow:0 0 16px #ffe29baa}
 .cbt-fx-poison .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#86efac 30%,#fff8);box-shadow:0 0 12px #4ade8099}
 .cbt-fx-brulant .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#fb923c 30%,#fff8);box-shadow:0 0 12px #f9731699}
-.cbt-fx-gelant .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#7dd3fc 30%,#fff8);box-shadow:0 0 12px #38bdf899}
+.cbt-fx-gelant .cbt-fx-bolt,
+.cbt-fx-entrave .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#7dd3fc 30%,#fff8);box-shadow:0 0 12px #38bdf899}
 .cbt-fx-affaiblir .cbt-fx-bolt{background:linear-gradient(90deg,#fff0,#c4b5fd 30%,#fff8);box-shadow:0 0 12px #a78bfa99}
 @keyframes cbtFxBolt{
   0%{opacity:0;filter:brightness(1.4)}
@@ -3211,7 +3256,8 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
 .cbt-fx-bouclier::after{background:radial-gradient(circle,#ffe29baa 0%,#d9b45f55 45%,transparent 70%)}
 .cbt-fx-poison::after{background:radial-gradient(circle,#86efacaa 0%,#16653455 45%,transparent 70%)}
 .cbt-fx-brulant::after{background:radial-gradient(circle,#fb923caa 0%,#c2410c55 45%,transparent 70%)}
-.cbt-fx-gelant::after{background:radial-gradient(circle,#7dd3fcaa 0%,#0369a155 45%,transparent 70%)}
+.cbt-fx-gelant::after,
+.cbt-fx-entrave::after{background:radial-gradient(circle,#7dd3fcaa 0%,#0369a155 45%,transparent 70%)}
 .cbt-fx-affaiblir::after{background:radial-gradient(circle,#c4b5fdaa 0%,#6d28d955 45%,transparent 70%)}
 .cbt-action-panel{border-color:#d9b45f88}
 .cbt-marks{
@@ -3228,6 +3274,11 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
 .cbt-mark.poison{background:#4ade80;border-color:#86efac;color:#4ade80}
 .cbt-mark.burn{background:#f97316;border-color:#fb923c;color:#f97316}
 .cbt-mark.freeze{background:#38bdf8;border-color:#7dd3fc;color:#38bdf8}
+.cbt-mark.channel{
+  background:#c084fc;border-color:#e9d5ff;color:#1a0a22;
+  font-size:.55rem;font-weight:900;min-width:14px;height:14px;
+  display:inline-grid;place-items:center;border-radius:50%;
+}
 .cbt-mark.regen{background:#34d399;border-color:#a7f3d0;color:#34d399}
 .cbt-mark.tanking{background:#94a3b8;border-color:#cbd5e1;color:#94a3b8}
 .cbt-mark.stealth{background:#94a3b8;border-color:#cbd5e1;color:#64748b;opacity:.85}

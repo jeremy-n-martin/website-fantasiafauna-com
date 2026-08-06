@@ -2,6 +2,8 @@
 
 Guide pour **créer**, **modifier** ou **supprimer** les capacités (keywords) des cartes, sans être développeur.
 
+> Spécification complète du jeu (règles, modes, historique) : [`spec.md`](./spec.md).
+
 ---
 
 ## En 30 secondes
@@ -236,58 +238,21 @@ Pas besoin de créer de nouvelle logique.
 
 ## 7. Catalogue actuel des capacités (`ABILITIES`)
 
-Ids définis dans [`game.js`](./game.js) (à jour avec le code) :
+Ids définis dans [`game.js`](./game.js) (catalogue réduit) :
 
 | Id | Label (affichage) |
 |---|---|
 | `tank` | Tank |
 | `ranged` | Ranged |
-| `vol` | Vol (seuls Vol peuvent attaquer Vol ; Tank/Vol bloquent les volants) |
-| `lancer` / `lancer-mod` / `lancer-max` | Rafale (+ / majeure) |
-| `sort-degat` / `sort-degat-mod` / `sort-degat-max` | Sort de dégât (+ / Tempête) |
-| `soin` / `soin-mod` / `soin-max` | Soin (+ / majeur) — legacy |
-| `soins-leger` / `soins-moyen` / `soins-avances` | Soins légers (3 tours) / moyens (2) / avancés (1) |
-| `invocation` / `invocation-rapide` / `invocation-intime` | Invocation (rapide / incessante) |
-| `etendard` | Étendard |
-| `formation` | Formation |
-| `activer-regen` | Activer : Régénération |
-| `activer-tank` | Activer : Rempart |
-| `activer-bouclier` | Activer : Bouclier divin |
-| `activer-frappe` | Activer : Frappe |
-| `activer-soin` | Activer : Soins |
-| `activer-purge` | Activer : Purification |
-| `bouclier-divin` | Bouclier divin |
-| `double-attaque` | Double attaque |
+| `vol` | Vol |
 | `pietinement` | Piétinement |
-| `transpercer` | Transpercer (surplus → tour, comme Piétinement) |
-| `contact-mortel` | Contact mortel |
-| `celerite` | Célérité |
-| `lien-de-vie` | Lien de vie |
 | `poison` | Poison |
-| `brulant` | Brûlant |
-| `gelant` | Gélant |
-| `fin-tour-tir` | Fin de tour |
-| `fin-tour-buff` | Montée en puissance |
-| `debut-tour-soin` | Début de tour |
-| `debut-tour-tir` | Aube sanglante |
-| `quand-blesse` | Représailles |
-| `quand-invoque` | Appel du sang |
-| `apres-attaque` | Enchaînement |
-| `jetons-1-1` | Portée de rejetons |
-| `donner-buff` | Bénédiction |
-| `soutient` | Soutien |
-| `soutient-2` | Soutien 2 |
-| `charge` | Charge |
-| `camouflage` | Camouflage |
-| `vol-de-vie` | Vol de vie |
-| `dernier-souffle` | Dernier souffle |
-| `cri-frappe` | Cri de guerre : Frappe |
-| `cri-exorcisme` | Exorcisme (retire buffs adverses à l’arrivée) |
-| `furie` | Furie |
-| `allie-meurt` | Deuil |
-| `quand-tue` | Exécution |
-| `affaiblir` | Affaiblir |
-| `survie` | Survie |
+| `canalisation-3-entrave` | Canalisation 3 : Entrave |
+| `canalisation-2-entrave` | Canalisation 2 : Entrave |
+| `canalisation-1-entrave` | Canalisation 1 : Entrave |
+| `bouclier-divin` | Bouclier divin |
+
+Liste complète + couverture : [`spec.md`](./spec.md).
 
 ---
 

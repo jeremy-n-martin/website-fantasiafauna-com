@@ -85,292 +85,47 @@ const ABILITIES = {
   tank: {
     id: 'tank',
     label: 'Tank',
-    description: 'Quand un Tank est en jeu, les créatures adverses sont obligées de l\'attaquer en priorité.',
+    description: 'Quand un Tank est en jeu, les créatures adverses sont obligées de l\'attaquer en priorité (sauf Ranged).',
   },
   ranged: {
     id: 'ranged',
     label: 'Ranged',
-    description: 'Attaque à distance : ignore les Tanks et n’encaisse jamais de riposte (Assassin + Sans riposte).',
+    description: 'Attaque à distance : ignore les Tanks, peut cibler les créatures volantes, et n’encaisse jamais de riposte (Assassin + Sans riposte).',
   },
   vol: {
     id: 'vol',
     label: 'Vol',
-    description: 'Volante : seules les créatures avec Vol peuvent l’attaquer. Elle ignore les bloqueurs sans Tank ni Vol (seuls Tank ou Vol peuvent la bloquer).',
-  },
-  lancer: {
-    id: 'lancer',
-    label: 'Rafale',
-    description: 'À l’arrivée en jeu, puis tous les 2 tours : lance 1 couteau qui inflige 1 dégât à une cible adverse aléatoire.',
-  },
-  'lancer-mod': {
-    id: 'lancer-mod',
-    label: 'Rafale+',
-    description: 'À l’arrivée en jeu, puis chaque tour : inflige 1 dégât à une cible adverse aléatoire.',
-  },
-  'lancer-max': {
-    id: 'lancer-max',
-    label: 'Rafale majeure',
-    description: 'À l’arrivée en jeu, puis chaque tour : inflige 2 dégâts à 2 cibles adverses aléatoires.',
-  },
-  'sort-degat': {
-    id: 'sort-degat',
-    label: 'Sort de dégât',
-    description: 'À l’arrivée en jeu, puis tous les 2 tours : inflige 1 dégât à une cible adverse aléatoire.',
-  },
-  'sort-degat-mod': {
-    id: 'sort-degat-mod',
-    label: 'Sort de dégât+',
-    description: 'À l’arrivée en jeu, puis chaque tour : inflige 1 dégât à une cible adverse aléatoire.',
-  },
-  'sort-degat-max': {
-    id: 'sort-degat-max',
-    label: 'Tempête de sorts',
-    description: 'À l’arrivée en jeu, puis chaque tour : inflige 2 dégâts à 2 cibles adverses aléatoires.',
-  },
-  soin: {
-    id: 'soin',
-    label: 'Soin',
-    description: 'À l’arrivée en jeu, puis tous les 2 tours : soigne 1 PV d’un allié blessé aléatoire (ou elle-même).',
-  },
-  'soin-mod': {
-    id: 'soin-mod',
-    label: 'Soin+',
-    description: 'À l’arrivée en jeu, puis chaque tour : soigne 1 PV d’un allié blessé aléatoire (ou elle-même).',
-  },
-  'soin-max': {
-    id: 'soin-max',
-    label: 'Soin majeur',
-    description: 'À l’arrivée en jeu, puis chaque tour : soigne 2 PV sur 2 alliés blessés aléatoires.',
-  },
-  'soins-leger': {
-    id: 'soins-leger',
-    label: 'Soins légers',
-    description: 'À l’arrivée en jeu, puis tous les 3 tours : soigne 1 PV d’un allié blessé aléatoire (ou elle-même).',
-  },
-  'soins-moyen': {
-    id: 'soins-moyen',
-    label: 'Soins moyens',
-    description: 'À l’arrivée en jeu, puis tous les 2 tours : soigne 1 PV d’un allié blessé aléatoire (ou elle-même).',
-  },
-  'soins-avances': {
-    id: 'soins-avances',
-    label: 'Soins avancés',
-    description: 'À l’arrivée en jeu, puis chaque tour : soigne 1 PV d’un allié blessé aléatoire (ou elle-même).',
-  },
-  invocation: {
-    id: 'invocation',
-    label: 'Invocation',
-    description: 'À l’arrivée en jeu, puis tous les 3 tours : invoque une créature à sa droite (ou à gauche si besoin), si un emplacement est libre.',
-  },
-  'invocation-rapide': {
-    id: 'invocation-rapide',
-    label: 'Invocation rapide',
-    description: 'À l’arrivée en jeu, puis tous les 2 tours : invoque une créature à sa droite (ou à gauche si besoin), si un emplacement est libre.',
-  },
-  'invocation-intime': {
-    id: 'invocation-intime',
-    label: 'Invocation incessante',
-    description: 'À l’arrivée en jeu, puis chaque tour : invoque une créature à sa droite (ou à gauche si besoin), si un emplacement est libre.',
-  },
-  etendard: {
-    id: 'etendard',
-    label: 'Étendard',
-    description: 'Tant que cette créature est en jeu, toutes les créatures alliées de sa faction ont +1/+1.',
-  },
-  formation: {
-    id: 'formation',
-    label: 'Formation',
-    description: 'Tant que cette créature est en jeu, les deux créatures alliées adjacentes ont +1/+1.',
-  },
-  'activer-regen': {
-    id: 'activer-regen',
-    label: 'Activer : Régénération',
-    description: 'Au lieu d’attaquer, active-la : elle ne peut plus attaquer ce tour, et récupère tous ses PV au début de ton prochain tour.',
-  },
-  'activer-tank': {
-    id: 'activer-tank',
-    label: 'Activer : Rempart',
-    description: 'Au lieu d’attaquer, active-la : elle ne peut plus attaquer ce tour, et gagne Tank pendant tout ton prochain tour (expire à la fin de ce tour).',
-  },
-  'activer-bouclier': {
-    id: 'activer-bouclier',
-    label: 'Activer : Bouclier divin',
-    description: 'Au lieu d’attaquer, active-la : elle gagne Bouclier divin (ignore la prochaine source de dégâts).',
-  },
-  'bouclier-divin': {
-    id: 'bouclier-divin',
-    label: 'Bouclier divin',
-    description: 'Ignore entièrement la première source de dégâts reçue, puis le bouclier disparaît.',
-  },
-  'double-attaque': {
-    id: 'double-attaque',
-    label: 'Double attaque',
-    description: 'Lors de la phase d’attaque : frappe deux fois la même cible (la cible peut riposter à chaque frappe).',
+    description: 'Volante : seules Vol ou Ranged peuvent l’attaquer. Contrairement à Ranged, elle est toujours forcée d’attaquer les Tanks ; sans Tank, seuls les Vol adverses la bloquent.',
   },
   pietinement: {
     id: 'pietinement',
     label: 'Piétinement',
     description: 'Les dégâts qui dépassent les PV du bloqueur sont infligés à la tour adverse.',
   },
-  transpercer: {
-    id: 'transpercer',
-    label: 'Transpercer',
-    description: 'Les dégâts qui dépassent les PV du bloqueur sont infligés à la tour adverse.',
-  },
-  'contact-mortel': {
-    id: 'contact-mortel',
-    label: 'Contact mortel',
-    description: 'Un seul point de dégâts infligé suffit à détruire une créature.',
-  },
-  celerite: {
-    id: 'celerite',
-    label: 'Célérité',
-    description: 'Peut attaquer et utiliser ses capacités avec engagement dès son arrivée (ignore le mal d’invocation).',
-  },
-  'lien-de-vie': {
-    id: 'lien-de-vie',
-    label: 'Lien de vie',
-    description: 'Les dégâts qu’elle inflige font gagner autant de PV à ta tour.',
-  },
   poison: {
     id: 'poison',
     label: 'Poison',
     description: 'Quand cette créature inflige des dégâts à un mignon, il est Empoisonné : 1 dégât au début de chacun de ses tours.',
   },
-  brulant: {
-    id: 'brulant',
-    label: 'Brûlant',
-    description: 'Quand cette créature inflige des dégâts à un mignon, il prend Feu : 1 dégât à la fin de chacun de ses tours.',
+  'canalisation-3-entrave': {
+    id: 'canalisation-3-entrave',
+    label: 'Canalisation 3 : Entrave',
+    description: 'Après 3 tours, Entrave une créature adverse (elle ne peut pas attaquer au prochain tour). Réservé aux coûts 1–2.',
   },
-  gelant: {
-    id: 'gelant',
-    label: 'Gélant',
-    description: 'Quand cette créature inflige des dégâts à un mignon, il est Gelé : il ne peut pas attaquer au prochain tour.',
+  'canalisation-2-entrave': {
+    id: 'canalisation-2-entrave',
+    label: 'Canalisation 2 : Entrave',
+    description: 'Après 2 tours, Entrave une créature adverse (elle ne peut pas attaquer au prochain tour). Réservé aux coûts 3–4.',
   },
-  'fin-tour-tir': {
-    id: 'fin-tour-tir',
-    label: 'Fin de tour',
-    description: 'À la fin de ton tour : inflige 1 dégât à une cible adverse aléatoire.',
+  'canalisation-1-entrave': {
+    id: 'canalisation-1-entrave',
+    label: 'Canalisation 1 : Entrave',
+    description: 'Après 1 tour, Entrave une créature adverse (elle ne peut pas attaquer au prochain tour). Réservé aux coûts 5+.',
   },
-  'debut-tour-soin': {
-    id: 'debut-tour-soin',
-    label: 'Début de tour',
-    description: 'Au début de ton tour : cette créature récupère 1 PV.',
-  },
-  'quand-blesse': {
-    id: 'quand-blesse',
-    label: 'Représailles',
-    description: 'Chaque fois que cette créature subit des dégâts : inflige 1 dégât à une cible adverse aléatoire.',
-  },
-  'quand-invoque': {
-    id: 'quand-invoque',
-    label: 'Appel du sang',
-    description: 'Chaque fois que tu invoques une créature : celle-ci gagne +1/+1.',
-  },
-  'apres-attaque': {
-    id: 'apres-attaque',
-    label: 'Enchaînement',
-    description: 'Après que cette créature a attaqué : inflige 1 dégât à une cible adverse aléatoire.',
-  },
-  'jetons-1-1': {
-    id: 'jetons-1-1',
-    label: 'Portée de rejetons',
-    description: 'À l’arrivée en jeu : invoque deux créatures 1/1 à ses côtés si la place le permet.',
-  },
-  'donner-buff': {
-    id: 'donner-buff',
-    label: 'Bénédiction',
-    description: 'À l’arrivée en jeu : donne +1/+1 à une créature alliée aléatoire (ou à elle-même).',
-  },
-  soutient: {
-    id: 'soutient',
-    label: 'Soutien',
-    description: 'À l’arrivée en jeu : donne +1 PV max à une créature alliée aléatoire (ou à elle-même).',
-  },
-  'soutient-2': {
-    id: 'soutient-2',
-    label: 'Soutien 2',
-    description: 'À l’arrivée en jeu : donne +1 PV max à 2 créatures alliées aléatoires sur le terrain (elle-même peut être choisie). S’il n’y a qu’une créature, elle reçoit +1 PV max.',
-  },
-  charge: {
-    id: 'charge',
-    label: 'Charge',
-    description: 'Peut attaquer dès son tour d’arrivée (ignore le mal d’invocation).',
-  },
-  camouflage: {
-    id: 'camouflage',
-    label: 'Camouflage',
-    description: 'Ne peut pas être ciblée par une attaque adverse tant qu’elle n’a pas attaqué ou activé un effet.',
-  },
-  'vol-de-vie': {
-    id: 'vol-de-vie',
-    label: 'Vol de vie',
-    description: 'Les dégâts qu’elle inflige en combat la soignent d’autant.',
-  },
-  'dernier-souffle': {
-    id: 'dernier-souffle',
-    label: 'Dernier souffle',
-    description: 'Quand elle meurt : inflige 2 dégâts à une cible adverse aléatoire.',
-  },
-  'cri-frappe': {
-    id: 'cri-frappe',
-    label: 'Cri de guerre : Frappe',
-    description: 'À l’arrivée en jeu : inflige 1 dégât à toutes les créatures adverses.',
-  },
-  'cri-exorcisme': {
-    id: 'cri-exorcisme',
-    label: 'Exorcisme',
-    description: 'À l’arrivée en jeu : retire tous les buffs des créatures adverses (bonus ATQ/PV et Bouclier divin).',
-  },
-  furie: {
-    id: 'furie',
-    label: 'Furie',
-    description: 'Chaque fois que cette créature subit des dégâts : elle gagne +1 ATQ.',
-  },
-  'allie-meurt': {
-    id: 'allie-meurt',
-    label: 'Deuil',
-    description: 'Chaque fois qu’une créature alliée meurt : celle-ci gagne +1/+1.',
-  },
-  'quand-tue': {
-    id: 'quand-tue',
-    label: 'Exécution',
-    description: 'Quand elle tue une créature adverse en combat : gagne +1/+1.',
-  },
-  affaiblir: {
-    id: 'affaiblir',
-    label: 'Affaiblir',
-    description: 'Quand elle inflige des dégâts à un mignon : la cible perd 1 ATQ (permanent).',
-  },
-  survie: {
-    id: 'survie',
-    label: 'Survie',
-    description: 'La première fois qu’elle devrait mourir, elle survit avec 1 PV à la place.',
-  },
-  'fin-tour-buff': {
-    id: 'fin-tour-buff',
-    label: 'Montée en puissance',
-    description: 'À la fin de ton tour : cette créature gagne +1 ATQ.',
-  },
-  'debut-tour-tir': {
-    id: 'debut-tour-tir',
-    label: 'Aube sanglante',
-    description: 'Au début de ton tour : inflige 1 dégât à une cible adverse aléatoire.',
-  },
-  'activer-frappe': {
-    id: 'activer-frappe',
-    label: 'Activer : Frappe',
-    description: 'Au lieu d’attaquer, active-la : inflige 2 dégâts à une cible adverse aléatoire.',
-  },
-  'activer-soin': {
-    id: 'activer-soin',
-    label: 'Activer : Soins',
-    description: 'Au lieu d’attaquer, active-la : soigne 1 PV à toutes les créatures alliées.',
-  },
-  'activer-purge': {
-    id: 'activer-purge',
-    label: 'Activer : Purification',
-    description: 'Au lieu d’attaquer, active-la : retire poison, feu et gel, puis soigne 2 PV.',
+  'bouclier-divin': {
+    id: 'bouclier-divin',
+    label: 'Bouclier divin',
+    description: 'À l’invocation : ignore entièrement la première source de dégâts reçue, puis le bouclier disparaît.',
   },
 };
 function abilityDef(id){ return ABILITIES[id] || null; }
