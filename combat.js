@@ -2322,6 +2322,15 @@ function applyOnAttackEffects(atk, def, atkSide){
   }
   if(notes.length) combatLog(`${cardLogName(def)} subit : ${notes.join(', ')}.`);
 }
+/** Poison de contact : attaquer une créature Poison l’empoisonne (même sans riposte / Ranged). */
+function applyPoisonContact(atk, def){
+  if(!atk || !def || (atk.hp|0)<=0) return;
+  if(!hasRole(def, 'poison')) return;
+  if(hasStatus(atk, 'poison')) return;
+  applyStatus(atk, 'poison');
+  combatLog(`${cardLogName(atk)} est Empoisonné (contact : ${cardLogName(def)}).`);
+  spawnCombatFx('poison', def.uid, [atk.uid]);
+}
 function applyLifesteal(atk, amount){
   if(!atk || amount<=0 || !hasRole(atk,'vol-de-vie')) return;
   const healed=healCreature(atk, amount);
@@ -2394,7 +2403,8 @@ function resolveCombatStrike(atkSide, atkUid, target){
       ? (atkSide==='player'?'la tour B':'la tour A')
       : (atkSide==='player'?'la tour adverse':'ta tour');
     const multi=hits>1?` ×${hits}`:'';
-    combatLog(`${cardLogName(atk)} frappe ${tower} pour ${total}${multi} (${D.hp}/30).`);
+    const towerCap=(b.towerMax|0)>0 && defSide==='enemy' ? (b.towerMax|0) : 30;
+    combatLog(`${cardLogName(atk)} frappe ${tower} pour ${total}${multi} (${D.hp}/${towerCap}).`);
     shakeTower(defSide);
     if(total>=4) screenShake();
     applyCombatHeals(atk, atkSide, total);
@@ -2441,6 +2451,7 @@ function resolveCombatStrike(atkSide, atkUid, target){
       if(dealt>0){
         totalCreatureDealt+=dealt;
         applyOnAttackEffects(atk, def, atkSide);
+        applyPoisonContact(atk, def);
         spawnStrikeImpact(atk.uid, def.uid);
       }
       if(trample && !hadShield && dmgEach>0){
@@ -2990,7 +3001,7 @@ function renderTowerSprite(who, opts={}){
   const label=dual
     ? (isEnemy ? 'Tour B' : 'Tour A')
     : (isEnemy ? 'Tour adverse' : 'Ta tour');
-  const maxHp=30;
+  const maxHp=(b.mode==='campagne' && isEnemy && (b.towerMax|0)>0) ? (b.towerMax|0) : 30;
   const hp=Math.max(0, side.hp|0);
   const cls=[
     'cbt-tower',

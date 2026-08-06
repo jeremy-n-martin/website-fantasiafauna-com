@@ -92,7 +92,7 @@ const spec = `# Fantasia Fauna — Spécification du jeu
 |---|---|
 | Bestiaire | Liste des cartes, filtres, zoom, cadres de rareté, vote d’art |
 | Combat | Duels tour par tour, tours à 30 PV, mana cristallin + mana de couleur |
-| Campagne | Progression type Puzzle Quest : carte, classeur, boutique, fusion, duels, or |
+| Campagne | Progression type Puzzle Quest : world map, citadelle, capture, siège, classeur, boutique |
 | Équilibre | Mode spectateur dual-IA + runner headless pour mesurer factions/créatures/IA |
 
 Site public : https://fantasiafauna.com/
@@ -105,7 +105,7 @@ Site public : https://fantasiafauna.com/
 |---|---|---|
 | 1 | **Combat rapide** | 2 factions aléatoires / camp · deck 60 (15 uniques × 4) · vs IA |
 | 2 | **Équilibre auto** | Spectateur · les 2 camps en IA · session de 2 parties · log \`balance_sessions.jsonl\` |
-| 3 | **Campagne** | Intro → choix 2 factions → carte du monde → classeur / deck / boutique / duels |
+| 3 | **Campagne** | Intro → 2 factions → world map (routes, citadelle, captures, sièges) → classeur / deck / boutique |
 
 Accès campagne aussi depuis lobby / map : Carte, Classeur, Créer un deck, Boutique.
 
@@ -204,7 +204,7 @@ Début de tour → mana cristaux + prières → pioche 2
 
 - Choix manuel de **2 factions** (principale + secondaire)
 - Starter classeur : cartes bas coût des 2 factions
-- Deck campagne : depuis le classeur, ou builder « Créer un deck » (**15 uniques × 4 max**, auto-build, deck actif)
+- Deck campagne : builder « Créer ton deck » après le choix des 2 factions (**15 uniques × 4 max**, auto-build, deck actif obligatoire pour dueler)
 - Duels campagne : ennemi en 2 factions aléatoires (même logique de deck)
 
 ### Factions
@@ -221,15 +221,94 @@ Inspirée de *Puzzle Quest: Challenge of the Warlords*, avec duels de cartes.
 | Élément | Règle |
 |---|---|
 | Intro | ~3 fenêtres de texte |
-| Progression | Carte du monde, nœuds, duels |
+| Progression | **World map** (graphe de lieux), citadelle, captures, sièges |
 | Récompenses | Or et/ou cartes |
 | Fusion | **5** cartes d’une rareté → 1 de la rareté supérieure |
 | Raretés (cadres) | normal → bronze → argent → or → or rose → platine → **obsidienne** |
 | Booster 100 or | 10 cartes ; upgrade vs normale : bronze 1/5, argent 1/25, or 1/125, or rose 1/625, obsidienne 1/3125 |
 | Boutique | Achat cartes / boosters |
 | Classeur | Même UI que la liste des cartes, filtrée sur la possession (filtres absents grisés) |
+| Deck | Éditable **uniquement** dans un hub (refuge / village / capitale alliée ou conquise) |
+
+### 5.1 World map — vision (Puzzle Quest → Fantasia Fauna)
+
+La carte n’est pas une stratégie type Heroes : c’est une **structure de progression RPG** qui donne du sens aux combats. Boucle cible :
+
+\`\`\`mermaid
+flowchart TD
+    A["Choisir une destination"] --> B["Voyage et rencontre"]
+    B --> C["Combat ou défi de deck"]
+    C --> D["Récompense ou capture"]
+    D --> E["Améliorer le deck, la citadelle ou le territoire"]
+    E --> A
+\`\`\`
+
+Quatre infos toujours visibles : **Où puis-je aller ?** · **Qu’est-ce qui m’y attend ?** · **Quel deck serait adapté ?** · **Qu’est-ce que je gagnerai ?**
+
+#### Lieux (nœuds)
+
+Graphe fixe de lieux reliés par des routes (pas de déplacement libre). Types :
+
+| Kind | Rôle |
+|---|---|
+| \`home\` | Refuge + citadelle |
+| \`village\` | Quêtes, soins, commerce limité, édition de deck |
+| \`capital\` | Grand hub faction ; siège / conquête |
+| \`lair\` | Famille de créatures ; combats + mission Capture |
+| \`sanctuary\` | Défi spécial |
+| \`ruins\` | Récompense rare |
+| \`fortress\` | Siège intermédiaire |
+| \`shop\` / \`fusion\` | Services |
+| \`route\` | Zone de rencontre / embuscade |
+
+États d’un nœud : \`unknown\` · \`discovered\` · \`neutral\` · \`hostile\` · \`allied\` · \`conquered\` · (évent. \`revolt\`).
+
+MVP jouable : **~14 lieux**, **4 capitales**, menaces de route visibles, **6 familles** de decks ennemis.
+
+#### Routes & rencontres
+
+- Au plus **une** rencontre forcée par trajet (pas de spam aléatoire).
+- Menace **visible** sur la route (Tour de guet / Éclaireur).
+- Types : Patrouille · Embuscade · Escorte · Chasse · Blocus · Survie · Duel rituel (MVP : patrouille, embuscade, blocus, capture).
+- Monture peut ignorer / fuir selon règles.
+
+#### Deck, compagnon, monture
+
+Le joueur voyage avec un **deck 15×4**, **un compagnon** (bonus contextuel, hors deck), **une monture** (effet world map surtout — pas de gros bonus de combat cumulé).
+
+#### Capture
+
+Après **2–3** victoires significatives contre une famille : mission **Capture** au repaire (défi, pas un 4ᵉ combat identique). Récompense : débloque la carte / variante.
+
+#### Citadelle (bâtiments)
+
+| Bâtiment | Adaptation FF |
+|---|---|
+| Bestiaire | Créatures rencontrées + lieux |
+| Ménagerie | Capture / recrutement |
+| Académie | Variantes / spécialisations |
+| Forge runique | Améliorations campagne (pas +ATQ/PV permanents des cartes de base) |
+| Écurie | Montures |
+| Hall des héros | Compagnons |
+| Atelier de siège | Conquérir les capitales |
+| Cartothèque | Plusieurs decks |
+| Tour de guet | Révèle menaces proches |
+| Trésorerie | Revenus territoriaux |
+
+MVP bâtiments actifs : Bestiaire, Ménagerie, Tour de guet, Atelier de siège (+ Hall / Écurie via UI compagnon-monture).
+
+#### Sièges
+
+Capitale ennemie : deck propre, tour à **plus de PV**, défenses visibles, éventuellement commandant. Victoire → conquête (deck dans la région, quêtes, recrutement faction, revenu).
+
+#### Ce qu’on évite (défauts PQ)
+
+Pas de combats aléatoires à chaque pas · pas de tribut manuel ville par ville · pas de rébellions purement RNG · pas d’obligation de farmer 10× le même monstre · pas de bonus permanents qui cassent l’équilibrage du deck.
 
 ---
+
+## 6. IA & équilibre
+
 
 ## 6. IA & équilibre
 
@@ -312,7 +391,7 @@ Demandes utilisateur consolidées (hors bugs UI ponctuels) :
 2. Images 480, aperçus combat, main / hover / flèche de pose
 3. Socles Tank / Ranged / formes type HS
 4. Lobby : combat rapide + campagne (classeur magicien)
-5. Campagne Puzzle Quest : or, cartes, fusion 5→1, raretés, carte du monde, boutique, boosters
+5. Campagne Puzzle Quest : or, cartes, fusion 5→1, raretés, **world map** (lieux, routes, citadelle, capture, sièges), boutique, boosters
 6. Coût : ≥ 1 mana couleur (max 3 colorés)
 7. Choix 2 factions en campagne ; decks bas coût
 8. Créer un deck (15×4) pour duels campagne
@@ -320,6 +399,7 @@ Demandes utilisateur consolidées (hors bugs UI ponctuels) :
 10. Rebalance stats / capacités / quotas Vol & tanks
 11. Mode **équilibre auto** spectateur + log ; puis **headless** batch IA
 12. Vote / promotion d’illustrations
+13. World map RPG : nœuds, rencontres de route, compagnon/monture, citadelle MVP, capture, siège
 
 ---
 

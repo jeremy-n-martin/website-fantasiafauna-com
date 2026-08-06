@@ -105,7 +105,7 @@ const ABILITIES = {
   poison: {
     id: 'poison',
     label: 'Poison',
-    description: 'Quand cette créature inflige des dégâts à un mignon, il est Empoisonné : 1 dégât au début de chacun de ses tours.',
+    description: 'Empoisonne les mignons qu’elle touche en combat, et ceux qui l’attaquent (même sans riposte) : 1 dégât au début de chacun de leurs tours.',
   },
   'canalisation-3-entrave': {
     id: 'canalisation-3-entrave',

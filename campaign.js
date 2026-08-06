@@ -39,7 +39,7 @@ function defaultCampaign(){
     activeDeckId:null,
     editingDeckId:null,
     introStep:0,
-    phase:'intro', // intro | pickFactions | map | battle | rewards | binder | fusion | shop | deck
+    phase:'intro', // intro | pickFactions | map | battle | rewards | binder | fusion | shop | deck | citadel
     battlesWon:0,
     lastRewards:null,
     shopStock:null,
@@ -51,25 +51,106 @@ function defaultCampaign(){
     mapLocation:'tour',
     mapCleared:[],
     battleNode:null,
+    discovered:['tour','forge','marche','col'],
+    nodeStates:{},
+    familyWins:{},
+    capturedFamilies:[],
+    encounteredIds:[],
+    routeThreats:{},
+    pendingTravel:null,
+    citadel:{buildings:[], companion:null, mount:null},
+    mountSkipCharges:0,
+    mapVersion:2,
   };
 }
 
-/** Carte du monde — positions en % ; links = déplacements possibles. */
+/** Familles de decks ennemis (thèmes de rencontre). */
+const CAMPAIGN_FAMILIES={
+  sylvestre:{id:'sylvestre', label:'Sylvestres', factions:['Sylve','Bosquet'], theme:'Poison et soins'},
+  morts_vivants:{id:'morts_vivants', label:'Morts-vivants', factions:['Nécropole','Abîme'], theme:'Sacrifice et résilience'},
+  chevaliers:{id:'chevaliers', label:'Chevaliers', factions:['Forteresse','Bastion'], theme:'Tank et Bouclier divin'},
+  demons:{id:'demons', label:'Démons', factions:['Pandémonium','Volcan'], theme:'Puissance risquée'},
+  volants:{id:'volants', label:'Volants', factions:['Empyrée','Tour'], theme:'Mobilité et frappe'},
+  geants:{id:'geants', label:'Géants', factions:['Tertre','Terrier'], theme:'Gros coûts et Piétinement'},
+};
+
+const CITADEL_BUILDINGS=[
+  {id:'bestiaire', name:'Bestiaire', cost:60, blurb:'Archive les créatures rencontrées et leurs lieux.'},
+  {id:'menagerie', name:'Ménagerie', cost:100, blurb:'Débloque les missions Capture dans les repaires.'},
+  {id:'tour_guet', name:'Tour de guet', cost:80, blurb:'Révèle les menaces sur toutes les routes adjacentes.'},
+  {id:'atelier_siege', name:'Atelier de siège', cost:160, blurb:'Permet d’assiéger les capitales hostiles.'},
+];
+
+const CAMPAIGN_COMPANIONS=[
+  {id:'paladin', name:'Paladin', blurb:'Tes créatures ont +1 PV pendant les sièges.'},
+  {id:'chasseur', name:'Chasseur', blurb:'La première créature Vol ennemie du deck coûte +1.'},
+  {id:'eclaireur', name:'Éclaireur', blurb:'Révèle les menaces sur les routes voisines (sans Tour de guet).'},
+];
+
+const CAMPAIGN_MOUNTS=[
+  {id:'destrier', name:'Destrier', blurb:'Ignore la prochaine rencontre routière (1 charge).'},
+  {id:'ombre', name:'Monture d’ombre', blurb:'Permet de fuir une rencontre d’une famille déjà vaincue.'},
+];
+
+const CAPTURE_WINS_NEEDED=3;
+const ENCOUNTER_TYPES={
+  patrol:{id:'patrol', label:'Patrouille', blurb:'Combat normal contre une famille.'},
+  ambush:{id:'ambush', label:'Embuscade', blurb:'L’ennemi commence avec une créature en jeu.'},
+  blockade:{id:'blockade', label:'Blocus', blurb:'Victoire obligatoire pour emprunter la route.'},
+  capture:{id:'capture', label:'Capture', blurb:'Défi de capture : vaincre pour recruter une créature de la famille.'},
+  siege:{id:'siege', label:'Siège', blurb:'Tour adverse renforcée + défense initiale.'},
+};
+
+/** Carte MVP (~14 lieux, 4 capitales). positions en % ; links = voisins. */
 const CAMPAIGN_MAP_NODES=[
-  {id:'tour', name:'Tour oubliée', kind:'home', x:14, y:56, links:['forge','col','marche'],
-    blurb:'Ton refuge de pierre. Classeur, coffre, et le départ de toutes les routes.'},
-  {id:'forge', name:'Crypte des sceaux', kind:'fusion', x:10, y:28, links:['tour','marche'],
+  {id:'tour', name:'Tour oubliée', kind:'home', x:12, y:58, links:['forge','col','marche','clairiere'],
+    blurb:'Ton refuge et ta citadelle. Classeur, decks, compagnons et bâtiments.'},
+  {id:'forge', name:'Crypte des sceaux', kind:'fusion', x:8, y:28, links:['tour','marche'],
     blurb:'Cinq cartes d’une rareté deviennent une rareté supérieure.'},
-  {id:'marche', name:'Comptoir des brumes', kind:'shop', x:36, y:42, links:['tour','forge','col','gue'],
-    blurb:'Marchands itinérants : boosters (100 or / 10 cartes), ventes à l’unité, rachat.'},
-  {id:'col', name:'Col des corbeaux', kind:'duel', x:32, y:74, links:['tour','marche','landes'], difficulty:1,
-    blurb:'Éclaireurs du seigneur de guerre — un premier défi sur la crête.'},
-  {id:'gue', name:'Gué de l’ambre', kind:'duel', x:58, y:50, links:['marche','landes','camp'], difficulty:2,
-    blurb:'Embuscade au gué. L’eau porte les cris avant les lames.'},
-  {id:'landes', name:'Landes pourpres', kind:'duel', x:54, y:78, links:['col','gue','camp'], difficulty:2,
-    blurb:'Vent, bruyère, et bannières du seigneur de guerre.'},
-  {id:'camp', name:'Camp du seigneur', kind:'duel', x:84, y:34, links:['gue','landes'], difficulty:3,
-    blurb:'Le camp retranché. Un duel pour la gloire — et le butin.'},
+  {id:'marche', name:'Comptoir des brumes', kind:'shop', x:30, y:40, links:['tour','forge','col','gue','clairiere'],
+    blurb:'Marchands : boosters, ventes, rachat.'},
+  {id:'clairiere', name:'Clairière du Hameau', kind:'village', x:22, y:78, links:['tour','marche','col','bosquet'],
+    blurb:'Village accueillant : édition de deck, rumeurs, départ vers le Bosquet.',
+    status:'neutral'},
+  {id:'col', name:'Col des corbeaux', kind:'route', x:38, y:62, links:['tour','marche','clairiere','gue','landes'],
+    family:'chevaliers', difficulty:1,
+    blurb:'Col venté — patrouilles de chevaliers sur la crête.'},
+  {id:'gue', name:'Gué de l’ambre', kind:'route', x:52, y:44, links:['marche','col','landes','manufacture','sanctuaire'],
+    family:'volants', difficulty:2,
+    blurb:'Embuscades ailées au passage du gué.'},
+  {id:'landes', name:'Landes pourpres', kind:'route', x:48, y:76, links:['col','gue','bosquet','forteresse'],
+    family:'demons', difficulty:2,
+    blurb:'Bruyère pourpre et bannières démoniaques.'},
+  {id:'bosquet', name:'Repaire du Bosquet', kind:'lair', x:36, y:90, links:['clairiere','landes','sylve'],
+    family:'sylvestre', difficulty:2,
+    blurb:'Famille sylvestre. Vaincre 3 fois ouvre une mission Capture (Ménagerie).',
+    status:'hostile'},
+  {id:'sylve', name:'Capitale — Sylve', kind:'capital', x:58, y:92, links:['bosquet','forteresse'],
+    family:'sylvestre', capitalFaction:'Sylve', difficulty:3,
+    blurb:'Grande capitale sylvestre. Siège possible avec l’Atelier.',
+    status:'hostile', towerHp:40},
+  {id:'manufacture', name:'Capitale — Manufacture', kind:'capital', x:70, y:28, links:['gue','sanctuaire','ruines'],
+    family:'geants', capitalFaction:'Manufacture', difficulty:3,
+    blurb:'Forges et automates. Conquête = recrutement Manufacture.',
+    status:'hostile', towerHp:40},
+  {id:'sanctuaire', name:'Sanctuaire des runes', kind:'sanctuary', x:66, y:52, links:['gue','manufacture','ossuaire','ruines'],
+    family:'volants', difficulty:2,
+    blurb:'Défi rituel : duel contre un deck thématique renforcé.'},
+  {id:'ruines', name:'Ruines d’ambre', kind:'ruins', x:84, y:40, links:['manufacture','sanctuaire','necropole'],
+    family:'geants', difficulty:2,
+    blurb:'Reliques rares — butin amélioré après victoire.'},
+  {id:'ossuaire', name:'Repaire des ossements', kind:'lair', x:74, y:68, links:['sanctuaire','forteresse','necropole'],
+    family:'morts_vivants', difficulty:2,
+    blurb:'Nécrophages. Capture après 3 victoires (Ménagerie).',
+    status:'hostile'},
+  {id:'forteresse', name:'Forteresse du Nord', kind:'fortress', x:62, y:78, links:['landes','sylve','ossuaire','necropole'],
+    family:'chevaliers', difficulty:3,
+    blurb:'Avant-poste fortifié. Prépare le siège de la Nécropole.',
+    status:'hostile'},
+  {id:'necropole', name:'Capitale — Nécropole', kind:'capital', x:88, y:72, links:['ruines','ossuaire','forteresse'],
+    family:'morts_vivants', capitalFaction:'Nécropole', difficulty:3,
+    blurb:'Siège du chapitre : tour 40 PV, mur d’ossements, deck sacrifice.',
+    status:'hostile', towerHp:40, siegeDefense:true},
 ];
 function mapNode(id){
   return CAMPAIGN_MAP_NODES.find(n=>n.id===id) || CAMPAIGN_MAP_NODES[0];
@@ -82,19 +163,132 @@ function isMapReachable(fromId, toId){
   if(fromId===toId) return true;
   return mapLinksFrom(fromId).has(toId);
 }
+function mapRoadKey(a, b){
+  return [a, b].sort().join('::');
+}
 function mapRoadPairs(){
   const seen=new Set();
   const pairs=[];
   for(const n of CAMPAIGN_MAP_NODES){
     for(const to of n.links||[]){
-      const key=[n.id, to].sort().join('::');
+      const key=mapRoadKey(n.id, to);
       if(seen.has(key)) continue;
       seen.add(key);
       const b=mapNode(to);
-      pairs.push([n, b]);
+      pairs.push([n, b, key]);
     }
   }
   return pairs;
+}
+function familyOf(id){
+  return CAMPAIGN_FAMILIES[id] || null;
+}
+function isHubNode(n){
+  if(!n) return false;
+  return n.kind==='home' || n.kind==='village' || n.kind==='shop' || n.kind==='fusion';
+}
+function canEditDeckAt(n, camp){
+  if(!n) return false;
+  if(n.kind==='home' || n.kind==='village') return true;
+  if(n.kind==='capital'){
+    const st=getNodeStatus(camp, n.id);
+    return st==='conquered' || st==='allied';
+  }
+  return false;
+}
+function getNodeStatus(camp, nodeId){
+  const n=mapNode(nodeId);
+  const custom=(camp.nodeStates||{})[nodeId];
+  if(custom) return custom;
+  if(n.status) return n.status;
+  if((camp.discovered||[]).includes(nodeId)) return 'discovered';
+  return 'unknown';
+}
+function setNodeStatus(camp, nodeId, status){
+  if(!camp.nodeStates) camp.nodeStates={};
+  camp.nodeStates[nodeId]=status;
+}
+function discoverNode(camp, nodeId){
+  if(!Array.isArray(camp.discovered)) camp.discovered=[];
+  if(!camp.discovered.includes(nodeId)) camp.discovered.push(nodeId);
+  const st=getNodeStatus(camp, nodeId);
+  if(st==='unknown') setNodeStatus(camp, nodeId, mapNode(nodeId).status||'discovered');
+}
+function hasCitadelBuilding(camp, id){
+  return !!(camp.citadel?.buildings||[]).includes(id);
+}
+function citadelCompanion(camp){
+  const id=camp.citadel?.companion;
+  return CAMPAIGN_COMPANIONS.find(c=>c.id===id) || null;
+}
+function citadelMount(camp){
+  const id=camp.citadel?.mount;
+  return CAMPAIGN_MOUNTS.find(c=>c.id===id) || null;
+}
+function canSeeRouteThreats(camp){
+  return hasCitadelBuilding(camp, 'tour_guet') || citadelCompanion(camp)?.id==='eclaireur';
+}
+function ensureRouteThreats(camp){
+  if(!camp.routeThreats || typeof camp.routeThreats!=='object') camp.routeThreats={};
+  for(const [a,b,key] of mapRoadPairs()){
+    if(camp.routeThreats[key]) continue;
+    const combatish=n=>['route','lair','fortress','sanctuary','ruins','capital'].includes(n.kind);
+    if(!combatish(a) && !combatish(b)) continue;
+    const fam=(a.family && CAMPAIGN_FAMILIES[a.family]) ? a.family
+      : (b.family && CAMPAIGN_FAMILIES[b.family]) ? b.family
+      : 'chevaliers';
+    const roll=Math.random();
+    const type=roll<0.35 ? 'ambush' : (roll<0.55 ? 'blockade' : 'patrol');
+    camp.routeThreats[key]={type, family:fam, cleared:false};
+  }
+}
+function routeThreatBetween(camp, fromId, toId){
+  ensureRouteThreats(camp);
+  const key=mapRoadKey(fromId, toId);
+  const t=camp.routeThreats[key];
+  if(!t || t.cleared) return null;
+  return {...t, key};
+}
+function familyWinCount(camp, familyId){
+  return (camp.familyWins&&camp.familyWins[familyId])|0;
+}
+function recordFamilyWin(camp, familyId){
+  if(!familyId) return;
+  if(!camp.familyWins) camp.familyWins={};
+  camp.familyWins[familyId]=(camp.familyWins[familyId]|0)+1;
+}
+function captureReady(camp, familyId){
+  if(!familyId) return false;
+  if(!hasCitadelBuilding(camp, 'menagerie')) return false;
+  if((camp.capturedFamilies||[]).includes(familyId)) return false;
+  return familyWinCount(camp, familyId)>=CAPTURE_WINS_NEEDED;
+}
+function trackEncounteredFromSide(camp, side){
+  if(!camp.encounteredIds) camp.encounteredIds=[];
+  const seen=new Set(camp.encounteredIds);
+  const piles=[...(side?.board||[]), ...(side?.hand||[]), ...(side?.deck||[])];
+  for(const c of piles){
+    if(c?.id!=null && !seen.has(c.id)){
+      seen.add(c.id);
+      camp.encounteredIds.push(c.id);
+    }
+  }
+}
+function migrateWorldMap(camp){
+  if(!camp) return;
+  const d=defaultCampaign();
+  for(const k of ['discovered','nodeStates','familyWins','capturedFamilies','encounteredIds','routeThreats','citadel','pendingTravel']){
+    if(camp[k]==null) camp[k]=d[k];
+  }
+  if(!camp.citadel || typeof camp.citadel!=='object') camp.citadel={buildings:[], companion:null, mount:null};
+  if(!Array.isArray(camp.citadel.buildings)) camp.citadel.buildings=[];
+  if(camp.mountSkipCharges==null) camp.mountSkipCharges=0;
+  if(!CAMPAIGN_MAP_NODES.some(n=>n.id===camp.mapLocation)) camp.mapLocation='tour';
+  if(Array.isArray(camp.mapCleared)){
+    camp.mapCleared=camp.mapCleared.filter(id=>CAMPAIGN_MAP_NODES.some(n=>n.id===id));
+  }
+  ensureRouteThreats(camp);
+  camp.mapVersion=2;
 }
 function loadCampaign(){
   try{
@@ -102,6 +296,7 @@ function loadCampaign(){
     if(!raw) return defaultCampaign();
     const camp={...defaultCampaign(), ...JSON.parse(raw)};
     migrateCampaignDecks(camp);
+    migrateWorldMap(camp);
     return camp;
   }catch(_){
     return defaultCampaign();
@@ -110,6 +305,7 @@ function loadCampaign(){
 function ensureCampaign(){
   if(!state.campaign) state.campaign=loadCampaign();
   migrateCampaignDecks(state.campaign);
+  migrateWorldMap(state.campaign);
   return state.campaign;
 }
 function saveCampaign(){
@@ -307,6 +503,15 @@ function deckAddCreature(creatureId, delta=1){
   let deck=getEditingDeck();
   if(!deck) deck=createEmptyDeck();
   const id=Number(creatureId);
+  const c=CREATURES.find(x=>x.id===id);
+  if(!c) return;
+  const factions=camp.playerFactions||[];
+  if(delta>0 && factions.length && !factions.includes(c.capital)){
+    camp.shopMsg=`${c.name} hors factions (${factions.join(' · ')}).`;
+    saveCampaign();
+    render();
+    return;
+  }
   const owned=binderOwnedForCreature(id);
   if(owned<=0){
     camp.shopMsg='Cette carte n’est pas dans ton classeur.';
@@ -382,10 +587,8 @@ function autoBuildDeckFromBinder(opts={}){
   const models=ownedIds
     .map(id=>CREATURES.find(c=>c.id===id))
     .filter(Boolean)
+    .filter(c=>!factions.length || factions.includes(c.capital))
     .sort((a,b)=>{
-      const af=factions.includes(a.capital)?0:1;
-      const bf=factions.includes(b.capital)?0:1;
-      if(af!==bf) return af-bf;
       const ca=(a.costColored||0)+(a.costNeutral||0)||a.cost||0;
       const cb=(b.costColored||0)+(b.costNeutral||0)||b.cost||0;
       if(ca!==cb) return ca-cb;
@@ -411,11 +614,38 @@ function autoBuildDeckFromBinder(opts={}){
 }
 function autoBuildAndOpenDeck(){
   autoBuildDeckFromBinder({replace:false, name:'Deck auto'});
+  const msg=ensureCampaign().shopMsg;
   setCampaignView('deck');
+  if(msg){
+    ensureCampaign().shopMsg=msg;
+    saveCampaign();
+    render();
+  }
 }
 function newDeckAndEdit(){
   createEmptyDeck('Mon deck');
   setCampaignView('deck');
+}
+function confirmDeckAndGoMap(){
+  const camp=ensureCampaign();
+  const deck=getActiveDeck() || getEditingDeck();
+  if(!deck || deckUniqueCount(deck)<=0){
+    camp.shopMsg='Ajoute au moins une créature, ou clique « Créer automatiquement ».';
+    saveCampaign();
+    render();
+    return;
+  }
+  camp.activeDeckId=deck.id;
+  camp.editingDeckId=deck.id;
+  const u=deckUniqueCount(deck);
+  const t=deckTotalCount(deck);
+  camp.shopMsg=`Deck actif : ${deck.name} · ${u} créatures · ${t} cartes.`;
+  camp.phase='map';
+  if(!camp.mapLocation) camp.mapLocation='tour';
+  state.battle=null;
+  state.combatView='campagne';
+  saveCampaign();
+  render();
 }
 function autoFillEditingDeck(){
   autoBuildDeckFromBinder({replace:true, name:null});
@@ -585,7 +815,13 @@ function chooseCampaignFaction(name){
   camp.phase='pickFactions';
   if(camp.playerFactions.length>=2){
     grantStarterBinder();
-    camp.phase='map';
+    // Premier passage : deck de départ + ouverture du builder
+    migrateCampaignDecks();
+    if(!(camp.decks||[]).length){
+      autoBuildDeckFromBinder({name:'Deck de départ'});
+      camp.shopMsg='Compose ton deck (15 créatures × 4 max) à partir du classeur, puis lance-toi sur la carte.';
+    }
+    camp.phase='deck';
     camp.mapLocation=camp.mapLocation||'tour';
   }
   saveCampaign();
@@ -793,6 +1029,7 @@ function setCampaignView(view){
     render();
     return;
   }
+  grantStarterBinder();
   if(view==='hub') view='map';
   camp.phase=view;
   if(view==='shop') refreshShopStock(false);
@@ -801,6 +1038,27 @@ function setCampaignView(view){
     state.activeCapital='Toutes';
     state.search='';
     state.zoomedId=null;
+  }
+  if(view==='deck'){
+    migrateCampaignDecks();
+    const here=mapNode(camp.mapLocation||'tour');
+    if(!canEditDeckAt(here, camp)){
+      camp.shopMsg='Édite ton deck dans un refuge, village, ou capitale alliée/conquise.';
+      camp.phase='map';
+      saveCampaign();
+      render();
+      return;
+    }
+    if(!getEditingDeck()){
+      const active=getActiveDeck();
+      if(active) camp.editingDeckId=active.id;
+      else createEmptyDeck('Mon deck');
+    }
+  }
+  if(view==='citadel'){
+    if(mapNode(camp.mapLocation||'tour').kind!=='home'){
+      camp.mapLocation='tour';
+    }
   }
   if(view==='map'){
     if(!camp.mapLocation) camp.mapLocation='tour';
@@ -814,17 +1072,80 @@ function setCampaignView(view){
 function travelCampaignMap(nodeId, opts={}){
   const camp=ensureCampaign();
   const from=camp.mapLocation||'tour';
-  // Accès rapide (toolbar) : on peut rejoindre tour / comptoir sans être voisin
-  const freeTravel=!!opts.free || nodeId==='tour' || nodeId==='marche' || nodeId==='forge';
+  const freeTravel=!!opts.free || (isHubNode(mapNode(nodeId)) && ['tour','marche','forge'].includes(nodeId));
   if(!freeTravel && !isMapReachable(from, nodeId)){
     camp.shopMsg='Cette route n’est pas accessible depuis ici.';
     saveCampaign();
     render();
     return;
   }
+  if(from===nodeId){
+    camp.phase='map';
+    saveCampaign();
+    render();
+    return;
+  }
+  // Rencontre routière (max 1) sauf free travel / skip monture
+  if(!freeTravel && !opts.afterBattle){
+    const threat=routeThreatBetween(camp, from, nodeId);
+    if(threat){
+      if(opts.skipMount && citadelMount(camp)?.id==='destrier' && (camp.mountSkipCharges|0)>0){
+        camp.mountSkipCharges=(camp.mountSkipCharges|0)-1;
+        if(camp.routeThreats[threat.key]) camp.routeThreats[threat.key].cleared=true;
+        camp.shopMsg='Destrier : rencontre évitée.';
+      } else if(opts.fleeMount && citadelMount(camp)?.id==='ombre' && familyWinCount(camp, threat.family)>0){
+        camp.shopMsg='Monture d’ombre : tu contournes la rencontre.';
+        // ne clear pas — on peut revenir
+      } else if(!opts.forceArrive){
+        camp.pendingTravel={from, to:nodeId, threatKey:threat.key, type:threat.type, family:threat.family};
+        camp.shopMsg=null;
+        camp.phase='map';
+        saveCampaign();
+        render();
+        return;
+      }
+    }
+  }
+  camp.pendingTravel=null;
   camp.mapLocation=nodeId;
-  camp.shopMsg=null;
+  discoverNode(camp, nodeId);
+  camp.shopMsg=camp.shopMsg||null;
   camp.phase='map';
+  saveCampaign();
+  render();
+}
+function resolvePendingTravelFight(){
+  const camp=ensureCampaign();
+  const p=camp.pendingTravel;
+  if(!p) return;
+  startCampaignBattle(p.to, {
+    encounter:p.type||'blockade',
+    family:p.family,
+    threatKey:p.threatKey,
+    travelTo:p.to,
+    fromRoad:true,
+  });
+}
+function resolvePendingTravelSkip(){
+  const camp=ensureCampaign();
+  const p=camp.pendingTravel;
+  if(!p) return;
+  if(citadelMount(camp)?.id==='destrier' && (camp.mountSkipCharges|0)>0){
+    travelCampaignMap(p.to, {skipMount:true});
+    return;
+  }
+  if(citadelMount(camp)?.id==='ombre' && familyWinCount(camp, p.family)>0){
+    travelCampaignMap(p.to, {fleeMount:true});
+    return;
+  }
+  camp.shopMsg='Impossible d’éviter : combats ou choisis un autre chemin.';
+  saveCampaign();
+  render();
+}
+function cancelPendingTravel(){
+  const camp=ensureCampaign();
+  camp.pendingTravel=null;
+  camp.shopMsg='Tu restes sur place.';
   saveCampaign();
   render();
 }
@@ -847,12 +1168,27 @@ function openCampaignPanel(view){
     setCampaignView('map');
     return;
   }
+  if(view==='citadel'){
+    camp.mapLocation='tour';
+    setCampaignView('citadel');
+    return;
+  }
   if(view==='shop') camp.mapLocation='marche';
   if(view==='binder' || view==='fusion' || view==='deck') camp.mapLocation=camp.mapLocation||'tour';
   setCampaignView(view);
 }
 function mapKindLabel(kind){
-  return ({home:'Refuge', shop:'Boutique', fusion:'Fusion', duel:'Duel'})[kind] || kind;
+  return ({
+    home:'Refuge', shop:'Boutique', fusion:'Fusion', duel:'Duel',
+    village:'Village', capital:'Capitale', lair:'Repaire', sanctuary:'Sanctuaire',
+    ruins:'Ruines', fortress:'Forteresse', route:'Route',
+  })[kind] || kind;
+}
+function mapStatusLabel(st){
+  return ({
+    unknown:'Inconnu', discovered:'Découvert', neutral:'Neutre', hostile:'Hostile',
+    allied:'Allié', conquered:'Conquis', revolt:'Révolte',
+  })[st] || st;
 }
 function mapDifficultyLabel(n){
   const d=n.difficulty||1;
@@ -936,7 +1272,7 @@ function advanceCampaignIntro(){
   saveCampaign();
   render();
 }
-function startCampaignBattle(fromNode){
+function startCampaignBattle(fromNode, battleOpts={}){
   const camp=ensureCampaign();
   if(!hasChosenFactions(camp)){
     camp.phase='pickFactions';
@@ -951,31 +1287,106 @@ function startCampaignBattle(fromNode){
     render();
     return;
   }
+  migrateCampaignDecks();
+  const active=getActiveDeck();
+  const uniques=deckUniqueCount(active);
+  if(!active || uniques<=0){
+    camp.shopMsg='Crée ou active un deck avant le duel (15 créatures × 4 max).';
+    camp.phase='deck';
+    if(!getEditingDeck()) createEmptyDeck('Mon deck');
+    saveCampaign();
+    render();
+    return;
+  }
+  if(uniques < DECK_MAX_UNIQUES){
+    camp.shopMsg=`Deck incomplet (${uniques}/${DECK_MAX_UNIQUES}). Tu peux quand même combattre — ou compléter via « Remplir ce deck ».`;
+  }
   const nodeId=fromNode || camp.mapLocation || 'col';
   const node=mapNode(nodeId);
-  if(node.kind==='duel' && camp.mapLocation!==nodeId && !isMapReachable(camp.mapLocation||'tour', nodeId)){
+  const encounter=battleOpts.encounter
+    || (battleOpts.siege || (node.kind==='capital' && getNodeStatus(camp, nodeId)==='hostile') ? 'siege' : null)
+    || (battleOpts.capture ? 'capture' : null)
+    || (node.kind==='route' ? 'patrol' : 'patrol');
+  const isSiege=encounter==='siege' || !!battleOpts.siege;
+  if(isSiege && node.kind==='capital' && !hasCitadelBuilding(camp, 'atelier_siege') && !battleOpts.force){
+    camp.shopMsg='Construis l’Atelier de siège à la citadelle pour attaquer une capitale.';
+    saveCampaign();
+    render();
+    return;
+  }
+  if(encounter==='capture' && !captureReady(camp, battleOpts.family||node.family)){
+    camp.shopMsg='Capture indisponible (Ménagerie + 3 victoires sur la famille).';
+    saveCampaign();
+    render();
+    return;
+  }
+  if(!battleOpts.fromRoad && !isHubNode(node) && camp.mapLocation!==nodeId && !isMapReachable(camp.mapLocation||'tour', nodeId)){
     camp.shopMsg='Rejoins d’abord ce lieu sur la carte.';
     saveCampaign();
     render();
     return;
   }
+  const famId=battleOpts.family || node.family || 'chevaliers';
+  const fam=familyOf(famId) || CAMPAIGN_FAMILIES.chevaliers;
+  let enemyFactions=fam.factions.slice(0, 2);
+  if(node.capitalFaction && !enemyFactions.includes(node.capitalFaction)){
+    enemyFactions=[node.capitalFaction, enemyFactions[0]].filter(Boolean).slice(0,2);
+  }
   camp.phase='battle';
   camp.lastRewards=null;
-  camp.battleNode=node.kind==='duel' ? nodeId : (camp.mapLocation||'col');
-  if(node.kind==='duel') camp.mapLocation=nodeId;
+  camp.battleNode=nodeId;
+  if(!battleOpts.fromRoad) camp.mapLocation=nodeId;
   saveCampaign();
   state.combatView='campagne';
-  const all=allFactions();
-  const rest=all.filter(f=>!playerFactions.includes(f));
-  const enemyPool=rest.length>=2 ? rest : all;
-  const enemyFactions=pickN(enemyPool, Math.min(2, enemyPool.length));
   const factions=[...new Set([...playerFactions, ...enemyFactions])];
-  const playerFirst=Math.random()<0.5;
+  const playerFirst=encounter==='ambush' ? false : Math.random()<0.5;
   const playFactions=campaignPlayFactions(playerFactions);
   const playerSide=typeof makeCampaignPlayerSide==='function'
     ? makeCampaignPlayerSide(playFactions)
     : makeSide(playFactions, CAMPAIGN_DECK_SIZE*STARTER_COPIES);
   const enemySide=makeCampaignSideFromDeck(enemyFactions, buildCampaignDeck(enemyFactions));
+
+  // Compagnon Chasseur : 1ʳᵉ Vol ennemie coûte +1
+  if(citadelCompanion(camp)?.id==='chasseur'){
+    const vol=enemySide.deck.find(c=>hasRole?.(c,'vol') || (c.abilities||[]).includes('vol') || (c.roles||[]).includes('volant'));
+    if(vol){ vol.cost=(vol.cost|0)+1; }
+  }
+  // Compagnon Paladin + siège : +1 PV sur le deck joueur
+  if(isSiege && citadelCompanion(camp)?.id==='paladin'){
+    for(const c of [...playerSide.deck, ...playerSide.hand]){
+      c.hp=(c.hp|0)+1;
+      c.maxHp=(c.maxHp||c.hp)+1;
+      if(c.baseHp!=null) c.baseHp=(c.baseHp|0)+1;
+    }
+  }
+  // Siège / tour renforcée
+  const towerHp=isSiege ? (node.towerHp||40) : 30;
+  enemySide.hp=towerHp;
+  // Embuscade / défense de siège : créature adverse déjà en jeu
+  if(encounter==='ambush' || (isSiege && node.siegeDefense) || battleOpts.ambush){
+    const tokenSrc=enemySide.deck.find(c=>(c.cost|0)<=3) || enemySide.deck[0];
+    if(tokenSrc){
+      const idx=enemySide.deck.indexOf(tokenSrc);
+      if(idx>=0) enemySide.deck.splice(idx,1);
+      const token=typeof cloneCard==='function' ? cloneCard(tokenSrc) : {...tokenSrc};
+      token.uid=typeof uid==='function' ? uid() : `e${Date.now()}`;
+      token.canAttack=false;
+      token.summoningSickness=true;
+      if(isSiege && node.siegeDefense){
+        token.name='Mur d’ossements';
+        token.attack=0; token.baseAttack=0;
+        token.hp=5; token.maxHp=5; token.baseHp=5;
+        if(!token.roles) token.roles=[];
+        if(!token.roles.includes('tank')) token.roles.push('tank');
+        if(!token.abilities) token.abilities=[];
+        if(!token.abilities.includes('tank')) token.abilities.push('tank');
+      }
+      enemySide.board.push(token);
+    }
+  }
+  // Capture : défi thématique (récompense spéciale) — moteur = combat normal pour le MVP
+  const captureMode=encounter==='capture';
+
   state.tab='combat';
   state.battle={
     mode:'campagne',
@@ -1001,8 +1412,20 @@ function startCampaignBattle(fromNode){
     flashUids:null,
     firstPlayer: playerFirst ? 'player' : 'enemy',
     mapNode:camp.battleNode,
+    encounter,
+    family:famId,
+    threatKey:battleOpts.threatKey||null,
+    travelTo:battleOpts.travelTo||null,
+    captureMode,
+    siege:isSiege,
+    towerMax:towerHp,
   };
-  combatLog(`Campagne — ${mapNode(camp.battleNode).name}. Toi: ${playerFactions.join(' · ')} · Adverse: ${enemyFactions.join(' · ')}.`);
+  const encLabel=ENCOUNTER_TYPES[encounter]?.label || encounter;
+  combatLog(`Campagne — ${node.name} · ${encLabel} (${fam.label}). Toi: ${playerFactions.join(' · ')} · Adverse: ${enemyFactions.join(' · ')}.`);
+  if(captureMode){
+    combatLog('Mission Capture : vaincs ce défi pour recruter une créature de la famille.');
+  }
+  if(isSiege) combatLog(`Siège : tour adverse ${towerHp} PV.`);
   if(isMonoFactionCheat()){
     combatLog(`Cheat mono-faction : deck limité à ${playFactions[0]||'—'}.`);
   }
@@ -1016,18 +1439,54 @@ function startCampaignBattle(fromNode){
 function claimCampaignBattleRewards(){
   const b=state.battle;
   if(!b || b.mode!=='campagne' || !b.winner) return;
+  const camp=ensureCampaign();
+  trackEncounteredFromSide(camp, b.enemy);
+  trackEncounteredFromSide(camp, b.player);
   if(!b.rewardsApplied){
     b.rewards=rollCampaignRewards(b.winner==='player');
+    if(b.winner==='player' && mapNode(b.mapNode)?.kind==='ruins'){
+      b.rewards.gold=(b.rewards.gold||0)+12;
+      const c=pickRewardCreature();
+      b.rewards.cards.push({creatureId:c.id, name:c.name, rarity:rollCampaignRarity(), image:c.image});
+    }
+    if(b.winner==='player' && b.captureMode){
+      const fam=familyOf(b.family);
+      const pool=CREATURES.filter(c=>fam && fam.factions.includes(c.capital));
+      const pick=pool[Math.floor(Math.random()*pool.length)] || pickRewardCreature();
+      b.rewards.cards.push({creatureId:pick.id, name:pick.name, rarity:'silver', image:pick.image});
+      b.rewards.captureName=pick.name;
+      if(!Array.isArray(camp.capturedFamilies)) camp.capturedFamilies=[];
+      if(b.family && !camp.capturedFamilies.includes(b.family)) camp.capturedFamilies.push(b.family);
+    }
     applyCampaignRewards(b.rewards);
     b.rewardsApplied=true;
   }
-  const camp=ensureCampaign();
   camp.phase='rewards';
   camp.lastRewards=b.rewards;
-  if(b.winner==='player' && camp.battleNode){
-    if(!Array.isArray(camp.mapCleared)) camp.mapCleared=[];
-    if(!camp.mapCleared.includes(camp.battleNode)) camp.mapCleared.push(camp.battleNode);
+  if(b.winner==='player'){
+    if(camp.battleNode){
+      if(!Array.isArray(camp.mapCleared)) camp.mapCleared=[];
+      if(!camp.mapCleared.includes(camp.battleNode)) camp.mapCleared.push(camp.battleNode);
+    }
+    if(b.family) recordFamilyWin(camp, b.family);
+    if(b.threatKey && camp.routeThreats?.[b.threatKey]){
+      camp.routeThreats[b.threatKey].cleared=true;
+    }
+    if(b.siege && camp.battleNode){
+      setNodeStatus(camp, camp.battleNode, 'conquered');
+      discoverNode(camp, camp.battleNode);
+      camp.gold=(camp.gold||0)+40;
+      if(b.rewards){
+        b.rewards.gold=(b.rewards.gold||0)+40;
+        b.rewards.conquered=mapNode(camp.battleNode).name;
+      }
+    }
+    if(b.travelTo){
+      camp.mapLocation=b.travelTo;
+      discoverNode(camp, b.travelTo);
+    }
   }
+  camp.pendingTravel=null;
   state.battle=null;
   saveCampaign();
   render();
@@ -1097,75 +1556,138 @@ function renderCampaignFactionPick(){
 function renderCampaignMap(){
   if(hasChosenFactions()) grantStarterBinder();
   const camp=ensureCampaign();
+  ensureRouteThreats(camp);
   const hereId=camp.mapLocation||'tour';
   const here=mapNode(hereId);
   const cleared=new Set(camp.mapCleared||[]);
   const reachable=mapLinksFrom(hereId);
-  const roads=mapRoadPairs().map(([a,b])=>{
+  const seeThreats=canSeeRouteThreats(camp);
+  const discovered=new Set(camp.discovered||[]);
+  const roads=mapRoadPairs().map(([a,b,key])=>{
     const active=a.id===hereId||b.id===hereId;
-    return `<line class="camp-map-road${active?' is-active':''}" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" />`;
+    const threat=camp.routeThreats?.[key];
+    const danger=threat && !threat.cleared && seeThreats && active;
+    return `<line class="camp-map-road${active?' is-active':''}${danger?' is-threat':''}" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" />`;
   }).join('');
   const nodes=CAMPAIGN_MAP_NODES.map(n=>{
     const isHere=n.id===hereId;
     const canGo=reachable.has(n.id);
     const done=cleared.has(n.id);
+    const known=discovered.has(n.id) || isHere || canGo;
     const locked=!isHere && !canGo;
+    const st=getNodeStatus(camp, n.id);
     const cls=[
       'camp-map-node',
       `kind-${n.kind}`,
+      `status-${st}`,
       isHere?'is-here':'',
       canGo?'is-reachable':'',
       locked?'is-locked':'',
       done?'is-cleared':'',
+      !known?'is-fog':'',
     ].filter(Boolean).join(' ');
-    const click=locked
-      ? ''
-      : `onclick="travelCampaignMap('${n.id}')"`;
-    return `<button type="button" class="${cls}" style="left:${n.x}%;top:${n.y}%" ${click} ${locked?'disabled':''} title="${n.name}">
+    const click=locked ? '' : `onclick="travelCampaignMap('${n.id}')"`;
+    const labelName=known ? n.name : '???';
+    const fam=familyOf(n.family);
+    const sub=known
+      ? `${mapKindLabel(n.kind)}${fam?` · ${fam.label}`:''}${n.difficulty?` · ${mapDifficultyLabel(n)}`:''}${done?' · vaincu':''}`
+      : 'Terra incognita';
+    return `<button type="button" class="${cls}" style="left:${n.x}%;top:${n.y}%" ${click} ${locked?'disabled':''} title="${labelName}">
       <span class="camp-map-pin" aria-hidden="true"></span>
-      <span class="camp-map-label"><b>${n.name}</b><small>${mapKindLabel(n.kind)}${n.kind==='duel'?` · ${mapDifficultyLabel(n)}`:''}${done?' · vaincu':''}</small></span>
+      <span class="camp-map-label"><b>${labelName}</b><small>${sub}</small></span>
     </button>`;
   }).join('');
   const pawn=`<div class="camp-map-pawn" style="left:${here.x}%;top:${here.y}%" title="Tu es ici" aria-hidden="true"><i></i></div>`;
 
   let actions='';
+  const stHere=getNodeStatus(camp, here.id);
   if(here.kind==='home'){
-    actions=`<button type="button" class="cbt-start" onclick="setCampaignView('binder')">Ouvrir le classeur</button>
-      <button type="button" class="cbt-start" onclick="setCampaignView('deck')">Créer un deck</button>
+    actions=`<button type="button" class="cbt-start" onclick="setCampaignView('citadel')">Citadelle</button>
+      <button type="button" class="cbt-start" onclick="setCampaignView('deck')">Créer / éditer mon deck</button>
+      <button type="button" class="cbt-start" onclick="setCampaignView('binder')">Ouvrir le classeur</button>
       <button type="button" class="cbt-end" onclick="setCampaignView('fusion')">Fusion</button>`;
+  } else if(here.kind==='village'){
+    actions=`<button type="button" class="cbt-start" onclick="setCampaignView('deck')">Éditer mon deck</button>
+      <button type="button" class="cbt-end" onclick="setCampaignView('binder')">Classeur</button>`;
   } else if(here.kind==='shop'){
     actions=`<button type="button" class="cbt-start" onclick="setCampaignView('shop')">Marchander</button>`;
   } else if(here.kind==='fusion'){
     actions=`<button type="button" class="cbt-start" onclick="setCampaignView('fusion')">Fusionner des cartes</button>`;
-  } else if(here.kind==='duel'){
-    actions=`<button type="button" class="cbt-start" onclick="startCampaignBattle('${here.id}')">${cleared.has(here.id)?'Rejouer le duel':'Engager le combat'}</button>`;
+  } else if(here.kind==='capital' && stHere==='hostile'){
+    actions=`<button type="button" class="cbt-start" onclick="startCampaignBattle('${here.id}',{siege:true})">${hasCitadelBuilding(camp,'atelier_siege')?'Assiéger la capitale':'Siège (Atelier requis)'}</button>`;
+  } else if(here.kind==='capital' && (stHere==='conquered'||stHere==='allied')){
+    actions=`<button type="button" class="cbt-start" onclick="setCampaignView('deck')">Éditer mon deck ici</button>
+      <p class="camp-muted">Capitale conquise — recrutement et services locaux.</p>`;
+  } else if(here.kind==='lair'){
+    const fam=here.family;
+    const wins=familyWinCount(camp, fam);
+    actions=`<button type="button" class="cbt-start" onclick="startCampaignBattle('${here.id}')">${cleared.has(here.id)?'Rejouer le repaire':'Engager le combat'}</button>
+      <p class="camp-muted">Victoires famille : ${wins}/${CAPTURE_WINS_NEEDED}</p>`;
+    if(captureReady(camp, fam)){
+      actions+=`<button type="button" class="cbt-start" onclick="startCampaignBattle('${here.id}',{capture:true,encounter:'capture',family:'${fam}'})">Mission Capture</button>`;
+    }
+  } else if(['route','fortress','sanctuary','ruins'].includes(here.kind)){
+    actions=`<button type="button" class="cbt-start" onclick="startCampaignBattle('${here.id}')">${cleared.has(here.id)?'Rejouer':'Engager le combat'}</button>`;
   }
+
+  let pendingBlock='';
+  if(camp.pendingTravel){
+    const p=camp.pendingTravel;
+    const enc=ENCOUNTER_TYPES[p.type]||ENCOUNTER_TYPES.patrol;
+    const fam=familyOf(p.family);
+    const dest=mapNode(p.to);
+    const canSkip=citadelMount(camp)?.id==='destrier' && (camp.mountSkipCharges|0)>0;
+    const canFlee=citadelMount(camp)?.id==='ombre' && familyWinCount(camp, p.family)>0;
+    pendingBlock=`<div class="camp-encounter-modal" role="dialog" aria-label="Rencontre routière">
+      <p class="eyebrow">Rencontre sur la route</p>
+      <h3>${enc.label} → ${dest.name}</h3>
+      <p class="campaign-prose">${enc.blurb}${fam?` · ${fam.label} (${fam.theme})`:''}</p>
+      <div class="campaign-actions" style="justify-content:flex-start;margin-top:10px">
+        <button type="button" class="cbt-start" onclick="resolvePendingTravelFight()">Combattre</button>
+        ${(canSkip||canFlee)?`<button type="button" class="cbt-end" onclick="resolvePendingTravelSkip()">Éviter (monture)</button>`:''}
+        <button type="button" class="cbt-end" onclick="cancelPendingTravel()">Rester ici</button>
+      </div>
+    </div>`;
+  }
+
   const quickNav=`
     <div class="camp-quick-nav" role="navigation" aria-label="Accès campagne">
       <button type="button" class="cbt-start" onclick="setCampaignView('binder')">▣ Classeur</button>
       <button type="button" class="cbt-start" onclick="setCampaignView('deck')">☰ Deck</button>
       <button type="button" class="cbt-start" onclick="setCampaignView('shop')">♦ Boutique</button>
       <button type="button" class="cbt-end" onclick="setCampaignView('fusion')">✶ Fusion</button>
+      <button type="button" class="cbt-end" onclick="setCampaignView('citadel')">🏰 Citadelle</button>
       ${here.kind!=='home'?`<button type="button" class="cbt-end" onclick="travelCampaignMap('tour',{free:true})">↩ Tour</button>`:''}
       ${here.kind!=='shop'?`<button type="button" class="cbt-end" onclick="travelCampaignMap('marche',{free:true})">↩ Comptoir</button>`:''}
     </div>`;
   const factions=(camp.playerFactions||[]).join(' · ') || '—';
+  const activeDeck=getActiveDeck();
+  const deckLabel=activeDeck
+    ? `${activeDeck.name} · ${deckUniqueCount(activeDeck)}/${DECK_MAX_UNIQUES} · ${deckTotalCount(activeDeck)} cartes`
+    : 'Aucun deck actif';
+  const deckStat=`<div class="camp-stat"><small>Deck</small><b title="${deckLabel}">${activeDeck?deckUniqueCount(activeDeck)+'/'+DECK_MAX_UNIQUES:'—'}</b></div>`;
+  const companion=citadelCompanion(camp);
+  const mount=citadelMount(camp);
 
   return `<section class="panel combat-lobby campaign-map-panel">
     <div class="section-head">
       <div>
-        <p class="eyebrow">Carte du monde</p>
+        <p class="eyebrow">World map</p>
         <h2>Routes du seigneur de guerre</h2>
-        <p>Déplace-toi de lieu en lieu. Factions de départ : <strong>${factions}</strong>.</p>
+        <p>Factions : <strong>${factions}</strong> · Deck : <strong>${deckLabel}</strong>
+        ${companion?` · Compagnon : <strong>${companion.name}</strong>`:''}
+        ${mount?` · Monture : <strong>${mount.name}</strong>`:''}</p>
       </div>
       <div class="camp-stats camp-stats-compact">
         <div class="camp-stat"><small>Or</small><b>${camp.gold||0}</b></div>
         <div class="camp-stat"><small>Classeur</small><b>${binderCount()}</b></div>
+        ${deckStat}
         <div class="camp-stat"><small>Victoires</small><b>${camp.battlesWon||0}</b></div>
       </div>
     </div>
     ${quickNav}
     ${camp.shopMsg?`<p class="camp-toast">${camp.shopMsg}</p>`:''}
+    ${pendingBlock}
     <div class="camp-map-layout">
       <div class="camp-map" role="img" aria-label="Carte de campagne">
         <div class="camp-map-terrain" aria-hidden="true"></div>
@@ -1174,12 +1696,13 @@ function renderCampaignMap(){
         ${pawn}
       </div>
       <aside class="camp-map-dossier">
-        <p class="eyebrow">${mapKindLabel(here.kind)}</p>
+        <p class="eyebrow">${mapKindLabel(here.kind)} · ${mapStatusLabel(stHere)}</p>
         <h3>${here.name}</h3>
         <p class="campaign-prose">${here.blurb}</p>
-        ${here.kind==='duel'?`<p class="camp-map-diff">Difficulté ${mapDifficultyLabel(here)}</p>`:''}
+        ${here.family?`<p class="camp-map-diff">${familyOf(here.family)?.label||''} — ${familyOf(here.family)?.theme||''}</p>`:''}
+        ${here.difficulty?`<p class="camp-map-diff">Difficulté ${mapDifficultyLabel(here)}</p>`:''}
         <div class="campaign-actions" style="justify-content:flex-start;margin-top:12px">${actions}</div>
-        <p class="camp-muted" style="margin-top:14px">Clique un lieu relié pour voyager. Classeur et boutique restent accessibles en haut.</p>
+        <p class="camp-muted" style="margin-top:14px">Une menace max par trajet. ${seeThreats?'Routes dangereuses en surbrillance.':'Construis la Tour de guet (ou prends l’Éclaireur) pour voir les menaces.'}</p>
       </aside>
     </div>
     <div class="campaign-actions" style="margin-top:14px;justify-content:flex-start">
@@ -1307,12 +1830,8 @@ function renderCampaignDeckBuilder(){
       return c ? {c, owned:e.count, inDeck:deckEntry(deck, e.creatureId)?.count||0} : null;
     })
     .filter(Boolean)
-    .sort((a,b)=>{
-      const af=factions.includes(a.c.capital)?0:1;
-      const bf=factions.includes(b.c.capital)?0:1;
-      if(af!==bf) return af-bf;
-      return (a.c.name||'').localeCompare(b.c.name||'','fr');
-    });
+    .filter(({c})=>!factions.length || factions.includes(c.capital))
+    .sort((a,b)=>(a.c.cost|0)-(b.c.cost|0) || (a.c.name||'').localeCompare(b.c.name||'','fr'));
 
   const binderHtml=binderPool.map(({c, owned, inDeck})=>{
     const full=uniques>=DECK_MAX_UNIQUES && inDeck===0;
@@ -1323,16 +1842,19 @@ function renderCampaignDeckBuilder(){
       title="${full?'Deck plein (15 créatures)':maxed?'Maximum d’exemplaires':'Ajouter au deck'}">
       <img src="${encodeURI(creatureArt(c.id))}" alt="" width="72" height="72" loading="lazy">
       <span class="camp-deck-pick-name">${c.name}</span>
-      <span class="camp-deck-pick-meta">${c.capital} · ×${owned}${inDeck?` · deck ${inDeck}`:''}</span>
+      <span class="camp-deck-pick-meta">${c.capital} · coût ${c.cost} · ×${owned}${inDeck?` · deck ${inDeck}`:''}</span>
     </button>`;
-  }).join('') || '<em>Classeur vide.</em>';
+  }).join('') || '<em>Aucune carte de tes factions dans le classeur.</em>';
+
+  const factionsLabel=(factions||[]).join(' · ') || '—';
+  const ready=uniques>0;
 
   return `<section class="panel campaign-panel camp-deck-panel">
     <div class="section-head">
       <div>
         <p class="eyebrow">Construction</p>
-        <h2>Créer un deck</h2>
-        <p>Jusqu’à <strong>${DECK_MAX_UNIQUES} créatures</strong> · <strong>${DECK_MAX_COPIES} exemplaires</strong> max chacune (stock classeur).</p>
+        <h2>Créer ton deck</h2>
+        <p>Factions : <strong>${factionsLabel}</strong> · jusqu’à <strong>${DECK_MAX_UNIQUES} créatures</strong> × <strong>${DECK_MAX_COPIES}</strong> (stock classeur).</p>
       </div>
       <div class="camp-stats camp-stats-compact">
         <div class="camp-stat"><small>Uniques</small><b>${uniques}/${DECK_MAX_UNIQUES}</b></div>
@@ -1346,6 +1868,7 @@ function renderCampaignDeckBuilder(){
         <button type="button" class="cbt-end" onclick="newDeckAndEdit()">+ Nouveau deck</button>
         <button type="button" class="cbt-start" onclick="autoBuildAndOpenDeck()">Créer automatiquement</button>
         <button type="button" class="cbt-end" onclick="autoFillEditingDeck()">Remplir ce deck (auto)</button>
+        <button type="button" class="cbt-start" onclick="confirmDeckAndGoMap()" ${ready?'':'disabled'}>Valider → Carte</button>
         <button type="button" class="cbt-end" onclick="setCampaignView('map')">↩ Carte</button>
       </div>
     </div>
@@ -1362,7 +1885,7 @@ function renderCampaignDeckBuilder(){
         <div class="camp-deck-slots">${deckCards}</div>
       </div>
       <div class="camp-deck-col">
-        <h3>Classeur</h3>
+        <h3>Classeur (${factionsLabel})</h3>
         <div class="camp-deck-picks">${binderHtml}</div>
       </div>
     </div>
@@ -1435,6 +1958,96 @@ function renderCampaignShop(){
   `;
   return renderCampaignShell('Boutique', 'Comptoir de la tour', body);
 }
+function buyCitadelBuilding(buildingId){
+  const camp=ensureCampaign();
+  const b=CITADEL_BUILDINGS.find(x=>x.id===buildingId);
+  if(!b) return;
+  if(hasCitadelBuilding(camp, buildingId)){
+    camp.shopMsg=`${b.name} est déjà construit.`;
+  } else if((camp.gold||0)<b.cost){
+    camp.shopMsg=`Il faut ${b.cost} or pour ${b.name}.`;
+  } else {
+    camp.gold-=b.cost;
+    camp.citadel.buildings.push(buildingId);
+    camp.shopMsg=`Construit : ${b.name}.`;
+  }
+  saveCampaign();
+  render();
+}
+function setCitadelCompanion(id){
+  const camp=ensureCampaign();
+  if(!camp.citadel) camp.citadel={buildings:[], companion:null, mount:null};
+  camp.citadel.companion=CAMPAIGN_COMPANIONS.some(c=>c.id===id) ? id : null;
+  camp.shopMsg=camp.citadel.companion
+    ? `Compagnon : ${citadelCompanion(camp).name}.`
+    : 'Compagnon retiré.';
+  saveCampaign();
+  render();
+}
+function setCitadelMount(id){
+  const camp=ensureCampaign();
+  if(!camp.citadel) camp.citadel={buildings:[], companion:null, mount:null};
+  const prev=camp.citadel.mount;
+  camp.citadel.mount=CAMPAIGN_MOUNTS.some(c=>c.id===id) ? id : null;
+  if(camp.citadel.mount==='destrier' && prev!=='destrier'){
+    camp.mountSkipCharges=1;
+  }
+  camp.shopMsg=camp.citadel.mount
+    ? `Monture : ${citadelMount(camp).name}.`
+    : 'Monture retirée.';
+  saveCampaign();
+  render();
+}
+function renderCampaignCitadel(){
+  const camp=ensureCampaign();
+  camp.mapLocation='tour';
+  const buildings=CITADEL_BUILDINGS.map(b=>{
+    const owned=hasCitadelBuilding(camp, b.id);
+    return `<article class="camp-citadel-card${owned?' is-owned':''}">
+      <h4>${b.name}</h4>
+      <p>${b.blurb}</p>
+      ${owned
+        ? `<span class="camp-muted">Construit</span>`
+        : `<button type="button" class="cbt-start" onclick="buyCitadelBuilding('${b.id}')">Construire (${b.cost} or)</button>`}
+    </article>`;
+  }).join('');
+  const companions=CAMPAIGN_COMPANIONS.map(c=>{
+    const on=camp.citadel?.companion===c.id;
+    return `<article class="camp-citadel-card${on?' is-owned':''}">
+      <h4>${c.name}</h4>
+      <p>${c.blurb}</p>
+      <button type="button" class="cbt-end" onclick="setCitadelCompanion('${on?'':c.id}')">${on?'Retirer':'Choisir'}</button>
+    </article>`;
+  }).join('');
+  const mounts=CAMPAIGN_MOUNTS.map(m=>{
+    const on=camp.citadel?.mount===m.id;
+    return `<article class="camp-citadel-card${on?' is-owned':''}">
+      <h4>${m.name}</h4>
+      <p>${m.blurb}${m.id==='destrier'&&on?` · Charges : ${camp.mountSkipCharges|0}`:''}</p>
+      <button type="button" class="cbt-end" onclick="setCitadelMount('${on?'':m.id}')">${on?'Retirer':'Choisir'}</button>
+    </article>`;
+  }).join('');
+  let bestiary='';
+  if(hasCitadelBuilding(camp, 'bestiaire')){
+    const ids=camp.encounteredIds||[];
+    const list=ids.slice(0,24).map(id=>{
+      const c=CREATURES.find(x=>x.id===id);
+      return c?`<li>${c.name} <small>(${c.capital})</small></li>`:'';
+    }).join('') || '<li class="camp-muted">Aucune rencontre enregistrée.</li>';
+    bestiary=`<div class="camp-subhead">Bestiaire</div><ul class="camp-bestiary">${list}</ul>`;
+  }
+  const body=`
+    <p class="campaign-prose">La citadelle débloque la progression RPG : captures, sièges, vision des routes. Un seul compagnon et une seule monture actifs.</p>
+    <div class="camp-subhead">Bâtiments</div>
+    <div class="camp-citadel-grid">${buildings}</div>
+    <div class="camp-subhead">Hall des héros — compagnon</div>
+    <div class="camp-citadel-grid">${companions}</div>
+    <div class="camp-subhead">Écurie — monture</div>
+    <div class="camp-citadel-grid">${mounts}</div>
+    ${bestiary}
+  `;
+  return renderCampaignShell('Citadelle', 'Tour oubliée', body);
+}
 function renderCampaignRewards(){
   const camp=ensureCampaign();
   const r=camp.lastRewards || state.battle?.rewards;
@@ -1453,7 +2066,10 @@ function renderCampaignRewards(){
     <div class="campaign-dialog">
       <p class="eyebrow">${r.victory?'Victoire':'Défaite'}</p>
       <h2>${r.victory?'Butin du duel':'Salutations du champ'}</h2>
-      <p class="campaign-prose">Tu gagnes <strong>${r.gold} or</strong>${(r.cards||[]).length?` et ${(r.cards||[]).length} carte(s)`:''}. Tout rejoint ton coffre et ton classeur.</p>
+      <p class="campaign-prose">Tu gagnes <strong>${r.gold} or</strong>${(r.cards||[]).length?` et ${(r.cards||[]).length} carte(s)`:''}. Tout rejoint ton coffre et ton classeur.
+        ${r.conquered?` <strong>Capitale conquise : ${r.conquered}.</strong>`:''}
+        ${r.captureName?` <strong>Créature capturée : ${r.captureName}.</strong>`:''}
+      </p>
       <ul class="camp-reward-list">${cards}</ul>
       <div class="campaign-actions">
         <button type="button" class="cbt-start" onclick="finishCampaignRewards()">Continuer</button>
@@ -1476,6 +2092,7 @@ function renderCampaign(){
   if(camp.phase==='deck') return renderCampaignDeckBuilder();
   if(camp.phase==='fusion') return renderCampaignFusion();
   if(camp.phase==='shop') return renderCampaignShop();
+  if(camp.phase==='citadel') return renderCampaignCitadel();
   if(camp.phase==='battle' && !state.battle) camp.phase='map';
   camp.phase='map';
   return renderCampaignMap();
@@ -1494,6 +2111,12 @@ window.finishCampaignRewards=finishCampaignRewards;
 window.craftBinderUpgrade=craftBinderUpgrade;
 window.setCampaignView=setCampaignView;
 window.travelCampaignMap=travelCampaignMap;
+window.resolvePendingTravelFight=resolvePendingTravelFight;
+window.resolvePendingTravelSkip=resolvePendingTravelSkip;
+window.cancelPendingTravel=cancelPendingTravel;
+window.buyCitadelBuilding=buyCitadelBuilding;
+window.setCitadelCompanion=setCitadelCompanion;
+window.setCitadelMount=setCitadelMount;
 window.openCampaignPanel=openCampaignPanel;
 window.doCraftUpgrade=doCraftUpgrade;
 window.buyShopOffer=buyShopOffer;
@@ -1516,6 +2139,7 @@ window.renameEditingDeck=renameEditingDeck;
 window.deckAddCreature=deckAddCreature;
 window.deckSetCreatureCount=deckSetCreatureCount;
 window.createEmptyDeck=createEmptyDeck;
+window.confirmDeckAndGoMap=confirmDeckAndGoMap;
 window.autoBuildAndOpenDeck=autoBuildAndOpenDeck;
 window.autoFillEditingDeck=autoFillEditingDeck;
 window.newDeckAndEdit=newDeckAndEdit;

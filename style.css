@@ -529,6 +529,58 @@ main:has(.combat-table){
   font-size:clamp(1.25rem,2.4vw,1.6rem);
 }
 .camp-map-dossier .campaign-prose{margin:0 0 8px;font-size:.95rem}
+.camp-map-road.is-threat{stroke:#ff6b6baa;stroke-width:.85;stroke-dasharray:none;filter:drop-shadow(0 0 3px #ff404088)}
+.camp-map-node.kind-village .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #c8f0b0, #3a6820 70%);
+  border-color:#a8d888;
+}
+.camp-map-node.kind-capital .camp-map-pin{
+  width:26px;height:26px;
+  background:radial-gradient(circle at 35% 30%, #ffe29b, #8a5010 70%);
+  border-color:#ffe29b;
+}
+.camp-map-node.kind-lair .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #ffb0c8, #681828 70%);
+  border-color:#e890a8;
+}
+.camp-map-node.kind-sanctuary .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #d0e8ff, #285878 70%);
+  border-color:#a0c8e8;
+}
+.camp-map-node.kind-ruins .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #e8dcc0, #685828 70%);
+  border-color:#c8b888;
+}
+.camp-map-node.kind-fortress .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #c8d0d8, #384048 70%);
+  border-color:#a0a8b0;
+}
+.camp-map-node.kind-route .camp-map-pin{
+  background:radial-gradient(circle at 35% 30%, #ffc8b0, #7a2818 70%);
+  border-color:#e8a090;
+}
+.camp-map-node.status-conquered .camp-map-pin{
+  box-shadow:0 0 0 3px #76d89688, 0 6px 14px #000a;
+}
+.camp-map-node.is-fog .camp-map-label b{letter-spacing:.12em}
+.camp-encounter-modal{
+  margin:0 0 14px;padding:14px 16px;border-radius:14px;
+  border:1px solid #ff6b6b66;background:linear-gradient(165deg,#3a1818ee,#120a0af2);
+  box-shadow:0 12px 28px #0006;
+}
+.camp-encounter-modal h3{margin:.2rem 0 .5rem;font-family:Georgia,serif;color:#ffc8b0}
+.camp-citadel-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:0 0 16px;
+}
+.camp-citadel-card{
+  padding:12px;border-radius:12px;border:1px solid #d9b45f44;
+  background:#1a140cee;
+}
+.camp-citadel-card.is-owned{border-color:#76d89666;background:#122018ee}
+.camp-citadel-card h4{margin:0 0 6px;font-family:Georgia,serif;color:#ffe29b}
+.camp-citadel-card p{margin:0 0 10px;font-size:.88rem;color:#e8dcc0cc}
+.camp-bestiary{margin:0;padding-left:1.2rem;columns:2;gap:24px;font-size:.9rem;color:#e8dcc0}
+@media(max-width:700px){.camp-bestiary{columns:1}}
 .camp-map-diff{margin:0;color:#ffc8b0;font-weight:800;letter-spacing:.06em;font-size:.78rem}
 @media(max-width:900px){
   .camp-map-layout{grid-template-columns:1fr}
