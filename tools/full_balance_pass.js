@@ -173,10 +173,12 @@ function scoreRanged(c) {
   let s = 0;
   const good = [
     'archer', 'arbalet', 'mage', 'sorcier', 'witch', 'necroman', 'runiste', 'alchimiste',
-    'pretre', 'clerc', 'oracle', 'augure', 'assassin', 'voleur', 'gun', 'fusil', 'lancer',
-    'foudre', 'laser', 'oeil', 'illith', 'tyranno', 'medus', 'gorgon', 'basilic',
+    'pretre', 'clerc', 'oracle', 'augure', 'rodeur', 'ranger', 'chasseur', 'sagit', 'elfe',
+    'gun', 'fusil', 'lancer', 'foudre', 'laser', 'oeil', 'illith', 'tyranno', 'medus', 'gorgon', 'basilic',
   ];
   for (const w of good) if (h.includes(w)) s += 4;
+  // Dague / corps à corps : jamais Ranged
+  if (/voleur|assassin|bandit|couteau|dague/.test(h)) s -= 20;
   if ((c.roles || [])[0] === 'caster') s += 2;
   if (mustFly(c)) s += 1; // archers volants ok
   if (/golem|treant|ogre|troll|geant|behem/.test(h)) s -= 5;
@@ -480,8 +482,10 @@ for (const c of CREATURES) {
   const h = hay(c);
   if (/mage|sorcier|necroman|druide|clerc|pretre|runiste|alchimiste|illith|occult|witch|enchante/.test(h)) {
     setRole(c, 'caster');
-  } else if (/rapide|assassin|voleur|scout|rodeur|fél|felin/.test(h)) {
+  } else if (/rapide|assassin|voleur|scout|fél|felin/.test(h)) {
     setRole(c, 'fast');
+  } else if (/rodeur|ranger|chasseur/.test(h)) {
+    setRole(c, 'normal'); // sera promu ranged ensuite
   } else {
     setRole(c, 'normal');
   }
@@ -537,6 +541,19 @@ for (const c of CREATURES) {
     setRole(c, 'normal');
   }
 }
+// Dague / mêlée : jamais ranged — Rôdeur : toujours ranged
+for (const c of CREATURES) {
+  if (c.name === 'Voleur' || c.name === 'Assassin') {
+    if (roleOf(c) === 'ranged') setRole(c, 'fast');
+  }
+  if (c.name === 'Rôdeur') setRole(c, 'ranged');
+}
+// Combos iconiques Vol+Piétinement / Vol+Bouclier : pas de rôle Ranged (stats normales)
+for (const c of CREATURES) {
+  if (!hasAb(c, 'vol')) continue;
+  if (!(hasAb(c, 'pietinement') || hasAb(c, 'bouclier-divin'))) continue;
+  if (roleOf(c) === 'ranged') setRole(c, 'normal');
+}
 
 // ─── PHASE 5 : stats C / 2C ± puissance ──────────────────────────────────────
 function powerTax(c) {
@@ -561,67 +578,73 @@ function flavorBonus(c) {
 }
 
 function applyStats(c) {
+  // Vol + Ranged = corps 1/1 (combo trop fort sinon)
+  if (hasAb(c, 'vol') && roleOf(c) === 'ranged') {
+    c.attack = 1;
+    c.health = 1;
+    return;
+  }
+
   const cost = Math.max(1, c.cost | 0);
-  let atk = cost;
-  let hp = 2 * cost;
-  const tax = powerTax(c);
+  const abs = absOf(c);
   const role = roleOf(c);
+  const medium =
+    hasAb(c, 'vol') ||
+    hasAb(c, 'pietinement') ||
+    hasAb(c, 'bouclier-divin') ||
+    role === 'ranged' ||
+    role === 'tank';
+  const weak =
+    !medium &&
+    (hasAb(c, 'poison') ||
+      abs.some((a) => a === 'entrave' || a.startsWith('canalisation-') || a.startsWith('invocation-')));
 
-  // Points à retirer
-  let remove = 0;
-  if (tax >= 4) remove = 2;
-  else if (tax >= 2) remove = 1;
-  else if (tax === 1) remove = 0; // canalisation seule / poison : modération
-  else remove = 0;
+  // Coût 1 — plafonds stricts : 1/3 · 1/2 · 1/1
+  if (cost === 1) {
+    c.attack = 1;
+    c.health = medium ? 1 : weak ? 2 : 3;
+    return;
+  }
 
-  // Si très chargé (vol+tank+…), parfois −2
-  if (tax >= 6) remove = Math.min(3, remove + 1);
+  // Coût 2+ — Σ ≤ 2C+2 (max 1/(2C+1)) ; faible −1 ; moyenne −2
+  {
+    const maxSumBase = 2 * cost + 2;
+    const maxHpBase = 2 * cost + 1;
+    const maxSum = medium ? maxSumBase - 2 : weak ? maxSumBase - 1 : maxSumBase;
+    const maxHp = medium ? maxHpBase - 2 : weak ? maxHpBase - 1 : maxHpBase;
+    const maxAtk = medium || weak ? cost : cost + 1;
 
-  // Distribuer les malus
-  for (let i = 0; i < remove; i++) {
-    if (role === 'tank') {
-      // tanks gardent les PV : taxer l’ATQ d’abord
-      if (atk > 1) atk -= 1;
-      else if (hp > atk) hp -= 1;
-    } else if (role === 'ranged') {
-      // glass : taxer les PV
-      if (hp > Math.max(1, atk)) hp -= 1;
+    let atk = Math.min(cost, maxAtk); // base C
+    let hp = Math.min(2 * cost, maxHp); // base 2C
+    // Si C/2C dépasse le budget (ex. C3 = 9 > 8), compresser
+    while (atk + hp > maxSum) {
+      if (hp > Math.max(atk, 1)) hp -= 1;
       else if (atk > 1) atk -= 1;
-    } else if (hasAb(c, 'vol')) {
-      // volants un peu plus fragiles
-      if (hp > Math.max(1, atk)) hp -= 1;
-      else if (atk > 1) atk -= 1;
-    } else {
-      // alterner
-      if (i % 2 === 0 && atk > 1) atk -= 1;
-      else if (hp > Math.max(1, atk)) hp -= 1;
-      else if (atk > 1) atk -= 1;
+      else break;
     }
+    // Taxe légère already in maxSum for medium/weak; ensure floors
+    atk = Math.max(1, Math.min(atk, maxAtk));
+    hp = Math.max(1, Math.min(hp, maxHp));
+    while (atk + hp > maxSum) {
+      if (hp > atk && hp > 1) hp -= 1;
+      else if (atk > 1) atk -= 1;
+      else break;
+    }
+    c.attack = atk;
+    c.health = hp;
+    return;
   }
-
-  // Bonus si faible / aucune capacité forte
-  if (tax === 0) {
-    const b = flavorBonus(c);
-    atk += b.atk;
-    hp += b.hp;
-  } else if (tax === 1 && remove === 0) {
-    // léger +0 ; parfois +1 hp pour les cost élevés sans gros keyword
-    if ((c.cost | 0) >= 5 && (c.id % 3 === 0)) hp += 1;
-  }
-
-  // Plancher & cohérence
-  atk = Math.max(1, atk);
-  hp = Math.max(atk, hp); // HP ≥ ATQ
-  // Coût 1 : au moins 1/2 de base déjà (2*C), ok
-
-  c.attack = atk;
-  c.health = hp;
 }
 
 for (const c of CREATURES) applyStats(c);
 
 // Spell text sync for vol / pietinement only cards
 for (const c of CREATURES) {
+  if (hasAb(c, 'vol') && roleOf(c) === 'ranged') {
+    c.spell =
+      'Vol + Ranged : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Ranged peuvent l’attaquer.';
+    continue;
+  }
   if (specialsOf(c).length) continue;
   if (hasAb(c, 'vol') && hasAb(c, 'pietinement')) {
     c.spell = 'Vol + Piétinement : surplus de dégâts vers la tour.';

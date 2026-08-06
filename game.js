@@ -498,6 +498,7 @@ function buildFfCardHtml(c, opts={}){
     ? `<div class="card-hp-bar" style="--hp-pct:${hpPct.toFixed(1)}%" title="${hp} / ${maxHp} PV" aria-hidden="true"><i></i></div>`
     : '';
   const abilHtml=abilitiesHtml(c, {expanded: previewExpanded || !!opts.abilitiesExpanded});
+  const modsBanner=opts.modsBannerHtml || '';
   const statsBlock=previewExpanded
     ? `<div class="card-preview-footer">
       <div class="card-stats-expanded" aria-label="Attaque ${atk}, points de vie ${hp}${injured?` sur ${maxHp}`:''}">
@@ -523,6 +524,7 @@ function buildFfCardHtml(c, opts={}){
     ${hpBar}
     <div class="type-line">${c.origin||''} · ${natures}</div>
     ${abilHtml}
+    ${previewExpanded && modsBanner ? modsBanner : ''}
     <blockquote>${quoteFor(c)}</blockquote>
     ${statsBlock}
   </article>`;

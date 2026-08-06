@@ -317,6 +317,36 @@ function creatureModListHtml(c, kind){
   if(!lines.length) return '';
   return `<div class="stat-mod-list">${lines.map(l=>creatureModLineHtml(l)).join('')}</div>`;
 }
+/** Bandeau lisible des buffs / debuffs / statuts pour l’aperçu carte. */
+function creatureActiveModsBannerHtml(c){
+  if(!c) return '';
+  const rows=[];
+  if(c.divineShield) rows.push({tone:'is-buff', kind:'Statut', text:'Bouclier divin'});
+  if(typeof isStealthed==='function' ? isStealthed(c) : c.stealthed) rows.push({tone:'is-buff', kind:'Statut', text:'Camouflage'});
+  if(c.frozen || c.skipNextAttack) rows.push({tone:'is-debuff', kind:'Statut', text:'Entrave'});
+  if(hasStatus(c,'poison')) rows.push({tone:'is-debuff', kind:'Statut', text:'Poison'});
+  if(c.tempTank || c.pendingTank) rows.push({tone:'is-buff', kind:'Statut', text:c.tempTank?'Tank temporaire':'Tank (prochain tour)'});
+  if(c.channel && (c.channel.turnsLeft|0)>0){
+    const spell=SPELL_DEFS[c.channel.spell]?.label || c.channel.spell;
+    rows.push({tone:'is-buff', kind:'Canalisation', text:`${c.channel.turnsLeft} tour(s) → ${spell}`});
+  }
+  for(const m of creatureStatMods(c)){
+    const bits=[];
+    if(m.atk) bits.push(`${m.atk>0?'+':''}${m.atk} ATQ`);
+    if(m.hp) bits.push(`${m.hp>0?'+':''}${m.hp} PV`);
+    if(!bits.length) continue;
+    const tone=((m.atk|0)+(m.hp|0))>=0 ? 'is-buff' : 'is-debuff';
+    const from=resolveModSourceName(m);
+    const side=modSideLabel(m.fromSide);
+    const detail=[m.label||'Bonus', from, side].filter(Boolean).join(' · ');
+    rows.push({tone, kind:tone==='is-buff'?'Buff':'Malus', text:`${bits.join(' · ')} — ${detail}`});
+  }
+  if(!rows.length) return '';
+  return `<div class="card-mods-banner" role="list" aria-label="Effets actifs">
+    <div class="card-mods-banner-title">Effets actifs</div>
+    ${rows.map(r=>`<div class="card-mod-line ${r.tone}" role="listitem"><em>${attrEsc(r.kind)}</em><span>${attrEsc(r.text)}</span></div>`).join('')}
+  </div>`;
+}
 function creatureStatTitle(c, kind){
   const lines=creatureModLines(c, kind);
   const what=kind==='atk'?'ATQ':'PV';
@@ -357,6 +387,7 @@ function combatCardStatOpts(c){
     hpModTipHtml: creatureModTipHtml(c,'hp'),
     atkModListHtml: creatureModListHtml(c,'atk'),
     hpModListHtml: creatureModListHtml(c,'hp'),
+    modsBannerHtml: creatureActiveModsBannerHtml(c),
   };
 }
 function healCreature(c, amount, opts={}){
@@ -509,6 +540,7 @@ function dealDamageToCreature(who, c, dmg, opts={}){
   c.hp-=dmg;
   if(opts.deathtouch && c.hp>0) c.hp=0;
   spawnDamageFloat(c.uid, dmg, 'damage');
+  spawnHitImpact(c.uid, dmg);
   if(c.hp>0) playCreatureSfx(c, 'defend');
   if(c.hp<=0 && hasRole(c,'survie') && !c.survieUsed){
     c.survieUsed=true;
@@ -952,6 +984,64 @@ function spawnDamageFloat(uid, amount, type='damage'){
   setTimeout(()=>num.remove(), 1500);
 }
 
+/** Impact type Diablo : ~500 ms de choc (shake + flash + éclats). */
+const HIT_IMPACT_MS=500;
+function spawnHitImpact(uid, amount=1){
+  if(!uid) return;
+  const b=state.battle;
+  if(b){
+    if(!b.hitImpacts) b.hitImpacts={};
+    const until=Date.now()+HIT_IMPACT_MS;
+    const prev=b.hitImpacts[uid];
+    const prevUntil=typeof prev==='object' ? (prev.until|0) : (prev|0);
+    b.hitImpacts[uid]={ until:Math.max(prevUntil, until), heavy:amount>=4 || !!(prev && prev.heavy) };
+    clearTimeout(spawnHitImpact._clearT);
+    spawnHitImpact._clearT=setTimeout(()=>{
+      const battle=state.battle;
+      if(!battle?.hitImpacts) return;
+      const now=Date.now();
+      for(const [id, info] of Object.entries(battle.hitImpacts)){
+        const t=typeof info==='object' ? (info.until|0) : (info|0);
+        if(t<=now) delete battle.hitImpacts[id];
+      }
+      if(!Object.keys(battle.hitImpacts).length) battle.hitImpacts=null;
+      render();
+    }, HIT_IMPACT_MS+40);
+  }
+  const root=document.querySelector('.combat-table')||document.body;
+  const el=root.querySelector(`.cbt-card[data-uid="${uid}"]`);
+  const heavy=amount>=4;
+  if(el){
+    el.classList.remove('is-hit-impact', 'is-hit-heavy');
+    void el.offsetWidth;
+    el.classList.add('is-hit-impact');
+    if(heavy) el.classList.add('is-hit-heavy');
+    setTimeout(()=>{
+      el.classList.remove('is-hit-impact', 'is-hit-heavy');
+    }, HIT_IMPACT_MS);
+    // Éclats d’impact (sang / étincelles)
+    const r=el.getBoundingClientRect();
+    const cx=r.left+r.width/2, cy=r.top+r.height*0.42;
+    const burst=document.createElement('div');
+    burst.className='cbt-hit-burst';
+    burst.style.left=cx+'px';
+    burst.style.top=cy+'px';
+    document.body.appendChild(burst);
+    const n=heavy ? 10 : 7;
+    for(let i=0;i<n;i++){
+      const p=document.createElement('i');
+      const angle=(-Math.PI*0.15)+(i/(n-1))*Math.PI*1.3 + (Math.random()-0.5)*0.35;
+      const dist=28+Math.random()*42+(heavy?12:0);
+      p.style.setProperty('--dx', (Math.cos(angle)*dist)+'px');
+      p.style.setProperty('--dy', (Math.sin(angle)*dist - 8)+'px');
+      p.style.animationDelay=(Math.random()*0.05)+'s';
+      burst.appendChild(p);
+    }
+    setTimeout(()=>burst.remove(), HIT_IMPACT_MS+80);
+  }
+  if(amount>=5) screenShake();
+}
+
 /* Tower shake effect */
 function shakeTower(side){
   const selector=side==='enemy'?'.cbt-tower.enemy':'.cbt-tower.ally';
@@ -1257,15 +1347,36 @@ function addColorMana(p, faction, amount=1){
   }
   return added;
 }
+/** Faction d’une carte en prière (capital canonique). */
+function prayerFactionOf(card){
+  if(!card) return null;
+  return card.capital || card.faction || null;
+}
 function grantPrayerMana(who){
   const b=state.battle; if(!b) return;
   const p=b[who];
   ensurePrayerSide(p);
+  const flashes=[];
   p.prayer.forEach(card=>{
-    if(!card?.capital) return;
-    const n=addColorMana(p, card.capital, 1);
-    if(n>0) combatLog(`${cardLogName(card)} (Prière) : +${n} mana ${card.capital}.`);
+    if(!card) return;
+    const faction=prayerFactionOf(card);
+    if(!faction){
+      combatLog(`${cardLogName(card)} (Prière) : pas de faction — mana non généré.`);
+      return;
+    }
+    const n=addColorMana(p, faction, 1);
+    if(n>0){
+      flashes.push(faction);
+      combatLog(`${cardLogName(card)} (Prière) : +${n} mana ${faction}.`);
+    } else {
+      combatLog(`${cardLogName(card)} (Prière) : plafond de mana couleur atteint (10).`);
+    }
   });
+  if(flashes.length){
+    b.prayerManaFlash={ who, factions:[...new Set(flashes)], until:Date.now()+900 };
+    clearTimeout(grantPrayerMana._flashT);
+    grantPrayerMana._flashT=setTimeout(()=>{ if(state.battle===b) render(); }, 920);
+  }
 }
 function placePrayer(who, handUid, slotIndex){
   const b=state.battle; if(!b||b.winner) return false;
@@ -1284,8 +1395,17 @@ function placePrayer(who, handUid, slotIndex){
   p.hand=p.hand.filter(c=>c.uid!==handUid);
   p.prayer[idx]=card;
   p.prayedThisTurn=true;
-  const n=addColorMana(p, card.capital, 1);
-  combatLog(`${who==='player'?'Tu places':'Adverse place'} ${cardLogName(card)} en prière${n?` (+${n} mana ${card.capital})`:''}.`);
+  const faction=prayerFactionOf(card);
+  const n=faction ? addColorMana(p, faction, 1) : 0;
+  if(n>0){
+    b.prayerManaFlash={ who, factions:[faction], until:Date.now()+900 };
+    clearTimeout(grantPrayerMana._flashT);
+    grantPrayerMana._flashT=setTimeout(()=>{ if(state.battle===b) render(); }, 920);
+  }
+  const manaNote=n>0 ? ` (+${n} mana ${faction})`
+    : faction ? ' (plafond mana couleur)'
+    : ' (faction inconnue)';
+  combatLog(`${who==='player'?'Tu places':'Adverse place'} ${cardLogName(card)} en prière${manaNote}.`);
   if(who==='player'){ b.selectedHandUid=null; b.insertAt=null; }
   return true;
 }
@@ -1339,10 +1459,11 @@ function canAfford(p, card){
   return ((p.mana || 0) + leftoverFaction) >= neutral;
 }
 function payCost(p, card){
+  if(!canAfford(p, card)) return false;
   const {colored, neutral}=cardManaParts(card);
   const faction=card.capital;
   let needN=neutral;
-  p.colorMana[faction]=(p.colorMana[faction]||0) - colored;
+  p.colorMana[faction]=Math.max(0, (p.colorMana[faction]||0) - colored);
   const fromStars=Math.min(p.mana||0, needN);
   p.mana-=fromStars;
   needN-=fromStars;
@@ -1351,6 +1472,7 @@ function payCost(p, card){
     p.colorMana[faction]-=take;
     needN-=take;
   }
+  return needN<=0;
 }
 function combatLog(msg){
   const b=state.battle;
@@ -1533,9 +1655,17 @@ function beginTurn(who, isOpening=false){
   const p=b[who];
   ensurePrayerSide(p);
   p.turnCount += 1;
-  p.maxMana=Math.min(10, Math.max(0, p.turnCount-1));
-  p.mana=p.maxMana;
+  // Mana neutre : +1 cristal rempli par tour (plafond 10), sans rechargement — le mana non dépensé est conservé.
+  // Exception : le premier joueur ne gagne rien à son tout premier tour.
+  const isFirstPlayerFirstTurn = who === (b.firstPlayer || 'player') && p.turnCount === 1;
+  if(!isFirstPlayerFirstTurn && (p.maxMana|0) < 10){
+    p.maxMana = (p.maxMana|0) + 1;
+    p.mana = Math.min(p.maxMana, (p.mana|0) + 1);
+  } else {
+    p.mana = Math.min(p.mana|0, p.maxMana|0);
+  }
   p.prayedThisTurn=false;
+  // Prières remplies : +1 mana de la couleur de chaque créature (chaque début de ton tour).
   grantPrayerMana(who);
   const draws = isOpening ? 0 : 2;
   for(let i=0;i<draws;i++) drawOne(p, who);
@@ -1544,8 +1674,17 @@ function beginTurn(who, isOpening=false){
   for(const uid of uids){
     const c=p.board.find(x=>x.uid===uid);
     if(!c) continue;
-    c.justPlayed=false;
-    c.noActivateThisTurn=false;
+    // Embuscade / créatures déjà en jeu : mal d’invocation pendant le tour d’ouverture.
+    const keepSummonSick = isOpening && !!(c.justPlayed || c.summoningSickness);
+    if(!keepSummonSick){
+      c.justPlayed=false;
+      c.noActivateThisTurn=false;
+      c.summoningSickness=false;
+    } else {
+      c.justPlayed=true;
+      c.noActivateThisTurn=true;
+      c.summoningSickness=true;
+    }
     c.activatedThisTurn=false;
     c.attacksThisTurn=0;
     // Tank temporaire : appliqué au début du tour suivant l’activation, retiré en fin de ce tour
@@ -1603,8 +1742,13 @@ function beginTurn(who, isOpening=false){
         combatLog(`${cardLogName(c)} canalise… (${c.channel.turnsLeft} tour(s)).`);
       }
     }
-    c.canAttack=!c.frozen;
-    c.exhausted=!!c.frozen;
+    if(keepSummonSick || c.frozen){
+      c.canAttack=false;
+      c.exhausted=!!c.frozen;
+    } else {
+      c.canAttack=true;
+      c.exhausted=false;
+    }
   }
   if(!isOpening) tickBoardAbilities(who);
   checkWinner();
@@ -1612,7 +1756,11 @@ function beginTurn(who, isOpening=false){
   const whoLabel=dual
     ? (who==='player'?'Camp A':'Camp B')
     : (who==='player'?'à toi':'adversaire');
-  combatLog(`Tour ${p.turnCount} — ${whoLabel} (mana ${p.mana}/${p.maxMana}).`);
+  const colorBits=Object.entries(p.colorMana||{})
+    .filter(([,n])=>(n|0)>0)
+    .map(([f,n])=>`${f} ${n}`)
+    .join(', ');
+  combatLog(`Tour ${p.turnCount} — ${whoLabel} (cristaux ${p.mana}/${p.maxMana}${colorBits?` · ${colorBits}`:''}).`);
   if(b.winner) return;
   if(who==='enemy') setTimeout(()=>enemyTurn(), aiDelay(350));
   else if(dual) setTimeout(()=>aiTurn('player'), aiDelay(350));
@@ -1932,7 +2080,7 @@ function playSelectedAt(idx){
 }
 function playCardOn(side, card, idx, who){
   if(!canAfford(side, card) || side.board.length>=8) return false;
-  payCost(side, card);
+  if(payCost(side, card)===false) return false;
   side.hand=side.hand.filter(c=>c.uid!==card.uid);
   const i=Math.max(0, Math.min(idx, side.board.length));
   side.board.splice(i, 0, card);
@@ -2017,6 +2165,13 @@ const BOARD_SHAPES = {
     priority:10,
     match:(c)=> isAssassin(c) || hasRole(c,'ranged'),
   },
+  pietinement: {
+    id:'pietinement',
+    label:'Piétinement',
+    sprite:'ui/combat/shapes/frame_oval.png',
+    priority:15,
+    match:(c)=> hasRole(c,'pietinement'),
+  },
   tank: {
     id:'tank',
     label:'Tank',
@@ -2034,6 +2189,14 @@ function boardShapeFor(c){
     }
   }
   return best;
+}
+/** Tours de canalisation (capacité carte) : 1, 2, 3 ou 0. */
+function canalisationTurnsOn(c){
+  if(!c) return 0;
+  const mods=modifierAbilitiesOn(c).filter(m=>m.kind==='channel');
+  if(mods.length) return mods[0].turns|0;
+  if(c.channel && (c.channel.turnsTotal|0)>0) return c.channel.turnsTotal|0;
+  return 0;
 }
 function attrEsc(s){
   return String(s??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
@@ -2054,6 +2217,7 @@ function boardTokenHtml(c){
   const img=artSrc
     ? `<img class="cbt-token-art" src="${encodeURI(artSrc)}" alt="" width="240" height="240" decoding="async" draggable="false">`
     : '';
+  const chTurns=canalisationTurnsOn(c);
   const socle=`<span class="cbt-shape cbt-shape-${shape.id}" data-shape="${shape.id}" aria-hidden="true">
       <span class="cbt-socle">
         <span class="cbt-socle-glow"></span>
@@ -2061,6 +2225,8 @@ function boardTokenHtml(c){
         <span class="cbt-socle-rim"></span>
         <span class="cbt-socle-plate"></span>
         <span class="cbt-socle-bevel"></span>
+        <span class="cbt-socle-spikes"><i></i><i></i></span>
+        <span class="cbt-socle-channel" data-channel="${chTurns}"><i></i><i></i><i></i></span>
         <span class="cbt-socle-gems"><i></i><i></i><i></i><i></i></span>
         <span class="cbt-socle-stand"></span>
       </span>
@@ -2866,6 +3032,11 @@ function miniCard(c, opts={}){
   const affordable=opts.affordable!==false;
   const unafford=opts.checkAfford && !affordable ? ' unaffordable':'';
   const flash=(state.battle && Array.isArray(state.battle.flashUids) && state.battle.flashUids.includes(c.uid)) ? ' cbt-flash' : '';
+  const hitInfo=state.battle?.hitImpacts?.[c.uid];
+  const hitUntil=typeof hitInfo==='object' ? (hitInfo?.until|0) : (hitInfo|0);
+  const hitCls=(!opts.hand && hitUntil>Date.now())
+    ? ` is-hit-impact${hitInfo?.heavy?' is-hit-heavy':''}`
+    : '';
   const click=opts.onclick?`onclick="${opts.onclick}"`:'';
   const title = summonSick ? ' title="Mal d’invocation — attaque au prochain tour"'
     : opts.exhausted ? ' title="Déjà utilisée"'
@@ -2881,10 +3052,15 @@ function miniCard(c, opts={}){
   if(c.frozen || c.skipNextAttack) statusClasses.push('is-frozen');
   if(c.weakened) statusClasses.push('is-weakened');
   if(hasRole(c,'furie')) statusClasses.push('has-fury');
+  if(!opts.hand && hasRole(c,'poison')) statusClasses.push('has-poison');
+  const chTurns=!opts.hand ? canalisationTurnsOn(c) : 0;
+  if(chTurns===1) statusClasses.push('has-channel-1');
+  else if(chTurns===2) statusClasses.push('has-channel-2');
+  else if(chTurns>=3) statusClasses.push('has-channel-3');
   const statusCls=statusClasses.length ? ' '+statusClasses.join(' ') : '';
   const shape=!opts.hand ? boardShapeFor(c) : null;
   const shapeCls=shape ? ` cbt-token cbt-shape-id-${shape.id}` : '';
-  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${laser}${aiming}${target}${tank}${flying}${blocked}${unafford}${statusCls}${flash}${opts.playable?' can-play':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}${shapeCls}`;
+  const cls=`cbt-card${sel}${atk}${sick}${exhausted}${laser}${aiming}${target}${tank}${flying}${blocked}${unafford}${statusCls}${flash}${hitCls}${opts.playable?' can-play':''}${opts.hand?' in-hand':''}${c.divineShield?' has-shield':''}${shapeCls}`;
   const style=`style="--faction:${fm.color}"`;
   const badge = opts.aiming?'<em class="cbt-badge atk-badge">Vise…</em>'
     : opts.targetable && opts.forcedTank?'<em class="cbt-badge tank-badge">Tank</em>'
@@ -3044,7 +3220,7 @@ function renderHearts(hp, maxHp=30){
   }
   return `<div class="cbt-hearts" title="${hp} / ${maxHp} PV">${html}<span class="cbt-hp-num">${hp}</span></div>`;
 }
-function renderManaCrystals(p){
+function renderManaCrystals(p, who){
   const cur=p.mana||0;
   const max=p.maxMana||0;
   const neutral=`<span class="cbt-colorman cbt-neutralman ${cur>0?'on':''}" style="--mana:#6eb8e8" title="Mana neutre ${cur}/${max}">
@@ -3055,17 +3231,26 @@ function renderManaCrystals(p){
       <b>${cur}</b><em class="cbt-mana-max">/${max}</em>
     </span>`;
   return `<div class="cbt-mana-panel">
-    <div class="cbt-color-row">${neutral}${renderColorMana(p)}</div>
+    <div class="cbt-color-row">${neutral}${renderColorMana(p, who)}</div>
   </div>`;
 }
-function renderColorMana(p){
+function renderColorMana(p, who){
   const b=state.battle;
-  return b.factions.map(f=>{
+  const base=who ? sideFactions(b, who) : (p.factions||b.factions||[]);
+  const extras=Object.keys(p.colorMana||{}).filter(f=>(p.colorMana[f]|0)>0 && !base.includes(f));
+  const factions=[...base, ...extras];
+  const flash=b.prayerManaFlash;
+  if(flash && (flash.until|0)<=Date.now()) b.prayerManaFlash=null;
+  const flashing=b.prayerManaFlash && b.prayerManaFlash.who===who
+    ? new Set(b.prayerManaFlash.factions||[])
+    : null;
+  return factions.map(f=>{
     const fm=FACTION_MANA[f]||{color:'#888',mark:'●',icon:'ui/combat/star_sm.png',element:f};
     const n=p.colorMana[f]||0;
     const icon=fm.icon||'ui/combat/star_sm.png';
     const el=fm.element||f;
-    return `<span class="cbt-colorman ${n?'on':''}" style="--mana:${fm.color}" title="${f} · ${el}: ${n}">
+    const pulse=flashing?.has(f) ? ' prayer-pulse' : '';
+    return `<span class="cbt-colorman ${n?'on':''}${pulse}" style="--mana:${fm.color}" title="${f} · ${el}: ${n}">
       <span class="cbt-mana-gem">
         <img src="${icon}" alt="${el}" draggable="false">
         <i class="cbt-mana-shine" aria-hidden="true"></i>
@@ -3091,7 +3276,7 @@ function renderPrayerRow(who){
         ? `<button type="button" class="cbt-prayer-remove" onclick="tryRemovePrayer(${i})" title="Retirer (hors jeu)">×</button>`
         : '';
       const img=art?`<img src="${encodeURI(art)}" alt="" draggable="false">`:'';
-      return `<div class="cbt-prayer-slot filled" style="--mana:${fm.color}" title="${card.name} · Prière (+1 ${card.capital}/tour)">
+      return `<div class="cbt-prayer-slot filled" data-uid="${card.uid}" style="--mana:${fm.color}" title="${card.name} · Prière (+1 ${card.capital}/tour)">
         ${img}<span class="cbt-prayer-name">${card.name}</span>${removeBtn}
       </div>`;
     }
@@ -3118,9 +3303,9 @@ function renderPrayerRow(who){
 function renderCombatLobby(){
   const camp=typeof ensureCampaign==='function' ? ensureCampaign() : null;
   const hasCamp=!!(camp && ((camp.introStep||0)>= (typeof CAMPAIGN_INTRO!=='undefined'?CAMPAIGN_INTRO.length:3) || camp.starterGranted || (camp.binder||[]).length));
-  const campLabel=hasCamp ? 'Continuer l’histoire' : 'Démarrer l’histoire';
+  const campLabel=hasCamp ? 'Continuer l’exploration' : 'Entrer dans la forêt';
   const campBtns=hasCamp ? `
-      <button type="button" class="cbt-start lobby-campaign" onclick="openCampaignPanel('map')">Carte du monde</button>
+      <button type="button" class="cbt-start lobby-campaign" onclick="openCampaignPanel('map')">Forêt des cartes</button>
       <button type="button" class="cbt-end" onclick="openCampaignPanel('binder')">Classeur</button>
       <button type="button" class="cbt-end" onclick="openCampaignPanel('deck')">Créer un deck</button>
       <button type="button" class="cbt-end" onclick="openCampaignPanel('shop')">Boutique</button>`
@@ -3133,9 +3318,9 @@ function renderCombatLobby(){
   return `<section class="panel combat-lobby">
     <div class="section-head">
       <div>
-        <p class="eyebrow">Tour du magicien</p>
-        <h2>Classeur & arène</h2>
-        <p>Combat rapide, campagne, ou mode équilibre (dual IA spectateur).</p>
+        <p class="eyebrow">Fantasia Fauna</p>
+        <h2>Arène &amp; territoire</h2>
+        <p>Combat rapide, exploration forestière, ou mode équilibre (dual IA spectateur).</p>
       </div>
       ${hasCamp?`<div class="camp-stats camp-stats-compact">
         <div class="camp-stat"><small>Or</small><b>${camp.gold||0}</b></div>
@@ -3157,10 +3342,10 @@ function renderCombatLobby(){
       </article>
       <article class="lobby-mode">
         <span class="lobby-mode-num">3</span>
-        <h3>Histoire de la campagne</h3>
+        <h3>Exploration</h3>
         <p>${hasCamp
-          ? `Partie en cours — ${typeof binderCount==='function'?binderCount():0} carte(s) · ${camp.gold||0} or.`
-          : 'Prologue, carte du monde, classeur, boutique et duels.'}</p>
+          ? `Voyage en cours — ${typeof binderCount==='function'?binderCount():0} carte(s) · ${camp.gold||0} or.`
+          : 'Forêt merveilleuse : sentiers, classeur, boutique et duels de cartes.'}</p>
         <div class="lobby-campaign-actions">${campBtns}${testBtns}</div>
       </article>
     </div>
@@ -3322,7 +3507,7 @@ function renderCombat(){
       <div class="cbt-stage">
         <div class="cbt-side enemy-hud">
           <div class="cbt-enemy-res">
-            ${renderManaCrystals(b.enemy)}
+            ${renderManaCrystals(b.enemy, 'enemy')}
             ${renderPrayerRow('enemy')}
           </div>
           ${renderTowerSprite('enemy', enemyTowerOpts)}
@@ -3338,7 +3523,7 @@ function renderCombat(){
         </div>
         <div class="cbt-side ally-hud">
           ${renderPrayerRow('player')}
-          ${renderManaCrystals(b.player)}
+          ${renderManaCrystals(b.player, 'player')}
           ${renderTowerSprite('player')}
         </div>
       </div>
@@ -3350,10 +3535,30 @@ function renderCombat(){
 
 function findCombatCardByUid(uid){
   const b=state.battle; if(!b||!uid) return null;
+  const inPrayer=(side)=> (side?.prayer||[]).find(c=>c && c.uid===uid);
   return b.player.hand.find(c=>c.uid===uid)
     || b.player.board.find(c=>c.uid===uid)
     || b.enemy.board.find(c=>c.uid===uid)
+    || inPrayer(b.player)
+    || inPrayer(b.enemy)
+    || b.enemy.hand.find(c=>c.uid===uid)
     || null;
+}
+/** Hôte DOM visible en plein écran (#app) — body est hors du fullscreen. */
+function combatOverlayMount(){
+  const fs=document.fullscreenElement || document.webkitFullscreenElement;
+  if(fs) return fs;
+  return document.getElementById('app') || document.body;
+}
+function ensureCombatOverlayHost(id, tag='div'){
+  let host=document.getElementById(id);
+  const mount=combatOverlayMount();
+  if(!host){
+    host=document.createElement(tag==='svg' ? 'div' : tag);
+    if(tag!=='svg') host.id=id;
+  }
+  if(host.parentElement!==mount) mount.appendChild(host);
+  return host;
 }
 function ensurePlayAimLayer(){
   let svg=document.getElementById('cbt-play-aim');
@@ -3361,7 +3566,11 @@ function ensurePlayAimLayer(){
     svg.remove();
     svg=null;
   }
-  if(svg) return svg;
+  const mount=combatOverlayMount();
+  if(svg){
+    if(svg.parentElement!==mount) mount.appendChild(svg);
+    return svg;
+  }
   svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
   svg.id='cbt-play-aim';
   svg.classList.add('cbt-play-aim-layer');
@@ -3377,7 +3586,7 @@ function ensurePlayAimLayer(){
   <path class="cbt-aim-glow" d="" fill="none" stroke="#ffe14a" stroke-width="11" stroke-linecap="round" opacity=".28" filter="url(#cbt-play-aim-blur)"/>
   <path class="cbt-aim-stroke" d="" fill="none" stroke="#ffe14a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="11 9"/>
   <polygon class="cbt-aim-head" points="0,0 0,0 0,0" fill="#ffe14a" stroke="#f5c518" stroke-width="1"/>`;
-  document.body.appendChild(svg);
+  mount.appendChild(svg);
   return svg;
 }
 function hidePlayAim(){
@@ -3433,6 +3642,10 @@ function showPlayAimFrom(el){
   row.classList.add('play-hot');
 }
 function hideCombatCardPreview(){
+  if(window._cbtPreviewHideTimer){
+    clearTimeout(window._cbtPreviewHideTimer);
+    window._cbtPreviewHideTimer=null;
+  }
   const host=document.getElementById('cbt-card-preview');
   if(host){
     host.classList.remove('show');
@@ -3440,8 +3653,9 @@ function hideCombatCardPreview(){
   }
   document.querySelectorAll('.cbt-card.hand-drawn').forEach(el=>el.classList.remove('hand-drawn'));
   hidePlayAim();
+  window._cbtPreviewUid=null;
 }
-/** Ancre l’aperçu : à gauche si la source est dans le quart droit de l’écran. */
+/** Ancre l’aperçu à gauche si la source est dans les 40 % les plus à droite de l’écran. */
 function placeCombatCardPreviewHost(host, sourceEl){
   if(!host) return;
   const table=document.querySelector('.combat-table');
@@ -3450,7 +3664,7 @@ function placeCombatCardPreviewHost(host, sourceEl){
   if(sourceEl && typeof sourceEl.getBoundingClientRect==='function'){
     const r=sourceEl.getBoundingClientRect();
     const mid=(r.left+r.right)/2;
-    preferLeft = mid >= window.innerWidth * 0.75;
+    preferLeft = mid >= window.innerWidth * 0.6;
   }
   host.style.top='50%';
   if(preferLeft){
@@ -3480,13 +3694,19 @@ function showCombatCardPreview(el){
   const uid=el.getAttribute('data-uid');
   const c=findCombatCardByUid(uid);
   if(!c || typeof buildFfCardHtml!=='function') return;
+  if(window._cbtPreviewHideTimer){
+    clearTimeout(window._cbtPreviewHideTimer);
+    window._cbtPreviewHideTimer=null;
+  }
+  window._cbtPreviewUid=uid;
   let host=document.getElementById('cbt-card-preview');
+  const mount=combatOverlayMount();
   if(!host){
     host=document.createElement('div');
     host.id='cbt-card-preview';
     host.setAttribute('aria-hidden','true');
-    document.body.appendChild(host);
   }
+  if(host.parentElement!==mount) mount.appendChild(host);
   placeCombatCardPreviewHost(host, el);
   host.style.setProperty('--preview-fit', '1');
   host.innerHTML=buildFfCardHtml(c, {
@@ -3499,6 +3719,7 @@ function showCombatCardPreview(el){
   requestAnimationFrame(()=>{
     const preview=document.getElementById('cbt-card-preview');
     if(!preview?.classList.contains('show')) return;
+    if(window._cbtPreviewUid!==uid) return;
     placeCombatCardPreviewHost(preview, el);
     const h=preview.offsetHeight || 1;
     const maxH=window.innerHeight * 0.94;
@@ -3514,27 +3735,51 @@ function showCombatCardPreview(el){
     if(el.classList.contains('can-play')) showPlayAimFrom(el);
   }
 }
+function combatPreviewSourceFromEvent(ev){
+  const t=ev.target;
+  if(!t?.closest) return null;
+  const card=t.closest('.combat-table .cbt-card[data-uid]');
+  if(card) return card;
+  const prayer=t.closest('.combat-table .cbt-prayer-slot.filled[data-uid]');
+  if(prayer) return prayer;
+  return null;
+}
+function scheduleHideCombatCardPreview(ev){
+  if(window._cbtHandDrag?.active) return;
+  const el=combatPreviewSourceFromEvent(ev);
+  if(!el) return;
+  const to=ev.relatedTarget;
+  if(to && el.contains(to)) return;
+  // Ne pas masquer si on passe sur l’aperçu (pointer-events:none) ou une autre carte previewable
+  if(window._cbtPreviewHideTimer) clearTimeout(window._cbtPreviewHideTimer);
+  window._cbtPreviewHideTimer=setTimeout(()=>{
+    window._cbtPreviewHideTimer=null;
+    const over=document.elementFromPoint?.(ev.clientX, ev.clientY);
+    if(over?.closest?.('.combat-table .cbt-card[data-uid], .combat-table .cbt-prayer-slot.filled[data-uid], #cbt-card-preview')){
+      const next=over.closest('.combat-table .cbt-card[data-uid], .combat-table .cbt-prayer-slot.filled[data-uid]');
+      if(next) showCombatCardPreview(next);
+      return;
+    }
+    hideCombatCardPreview();
+    window._cbtPreviewUid=null;
+  }, 40);
+}
 function bindCombatCardPreview(){
   if(bindCombatCardPreview._ready) return;
   bindCombatCardPreview._ready=true;
   document.addEventListener('pointerover', (ev)=>{
     if(window._cbtHandDrag?.active) return;
-    const el=ev.target?.closest?.('.combat-table .cbt-card');
+    const el=combatPreviewSourceFromEvent(ev);
     if(!el) return;
     const from=ev.relatedTarget;
     if(from && el.contains(from)) return;
     showCombatCardPreview(el);
   });
   document.addEventListener('pointerout', (ev)=>{
-    if(window._cbtHandDrag?.active) return;
-    const el=ev.target?.closest?.('.combat-table .cbt-card');
-    if(!el) return;
-    const to=ev.relatedTarget;
-    if(to && el.contains(to)) return;
-    hideCombatCardPreview();
+    scheduleHideCombatCardPreview(ev);
   });
   document.addEventListener('pointerdown', (ev)=>{
-    if(ev.target?.closest?.('.combat-table .cbt-card')) hideCombatCardPreview();
+    if(combatPreviewSourceFromEvent(ev)) hideCombatCardPreview();
   }, true);
 }
 

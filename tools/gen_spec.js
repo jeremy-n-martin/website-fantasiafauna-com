@@ -92,7 +92,7 @@ const spec = `# Fantasia Fauna — Spécification du jeu
 |---|---|
 | Bestiaire | Liste des cartes, filtres, zoom, cadres de rareté, vote d’art |
 | Combat | Duels tour par tour, tours à 30 PV, mana cristallin + mana de couleur |
-| Campagne | Progression type Puzzle Quest : world map, citadelle, capture, siège, classeur, boutique |
+| Campagne | Exploration d’une forêt merveilleuse : carte, refuge, capture, défis de capitales, classeur, boutique — tout passe par les cartes |
 | Équilibre | Mode spectateur dual-IA + runner headless pour mesurer factions/créatures/IA |
 
 Site public : https://fantasiafauna.com/
@@ -105,7 +105,7 @@ Site public : https://fantasiafauna.com/
 |---|---|---|
 | 1 | **Combat rapide** | 2 factions aléatoires / camp · deck 60 (15 uniques × 4) · vs IA |
 | 2 | **Équilibre auto** | Spectateur · les 2 camps en IA · session de 2 parties · log \`balance_sessions.jsonl\` |
-| 3 | **Campagne** | Intro → 2 factions → world map (routes, citadelle, captures, sièges) → classeur / deck / boutique |
+| 3 | **Campagne** | Intro → 2 affinités → forêt (sentiers, refuge, captures, capitales) → classeur / deck / boutique |
 
 Accès campagne aussi depuis lobby / map : Carte, Classeur, Créer un deck, Boutique.
 
@@ -123,7 +123,7 @@ Accès campagne aussi depuis lobby / map : Carte, Classeur, Créer un deck, Bout
 | Pioche / tour | **2** cartes (sauf tour d’ouverture) |
 | Main max | **8** (\`HAND_MAX\`) |
 | Plateau max | **8** créatures / camp |
-| Mana cristallin | Tour N → \`min(10, max(0, N-1))\` cristaux (tour 1 = 0, tour 2 = 1… jusqu’à 10) |
+| Mana cristallin | **+1** cristal rempli / tour (plafond **10**), **conservé** d’un tour sur l’autre (pas de recharge au max). Exception : le **premier joueur** ne gagne rien à son 1ᵉʳ tour. |
 | Mana de couleur | Via **Prière** (voir §3.3) · cumul total coloré **≤ 10** · **non régénéré** |
 | Premier joueur | Pile ou face 50/50 |
 | Victoire | Tour adverse à 0 PV |
@@ -179,15 +179,15 @@ Tour vs tour : dégâts directs à la tour (30 PV).
 | **Ranged** | Ignore les Tanks · peut cibler les **Vol** · pas de riposte · peut frapper la tour librement |
 | **Camouflage** | Non ciblable tant que la créature n’a pas attaqué / activé |
 
-Socles visuels : ovale portrait ; sprites dédiés Tank / Ranged / Vol (lévitation).
+Socles visuels : ovale portrait ; **Tank** = carré arrondi ; **Ranged** = triangle arrondi ; **Piétinement** = ovale + 2 pics bas ; **Poison** = 1 pic bas ; **Canalisation** = 1 / 2 / 3 ronds en haut ; Vol (lévitation).
 
 ### 3.7 Tour de jeu (résumé)
 
 \`\`\`
-Début de tour → mana cristaux + prières → pioche 2
+Début de tour → +1 mana cristal (sauf 1ᵉʳ tour du 1ᵉʳ joueur) + prières → pioche 2
 → effets début de tour / poison / regen / tank temporaire…
 → phase principale : poser, prier, attaquer, activer
-→ Fin du tour → effets fin de tour
+→ Fin du tour → effets fin de tour (**mana neutre non dépensé conservé**)
 → tour adverse
 \`\`\`
 
@@ -216,12 +216,12 @@ Chaque faction a un mana coloré (\`FACTION_MANA\` dans \`game.js\`).
 
 ## 5. Campagne (règles produit)
 
-Inspirée de *Puzzle Quest: Challenge of the Warlords*, avec duels de cartes.
+Exploration d’un **territoire forestier merveilleux** : les lieux, rencontres et récompenses s’expriment en **cartes** (deck, classeur, duels). Structure de progression proche d’une world map RPG, sans framing « magicien solitaire ».
 
 | Élément | Règle |
 |---|---|
-| Intro | ~3 fenêtres de texte |
-| Progression | **World map** (graphe de lieux), citadelle, captures, sièges |
+| Intro | ~3 fenêtres de texte (forêt / classeur / premier sentier) |
+| Progression | **Carte du territoire** (graphe de lieux), refuge, captures, défis de capitales |
 | Récompenses | Or et/ou cartes |
 | Fusion | **5** cartes d’une rareté → 1 de la rareté supérieure |
 | Raretés (cadres) | normal → bronze → argent → or → or rose → platine → **obsidienne** |
@@ -230,16 +230,16 @@ Inspirée de *Puzzle Quest: Challenge of the Warlords*, avec duels de cartes.
 | Classeur | Même UI que la liste des cartes, filtrée sur la possession (filtres absents grisés) |
 | Deck | Éditable **uniquement** dans un hub (refuge / village / capitale alliée ou conquise) |
 
-### 5.1 World map — vision (Puzzle Quest → Fantasia Fauna)
+### 5.1 Carte du territoire — vision
 
-La carte n’est pas une stratégie type Heroes : c’est une **structure de progression RPG** qui donne du sens aux combats. Boucle cible :
+La carte n’est pas une stratégie type Heroes : c’est une **structure d’exploration** qui donne du sens aux combats de cartes. Boucle cible :
 
 \`\`\`mermaid
 flowchart TD
     A["Choisir une destination"] --> B["Voyage et rencontre"]
     B --> C["Combat ou défi de deck"]
     C --> D["Récompense ou capture"]
-    D --> E["Améliorer le deck, la citadelle ou le territoire"]
+    D --> E["Améliorer le deck, le refuge ou le territoire"]
     E --> A
 \`\`\`
 
@@ -247,17 +247,17 @@ Quatre infos toujours visibles : **Où puis-je aller ?** · **Qu’est-ce qui m�
 
 #### Lieux (nœuds)
 
-Graphe fixe de lieux reliés par des routes (pas de déplacement libre). Types :
+Graphe fixe de lieux reliés par des sentiers (pas de déplacement libre). Types :
 
 | Kind | Rôle |
 |---|---|
-| \`home\` | Refuge + citadelle |
+| \`home\` | Clairière-refuge (classeur, aménagements) |
 | \`village\` | Quêtes, soins, commerce limité, édition de deck |
-| \`capital\` | Grand hub faction ; siège / conquête |
+| \`capital\` | Grand hub faction ; défi / conquête |
 | \`lair\` | Famille de créatures ; combats + mission Capture |
 | \`sanctuary\` | Défi spécial |
 | \`ruins\` | Récompense rare |
-| \`fortress\` | Siège intermédiaire |
+| \`fortress\` | Défi intermédiaire |
 | \`shop\` / \`fusion\` | Services |
 | \`route\` | Zone de rencontre / embuscade |
 
@@ -274,13 +274,13 @@ MVP jouable : **~14 lieux**, **4 capitales**, menaces de route visibles, **6 fam
 
 #### Deck, compagnon, monture
 
-Le joueur voyage avec un **deck 15×4**, **un compagnon** (bonus contextuel, hors deck), **une monture** (effet world map surtout — pas de gros bonus de combat cumulé).
+Le joueur voyage avec un **deck 15×4**, **un compagnon** (bonus contextuel, hors deck), **une monture** (effet carte surtout — pas de gros bonus de combat cumulé).
 
 #### Capture
 
 Après **2–3** victoires significatives contre une famille : mission **Capture** au repaire (défi, pas un 4ᵉ combat identique). Récompense : débloque la carte / variante.
 
-#### Citadelle (bâtiments)
+#### Refuge (aménagements)
 
 | Bâtiment | Adaptation FF |
 |---|---|
@@ -289,19 +289,19 @@ Après **2–3** victoires significatives contre une famille : mission **Capture
 | Académie | Variantes / spécialisations |
 | Forge runique | Améliorations campagne (pas +ATQ/PV permanents des cartes de base) |
 | Écurie | Montures |
-| Hall des héros | Compagnons |
-| Atelier de siège | Conquérir les capitales |
+| Compagnons de route | Compagnons |
+| Atelier de siège | Défier les capitales |
 | Cartothèque | Plusieurs decks |
 | Tour de guet | Révèle menaces proches |
 | Trésorerie | Revenus territoriaux |
 
-MVP bâtiments actifs : Bestiaire, Ménagerie, Tour de guet, Atelier de siège (+ Hall / Écurie via UI compagnon-monture).
+MVP aménagements actifs : Bestiaire, Ménagerie, Tour de guet, Atelier de siège (+ compagnon / monture via UI).
 
-#### Sièges
+#### Défis de capitales
 
-Capitale ennemie : deck propre, tour à **plus de PV**, défenses visibles, éventuellement commandant. Victoire → conquête (deck dans la région, quêtes, recrutement faction, revenu).
+Capitale ennemie : deck propre, tour à **plus de PV**, défenses visibles. Victoire → conquête (deck dans la région, quêtes, recrutement faction, revenu).
 
-#### Ce qu’on évite (défauts PQ)
+#### Ce qu’on évite
 
 Pas de combats aléatoires à chaque pas · pas de tribut manuel ville par ville · pas de rébellions purement RNG · pas d’obligation de farmer 10× le même monstre · pas de bonus permanents qui cassent l’équilibrage du deck.
 
@@ -353,7 +353,7 @@ Structure créature :
 
 - \`roles\` : **exactement 1** parmi \`normal\`, \`fast\`, \`ranged\`, \`caster\`, \`tank\`
 - \`abilities\` : liste d’ids du catalogue (§11)
-- Guidelines d’équilibrage : stats de base **ATQ = C**, **PV = 2×C** ; capacités puissantes → −1/−2 ; sans capa forte → 0 ou +1 ; HP ≥ ATQ ; **max 1 capacité** (sauf combos iconiques : dragons Vol+Piétinement, Ange/Phénix Vol+Bouclier) ; signatures uniques (coût/ATQ/PV/rôle/capacités)
+- Guidelines d’équilibrage : stats de base **ATQ = C**, **PV = 2×C** (compressé si besoin) ; HP ≥ ATQ ; **max 1 capacité** (sauf combos iconiques : dragons Vol+Piétinement, Ange/Phénix Vol+Bouclier) ; **Vol + Ranged → 1/1** ; plafonds **Σ ATQ+PV ≤ 2C+2** avec max **1/(2C+1)** (C2: Σ6 / 1/5 · C3: Σ8 / 1/7 · C4: Σ10 / 1/9…) — profils libres sous le plafond (ex. C3 : 2/6, 3/5, 3/3, 2/5) ; capa faible **Σ−1** ; capa moyenne (Vol/Ranged/Tank/Bouclier/Piétinement) **Σ−2** ; **coût 1** : **1/3** / **1/2** / **1/1** ; signatures uniques
 
 Images : sources **480×480** ; affichage liste ~240 ; aperçu combat taille réelle / carte agrandie.
 
@@ -387,11 +387,11 @@ Images : sources **480×480** ; affichage liste ~240 ; aperçu combat taille ré
 
 Demandes utilisateur consolidées (hors bugs UI ponctuels) :
 
-1. Combat jouable type Hearthstone + mana cristal / couleur
+1. Combat jouable type Hearthstone + mana cristal / couleur (**+1/tour**, conservation, 1ᵉʳ tour du 1ᵉʳ joueur sans gain)
 2. Images 480, aperçus combat, main / hover / flèche de pose
 3. Socles Tank / Ranged / formes type HS
-4. Lobby : combat rapide + campagne (classeur magicien)
-5. Campagne Puzzle Quest : or, cartes, fusion 5→1, raretés, **world map** (lieux, routes, citadelle, capture, sièges), boutique, boosters
+4. Lobby : combat rapide + exploration (forêt / classeur)
+5. Campagne forêt : or, cartes, fusion 5→1, raretés, **carte du territoire** (sentiers, refuge, capture, capitales), boutique, boosters
 6. Coût : ≥ 1 mana couleur (max 3 colorés)
 7. Choix 2 factions en campagne ; decks bas coût
 8. Créer un deck (15×4) pour duels campagne
@@ -399,7 +399,7 @@ Demandes utilisateur consolidées (hors bugs UI ponctuels) :
 10. Rebalance stats / capacités / quotas Vol & tanks
 11. Mode **équilibre auto** spectateur + log ; puis **headless** batch IA
 12. Vote / promotion d’illustrations
-13. World map RPG : nœuds, rencontres de route, compagnon/monture, citadelle MVP, capture, siège
+13. Carte du territoire : nœuds, rencontres de sentier, compagnon/monture, refuge MVP, capture, défis de capitales
 
 ---
 

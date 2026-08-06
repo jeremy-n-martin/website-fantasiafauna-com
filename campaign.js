@@ -1,4 +1,4 @@
-/* Campagne — Puzzle Quest / tour du magicien, combats de cartes */
+/* Campagne — exploration d’un territoire forestier merveilleux, tout passe par les cartes */
 
 const CAMPAIGN_KEY='ff-campaign-v1';
 const CAMP_CHEATS_KEY='ff-campaign-cheats';
@@ -16,18 +16,18 @@ const RARITY_CRAFT_COST=5;
 const CAMPAIGN_INTRO=[
   {
     eyebrow:'Prologue I',
-    title:'La tour oubliée',
-    text:'Tu es un magicien isolé dans une tour de pierre. Ton classeur — reliure d’écailles et d’encre — est encore presque vide. Dehors, les routes murmurent déjà le nom d’un seigneur de guerre qui collectionne les créatures comme des trophées.',
+    title:'Sous la canopée',
+    text:'Tu marches dans une forêt qui n’obéit qu’aux cartes. Clairières, gués et capitales sont des chapitres vivants : chaque lieu répond à un deck, chaque créature rencontrée peut rejoindre ton classeur. Ton refuge n’est qu’une clairière au bord du territoire — le reste s’explore main après main.',
   },
   {
     eyebrow:'Prologue II',
-    title:'L’appel des cartes',
-    text:'Chaque duel rempli ton coffre d’or et ton classeur de cartes. Cinq exemplaires d’une même rareté peuvent être fusionnés en une rareté supérieure — des normales au bronze, jusqu’à l’obsidienne, plus rare que l’ombre.',
+    title:'Le territoire des cartes',
+    text:'Or, boosters et fusions nourrissent le même voyage. Cinq exemplaires d’une rareté s’ouvrent en une rareté supérieure — du commun à l’obsidienne. Ici, progresser, c’est enrichir ton classeur et affiner le deck que tu emportes sur les sentiers.',
   },
   {
     eyebrow:'Prologue III',
-    title:'Premier affrontement',
-    text:'Un éclaireur du seigneur de guerre camp sous ta tour. Gagne ce combat : tu ramèneras or et cartes. Plus tard, les marchands échangeront tout cela. Pour l’heure… tire ta première main.',
+    title:'Premier sentier',
+    text:'Un chemin s’ouvre déjà sous les fougères : un premier duel contre les esprits du bois. Gagne, et le territoire te rendra or et cartes. Ensuite, villages, comptoirs et capitales t’attendront — tout se joue encore et toujours en cartes.',
   },
 ];
 
@@ -75,40 +75,40 @@ const CAMPAIGN_FAMILIES={
 };
 
 const CITADEL_BUILDINGS=[
-  {id:'bestiaire', name:'Bestiaire', cost:60, blurb:'Archive les créatures rencontrées et leurs lieux.'},
-  {id:'menagerie', name:'Ménagerie', cost:100, blurb:'Débloque les missions Capture dans les repaires.'},
-  {id:'tour_guet', name:'Tour de guet', cost:80, blurb:'Révèle les menaces sur toutes les routes adjacentes.'},
-  {id:'atelier_siege', name:'Atelier de siège', cost:160, blurb:'Permet d’assiéger les capitales hostiles.'},
+  {id:'bestiaire', name:'Bestiaire', cost:60, blurb:'Archive les créatures-cartes rencontrées et leurs clairières.'},
+  {id:'menagerie', name:'Ménagerie', cost:100, blurb:'Ouvre les missions Capture dans les repaires du bois.'},
+  {id:'tour_guet', name:'Tour de guet', cost:80, blurb:'Révèle les menaces-cartes sur les sentiers voisins.'},
+  {id:'atelier_siege', name:'Atelier de siège', cost:160, blurb:'Permet de défier le cœur d’une capitale hostile.'},
 ];
 
 const CAMPAIGN_COMPANIONS=[
-  {id:'paladin', name:'Paladin', blurb:'Tes créatures ont +1 PV pendant les sièges.'},
+  {id:'paladin', name:'Paladin', blurb:'Tes créatures ont +1 PV pendant les sièges de capitales.'},
   {id:'chasseur', name:'Chasseur', blurb:'La première créature Vol ennemie du deck coûte +1.'},
-  {id:'eclaireur', name:'Éclaireur', blurb:'Révèle les menaces sur les routes voisines (sans Tour de guet).'},
+  {id:'eclaireur', name:'Éclaireur', blurb:'Révèle les menaces sur les sentiers voisins (sans Tour de guet).'},
 ];
 
 const CAMPAIGN_MOUNTS=[
-  {id:'destrier', name:'Destrier', blurb:'Ignore la prochaine rencontre routière (1 charge).'},
+  {id:'destrier', name:'Destrier', blurb:'Ignore la prochaine rencontre sur un sentier (1 charge).'},
   {id:'ombre', name:'Monture d’ombre', blurb:'Permet de fuir une rencontre d’une famille déjà vaincue.'},
 ];
 
 const CAPTURE_WINS_NEEDED=3;
 const ENCOUNTER_TYPES={
-  patrol:{id:'patrol', label:'Patrouille', blurb:'Combat normal contre une famille.'},
-  ambush:{id:'ambush', label:'Embuscade', blurb:'L’ennemi commence avec une créature en jeu.'},
-  blockade:{id:'blockade', label:'Blocus', blurb:'Victoire obligatoire pour emprunter la route.'},
+  patrol:{id:'patrol', label:'Patrouille', blurb:'Duel de cartes contre une famille du territoire.'},
+  ambush:{id:'ambush', label:'Embuscade', blurb:'L’ennemi commence avec une créature déjà en jeu.'},
+  blockade:{id:'blockade', label:'Blocus', blurb:'Victoire obligatoire pour emprunter le sentier.'},
   capture:{id:'capture', label:'Capture', blurb:'Défi de capture : vaincre pour recruter une créature de la famille.'},
-  siege:{id:'siege', label:'Siège', blurb:'Tour adverse renforcée + défense initiale.'},
+  siege:{id:'siege', label:'Siège', blurb:'Cœur de capitale renforcé — tour adverse plus résistante.'},
 };
 
 /** Carte MVP (~14 lieux, 4 capitales). positions en % ; links = voisins. */
 const CAMPAIGN_MAP_NODES=[
-  {id:'tour', name:'Tour oubliée', kind:'home', x:12, y:58, links:['forge','col','marche','clairiere'],
-    blurb:'Ton refuge et ta citadelle. Classeur, decks, compagnons et bâtiments.'},
+  {id:'tour', name:'Clairière-refuge', kind:'home', x:12, y:58, links:['forge','col','marche','clairiere'],
+    blurb:'Ton camp sous les hêtres. Classeur, decks, compagnons et aménagements du refuge.'},
   {id:'forge', name:'Crypte des sceaux', kind:'fusion', x:8, y:28, links:['tour','marche'],
     blurb:'Cinq cartes d’une rareté deviennent une rareté supérieure.'},
   {id:'marche', name:'Comptoir des brumes', kind:'shop', x:30, y:40, links:['tour','forge','col','gue','clairiere'],
-    blurb:'Marchands : boosters, ventes, rachat.'},
+    blurb:'Marchands du sous-bois : boosters, ventes, rachat.'},
   {id:'clairiere', name:'Clairière du Hameau', kind:'village', x:22, y:78, links:['tour','marche','col','bosquet'],
     blurb:'Village accueillant : édition de deck, rumeurs, départ vers le Bosquet.',
     status:'neutral'},
@@ -127,7 +127,7 @@ const CAMPAIGN_MAP_NODES=[
     status:'hostile'},
   {id:'sylve', name:'Capitale — Sylve', kind:'capital', x:58, y:92, links:['bosquet','forteresse'],
     family:'sylvestre', capitalFaction:'Sylve', difficulty:3,
-    blurb:'Grande capitale sylvestre. Siège possible avec l’Atelier.',
+    blurb:'Cœur sylvestre du territoire. Défi de capitale avec l’Atelier.',
     status:'hostile', towerHp:40},
   {id:'manufacture', name:'Capitale — Manufacture', kind:'capital', x:70, y:28, links:['gue','sanctuaire','ruines'],
     family:'geants', capitalFaction:'Manufacture', difficulty:3,
@@ -145,11 +145,11 @@ const CAMPAIGN_MAP_NODES=[
     status:'hostile'},
   {id:'forteresse', name:'Forteresse du Nord', kind:'fortress', x:62, y:78, links:['landes','sylve','ossuaire','necropole'],
     family:'chevaliers', difficulty:3,
-    blurb:'Avant-poste fortifié. Prépare le siège de la Nécropole.',
+    blurb:'Avant-poste fortifié. Prépare le défi de la Nécropole.',
     status:'hostile'},
   {id:'necropole', name:'Capitale — Nécropole', kind:'capital', x:88, y:72, links:['ruines','ossuaire','forteresse'],
     family:'morts_vivants', capitalFaction:'Nécropole', difficulty:3,
-    blurb:'Siège du chapitre : tour 40 PV, mur d’ossements, deck sacrifice.',
+    blurb:'Cœur du chapitre : tour 40 PV, mur d’ossements, deck sacrifice.',
     status:'hostile', towerHp:40, siegeDefense:true},
 ];
 function mapNode(id){
@@ -819,7 +819,7 @@ function chooseCampaignFaction(name){
     migrateCampaignDecks();
     if(!(camp.decks||[]).length){
       autoBuildDeckFromBinder({name:'Deck de départ'});
-      camp.shopMsg='Compose ton deck (15 créatures × 4 max) à partir du classeur, puis lance-toi sur la carte.';
+      camp.shopMsg='Compose ton deck (15 créatures × 4 max) à partir du classeur, puis explore la forêt.';
     }
     camp.phase='deck';
     camp.mapLocation=camp.mapLocation||'tour';
@@ -850,7 +850,7 @@ function makeCampaignSideFromDeck(factions, cards){
     hp:30, mana:0, maxMana:0, turnCount:0,
     colorMana:Object.fromEntries(factions.map(f=>[f,0])),
     deck, hand, board:[],
-    prayer:[null, null, null],
+    prayer:Array.from({length:typeof PRAYER_SLOTS==='number'?PRAYER_SLOTS:5}, ()=>null),
     prayedThisTurn:false,
     factions:factions.slice(),
     startingDeckSize,
@@ -938,7 +938,7 @@ function openFreeTestBooster(){
   openCampaignBooster({free:true});
 }
 function resetCampaign(){
-  if(!confirm('Réinitialiser la campagne ? Or, classeur, carte et progression seront effacés.')) return;
+  if(!confirm('Réinitialiser l’exploration ? Or, classeur, carte et progression seront effacés.')) return;
   try{ localStorage.removeItem(CAMPAIGN_KEY); }catch(_){}
   state.campaign=defaultCampaign();
   state.battle=null;
@@ -1181,7 +1181,7 @@ function mapKindLabel(kind){
   return ({
     home:'Refuge', shop:'Boutique', fusion:'Fusion', duel:'Duel',
     village:'Village', capital:'Capitale', lair:'Repaire', sanctuary:'Sanctuaire',
-    ruins:'Ruines', fortress:'Forteresse', route:'Route',
+    ruins:'Ruines', fortress:'Forteresse',     route:'Sentier',
   })[kind] || kind;
 }
 function mapStatusLabel(st){
@@ -1309,7 +1309,7 @@ function startCampaignBattle(fromNode, battleOpts={}){
     || (node.kind==='route' ? 'patrol' : 'patrol');
   const isSiege=encounter==='siege' || !!battleOpts.siege;
   if(isSiege && node.kind==='capital' && !hasCitadelBuilding(camp, 'atelier_siege') && !battleOpts.force){
-    camp.shopMsg='Construis l’Atelier de siège à la citadelle pour attaquer une capitale.';
+    camp.shopMsg='Construis l’Atelier de siège au refuge pour défier une capitale.';
     saveCampaign();
     render();
     return;
@@ -1362,7 +1362,7 @@ function startCampaignBattle(fromNode, battleOpts={}){
   // Siège / tour renforcée
   const towerHp=isSiege ? (node.towerHp||40) : 30;
   enemySide.hp=towerHp;
-  // Embuscade / défense de siège : créature adverse déjà en jeu
+  // Embuscade / défense de siège : créature adverse déjà en jeu (gratuite, mal d’invocation)
   if(encounter==='ambush' || (isSiege && node.siegeDefense) || battleOpts.ambush){
     const tokenSrc=enemySide.deck.find(c=>(c.cost|0)<=3) || enemySide.deck[0];
     if(tokenSrc){
@@ -1370,8 +1370,11 @@ function startCampaignBattle(fromNode, battleOpts={}){
       if(idx>=0) enemySide.deck.splice(idx,1);
       const token=typeof cloneCard==='function' ? cloneCard(tokenSrc) : {...tokenSrc};
       token.uid=typeof uid==='function' ? uid() : `e${Date.now()}`;
+      token.justPlayed=true;
       token.canAttack=false;
+      token.noActivateThisTurn=true;
       token.summoningSickness=true;
+      token.fromAmbush=true;
       if(isSiege && node.siegeDefense){
         token.name='Mur d’ossements';
         token.attack=0; token.baseAttack=0;
@@ -1426,6 +1429,10 @@ function startCampaignBattle(fromNode, battleOpts={}){
     combatLog('Mission Capture : vaincs ce défi pour recruter une créature de la famille.');
   }
   if(isSiege) combatLog(`Siège : tour adverse ${towerHp} PV.`);
+  const ambushToken=enemySide.board.find(c=>c.fromAmbush);
+  if(ambushToken){
+    combatLog(`Embuscade : ${cardLogName(ambushToken)} est déjà en jeu (gratuit, mal d’invocation).`);
+  }
   if(isMonoFactionCheat()){
     combatLog(`Cheat mono-faction : deck limité à ${playFactions[0]||'—'}.`);
   }
@@ -1523,8 +1530,8 @@ function renderCampaignFactionPick(){
   const step=chosen.length; // 0 = principale, 1 = secondaire
   const title=step===0 ? 'Faction principale' : 'Seconde faction';
   const hint=step===0
-    ? `Clique ta faction principale — tu recevras ${STARTER_PRIMARY} cartes ×${STARTER_COPIES} exemplaires.`
-    : `Clique ta seconde faction — ${STARTER_SECONDARY} cartes ×${STARTER_COPIES} (après ${STARTER_PRIMARY} de ${chosen[0]}). Total : ${CAMPAIGN_DECK_SIZE*STARTER_COPIES} cartes.`;
+    ? `Choisis l’affinité principale de ton classeur — tu recevras ${STARTER_PRIMARY} cartes ×${STARTER_COPIES} exemplaires.`
+    : `Choisis une seconde affinité — ${STARTER_SECONDARY} cartes ×${STARTER_COPIES} (après ${STARTER_PRIMARY} de ${chosen[0]}). Total : ${CAMPAIGN_DECK_SIZE*STARTER_COPIES} cartes.`;
   const buttons=campaignFactionList().map(f=>{
     const fm=(typeof FACTION_MANA!=='undefined' && FACTION_MANA[f]) || {color:'#c9aa69',icon:'ui/combat/star_sm.png',element:f};
     const taken=chosen.includes(f);
@@ -1542,7 +1549,7 @@ function renderCampaignFactionPick(){
   }).join('');
   return `<section class="panel combat-lobby campaign-story campaign-faction-pick">
     <div class="campaign-dialog campaign-dialog-wide">
-      <p class="eyebrow">Allégeance · ${step+1}/2</p>
+      <p class="eyebrow">Affinités du territoire · ${step+1}/2</p>
       <h2>${title}</h2>
       <p class="campaign-prose">${hint}</p>
       ${progress?`<div class="camp-faction-chosen">${progress}</div>`:''}
@@ -1614,7 +1621,7 @@ function renderCampaignMap(){
   } else if(here.kind==='fusion'){
     actions=`<button type="button" class="cbt-start" onclick="setCampaignView('fusion')">Fusionner des cartes</button>`;
   } else if(here.kind==='capital' && stHere==='hostile'){
-    actions=`<button type="button" class="cbt-start" onclick="startCampaignBattle('${here.id}',{siege:true})">${hasCitadelBuilding(camp,'atelier_siege')?'Assiéger la capitale':'Siège (Atelier requis)'}</button>`;
+    actions=`<button type="button" class="cbt-start" onclick="startCampaignBattle('${here.id}',{siege:true})">${hasCitadelBuilding(camp,'atelier_siege')?'Défier la capitale':'Défi capitale (Atelier requis)'}</button>`;
   } else if(here.kind==='capital' && (stHere==='conquered'||stHere==='allied')){
     actions=`<button type="button" class="cbt-start" onclick="setCampaignView('deck')">Éditer mon deck ici</button>
       <p class="camp-muted">Capitale conquise — recrutement et services locaux.</p>`;
@@ -1638,8 +1645,8 @@ function renderCampaignMap(){
     const dest=mapNode(p.to);
     const canSkip=citadelMount(camp)?.id==='destrier' && (camp.mountSkipCharges|0)>0;
     const canFlee=citadelMount(camp)?.id==='ombre' && familyWinCount(camp, p.family)>0;
-    pendingBlock=`<div class="camp-encounter-modal" role="dialog" aria-label="Rencontre routière">
-      <p class="eyebrow">Rencontre sur la route</p>
+    pendingBlock=`<div class="camp-encounter-modal" role="dialog" aria-label="Rencontre sur le sentier">
+      <p class="eyebrow">Rencontre sur le sentier</p>
       <h3>${enc.label} → ${dest.name}</h3>
       <p class="campaign-prose">${enc.blurb}${fam?` · ${fam.label} (${fam.theme})`:''}</p>
       <div class="campaign-actions" style="justify-content:flex-start;margin-top:10px">
@@ -1656,8 +1663,8 @@ function renderCampaignMap(){
       <button type="button" class="cbt-start" onclick="setCampaignView('deck')">☰ Deck</button>
       <button type="button" class="cbt-start" onclick="setCampaignView('shop')">♦ Boutique</button>
       <button type="button" class="cbt-end" onclick="setCampaignView('fusion')">✶ Fusion</button>
-      <button type="button" class="cbt-end" onclick="setCampaignView('citadel')">🏰 Citadelle</button>
-      ${here.kind!=='home'?`<button type="button" class="cbt-end" onclick="travelCampaignMap('tour',{free:true})">↩ Tour</button>`:''}
+      <button type="button" class="cbt-end" onclick="setCampaignView('citadel')">🌲 Refuge</button>
+      ${here.kind!=='home'?`<button type="button" class="cbt-end" onclick="travelCampaignMap('tour',{free:true})">↩ Clairière</button>`:''}
       ${here.kind!=='shop'?`<button type="button" class="cbt-end" onclick="travelCampaignMap('marche',{free:true})">↩ Comptoir</button>`:''}
     </div>`;
   const factions=(camp.playerFactions||[]).join(' · ') || '—';
@@ -1672,9 +1679,9 @@ function renderCampaignMap(){
   return `<section class="panel combat-lobby campaign-map-panel">
     <div class="section-head">
       <div>
-        <p class="eyebrow">World map</p>
-        <h2>Routes du seigneur de guerre</h2>
-        <p>Factions : <strong>${factions}</strong> · Deck : <strong>${deckLabel}</strong>
+        <p class="eyebrow">Territoire merveilleux</p>
+        <h2>Forêt des cartes</h2>
+        <p>Affinités : <strong>${factions}</strong> · Deck : <strong>${deckLabel}</strong>
         ${companion?` · Compagnon : <strong>${companion.name}</strong>`:''}
         ${mount?` · Monture : <strong>${mount.name}</strong>`:''}</p>
       </div>
@@ -1702,7 +1709,7 @@ function renderCampaignMap(){
         ${here.family?`<p class="camp-map-diff">${familyOf(here.family)?.label||''} — ${familyOf(here.family)?.theme||''}</p>`:''}
         ${here.difficulty?`<p class="camp-map-diff">Difficulté ${mapDifficultyLabel(here)}</p>`:''}
         <div class="campaign-actions" style="justify-content:flex-start;margin-top:12px">${actions}</div>
-        <p class="camp-muted" style="margin-top:14px">Une menace max par trajet. ${seeThreats?'Routes dangereuses en surbrillance.':'Construis la Tour de guet (ou prends l’Éclaireur) pour voir les menaces.'}</p>
+        <p class="camp-muted" style="margin-top:14px">Une menace max par sentier. ${seeThreats?'Sentiers dangereux en surbrillance.':'Aménage la Tour de guet (ou prends l’Éclaireur) pour voir les menaces.'}</p>
       </aside>
     </div>
     <div class="campaign-actions" style="margin-top:14px;justify-content:flex-start">
@@ -2037,16 +2044,16 @@ function renderCampaignCitadel(){
     bestiary=`<div class="camp-subhead">Bestiaire</div><ul class="camp-bestiary">${list}</ul>`;
   }
   const body=`
-    <p class="campaign-prose">La citadelle débloque la progression RPG : captures, sièges, vision des routes. Un seul compagnon et une seule monture actifs.</p>
-    <div class="camp-subhead">Bâtiments</div>
+    <p class="campaign-prose">Le refuge débloque la progression dans le territoire : captures, défis de capitales, vision des sentiers. Un seul compagnon et une seule monture actifs — tout reste lié à ton classeur.</p>
+    <div class="camp-subhead">Aménagements</div>
     <div class="camp-citadel-grid">${buildings}</div>
-    <div class="camp-subhead">Hall des héros — compagnon</div>
+    <div class="camp-subhead">Compagnons de route</div>
     <div class="camp-citadel-grid">${companions}</div>
-    <div class="camp-subhead">Écurie — monture</div>
+    <div class="camp-subhead">Montures</div>
     <div class="camp-citadel-grid">${mounts}</div>
     ${bestiary}
   `;
-  return renderCampaignShell('Citadelle', 'Tour oubliée', body);
+  return renderCampaignShell('Refuge du classeur', 'Clairière-refuge', body);
 }
 function renderCampaignRewards(){
   const camp=ensureCampaign();
@@ -2065,10 +2072,10 @@ function renderCampaignRewards(){
   return `<section class="panel combat-lobby campaign-rewards">
     <div class="campaign-dialog">
       <p class="eyebrow">${r.victory?'Victoire':'Défaite'}</p>
-      <h2>${r.victory?'Butin du duel':'Salutations du champ'}</h2>
+      <h2>${r.victory?'Butin du sentier':'Silence sous les arbres'}</h2>
       <p class="campaign-prose">Tu gagnes <strong>${r.gold} or</strong>${(r.cards||[]).length?` et ${(r.cards||[]).length} carte(s)`:''}. Tout rejoint ton coffre et ton classeur.
-        ${r.conquered?` <strong>Capitale conquise : ${r.conquered}.</strong>`:''}
-        ${r.captureName?` <strong>Créature capturée : ${r.captureName}.</strong>`:''}
+        ${r.conquered?` <strong>Capitale liée : ${r.conquered}.</strong>`:''}
+        ${r.captureName?` <strong>Créature recrutée : ${r.captureName}.</strong>`:''}
       </p>
       <ul class="camp-reward-list">${cards}</ul>
       <div class="campaign-actions">
