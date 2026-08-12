@@ -85,17 +85,17 @@ const ABILITIES = {
   tank: {
     id: 'tank',
     label: 'Tank',
-    description: 'Quand un Tank est en jeu, les créatures adverses sont obligées de l\'attaquer en priorité (sauf Ranged).',
+    description: 'Quand un Tank est en jeu, les créatures adverses sont obligées de l\'attaquer en priorité (sauf Tir).',
   },
   ranged: {
     id: 'ranged',
-    label: 'Ranged',
+    label: 'Tir',
     description: 'Attaque à distance : ignore les Tanks, peut cibler les créatures volantes, et n’encaisse jamais de riposte (Assassin + Sans riposte).',
   },
   vol: {
     id: 'vol',
     label: 'Vol',
-    description: 'Volante : seules Vol ou Ranged peuvent l’attaquer. Contrairement à Ranged, elle est toujours forcée d’attaquer les Tanks ; sans Tank, seuls les Vol adverses la bloquent.',
+    description: 'Volante : seules Vol ou Tir peuvent l’attaquer. Contrairement à Tir, elle est toujours forcée d’attaquer les Tanks ; sans Tank, seuls les Vol adverses la bloquent.',
   },
   pietinement: {
     id: 'pietinement',
@@ -137,7 +137,7 @@ function creatureAbilityList(c){
   const fromAb=Array.isArray(c.abilities) ? c.abilities : [];
   const roles=c.roles||[];
   let list = fromAb.length ? fromAb.slice() : (c.roles||[]).filter(id => ABILITIES[id] && !CREATURE_ROLES.includes(id));
-  // Tank / Ranged sont stockés comme rôle unique mais restent affichés comme badges
+  // Tank / Tir sont stockés comme rôle unique mais restent affichés comme badges
   for(const id of ['tank','ranged']){
     if(roles.includes(id) && !list.includes(id)) list.unshift(id);
   }

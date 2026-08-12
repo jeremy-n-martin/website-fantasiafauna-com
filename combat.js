@@ -1396,13 +1396,16 @@ function placePrayer(who, handUid, slotIndex){
   p.prayer[idx]=card;
   p.prayedThisTurn=true;
   const faction=prayerFactionOf(card);
-  const n=faction ? addColorMana(p, faction, 1) : 0;
+  // Pas de mana immédiat au 1ᵉʳ tour du 1ᵉʳ joueur (sinon invocation gratuite alors que les cristaux sont à 0).
+  const isFirstPlayerFirstTurn = who === (b.firstPlayer || 'player') && (p.turnCount|0) === 1;
+  const n=(!isFirstPlayerFirstTurn && faction) ? addColorMana(p, faction, 1) : 0;
   if(n>0){
     b.prayerManaFlash={ who, factions:[faction], until:Date.now()+900 };
     clearTimeout(grantPrayerMana._flashT);
     grantPrayerMana._flashT=setTimeout(()=>{ if(state.battle===b) render(); }, 920);
   }
   const manaNote=n>0 ? ` (+${n} mana ${faction})`
+    : isFirstPlayerFirstTurn ? ' (mana au prochain tour)'
     : faction ? ' (plafond mana couleur)'
     : ' (faction inconnue)';
   combatLog(`${who==='player'?'Tu places':'Adverse place'} ${cardLogName(card)} en prière${manaNote}.`);
@@ -1981,7 +1984,7 @@ function triggerEnterExtras(who, card){
         if(typeof spawnBuffSparkles==='function') spawnBuffSparkles(uid, 4);
       });
     } else {
-      combatLog(`${cardLogName(card)} (Exorcisme) : aucun buff adverse à retirer.`);
+    combatLog(`${cardLogName(card)} (Exorcisme) : aucun buff adverse à retirer.`);
     }
     refreshBoardAuras(defSide);
   }
@@ -2160,7 +2163,7 @@ const BOARD_SHAPES = {
   },
   ranged: {
     id:'ranged',
-    label:'Ranged',
+    label:'Tir',
     sprite:'ui/combat/shapes/frame_ranged.png',
     priority:10,
     match:(c)=> isAssassin(c) || hasRole(c,'ranged'),
@@ -2239,7 +2242,7 @@ function boardTokenHtml(c){
     </span>`;
 }
 /** Cibles légales pour un assaut (Tank, Vol, Assassin / Camouflage).
- * Vol : seules Vol ou Ranged peuvent attaquer une créature volante.
+ * Vol : seules Vol ou Tir peuvent attaquer une créature volante.
  * Une attaquante volante n’est bloquée que par Tank ou Vol (ignore le reste pour aller au visage / choisir).
  */
 function legalAttackTargets(atkSide, atkCreature){
@@ -2253,10 +2256,10 @@ function legalAttackTargets(atkSide, atkCreature){
   const atkFlying=hasVol(atk);
   const atkRanged=!!(atk && isAssassin(atk));
 
-  // Volantes attaquables par Vol ou Ranged — exception : les Tanks restent toujours ciblables
+  // Volantes attaquables par Vol ou Tir — exception : les Tanks restent toujours ciblables
   let pool=visible.filter(c=>atkFlying || atkRanged || !hasVol(c) || isTank(c));
 
-  // Ranged seul ignore les Tanks ; Vol (sans Ranged) reste forcé de les attaquer
+  // Tir seul ignore les Tanks ; Vol (sans Tir) reste forcé de les attaquer
   if(atkRanged){
     return { face:true, minions:pool.slice(), forcedTank:false, assassin:true, flying:atkFlying };
   }
@@ -2330,7 +2333,7 @@ function startSmartAim(uid){
   } else {
     const legal=legalAttackTargets('player', c);
     combatLog(legal.assassin || isAssassin(c)
-      ? `${c.name} vise… Ranged : ignore les Tanks, peut cibler les Vol.`
+      ? `${c.name} vise… Tir : ignore les Tanks, peut cibler les Vol.`
       : legal.forcedTank
         ? `${c.name} vise… un Tank adverse protège le reste — cible-le.`
         : legal.forcedFlyer
@@ -2488,7 +2491,7 @@ function applyOnAttackEffects(atk, def, atkSide){
   }
   if(notes.length) combatLog(`${cardLogName(def)} subit : ${notes.join(', ')}.`);
 }
-/** Poison de contact : attaquer une créature Poison l’empoisonne (même sans riposte / Ranged). */
+/** Poison de contact : attaquer une créature Poison l’empoisonne (même sans riposte / Tir). */
 function applyPoisonContact(atk, def){
   if(!atk || !def || (atk.hp|0)<=0) return;
   if(!hasRole(def, 'poison')) return;
@@ -2683,7 +2686,7 @@ function confirmAttackMinion(uid){
     let why='Cible invalide.';
     if(legal.forcedTank) why='Cible invalide : attaque un Tank.';
     else if(legal.forcedFlyer) why='Cible invalide : une créature volante te bloque.';
-    else if(def && hasVol(def) && !hasVol(atk) && !isAssassin(atk) && !isTank(def)) why='Cible invalide : il faut Vol ou Ranged pour attaquer une créature volante.';
+    else if(def && hasVol(def) && !hasVol(atk) && !isAssassin(atk) && !isTank(def)) why='Cible invalide : il faut Vol ou Tir pour attaquer une créature volante.';
     combatLog(why);
     render();
     return;
@@ -3041,7 +3044,7 @@ function miniCard(c, opts={}){
   const title = summonSick ? ' title="Mal d’invocation — attaque au prochain tour"'
     : opts.exhausted ? ' title="Déjà utilisée"'
     : opts.aiming ? ' title="Attaquante — choisis une cible"'
-    : opts.blocked ? (opts.stealthed ? ' title="Camouflage — impossible à cibler"' : opts.needVol ? ' title="Vol ou Ranged requis pour attaquer cette créature"' : ' title="Protégé par un Tank ou une créature volante — cible invalide"')
+    : opts.blocked ? (opts.stealthed ? ' title="Camouflage — impossible à cibler"' : opts.needVol ? ' title="Vol ou Tir requis pour attaquer cette créature"' : ' title="Protégé par un Tank ou une créature volante — cible invalide"')
     : opts.targetable ? (opts.forcedTank ? ' title="Tank — cible obligatoire"' : opts.forcedFlyer ? ' title="Vol — cible obligatoire"' : ' title="Cible valide — cliquer pour attaquer"')
     : opts.playable ? ' title="Cliquer pour invoquer"'
     : canAct ? ' title="Peut être activée (ou attaquer)"'
@@ -3399,7 +3402,7 @@ function renderCombat(){
     : aimPol==='positive'
       ? `Clique un <strong>allié</strong> pour <strong>${aimSpec?.label||'Activer'}</strong>${canCreatureAttack(aimAtk)?' · un ennemi pour attaquer':''}.`
       : aimLegal?.assassin
-        ? `<strong>Ranged</strong> : ignore les Tanks et n’encaisse pas de riposte.`
+        ? `<strong>Tir</strong> : ignore les Tanks et n’encaisse pas de riposte.`
         : aimLegal?.forcedTank
           ? `Un <strong>Tank</strong> protège le camp adverse — tu dois le frapper.`
           : aimLegal?.forcedFlyer
@@ -3418,7 +3421,7 @@ function renderCombat(){
       </div>`
     : playerAiming ? `
       <div class="cbt-aim-panel${aimLegal?.forcedTank && aimPol!=='aggressive'?' tank-lock':''}${aimLegal?.assassin?' assassin-lock':''}">
-        <b>${aimPol==='aggressive'?(aimSpec?.label||'Sort agressif'):aimPol==='positive'?(aimSpec?.label||'Sort positif'):aimLegal?.assassin?'Ranged — libre':aimLegal?.forcedTank?'Tank adverse !':aimLegal?.forcedFlyer?'Vol adverse !':'Choisis une cible'}</b>
+        <b>${aimPol==='aggressive'?(aimSpec?.label||'Sort agressif'):aimPol==='positive'?(aimSpec?.label||'Sort positif'):aimLegal?.assassin?'Tir — libre':aimLegal?.forcedTank?'Tank adverse !':aimLegal?.forcedFlyer?'Vol adverse !':'Choisis une cible'}</b>
         <p>${aimHint}</p>
         <button class="cbt-end" type="button" onclick="cancelAttack()">Annuler (Échap)</button>
       </div>`
