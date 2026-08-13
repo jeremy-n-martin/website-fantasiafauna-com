@@ -94,11 +94,11 @@ function isTank(c){
 }
 
 function isAssassin(c){
-  return !!(c && (hasRole(c,'assassin') || hasRole(c,'ranged')));
+  return !!(c && hasRole(c,'assassin'));
 }
 
 function hasNoRiposte(c){
-  return !!(c && (hasRole(c,'sans-riposte') || hasRole(c,'ranged')));
+  return !!(c && hasRole(c,'sans-riposte'));
 }
 
 function maxAttacks(c){
@@ -370,14 +370,19 @@ test('isTank without tank', () => {
   assertFalse(isTank(c), 'Not a tank');
 });
 
-test('isAssassin with ranged role', () => {
-  const c = { roles: ['ranged'] };
-  assertTrue(isAssassin(c), 'Ranged counts as assassin');
+test('isAssassin with assassin role', () => {
+  const c = { roles: ['assassin'] };
+  assertTrue(isAssassin(c), 'Assassin role counts');
 });
 
-test('hasNoRiposte with ranged', () => {
-  const c = { roles: ['ranged'] };
-  assertTrue(hasNoRiposte(c), 'Ranged has no riposte');
+test('isAssassin without assassin', () => {
+  const c = { roles: ['normal'] };
+  assertFalse(isAssassin(c), 'Normal is not assassin');
+});
+
+test('hasNoRiposte with sans-riposte', () => {
+  const c = { roles: ['sans-riposte'] };
+  assertTrue(hasNoRiposte(c), 'sans-riposte has no riposte');
 });
 
 test('maxAttacks always one action (double-attaque is multi-hit)', () => {

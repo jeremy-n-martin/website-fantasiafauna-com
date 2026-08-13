@@ -13,16 +13,14 @@ const rows = Object.values(ABILITIES);
 // Couverture par capacité (même logique d’affichage que game.js creatureAbilityList)
 const creaCode = fs.readFileSync(path.join(ROOT, 'creatures-data.js'), 'utf8');
 const CREATURES = new Function(`${creaCode};\nreturn CREATURES;`)();
-const CREATURE_ROLES = new Set(['normal', 'fast', 'ranged', 'caster', 'tank']);
+const CREATURE_ROLES = new Set(['normal', 'fast', 'caster', 'tank']);
 function creatureAbilityIds(c) {
   const fromAb = Array.isArray(c.abilities) ? c.abilities : [];
   const roles = c.roles || [];
   let list = fromAb.length
     ? fromAb.slice()
     : roles.filter((id) => ABILITIES[id] && !CREATURE_ROLES.has(id));
-  for (const id of ['tank', 'ranged']) {
-    if (roles.includes(id) && !list.includes(id)) list.unshift(id);
-  }
+  if (roles.includes('tank') && !list.includes('tank')) list.unshift('tank');
   if ((roles.includes('volant') || list.includes('volant')) && !list.includes('vol')) {
     list = list.filter((id) => id !== 'volant');
     list.push('vol');
@@ -47,7 +45,6 @@ function coverageCell(id) {
 const ABILITY_POWER = {
   tank: 3,
   vol: 3,
-  ranged: 3,
   pietinement: 3,
   'bouclier-divin': 3,
   poison: 2,
@@ -146,7 +143,7 @@ Implémentation actuelle (remplace le cycle automatique c1/c2… du brief initia
 - **5 emplacements** de prière par camp
 - **1 prière placée par tour** maximum
 - Une carte de la main est placée en prière (retirée de la main)
-- À la pose : +1 mana de la faction de la carte (si plafond coloré non atteint)
+- À la pose : +1 mana de la faction de la carte (si plafond coloré non atteint), **sauf** au 1ᵉʳ tour du 1ᵉʳ joueur (mana reporté au prochain tour via le tick ci-dessous)
 - Chaque début de tour : chaque carte en prière donne encore **+1** mana de sa faction
 - Retirer une prière = carte **hors jeu** (pas de retour en main)
 - Cumul de tous les manas de couleur ≤ **10**
@@ -167,19 +164,18 @@ Sur son tour, une créature **prête** peut :
 
 Mal d’invocation : pas d’attaque ni d’activation le tour d’arrivée, sauf **Charge** (attaque OK) / **Célérité** (attaque + activation OK).
 
-Combat créature vs créature : frappe + **riposte** (sauf Ranged / sans riposte).  
+Combat créature vs créature : frappe + **riposte**.  
 Tour vs tour : dégâts directs à la tour (30 PV).
 
-### 3.6 Ciblage — Tank, Vol, Ranged, Camouflage
+### 3.6 Ciblage — Tank, Vol, Camouflage
 
 | Règle | Comportement |
 |---|---|
-| **Tank** | Force le focus : l’adversaire doit frapper un Tank (pas la tour ni les autres), **sauf Ranged** (Vol reste forcé) |
-| **Vol** | Seules **Vol** ou **Ranged** peuvent attaquer une créature Vol. Un Vol qui attaque est **toujours** bloqué par un **Tank** adverse ; sinon par un **Vol** adverse ; sinon il peut frapper la tour / le sol |
-| **Ranged** | Ignore les Tanks · peut cibler les **Vol** · pas de riposte · peut frapper la tour librement |
+| **Tank** | Force le focus : l’adversaire doit frapper un Tank (pas la tour ni les autres) ; Vol reste aussi forcé |
+| **Vol** | Seules **Vol** peuvent attaquer une créature Vol. Un Vol qui attaque est **toujours** bloqué par un **Tank** adverse ; sinon par un **Vol** adverse ; sinon il peut frapper la tour / le sol |
 | **Camouflage** | Non ciblable tant que la créature n’a pas attaqué / activé |
 
-Socles visuels : ovale portrait ; **Tank** = carré arrondi ; **Ranged** = triangle arrondi ; **Piétinement** = ovale + 2 pics bas ; **Poison** = 1 pic bas ; **Canalisation** = 1 / 2 / 3 ronds en haut ; Vol (lévitation).
+Socles visuels : ovale portrait ; **Tank** = carré arrondi ; **Piétinement** = ovale + 2 pics bas ; **Poison** = 1 pic bas ; **Canalisation** = 1 / 2 / 3 ronds en haut ; Vol (lévitation).
 
 ### 3.7 Tour de jeu (résumé)
 
@@ -351,9 +347,9 @@ Enchaîne N sessions × 2 parties, même log.
 
 Structure créature :
 
-- \`roles\` : **exactement 1** parmi \`normal\`, \`fast\`, \`ranged\`, \`caster\`, \`tank\`
+- \`roles\` : **exactement 1** parmi \`normal\`, \`fast\`, \`caster\`, \`tank\`
 - \`abilities\` : liste d’ids du catalogue (§11)
-- Guidelines d’équilibrage : stats de base **ATQ = C**, **PV = 2×C** (compressé si besoin) ; HP ≥ ATQ ; **max 1 capacité** (sauf combos iconiques : dragons Vol+Piétinement, Ange/Phénix Vol+Bouclier) ; **Vol + Ranged → 1/1** ; plafonds **Σ ATQ+PV ≤ 2C+2** avec max **1/(2C+1)** (C2: Σ6 / 1/5 · C3: Σ8 / 1/7 · C4: Σ10 / 1/9…) — profils libres sous le plafond (ex. C3 : 2/6, 3/5, 3/3, 2/5) ; capa faible **Σ−1** ; capa moyenne (Vol/Ranged/Tank/Bouclier/Piétinement) **Σ−2** ; **coût 1** : **1/3** / **1/2** / **1/1** ; signatures uniques
+- Guidelines d’équilibrage : stats de base **ATQ = C**, **PV = 2×C** (compressé si besoin) ; HP ≥ ATQ ; **max 1 capacité** (sauf combos iconiques : dragons Vol+Piétinement, Ange/Phénix Vol+Bouclier) ; plafonds **Σ ATQ+PV ≤ 2C+2** avec max **1/(2C+1)** (C2: Σ6 / 1/5 · C3: Σ8 / 1/7 · C4: Σ10 / 1/9…) — profils libres sous le plafond (ex. C3 : 2/6, 3/5, 3/3, 2/5) ; capa faible **Σ−1** ; capa moyenne (Vol/Tank/Bouclier/Piétinement) **Σ−2** ; **coût 1** : **1/3** / **1/2** / **1/1** ; signatures uniques
 
 Images : sources **480×480** ; affichage liste ~240 ; aperçu combat taille réelle / carte agrandie.
 
@@ -389,7 +385,7 @@ Demandes utilisateur consolidées (hors bugs UI ponctuels) :
 
 1. Combat jouable type Hearthstone + mana cristal / couleur (**+1/tour**, conservation, 1ᵉʳ tour du 1ᵉʳ joueur sans gain)
 2. Images 480, aperçus combat, main / hover / flèche de pose
-3. Socles Tank / Ranged / formes type HS
+3. Socles Tank / formes type HS
 4. Lobby : combat rapide + exploration (forêt / classeur)
 5. Campagne forêt : or, cartes, fusion 5→1, raretés, **carte du territoire** (sentiers, refuge, capture, capitales), boutique, boosters
 6. Coût : ≥ 1 mana couleur (max 3 colorés)
@@ -407,7 +403,7 @@ Demandes utilisateur consolidées (hors bugs UI ponctuels) :
 
 Source de vérité : objet \`ABILITIES\` dans [\`game.js\`](./game.js) (**${rows.length}** entrées).  
 Logique : [\`combat.js\`](./combat.js). Édition pas-à-pas : [\`CAPACITES.md\`](./CAPACITES.md).  
-**Couverture** : part des **${creatureCount}** créatures de [\`creatures-data.js\`](./creatures-data.js) qui possèdent la capacité (via \`abilities\` ou rôle \`tank\`/\`ranged\`/\`vol\`).  
+**Couverture** : part des **${creatureCount}** créatures de [\`creatures-data.js\`](./creatures-data.js) qui possèdent la capacité (via \`abilities\` ou rôle \`tank\`/\`vol\`).  
 **Puissance** : impact design relatif — ★ faible · ★★ moyen · ★★★ fort (éditable dans \`tools/gen_spec.js\` → \`ABILITY_POWER\`).  
 Tableau trié par **couverture décroissante**, puis puissance (\`node tools/gen_spec.js\`).
 
@@ -439,12 +435,12 @@ Règles utiles :
 
 ### Notes
 
-- Catalogue **actif** : Tank, Vol, Piétinement, Poison, Ranged, Canalisation 1/2/3 : Entrave, Bouclier divin.
+- Catalogue **actif** : Tank, Vol, Piétinement, Poison, Canalisation 1/2/3 : Entrave, Bouclier divin.
 - \`entrave\` (sort) est distribué via **Canalisation** selon le coût : 3 (coût 1–2), 2 (coût 3–4), 1 (coût 5+), **~5 % au total** (somme des 3 variantes).
 - \`bouclier-divin\` : à l’invocation, cible ~5 %. \`poison\` : ~5 %.
 - Répartition : au plus **une** de ces capacités spéciales par unité ; équilibre par faction et par coût ; thèmes logiques (venin / contrôle / sacré).
 - \`pietinement\` : surplus de dégâts vers la tour.
-- \`tank\` / \`ranged\` sont aussi des **rôles** de forme (\`roles\`) et s’affichent comme badges.
+- \`tank\` est aussi un **rôle** de forme (\`roles\`) et s’affiche comme badge.
 
 ---
 

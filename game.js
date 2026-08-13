@@ -85,17 +85,12 @@ const ABILITIES = {
   tank: {
     id: 'tank',
     label: 'Tank',
-    description: 'Quand un Tank est en jeu, les créatures adverses sont obligées de l\'attaquer en priorité (sauf Tir).',
-  },
-  ranged: {
-    id: 'ranged',
-    label: 'Tir',
-    description: 'Attaque à distance : ignore les Tanks, peut cibler les créatures volantes, et n’encaisse jamais de riposte (Assassin + Sans riposte).',
+    description: 'Quand un Tank est en jeu, les créatures adverses sont obligées de l\'attaquer en priorité.',
   },
   vol: {
     id: 'vol',
     label: 'Vol',
-    description: 'Volante : seules Vol ou Tir peuvent l’attaquer. Contrairement à Tir, elle est toujours forcée d’attaquer les Tanks ; sans Tank, seuls les Vol adverses la bloquent.',
+    description: 'Volante : seules Vol peuvent l’attaquer. Elle est toujours forcée d’attaquer les Tanks ; sans Tank, seuls les Vol adverses la bloquent.',
   },
   pietinement: {
     id: 'pietinement',
@@ -129,18 +124,16 @@ const ABILITIES = {
   },
 };
 function abilityDef(id){ return ABILITIES[id] || null; }
-/** Rôles de forme : exactement 1 parmi normal | fast | ranged | caster | tank. */
-const CREATURE_ROLES = ['normal', 'fast', 'ranged', 'caster', 'tank'];
+/** Rôles de forme : exactement 1 parmi normal | fast | caster | tank. */
+const CREATURE_ROLES = ['normal', 'fast', 'caster', 'tank'];
 /** Capacités de jeu (abilities) + rétrocompat si un id est encore dans roles. */
 function creatureAbilityList(c){
   if(!c) return [];
   const fromAb=Array.isArray(c.abilities) ? c.abilities : [];
   const roles=c.roles||[];
   let list = fromAb.length ? fromAb.slice() : (c.roles||[]).filter(id => ABILITIES[id] && !CREATURE_ROLES.includes(id));
-  // Tank / Tir sont stockés comme rôle unique mais restent affichés comme badges
-  for(const id of ['tank','ranged']){
-    if(roles.includes(id) && !list.includes(id)) list.unshift(id);
-  }
+  // Tank est stocké comme rôle unique mais s’affiche aussi comme badge
+  if(roles.includes('tank') && !list.includes('tank')) list.unshift('tank');
   // Ancien tag « volant » → capacité vol
   if((roles.includes('volant') || list.includes('volant')) && !list.includes('vol')){
     list=list.filter(id=>id!=='volant');
@@ -152,10 +145,6 @@ function hasAbility(c, id){
   if(!c) return false;
   const abs=creatureAbilityList(c);
   const roles=c.roles||[];
-  if(id==='assassin' || id==='sans-riposte'){
-    return abs.includes(id) || abs.includes('ranged')
-      || roles.includes(id) || roles.includes('ranged');
-  }
   if(id==='vol' || id==='volant'){
     return abs.includes('vol') || abs.includes('volant') || roles.includes('volant');
   }

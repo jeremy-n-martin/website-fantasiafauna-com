@@ -15,9 +15,11 @@
   let audioCtx = null;
   const lastPlay = new Map();
 
-  let volume = 0.78;       // 0..1
+  let volume = 0.78;       // 0..1 (barre UI)
   let muted = false;
   let volumeBeforeMute = 0.78;
+  /** Sortie réelle = barre × ce facteur (−70 % par rapport au curseur). */
+  const MASTER_GAIN = 0.3;
 
   function loadPrefs(){
     try{
@@ -39,7 +41,7 @@
 
   function effectiveVolume(){
     if(muted || volume <= 0) return 0;
-    return volume;
+    return volume * MASTER_GAIN;
   }
   function isEffectivelyMuted(){
     return muted || volume <= 0 || effectiveVolume() <= 0;
@@ -106,7 +108,7 @@
     if(!card) return false;
     const tags = [...(card.roles||[]), ...(card.abilities||[])];
     return tags.some(t =>
-      t==='caster' || t==='ranged' || t==='assassin' || t==='lancer' || t==='lancer-mod' || t==='lancer-max'
+      t==='caster' || t==='assassin' || t==='lancer' || t==='lancer-mod' || t==='lancer-max'
       || t==='sort-degat' || t==='sort-degat-mod' || t==='sort-degat-max'
     );
   }

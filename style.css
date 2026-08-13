@@ -413,107 +413,142 @@ main:has(.combat-table){
 }
 .camp-map{
   position:relative;
-  min-height:min(62vh,520px);
-  border-radius:18px;
-  border:1px solid #d9b45f55;
+  height:min(37vh,310px);
+  min-height:240px;
+  border-radius:14px;
+  border:1px solid #8a9a6a55;
   overflow:hidden;
-  background:#0c1010;
-  box-shadow:inset 0 0 60px #000a, 0 18px 40px #0006;
+  background:#0e1610;
+  box-shadow:inset 0 0 48px #000a, 0 14px 32px #0006;
 }
 .camp-map-terrain{
   position:absolute;inset:0;
   background:
-    radial-gradient(ellipse 50% 40% at 20% 70%, #2a4a3288, transparent 70%),
-    radial-gradient(ellipse 45% 35% at 75% 30%, #3a281888, transparent 65%),
-    radial-gradient(ellipse 40% 30% at 55% 80%, #1a304088, transparent 60%),
-    linear-gradient(160deg, #1a2218 0%, #12161a 40%, #1c1810 100%);
+    radial-gradient(ellipse 55% 50% at 18% 55%, #1e3a2488, transparent 72%),
+    radial-gradient(ellipse 48% 42% at 78% 28%, #2a382088, transparent 68%),
+    radial-gradient(ellipse 42% 38% at 58% 72%, #14302866, transparent 65%),
+    radial-gradient(ellipse 30% 25% at 40% 20%, #3a4a2888, transparent 70%),
+    linear-gradient(165deg, #152018 0%, #0c1410 45%, #161a12 100%);
 }
 .camp-map-terrain::before{
-  content:"";position:absolute;inset:0;opacity:.35;pointer-events:none;
+  content:"";position:absolute;inset:0;opacity:.45;pointer-events:none;
   background-image:
-    repeating-linear-gradient(0deg, transparent, transparent 28px, #ffffff05 29px),
-    repeating-linear-gradient(90deg, transparent, transparent 28px, #ffffff04 29px);
+    radial-gradient(circle at 12% 30%, #6a8a5044 0 1.2%, transparent 1.5%),
+    radial-gradient(circle at 28% 70%, #5a7a4040 0 1%, transparent 1.3%),
+    radial-gradient(circle at 55% 25%, #4a6a3840 0 1.4%, transparent 1.7%),
+    radial-gradient(circle at 72% 58%, #6a8a5040 0 .9%, transparent 1.2%),
+    radial-gradient(circle at 88% 35%, #5a784040 0 1.1%, transparent 1.4%),
+    radial-gradient(circle at 45% 85%, #3a5a3040 0 1.3%, transparent 1.6%);
+}
+.camp-map-terrain::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(180deg, #0a120eaa 0%, transparent 18%, transparent 78%, #080e0acc 100%),
+    linear-gradient(90deg, #0a100e88 0%, transparent 12%, transparent 88%, #0a100e88 100%);
+}
+.camp-map-mist{
+  position:absolute;border-radius:50%;pointer-events:none;filter:blur(28px);
+  background:#9eb89a33;
+}
+.camp-map-mist.mist-a{width:42%;height:55%;left:8%;top:20%;animation:campMistDrift 14s ease-in-out infinite}
+.camp-map-mist.mist-b{width:38%;height:48%;right:6%;top:8%;background:#a8c0b028;animation:campMistDrift 18s ease-in-out infinite reverse}
+.camp-map-canopy{
+  position:absolute;inset:0;pointer-events:none;opacity:.22;
+  background:
+    repeating-linear-gradient(118deg, transparent 0 11px, #1a281810 11px 12px),
+    repeating-linear-gradient(-28deg, transparent 0 17px, #24302014 17px 18px);
+}
+@keyframes campMistDrift{
+  0%,100%{transform:translate(0,0) scale(1)}
+  50%{transform:translate(3%,-2%) scale(1.06)}
 }
 .camp-map-roads{
   position:absolute;inset:0;width:100%;height:100%;
   pointer-events:none;z-index:1;
 }
 .camp-map-road{
-  fill:none;stroke:#c9a36a66;stroke-width:.55;stroke-linecap:round;
-  stroke-dasharray:1.8 1.4;
+  fill:none;stroke:#6a5a3888;stroke-width:1.1;stroke-linecap:round;
+  stroke-dasharray:none;
+  filter:drop-shadow(0 0 1.2px #c9b07033);
 }
-.camp-map-road.is-active{stroke:#ffe29baa;stroke-width:.7;filter:drop-shadow(0 0 2px #d9b45f88)}
+.camp-map-road.is-active{stroke:#c9a86acc;stroke-width:1.35;filter:drop-shadow(0 0 2px #d9b45f66)}
 .camp-map-node{
   position:absolute;z-index:3;
   transform:translate(-50%,-50%);
-  display:flex;flex-direction:column;align-items:center;gap:6px;
-  width:auto;max-width:140px;
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  width:auto;max-width:128px;
   padding:0;border:none;background:transparent;color:inherit;
   cursor:pointer;
 }
 .camp-map-pin{
-  width:22px;height:22px;border-radius:50%;
-  border:2px solid #ffe29b;
-  background:radial-gradient(circle at 35% 30%, #e8d5a0, #6a4a18 70%);
-  box-shadow:0 0 0 3px #0008, 0 6px 14px #000a;
+  width:16px;height:16px;
+  border-radius:2px;
+  border:1.5px solid #c9b070;
+  background:
+    linear-gradient(135deg, #3a4a28 0%, #1a2818 55%, #2a3820 100%);
+  box-shadow:0 0 0 2px #0a100eaa, 0 3px 8px #0009;
+  transform:rotate(45deg);
 }
 .camp-map-node.kind-home .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #dff0ff, #3a5a78 70%);
-  border-color:#b8d4f0;
+  background:linear-gradient(135deg, #4a6a88, #1a3040 60%, #2a4860);
+  border-color:#9ab8d0;
 }
 .camp-map-node.kind-shop .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #ffe9b0, #8a5a18 70%);
+  background:linear-gradient(135deg, #8a6a28, #3a2810 60%, #5a4018);
+  border-color:#d4b060;
 }
 .camp-map-node.kind-fusion .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #e8d0ff, #5a3870 70%);
-  border-color:#c9a0e8;
+  background:linear-gradient(135deg, #6a4a78, #2a1838 60%, #4a3060);
+  border-color:#b090c8;
 }
 .camp-map-node.kind-duel .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #ffc8b0, #7a2818 70%);
-  border-color:#e8a090;
+  background:linear-gradient(135deg, #8a3a28, #3a1410 60%, #5a2018);
+  border-color:#d09080;
 }
 .camp-map-label{
-  display:grid;gap:1px;justify-items:center;text-align:center;
-  padding:4px 8px;border-radius:10px;
-  background:#0a0c0cee;border:1px solid #ffffff22;
-  box-shadow:0 6px 16px #0008;
+  display:grid;gap:0;justify-items:center;text-align:center;
+  padding:3px 7px;border-radius:4px 4px 6px 6px;
+  background:linear-gradient(180deg, #1a2218f0, #0e1410f5);
+  border:1px solid #6a7a5055;
+  border-top:2px solid #8a9a6a66;
+  box-shadow:0 4px 12px #0008;
 }
-.camp-map-label b{font-family:Georgia,serif;font-size:.78rem;color:#fff6e0;line-height:1.15}
-.camp-map-label small{font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;color:#d9b45fcc;font-weight:800}
+.camp-map-label b{font-family:Georgia,serif;font-size:.72rem;color:#e8f0d8;line-height:1.1;font-weight:700}
+.camp-map-label small{font-size:.58rem;letter-spacing:.05em;text-transform:uppercase;color:#a8b878cc;font-weight:800}
 .camp-map-node.is-here .camp-map-pin{
-  box-shadow:0 0 0 3px #ffe29b88, 0 0 18px #d9b45f88, 0 6px 14px #000a;
-  transform:scale(1.15);
+  box-shadow:0 0 0 2px #c9b070aa, 0 0 14px #d9b45f66, 0 3px 8px #0009;
+  transform:rotate(45deg) scale(1.2);
 }
-.camp-map-node.is-here .camp-map-label{border-color:#d9b45f99;background:#1a140cee}
+.camp-map-node.is-here .camp-map-label{border-color:#c9b07088;background:linear-gradient(180deg,#2a2818f2,#14120ef5)}
 .camp-map-node.is-reachable:not(.is-here) .camp-map-pin{
   animation:campMapPulse 1.8s ease-in-out infinite;
 }
 .camp-map-node.is-reachable:not(.is-here):hover .camp-map-label{
-  border-color:#ffe29b88;transform:translateY(-1px);
+  border-color:#c9b07088;transform:translateY(-1px);
 }
 .camp-map-node.is-locked{
-  opacity:.42;filter:grayscale(.55);cursor:not-allowed;
+  opacity:.38;filter:grayscale(.6) brightness(.85);cursor:not-allowed;
 }
-.camp-map-node.is-cleared .camp-map-label small{color:#adffd0cc}
+.camp-map-node.is-cleared .camp-map-label small{color:#8fd4a8cc}
 .camp-map-node.is-cleared .camp-map-pin{
-  box-shadow:0 0 0 3px #76d89655, 0 6px 14px #000a;
+  box-shadow:0 0 0 2px #76d89666, 0 3px 8px #0009;
 }
 @keyframes campMapPulse{
-  0%,100%{box-shadow:0 0 0 3px #0008, 0 6px 14px #000a}
-  50%{box-shadow:0 0 0 4px #ffe29b55, 0 0 16px #d9b45f66, 0 6px 14px #000a}
+  0%,100%{box-shadow:0 0 0 2px #0a100eaa, 0 3px 8px #0009}
+  50%{box-shadow:0 0 0 3px #c9b07066, 0 0 12px #d9b45f55, 0 3px 8px #0009}
 }
 .camp-map-pawn{
   position:absolute;z-index:4;pointer-events:none;
-  transform:translate(-50%,-120%);
-  width:18px;height:28px;
-  filter:drop-shadow(0 4px 8px #000a);
+  transform:translate(-50%,-125%);
+  width:14px;height:22px;
+  filter:drop-shadow(0 3px 6px #000a);
   transition:left .45s cubic-bezier(.22,.8,.2,1), top .45s cubic-bezier(.22,.8,.2,1);
 }
 .camp-map-pawn i{
   display:block;width:100%;height:100%;
   background:
-    radial-gradient(circle at 50% 22%, #fff6e0 0 28%, transparent 30%),
-    linear-gradient(180deg, #d9b45f 35%, #5a3810 100%);
+    radial-gradient(circle at 50% 22%, #f0e8c8 0 28%, transparent 30%),
+    linear-gradient(180deg, #c9a86a 35%, #3a2810 100%);
   clip-path:polygon(50% 0, 78% 28%, 70% 28%, 70% 100%, 30% 100%, 30% 28%, 22% 28%);
   border-radius:2px;
 }
@@ -529,38 +564,38 @@ main:has(.combat-table){
   font-size:clamp(1.25rem,2.4vw,1.6rem);
 }
 .camp-map-dossier .campaign-prose{margin:0 0 8px;font-size:.95rem}
-.camp-map-road.is-threat{stroke:#ff6b6baa;stroke-width:.85;stroke-dasharray:none;filter:drop-shadow(0 0 3px #ff404088)}
+.camp-map-road.is-threat{stroke:#e05050bb;stroke-width:1.5;stroke-dasharray:none;filter:drop-shadow(0 0 3px #ff404088)}
 .camp-map-node.kind-village .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #c8f0b0, #3a6820 70%);
-  border-color:#a8d888;
+  background:linear-gradient(135deg, #5a8a40, #1a3818 60%, #3a5828);
+  border-color:#8ab868;
 }
 .camp-map-node.kind-capital .camp-map-pin{
-  width:26px;height:26px;
-  background:radial-gradient(circle at 35% 30%, #ffe29b, #8a5010 70%);
-  border-color:#ffe29b;
+  width:20px;height:20px;
+  background:linear-gradient(135deg, #c9a86a, #5a3810 55%, #8a6020);
+  border-color:#e8d090;
 }
 .camp-map-node.kind-lair .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #ffb0c8, #681828 70%);
-  border-color:#e890a8;
+  background:linear-gradient(135deg, #8a3850, #381018 60%, #5a2030);
+  border-color:#c87890;
 }
 .camp-map-node.kind-sanctuary .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #d0e8ff, #285878 70%);
-  border-color:#a0c8e8;
+  background:linear-gradient(135deg, #4a7090, #183040 60%, #2a5068);
+  border-color:#88b0c8;
 }
 .camp-map-node.kind-ruins .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #e8dcc0, #685828 70%);
-  border-color:#c8b888;
+  background:linear-gradient(135deg, #8a7a50, #3a3020 60%, #5a4a30);
+  border-color:#b0a078;
 }
 .camp-map-node.kind-fortress .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #c8d0d8, #384048 70%);
-  border-color:#a0a8b0;
+  background:linear-gradient(135deg, #6a7078, #282c30 60%, #484e58);
+  border-color:#98a0a8;
 }
 .camp-map-node.kind-route .camp-map-pin{
-  background:radial-gradient(circle at 35% 30%, #ffc8b0, #7a2818 70%);
-  border-color:#e8a090;
+  background:linear-gradient(135deg, #8a4a30, #3a1810 60%, #5a2818);
+  border-color:#c88868;
 }
 .camp-map-node.status-conquered .camp-map-pin{
-  box-shadow:0 0 0 3px #76d89688, 0 6px 14px #000a;
+  box-shadow:0 0 0 2px #76d89688, 0 3px 8px #0009;
 }
 .camp-map-node.is-fog .camp-map-label b{letter-spacing:.12em}
 .camp-encounter-modal{
@@ -584,8 +619,8 @@ main:has(.combat-table){
 .camp-map-diff{margin:0;color:#ffc8b0;font-weight:800;letter-spacing:.06em;font-size:.78rem}
 @media(max-width:900px){
   .camp-map-layout{grid-template-columns:1fr}
-  .camp-map{min-height:420px}
-  .camp-map-label b{font-size:.7rem}
+  .camp-map{height:240px;min-height:220px}
+  .camp-map-label b{font-size:.66rem}
 }
 .camp-stats-compact{margin:0;justify-content:flex-end}
 .camp-toast{
@@ -1864,17 +1899,6 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
   height:calc(var(--cbt-token-size) * 1.1) !important;
   min-height:calc(var(--cbt-token-size) * 1.1) !important;
 }
-.cbt-card.cbt-token.cbt-shape-id-ranged{
-  --socle-metal:#d4a06a;
-  --socle-metal-deep:#5a3018;
-  --socle-metal-shine:#f2d2a8;
-  /* Triangle arrondi — un peu plus haut */
-  width:calc(var(--cbt-token-size) * 1.06) !important;
-  min-width:calc(var(--cbt-token-size) * 1.06) !important;
-  max-width:calc(var(--cbt-token-size) * 1.06) !important;
-  height:calc(var(--cbt-token-size) * 1.18) !important;
-  min-height:calc(var(--cbt-token-size) * 1.18) !important;
-}
 .cbt-card.cbt-token.cbt-shape-id-pietinement{
   --socle-metal:#b89868;
   --socle-metal-deep:#3a2810;
@@ -2034,32 +2058,6 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
 .cbt-shape-id-tank .cbt-socle-gems i:nth-child(2){top:46.5%;right:2%;border-radius:2px;transform:rotate(45deg)}
 .cbt-shape-id-tank .cbt-socle-gems i:nth-child(3){bottom:6%;left:46.5%;border-radius:2px;transform:rotate(45deg)}
 .cbt-shape-id-tank .cbt-socle-gems i:nth-child(4){top:46.5%;left:2%;border-radius:2px;transform:rotate(45deg)}
-/* Ranged — triangle arrondi (pointe en haut) */
-.cbt-shape-id-ranged .cbt-socle-rim,.cbt-shape-id-ranged .cbt-socle-plate,.cbt-shape-id-ranged .cbt-socle-bevel{
-  border-radius:0;
-  clip-path:polygon(
-    50% 1%,
-    62% 6%,
-    94% 86%,
-    88% 96%,
-    50% 100%,
-    12% 96%,
-    6% 86%,
-    38% 6%
-  );
-}
-.cbt-shape-id-ranged .cbt-socle-rim{inset:0 2% 0}
-.cbt-shape-id-ranged .cbt-socle-plate{inset:5% 8% 4%}
-.cbt-shape-id-ranged .cbt-socle-bevel{inset:9% 12% 7%}
-.cbt-shape-id-ranged .cbt-token-face{
-  width:56%;top:54%;border-radius:50%;
-  box-shadow:inset 0 0 0 2px #e8a86a99, inset 0 -10px 18px #0008, 0 0 10px #ff8f5f33;
-}
-.cbt-shape-id-ranged .cbt-socle-stand{left:22%;right:22%;bottom:1%;height:11%}
-.cbt-shape-id-ranged .cbt-socle-gems i:nth-child(1){top:4%;left:46.5%;border-radius:2px;transform:rotate(45deg)}
-.cbt-shape-id-ranged .cbt-socle-gems i:nth-child(2){top:58%;right:8%;border-radius:2px;transform:rotate(45deg)}
-.cbt-shape-id-ranged .cbt-socle-gems i:nth-child(3){bottom:4%;left:46.5%;border-radius:2px;transform:rotate(45deg)}
-.cbt-shape-id-ranged .cbt-socle-gems i:nth-child(4){top:58%;left:8%;border-radius:2px;transform:rotate(45deg)}
 /* Pics socle — Piétinement (2) / Poison (1) */
 .cbt-socle-spikes{display:none;position:absolute;inset:0;z-index:1;pointer-events:none}
 .cbt-socle-spikes i{
@@ -2318,7 +2316,6 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
 .cbt-card.cbt-token .cbt-laser-ring{inset:-4%;border-radius:50%}
 .cbt-card.cbt-token.selected,.cbt-card.cbt-token.aiming{filter:drop-shadow(0 0 16px #ffe29b99) drop-shadow(0 10px 14px #0009)}
 .cbt-card.cbt-token.is-tank{filter:drop-shadow(0 0 12px #7eb6ff55) drop-shadow(0 10px 14px #0009)}
-.cbt-card.cbt-token.cbt-shape-id-ranged.is-tank{filter:drop-shadow(0 0 12px #7eb6ff55) drop-shadow(0 10px 14px #0009)}
 .cbt-card.cbt-token.cbt-shape-id-pietinement.is-tank{filter:drop-shadow(0 0 12px #7eb6ff55) drop-shadow(0 10px 14px #0009)}
 .cbt-card.cbt-token.is-weakened .cbt-token-face{filter:saturate(.7) brightness(.85)}
 .cbt-card.cbt-token.has-fury .cbt-token-face{box-shadow:inset 0 0 0 2px #ff8f5faa,0 0 14px #ff704466}
@@ -2346,7 +2343,8 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
   .ally-hud .cbt-hand .cbt-card.in-hand:hover > .ff-card,
   .cbt-hand-bar .cbt-card.in-hand.hand-drawn > .ff-card,
   .cbt-hand-bar .cbt-card.in-hand:hover > .ff-card{
-    transform:translateY(-42%) scale(1.05) rotate(-2deg);
+    transform:translateY(-42%) scale(0.63) rotate(-2deg);
+    opacity:1;
     filter:drop-shadow(0 14px 22px #000c) brightness(1.05);
   }
   .ally-hud .cbt-hand .cbt-card.in-hand.hand-drawn,
@@ -2354,6 +2352,8 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
   .cbt-hand-bar .cbt-card.in-hand.hand-drawn,
   .cbt-hand-bar .cbt-card.in-hand:hover{
     z-index:90;
+    opacity:1;
+    filter:none;
   }
   .ally-hud .cbt-hand .cbt-card.in-hand.can-play:hover > .ff-card,
   .ally-hud .cbt-hand .cbt-card.in-hand.can-play.hand-drawn > .ff-card,
@@ -3048,11 +3048,6 @@ body.is-cbt-dragging .cbt-hand-bar .cbt-card{pointer-events:none}
   border-color:#7eb6ffaa;color:#d7ebff;
   background:linear-gradient(135deg,#1a3355cc,#0a1524ee);
   box-shadow:0 0 12px #4d8dff33;
-}
-.ability-tag.ability-ranged{
-  border-color:#8fbf7aaa;color:#dff0d4;
-  background:linear-gradient(135deg,#1f3a24cc,#0c1610ee);
-  box-shadow:0 0 12px #6aa85a33;
 }
 .ability-tag.ability-vol{
   border-color:#9ec8e8aa;color:#e8f4ff;

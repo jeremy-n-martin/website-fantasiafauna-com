@@ -90,19 +90,18 @@ Sur son tour, une créature **prête** peut :
 
 Mal d’invocation : pas d’attaque ni d’activation le tour d’arrivée, sauf **Charge** (attaque OK) / **Célérité** (attaque + activation OK).
 
-Combat créature vs créature : frappe + **riposte** (sauf Tir / sans riposte).  
+Combat créature vs créature : frappe + **riposte**.  
 Tour vs tour : dégâts directs à la tour (30 PV).
 
-### 3.6 Ciblage — Tank, Vol, Tir, Camouflage
+### 3.6 Ciblage — Tank, Vol, Camouflage
 
 | Règle | Comportement |
 |---|---|
-| **Tank** | Force le focus : l’adversaire doit frapper un Tank (pas la tour ni les autres), **sauf Tir** (Vol reste forcé) |
-| **Vol** | Seules **Vol** ou **Tir** peuvent attaquer une créature Vol. Un Vol qui attaque est **toujours** bloqué par un **Tank** adverse ; sinon par un **Vol** adverse ; sinon il peut frapper la tour / le sol |
-| **Tir** | Ignore les Tanks · peut cibler les **Vol** · pas de riposte · peut frapper la tour librement |
+| **Tank** | Force le focus : l’adversaire doit frapper un Tank (pas la tour ni les autres) ; Vol reste aussi forcé |
+| **Vol** | Seules **Vol** peuvent attaquer une créature Vol. Un Vol qui attaque est **toujours** bloqué par un **Tank** adverse ; sinon par un **Vol** adverse ; sinon il peut frapper la tour / le sol |
 | **Camouflage** | Non ciblable tant que la créature n’a pas attaqué / activé |
 
-Socles visuels : ovale portrait ; **Tank** = carré arrondi ; **Tir** = triangle arrondi ; **Piétinement** = ovale + 2 pics bas ; **Poison** = 1 pic bas ; **Canalisation** = 1 / 2 / 3 ronds en haut ; Vol (lévitation).
+Socles visuels : ovale portrait ; **Tank** = carré arrondi ; **Piétinement** = ovale + 2 pics bas ; **Poison** = 1 pic bas ; **Canalisation** = 1 / 2 / 3 ronds en haut ; Vol (lévitation).
 
 ### 3.7 Tour de jeu (résumé)
 
@@ -186,12 +185,12 @@ Graphe fixe de lieux reliés par des sentiers (pas de déplacement libre). Types
 
 États d’un nœud : `unknown` · `discovered` · `neutral` · `hostile` · `allied` · `conquered` · (évent. `revolt`).
 
-MVP jouable : **~14 lieux**, **4 capitales**, menaces de sentier visibles, **6 familles** de decks ennemis.
+MVP jouable : **~14 lieux**, **4 capitales**, menaces de route visibles, **6 familles** de decks ennemis.
 
-#### Sentiers & rencontres
+#### Routes & rencontres
 
 - Au plus **une** rencontre forcée par trajet (pas de spam aléatoire).
-- Menace **visible** sur le sentier (Tour de guet / Éclaireur).
+- Menace **visible** sur la route (Tour de guet / Éclaireur).
 - Types : Patrouille · Embuscade · Escorte · Chasse · Blocus · Survie · Duel rituel (MVP : patrouille, embuscade, blocus, capture).
 - Monture peut ignorer / fuir selon règles.
 
@@ -274,9 +273,9 @@ Enchaîne N sessions × 2 parties, même log.
 
 Structure créature :
 
-- `roles` : **exactement 1** parmi `normal`, `fast`, `tir`, `caster`, `tank`
+- `roles` : **exactement 1** parmi `normal`, `fast`, `caster`, `tank`
 - `abilities` : liste d’ids du catalogue (§11)
-- Guidelines d’équilibrage : stats de base **ATQ = C**, **PV = 2×C** (compressé si besoin) ; HP ≥ ATQ ; **max 1 capacité** (sauf combos iconiques : dragons Vol+Piétinement, Ange/Phénix Vol+Bouclier) ; **Vol + Tir → 1/1** ; plafonds **Σ ATQ+PV ≤ 2C+2** avec max **1/(2C+1)** (C2: Σ6 / 1/5 · C3: Σ8 / 1/7 · C4: Σ10 / 1/9…) — profils libres sous le plafond (ex. C3 : 2/6, 3/5, 3/3, 2/5) ; capa faible **Σ−1** ; capa moyenne (Vol/Tir/Tank/Bouclier/Piétinement) **Σ−2** ; **coût 1** : **1/3** / **1/2** / **1/1** ; signatures uniques
+- Guidelines d’équilibrage : stats de base **ATQ = C**, **PV = 2×C** (compressé si besoin) ; HP ≥ ATQ ; **max 1 capacité** (sauf combos iconiques : dragons Vol+Piétinement, Ange/Phénix Vol+Bouclier) ; plafonds **Σ ATQ+PV ≤ 2C+2** avec max **1/(2C+1)** (C2: Σ6 / 1/5 · C3: Σ8 / 1/7 · C4: Σ10 / 1/9…) — profils libres sous le plafond (ex. C3 : 2/6, 3/5, 3/3, 2/5) ; capa faible **Σ−1** ; capa moyenne (Vol/Tank/Bouclier/Piétinement) **Σ−2** ; **coût 1** : **1/3** / **1/2** / **1/1** ; signatures uniques
 
 Images : sources **480×480** ; affichage liste ~240 ; aperçu combat taille réelle / carte agrandie.
 
@@ -312,7 +311,7 @@ Demandes utilisateur consolidées (hors bugs UI ponctuels) :
 
 1. Combat jouable type Hearthstone + mana cristal / couleur (**+1/tour**, conservation, 1ᵉʳ tour du 1ᵉʳ joueur sans gain)
 2. Images 480, aperçus combat, main / hover / flèche de pose
-3. Socles Tank / Tir / formes type HS
+3. Socles Tank / formes type HS
 4. Lobby : combat rapide + exploration (forêt / classeur)
 5. Campagne forêt : or, cartes, fusion 5→1, raretés, **carte du territoire** (sentiers, refuge, capture, capitales), boutique, boosters
 6. Coût : ≥ 1 mana couleur (max 3 colorés)
@@ -328,17 +327,16 @@ Demandes utilisateur consolidées (hors bugs UI ponctuels) :
 
 ## 11. Catalogue complet des capacités
 
-Source de vérité : objet `ABILITIES` dans [`game.js`](./game.js) (**9** entrées).  
+Source de vérité : objet `ABILITIES` dans [`game.js`](./game.js) (**8** entrées).  
 Logique : [`combat.js`](./combat.js). Édition pas-à-pas : [`CAPACITES.md`](./CAPACITES.md).  
-**Couverture** : part des **341** créatures de [`creatures-data.js`](./creatures-data.js) qui possèdent la capacité (via `abilities` ou rôle `tank`/`tir`/`vol`).  
+**Couverture** : part des **341** créatures de [`creatures-data.js`](./creatures-data.js) qui possèdent la capacité (via `abilities` ou rôle `tank`/`vol`).  
 **Puissance** : impact design relatif — ★ faible · ★★ moyen · ★★★ fort (éditable dans `tools/gen_spec.js` → `ABILITY_POWER`).  
 Tableau trié par **couverture décroissante**, puis puissance (`node tools/gen_spec.js`).
 
 | Id | Label | Description | Couverture | Puissance |
 |---|---|---|---|---|
 | `tank` | Tank | Quand un Tank est en jeu, les créatures adverses sont obligées de l'attaquer en priorité. | 24.0% (82/341) | ★★★ |
-| `vol` | Vol | Volante : seules Vol ou Tir peuvent l’attaquer. Contrairement à Tir, elle est toujours forcée d’attaquer les Tanks ; sans Tank, seuls les Vol adverses la bloquent. | 20.5% (70/341) | ★★★ |
-| `tir` | Tir | Attaque à distance : ignore les Tanks, peut cibler les créatures volantes, et n’encaisse jamais de riposte (Assassin + Sans riposte). | 19.6% (67/341) | ★★★ |
+| `vol` | Vol | Volante : seules Vol peuvent l’attaquer. Elle est toujours forcée d’attaquer les Tanks ; sans Tank, seuls les Vol adverses la bloquent. | 20.5% (70/341) | ★★★ |
 | `pietinement` | Piétinement | Les dégâts qui dépassent les PV du bloqueur sont infligés à la tour adverse. | 10.0% (34/341) | ★★★ |
 | `bouclier-divin` | Bouclier divin | À l’invocation : ignore entièrement la première source de dégâts reçue, puis le bouclier disparaît. | 5.0% (17/341) | ★★★ |
 | `poison` | Poison | Empoisonne les mignons qu’elle touche en combat, et ceux qui l’attaquent (même sans riposte) : 1 dégât au début de chacun de leurs tours. | 5.0% (17/341) | ★★ |
@@ -373,12 +371,12 @@ Règles utiles :
 
 ### Notes
 
-- Catalogue **actif** : Tank, Vol, Piétinement, Poison, Tir, Canalisation 1/2/3 : Entrave, Bouclier divin.
+- Catalogue **actif** : Tank, Vol, Piétinement, Poison, Canalisation 1/2/3 : Entrave, Bouclier divin.
 - `entrave` (sort) est distribué via **Canalisation** selon le coût : 3 (coût 1–2), 2 (coût 3–4), 1 (coût 5+), **~5 % au total** (somme des 3 variantes).
 - `bouclier-divin` : à l’invocation, cible ~5 %. `poison` : ~5 %.
 - Répartition : au plus **une** de ces capacités spéciales par unité ; équilibre par faction et par coût ; thèmes logiques (venin / contrôle / sacré).
 - `pietinement` : surplus de dégâts vers la tour.
-- `tank` / `tir` sont aussi des **rôles** de forme (`roles`) et s’affichent comme badges.
+- `tank` est aussi un **rôle** de forme (`roles`) et s’affiche comme badge.
 
 ---
 

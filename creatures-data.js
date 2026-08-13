@@ -1,5 +1,5 @@
 /* Catalogue des créatures — éditer ici (une carte = un bloc).
- * roles     = exactement 1 parmi : normal, fast, ranged, caster, tank
+ * roles     = exactement 1 parmi : normal, fast, caster, tank
  * abilities = capacités de jeu (voir ABILITIES dans game.js + CAPACITES.md)
  * Charger ce fichier AVANT game.js (voir index.html).
  */
@@ -55,7 +55,7 @@ const CREATURES = [
     "attack": 4,
     "health": 8,
     "rarity": "rare",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Valkyrie 1.png",
     "quote": "« Elles ne choisissent pas les vainqueurs, elles choisissent les morts. »",
     "costColored": 2,
@@ -82,7 +82,7 @@ const CREATURES = [
     "attack": 3,
     "health": 3,
     "rarity": "rare",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Pégase 1.png",
     "quote": "« L'immortalité a deux ailes et le sabot lourd. »",
     "costColored": 1,
@@ -109,7 +109,7 @@ const CREATURES = [
     "attack": 4,
     "health": 4,
     "rarity": "rare",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Griffon 1.png",
     "quote": "« Une serre pour déchirer le sol, une aile pour balayer le ciel. »",
     "costColored": 1,
@@ -200,7 +200,7 @@ const CREATURES = [
     "capital": "Citadelle",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -213,7 +213,7 @@ const CREATURES = [
     "attack": 2,
     "health": 2,
     "rarity": "commune",
-    "spell": "Tir: attaque sans subir de riposte une fois.",
+    "spell": "",
     "image": "img/Archer 1.png",
     "quote": "« Une flèche ne prie pas, elle frappe. »",
     "costColored": 1,
@@ -275,7 +275,7 @@ const CREATURES = [
     "capital": "Citadelle",
     "size": "1,75",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "bouclier-divin"
@@ -344,7 +344,7 @@ const CREATURES = [
     "attack": 2,
     "health": 2,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Kenku 1.png",
     "quote": "« L'imitation du chant des oiseaux précède souvent le silence de la mort. »",
     "costColored": 1,
@@ -356,7 +356,7 @@ const CREATURES = [
     "capital": "Citadelle",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "bouclier-divin"
@@ -383,7 +383,7 @@ const CREATURES = [
     "capital": "Citadelle",
     "size": "1,65",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -408,7 +408,7 @@ const CREATURES = [
     "capital": "Citadelle",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -421,7 +421,7 @@ const CREATURES = [
     "attack": 3,
     "health": 3,
     "rarity": "commune",
-    "spell": "Tir: attaque sans subir de riposte une fois.",
+    "spell": "",
     "image": "img/Arbalétrier 1.png",
     "quote": "« La corde claque, la querelle fend l'air, le destin s'accomplit. »",
     "costColored": 1,
@@ -550,7 +550,7 @@ const CREATURES = [
     "attack": 1,
     "health": 3,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Alérion 1.png",
     "quote": "« Un présage d'argent qui vole sans faire de bruit. »",
     "costColored": 1,
@@ -587,7 +587,7 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -612,7 +612,7 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "bouclier-divin"
@@ -639,7 +639,7 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "2,3",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -652,7 +652,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Tir: attaque sans subir de riposte une fois.",
+    "spell": "",
     "image": "img/Centaure 1.png",
     "quote": "« La vitesse du cheval, la précision de l'archer, une seule cible. »",
     "costColored": 1,
@@ -706,7 +706,7 @@ const CREATURES = [
     "attack": 3,
     "health": 5,
     "rarity": "inhabituelle",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Hippogriffe 1.png",
     "quote": "« L'aigle et le lion scellés dans une tempête de plumes et de griffes. »",
     "costColored": 1,
@@ -746,7 +746,7 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "1,75",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -824,7 +824,7 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "1,75",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -837,7 +837,7 @@ const CREATURES = [
     "attack": 4,
     "health": 4,
     "rarity": "commune",
-    "spell": "Tir : ignore les Tanks, cible les Vol, pas de riposte.",
+    "spell": "",
     "image": "img/Rodeur 1.png",
     "quote": "« Connaître la forêt, c'est savoir où cacher les corps. »",
     "costColored": 1,
@@ -976,7 +976,7 @@ const CREATURES = [
     "capital": "Sylve",
     "size": "5",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -991,7 +991,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Vouivre 1.png",
     "quote": "« L'ombre des ailes suffit à étouffer le cri des proies. »",
     "costColored": 1,
@@ -1103,7 +1103,7 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "1,75",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -1181,7 +1181,7 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "1,5",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -1231,7 +1231,7 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "0,5",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -1281,7 +1281,7 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "0,6",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -1348,7 +1348,7 @@ const CREATURES = [
     "attack": 2,
     "health": 2,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Boggart 1.png",
     "quote": "« La peur prend le visage de ce que vous redoutez le plus. »",
     "costColored": 1,
@@ -1403,7 +1403,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Brownie 1.png",
     "quote": "« La malice s'habille de guenilles et de rires moqueurs. »",
     "costColored": 1,
@@ -1440,7 +1440,7 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -1455,7 +1455,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "mythique",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Vampire 1.png",
     "quote": "« Le sang s'arrête de couler, mais la soif ne s'éteint jamais. »",
     "costColored": 1,
@@ -1494,7 +1494,7 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -1510,7 +1510,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "rare",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Fantome 1.png",
     "quote": "« Une lueur sans corps qui traverse les murs et glace le sang. »",
     "costColored": 1,
@@ -1603,7 +1603,7 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -1618,7 +1618,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Nosferatu 1.png",
     "quote": "« Un noble déchu dont l'élégance masque une férocité ancienne. »",
     "costColored": 1,
@@ -1699,7 +1699,7 @@ const CREATURES = [
     "attack": 2,
     "health": 2,
     "rarity": "inhabituelle",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Poltergeist 1.png",
     "quote": "« Les objets se meuvent seuls quand la haine survit au corps. »",
     "costColored": 1,
@@ -1711,7 +1711,7 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -1727,7 +1727,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Banshee 1.png",
     "quote": "« Un cri qui déchire le voile entre la vie et le trépas. »",
     "costColored": 1,
@@ -1793,7 +1793,7 @@ const CREATURES = [
     "capital": "Nécropole",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -1809,7 +1809,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Spectre 1.png",
     "quote": "« Ni tout à fait présent, ni tout à fait disparu, le spectre hante la lumière. »",
     "costColored": 1,
@@ -1862,7 +1862,7 @@ const CREATURES = [
     "attack": 2,
     "health": 6,
     "rarity": "inhabituelle",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Wraith 1.png",
     "quote": "« L'ombre portée par la mort s'étend sur ceux qui doutent. »",
     "costColored": 1,
@@ -2043,7 +2043,7 @@ const CREATURES = [
     "attack": 2,
     "health": 2,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Dame Blanche 1.png",
     "quote": "« Une silhouette d'albâtre qui annonce le deuil avant l'heure. »",
     "costColored": 1,
@@ -2071,7 +2071,7 @@ const CREATURES = [
     "attack": 1,
     "health": 2,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Ombre 1.png",
     "quote": "« La pénombre elle-même a pris une forme pour étouffer vos pas. »",
     "costColored": 1,
@@ -2239,7 +2239,7 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "0,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -2254,7 +2254,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Strige 1.png",
     "quote": "« Un rapace nocturne dont le cri annonce la perte de la raison. »",
     "costColored": 1,
@@ -2266,7 +2266,7 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "1,2",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -2282,7 +2282,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Valravn 1.png",
     "quote": "« Le corbeau de sang qui guette les batailles perdues. »",
     "costColored": 1,
@@ -2426,7 +2426,7 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "2",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -2442,7 +2442,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Mothman 1.png",
     "quote": "« L'envergure du mystère éclipse la lumière des étoiles. »",
     "costColored": 1,
@@ -2550,7 +2550,7 @@ const CREATURES = [
     "attack": 2,
     "health": 2,
     "rarity": "inhabituelle",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Mimique 1.png",
     "quote": "« Ce qui ressemble à un trésor cache souvent des dents. »",
     "costColored": 1,
@@ -2562,7 +2562,7 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "2,5",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -2587,7 +2587,7 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "1",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "poison"
@@ -2693,7 +2693,7 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "1,75",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "pietinement"
@@ -2932,7 +2932,7 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -2947,7 +2947,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Péryton 1.png",
     "quote": "« Un rapace démoniaque qui s'abat depuis les cieux obscurs. »",
     "costColored": 1,
@@ -3011,7 +3011,7 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "2,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "pietinement"
@@ -3038,7 +3038,7 @@ const CREATURES = [
     "capital": "Abîme",
     "size": "0,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3053,7 +3053,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Flumph 1.png",
     "quote": "« Une méduse flottante dont la douceur est un leurre mortel. »",
     "costColored": 1,
@@ -3223,7 +3223,7 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "6",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3238,7 +3238,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Wyverne 1.png",
     "quote": "« Une bête ailée qui règne sur les pics arides. »",
     "costColored": 1,
@@ -3378,7 +3378,7 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "4",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3393,7 +3393,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Drake 1.png",
     "quote": "« Une petite dragonne sans ailes, rapide comme l'éclair. »",
     "costColored": 1,
@@ -3495,7 +3495,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Sciapode 1.png",
     "quote": "« Un seul pied pour bondir, une ombre pour se cacher. »",
     "costColored": 1,
@@ -3600,7 +3600,7 @@ const CREATURES = [
     "attack": 1,
     "health": 7,
     "rarity": "rare",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Démon 1.png",
     "quote": "« La fureur des abysses incarnée dans la chair et les cornes. »",
     "costColored": 1,
@@ -3665,7 +3665,7 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3680,7 +3680,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Succube 1.png",
     "quote": "« Le désir est un piège dont on ne se réveille pas. »",
     "costColored": 1,
@@ -3717,7 +3717,7 @@ const CREATURES = [
     "capital": "Bastion",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3732,7 +3732,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Harpie 1.png",
     "quote": "« Un visage de femme sur un corps de rapace affamé. »",
     "costColored": 1,
@@ -3744,7 +3744,7 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "2",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3760,7 +3760,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Manticore 1.png",
     "quote": "« Le corps du lion, l'aile de l'aigle, le dard du scorpion. »",
     "costColored": 1,
@@ -3797,7 +3797,7 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "4",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3813,7 +3813,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Chimère 1.png",
     "quote": "« Trois têtes pour cracher le feu, la glace et le poison. »",
     "costColored": 1,
@@ -3825,7 +3825,7 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3840,7 +3840,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Incube 1.png",
     "quote": "« L'homme séduisant dont le baiser vole la vie. »",
     "costColored": 1,
@@ -3868,7 +3868,7 @@ const CREATURES = [
     "attack": 8,
     "health": 8,
     "rarity": "mythique",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Archidémon 1.png",
     "quote": "« Le général des armées infernales, la terreur des mortels. »",
     "costColored": 3,
@@ -3907,7 +3907,7 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3923,7 +3923,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "rare",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Érinye 1.png",
     "quote": "« La vengeance a le visage d'une femme aux ailes de chauve-souris. »",
     "costColored": 1,
@@ -3935,7 +3935,7 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "0,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3951,7 +3951,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Diablotin 1.png",
     "quote": "« Un petit démon ailé qui murmure des mensonges à l'oreille. »",
     "costColored": 1,
@@ -3963,7 +3963,7 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -3979,7 +3979,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "rare",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Furie 1.png",
     "quote": "« La fureur personnifiée sous des traits ailés. »",
     "costColored": 1,
@@ -4082,7 +4082,7 @@ const CREATURES = [
     "attack": 2,
     "health": 4,
     "rarity": "commune",
-    "spell": "Tir: attaque sans subir de riposte une fois.",
+    "spell": "",
     "image": "img/Chien de l'enfer 1.png",
     "quote": "« La meute de feu qui traque les âmes perdues. »",
     "costColored": 1,
@@ -4188,7 +4188,7 @@ const CREATURES = [
     "attack": 2,
     "health": 2,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Cacodémon 1.png",
     "quote": "« Une sphère flottante dotée d'une gueule béante et d'un œil unique. »",
     "costColored": 1,
@@ -4250,7 +4250,7 @@ const CREATURES = [
     "capital": "Pandémonium",
     "size": "2,4",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -4265,7 +4265,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Vrock 1.png",
     "quote": "« Un démon à tête de rapace dont le cri rend fou. »",
     "costColored": 1,
@@ -4484,7 +4484,7 @@ const CREATURES = [
     "capital": "Manufacture",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -4509,7 +4509,7 @@ const CREATURES = [
     "capital": "Manufacture",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -4524,7 +4524,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Gargouille 1.png",
     "quote": "« La pierre taillée qui veille sur les cathédrales abandonnées. »",
     "costColored": 1,
@@ -4615,7 +4615,7 @@ const CREATURES = [
     "capital": "Manufacture",
     "size": "0,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -4667,7 +4667,7 @@ const CREATURES = [
     "capital": "Manufacture",
     "size": "30",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -4784,7 +4784,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Homoncule 1.png",
     "quote": "« Une minuscule créature créée pour servir son maître. »",
     "costColored": 1,
@@ -5089,7 +5089,7 @@ const CREATURES = [
     "attack": 2,
     "health": 4,
     "rarity": "commune",
-    "spell": "Tir: attaque sans subir de riposte une fois.",
+    "spell": "",
     "image": "img/Homme-rat 1.png",
     "quote": "« Le rongeur géant qui apporte la peste et la ruine. »",
     "costColored": 1,
@@ -5192,7 +5192,7 @@ const CREATURES = [
     "attack": 2,
     "health": 2,
     "rarity": "commune",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Trow 1.png",
     "quote": "« Le lutin des mines qui fait s'effondrer les galeries. »",
     "costColored": 1,
@@ -5311,7 +5311,7 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "2,4",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -5327,7 +5327,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "rare",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Djinn 1.png",
     "quote": "« Le génie de l'air qui commande aux vents. »",
     "costColored": 1,
@@ -5549,7 +5549,7 @@ const CREATURES = [
     "attack": 2,
     "health": 6,
     "rarity": "inhabituelle",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Elémentaire 1.png",
     "quote": "« La terre, l'air, le feu et l'eau réunis sous une forme éthérée. »",
     "costColored": 1,
@@ -5640,7 +5640,7 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -5665,7 +5665,7 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "3,2",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -5680,7 +5680,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Nephilim 1.png",
     "quote": "« Les fils des anges tombés sur terre, géants parmi les hommes. »",
     "costColored": 1,
@@ -5692,7 +5692,7 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -5857,7 +5857,7 @@ const CREATURES = [
     "attack": 5,
     "health": 9,
     "rarity": "rare",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Oiseau-tonnerre 1.png",
     "quote": "« L'aigle géant qui maîtrise la foudre et le tonnerre. »",
     "costColored": 2,
@@ -6045,7 +6045,7 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -6060,7 +6060,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Péri 1.png",
     "quote": "« L'esprit céleste aux ailes de lumière. »",
     "costColored": 1,
@@ -6349,7 +6349,7 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "1,5",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -6364,7 +6364,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Aarakocra 1.png",
     "quote": "« L'homme-oiseau des cieux, ennemi des serpents. »",
     "costColored": 1,
@@ -6427,7 +6427,7 @@ const CREATURES = [
     "capital": "Empyrée",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "canalisation-3-entrave"
@@ -6635,7 +6635,7 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "2,4",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -6713,7 +6713,7 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "6",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -6780,7 +6780,7 @@ const CREATURES = [
     "attack": 5,
     "health": 5,
     "rarity": "rare",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Roc 1.png",
     "quote": "« L'oiseau géant qui emporte les éléphants dans ses serres. »",
     "costColored": 1,
@@ -6842,7 +6842,7 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "15",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -7045,7 +7045,7 @@ const CREATURES = [
     "capital": "Tertre",
     "size": "1,2",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -7070,7 +7070,7 @@ const CREATURES = [
     "capital": "Hameau",
     "size": "1,7",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "canalisation-2-entrave"
@@ -7122,7 +7122,7 @@ const CREATURES = [
     "capital": "Terrier",
     "size": "0,3",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -7138,7 +7138,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "rare",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Fée 1.png",
     "quote": "« La petite fée de la forêt, légère comme un papillon. »",
     "costColored": 1,
@@ -7175,7 +7175,7 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "1,75",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "canalisation-3-entrave"
@@ -7330,7 +7330,7 @@ const CREATURES = [
     "capital": "Forteresse",
     "size": "0,25",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -7345,7 +7345,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Pixie 1.png",
     "quote": "« La petite fée ailée qui protège les fleurs. »",
     "costColored": 1,
@@ -7435,7 +7435,7 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -7451,7 +7451,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "inhabituelle",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Tengu 1.png",
     "quote": "« L'homme-oiseau des montagnes sacrées. »",
     "costColored": 2,
@@ -7489,7 +7489,7 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "1,2",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -7514,7 +7514,7 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "0,2",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -7529,7 +7529,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Sprite 1.png",
     "quote": "« La petite créature ailée de la forêt. »",
     "costColored": 1,
@@ -7681,7 +7681,7 @@ const CREATURES = [
     "attack": 6,
     "health": 6,
     "rarity": "inhabituelle",
-    "spell": "Vol : seules Vol ou Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Sidhe 1.png",
     "quote": "« Le noble peuple fée des collines d'Irlande. »",
     "costColored": 2,
@@ -7743,7 +7743,7 @@ const CREATURES = [
     "capital": "Bosquet",
     "size": "0,6",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -7758,7 +7758,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Fée-dragon 1.png",
     "quote": "« Le petit dragon des fées aux ailes d'insecte. »",
     "costColored": 1,
@@ -8025,7 +8025,7 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "30",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "pietinement"
@@ -8214,7 +8214,7 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "22",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [
       "vol"
@@ -8229,7 +8229,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "mythique",
-    "spell": "Vol + Tir : corps 1/1 — ignore les Tanks, cible les Vol, pas de riposte ; seules Vol/Tir peuvent l’attaquer.",
+    "spell": "Vol : seules Vol peuvent l’attaquer.",
     "image": "img/Dragon marin 1.png",
     "quote": "« Le serpent des mers ailé qui commande aux tempêtes. »",
     "costColored": 1,
@@ -8679,7 +8679,7 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "1,8",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [
@@ -8692,7 +8692,7 @@ const CREATURES = [
     "attack": 1,
     "health": 1,
     "rarity": "commune",
-    "spell": "Tir: attaque sans subir de riposte une fois.",
+    "spell": "",
     "image": "img/Sahuagin 1.png",
     "quote": "« Le guerrier des profondeurs à tête de poisson. »",
     "costColored": 1,
@@ -8755,7 +8755,7 @@ const CREATURES = [
     "capital": "Cénote",
     "size": "300",
     "roles": [
-      "ranged"
+      "normal"
     ],
     "abilities": [],
     "natures": [

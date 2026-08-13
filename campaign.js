@@ -103,51 +103,51 @@ const ENCOUNTER_TYPES={
 
 /** Carte MVP (~14 lieux, 4 capitales). positions en % ; links = voisins. */
 const CAMPAIGN_MAP_NODES=[
-  {id:'tour', name:'Clairière-refuge', kind:'home', x:12, y:58, links:['forge','col','marche','clairiere'],
+  {id:'tour', name:'Clairière-refuge', kind:'home', x:12, y:36, links:['forge','col','marche','clairiere'],
     blurb:'Ton camp sous les hêtres. Classeur, decks, compagnons et aménagements du refuge.'},
-  {id:'forge', name:'Crypte des sceaux', kind:'fusion', x:8, y:28, links:['tour','marche'],
+  {id:'forge', name:'Crypte des sceaux', kind:'fusion', x:8, y:18, links:['tour','marche'],
     blurb:'Cinq cartes d’une rareté deviennent une rareté supérieure.'},
-  {id:'marche', name:'Comptoir des brumes', kind:'shop', x:30, y:40, links:['tour','forge','col','gue','clairiere'],
+  {id:'marche', name:'Comptoir des brumes', kind:'shop', x:30, y:25, links:['tour','forge','col','gue','clairiere'],
     blurb:'Marchands du sous-bois : boosters, ventes, rachat.'},
-  {id:'clairiere', name:'Clairière du Hameau', kind:'village', x:22, y:78, links:['tour','marche','col','bosquet'],
+  {id:'clairiere', name:'Clairière du Hameau', kind:'village', x:22, y:48, links:['tour','marche','col','bosquet'],
     blurb:'Village accueillant : édition de deck, rumeurs, départ vers le Bosquet.',
     status:'neutral'},
-  {id:'col', name:'Col des corbeaux', kind:'route', x:38, y:62, links:['tour','marche','clairiere','gue','landes'],
-    family:'chevaliers', difficulty:1,
+  {id:'col', name:'Col des corbeaux', kind:'route', x:38, y:38, links:['tour','marche','clairiere','gue','landes'],
+    family:'chevaliers', difficulty:2,
     blurb:'Col venté — patrouilles de chevaliers sur la crête.'},
-  {id:'gue', name:'Gué de l’ambre', kind:'route', x:52, y:44, links:['marche','col','landes','manufacture','sanctuaire'],
+  {id:'gue', name:'Gué de l’ambre', kind:'route', x:52, y:28, links:['marche','col','landes','manufacture','sanctuaire'],
     family:'volants', difficulty:2,
     blurb:'Embuscades ailées au passage du gué.'},
-  {id:'landes', name:'Landes pourpres', kind:'route', x:48, y:76, links:['col','gue','bosquet','forteresse'],
+  {id:'landes', name:'Landes pourpres', kind:'route', x:48, y:47, links:['col','gue','bosquet','forteresse'],
     family:'demons', difficulty:2,
     blurb:'Bruyère pourpre et bannières démoniaques.'},
-  {id:'bosquet', name:'Repaire du Bosquet', kind:'lair', x:36, y:90, links:['clairiere','landes','sylve'],
+  {id:'bosquet', name:'Repaire du Bosquet', kind:'lair', x:36, y:55, links:['clairiere','landes','sylve'],
     family:'sylvestre', difficulty:2,
     blurb:'Famille sylvestre. Vaincre 3 fois ouvre une mission Capture (Ménagerie).',
     status:'hostile'},
-  {id:'sylve', name:'Capitale — Sylve', kind:'capital', x:58, y:92, links:['bosquet','forteresse'],
+  {id:'sylve', name:'Capitale — Sylve', kind:'capital', x:58, y:56, links:['bosquet','forteresse'],
     family:'sylvestre', capitalFaction:'Sylve', difficulty:3,
     blurb:'Cœur sylvestre du territoire. Défi de capitale avec l’Atelier.',
     status:'hostile', towerHp:40},
-  {id:'manufacture', name:'Capitale — Manufacture', kind:'capital', x:70, y:28, links:['gue','sanctuaire','ruines'],
+  {id:'manufacture', name:'Capitale — Manufacture', kind:'capital', x:70, y:18, links:['gue','sanctuaire','ruines'],
     family:'geants', capitalFaction:'Manufacture', difficulty:3,
     blurb:'Forges et automates. Conquête = recrutement Manufacture.',
     status:'hostile', towerHp:40},
-  {id:'sanctuaire', name:'Sanctuaire des runes', kind:'sanctuary', x:66, y:52, links:['gue','manufacture','ossuaire','ruines'],
+  {id:'sanctuaire', name:'Sanctuaire des runes', kind:'sanctuary', x:66, y:32, links:['gue','manufacture','ossuaire','ruines'],
     family:'volants', difficulty:2,
     blurb:'Défi rituel : duel contre un deck thématique renforcé.'},
-  {id:'ruines', name:'Ruines d’ambre', kind:'ruins', x:84, y:40, links:['manufacture','sanctuaire','necropole'],
+  {id:'ruines', name:'Ruines d’ambre', kind:'ruins', x:84, y:25, links:['manufacture','sanctuaire','necropole'],
     family:'geants', difficulty:2,
     blurb:'Reliques rares — butin amélioré après victoire.'},
-  {id:'ossuaire', name:'Repaire des ossements', kind:'lair', x:74, y:68, links:['sanctuaire','forteresse','necropole'],
+  {id:'ossuaire', name:'Repaire des ossements', kind:'lair', x:74, y:42, links:['sanctuaire','forteresse','necropole'],
     family:'morts_vivants', difficulty:2,
     blurb:'Nécrophages. Capture après 3 victoires (Ménagerie).',
     status:'hostile'},
-  {id:'forteresse', name:'Forteresse du Nord', kind:'fortress', x:62, y:78, links:['landes','sylve','ossuaire','necropole'],
+  {id:'forteresse', name:'Forteresse du Nord', kind:'fortress', x:62, y:48, links:['landes','sylve','ossuaire','necropole'],
     family:'chevaliers', difficulty:3,
     blurb:'Avant-poste fortifié. Prépare le défi de la Nécropole.',
     status:'hostile'},
-  {id:'necropole', name:'Capitale — Nécropole', kind:'capital', x:88, y:72, links:['ruines','ossuaire','forteresse'],
+  {id:'necropole', name:'Capitale — Nécropole', kind:'capital', x:88, y:44, links:['ruines','ossuaire','forteresse'],
     family:'morts_vivants', capitalFaction:'Nécropole', difficulty:3,
     blurb:'Cœur du chapitre : tour 40 PV, mur d’ossements, deck sacrifice.',
     status:'hostile', towerHp:40, siegeDefense:true},
@@ -1697,7 +1697,11 @@ function renderCampaignMap(){
     ${pendingBlock}
     <div class="camp-map-layout">
       <div class="camp-map" role="img" aria-label="Carte de campagne">
-        <div class="camp-map-terrain" aria-hidden="true"></div>
+        <div class="camp-map-terrain" aria-hidden="true">
+          <span class="camp-map-mist mist-a"></span>
+          <span class="camp-map-mist mist-b"></span>
+          <span class="camp-map-canopy"></span>
+        </div>
         <svg class="camp-map-roads" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${roads}</svg>
         ${nodes}
         ${pawn}

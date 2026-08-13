@@ -20,7 +20,7 @@ Guide pour **créer**, **modifier** ou **supprimer** les capacités (keywords) d
 ## Carte mentale
 
 ```text
-CREATURES[].roles      →  exactement 1 parmi : normal, fast, tir, caster, tank
+CREATURES[].roles      →  exactement 1 parmi : normal, fast, caster, tank
 CREATURES[].abilities  →  capacités de jeu          (ex. "vol", "formation", "charge")
         ↓
 ABILITIES[id]          →  nom + description affichés sur la carte
@@ -59,7 +59,7 @@ style.css              →  couleur / look du petit badge (optionnel)
 
 ### `roles` vs `abilities`
 
-- **`roles`** : exactement **un** tag parmi `normal`, `fast`, `tir`, `caster`, `tank`. Définit la forme / le style de jeu (Tank force le focus, Tir ignore les tanks…).
+- **`roles`** : exactement **un** tag parmi `normal`, `fast`, `caster`, `tank`. Définit la forme / le style de jeu (Tank force le focus…).
 - **`abilities`** : keywords de jeu listés dans `ABILITIES` (`vol`, `bouclier-divin`, `soin`, `activer-purge`…). Affichés en badges sur la carte.
 
 ---
@@ -179,7 +179,7 @@ Selon le **moment** où ça doit se déclencher, tu branches un `hasRole(c, 'cri
 | Début / fin de tour | boucles de tour (début / fin) | `debut-tour-soin`, `debut-tour-tir`, `fin-tour-tir`, `fin-tour-buff` |
 | Pulsation périodique (lancer / soin / invoc) | `abilityPulseSpec` | `lancer`, `soin`, `invocation`… |
 | Bouton **Activer** (à la place d’attaquer) | `ACTIVATION_SPECS` + `activateCreature` | `activer-purge`, `activer-tank`… |
-| Forme de token (Tank / Tir) | `BOARD_SHAPES`, `isTank`, `isAssassin` | `tank`, `tir` |
+| Forme de token (Tank) | `BOARD_SHAPES`, `isTank` | `tank` |
 
 Tables déjà prêtes dans [`combat.js`](./combat.js) :
 
@@ -243,7 +243,6 @@ Ids définis dans [`game.js`](./game.js) (catalogue réduit) :
 | Id | Label (affichage) |
 |---|---|
 | `tank` | Tank |
-| `tir` | Tir |
 | `vol` | Vol |
 | `pietinement` | Piétinement |
 | `poison` | Poison |
