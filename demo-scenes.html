@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Démonstration des six scènes Fantasia Fauna.">
+  <title>Scènes — Fantasia Fauna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#app">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect class="mark-plate" x="3.5" y="3.5" width="25" height="25"/>
+        <path class="mark-tick" d="M10 5.2H5.2V10"/>
+        <path class="mark-tick" d="M22 5.2h4.8V10"/>
+        <path class="mark-tick" d="M10 26.8H5.2V22"/>
+        <path class="mark-tick" d="M22 26.8h4.8V22"/>
+        <line class="mark-scan" x1="7" y1="7.5" x2="25" y2="7.5"/>
+        <circle class="mark-core" cx="16" cy="16" r="2.3"/>
+      </svg>
+      <span class="brand-name">Fantasia Fauna</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="/">Catalogue</a>
+      <a href="/demo-scenes.html" aria-current="page">Scènes</a>
+    </nav>
+  </header>
+  <main id="app" class="wrap">
+    <section class="catalog-intro">
+      <div>
+        <p class="kicker">Atelier</p>
+        <h1 class="catalog-title"><em>Six dioramas,</em><br>deux vues chacun.</h1>
+      </div>
+      <p class="census"><b>12</b> compositions</p>
+    </section>
+    <p class="toolbar">
+      <button class="quiet" type="button" id="toggle-motion">Animations</button>
+      <a class="quiet" href="/demo-scenes.html?debug=anchors">Ancrages</a>
+    </p>
+    <div id="board" class="diorama-page"></div>
+  </main>
+  <footer class="site-footer">Page locale de réglage — les ambiances sont des mises en scène, pas des notices.</footer>
+  <script src="/js/creatures-data.js"></script>
+  <script src="/js/scenes-data.js"></script>
+  <script src="/js/scenes.js"></script>
+  <script>
+    (function () {
+      const slugs = ["dragon-rouge", "aboleth", "fantome", "dryade", "golem", "aasimar"];
+      const bySlug = {};
+      (window.FF_DATA.creatures || []).forEach(function (c) { bySlug[c.slug] = c; });
+      function assetUrl(path) {
+        return "/" + path.replace(/^\/+/, "").split("/").map(encodeURIComponent).join("/");
+      }
+      const board = document.getElementById("board");
+      slugs.forEach(function (slug) {
+        const creature = bySlug[slug];
+        if (!creature) return;
+        creature.images.forEach(function (image, index) {
+          const article = document.createElement("article");
+          article.className = "diorama-card";
+          const family = (window.FF_SCENES[slug] && window.FF_SCENES[slug].family) || "";
+          article.innerHTML =
+            window.FFScenes.markup(creature, index, {
+              mode: "full",
+              src: assetUrl(image.src),
+              alt: creature.name + ", vue " + (index + 1),
+              size: 480
+            }) +
+            "<h2>" + creature.name + " — vue " + (index + 1) +
+            (family ? " <small>(" + family + ")</small>" : "") + "</h2>";
+          board.appendChild(article);
+        });
+      });
+      window.FFScenes.mount(board);
+      const btn = document.getElementById("toggle-motion");
+      btn.setAttribute("aria-pressed", String(!window.FFScenes.isPaused()));
+      btn.addEventListener("click", function () {
+        const pause = !document.documentElement.classList.contains("ff-pause-motion");
+        window.FFScenes.setPaused(pause);
+        btn.setAttribute("aria-pressed", String(!pause));
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -217,7 +217,15 @@
             '<a class="plate" href="/creatures/' + encodeURIComponent(creature.slug) + '">' +
               '<span class="plate-scene">' +
                 atmospherePlate() +
-                imageTag(thumb, "sprite", "", position >= 8, 240) +
+                (window.FFScenes && window.FFScenes.has(creature.slug)
+                  ? window.FFScenes.markup(creature, 0, {
+                      mode: "lite",
+                      src: escapeHtml(assetUrl(thumb)),
+                      alt: "",
+                      lazy: position >= 8,
+                      size: 240
+                    })
+                  : imageTag(thumb, "sprite", "", position >= 8, 240)) +
               "</span>" +
               '<span class="plate-meta">' +
                 '<span class="plate-index">' + padIndex(creature.index + 1) + "</span>" +
@@ -278,6 +286,7 @@
         "</div>" +
       "</form>" +
       '<div id="catalog-results">' + renderGrid(list) + "</div>";
+    if (window.FFScenes) window.FFScenes.mount(app);
     pauseMotion();
   }
 
@@ -299,6 +308,10 @@
     if (sort) sort.value = route.sort;
     const reset = document.getElementById("reset-filters");
     if (reset) reset.hidden = !route.q && route.sort === "az";
+    if (window.FFScenes) {
+      window.FFScenes.destroyAll();
+      window.FFScenes.mount(results);
+    }
     pauseMotion();
   }
 
@@ -376,6 +389,17 @@
         "</div>"
       : "";
 
+    const motionOn = !(window.FFScenes && window.FFScenes.isPaused());
+    const staged = window.FFScenes && window.FFScenes.has(creature.slug)
+      ? window.FFScenes.markup(creature, activeImage, {
+          mode: "full",
+          src: escapeHtml(assetUrl(current.src)),
+          alt: escapeHtml(creature.name + ", vue " + (activeImage + 1)),
+          size: 480,
+          zoomClass: "exhibit-sprite"
+        })
+      : exhibitLight() + imageTag(current.src, "exhibit-sprite", creature.name + ", vue " + (activeImage + 1), false, 480);
+
     const undocumented = !creature.description && !sections.length
       ? '<p class="undocumented">Notice encore à documenter.</p>'
       : "";
@@ -389,9 +413,13 @@
       '<article class="sheet' + (sections.length ? " has-toc" : "") + '">' +
         '<figure class="exhibit">' +
           '<div class="exhibit-well">' +
-            exhibitLight() +
-            imageTag(current.src, "exhibit-sprite", creature.name + ", vue " + (activeImage + 1), false, 480) +
-            '<button class="exhibit-zoom" type="button" id="open-viewer">Agrandir</button>' +
+            staged +
+            '<div class="exhibit-tools">' +
+              (window.FFScenes && window.FFScenes.has(creature.slug)
+                ? '<button class="quiet" type="button" id="toggle-motion" aria-pressed="' + motionOn + '">Animations</button>'
+                : "") +
+              '<button class="exhibit-zoom quiet" type="button" id="open-viewer">Agrandir</button>' +
+            "</div>" +
           "</div>" +
           '<div class="views" role="group" aria-label="Choisir une vue">' + views + "</div>" +
         "</figure>" +
@@ -408,6 +436,7 @@
         '<a href="/creatures/' + encodeURIComponent(prev.slug) + '"><small>Précédente</small><strong>' + escapeHtml(prev.name) + "</strong></a>" +
         '<a class="next" href="/creatures/' + encodeURIComponent(next.slug) + '"><small>Suivante</small><strong>' + escapeHtml(next.name) + "</strong></a>" +
       "</nav>";
+    if (window.FFScenes) window.FFScenes.mount(app);
     pauseMotion();
   }
 
@@ -461,6 +490,7 @@
   }
 
   function render() {
+    if (window.FFScenes) window.FFScenes.destroyAll();
     const route = routeFromLocation();
     if (route.name === "catalog") {
       if (viewName === "catalog" && document.getElementById("catalog-form")) {
@@ -499,7 +529,17 @@
     if (viewBtn) {
       activeImage = Number(viewBtn.getAttribute("data-view")) || 0;
       const route = routeFromLocation();
-      if (route.name === "creature") renderCreature(route.slug);
+      if (route.name === "creature") {
+        if (window.FFScenes) window.FFScenes.destroyAll();
+        renderCreature(route.slug);
+      }
+      return;
+    }
+    const motionBtn = event.target.closest("#toggle-motion");
+    if (motionBtn && window.FFScenes) {
+      const next = !document.documentElement.classList.contains("ff-pause-motion");
+      window.FFScenes.setPaused(next);
+      motionBtn.setAttribute("aria-pressed", String(!next));
       return;
     }
     const randomBtn = event.target.closest("#random-btn");
@@ -516,6 +556,7 @@
     if (!link) return;
     const url = new URL(link.getAttribute("href"), location.origin);
     if (url.origin !== location.origin) return;
+    if (/\.[a-z0-9]+$/i.test(url.pathname) && url.pathname !== "/index.html") return;
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     const current = routeFromLocation();

@@ -498,6 +498,7 @@ button { cursor: pointer; }
   height: auto;
   pointer-events: none;
   overflow: visible;
+  z-index: 6;
 }
 
 .plate-corner {
@@ -684,10 +685,6 @@ button { cursor: pointer; }
 }
 
 .exhibit-zoom {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  z-index: 2;
   border: 1px solid var(--hairline-strong);
   background: rgba(16, 18, 20, 0.72);
   color: var(--text);
@@ -943,6 +940,258 @@ button { cursor: pointer; }
   .pager .next { text-align: left; }
 }
 
+.diorama {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.diorama.is-full {
+  pointer-events: auto;
+}
+
+.diorama-stage {
+  position: relative;
+  width: 84%;
+  height: 84%;
+  aspect-ratio: 1 / 1;
+}
+
+.diorama-layer,
+.diorama-debug {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.diorama-bg { z-index: 0; }
+.diorama-far,
+.diorama-ground,
+.diorama-near {
+  shape-rendering: crispEdges;
+}
+.diorama-far { z-index: 1; }
+.diorama-ground { z-index: 2; }
+.diorama-sprite {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.plate-scene .diorama-sprite,
+.exhibit-well .diorama-sprite {
+  width: 100%;
+  height: 100%;
+}
+.diorama-near { z-index: 4; }
+.diorama-debug { z-index: 5; }
+
+.plate-scene .diorama-sprite { pointer-events: none; }
+.exhibit-well .diorama-sprite { pointer-events: auto; cursor: zoom-in; }
+
+.ember {
+  animation: ember-up var(--dur, 4.8s) linear infinite;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes ember-up {
+  0% { transform: translate(0, 6px); opacity: 0; }
+  14% { opacity: 1; }
+  100% { transform: translate(var(--dx, 4px), -38px); opacity: 0; }
+}
+
+.crack {
+  opacity: 0.85;
+  animation: crack-glow 3.6s ease-in-out infinite;
+}
+@keyframes crack-glow {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
+}
+
+.bubble {
+  animation: bubble-up var(--dur, 6s) linear infinite;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes bubble-up {
+  0% { transform: translate(0, 8px); opacity: 0; }
+  18% { opacity: 0.8; }
+  100% { transform: translate(var(--dx, 3px), -36px); opacity: 0; }
+}
+
+.kelp {
+  transform-origin: 14px 100px;
+  animation: kelp-sway 5.5s ease-in-out infinite;
+}
+.kelp-b {
+  transform-origin: 88px 100px;
+  animation-duration: 6.4s;
+  animation-delay: -1.4s;
+}
+@keyframes kelp-sway {
+  0%, 100% { transform: rotate(-2.4deg); }
+  50% { transform: rotate(2.8deg); }
+}
+
+.mist {
+  animation: mist-drift 7s ease-in-out infinite;
+}
+.mist-b { animation-duration: 9s; animation-delay: -2s; }
+@keyframes mist-drift {
+  0%, 100% { transform: translate(0, 0); opacity: 0.18; }
+  50% { transform: translate(3px, -2px); opacity: 0.34; }
+}
+
+.filament {
+  stroke-dasharray: 18 22;
+  animation: filament-draw 5.2s ease-in-out infinite;
+}
+.filament-b { animation-duration: 6.4s; animation-delay: -1.6s; }
+@keyframes filament-draw {
+  0%, 100% { stroke-dashoffset: 24; opacity: 0.15; }
+  50% { stroke-dashoffset: 0; opacity: 0.7; }
+}
+
+.firefly {
+  animation: firefly-move var(--dur, 4s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes firefly-move {
+  0%, 100% { transform: translate(0, 0); opacity: 0.25; }
+  50% { transform: translate(var(--dx, 6px), var(--dy, -4px)); opacity: 1; }
+}
+
+.dust {
+  animation: dust-lift var(--dur, 7s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes dust-lift {
+  0%, 100% { transform: translate(0, 0); opacity: 0; }
+  40% { opacity: 0.5; }
+  100% { transform: translate(5px, -8px); opacity: 0; }
+}
+
+.cloud {
+  animation: cloud-drift 28s linear infinite;
+}
+@keyframes cloud-drift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(6px, -2px); }
+}
+
+.streak {
+  stroke-dasharray: 8 14;
+  animation: streak-wind 4.8s linear infinite;
+}
+.streak-b { animation-duration: 5.6s; animation-delay: -1s; }
+.streak-c { animation-duration: 6.2s; animation-delay: -2s; }
+@keyframes streak-wind {
+  0% { transform: translate(-8px, 0); opacity: 0; }
+  30% { opacity: 0.7; }
+  100% { transform: translate(14px, -2px); opacity: 0; }
+}
+.diorama[data-wind="-1"] .cloud {
+  animation-name: cloud-drift-rev;
+}
+@keyframes cloud-drift-rev {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-6px, -2px); }
+}
+.diorama[data-wind="-1"] .streak {
+  animation-name: streak-wind-rev;
+}
+@keyframes streak-wind-rev {
+  0% { transform: translate(8px, 0); opacity: 0; }
+  30% { opacity: 0.7; }
+  100% { transform: translate(-14px, -2px); opacity: 0; }
+}
+
+.glow-soft {
+  animation: glow-soft 5.6s ease-in-out infinite;
+}
+.glow-core {
+  animation: glow-core 4.4s ease-in-out infinite;
+}
+@keyframes glow-soft {
+  0%, 100% { opacity: 0.12; }
+  50% { opacity: 0.22; }
+}
+@keyframes glow-core {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.75; }
+}
+
+.diorama.is-lite .diorama-near {
+  opacity: 0.42;
+}
+.plate:hover .diorama.is-lite .diorama-near,
+.plate:focus-within .diorama.is-lite .diorama-near,
+.diorama.is-lite.is-hot .diorama-near {
+  opacity: 1;
+}
+
+.exhibit-tools {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 6;
+  display: flex;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.diorama-page {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  padding: 24px 0 80px;
+}
+.diorama-card {
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+}
+.diorama-card .diorama {
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+.diorama-card .diorama-stage { width: 86%; height: 86%; }
+.diorama-card h2 {
+  margin: 0;
+  padding: 12px 14px 16px;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.diorama-card h2 small {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.diorama:not(.is-live) .diorama-anim,
+.diorama.is-capped .diorama-anim,
+.ff-tab-hidden .diorama-anim,
+.ff-still .diorama-anim,
+.ff-pause-motion .diorama-anim {
+  animation: none !important;
+}
+
+@media (max-width: 860px) {
+  .diorama-page { grid-template-columns: 1fr; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .mark-plate,
   .mark-scan,
@@ -960,6 +1209,7 @@ button { cursor: pointer; }
   .ring,
   .beam,
   .mote,
+  .diorama-anim,
   .lost-eye {
     animation: none !important;
   }
