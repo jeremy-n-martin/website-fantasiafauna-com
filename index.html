@@ -3,23 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Fantasia Fauna — bestiaire et combats de cartes.">
+  <meta name="description" content="Fantasia Fauna — bestiaire.">
   <title>Fantasia Fauna</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,500;0,700;1,500&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260812d">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      min-height: 100vh;
+      color: #F5E8D0;
+      background:
+        radial-gradient(ellipse at 50% 42%, #3a2a1288 0%, transparent 42%),
+        radial-gradient(circle at 50% 100%, #1a140c 0%, #0A0908 55%);
+      background-color: #0A0908;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    main {
+      display: grid;
+      justify-items: center;
+      text-align: center;
+      padding: 32px 24px;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      font-family: Cinzel, serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: #C9AA69;
+    }
+    h1 {
+      margin: 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.6rem, 8vw, 5.4rem);
+      font-weight: 600;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      color: #F0E0B0;
+      text-shadow: 0 8px 40px #000a;
+    }
+    .rule {
+      width: 72px;
+      height: 1px;
+      margin: 18px 0 28px;
+      background: linear-gradient(90deg, transparent, #C9AA69, transparent);
+    }
+    .creature {
+      width: min(520px, 78vw);
+      height: auto;
+      image-rendering: pixelated;
+      filter: drop-shadow(0 24px 48px #000c);
+    }
+  </style>
 </head>
 <body>
-  <div id="app" class="app-shell">
-    <noscript>Active JavaScript pour jouer au prototype Fantasia Fauna.</noscript>
-  </div>
-  <script src="img_variants.js?v=20260803d"></script>
-  <script src="creatures-data.js?v=20260812d"></script>
-  <script src="game.js?v=20260812d"></script>
-  <script src="audio.js?v=20260812d"></script>
-  <script src="combat.js?v=20260812d"></script>
-  <script src="balance.js?v=20260805a"></script>
-  <script src="campaign.js?v=20260808a"></script>
+  <main>
+    <p class="eyebrow">Bestiaire</p>
+    <h1>Fantasia Fauna</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <img class="creature" src="img/Dragon d_or 1.png" alt="Dragon d'or">
+  </main>
 </body>
 </html>

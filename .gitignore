@@ -17,9 +17,3 @@ Thumbs.db
 *.swp
 *.swo
 *~
-
-# Temp
-Untitled
-*.log
-art_bust.json
-art_ranks.log
