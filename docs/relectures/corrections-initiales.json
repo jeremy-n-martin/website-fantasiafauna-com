@@ -1,0 +1,258 @@
+{
+  "scope": "Relecture indépendante des corrections aux 17 notices ; les passages inchangés ont été examinés dans la revue initiale. Les empreintes portent sur le JSON canonique, indépendamment des fins de ligne.",
+  "reviewed": [
+    {
+      "slug": "aarakocra",
+      "verdict": "pass",
+      "initial_points_resolution": "Les trois consignes signalées ont disparu : plumage décrit dans son édition, alimentation positive, dragon et gargouilles présentés comme adversaires situés.",
+      "documentary_and_voice_review": "Les ajouts sur les langues écrites, les formes brèves des noms, les territoires de chasse élargis et l’apprentissage des usages sont présents dans la source officielle. Les images du nid et du vol illustrent ces motifs sans inventer un conte.",
+      "sources_cross_checked": [
+        {
+          "id": 1,
+          "url": "https://www.dndbeyond.com/species/4-aarakocra"
+        }
+      ],
+      "content_sha256": "b44a0f669e95c52d675a0b2a41918545819a10bb9d9fc12d124b3fa0977f4403"
+    },
+    {
+      "slug": "aasimar",
+      "verdict": "pass",
+      "initial_points_resolution": "Les injonctions de Légendes, Comportement, Habitat et Reproduction sont remplacées par les gestes du mortel et les limites de ses dons.",
+      "documentary_and_voice_review": "Guérison une fois par repos long, révélation au niveau trois pendant une minute, langues indépendantes et caractéristiques liées à l’historique concordent. La voix garde parfois un vocabulaire analytique, mais ne prescrit plus une écriture ni une généalogie fictive.",
+      "sources_cross_checked": [
+        {
+          "id": 2,
+          "url": "https://www.wargamer.com/dnd/aasimar"
+        },
+        {
+          "id": 3,
+          "url": "https://www.dndbeyond.com/posts/1783-the-10-species-in-the-2024-players-handbook"
+        }
+      ],
+      "content_sha256": "dbeb8fa64bd79db0911231a4104d421562dc90d37ce6febb8e476137399f3cea"
+    },
+    {
+      "slug": "aboleth",
+      "verdict": "pass",
+      "initial_points_resolution": "Les jugements sur l’intérêt narratif du monstre et les consignes au récit sont supprimés ; les seuils d’acquisition des souvenirs et le retour du même individu sont explicites.",
+      "documentary_and_voice_review": "Consume Memories exige une cible charmée ou saisie et zéro PV pour acquérir les souvenirs d’un humanoïde. Psychic Drain restaure le monstre. Les maladies de 2014 et la malédiction de 2025 restent distinctes ; la fin du charme ne promet pas la guérison de la peau.",
+      "sources_cross_checked": [
+        {
+          "id": 4,
+          "url": "https://www.dndbeyond.com/monsters/5194867-aboleth"
+        },
+        {
+          "id": 5,
+          "url": "https://www.dndbeyond.com/monsters/16762-aboleth"
+        }
+      ],
+      "content_sha256": "52ba54ad22871268100a807a8c8221e5a670d4b7c40e0dd4d4c4dd2e9b602847"
+    },
+    {
+      "slug": "cryomancien",
+      "verdict": "pass",
+      "initial_points_resolution": "Les conseils de conception, de menu et de mise en scène sont retirés dans tous les lieux signalés.",
+      "documentary_and_voice_review": "Le cadrage initial déclare expressément les scènes quotidiennes comme interprétation imaginaire du catalogue. Pont, réserve froide et apprentissage ne sont donc pas proposés comme folklore ni comme règles de Guild Wars 2. Les nouveaux détails nommés du jeu concordent avec sa table de compétences.",
+      "sources_cross_checked": [
+        {
+          "id": 6,
+          "url": "https://wiki.guildwars2.com/wiki/Water_Attunement"
+        }
+      ],
+      "content_sha256": "4ba7e9d0ff76714b78d5d7a1cd7e830d75b8548180b4aff924ba95261b400874"
+    },
+    {
+      "slug": "dryade",
+      "verdict": "pass",
+      "initial_points_resolution": "Guirlandes et tablettes sont rendues au chêne d’Ovide ; l’autel est séparément attribué à Paraibios conseillé par Phinée chez Apollonios. Les contre-exemples de photosynthèse et d’œufs sont retirés.",
+      "documentary_and_voice_review": "Les nouveaux détails sur ambroisie, arbres surgissant à la naissance, mort conjointe, homme décapité et arbres voisins écrasés sont attestés dans les extraits cités. Le groupe de nymphes nourricières est situé, non érigé en régime universel.",
+      "sources_cross_checked": [
+        {
+          "id": 7,
+          "url": "https://www.theoi.com/Nymphe/Nymphai3Myths.html"
+        },
+        {
+          "id": 8,
+          "url": "https://www.theoi.com/Nymphe/Dryades.html"
+        }
+      ],
+      "content_sha256": "2fd4c2cf6a8bbb7b69801d419c750f56f34e2c31cf9ce044c890fe20b7e833d9"
+    },
+    {
+      "slug": "ecuyer",
+      "verdict": "pass",
+      "initial_points_resolution": "Les conseils à auteur et les rappels zoologiques répétitifs ont cédé la place au service, à l’exercice et à la formation humaine.",
+      "documentary_and_voice_review": "Genoux et pieds, quintaine, anneau, poteau, armes alourdies, discipline des pages, instruction lettrée et variantes d’adoubement sont documentés par Cartwright. Les scènes de secours développent les tâches attestées, sans créer une profession fantastique.",
+      "sources_cross_checked": [
+        {
+          "id": 9,
+          "url": "https://www.worldhistory.org/article/1240/how-to-become-a-medieval-knight"
+        }
+      ],
+      "content_sha256": "f0cd2ee7c79f595cb223895d1ecf5b770bed85b973f5e9c7b33eab5c6f871204"
+    },
+    {
+      "slug": "marilith",
+      "verdict": "pass",
+      "initial_points_resolution": "La télépathie est désormais affirmée, distinguée de la coordination des bras ; les formulations de mise en scène sont supprimées.",
+      "documentary_and_voice_review": "Portée de 120 pieds, réponse mentale sans langue commune ni contact visuel, vision véritable, attaques automatiques de la queue et conditions de parade concordent avec les règles 2014. Aucun régime ni reproduction inventé pour remplir les rubriques.",
+      "sources_cross_checked": [
+        {
+          "id": 10,
+          "url": "https://www.dndbeyond.com/monsters/16952-marilith"
+        },
+        {
+          "id": 11,
+          "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters"
+        }
+      ],
+      "content_sha256": "9e27c620c6100bd1546fd299c5114e8fe1ea378efeb05928b1bd285606d630ca"
+    },
+    {
+      "slug": "quetzalcoatl",
+      "verdict": "pass",
+      "initial_points_resolution": "Stade larvaire, vertèbres, petits serpents et conseils d’évocation ont disparu ; le cadrage religieux demeure.",
+      "documentary_and_voice_review": "Epcololli, disque solaire, tête coupée, quatre soleils, os et sang, ainsi que provenance Bullock/acquisition 1825 concordent avec le musée. Masque à tubes, offrandes et bûcher restent attribués à la synthèse citée, sans fusion avec une biologie animale.",
+      "sources_cross_checked": [
+        {
+          "id": 12,
+          "url": "https://www.britishmuseum.org/collection/object/E_Am1825-1210-11"
+        },
+        {
+          "id": 13,
+          "url": "https://www.britannica.com/topic/Quetzalcoatl"
+        }
+      ],
+      "content_sha256": "4b8d6e2adbdafb400ec2643cc29294e93497a9d2480b6eb67582f190e49c2c4a"
+    },
+    {
+      "slug": "sidhe",
+      "verdict": "pass",
+      "initial_points_resolution": "La consigne au bestiaire est remplacée par une affirmation directe de la réalité humaine de l’enfant ; le faux taux de naissance est retiré.",
+      "documentary_and_voice_review": "Les ajouts sur veille de mai tous les sept ans, chaume arraché, lait à la fenêtre et épouses de la Saint-Jean sont bien dans l’introduction de Yeats. Le conditionnel et l’attribution maintiennent leur statut de croyance, non de causalité réelle.",
+      "sources_cross_checked": [
+        {
+          "id": 14,
+          "url": "https://www.gutenberg.org/files/33887/33887-h/33887-h.htm"
+        }
+      ],
+      "content_sha256": "7dc0587d8576f142e1773eb1770046192099aa7bd9b14ab5437ca0e59d12124f"
+    },
+    {
+      "slug": "barde",
+      "verdict": "pass",
+      "initial_points_resolution": "La justification du classement et le commentaire sur le récit d’aventure sont supprimés.",
+      "documentary_and_voice_review": "La conclusion décrit le témoin qui façonne le souvenir des exploits. C’est une interprétation lisible de la fonction narrative, compatible avec le barde accompagnant les héros dans la source officielle, non une nouvelle affirmation historique.",
+      "sources_cross_checked": [
+        {
+          "id": 15,
+          "url": "https://www.dndbeyond.com/classes/1-bard"
+        }
+      ],
+      "content_sha256": "f2ac49fd76457234129d2432716146546d07d0bacfba96fd8b4c81823170e074"
+    },
+    {
+      "slug": "basajaun",
+      "verdict": "pass",
+      "initial_points_resolution": "Les trois avertissements répétitifs sont retirés ; Hirigaray et la singularité du récit hostile restent visibles.",
+      "documentary_and_voice_review": "Château, mince colonne de fumée, hôte pastoral et repas de lait/fromage se recoupent chez Webster. Les variantes ne sont pas fondues en un tempérament ou un régime universel.",
+      "sources_cross_checked": [
+        {
+          "id": 16,
+          "url": "https://www.gutenberg.org/files/34902/34902-h/34902-h.htm"
+        }
+      ],
+      "content_sha256": "a1f74f4346765ba7fa42d5d95148824605acc17be4d5d43ad3d4dd001d24b345"
+    },
+    {
+      "slug": "cu-sith",
+      "verdict": "pass",
+      "initial_points_resolution": "Les commentaires sur ce que le lecteur peut ajouter et sur la fécondité ont disparu.",
+      "documentary_and_voice_review": "Le large, la course entendue, les trois aboiements et le refuge reprennent Campbell. Naissance et alimentation restent inconnues : les demeures invisibles relèvent de l’évocation de ce silence, non d’un nouveau cycle de vie.",
+      "sources_cross_checked": [
+        {
+          "id": 17,
+          "url": "https://www.gutenberg.org/files/61730/61730-h/61730-h.htm"
+        }
+      ],
+      "content_sha256": "d1997756858dcfbc3c04bc311fb92edb2a597ae615b3019c602cb4cb017972de"
+    },
+    {
+      "slug": "meduse",
+      "verdict": "pass",
+      "initial_points_resolution": "Les réserves scolaires sont condensées ; les enfants et le meurtre commandité prennent la place des faux modèles zoologiques.",
+      "documentary_and_voice_review": "La naissance de Pégase et Chrysaor au meurtre, le sommeil et le transport de la tête concordent. L’allusion à l’or de Chrysaor correspond au motif de l’épée d’or dans les textes rassemblés ; aucun mode de reproduction généralisé.",
+      "sources_cross_checked": [
+        {
+          "id": 18,
+          "url": "https://www.theoi.com/Pontios/Gorgones.html"
+        }
+      ],
+      "content_sha256": "9475025a47a2f6bec578c70fa1872b6f56561ae2fcf596430ad86596d7e9fc40"
+    },
+    {
+      "slug": "melusine",
+      "verdict": "pass",
+      "initial_points_resolution": "La chasse hypothétique aux petits mammifères est supprimée au profit de l’hospitalité et de la maison.",
+      "documentary_and_voice_review": "La reformulation demeure une lecture de l’abondance familiale et des ressources de la bâtisseuse, attestées dans l’introduction savante. Elle n’ajoute ni menu précis ni comportement de serpent.",
+      "sources_cross_checked": [
+        {
+          "id": 19,
+          "url": "https://www.psupress.org/books/titles/978-0-271-05412-4.html"
+        }
+      ],
+      "content_sha256": "9bd2ad39f07eeae98eaa0e7927f0aa37f4aa9df9483bd845bcb25363c567a153"
+    },
+    {
+      "slug": "rakshasa",
+      "verdict": "pass",
+      "initial_points_resolution": "Les trois injonctions à décrire ou conserver ont disparu ; les décisions des personnages et les usages religieux sont affirmés directement.",
+      "documentary_and_voice_review": "Le contraste Ravana/Vibhishana, les dix têtes du seul roi et les effigies de Dussehra concordent avec les deux articles. La clôture conserve une tradition religieuse vivante, sans la réduire à un monstre de jeu.",
+      "sources_cross_checked": [
+        {
+          "id": 20,
+          "url": "https://www.britannica.com/topic/rakshasa"
+        },
+        {
+          "id": 21,
+          "url": "https://www.britannica.com/topic/Ravana"
+        }
+      ],
+      "content_sha256": "868fca7aa0387b0be07faf85e062728d8e72c2446f297b7727b4f01c41576c4c"
+    },
+    {
+      "slug": "triton",
+      "verdict": "pass",
+      "initial_points_resolution": "Les réserves sur régime de poisson, ponte et chaîne alimentaire sont remplacées par les missions, les parentés et les affrontements.",
+      "documentary_and_voice_review": "Pallas et Athéna sont bien élevées auprès de Triton ; le texte complet d’Apollodore sur la page Pallas confirme leur pratique commune et la mort accidentelle. Conque et adversaires restent situés dans textes et images, non transformés en écologie.",
+      "sources_cross_checked": [
+        {
+          "id": 22,
+          "url": "https://www.theoi.com/Pontios/Triton.html"
+        },
+        {
+          "id": 23,
+          "url": "https://www.theoi.com/Nymphe/NymphePallas.html"
+        }
+      ],
+      "content_sha256": "93a7ee5a38fb5c6b6879542fc8ef85870007f5f2e819eb54c9fe31839204ab6b"
+    },
+    {
+      "slug": "troll",
+      "verdict": "pass",
+      "initial_points_resolution": "L’épisode du concours remplace une généralité ; la consigne de référencement en Reproduction est supprimée.",
+      "documentary_and_voice_review": "Le fromage pressé, l’aide à l’abattage, le sac attaché au ventre puis fendu et le troll qui s’éventre concordent avec le conte reproduit par Visit Norway. L’épisode reste singulier et Trollhunter distinct du folklore.",
+      "sources_cross_checked": [
+        {
+          "id": 24,
+          "url": "https://www.visitnorway.com/things-to-do/art-culture/the-mythical-norwegian-trolls"
+        }
+      ],
+      "content_sha256": "7ea4af0776d51364580578e53429d9dde3a1be150838177abb2d5de0cf4850a4"
+    }
+  ],
+  "additional_approved": {
+    "shoggoth": "Revue initiale favorable, contenu inchangé vérifié par empreinte.",
+    "tyrannoeil": "Notice de référence conservée et sourcée par l’auteur principal."
+  }
+}

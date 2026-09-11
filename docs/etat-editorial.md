@@ -1,19 +1,24 @@
-# État du chantier éditorial — premier point de sauvegarde
+# État du chantier éditorial — publication progressive
 
-Ce point de sauvegarde contient **70 notices longues au format JSON** dans `data/notices/`, sur un objectif de 340. Il reste donc **270 notices à rédiger**. Les 340 fiches synthétiques du catalogue ne doivent pas être confondues avec ces notices longues.
+Ce point contient **103 notices longues JSON sur 340**, soit **33 nouvelles notices** depuis le point précédent. Il reste **237 notices à rédiger**. Les 340 fiches synthétiques du catalogue sont distinctes de ce corpus long.
 
-Les 70 fichiers passent les contrôles structurels : rubriques, sous-parties d'histoire naturelle, longueur minimale et résolution des appels de sources. Ce contrôle ne certifie ni l'exactitude documentaire ni la qualité littéraire.
+## Rédaction et relecture
 
-## Relecture
+- Les 103 notices présentes passent les contrôles structurels et de duplication. Ce contrôle n'est pas une validation documentaire ou littéraire.
+- Les neuf reprises substantielles de la première revue sont corrigées : Aarakocra, Aasimar, Aboleth, Cryomancien, Dryade, Écuyer, Marilith, Quetzalcoatl et Sidhe.
+- Huit autres notices ont reçu les corrections stylistiques demandées. Une seconde relecture indépendante a validé les corrections des dix-sept textes et recoupé leurs nouveaux détails factuels. Le compte rendu est conservé dans `docs/relectures/corrections-initiales.json`.
+- Avec le Shoggoth, inchangé depuis sa revue favorable, et le Tyrannœil de référence, **19 notices sont approuvées pour intégration**. Les 84 autres restent des brouillons en attente de relecture ou de décision éditoriale.
 
-Une première relecture indépendante a examiné 18 notices et demandé des reprises substantielles sur neuf : Aarakocra, Aasimar, Aboleth, Cryomancien, Dryade, Écuyer, Marilith, Quetzalcoatl et Sidhe. Ces reprises restent ouvertes à ce point de sauvegarde. Les autres notices ne sont pas réputées validées par défaut.
+## Intégration au site
 
-Les corrections portent notamment sur l'attribution d'un épisode dans Dryade, la télépathie de Marilith et les passages qui donnent des conseils d'écriture au lieu de décrire les créatures.
+`js/notices.js` contient maintenant les **19 notices approuvées**, assemblées par `tools/build_reviewed_notices.py`. Les autres entrées conservent leur fiche synthétique ; elles ne sont pas présentées comme des notices longues terminées.
 
-## Sauvegarde Git et intégration au site
+`data/reviewed-notices.json` associe chaque notice approuvée à l'empreinte SHA-256 de son JSON canonique. Toute modification invalide cette approbation jusqu'à nouvelle relecture. Le constructeur historique `tools/build_notices.py` reste inchangé et refuse toujours un corpus incomplet.
 
-L'utilisateur demande désormais des commits et pushes réguliers sur `main`, sans attendre le catalogue complet. Les brouillons sont donc sauvegardés dans Git avec leur statut explicite.
+Les 19 pages ont été contrôlées sur le site local réel : cinq sections, six sous-parties naturelles, sources présentes et cibles des citations valides. Un clic de source et l'absence de débordement horizontal ont aussi été vérifiés sur Méduse en format mobile.
 
-Le fichier chargé par le navigateur, `js/notices.js`, reste inchangé dans ce point de sauvegarde. Les JSON de travail ne deviennent pas automatiquement des notices visibles sur le site. Leur intégration requiert une étape distincte de relecture et d'assemblage.
+## Sauvegarde et déploiement
 
-Aucun journal d'agent, cache documentaire, paquet de test installé localement ou réglage Hermes n'est destiné à être publié.
+Les brouillons et les notices relues sont sauvegardés régulièrement sur `main`, avec des statuts distincts. La génération locale de `js/notices.js` ne prouve pas le déploiement distant : GitHub Pages doit être contrôlé après le push.
+
+Les journaux d'agents, caches de sources, dépendances de test et réglages Hermes restent exclus de Git.

@@ -32,3 +32,17 @@ python tools/build_notices.py
 L'assemblage refuse un corpus incomplet : tant que les 340 notices ne sont pas présentes, la première commande signale les notices manquantes et la seconde ne remplace pas `js/notices.js`. Le rapport technique est enregistré dans `tmp/editorial/validation.json`.
 
 Ce verrou d'assemblage n'empêche pas les sauvegardes Git intermédiaires sur `main`. Il ne constitue pas non plus une validation éditoriale : le statut de relecture est suivi séparément.
+
+## Publication progressive des notices relues
+
+```sh
+python tools/test_reviewed_notices.py
+python tools/build_reviewed_notices.py --check
+python tools/build_reviewed_notices.py
+```
+
+Ce constructeur distinct ne publie que les entrées de `data/reviewed-notices.json`. Une entrée est ajoutée après relecture, avec le SHA-256 de `json.dumps(notice, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")`, calculé par `notice_digest`. La mise en forme JSON et les fins de ligne n'affectent pas cette empreinte ; les changements de texte l'invalident.
+
+Une sélection vide, une notice absente ou inconnue du catalogue, un texte structurellement invalide ou une empreinte périmée bloque la génération. Une erreur laisse le fichier existant intact. L'écriture valide est atomique ; `--check` ne modifie rien. Les brouillons non approuvés ne sont pas inclus. `--manifest` et `--output` permettent de tester des chemins temporaires sans toucher au bundle du site.
+
+La présence d'une empreinte consigne une décision éditoriale : ce n'est pas une approbation automatique du texte par le logiciel. Le détail des relectures est conservé sous `docs/relectures/`.

@@ -1,21 +1,72 @@
 {
   "description": "Sous sa main, l'eau cesse de couler ; le chemin devient une arme.",
   "sections": {
-    "fascination": ["Une mince pellicule blanche gagne le bord du verre, puis la table. Le cryomancien se reconnaît à cette propagation : son pouvoir prend possession des surfaces avant de toucher les corps. Là où le feu attire les regards, la glace modifie silencieusement les conditions du mouvement. Une poignée résiste, une marche glisse, un pont apparaît sur une eau jusque-là infranchissable. Le spectacle peut être magnifique sans cesser d'être dangereux.", "Le personnage appartient à la fantasy moderne. Il désigne un praticien de la magie du froid, non un peuple fabuleux ni une fonction religieuse historiquement constituée. Le catalogue retient cette spécialisation comme un portrait de mage. Son attrait tient à une matière qui protège et blesse avec les mêmes propriétés : la paroi devient rempart, le cristal devient pointe, la conservation se change en immobilité mortelle."],
-    "legendes": ["Aucune tradition unique ne fournit les lois de tous les cryomanciens. Les univers ludiques distribuent autrement les éléments, les écoles et les métiers. Un exemple documenté est l'élémentaliste de Guild Wars 2 : son affinité avec l'eau lui donne des compétences aquatiques, glacées et curatives. La documentation du jeu réunit ainsi éclats de glace, sol gelé, aura de givre et pluie guérisseuse dans une même famille de pouvoirs.[1]", "Cette association est instructive. Le froid n'y définit pas seulement un arsenal meurtrier. Une aura protège celui qui la porte et gêne ses assaillants ; la glace au sol entrave les adversaires ; d'autres compétences soutiennent les alliés. Le praticien agit sur la circulation du combat, sa durée et les distances entre les corps. On peut reconnaître là un modèle possible du cryomancien, sans renommer officiellement tous les élémentalistes du jeu ni leur attribuer une profession supplémentaire.[1]", "Les paysages d'hiver, les palais de glace et les êtres qui apportent la neige offrent naturellement des voisinages poétiques à cet archétype. Ils ne prouvent pas l'existence d'un ancien ordre de cryomanciens. Une personnification saisonnière commande au climat par sa place dans le récit ; un mage de jeu apprend ou reçoit des techniques utilisables en situation. Confondre les deux effacerait précisément ce que l'invention moderne apporte : une pratique réglée, avec des choix et des limites.", "Dans une aventure, cette spécialité donne aussi au personnage un métier possible hors du duel. Conserver des provisions, dégager un passage ou ralentir un incendie sont des prolongements imaginables de son pouvoir, pas des usages historiques attestés. Ils deviennent intéressants lorsque le récit en mesure les conséquences : qui possède la chambre froide, qui entretient le pont gelé, et que devient une ville dépendante d'un seul spécialiste ?"],
-    "anomalies": ["Le prodige premier est le changement d'état commandé. De l'eau mobile devient une structure capable de porter ou d'enfermer. La fantasy passe volontiers du givre léger au bloc massif sans s'attarder sur la chaleur à déplacer, l'eau disponible ou le temps nécessaire. Cette ellipse constitue une convention magique ; elle ne transforme pas les images du jeu en explication physique.", "Il faut distinguer froid, glace et ralentissement. Ils coïncident souvent à l'écran, mais un sol glissant agit autrement qu'une blessure et qu'une immobilisation. Guild Wars 2 fait précisément varier ces fonctions selon la compétence et l'arme employées : projectiles, pointe tombant sur une zone, explosion glacée ou revêtement du terrain.[1] Cette diversité évite de réduire le personnage à un lanceur de boules bleues.", "La peau pâle, les cheveux blancs et la voix impassible sont des choix d'illustration, non des caractères obligatoires. Rien ne contraint un spécialiste du gel à manquer de chaleur humaine. Le contraste entre une personne expansive et une magie d'arrêt peut même produire un portrait plus vivant que l'éternel mage sans émotions."],
+    "fascination": [
+      "Une mince pellicule blanche gagne le bord du verre, puis la table. Le cryomancien se reconnaît à cette propagation : son pouvoir prend possession des surfaces avant de toucher les corps. Là où le feu attire les regards, la glace modifie silencieusement les conditions du mouvement. Une poignée résiste, une marche glisse, un pont apparaît sur une eau jusque-là infranchissable. Le spectacle peut être magnifique sans cesser d'être dangereux.",
+      "Le cryomancien est ici un archétype de mage de fantasy moderne, interprété par le catalogue à partir de la magie du froid. Les scènes de sa vie quotidienne relèvent de ce portrait imaginaire ; les exemples empruntés à Guild Wars 2 sont signalés séparément. Son attrait tient à une matière qui protège et blesse avec les mêmes propriétés : la paroi devient rempart, le cristal devient pointe, la conservation se change en immobilité mortelle. À portée de sa main, un objet familier acquiert soudain un autre usage."
+    ],
+    "legendes": [
+      "L'élémentaliste de Guild Wars 2 fournit un exemple documenté de ces pouvoirs, sous un autre nom de profession. Son affinité avec l'eau lui donne des compétences aquatiques, glacées et curatives. La documentation du jeu réunit ainsi éclats de glace, sol gelé, aura de givre et pluie guérisseuse dans une même famille de pouvoirs.[1] La spécialité déborde donc largement le projectile : elle engage aussi le terrain où se tiennent les combattants et l'aide que le mage peut leur apporter.",
+      "L'aura de givre réduit les dégâts reçus et inflige le froid aux ennemis qui frappent son porteur. Avec le bâton, Frozen Ground recouvre une zone de glace, affecte les adversaires qui y entrent et accorde une aura de givre aux alliés présents. Healing Rain apporte régénération et dissipation d'altérations.[1] Le même élément produit des situations très différentes : un assaillant hésite au bord d'une zone gelée, un blessé cherche la pluie, un mage protégé accepte de rester à proximité du danger.",
+      "Ce répertoire se répartit entre plusieurs armes. Le sceptre projette des éclats avec Ice Shards et prépare une explosion avec Shatterstone ; le focus fait tomber Comet sur une cible et ses voisins. Le bâton possède Ice Spike, une pointe géante qui rend les ennemis vulnérables.[1] L'arme tenue en main détermine donc une part du langage du praticien. Une pointe venue du ciel, un éclat lancé de face et une surface couverte de glace occupent chacun l'espace à leur manière.",
+      "Hors du combat, une réserve gardée froide et un passage jeté sur l'eau donnent à sa présence une utilité quotidienne. Autour de lui, les habitants attendent que la glace prenne, éprouvent sa solidité, reviennent constater la fonte. Cette dépendance matérielle change les rapports avec le mage : sa visite peut décider d'un départ ou du sort de provisions."
+    ],
+    "anomalies": [
+      "Le prodige premier est le changement d'état commandé. De l'eau mobile devient une structure capable de porter ou d'enfermer. La transformation gagne les surfaces : un bord blanchit, les reflets se troublent, une matière rigide remplace le courant. La chaleur à déplacer et le temps nécessaire restent soumis à la convention magique. Le geste tient de l'impossible précisément parce qu'il obtient, dans l'instant, ce qu'un hiver installe lentement.",
+      "Froid, glace et ralentissement ont des effets distincts. Une pointe blesse ; une zone impose un détour ; une protection amortit les coups. Dans Guild Wars 2, ces fonctions correspondent à des compétences nommées et à des effets de règles : vulnérabilité pour Ice Spike, stupeur (daze) pour Comet, froid pour Freezing Gust.[1] L'image glacée les rapproche, tandis que leur usage les sépare. Un éclat spectaculaire peut compter moins qu'un obstacle placé au moment du passage.",
+      "Le givre qui enveloppe le praticien est parfois aussi mobile que lui. L'aura de Guild Wars 2 se porte sur le corps ; Transmute Frost la fait exploser pour blesser les ennemis et soigner les alliés.[1] La protection devient alors un événement bref, centré sur la position du mage. Le froid cesse d'être seulement une matière déposée au loin : il entoure une personne exposée aux coups, assez proche des autres pour les atteindre ou les secourir."
+    ],
     "naturelle": {
-      "lead": "Pour ce spécialiste humain ou humanoïde, l'histoire naturelle devient celle d'une pratique : vivre avec le froid, apprendre à le diriger et rester vulnérable malgré lui.",
+      "lead": "La vie de ce praticien se partage entre le maniement d'une puissance et les besoins du corps qui la dirige. Son milieu se dessine à hauteur de mains, de portes et de chemins.",
       "parts": [
-        {"title": "Comportement", "body": ["Le cryomancien gagne à observer avant d'agir. Une porte humide, une pente et un goulet offrent des possibilités différentes. Dans l'interprétation du catalogue, sa prudence vient de cette lecture des lieux plutôt que d'un tempérament forcément austère. Il peut retenir un poursuivant au lieu de le tuer, mais une personne immobilisée reste exposée aux chutes, au climat ou à d'autres adversaires. Une magie de contrôle n'est pas automatiquement une magie douce."]},
-        {"title": "Habitat", "body": ["La tour enneigée convient à son image sans constituer son domicile obligatoire. Un port, un atelier ou une armée peuvent avoir besoin de lui. Les univers qui lui permettent de produire de la glace indépendamment du climat le rendent aussi efficace sous un soleil chaud ; ceux qui exigent de l'eau disponible favorisent les lieux humides. Il faut choisir cette règle avant de lui dessiner une aire de répartition."]},
-        {"title": "Alimentation", "body": ["Il mange selon son espèce d'origine. Ni la neige ni les cristaux ne sont un régime propre à la profession. Une fiction peut lui donner une résistance surnaturelle au gel, mais cette résistance ne nourrit pas. Prévoir des repas, du repos et un abri rend sa puissance plus tangible : celui qui immobilise un torrent peut encore avoir faim après l'effort."]},
-        {"title": "Intelligence", "body": ["Sa compétence combine anticipation et mesure. Une surface gelée peut piéger ses compagnons aussi sûrement que ses ennemis ; une paroi mal placée peut condamner une retraite. Les pouvoirs de soutien associés à l'eau dans Guild Wars 2 montrent qu'une même affinité autorise plusieurs décisions tactiques.[1] La maîtrise se lit donc dans le choix du geste, pas seulement dans son ampleur."]},
-        {"title": "Reproduction", "body": ["On ne naît pas nécessairement cryomancien de parents cryomanciens. L'hérédité, l'apprentissage ou un don exceptionnel dépendent de l'univers. Pour cette entrée, la transmission désigne surtout les exercices, les accidents et les savoirs qu'un maître pourrait confier à un élève. Inventer une lignée de sang glacé serait une création supplémentaire, non une conséquence du nom."]},
-        {"title": "Prédateurs", "body": ["Ses adversaires sont ceux d'une personne : combattants, rivaux, autorités ou catastrophes. Le feu fournit un antagonisme visuel évident, mais il ne garantit pas à lui seul une victoire dans tous les systèmes magiques. La distraction, l'épuisement et l'impossibilité d'intervenir à temps sont souvent des limites narratives plus fécondes qu'une opposition mécanique entre deux éléments."]}
+        {
+          "title": "Comportement",
+          "body": [
+            "Le cryomancien observe les lieux avant d'intervenir. Une porte humide, une pente et un goulet lui offrent des prises différentes. Il suit des yeux le trajet de ses compagnons, attend qu'ils aient franchi le passage, puis change les conditions de la poursuite. Retenir quelqu'un laisse pourtant un corps livré au danger : la chute, l'exposition au froid ou l'arrivée d'un autre ennemi peuvent rendre mortelle cette immobilité. Sa prudence se mesure aux personnes qu'il laisse circuler."
+          ]
+        },
+        {
+          "title": "Habitat",
+          "body": [
+            "La tour enneigée appartient à sa silhouette de conte, mais le port et l'atelier lui donnent d'autres voisinages imaginaires. Près des quais, l'eau est partout ; dans une réserve, la porte close concentre l'effet du froid. Le mage travaille au contact des lieux habités. Des gens transportent les marchandises avant son arrivée, attendent son intervention puis reprennent leur activité. La distance entre sa demeure et son ouvrage compte autant, dans ce quotidien, que le paysage hivernal autour de sa fenêtre."
+          ]
+        },
+        {
+          "title": "Alimentation",
+          "body": [
+            "Après avoir refroidi une réserve, le cryomancien partage les provisions qu'elle contient ; après le voyage, il cherche le repos. La main qui a saisi l'eau courante tient ensuite un bol. Autour de la table, son pouvoir intéresse aussi ceux qui préparent le départ : les vivres conservés attendent d'être chargés. Le mage dépend à son tour des personnes qui les ont produits, rassemblés et cuisinés."
+          ]
+        },
+        {
+          "title": "Intelligence",
+          "body": [
+            "Sa compétence combine anticipation et mesure. Dans Guild Wars 2, l'emplacement de Frozen Ground détermine quels alliés reçoivent son aura et quels ennemis subissent le froid ; Healing Rain soutient les compagnons dans une zone choisie.[1] Le praticien doit donc considérer plusieurs corps en mouvement. Un allié trop éloigné reste hors de portée de l'aide. La maîtrise se voit dans le lieu et l'instant retenus, jusque dans la décision de garder un pouvoir disponible plutôt que de le déclencher immédiatement."
+          ]
+        },
+        {
+          "title": "Reproduction",
+          "body": [
+            "La spécialité se transmet ici dans une relation d'apprentissage : un élève reprend un geste, observe le résultat et apprend à s'arrêter. L'ouvrage achevé permet au maître de juger la précision obtenue. Ce savoir circule dans un atelier ou sur les routes, avec les erreurs dont chacun conserve le souvenir. La glace trop mince, la surface fissurée et l'eau redevenue libre montrent à l'élève ce qui a échappé à sa maîtrise."
+          ]
+        },
+        {
+          "title": "Prédateurs",
+          "body": [
+            "Le praticien reste exposé aux adversaires qui l'approchent pendant son intervention. L'aura de givre de Guild Wars 2 réduit les dommages tout en affectant les assaillants : sa protection est partielle.[1] Un mage ainsi défendu peut encore être blessé. La menace prend la forme d'une distance devenue trop courte, d'un compagnon hors d'atteinte ou d'un passage qu'il aurait fallu fermer plus tôt. Sa puissance agit dans l'espace ; un danger arrivé de l'autre côté l'oblige à se retourner."
+          ]
+        }
       ]
     },
-    "reliques": ["Les objets qui lui conviennent gardent la trace d'une action : verre fendu, clé prise dans le givre, manteau encore mouillé après la fonte. Ces indices permettent de raconter son passage sans prétendre exposer des reliques anciennes de cryomancie. Le prodige laisse aussi des dégâts ordinaires à réparer.", "La documentation de Guild Wars 2 offre une réserve précise de gestes pour comprendre cet imaginaire, mais pas une définition universelle du cryomancien.[1] Chaque récit doit décider si sa glace demeure, fond naturellement ou disparaît avec le sort. Ce détail détermine ce que le personnage peut laisser derrière lui : une blessure, un ouvrage provisoire ou un paysage durablement transformé."]
+    "reliques": [
+      "Les traces imaginaires de son passage sont modestes : un verre fendu, une clé prise dans le givre, un manteau encore mouillé après la fonte. La matière reprend peu à peu son état ordinaire, avec les dommages subis. Un pont provisoire redevient de l'eau ; ceux qui l'ont franchi demeurent sur l'autre rive. La durée du prodige et celle de ses conséquences se séparent ainsi, jusque dans la petite flaque qu'un habitant doit essuyer.",
+      "Les armes de Guild Wars 2 offrent, elles, des objets identifiables associés à ce répertoire : sceptre, focus ou bâton portent des séries de compétences différentes.[1] Le bâton réunit notamment pointe glacée, geyser et pluie de soin. Cette proximité du coup et du secours donne au mage une silhouette moins solitaire que sa tour : autour de son arme levée, des compagnons attendent une ouverture, une protection ou le temps de reprendre pied."
+    ]
   },
-  "sources": [{"id": 1, "title": "Water Attunement - Guild Wars 2 Wiki (GW2W)", "url": "https://wiki.guildwars2.com/wiki/Water_Attunement"}]
+  "sources": [
+    {
+      "id": 1,
+      "title": "Water Attunement - Guild Wars 2 Wiki (GW2W)",
+      "url": "https://wiki.guildwars2.com/wiki/Water_Attunement"
+    }
+  ]
 }

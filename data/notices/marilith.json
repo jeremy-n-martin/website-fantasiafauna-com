@@ -3,37 +3,76 @@
   "sections": {
     "fascination": [
       "La première impression est celle d'une guerrière que l'on aurait vue plusieurs fois dans le même instant. Six bras rayonnent autour d'un buste féminin ; au-dessous, un corps de serpent remplace les jambes. Chaque main peut porter une épée. L'œil cherche un geste principal, une arme à surveiller, mais la silhouette refuse cette simplification. La marilith oblige à regarder une bataille plutôt qu'un duel. Son illustration et ses attaques dans Donjons et Dragons associent expressément les six lames à une queue capable d'immobiliser l'ennemi.[1]",
-      "Ce mélange ne produit pourtant pas une agitation informe. Une épée menace pendant qu'une autre écarte le coup ; les anneaux maintiennent à portée celui qui voudrait reculer. On peut lire son anatomie comme une étude fantastique de l'escrime : multiplier les membres ne suffit pas, il faut aussi coordonner leurs intentions. La fascination vient de cette précision prêtée à un démon, de cette intelligence du mouvement au milieu d'un corps qui semble fait pour déborder toute mesure."
+      "Une épée menace pendant qu'une autre écarte le coup ; les anneaux maintiennent à portée celui qui voudrait reculer. Cette silhouette donne une forme visible à la coordination : les gestes convergent vers le même adversaire, ou se répartissent entre plusieurs ennemis. Le torse reste au-dessus de la mêlée tandis que la queue en ferme les issues. L'étrangeté tient à cette précision prêtée à un démon, à cette intelligence du mouvement dans un corps dont chaque membre apporte un danger distinct."
     ],
     "legendes": [
-      "La marilith décrite ici appartient à Donjons et Dragons. La fiche officielle des règles de 2014 la classe parmi les démons : son cadre est une cosmologie de jeu, non un culte ancien ni une tradition de femmes-serpents qu'il suffirait de traduire. Les rapprochements visuels avec d'autres êtres hybrides peuvent éclairer une image, mais ils ne démontrent aucune filiation. En particulier, la présence de bras multiples ne permet pas d'identifier cette combattante à une divinité de l'Inde.[1]",
+      "La marilith appartient à Donjons et Dragons. La fiche officielle des règles de 2014 la classe parmi les démons, dans la grande famille des fiélons, et lui donne l'alignement chaotique mauvais.[1] Sa présence relève donc d'une cosmologie de jeu. Les ressemblances avec les femmes-serpents ou les divinités à plusieurs bras sont des rapprochements visuels ; les sources retenues n'établissent aucune filiation avec un culte ancien. Ce portrait suit la version de 2014, désormais signalée comme ancienne sur D&D Beyond.[1]",
       "Son récit le plus sûr est inscrit dans les règles mêmes. Lorsqu'elle attaque, la marilith de cette version peut frapper six fois avec ses épées longues puis une fois avec sa queue. Les armes sont magiques. Le personnage qui croyait avoir résisté au premier assaut n'a donc traversé qu'une partie de l'action. Le bestiaire transforme une image presque impossible à animer mentalement en une succession de gestes que les joueurs peuvent résoudre autour d'une table.[1]",
-      "L'autre trait décisif est sa faculté de réagir à chaque tour de combat. Cette exception rend sensible une vigilance qui dépasse celle d'un combattant ordinaire. La marilith pare, menace les déplacements et répond aux initiatives successives de ses ennemis. Il faut situer cette description dans l'édition consultée : les nombres et les modalités d'action sont des choix de conception susceptibles de changer, pas les mesures immuables d'une espèce découverte.[1]",
-      "Les règles générales distinguent d'ailleurs les créatures fabriquées, les animaux et les puissances surnaturelles venues d'autres plans. Elles placent les démons dans la famille plus large des fiélons. Une marilith rencontrée dans une aventure relève ainsi d'un conflit entre mondes et volontés hostiles. Lui attribuer une ancienne légende locale, une reine historique ou un peuple adorateur sans source déplacerait abusivement cette invention vers le domaine des traditions attestées.[4]"
+      "L'autre trait décisif est sa faculté de réagir à chaque tour de combat. Cette exception rend sensible une vigilance qui dépasse celle d'un combattant ordinaire. Lorsque plusieurs ennemis se succèdent, chacun peut trouver une lame prête à détourner son coup. Sa parade protège contre une seule attaque de corps à corps à la fois : plusieurs coups portés pendant un même tour conservent donc leur danger. La multiplicité des bras se traduit par une succession de réponses, avec des intervalles dont dépend l'issue du combat.[1]",
+      "Les règles générales placent les fiélons dans les plans inférieurs. Beaucoup servent des archidiables ou des princes démons ; des prêtres et des mages malfaisants les invoquent parfois dans le monde matériel.[4] Ce cadre donne à la rencontre une dimension étrangère au paysage traversé : une puissance venue d'ailleurs se tient désormais à portée d'épée. La marilith partage cette appartenance démoniaque tout en conservant des moyens très personnels, reconnaissables à la manière dont elle occupe l'espace et répond aux attaques.[1][4]"
     ],
     "anomalies": [
       "La queue n'est pas un simple support décoratif. Dans la fiche de 2014, elle peut saisir une créature de taille moyenne ou plus petite ; la victime se trouve entravée, puis exposée à des atteintes répétées tant qu'elle ne s'échappe pas. Mais cette prise occupe la queue : la marilith ne peut simultanément s'en servir contre une autre cible. Son abondance de moyens conserve donc une limite matérielle lisible, celle du membre déjà engagé.[1]",
       "Sa parade possède également des conditions. Elle doit voir l'assaillant et tenir une arme de corps à corps. Une lame déviée n'efface pas indistinctement tous les dangers. La téléportation élargit en revanche brutalement l'espace du duel : la créature peut gagner un emplacement libre qu'elle voit, emportant son équipement. Une distance jugée protectrice peut cesser de l'être sans que l'on ait aperçu une charge.[1]",
-      "Enfin, la résistance à la magie ne signifie pas l'absence de vulnérabilité. Le jeu lui donne un avantage pour résister aux sorts et aux autres effets magiques, non une immunité générale. Cette différence évite de réduire la rencontre à l'opposition sommaire entre une créature toute-puissante et des victimes impuissantes. Elle pousse plutôt ses adversaires à combiner leurs moyens et à reconnaître ce que chaque défense empêche réellement.[1]"
+      "Son corps résiste au froid, au feu et à la foudre, ainsi qu'aux coups, aux pointes et aux tranchants des attaques non magiques. Le poison est sans effet sur elle. La résistance à la magie fonctionne autrement : elle favorise ses jets de sauvegarde contre les sorts et les autres effets magiques.[1] Ces défenses se superposent, chacune avec son domaine. Une lame ensorcelée peut traverser une protection qui amortit l'acier ordinaire ; un sort doit encore vaincre la résistance propre à cette créature.",
+      "Sa vision véritable porte à 120 pieds, comme sa téléportation et sa télépathie.[1] Dans les règles de 2014, ce sens traverse les ténèbres ordinaires et magiques, révèle les êtres invisibles, reconnaît les illusions visuelles et perçoit la forme originelle d'une créature métamorphosée.[4] Se cacher derrière une apparence trompeuse devient ainsi particulièrement difficile. La condition imposée à sa parade, voir l'assaillant, subsiste ; mais son regard dispose de moyens surnaturels pour le retrouver."
     ],
     "naturelle": {
-      "lead": "L'observation porte ici sur un être de jeu. Son histoire naturelle se reconstitue à partir de capacités explicites et de leurs conséquences, sans inventer un cycle biologique derrière la silhouette.",
+      "lead": "La marilith est décrite ici dans le cadre des règles de 2014 : ses capacités de combat et de perception sont détaillées, tandis que sa vie organique demeure largement hors champ.[1]",
       "parts": [
-        {"title": "Comportement", "body": ["Au combat, elle tient le terrain par une succession de réponses. Se précipiter isolément contre ses armes expose à lui offrir des occasions distinctes de parer. Une mise en scène fidèle à ces capacités la montre attentive aux positions, utilisant une prise pour maintenir une victime près d'elle et changeant brusquement de place lorsque la situation l'exige. Cette lecture tactique découle des actions proposées, plutôt que d'un tempérament animal supposé.[1]"]},
-        {"title": "Habitat", "body": ["Le cadre naturel des démons est celui des plans inférieurs de la cosmologie ludique. Dans une aventure, la rencontre peut cependant avoir lieu ailleurs. Une salle de forteresse, un passage gardé ou un lieu d'invocation sont des décors possibles, non des habitats zoologiques attestés. Leur intérêt tient à l'espace disponible : une ligne de vue permet la téléportation, tandis qu'un obstacle peut limiter le choix des destinations.[1][4]"]},
-        {"title": "Alimentation", "body": ["La fiche consultée ne prescrit aucun régime à la marilith. Son corps serpentin ne justifie ni de lui faire avaler systématiquement ses prisonniers ni de calculer ses besoins à partir d'un grand constricteur. La queue y est décrite comme une arme d'immobilisation. Une histoire peut lui prêter un banquet ou une faim, mais ces inventions doivent rester des particularités du récit, pas une donnée commune au bestiaire."]},
-        {"title": "Intelligence", "body": ["Sa capacité à manier plusieurs armes et à choisir quand réagir impose une lecture active de l'adversaire. Les six bras ne possèdent pas chacun une conscience séparée. Imaginer un seul esprit distribuant ses gestes permet de comprendre son étrangeté sans ajouter une faculté télépathique non nécessaire. L'enjeu d'une rencontre est autant de perturber cette coordination que de survivre à la force des coups."]},
-        {"title": "Reproduction", "body": ["Aucune ponte, gestation ou famille de jeunes mariliths n'apparaît dans la fiche retenue. La catégorie démoniaque n'autorise pas davantage à déduire une reproduction de reptile. Pour cette notice, l'apparition de nouveaux individus appartient aux choix cosmologiques des ouvrages ou des aventures qui les emploient. Un dessin anatomique, aussi détaillé soit-il, ne constitue pas à lui seul le commencement d'une embryologie."]},
-        {"title": "Prédateurs", "body": ["La marilith possède des adversaires, pas de prédateur naturel documenté. Des aventuriers peuvent la combattre ; d'autres puissances peuvent l'affronter dans une histoire. Ses limites suggèrent des réponses concrètes : gêner la vision, échapper à la prise, distinguer résistance et immunité. Aucune de ces possibilités n'est une recette infaillible. Leur intérêt consiste à rendre la menace affrontable sans diminuer artificiellement ses capacités.[1]"]}
+        {
+          "title": "Comportement",
+          "body": [
+            "Elle maintient une victime dans ses anneaux tout en gardant ses bras disponibles. Sa queue atteint plus loin que ses épées et peut saisir une cible avant que celle-ci arrive au contact des lames. Une fois la prise établie, la victime est entravée et les coups de queue peuvent la toucher automatiquement. La marilith peut aussi renoncer à cet ancrage et se téléporter vers une position visible : sa mobilité contraste avec la lourde immobilité qu'elle impose au prisonnier.[1]"
+          ]
+        },
+        {
+          "title": "Habitat",
+          "body": [
+            "Les plans inférieurs sont le domaine d'origine des fiélons ; l'invocation explique leur présence dans le monde matériel.[4] Sur le terrain, la marilith dépend des distances et des ouvertures. Sa téléportation atteint un espace libre qu'elle peut voir, jusqu'à 120 pieds. Elle emporte les objets qu'elle porte ou transporte. Un couloir dégagé lui ouvre ainsi une destination lointaine, tandis qu'un espace entièrement masqué lui retire ce choix.[1]"
+          ]
+        },
+        {
+          "title": "Alimentation",
+          "body": [
+            "Le régime alimentaire de la marilith reste indéterminé dans la fiche de 2014. Celle-ci décrit une queue qui frappe et immobilise, mais aucune action de morsure ou d'engloutissement.[1] Le corps serpentin y intervient dans le combat ; les habitudes de chasse, les repas et les besoins de subsistance restent inconnus."
+          ]
+        },
+        {
+          "title": "Intelligence",
+          "body": [
+            "La fiche lui attribue une intelligence élevée, la maîtrise de l'abyssal et la télépathie jusqu'à 120 pieds.[1] Cette dernière lui permet de communiquer mentalement avec une créature capable de comprendre au moins une langue, même différente de la sienne. Son interlocuteur peut répondre ; le contact peut s'établir sans être vu.[4] Un échange silencieux peut donc précéder l'affrontement. Cette communication à distance est distincte de la coordination des six bras : la menace possède à la fois une pensée articulée et un corps capable d'en exécuter les décisions."
+          ]
+        },
+        {
+          "title": "Reproduction",
+          "body": [
+            "La fiche de 2014 présente une marilith accomplie, avec ses armes et ses facultés. Elle laisse sa naissance et sa croissance indéterminées.[1] Son appartenance aux fiélons situe son origine dans une cosmologie ; elle ne fournit aucun cycle reproductif propre à la marilith.[4]"
+          ]
+        },
+        {
+          "title": "Prédateurs",
+          "body": [
+            "Ses dangers documentés sont ceux du combat. Un adversaire peut se dégager des anneaux, et la queue occupée par une prise laisse les autres cibles hors de ses attaques. La parade dépend d'une arme tenue et de la perception de l'assaillant. Ces limites coexistent avec ses résistances et sa grande mobilité : même blessée ou privée d'une occasion de parer, la marilith conserve plusieurs moyens d'atteindre ses ennemis.[1]"
+          ]
+        }
       ]
     },
     "reliques": [
       "L'objet emblématique reste l'épée, répétée jusqu'à devenir presque une couronne autour du torse. La marilith pourrait être reconnue en silhouette, avant tout nom et tout chiffre. Pourtant, ôter ses armes changerait réellement sa défense, puisque sa parade en exige une : l'accessoire graphique conserve une fonction précise dans le système de jeu.[1]",
-      "Sa singularité tient finalement à une économie de gestes. La queue retient, les bras frappent, les lames interceptent ; la téléportation replace cet ensemble. Cette cohérence distingue la créature d'un simple assemblage extravagant. Dans un bestiaire de fantasy, elle permet de raconter la supériorité martiale par la forme du corps, puis de laisser les personnages chercher comment rompre cette organisation."
+      "Les règles donnent aussi une valeur surnaturelle à cet équipement : les attaques d'arme de la marilith sont magiques.[1] Une même épée intervient ainsi dans l'assaut et dans la parade, au milieu de cinq autres lames dont les mouvements restent disponibles. Autour du buste féminin, leur disposition dessine une garde presque continue. Plus bas, les anneaux retiennent un corps à terre ; au-dessus, les bras poursuivent le combat."
     ]
   },
   "sources": [
-    {"id": 1, "title": "Marilith — D&D Beyond, Basic Rules (2014)", "url": "https://www.dndbeyond.com/monsters/16952-marilith"},
-    {"id": 4, "title": "Monsters — D&D Beyond, Basic Rules (2014)", "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters"}
+    {
+      "id": 1,
+      "title": "Marilith — D&D Beyond, Basic Rules (2014)",
+      "url": "https://www.dndbeyond.com/monsters/16952-marilith"
+    },
+    {
+      "id": 4,
+      "title": "Monsters — D&D Beyond, Basic Rules (2014)",
+      "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters"
+    }
   ]
 }
