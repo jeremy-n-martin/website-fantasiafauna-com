@@ -1,0 +1,77 @@
+{
+  "description": "La lumière vient de l'intérieur ; elle ne dispense personne de choisir ce qu'il en fera.",
+  "sections": {
+    "fascination": [
+      "Un Aasimar peut d'abord ressembler aux autres voyageurs assis autour du feu. Puis ses mains referment une blessure ou une clarté étrangère à la flamme paraît sur son visage. Le décalage entre la personne ordinaire et la manifestation céleste fait son intérêt. Donjons et Dragons le décrit comme un mortel porteur d'une puissance des plans supérieurs, et non comme un ange en service permanent.[6] Sa présence promet un secours possible, pas une explication immédiate de tout ce qui lui arrive.",
+      "L'image peut être douce : une paume posée sur un front, une lueur utile dans un passage obscur. Elle peut aussi devenir inquiétante. Les règles autorisent des ailes spectrales, une émission de lumière blessante ou une transformation qui inspire la peur.[6] Le corps laisse alors paraître une puissance trop grande pour les habitudes de la conversation. Celui qui l'observe hésite entre confiance et recul ; celui qui la porte doit continuer à vivre après l'avoir révélée."
+    ],
+    "legendes": [
+      "L'Aasimar de cette notice est une création de fantasy ludique. Ses plans supérieurs, ses capacités et ses transformations appartiennent à la cosmologie de Donjons et Dragons. Les ressemblances avec l'ange, l'enfant béni ou le héros d'ascendance divine offrent des rapprochements de lecture ; elles ne prouvent pas l'existence d'une tradition ancienne portant ce nom. Il convient notamment de ne pas assimiler ses règles aux doctrines des religions vivantes sur les anges.",
+      "La cinquième édition a présenté plusieurs versions de cette figure. Le guide de Wargamer décrit celle de Mordenkainen Presents: Monsters of the Multiverse, puis celle du Manuel des joueurs de 2024. Elles partagent une résistance aux dégâts radiants et nécrotiques, la vision dans l'obscurité, un pouvoir de guérison par le toucher et la capacité de produire de la lumière.[6] Ce socle organise le personnage autour du corps, du soin et d'une énergie céleste qui peut aussi servir au combat.",
+      "Le changement de 2024 touche surtout la révélation céleste. Dans la version précédente présentée par le guide, le joueur choisissait une manifestation lorsqu'il accédait à cette faculté. Dans le Manuel de 2024, il choisit sa forme à chaque activation. L'article officiel de présentation insiste sur cette souplesse : ailes célestes, rayonnement intérieur ou voile nécrotique peuvent correspondre à l'état du personnage au moment où il appelle sa puissance.[3] Une apparence sombre n'est donc plus à lire comme l'étiquette irrévocable d'une catégorie morale.",
+      "L'entrée dans le Manuel des joueurs donne aussi à l'Aasimar une place parmi les choix de base de cette version, alors qu'il avait été développé dans d'autres ouvrages.[3] C'est un déplacement éditorial, non la découverte d'une nouvelle population au sein d'un monde unique. D'une campagne à l'autre, un Aasimar pourra être une rencontre rarissime ou un voisin reconnu. Le texte du jeu fournit des capacités communes ; le récit doit encore lui donner une famille, des occupations et des relations qui ne se résument pas à son rayonnement."
+    ],
+    "anomalies": [
+      "La classification distingue expressément l'Aasimar des êtres célestes : son type de créature demeure humanoïde. Les versions décrites permettent une taille petite ou moyenne.[6] On ne doit donc pas lui imposer l'anatomie d'un grand ange ailé, ni confondre son héritage surnaturel avec une profession sacerdotale. Un pouvoir de guérison inné n'est pas une ordination. Un combattant, un érudit ou une personne qui ne souhaite aucune mission sacrée peut porter les mêmes dons.",
+      "Les ailes ne sont pas toujours des organes permanents. La révélation de 2024 dure une minute, à moins que son porteur ne l'interrompe, et ne revient qu'après un repos long.[6] Ce vol bref change la scène sans abolir les trajets ordinaires. L'Aasimar peut gagner une hauteur, traverser un obstacle ou porter secours depuis les airs ; il ne devient pas pour autant l'habitant naturel d'un ciel où il passerait sa vie.",
+      "Le rayonnement intérieur oppose une autre difficulté au cliché de la bonté lumineuse : sa proximité peut blesser. Le voile nécrotique, lui, fait de la peur un effet de la transformation.[3][6] Le jeu n'affirme pas que toute lumière soit bienveillance ni que toute apparence funèbre révèle une cruauté. Ces formes restent des moyens. Le choix de les employer près d'autrui appartient au personnage et à la situation."
+    ],
+    "naturelle": {
+      "lead": "Une histoire naturelle de l'Aasimar doit partir de sa mortalité et de son existence sociale. Ses dons sont précisément décrits par le jeu ; son alimentation, sa vie familiale et son rapport au sacré ne forment pas une zoologie céleste universelle.",
+      "parts": [
+        {
+          "title": "Comportement",
+          "body": [
+            "Aucune routine unique ne découle des pouvoirs communs. Soigner quelqu'un, éclairer un lieu ou prendre son envol restent des actes situés, qui peuvent répondre à la compassion, au devoir ou au besoin de survivre. L'article officiel associe les révélations de 2024 à des dispositions émotionnelles différentes.[3] Cette lecture invite à montrer un personnage capable de changer, plutôt qu'une statue de vertu dont chaque geste aurait été décidé par son ascendance."
+          ]
+        },
+        {
+          "title": "Habitat",
+          "body": [
+            "Les plans supérieurs expliquent la nature de sa puissance, pas nécessairement son adresse. Un Aasimar mortel a sa place dans les communautés du monde où se déroule l'aventure.[6] Lui réserver systématiquement un sanctuaire de marbre priverait la figure de son contraste le plus fécond : une présence céleste dans des lieux ordinaires. Un atelier, une maison familiale ou une route peuvent accueillir cette histoire aussi bien qu'un temple, selon la campagne."
+          ]
+        },
+        {
+          "title": "Alimentation",
+          "body": [
+            "Les sources de règles consultées ne lui attribuent pas de régime surnaturel. Elles n'autorisent donc pas à remplacer les repas par la lumière, les prières ou une nourriture d'immortalité. La fatigue et le repos ont en revanche une fonction concrète : les mains guérisseuses et la révélation céleste possèdent des usages limités qui se renouvellent après un repos long.[6] La puissance n'est pas disponible sans interruption, même lorsque son origine paraît sacrée."
+          ]
+        },
+        {
+          "title": "Intelligence",
+          "body": [
+            "L'héritage céleste n'apporte pas une omniscience. Le guide distingue les pouvoirs de l'espèce des choix de classe et, pour 2024, des caractéristiques liées à l'historique du personnage.[6] Savoir, jugement et expérience restent donc à construire. L'Aasimar peut comprendre ses propres manifestations sans connaître les intentions de tous les êtres supérieurs. Cette marge d'ignorance laisse place au doute, aux erreurs de lecture et à l'apprentissage auprès de personnes dépourvues de dons comparables."
+          ]
+        },
+        {
+          "title": "Reproduction",
+          "body": [
+            "Le vocabulaire d'héritage et d'énergie divine situe l'Aasimar parmi les mortels touchés par les plans supérieurs.[6] Les deux présentations utilisées ici ne donnent pas de loi génétique complète permettant de prévoir ses descendants. Il serait abusif d'en tirer des croisements, des proportions ou une naissance angélique obligatoire. Dans le cadre du catalogue, la question la plus solide est celle de l'origine du personnage : comment sa famille et lui comprennent-ils une puissance qu'ils n'ont pas nécessairement choisie ?"
+          ]
+        },
+        {
+          "title": "Prédateurs",
+          "body": [
+            "L'Aasimar ne possède pas de prédateur naturel défini. Les résistances nécrotique et radiante atténuent certains dangers sans le rendre invulnérable ; ses soins restent limités.[6] Ses adversaires dépendent des conflits du récit. Une créature hostile au céleste peut le viser, mais cette possibilité n'établit pas une guerre personnelle automatique entre tous les Aasimars et tous les êtres infernaux. Un rival humain peut être autrement plus dangereux qu'un ennemi désigné par une cosmologie."
+          ]
+        }
+      ]
+    },
+    "reliques": [
+      "La trace la plus singulière de l'Aasimar n'est pas toujours un objet. Une personne guérie conserve le souvenir d'une main ; des témoins se rappellent un visage devenu lumineux ou des ailes qui n'existent plus. Ces scènes reposent sur ses facultés de jeu, mais leur signification appartient au récit.[6] Elles peuvent fonder une reconnaissance ou une réputation pesante sans prouver que le personnage souhaite être vénéré.",
+      "La modification de la révélation céleste en 2024 fournit une bonne règle de lecture iconographique : plusieurs portraits très différents peuvent représenter la même personne.[3] L'image ailée, l'auréole éclatante et le voile sombre ne suffisent pas à reconstruire trois biographies. Sous les effets spectaculaires demeure un mortel dont la conduite se juge dans la durée, lorsque la lumière est retombée."
+    ]
+  },
+  "sources": [
+    {
+      "id": 3,
+      "title": "The 10 Species in the 2024 Player's Handbook | Dungeons & Dragons",
+      "url": "https://www.dndbeyond.com/posts/1783-the-10-species-in-the-2024-players-handbook"
+    },
+    {
+      "id": 6,
+      "title": "A complete DnD Aasimar species guide - Wargamer",
+      "url": "https://www.wargamer.com/dnd/aasimar"
+    }
+  ]
+}

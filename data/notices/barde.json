@@ -1,0 +1,76 @@
+{
+  "description": "Une salle entière peut dépendre de celui qui choisira les mots de sa victoire.",
+  "sections": {
+    "fascination": [
+      "Le barde entre avec un instrument, mais ce sont les noms qu'il transporte qui pèsent le plus lourd. Il sait quels ancêtres rappeler, quelle humiliation taire, quel exploit transformer en chant. Dans une société où la réputation circule de bouche en bouche, celui qui raconte possède une autorité que l'épée ne suffit pas à acheter. Sa présence au banquet promet autant de gloire qu'elle menace de ridicule.",
+      "Le bestiaire lui fait ici une place parmi les êtres merveilleux sans lui retirer son humanité. Le barde historique est un poète professionnel ; le barde de fantasy est souvent un aventurier dont la parole produit des effets magiques. Entre les deux existe une continuité d'imagination, non la preuve que les chanteurs anciens guérissaient réellement les blessures. La fascination naît précisément de ce passage : prendre au pied de la lettre la force que nous reconnaissons à une voix."
+    ],
+    "legendes": [
+      "Le nom appartient aux langues celtiques. Les auteurs antiques qui emploient le latin bardi décrivent des poètes ou chanteurs attachés aux populations de Gaule et de Bretagne. L'article de la Britannica de 1911 rappelle notamment Lucain et Ammien Marcellin. Ce témoignage ancien doit rester distinct des institutions médiévales galloises et irlandaises, connues par d'autres documents : un terme conservé ne garantit pas un métier demeuré identique pendant des siècles.[2]",
+      "Au pays de Galles, la tradition bardique s'inscrit dans les cours, les privilèges professionnels et les concours poétiques. Les chants célèbrent les victoires, louent les protecteurs et donnent forme aux généalogies. Les eisteddfodau réunissent des compétiteurs dont les performances doivent être jugées, plutôt que de simples conteurs livrés à leur inspiration. La vieille encyclopédie présente cette histoire avec les catégories nationales de son époque ; elle permet surtout de voir combien le barde supposé libre et vagabond pouvait appartenir à une institution réglée.[2]",
+      "En Irlande également, poésie de louange et histoire familiale se rencontrent. Dire une lignée, c'est préciser la place d'une personne dans un ensemble de droits et d'obligations. La mémoire du barde peut donc servir des intérêts très concrets. Il serait trompeur d'en faire partout un druide, ou de confondre systématiquement les différentes catégories de lettrés : les fonctions voisines se recouvrent selon les lieux sans devenir interchangeables.",
+      "Donjons et Dragons transforme ce métier de parole en classe d'aventurier. Dans les règles de cinquième édition présentées comme anciennes sur D&D Beyond, le barde inspire ses alliés, démoralise ses ennemis, crée des illusions et peut soigner. Le texte explique sa magie par les échos des paroles créatrices qui auraient donné forme au multivers. Cette cosmologie appartient au jeu ; elle n'est pas une doctrine attribuable aux bardes celtiques historiques.[3]"
+    ],
+    "anomalies": [
+      "L'anomalie du barde fantastique tient au trajet du son. Une chanson touche normalement celui qui l'écoute par l'attention, l'émotion ou le souvenir ; dans le jeu, elle peut modifier directement les possibilités d'action. L'inspiration bardique donne à un compagnon une ressource utilisable au moment décisif. Le pouvoir se distribue : celui qui chante n'est pas toujours celui qui accomplit l'exploit.[3]",
+      "Cette magie conserve des limites expressives. Le barde des règles consultées privilégie les charmes, les illusions et le soutien plutôt que la destruction massive. Son instrument peut servir de focaliseur, mais toute sa pratique ne se réduit pas à jouer du luth. Discours, rythme guerrier et savoir accumulé composent aussi son portrait. Une armure cabossée frappée en cadence peut tenir lieu de scène ; aucune anatomie surnaturelle n'est nécessaire.[3]"
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle devient ici une histoire du métier : ses milieux, ses besoins et les moyens par lesquels une voix trouve des successeurs.",
+      "parts": [
+        {
+          "title": "Comportement",
+          "body": [
+            "Le barde observe les réactions d'une assemblée et ajuste son intervention. La même louange peut rassurer un protecteur ou provoquer son rival. Dans la fantasy, cette attention sociale se prolonge en capacité d'aventure : D&D Beyond le décrit recueillant des récits, visitant des ruines et accompagnant les héros pour témoigner de leurs actes. Son goût du voyage appartient particulièrement à cette version, et ne doit pas effacer le poète installé auprès d'une cour.[3]"
+          ]
+        },
+        {
+          "title": "Habitat",
+          "body": [
+            "Une cour, une maison de patronage, un lieu de concours ou une salle commune constituent des habitats sociaux plutôt que des territoires biologiques. Le barde y dépend d'un public qui comprend sa langue et reconnaît ses références. Le personnage de jeu élargit ce cercle aux routes et aux tombes anciennes. Pour lui, un monument n'est pas seulement une pierre : il peut devenir la matière d'un chant encore inconnu de son auditoire."
+          ]
+        },
+        {
+          "title": "Alimentation",
+          "body": [
+            "Les repas sont ceux d'un être humain, ou de l'ascendance choisie dans l'univers de jeu. Rien ne justifie un régime propre à la profession. En revanche, l'accès à la nourriture relève de son économie : hospitalité, rétribution, protection d'un puissant, partage des ressources du groupe. Le banquet possède ainsi deux faces. Le poète y mange et y travaille ; sa place à table peut dépendre de ce qu'il fera entendre."
+          ]
+        },
+        {
+          "title": "Intelligence",
+          "body": [
+            "La mémoire seule ne suffit pas. Il faut ordonner un récit, maîtriser une forme, reconnaître l'occasion d'une plaisanterie et parfois savoir se taire. Le barde ludique ajoute à ces facultés une polyvalence explicitement valorisée par les règles. Cette aisance ne le rend pas omniscient : elle dessine un spécialiste de la circulation du savoir, capable de relier une inscription oubliée à une histoire entendue ailleurs.[3]"
+          ]
+        },
+        {
+          "title": "Reproduction",
+          "body": [
+            "Le métier se transmet par l'apprentissage et la reconnaissance d'une communauté. Les privilèges héréditaires relevés dans certaines institutions historiques concernent une position sociale, non un don biologique. Le jeu propose plusieurs parcours, auprès d'un maître ou dans un collège bardique. Dans tous les cas, produire un successeur suppose davantage que transmettre un instrument : il faut apprendre à écouter, à travailler et à soutenir l'épreuve du public.[2][3]"
+          ]
+        },
+        {
+          "title": "Prédateurs",
+          "body": [
+            "Le barde est mortel. La guerre, la maladie et les dangers du voyage le menacent comme ses compagnons. Ses adversaires propres sont aussi ceux qui veulent contrôler le récit : un protecteur humilié, un pouvoir hostile à la satire, un rival qui conteste sa compétence. Dans une aventure, réduire sa voix au silence peut priver le groupe de soutien. Ces conflits relèvent de personnes et d'institutions, pas d'une chaîne alimentaire."
+          ]
+        }
+      ]
+    },
+    "reliques": [
+      "La harpe et le luth rendent immédiatement reconnaissable le barde illustré, mais ils ne sont pas des preuves suffisantes pour identifier un personnage historique. L'instrument change, le rôle aussi. Le mot a fini par désigner un poète en général, usage littéraire déjà relevé par la Britannica, tandis que les pratiques galloises de concours lui conservent un ancrage plus précis.[2]",
+      "Le barde de fantasy pose enfin un problème délicieux au récit d'aventure : il peut devenir lui-même l'auteur de la version que les autres entendront. Un exploit observé n'est pas encore une légende. Il faut choisir son début, distribuer les mérites et décider à quel moment le public retiendra son souffle. Ce travail, lui, n'exige aucun sortilège."
+    ]
+  },
+  "sources": [
+    {
+      "id": 2,
+      "title": "1911 Encyclopædia Britannica/Bard - Wikisource, the free online library",
+      "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bard"
+    },
+    {
+      "id": 3,
+      "title": "The Bard Class for Dungeons & Dragons (D&D) Fifth Edition (5e) - D&D Beyond",
+      "url": "https://www.dndbeyond.com/classes/1-bard"
+    }
+  ]
+}

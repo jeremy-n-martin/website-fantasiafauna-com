@@ -1,0 +1,77 @@
+{
+  "description": "Au milieu des ordures, une tige garnie d'yeux surveille le passage ; le reste du tas attend d'avoir faim.",
+  "sections": {
+    "fascination": [
+      "L'Otyugh donne un estomac aux endroits que l'on préfère ne pas regarder. Dans les égouts et les dépotoirs des mondes de Donjons et Dragons, il s'enfouit sous les déchets en laissant émerger son appendice sensoriel. Sa gueule immense et ses tentacules épineux restent cachés jusqu'au mouvement brusque qui transforme le tas en prédateur. L'horreur vient moins de la décomposition que de cette découverte : la saleté vous observait.[6]",
+      "Il possède pourtant une utilité. Des habitants du monde souterrain le nourrissent de leurs rebuts et obtiennent en échange un gardien. La même créature peut donc être une menace pour le visiteur et un auxiliaire pour ceux qui vivent là. Ce marché donne aux donjons une épaisseur domestique rarement visible : on y mange, on y produit des déchets, quelqu'un doit les faire disparaître. L'Otyugh prospère dans cette partie peu glorieuse de l'habitation fantastique.[6]"
+    ],
+    "legendes": [
+      "Son histoire appartient au jeu de rôle, et non à une tradition ancienne des égouts. Les règles le classent parmi les aberrations, catégorie ludique qui signale son étrangeté sans lui imposer une origine folklorique. La fiche de Donjons et Dragons de 2014 en fait une grande créature d'alignement neutre, dotée de sa propre langue et d'une télépathie limitée. Ces indications dessinent un être avec lequel la communication reste possible, malgré une apparence qui invite surtout à reculer.[3]",
+      "La version diffusée dans le compendium D&D 2024 de Roll20 développe sa gourmandise et ses méthodes d'approche. L'Otyugh aime les repas répugnants, mais ne dédaigne pas ce qui est vivant. Il dispose parmi les ordures des choses brillantes et transmet des incitations télépathiques pour attirer des proies. La scène associe ainsi deux appâts : ce que l'aventurier croit voir et ce qu'une pensée étrangère lui suggère. Le trésor peut être le dispositif de chasse, plutôt que la récompense qui attend après le combat.[6]",
+      "La table de situations proposée dans ce compendium précise jusqu'où peut aller la ruse. Certains Otyughs maquillent leurs tentacules avec des marionnettes de détritus ; d'autres chantent dans leur langue ou projettent l'image d'une pierre précieuse, d'une arme tordue, voire d'une pâtisserie détrempée. Ce sont des possibilités de rencontre offertes au meneur de jeu, pas des épisodes d'une légende universelle. Leur humour montre un monstre qui comprend l'attrait d'un cadeau, mais juge très imparfaitement ce qu'un étranger voudrait recevoir.[6]",
+      "La comparaison des versions oblige aussi à dater les pouvoirs. Dans la fiche de 2014, sa télépathie transmet des messages simples et des images à un être capable de comprendre une langue ; celui-ci ne peut pas répondre par le même canal. Le compendium plus récent indique une télépathie sans reprendre cette restriction dans son profil. Une conversation silencieuse réciproque ne doit donc pas être attribuée indistinctement à tous les Otyughs de toutes les éditions.[3][6]"
+    ],
+    "anomalies": [
+      "La disposition des organes lui permet de regarder sans exposer toute sa masse. La tige oculaire dépasse du tas, tandis que les deux tentacules de préhension attendent au voisinage d'une bouche démesurée. Un appendice observe, les autres saisissent. Cette séparation explique le piège avec une économie presque fonctionnelle : l'animal n'a pas besoin de ressembler à une pierre ou de devenir invisible pour se dissimuler. Il lui suffit d'être chez lui, dans des matières qui détournent les regards.[6]",
+      "Les tentacules servent à frapper, retenir et malmener les victimes. Le profil de 2014 permet à chacun de capturer une cible, puis au monstre de heurter ses prisonniers l'un contre l'autre ou contre une surface solide. Le décor participe alors directement à l'attaque. Dans une fosse étroite, les parois que l'on espérait utiliser pour s'échapper deviennent ce contre quoi le corps captif est projeté.[3]",
+      "Sa morsure ajoute une menace durable aux blessures immédiates. En 2014, elle peut transmettre une maladie qui empoisonne la victime et réduit progressivement sa vitalité tant qu'elle persiste. Les règles révisées conservent l'empoisonnement et la diminution du maximum de points de vie, mais modifient leur déclenchement et leur résolution. Dans les deux cadres, quitter la fosse n'efface pas forcément le danger. Il s'agit d'un effet fantastique de jeu ; aucune affection réelle ni incubation biologique précise ne peut en être déduite.[3][6]"
+    ],
+    "naturelle": {
+      "lead": "L'Otyugh dispose d'une véritable niche dans l'écologie inventée de Donjons et Dragons. Sa description gagne à suivre les échanges de nourriture et de services plutôt qu'à lui chercher un ancêtre dans les bestiaires médiévaux.",
+      "parts": [
+        {
+          "title": "Comportement",
+          "body": [
+            "Il attend volontiers sous les détritus et observe avant de jaillir. L'embuscade n'exclut pas l'entente : une communauté qui lui fournit suffisamment de rebuts peut l'employer comme gardien. Cette cohabitation reste inquiétante, car l'appétit décrit dans le compendium s'étend à presque tout ce qui arrive à sa portée. Dans une aventure, connaître l'accord local peut donc compter autant que savoir manier une arme. Le visiteur ignorant les habitudes du lieu risque de passer pour un supplément au repas.[6]"
+          ]
+        },
+        {
+          "title": "Habitat",
+          "body": [
+            "Décharges, égouts et ruines polluées lui offrent à la fois abri et nourriture. Le compendium situe son habitat dans le monde souterrain, mais décrit surtout des lieux où les matières s'accumulent. La profondeur ne suffit pas : une galerie vide fournit moins d'occasions qu'une fosse alimentée quotidiennement. Son installation suit les rejets d'autres habitants, si bien que sa présence peut signaler une communauté voisine avant même que l'explorateur en rencontre les membres.[6]"
+          ]
+        },
+        {
+          "title": "Alimentation",
+          "body": [
+            "Les carcasses, les ordures et les déchets répugnants composent son ordinaire. Les tentacules portent à sa gueule ce qu'ils peuvent saisir ; une proie fraîche s'ajoute à ce régime sans le remplacer. Son rôle de consommateur de rebuts est attesté, mais le décrire comme un système parfait de dépollution serait excessif. Les textes n'expliquent pas ce qu'il rejette lui-même ni s'il neutralise réellement les substances dangereuses. Dévorer un déchet n'équivaut pas nécessairement à assainir le lieu.[6]"
+          ]
+        },
+        {
+          "title": "Intelligence",
+          "body": [
+            "L'Otyugh n'est pas un simple réflexe digestif. Il possède un langage, communique par images et sait disposer des leurres. Sa ruse demeure concrète : rapprocher quelque chose de comestible, préserver une source de nourriture, profiter d'un objet attirant. La pâtisserie détrempée proposée comme appât laisse voir la limite amusante de ce raisonnement. Il suppose que les goûts des autres ressemblent aux siens, erreur qui peut rendre son piège grotesque sans rendre ses tentacules moins dangereux.[3][6]"
+          ]
+        },
+        {
+          "title": "Reproduction",
+          "body": [
+            "Les deux profils consultés ne donnent pas de cycle de reproduction. Ils décrivent des individus capables de parler, de se nourrir et de combattre, sans indiquer ponte, gestation ou croissance des jeunes. Une fosse ne doit donc pas devenir spontanément une couveuse, ni les déchets se changer en œufs par commodité. Pour une aventure centrée sur une famille d'Otyughs, le créateur doit annoncer qu'il développe ce point au-delà de ces fiches."
+          ]
+        },
+        {
+          "title": "Prédateurs",
+          "body": [
+            "Aucun prédateur habituel n'est nommé. Ses adversaires les mieux définis sont les intrus qu'il tente de saisir et ceux qui veulent l'éliminer d'un lieu occupé. La coopération avec d'autres créatures peut le protéger autant que sa cachette : attaquer l'Otyugh revient alors à détruire leur gardien. Sa dépendance à une réserve de nourriture offre un autre enjeu possible, mais les textes ne fournissent pas de durée de jeûne ni de faiblesse alimentaire automatique.[6]"
+          ]
+        }
+      ]
+    },
+    "reliques": [
+      "Ses trésors sont mêlés aux choses dont personne ne veut. Dans le compendium révisé, n'importe quel type de butin peut accompagner sa présence ; les morceaux brillants ont aussi une fonction d'appât. Cette ambiguïté convient à un monstre qui brouille la distinction entre ressource et rebut. Une trouvaille qui paraît précieuse aux aventuriers peut n'être, pour lui, qu'un outil grossier destiné à faire avancer le prochain repas.[6]",
+      "L'image la plus caractéristique reste ce petit poste d'observation dressé au-dessus de l'immondice. Elle résume une créature à la fois répulsive et patiente, capable de servir les habitants d'un donjon autant que de les inquiéter. L'Otyugh ne demande pas un sanctuaire maudit ni une catastrophe ancienne pour exister. Il lui faut un endroit où l'on jette quelque chose, et où quelqu'un finit par s'approcher."
+    ]
+  },
+  "sources": [
+    {
+      "id": 3,
+      "title": "Otyugh - Monsters - D&D Beyond",
+      "url": "https://www.dndbeyond.com/monsters/16973-otyugh"
+    },
+    {
+      "id": 6,
+      "title": "Otyugh | D&D 2024 | Roll20 Compendium",
+      "url": "https://roll20.net/compendium/dnd5e/Monsters:Otyugh?expansion=33335&iframe=true"
+    }
+  ]
+}
