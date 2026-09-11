@@ -185,24 +185,55 @@
       .filter(Boolean);
   }
 
-  function renderSectionContent(data) {
+  function validSources(sources) {
+    return (Array.isArray(sources) ? sources : []).filter(function (source) {
+      if (!source || !Number.isInteger(source.id) || source.id < 1 || !source.title) return false;
+      try {
+        const url = new URL(source.url);
+        return (url.protocol === "https:" || url.protocol === "http:") && !url.username && !url.password;
+      } catch (_) {
+        return false;
+      }
+    });
+  }
+
+  function renderNoticeText(text, sources) {
+    const ids = new Set(validSources(sources).map(function (source) { return source.id; }));
+    return escapeHtml(text).replace(/\[(\d+)\]/g, function (call, id) {
+      if (!ids.has(Number(id))) return call;
+      const href = window.location.pathname + window.location.search + "#source-" + id;
+      return '<sup class="source-call"><a href="' + escapeHtml(href) + '" aria-label="Source ' + id + '">' + call + '</a></sup>';
+    });
+  }
+
+  function renderSources(sources) {
+    const refs = validSources(sources);
+    if (!refs.length) return "";
+    return '<footer class="notice-sources" aria-labelledby="sources-title"><h3 id="sources-title">Sources et lectures</h3><ol>' +
+      refs.map(function (source) {
+        return '<li id="source-' + source.id + '" value="' + source.id + '"><a href="' + escapeHtml(source.url) +
+          '" target="_blank" rel="noopener noreferrer">' + escapeHtml(source.title) + '</a></li>';
+      }).join("") + '</ol></footer>';
+  }
+
+  function renderSectionContent(data, sources) {
     if (!data) return "";
     if (typeof data === "string") {
-      return "<p>" + escapeHtml(data) + "</p>";
+      return "<p>" + renderNoticeText(data, sources) + "</p>";
     }
     if (Array.isArray(data)) {
       return data.map(function (paragraph) {
-        return "<p>" + escapeHtml(paragraph) + "</p>";
+        return "<p>" + renderNoticeText(paragraph, sources) + "</p>";
       }).join("");
     }
     let html = "";
-    if (data.lead) html += renderSectionContent(data.lead);
+    if (data.lead) html += renderSectionContent(data.lead, sources);
     if (data.parts && data.parts.length) {
       html += data.parts.map(function (part) {
         const body = part.body || part.text;
         if (!part.title && !body) return "";
         return (part.title ? "<h3>" + escapeHtml(part.title) + "</h3>" : "") +
-          renderSectionContent(body);
+          renderSectionContent(body, sources);
       }).join("");
     }
     return html;
@@ -397,8 +428,8 @@
       ? '<div class="notice">' +
           sections.map(function (section) {
             return '<section id="' + section.id + '"><h2>' + escapeHtml(section.title) + "</h2>" +
-              renderSectionContent(section.data) + "</section>";
-          }).join("") +
+              renderSectionContent(section.data, creature.sources) + "</section>";
+          }).join("") + renderSources(creature.sources) +
         "</div>"
       : "";
 
