@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" fill="none">
+  <defs>
+    <radialGradient id="halo"><stop stop-color="#b49a63" stop-opacity=".12"/><stop offset="1" stop-color="#b49a63" stop-opacity="0"/></radialGradient>
+    <g id="wing" stroke-linejoin="round">
+      <path d="M296 241C249 166 162 99 71 120c13 27 17 60 38 88-11 0-23-4-34-8 23 44 67 83 115 87-37 13-65 39-78 77 41 7 71-5 92-21-4 21-1 43 8 61 44-31 70-86 84-135Z" fill="#18251f" stroke-width="1.7"/>
+      <path d="M289 239C228 175 154 148 88 132M292 250C217 209 157 202 109 208M284 261C228 251 173 253 112 235M278 279C239 290 204 319 212 392M269 282C213 279 151 321 123 356"/>
+      <path d="M262 220C218 164 154 136 102 135c29 28 51 52 78 65M263 241C218 213 171 216 142 222c33 22 75 32 111 34M259 294c-42 10-66 33-68 54M242 316c-3 23-12 43-23 59" opacity=".5"/>
+      <path d="M208 212c-5-29-31-44-53-42 1 26 19 48 45 46Z" fill="#b49a63" fill-opacity=".09"/>
+      <ellipse cx="181" cy="192" rx="11" ry="17" transform="rotate(-44 181 192)"/>
+      <path d="m174 194 10-8-1 12ZM193 317c-2-14-12-17-21-10-9 8-5 19 5 20 7 1 12-3 16-10Z" fill="#b49a63" fill-opacity=".3"/>
+      <path d="m119 155 8 8m6-1 8 8m6-1 8 8m-30 64 11 5m1 6 11 4m-9 83 9-7m0 13 10-9m69 22 3-13" opacity=".6"/>
+    </g>
+    <g id="sprig">
+      <path d="M115 428c-43-49-62-102-52-161M86 386c-30-5-43-23-44-41 26 2 41 19 44 41ZM69 346c-24-12-31-31-27-47 20 7 29 25 27 47ZM66 309c-15-15-17-35-8-49 13 14 16 31 8 49ZM99 407c-1-26 9-41 24-47 5 23-4 39-24 47ZM80 369c2-22 12-34 27-38 2 19-8 32-27 38Z"/>
+    </g>
+  </defs>
+  <circle cx="300" cy="245" r="235" fill="url(#halo)"/>
+  <g stroke="#c5aa77">
+    <g opacity=".24"><circle cx="300" cy="245" r="199"/><circle cx="300" cy="245" r="185"/><circle cx="300" cy="245" r="148" stroke-dasharray="2 9"/><path d="M300 20v440M67 245h466M159 104l282 282M159 386l282-282"/><path d="m300 33 9 13-9 13-9-13Zm0 398 9 13-9 13-9-13ZM88 245l13-9 13 9-13 9Zm398 0 13-9 13 9-13 9Z"/></g>
+    <g opacity=".48" stroke-width=".9"><use href="#sprig"/><use href="#sprig" transform="translate(600 0) scale(-1 1)"/></g>
+    <use href="#wing"/><use href="#wing" transform="translate(600 0) scale(-1 1)"/>
+    <g fill="#18251f" stroke-width="1.5"><path d="M294 211c-7 15-6 38-3 58l9 53 9-53c3-20 4-43-3-58Z"/><ellipse cx="300" cy="207" rx="8" ry="11"/><path d="M296 198c-3-22-15-33-27-38m35 38c3-22 15-33 27-38M292 238h16m-16 9h16m-15 9h14m-13 9h12m-11 9h10m-8 9h6"/></g>
+    <g fill="#c5aa77"><circle cx="269" cy="160" r="2"/><circle cx="331" cy="160" r="2"/><path d="m300 83 3 10 10 3-10 3-3 10-3-10-10-3 10-3Zm-151 20 2 6 6 2-6 2-2 6-2-6-6-2 6-2Zm302 0 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z"/></g>
+  </g>
+</svg>

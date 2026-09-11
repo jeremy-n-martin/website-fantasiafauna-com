@@ -4,13 +4,14 @@ const vm = require("vm");
 
 const root = path.join(__dirname, "..");
 const code = fs.readFileSync(path.join(root, "js/creatures-data.js"), "utf8");
-const ctx = { window: {} };
+const ctx = { window: {}, location: { search: "" } };
 vm.runInNewContext(code, ctx);
 const data = ctx.window.FF_DATA;
 const creatures = data.creatures;
 const slugs = new Set();
 const dupes = [];
 const missing = [];
+const factions = new Set();
 
 function fold(value) {
   return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
@@ -19,6 +20,7 @@ function fold(value) {
 creatures.forEach((creature) => {
   if (slugs.has(creature.slug)) dupes.push(creature.slug);
   slugs.add(creature.slug);
+  if (creature.faction) factions.add(creature.faction);
   creature.images.forEach((image) => {
     if (!fs.existsSync(path.join(root, image.src))) missing.push(image.src);
     if (!fs.existsSync(path.join(root, image.thumb))) missing.push(image.thumb);
@@ -34,8 +36,14 @@ console.log(JSON.stringify({
   unique: slugs.size,
   dupes,
   missing: missing.length,
+  factions: factions.size,
   dragons: dragons.length,
   fee: fee.map((c) => c.name),
   fantome: fantome && fantome.name,
   sample: ["/creatures/" + creatures[0].slug, "/creatures/" + creatures[100].slug, "/creatures/" + creatures[339].slug]
 }, null, 2));
+
+if (creatures.length !== 340 || slugs.size !== 340 || factions.size !== 14 ||
+    dupes.length || missing.length) {
+  process.exitCode = 1;
+}

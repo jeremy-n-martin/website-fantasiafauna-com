@@ -10,7 +10,10 @@ data = json.loads(text[start:end])
 creatures = data["creatures"]
 slugs = [c["slug"] for c in creatures]
 missing = []
+factions = set()
 for creature in creatures:
+    if creature.get("faction"):
+        factions.add(creature["faction"])
     for image in creature["images"]:
         for key in ("src", "thumb"):
             path = root / image[key]
@@ -19,6 +22,12 @@ for creature in creatures:
 
 print("creatures", len(creatures))
 print("unique_slugs", len(set(slugs)))
+print("factions", len(factions), sorted(factions))
 print("thumbs", len(list((root / "thumbs").glob("*.png"))))
 print("missing", len(missing))
 print("apostrophe", [c["name"] for c in creatures if "'" in c["name"]])
+
+assert len(creatures) == 340
+assert len(set(slugs)) == len(creatures)
+assert len(factions) == 14
+assert not missing

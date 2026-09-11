@@ -15,6 +15,7 @@ IMG = ROOT / "img"
 THUMBS = ROOT / "thumbs"
 DATA_JS = ROOT / "js" / "creatures-data.js"
 REPORT = ROOT / "data" / "associations.md"
+FACTIONS_JSON = ROOT / "data" / "factions.json"
 THUMB_SIZE = 240
 
 
@@ -41,7 +42,33 @@ def search_key(name: str) -> str:
     return strip_accents(name).lower()
 
 
+def ground_anchor(image: Image.Image) -> dict[str, float]:
+    """Estime le point de contact depuis les pixels opaques de l'illustration."""
+    alpha = image.getchannel("A")
+    bbox = alpha.point(lambda value: 255 if value > 24 else 0).getbbox()
+    if not bbox:
+        return {"x": 0.5, "y": 0.92}
+
+    left, top, right, bottom = bbox
+    width, height = image.size
+    contact_top = max(top, bottom - max(2, round((bottom - top) * 0.08)))
+    contact = []
+    pixels = alpha.load()
+    for y in range(contact_top, bottom):
+        for x in range(left, right):
+            if pixels[x, y] > 24:
+                contact.append(x)
+
+    x = sum(contact) / len(contact) if contact else (left + right) / 2
+    return {
+        "x": round(max(0.08, min(0.92, x / width)), 4),
+        "y": round(max(0.55, min(0.98, bottom / height)), 4),
+    }
+
+
 def main() -> None:
+    faction_payload = json.loads(FACTIONS_JSON.read_text(encoding="utf-8"))
+    factions: dict[str, str] = faction_payload["factions"]
     files = sorted(p for p in IMG.iterdir() if p.is_file() and p.suffix.lower() == ".png")
     pat = re.compile(r"^(.*) (\d+)\.png$", re.I)
     groups: dict[str, dict[int, Path]] = defaultdict(dict)
@@ -89,14 +116,24 @@ def main() -> None:
             thumb_path = THUMBS / thumb_name
             im = Image.open(src).convert("RGBA")
             im.resize((THUMB_SIZE, THUMB_SIZE), Image.Resampling.NEAREST).save(thumb_path, "PNG")
-            images.append({"src": rel.replace("\\", "/"), "thumb": f"thumbs/{thumb_name}"})
+            images.append(
+                {
+                    "src": rel.replace("\\", "/"),
+                    "thumb": f"thumbs/{thumb_name}",
+                    "ground": ground_anchor(im),
+                }
+            )
 
+        faction = factions.get(slug)
+        if not faction:
+            ambiguous.append(f"- « {name} » : faction absente.")
         creatures.append(
             {
                 "id": slug,
                 "name": name,
                 "slug": slug,
                 "search": search_key(name),
+                "faction": faction or "",
                 "images": images,
             }
         )

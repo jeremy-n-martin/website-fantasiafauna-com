@@ -1,6 +1,7 @@
 (function () {
   const data = window.FF_DATA || { creatures: [] };
   const notices = window.FF_NOTICES || {};
+  const fiches = window.FF_FICHES || {};
   const app = document.getElementById("app");
   const dialog = document.getElementById("viewer");
   const dialogImage = document.getElementById("viewer-image");
@@ -8,12 +9,11 @@
   const catalogNav = document.getElementById("nav-catalog");
 
   const sectionDefs = [
-    { keys: ["presentation", "présentation"], title: "Présentation", id: "presentation" },
-    { keys: ["apparence", "appearance"], title: "Apparence", id: "apparence" },
-    { keys: ["origines", "origins"], title: "Origines et traditions", id: "origines" },
-    { keys: ["capacites", "capacités", "abilities"], title: "Capacités et particularités", id: "capacites" },
-    { keys: ["variantes", "variants"], title: "Variantes et représentations", id: "variantes" },
-    { keys: ["sources"], title: "Sources", id: "sources" }
+    { keys: ["fascination", "presentation", "présentation"], title: "Pourquoi cette terreur fascine", id: "fascination" },
+    { keys: ["legendes", "légendes", "origines", "origins"], title: "La créature dans les légendes", id: "legendes" },
+    { keys: ["anomalies", "capacites", "capacités", "abilities"], title: "Le cabinet des anomalies", id: "anomalies" },
+    { keys: ["naturelle", "histoire-naturelle"], title: "Histoire naturelle", id: "naturelle" },
+    { keys: ["reliques", "trivia", "sources"], title: "Reliques et curiosités", id: "reliques" }
   ];
 
   const creatures = (data.creatures || []).map(function (entry) {
@@ -41,6 +41,31 @@
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
+  }
+
+  function dangerDots(level) {
+    const n = Math.max(1, Math.min(5, Number(level) || 1));
+    return '<span class="danger-dots" aria-label="Danger ' + n + ' sur 5">' +
+      "●".repeat(n) + "○".repeat(5 - n) +
+      "</span>";
+  }
+
+  function dossierHtml(creature) {
+    const fiche = fiches[creature.slug];
+    if (!fiche) return "";
+    const rows = [
+      ["Nom", escapeHtml(fiche.nom || creature.name)],
+      ["Accroche", "«&nbsp;" + escapeHtml(fiche.accroche) + "&nbsp;»"],
+      ["Origine", escapeHtml(fiche.origine)],
+      ["Tradition", escapeHtml(fiche.tradition)],
+      ["Famille", escapeHtml(fiche.famille)],
+      ["Danger", dangerDots(fiche.danger)],
+      ["Habitat imaginaire", escapeHtml(fiche.habitat)],
+      ["Trait remarquable", escapeHtml(fiche.trait)]
+    ];
+    return '<dl class="dossier">' + rows.map(function (row) {
+      return "<div><dt>" + row[0] + "</dt><dd>" + row[1] + "</dd></div>";
+    }).join("") + "</dl>";
   }
 
   function assetUrl(path) {
@@ -151,13 +176,36 @@
     const source = creature.sections || {};
     return sectionDefs
       .map(function (def) {
-        let text = "";
+        let data = null;
         def.keys.forEach(function (key) {
-          if (!text && source[key]) text = source[key];
+          if (!data && source[key]) data = source[key];
         });
-        return text ? { id: def.id, title: def.title, text: text } : null;
+        return data ? { id: def.id, title: def.title, data: data } : null;
       })
       .filter(Boolean);
+  }
+
+  function renderSectionContent(data) {
+    if (!data) return "";
+    if (typeof data === "string") {
+      return "<p>" + escapeHtml(data) + "</p>";
+    }
+    if (Array.isArray(data)) {
+      return data.map(function (paragraph) {
+        return "<p>" + escapeHtml(paragraph) + "</p>";
+      }).join("");
+    }
+    let html = "";
+    if (data.lead) html += renderSectionContent(data.lead);
+    if (data.parts && data.parts.length) {
+      html += data.parts.map(function (part) {
+        const body = part.body || part.text;
+        if (!part.title && !body) return "";
+        return (part.title ? "<h3>" + escapeHtml(part.title) + "</h3>" : "") +
+          renderSectionContent(body);
+      }).join("");
+    }
+    return html;
   }
 
   function imageTag(path, className, alt, lazy, size) {
@@ -173,14 +221,13 @@
     );
   }
 
-  function atmospherePlate() {
+  function foilWrap(path, innerHtml, className) {
+    if (!path) return innerHtml;
+    const cls = className || "creature-foil";
     return (
-      '<svg class="plate-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">' +
-        '<path class="plate-corner" d="M16 1.8H1.8V16"/>' +
-        '<path class="plate-corner" d="M84 1.8H98.2V16"/>' +
-        '<path class="plate-corner" d="M16 98.2H1.8V84"/>' +
-        '<path class="plate-corner" d="M84 98.2H98.2V84"/>' +
-      "</svg>"
+      '<span class="' + cls + '" style="--foil:url(\'' + escapeHtml(assetUrl(path)) + '\')">' +
+        innerHtml +
+      "</span>"
     );
   }
 
@@ -189,13 +236,13 @@
       return (
         '<div class="empty" role="status">' +
           '<svg viewBox="0 0 200 120" aria-hidden="true">' +
-            '<g fill="none" stroke="#BCE5C8" stroke-width="1.15" stroke-linecap="round">' +
+            '<g fill="none" stroke="#D2B48C" stroke-width="1.15" stroke-linecap="round">' +
               '<path d="M58 78c8-28 28-46 42-46s34 18 42 46" opacity=".85"/>' +
               '<path d="M70 78c6-16 16-26 30-26s24 10 30 26" opacity=".4"/>' +
-              '<circle cx="88" cy="52" r="2.6" fill="#BCE5C8" stroke="none">' +
+              '<circle cx="88" cy="52" r="2.6" fill="#D2B48C" stroke="none">' +
                 '<animate attributeName="opacity" values=".35;1;.35" dur="2.6s" repeatCount="indefinite"/>' +
               "</circle>" +
-              '<circle cx="112" cy="52" r="2.6" fill="#BCE5C8" stroke="none">' +
+              '<circle cx="112" cy="52" r="2.6" fill="#D2B48C" stroke="none">' +
                 '<animate attributeName="opacity" values=".35;1;.35" dur="2.6s" begin=".4s" repeatCount="indefinite"/>' +
               "</circle>" +
             "</g>" +
@@ -210,27 +257,20 @@
       '<div class="catalog-grid">' +
         list.map(function (creature, position) {
           const thumb = creature.images && creature.images[0] ? creature.images[0].thumb : "";
-          const cat = creature.category
-            ? '<span class="plate-cat">' + escapeHtml(creature.category) + "</span>"
-            : "";
           return (
             '<a class="plate" href="/creatures/' + encodeURIComponent(creature.slug) + '">' +
-              '<span class="plate-scene">' +
-                atmospherePlate() +
-                (window.FFScenes && window.FFScenes.has(creature.slug)
-                  ? window.FFScenes.markup(creature, 0, {
-                      mode: "lite",
-                      src: escapeHtml(assetUrl(thumb)),
-                      alt: "",
-                      lazy: position >= 8,
-                      size: 240
-                    })
-                  : imageTag(thumb, "sprite", "", position >= 8, 240)) +
-              "</span>" +
-              '<span class="plate-meta">' +
-                '<span class="plate-index">' + padIndex(creature.index + 1) + "</span>" +
-                '<h2 class="plate-name">' + escapeHtml(creature.name) + "</h2>" +
-                cat +
+              '<span class="plate-case">' +
+                '<span class="plate-bezel">' +
+                  '<span class="plate-scene">' +
+                    '<img class="specimen-frame" src="/img/ornaments/specimen-frame.svg?v=3" alt="" aria-hidden="true" width="300" height="300" loading="lazy">' +
+                    foilWrap(thumb, imageTag(thumb, "sprite", "", position >= 8, 240)) +
+                  "</span>" +
+                "</span>" +
+                '<span class="plate-label">' +
+                  '<span class="plate-index">' + padIndex(creature.index + 1) + "</span>" +
+                  '<h2 class="plate-name">' + escapeHtml(creature.name) + "</h2>" +
+                  '<svg class="plate-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>' +
+                "</span>" +
               "</span>" +
             "</a>"
           );
@@ -252,13 +292,22 @@
     catalogNav.setAttribute("aria-current", "page");
 
     app.innerHTML =
-      '<section class="catalog-intro">' +
-        "<div>" +
-          '<p class="kicker">Bestiaire</p>' +
-          '<h1 class="catalog-title"><em>Le fantastique,</em><br>espèce par espèce.</h1>' +
-        "</div>" +
-        '<p class="census"><b>' + creatures.length + "</b> créatures</p>" +
-      "</section>" +
+      '<section class="catalog-intro" aria-labelledby="catalog-title">' +
+        '<div class="intro-copy">' +
+          '<p class="kicker"><span aria-hidden="true">✧</span> Cabinet de curiosités</p>' +
+          '<h1 class="catalog-brand" id="catalog-title">Le fantastique,<br><em>espèce par espèce.</em></h1>' +
+          '<p class="catalog-lead">Un bestiaire illustré aux frontières du mythe et de l’imaginaire. Entrez, observez, laissez-vous surprendre.</p>' +
+          '<a class="explore-link" href="#catalog-form">Explorer le bestiaire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>' +
+        '</div>' +
+        '<figure class="atlas-figure">' +
+          '<img src="/img/ornaments/moth-atlas.svg" width="600" height="500" alt="Gravure dorée d’un papillon imaginaire, entouré de cercles célestes et de feuillages">' +
+          '<figcaption><span aria-hidden="true">—</span> Les merveilles prennent forme <span aria-hidden="true">—</span></figcaption>' +
+        '</figure>' +
+      '</section>' +
+      '<div class="collection-heading">' +
+        '<div><p class="kicker">Les archives de l’imaginaire</p><h2>La collection</h2></div>' +
+        '<p class="census"><b>' + creatures.length + '</b> créatures à découvrir</p>' +
+      '</div>' +
       '<form class="toolbar" role="search" id="catalog-form">' +
         '<div class="search">' +
           '<label for="q">Recherche</label>' +
@@ -286,7 +335,6 @@
         "</div>" +
       "</form>" +
       '<div id="catalog-results">' + renderGrid(list) + "</div>";
-    if (window.FFScenes) window.FFScenes.mount(app);
     pauseMotion();
   }
 
@@ -308,33 +356,7 @@
     if (sort) sort.value = route.sort;
     const reset = document.getElementById("reset-filters");
     if (reset) reset.hidden = !route.q && route.sort === "az";
-    if (window.FFScenes) {
-      window.FFScenes.destroyAll();
-      window.FFScenes.mount(results);
-    }
     pauseMotion();
-  }
-
-  function exhibitLight() {
-    return (
-      '<svg class="exhibit-light" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">' +
-        '<defs>' +
-          '<radialGradient id="beam" cx="50%" cy="38%" r="55%">' +
-            '<stop offset="0%" stop-color="#BCE5C8" stop-opacity="0.26"/>' +
-            '<stop offset="48%" stop-color="#191D20" stop-opacity="0.04"/>' +
-            '<stop offset="100%" stop-color="#101214" stop-opacity="0"/>' +
-          "</radialGradient>" +
-        "</defs>" +
-        '<circle class="beam" cx="200" cy="158" r="158" fill="url(#beam)"></circle>' +
-        '<circle class="ring" cx="200" cy="200" r="172"></circle>' +
-        '<circle class="ring ring-b" cx="200" cy="200" r="128"></circle>' +
-        '<circle class="ring ring-c" cx="200" cy="200" r="96"></circle>' +
-        '<circle class="mote" cx="132" cy="96" r="1.6"></circle>' +
-        '<circle class="mote" cx="268" cy="118" r="1.2"></circle>' +
-        '<circle class="mote" cx="300" cy="210" r="1.4"></circle>' +
-        '<circle class="mote" cx="108" cy="230" r="1.1"></circle>' +
-      "</svg>"
-    );
   }
 
   function renderCreature(slug) {
@@ -345,8 +367,8 @@
     }
     catalogNav.removeAttribute("aria-current");
     const images = creature.images || [];
-    if (activeImage >= images.length) activeImage = 0;
-    const current = images[activeImage] || {};
+    activeImage = 0;
+    const current = images[0] || {};
     const sections = sectionsOf(creature);
     const back = sessionStorage.getItem("ff-catalog") || "/";
     const prev = creatures[(creature.index - 1 + creatures.length) % creatures.length];
@@ -354,23 +376,14 @@
     const desc = creature.description || "Fiche de " + creature.name + " dans le bestiaire Fantasia Fauna.";
     setTitle(creature.name + " — Fantasia Fauna", desc);
 
+    const dossier = dossierHtml(creature);
     const metaItems = [];
-    if (creature.category) {
+    if (!dossier && creature.category) {
       metaItems.push("<li><span>Catégorie</span>" + escapeHtml(creature.category) + "</li>");
     }
-    if (creature.origin) {
+    if (!dossier && creature.origin) {
       metaItems.push("<li><span>Origine</span>" + escapeHtml(creature.origin) + "</li>");
     }
-    metaItems.push("<li><span>Vues</span>" + images.length + " représentation" + (images.length > 1 ? "s" : "") + "</li>");
-
-    const views = images.map(function (image, i) {
-      return (
-        '<button class="view-btn" type="button" data-view="' + i + '" aria-pressed="' + (i === activeImage) + '">' +
-          imageTag(image.thumb || image.src, "", creature.name + ", vue " + (i + 1), true, 84) +
-          '<span class="view-caption">Vue ' + (i + 1) + "</span>" +
-        "</button>"
-      );
-    }).join("");
 
     const toc = sections.length
       ? '<nav class="toc" aria-label="Sommaire">' +
@@ -383,22 +396,17 @@
     const noticeHtml = sections.length
       ? '<div class="notice">' +
           sections.map(function (section) {
-            return '<section id="' + section.id + '"><h2>' + escapeHtml(section.title) + "</h2><p>" +
-              escapeHtml(section.text) + "</p></section>";
+            return '<section id="' + section.id + '"><h2>' + escapeHtml(section.title) + "</h2>" +
+              renderSectionContent(section.data) + "</section>";
           }).join("") +
         "</div>"
       : "";
 
-    const motionOn = !(window.FFScenes && window.FFScenes.isPaused());
-    const staged = window.FFScenes && window.FFScenes.has(creature.slug)
-      ? window.FFScenes.markup(creature, activeImage, {
-          mode: "full",
-          src: escapeHtml(assetUrl(current.src)),
-          alt: escapeHtml(creature.name + ", vue " + (activeImage + 1)),
-          size: 480,
-          zoomClass: "exhibit-sprite"
-        })
-      : exhibitLight() + imageTag(current.src, "exhibit-sprite", creature.name + ", vue " + (activeImage + 1), false, 480);
+    const staged = foilWrap(
+      current.src,
+      imageTag(current.src, "exhibit-sprite", creature.name, false, 480),
+      "creature-foil exhibit-foil"
+    );
 
     const undocumented = !creature.description && !sections.length
       ? '<p class="undocumented">Notice encore à documenter.</p>'
@@ -410,33 +418,27 @@
         "<span aria-hidden=\"true\">/</span>" +
         "<span>" + escapeHtml(creature.name) + "</span>" +
       "</nav>" +
-      '<article class="sheet' + (sections.length ? " has-toc" : "") + '">' +
+      '<div class="creature' + (sections.length ? " has-reading" : "") + '">' +
         '<figure class="exhibit">' +
           '<div class="exhibit-well">' +
+            '<img class="specimen-frame" src="/img/ornaments/specimen-frame.svg?v=3" alt="" aria-hidden="true" width="300" height="300">' +
             staged +
-            '<div class="exhibit-tools">' +
-              (window.FFScenes && window.FFScenes.has(creature.slug)
-                ? '<button class="quiet" type="button" id="toggle-motion" aria-pressed="' + motionOn + '">Animations</button>'
-                : "") +
-              '<button class="exhibit-zoom quiet" type="button" id="open-viewer">Agrandir</button>' +
-            "</div>" +
           "</div>" +
-          '<div class="views" role="group" aria-label="Choisir une vue">' + views + "</div>" +
         "</figure>" +
         '<div class="sheet-copy">' +
           "<h1>" + escapeHtml(creature.name) + "</h1>" +
+          dossier +
           (metaItems.length ? '<ul class="meta-list">' + metaItems.join("") + "</ul>" : "") +
           (creature.description ? '<p class="lede">' + escapeHtml(creature.description) + "</p>" : "") +
           undocumented +
         "</div>" +
+        noticeHtml +
         toc +
-      "</article>" +
-      noticeHtml +
+      "</div>" +
       '<nav class="pager" aria-label="Créatures voisines">' +
         '<a href="/creatures/' + encodeURIComponent(prev.slug) + '"><small>Précédente</small><strong>' + escapeHtml(prev.name) + "</strong></a>" +
         '<a class="next" href="/creatures/' + encodeURIComponent(next.slug) + '"><small>Suivante</small><strong>' + escapeHtml(next.name) + "</strong></a>" +
       "</nav>";
-    if (window.FFScenes) window.FFScenes.mount(app);
     pauseMotion();
   }
 
@@ -446,15 +448,15 @@
     app.innerHTML =
       '<div class="notfound">' +
         '<svg viewBox="0 0 128 128" aria-hidden="true">' +
-          '<g fill="none" stroke="#BCE5C8" stroke-linecap="round" stroke-linejoin="round">' +
+          '<g fill="none" stroke="#D2B48C" stroke-linecap="round" stroke-linejoin="round">' +
             '<circle cx="64" cy="64" r="48" stroke-width="1" opacity=".18">' +
               '<animate attributeName="r" values="46;50;46" dur="6s" repeatCount="indefinite"/>' +
             "</circle>" +
             '<path stroke-width="1.35" opacity=".85" d="M40 84c8-28 16-46 24-46 8 0 10 14 16 14s10-14 18-14c8 0 14 20 18 46"/>' +
             '<path stroke-width="1.1" opacity=".4" d="M48 84c6-16 12-24 16-24s8 10 12 10 8-10 12-10 10 8 16 24"/>' +
             '<g class="lost-eye">' +
-              '<circle cx="54" cy="58" r="2.4" fill="#BCE5C8" stroke="none"/>' +
-              '<circle cx="74" cy="58" r="2.4" fill="#BCE5C8" stroke="none"/>' +
+              '<circle cx="54" cy="58" r="2.4" fill="#D2B48C" stroke="none"/>' +
+              '<circle cx="74" cy="58" r="2.4" fill="#D2B48C" stroke="none"/>' +
             "</g>" +
           "</g>" +
         "</svg>" +
@@ -470,10 +472,10 @@
     if (route.name !== "creature") return;
     const creature = bySlug[route.slug];
     if (!creature || !creature.images || !creature.images[activeImage]) return;
-    viewerTrigger = document.getElementById("open-viewer") || document.activeElement;
-    dialogTitle.textContent = creature.name + " — vue " + (activeImage + 1);
+    viewerTrigger = document.activeElement;
+    dialogTitle.textContent = creature.name;
     dialogImage.src = assetUrl(creature.images[activeImage].src);
-    dialogImage.alt = creature.name + ", vue " + (activeImage + 1);
+    dialogImage.alt = creature.name;
     if (typeof dialog.showModal === "function") {
       dialog.showModal();
     }
@@ -490,7 +492,6 @@
   }
 
   function render() {
-    if (window.FFScenes) window.FFScenes.destroyAll();
     const route = routeFromLocation();
     if (route.name === "catalog") {
       if (viewName === "catalog" && document.getElementById("catalog-form")) {
@@ -519,27 +520,10 @@
   }
 
   document.addEventListener("click", function (event) {
-    const zoom = event.target.closest("#open-viewer, .exhibit-sprite");
+    const zoom = event.target.closest(".exhibit-sprite");
     if (zoom && app.contains(zoom)) {
       event.preventDefault();
       openViewer();
-      return;
-    }
-    const viewBtn = event.target.closest("[data-view]");
-    if (viewBtn) {
-      activeImage = Number(viewBtn.getAttribute("data-view")) || 0;
-      const route = routeFromLocation();
-      if (route.name === "creature") {
-        if (window.FFScenes) window.FFScenes.destroyAll();
-        renderCreature(route.slug);
-      }
-      return;
-    }
-    const motionBtn = event.target.closest("#toggle-motion");
-    if (motionBtn && window.FFScenes) {
-      const next = !document.documentElement.classList.contains("ff-pause-motion");
-      window.FFScenes.setPaused(next);
-      motionBtn.setAttribute("aria-pressed", String(!next));
       return;
     }
     const randomBtn = event.target.closest("#random-btn");
@@ -558,6 +542,7 @@
     if (url.origin !== location.origin) return;
     if (/\.[a-z0-9]+$/i.test(url.pathname) && url.pathname !== "/index.html") return;
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (url.hash && url.pathname === location.pathname && url.search === location.search) return;
     event.preventDefault();
     const current = routeFromLocation();
     if (current.name === "catalog" && url.pathname.indexOf("/creatures/") === 0) {
