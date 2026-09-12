@@ -7,13 +7,14 @@
   const dialogImage = document.getElementById("viewer-image");
   const dialogTitle = document.getElementById("viewer-title");
   const catalogNav = document.getElementById("nav-catalog");
+  const initialUrl = location.href;
 
   const sectionDefs = [
-    { keys: ["fascination", "presentation", "présentation"], title: "Pourquoi cette terreur fascine", id: "fascination" },
-    { keys: ["legendes", "légendes", "origines", "origins"], title: "La créature dans les légendes", id: "legendes" },
-    { keys: ["anomalies", "capacites", "capacités", "abilities"], title: "Le cabinet des anomalies", id: "anomalies" },
+    { keys: ["fascination", "presentation", "présentation"], title: "Présentation", id: "fascination" },
+    { keys: ["legendes", "légendes", "origines", "origins"], title: "Mythes et origines", id: "legendes" },
+    { keys: ["anomalies", "capacites", "capacités", "abilities"], title: "Particularités", id: "anomalies" },
     { keys: ["naturelle", "histoire-naturelle"], title: "Histoire naturelle", id: "naturelle" },
-    { keys: ["reliques", "trivia", "sources"], title: "Reliques et curiosités", id: "reliques" }
+    { keys: ["reliques", "trivia", "sources"], title: "Héritage et curiosités", id: "reliques" }
   ];
 
   const creatures = (data.creatures || []).map(function (entry) {
@@ -32,6 +33,7 @@
   });
 
   let viewName = "";
+  let renderedLocation = "";
   let activeImage = 0;
   let viewerTrigger = null;
 
@@ -54,8 +56,6 @@
     const fiche = fiches[creature.slug];
     if (!fiche) return "";
     const rows = [
-      ["Nom", escapeHtml(fiche.nom || creature.name)],
-      ["Accroche", "«&nbsp;" + escapeHtml(fiche.accroche) + "&nbsp;»"],
       ["Origine", escapeHtml(fiche.origine)],
       ["Tradition", escapeHtml(fiche.tradition)],
       ["Famille", escapeHtml(fiche.famille)],
@@ -98,7 +98,11 @@
       };
     }
     if (match) {
-      return { name: "creature", slug: decodeURIComponent(match[1]) };
+      try {
+        return { name: "creature", slug: decodeURIComponent(match[1]) };
+      } catch (_) {
+        return { name: "notfound" };
+      }
     }
     return { name: "notfound" };
   }
@@ -118,13 +122,15 @@
   }
 
   function go(href, mode) {
-    const url = new URL(href, location.origin);
+    const previousPath = location.pathname;
+    const url = new URL(href, location.href);
     if (mode === "replace") {
-      history.replaceState({}, "", url.pathname + url.search);
+      history.replaceState({}, "", url.pathname + url.search + url.hash);
     } else {
-      history.pushState({}, "", url.pathname + url.search);
+      history.pushState({}, "", url.pathname + url.search + url.hash);
     }
     render();
+    if (previousPath !== location.pathname) app.focus({ preventScroll: true });
   }
 
   function setTitle(title, description) {
@@ -216,7 +222,11 @@
       }).join("") + '</ol></footer>';
   }
 
-  function renderSectionContent(data, sources) {
+  function naturalPartId(part) {
+    return "naturelle-" + fold(String(part.title || "")).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  }
+
+  function renderSectionContent(data, sources, sectionId) {
     if (!data) return "";
     if (typeof data === "string") {
       return "<p>" + renderNoticeText(data, sources) + "</p>";
@@ -232,7 +242,8 @@
       html += data.parts.map(function (part) {
         const body = part.body || part.text;
         if (!part.title && !body) return "";
-        return (part.title ? "<h3>" + escapeHtml(part.title) + "</h3>" : "") +
+        const id = sectionId === "naturelle" ? ' id="' + naturalPartId(part) + '"' : "";
+        return (part.title ? "<h3" + id + ">" + escapeHtml(part.title) + "</h3>" : "") +
           renderSectionContent(body, sources);
       }).join("");
     }
@@ -417,10 +428,15 @@
     }
 
     const toc = sections.length
-      ? '<nav class="toc" aria-label="Sommaire">' +
+      ? '<nav class="toc" aria-label="Sommaire"><h2 class="toc-title">Dans cette notice</h2>' +
           sections.map(function (section) {
-            return '<a href="#' + section.id + '">' + escapeHtml(section.title) + "</a>";
+            const parts = section.id === "naturelle" && section.data.parts ? section.data.parts : [];
+            return '<a href="#' + section.id + '">' + escapeHtml(section.title) + "</a>" +
+              parts.filter(function (part) { return part.title; }).map(function (part) {
+                return '<a class="toc-sub" href="#' + naturalPartId(part) + '">' + escapeHtml(part.title) + '</a>';
+              }).join("");
           }).join("") +
+          (validSources(creature.sources).length ? '<a href="#sources-title">Sources et lectures</a>' : "") +
         "</nav>"
       : "";
 
@@ -428,7 +444,7 @@
       ? '<div class="notice">' +
           sections.map(function (section) {
             return '<section id="' + section.id + '"><h2>' + escapeHtml(section.title) + "</h2>" +
-              renderSectionContent(section.data, creature.sources) + "</section>";
+              renderSectionContent(section.data, creature.sources, section.id) + "</section>";
           }).join("") + renderSources(creature.sources) +
         "</div>"
       : "";
@@ -455,16 +471,17 @@
             '<img class="specimen-frame" src="/img/ornaments/specimen-frame.svg?v=3" alt="" aria-hidden="true" width="300" height="300">' +
             staged +
           "</div>" +
+          (current.src ? '<button class="exhibit-zoom" type="button" aria-haspopup="dialog" aria-controls="viewer" aria-label="Agrandir l’illustration de ' + escapeHtml(creature.name) + '">Agrandir l’illustration</button>' : "") +
         "</figure>" +
         '<div class="sheet-copy">' +
           "<h1>" + escapeHtml(creature.name) + "</h1>" +
+          (creature.description ? '<p class="lede">' + escapeHtml(creature.description) + "</p>" : "") +
           dossier +
           (metaItems.length ? '<ul class="meta-list">' + metaItems.join("") + "</ul>" : "") +
-          (creature.description ? '<p class="lede">' + escapeHtml(creature.description) + "</p>" : "") +
           undocumented +
         "</div>" +
-        noticeHtml +
         toc +
+        noticeHtml +
       "</div>" +
       '<nav class="pager" aria-label="Créatures voisines">' +
         '<a href="/creatures/' + encodeURIComponent(prev.slug) + '"><small>Précédente</small><strong>' + escapeHtml(prev.name) + "</strong></a>" +
@@ -522,7 +539,27 @@
     go("/creatures/" + encodeURIComponent(pick.slug));
   }
 
+  function scrollToFragment() {
+    if (!location.hash) return;
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (_) { return; }
+    const target = document.getElementById(id);
+    if (target) target.scrollIntoView();
+  }
+
   function render() {
+    const key = location.pathname + location.search;
+    // Native fragment navigation (including history traversal) keeps the
+    // rendered document and the browser's scroll/focus behavior intact.
+    if (key === renderedLocation) return;
+    renderedLocation = key;
+    renderRoute();
+    // Direct URLs, reloads and pushState destinations need the target to
+    // exist before scrolling; same-document links remain entirely native.
+    scrollToFragment();
+  }
+
+  function renderRoute() {
     const route = routeFromLocation();
     if (route.name === "catalog") {
       if (viewName === "catalog" && document.getElementById("catalog-form")) {
@@ -551,7 +588,8 @@
   }
 
   document.addEventListener("click", function (event) {
-    const zoom = event.target.closest(".exhibit-sprite");
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const zoom = event.target.closest(".exhibit-zoom, .exhibit-sprite");
     if (zoom && app.contains(zoom)) {
       event.preventDefault();
       openViewer();
@@ -569,18 +607,19 @@
     }
     const link = event.target.closest("a[href]");
     if (!link) return;
-    const url = new URL(link.getAttribute("href"), location.origin);
+    if (link.hasAttribute("download") || (link.target && link.target.toLowerCase() !== "_self")) return;
+    const url = new URL(link.getAttribute("href"), location.href);
     if (url.origin !== location.origin) return;
     if (/\.[a-z0-9]+$/i.test(url.pathname) && url.pathname !== "/index.html") return;
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    if (url.hash && url.pathname === location.pathname && url.search === location.search) return;
+    if ((url.hash || url.href.endsWith("#")) && url.pathname === location.pathname && url.search === location.search) return;
     event.preventDefault();
     const current = routeFromLocation();
     if (current.name === "catalog" && url.pathname.indexOf("/creatures/") === 0) {
       rememberCatalog(current);
       sessionStorage.setItem("ff-restore", "1");
     }
-    go(url.pathname + url.search);
+    go(url.pathname + url.search + url.hash);
   });
 
   document.addEventListener("submit", function (event) {
@@ -612,7 +651,18 @@
   });
 
   document.getElementById("viewer-close").addEventListener("click", closeViewer);
-  history.scrollRestoration = "manual";
+  history.scrollRestoration = "auto";
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted || !location.hash || location.href !== initialUrl) return;
+    // Reload restoration runs after the initial render. Wait until it has
+    // finished, and until web fonts settle, before honoring the deep link.
+    const ready = document.fonts ? document.fonts.ready : Promise.resolve();
+    ready.then(function () {
+      window.setTimeout(function () {
+        if (location.href === initialUrl) scrollToFragment();
+      }, 0);
+    });
+  });
   window.addEventListener("popstate", function () {
     sessionStorage.setItem("ff-restore", "1");
     render();

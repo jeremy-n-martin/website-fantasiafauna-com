@@ -34,6 +34,30 @@ assert.equal(doc.querySelectorAll(".notice script").length, 0);
 assert.equal(doc.querySelectorAll(".notice > section").length, 5);
 assert.deepEqual(Array.from(doc.querySelectorAll("#naturelle h3"), n => n.textContent),
   ["Comportement", "Habitat", "Alimentation", "Intelligence", "Reproduction", "Prédateurs"]);
+assert.deepEqual(Array.from(doc.querySelectorAll('.notice > section > h2'), n => n.textContent),
+  ['Présentation', 'Mythes et origines', 'Particularités', 'Histoire naturelle', 'Héritage et curiosités']);
+assert.ok(doc.querySelector('.toc-title'));
+assert.ok(doc.querySelector('.toc').compareDocumentPosition(doc.querySelector('.notice')) & win.Node.DOCUMENT_POSITION_FOLLOWING);
+assert.equal(doc.querySelector('.toc a[href="#sources-title"]').textContent, 'Sources et lectures');
+for (const heading of doc.querySelectorAll('#naturelle h3')) {
+  assert.match(heading.id, /^naturelle-[a-z-]+$/);
+  assert.equal(doc.querySelector('.toc-sub[href="#' + heading.id + '"]').textContent, heading.textContent);
+}
+assert.ok(doc.querySelector('.lede').compareDocumentPosition(doc.querySelector('.dossier')) & win.Node.DOCUMENT_POSITION_FOLLOWING);
+assert.deepEqual(Array.from(doc.querySelectorAll('.dossier dt'), n => n.textContent),
+  ['Origine', 'Tradition', 'Famille', 'Danger', 'Habitat imaginaire', 'Trait remarquable']);
+const zoom = doc.querySelector('button.exhibit-zoom');
+assert.ok(zoom);
+assert.ok(zoom.getAttribute('aria-label').includes('Agrandir'));
+const dialog = doc.querySelector('#viewer');
+dialog.showModal = () => { dialog.open = true; };
+dialog.close = () => { dialog.open = false; dialog.dispatchEvent(new win.Event('close')); };
+zoom.focus(); zoom.click();
+assert.equal(dialog.open, true);
+assert.equal(doc.querySelector('#viewer-image').alt, win.FF_DATA.creatures.find(c => c.slug === 'tyrannoeil').name);
+doc.querySelector('#viewer-close').click();
+assert.equal(dialog.open, false);
+assert.equal(doc.activeElement, zoom);
 citation.click();
 assert.equal(win.location.pathname, "/creatures/tyrannoeil", "Clicking a citation must not route to the catalogue");
 console.log("PASS: citations, source links, text escaping, five sections and six natural-history headings");

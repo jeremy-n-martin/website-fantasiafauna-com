@@ -4,72 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Fantasia Fauna — musée numérique du fantastique.">
+  <meta name="theme-color" content="#234e3c">
   <title>Fantasia Fauna</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&family=Yanone+Kaffeesatz:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/site.css?v=layout2">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css?v=editorial4">
 </head>
 <body>
   <a class="skip" href="#app">Aller au contenu</a>
-
-  <svg class="atmosphere" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <defs>
-      <radialGradient id="glow-a" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#D2B48C" stop-opacity="0.2"/>
-        <stop offset="100%" stop-color="#D2B48C" stop-opacity="0"/>
-      </radialGradient>
-      <radialGradient id="glow-b" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#F2E8D5" stop-opacity="0.08"/>
-        <stop offset="100%" stop-color="#F2E8D5" stop-opacity="0"/>
-      </radialGradient>
-      <filter id="soft">
-        <feGaussianBlur stdDeviation="32"/>
-      </filter>
-    </defs>
-    <ellipse class="glow" cx="240" cy="120" rx="280" ry="190" fill="url(#glow-a)" filter="url(#soft)"/>
-    <ellipse class="glow glow-b" cx="1220" cy="90" rx="260" ry="180" fill="url(#glow-b)" filter="url(#soft)"/>
-    <ellipse class="glow glow-c" cx="900" cy="780" rx="340" ry="170" fill="url(#glow-a)" filter="url(#soft)"/>
-    <path class="fauna-ghost" d="M1080 430c48-62 118-78 176-28 28 24 72 18 92-16-6 48-38 74-78 82-36 8-62 38-48 76-46-22-86-8-118 22-18-36-48-48-80-22 14-38 22-72 56-114z"/>
-    <g class="chart">
-      <path class="constellation" d="M160 110L250 150L340 96L470 168L520 270L680 248L760 150L900 210"/>
-      <path class="constellation constellation-b" d="M980 180L1088 248L1220 220L1288 330L1180 410L1300 520"/>
-      <circle class="star" cx="160" cy="110" r="2.1"/>
-      <circle class="star" cx="250" cy="150" r="1.4"/>
-      <circle class="star" cx="340" cy="96" r="2.4"/>
-      <circle class="star" cx="470" cy="168" r="1.6"/>
-      <circle class="star" cx="520" cy="270" r="2"/>
-      <circle class="star" cx="680" cy="248" r="1.5"/>
-      <circle class="star" cx="760" cy="150" r="2.2"/>
-      <circle class="star" cx="900" cy="210" r="1.8"/>
-      <circle class="star" cx="980" cy="180" r="1.5"/>
-      <circle class="star" cx="1088" cy="248" r="2.3"/>
-      <circle class="star" cx="1220" cy="220" r="1.4"/>
-      <circle class="star" cx="1288" cy="330" r="2"/>
-      <circle class="star" cx="1180" cy="410" r="1.6"/>
-      <circle class="star" cx="1300" cy="520" r="1.8"/>
-    </g>
-    <path class="horizon" d="M-40 770c200-88 380-36 540-78 210-54 330 18 510-28 170-42 330-8 470 38"/>
-    <g>
-      <circle class="spore" cx="180" cy="320" r="2.2"/>
-      <circle class="spore" cx="260" cy="540" r="1.6"/>
-      <circle class="spore" cx="410" cy="680" r="1.4"/>
-      <circle class="spore" cx="610" cy="430" r="1.5"/>
-      <circle class="spore" cx="700" cy="260" r="2"/>
-      <circle class="spore" cx="840" cy="180" r="1.3"/>
-      <circle class="spore" cx="1040" cy="340" r="1.7"/>
-      <circle class="spore" cx="1240" cy="280" r="1.5"/>
-      <circle class="spore" cx="90" cy="470" r="1.4"/>
-      <circle class="spore" cx="1280" cy="120" r="1.6"/>
-      <circle class="spore" cx="640" cy="780" r="2"/>
-    </g>
-  </svg>
-
   <header class="site-header">
     <a class="brand" href="/">
       <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" aria-hidden="true">
         <path d="M20 6v28M20 18C12 7 3 8 5 15c1 6 9 10 15 7C10 19 7 26 11 30c4 3 8-3 9-8m0-4C28 7 37 8 35 15c-1 6-9 10-15 7 10-3 13 4 9 8-4 3-8-3-9-8"/>
-        <path d="m17 5 3-3 3 3M4 34h32" opacity=".5"/>
+        <path d="m17 5 3-3 3 3M4 34h32" opacity=".6"/>
       </svg>
       <span class="brand-name">Fantasia Fauna</span>
     </a>
@@ -78,18 +26,20 @@
     </nav>
   </header>
 
-  <noscript class="wrap">
-    <p class="undocumented">JavaScript est nécessaire pour consulter le bestiaire.</p>
+  <noscript>
+    <div class="wrap"><p class="undocumented">JavaScript est nécessaire pour consulter le bestiaire.</p></div>
   </noscript>
+  <main id="app" class="wrap" tabindex="-1"></main>
 
-  <main id="app" class="wrap"></main>
-
-  <footer class="site-footer"><span>Fantasia Fauna <span class="footer-star" aria-hidden="true">✧</span> Musée numérique du fantastique</span><span class="footer-note">Une invitation à l’émerveillement</span></footer>
+  <footer class="site-footer">
+    <span>Fantasia Fauna <span class="footer-star" aria-hidden="true">·</span> Musée numérique du fantastique</span>
+    <span class="footer-note">Une invitation à l’émerveillement</span>
+  </footer>
 
   <dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
     <div class="viewer-bar">
       <strong id="viewer-title">Illustration</strong>
-      <button class="quiet" type="button" id="viewer-close">Fermer</button>
+      <button class="quiet" type="button" id="viewer-close" autofocus>Fermer</button>
     </div>
     <img id="viewer-image" alt="">
   </dialog>
@@ -97,6 +47,6 @@
   <script src="/js/creatures-data.js?v=cabinet3"></script>
   <script src="/js/notices.js?v=notices2"></script>
   <script src="/js/fiches.js?v=fiches3"></script>
-  <script src="/js/app.js?v=layout2"></script>
+  <script src="/js/app.js?v=editorial4"></script>
 </body>
 </html>
