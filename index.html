@@ -6,17 +6,20 @@
   <meta name="description" content="Fantasia Fauna — musée numérique du fantastique.">
   <meta name="theme-color" content="#234e3c">
   <title>Fantasia Fauna</title>
+  <script src="/js/theme.js?v=themes1"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/site.css?v=editorial4">
+  <link rel="stylesheet" href="/css/site.css?v=themes1">
 </head>
 <body>
   <a class="skip" href="#app">Aller au contenu</a>
   <header class="site-header">
     <a class="brand" href="/">
       <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" aria-hidden="true">
-        <path d="M20 6v28M20 18C12 7 3 8 5 15c1 6 9 10 15 7C10 19 7 26 11 30c4 3 8-3 9-8m0-4C28 7 37 8 35 15c-1 6-9 10-15 7 10-3 13 4 9 8-4 3-8-3-9-8"/>
+        <path d="M20 6v28"/>
+        <path class="wing" d="M20 18C12 7 3 8 5 15c1 6 9 10 15 7C10 19 7 26 11 30c4 3 8-3 9-8"/>
+        <path class="wing" d="M20 18C28 7 37 8 35 15c-1 6-9 10-15 7 10-3 13 4 9 8-4 3-8-3-9-8"/>
         <path d="m17 5 3-3 3 3M4 34h32" opacity=".6"/>
       </svg>
       <span class="brand-name">Fantasia Fauna</span>
@@ -24,6 +27,11 @@
     <nav class="nav-links" aria-label="Navigation principale">
       <a id="nav-catalog" href="/">Catalogue</a>
     </nav>
+    <div class="theme-control">
+      <label for="theme-range"><svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 6a7 7 0 1 0 3 11A7 7 0 0 1 15 6Z"/><g class="sun-rays"><path d="M12 1v2m0 18v2M1 12h2m18 0h2M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></g></svg>Thème</label>
+      <input id="theme-range" type="range" min="0" max="3" step="1" value="2" aria-valuetext="clair doux">
+      <output id="theme-label" for="theme-range">clair doux</output>
+    </div>
   </header>
 
   <noscript>

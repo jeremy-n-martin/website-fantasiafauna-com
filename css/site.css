@@ -9,10 +9,50 @@
   --wash: #e9eee5;
   --line: #d3d7cc;
   --control-line: #7b897f;
+  --header-background: #234e3c;
+  --header-text: #f7f5ef;
+  --target: #e1ead8;
   --serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
   --ui: "Segoe UI", system-ui, -apple-system, sans-serif;
   --measure: 1200px;
   --gutter: clamp(20px, 4vw, 48px);
+}
+
+:root[data-theme="clair-doux"] { color-scheme: light; --paper: #f7f5ef; }
+:root[data-theme="clair"] {
+  color-scheme: light;
+  --paper: #ffffff;
+  --surface: #ffffff;
+  --wash: #eff3ef;
+  --target: #e3eee1;
+}
+:root[data-theme="sombre"] {
+  color-scheme: dark;
+  --paper: #111816;
+  --surface: #19231e;
+  --ink: #edf1e9;
+  --muted: #b8c5ba;
+  --forest: #b5d9b7;
+  --wash: #243229;
+  --line: #45574a;
+  --control-line: #8c9e90;
+  --target: #2b3d30;
+  --header-background: #0c1410;
+  --header-text: #edf1e9;
+}
+:root[data-theme="sombre-doux"] {
+  color-scheme: dark;
+  --paper: #26312c;
+  --surface: #2c3931;
+  --ink: #f0f1e8;
+  --muted: #c6cec1;
+  --forest: #c0dfb8;
+  --wash: #334237;
+  --line: #5f7162;
+  --control-line: #a0af9c;
+  --target: #3a4a3d;
+  --header-background: #1c2821;
+  --header-text: #f0f1e8;
 }
 
 * { box-sizing: border-box; }
@@ -34,11 +74,26 @@ p { text-wrap: pretty; }
 .skip:focus { transform: none; }
 
 /* A calm masthead, shared by every route. */
-.site-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 20px max(var(--gutter), calc((100% - var(--measure)) / 2)); background: var(--forest); color: var(--paper); }
+.site-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding: 20px max(var(--gutter), calc((100% - var(--measure)) / 2)); background: var(--header-background); color: var(--header-text); }
 .brand { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: inherit; text-decoration: none; }
 .brand .mark { width: 32px; height: 32px; flex-shrink: 0; }
 .brand-name { font: 500 clamp(22px, 2.4vw, 29px)/1.2 var(--serif); letter-spacing: -.025em; }
-.nav-links { display: flex; align-items: center; gap: 20px; }
+.nav-links { display: flex; align-items: center; gap: 20px; margin-left: auto; }
+.theme-control { display: flex; align-items: center; gap: 10px; font-size: 14px; min-width: 0; }
+.theme-control label { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; cursor: pointer; }
+.theme-control input { width: 104px; min-width: 44px; min-height: 44px; margin: 0; accent-color: #d6e1c7; cursor: pointer; }
+.theme-control output { width: 6em; white-space: nowrap; }
+.theme-icon { width: 20px; height: 20px; flex: none; transform: rotate(0deg); transition: transform .35s ease; }
+.theme-icon, .brand .mark { pointer-events: none; }
+.theme-icon .sun-rays { opacity: 1; transition: opacity .35s ease; }
+:root[data-theme="sombre"] .theme-icon { transform: rotate(-90deg); }
+:root[data-theme="sombre-doux"] .theme-icon { transform: rotate(-45deg); }
+:root[data-theme="clair"] .theme-icon { transform: rotate(45deg); }
+:root[data-theme="sombre"] .sun-rays, :root[data-theme="sombre-doux"] .sun-rays { opacity: 0; }
+.brand .wing { transform-origin: 20px 20px; animation: wing-welcome 1.6s ease-in-out 2; }
+.brand:hover .wing, .brand:focus-visible .wing { animation-name: wing-greeting; }
+@keyframes wing-welcome { 0%, 100% { transform: scaleX(1); } 50% { transform: scaleX(.48); } }
+@keyframes wing-greeting { 0%, 100% { transform: scaleX(1); } 50% { transform: scaleX(.48); } }
 .nav-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 4px; color: inherit; text-decoration: none; border-bottom: 2px solid transparent; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { border-color: #d6e1c7; }
 .site-header :focus-visible { outline-color: #e3efcf; }
@@ -135,7 +190,7 @@ p { text-wrap: pretty; }
 .notice-sources ol { margin: 12px 0 0; padding-left: 28px; }
 .notice-sources li { padding: 8px 6px; overflow-wrap: anywhere; scroll-margin-top: 30px; }
 .notice-sources a { display: inline-block; min-height: 44px; padding-block: 8px; }
-.notice-sources li:target { background: #e1ead8; outline: 2px solid var(--forest); outline-offset: 3px; }
+.notice-sources li:target { background: var(--target); outline: 2px solid var(--forest); outline-offset: 3px; }
 .notice section:target > h2, .notice h3:target { text-decoration: underline; text-decoration-color: #7b997d; text-underline-offset: .2em; }
 .pager { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; border-top: 1px solid var(--line); padding: 20px 0; }
 .pager a { display: block; min-height: 76px; padding: 10px 12px; color: var(--ink); text-decoration: none; border-radius: 3px; }
@@ -170,6 +225,8 @@ p { text-wrap: pretty; }
 @media (max-width: 760px) {
   :root { --gutter: 20px; }
   .site-header { padding-block: 14px; gap: 12px; }
+  .theme-control { flex-basis: 100%; justify-content: flex-end; }
+  .theme-control input { flex: 1; max-width: 160px; }
   .brand { gap: 8px; }
   .brand .mark { width: 26px; height: 26px; }
   .brand-name { font-size: 23px; }
@@ -222,7 +279,7 @@ p { text-wrap: pretty; }
 }
 
 @media print {
-  :root { --ink: #000; --paper: #fff; --muted: #333; --forest: #000; }
+  :root, :root[data-theme] { color-scheme: light; --ink: #000; --paper: #fff; --surface: #fff; --wash: #fff; --target: #fff; --muted: #333; --forest: #000; --line: #999; --control-line: #666; }
   body { background: #fff; color: #000; }
   .site-header, .site-footer, .skip, .toolbar, .toc, .pager, .viewer, .exhibit-zoom, .crumb { display: none !important; }
   .wrap { width: 100%; }

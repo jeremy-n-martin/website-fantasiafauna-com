@@ -1,5 +1,11 @@
 # Refonte de l’interface du bestiaire
 
+## Préférences d’affichage
+
+Le curseur de l’en-tête propose quatre positions, du sombre au clair : **Sombre**, **Sombre doux**, **Clair doux**, **Clair**. Le choix doit rester mémorisé entre les pages et les visites, sans modifier les textes ni appliquer de filtre aux illustrations. Le papier crème existant correspond au mode Clair doux.
+
+Les décors SVG de l’en-tête accompagnent ce réglage : papillon et soleil/lune. Garder des animations courtes, sans mouvement derrière le texte ; respecter `prefers-reduced-motion` et conserver des commandes utilisables au clavier.
+
 ## Direction
 
 Le catalogue est une galerie à explorer ; la fiche est une page de lecture. Conserver les illustrations existantes et les textes, sans ajouter de framework ni convertir les brouillons en notices publiées.

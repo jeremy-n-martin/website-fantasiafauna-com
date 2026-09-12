@@ -24,10 +24,12 @@ def main():
     for name, text in zip(('index.html', '404.html'), shells):
         assets = Assets()
         assets.feed(text)
-        for path in ('/css/site.css', '/js/app.js'):
+        for path, version in {'/css/site.css': 'themes1', '/js/app.js': 'editorial4', '/js/theme.js': 'themes1'}.items():
             matches = [url for url in assets.urls if urlsplit(url).path == path]
             assert len(matches) == 1, (name, path, matches)
-            assert parse_qs(urlsplit(matches[0]).query).get('v') == ['editorial4'], (name, 'stale asset', matches)
+            assert parse_qs(urlsplit(matches[0]).query).get('v') == [version], (name, 'stale asset', matches)
+        assert assets.urls[0] == '/js/theme.js?v=themes1', (name, 'theme must run before styles')
+        assert '<script src="/js/theme.js?v=themes1"></script>' in text, (name, 'theme must be synchronous')
         for url in assets.urls:
             if url.startswith('/'):
                 assert (ROOT / urlsplit(url).path.lstrip('/')).is_file(), (name, 'missing asset', url)
