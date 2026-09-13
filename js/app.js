@@ -57,7 +57,9 @@
     if (!fiche) return "";
     const rows = [
       ["Origine", escapeHtml(fiche.origine)],
-      ["Tradition", escapeHtml(fiche.tradition)],
+      // No verified measurements exist in the published data yet.
+      ["Taille", "Non renseignée"],
+      ["Poids", "Non renseigné"],
       ["Famille", escapeHtml(fiche.famille)],
       ["Danger", dangerDots(fiche.danger)],
       ["Habitat imaginaire", escapeHtml(fiche.habitat)],
@@ -191,60 +193,39 @@
       .filter(Boolean);
   }
 
-  function validSources(sources) {
-    return (Array.isArray(sources) ? sources : []).filter(function (source) {
-      if (!source || !Number.isInteger(source.id) || source.id < 1 || !source.title) return false;
-      try {
-        const url = new URL(source.url);
-        return (url.protocol === "https:" || url.protocol === "http:") && !url.username && !url.password;
-      } catch (_) {
-        return false;
-      }
-    });
+  function publicNoticeText(text) {
+    // Strip editorial reference calls only; keep prose, numbers and quotations.
+    // The source bundles remain untouched for internal editorial use.
+    return String(text).replace(/\[\d+\]/g, "");
   }
 
-  function renderNoticeText(text, sources) {
-    const ids = new Set(validSources(sources).map(function (source) { return source.id; }));
-    return escapeHtml(text).replace(/\[(\d+)\]/g, function (call, id) {
-      if (!ids.has(Number(id))) return call;
-      const href = window.location.pathname + window.location.search + "#source-" + id;
-      return '<sup class="source-call"><a href="' + escapeHtml(href) + '" aria-label="Source ' + id + '">' + call + '</a></sup>';
-    });
-  }
-
-  function renderSources(sources) {
-    const refs = validSources(sources);
-    if (!refs.length) return "";
-    return '<footer class="notice-sources" aria-labelledby="sources-title"><h3 id="sources-title">Sources et lectures</h3><ol>' +
-      refs.map(function (source) {
-        return '<li id="source-' + source.id + '" value="' + source.id + '"><a href="' + escapeHtml(source.url) +
-          '" target="_blank" rel="noopener noreferrer">' + escapeHtml(source.title) + '</a></li>';
-      }).join("") + '</ol></footer>';
+  function renderNoticeText(text) {
+    return escapeHtml(publicNoticeText(text));
   }
 
   function naturalPartId(part) {
     return "naturelle-" + fold(String(part.title || "")).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
 
-  function renderSectionContent(data, sources, sectionId) {
+  function renderSectionContent(data, sectionId) {
     if (!data) return "";
     if (typeof data === "string") {
-      return "<p>" + renderNoticeText(data, sources) + "</p>";
+      return "<p>" + renderNoticeText(data) + "</p>";
     }
     if (Array.isArray(data)) {
       return data.map(function (paragraph) {
-        return "<p>" + renderNoticeText(paragraph, sources) + "</p>";
+        return "<p>" + renderNoticeText(paragraph) + "</p>";
       }).join("");
     }
     let html = "";
-    if (data.lead) html += renderSectionContent(data.lead, sources);
+    if (data.lead) html += renderSectionContent(data.lead);
     if (data.parts && data.parts.length) {
       html += data.parts.map(function (part) {
         const body = part.body || part.text;
         if (!part.title && !body) return "";
         const id = sectionId === "naturelle" ? ' id="' + naturalPartId(part) + '"' : "";
         return (part.title ? "<h3" + id + ">" + escapeHtml(part.title) + "</h3>" : "") +
-          renderSectionContent(body, sources);
+          renderSectionContent(body);
       }).join("");
     }
     return html;
@@ -415,8 +396,9 @@
     const back = sessionStorage.getItem("ff-catalog") || "/";
     const prev = creatures[(creature.index - 1 + creatures.length) % creatures.length];
     const next = creatures[(creature.index + 1) % creatures.length];
-    const desc = creature.description || "Fiche de " + creature.name + " dans le bestiaire Fantasia Fauna.";
-    setTitle(creature.name + " — Fantasia Fauna", desc);
+    const intro = creature.description || (fiches[slug] && fiches[slug].accroche) || "";
+    const desc = intro || "Fiche de " + creature.name + " dans le bestiaire Fantasia Fauna.";
+    setTitle(creature.name + " — Fantasia Fauna", publicNoticeText(desc));
 
     const dossier = dossierHtml(creature);
     const metaItems = [];
@@ -436,7 +418,7 @@
                 return '<a class="toc-sub" href="#' + naturalPartId(part) + '">' + escapeHtml(part.title) + '</a>';
               }).join("");
           }).join("") +
-          (validSources(creature.sources).length ? '<a href="#sources-title">Sources et lectures</a>' : "") +
+
         "</nav>"
       : "";
 
@@ -444,8 +426,8 @@
       ? '<div class="notice">' +
           sections.map(function (section) {
             return '<section id="' + section.id + '"><h2>' + escapeHtml(section.title) + "</h2>" +
-              renderSectionContent(section.data, creature.sources, section.id) + "</section>";
-          }).join("") + renderSources(creature.sources) +
+              renderSectionContent(section.data, section.id) + "</section>";
+          }).join("") +
         "</div>"
       : "";
 
@@ -475,7 +457,7 @@
         "</figure>" +
         '<div class="sheet-copy">' +
           "<h1>" + escapeHtml(creature.name) + "</h1>" +
-          (creature.description ? '<p class="lede">' + escapeHtml(creature.description) + "</p>" : "") +
+          (intro ? '<p class="lede">' + renderNoticeText(intro) + "</p>" : "") +
           dossier +
           (metaItems.length ? '<ul class="meta-list">' + metaItems.join("") + "</ul>" : "") +
           undocumented +

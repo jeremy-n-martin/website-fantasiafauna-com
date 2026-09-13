@@ -24,7 +24,7 @@ def main():
     for name, text in zip(('index.html', '404.html'), shells):
         assets = Assets()
         assets.feed(text)
-        for path, version in {'/css/site.css': 'themes1', '/js/app.js': 'editorial4', '/js/theme.js': 'themes1'}.items():
+        for path, version in {'/css/site.css': 'wallpapers1', '/js/app.js': 'nocitations1', '/js/theme.js': 'themes1'}.items():
             matches = [url for url in assets.urls if urlsplit(url).path == path]
             assert len(matches) == 1, (name, path, matches)
             assert parse_qs(urlsplit(matches[0]).query).get('v') == [version], (name, 'stale asset', matches)

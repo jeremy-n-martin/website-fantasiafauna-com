@@ -27,14 +27,14 @@ function boot(url = 'http://localhost/creatures/aasimar') {
   assert.equal(d.querySelector('.notice'), notice, 'fragment navigation must preserve DOM');
   console.log('PASS: real TOC click retains route, hash and notice DOM');
   w.scrolls.length = 0;
-  const citation = d.querySelector('.source-call a');
-  assert.ok(citation, 'real notice has citations');
-  citation.click(); await tick();
-  assert.equal(w.location.hash, new URL(citation.href).hash);
+  const natural = d.querySelector('.toc-sub');
+  assert.ok(natural, 'real notice has natural-history anchors');
+  natural.click(); await tick();
+  assert.equal(w.location.hash, natural.getAttribute('href'));
   d.querySelector('.skip').click(); await tick();
   assert.equal(w.location.hash, '#app');
   w.history.back(); await tick();
-  assert.equal(w.location.hash, new URL(citation.href).hash);
+  assert.equal(w.location.hash, natural.getAttribute('href'));
   w.history.forward(); await tick();
   assert.equal(w.location.hash, '#app');
   assert.equal(d.querySelector('.notice'), notice);
@@ -102,5 +102,5 @@ function boot(url = 'http://localhost/creatures/aasimar') {
   nd.querySelector('.plate').focus(); nd.querySelector('.plate').click();
   assert.equal(nd.activeElement.id, 'app', 'a new page must move keyboard focus to its content');
   native.window.close();
-  console.log('PASS: citations, skip, fragment history, interpage, direct/reload, native links, pager and search');
+  console.log('PASS: natural-history anchors, skip, fragment history, interpage, direct/reload, native links, pager and search');
 })().catch(error => { console.error(error); process.exitCode = 1; });

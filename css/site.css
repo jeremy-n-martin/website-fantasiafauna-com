@@ -58,6 +58,38 @@
 * { box-sizing: border-box; }
 html { scroll-padding-top: 24px; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--ui); }
+/* Original marginalia: a transparent, text-free herbarium/sky plate.
+   Only creature routes instantiate the layer; catalogues and errors stay plain.
+   Width-fit keeps the botanical margins at the viewport edges, never
+   drifting inward over the reading column on wide screens. */
+:root {
+  --creature-wallpaper: url("../img/wallpapers/herbier-celeste-clair.svg");
+  --creature-wallpaper-opacity: .065;
+}
+:root[data-theme="clair-doux"], :root[data-theme="clair"] {
+  --creature-wallpaper: url("../img/wallpapers/herbier-celeste-clair.svg");
+}
+:root[data-theme="sombre"], :root[data-theme="sombre-doux"] {
+  --creature-wallpaper: url("../img/wallpapers/herbier-celeste-sombre.svg");
+  --creature-wallpaper-opacity: .055;
+}
+body:has(.creature)::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--creature-wallpaper);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  opacity: var(--creature-wallpaper-opacity);
+}
+/* Do not elevate the whole body: the skip link retains z-index 10;
+   native showModal() dialogs and their backdrop remain in the top layer. */
+body:has(.creature) > #app,
+body:has(.creature) > .site-header,
+body:has(.creature) > .site-footer { position: relative; z-index: 1; }
 img { display: block; max-width: 100%; }
 a { color: var(--forest); text-underline-offset: .2em; text-decoration-thickness: 1px; }
 a:hover { text-decoration-thickness: 2px; }
@@ -280,6 +312,7 @@ p { text-wrap: pretty; }
 
 @media print {
   :root, :root[data-theme] { color-scheme: light; --ink: #000; --paper: #fff; --surface: #fff; --wash: #fff; --target: #fff; --muted: #333; --forest: #000; --line: #999; --control-line: #666; }
+  body:has(.creature)::before { content: none; display: none !important; background-image: none; }
   body { background: #fff; color: #000; }
   .site-header, .site-footer, .skip, .toolbar, .toc, .pager, .viewer, .exhibit-zoom, .crumb { display: none !important; }
   .wrap { width: 100%; }

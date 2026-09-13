@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" fill="none">
+  <defs>
+    <g id="leaf" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0C-24-5-44-25-51-53C-22-51-3-30 0 0ZM0 0C-15-19-28-35-44-46M-19-25l-16-1M-28-35l-1-10"/>
+    </g>
+    <g id="fern" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0C7-80 30-158 18-244C15-267 24-289 42-299C56-306 66-296 60-286C55-278 44-282 47-290"/>
+      <path d="M5-38C-32-42-59-70-68-98C-34-89-9-62 5-38ZM8-57C43-57 75-79 89-106C54-102 26-84 8-57ZM12-77C-21-85-44-111-49-137C-20-125 2-102 12-77ZM17-97C50-103 75-126 84-151C54-141 29-122 17-97ZM20-119C-9-130-24-153-26-179C-3-164 13-143 20-119ZM23-140C48-149 65-171 68-195C45-182 31-163 23-140ZM23-162C1-176-9-195-8-216C11-201 19-181 23-162ZM23-183C42-195 52-214 51-233C33-218 26-201 23-183ZM21-204C6-216 1-233 4-250C17-236 19-220 21-204"/>
+      <path d="M5-38l-59-44M8-57l66-36M12-77l-50-45M17-97l53-41M20-119l-35-44M23-140l34-39M23-162L0-202M23-183l20-35"/>
+    </g>
+    <g id="star"><path d="M0-10L2-2L10 0L2 2L0 10L-2 2L-10 0L-2-2Z"/></g>
+  </defs>
+  <g stroke="#315b47" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-38 872C92 708 28 536 98 371C129 298 174 241 175 159M-9 595C48 562 60 512 63 470M43 729C103 671 119 616 121 562"/>
+    <use href="#leaf" transform="translate(78 421) rotate(35) scale(1.6)"/>
+    <use href="#leaf" transform="translate(110 346) rotate(99) scale(1.7)"/>
+    <use href="#leaf" transform="translate(143 278) rotate(12) scale(1.45)"/>
+    <use href="#leaf" transform="translate(169 212) rotate(102) scale(1.2)"/>
+    <use href="#leaf" transform="translate(52 545) rotate(-6) scale(1.65)"/>
+    <use href="#leaf" transform="translate(56 618) rotate(115) scale(1.45)"/>
+    <use href="#leaf" transform="translate(107 629) rotate(110) scale(1.3)"/>
+    <use href="#fern" transform="translate(12 1208) rotate(20) scale(1.8)"/>
+    <use href="#fern" transform="translate(17 1192) rotate(57) scale(1.3)"/>
+    <use href="#fern" transform="translate(1608 1218) rotate(-24) scale(-1.9 1.9)"/>
+    <use href="#fern" transform="translate(1598 1198) rotate(-57) scale(-1.3 1.3)"/>
+    <path d="M1630 595C1515 488 1611 369 1537 250C1507 202 1489 156 1499 106"/>
+    <use href="#leaf" transform="translate(1551 277) rotate(5) scale(1.6)"/>
+    <use href="#leaf" transform="translate(1521 222) rotate(100) scale(1.35)"/>
+    <use href="#leaf" transform="translate(1501 174) rotate(18) scale(1.1)"/>
+    <use href="#leaf" transform="translate(1560 378) rotate(98) scale(1.4)"/>
+  </g>
+  <g stroke="#7a6240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="1412" cy="132" r="63"/>
+    <path d="M1441 76A57 57 0 1 0 1441 188A68 68 0 0 1 1441 76Z"/>
+    <path d="M1324 132h13M1487 132h13M1412 45v13M1412 206v13M1350 70l9 9M1474 70l-9 9M1350 194l9-9M1474 194l-9-9"/>
+    <path d="M18 137L83 103L139 144L211 91L277 118M1368 586L1444 532L1495 586L1562 517L1590 411"/>
+    <g fill="#7a6240"><circle cx="18" cy="137" r="3"/><circle cx="83" cy="103" r="3"/><circle cx="139" cy="144" r="3"/><circle cx="211" cy="91" r="3"/><circle cx="277" cy="118" r="3"/><circle cx="1368" cy="586" r="3"/><circle cx="1444" cy="532" r="3"/><circle cx="1495" cy="586" r="3"/><circle cx="1562" cy="517" r="3"/><circle cx="1590" cy="411" r="3"/></g>
+    <use href="#star" transform="translate(222 451)"/><use href="#star" transform="translate(1460 735) scale(.7)"/><use href="#star" transform="translate(323 1061) scale(.8)"/>
+    <circle cx="130" cy="833" r="29"/><path d="M130 805l24 42h-48ZM114 834h32M130 862v22M118 876h24"/>
+    <circle cx="1435" cy="984" r="39"/><path d="M1435 942v84M1393 984h84M1435 955l25 43h-50Z"/>
+    <path d="M233 1164q42-38 84 0q-42 38-84 0ZM267 1164h16M275 1156v16M1314 1131l10-17 10 17-10 17Z"/>
+  </g>
+</svg>

@@ -6,6 +6,12 @@ Le curseur de l’en-tête propose quatre positions, du sombre au clair : **Somb
 
 Les décors SVG de l’en-tête accompagnent ce réglage : papillon et soleil/lune. Garder des animations courtes, sans mouvement derrière le texte ; respecter `prefers-reduced-motion` et conserver des commandes utilisables au clavier.
 
+## Lecture sans appareil bibliographique
+
+Les pages publiques ne présentent plus d'appels de citation, de bloc « Sources et lectures » ni de lien bibliographique dans le sommaire. Les références restent dans les données éditoriales pour les contrôles internes. Les vérifications de citations consignées plus bas décrivent la refonte antérieure, pas cette nouvelle présentation.
+
+Le champ « Tradition » est remplacé par « Taille » et « Poids » : ne pas inventer de mesures absentes des données. Pour les fiches sans notice longue, afficher l'accroche existante sous le titre et conserver l'indication que la notice reste à documenter. Des fonds SVG originaux très légers décorent uniquement les pages de créatures, sans capturer les clics ni modifier les illustrations.
+
 ## Direction
 
 Le catalogue est une galerie à explorer ; la fiche est une page de lecture. Conserver les illustrations existantes et les textes, sans ajouter de framework ni convertir les brouillons en notices publiées.

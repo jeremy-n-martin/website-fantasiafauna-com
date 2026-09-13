@@ -18,18 +18,18 @@ for (const file of ["creatures-data.js", "notices.js", "fiches.js"]) {
 // Deliberately artificial reference: tests rendering, not editorial evidence.
 const notice = win.FF_NOTICES.tyrannoeil;
 notice.sources = [{ id: 17, title: "Source <test> & référence", url: "https://example.org/reference?a=1&b=2" }];
-notice.sections.fascination = ["Un texte <script>ne doit pas être exécuté</script>.[17]"];
+notice.description = 'Une créature de 1977, « je demeure », <img src=x onerror=alert(1)>.[17][999]';
+notice.sections.fascination = ["Un texte <script>ne doit pas être exécuté</script>. 12 yeux, « regarde ».[17][999]"];
 win.eval(fs.readFileSync(path.join(root, "js/app.js"), "utf8"));
 const doc = win.document;
-const citation = doc.querySelector('#fascination .source-call a');
-assert.ok(citation, "Inline source calls must link to their bibliography entry");
-assert.equal(citation.textContent, "[17]");
-assert.equal(new URL(citation.href).pathname, "/creatures/tyrannoeil", "Citations must stay on the current notice despite the base element");
-assert.equal(new URL(citation.href).hash, "#source-17");
-const source = doc.querySelector("#source-17 a");
-assert.ok(source, "The source must be readable from the notice");
-assert.equal(source.href, "https://example.org/reference?a=1&b=2");
-assert.equal(source.textContent, "Source <test> & référence");
+assert.equal(doc.querySelector('.source-call, .notice-sources, #sources-title, [id^="source-"]'), null, 'No public citation or bibliography DOM');
+assert.doesNotMatch(doc.querySelector('#app').textContent, /\[\d+\]|Sources et lectures/);
+assert.equal(doc.querySelector('#fascination p').textContent, 'Un texte <script>ne doit pas être exécuté</script>. 12 yeux, « regarde ».');
+assert.equal(doc.querySelector('.lede').textContent, 'Une créature de 1977, « je demeure », <img src=x onerror=alert(1)>.');
+assert.equal(doc.querySelector('.lede img'), null);
+assert.doesNotMatch(doc.querySelector('meta[name="description"]').content, /\[\d+\]/);
+assert.equal(notice.sources[0].id, 17, 'Internal references stay intact');
+assert.match(notice.sections.fascination[0], /\[17\]\[999\]$/, 'Internal text stays intact');
 assert.equal(doc.querySelectorAll(".notice script").length, 0);
 assert.equal(doc.querySelectorAll(".notice > section").length, 5);
 assert.deepEqual(Array.from(doc.querySelectorAll("#naturelle h3"), n => n.textContent),
@@ -38,14 +38,15 @@ assert.deepEqual(Array.from(doc.querySelectorAll('.notice > section > h2'), n =>
   ['Présentation', 'Mythes et origines', 'Particularités', 'Histoire naturelle', 'Héritage et curiosités']);
 assert.ok(doc.querySelector('.toc-title'));
 assert.ok(doc.querySelector('.toc').compareDocumentPosition(doc.querySelector('.notice')) & win.Node.DOCUMENT_POSITION_FOLLOWING);
-assert.equal(doc.querySelector('.toc a[href="#sources-title"]').textContent, 'Sources et lectures');
+assert.equal(doc.querySelector('.toc a[href="#sources-title"]'), null);
+assert.equal(doc.querySelectorAll('.toc a').length, 11);
 for (const heading of doc.querySelectorAll('#naturelle h3')) {
   assert.match(heading.id, /^naturelle-[a-z-]+$/);
   assert.equal(doc.querySelector('.toc-sub[href="#' + heading.id + '"]').textContent, heading.textContent);
 }
 assert.ok(doc.querySelector('.lede').compareDocumentPosition(doc.querySelector('.dossier')) & win.Node.DOCUMENT_POSITION_FOLLOWING);
 assert.deepEqual(Array.from(doc.querySelectorAll('.dossier dt'), n => n.textContent),
-  ['Origine', 'Tradition', 'Famille', 'Danger', 'Habitat imaginaire', 'Trait remarquable']);
+  ['Origine', 'Taille', 'Poids', 'Famille', 'Danger', 'Habitat imaginaire', 'Trait remarquable']);
 const zoom = doc.querySelector('button.exhibit-zoom');
 assert.ok(zoom);
 assert.ok(zoom.getAttribute('aria-label').includes('Agrandir'));
@@ -58,7 +59,7 @@ assert.equal(doc.querySelector('#viewer-image').alt, win.FF_DATA.creatures.find(
 doc.querySelector('#viewer-close').click();
 assert.equal(dialog.open, false);
 assert.equal(doc.activeElement, zoom);
-citation.click();
-assert.equal(win.location.pathname, "/creatures/tyrannoeil", "Clicking a citation must not route to the catalogue");
-console.log("PASS: citations, source links, text escaping, five sections and six natural-history headings");
+doc.querySelector('.toc-sub').click();
+assert.equal(win.location.pathname, "/creatures/tyrannoeil", "Natural-history anchors stay on the notice");
+console.log("PASS: no public sources, preserved numbers/quotes, text escaping, five sections and six natural-history headings");
 dom.window.close();
