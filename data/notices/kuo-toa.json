@@ -1,0 +1,36 @@
+{
+  "description": "Chassés des rivages qu'ils habitaient jadis, les kuo-toa n'ont pas seulement changé de milieu : ils ont appris, dans l'obscurité de l'Outreterre, à fabriquer leurs propres dieux.",
+  "sections": {
+    "fascination": [
+      "Un kuo-toa ne prie pas un dieu qui préexisterait à sa foi ; il en fabrique un, à force de croyance collective, jusqu'à ce que l'entité invoquée prenne une réalité que d'autres peuples réserveraient au mythe.[1] Ce renversement change tout : la théologie, chez eux, n'est pas une interprétation du monde mais une opération, presque une technique, dont le résultat visible finit par marcher parmi ses créateurs.",
+      "Leur corps porte la trace d'un exil ancien plutôt que d'une origine souterraine : humanoïdes à l'allure batracienne, ils respirent aussi bien l'air que l'eau et voient dans le noir absolu des galeries inondées, comme si leur physiologie entière n'avait cessé de s'adapter, génération après génération, à un royaume qui ne devait pourtant pas être le leur.[1]"
+    ],
+    "legendes": [
+      "Le Monstrous Manual des jeux de rôle situe les kuo-toa parmi les humanoïdes aberrants, sadiques et dégénérés, qui peuplaient autrefois les rivages et les îles du monde de la surface avant d'en être chassés.[1] Cette expulsion, plus que n'importe quelle particularité anatomique, façonne leur identité : ils se pensent comme un peuple déchu, dépossédé d'un droit sur la lumière et sur les côtes.",
+      "Au cœur de leur culte se dresse Blibdoolpoolp, la Mère des Mers, une entité ancienne et à demi folle qui préside à un peuple lui-même très diminué par rapport à sa gloire passée. Les temples et sanctuaires qui lui sont consacrés s'élèvent dans des cavernes humides, au bord de vastes étendues d'eau souterraines, et accueillent aussi bien les kuo-toa que d'autres races venues commercer ou négocier en terrain neutre. Blibdoolpoolp elle-même serait née, selon les récits qui circulent sur ce peuple, d'un pouvoir psychique collectif : les kuo-toa auraient littéralement fait exister leur déesse à force de croyance partagée, un phénomène qui se reproduirait avec d'autres entités dès qu'un nombre suffisant de fidèles s'y adonne.",
+      "Cette faculté rare de faire naître des dieux par la foi collective a nourri, dans les cercles de joueurs, une fascination durable pour la théologie kuo-toa, souvent présentée comme un cas unique dans l'imaginaire des profondeurs : un peuple qui ne se contente pas de croire, mais qui produit littéralement ce en quoi il croit."
+    ],
+    "anomalies": [
+      "Le bouclier collant que les kuo-toa opposent aux armes de mêlée constitue une défense presque organique : l'assaillant qui les frappe risque de voir sa lame ou sa masse retenue, contraint de forcer pour la dégager.[1] Cette anomalie transforme un simple équipement défensif en piège actif, où l'arme de l'ennemi devient, un instant, un obstacle pour son propre porteur.",
+      "Leur perception dépasse également le sens commun : ils détectent la présence de créatures invisibles ou évoluant sur le plan Éthéré dans leur voisinage immédiat, et peuvent même localiser celles qui se déplacent.[1] Une telle sensibilité, combinée à leur intolérance marquée pour la lumière directe du soleil, dessine un peuple presque entièrement calibré pour l'obscurité et l'imperceptible, inadapté à toute existence en plein jour."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle des kuo-toa mêle une physiologie amphibie bien documentée par les bestiaires de jeu et une organisation sociale bâtie tout entière autour de la foi et de la survie en milieu hostile.",
+      "parts": [
+        {"title": "Comportement", "body": ["Décrits comme sadiques et dégénérés dans les compendiums qui les recensent, les kuo-toa allient une cruauté assumée à un tempérament de mauvais augure : leur alignement est celui d'un peuple neutre mauvais, peu enclin à la pitié envers les intrus qui s'aventurent dans leurs galeries.[1]"]},
+        {"title": "Habitat", "body": ["Autrefois installés sur les rivages et les îles du monde de la surface, les kuo-toa vivent aujourd'hui dans les lacs souterrains et les temples humides de l'Outreterre, où leur vitesse de nage et leur vision dans le noir leur assurent un avantage constant sur quiconque les y suit.[1]"]},
+        {"title": "Alimentation", "body": ["Leur respiration amphibie, aussi à l'aise dans l'air que sous l'eau, leur permet de chasser sur les deux tableaux, tirant leur subsistance aussi bien des profondeurs aquatiques que des galeries qui les bordent.[1]"]},
+        {"title": "Intelligence", "body": ["Leur intelligence se manifeste moins dans l'invention technique que dans une théologie collective d'une redoutable efficacité : la capacité, prêtée à leur peuple, de faire naître une divinité par la seule accumulation de croyants convaincus, dont Blibdoolpoolp resterait l'exemple le plus abouti."]},
+        {"title": "Reproduction", "body": ["Aucune source consultée ne détaille de rites de reproduction propres aux kuo-toa ; leur perpétuation semble se confondre, dans les récits, avec la perpétuation même de leur culte, chaque génération renouvelant le nombre de fidèles nécessaires à la vitalité de leurs dieux."]},
+        {"title": "Prédateurs", "body": ["Leur vive aversion pour la lumière directe du soleil suggère qu'un simple retour à la surface constituerait pour eux une épreuve presque aussi redoutable qu'un prédateur ; dans leur milieu souterrain, ce sont surtout les autres peuples de l'Outreterre venus commercer ou guerroyer qui composent leur voisinage le plus dangereux.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Les kuo-toa ne laissent guère de reliques matérielles reconnaissables hors de leurs propres cavernes : leurs temples humides et leurs idoles de Blibdoolpoolp restent circonscrits à l'Outreterre, loin des musées et des collections qui conservent d'autres monstres de légende.",
+      "Leur véritable héritage est ailleurs, dans l'idée même qu'ils incarnent : celle d'un peuple capable de renverser l'ordre habituel de la croyance, en fabriquant ses dieux plutôt qu'en les recevant, un motif qui continue d'alimenter forums et suppléments consacrés à leur mythologie propre."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Kuo-toa — fiche de monstre et statistiques, aidedd.org (d'après le Monster Manual)", "url": "https://www.aidedd.org/dnd/monstres.php?vo=kuo-toa"}
+  ]
+}

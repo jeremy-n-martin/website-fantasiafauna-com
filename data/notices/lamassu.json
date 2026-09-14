@@ -1,0 +1,36 @@
+{
+  "description": "À l'entrée des palais assyriens, une tête humaine surveille depuis un corps de taureau ailé : le lamassu ne barre pas la porte, il la juge.",
+  "sections": {
+    "fascination": [
+      "Vu de face, le lamassu se tient debout, immobile, une sentinelle parmi d'autres. Vu de profil, il marche. Certaines sculptures lui donnent même cinq pattes, de sorte que l'illusion fonctionne dans les deux positions sans jamais se démentir.[1] Ce n'est pas un défaut de la pierre : c'est un calcul, une figure pensée pour deux regards différents, celui qui approche de face et celui qui longe le mur. Le colosse ne triche pas, il s'adapte à celui qui le contemple.",
+      "Trois corps composent le sien, et chacun prête sa vertu : la tête humaine pour l'intelligence, le corps de taureau ou de lion pour la force, les ailes d'oiseau pour la liberté de mouvement entre les mondes.[1] Franchir une porte gardée par une telle figure, ce n'est pas simplement passer un seuil de pierre ; c'est se soumettre, le temps d'un pas, au jugement combiné d'un esprit, d'une puissance et d'un vol qu'aucun mortel ne partage."
+    ],
+    "legendes": [
+      "Avant de devenir ce colosse hybride, le lamassu fut une déesse, Lamma, dans les traditions sumériennes.[1] Son passage à la forme composite que l'on connaît aujourd'hui s'opère durant la période assyrienne, où le motif se fixe et gagne en monumentalité. Le premier lamassu véritablement distinct comme motif apparaît sous le règne de Tiglath-Phalasar II, déjà associé à l'exercice du pouvoir royal.[1]",
+      "C'est sous les grands rois assyriens que la figure atteint son ampleur la plus spectaculaire. Dans le palais de Sargon II à Dur-Sharrukin, au moins sept lamassu et deux héros aux lions encadraient l'entrée de la salle du trône, formant un dispositif de garde qui relevait autant de la théologie que de l'architecture militaire.[1] Une paire de lamassu provenant de la salle du trône du palais nord-ouest de Nimrud, datée du IXe siècle avant notre ère, est aujourd'hui conservée au British Museum, aux côtés de têtes de lamassu issues du palais d'Assarhaddon, également à Nimrud.[1]",
+      "Au-delà des palais royaux, la protection qu'offrait le lamassu descendait jusque dans les maisons ordinaires : des habitants assyriens enterraient sous le seuil de leur porte des tablettes d'argile gravées à son image, comme pour transporter chez eux, à une échelle modeste, la garde que les rois plaçaient à l'entrée de leurs palais.[1]"
+    ],
+    "anomalies": [
+      "Le lamassu ne se contente pas d'un seul corps animal : selon les monuments, le torse est tantôt celui d'un taureau, tantôt celui d'un lion, sans que cette variation change son rôle protecteur.[1] Ce flottement entre deux bêtes de puissance montre que la figure obéit moins à une zoologie fixe qu'à une fonction : représenter, sous une forme reconnaissable, une force plus grande que celle d'un homme.",
+      "La cinquième patte, invisible d'un seul point de vue mais nécessaire à la cohérence de l'ensemble depuis les deux angles de circulation, résume à elle seule l'anomalie du lamassu : une créature construite non pour exister dans un espace unique, mais pour fonctionner correctement dans le mouvement de celui qui la croise.[1]"
+    ],
+    "naturelle": {
+      "lead": "Le lamassu n'appartient pas à un bestiaire de créatures sauvages : son histoire naturelle est celle d'une fonction religieuse et architecturale, déclinée à toutes les échelles du pouvoir assyrien, du palais royal jusqu'au seuil domestique.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le lamassu ne combat pas au sens propre ; il surveille. Sa présence aux entrées suffit à signifier l'inviolabilité du lieu qu'il encadre, qu'il s'agisse d'une salle du trône ou d'une porte de ville.[1] Son immobilité apparente cache une vigilance que les Assyriens jugeaient continue, sans repos ni distraction."]},
+        {"title": "Habitat", "body": ["Sa place naturelle est le seuil : entrées de palais, portes de cité, et par extension le dessous des portes des maisons privées, où sa figure gravée sur argile prolongeait la protection royale à l'échelle d'un foyer.[1] Le palais de Sargon II à Dur-Sharrukin et le palais nord-ouest de Nimrud comptent parmi les lieux où sa présence est la mieux attestée aujourd'hui.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune source ne prête au lamassu un besoin de nourriture : en tant que divinité protectrice sculptée, il se nourrit moins de substance que de la continuité du culte et de l'attention qu'on lui porte."]},
+        {"title": "Intelligence", "body": ["Sa tête humaine est explicitement le siège de l'intelligence dans la répartition symbolique de ses trois éléments, la force revenant au corps animal et la liberté de circuler entre les plans aux ailes.[1] Cette intelligence sert la discrimination : reconnaître qui peut franchir le seuil et qui doit en être écarté."]},
+        {"title": "Reproduction", "body": ["Le lamassu ne se transmet pas par filiation mais par commande royale et reproduction sculpturale : chaque roi qui bâtit ou agrandit un palais fait tailler ses propres colosses, perpétuant la figure sans généalogie propre, de Tiglath-Phalasar II à Sargon II puis Assarhaddon.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucune bête ne menace le lamassu ; son seul risque véritable est venu des hommes et du temps, entre les destructions antiques des cités assyriennes et les prélèvements muséaux modernes qui ont dispersé nombre de ces colosses, comme les pièces aujourd'hui conservées au British Museum.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Les vestiges du lamassu ne sont pas des légendes orales mais des pierres bien réelles, arrachées aux ruines des palais assyriens : la paire de colosses de la salle du trône de Nimrud et les têtes provenant du palais d'Assarhaddon, aujourd'hui visibles au British Museum, en sont les témoins les plus directs.[1]",
+      "Sa mémoire ne s'est pas éteinte avec l'empire assyrien. Les communautés assyriennes modernes continuent d'employer le lamassu comme symbole de leur héritage et de leur lien avec les ancêtres, tandis que la figure a trouvé de nouveaux usages, jusque dans l'iconographie militaire et les mémoriaux culturels contemporains.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Lamassu — protecteur mésopotamien, palais assyriens et postérité, Wikipédia", "url": "https://en.wikipedia.org/wiki/Lamassu"}
+  ]
+}

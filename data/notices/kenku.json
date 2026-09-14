@@ -1,0 +1,37 @@
+{
+  "description": "Le kenku ne possède aucune voix qui lui appartienne : il ne peut que rendre, fragment par fragment, les sons volés à ceux qui l'entourent, et cette dette sonore dit tout de sa malédiction.",
+  "sections": {
+    "fascination": [
+      "Un être qui parle sans jamais dire ses propres mots : voilà ce qui rend le kenku inconfortable à observer. Incapable de produire un son qui lui soit propre, il peut « imiter à la perfection n'importe quel son entendu, de la voix d'un halfelin au bruit de pierres dévalant une colline ».[3] La conversation avec lui ressemble à un montage, une mosaïque de bribes empruntées, si bien qu'on croit reconnaître une phrase entière alors qu'elle n'a jamais existé sous cette forme — assemblée après coup, comme un aveu qui ne serait fait que de citations.",
+      "Son apparence prolonge ce malaise. Le kenku garde des ailes atrophiées, tombées avec le temps, et un corps qui reste celui d'un oiseau redressé en humanoïde : plumes sombres, bec, serres tenant lieu de mains.[3][2] Il porte ainsi sur lui la trace visible d'une perte — celle du vol — que sa voix confirme par une autre absence, celle du mot qui lui appartiendrait en propre. Le personnage entier se construit sur ce double manque, jamais comblé, seulement contourné."
+    ],
+    "legendes": [
+      "Le kenku doit une part de son inspiration au tengu du folklore japonais, avant d'apparaître sous ce nom dans le Fiend Folio de 1981, puis de devenir un peuple jouable à part entière avec le Guide de Volo sur les monstres.[2] Cette double origine, mythologique et ludique, explique pourquoi le kenku n'appartient à aucune tradition populaire antérieure au jeu de rôle contemporain.",
+      "Selon les récits les plus récents publiés pour Donjons et Dragons, les kenku auraient jadis servi une divinité dont ils convoitèrent les richesses ; pour ce vol, la divinité les punit en leur arrachant trois choses à la fois : leurs ailes, qui se flétrirent et tombèrent, l'étincelle de créativité qui habitait leur âme, et jusqu'à leur propre voix.[3][2] Cette triple confiscation condamne le peuple entier à ce que les commentateurs appellent un « plagiat sans espoir », et à un désir de vol jamais éteint.",
+      "L'apparence du kenku a varié selon les éditions : les premières versions lui laissaient des ailes, que les éditions plus récentes suppriment pour appuyer le poids de la malédiction.[2] Son alignement moral a suivi une trajectoire tout aussi mouvante — neutre dans les première et deuxième éditions, neutre mauvais dans la troisième, non aligné dans la quatrième, neutre chaotique dans la cinquième —, signe d'une créature que chaque génération de concepteurs a réinterprétée plutôt que simplement reconduite.[2]",
+      "Les kenku se regroupent en bandes urbaines appelées « volées », où ils prospèrent comme voleurs, espions ou éclaireurs plus que comme guerriers de force brute ; leur ruse et leur discrétion en font, selon les manuels, d'excellents subordonnés pour des puissances plus redoutables qu'eux.[2] Le supplément Mordenkainen présente les multivers a par ailleurs allégé la malédiction originelle en retirant l'incapacité totale à formuler une pensée neuve, assouplissant un peuple longtemps défini par le seul manque."
+    ],
+    "anomalies": [
+      "La mécanique de mimétisme, propre au jeu, pousse le kenku dans une zone étrange entre le doué et l'infirme : il peut reproduire n'importe quel son entendu avec une fidélité redoutable, au point de tromper un auditeur averti, mais reste, dans ses versions les plus anciennes, incapable d'improviser une phrase qui ne soit pas un collage d'emprunts.[3] Un talent d'imitateur absolu s'accompagne ainsi d'un désarmement presque total dès qu'il s'agit d'inventer plutôt que de répéter.",
+      "La disparition progressive des ailes, d'une édition à l'autre, ne relève pas d'un simple choix graphique : les auteurs en ont fait le signe visible d'une malédiction toujours active, quand bien même le texte des règles évolue par ailleurs.[2] Un peuple jouable peut ainsi porter, littéralement inscrite sur son corps, l'histoire de sa propre punition, sans qu'aucun retour en arrière narratif ne soit proposé aux joueurs qui l'incarnent."
+    ],
+    "naturelle": {
+      "lead": "Le kenku forme un peuple humanoïde d'origine aviaire, dont les traits physiques et sociaux découlent presque tous d'une seule malédiction fondatrice plutôt que d'une adaptation à un milieu naturel.",
+      "parts": [
+        {"title": "Comportement", "body": ["Rusé plutôt que combatif, le kenku privilégie la discrétion, l'infiltration et l'esquive ; il compense l'absence de voix propre par une capacité d'observation aiguë, nécessaire pour collecter les sons et les répliques qu'il réutilisera ensuite en conversation.[2][3]"]},
+        {"title": "Habitat", "body": ["Les kenku s'installent en priorité dans les villes, sur les toits et dans les recoins urbains où leurs talents de discrétion et de mimétisme trouvent le plus d'usage, loin des grands espaces ouverts que leur incapacité à voler leur interdit désormais.[2]"]},
+        {"title": "Alimentation", "body": ["Aucune source ne détaille de régime alimentaire spécifique au kenku ; les manuels de jeu se concentrent sur ses aptitudes sociales et furtives plutôt que sur ses besoins biologiques."]},
+        {"title": "Intelligence", "body": ["Dans les versions les plus anciennes des règles, le kenku ne peut ni formuler une pensée entièrement neuve ni parler sans emprunter des sons déjà entendus, une limite que le supplément Mordenkainen présente les multivers a depuis assouplie en lui restituant une capacité de création propre.[2] Cette évolution traduit un débat, interne au jeu, sur la part de handicap réel que doit conserver une malédiction fondatrice."]},
+        {"title": "Reproduction", "body": ["Les sources consultées ne détaillent pas de cycle de reproduction propre au peuple kenku ; les manuels insistent sur son organisation en bandes urbaines, appelées volées, plutôt que sur une structure familiale ou une descendance particulière.[2]"]},
+        {"title": "Prédateurs", "body": ["Le kenku ne figure dans les manuels ni comme proie ni comme gibier d'une espèce précise ; sa vulnérabilité tient surtout à sa réputation de voleur, qui l'expose à la traque des autorités urbaines et des victimes de ses larcins plutôt qu'à un prédateur naturel."]}
+      ]
+    },
+    "reliques": [
+      "Aucun objet sacré ni relique ne subsiste du culte oublié que les kenku auraient jadis trahi : la malédiction elle-même tient lieu de seul héritage transmis de génération en génération, inscrite dans les ailes tombées et la voix absente plutôt que dans un artefact retrouvable.[3][2] Le peuple entier fonctionne comme la relique vivante d'une faute qu'aucun de ses membres actuels n'a personnellement commise."
+    ]
+  },
+  "sources": [
+    {"id": 2, "title": "Kenku — origines, description et évolution dans D&D, Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Kenku"},
+    {"id": 3, "title": "Kenku — malédiction, mimétisme et société, discussions et guides D&D Beyond", "url": "https://www.dndbeyond.com/forums/d-d-beyond-general/general-discussion/141483-kenku-species-in-mordenkainen-presents-monsters-of"}
+  ]
+}

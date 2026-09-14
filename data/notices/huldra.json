@@ -1,0 +1,35 @@
+{
+  "description": "La plus belle des femmes de la forêt cache, sous sa robe, un dos creux comme un tronc mort.",
+  "sections": {
+    "fascination": [
+      "Rien, au premier regard, ne distingue la huldra d'une femme accomplie : longue robe, beauté sans défaut, silhouette qui s'attarde à la lisière des bois où travaillent les hommes seuls.[1] Le vertige survient au second regard, celui qu'elle ne veut jamais qu'on porte sur elle : une queue de vache ou de renard dépasse sous l'ourlet, et son dos, vu de biais, se révèle creux comme un tronc évidé.[1] Le folklore scandinave ne construit pas ici un monstre, mais une faille dissimulée dans une apparence parfaite — la beauté elle-même devient l'indice du danger qu'elle recouvre.",
+      "Elle n'est pourtant pas que menace. Certains récits la disent secourable envers les charbonniers, veillant sur leurs meules pendant qu'ils se reposent, gardienne discrète d'un travail qu'elle pourrait tout aussi bien saboter.[1] Cette ambivalence — protectrice pour qui la respecte, funeste pour qui l'offense ou la démasque — est le trait qui traverse toute la tradition des esprits de la forêt nordique."
+    ],
+    "legendes": [
+      "Le nom même de huldra varie selon les régions sans que la figure change fondamentalement de nature : les Norvégiens gardent le terme d'origine, tandis que les Suédois parlent de skogsrå, littéralement « esprit de la forêt », ou de Tallemaja, la « Marie du pin ».[1] Chez les Sames, elle devient ulda. Cette pluralité de noms pour une même silhouette dit assez combien la forêt scandinave, d'un versant à l'autre, a nourri la même inquiétude face à ce qui s'y cache.",
+      "La huldra appartient à une famille plus vaste encore, celle des rå, esprits gardiens attachés à un territoire précis : la sjörå protège les eaux, la bergsrå les mines, comme si chaque grand espace inhabité du Nord exigeait sa propre gardienne invisible.[1] Le skogsrå, en particulier, partage avec la huldra tant de traits qu'il est parfois difficile de savoir si l'on parle d'une seule créature sous deux noms ou de deux figures cousines nées d'une même peur du bois profond.[1]"
+    ],
+    "anomalies": [
+      "Le dos creux reste le détail le plus troublant du mythe : une huldra vue de face est indiscernable d'une femme ordinaire, mais son dos, aperçu par surprise, s'ouvre comme une bûche pourrie, révélant l'écorce là où l'on attendait la chair.[1] Cette anomalie corporelle, plus que la queue animale, semble avoir le plus marqué l'imaginaire collectif, tant elle transforme la séduction en piège architectural.",
+      "La mémoire du territoire porte elle-même la trace de cette créature : Huldremose au Danemark, Hulderheim en Norvège, Ulddaidvárri en terre same — autant de toponymes qui attestent, mieux qu'aucun conte isolé, l'ancienneté et l'étendue géographique de la croyance.[1]"
+    ],
+    "naturelle": {
+      "lead": "Créature du folklore scandinave traditionnel, la huldra appartient à la vaste famille des esprits gardiens de la nature nordique, dont elle incarne la version la plus ambivalente : séductrice des bois plutôt que simple protectrice d'un lieu.",
+      "parts": [
+        {"title": "Comportement", "body": ["Bienveillante envers qui travaille honnêtement à ses lisières, la huldra veille parfois sur les meules des charbonniers pendant leur sommeil, geste de bon voisinage rare chez les esprits de la forêt nordique.[1] Cette générosité ponctuelle ne doit cependant jamais faire oublier la nature fondamentalement rusée de la créature, prompte à punir l'offense ou la moquerie."]},
+        {"title": "Habitat", "body": ["Forêts profondes, estives et lisières composent son territoire naturel, aux confins exacts où le travail humain touche encore à l'inconnu boisé.[1] C'est précisément cette frontière — ni tout à fait sauvage, ni tout à fait domestiquée — qui semble être son milieu de prédilection."]},
+        {"title": "Alimentation", "body": ["Aucune source ne détaille un régime alimentaire propre à la huldra, les récits se concentrant presque exclusivement sur son apparence et ses rencontres avec les hommes plutôt que sur ses besoins de subsistance."]},
+        {"title": "Intelligence", "body": ["Sa ruse se mesure à sa capacité de dissimulation : maintenir une apparence humaine parfaite tout en cachant une queue et un dos creux suppose un contrôle constant que le folklore ne prend jamais la peine d'expliquer, comme si cela relevait de sa nature même."]},
+        {"title": "Reproduction", "body": ["Les traditions rassemblées restent silencieuses sur la manière dont naissent les huldras, la figure étant transmise comme une présence intemporelle des bois plutôt que comme le fruit d'une lignée précisément décrite."]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur naturel ne lui est attribué ; le seul risque documenté pour elle tient à la découverte de sa nature véritable par un homme qu'elle aurait séduit, moment où le charme se romp et où la rencontre tourne à son désavantage ou au sien.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Les toponymes scandinaves demeurent la relique la plus tangible de la huldra : Huldremose, Hulderheim, Ulddaidvárri inscrivent dans la géographie même une croyance que les contes seuls n'auraient pas suffi à faire durer aussi longtemps.[1]",
+      "Sa parenté avec le skogsrå suédois et l'ulda same rappelle enfin que la forêt nordique n'a jamais été pensée comme un espace vide : sous des noms différents, la même silhouette au dos creux continue de hanter, d'une langue à l'autre, les mêmes lisières inquiètes.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Huldra, Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Huldra"}
+  ]
+}

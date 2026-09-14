@@ -1,0 +1,36 @@
+{
+  "description": "Sous les cendres et la fumée, l'Ifrit est le jinn le plus redouté de la tradition arabe : une puissance capable de défier un roi, et que même un sceau de Salomon ne suffit pas toujours à contenir.",
+  "sections": {
+    "fascination": [
+      "Il y a une scène, dans le Coran, qui suffit à mesurer la puissance de l'Ifrit : sommé d'apporter le trône de la reine de Saba avant que Salomon ne se lève de son siège, un ifrit parmi les djinns se propose aussitôt, certain de pouvoir tenir ce délai.[1] Le texte ne s'attarde pas sur son apparence ; il suffit qu'il soit nommé ifrit pour que sa capacité aille de soi. La créature est ainsi définie moins par une forme que par une réputation de force et de rapidité hors du commun.",
+      "Les récits des Mille et Une Nuits en tirent une figure autrement inquiétante : dans « Le Pêcheur et le Djinn », un ifrit enfermé dans une bouteille de cuivre par le sceau de Salomon jure, dans sa fureur, de tuer quiconque le libérera.[1] Cette image de la puissance captive, comprimée dans un objet dérisoire et prête à se déchaîner à la première ouverture, a fini par façonner jusqu'au génie occidental de la lampe merveilleuse, bien loin de sa source arabe."
+    ],
+    "legendes": [
+      "Le mot ifrit viendrait de la racine arabe ʿafara, « frotter de poussière » ou « rouler dans la terre », une étymologie qui ancre la créature dans la matière brute plutôt que dans l'éther.[1] Certains orientalistes occidentaux ont proposé un rapprochement avec l'avestique āfriti-, d'origine zoroastrienne, mais cette hypothèse reste débattue et ne fait pas consensus parmi les spécialistes.",
+      "Dans la classification des djinns, l'ifrit occupe une position ambiguë : ni catégorie strictement définie ni simple synonyme de démon, le terme fonctionne d'abord comme une épithète de puissance, comme le montre la formule coranique « un ifrit parmi les djinns ».[1] Le folklore islamique en a néanmoins fait une espèce reconnaissable, décrite comme une entité chthonienne des sept terres inférieures, façonnée de fumée et de feu sans flamme visible.",
+      "Les traditions marocaines lui prêtent des difformités monstrueuses : mains griffues ou couvertes d'épines, yeux flamboyants, parfois sept têtes.[1] L'ifrit peut posséder un être humain, lui conférant une force soudaine au prix de la raison ; en Égypte, la croyance populaire l'associe volontiers à l'esprit d'une personne assassinée, errant tant que son sang n'a pas trouvé vengeance."
+    ],
+    "anomalies": [
+      "Rien ne distingue plus nettement l'ifrit du djinn ordinaire que son rapport au sceau de Salomon : la légende veut que ce dernier ait pu enfermer des ifrits rebelles dans des récipients scellés, preuve indirecte qu'aucune force humaine seule n'aurait pu les contraindre.[1] Cette capacité de résistance, propre à sa classe, en fait le djinn qu'on cite en exemple quand on veut désigner le sommet de la hiérarchie invisible plutôt qu'une simple nuisance nocturne.",
+      "Sa métamorphose, bien réelle, reste selon la tradition inférieure à celle des djinns ordinaires : l'ifrit change de forme, mais moins aisément, comme si sa puissance brute se payait d'une souplesse réduite.[1] La créature la plus redoutée n'est donc pas nécessairement la plus habile ; elle l'emporte par la force et l'endurance, non par la ruse des transformations."
+    ],
+    "naturelle": {
+      "lead": "Aucun traité unique ne fixe l'histoire naturelle de l'ifrit : elle se reconstitue à partir du Coran, du folklore islamique diffus et des Mille et Une Nuits, trois sources qui se complètent sans toujours s'accorder sur les détails.",
+      "parts": [
+        {"title": "Comportement", "body": ["L'ifrit se distingue par son insoumission : rebelle plus volontiers que serviteur, il n'obéit qu'à une contrainte magique supérieure, comme celle imposée par Salomon. Sa fureur, une fois libérée, reste disproportionnée à l'offense reçue, comme le montre le djinn de la bouteille prêt à tuer son propre libérateur.[1]"]},
+        {"title": "Habitat", "body": ["La tradition islamique le loge dans les sept terres inférieures, un monde souterrain distinct de la surface humaine, ainsi que dans les déserts, les ruines et les lieux désolés où l'on évite de s'attarder après la tombée du jour.[1] Certaines croyances égyptiennes le rattachent plus précisément aux lieux d'un meurtre violent."]},
+        {"title": "Alimentation", "body": ["Aucune source consultée ne décrit de régime alimentaire propre à l'ifrit ; sa nature de fumée et de feu sans flamme le situe hors des besoins organiques ordinaires, à la différence des créatures de chair du folklore voisin."]},
+        {"title": "Intelligence", "body": ["Sa capacité à négocier, à formuler des serments et à tenir parole — fût-ce pour promettre la mort — suppose un langage et une conscience de soi pleinement développés. L'épisode coranique du trône de Saba le montre en outre capable d'évaluer ses propres limites avec exactitude, puisqu'il chiffre lui-même le délai qu'il peut tenir.[1]"]},
+        {"title": "Reproduction", "body": ["Aucune tradition consultée ne détaille de mode de reproduction propre aux ifrits ; le folklore les traite comme une classe de djinns existant de tout temps plutôt que comme une lignée qui se transmettrait de génération en génération."]},
+        {"title": "Prédateurs", "body": ["Seule une autorité d'ordre magique ou prophétique semble en mesure de le contraindre : le sceau de Salomon reste, dans la tradition, le seul instrument capable d'enfermer un ifrit contre sa volonté.[1] Aucun adversaire naturel ne lui est attribué en dehors de ce pouvoir surnaturel supérieur."]}
+      ]
+    },
+    "reliques": [
+      "Le motif du récipient scellé par un sceau prophétique, dans lequel patiente un ifrit assoiffé de vengeance, a voyagé bien au-delà du monde arabe : c'est de cette image, transmise par les traductions des Mille et Une Nuits, que dérive en grande partie l'imaginaire occidental du génie enfermé dans une lampe, prêt à exaucer ou à punir celui qui le libère.[1]",
+      "L'ifrit a également été repris par les bestiaires de la fantasy ludique moderne comme figure du djinn le plus puissant et le plus rebelle, prolongement fidèle de sa réputation islamique de force brute difficilement domptable, sans que cette reprise n'ajoute rien à la tradition religieuse et folklorique dont il est issu.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Ifrit — mythologie islamique et arabe, Coran et Mille et Une Nuits, Wikipédia", "url": "https://en.wikipedia.org/wiki/Ifrit"}
+  ]
+}

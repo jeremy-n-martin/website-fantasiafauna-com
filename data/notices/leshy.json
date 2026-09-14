@@ -1,0 +1,37 @@
+{
+  "description": "Un pas dans la taïga peut suffire à changer de maître : le leshy ne garde pas seulement la forêt, il en devient tour à tour l'arbre, l'animal, la voix qu'on croyait reconnaître.",
+  "sections": {
+    "fascination": [
+      "Le leshy n'a pas une forme, il en traverse plusieurs. Il est décrit comme « une entité multiple, fusion de plusieurs éléments : animal, plante, humain, tourbillon et esprit informe ».[1] Cette instabilité même fait sa nature : rencontrer le leshy, c'est rencontrer une forêt qui a décidé de prendre un visage, sans qu'on sache jamais lequel restera le vrai.",
+      "Sa taille elle-même refuse toute mesure fixe. Il peut apparaître gigantesque, dominant la cime des arbres, ou minuscule, réduit à la hauteur d'un brin d'herbe, selon la végétation qui l'entoure.[1] Un être qui grandit et rapetisse avec le paysage n'est plus tout à fait un individu : il est une extension du lieu lui-même, aussi changeant que la forêt qui le porte."
+    ],
+    "legendes": [
+      "Le nom vient de la racine slave commune lěsъ, qui signifie forêt : leshy se traduit littéralement par « celui de la forêt ».[1] Des variantes régionales — Borovoï pour les forêts de pins, Gaïevoï pour les bosquets, Lesnik, Lesovik — précisent chacune le type de bois gouverné, signe d'une géographie mentale où chaque forêt a, en quelque sorte, son propre gardien nommé.",
+      "En tant que divinité tutélaire, le leshy règne sur la forêt et sur la chasse. Il « prend soin de la forêt et la protège », agissant comme « le berger de toutes les créatures sylvestres ».[1] Il gouverne les populations animales et peut accorder le succès de la chasse à ceux qu'il favorise — mais cette faveur reste conditionnelle, jamais acquise une fois pour toutes.",
+      "Les chasseurs et bergers scellaient avec lui de véritables pactes, lui offrant des œufs de Pâques ou des sacrifices de sang en échange de sa protection.[1] Rompre l'accord entraînait des conséquences sévères, jusqu'à la maladie ou la mort — la forêt slave n'était donc jamais un simple terrain de chasse, mais un espace de contrat tacite avec une puissance qu'il fallait ménager."
+    ],
+    "anomalies": [
+      "Sa réputation de « guideur d'égarement » vient d'une ruse précise : le leshy « peut attirer un chasseur au plus profond du fourré en se faisant passer pour un animal insaisissable ou exotique », ou imiter « la voix d'un ami, le pleur d'un enfant, ou celle d'un mourant ».[1] Ce n'est donc jamais la force qui perd le voyageur, mais la confiance qu'il place dans une voix familière.",
+      "L'égarement qu'il provoque déforme aussi le temps et l'espace perçus : les personnes perdues découvrent souvent qu'elles se trouvaient « tout près de leurs repères habituels depuis le début ».[1] La forêt n'a donc pas bougé — c'est la perception du promeneur, faussée par le leshy, qui l'a fait tourner en rond sans qu'il s'en aperçoive.",
+      "Au-delà des adultes égarés, le leshy enlève parfois des enfants maudits, voire des adultes, les remplaçant par des changelins — objets inanimés ou descendance déformée.[1] Certains captifs reçoivent un enseignement en savoirs forestiers et deviennent sorciers ; ceux qui reviennent en sont « à jamais changés », porteurs de pouvoirs ou de connaissances mystiques dont le détail reste tu."
+    ],
+    "naturelle": {
+      "lead": "Le leshy échappe à toute fiche zoologique stable : gardien plus qu'espèce, il se décrit mieux par ses relations avec la forêt et ses habitants que par une anatomie fixe.",
+      "parts": [
+        {"title": "Comportement", "body": ["Sa disposition dépend entièrement du comportement humain : ceux qui traitent la forêt avec respect peuvent recevoir son aide, tandis que les transgresseurs s'exposent à sa punition.[1] Il n'est donc ni bon ni mauvais par nature, mais réactif à la conduite de chacun."]},
+        {"title": "Habitat", "body": ["Il habite la forêt elle-même — pinède, futaie ou bois de bouleaux selon la variante régionale de son nom — sans résidence fixe distincte du territoire qu'il incarne.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune faim propre ne lui est attribuée dans les sources ; il reçoit plutôt des offrandes rituelles, œufs ou sacrifices de sang, qui scellent un pacte plutôt qu'ils ne nourrissent un appétit.[1]"]},
+        {"title": "Intelligence", "body": ["Son intelligence est celle d'un stratège du leurre : il imite des voix, choisit ses appâts selon la faiblesse de sa victime, et sait distinguer le respect du mépris chez les humains qu'il croise.[1]"]},
+        {"title": "Reproduction", "body": ["Les traditions ne lui prêtent pas de reproduction naturelle ; en Ukraine, on lui connaît en revanche une contrepartie féminine indépendante, aux traits proches des ondines, plutôt qu'une compagne au sens strict.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur ne lui est attribué : seule la rupture d'un pacte, ou l'irrespect envers la forêt, peut retourner sa faveur en punition.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le folklore russe du nord distinguait les esprits forestiers par taille et par territoire, preuve d'une classification populaire minutieuse plutôt que d'une figure unique et uniforme.[1] Cette variété régionale — Borovoï, Lesovik, Gaïevoï — a peu à peu cédé la place, dans l'imaginaire contemporain, à un seul nom générique, le leshy, qui recouvre aujourd'hui l'ensemble de ces gardiens locaux.",
+      "Des captifs revenus de ses forêts, la tradition ne garde que des allusions : un savoir de sorcier, une compétence inexpliquée, jamais un récit complet. Le leshy reste ainsi une figure qui retient plus qu'elle ne raconte, gardienne d'un secret autant que d'un territoire.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Leshy — esprit slave de la forêt, Wikipédia", "url": "https://en.wikipedia.org/wiki/Leshy"}
+  ]
+}

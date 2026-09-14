@@ -1,0 +1,34 @@
+{
+  "description": "Chaque âme damnée qui franchit les portes des Enfers commence ici : dans une masse de chair informe, à peine capable de se souvenir qu'elle fut un jour quelqu'un.",
+  "sections": {
+    "fascination": [
+      "Le lémure n'a rien du diable cornu au sourire retors : c'est une flaque de chair tourmentée, un torse et une tête à peine ébauchés au sommet d'un corps qui refuse de tenir une forme. Ce qui inquiète n'est pas sa force, dérisoire, mais ce qu'il représente — le sort promis à toute âme corrompue qui échoue aux Neuf Enfers, réduite à l'état de matière première d'une administration infernale sans pitié.[1]",
+      "Sa laideur a une fonction narrative précise : elle rend visible, dans un même geste, la damnation et la bureaucratie. Le lémure n'est jamais seul en scène ; il est toujours compté, empilé, acheminé vers un usage plus grand que lui — soldat jetable d'une guerre entre diables et démons, ou matière promise à une promotion s'il survit assez longtemps pour la mériter."
+    ],
+    "legendes": [
+      "Le lémure appartient entièrement à l'histoire éditoriale de Donjons et Dragons plutôt qu'à une tradition théologique antérieure — le nom est repris au vocabulaire latin des esprits errants, mais la créature elle-même naît avec le jeu.[1] Il figure parmi les diables les plus anciens du bestiaire, présent dès les premières éditions comme l'échelon le plus bas de la hiérarchie infernale, sous les diables barbelés, les ossequins ou les molosses de l'enfer.",
+      "Sa description reste stable d'une édition à l'autre : une âme mortelle corrompue par le mal, bannie aux Neuf Enfers, qui y perd forme et mémoire pour devenir cette masse de chair tourmentée. Le lémure occupe une place fonctionnelle dans l'écologie infernale décrite par le jeu — il n'est pas un individu mais un stade, une matière première que les diables supérieurs manipulent, punissent et parfois élèvent au rang de diablotin."
+    ],
+    "anomalies": [
+      "Le trait le plus singulier du lémure est sa capacité à revenir d'entre les morts : tué au sein même des Neuf Enfers, il se reforme en quelques jours à moins qu'une créature bienveillante ne l'achève avec l'aide d'un sort de bénédiction, ou que ses restes ne soient aspergés d'eau bénite.[1] Cette quasi-immortalité locale explique pourquoi les diables l'emploient sans ménagement : le gaspiller ne coûte presque rien à leur économie.",
+      "Ce qui subsiste de conscience en lui suffit tout juste à faire imiter son visage sur celui de ses tourmenteurs ou des âmes voisines en souffrance, sans qu'aucune intention ne s'en dégage. Le lémure ne négocie pas, ne raisonne pas et ne se souvient pas de ce qu'il fut ; sa seule perspective, si l'on peut parler ainsi, est la torture prolongée jusqu'à une éventuelle promotion vers une forme diabolique plus achevée."
+    ],
+    "naturelle": {
+      "lead": "N'étant pas une espèce naturelle mais une punition en cours, le lémure ne connaît ni habitat au sens propre ni cycle de vie animal — les catégories suivantes décrivent plutôt une condition qu'une biologie.",
+      "parts": [
+        {"title": "Comportement", "body": ["Passif jusqu'à ce qu'on le commande, le lémure agit surtout par réflexe de souffrance : il rampe, se traîne, frappe sans discernement quand un diable supérieur le pousse au combat.[1]"]},
+        {"title": "Habitat", "body": ["Il occupe les strates les plus basses des Neuf Enfers, dans les fosses où s'accumulent les âmes fraîchement damnées avant leur tri par les diables gardiens."]},
+        {"title": "Alimentation", "body": ["Rien dans sa description ne lui prête de nourriture propre ; il se maintient par la simple persistance de sa damnation plutôt que par un métabolisme."]},
+        {"title": "Intelligence", "body": ["Sa conscience est réduite à presque rien — assez pour souffrir, pas assez pour comploter. Cette quasi-absence d'esprit le distingue nettement des diables supérieurs, calculateurs et retors.[1]"]},
+        {"title": "Reproduction", "body": ["Le lémure ne se reproduit pas : chaque nouvel individu provient d'une âme mortelle corrompue, bannie aux Enfers et refaçonnée en cette forme la plus basse de la hiérarchie diabolique."]},
+        {"title": "Prédateurs", "body": ["Les diables supérieurs eux-mêmes le traitent en ressource jetable, l'envoyant au combat ou le torturant sans retenue ; sa seule protection tient à sa capacité à renaître, sauf destruction rituelle par le bien et l'eau bénite.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le lémure reste l'un des monstres les plus anciens et les plus constants du bestiaire de Donjons et Dragons, traversant les éditions sans grand changement de concept malgré des retouches de règles. Sa popularité tient moins à son danger, minime pour un aventurier expérimenté, qu'à ce qu'il donne à voir d'entrée de jeu : la mécanique morale d'un monde où l'âme se négocie et se recycle.",
+      "Il sert aussi de repère pédagogique dans les parties : rencontrer un lémure signale au joueur qu'il touche aux Neuf Enfers, avant des adversaires bien plus redoutables. Sa laideur volontairement pathétique — chair sans dignité, souffrance sans grandeur — en fait un contrepoint discret aux diables plus prestigieux du même plan."]
+  },
+  "sources": [
+    {"id": 1, "title": "Lemure — D&D Monster Spotlight, Bell of Lost Souls", "url": "https://www.belloflostsouls.net/2019/06/dd-monster-spotlight-the-lemure.html"}
+  ]
+}

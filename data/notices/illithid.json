@@ -1,0 +1,37 @@
+{
+  "description": "L'Illithid ne mange pas pour survivre, il se nourrit d'esprits : une créature née des tables de jeu de rôle où l'horreur cosmique a pris tentacules et raison calculatrice.",
+  "sections": {
+    "fascination": [
+      "Un visage d'humanoïde couronné de quatre tentacules frémissant autour d'une bouche invisible : la description d'origine, publiée dès 1975, tient en une phrase et suffit pourtant à installer un malaise durable.[1] L'illithid n'est pas seulement monstrueux par la forme, il l'est par l'usage qu'il fait des corps qu'il croise, réduits à une ressource plutôt qu'à des êtres. Le vernis Lovecraftien de sa tête céphalopode n'est pas un hasard esthétique : la créature devait évoquer, sans jamais le nommer, l'horreur cosmique de Cthulhu.[1]",
+      "Son pouvoir le plus redouté n'a même pas besoin de contact : la décharge psionique de son onde de choc mentale abat plusieurs esprits d'un coup, sans un geste du corps.[1] Un ennemi qui ne frappe pas et pourtant terrasse renverse l'idée ordinaire du combat ; face à l'illithid, la meilleure armure du monde ne protège rien qui compte vraiment."
+    ],
+    "legendes": [
+      "L'illithid, plus connu sous le nom de mangeur de cerveaux (mind flayer), apparaît dans le tout premier numéro du fanzine The Strategic Review, au printemps 1975, sous la plume de Gary Gygax.[1] Sa genèse doit beaucoup à une image extérieure au jeu : la couverture du roman de Brian Lumley The Burrowers Beneath aurait directement inspiré son apparence tentaculaire, preuve que les bestiaires de jeu de rôle empruntent aussi bien à la littérature d'horreur qu'à la mythologie ancienne.",
+      "Sa reproduction, appelée cérémorphose, constitue l'un des processus les plus retors du bestiaire ludique : hermaphrodite, l'illithid produit à deux ou trois reprises dans son existence des larves semblables à des têtards, qui grandissent dans le bassin du Cerveau Suprême.[1] Après une décennie, les survivantes sont implantées dans des hôtes humanoïdes — humains, drows, elfes, choisis dans une fourchette de taille précise — où la larve dévore le cerveau, prend la forme du corps hôte et achève sa métamorphose en illithid adulte.",
+      "La société illithide s'organise entièrement autour du Cerveau Suprême, une intelligence collective avec laquelle chaque individu finit par fusionner, à la fois psychiquement et physiquement.[1] Ce destin commun explique en partie l'absence apparente d'individualité chez la créature : chaque mangeur de cerveaux se sait, dès sa cérémorphose, promis à une dissolution finale dans une conscience plus vaste que la sienne.",
+      "Le succès du jeu vidéo Baldur's Gate 3 a considérablement renouvelé la place de l'illithid dans la culture populaire contemporaine, en plaçant la menace de la cérémorphose au cœur même de son intrigue.[1] La créature de 1975, longtemps réservée aux tables de jeu de rôle, a ainsi trouvé un public bien plus large sans que sa nature originelle n'en soit changée."
+    ],
+    "anomalies": [
+      "L'illithid déplace la frontière ordinaire entre prédation et identité : il ne tue pas seulement sa victime, il en devient partiellement l'héritier, puisque la cérémorphose fait naître un nouvel illithid à partir du corps même de l'hôte dévoré.[1] La créature qui en résulte n'est ni tout à fait la larve d'origine ni tout à fait l'humanoïde consommé, mais une fusion dont l'identité première a été effacée.",
+      "Sa domination mentale, capable d'asservir des créatures intelligentes et d'extraire leurs souvenirs par simple contrainte psychique, pose une question rarement soulevée par les autres monstres du bestiaire : que reste-t-il d'un esprit vidé de son contenu mais laissé en vie ?[1] L'illithid ne détruit pas toujours son adversaire ; il lui arrive de le laisser fonctionner, exécutant des ordres, alors que l'essentiel de sa pensée a déjà été prélevé."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle de l'illithid appartient entièrement à la fantasy de jeu de rôle contemporaine ; elle ne prolonge aucune tradition folklorique antérieure et doit être lue comme telle, depuis sa création en 1975 jusqu'à ses développements les plus récents.",
+      "parts": [
+        {"title": "Comportement", "body": ["L'illithid agit avec un calcul froid, préférant la domination et l'exploitation méthodique de ses proies à la violence brute. Sa cruauté n'est jamais gratuite : elle sert un projet, celui de nourrir le Cerveau Suprême et d'étendre son emprise psychique sur les espèces environnantes."]},
+        {"title": "Habitat", "body": ["Il vit dans des cités souterraines organisées autour du bassin du Cerveau Suprême, ainsi qu'à bord de vaisseaux mentaux capables de voyager entre les mondes.[1] Ce double ancrage, à la fois tellurique et planaire, distingue l'illithid des autres habitants des profondeurs, plus fermement attachés à un seul territoire."]},
+        {"title": "Alimentation", "body": ["Son régime, qui lui vaut son surnom de mangeur de cerveaux, consiste à extraire et consommer directement la matière cérébrale de ses victimes, geste qui met fin à leur vie tout en nourrissant l'illithid.[1] Cette alimentation directement neurale n'a pas d'équivalent ailleurs dans le bestiaire des créatures aberrantes."]},
+        {"title": "Intelligence", "body": ["Rarement un monstre du bestiaire ludique affiche une intelligence aussi ouvertement supérieure : dès sa toute première description, l'illithid est qualifié de créature super-intelligente, avant même que ses pouvoirs psioniques ne soient détaillés.[1] Cette intelligence s'exerce en société, à travers la coordination du Cerveau Suprême, plutôt que comme un trait purement individuel."]},
+        {"title": "Reproduction", "body": ["La cérémorphose reste le trait le plus singulier de l'espèce : une larve implantée dans un hôte humanoïde en dévore le cerveau, absorbe sa forme corporelle et achève sa transformation en illithid adulte, un processus qui prend environ dix années avant l'implantation elle-même.[1]"]},
+        {"title": "Prédateurs", "body": ["Le bestiaire ludique leur oppose surtout les githyanki, un peuple guerrier né d'un esclavage mental ancien et animé d'une haine ancestrale envers les illithids, seule menace organisée à leur mesure au sein des mondes souterrains et planaires qu'ils partagent."]}
+      ]
+    },
+    "reliques": [
+      "L'onde de choc psionique, capable d'incapaciter plusieurs esprits d'un seul coup, demeure le pouvoir le plus cité de la créature depuis sa création, transmis presque sans changement d'une édition du jeu à l'autre.[1] Cette permanence contraste avec l'évolution constante d'autres aspects de son bestiaire, preuve que certains traits fondateurs résistent mieux que d'autres au temps.",
+      "Le succès récent de Baldur's Gate 3 a fait de la cérémorphose elle-même une relique narrative réactivée : l'idée d'un joueur infecté par une larve d'illithid, contraint de vivre avec la menace de sa propre transformation, reprend directement le mécanisme imaginé dès les premières descriptions du monstre en 1975.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Mind flayer (Illithid) — création, cérémorphose et société, Wikipédia", "url": "https://en.wikipedia.org/wiki/Mind_flayer"}
+  ]
+}

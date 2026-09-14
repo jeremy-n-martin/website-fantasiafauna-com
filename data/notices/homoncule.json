@@ -1,0 +1,35 @@
+{
+  "description": "Un être humain miniature que l'alchimiste prétend faire naître non d'un ventre, mais d'une cornue scellée.",
+  "sections": {
+    "fascination": [
+      "Paracelse ne parle pas d'un symbole quand il décrit l'homoncule : il donne une recette. Dans son traité De natura rerum publié en 1537, il explique qu'il suffit de laisser putréfier du sperme humain dans une cornue close, enfouie quarante jours dans du fumier de cheval, puis de nourrir la matière obtenue de sang humain pendant quarante semaines en maintenant une chaleur constante.[1] Le résultat annoncé n'est rien de moins qu'« un enfant humain vivant », simplement plus petit qu'un nouveau-né ordinaire.[1] Le vertige tient à ce protocole d'une précision presque domestique appliqué à l'acte le plus mystérieux qui soit.",
+      "Plus troublant encore : Paracelse prête à sa créature un savoir qui n'a besoin d'aucun apprentissage. L'art, dit-il, est « incarné et inné » en elle, si bien qu'elle n'a nul besoin d'être instruite comme un enfant ordinaire.[1] L'homoncule n'est donc pas un être inachevé qu'il faudrait éduquer, mais une intelligence complète dès l'éprouvette — un renversement radical de ce que la nature met, chez nous, des années à accomplir."
+    ],
+    "legendes": [
+      "L'idée trouve un écho scientifique inattendu dans le préformationnisme, théorie selon laquelle le sperme contiendrait déjà de minuscules humains tout formés, les fameux animalcules, ce qui dispensait d'expliquer comment une matière informe pouvait devenir un corps.[1] Le problème logique qu'elle soulève est vertigineux : si chaque semence contient un homoncule, celui-ci doit à son tour porter en lui une semence contenant un homoncule plus petit encore, et ainsi de suite sans fin.[1]",
+      "La même intuition traverse l'art sacré médiéval, qui représente souvent l'Enfant Jésus non comme un nourrisson mais comme un adulte miniature, traduction picturale de l'idée théologique selon laquelle le corps et l'âme du Christ furent, dès la conception, parfaits et immuables.[1] L'homoncule alchimique et l'enfant divin partagent ainsi, sans se confondre, la même hantise d'une perfection donnée d'emblée plutôt que construite par la croissance.",
+      "La postérité littéraire du motif est longue. Thomas Browne évoque les prétentions de Paracelse dans sa Religio Medici en 1643 ; Mary Shelley s'en serait souvenue en concevant son Frankenstein, autre créature assemblée plutôt qu'engendrée.[1] Goethe pousse le motif plus loin encore dans le second Faust, où l'Homonculus devient un pur esprit en quête de corps, incarnation philosophique du rêve alchimique de transformer la matière par la seule volonté.[1]"
+    ],
+    "anomalies": [
+      "Le motif a largement quitté le laboratoire pour la fiction contemporaine, où l'homoncule désigne désormais tout être artificiel ou magiquement créé, des mangas comme Fullmetal Alchemist aux bestiaires de jeux de rôle tels que Donjons et Dragons.[1] Cette large diffusion tend à effacer la précision presque clinique du protocole originel au profit d'une simple étiquette pour « créature fabriquée »."
+    ],
+    "naturelle": {
+      "lead": "Entre le protocole alchimique de Paracelse et les usages contemporains du mot, l'homoncule reste avant tout une pensée sur la possibilité de fabriquer la vie plutôt qu'une créature au sens naturaliste du terme.",
+      "parts": [
+        {"title": "Comportement", "body": ["Dès sa formation, l'homoncule agirait avec un discernement qui ne doit rien à l'expérience : son art lui est inné, si bien qu'aucune éducation ne semble nécessaire pour qu'il agisse en être achevé.[1] Ce comportement d'adulte instantané reste l'aspect le plus déroutant du récit paracelsien."]},
+        {"title": "Habitat", "body": ["Son seul milieu documenté est le laboratoire de l'alchimiste : cornue scellée, fumier de cheval, chaleur entretenue avec constance pendant des mois.[1] Rien dans les textes ne lui prête d'existence hors de cet environnement artificiel et surveillé."]},
+        {"title": "Alimentation", "body": ["Le protocole de Paracelse prévoit un régime précis : du sang humain, administré quotidiennement durant les quarante semaines suivant la putréfaction initiale.[1] Cette alimentation n'a rien d'un détail secondaire ; elle conditionne, selon le texte, la réussite même de l'opération."]},
+        {"title": "Intelligence", "body": ["L'homoncule posséderait un savoir « embodied and inborn », embarqué dès sa formation plutôt qu'acquis par l'expérience du monde.[1] Cette intelligence sans enfance en fait une créature philosophiquement plus proche de l'automate savant que de l'être vivant ordinaire."]},
+        {"title": "Reproduction", "body": ["Il ne naît pas : il est produit, en vase clos, par une manipulation délibérée de matière humaine plutôt que par une conception au sens biologique.[1] Cette génération artificielle, revendiquée comme reproductible par quiconque suit le protocole, est précisément ce qui distingue l'homoncule de toute naissance naturelle."]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur ne lui est attribué dans les sources ; le seul danger documenté est celui, tout intérieur au processus, d'un échec de fabrication — chaleur mal maintenue, sang insuffisant, cornue brisée avant terme.[1] La fragilité de l'homoncule tient à son mode de création, non à une quelconque chasse dont il serait la proie."]}
+      ]
+    },
+    "reliques": [
+      "Le véritable vestige de l'homoncule n'est ni un objet ni un lieu, mais une idée qui traverse les siècles sans jamais s'éteindre : celle d'une humanité capable de transcender ses propres limites en créant la vie par le seul savoir et la seule volonté.[1]",
+      "De la cornue de Paracelse au laboratoire de Victor Frankenstein, de l'esprit en quête de corps chez Goethe aux créatures artificielles des mangas et des jeux modernes, l'homoncule reste la même promesse déplacée d'un siècle à l'autre : fabriquer, plutôt qu'engendrer, un être à notre image.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Homunculus, Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Homunculus"}
+  ]
+}

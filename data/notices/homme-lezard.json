@@ -1,0 +1,35 @@
+{
+  "description": "Sous des écailles indifférentes à nos morales, un peuple entier a appris à survivre là où nous ne ferions que périr.",
+  "sections": {
+    "fascination": [
+      "L'homme-lézard des bestiaires modernes ne ment pas sur ce qu'il est : un corps de reptile debout, une crête multicolore sur le crâne, des griffes plutôt que des mains d'artisan. Il vit dans les marais et les jungles, territoire qu'il défend avec une âpreté que rien ne vient tempérer, la survie y étant la seule valeur qui compte réellement.[1] Le vertige ne tient pas à sa force, mais à l'indifférence de son regard : là où l'humain voit un monstre carnivore, le lézard ne voit qu'une évidence de la chaîne alimentaire.",
+      "Sa moralité déroute davantage que ses crocs. Les récits de joueurs le montrent capable de dévorer un adversaire sans qu'aucune malice n'entre en jeu — un témoin s'étonne même que l'on puisse juger mauvais un comportement qui, chez cette peuplade, ne relève d'aucune cruauté.[1] Cette neutralité affichée est peut-être ce qui rend l'homme-lézard le plus étranger de tous les humanoïdes de fantasy : il n'est ni l'ennemi haineux du gobelin, ni le sauvage à civiliser, mais un être dont l'éthique se déduit d'un autre monde sensoriel que le nôtre."
+    ],
+    "legendes": [
+      "L'homme-lézard n'appartient à aucun folklore antérieur au jeu de rôle ; sa généalogie se limite aux tables de Donjons et Dragons, où il apparaît comme un peuple jouable à la fois primitif dans ses moyens et sophistiqué dans son rapport au monde.[1] Le mot « primitif » employé pour le décrire est trompeur : les mêmes sources notent des sociétés capables d'organisation militaire complexe et de cultes voués aux dragons, bien loin de l'image d'une tribu de chasseurs-cueilleurs sans mémoire.[1]",
+      "Le lézard parle draconique, langue qu'il partage avec les dragons et les kobolds, ce qui trahit une parenté symbolique plus qu'une filiation biologique : dans l'imaginaire du jeu, être « de sang froid » range une créature dans une famille spirituelle autant que zoologique.[1] Cette langue commune explique en partie pourquoi certains clans vénèrent les grands reptiles ailés comme des ancêtres ou des dieux, sans que rien n'exige qu'ils en descendent réellement."
+    ],
+    "anomalies": [
+      "La peau de l'homme-lézard fait office d'armure naturelle, suffisamment dense pour remplacer l'équipement qu'un guerrier humain devrait forger et entretenir.[1] Cette économie de moyens — nul besoin de forge quand l'écaille suffit — dit assez combien cette créature est pensée comme un être d'adaptation plutôt que d'industrie.",
+      "Sa vie amphibie surprend davantage encore : il nage aussi vite qu'un humain court, et peut retenir son souffle un quart d'heure durant.[1] Un marais qui semble hostile à tout campement humain devient, pour lui, un territoire aux ressources abondantes et aux issues multiples, visibles et invisibles."
+    ],
+    "naturelle": {
+      "lead": "Créature entièrement issue de l'imaginaire ludique du XXe siècle, l'homme-lézard emprunte à la biologie reptilienne une cohérence que le jeu prend soin de développer jusque dans le détail de ses mœurs.",
+      "parts": [
+        {"title": "Comportement", "body": ["La défense du territoire prime sur toute autre considération sociale ; un homme-lézard qui juge un lieu sien le protégera sans political correctness ni sommation, la survie de son clan primant sur toute diplomatie inutile.[1] Ce pragmatisme extrême ne l'empêche pas, selon certains récits, de vivre en unités familiales stables, loin du sauvage isolé que l'archétype pourrait laisser croire."]},
+        {"title": "Habitat", "body": ["Marais et jungles concentrent l'essentiel de sa présence, environnements où sa peau imperméable et sa capacité de nage lui donnent un avantage écrasant sur des envahisseurs terrestres.[1] Ces mêmes milieux, jugés inhospitaliers par les cités humaines, deviennent chez lui un terrain de chasse méthodique."]},
+        {"title": "Alimentation", "body": ["Le régime carnivore de l'homme-lézard ne s'embarrasse pas des tabous humains : certains clans consomment sans détour la chair des ennemis tombés, geste que leurs propres codes moraux ne classent pas comme un mal.[1] Cette absence de scrupule n'est pas présentée comme une monstruosité gratuite, mais comme la simple continuité d'une logique de survie."]},
+        {"title": "Intelligence", "body": ["Sa langue, le draconique, l'inscrit dans une lignée symbolique partagée avec les dragons et d'autres créatures reptiliennes du même univers.[1] Certaines communautés développent, au-delà du simple instinct, des structures militaires organisées et des cultes théologiques dédiés aux grands dragons, preuve que la sophistication sociale n'est pas l'apanage des peuples aux mœurs plus proches des nôtres."]},
+        {"title": "Reproduction", "body": ["Les sources disponibles restent discrètes sur les mœurs reproductives précises de ce peuple, les récits insistant davantage sur la vie de clan et la transmission des territoires que sur la naissance elle-même.[1] Ce silence relatif laisse la part belle à l'interprétation des meneurs de jeu, chacun adaptant la créature aux besoins de son propre marécage narratif."]},
+        {"title": "Prédateurs", "body": ["Aucune bête ne chasse l'homme-lézard avec une régularité qui en ferait un gibier attitré ; sa carapace naturelle et son aisance aquatique le placent plutôt en position de prédateur dominant dans son propre biotope.[1] Le danger vient surtout d'autres bandes rivales ou d'intrus venus revendiquer le même marais."]}
+      ]
+    },
+    "reliques": [
+      "Ce que l'on retient d'un campement d'hommes-lézards, ce sont moins des reliques que des trophées : crânes de proies, crêtes arrachées, dents conservées comme preuves d'un territoire défendu avec succès.[1] Rien ici ne relève du sacré au sens où l'entendraient les cultures humaines ; l'objet garde la mémoire d'un combat gagné, non celle d'un culte transmis.",
+      "Le vrai vestige de l'homme-lézard est peut-être ailleurs : dans la persistance, à travers des décennies de jeu de rôle, d'un archétype qui refuse obstinément de se laisser réduire à la brute écailleuse des premiers bestiaires, révélant à chaque nouvelle édition un peu plus de sa complexité sociale.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Lizardfolk — Monsters, D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16946-lizardfolk"}
+  ]
+}

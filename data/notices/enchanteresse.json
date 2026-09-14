@@ -1,0 +1,37 @@
+{
+  "description": "Sa voix transforme un homme mieux qu'une lame : il en ressort changé, parfois méconnaissable, toujours convaincu d'avoir choisi lui-même.",
+  "sections": {
+    "fascination": [
+      "Ce qui rend l'enchanteresse redoutable n'est jamais visible au premier regard : ni crocs, ni griffes, mais une voix, un philtre, un geste de baguette. L'école magique qui porte son nom se définit comme celle qui « influence les esprits »[1] — une magie qui n'a pas besoin de vaincre un corps quand elle sait plier une volonté. Circé, dans l'Odyssée, illustre cette économie de moyens : elle ne combat jamais les compagnons d'Ulysse, elle les métamorphose en pourceaux d'un simple attouchement de baguette, après les avoir enivrés d'un philtre.[2]",
+      "L'épithète que lui donne Homère, *polypharmakos*, la femme aux mille poisons et remèdes, résume ce pouvoir d'un mot : la connaissance intime des plantes et des potions, mise au service d'une transformation qui ne tue pas mais dénature.[2] Le danger de l'enchanteresse tient précisément à cette absence de violence apparente — on entre chez elle par curiosité ou par soif, et l'on en ressort avec un corps qui n'est plus le sien."
+    ],
+    "legendes": [
+      "Circé apparaît dans la mythologie grecque comme la fille du Soleil, Hélios, et de l'océanide Persé ; son nom, dérivé du grec *kirkos*, signifie faucon ou épervier.[2] Elle règne seule sur l'île d'Éa, décrite comme couverte d'une forêt dense au milieu de laquelle se dresse son palais — un lieu que les Anciens situaient au large des côtes italiennes, en vue du rivage tyrrhénien, non loin de l'île d'Elbe.[2]",
+      "L'épisode le plus célèbre reste celui d'Ulysse et de son équipage : attirés par son chant, les marins acceptent la coupe qu'elle leur tend et se retrouvent changés en porcs. Seul Ulysse échappe au sortilège grâce à une plante protectrice fournie par Hermès ; il contraint Circé à rendre leur forme humaine à ses compagnons, avant de rester sur son île une année entière, dont naîtront plusieurs enfants, parmi lesquels Latinus et Télégonos.[2]",
+      "La postérité littéraire a fait de Circé l'archétype même de l'enchanteresse occidentale — puissance magique et danger de la séduction réunis dans une même figure, réinterprétée diversement selon les siècles, tantôt monstre à vaincre, tantôt femme savante injustement diabolisée.[2] Le jeu de rôle moderne, de son côté, a repris le terme d'enchantement pour désigner une école de magie entière consacrée à l'influence des esprits, sans toujours conserver le nom propre de la magicienne qui l'incarne le mieux dans la tradition antique.[1]"
+    ],
+    "anomalies": [
+      "Une différence sépare nettement l'enchanteresse antique de l'école de magie qui porte aujourd'hui ce nom. Circé transforme des corps entiers en une autre espèce animale, un pouvoir de métamorphose totale.[2] L'enchantement ludique, en revanche, se concentre sur l'esprit plutôt que sur l'anatomie : charmer, endormir, contraindre une décision — la victime garde son corps, mais plus tout à fait sa volonté.[1] Ce déplacement du corps vers l'esprit marque le passage d'un mythe antique à une mécanique de jeu contemporaine.",
+      "Autre écart notable : Circé agit seule, sur son île, sans hiérarchie ni école qui l'encadre — sa magie est un attribut personnel hérité de son ascendance solaire.[2] L'enchantement de jeu, à l'inverse, se transmet comme une discipline qu'on étudie, classée aux côtés d'autres écoles telles que l'évocation ou l'illusion, ce qui en fait un savoir partageable plutôt qu'un don unique."
+    ],
+    "naturelle": {
+      "lead": "Deux figures se superposent sous ce nom : la magicienne grecque de la tradition homérique, maîtresse d'une île et de ses poisons, et l'archétype que la fantasy moderne a construit à partir de l'école magique de l'enchantement.",
+      "parts": [
+        {"title": "Comportement", "body": ["Circé attire par le chant avant de frapper par la potion : son comportement suit un rituel d'hospitalité détourné, où l'accueil précède le piège.[2] L'enchanteresse de fantasy conserve ce schéma d'une séduction qui précède la contrainte, préférant convaincre — ou paraître convaincre — plutôt que soumettre par la force brute."]},
+        {"title": "Habitat", "body": ["L'île d'Éa, isolée et boisée, concentre tout le pouvoir de Circé : nul ne l'atteint sans intention, ce qui fait de son territoire un filtre autant qu'un refuge.[2] Tours, cours et îles reculées reviennent comme cadres privilégiés dans les récits ultérieurs d'enchanteresses, toujours à l'écart du monde ordinaire."]},
+        {"title": "Alimentation", "body": ["Le philtre tient lieu de nourriture rituelle dans le mythe : c'est en buvant la coupe offerte par Circé que les compagnons d'Ulysse scellent leur métamorphose, la boisson servant de vecteur au sortilège plutôt que de simple repas.[2]"]},
+        {"title": "Intelligence", "body": ["Homère qualifie Circé de *polypharmakos*, connaisseuse experte des plantes et des potions.[2] Cette érudition botanique et magique, plus que la force, constitue l'essentiel de son pouvoir — un savoir accumulé, transmis dans certaines versions à sa descendance, dont Médée serait selon certains récits une parente."]},
+        {"title": "Reproduction", "body": ["Le séjour d'Ulysse sur l'île d'Éa donne naissance à plusieurs enfants, dont Latinus et Télégonos, ce dernier jouant un rôle majeur dans les traditions tardives sur la mort d'Ulysse.[2] La filiation de Circé s'inscrit ainsi dans la généalogie même des héros qu'elle a d'abord retenus prisonniers."]},
+        {"title": "Prédateurs", "body": ["Ulysse demeure le seul adversaire que la légende attribue à Circé, protégé par une plante magique — le môly — que lui remet Hermès avant la confrontation.[2] Face à cette protection divine, le sortilège de l'enchanteresse échoue, et le rapport de force s'inverse : c'est elle qui doit alors composer avec son hôte."]}
+      ]
+    },
+    "reliques": [
+      "Le môly, la plante blanche à racine noire donnée par Hermès à Ulysse, reste l'objet le plus célèbre associé à cette légende : une contre-magie végétale capable d'annuler le philtre de l'enchanteresse la plus réputée de la tradition grecque.[2]",
+      "La baguette de Circé, avec laquelle elle touche ses victimes pour parachever leur métamorphose, a fourni à l'iconographie occidentale l'un de ses attributs les plus durables : l'instrument court, presque anodin, par lequel un pouvoir considérable se transmet d'un geste.[2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Basic Rules, écoles de magie et enchantement", "url": "https://www.dndbeyond.com/sources/dnd/free-rules/spells"},
+    {"id": 2, "title": "Circé — mythologie grecque, Odyssée, Wikipédia", "url": "https://en.wikipedia.org/wiki/Circe"}
+  ]
+}

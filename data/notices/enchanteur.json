@@ -1,0 +1,38 @@
+{
+  "description": "Il ne conquiert rien par la force : un royaume, un cœur ou une pierre levée cèdent à sa parole avant même qu'il ne lève la main.",
+  "sections": {
+    "fascination": [
+      "Ce qui distingue l'enchanteur du simple magicien, c'est la durée de son emprise. L'enchantement, dans la classification savante des écoles de magie, se définit précisément comme l'art d'« influencer les esprits »[1] — non de détruire, non de créer, mais de plier une volonté à une autre sans que la victime sente toujours la contrainte. Cette discrétion fait tout le charme inquiétant du personnage : on ne sait jamais si l'on obéit encore à soi-même.",
+      "Merlin incarne cette figure mieux que quiconque. Conseiller plus que guerrier, il ne remporte aucune bataille par l'épée mais dispose des rois par la prophétie et l'illusion.[2] Sa transformation en cerf, sa capacité à connaître le passé et l'avenir en même temps, en font un être dont le pouvoir consiste moins à agir sur la matière qu'à réorganiser ce que les autres croient savoir de leur propre destin."
+    ],
+    "legendes": [
+      "Geoffroy de Monmouth fixe la figure au XIIe siècle, dans son *Historia Regum Britanniae* (vers 1136), en fusionnant deux personnages antérieurs : Myrddin Wyllt, un barde gallois sombré dans la folie, et Ambrosius Aurelianus, chef de guerre romano-britannique.[2] De cette fusion naît « Merlinus Ambrosius », engendré selon le récit par un incube et une mortelle — origine démoniaque qui explique, dans la logique du texte, l'étendue de ses dons prophétiques.",
+      "Le rôle que la légende lui attribue est d'abord celui d'un conseiller de la couronne, présent avant même la naissance d'Arthur : c'est lui qui organise la ruse permettant à Uther Pendragon d'approcher Ygraine, lui encore qui érige Stonehenge en faisant transporter les pierres depuis l'Irlande par des moyens que le récit qualifie de magiques.[2] L'épisode de l'épée dans la pierre, dans les traditions ultérieures, prolonge cette fonction : Merlin ne prend jamais le trône pour lui-même, il légitime celui d'un autre.",
+      "La fin de Merlin retourne contre lui l'arme de sa vie entière. Dans les romans en prose qui suivent Geoffroy de Monmouth, son élève Viviane — parfois nommée Nimue — apprend de lui les formules mêmes qui serviront à l'enfermer, le scellant dans une tour d'air, une grotte ou un arbre selon les versions.[2] Le maître de l'enchantement se trouve enchanté à son tour, retournement qui a fait de cet épisode l'un des plus repris de toute la matière arthurienne.",
+      "Le jeu de rôle moderne a repris ce vocabulaire pour désigner une discipline entière de la magie plutôt qu'un individu unique : l'enchantement y regroupe les sorts qui charment, contrôlent ou apaisent l'esprit d'autrui.[1] L'enchanteur, dans cette acception, n'est plus un personnage légendaire précis mais quiconque se spécialise dans cet art d'influence — un héritage direct, quoique très simplifié, de la figure médiévale."
+    ],
+    "anomalies": [
+      "Le glissement le plus net entre Merlin et l'enchanteur de jeu tient à la source du pouvoir. Le Merlin médiéval tire sa science d'une nature mixte, mi-démoniaque mi-humaine, et d'un don prophétique qui dépasse le simple sortilège : il voit le temps autrement que les mortels.[2] L'enchanteur de fantasy, lui, acquiert son art par l'étude d'une école de magie parmi d'autres, au même titre qu'un spécialiste de l'évocation ou de la nécromancie[1] — un savoir qu'on apprend, non un destin qu'on subit.",
+      "Un second écart concerne la nature de l'influence exercée. Merlin agit sur les événements et les rois par la prophétie et le conseil, un pouvoir presque politique.[2] L'enchantement ludique, quant à lui, cible directement l'esprit individuel — charme, sommeil, obéissance — une magie plus intime, plus proche de la psychologie que de la géopolitique légendaire."
+    ],
+    "naturelle": {
+      "lead": "Deux strates cohabitent sous ce nom : la figure littéraire de Merlin, conseiller et prophète médiéval, et l'archétype de jeu que la fantasy a construit à partir de l'école magique de l'enchantement.",
+      "parts": [
+        {"title": "Comportement", "body": ["L'enchanteur légendaire se tient en retrait du pouvoir qu'il façonne : Merlin conseille les rois sans jamais régner lui-même, préférant l'ombre du trône à son siège.[2] L'archétype ludique conserve cette discrétion stratégique, agissant sur l'esprit adverse plutôt que sur son corps, de sorte que la victoire ressemble rarement à une bataille frontale."]},
+        {"title": "Habitat", "body": ["Cours royales, forêts profondes et îles reculées se partagent la légende : Merlin va des palais aux forêts sauvages où il se retire en ermite après ses prophéties les plus sombres.[2] L'enchanteur de fantasy hérite de ce double terrain, également à l'aise dans une cour qu'il manipule et dans une retraite qui protège ses savoirs."]},
+        {"title": "Alimentation", "body": ["Aucune source ne prête à Merlin un régime particulier ; sa légende s'attache à son esprit et à sa parole, jamais à son corps ou à ses besoins matériels.[2]"]},
+        {"title": "Intelligence", "body": ["La prophétie constitue le sommet de cette intelligence : connaître par avance l'issue d'un événement donne à l'enchanteur un ascendant qu'aucune force physique ne procure.[2] L'école de magie qui porte son nom au sens ludique formalise cette intelligence en une discipline d'influence des esprits, enseignable et classable parmi d'autres savoirs magiques.[1]"]},
+        {"title": "Reproduction", "body": ["Merlin transmet son art par l'enseignement plutôt que par la filiation : c'est son élève Viviane qui hérite de ses formules, retournées ensuite contre lui.[2] L'enchantement, en ce sens, se propage comme un savoir qu'on lègue, avec le risque que l'élève dépasse ou trahisse le maître."]},
+        {"title": "Prédateurs", "body": ["Le seul adversaire qui vienne jamais à bout de Merlin est son propre disciple, armé des sortilèges qu'il lui a enseignés.[2] La leçon reste constante dans toutes les versions de la légende : l'enchanteur le plus redoutable pour un maître de l'influence est celui à qui il a lui-même enseigné l'art de influencer."]}
+      ]
+    },
+    "reliques": [
+      "Stonehenge demeure, dans la légende, la relique la plus massive attribuée à un enchanteur : un monument entier transporté par magie depuis l'Irlande pour servir de sépulture à un chef de guerre.[2] Aucune pierre n'atteste littéralement ce récit, mais l'association entre le monument et le personnage a traversé neuf siècles de récits.",
+      "Le tombeau ou la prison de Merlin — grotte, arbre creux ou tour d'air selon les versions — fonctionne comme une relique inversée : non un objet qu'on garde, mais un lieu qui garde l'enchanteur lui-même, preuve vivante que son art a fini par se retourner contre son auteur.[2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Basic Rules, écoles de magie et enchantement", "url": "https://www.dndbeyond.com/sources/dnd/free-rules/spells"},
+    {"id": 2, "title": "Merlin — légende arthurienne, Geoffroy de Monmouth, Wikipédia", "url": "https://en.wikipedia.org/wiki/Merlin"}
+  ]
+}

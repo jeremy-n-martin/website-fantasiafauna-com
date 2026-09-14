@@ -1,0 +1,36 @@
+{
+  "description": "Sous les rues, un peuple entier naît d'une morsure choisie, et grandit dans l'ombre disciplinée d'une guilde.",
+  "sections": {
+    "fascination": [
+      "L'homme-rat ne subit pas sa forme animale comme une malédiction incontrôlable : il la choisit, l'exploite, la préfère même à sa forme humaine dès qu'il s'agit de se glisser dans une cave ou de fuir un guet trop curieux.[1] Trois silhouettes se partagent le même être — humaine, hybride, rat géant — sans que ses aptitudes réelles n'en soient changées ; seule la taille varie, ce qui fait de la métamorphose un outil tactique plus qu'une tragédie intime.[1]",
+      "Le vertige ne vient pas de la morsure elle-même, mais de ce qu'elle signifie : chez l'homme-rat, la lycanthropie ne se transmet pas au hasard des rencontres nocturnes. Elle sert d'initiation. Un wererat ne mord un humanoïde dans l'intention de le contaminer que s'il souhaite l'intégrer à son clan, comme on remettrait à un nouveau venu les clés d'une arrière-boutique.[1] La terreur du mythe se double ainsi d'une logique presque administrative, celle d'un recrutement organisé."
+    ],
+    "legendes": [
+      "Le mot lui-même est un néologisme, forgé par analogie avec le loup-garou pour désigner une créature thérianthrope capable de revêtir la forme d'un rat.[2] Rien, avant le XXe siècle, ne le distingue comme figure folklorique autonome : il apparaît dans les genres fantastique et horrifique à partir des années 1970, puis se banalise dans les jeux de rôle comme Donjons et Dragons et dans la fantasy contemporaine, jusque dans des séries comme celle d'Anita Blake.[2]",
+      "Cette absence de racine ancienne ne l'empêche pas d'hériter, par contamination symbolique, de tout ce que le rat porte depuis des siècles dans l'imaginaire européen : la peste, l'égout, la multiplication incontrôlable. Le jeu de rôle transforme ces peurs anciennes en organisation sociale cohérente — une pègre plutôt qu'un fléau aveugle, ce qui rend la créature plus inquiétante encore, car elle raisonne.[1]"
+    ],
+    "anomalies": [
+      "Un clan d'hommes-rats fonctionne à la manière d'une guilde de voleurs, hiérarchisée, où la malédiction se transmet comme on scelle un pacte plutôt que comme on répand une épidémie.[1] Cette structure clanique, loyale et implacablement organisée, correspond à un alignement que les bestiaires qualifient de loyal mauvais — l'ordre au service du crime, non le chaos.[1]",
+      "Sa chair oppose une résistance particulière aux armes ordinaires : les coups contondants, perforants ou tranchants qui ne sont pas d'argent glissent sur lui sans grand effet.[1] Seul un métal precieux et rituel, dans la plus pure tradition du loup-garou, parvient à entamer réellement cette créature — détail qui trahit sa filiation directe avec le mythe du lycanthrope classique plutôt qu'avec une zoologie propre."
+    ],
+    "naturelle": {
+      "lead": "Créature entièrement issue de la fantasy et de l'horreur urbaine du XXe siècle, l'homme-rat emprunte au loup-garou sa mécanique de malédiction tout en la mettant au service d'une pègre organisée plutôt que d'une solitude bestiale.",
+      "parts": [
+        {"title": "Comportement", "body": ["Discrétion et infiltration priment sur la confrontation directe : la forme de rat sert avant tout à fuir ou à espionner, la forme hybride ou humaine étant réservée aux moments où la force doit s'exercer ouvertement.[1] Cette préférence pour l'ombre en fait un adversaire redoutable précisément parce qu'il évite le combat qu'il ne peut pas remporter."]},
+        {"title": "Habitat", "body": ["Égouts, caves et quartiers insalubres des villes se disputent sa présence avec les forêts, doubles milieux qui lui offrent chacun leurs cachettes et leurs proies.[1] La créature prospère partout où l'architecture humaine crée des interstices que l'œil ne surveille pas."]},
+        {"title": "Alimentation", "body": ["Aucune source ne détaille un régime propre à l'homme-rat au-delà de son opportunisme de charognard urbain, hérité autant du rat réel que du bestiaire fantastique qui l'a précédé.[1] Ce silence relatif renforce l'idée d'une créature définie moins par ses besoins biologiques que par sa fonction sociale de prédateur organisé."]},
+        {"title": "Intelligence", "body": ["La transmission volontaire de la malédiction suppose un discernement froid : mordre pour tuer, ou mordre pour recruter, relève d'un calcul, non d'un réflexe animal.[1] Cette rationalité du choix distingue nettement l'homme-rat du loup-garou classique, esclave de la pleine lune plutôt que stratège de sa propre contagion."]},
+        {"title": "Reproduction", "body": ["L'homme-rat ne se reproduit pas au sens biologique du terme autant qu'il ne se recrute : la morsure infectée, transmise à dessein, fait naître un nouveau membre du clan plus sûrement qu'une naissance ordinaire.[1] Le lignage se construit ainsi par contamination choisie plutôt que par filiation du sang."]},
+        {"title": "Prédateurs", "body": ["L'argent reste sa seule faiblesse structurelle documentée, toute arme non forgée dans ce métal glissant sur une chair par ailleurs quasi invulnérable aux coups ordinaires.[1] En dehors de ce détail rituel, rien ne le désigne comme la proie naturelle d'une autre créature du bestiaire."]}
+      ]
+    },
+    "reliques": [
+      "L'argent, encore lui, fonctionne comme la seule relique tangible attachée à ce mythe : lame, balle ou poignard, pourvu que le métal soit le bon, suffit à rappeler que sous la ruse urbaine du wererat subsiste la vieille mécanique du lycanthrope.[1]",
+      "Le vrai vestige de l'homme-rat tient cependant à sa genèse littéraire : simple prolongement du loup-garou par analogie de nom dans les années 1970, il est devenu en quelques décennies un poncif à part entière du jeu de rôle et de la fantasy urbaine, preuve qu'un mythe peut naître d'un jeu de mots avant de s'enraciner dans l'imaginaire collectif.[2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Wererat — Monsters, D&D Beyond", "url": "https://www.dndbeyond.com/monsters/17055-wererat"},
+    {"id": 2, "title": "Wererat, Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Wererat"}
+  ]
+}

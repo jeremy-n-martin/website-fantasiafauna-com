@@ -1,0 +1,38 @@
+{
+  "description": "L'Illusionniste ne dépense aucune force qu'on puisse mesurer : il gagne en faisant croire, et sa magie vaut ce que vaut le doute qu'elle sème chez celui qui regarde.",
+  "sections": {
+    "fascination": [
+      "Il y a quelque chose d'insolent dans une magie qui ne détruit rien : l'illusionniste ne lance pas de flammes, il façonne des images et des sons que l'esprit de sa cible prend pour le monde lui-même.[3] La menace ne vient jamais de la puissance brute, mais du doute qu'elle installe ; un adversaire qui ne sait plus distinguer le vrai du faux a déjà perdu la moitié du combat, sans qu'un seul coup n'ait été porté.",
+      "Certains de ces trompeurs se contentent d'amuser une foule, quand d'autres retournent le même art contre leurs adversaires pour les effrayer ou les dépouiller ; la limite entre le divertissement et le piège tient à une seule intention.[3] Le prestige de l'illusionniste se mesure ainsi moins à la beauté du sortilège qu'à la certitude de sa victime : plus le spectateur est convaincu, plus la magie a fonctionné."
+    ],
+    "legendes": [
+      "Dans les traditions de jeu de rôle qui codifient la magie par écoles, l'illusionniste se rattache à celle de l'Illusion, décrite comme un art qui « éblouit les sens, embrouille l'esprit et trompe jusqu'aux plus sages ».[3] Cette définition situe d'emblée le personnage à l'opposé du guerrier ou de l'évocateur : sa force ne réside pas dans ce qu'il produit réellement, mais dans ce qu'il fait croire avoir produit.",
+      "Un sortilège mineur, capable de superposer une image et un son en un seul geste, illustre bien la logique de cet art : la ruse la plus discrète, correctement employée, vaut souvent mieux qu'un effet spectaculaire.[3] Les praticiens les plus aguerris apprennent même à modifier une illusion déjà en place, ou à rendre brièvement réel un objet ordinaire mêlé au mensonge, brouillant un peu plus la frontière entre le sortilège et le monde qu'il imite.",
+      "Avant que la fantasy de jeu de rôle n'en fasse une école de magie, la figure de l'illusionniste existait déjà sur les scènes du XIXe siècle : Jean-Eugène Robert-Houdin, horloger devenu magicien, est considéré comme le père de la prestidigitation moderne pour avoir transformé un divertissement de foire en art théâtral, troquant les tenues traditionnelles pour l'habit de soirée et le décor élégant.[4] Son théâtre parisien, fondé en 1845, popularise des numéros comme la « double vue », où l'habileté technique se fait passer pour un pouvoir surnaturel.",
+      "Cette tradition scénique, sans lien de parenté directe avec les créatures magiques du folklore, éclaire pourtant l'archétype fantastique de l'illusionniste : la magie qu'on lui prête n'est jamais qu'une prestidigitation portée à son degré le plus achevé, où le spectateur consent d'avance à être trompé.[4] Harry Houdini, dont le nom de scène rend hommage à Robert-Houdin sans lien de parenté réel avec lui, prolonge cette lignée en ajoutant le danger et l'évasion au répertoire du trompeur professionnel."
+    ],
+    "anomalies": [
+      "L'illusion pose un problème que peu d'autres sortilèges soulèvent aussi directement : que reste-t-il d'un effet qui n'existe que dans l'esprit de celui qui le perçoit ? Un observateur averti, qui sait qu'il regarde une illusion, peut parfois voir au travers d'un simple effort de volonté, ce qui rend cette magie aussi fragile qu'elle est trompeuse.[3]",
+      "Certains illusionnistes accomplis franchissent une limite plus étrange encore, en rendant brièvement réel un objet inanimé mêlé à leur mensonge, sans pour autant lui donner le pouvoir de blesser.[3] Cette demi-réalité, ni tout à fait fictive ni tout à fait tangible, résume assez bien la nature de tout l'art illusionniste : un mensonge qui touche le monde sans jamais s'y confondre entièrement."
+    ],
+    "naturelle": {
+      "lead": "L'illusionniste n'appartient à aucune tradition folklorique répertoriée ; son portrait s'appuie sur l'archétype du magicien spécialisé dans l'école de l'Illusion des jeux de rôle contemporains, éclairé en arrière-plan par la tradition bien réelle du magicien de scène.",
+      "parts": [
+        {"title": "Comportement", "body": ["Deux tempéraments se partagent la figure de l'illusionniste : certains restent des trompeurs bienveillants, employant leur art pour divertir, quand d'autres en font une arme de peur et de manipulation.[3] Cette dualité n'est pas un accident narratif, elle découle directement de la nature du sortilège, qui ne fait aucune différence entre un mensonge joyeux et un mensonge cruel."]},
+        {"title": "Habitat", "body": ["On le trouve aussi bien dans les cours royales, où son talent flatte les puissants, que sur les théâtres et les champs de foire, où son art se donne en spectacle public. Cette double fréquentation, du palais et de la place publique, rappelle la trajectoire des magiciens de scène historiques comme Robert-Houdin, qui firent de la prestidigitation un art de salon avant d'en faire un divertissement populaire.[4]"]},
+        {"title": "Alimentation", "body": ["Aucune tradition consultée ne prête à l'illusionniste un régime particulier ; sa survie relève de l'existence humaine ordinaire, sans besoin propre à sa pratique magique."]},
+        {"title": "Intelligence", "body": ["Sa magie exige une compréhension fine de la perception d'autrui : savoir combiner une image et un son, entretenir une illusion dans la durée, ou reconnaître le moment où un spectateur commence à douter, relève d'un art aussi intellectuel que technique.[3] L'illusionniste doit ainsi anticiper l'esprit de sa cible autant que manier son sortilège."]},
+        {"title": "Reproduction", "body": ["Aucune source consultée ne documente de transmission héréditaire propre à l'illusionniste ; son savoir se transmet par l'apprentissage et l'étude, à la manière d'un art ou d'un métier plutôt que d'un trait de naissance."]},
+        {"title": "Prédateurs", "body": ["Son adversaire le plus redoutable reste l'observateur qui refuse de croire ce qu'il voit : une volonté suffisamment aiguisée peut percer une illusion de l'intérieur, ce qui prive le trompeur de sa seule arme véritable.[3] Face à un esprit lucide, l'illusionniste perd l'essentiel de son avantage."]}
+      ]
+    },
+    "reliques": [
+      "Le sortilège mineur combinant image et son en un seul geste reste, dans les traditions ludiques contemporaines, le tour de main le plus caractéristique de l'école de l'Illusion, transmis presque sans changement d'une génération de règles à l'autre.[3]",
+      "La légende scénique de Robert-Houdin, qui troqua les oripeaux du magicien de foire pour l'habit de soirée d'un artiste respectable, continue d'irriguer discrètement l'archétype fantastique de l'illusionniste : la magie qu'on lui prête n'est, au fond, que l'art du prestidigitateur porté à son plus haut degré d'accomplissement.[4]"
+    ]
+  },
+  "sources": [
+    {"id": 3, "title": "Wizard: School of Illusion — règles et traits, DND 5th Edition Wikidot", "url": "https://dnd5e.wikidot.com/wizard:illusion"},
+    {"id": 4, "title": "Jean-Eugène Robert-Houdin — magicien et père de la prestidigitation moderne, Wikipédia", "url": "https://en.wikipedia.org/wiki/Jean-Eug%C3%A8ne_Robert-Houdin"}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "description": "Coupez une tête à l'Hydre, deux repoussent aussitôt : la créature de Lerne transforme le combat lui-même en piège, et sa défaite exige moins de force que d'intelligence.",
+  "sections": {
+    "fascination": [
+      "Aucun monstre grec ne renverse aussi nettement l'idée que la violence finit toujours par l'emporter. Face à l'Hydre, chaque coup d'épée aggrave la situation : chaque tête tranchée en fait naître deux nouvelles à sa place, et le combattant s'épuise dans une victoire qui recule à mesure qu'il croit avancer.[1] Le merveilleux tient à ce paradoxe presque mathématique, où la solution ne réside pas dans la puissance du bras mais dans un changement de méthode.",
+      "Le poison de son sang et le souffle de ses gueules ajoutent une seconde menace, plus insidieuse que les morsures elles-mêmes : l'air autour du marais devient hostile avant même le contact.[1] La bête n'a donc pas besoin d'attaquer pour être redoutable ; sa seule présence corrompt le lieu qu'elle habite, faisant des marais de Lerne un territoire où l'on meurt de respirer."
+    ],
+    "legendes": [
+      "Hésiode, dans sa Théogonie, fait de l'Hydre la fille de Typhon et d'Échidna, l'inscrivant ainsi dans une fratrie de monstres primordiaux nés aux marges du monde ordonné par Zeus.[1] Elle s'installe dans les marais de Lerne, un site que la tradition grecque associe à une entrée des Enfers, ce qui n'est sans doute pas un hasard : la créature garde un seuil autant qu'elle terrorise une région.",
+      "Le nombre de ses têtes n'a jamais fait consensus. Les fibules de bronze les plus anciennes, datées d'environ 700 avant notre ère, lui en donnent six ; le poète Alcée en fixe neuf ; des auteurs plus tardifs parlent de cinquante, quand d'autres renoncent à compter.[1] Cette instabilité du chiffre n'affaiblit pas le mythe : elle en confirme au contraire la nature, celle d'une prolifération qu'aucune description ne peut figer.",
+      "Le pouvoir de régénération, qui fait toute la difficulté du combat, n'apparaît pas dans les toutes premières versions du récit : c'est chez Euripide qu'il se précise, avec la règle devenue canonique de deux têtes pour une tranchée.[1] Le mythe s'est donc construit par étapes, chaque auteur ajoutant une contrainte qui rend l'exploit d'Héraclès plus remarquable.",
+      "Second des douze travaux imposés par Eurysthée, l'affrontement échoue tant qu'Héraclès s'en tient à l'épée seule. La victoire vient de l'aide de son neveu Iolaos, qui cautérise au brandon chaque cou sitôt une tête abattue, empêchant toute repousse.[1] La tête immortelle de l'Hydre, elle, ne peut être détruite : Héraclès l'enterre sous un rocher, neutralisée plutôt que vaincue. Il trempe ensuite ses flèches dans le sang empoisonné du monstre, faisant de sa dépouille une arme pour les épreuves à venir.",
+      "L'expression proverbiale « couper une tête d'hydre », employée dans la Grèce antique pour désigner un effort sans fin, montre combien le mythe a très tôt débordé le récit héroïque pour devenir une image du travail vain.[1] Bien avant les jeux de rôle modernes, l'Hydre était déjà une leçon autant qu'un monstre."
+    ],
+    "anomalies": [
+      "La régénération de l'Hydre pose une question rarement posée par les autres monstres du bestiaire grec : que reste-t-il d'un adversaire dont la blessure elle-même est une reproduction ? Trancher, ici, ne diminue pas la bête, cela la multiplie, à moins d'empêcher la plaie de se refermer normalement.[1] Le feu d'Iolaos ne tue pas l'Hydre : il l'empêche seulement de guérir selon sa propre logique, ce qui revient à combattre non la créature mais son pouvoir de guérison.",
+      "La tête centrale, immortelle, introduit une seconde anomalie : un être partiellement indestructible, dont on ne peut venir à bout qu'en le rendant inoffensif plutôt qu'en le supprimant. Héraclès l'enterre vivante sous une pierre, solution qui n'est ni une mise à mort ni une capture, mais un enfermement définitif.[1] L'Hydre grecque n'est donc jamais vraiment vaincue : elle est neutralisée, ce qui la distingue des monstres que le héros abat purement et simplement."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle de l'Hydre se limite presque entièrement au récit du deuxième travail d'Héraclès, seule source ancienne détaillée ; les traits qui suivent en découlent directement, sans qu'aucune tradition parallèle ne vienne les compléter ou les contredire.",
+      "parts": [
+        {"title": "Comportement", "body": ["Rien dans le mythe ne prête à l'Hydre une ruse ou une intention propre : elle ne chasse pas, elle se défend, et c'est cette défense même, par la multiplication des têtes, qui constitue toute sa menace. Son comportement se réduit à une réaction mécanique à l'agression, ce qui en fait moins un prédateur qu'un piège vivant posé au cœur du marais."]},
+        {"title": "Habitat", "body": ["La créature occupe les marais de Lerne, dans le Péloponnèse, une région de sources et d'eaux stagnantes que la tradition rattache à une entrée du monde souterrain.[1] Ce cadre humide et confiné convient à un corps serpentin autant qu'à une légende : on n'y voit l'ennemi qu'au moment où il est déjà trop proche."]},
+        {"title": "Alimentation", "body": ["Aucune source ancienne ne décrit l'Hydre se nourrissant ; son activité connue se limite à ravager le bétail et les récoltes de la région de Lerne, provoquant les plaintes qui motivent l'intervention d'Héraclès. Le mythe s'intéresse à sa nuisance, non à sa subsistance."]},
+        {"title": "Intelligence", "body": ["L'Hydre n'est dotée d'aucun discours ni d'aucune stratégie propres ; sa seule tête immortelle, souvent présentée comme la plus significative, ne parle pas davantage que les autres. Sa dangerosité ne vient pas d'un calcul, mais d'une capacité biologique qui déjoue par elle-même les plans de son adversaire."]},
+        {"title": "Reproduction", "body": ["C'est ici que l'Hydre se distingue de tout autre monstre du corpus grec : elle ne se reproduit pas au sens habituel, elle se répare en se multipliant. Chaque décapitation incomplète fait naître deux têtes nouvelles, un processus que seule la cautérisation immédiate de la plaie parvient à interrompre.[1]"]},
+        {"title": "Prédateurs", "body": ["Héraclès demeure le seul adversaire que la tradition lui attribue, et sa victoire dépend entièrement de l'assistance d'Iolaos : seul, le héros échoue face à la régénération. Le sang de l'Hydre, recueilli après le combat, devient à son tour une arme redoutable, dont Héraclès enduira ses flèches pour les épreuves suivantes.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le sang empoisonné de l'Hydre survit au monstre lui-même dans plusieurs épisodes ultérieurs du mythe d'Héraclès : trempées dedans, ses flèches deviennent mortelles au moindre effleurement, jusqu'à causer, bien plus tard, la mort du centaure Nessos puis, indirectement, celle du héros. L'arme qui a vaincu l'Hydre reste ainsi chargée de sa nature vénéneuse longtemps après sa disparition.",
+      "Le nom de l'Hydre a traversé les siècles jusqu'aux bestiaires modernes du jeu de rôle, où le monstre à têtes multiples devient une créature jouable à part entière, dotée de règles précises de régénération et de décapitation.[1] Cette descendance ludique prolonge fidèlement l'intuition centrale du mythe grec, sans en constituer une transcription savante : elle en retient l'image plus que le texte."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Lernaean Hydra — mythe, généalogie et travaux d'Héraclès, Wikipédia", "url": "https://en.wikipedia.org/wiki/Lernaean_Hydra"}
+  ]
+}
