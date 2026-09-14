@@ -6,6 +6,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde ailé / peuple des airs",
     "danger": 2,
     "habitat": "Pics, nids d'altitude, cités perchées",
+    "taille": "1,50 à 1,80 m",
+    "poids": "45 à 65 kg",
     "trait": "Ailes fonctionnelles et culture aérienne",
     "nom": "Aarakocra"
   },
@@ -16,6 +18,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde / lignée céleste",
     "danger": 2,
     "habitat": "Cités, sanctuaires, routes de pèlerinage",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Héritage céleste et manifestation de lumière",
     "nom": "Aasimar"
   },
@@ -26,6 +30,8 @@ window.FF_FICHES = {
     "famille": "Aberration / prédateur abyssal",
     "danger": 5,
     "habitat": "Lacs souterrains, ruines englouties",
+    "taille": "2 à 4 m",
+    "poids": "300 à 800 kg",
     "trait": "Mémoire millénaire et domination psychique",
     "nom": "Aboleth"
   },
@@ -36,6 +42,8 @@ window.FF_FICHES = {
     "famille": "Clerc / initié",
     "danger": 1,
     "habitat": "Temples, monastères, processions",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Foi naissante plus que pouvoir acquis",
     "nom": "Acolyte"
   },
@@ -46,6 +54,8 @@ window.FF_FICHES = {
     "famille": "Esprit domestique / voleur de fortune",
     "danger": 3,
     "habitat": "Greniers, cheminées, fermes",
+    "taille": "15 à 40 cm",
+    "poids": "Moins de 2 kg",
     "trait": "Coq noir au logis, serpent ou traînée de feu dans le ciel",
     "nom": "Aitvaras"
   },
@@ -56,6 +66,8 @@ window.FF_FICHES = {
     "famille": "Savant / transmutateur",
     "danger": 2,
     "habitat": "Laboratoires, ateliers fumants",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Cornues, élixirs et transmutation",
     "nom": "Alchimiste"
   },
@@ -66,6 +78,8 @@ window.FF_FICHES = {
     "famille": "Figure héraldique / aiglon",
     "danger": 1,
     "habitat": "Armoiries, notamment celles de Lorraine",
+    "taille": "Proche de l’humain ou plus petit",
+    "poids": "20 à 70 kg",
     "trait": "Aiglon représenté sans bec ni pattes",
     "nom": "Alérion"
   },
@@ -76,6 +90,8 @@ window.FF_FICHES = {
     "famille": "Esprit nocturne / incube",
     "danger": 3,
     "habitat": "Chambres, toits, lisières de forêt",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Pesanteur onirique et vol de souffle",
     "nom": "Alp"
   },
@@ -86,6 +102,8 @@ window.FF_FICHES = {
     "famille": "Loup géant / chasseur",
     "danger": 4,
     "habitat": "Toundra, neiges, étendues nocturnes",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Taille colossale et chasse solitaire",
     "nom": "Amarok"
   },
@@ -96,6 +114,8 @@ window.FF_FICHES = {
     "famille": "Dragon serpentin / volant",
     "danger": 4,
     "habitat": "Armoiries, cieux et terres de légende",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Corps serpentin, ailes et absence de pattes",
     "nom": "Amphiptère"
   },
@@ -106,6 +126,8 @@ window.FF_FICHES = {
     "famille": "Serpent double / chthonien",
     "danger": 3,
     "habitat": "Sables, déserts, terres brûlées",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Deux têtes opposées, déplacement dans les deux sens",
     "nom": "Amphisbène"
   },
@@ -116,6 +138,8 @@ window.FF_FICHES = {
     "famille": "Céleste / messager",
     "danger": 4,
     "habitat": "Cieux, seuils sacrés, visions",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Ailes, gloire et parole qui tranche",
     "nom": "Ange"
   },
@@ -126,6 +150,8 @@ window.FF_FICHES = {
     "famille": "Psychopompe / faucheur",
     "danger": 5,
     "habitat": "Chemins creux, cimetières, nuits d'hiver",
+    "taille": "3 à 5 m, souvent davantage",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Charrette des morts et silhouette de l'Ankou",
     "nom": "Ankou"
   },
@@ -136,6 +162,8 @@ window.FF_FICHES = {
     "famille": "Oiseau divin / voleur de pouvoir",
     "danger": 5,
     "habitat": "Montagnes sacrées, tempêtes",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Vol de la Tablette des Destinées et puissance des tempêtes",
     "nom": "Anzu"
   },
@@ -146,6 +174,8 @@ window.FF_FICHES = {
     "famille": "Être céleste / danseuse divine",
     "danger": 2,
     "habitat": "Cours divines, nuages, palais",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Danse, beauté surnaturelle et métamorphose",
     "nom": "Apsara"
   },
@@ -156,6 +186,8 @@ window.FF_FICHES = {
     "famille": "Araignée / maudite",
     "danger": 1,
     "habitat": "Ateliers, toiles, recoins",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Orgueil du métier et tissage éternel",
     "nom": "Arachne"
   },
@@ -166,6 +198,8 @@ window.FF_FICHES = {
     "famille": "Arachnide géant / prédateur",
     "danger": 4,
     "habitat": "Grottes, forêts sombres, puits",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Toile monumentale et venin",
     "nom": "Araignée géante"
   },
@@ -176,6 +210,8 @@ window.FF_FICHES = {
     "famille": "Guerrier / tireur",
     "danger": 2,
     "habitat": "Remparts, compagnies, champs de bataille",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Arbalète et discipline de tir",
     "nom": "Arbalétrier"
   },
@@ -186,6 +222,8 @@ window.FF_FICHES = {
     "famille": "Guerrier / tireur",
     "danger": 2,
     "habitat": "Bois, murailles, compagnies",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Précision à distance",
     "nom": "Archer"
   },
@@ -196,6 +234,8 @@ window.FF_FICHES = {
     "famille": "Démon majeur / seigneur infernal",
     "danger": 5,
     "habitat": "Cercles infernaux, autels noirs",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Autorité sur légions et malédictions",
     "nom": "Archidémon"
   },
@@ -206,6 +246,8 @@ window.FF_FICHES = {
     "famille": "Diable majeur / seigneur infernal",
     "danger": 5,
     "habitat": "Cours infernales, contrats, trônes de braise",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Loi infernale et ambition froide",
     "nom": "Archidiable"
   },
@@ -216,6 +258,8 @@ window.FF_FICHES = {
     "famille": "Magicien / maître arcanique",
     "danger": 4,
     "habitat": "Tours, bibliothèques, cercles",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Puissance magique à son apogée",
     "nom": "Archimage"
   },
@@ -226,6 +270,8 @@ window.FF_FICHES = {
     "famille": "Peuple légendaire / humanoïde borgne",
     "danger": 3,
     "habitat": "Montagnes hyperboréennes, filons d'or",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Un seul œil et guerre contre les griffons",
     "nom": "Arimaspe"
   },
@@ -236,6 +282,8 @@ window.FF_FICHES = {
     "famille": "Artisan magique / ingénieur",
     "danger": 3,
     "habitat": "Ateliers, forges, laboratoires",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Objets magiques et mécanismes",
     "nom": "Artificier"
   },
@@ -246,6 +294,8 @@ window.FF_FICHES = {
     "famille": "Monstre marin / île trompeuse",
     "danger": 4,
     "habitat": "Océans, routes de marins",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Dos pris pour une île, plongeon fatal aux marins",
     "nom": "Aspidochelone"
   },
@@ -256,6 +306,8 @@ window.FF_FICHES = {
     "famille": "Tueur / infiltré",
     "danger": 4,
     "habitat": "Rues, cours, toits",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Furtivité et frappe unique",
     "nom": "Assassin"
   },
@@ -266,6 +318,8 @@ window.FF_FICHES = {
     "famille": "Puissance divine / rivale des devas",
     "danger": 5,
     "habitat": "Royaumes célestes et champs de bataille",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Puissance, ambition et rivalité avec les devas",
     "nom": "Asura"
   },
@@ -276,6 +330,8 @@ window.FF_FICHES = {
     "famille": "Devin / interprète",
     "danger": 1,
     "habitat": "Temples, collines, places publiques",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Lecture des présages",
     "nom": "Augure"
   },
@@ -286,6 +342,8 @@ window.FF_FICHES = {
     "famille": "Construction animée / machine",
     "danger": 3,
     "habitat": "Forges, palais, laboratoires",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Mécanique infatigable et obéissance absolue",
     "nom": "Automate"
   },
@@ -296,6 +354,8 @@ window.FF_FICHES = {
     "famille": "Sorcière / initiée",
     "danger": 5,
     "habitat": "Forêts profondes, izba mobile",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Cabane ambulante et épreuves cruelles",
     "nom": "Baba Yaga"
   },
@@ -306,6 +366,8 @@ window.FF_FICHES = {
     "famille": "Esprit onirique / protecteur",
     "danger": 2,
     "habitat": "Chambres, seuils du sommeil",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Dévore les mauvais songes",
     "nom": "Baku"
   },
@@ -316,6 +378,8 @@ window.FF_FICHES = {
     "famille": "Démon majeur / seigneur du feu",
     "danger": 5,
     "habitat": "Abîmes, champs de bataille infernaux",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Regard incendiaire et taille colossale",
     "nom": "Balor"
   },
@@ -326,6 +390,8 @@ window.FF_FICHES = {
     "famille": "Esprit funèbre / messagère",
     "danger": 1,
     "habitat": "Ruines familiales, landes, nuits",
+    "taille": "Variable, silhouette humaine floue",
+    "poids": "Immatérielle, sans poids propre",
     "trait": "Plainte qui précède le deuil",
     "nom": "Banshee"
   },
@@ -336,6 +402,8 @@ window.FF_FICHES = {
     "famille": "Guerrier / combattant farouche",
     "danger": 3,
     "habitat": "Steppes, clans, frontières",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Rage et endurance",
     "nom": "Barbare"
   },
@@ -346,6 +414,8 @@ window.FF_FICHES = {
     "famille": "Être alpin moderne / nain des neiges",
     "danger": 1,
     "habitat": "Glaciers, cols, avalanches",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Pieds vastes et secours aux voyageurs",
     "nom": "Barbegazi"
   },
@@ -356,6 +426,8 @@ window.FF_FICHES = {
     "famille": "Artiste / magicien de la parole",
     "danger": 2,
     "habitat": "Cours, tavernes, routes",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Chant, mémoire et charme",
     "nom": "Barde"
   },
@@ -366,6 +438,8 @@ window.FF_FICHES = {
     "famille": "Chien spectral / présage",
     "danger": 4,
     "habitat": "Landes, croisées, cimetières",
+    "taille": "1 à 1,50 m au garrot",
+    "poids": "80 à 150 kg",
     "trait": "Forme de molosse et malheur annoncé",
     "nom": "Barghest"
   },
@@ -376,6 +450,8 @@ window.FF_FICHES = {
     "famille": "Géant sylvestre / premier berger",
     "danger": 3,
     "habitat": "Bois d'Iraty, estives, grottes",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Poil long, sagesse agraire, cri d'alerte",
     "nom": "Basajaun"
   },
@@ -386,6 +462,8 @@ window.FF_FICHES = {
     "famille": "Serpent royal / regard mortel",
     "danger": 5,
     "habitat": "Puits, caves, déserts de pierre",
+    "taille": "1,80 à 2,50 m de long",
+    "poids": "60 à 100 kg",
     "trait": "Regard mortel et haleine venimeuse",
     "nom": "Basilic"
   },
@@ -396,6 +474,8 @@ window.FF_FICHES = {
     "famille": "Colosse animal / primordial",
     "danger": 5,
     "habitat": "Roseaux, marais, monde primordial",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Force prodigieuse et souveraineté sur les bêtes terrestres",
     "nom": "Béhémoth"
   },
@@ -406,6 +486,8 @@ window.FF_FICHES = {
     "famille": "Guerrier / possédé par la rage",
     "danger": 4,
     "habitat": "Champs de bataille, halles, hivers",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Transe de combat et fureur associée à l'ours",
     "nom": "Berserker"
   },
@@ -416,6 +498,8 @@ window.FF_FICHES = {
     "famille": "Animal mangeur d'hommes / énigme historique",
     "danger": 5,
     "habitat": "Margeride, forêts et villages du Gévaudan",
+    "taille": "1 m au garrot",
+    "poids": "Environ 60 kg",
     "trait": "Attaques meurtrières et identité toujours débattue",
     "nom": "Bête du Gévaudan"
   },
@@ -426,6 +510,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde merveilleux",
     "danger": 1,
     "habitat": "Confins, récits de voyage",
+    "taille": "Proche de l’humain ou plus petit",
+    "poids": "20 à 70 kg",
     "trait": "Absence de tête, visage pectoral",
     "nom": "Blemmye"
   },
@@ -436,6 +522,8 @@ window.FF_FICHES = {
     "famille": "Esprit du foyer / farceur malveillant",
     "danger": 2,
     "habitat": "Fermes, greniers, seuils",
+    "taille": "15 à 40 cm",
+    "poids": "Moins de 2 kg",
     "trait": "Persécutions domestiques capables de suivre la maisonnée",
     "nom": "Boggart"
   },
@@ -446,6 +534,8 @@ window.FF_FICHES = {
     "famille": "Esprit domestique",
     "danger": 1,
     "habitat": "Cuisines, étables, foyers",
+    "taille": "15 à 40 cm",
+    "poids": "Moins de 2 kg",
     "trait": "Travail nocturne récompensé par une offrande de lait ou de crème",
     "nom": "Brownie"
   },
@@ -456,6 +546,8 @@ window.FF_FICHES = {
     "famille": "Esprit des profondeurs / marin",
     "danger": 2,
     "habitat": "Mines, criques, tempêtes",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Humeur changeante, terre ou mer",
     "nom": "Bucca"
   },
@@ -466,6 +558,8 @@ window.FF_FICHES = {
     "famille": "Prédateur fouisseur",
     "danger": 4,
     "habitat": "Plaines, collines, sous-sols agricoles",
+    "taille": "2 à 3 m",
+    "poids": "150 à 400 kg",
     "trait": "Bond hors de terre et carapace",
     "nom": "Bulette"
   },
@@ -476,6 +570,8 @@ window.FF_FICHES = {
     "famille": "Divinité chthonienne / culte à mystères",
     "danger": 2,
     "habitat": "Sanctuaires insulaires, lieux initiatiques",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Initiations secrètes et protection des voyageurs",
     "nom": "Cabire"
   },
@@ -486,6 +582,8 @@ window.FF_FICHES = {
     "famille": "Démon / esprit malfaisant",
     "danger": 4,
     "habitat": "Seuils, fièvres, lieux souillés",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Influence maligne plutôt que forme unique",
     "nom": "Cacodémon"
   },
@@ -496,6 +594,8 @@ window.FF_FICHES = {
     "famille": "Hybride infernal",
     "danger": 3,
     "habitat": "Cours, marges, lignées maudites",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Double héritage, charme et maléfice",
     "nom": "Cambion"
   },
@@ -506,6 +606,8 @@ window.FF_FICHES = {
     "famille": "Ongulé monstrueux / regard mortel",
     "danger": 5,
     "habitat": "Marais africains imaginaires",
+    "taille": "2,20 m au garrot",
+    "poids": "600 kg",
     "trait": "Encolure trop lourde, souffle ou œil fatal",
     "nom": "Catoblépas"
   },
@@ -516,6 +618,8 @@ window.FF_FICHES = {
     "famille": "Esprit onirique / oppresseur",
     "danger": 3,
     "habitat": "Lits, chambres, heures creuses",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Oppression thoracique et visions",
     "nom": "Cauchemar"
   },
@@ -526,6 +630,8 @@ window.FF_FICHES = {
     "famille": "Hybride équin",
     "danger": 3,
     "habitat": "Montagnes, forêts, plaines thessaliennes",
+    "taille": "2 m de haut",
+    "poids": "Environ 300 kg",
     "trait": "Torse humain sur corps de cheval",
     "nom": "Centaure"
   },
@@ -536,6 +642,8 @@ window.FF_FICHES = {
     "famille": "Gardien infernal",
     "danger": 5,
     "habitat": "Portes des Enfers, rives du Styx",
+    "taille": "1 à 1,50 m au garrot",
+    "poids": "80 à 150 kg",
     "trait": "Trois gueules et vigilance éternelle",
     "nom": "Cerbère"
   },
@@ -546,6 +654,8 @@ window.FF_FICHES = {
     "famille": "Intercesseur / voyageur d'esprits",
     "danger": 2,
     "habitat": "Steppes, taïgas, villages",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Tambour, transe, alliés invisibles",
     "nom": "Chaman"
   },
@@ -556,6 +666,8 @@ window.FF_FICHES = {
     "famille": "Fée / substitut",
     "danger": 2,
     "habitat": "Berceaux, seuils, tertres",
+    "taille": "Variable, souvent proche de l’humain",
+    "poids": "Variable",
     "trait": "Échange d'enfant avec le Petit Peuple",
     "nom": "Changeling"
   },
@@ -566,6 +678,8 @@ window.FF_FICHES = {
     "famille": "Guerrier / noble d'armes",
     "danger": 3,
     "habitat": "Châteaux, routes, tournois",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Armure, code et monture",
     "nom": "Chevalier"
   },
@@ -576,6 +690,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / antipaladin",
     "danger": 5,
     "habitat": "Nécropoles, champs de batailles oubliés",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Aura de mort et serment brisé",
     "nom": "Chevalier de la mort"
   },
@@ -586,6 +702,8 @@ window.FF_FICHES = {
     "famille": "Canidé infernal / gardien",
     "danger": 4,
     "habitat": "Portails, nécropoles, brasiers",
+    "taille": "1 à 1,50 m au garrot",
+    "poids": "80 à 150 kg",
     "trait": "Feu intérieur et chasse des âmes",
     "nom": "Chien de l'enfer"
   },
@@ -596,6 +714,8 @@ window.FF_FICHES = {
     "famille": "Hybride monstrueux / souffle",
     "danger": 5,
     "habitat": "Lycie, montagnes, terres brûlées",
+    "taille": "2,50 m au garrot",
+    "poids": "400 kg",
     "trait": "Trois natures et haleine de feu",
     "nom": "Chimère"
   },
@@ -606,6 +726,8 @@ window.FF_FICHES = {
     "famille": "Diable / lutin malin",
     "danger": 3,
     "habitat": "Carrefours, tavernes, forêts",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Cornes, sabots et marchés trompeurs",
     "nom": "Chort"
   },
@@ -616,6 +738,8 @@ window.FF_FICHES = {
     "famille": "Magicien / maître du temps",
     "danger": 4,
     "habitat": "Tours, paradoxes, seuils d'époques",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Altération du temps",
     "nom": "Chronomancien"
   },
@@ -626,6 +750,8 @@ window.FF_FICHES = {
     "famille": "Prédateur cryptide",
     "danger": 3,
     "habitat": "Ranchs, broussailles, nuits chaudes",
+    "taille": "0,80 à 1 m au garrot",
+    "poids": "30 à 50 kg",
     "trait": "Attaques sur le bétail et silhouette controversée",
     "nom": "Chupacabra"
   },
@@ -636,6 +762,8 @@ window.FF_FICHES = {
     "famille": "Aberration aquatique / pinceur",
     "danger": 4,
     "habitat": "Marais, grottes noyées, ruines côtières",
+    "taille": "2 à 3 m",
+    "poids": "150 à 400 kg",
     "trait": "Pinces paralysantes et carapace",
     "nom": "Chuul"
   },
@@ -646,6 +774,8 @@ window.FF_FICHES = {
     "famille": "Prêtre / guerrier sacré",
     "danger": 3,
     "habitat": "Temples, pèlerinages, sièges",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Magie divine et doctrine",
     "nom": "Clerc"
   },
@@ -656,6 +786,8 @@ window.FF_FICHES = {
     "famille": "Hybride monstrueux / regard mortel",
     "danger": 4,
     "habitat": "Caves, fumiers, ruines",
+    "taille": "1,80 à 2,50 m de long",
+    "poids": "60 à 100 kg",
     "trait": "Œuf de coq couvé par un crapaud ou un serpent",
     "nom": "Cocatrix"
   },
@@ -666,6 +798,8 @@ window.FF_FICHES = {
     "famille": "Statue monumentale / géant de fantasy",
     "danger": 5,
     "habitat": "Ports, temples, déserts de pierre",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Échelle monumentale",
     "nom": "Colosse"
   },
@@ -676,6 +810,8 @@ window.FF_FICHES = {
     "famille": "Épouvantail / ogre pédagogique",
     "danger": 3,
     "habitat": "Greniers, recoins, nuits d'hiver",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Menace éducative incarnée",
     "nom": "Croquemitaine"
   },
@@ -686,6 +822,8 @@ window.FF_FICHES = {
     "famille": "Magicien / maître du froid",
     "danger": 3,
     "habitat": "Glaciers, tours gelées, hivers",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Glace comme arme et rempart",
     "nom": "Cryomancien"
   },
@@ -696,6 +834,8 @@ window.FF_FICHES = {
     "famille": "Canidé féerique / psychopompe",
     "danger": 4,
     "habitat": "Highlands, tertres, brumes",
+    "taille": "1 à 1,50 m au garrot",
+    "poids": "80 à 150 kg",
     "trait": "Pelage vert et trois aboiements fatals",
     "nom": "Cu-sith"
   },
@@ -706,6 +846,8 @@ window.FF_FICHES = {
     "famille": "Limon / nettoyeur de donjon",
     "danger": 3,
     "habitat": "Couloirs souterrains, égouts, caves",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Transparence et digestion lente",
     "nom": "Cube gélatineux"
   },
@@ -716,6 +858,8 @@ window.FF_FICHES = {
     "famille": "Géant / artisan primordial",
     "danger": 4,
     "habitat": "Forges divines, îles et grottes selon les récits",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Œil unique, force immense et rôles variables selon les traditions",
     "nom": "Cyclope"
   },
@@ -726,6 +870,8 @@ window.FF_FICHES = {
     "famille": "Hybride cynocéphale",
     "danger": 3,
     "habitat": "Indes imaginaires, marges des cartes",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Tête canine sur corps humain",
     "nom": "Cynocéphale"
   },
@@ -736,6 +882,8 @@ window.FF_FICHES = {
     "famille": "Esprit forgeron / magicien idæen",
     "danger": 2,
     "habitat": "Mont Ida, forges et sanctuaires de la Grande Mère",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Invention du fer et des rythmes magiques",
     "nom": "Dactyle"
   },
@@ -746,6 +894,8 @@ window.FF_FICHES = {
     "famille": "Fantôme / messagère",
     "danger": 2,
     "habitat": "Ponts, allées, ruines nobiliaires",
+    "taille": "Variable, silhouette humaine floue",
+    "poids": "Immatérielle, sans poids propre",
     "trait": "Robe blanche et présage",
     "nom": "Dame Blanche"
   },
@@ -756,6 +906,8 @@ window.FF_FICHES = {
     "famille": "Génie élémentaire / terre",
     "danger": 4,
     "habitat": "Plan élémentaire de la Terre, mines et labyrinthes",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Maîtrise de la pierre et des trésors",
     "nom": "Dao"
   },
@@ -766,6 +918,8 @@ window.FF_FICHES = {
     "famille": "Hybride elfe-humain",
     "danger": 2,
     "habitat": "Villes frontières, compagnies, routes",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Double héritage, nulle part chez soi",
     "nom": "Demi-elfe"
   },
@@ -776,6 +930,8 @@ window.FF_FICHES = {
     "famille": "Hybride orc-humain",
     "danger": 3,
     "habitat": "Marges, compagnies, camps",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Vigueur et stigmate social",
     "nom": "Demi-orc"
   },
@@ -786,6 +942,8 @@ window.FF_FICHES = {
     "famille": "Entité infernale",
     "danger": 4,
     "habitat": "Abîmes, cercles, invocations",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Malice spirituelle incarnée",
     "nom": "Démon"
   },
@@ -796,6 +954,8 @@ window.FF_FICHES = {
     "famille": "Savant / invocateur",
     "danger": 3,
     "habitat": "Cabinets noirs, grimoires, cryptes",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Science des noms démoniaques",
     "nom": "Démonologue"
   },
@@ -806,6 +966,8 @@ window.FF_FICHES = {
     "famille": "Diable / tentateur",
     "danger": 4,
     "habitat": "Carrefours, cours, déserts spirituels",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Pacte, ruse et chute",
     "nom": "Diable"
   },
@@ -816,6 +978,8 @@ window.FF_FICHES = {
     "famille": "Diable mineur / familier",
     "danger": 2,
     "habitat": "Ateliers maudits, poches, toits",
+    "taille": "0,80 à 1,20 m",
+    "poids": "15 à 30 kg",
     "trait": "Farces cruelles et servitude infernale",
     "nom": "Diablotin"
   },
@@ -826,6 +990,8 @@ window.FF_FICHES = {
     "famille": "Démon / puissance malfaisante",
     "danger": 4,
     "habitat": "Ruines, déserts, forteresses noires",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Mensonge, violence et opposition aux yazatas",
     "nom": "Div"
   },
@@ -836,6 +1002,8 @@ window.FF_FICHES = {
     "famille": "Génie / esprit de feu",
     "danger": 4,
     "habitat": "Déserts, ruines, lieux retirés",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Libre arbitre, magie, métamorphose",
     "nom": "Djinn"
   },
@@ -846,6 +1014,8 @@ window.FF_FICHES = {
     "famille": "Double surnaturel / présage",
     "danger": 4,
     "habitat": "Maisons, routes et lieux familiers",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Sosie d'une personne vivante, souvent funeste",
     "nom": "Doppelganger"
   },
@@ -856,6 +1026,8 @@ window.FF_FICHES = {
     "famille": "Dragon mort-vivant",
     "danger": 5,
     "habitat": "Tombes draconiques, nécropoles volantes",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Phylactère et souffle d'outre-tombe",
     "nom": "Dracoliche"
   },
@@ -866,6 +1038,8 @@ window.FF_FICHES = {
     "famille": "Créature draconique / puissance mythique",
     "danger": 5,
     "habitat": "Eaux, montagnes, cavernes ou cieux selon les traditions",
+    "taille": "3 à 5 m, souvent davantage",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Formes, pouvoirs et symboles variables selon les cultures",
     "nom": "Dragon"
   },
@@ -876,6 +1050,8 @@ window.FF_FICHES = {
     "famille": "Dragon chromatique / foudre",
     "danger": 5,
     "habitat": "Déserts, canyons, cieux d'orage",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Souffle d'éclair",
     "nom": "Dragon bleu"
   },
@@ -886,6 +1062,8 @@ window.FF_FICHES = {
     "famille": "Dragon métallique / feu",
     "danger": 4,
     "habitat": "Déserts, oasis, dunes",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Chaleur et ruse sociable",
     "nom": "Dragon d'airain"
   },
@@ -896,6 +1074,8 @@ window.FF_FICHES = {
     "famille": "Dragon métallique / froid",
     "danger": 4,
     "habitat": "Monts enneigés, villes, nuages",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Métamorphose humaine et souffle glacé",
     "nom": "Dragon d'argent"
   },
@@ -906,6 +1086,8 @@ window.FF_FICHES = {
     "famille": "Dragon planaire / ténèbres",
     "danger": 5,
     "habitat": "Plans d'ombre, ruines, nuits sans lune",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Essence umbrale",
     "nom": "Dragon d'ombre"
   },
@@ -916,6 +1098,8 @@ window.FF_FICHES = {
     "famille": "Dragon métallique / soleil",
     "danger": 5,
     "habitat": "Cieux, palais cachés, montagnes sacrées",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Justice, feu et forme humaine",
     "nom": "Dragon d'or"
   },
@@ -926,6 +1110,8 @@ window.FF_FICHES = {
     "famille": "Dragon métallique / foudre marine",
     "danger": 4,
     "habitat": "Falaises, îles, tempêtes",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Gardien des rivages",
     "nom": "Dragon de bronze"
   },
@@ -936,6 +1122,8 @@ window.FF_FICHES = {
     "famille": "Dragon métallique / acide",
     "danger": 4,
     "habitat": "Canyons, collines sèches",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Humour et souffle corrosif",
     "nom": "Dragon de cuivre"
   },
@@ -946,6 +1134,8 @@ window.FF_FICHES = {
     "famille": "Dragon aquatique",
     "danger": 5,
     "habitat": "Océans, fosses, tempêtes",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Souffle et règne sous les vagues",
     "nom": "Dragon marin"
   },
@@ -956,6 +1146,8 @@ window.FF_FICHES = {
     "famille": "Dragon chromatique / acide",
     "danger": 5,
     "habitat": "Marécages, ruines noyées",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Corruption des eaux",
     "nom": "Dragon noir"
   },
@@ -966,6 +1158,8 @@ window.FF_FICHES = {
     "famille": "Dragon chromatique / feu",
     "danger": 5,
     "habitat": "Volcans, sommets, cavernes de magma",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Souffle incendiaire et orgueil",
     "nom": "Dragon rouge"
   },
@@ -976,6 +1170,8 @@ window.FF_FICHES = {
     "famille": "Dragon chromatique / poison",
     "danger": 5,
     "habitat": "Forêts anciennes, clairières trompeuses",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Souffle toxique et intrigues",
     "nom": "Dragon vert"
   },
@@ -986,6 +1182,8 @@ window.FF_FICHES = {
     "famille": "Dragon mineur / bête draconique",
     "danger": 4,
     "habitat": "Collines, grottes, lisières",
+    "taille": "8 à 15 m de long",
+    "poids": "Plusieurs tonnes",
     "trait": "Force bestiale et pouvoirs variables selon les univers",
     "nom": "Drake"
   },
@@ -996,6 +1194,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / gardien de tombe",
     "danger": 4,
     "habitat": "Tertres, fermes, rivages",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Corps gonflé, force surnaturelle",
     "nom": "Draugr"
   },
@@ -1006,6 +1206,8 @@ window.FF_FICHES = {
     "famille": "Elfe noir / souterrain",
     "danger": 3,
     "habitat": "Cités souterraines, Outreterre",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Société matriarcale et magie d'ombre",
     "nom": "Drow"
   },
@@ -1016,6 +1218,8 @@ window.FF_FICHES = {
     "famille": "Prêtre de la nature / intercesseur",
     "danger": 3,
     "habitat": "Forêts, cercles de pierre, clairières",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Savoir rituel, divination et communion avec la nature",
     "nom": "Druide"
   },
@@ -1026,6 +1230,8 @@ window.FF_FICHES = {
     "famille": "Nymphe sylvestre",
     "danger": 2,
     "habitat": "Chênes, bosquets, forêts",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Affinité avec les arbres et les bois",
     "nom": "Dryade"
   },
@@ -1036,6 +1242,8 @@ window.FF_FICHES = {
     "famille": "Psychopompe / cavalier",
     "danger": 5,
     "habitat": "Routes nocturnes, haies, ponts",
+    "taille": "3 à 5 m, souvent davantage",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Tête sous le bras, mort nommée",
     "nom": "Dullahan"
   },
@@ -1046,6 +1254,8 @@ window.FF_FICHES = {
     "famille": "Guerrier / apprenti",
     "danger": 1,
     "habitat": "Cours, camps, écuries",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Service et apprentissage des armes",
     "nom": "Ecuyer"
   },
@@ -1056,6 +1266,8 @@ window.FF_FICHES = {
     "famille": "Esprit élémentaire",
     "danger": 4,
     "habitat": "Plans et lieux saturés d'un élément",
+    "taille": "Variable, souvent 2 à 3 m",
+    "poids": "Variable selon l’élément",
     "trait": "Corps d'élément pur",
     "nom": "Élémentaire"
   },
@@ -1066,6 +1278,8 @@ window.FF_FICHES = {
     "famille": "Peuple féerique / être de grande longévité",
     "danger": 3,
     "habitat": "Forêts, tertres, cités cachées",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Longévité, magie, altérité",
     "nom": "Elfe"
   },
@@ -1076,6 +1290,8 @@ window.FF_FICHES = {
     "famille": "Elfe / peuple du froid",
     "danger": 3,
     "habitat": "Banquises, taïgas, cités de glace",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Résistance au froid et isolement",
     "nom": "Elfe des neiges"
   },
@@ -1086,6 +1302,8 @@ window.FF_FICHES = {
     "famille": "Magicienne / charmeuse",
     "danger": 3,
     "habitat": "Tours, îles, cours",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Enchantement et séduction magique",
     "nom": "Enchanteresse"
   },
@@ -1096,6 +1314,8 @@ window.FF_FICHES = {
     "famille": "Magicien / enchanteur",
     "danger": 3,
     "habitat": "Forêts, cours, îles",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Enchantements et conseil",
     "nom": "Enchanteur"
   },
@@ -1106,6 +1326,8 @@ window.FF_FICHES = {
     "famille": "Magicien inné",
     "danger": 3,
     "habitat": "Lignées, marges, compagnies",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Pouvoir héréditaire plutôt qu'étudié",
     "nom": "Ensorceleur"
   },
@@ -1116,6 +1338,8 @@ window.FF_FICHES = {
     "famille": "Divinité chthonienne / vengeresse",
     "danger": 5,
     "habitat": "Seuils du crime, Enfers, sang versé",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Châtiment implacable des crimes de sang",
     "nom": "Érinye"
   },
@@ -1126,6 +1350,8 @@ window.FF_FICHES = {
     "famille": "Géant / bicéphale",
     "danger": 4,
     "habitat": "Collines, cavernes, landes",
+    "taille": "4 à 5 m de haut",
+    "poids": "Environ 1 tonne",
     "trait": "Deux consciences querelleuses dans un même corps",
     "nom": "Ettin"
   },
@@ -1136,6 +1362,8 @@ window.FF_FICHES = {
     "famille": "Clerc / chasseur d'esprits",
     "danger": 3,
     "habitat": "Sanctuaires, maisons hantées, seuils",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Rituels d'expulsion des entités",
     "nom": "Exorciste"
   },
@@ -1146,6 +1374,8 @@ window.FF_FICHES = {
     "famille": "Esprit / revenant",
     "danger": 2,
     "habitat": "Maisons, champs de bataille, brumes",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Immatérialité et attachement à un lieu, un objet ou une dette",
     "nom": "Fantôme"
   },
@@ -1156,6 +1386,8 @@ window.FF_FICHES = {
     "famille": "Lutin / farceur",
     "danger": 1,
     "habitat": "Landes, fermes, nuits",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Malices et disparitions d'objets",
     "nom": "Farfadet"
   },
@@ -1166,6 +1398,8 @@ window.FF_FICHES = {
     "famille": "Divinité rustique / esprit des campagnes",
     "danger": 2,
     "habitat": "Bois, champs, pâturages",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Présence rustique, musique et pouvoir prophétique",
     "nom": "Faune"
   },
@@ -1176,6 +1410,8 @@ window.FF_FICHES = {
     "famille": "Aberration / prédateur",
     "danger": 5,
     "habitat": "Donjons, failles, non-lieux",
+    "taille": "2 à 4 m",
+    "poids": "300 à 800 kg",
     "trait": "Aura de désintégration",
     "nom": "Fauve désagrégateur"
   },
@@ -1186,6 +1422,8 @@ window.FF_FICHES = {
     "famille": "Fée / peuple surnaturel",
     "danger": 3,
     "habitat": "Tertres, cercles, heures crépusculaires",
+    "taille": "Variable, souvent proche de l’humain",
+    "poids": "Variable",
     "trait": "Glamour, temps déformé, dons empoisonnés",
     "nom": "Fée"
   },
@@ -1196,6 +1434,8 @@ window.FF_FICHES = {
     "famille": "Dragon miniature / fée",
     "danger": 2,
     "habitat": "Bosquets, jardins magiques, clairières",
+    "taille": "30 à 45 cm",
+    "poids": "Moins de 1 kg",
     "trait": "Petite taille, invisibilité, magie et souffle euphorisant",
     "nom": "Fée-dragon"
   },
@@ -1206,6 +1446,8 @@ window.FF_FICHES = {
     "famille": "Loup cosmique / destin",
     "danger": 5,
     "habitat": "Île de Lyngvi, liens magiques, Ragnarök",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Croissance prodigieuse, lien de Gleipnir et mort annoncée d'Odin",
     "nom": "Fenrir"
   },
@@ -1216,6 +1458,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde apparenté aux géants / peuple sylvestre",
     "danger": 3,
     "habitat": "Forêts profondes, collines",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Taille, magie discrète, vie recluse",
     "nom": "Firbolg"
   },
@@ -1226,6 +1470,8 @@ window.FF_FICHES = {
     "famille": "Aberration / télépathe bénin",
     "danger": 1,
     "habitat": "Grottes, failles psychiques",
+    "taille": "2 à 4 m",
+    "poids": "300 à 800 kg",
     "trait": "Lévitation et lecture d'intentions",
     "nom": "Flumph"
   },
@@ -1236,6 +1482,8 @@ window.FF_FICHES = {
     "famille": "Peuple surnaturel / puissance hostile",
     "danger": 5,
     "habitat": "Mers, mondes souterrains et champs de bataille d'Irlande",
+    "taille": "3 à 5 m, souvent davantage",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Formes diverses, pouvoirs redoutables et guerre contre les Tuatha Dé Danann",
     "nom": "Fomorien"
   },
@@ -1246,6 +1494,8 @@ window.FF_FICHES = {
     "famille": "Esprit artisan / familier du feu",
     "danger": 1,
     "habitat": "Forges, ateliers, soufflets",
+    "taille": "15 à 40 cm",
+    "poids": "Moins de 2 kg",
     "trait": "Travail du métal et farces de braise",
     "nom": "Forgelet"
   },
@@ -1256,6 +1506,8 @@ window.FF_FICHES = {
     "famille": "Divinité chthonienne / vengeresse",
     "danger": 5,
     "habitat": "Crimes impunis, seuils, Enfers",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Poursuite jusqu'à la purification",
     "nom": "Furie"
   },
@@ -1266,6 +1518,8 @@ window.FF_FICHES = {
     "famille": "Figure architecturale / gardien de fantasy",
     "danger": 3,
     "habitat": "Cathédrales, gouttières, nuits de pluie",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Gouttière sculptée ; animation issue de la fiction moderne",
     "nom": "Gargouille"
   },
@@ -1276,6 +1530,8 @@ window.FF_FICHES = {
     "famille": "Oiseau divin / monture",
     "danger": 5,
     "habitat": "Cieux, palais divins, jungles mythiques",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Ailes colossales et fureur contre les serpents",
     "nom": "Garuda"
   },
@@ -1286,6 +1542,8 @@ window.FF_FICHES = {
     "famille": "Géant",
     "danger": 4,
     "habitat": "Montagnes, landes, origines du monde",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Taille et force hors mesure",
     "nom": "Géant"
   },
@@ -1296,6 +1554,8 @@ window.FF_FICHES = {
     "famille": "Géant du givre / puissance primordiale",
     "danger": 5,
     "habitat": "Jötunheim, glaciers, hivers",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Puissance du givre et rivalité avec les dieux",
     "nom": "Géant des glaces"
   },
@@ -1306,6 +1566,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde / lignée élémentaire",
     "danger": 2,
     "habitat": "Confins élémentaires, cités, déserts",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Une affinité élémentaire inscrite dans le sang",
     "nom": "Genasi"
   },
@@ -1316,6 +1578,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / charognard",
     "danger": 4,
     "habitat": "Nécropoles, champs de bataille",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Puanteur paralysante",
     "nom": "Ghast"
   },
@@ -1326,6 +1590,8 @@ window.FF_FICHES = {
     "famille": "Aberration / amas vivant",
     "danger": 4,
     "habitat": "Profondeurs, failles, non-lieux",
+    "taille": "2 à 3 m",
+    "poids": "150 à 400 kg",
     "trait": "Babillage incessant qui égare l'esprit",
     "nom": "Gibbering Mouther"
   },
@@ -1336,6 +1602,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde extraplanaire / guerrier astral",
     "danger": 4,
     "habitat": "Mer Astrale, cités-forteresses",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Lames d'argent et haine des illithids",
     "nom": "Githyanki"
   },
@@ -1346,6 +1614,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde extraplanaire / ascète des Limbes",
     "danger": 3,
     "habitat": "Limbes, monastères, forteresses mentales",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Maîtrise de soi contre le chaos",
     "nom": "Githzerai"
   },
@@ -1356,6 +1626,8 @@ window.FF_FICHES = {
     "famille": "Démon / corrupteur",
     "danger": 5,
     "habitat": "Abîmes, cours démoniaques",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Quatre bras, pinces et promesses de pouvoir corruptrices",
     "nom": "Glabrezu"
   },
@@ -1366,6 +1638,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde / chasseur",
     "danger": 3,
     "habitat": "Savanes, ruines, bandes",
+    "taille": "2 à 2,30 m",
+    "poids": "110 à 150 kg",
     "trait": "Rire, charognage, férocité",
     "nom": "Gnoll"
   },
@@ -1376,6 +1650,8 @@ window.FF_FICHES = {
     "famille": "Petit peuple / artisan",
     "danger": 2,
     "habitat": "Collines, mines, jardins",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Taille réduite, artisanat, tours",
     "nom": "Gnome"
   },
@@ -1386,6 +1662,8 @@ window.FF_FICHES = {
     "famille": "Petit peuple / fauteur de troubles",
     "danger": 2,
     "habitat": "Grottes, forêts, ruines",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Ruse, nombre, cruauté mesquine",
     "nom": "Gobelin"
   },
@@ -1396,6 +1674,8 @@ window.FF_FICHES = {
     "famille": "Gobelinoïde / brute furtive",
     "danger": 3,
     "habitat": "Camps, collines, cavernes",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Force, furtivité et goût de l'embuscade",
     "nom": "Gobelours"
   },
@@ -1406,6 +1686,8 @@ window.FF_FICHES = {
     "famille": "Créature artificielle / gardien",
     "danger": 4,
     "habitat": "Quartiers menacés, ateliers, synagogues légendaires",
+    "taille": "2,50 à 3 m de haut",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Vie insufflée par des lettres ou un Nom sacré",
     "nom": "Golem"
   },
@@ -1416,6 +1698,8 @@ window.FF_FICHES = {
     "famille": "Créature artificielle / horreur",
     "danger": 4,
     "habitat": "Laboratoires, cryptes",
+    "taille": "2,50 à 3 m de haut",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Corps composite, force et fureur",
     "nom": "Golem de chair"
   },
@@ -1426,6 +1710,8 @@ window.FF_FICHES = {
     "famille": "Créature artificielle / gardien",
     "danger": 5,
     "habitat": "Forges magiques, chambres fortes, palais",
+    "taille": "2,50 à 3 m de haut",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Résistance prodigieuse et poings d'acier",
     "nom": "Golem de fer"
   },
@@ -1436,6 +1722,8 @@ window.FF_FICHES = {
     "famille": "Créature artificielle / gardien",
     "danger": 4,
     "habitat": "Ruines, sanctuaires, nécropoles",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Masse de pierre animée et force monumentale",
     "nom": "Golem de pierre"
   },
@@ -1446,6 +1734,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde / montagnard",
     "danger": 3,
     "habitat": "Pics, glaciers, campements d'altitude",
+    "taille": "2 à 2,30 m",
+    "poids": "110 à 150 kg",
     "trait": "Force, endurance et esprit de compétition",
     "nom": "Goliath"
   },
@@ -1456,6 +1746,8 @@ window.FF_FICHES = {
     "famille": "Monstre au regard / créature chthonienne",
     "danger": 5,
     "habitat": "Grottes, temples oubliés, îles",
+    "taille": "3 à 5 m, souvent davantage",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Chevelure de serpents et regard pétrifiant",
     "nom": "Gorgone"
   },
@@ -1466,6 +1758,8 @@ window.FF_FICHES = {
     "famille": "Démon changeforme / mort-vivant de fantasy",
     "danger": 3,
     "habitat": "Déserts et lieux isolés ; cimetières dans les adaptations occidentales",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Égarement des voyageurs et métamorphose ; nécrophagie dans les adaptations",
     "nom": "Goule"
   },
@@ -1476,6 +1770,8 @@ window.FF_FICHES = {
     "famille": "Aberration / prédateur aérien",
     "danger": 4,
     "habitat": "Cavernes, donjons, plafonds",
+    "taille": "2 à 3 m",
+    "poids": "150 à 400 kg",
     "trait": "Lévitation et tentacules paralysants",
     "nom": "Grell"
   },
@@ -1486,6 +1782,8 @@ window.FF_FICHES = {
     "famille": "Lutin / fauteur technique",
     "danger": 2,
     "habitat": "Hangars, usines, appareils",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Sabotage méthodique des machines",
     "nom": "Gremlin"
   },
@@ -1496,6 +1794,8 @@ window.FF_FICHES = {
     "famille": "Ogre / descendant de Caïn",
     "danger": 4,
     "habitat": "Marais, salles d'hydromel, nuits danoises",
+    "taille": "3 à 4 m de haut",
+    "poids": "Environ 500 kg",
     "trait": "Force, haine du chant, bras arraché",
     "nom": "Grendel"
   },
@@ -1506,6 +1806,8 @@ window.FF_FICHES = {
     "famille": "Hybride / gardien",
     "danger": 4,
     "habitat": "Montagnes, nids, trésors",
+    "taille": "2,50 à 3,50 m",
+    "poids": "300 à 500 kg",
     "trait": "Serres, ailes et royauté animale",
     "nom": "Griffon"
   },
@@ -1516,6 +1818,8 @@ window.FF_FICHES = {
     "famille": "Esprit aquatique / noyeur",
     "danger": 3,
     "habitat": "Mares, roseaux, eaux troubles",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Longs bras qui entraînent les enfants sous l'eau",
     "nom": "Grindylow"
   },
@@ -1526,6 +1830,8 @@ window.FF_FICHES = {
     "famille": "Sorcière / recluse",
     "danger": 3,
     "habitat": "Cabanes, landes, lisières",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Maléfices, herbes, œil mauvais",
     "nom": "Guenaude"
   },
@@ -1536,6 +1842,8 @@ window.FF_FICHES = {
     "famille": "Combattant",
     "danger": 3,
     "habitat": "Camps, compagnies, champs",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Maîtrise martiale",
     "nom": "Guerrier"
   },
@@ -1546,6 +1854,8 @@ window.FF_FICHES = {
     "famille": "Sentinelle / garde",
     "danger": 2,
     "habitat": "Remparts, rues, tours",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Vigilance et lanterne",
     "nom": "Guêteur"
   },
@@ -1556,6 +1866,8 @@ window.FF_FICHES = {
     "famille": "Petit peuple / pastoral",
     "danger": 1,
     "habitat": "Terriers, villages, auberges",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Discrétion, chance, confort",
     "nom": "Halfling"
   },
@@ -1566,6 +1878,8 @@ window.FF_FICHES = {
     "famille": "Esprit du vent / ravisseuse ailée",
     "danger": 3,
     "habitat": "Falaises, îles, tempêtes",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Rapt soudain et souillure des festins",
     "nom": "Harpie"
   },
@@ -1576,6 +1890,8 @@ window.FF_FICHES = {
     "famille": "Géant primordial",
     "danger": 5,
     "habitat": "Tartare, origines du cosmos",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Cent bras et cinquante têtes",
     "nom": "Hécatonchire"
   },
@@ -1586,6 +1902,8 @@ window.FF_FICHES = {
     "famille": "Hybride marin",
     "danger": 2,
     "habitat": "Mers, cortèges de Poséidon",
+    "taille": "1,60 m au garrot",
+    "poids": "Environ 400 kg",
     "trait": "Avant de cheval, arrière de poisson",
     "nom": "Hippocampe"
   },
@@ -1596,6 +1914,8 @@ window.FF_FICHES = {
     "famille": "Hybride volant",
     "danger": 3,
     "habitat": "Cieux, montagnes, écuries magiques",
+    "taille": "2,50 à 3,50 m",
+    "poids": "300 à 500 kg",
     "trait": "Avant de griffon ailé et arrière de cheval",
     "nom": "Hippogriffe"
   },
@@ -1606,6 +1926,8 @@ window.FF_FICHES = {
     "famille": "Gobelinoïde / militariste",
     "danger": 3,
     "habitat": "Camps fortifiés, légions",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Ordre martial et cruauté organisée",
     "nom": "Hobgobelin"
   },
@@ -1616,6 +1938,8 @@ window.FF_FICHES = {
     "famille": "Reptilien / tribal",
     "danger": 3,
     "habitat": "Marais, ziggourats, jungles",
+    "taille": "1,80 à 2,50 m de long",
+    "poids": "60 à 100 kg",
     "trait": "Sang froid et culte ancien",
     "nom": "Homme-lézard"
   },
@@ -1626,6 +1950,8 @@ window.FF_FICHES = {
     "famille": "Hybride / souterrain",
     "danger": 3,
     "habitat": "Égouts, caves, fléaux",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Tanières, peste et essaim",
     "nom": "Homme-rat"
   },
@@ -1636,6 +1962,8 @@ window.FF_FICHES = {
     "famille": "Créature artificielle",
     "danger": 2,
     "habitat": "Laboratoires, cornues, cabinets d'alchimiste",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Génération artificielle en vase clos",
     "nom": "Homoncule"
   },
@@ -1646,6 +1974,8 @@ window.FF_FICHES = {
     "famille": "Fée / séductrice sylvestre",
     "danger": 3,
     "habitat": "Forêts, estives, lisières",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Queue de vache, dos évidé",
     "nom": "Huldra"
   },
@@ -1656,6 +1986,8 @@ window.FF_FICHES = {
     "famille": "Serpent / régénérant",
     "danger": 5,
     "habitat": "Marais de Lerne, eaux croupies",
+    "taille": "5 à 8 m de long",
+    "poids": "Plusieurs tonnes",
     "trait": "Têtes multiples et régénération",
     "nom": "Hydre"
   },
@@ -1666,6 +1998,8 @@ window.FF_FICHES = {
     "famille": "Djinn puissant / esprit rebelle",
     "danger": 4,
     "habitat": "Déserts, ruines, lieux désolés",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Force redoutable, ruse et nature de feu sans fumée",
     "nom": "Ifrit"
   },
@@ -1676,6 +2010,8 @@ window.FF_FICHES = {
     "famille": "Aberration / psionique",
     "danger": 5,
     "habitat": "Cités souterraines, vaisseaux mentaux",
+    "taille": "2 à 4 m",
+    "poids": "300 à 800 kg",
     "trait": "Tentacules faciaux et extraction cérébrale",
     "nom": "Illithid"
   },
@@ -1686,6 +2022,8 @@ window.FF_FICHES = {
     "famille": "Magicien / trompeur",
     "danger": 2,
     "habitat": "Cours, théâtres, champs",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Illusions et leurres",
     "nom": "Illusionniste"
   },
@@ -1696,6 +2034,8 @@ window.FF_FICHES = {
     "famille": "Démon / succube masculin",
     "danger": 3,
     "habitat": "Chambres, nuits, rêves",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Visite sexuelle et vol de vigueur",
     "nom": "Incube"
   },
@@ -1706,6 +2046,8 @@ window.FF_FICHES = {
     "famille": "Magicien / ouvreur de portes",
     "danger": 3,
     "habitat": "Cercles, grimoires, seuils",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Convocation d'entités",
     "nom": "Invocateur"
   },
@@ -1716,6 +2058,8 @@ window.FF_FICHES = {
     "famille": "Monstre littéraire / dragonesque",
     "danger": 5,
     "habitat": "Bois touffu, royaume du non-sens",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Yeux de flamme, griffes ravisseuses et mâchoires voraces",
     "nom": "Jabberwock"
   },
@@ -1726,6 +2070,8 @@ window.FF_FICHES = {
     "famille": "Hybride / cryptide humoristique",
     "danger": 1,
     "habitat": "Steppes, bars, cartes postales",
+    "taille": "40 à 60 cm",
+    "poids": "3 à 5 kg",
     "trait": "Bois de cerf sur lièvre",
     "nom": "Jackalope"
   },
@@ -1736,6 +2082,8 @@ window.FF_FICHES = {
     "famille": "Djinn primordial / esprit du désert",
     "danger": 3,
     "habitat": "Déserts, terres désolées, ruines",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Feu sans fumée, métamorphose et ancienneté",
     "nom": "Jann"
   },
@@ -1746,6 +2094,8 @@ window.FF_FICHES = {
     "famille": "Serpent cosmique",
     "danger": 5,
     "habitat": "Océan du monde, fin des temps",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Envergure planétaire, venin de Ragnarök",
     "nom": "Jormungandr"
   },
@@ -1756,6 +2106,8 @@ window.FF_FICHES = {
     "famille": "Être primordial / géant",
     "danger": 5,
     "habitat": "Jötunheim, glaces, chaos originel",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Force, magie et rivalité avec les Ases",
     "nom": "Jotunn"
   },
@@ -1766,6 +2118,8 @@ window.FF_FICHES = {
     "famille": "Esprit aquatique / noyeur",
     "danger": 3,
     "habitat": "Rivières, étangs, canaux",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Cuvette crânienne et goût des concombres",
     "nom": "Kappa"
   },
@@ -1776,6 +2130,8 @@ window.FF_FICHES = {
     "famille": "Métamorphe aquatique",
     "danger": 4,
     "habitat": "Rivières, gués, berges isolées",
+    "taille": "Taille d’un grand cheval",
+    "poids": "400 à 500 kg",
     "trait": "Monture collante et noyade",
     "nom": "Kelpie"
   },
@@ -1786,6 +2142,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde aviaire / imitateur",
     "danger": 2,
     "habitat": "Villes, toits, compagnies",
+    "taille": "1,50 à 1,80 m",
+    "poids": "45 à 65 kg",
     "trait": "Mimétisme vocal et parole empruntée",
     "nom": "Kenku"
   },
@@ -1796,6 +2154,8 @@ window.FF_FICHES = {
     "famille": "Esprit domestique",
     "danger": 2,
     "habitat": "Izbas, fuseaux, greniers",
+    "taille": "15 à 40 cm",
+    "poids": "Moins de 2 kg",
     "trait": "Filage nocturne et humeurs",
     "nom": "Kikimora"
   },
@@ -1806,6 +2166,8 @@ window.FF_FICHES = {
     "famille": "Renard surnaturel / métamorphe",
     "danger": 3,
     "habitat": "Sanctuaires, villes, lisières",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Métamorphose, feux follets et ruse",
     "nom": "Kitsune"
   },
@@ -1816,6 +2178,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde reptilien / piégeur",
     "danger": 2,
     "habitat": "Galeries, pièges, tanières",
+    "taille": "1 à 1,50 m",
+    "poids": "25 à 45 kg",
     "trait": "Pièges, tactique de groupe et vénération draconique",
     "nom": "Kobold"
   },
@@ -1826,6 +2190,8 @@ window.FF_FICHES = {
     "famille": "Lutin / fée nocturne",
     "danger": 2,
     "habitat": "Fontaines, menhirs, landes",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Danses nocturnes, trésors et sortilèges",
     "nom": "Korrigan"
   },
@@ -1836,6 +2202,8 @@ window.FF_FICHES = {
     "famille": "Céphalopode colossal",
     "danger": 5,
     "habitat": "Mers de Norvège et du Groenland, routes maritimes",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Corps pris pour une île, bras immenses et tourbillon fatal",
     "nom": "Kraken"
   },
@@ -1846,6 +2214,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde aquatique / cultiste",
     "danger": 3,
     "habitat": "Lacs souterrains, temples humides",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Folie collective et vision du divin",
     "nom": "Kuo-toa"
   },
@@ -1856,6 +2226,8 @@ window.FF_FICHES = {
     "famille": "Gardien hybride / protecteur",
     "danger": 4,
     "habitat": "Portes palatiales, cités antiques",
+    "taille": "2,50 à 3,50 m",
+    "poids": "300 à 500 kg",
     "trait": "Ailes, cornes, vigilance",
     "nom": "Lamassu"
   },
@@ -1866,6 +2238,8 @@ window.FF_FICHES = {
     "famille": "Démone / séductrice",
     "danger": 4,
     "habitat": "Seuils, routes, nuits",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Beauté et faim d'enfants ou d'amants",
     "nom": "Lamie"
   },
@@ -1876,6 +2250,8 @@ window.FF_FICHES = {
     "famille": "Diable inférieur / damné",
     "danger": 2,
     "habitat": "Enfers, fosses, légions infernales",
+    "taille": "0,80 à 1,20 m",
+    "poids": "15 à 30 kg",
     "trait": "Corps informe et esprit presque effacé",
     "nom": "Lémure"
   },
@@ -1886,6 +2262,8 @@ window.FF_FICHES = {
     "famille": "Lutin / artisan",
     "danger": 2,
     "habitat": "Tertres, haies, ateliers solitaires",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Or caché et marché trompeur",
     "nom": "Leprechaun"
   },
@@ -1896,6 +2274,8 @@ window.FF_FICHES = {
     "famille": "Esprit sylvestre / maître forestier",
     "danger": 3,
     "habitat": "Taïgas, clairières, sentiers",
+    "taille": "Variable, souvent proche de l’humain",
+    "poids": "Variable",
     "trait": "Taille changeante, égarement",
     "nom": "Leshy"
   },
@@ -1906,6 +2286,8 @@ window.FF_FICHES = {
     "famille": "Serpent marin / primordial",
     "danger": 5,
     "habitat": "Abysses, origines du monde",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Envergure océanique",
     "nom": "Léviathan"
   },
@@ -1916,6 +2298,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / arcaniste",
     "danger": 5,
     "habitat": "Tombes, tours, sanctuaires profanés",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Immortalité liée à un réceptacle secret",
     "nom": "Liche"
   },
@@ -1926,6 +2310,8 @@ window.FF_FICHES = {
     "famille": "Bête merveilleuse",
     "danger": 2,
     "habitat": "Forêts profondes, clairières",
+    "taille": "1,60 m au garrot",
+    "poids": "Environ 400 kg",
     "trait": "Corne purificatrice et capture par une jeune vierge",
     "nom": "Licorne"
   },
@@ -1936,6 +2322,8 @@ window.FF_FICHES = {
     "famille": "Dragon serpentin / sans ailes",
     "danger": 4,
     "habitat": "Tertres, caves, campagnes",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Anneaux, venin et parfois deux pattes antérieures",
     "nom": "Lindworm"
   },
@@ -1946,6 +2334,8 @@ window.FF_FICHES = {
     "famille": "Lycanthrope",
     "danger": 4,
     "habitat": "Campagnes, bois, marges des villages",
+    "taille": "2 à 2,20 m debout",
+    "poids": "90 à 130 kg",
     "trait": "Métamorphose humaine en loup",
     "nom": "Loup-garou"
   },
@@ -1956,6 +2346,8 @@ window.FF_FICHES = {
     "famille": "Céphalopode colossal / monstre marin",
     "danger": 4,
     "habitat": "Trous bleus, récifs, grottes sous-marines",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Bras gigantesques et courants meurtriers des trous bleus",
     "nom": "Lusca"
   },
@@ -1966,6 +2358,8 @@ window.FF_FICHES = {
     "famille": "Esprit / farceur",
     "danger": 1,
     "habitat": "Fermes, granges, lisières",
+    "taille": "Proche de l’humain ou plus petit",
+    "poids": "20 à 70 kg",
     "trait": "Tours, dons, disparitions",
     "nom": "Lutin"
   },
@@ -1976,6 +2370,8 @@ window.FF_FICHES = {
     "famille": "Métamorphe / malédiction",
     "danger": 4,
     "habitat": "Forêts, villages, terres sauvages",
+    "taille": "2 à 2,20 m debout",
+    "poids": "90 à 130 kg",
     "trait": "Métamorphose d'humain en animal",
     "nom": "Lycanthrope"
   },
@@ -1986,6 +2382,8 @@ window.FF_FICHES = {
     "famille": "Magicien",
     "danger": 3,
     "habitat": "Tours, écoles, cours",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Étude des arcanes",
     "nom": "Mage"
   },
@@ -1996,6 +2394,8 @@ window.FF_FICHES = {
     "famille": "Aswang / prédatrice ailée",
     "danger": 4,
     "habitat": "Villages, toits, nuits",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Torse ailé, entrailles et vulnérabilité du corps abandonné",
     "nom": "Manananggal"
   },
@@ -2006,6 +2406,8 @@ window.FF_FICHES = {
     "famille": "Plante magique / esprit végétal",
     "danger": 3,
     "habitat": "Champs de potence, jardins secrets",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Forme anthropomorphe et cri",
     "nom": "Mandragore"
   },
@@ -2016,6 +2418,8 @@ window.FF_FICHES = {
     "famille": "Hybride / prédateur",
     "danger": 5,
     "habitat": "Inde imaginaire, déserts, marches",
+    "taille": "2,50 à 3,50 m",
+    "poids": "300 à 500 kg",
     "trait": "Dards, crocs, voix humaine",
     "nom": "Manticore"
   },
@@ -2026,6 +2430,8 @@ window.FF_FICHES = {
     "famille": "Cauchemar / oppresseur",
     "danger": 3,
     "habitat": "Lits, chevauchées nocturnes",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Pesanteur et chevauchée",
     "nom": "Mara"
   },
@@ -2036,6 +2442,8 @@ window.FF_FICHES = {
     "famille": "Djinn puissant / esprit marin",
     "danger": 5,
     "habitat": "Océans, palais de corail, tempêtes",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Puissance, orgueil et lien aux mers",
     "nom": "Marid"
   },
@@ -2046,6 +2454,8 @@ window.FF_FICHES = {
     "famille": "Démon / stratège",
     "danger": 5,
     "habitat": "Abîmes, champs de bataille infernaux",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Six bras armés et corps inférieur de serpent",
     "nom": "Marilith"
   },
@@ -2056,6 +2466,8 @@ window.FF_FICHES = {
     "famille": "Monstre au regard",
     "danger": 5,
     "habitat": "Antre, île, temple oublié",
+    "taille": "3 à 5 m, souvent davantage",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Pétrification, chevelure de serpents",
     "nom": "Méduse"
   },
@@ -2066,6 +2478,8 @@ window.FF_FICHES = {
     "famille": "Fée / fondatrice de lignée",
     "danger": 3,
     "habitat": "Sources, châteaux, bains secrets",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Double nature, tabou du regard",
     "nom": "Mélusine"
   },
@@ -2076,6 +2490,8 @@ window.FF_FICHES = {
     "famille": "Changeforme / prédateur",
     "danger": 3,
     "habitat": "Donjons, trésors, salles au butin",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Imitation d'objet, morsure",
     "nom": "Mimique"
   },
@@ -2086,6 +2502,8 @@ window.FF_FICHES = {
     "famille": "Hybride / prisonnier mythique",
     "danger": 4,
     "habitat": "Labyrinthe de Crète",
+    "taille": "2,20 m au garrot",
+    "poids": "600 kg",
     "trait": "Force taurine et prison du Labyrinthe",
     "nom": "Minotaure"
   },
@@ -2096,6 +2514,8 @@ window.FF_FICHES = {
     "famille": "Créature artificielle / incarnation de l'ordre",
     "danger": 3,
     "habitat": "Plans mécaniques, cités géométriques",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Hiérarchie absolue et corps géométrique",
     "nom": "Modron"
   },
@@ -2106,6 +2526,8 @@ window.FF_FICHES = {
     "famille": "Ascète / combattant",
     "danger": 3,
     "habitat": "Monastères, routes, sommets",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Discipline physique et intérieure",
     "nom": "Moine"
   },
@@ -2116,6 +2538,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / gardien",
     "danger": 4,
     "habitat": "Tombes, pyramides, sables",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Bandelettes, malédiction et éternité desséchée",
     "nom": "Momie"
   },
@@ -2126,6 +2550,8 @@ window.FF_FICHES = {
     "famille": "Prédateur / corrosion",
     "danger": 3,
     "habitat": "Donjons, arsenaux, caves",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Toucher qui rouille le métal",
     "nom": "Monstre rouilleur"
   },
@@ -2136,6 +2562,8 @@ window.FF_FICHES = {
     "famille": "Mort animée",
     "danger": 3,
     "habitat": "Cimetières, champs, cryptes",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Animation contre-nature",
     "nom": "Mort-vivant"
   },
@@ -2146,6 +2574,8 @@ window.FF_FICHES = {
     "famille": "Cryptide / présage",
     "danger": 3,
     "habitat": "Ponts, mines, villes industrielles",
+    "taille": "2 m, envergure de 3 m",
+    "poids": "Environ 40 kg",
     "trait": "Ailes, yeux lumineux, catastrophe annoncée",
     "nom": "Mothman"
   },
@@ -2156,6 +2586,8 @@ window.FF_FICHES = {
     "famille": "Dragon hybride / gardien",
     "danger": 4,
     "habitat": "Portes de Babylone, temples",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Cornes, écailles, loyauté divine",
     "nom": "Mushussu"
   },
@@ -2166,6 +2598,8 @@ window.FF_FICHES = {
     "famille": "Fungoïde / communauté souterraine",
     "danger": 2,
     "habitat": "Grottes humides, forêts souterraines",
+    "taille": "2 à 4 m",
+    "poids": "300 à 800 kg",
     "trait": "Communication par spores",
     "nom": "Myconide"
   },
@@ -2176,6 +2610,8 @@ window.FF_FICHES = {
     "famille": "Serpent divin / aquatique",
     "danger": 4,
     "habitat": "Rivières, palais sous-marins, jungles",
+    "taille": "1,80 à 2,50 m de long",
+    "poids": "60 à 100 kg",
     "trait": "Corps ophidien, métamorphose et pouvoir sur les eaux",
     "nom": "Naga"
   },
@@ -2186,6 +2622,8 @@ window.FF_FICHES = {
     "famille": "Nymphe aquatique",
     "danger": 2,
     "habitat": "Sources, fontaines, ruisseaux",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Vie liée à une eau vive",
     "nom": "Naiade"
   },
@@ -2196,6 +2634,8 @@ window.FF_FICHES = {
     "famille": "Petit peuple / forgeron",
     "danger": 3,
     "habitat": "Montagnes, salles souterraines, mines",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Artisanat prodigieux, ténacité et mémoire des offenses",
     "nom": "Nain"
   },
@@ -2206,6 +2646,8 @@ window.FF_FICHES = {
     "famille": "Magicien / maître des morts",
     "danger": 4,
     "habitat": "Cryptes, champs, tours",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Animation et pacte avec les défunts",
     "nom": "Nécromancien"
   },
@@ -2216,6 +2658,8 @@ window.FF_FICHES = {
     "famille": "Yokai / félin",
     "danger": 3,
     "habitat": "Maisons, toits, temples",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Deux queues, métamorphose et manipulation des morts",
     "nom": "Nekomata"
   },
@@ -2226,6 +2670,8 @@ window.FF_FICHES = {
     "famille": "Être antédiluvien / géant selon les traditions",
     "danger": 5,
     "habitat": "Monde antédiluvien",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Origine énigmatique et stature légendaire",
     "nom": "Nephilim"
   },
@@ -2236,6 +2682,8 @@ window.FF_FICHES = {
     "famille": "Nymphe marine",
     "danger": 2,
     "habitat": "Vagues, cortèges de Nérée",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Beauté marine, assistance aux marins",
     "nom": "Néréide"
   },
@@ -2246,6 +2694,8 @@ window.FF_FICHES = {
     "famille": "Dragon / dévoreur cosmique",
     "danger": 5,
     "habitat": "Racines d'Yggdrasil, Niflheim",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Rongement éternel, cadavres",
     "nom": "Nidhogg"
   },
@@ -2256,6 +2706,8 @@ window.FF_FICHES = {
     "famille": "Esprit du foyer / tomte",
     "danger": 1,
     "habitat": "Fermes, étables, greniers",
+    "taille": "15 à 40 cm",
+    "poids": "Moins de 2 kg",
     "trait": "Bonnet rouge et offrande de bouillie de Noël",
     "nom": "Nisse"
   },
@@ -2266,6 +2718,8 @@ window.FF_FICHES = {
     "famille": "Esprit aquatique",
     "danger": 3,
     "habitat": "Rivières, lacs, moulins",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Chant, forme humaine, noyade",
     "nom": "Nixe"
   },
@@ -2276,6 +2730,8 @@ window.FF_FICHES = {
     "famille": "Destin / fileuse",
     "danger": 5,
     "habitat": "Puits d'Urd, racines du monde",
+    "taille": "Apparence humaine, taille variable",
+    "poids": "Immatérielle selon les récits",
     "trait": "Fil du destin",
     "nom": "Norne"
   },
@@ -2286,6 +2742,8 @@ window.FF_FICHES = {
     "famille": "Vampire / porteur de peste",
     "danger": 4,
     "habitat": "Cryptes, villes, nuits",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Soif de sang, contagion et horreur physique",
     "nom": "Nosferatu"
   },
@@ -2296,6 +2754,8 @@ window.FF_FICHES = {
     "famille": "Esprit / nature",
     "danger": 2,
     "habitat": "Bois, eaux, montagnes",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Attache à un site",
     "nom": "Nymphe"
   },
@@ -2306,6 +2766,8 @@ window.FF_FICHES = {
     "famille": "Savant / praticien",
     "danger": 2,
     "habitat": "Cabinets, loges, bibliothèques",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Savoir interdit",
     "nom": "Occultiste"
   },
@@ -2316,6 +2778,8 @@ window.FF_FICHES = {
     "famille": "Géant / anthropophage",
     "danger": 4,
     "habitat": "Forêts, châteaux, chemins",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Faim d'humains, force",
     "nom": "Ogre"
   },
@@ -2326,6 +2790,8 @@ window.FF_FICHES = {
     "famille": "Être-tonnerre / puissance céleste",
     "danger": 5,
     "habitat": "Cieux, lacs, montagnes sacrées",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Battements d'ailes tonitruants et éclairs",
     "nom": "Oiseau-tonnerre"
   },
@@ -2336,6 +2802,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / ombre prédatrice",
     "danger": 3,
     "habitat": "Cryptes, coins, crépuscules",
+    "taille": "Variable, silhouette humaine floue",
+    "poids": "Immatérielle, sans poids propre",
     "trait": "Drain de force et intangibilité",
     "nom": "Ombre"
   },
@@ -2346,6 +2814,8 @@ window.FF_FICHES = {
     "famille": "Élémentaire d'eau",
     "danger": 3,
     "habitat": "Lacs, rivières, sources",
+    "taille": "Variable, souvent 2 à 3 m",
+    "poids": "Variable selon l’élément",
     "trait": "Corps d'eau et âme acquise par l'union humaine",
     "nom": "Ondine"
   },
@@ -2356,6 +2826,8 @@ window.FF_FICHES = {
     "famille": "Démon / ogre",
     "danger": 4,
     "habitat": "Montagnes, enfers, seuils",
+    "taille": "3 à 4 m de haut",
+    "poids": "Environ 500 kg",
     "trait": "Cornes, peau vive, kanabō",
     "nom": "Oni"
   },
@@ -2366,6 +2838,8 @@ window.FF_FICHES = {
     "famille": "Devin / intercesseur",
     "danger": 2,
     "habitat": "Sanctuaires, vapeurs, trépieds",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Parole prophétique",
     "nom": "Oracle"
   },
@@ -2376,6 +2850,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde / guerrier",
     "danger": 3,
     "habitat": "Camps, collines, forteresses",
+    "taille": "2 à 2,30 m",
+    "poids": "110 à 150 kg",
     "trait": "Force, nombre, culture martiale",
     "nom": "Orc"
   },
@@ -2386,6 +2862,8 @@ window.FF_FICHES = {
     "famille": "Nymphe montagnarde",
     "danger": 2,
     "habitat": "Pics, grottes, sentiers d'altitude",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Attache aux monts",
     "nom": "Oréade"
   },
@@ -2396,6 +2874,8 @@ window.FF_FICHES = {
     "famille": "Gardien canin / bicéphale",
     "danger": 4,
     "habitat": "Troupeaux monstrueux, confins",
+    "taille": "1 à 1,50 m au garrot",
+    "poids": "80 à 150 kg",
     "trait": "Deux têtes, lignée typhonnienne",
     "nom": "Orthros"
   },
@@ -2406,6 +2886,8 @@ window.FF_FICHES = {
     "famille": "Aberration / charognard",
     "danger": 3,
     "habitat": "Fosses d'aisances, décharges, caves",
+    "taille": "2 à 3 m",
+    "poids": "150 à 400 kg",
     "trait": "Tentacules, infection, habitat d'immondices",
     "nom": "Otyugh"
   },
@@ -2416,6 +2898,8 @@ window.FF_FICHES = {
     "famille": "Hybride / prédateur sauvage",
     "danger": 4,
     "habitat": "Forêts profondes, cavernes",
+    "taille": "2,50 à 3,50 m",
+    "poids": "300 à 500 kg",
     "trait": "Force d'ours, bec acéré et agressivité",
     "nom": "Ours-hibou"
   },
@@ -2426,6 +2910,8 @@ window.FF_FICHES = {
     "famille": "Serviteur / apprenti",
     "danger": 1,
     "habitat": "Cours, châteaux",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Service nobiliaire",
     "nom": "Page"
   },
@@ -2436,6 +2922,8 @@ window.FF_FICHES = {
     "famille": "Guerrier sacré",
     "danger": 3,
     "habitat": "Ordres, routes, sièges",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Foi martiale et magie divine",
     "nom": "Paladin"
   },
@@ -2446,6 +2934,8 @@ window.FF_FICHES = {
     "famille": "Cheval ailé / divin",
     "danger": 3,
     "habitat": "Cieux, sources, Hélicon",
+    "taille": "1,60 m au garrot",
+    "poids": "Environ 400 kg",
     "trait": "Vol, inspiration des poètes",
     "nom": "Pégase"
   },
@@ -2456,6 +2946,8 @@ window.FF_FICHES = {
     "famille": "Dragon / bête de rivière",
     "danger": 4,
     "habitat": "Huisne, berges, campagnes de la Sarthe",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Piquants venimeux, souffle de feu et crues destructrices",
     "nom": "Peluda"
   },
@@ -2466,6 +2958,8 @@ window.FF_FICHES = {
     "famille": "Fée / esprit ailé",
     "danger": 2,
     "habitat": "Jardins, cieux, seuils du paradis",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Beauté, magie, rédemption possible",
     "nom": "Péri"
   },
@@ -2476,6 +2970,8 @@ window.FF_FICHES = {
     "famille": "Hybride / présage",
     "danger": 4,
     "habitat": "Falaises, îles, cieux",
+    "taille": "2,50 à 3,50 m",
+    "poids": "300 à 500 kg",
     "trait": "Ombre d'homme, soif de cœurs",
     "nom": "Péryton"
   },
@@ -2486,6 +2982,8 @@ window.FF_FICHES = {
     "famille": "Oiseau solaire / cyclique",
     "danger": 2,
     "habitat": "Autels de feu, déserts, cieux",
+    "taille": "1 à 1,50 m, envergure 2 m",
+    "poids": "5 à 10 kg",
     "trait": "Immolation et renaissance",
     "nom": "Phénix"
   },
@@ -2496,6 +2994,8 @@ window.FF_FICHES = {
     "famille": "Fée mineure",
     "danger": 1,
     "habitat": "Landes, tertres, clairières",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Lumières, égarement, rires",
     "nom": "Pixie"
   },
@@ -2506,6 +3006,8 @@ window.FF_FICHES = {
     "famille": "Esprit / manifestation",
     "danger": 2,
     "habitat": "Maisons hantées, chambres, greniers",
+    "taille": "Variable, silhouette humaine floue",
+    "poids": "Immatérielle, sans poids propre",
     "trait": "Objets projetés et tapage",
     "nom": "Poltergeist"
   },
@@ -2516,6 +3018,8 @@ window.FF_FICHES = {
     "famille": "Fée / esprit trompeur",
     "danger": 3,
     "habitat": "Landes, routes, champs",
+    "taille": "Variable, souvent proche de l’humain",
+    "poids": "Variable",
     "trait": "Métamorphose, chevauchées nocturnes et paroles ambiguës",
     "nom": "Pooka"
   },
@@ -2526,6 +3030,8 @@ window.FF_FICHES = {
     "famille": "Esprit affamé",
     "danger": 2,
     "habitat": "Cimetières, lieux désolés, mondes de renaissance",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Faim inextinguible",
     "nom": "Preta"
   },
@@ -2536,6 +3042,8 @@ window.FF_FICHES = {
     "famille": "Clerc",
     "danger": 2,
     "habitat": "Temples, autels, processions",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Rite et intercession",
     "nom": "Prêtre"
   },
@@ -2546,6 +3054,8 @@ window.FF_FICHES = {
     "famille": "Magicien / feu",
     "danger": 3,
     "habitat": "Brasiers, champs de bataille, tours",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Maîtrise des flammes",
     "nom": "Pyromancien"
   },
@@ -2556,6 +3066,8 @@ window.FF_FICHES = {
     "famille": "Créature de bon augure / hybride",
     "danger": 2,
     "habitat": "Cours impériales, forêts sacrées",
+    "taille": "2 m au garrot",
+    "poids": "250 à 400 kg",
     "trait": "Andouillers, écailles et bienveillance",
     "nom": "Qilin"
   },
@@ -2566,6 +3078,8 @@ window.FF_FICHES = {
     "famille": "Divinité / Serpent à plumes",
     "danger": 5,
     "habitat": "Cieux, temples, horizon de l'aube",
+    "taille": "3 à 5 m, souvent davantage",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Vent, savoir, prêtrise et étoile du matin",
     "nom": "Quetzalcoatl"
   },
@@ -2576,6 +3090,8 @@ window.FF_FICHES = {
     "famille": "Être démoniaque / métamorphe",
     "danger": 5,
     "habitat": "Forêts, champs de bataille, palais",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Métamorphose, illusion et anthropophagie",
     "nom": "Rakshasa"
   },
@@ -2586,6 +3102,8 @@ window.FF_FICHES = {
     "famille": "Fée malveillante / tueur",
     "danger": 4,
     "habitat": "Ruines fortifiées des Marches anglo-écossaises",
+    "taille": "0,80 à 1,20 m",
+    "poids": "15 à 30 kg",
     "trait": "Bonnet rouge et sabots de fer",
     "nom": "Redcap"
   },
@@ -2596,6 +3114,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / vengeur",
     "danger": 3,
     "habitat": "Tombes, villages, serments brisés",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Retour ciblé, injustice",
     "nom": "Revenant"
   },
@@ -2606,6 +3126,8 @@ window.FF_FICHES = {
     "famille": "Oiseau colossal",
     "danger": 5,
     "habitat": "Îles, océans, nids de montagne",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Envergure mythique",
     "nom": "Roc"
   },
@@ -2616,6 +3138,8 @@ window.FF_FICHES = {
     "famille": "Éclaireur / survivant",
     "danger": 3,
     "habitat": "Forêts, frontières, routes",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Pistage et autonomie",
     "nom": "Rôdeur"
   },
@@ -2626,6 +3150,8 @@ window.FF_FICHES = {
     "famille": "Yokai / humain transformé",
     "danger": 3,
     "habitat": "Maisons, auberges, rues nocturnes",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Cou démesurément extensible",
     "nom": "Rokurokubi"
   },
@@ -2636,6 +3162,8 @@ window.FF_FICHES = {
     "famille": "Magicien / graveur",
     "danger": 3,
     "habitat": "Pierres, halls, batailles",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Runes comme sorts",
     "nom": "Runiste"
   },
@@ -2646,6 +3174,8 @@ window.FF_FICHES = {
     "famille": "Esprit féminin / aquatique",
     "danger": 3,
     "habitat": "Rivières, saules, nuits de juin",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Danse, chant et mort au bord de l'eau",
     "nom": "Rusalka"
   },
@@ -2656,6 +3186,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde marin / prédateur",
     "danger": 4,
     "habitat": "Récifs, fosses, cités coralliennes",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Société guerrière aquatique",
     "nom": "Sahuagin"
   },
@@ -2666,6 +3198,8 @@ window.FF_FICHES = {
     "famille": "Animal merveilleux / élémentaire de feu",
     "danger": 3,
     "habitat": "Bûchers, fourneaux, volcans",
+    "taille": "30 à 60 cm",
+    "poids": "1 à 3 kg",
     "trait": "Vie dans le feu et résistance aux flammes",
     "nom": "Salamandre"
   },
@@ -2676,6 +3210,8 @@ window.FF_FICHES = {
     "famille": "Être forestier / cryptide",
     "danger": 2,
     "habitat": "Forêts du Nord-Ouest pacifique, montagnes",
+    "taille": "2 à 2,80 m",
+    "poids": "200 à 300 kg",
     "trait": "Gardien et changeforme chez les Sts'ailes, cryptide furtif dans les récits modernes",
     "nom": "Sasquatch"
   },
@@ -2686,6 +3222,8 @@ window.FF_FICHES = {
     "famille": "Esprit sauvage / cortège dionysiaque",
     "danger": 2,
     "habitat": "Bois, vendanges, fêtes",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Oreilles et queue chevalines dans l'art ancien, traits caprins plus tardifs",
     "nom": "Satyre"
   },
@@ -2696,6 +3234,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde merveilleux",
     "danger": 1,
     "habitat": "Indes imaginaires, terres brûlées",
+    "taille": "Proche de l’humain ou plus petit",
+    "poids": "20 à 70 kg",
     "trait": "Jambe unique et pied immense servant de parasol",
     "nom": "Sciapode"
   },
@@ -2706,6 +3246,8 @@ window.FF_FICHES = {
     "famille": "Monstre marin / dévoreuse",
     "danger": 5,
     "habitat": "Caverne d'un détroit, écueils",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Six longs cous armés de gueules et douze pieds dans l'Odyssée",
     "nom": "Scylla"
   },
@@ -2716,6 +3258,8 @@ window.FF_FICHES = {
     "famille": "Changeforme marin",
     "danger": 2,
     "habitat": "Côtes, récifs, foyers forcés",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Peau de phoque, mariage captif",
     "nom": "Selkie"
   },
@@ -2726,6 +3270,8 @@ window.FF_FICHES = {
     "famille": "Aberration / masse protoplasmique",
     "danger": 5,
     "habitat": "Cités antédiluviennes, glaces, profondeurs",
+    "taille": "2 à 4 m",
+    "poids": "300 à 800 kg",
     "trait": "Yeux innombrables, imitation et révolte",
     "nom": "Shoggoth"
   },
@@ -2736,6 +3282,8 @@ window.FF_FICHES = {
     "famille": "Peuple féerique / noblesse surnaturelle",
     "danger": 4,
     "habitat": "Tertres (sídhe), collines, seuils de Samhain",
+    "taille": "1,65 à 1,90 m",
+    "poids": "55 à 80 kg",
     "trait": "Glamour, temps altéré et tabous",
     "nom": "Sidhe"
   },
@@ -2746,6 +3294,8 @@ window.FF_FICHES = {
     "famille": "Oiseau primordial / sage",
     "danger": 3,
     "habitat": "Montagne, arbre du savoir, cieux",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Sagesse, guérison, envergure",
     "nom": "Simurgh"
   },
@@ -2756,6 +3306,8 @@ window.FF_FICHES = {
     "famille": "Hybride ailé ou pisciforme / enchanteresse fatale",
     "danger": 4,
     "habitat": "Îles, écueils, routes maritimes",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Femme-oiseau dans l'Antiquité, femme-poisson dans la tradition médiévale",
     "nom": "Sirène"
   },
@@ -2766,6 +3318,8 @@ window.FF_FICHES = {
     "famille": "Aberration / chaos",
     "danger": 4,
     "habitat": "Limbes, failles, invasions",
+    "taille": "2 à 4 m",
+    "poids": "300 à 800 kg",
     "trait": "Reproduction par implantation, couleurs de caste",
     "nom": "Slaad"
   },
@@ -2776,6 +3330,8 @@ window.FF_FICHES = {
     "famille": "Monture divine",
     "danger": 3,
     "habitat": "Neuf mondes, cieux, chemins d'Odin",
+    "taille": "1,60 m au garrot",
+    "poids": "Environ 400 kg",
     "trait": "Huit jambes, course entre les mondes",
     "nom": "Sleipnir"
   },
@@ -2786,6 +3342,8 @@ window.FF_FICHES = {
     "famille": "Horde de morts / chasse nocturne",
     "danger": 4,
     "habitat": "Cieux nocturnes, fenêtres tournées vers l'ouest",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Vol en essaim et rapt des âmes",
     "nom": "Sluagh"
   },
@@ -2796,6 +3354,8 @@ window.FF_FICHES = {
     "famille": "Magicien / praticien occulte",
     "danger": 3,
     "habitat": "Campagnes, cours, lieux retirés",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Maléfices, rituels et pactes possibles",
     "nom": "Sorcier"
   },
@@ -2806,6 +3366,8 @@ window.FF_FICHES = {
     "famille": "Praticienne / maléficieuse",
     "danger": 3,
     "habitat": "Cabanes, villages, sabbats",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Herbes, maléfices, savoirs",
     "nom": "Sorcière"
   },
@@ -2816,6 +3378,8 @@ window.FF_FICHES = {
     "famille": "Escrimeur / mercenaire",
     "danger": 3,
     "habitat": "Rues, cours, duels",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Maîtrise de l'épée",
     "nom": "Spadassin"
   },
@@ -2826,6 +3390,8 @@ window.FF_FICHES = {
     "famille": "Esprit / vengeur",
     "danger": 4,
     "habitat": "Ruines, serments, nuits",
+    "taille": "Variable, silhouette humaine floue",
+    "poids": "Immatérielle, sans poids propre",
     "trait": "Toucher glacial, intangibilité",
     "nom": "Spectre"
   },
@@ -2836,6 +3402,8 @@ window.FF_FICHES = {
     "famille": "Hybride léonin / gardien ou monstre à énigme",
     "danger": 4,
     "habitat": "Temples et tombes d'Égypte, route de Thèbes",
+    "taille": "2,50 à 3,50 m",
+    "poids": "300 à 500 kg",
     "trait": "Pouvoir protecteur en Égypte, énigme fatale en Grèce",
     "nom": "Sphinx"
   },
@@ -2846,6 +3414,8 @@ window.FF_FICHES = {
     "famille": "Fée / gardien de trésor",
     "danger": 3,
     "habitat": "Cromlechs, caches, landes",
+    "taille": "Variable, souvent proche de l’humain",
+    "poids": "Variable",
     "trait": "Taille changeante, vol d'enfants",
     "nom": "Spriggan"
   },
@@ -2856,6 +3426,8 @@ window.FF_FICHES = {
     "famille": "Fée minuscule / esprit lumineux",
     "danger": 1,
     "habitat": "Bosquets, clairières, jardins enchantés",
+    "taille": "10 à 15 cm",
+    "poids": "Quelques grammes",
     "trait": "Lueur, vol et malices",
     "nom": "Sprite"
   },
@@ -2866,6 +3438,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / serviteur animé",
     "danger": 2,
     "habitat": "Cryptes, champs de bataille, laboratoires",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Animation magique d'une ossature",
     "nom": "Squelette"
   },
@@ -2876,6 +3450,8 @@ window.FF_FICHES = {
     "famille": "Oiseau / vampire",
     "danger": 3,
     "habitat": "Nuits, berceaux, toits",
+    "taille": "Taille d’un grand rapace",
+    "poids": "2 à 5 kg",
     "trait": "Vol, sang, métamorphose",
     "nom": "Strige"
   },
@@ -2886,6 +3462,8 @@ window.FF_FICHES = {
     "famille": "Vampire / revenant",
     "danger": 4,
     "habitat": "Villages, tombes, Carpathes",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Sortie de tombe, maléfice",
     "nom": "Strigoi"
   },
@@ -2896,6 +3474,8 @@ window.FF_FICHES = {
     "famille": "Démone / visiteuse nocturne",
     "danger": 3,
     "habitat": "Chambres, sommeils, visions",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Séduction nocturne et épuisement de la victime",
     "nom": "Succube"
   },
@@ -2906,6 +3486,8 @@ window.FF_FICHES = {
     "famille": "Être souterrain / proche des nains",
     "danger": 3,
     "habitat": "Svartálfaheimr, souterrains, forges",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Identité incertaine et artisanat merveilleux",
     "nom": "Svartalf"
   },
@@ -2916,6 +3498,8 @@ window.FF_FICHES = {
     "famille": "Gnome / souterrain",
     "danger": 2,
     "habitat": "Outreterre, mines, cités cachées",
+    "taille": "0,90 à 1,20 m",
+    "poids": "20 à 35 kg",
     "trait": "Discrétion, magie d'illusion, méfiance",
     "nom": "Svirfneblin"
   },
@@ -2926,6 +3510,8 @@ window.FF_FICHES = {
     "famille": "Être élémentaire / air",
     "danger": 2,
     "habitat": "Vents, cimes, nuages",
+    "taille": "Variable, souvent 2 à 3 m",
+    "poids": "Variable selon l’élément",
     "trait": "Affinité absolue avec l'air et les vents",
     "nom": "Sylphe"
   },
@@ -2936,6 +3522,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde félin / nomade",
     "danger": 2,
     "habitat": "Jungles, caravanes, ports",
+    "taille": "1,50 à 1,80 m",
+    "poids": "45 à 65 kg",
     "trait": "Curiosité, agilité, récits",
     "nom": "Tabaxi"
   },
@@ -2946,6 +3534,8 @@ window.FF_FICHES = {
     "famille": "Automate / gardien",
     "danger": 5,
     "habitat": "Crète, rivages, mythes argonautiques",
+    "taille": "2,50 à 3 m de haut",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Corps de bronze, veine d'ichor",
     "nom": "Talos"
   },
@@ -2956,6 +3546,8 @@ window.FF_FICHES = {
     "famille": "Yokai / esprit farceur",
     "danger": 2,
     "habitat": "Bois, temples, routes",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Métamorphose, illusions et goût de la fête",
     "nom": "Tanuki"
   },
@@ -2966,6 +3558,8 @@ window.FF_FICHES = {
     "famille": "Dragon / bête de rivière",
     "danger": 5,
     "habitat": "Rhône, Tarascon, marais",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Carapace, six pattes, légende de sainte Marthe",
     "nom": "Tarasque"
   },
@@ -2976,6 +3570,8 @@ window.FF_FICHES = {
     "famille": "Dragon nain / cryptide",
     "danger": 3,
     "habitat": "Alpes, grottes, alpages",
+    "taille": "1 à 2 m de long",
+    "poids": "Environ 20 kg",
     "trait": "Tête féline et corps serpentin",
     "nom": "Tatzelwurm"
   },
@@ -2986,6 +3582,8 @@ window.FF_FICHES = {
     "famille": "Ordre religieux / guerrier",
     "danger": 3,
     "habitat": "Commanderies, routes, forteresses",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Règle monastique, discipline et cavalerie lourde",
     "nom": "Templier"
   },
@@ -2996,6 +3594,8 @@ window.FF_FICHES = {
     "famille": "Yokai / esprit montagnard",
     "danger": 4,
     "habitat": "Montagnes, temples, forêts",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Bec ou long nez, ailes et maîtrise martiale",
     "nom": "Tengu"
   },
@@ -3006,6 +3606,8 @@ window.FF_FICHES = {
     "famille": "Magicien / faiseur de miracles",
     "danger": 3,
     "habitat": "Cours, places, sanctuaires",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Prodiges publics",
     "nom": "Thaumaturge"
   },
@@ -3016,6 +3618,8 @@ window.FF_FICHES = {
     "famille": "Planétaire / lignée infernale",
     "danger": 2,
     "habitat": "Villes, marges, compagnies",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Traits infernaux et préjugés d'autrui",
     "nom": "Tieffelin"
   },
@@ -3026,6 +3630,8 @@ window.FF_FICHES = {
     "famille": "Métamorphe / félin",
     "danger": 4,
     "habitat": "Jungles, villages, nuits",
+    "taille": "2 à 2,20 m debout",
+    "poids": "90 à 130 kg",
     "trait": "Métamorphose en tigre, volontaire ou maudite",
     "nom": "Tigre-garou"
   },
@@ -3036,6 +3642,8 @@ window.FF_FICHES = {
     "famille": "Divinité ancienne / puissance déchue",
     "danger": 5,
     "habitat": "Monde primordial, cieux, Tartare pour les vaincus",
+    "taille": "6 à 10 m de haut",
+    "poids": "Plusieurs tonnes",
     "trait": "Génération divine antérieure aux Olympiens",
     "nom": "Titan"
   },
@@ -3046,6 +3654,8 @@ window.FF_FICHES = {
     "famille": "Esprit domestique / gardien de ferme",
     "danger": 1,
     "habitat": "Fermes, étables, greniers",
+    "taille": "15 à 40 cm",
+    "poids": "Moins de 2 kg",
     "trait": "Protection du domaine, offrande de bouillie et vengeance s'il est offensé",
     "nom": "Tomte"
   },
@@ -3056,6 +3666,8 @@ window.FF_FICHES = {
     "famille": "Végétal conscient / gardien",
     "danger": 4,
     "habitat": "Forêts anciennes, sanctuaires sylvestres",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Force, lenteur et mémoire des siècles",
     "nom": "Tréant"
   },
@@ -3066,6 +3678,8 @@ window.FF_FICHES = {
     "famille": "Humanoïde marin",
     "danger": 3,
     "habitat": "Cours de Poséidon, récifs",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Conque, queue, royaumes sous-marins",
     "nom": "Triton"
   },
@@ -3076,6 +3690,8 @@ window.FF_FICHES = {
     "famille": "Reptilien / souterrain",
     "danger": 3,
     "habitat": "Cavernes, boyaux, embuscades",
+    "taille": "1,80 à 2,50 m de long",
+    "poids": "60 à 100 kg",
     "trait": "Puanteur, camouflage, tribu",
     "nom": "Troglodyte"
   },
@@ -3086,6 +3702,8 @@ window.FF_FICHES = {
     "famille": "Géant / être sauvage",
     "danger": 4,
     "habitat": "Montagnes, grottes, forêts reculées",
+    "taille": "4 à 7 m de haut",
+    "poids": "1 à 3 tonnes",
     "trait": "Pétrification solaire selon certains récits, régénération en fantasy",
     "nom": "Troll"
   },
@@ -3096,6 +3714,8 @@ window.FF_FICHES = {
     "famille": "Fée / nocturne",
     "danger": 2,
     "habitat": "Tertres, nuits, îles",
+    "taille": "Variable, souvent proche de l’humain",
+    "poids": "Variable",
     "trait": "Haine du jour, enlèvements",
     "nom": "Trow"
   },
@@ -3106,6 +3726,8 @@ window.FF_FICHES = {
     "famille": "Primordial / tempête",
     "danger": 5,
     "habitat": "Cilicie, Etna, origines",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Cent têtes, vents, lignée monstrueuse",
     "nom": "Typhon"
   },
@@ -3116,6 +3738,8 @@ window.FF_FICHES = {
     "famille": "Monstre oculaire / prédateur fantastique",
     "danger": 5,
     "habitat": "Cavernes, ruines et complexes souterrains",
+    "taille": "2 à 4 m",
+    "poids": "300 à 800 kg",
     "trait": "Œil central antimagique et pédoncules aux effets distincts",
     "nom": "Tyrannoeil"
   },
@@ -3126,6 +3750,8 @@ window.FF_FICHES = {
     "famille": "Prédateur souterrain",
     "danger": 4,
     "habitat": "Galeries, Outreterre, mines",
+    "taille": "2 à 3 m",
+    "poids": "150 à 400 kg",
     "trait": "Mandibules, confusion du regard",
     "nom": "Umber Hulk"
   },
@@ -3136,6 +3762,8 @@ window.FF_FICHES = {
     "famille": "Psychopompe / guerrière divine",
     "danger": 4,
     "habitat": "Champs de bataille, cieux, Valhalla",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Choix d'une partie des morts au combat et service d'Odin",
     "nom": "Valkyrie"
   },
@@ -3146,6 +3774,8 @@ window.FF_FICHES = {
     "famille": "Corbeau surnaturel / changeforme",
     "danger": 3,
     "habitat": "Champs de bataille, routes nocturnes, toits",
+    "taille": "Taille d’un grand rapace",
+    "poids": "2 à 5 kg",
     "trait": "Intelligence humaine, pacte et métamorphose par le sang",
     "nom": "Valravn"
   },
@@ -3156,6 +3786,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / sang",
     "danger": 4,
     "habitat": "Cryptes, villes, nuits",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Soif, contagion, tabous",
     "nom": "Vampire"
   },
@@ -3166,6 +3798,8 @@ window.FF_FICHES = {
     "famille": "Dévoreur d'astres / démon céleste",
     "danger": 4,
     "habitat": "Cieux, villages, éclipses",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Forme variable et dévoration du Soleil ou de la Lune",
     "nom": "Varcolac"
   },
@@ -3176,6 +3810,8 @@ window.FF_FICHES = {
     "famille": "Esprit / possesseur de cadavres",
     "danger": 3,
     "habitat": "Terrains de crémation, arbres, nuits",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Possession des morts et énigmes dans le cycle de Vikram",
     "nom": "Vétala"
   },
@@ -3186,6 +3822,8 @@ window.FF_FICHES = {
     "famille": "Esprit féminin / nymphe",
     "danger": 3,
     "habitat": "Forêts, montagnes, clairières de danse",
+    "taille": "Silhouette humaine, 1,60 à 1,75 m",
+    "poids": "55 à 65 kg",
     "trait": "Beauté, maîtrise des vents, guérison et vengeance",
     "nom": "Vila"
   },
@@ -3196,6 +3834,8 @@ window.FF_FICHES = {
     "famille": "Esprit aquatique / noyeur",
     "danger": 4,
     "habitat": "Moulins, rivières, étangs",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Noyade, maîtrise des poissons et pactes avec les meuniers",
     "nom": "Vodyanoi"
   },
@@ -3206,6 +3846,8 @@ window.FF_FICHES = {
     "famille": "Filou / infiltré",
     "danger": 2,
     "habitat": "Villes, guildes, toits",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Discrétion et ruse",
     "nom": "Voleur"
   },
@@ -3216,6 +3858,8 @@ window.FF_FICHES = {
     "famille": "Devineresse / praticienne du seiðr",
     "danger": 3,
     "habitat": "Halls, fermes, assemblées rituelles",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Bâton, seiðr et prophétie chantée",
     "nom": "Volva"
   },
@@ -3226,6 +3870,8 @@ window.FF_FICHES = {
     "famille": "Dragon / gardien de source",
     "danger": 4,
     "habitat": "Sources, grottes, trésors",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Joyau frontal, vol, venin",
     "nom": "Vouivre"
   },
@@ -3236,6 +3882,8 @@ window.FF_FICHES = {
     "famille": "Démon / aviaire",
     "danger": 4,
     "habitat": "Abîmes, champs de bataille",
+    "taille": "2 à 2,50 m",
+    "poids": "100 à 180 kg",
     "trait": "Ailes, cri, danse de la ruine",
     "nom": "Vrock"
   },
@@ -3246,6 +3894,8 @@ window.FF_FICHES = {
     "famille": "Être artificiel / personne",
     "danger": 3,
     "habitat": "Anciennes forges, compagnies, cités",
+    "taille": "1,60 à 1,85 m",
+    "poids": "60 à 85 kg",
     "trait": "Corps construit et identité conquise",
     "nom": "Warforged"
   },
@@ -3256,6 +3906,8 @@ window.FF_FICHES = {
     "famille": "Loup monstrueux / monture maléfique",
     "danger": 4,
     "habitat": "Landes, armées, forêts",
+    "taille": "2 à 2,50 m au garrot",
+    "poids": "250 à 350 kg",
     "trait": "Taille, intelligence et alliance avec des peuples guerriers",
     "nom": "Warg"
   },
@@ -3266,6 +3918,8 @@ window.FF_FICHES = {
     "famille": "Esprit de la faim / cannibale",
     "danger": 5,
     "habitat": "Forêts hivernales, périodes de famine",
+    "taille": "3 à 5 m, souvent davantage",
+    "poids": "Plusieurs centaines de kg",
     "trait": "Faim insatiable, froid et transgression du tabou cannibale",
     "nom": "Wendigo"
   },
@@ -3276,6 +3930,8 @@ window.FF_FICHES = {
     "famille": "Mort-vivant / gardien de tertre",
     "danger": 3,
     "habitat": "Tertres, ruines, nécropoles",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Garde funéraire et absorption de la force vitale",
     "nom": "Wight"
   },
@@ -3286,6 +3942,8 @@ window.FF_FICHES = {
     "famille": "Esprit / apparition malveillante",
     "danger": 4,
     "habitat": "Ruines, brumes, lieux de mort",
+    "taille": "Variable, silhouette humaine floue",
+    "poids": "Immatérielle, sans poids propre",
     "trait": "Immatérialité et absorption de la force vitale",
     "nom": "Wraith"
   },
@@ -3296,6 +3954,8 @@ window.FF_FICHES = {
     "famille": "Dragon serpentin",
     "danger": 4,
     "habitat": "Tertres, cavernes, trésors",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Corps serpentin, venin et garde jalouse de l'or",
     "nom": "Wyrm"
   },
@@ -3306,6 +3966,8 @@ window.FF_FICHES = {
     "famille": "Dragon bipède / volant",
     "danger": 4,
     "habitat": "Écus, bannières, falaises et cieux de fantasy",
+    "taille": "15 à 30 m de long selon l’âge",
+    "poids": "Plusieurs tonnes",
     "trait": "Deux pattes, ailes membraneuses et queue barbelée",
     "nom": "Wyverne"
   },
@@ -3316,6 +3978,8 @@ window.FF_FICHES = {
     "famille": "Élémentaire / minéral",
     "danger": 3,
     "habitat": "Plans de Terre, veines, grottes",
+    "taille": "2 à 4 m",
+    "poids": "300 à 800 kg",
     "trait": "Passage dans la roche, faim de minerais",
     "nom": "Xorn"
   },
@@ -3326,6 +3990,8 @@ window.FF_FICHES = {
     "famille": "Esprit / gardien",
     "danger": 3,
     "habitat": "Forêts, grottes, richesses",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Ambivalence, magie, garde",
     "nom": "Yaksha"
   },
@@ -3336,6 +4002,8 @@ window.FF_FICHES = {
     "famille": "Être montagnard / cryptide",
     "danger": 3,
     "habitat": "Glaciers, cols, hautes neiges",
+    "taille": "2 à 2,80 m",
+    "poids": "200 à 300 kg",
     "trait": "Fourrure, traces et adaptation à l'altitude",
     "nom": "Yéti"
   },
@@ -3346,6 +4014,8 @@ window.FF_FICHES = {
     "famille": "Esprit / catégorie",
     "danger": 3,
     "habitat": "Seuils, nuits, villages",
+    "taille": "1,60 à 1,90 m",
+    "poids": "60 à 90 kg",
     "trait": "Métamorphose, caprice, monde invisible",
     "nom": "Yokai"
   },
@@ -3356,6 +4026,8 @@ window.FF_FICHES = {
     "famille": "Reptilien / cultiste",
     "danger": 4,
     "habitat": "Jungles, ziggourats, cités perdues",
+    "taille": "1,80 à 2,50 m de long",
+    "poids": "60 à 100 kg",
     "trait": "Hybridation ophidienne, intrigues",
     "nom": "Yuan-ti"
   },
@@ -3366,6 +4038,8 @@ window.FF_FICHES = {
     "famille": "Yokai / froid",
     "danger": 4,
     "habitat": "Tempêtes de neige, cols, nuits",
+    "taille": "2 à 3 m",
+    "poids": "150 à 300 kg",
     "trait": "Haleine glacée, disparition dans le blanc",
     "nom": "Yuki-onna"
   },
@@ -3376,6 +4050,8 @@ window.FF_FICHES = {
     "famille": "Oiseau primordial",
     "danger": 5,
     "habitat": "Cieux, hauteurs du monde",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Envergure cosmique et ailes capables d'obscurcir le soleil",
     "nom": "Ziz"
   },
@@ -3386,6 +4062,8 @@ window.FF_FICHES = {
     "famille": "Dragon / orage",
     "danger": 5,
     "habitat": "Montagnes, orages, princesses",
+    "taille": "Colossale, plusieurs dizaines de mètres",
+    "poids": "Incalculable, plusieurs centaines de tonnes",
     "trait": "Têtes multiples, feu, parfois séduction",
     "nom": "Zmey"
   },
@@ -3396,6 +4074,8 @@ window.FF_FICHES = {
     "famille": "Personne asservie ou mort animé / serviteur",
     "danger": 3,
     "habitat": "Récits haïtiens, cimetières et villes ravagées au cinéma",
+    "taille": "1,60 à 1,85 m",
+    "poids": "50 à 80 kg",
     "trait": "Asservissement magique en Haïti, faim et contagion dans la fiction moderne",
     "nom": "Zombie"
   }
