@@ -1,0 +1,36 @@
+{
+  "description": "Venus de la mer et des profondeurs, les puissances fomoriennes incarnent dans les récits irlandais tout ce que la terre habitée doit affronter pour rester habitable.",
+  "sections": {
+    "fascination": [
+      "Il y a une géographie précise dans la menace fomorienne : elle vient d'en bas et d'ailleurs, de la mer qui borde l'île et des profondeurs qu'aucun sillon de charrue n'atteint. Cette origine double donne au peuple hostile des légendes irlandaises une consistance particulière — non pas des monstres surgis de nulle part, mais des puissances rattachées à des lieux réels, la houle et le sous-sol, que les auditeurs anciens côtoyaient chaque jour sans jamais pouvoir totalement les apprivoiser.",
+      "Le nom même porte cette géographie : il associerait un préfixe signifiant « sous » et un mot désignant la mer.[1] Difficile, dès lors, de ne pas voir dans les Fomoire une manière pour les conteurs irlandais de nommer ce que l'horizon marin recèle d'incertain — tempêtes, naufrages, richesses englouties — et de lui donner un visage, fût-il monstrueux. Le combat entre les Tuatha Dé Danann et ces puissances hostiles rejoue ainsi, à l'échelle mythique, la lutte permanente d'un peuple d'agriculteurs et de marins contre les forces qui menacent de tout engloutir."
+    ],
+    "legendes": [
+      "Les Fomoire, ou Fomorians dans les transcriptions anglaises, forment dans la mythologie irlandaise un peuple surnaturel hostile, généralement associé à la mer et aux mondes souterrains.[1] Ils apparaissent dans plusieurs cycles de récits comme les adversaires récurrents des Tuatha Dé Danann, le peuple divin qui occupe l'Irlande avant l'arrivée des Milésiens. Leur relation avec ce peuple rival n'est cependant pas seulement guerrière : plusieurs figures des deux camps s'unissent et engendrent une descendance commune, brouillant la frontière entre ennemis et parents.[1]",
+      "Le personnage le plus documenté de ce peuple reste Balor, souvent qualifié de roi ou de chef fomorien, doté d'un œil unique dont l'ouverture provoque la destruction de tout ce qu'il regarde.[2] Une prophétie annonce qu'il périra de la main de son propre petit-fils ; pour l'empêcher, il enferme sa fille Ethniu dans une tour de cristal, loin de tout homme. Elle rencontre malgré tout Cian, un guerrier des Tuatha Dé Danann, et donne naissance à Lugh, qui accomplira plus tard la prophétie en tuant son grand-père.[2] Ce récit, l'un des plus célèbres du corpus mythologique irlandais, illustre la manière dont les deux peuples restent liés jusque dans leur affrontement final.",
+      "Cet affrontement culmine dans la seconde bataille de Mag Tured, où les Tuatha Dé Danann l'emportent sur les Fomoire.[2] Les sources qui rapportent cet épisode appartiennent à un corpus médiéval mis par écrit plusieurs siècles après la période qu'il prétend décrire, ce qui invite à lire ces récits comme une mythologie structurée par les moines copistes chrétiens autant que comme une transmission fidèle de croyances préchrétiennes. Les Fomoire n'en occupent pas moins une place centrale dans l'imaginaire irlandais comme incarnation des forces hostiles à l'ordre établi par les dieux insulaires."
+    ],
+    "anomalies": [
+      "Les Fomoire ne présentent pas une forme unique dans les textes qui les décrivent : certains passages leur prêtent une apparence humaine déformée, d'autres des traits proprement monstrueux — un seul bras, une seule jambe, ou l'œil destructeur de Balor.[1][2] Cette variabilité n'est pas un défaut de cohérence mais plutôt le signe qu'ils incarnent une catégorie plus qu'une espèce précise : celle de la puissance hostile venue d'ailleurs, dont la forme importe moins que la fonction dans le récit.",
+      "Leur pouvoir le plus frappant reste celui de Balor, capable de terrasser des armées entières par le simple regard de son œil unique, généralement tenu clos ou couvert tant sa force est redoutée.[2] D'autres figures fomoriennes se voient attribuer des dons plus discrets, liés à la magie ou à la manipulation du temps et des éléments marins, cohérents avec leur association initiale à la mer."
+    ],
+    "naturelle": {
+      "lead": "Peuple mythologique plutôt qu'espèce animale, les Fomoire se prêtent malgré tout à un tel inventaire, tant leurs récits leur attribuent des comportements et un territoire récurrents.",
+      "parts": [
+        {"title": "Comportement", "body": ["Hostiles par principe envers les Tuatha Dé Danann, les Fomoire n'en nouent pas moins des alliances ponctuelles et des unions avec leurs adversaires, signe d'une inimitié moins absolue que ne le suggère leur réputation."]},
+        {"title": "Habitat", "body": ["Mer et mondes souterrains d'abord, mais aussi les champs de bataille mythiques de l'Irlande ancienne, où se joue leur rivalité avec les peuples divins de l'île."]},
+        {"title": "Alimentation", "body": ["Les récits ne détaillent guère leurs besoins alimentaires, davantage centrés sur leur rôle guerrier et leur pouvoir de destruction que sur leur vie quotidienne."]},
+        {"title": "Intelligence", "body": ["Rusée et stratège, comme en témoigne la précaution prise par Balor pour tenter d'échapper à la prophétie annonçant sa mort — précaution qui échoue précisément à cause de sa complexité."]},
+        {"title": "Reproduction", "body": ["Les unions entre Fomoire et Tuatha Dé Danann, comme celle d'Ethniu et Cian donnant naissance à Lugh, montrent une descendance possible entre les deux peuples rivaux."]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur naturel ne leur est attribué ; leur seule menace véritable vient des Tuatha Dé Danann eux-mêmes, qui finissent par les vaincre à la seconde bataille de Mag Tured."]}
+      ]
+    },
+    "reliques": [
+      "La figure de Balor et son œil destructeur ont largement dépassé le cercle des spécialistes de mythologie celtique pour nourrir des figures de géants borgnes ou de puissances au regard mortel dans la culture populaire contemporaine, des jeux vidéo aux bandes dessinées.[2] Le nom même de Fomoire continue par ailleurs de circuler dans les productions de fantasy qui puisent, souvent librement, dans le fonds mythologique irlandais pour peupler leurs propres mondes hostiles."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Fomorians — Wikipedia", "url": "https://en.wikipedia.org/wiki/Fomorians"},
+    {"id": 2, "title": "Balor — Wikipedia", "url": "https://en.wikipedia.org/wiki/Balor"}
+  ]
+}

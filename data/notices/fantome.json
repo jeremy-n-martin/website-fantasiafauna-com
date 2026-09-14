@@ -1,0 +1,35 @@
+{
+  "description": "Un mort qui n'a pas fini de hanter les vivants : le fantôme est sans doute la plus universelle des créatures surnaturelles, présente sous une forme ou une autre dans presque toutes les cultures humaines.",
+  "sections": {
+    "fascination": [
+      "Le fantôme fascine parce qu'il ne demande, la plupart du temps, qu'une seule chose : être vu, ou être libéré. Contrairement au monstre qui menace par sa force, le fantôme menace par son insistance — une dette non payée, une vérité non dite, une sépulture négligée. Sa présence transforme un lieu ordinaire, maison, champ de bataille, corridor, en un espace où le temps ne s'est pas complètement refermé.",
+      "Cette universalité même est troublante : que le thème du mort revenant hanter les vivants se retrouve, sous des formes variées, dans toutes les cultures et toutes les époques, suggère qu'il répond à quelque chose de constant dans le rapport humain à la mort, plus qu'à une simple convention narrative locale."
+    ],
+    "legendes": [
+      "Un fantôme est une apparition ou une vision interprétée comme la manifestation de l'esprit d'un défunt, resté prisonnier sur terre ou revenu de l'au-delà, que ce soit pour accomplir une vengeance, aider des proches, ou errer éternellement en punition de méfaits passés.[1] Le thème du mort qui revient hanter les vivants est aussi ancien et aussi universel que l'humanité elle-même.",
+      "Le mot fantôme est étymologiquement lié aux termes grecs phantasma et phantasis ; on désigne également ces entités sous les noms de spectres, revenants, esprits, lémures, apparitions, incubes ou succubes, ectoplasmes, ou encore poltergeists selon la nature du phénomène décrit.[1]",
+      "En littérature, des esprits apparaissent déjà dans l'Odyssée d'Homère, vers la fin du VIIIe siècle avant notre ère, lors du séjour d'Ulysse aux Enfers — preuve que la figure occupe une place ancienne dans l'imaginaire occidental, bien avant les récits gothiques ou victoriens qui l'ont ensuite popularisée.[1]",
+      "Une distinction est parfois établie entre le fantôme proprement dit et le revenant : ce dernier est associé à une mort injuste ou tragique, une mort jugée indigne, qui expliquerait son incapacité à trouver le repos, tandis que le fantôme au sens large recouvre un ensemble plus vaste de manifestations, liées ou non à la nature de la mort elle-même.[1]"
+    ],
+    "anomalies": [
+      "L'immatérialité du fantôme varie considérablement selon les traditions : certains récits le décrivent comme une simple image visuelle sans interaction physique possible, d'autres lui prêtent la capacité de déplacer des objets (poltergeist), de parler, voire de toucher les vivants. Son attachement, presque toujours, se fixe sur un lieu précis, un objet particulier ou une dette non réglée, ce qui explique la grande variété des rituels d'apaisement — exorcisme, sépulture correcte, réparation d'un tort — proposés selon les cultures pour le libérer."
+    ],
+    "naturelle": {
+      "lead": "Le fantôme échappe par nature à toute zoologie ordinaire ; son histoire naturelle se lit plutôt dans les circonstances de son apparition et les conditions de sa disparition.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le fantôme agit le plus souvent par répétition — un même geste, un même trajet, une même plainte — qui trahit une action inachevée ou un tourment non résolu, plutôt que par une volonté active et changeante."]},
+        {"title": "Habitat", "body": ["Maisons, champs de bataille et lieux marqués par une mort brutale ou une brume persistante forment le territoire classique du fantôme, souvent circonscrit au lieu même de son décès ou de son enterrement."]},
+        {"title": "Alimentation", "body": ["N'ayant plus de corps matériel, le fantôme n'est traditionnellement associé à aucun besoin alimentaire, sinon parfois symbolique, comme les offrandes rituelles destinées à apaiser certains esprits."]},
+        {"title": "Intelligence", "body": ["Le fantôme conserve généralement la mémoire, au moins partielle, de sa vie et de sa mort, ce qui le distingue des morts-vivants purement instinctifs et permet aux récits de lui prêter un dialogue ou une explication."]},
+        {"title": "Reproduction", "body": ["N'étant pas un être vivant, le fantôme ne se reproduit pas ; son apparition procède exclusivement d'une mort antérieure, jamais d'une naissance."]},
+        {"title": "Prédateurs", "body": ["Les rituels d'exorcisme, de sépulture correcte ou de réparation d'un tort figurent, dans la plupart des traditions, comme les seuls moyens reconnus de mettre fin à une hantise, en l'absence de tout prédateur naturel."]}
+      ]
+    },
+    "reliques": [
+      "Le fantôme demeure l'une des figures les plus exploitées de la fiction populaire, du roman gothique victorien au cinéma d'horreur contemporain, en passant par les récits de maisons hantées qui continuent d'alimenter le folklore urbain dans le monde entier."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Fantôme — Wikipédia", "url": "https://fr.wikipedia.org/wiki/Fant%C3%B4me"}
+  ]
+}

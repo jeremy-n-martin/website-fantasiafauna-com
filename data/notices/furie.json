@@ -1,0 +1,37 @@
+{
+  "description": "Nées du sang versé, les Érinyes grecques ne pardonnent pas le crime impuni ; leur colère sacrée poursuit le coupable jusqu'à ce qu'il obtienne, peut-être, sa purification.",
+  "sections": {
+    "fascination": [
+      "Il existe une justice qui ne siège dans aucun tribunal humain : celle des Érinyes, que les Romains appelleront Furiae et que la tradition postérieure a fini par franciser en Furies. Leur pouvoir ne dépend d'aucune loi écrite ; il s'exerce directement sur la conscience du coupable, qu'elles poursuivent sans relâche jusqu'à l'épuisement. Ce qui fascine dans cette figure, c'est l'idée d'une faute qui continue d'agir seule, indépendamment de tout jugement extérieur, comme si le sang versé appelait de lui-même sa propre vengeance.",
+      "Leur apparence, décrite par Eschyle comme gorgonesque, des serpents mêlés aux cheveux et du sang suintant des yeux, ajoute à cette terreur une dimension proprement corporelle.[1] On ne les affronte pas comme on affronterait un ennemi armé : on les subit, on les fuit, on espère seulement qu'un jour elles consentiront à changer de nom et de visage. Cette possibilité même — la colère qui s'apaise sans jamais renoncer à sa fonction — fait des Érinyes l'une des figures les plus profondément humaines du panthéon grec, tant elle mime le travail lent d'une conscience qui ne trouve la paix qu'au prix d'une reconnaissance complète de la faute."
+    ],
+    "legendes": [
+      "Les Érinyes sont, dans la mythologie grecque, trois divinités chthoniennes de la vengeance : Alecto, Mégère et Tisiphone, dont les noms mêmes disent la fonction — l'implacable, l'envieuse et la vengeresse du meurtre.[1][2] Elles président aux crimes qui échappent à toute justice humaine, en particulier l'homicide, le parjure et les manquements aux devoirs envers les proches, et poursuivent leurs cibles avec une constance qu'aucune fuite ne parvient à décourager.[2]",
+      "Leur rôle le plus célèbre se joue dans l'Orestie d'Eschyle, et singulièrement dans sa troisième partie, Les Euménides. Elles y poursuivent Oreste, qui a tué sa mère Clytemnestre pour venger le meurtre de son père Agamemnon, et forment le chœur de la pièce, omniprésentes jusqu'au dénouement.[1] Ce texte, l'un des plus anciens à mettre en scène la question du jugement et du pardon dans le théâtre occidental, donne aux Érinyes une centralité dramatique rare pour des figures aussi redoutées.",
+      "L'issue de cette traque n'est pas la destruction du coupable mais sa transformation en sujet jugé : Athéna institue un tribunal, l'Aréopage, pour trancher le sort d'Oreste, et parvient à apaiser la colère des Érinyes en leur offrant un nouveau statut, honoré plutôt que fui.[2] C'est de ce dénouement que vient leur autre nom, Euménides, littéralement les bien-veillantes, euphémisme destiné à neutraliser une puissance que l'on redoutait trop pour la nommer directement par sa fonction vengeresse.[2]",
+      "Rome reprend cette figure sous le nom de Furiae, en conservant l'essentiel de leur fonction punitive, avant que la langue française n'en fasse le mot furie, aujourd'hui largement détaché de son origine divine pour désigner, dans l'usage courant, un simple accès de colère incontrôlée."
+    ],
+    "anomalies": [
+      "Les Érinyes se distinguent par une forme d'implacabilité qui n'admet ni négociation ni fatigue : à la différence de la plupart des figures vengeresses du mythe grec, elles ne renoncent jamais de leur propre initiative et ne peuvent être détournées de leur cible par la ruse ou la force.[2] Seule une intervention divine d'envergure, comme celle d'Athéna dans l'épisode d'Oreste, parvient à interrompre leur poursuite.",
+      "Leur apparence terrifiante — serpents dans la chevelure, traits gorgonesques, sang aux yeux — les distingue nettement des divinités olympiennes à l'aspect généralement idéalisé.[1] Cette esthétique délibérément repoussante souligne leur appartenance au monde chthonien, celui des puissances souterraines plus anciennes que les dieux de l'Olympe, et renforce l'idée qu'elles incarnent une justice antérieure et supérieure à tout ordre social établi."
+    ],
+    "naturelle": {
+      "lead": "Divinités plutôt que créatures naturelles, les Érinyes se prêtent néanmoins à un tel inventaire à travers les constantes de leur mythe.",
+      "parts": [
+        {"title": "Comportement", "body": ["Implacables et méthodiques, elles ne relâchent jamais leur cible tant que le crime n'a pas été reconnu ou expié d'une manière ou d'une autre."]},
+        {"title": "Habitat", "body": ["Associées aux Enfers et aux lieux où un crime impuni est resté sans réponse, elles se manifestent également aux seuils, lieux de passage symboliques entre deux états."]},
+        {"title": "Alimentation", "body": ["Le mythe ne leur prête aucun besoin alimentaire ; leur subsistance, si l'on peut parler ainsi, tient à l'accomplissement même de leur fonction vengeresse."]},
+        {"title": "Intelligence", "body": ["Leur constance stratégique dans la traque d'un coupable suggère une intelligence entièrement subordonnée à un seul objectif, sans détour ni distraction possibles."]},
+        {"title": "Reproduction", "body": ["Selon certaines généalogies antiques, les Érinyes naîtraient du sang versé lors de la mutilation d'Ouranos par Cronos, tombé sur la terre — une origine qui les lie directement à l'idée de violence primordiale plutôt qu'à une descendance ordinaire."]},
+        {"title": "Prédateurs", "body": ["Aucune puissance mythologique ne les menace directement ; seule une intervention divine supérieure, comme celle d'Athéna, parvient à mettre un terme à leur action."]}
+      ]
+    },
+    "reliques": [
+      "Le mot furie a largement débordé son origine mythologique pour désigner, dans le langage courant, une colère extrême ou une tempête déchaînée, perdant au passage sa dimension proprement vengeresse et judiciaire. La figure originelle continue cependant d'irriguer la littérature et le cinéma chaque fois qu'un récit met en scène une culpabilité qui poursuit son sujet sans répit, écho direct de la traque qu'Eschyle mettait en scène voici près de deux mille cinq cents ans.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Erinyes (Furies) — Mythopedia", "url": "https://mythopedia.com/topics/erinyes/"},
+    {"id": 2, "title": "The Furies Became the Eumenides — Mythology Source", "url": "https://mythologysource.com/eumenides/"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "description": "Un dragon peut cracher la mort en une seconde ; le dragon d'airain préfère de loin cracher des heures de conversation.",
+  "sections": {
+    "fascination": [
+      "Rien ne semble moins fait pour un dragon que le bavardage. Pourtant le dragon d'airain, niché dans les ruines et les canyons du désert, guette moins la richesse que l'occasion d'une bonne discussion. Un voyageur égaré peut se retrouver retenu des heures durant non par des chaînes, mais par des questions, des anecdotes, des digressions qu'il serait impoli d'interrompre. Le merveilleux, ici, tient au renversement : la créature la plus redoutable du paysage devient, l'instant d'un échange, la plus sociable.",
+      "Cette sociabilité ne désarme pourtant jamais complètement la menace. Le même souffle qui peut endormir un adversaire peut aussi l'embraser, et le dragon d'airain choisit l'un ou l'autre selon l'humeur de la conversation.[1] Vivre près de lui, c'est accepter cette ambiguïté permanente : un hôte charmant dont la patience a des limites, et dont le silence, rare et précieux, se mérite."
+    ],
+    "legendes": [
+      "Le dragon d'or apparaît dès 1974 dans le coffret original de Donjons et Dragons, mais c'est le supplément Greyhawk de 1975 qui introduit les quatre autres dragons métalliques, dont le dragon d'airain, aux côtés du cuivre, du bronze et de l'argent.[2] La catégorie des dragons métalliques, en miroir des chromatiques, n'est cependant formalisée qu'en 1993 par le Monstrous Manual de la deuxième édition, qui leur attribue une identité de bienveillance codifiée.[2]",
+      "Le trait distinctif du dragon d'airain, sa loquacité, se construit progressivement au fil des suppléments et se stabilise comme signature du personnage : il est décrit comme le plus grégaire des vrais dragons, avide de conversation au point de préférer parler que combattre.[1] Cette caractérisation traverse les éditions avec une remarquable constance, faisant de lui l'un des dragons les moins prévisibles dans son rapport aux étrangers.",
+      "Son alignement chaotique bon le distingue des autres métalliques, plus loyaux dans leurs habitudes. Le dragon d'airain incarne une bonté plus spontanée, moins protocolaire, qui s'exprime par la curiosité envers les récits d'autrui plutôt que par un sens du devoir. Cette variation à l'intérieur même de la famille des métalliques illustre la nuance introduite par le jeu entre alignement moral et tempérament individuel."
+    ],
+    "anomalies": [
+      "Le dragon d'airain dispose de deux souffles bien distincts, qu'il choisit selon la situation : une ligne de feu capable d'infliger de lourds dégâts, ou un cône de gaz soporifique qui plonge les créatures touchées dans un sommeil profond, rompu seulement par une blessure ou l'intervention d'un tiers.[1] Ce choix tactique en fait un adversaire imprévisible, aussi capable de neutraliser sans tuer que de détruire sans retenue.",
+      "Son repaire trahit le même goût pour l'échange : les ruines, canyons et réseaux de grottes qu'il habite dans le désert comportent souvent des ouvertures dans la voûte, laissant filtrer la lumière du soleil.[1] Loin de rechercher l'obscurité protectrice d'autres dragons, l'airain construit un lieu où la conversation peut se prolonger à ciel ouvert, presque comme un salon aménagé au cœur de l'aridité."
+    ],
+    "naturelle": {
+      "lead": "Le portrait suivant reprend la cinquième édition de Donjons et Dragons, qui prolonge une identité sociale déjà présente dans les suppléments plus anciens.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le dragon d'airain aborde les étrangers avec une curiosité presque désarmante, les interrogeant sur leur origine, leur voyage, leurs opinions, avant même d'envisager une hostilité.[1] Cette approche n'est pas feinte : il retient une joie sincère à apprendre une nouvelle histoire, fût-elle racontée par un intrus."]},
+        {"title": "Habitat", "body": ["Il s'installe dans les déserts chauds, au sein de ruines, d'oasis ou de dunes, choisissant des repaires largement ouverts sur l'extérieur plutôt que des cavernes profondes.[1] La lumière et l'espace comptent visiblement plus pour lui que la dissimulation."]},
+        {"title": "Alimentation", "body": ["Sa préférence pour le dialogue ne l'empêche pas de chasser lorsque nécessaire ; son second souffle, soporifique, lui permet au besoin de neutraliser une proie sans effusion inutile."]},
+        {"title": "Intelligence", "body": ["Son intelligence s'exprime moins par la stratégie que par la mémoire des récits et des rencontres. Un dragon d'airain peut se souvenir en détail d'une conversation tenue des décennies plus tôt, et s'en amuse volontiers auprès d'un nouvel interlocuteur."]},
+        {"title": "Reproduction", "body": ["Comme les autres vrais dragons, il traverse plusieurs stades de croissance, du dragonnet au très ancien, sa maîtrise des deux souffles se renforçant à mesure qu'il vieillit.[1]"]},
+        {"title": "Prédateurs", "body": ["Peu de créatures du désert rivalisent avec lui, mais son ouverture aux étrangers en fait paradoxalement une cible plus accessible que d'autres dragons pour qui chercherait à le tromper sous couvert d'une conversation amicale."]}
+      ]
+    },
+    "reliques": [
+      "Le dragon d'airain reste l'exemple favori pour illustrer, dans les tables de jeu, la rencontre qui bifurque : ce que les joueurs préparaient comme un combat devient souvent une scène de dialogue mémorable. Cette réputation dépasse les manuels et s'est diffusée dans la culture des joueurs eux-mêmes, où évoquer un dragon d'airain suffit à annoncer une négociation aussi longue qu'inattendue.[1][2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Adult Brass Dragon, Monsters", "url": "https://www.dndbeyond.com/monsters/16766-adult-brass-dragon"},
+    {"id": 2, "title": "Dragon (Dungeons & Dragons) — Wikipédia (en anglais)", "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)"}
+  ]
+}

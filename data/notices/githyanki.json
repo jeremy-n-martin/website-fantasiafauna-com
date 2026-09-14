@@ -1,0 +1,36 @@
+{
+  "description": "Un peuple de pirates astraux, forgé dans la révolte contre ses maîtres psioniques, qui a porté sur ses lames d'argent le nom d'une créature de science-fiction avant d'endosser une histoire propre.",
+  "sections": {
+    "fascination": [
+      "Ce qui frappe d'abord chez le githyanki, c'est la manière dont un peuple entier se définit par sa haine d'un passé d'esclavage. Chaque guerrier porte, gravée dans sa discipline martiale et son mépris du confort, la mémoire d'une servitude imposée par des créatures aux pouvoirs mentaux écrasants. La mer Astrale, cet espace sans repères où les cadavres de dieux dérivent parmi les débris d'univers effondrés, offre à ce peuple un décor à la mesure de son histoire : un lieu sans loi ancienne, où une nation entière peut se reconstruire sur la seule volonté de ne plus jamais être asservie.",
+      "Les cités-forteresses githyanki, bâties sur des fragments de matière flottant dans le vide astral, portent cette même tension entre fragilité et défi. Rien, dans cet espace, ne devrait permettre à une civilisation de s'enraciner ; les githyanki y parviennent pourtant par la seule force de leur organisation militaire, transformant l'impossibilité géographique en preuve supplémentaire de leur endurance collective."
+    ],
+    "legendes": [
+      "Le githyanki doit son existence au jeu à Charles Stross, futur auteur de science-fiction, qui l'a créé dans le cadre d'une campagne où plusieurs meneurs de jeu partageaient les mêmes joueurs et cherchaient à inventer des monstres inédits pour contourner la familiarité du Monster Manual original.[1] Sa création a d'abord paru dans le fanzine britannique White Dwarf avant d'être intégrée officiellement au Fiend Folio, publié par TSR en 1981, où elle figure en couverture.[1]",
+      "Le nom lui-même a une origine documentée avec précision : Stross l'a emprunté à un peuple imaginé par George R. R. Martin dans son roman de science-fiction Dying of the Light, paru en 1977.[1] Martin ignorait cet emprunt jusqu'à ce qu'un lecteur et joueur de Donjons et Dragons le lui signale lors d'une lecture publique en 1983, épisode resté comme l'une des anecdotes les mieux attestées de l'histoire éditoriale du jeu.[1]",
+      "Le Fiend Folio crédite Stross non seulement pour le githyanki, mais aussi pour son peuple frère le githzerai, le chevalier de la mort et plusieurs variantes de slaads, faisant de cette seule contribution l'une des plus influentes jamais soumises par un joueur extérieur à l'équipe de conception de TSR.[1] Les éditions suivantes de Donjons et Dragons ont considérablement étoffé cette création initiale, lui donnant une histoire complète de rébellion contre les flagelleurs mentaux, une hiérarchie martiale et une religion propre centrée sur la reine-liche Vlaakith."
+    ],
+    "anomalies": [
+      "L'arme distinctive du githyanki, l'épée d'argent, est forgée dans un métal capable de trancher l'âme autant que la chair, un détail qui traduit sur le plan mécanique la centralité du combat psychique dans la culture de ce peuple.[2] Chaque guerrier githyanki reçoit la sienne à l'issue d'un rite de passage, ce qui en fait moins un simple équipement qu'un marqueur d'appartenance sociale.",
+      "Les capacités psioniques innées, en particulier une forme de vision à distance et diverses manifestations de pouvoir mental, distinguent le githyanki des humanoïdes ordinaires et rappellent constamment son ascendance d'ancien esclave des flagelleurs mentaux, comme si son peuple avait retourné contre ses anciens maîtres les armes mêmes de sa servitude.[2] Cette haine des illithids reste un invariant à travers toutes les éditions du jeu, contrairement à d'autres traits qui ont pu varier."
+    ],
+    "naturelle": {
+      "lead": "Le githyanki n'existe que dans les règles et les récits de Donjons et Dragons ; son histoire naturelle reprend le portrait établi depuis le Fiend Folio de 1981 et développé dans les suppléments ultérieurs.",
+      "parts": [
+        {"title": "Comportement", "body": ["Discipline martiale stricte, mépris affiché pour la faiblesse et goût du pillage caractérisent le githyanki, dont les bandes raiment fréquemment d'autres plans d'existence pour s'emparer de ressources ou d'esclaves.[2]"]},
+        {"title": "Habitat", "body": ["La mer Astrale et ses cités-forteresses bâties sur des débris flottants constituent le territoire propre du peuple githyanki, un espace que peu d'autres civilisations parviennent à coloniser durablement.[2]"]},
+        {"title": "Alimentation", "body": ["Aucune particularité alimentaire notable n'est documentée : le githyanki se nourrit comme un humanoïde ordinaire, l'essentiel de son identité se jouant ailleurs, dans sa culture martiale et psionique."]},
+        {"title": "Intelligence", "body": ["Peuple pleinement intelligent et organisé, le githyanki possède sa propre langue, une hiérarchie militaire complexe et une religion centrée sur sa reine-liche, Vlaakith.[2]"]},
+        {"title": "Reproduction", "body": ["Les enfants githyanki sont élevés collectivement dès leur plus jeune âge pour l'entraînement martial, une pratique qui prolonge, sur le plan familial, la centralité de la discipline guerrière dans cette culture."]},
+        {"title": "Prédateurs", "body": ["Les flagelleurs mentaux restent l'ennemi héréditaire du githyanki, la haine mutuelle entre les deux peuples remontant directement à la rébellion originelle qui a libéré les ancêtres gith de l'esclavage.[2]"]}
+      ]
+    },
+    "reliques": [
+      "Le githyanki a connu une exposition sans précédent grâce au jeu vidéo Baldur's Gate 3 (2023), où le personnage de Lae'zel, guerrière githyanki jouable, a introduit ce peuple à un public bien plus large que celui des joueurs de table historiques.[2] Cette popularité récente s'appuie directement sur plus de quatre décennies de développement continu du peuple depuis sa création par Charles Stross, preuve qu'une contribution de fan, publiée à l'origine dans un fanzine amateur, peut finir par façonner l'imaginaire visuel d'un jeu vidéo à très grand succès commercial."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Githyanki — Wikipédia (en anglais)", "url": "https://en.wikipedia.org/wiki/Githyanki"},
+    {"id": 2, "title": "Githyanki — WikiProject Dungeons & Dragons Wiki (Fandom)", "url": "https://wikiproject-dungeons-dragons.fandom.com/wiki/Githyanki"}
+  ]
+}

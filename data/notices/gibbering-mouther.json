@@ -1,0 +1,36 @@
+{
+  "description": "Une flaque de chairs, de bouches et d'yeux qui n'a ni haut ni bas, ni avant ni arrière, et dont le seul murmure suffit à désorganiser la pensée de qui l'écoute.",
+  "sections": {
+    "fascination": [
+      "Le gibbering mouther refuse toute silhouette. Là où presque tout monstre de bestiaire propose un corps lisible, une tête, des membres, une direction, celui-ci s'étale comme une nappe informe hérissée d'yeux et de bouches disposés sans ordre apparent. Le regard n'a nulle part où se poser durablement : chaque bouche peut mordre, chaque œil peut voir, et rien ne distingue un point faible d'un autre. Cette absence de plan cohérent est en elle-même une source d'inquiétude, car elle prive l'observateur de la grammaire habituelle du corps à corps.",
+      "Le babillage incessant qui donne son nom à la créature ajoute une dimension presque plus dérangeante que sa forme. Ce n'est pas un rugissement qui prévient d'un danger net, mais un murmure continu de dizaines de bouches parlant en même temps, sans message, sans direction, jusqu'à ce que l'esprit de l'auditeur se mette lui aussi à confondre ses propres pensées avec ce bruit de fond.[1] Le mouther n'attaque pas seulement la chair ; il attaque la capacité même à raisonner clairement pendant qu'on lui fait face."
+    ],
+    "legendes": [
+      "Le gibbering mouther apparaît pour la première fois dans le module d'aventure The Hidden Shrine of Tamoachan, publié en 1980, avant d'être repris et formalisé dans le Monster Manual II de 1983.[1] Il précède ainsi de peu la parution du Fiend Folio de 1981, avec lequel on le confond parfois à tort dans les récits informels sur son origine, alors que sa première apparition documentée se situe bien dans ce module d'aventure antérieur.",
+      "Sa filiation avec la littérature d'horreur cosmique est elle aussi bien documentée : le gibbering mouther descend directement, dans l'esprit de ses créateurs, du shoggoth imaginé par H. P. Lovecraft dans Les Montagnes hallucinées (1931), une masse protoplasmique aux organes changeants et innombrables.[1] Donjons et Dragons ne pouvant utiliser le nom sous licence, la créature a été rebaptisée et considérablement réduite en échelle et en puissance par rapport à son modèle littéraire, tout en conservant l'idée centrale d'une masse vivante dépourvue de forme fixe.",
+      "Les éditions suivantes, jusqu'à la cinquième, ont conservé le mouther comme une aberration de bas niveau mais redoutée, souvent utilisée par les meneurs de jeu comme rencontre surprise dans des lieux souterrains ou des failles dimensionnelles, sans jamais lui donner le statut de monstre embiblème que ses cousins plus prestigieux, comme le mind flayer, ont obtenu.[2]"
+    ],
+    "anomalies": [
+      "Le pouvoir signature du mouther, son babillage, inflige une pénalité de confusion à quiconque reste à portée d'écoute, brouillant la capacité des adversaires à agir avec précision.[1] Ce n'est pas une attaque qui blesse directement, mais un effet ambiant qui use la coordination du groupe entier, rendant chaque round de combat plus chaotique à mesure que l'exposition se prolonge.",
+      "Ses innombrables bouches lui permettent par ailleurs de mordre plusieurs fois par round et de cracher un fluide corrosif d'une pseudo-bouche différente, cumulant ainsi plusieurs formes d'attaque incompatibles avec un corps organisé de façon classique.[2] Cette accumulation de capacités disparates, presque désordonnée dans sa conception même, reproduit sur le plan mécanique le chaos que la créature incarne visuellement."
+    ],
+    "naturelle": {
+      "lead": "Le gibbering mouther n'a pas d'existence hors des bestiaires de jeu de rôle ; son histoire naturelle reprend les informations que les manuels de Donjons et Dragons lui attribuent depuis 1983.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le mouther ne chasse pas selon une stratégie identifiable : il rampe vers toute source de mouvement ou de bruit et engage le combat dès qu'une proie est à portée, sans retenue ni ruse apparente.[1]"]},
+        {"title": "Habitat", "body": ["Profondeurs souterraines, failles entre les plans et lieux considérés comme des non-lieux, dépourvus de toute géographie stable, comptent parmi les environnements où les manuels situent la créature.[2]"]},
+        {"title": "Alimentation", "body": ["Toute chair vivante à sa portée peut être absorbée par l'une de ses nombreuses bouches ; la créature ne semble connaître aucune préférence alimentaire précise, se nourrissant de ce qui passe à sa portée.[1]"]},
+        {"title": "Intelligence", "body": ["Les fiches de jeu lui attribuent une intelligence très faible, presque animale, ce qui accentue le paradoxe d'une créature aussi bavarde que dépourvue de pensée structurée.[2]"]},
+        {"title": "Reproduction", "body": ["Aucun mode de reproduction n'est documenté dans les sources consultées ; le mouther apparaît dans les récits comme un accident magique ou une aberration spontanée plutôt que comme le fruit d'une lignée."]},
+        {"title": "Prédateurs", "body": ["Peu de créatures s'aventurent à l'affronter volontairement ; ce sont surtout les groupes d'aventuriers explorant des souterrains qui figurent, dans les modules publiés, comme ses adversaires les plus fréquents."]}
+      ]
+    },
+    "reliques": [
+      "Le gibbering mouther a connu un net regain de visibilité grâce au jeu vidéo Baldur's Gate 3 (2023), qui reprend fidèlement son apparence gélatineuse et hérissée d'yeux ainsi que son effet de confusion sonore, exposant la créature à un public bien plus large que celui des joueurs de tables historiques.[2] Cette réapparition récente confirme la vitalité d'un monstre pourtant resté longtemps dans l'ombre des aberrations plus célèbres du jeu, comme le mind flayer ou le beholder, dont il partage l'ascendance lovecraftienne sans jamais en avoir obtenu le même prestige."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Gibbering mouther — WikiProject Dungeons & Dragons Wiki (Fandom)", "url": "https://wikiproject-dungeons-dragons.fandom.com/wiki/Gibbering_mouther"},
+    {"id": 2, "title": "D&D Monster Spotlight: Gibbering Mouther — Bell of Lost Souls", "url": "https://www.belloflostsouls.net/2020/07/dd-monster-spotlight-gibbering-mouther.html"}
+  ]
+}

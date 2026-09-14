@@ -1,0 +1,37 @@
+{
+  "description": "Le dragon vert n'attaque pas d'abord par la force : il s'installe dans une forêt, apprend ses secrets, et gouverne longtemps avant qu'on soupçonne sa présence.",
+  "sections": {
+    "fascination": [
+      "Un dragon qui préfère chuchoter plutôt que rugir déplace l'attention du merveilleux. Ce n'est plus la stature du monstre qui impressionne, mais la patience avec laquelle il tisse une toile d'influence autour de lui.[1] Le dragon vert peut vivre des décennies au cœur d'une forêt sans que les villages voisins connaissent son nom ; ils connaissent seulement une rumeur, une voix dans le vent, un conseiller trop bien informé. La peur qu'il inspire n'est pas celle, immédiate, de la flamme, mais celle, plus lente, de découvrir qu'on a été manipulé depuis longtemps.",
+      "Sa respiration empoisonnée ajoute à cette figure une menace silencieuse : un nuage verdâtre qui tue sans bruit, à la manière d'un poison versé dans un puits plutôt que d'un incendie déclaré.[1] L'imaginaire qu'il convoque tient ainsi à un paradoxe entretenu avec soin par les auteurs du jeu : la créature la plus rusée n'est pas la plus spectaculaire des dragons chromatiques, mais celle qui sait le mieux se faire oublier tout en tenant les fils d'une région entière."
+    ],
+    "legendes": [
+      "Le dragon vert n'est pas une créature folklorique traditionnelle : il naît dans les pages des bestiaires de Donjons et Dragons, où les dragons chromatiques forment depuis les premières éditions une famille associée au mal et classée par couleur et par souffle.[1] Sa fiche moderne, consultée dans les monstres officiels, le place parmi les dragons dits chromatiques, aux côtés du noir, du bleu, du rouge et du blanc, chacun défini par un tempérament et une arme de souffle propres.",
+      "Les documents de référence du jeu lui donnent l'alignement loyal mauvais, une catégorie qui décrit un être organisé, patient, capable de tenir parole dans ses pactes tout en poursuivant des fins cruelles.[1] Cette combinaison distingue le dragon vert d'un simple prédateur : il planifie, négocie, retient ses coups quand la ruse sert mieux ses intérêts que la violence directe. Le jeu construit ainsi une créature dont l'intelligence stratégique compte autant que la puissance physique.",
+      "Les éditions successives ont affiné ce portrait sans le renverser. Les suppléments consacrés aux dragons détaillent des territoires forestiers disputés avec d'autres espèces chromatiques, des réseaux d'espionnage entretenus grâce à des créatures rendues télépathiques par leur proximité avec le repaire, et une obsession pour l'information qui dépasse la simple accumulation de trésor.[1] Le dragon vert reste ainsi fidèle, d'une édition à l'autre, à son image de manipulateur patient plutôt que de force brute."
+    ],
+    "anomalies": [
+      "Le trait le plus documenté du dragon vert reste son souffle : un cône de gaz toxique qui frappe une large zone et inflige des dégâts de poison considérables aux créatures prises dedans, avec une chance d'en réchapper à moitié affectées par un jet de sauvegarde réussi.[1] Cette arme correspond à son tempérament : elle agit à distance, sans contact, et laisse le temps à la victime de comprendre ce qui lui arrive avant que le nuage ne se dissipe.",
+      "Ses talents de communication comptent presque autant que ses griffes. Les descriptions récentes lui accordent une capacité télépathique qui s'étend aux petites créatures dociles de son territoire, transformées en informatrices malgré elles.[1] Un dragon vert établi depuis longtemps dans une forêt peut ainsi savoir qui s'y déplace bien avant d'y être vu lui-même, ce qui alimente sa réputation de voix invisible plutôt que de bête tapie.",
+      "Les variantes d'âge, du dragonnet à l'ancien dragon vert, ajoutent surtout de la puissance brute et une aura de présence de plus en plus redoutable, sans modifier le tempérament de base.[1] La ruse et le goût de l'intrigue restent constants ; seule l'échelle du pouvoir change, un ancien pouvant tenir en respect toute une baronnie par la seule rumeur de son existence."
+    ],
+    "naturelle": {
+      "lead": "Cette histoire naturelle suit le portrait du dragon vert tel que les bestiaires modernes de Donjons et Dragons le détaillent, sans prétendre à une origine antérieure au jeu.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le dragon vert privilégie l'intrigue à la confrontation directe. Il collectionne les secrets, se mêle des affaires des communautés voisines et préfère corrompre un conseil plutôt que d'attaquer une cité.[1] Sa cruauté se manifeste souvent par des humiliations calculées envers ceux qu'il a soumis, plus que par des destructions spectaculaires."]},
+        {"title": "Habitat", "body": ["Les forêts anciennes et les clairières trompeuses lui servent de territoire favori. Il y dispute parfois l'espace à des dragons noirs dans les zones marécageuses ou à des dragons blancs aux abords des taïgas subarctiques.[1] Son repaire se cache souvent sous des racines ou dans des cavernes tapissées de mousse, loin des regards mais proches des routes qu'il souhaite surveiller."]},
+        {"title": "Alimentation", "body": ["Comme les autres dragons chromatiques, il chasse le gibier de son territoire et complète ses ressources par le tribut, volontaire ou extorqué, des créatures qui vivent sous son influence.[1]"]},
+        {"title": "Intelligence", "body": ["Son intelligence est présentée comme redoutable, tournée vers la manipulation plutôt que vers la simple ruse de survie. Les fiches de jeu insistent sur son goût pour l'information, ses réseaux d'espions et sa capacité à tenir un rôle social, parfois celui d'un conseiller resté anonyme, pendant des années.[1]"]},
+        {"title": "Reproduction", "body": ["Les bestiaires du jeu classent le dragon vert parmi les dragons dits véritables, dont la croissance passe par plusieurs stades d'âge, du dragonnet au wyrm ancien, chacun accompagné d'un accroissement de puissance et de taille.[1] Ces étapes relèvent des règles du jeu plutôt que d'une biologie détaillée."]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur naturel n'est associé au dragon vert dans les sources consultées : sa position dominante dans l'écosystème imaginé par le jeu en fait davantage une menace qu'une proie, ses seuls rivaux sérieux étant d'autres dragons ou des aventuriers suffisamment armés.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le dragon vert reste une figure récurrente des bestiaires de Donjons et Dragons depuis les premières classifications chromatiques du jeu, régulièrement republiée à mesure que les éditions se succèdent.[1] Sa réputation de manipulateur en a fait un antagoniste apprécié des scénaristes de campagnes, souvent placé en arrière-plan d'une intrigue politique plutôt qu'en simple obstacle de fin de donjon.",
+      "Son image a essaimé au-delà des tables de jeu, dans des adaptations vidéoludiques et des produits dérivés qui reprennent sa teinte verte, son souffle toxique et son tempérament retors comme des marqueurs immédiatement reconnaissables au sein de la grande famille des dragons chromatiques.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Green Dragon (Adult Green Dragon, Ancient Green Dragon), traits, souffle et alignement", "url": "https://www.dndbeyond.com/monsters/16770-adult-green-dragon"}
+  ]
+}

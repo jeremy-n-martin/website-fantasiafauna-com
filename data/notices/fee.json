@@ -1,0 +1,36 @@
+{
+  "description": "Le Petit Peuple, plus ancien et plus dangereux qu'un conte : la fée du folklore celtique et européen doit sa réputation autant à ses dons empoisonnés qu'à sa grâce.",
+  "sections": {
+    "fascination": [
+      "Ce qui distingue la fée des créatures purement décoratives auxquelles on la réduit parfois, c'est son lien intime avec le destin. Le mot lui-même le porte : issu du latin fata, la destinée, il rappelle que les premières fées ne sont pas des ornements de jardin mais des puissances qui prédisent, transforment ou maîtrisent le sort des mortels.[1] Recevoir un don d'une fée, dans les récits les plus anciens, n'a donc jamais rien d'anodin.",
+      "Le vertige du temps féerique complète cette fascination : une nuit passée sous un tertre peut correspondre à des années dans le monde des hommes, ou l'inverse. Cette distorsion du temps, plus que les ailes ou la baguette ajoutées bien plus tard par l'illustration, est sans doute le trait le plus proprement inquiétant — et le plus proprement merveilleux — du Petit Peuple."
+    ],
+    "legendes": [
+      "Le mot fée vient du latin fata, lui-même issu de fatum, la destinée ; dans la mythologie romaine, les déesses du destin étaient nommées fata, et on retrouve des figures apparentées chez diverses divinités du domaine germanique.[1] L'étymologie place donc d'emblée la fée du côté du sort qu'elle prédit ou façonne, plutôt que du côté d'une simple créature ailée.",
+      "Les fées du folklore écossais, irlandais, anglais et breton procèdent principalement de la mythologie celtique.[1] La Banshee (Bansidh), habitante du Sidh irlandais, en constitue l'une des figures les plus connues, associée à des pouvoirs magiques et souvent annonciatrice de mort dans les familles qu'elle visite.",
+      "Les langues gaélique et norroise ont par ailleurs développé des racines apparentées — alfr et älf — qui rejoignent celle du mot elfe, signe d'une parenté ancienne entre le petit peuple féerique et le peuple elfique germanique, avant que les traditions littéraires ultérieures ne les distinguent plus nettement.[1]",
+      "Le Moyen Âge européen a considérablement enrichi la figure de la fée en la faisant entrer dans les romans courtois — Mélusine, Morgane, la Dame du Lac — où elle devient un personnage individualisé, souvent liée à un lignage humain qu'elle protège ou qu'elle maudit selon les torts qu'on lui fait."
+    ],
+    "anomalies": [
+      "Le glamour — cette capacité à faire paraître une chose autre qu'elle n'est, un tas de feuilles pour de l'or, une cabane pour un palais — reste l'un des pouvoirs les plus caractéristiques prêtés aux fées dans le folklore britannique et celtique. La distorsion du temps sous les tertres féeriques en constitue un second, presque aussi constant : quiconque danse une nuit avec les fées risque de revenir des décennies plus tard, ou de ne jamais revenir du tout.",
+      "Les dons offerts par les fées, enfin, sont traditionnellement décrits comme ambivalents : une bénédiction accordée à la légère peut se retourner contre son bénéficiaire, et l'étymologie liée au destin explique pourquoi ces présents sont rarement gratuits dans les récits les plus anciens.[1]"
+    ],
+    "naturelle": {
+      "lead": "Le Petit Peuple recouvre une variété considérable de figures selon les régions celtiques et européennes, dont on ne peut dresser qu'un portrait composite.",
+      "parts": [
+        {"title": "Comportement", "body": ["Les fées oscillent, selon les récits, entre bienveillance discrète envers ceux qui les respectent et vengeance sévère envers ceux qui les offensent, sans qu'aucune des deux dispositions ne domine durablement l'autre."]},
+        {"title": "Habitat", "body": ["Tertres, cercles de pierres ou d'herbe, et heures crépusculaires marquent traditionnellement les seuils où le monde féerique touche au nôtre, en particulier dans les traditions irlandaises et écossaises attachées au Sidh.[1]"]},
+        {"title": "Alimentation", "body": ["Les récits populaires insistent moins sur un régime alimentaire que sur le danger de consommer la nourriture féerique, censée lier durablement le mortel imprudent au monde des fées."]},
+        {"title": "Intelligence", "body": ["Associées au destin depuis leur étymologie même, les fées possèdent traditionnellement un savoir qui dépasse la connaissance humaine ordinaire, notamment en matière de prédiction et de sortilège.[1]"]},
+        {"title": "Reproduction", "body": ["Les romans médiévaux prêtent parfois aux fées une descendance mêlée à des lignées humaines, comme dans la légende de Mélusine, mais le folklore populaire reste le plus souvent silencieux sur leur reproduction propre."]},
+        {"title": "Prédateurs", "body": ["Le fer, dans une grande partie du folklore britannique et celtique, est traditionnellement redouté des fées, qui n'ont sinon guère d'ennemi naturel décrit dans les sources anciennes."]}
+      ]
+    },
+    "reliques": [
+      "La fée a connu, à partir du XIXe siècle, une transformation profonde sous l'influence de l'illustration victorienne et des contes pour enfants, qui l'ont réduite à une petite créature ailée, gracieuse et essentiellement bienveillante. Cette image, aujourd'hui dominante dans la culture populaire, contraste fortement avec la puissance ambivalente et parfois redoutable que lui prêtaient les traditions celtiques et médiévales d'origine."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Fée — Wikipédia", "url": "https://fr.wikipedia.org/wiki/F%C3%A9e"}
+  ]
+}

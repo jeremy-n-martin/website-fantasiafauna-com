@@ -1,0 +1,34 @@
+{
+  "description": "L'esprit rustique des bois, compagnon des bergers et des vieux dieux : le faune romain incarne une nature à la fois fertile, joueuse et légèrement inquiétante.",
+  "sections": {
+    "fascination": [
+      "Le faune tient sa force d'évocation d'un mélange que peu de créatures assument aussi franchement : la moitié animale n'y est pas une malédiction mais une continuité naturelle, comme si l'humanité et la chèvre relevaient au fond de la même sève. On y perçoit une nature qui n'a pas besoin d'être domptée pour être bienveillante, mais qui reste imprévisible, sujette à l'humeur, au désir, à la panique — le mot lui-même en garde la trace.",
+      "Il y a aussi, dans le pluriel des faunes assistant l'unique Faunus, une manière ancienne de peupler le paysage sans le personnaliser à l'excès : chaque bois, chaque pâturage peut abriter le sien, silhouette entrevue plus que personnage nommé. Cette discrétion diffuse est sans doute ce qui a permis au faune de survivre, siècle après siècle, comme incarnation générique de la campagne animée."
+    ],
+    "legendes": [
+      "Dans la mythologie romaine, le faune est une créature champêtre proche du satyre grec, dont la divinité originelle et unique est Faunus.[1] Faunus est un dieu protecteur de l'agriculture et des bergers, dont le domaine d'action reste essentiellement rural — champs, bois, forêts, plaines, rivières, troupeaux — qu'il rend fertiles et féconds ; les Romains rattachaient son nom au verbe favere, « être favorable ».[1]",
+      "Faunus est marié à Fauna, qui reprend au féminin les attributs de son époux ; la tradition raconte que les faunes, ces demi-divinités mortelles, sont nés de leur union et se représentent à l'image de Faunus qu'ils assistent, moitié humains et moitié chèvres.[1] Le faune n'est donc pas, à l'origine, un individu unique mais toute une descendance de créatures secondaires attachées au service d'un dieu supérieur.",
+      "La proximité avec le satyre grec a favorisé, dès l'Antiquité, une fusion progressive des deux figures dans l'art et la littérature, au point que la distinction précise entre faune romain et satyre grec s'est largement estompée dans la culture populaire ultérieure, qui les traite souvent comme des équivalents interchangeables."
+    ],
+    "anomalies": [
+      "Le trait le plus constant du faune reste sa nature hybride, moitié humaine moitié caprine, associée à un tempérament rustique et joueur plutôt qu'ouvertement hostile — à la différence du satyre, dont les traditions ultérieures ont parfois accentué la lubricité et la sauvagerie. Faunus lui-même possède un aspect prophétique dans certains récits romains, rendant des oracles par la voix ou par le songe, une dimension divinatoire rarement conservée par ses descendants les faunes ordinaires.[1]"
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle du faune romain se lit dans son rôle de protecteur discret des activités pastorales et agricoles, plus que dans un comportement de prédateur ou de créature menaçante.",
+      "parts": [
+        {"title": "Comportement", "body": ["Joueur, musicien à l'occasion, le faune se tient en marge des habitations humaines sans leur être hostile ; sa présence est plutôt associée à la fécondité des troupeaux et des cultures qu'il favorise.[1]"]},
+        {"title": "Habitat", "body": ["Bois, champs, forêts, plaines et pâturages composent son domaine, à l'image de celui de Faunus dont il partage la juridiction rustique et rurale.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune tradition antique ne précise de régime propre au faune, dont le rôle mythologique tient davantage à sa fonction protectrice qu'à des besoins matériels décrits."]},
+        {"title": "Intelligence", "body": ["Le faune partage avec Faunus une connaissance intime des cycles agricoles et pastoraux, parfois teintée d'un savoir divinatoire hérité du dieu dont il descend.[1]"]},
+        {"title": "Reproduction", "body": ["Selon la tradition romaine, les faunes naissent de l'union de Faunus et de Fauna, formant une descendance nombreuse plutôt qu'un couple ou un individu unique.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucun ennemi naturel n'est attaché au faune dans les sources antiques ; sa proximité avec les troupeaux en fait davantage un protecteur des bêtes qu'une proie potentielle."]}
+      ]
+    },
+    "reliques": [
+      "Le faune a largement inspiré l'art occidental, de la sculpture antique — le Faune Barberini ou le Faune dansant de Pompéi — jusqu'à la musique et à la peinture modernes, notamment le Prélude à l'après-midi d'un faune de Debussy d'après Mallarmé. La figure continue d'irriguer la fantasy contemporaine, où le faune sert souvent, comme dans Le Monde de Narnia, de guide bienveillant à la frontière entre le monde humain et le monde enchanté."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Faune — Wikipédia", "url": "https://fr.wikipedia.org/wiki/Faune_(mythologie)"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "description": "Là où le ghoul se contente de la charogne, le ghast en réclame la pourriture la plus avancée : un mort-vivant plus rapide, plus intelligent et porteur d'une puanteur qui, à elle seule, paralyse.",
+  "sections": {
+    "fascination": [
+      "Le ghast n'invente rien que le ghoul n'ait déjà proposé : la faim, la nuit des tombes, la main qui se referme. Il pousse simplement chaque trait un cran plus loin. Sa vitesse dépasse celle de son cousin, son intelligence lui permet de tendre des embuscades plutôt que de simplement rôder, et surtout son odeur devient une arme avant même le contact des griffes.[1] Le lecteur retrouve ici un principe familier des bestiaires de jeu : la variante n'est pas un monstre neuf, mais une aggravation calculée d'un monstre connu, comme si la nécropole produisait, à intervalles réguliers, des individus plus achevés dans leur horreur.",
+      "Ce qui frappe surtout, c'est la place que ce mort-vivant réserve à l'odorat, sens rarement convoqué dans les affrontements de donjon. Percevoir un ghast, ce n'est pas d'abord le voir surgir d'un sarcophage, c'est sentir, avant de comprendre, qu'une puanteur de charnier a déjà envahi la pièce et commence à engourdir les membres.[2] Le corps réagit avant l'esprit, et le combat se joue en partie sur ce terrain sensoriel où la seule présence du monstre affaiblit l'adversaire avant tout coup porté."
+    ],
+    "legendes": [
+      "Le ghast apparaît dès le tout premier Monster Manual de Donjons et Dragons, en 1977, comme une entrée distincte du ghoul plutôt qu'une simple variante de statistiques.[1] Le manuel lui attribue déjà les traits qui le définiront ensuite à travers les éditions : une stature et une force supérieures à celles du ghoul ordinaire, une vulnérabilité au fer froid et une résistance accrue à la magie protectrice contre le mal, sauf lorsque celle-ci est elle-même façonnée dans ce métal.[1] Cette dernière précision, très technique, montre combien le premier bestiaire de Donjons et Dragons cherchait à équilibrer des menaces en leur donnant des failles aussi spécifiques que leurs pouvoirs.",
+      "La tradition orale du jeu attache au ghast une origine narrative précise : le ghoul naîtrait de la mort d'un être qui a goûté la chair humaine, tandis que le ghast serait la forme prise par celui qui meurt en plein acte de cannibalisme.[1] Cette distinction n'a rien d'une loi universelle imposée par les règles, mais elle s'est répétée de manuel en manuel comme une légende interne au jeu, une manière de justifier pourquoi certains morts reviennent plus voraces que d'autres.",
+      "La cinquième édition, dans son Monster Manual de 2014, conserve le ghast comme entrée séparée du ghoul, avec sa puanteur cadavérique devenue un trait à part entière : les créatures proches doivent résister sous peine d'être prises de nausée, ce qui les désavantage au combat.[2] L'articulation entre le ghoul commun et son parent plus dangereux reste ainsi stable depuis plus de quarante ans d'éditions successives, un cas assez rare de continuité dans un jeu qui a par ailleurs beaucoup réécrit son bestiaire."
+    ],
+    "anomalies": [
+      "La paralysie reste le trait le plus redouté du ghast, mais son fonctionnement diffère subtilement du ghoul ordinaire. Là où le ghoul paralyse par simple contact griffu, le ghast ajoute une couche supplémentaire : sa puanteur affaiblit la résistance mentale des adversaires proches avant même que les griffes n'entrent en jeu, rendant le combat rapproché périlleux dès l'approche.[2] Certaines créatures, notamment les elfes dans plusieurs éditions, bénéficient d'une immunité à cette paralysie, ce qui a longtemps fait du ghast un adversaire redouté surtout par les groupes dépourvus de tels alliés.",
+      "D'une édition à l'autre, la panoplie défensive varie : vulnérabilité au fer froid dans les premières règles, résistance à certains sorts protecteurs, puis simplification progressive dans les versions plus récentes qui préfèrent une fiche technique épurée à l'accumulation de conditions spéciales.[1] Le ghast illustre ainsi, à une échelle modeste, la manière dont le jeu retravaille sans cesse ses monstres les plus anciens pour les adapter aux systèmes de règles successifs, sans jamais renoncer à son identité de base : la faim, la vitesse, la puanteur."
+    ],
+    "naturelle": {
+      "lead": "Le ghast n'a pas d'existence en dehors des bestiaires de jeu de rôle ; son histoire naturelle est donc celle que les manuels lui prêtent, nécropole après nécropole.",
+      "parts": [
+        {"title": "Comportement", "body": ["Plus vif et plus rusé que le ghoul, le ghast chasse en meneur plutôt qu'en simple charognard isolé. Les manuels le décrivent volontiers à la tête d'une petite troupe de ghoules, orchestrant leurs assauts avec une intelligence que son cousin ne possède pas.[1]"]},
+        {"title": "Habitat", "body": ["Nécropoles, cryptes oubliées et champs de bataille abandonnés forment son territoire de prédilection. Il s'y installe durablement, contrairement au ghoul errant, et défend ces lieux comme un repaire plutôt que comme un simple terrain de chasse.[1]"]},
+        {"title": "Alimentation", "body": ["Chair en décomposition avancée et cadavres frais composent l'essentiel de son régime, la puanteur qui l'entoure n'étant que le résidu extérieur de cette diète macabre.[2]"]},
+        {"title": "Intelligence", "body": ["Le ghast conserve une part de raisonnement que le ghoul a perdue : il tend des embuscades, choisit ses cibles et coordonne parfois plusieurs morts-vivants moins dégourdis que lui.[1]"]},
+        {"title": "Reproduction", "body": ["Aucune reproduction biologique : le ghast naît, selon la légende interne au jeu, de la mort d'un individu surpris en plein acte de cannibalisme, prolongeant sous une forme plus virulente la malédiction qui engendre les ghoules ordinaires.[1]"]},
+        {"title": "Prédateurs", "body": ["Peu de créatures s'attaquent volontairement à un ghast en pleine nécropole ; ce sont plutôt les groupes d'aventuriers, armés de fer froid ou de magie sacrée, qui figurent dans les manuels comme ses principaux ennemis recensés.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le ghast a peu essaimé hors des tables de jeu, restant une figure d'arrière-plan comparée à des morts-vivants plus emblématiques comme le liche ou le vampire. Il subsiste néanmoins dans les adaptations vidéoludiques de Donjons et Dragons et dans les bestiaires numériques qui reprennent fidèlement sa fiche de 5e édition, puanteur paralysante comprise.[2] Sa présence discrète mais continue depuis 1977 en fait un exemple sobre de la manière dont un monstre secondaire peut traverser près d'un demi-siècle de règles sans jamais devenir une vedette, ni disparaître tout à fait."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Ghast — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Ghast"},
+    {"id": 2, "title": "Let's Read the 5e Monster Manual: The Ghoul and The Ghast — The Last Day Dawned", "url": "http://thelastdaydawned.blogspot.com/2017/01/lets-read-5e-monster-manual-ghoul-and.html"}
+  ]
+}

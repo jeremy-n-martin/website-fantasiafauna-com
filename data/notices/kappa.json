@@ -1,0 +1,38 @@
+{
+  "description": "Une cuvette d'eau posée sur le crâne, une politesse redoutable et un net penchant pour les concombres : le kappa noie ceux qui l'oublient et salue ceux qui savent s'incliner devant lui.",
+  "sections": {
+    "fascination": [
+      "Le kappa fascine par le contraste absolu entre sa dangerosité réelle — il noie les enfants, arrache les entrailles de ses victimes selon certains récits — et les détails presque comiques qui l'accompagnent : son amour des concombres, sa passion pour le sumo, son obsession des bonnes manières. Aucun autre monstre aquatique n'allie à ce point la menace mortelle et le grotesque domestique, et c'est précisément cette tension qui rend le personnage inoubliable : on rit de sa cuvette d'eau tout en évitant soigneusement la rivière au crépuscule.",
+      "Sa faiblesse, plus encore que sa force, est ce qui capture l'imagination : le kappa perd tout pouvoir si l'eau contenue dans la dépression de son crâne se renverse. Cette vulnérabilité minuscule et presque risible — un simple salut poussé trop bas suffit à le vider de sa puissance — transforme chaque rencontre en un duel de courtoisie où la politesse devient une arme littérale contre le monstre. Peu de créatures folkloriques rendent ainsi l'étiquette sociale aussi dangereuse pour celui qui la pratique par réflexe."
+    ],
+    "legendes": [
+      "Le kappa est l'un des yōkai les plus célèbres du folklore japonais, un esprit aquatique hantant rivières, étangs et canaux à travers tout l'archipel, où des variantes régionales portent des noms différents (kawataro, gawappa, notamment).[1][2] Sa description la plus répandue, fixée surtout à l'époque d'Edo, lui donne une taille d'enfant, une carapace de tortue, des membres palmés, un bec, et surtout une cavité remplie d'eau au sommet du crâne, sara, littéralement « assiette ».",
+      "Les récits traditionnels attribuent au kappa la noyade de baigneurs et d'animaux, ainsi que le vol d'organes internes par l'anus de ses victimes — un motif macabre attesté dans plusieurs légendes régionales rapportées par les folkloristes japonais. Malgré cette dangerosité, le kappa est également crédité de connaissances médicales et martiales : certaines traditions lui prêtent l'enseignement de techniques de rebouteux ou d'arts martiaux à des humains qu'il aurait vaincus ou secourus.[1][2]",
+      "La coutume consistant à jeter des concombres portant le nom des membres d'une famille dans la rivière, pour apaiser le kappa local et s'assurer une baignade sans danger, est documentée dans plusieurs régions du Japon, ce qui a valu au maki-sushi au concombre le nom familier de kappa-maki.[2] Cette pratique illustre la manière dont la peur populaire d'une créature pouvait se traduire en rituel de protection concret, intégré à la vie quotidienne des villages riverains.",
+      "Sur le plan de l'interprétation historique, plusieurs chercheurs voient dans le kappa une manière, pour les communautés rurales, de mettre en garde les enfants contre les noyades réelles et d'expliquer des phénomènes inquiétants — tourbillons, disparitions, cadavres d'animaux — par une figure surnaturelle plutôt que par le hasard."
+    ],
+    "anomalies": [
+      "La particularité la plus documentée du kappa est sa vulnérabilité liée à l'eau de son crâne : s'il se renverse, s'assèche ou se répand, la créature perd immédiatement ses forces, parfois jusqu'à l'immobilité complète. Cette faiblesse est exploitable par un humain rusé qui, en s'inclinant profondément devant le kappa, le contraint par sa propre obsession de politesse à rendre le salut — et donc à renverser l'eau de sa cuvette.[1][2]",
+      "Les sources folkloriques varient également sur ses talents : arts martiaux, médecine traditionnelle (notamment la reboutologie), voire connaissance de techniques de pêche ou d'irrigation, sont tour à tour attribués au kappa selon les régions, ce qui en fait une figure autant redoutée qu'occasionnellement bénéfique pour les communautés qui savent négocier avec elle."
+    ],
+    "naturelle": {
+      "lead": "Le kappa bénéficie, plus que la plupart des yōkai, d'une description physique et comportementale assez stable, fixée par la tradition populaire de l'époque d'Edo et transmise jusqu'à aujourd'hui.",
+      "parts": [
+        {"title": "Comportement", "body": ["Farceur et parfois cruel, le kappa aime défier les humains au sumo ou à des jeux de société comme le shōgi, tout en restant redoutablement attaché aux règles de politesse, au point que cette obsession peut se retourner contre lui."]},
+        {"title": "Habitat", "body": ["Il vit dans les rivières, les étangs et les canaux du Japon rural, quittant rarement l'eau douce pour de longues périodes, bien que certains récits le montrent s'aventurant sur la berge ou dans les champs voisins."]},
+        {"title": "Alimentation", "body": ["Son goût pour les concombres est si célèbre qu'il a donné son nom à un plat culinaire encore consommé aujourd'hui ; les récits les plus sombres lui prêtent également une prédation directe sur les humains et le bétail, par noyade ou vol d'organes."]},
+        {"title": "Intelligence", "body": ["Considéré comme rusé et rieur, le kappa est aussi crédité d'un savoir technique réel, notamment en médecine ostéopathique traditionnelle, qu'il aurait transmis à des humains vainqueurs ou secourus dans certains récits régionaux."]},
+        {"title": "Reproduction", "body": ["Le folklore ne détaille guère de cycle de reproduction propre au kappa ; il est généralement présenté comme un individu isolé ou en petit nombre par cours d'eau, plutôt que comme membre d'une population décrite dans son ensemble."]},
+        {"title": "Prédateurs", "body": ["Le kappa n'a pas de prédateur naturel identifié, mais sa vulnérabilité à l'eau de son crâne en fait une créature que l'ingéniosité humaine — politesse forcée, offrandes de concombres, ou simple prudence — peut neutraliser ou apaiser."]}
+      ]
+    },
+    "reliques": [
+      "Le kappa demeure l'un des yōkai les plus commercialement visibles du Japon contemporain, servant de mascotte à des villes, des produits et des personnages de mangas et de jeux vidéo, où sa silhouette verte à cuvette reste immédiatement reconnaissable.",
+      "Le kappa-maki, sushi roulé au concombre, garde vivant le souvenir de la coutume protectrice consistant à offrir des concombres à la créature ; le mot est aujourd'hui utilisé bien au-delà du Japon sans que la majorité des consommateurs en connaisse l'origine folklorique."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Kappa, Yokai Encyclopedia (YOKAI.JP)", "url": "https://yokai.jp/en/yokai/kappa"},
+    {"id": 2, "title": "Meet the Kappa: Japan's Enigmatic Aquatic Yokai, Bokksu", "url": "https://bokksu.com/blogs/news/meet-the-kappa-japans-enigmatic-aquatic-yokai"}
+  ]
+}

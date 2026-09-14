@@ -1,0 +1,36 @@
+{
+  "description": "Sous le ciel écrasé d'orage du désert, le dragon bleu attend, immobile comme la dune, que l'éclair devienne sa voix.",
+  "sections": {
+    "fascination": [
+      "Il n'y a pas de fracas plus sec que celui d'un ciel sans nuage qui déchire soudain l'air d'un trait blanc. Le dragon bleu habite cette contradiction : créature de la foudre dans un pays qui ne connaît presque jamais la pluie. Sa présence transforme le désert en un lieu suspendu, où le silence de midi peut à tout instant se rompre sans que rien, à l'œil nu, n'ait annoncé l'orage. Le sable lui-même semble complice, puisqu'il l'avale et le restitue, creusant des galeries vitrifiées que la chaleur de son souffle a soudées en verre.[1]",
+      "Ce qui frappe n'est pas seulement la puissance, mais la discipline qu'elle sert. Là où d'autres dragons chromatiques laissent libre cours à une fureur désordonnée, le bleu construit, hiérarchise, attend son heure.[1] Sa beauté tient à cette tension entre l'élément le plus imprévisible qui soit, l'éclair, et une intelligence froide qui en calcule chaque décharge. On approche alors une figure moins bestiale que stratège, dont le territoire n'est jamais conquis par accident."
+    ],
+    "legendes": [
+      "Le dragon bleu appartient à la première génération de dragons chromatiques imaginée dès le coffret original de 1974, aux côtés du rouge, du vert, du noir et du blanc.[2] Le Manuel des monstres de 1977 leur donne une nomenclature pseudo-scientifique et fixe leur alignement résolument maléfique. La notion même de dragons chromatiques, comme famille cohérente opposée aux dragons métalliques, n'est cependant formalisée qu'en 1993 dans le Monstrous Manual de la deuxième édition, qui leur accorde aussi une résistance à la magie et des attaques physiques élargies.[2]",
+      "D'une édition à l'autre, le portrait se stabilise autour de quelques traits constants : alignement loyal mauvais, souffle de foudre, prédilection pour les déserts et les côtes arides.[1][2] La cinquième édition insiste sur un aspect resté discret jusque-là, la vie sociale du dragon bleu. Contrairement à la plupart des chromatiques, individualistes et querelleurs, il maintient des sociétés ordonnées et hiérarchisées, presque bureaucratiques, où chaque dragon connaît sa place et ses prérogatives.[1]",
+      "Cette continuité éditoriale n'empêche pas des nuances de ton. Les premières éditions insistaient sur une cruauté directe ; les descriptions plus récentes, dont celles rassemblées jusqu'à Fizban's Treasury of Dragons en 2021, préfèrent une malveillance calculatrice, plus encline à l'humiliation et à la manipulation qu'au massacre gratuit.[1][2] Le personnage gagne ainsi en profondeur sans renier son alignement d'origine."
+    ],
+    "anomalies": [
+      "Le souffle du dragon bleu adulte se déploie en une ligne de foudre longue de vingt-sept mètres, capable de foudroyer plusieurs adversaires alignés d'un même éclair.[1] Cette arme dicte sa tactique : le dragon préfère le combat à distance, où l'effet spectaculaire de la décharge peut être pleinement observé par ses victimes, et n'hésite pas à s'enfouir sous le sable pour surgir au moment le plus efficace.[1]",
+      "Sa maîtrise du sol prolonge celle de l'air. Le dragon bleu creuse des cavernes qu'il vitrifie par la chaleur de ses attaques, perçant des conduits d'aération qui laissent filtrer la lumière tout en évitant les poches d'effondrement.[1] Si son repaire est envahi, il n'hésite pas à en provoquer lui-même l'effondrement pour ensevelir ses assaillants, avant de ressurgir plus tard pour récupérer son trésor et celui de ses victimes — une défense aussi radicale que calculée.[1]"
+    ],
+    "naturelle": {
+      "lead": "Le portrait retenu ici suit principalement la cinquième édition de Donjons et Dragons, qui prolonge sans les renier les traits fixés dès les premières éditions.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le dragon bleu gouverne son territoire avec une rigueur presque administrative. Il tolère mal l'intrusion, mais réserve sa violence la plus spectaculaire aux moments où elle peut être témoignée, préférant l'intimidation et l'illusion à l'affrontement brutal et immédiat.[1]"]},
+        {"title": "Habitat", "body": ["Il élit domicile dans les déserts de sable et les littoraux arides, où l'horizon dégagé lui offre un champ de tir sans obstacle pour son souffle.[1][2] Les tempêtes de sable et les orages secs qui balaient ces régions ne sont pas un hasard : la tradition lui prête une influence sur le climat local, qui accompagne son territoire comme une signature."]},
+        {"title": "Alimentation", "body": ["Chasseur opportuniste, il profite du relief qu'il façonne lui-même pour surprendre ses proies, s'enfouissant sous le sable jusqu'à ce qu'une cible s'approche à portée de son souffle.[1]"]},
+        {"title": "Intelligence", "body": ["Sa société hiérarchisée suppose une intelligence tournée vers l'ordre et la stratégie plutôt que vers la simple cupidité. Le dragon bleu retient les hiérarchies, respecte les préséances entre congénères et sait attendre le moment favorable avant d'agir.[1]"]},
+        {"title": "Reproduction", "body": ["Comme les autres vrais dragons, il grandit lentement à travers plusieurs stades, du dragonnet au très ancien, chaque étape renforçant la portée de son souffle et l'étendue de son territoire.[1]"]},
+        {"title": "Prédateurs", "body": ["Peu de créatures rivalisent avec un dragon bleu adulte sur son propre terrain. Le danger vient plutôt des expéditions organisées par des humains ou d'autres dragons rivaux, contre lesquelles il oppose l'effondrement calculé de son repaire plutôt qu'un combat frontal.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le dragon bleu demeure l'un des chromatiques les plus reconnaissables du jeu, cité en exemple dès qu'il s'agit d'illustrer un dragon à la fois puissant et discipliné. Sa cohérence à travers cinquante ans d'éditions successives, de 1974 à Fizban's Treasury of Dragons, en a fait une référence stable pour les joueurs comme pour les adaptations en jeu vidéo ou en fiction dérivée, où l'éclair bleu reste un raccourci visuel immédiatement identifiable.[1][2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Adult Blue Dragon, Monsters", "url": "https://www.dndbeyond.com/monsters/16765-adult-blue-dragon"},
+    {"id": 2, "title": "Dragon (Dungeons & Dragons) — Wikipédia (en anglais)", "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)"}
+  ]
+}

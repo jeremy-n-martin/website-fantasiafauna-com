@@ -1,0 +1,35 @@
+{
+  "description": "Une méduse volante et lectrice de pensées, née dans les pages les plus étranges d'un supplément britannique de jeu de rôle, trop bienveillante pour effrayer qui que ce soit.",
+  "sections": {
+    "fascination": [
+      "Il flotte sans battre d'ailes, sans effort visible, comme si l'air lui-même consentait à le porter. Cette lévitation tranquille suffit à distinguer le flumph de tout ce qui vole habituellement dans les bestiaires imaginaires : ni plumes, ni membrane, ni magie tapageuse, seulement une présence légère qui dérive au-dessus du sol des cavernes. Le regard s'attarde d'autant plus volontiers sur lui qu'il ne menace rien ; il observe, ressent, et parfois comprend une intention hostile avant même qu'elle ne se formule à voix haute.",
+      "Ce qui fascine, au fond, c'est le renversement qu'il propose. Les grottes profondes abritent d'ordinaire des prédateurs tapis dans l'ombre ; le flumph, lui, y loge une bonté presque candide, incongrue dans un décor pensé pour l'effroi. Sa capacité à percevoir les émotions d'autrui en fait moins un monstre qu'un témoin sensible, presque vulnérable, égaré dans un monde où la plupart des créatures rencontrées cherchent à mordre plutôt qu'à comprendre."
+    ],
+    "legendes": [
+      "Le flumph ne descend d'aucune légende ancienne : il naît entièrement dans les pages du Fiend Folio, un supplément de monstres publié en 1981 pour la première édition de Donjons et Dragons.[1] Sa création revient à Ian McDowall et Douglas Naismith, deux contributeurs britanniques, à une époque où le jeu s'enrichissait de créatures venues d'un cercle de joueurs bien plus large que ses seuls concepteurs américains d'origine.[1]",
+      "Le Fiend Folio occupe une place particulière dans l'histoire du jeu : c'est le premier supplément de monstres pour Donjons et Dragons à naître hors des bureaux de TSR, puisé dans la rubrique « The Fiend Factory » du magazine britannique White Dwarf, publiée de 1976 à 1986.[1] Cette origine collective, presque communautaire, explique en partie l'excentricité de certaines créatures qui y figurent — le flumph en tête, aux côtés d'autres inventions aussi mémorables qu'étranges comme l'escargot à fléau.[1]",
+      "L'accueil réservé à ces créations fut longtemps moqueur : le flumph a longtemps symbolisé, dans la culture des joueurs, le monstre trop absurde ou trop inoffensif pour être pris au sérieux.[1] Le recul a cependant nuancé ce jugement ; le Fiend Folio est aujourd'hui reconnu comme un supplément qui a su introduire des idées réellement singulières dans un catalogue de monstres parfois trop convenu.[1] Le flumph, précisément parce qu'il refusait la loi du crocs et des griffes, a fini par devenir un symbole affectueux plutôt qu'un simple objet de raillerie."
+    ],
+    "anomalies": [
+      "Sa particularité la plus documentée reste sa nature pacifique, presque programmatique : le flumph répugne à l'agression et cherche activement à éviter le conflit, quitte à fuir plutôt que combattre.[1] Cette disposition n'est pas une simple lâcheté de fiche technique ; elle façonne toute sa présentation, jusqu'à son mode d'attaque défensif, un jet caustique réservé aux situations où la fuite n'est plus possible.",
+      "Les éditions successives du jeu ont fait évoluer son apparence et ses capacités sans jamais renoncer à son tempérament bienveillant. Les versions plus récentes accentuent sa sensibilité télépathique, capable de percevoir les intentions malveillantes à proximité, ce qui en fait un allié recherché malgré son aspect peu engageant de coupole flottante hérissée de tentacules.[1] D'un supplément à l'autre, le flumph reste ainsi fidèle à son identité fondatrice : une créature dont la étrangeté visuelle ne dissimule aucune malice."
+    ],
+    "naturelle": {
+      "lead": "Le flumph n'existe que dans les règles du jeu qui l'a inventé ; cette histoire naturelle reprend donc uniquement les traits qu'on lui prête depuis le Fiend Folio et ses successeurs.",
+      "parts": [
+        {"title": "Comportement", "body": ["Craintif et non violent, il privilégie systématiquement la retraite. Sa réaction la plus documentée face au danger reste la fuite silencieuse, loin des affrontements."]},
+        {"title": "Habitat", "body": ["Grottes profondes et failles souterraines, où sa lévitation naturelle lui permet de se déplacer sans effort au-dessus d'un sol parfois instable ou dangereux."]},
+        {"title": "Alimentation", "body": ["Les sources le décrivent comme se nourrissant de champignons souterrains et de matières organiques en décomposition, sans jamais chasser de proies vivantes."]},
+        {"title": "Intelligence", "body": ["Sa sensibilité télépathique lui permet de percevoir les émotions et intentions d'autrui, ce qui compense une intelligence par ailleurs modeste selon les standards du jeu."]},
+        {"title": "Reproduction", "body": ["Peu détaillée dans les sources, la reproduction du flumph est généralement évoquée comme communautaire, au sein de petites colonies partageant les mêmes cavités souterraines."]},
+        {"title": "Prédateurs", "body": ["Sa chair est jugée peu appétissante par la plupart des créatures des profondeurs, ce qui lui vaut d'être relativement épargné malgré sa faible capacité de défense."]}
+      ]
+    },
+    "reliques": [
+      "Longtemps cité comme l'archétype du monstre involontairement comique des débuts de Donjons et Dragons, le flumph a fini par devenir un objet d'affection nostalgique parmi les joueurs de longue date, réapparaissant régulièrement dans des suppléments plus récents malgré — ou grâce à — son excentricité assumée.[1] Sa silhouette reconnaissable en fait aujourd'hui un clin d'œil apprécié plutôt qu'une simple curiosité d'archive."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Fiend Folio — Wikipedia (histoire du supplément et création du flumph)", "url": "https://en.wikipedia.org/wiki/Fiend_Folio"}
+  ]
+}

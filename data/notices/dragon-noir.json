@@ -1,0 +1,37 @@
+{
+  "description": "Là où l'eau stagne et où la civilisation s'effiloche, le dragon noir corrompt son territoire sans hâte : sa cruauté patiente vaut bien des griffes, et ses marécages n'oublient jamais un intrus.",
+  "sections": {
+    "fascination": [
+      "Il y a une lenteur inquiétante dans la manière dont le dragon noir prend possession d'un lieu. Il ne détruit pas d'un coup : il infiltre, il imbibe, il laisse le marécage se refermer sur lui-même jusqu'à ce que la frontière entre l'animal et son territoire s'efface. Approcher son repaire, c'est déjà sentir l'eau se fouler d'une odeur trouble, voir les arbres se tordre sans qu'on sache si c'est la maladie ou la magie qui les a saisis. Le malaise précède toujours la créature elle-même, comme si le marais entier servait d'antichambre à sa cruauté.",
+      "Ce qui rend le dragon noir si dérangeant, ce n'est pas seulement sa force, c'est sa patience méthodique. D'autres prédateurs frappent et s'en vont ; lui préfère laisser ses proies se décomposer avant de les consommer, transformant la mort en une étape parmi d'autres d'un cycle qu'il contrôle entièrement. Cette froideur presque administrative de la cruauté, dénuée de rage comme de plaisir apparent, fait de lui l'un des dragons les plus authentiquement effrayants de son bestiaire."
+    ],
+    "legendes": [
+      "Le dragon noir appartient à la famille des dragons chromatiques de Donjons et Dragons, la lignée qui, depuis les premières éditions du jeu, incarne le mal sous des formes variées selon la couleur d'écailles. Le noir y occupe une place particulière : les bestiaires le qualifient souvent de plus vil et cruel parmi les siens, une distinction qui n'est pas mince dans une famille déjà associée au chaos destructeur.[1][2]",
+      "Son territoire, les marécages en bordure de civilisation, ancre cette cruauté dans un décor précis. Contrairement au rouge qui règne sur des sommets visibles de loin ou au bleu associé aux déserts, le noir choisit les lisières troubles, les zones que l'on évite plutôt que celles que l'on admire. Cette géographie de la marge accompagne son alignement chaotique mauvais : il n'a pas besoin de dominer un royaume pour exercer son emprise, un marécage oublié lui suffit.[1]",
+      "Les descriptions récentes insistent sur l'ampleur de la corruption qu'il installe autour de lui : sur plus d'un kilomètre, les points d'eau deviennent viciés au point de rendre malade quiconque en boit, et la végétation prend des formes tordues et malsaines.[1] Cette influence régionale, plus qu'un simple décor, fonctionne comme une extension du corps du dragon lui-même — le marais entier devient une arme lente."
+    ],
+    "anomalies": [
+      "Son souffle est un jet d'acide capable de dissoudre la chair et l'armure sur une large ligne, cohérent avec son immunité naturelle à ce type de dégâts.[1] Mais l'anomalie la plus troublante reste son usage du temps : les récits de jeu précisent qu'il conserve délibérément certaines de ses victimes dans des zones humides de son repaire, le temps qu'elles se décomposent avant d'être consommées — une pratique de charognard méthodique, rare chez une créature aussi puissante.[1]",
+      "Son repaire lui-même devient un piège écologique : ossements rongés par l'acide, carcasses fraîches abandonnées aux mouches, populations de scorpions, de serpents et de centipèdes qui prospèrent dans cette décomposition entretenue.[1] Rien n'y est laissé au hasard ; la puanteur et le danger ambiant dissuadent autant que les griffes du dragon lui-même."
+    ],
+    "naturelle": {
+      "lead": "Cette histoire naturelle reprend le portrait des bestiaires de Donjons et Dragons, seule tradition à documenter en détail le comportement et l'écologie du dragon noir.",
+      "parts": [
+        {"title": "Comportement", "body": ["Sournois et patient, le dragon noir privilégie l'embuscade à l'affrontement ouvert. Il observe longuement une proie ou un intrus avant d'agir, et n'hésite pas à laisser filer une occasion immédiate si une approche plus cruelle promet davantage de souffrance ou de profit à long terme.[1][2] Cette froideur calculatrice le distingue des dragons chromatiques plus impulsifs."]},
+        {"title": "Habitat", "body": ["Marécages, ruines à demi englouties, lisières humides aux confins des terres civilisées : le dragon noir choisit des territoires que les cartes elles-mêmes négligent souvent. Il y creuse des repaires partiellement inondés, mêlant grottes et anciennes structures effondrées.[1]"]},
+        {"title": "Alimentation", "body": ["Amphibie, il chasse aussi bien sous l'eau qu'à sa surface, et pratique une forme de stockage macabre : certaines proies sont délibérément laissées à fermenter dans des poches humides du repaire avant d'être dévorées, une habitude documentée par les bestiaires de jeu.[1]"]},
+        {"title": "Intelligence", "body": ["Son intelligence sert essentiellement la cruauté et la manipulation : il aime prolonger la peur de ses victimes, orchestrer des pièges à plusieurs étapes, et corrompre lentement une région plutôt que de la ravager d'un coup, signe d'une planification qui dépasse le simple instinct de prédateur.[2]"]},
+        {"title": "Reproduction", "body": ["Les œufs sont pondus dans des nids protégés au cœur du marécage corrompu, où la vase et les eaux viciées découragent la plupart des intrus. Les jeunes dragons noirs grandissent en apprenant très tôt à exploiter la peur qu'ils inspirent, plutôt que la seule force brute."]},
+        {"title": "Prédateurs", "body": ["Peu de créatures survivent assez longtemps dans son territoire corrompu pour représenter une menace réelle ; les bestiaires mentionnent surtout d'autres dragons rivaux ou des chasseurs suffisamment protégés contre le poison et l'acide ambiants pour tenter une incursion prolongée."]}
+      ]
+    },
+    "reliques": [
+      "Le dragon noir sert régulièrement, dans les campagnes de jeu de rôle publiées, d'antagoniste de marécage ou de gardien de ruines maudites, sa réputation de cruauté patiente en faisant un adversaire redouté davantage pour sa ruse que pour sa seule puissance brute. Il incarne, dans l'imaginaire des joueurs, la version la plus insidieuse du mal draconique, loin de la grandeur spectaculaire du rouge.",
+      "Sa capacité à corrompre durablement un territoire en a fait une référence récurrente pour illustrer, dans les guides de maîtres de jeu, comment un monstre peut façonner tout un écosystème hostile autour de lui plutôt que se contenter d'un simple combat final."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Adult Black Dragon, stat block et description", "url": "https://www.dndbeyond.com/monsters/16764-adult-black-dragon"},
+    {"id": 2, "title": "Wikipedia — Black Dragon (Dungeons & Dragons)", "url": "https://en.wikipedia.org/wiki/Black_Dragon"}
+  ]
+}

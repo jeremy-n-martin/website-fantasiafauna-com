@@ -1,0 +1,37 @@
+{
+  "description": "Le rire précède souvent le dragon de cuivre dans les canyons secs qu'il habite : sous les plaisanteries et les fausses richesses, un esprit vif qui préfère la ruse joyeuse à la destruction.",
+  "sections": {
+    "fascination": [
+      "Un dragon qui aime les jeux de mots dérange nos attentes autant qu'il les amuse. Le dragon de cuivre s'installe dans des collines arides, des canyons sculptés par l'érosion, des paysages où l'on cherche instinctivement de l'ombre et où l'on ne s'attend pas à croiser une intelligence espiègle tapie dans une grotte étroite. Là où d'autres dragons imposent la terreur par leur seule présence, celui-ci préfère désarmer par le rire, quitte à faire durer une plaisanterie sur plusieurs générations d'aventuriers qui reviennent sans le savoir dans le même piège comique.",
+      "Sa richesse elle-même devient un jeu : il expose ouvertement des babioles sans valeur pour mieux dissimuler son vrai trésor dans une antichambre secrète. Le visiteur crédule croit avoir tout vu, tandis que le dragon savoure, invisible, la méprise qu'il a orchestrée. Ce goût du mensonge inoffensif, entretenu pour le seul plaisir de la surprise, donne au dragon de cuivre une saveur presque théâtrale : il ne ment pas pour nuire, il ment pour raconter une meilleure histoire."
+    ],
+    "legendes": [
+      "Comme le bronze, le dragon de cuivre appartient à la lignée des dragons métalliques introduite par Donjons et Dragons pour peupler le camp du bien d'une diversité de tempéraments. Très tôt dans les bestiaires du jeu, il se voit attribuer un territoire de hautes terres sèches et une réputation de farceur, contrastant volontairement avec la gravité qu'on prête d'ordinaire aux grands reptiles ailés.[1][2]",
+      "Son alignement chaotique bon en dit long sur sa place dans cette famille : il partage la bienveillance de ses cousins bronze, argent ou or, mais refuse leur sérieux. Les sources de jeu insistent sur son goût des énigmes, des calembours et des farces élaborées, au point d'en faire l'archétype du dragon comique dans l'imaginaire rôliste — une figure suffisamment reconnaissable pour être citée en exemple chaque fois qu'un scénario a besoin d'un dragon qui ne cherche pas à tuer ses interlocuteurs.[2]",
+      "Les éditions récentes du jeu accentuent encore ce trait en dotant son territoire d'effets magiques ambiants : les créatures intelligentes qui séjournent trop longtemps près de son repaire sont prises de fous rires inexpliqués, et le dragon va jusqu'à graver son propre visage souriant dans la roche environnante, simple signature d'un être qui ne conçoit pas son pouvoir sans un brin d'auto-dérision.[1]"
+    ],
+    "anomalies": [
+      "Son souffle se décline en deux versions bien distinctes : un jet d'acide en ligne, capable de ronger la pierre comme la chair, et un souffle en cône qui ralentit gravement les mouvements et les réflexes de quiconque s'y trouve pris.[1] Ce second souffle, plus rare chez les dragons, correspond bien à son tempérament : il neutralise sans nécessairement détruire, laissant à l'adversaire ralenti le temps de comprendre la plaisanterie qui vient de lui coûter le combat.",
+      "L'acide qui accompagne son souffle ne semble jamais gratuit dans les récits du jeu : il sert aussi à sculpter son repaire, à créer des passages dérobés ou des pièges plus comiques que mortels, prolongeant hors du combat la même inventivité malicieuse qui définit son caractère."
+    ],
+    "naturelle": {
+      "lead": "Cette histoire naturelle suit le portrait établi par les bestiaires de Donjons et Dragons, seule tradition à donner au dragon de cuivre une biologie et un comportement détaillés.",
+      "parts": [
+        {"title": "Comportement", "body": ["Rieur, bavard, volontiers moqueur, le dragon de cuivre traite la plupart des rencontres comme une occasion de jouer. Il pose des énigmes à quiconque approche son repaire, non pour éliminer les faibles d'esprit mais pour se divertir de leurs réponses, bonnes ou mauvaises.[2] Sa bonté reste réelle sous les pitreries : il n'est pas rare qu'il épargne un adversaire simplement parce que la plaisanterie qu'il vient d'improviser lui semble trop bonne pour se conclure par une mort."]},
+        {"title": "Habitat", "body": ["Il choisit des canyons, des collines sèches et des terres élevées, loin des zones humides que préfèrent d'autres dragons. Ses lieux de repaire, souvent de simples cavités taillées dans la roche, se reconnaissent parfois à des visages souriants gravés dans la pierre alentour.[1]"]},
+        {"title": "Alimentation", "body": ["Créature terrestre avant tout, il chasse le gibier des hautes terres arides et complète son régime par tout ce qu'il juge digne d'intérêt, y compris, selon certains récits, des objets métalliques qu'il aime collectionner autant que consommer."]},
+        {"title": "Intelligence", "body": ["Son intelligence se manifeste surtout dans le langage : jeux de mots, doubles sens, énigmes à tiroirs. Il retient des blagues entières sur des décennies et les ressert avec un plaisir intact, preuve d'une mémoire aussi vive que son sens de la répartie.[2]"]},
+        {"title": "Reproduction", "body": ["Les œufs sont pondus dans des nids dissimulés au fond de galeries étroites, protégés par les mêmes pièges facétieux que le dragon réserve à ses visiteurs indésirables. Le jeune dragon apprend tôt l'art de la ruse, avant même de savoir voler correctement."]},
+        {"title": "Prédateurs", "body": ["Peu de créatures rivalisent avec un dragon de cuivre adulte sur son propre terrain aride ; ses principaux dangers restent d'autres dragons ou des chasseurs de trésor suffisamment déterminés pour ignorer ses avertissements comiques et persister jusqu'à l'affrontement."]}
+      ]
+    },
+    "reliques": [
+      "Le dragon de cuivre s'est imposé, dans la culture du jeu de rôle, comme le contre-exemple assumé du dragon terrifiant : on le cite volontiers pour rappeler qu'un monstre puissant peut aussi être une source de comédie sans perdre en crédibilité. Nombre de scénarios publiés l'utilisent comme rupture de ton, glissant une rencontre hilarante entre deux affrontements plus sombres.",
+      "Cette réputation de farceur dépasse les tables de jeu : le dragon de cuivre revient régulièrement dans les discussions de joueurs comme exemple favori pour illustrer qu'intelligence et humour ne sont pas incompatibles avec la puissance draconique."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Adult Copper Dragon, stat block et description", "url": "https://www.dndbeyond.com/monsters/16768-adult-copper-dragon"},
+    {"id": 2, "title": "D&D Beyond — Explore the Exciting Changes to Dragons in the New Monster Manual", "url": "https://www.dndbeyond.com/posts/1889-explore-the-exciting-changes-to-dragons-in-the-new"}
+  ]
+}

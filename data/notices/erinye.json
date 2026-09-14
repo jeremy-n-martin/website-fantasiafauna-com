@@ -1,0 +1,36 @@
+{
+  "description": "Une Furie, vengeance aux ailes noires : l'érinye du jeu de rôle moderne emprunte son nom et sa fureur à la mythologie grecque pour en faire l'un des diables les plus redoutés des enfers de fantasy.",
+  "sections": {
+    "fascination": [
+      "Ce qui distingue l'érinye des autres diables de la fantasy contemporaine, c'est la beauté qu'on lui prête, presque à contre-emploi : elle est souvent décrite comme l'une des plus belles créatures infernales, ce qui rend d'autant plus glaçante sa réputation de bourreau implacable des âmes damnées. Une justicière céleste déchue, devenue tortionnaire, reste plus troublante qu'un monstre simplement hideux.",
+      "Son ascendance mythologique ajoute une gravité que peu de créatures de jeu peuvent revendiquer : invoquer le nom des Érinyes grecques, ces divinités du châtiment que même les dieux redoutaient, c'est convoquer une idée de justice absolue et sans pitié — une justice qui ne connaît ni prescription ni pardon."
+    ],
+    "legendes": [
+      "⚠️ Pas une créature folklorique traditionnelle au sens strict d'un culte ou d'un rite : l'érinye telle qu'elle apparaît dans le jeu de rôle moderne est une créature de fantasy qui puise directement dans la mythologie grecque, où les Érinyes — aussi appelées Furies ou Euménides — sont des divinités chthoniennes féminines de la vengeance.[1]",
+      "Dans le lore du jeu de rôle contemporain, les érinyes sont présentées comme d'anciens anges déchus, seul type de diable majeur capable de se reproduire véritablement plutôt que de recruter parmi les mortels ou les rangs inférieurs de l'enfer ; les femelles y occupent une place dominante, en hommage explicite aux Furies grecques d'origine.[2]",
+      "Cette synthèse entre mythe grec et cosmologie infernale de fantasy illustre une pratique courante du genre : reprendre le nom et la fonction d'une figure mythologique ancienne pour l'intégrer à une hiérarchie démoniaque entièrement nouvelle, sans prétendre reconstituer fidèlement la religion dont elle est issue."
+    ],
+    "anomalies": [
+      "Dans les jeux modernes, l'érinye conserve des ailes et une apparence humanoïde féminine, mais gagne un arsenal typiquement infernal : armure lourde, résistance au froid et aux armes non magiques, immunité au feu et au poison, ainsi qu'une perception surnaturelle (vraie vue) et une communication télépathique sur une large distance.[2] Elle manie fréquemment une épée maudite ou un arc capable d'enchaîner l'âme de sa victime au service de l'enfer, un pouvoir qui dépasse largement celui de ses modèles grecs.",
+      "Sa fonction narrative varie selon les récits : tantôt bourreau assigné à un damné précis qu'elle traque sans relâche, tantôt officier d'une légion infernale organisée, l'érinye conserve dans presque toutes ses versions ludiques un lien explicite avec l'idée de dette ou de crime à punir, héritage direct de ses origines grecques.[1]"
+    ],
+    "naturelle": {
+      "lead": "L'érinye de fantasy combine une biologie de diable ailé avec une fonction empruntée telle quelle à la mythologie grecque, celle de vengeresse implacable.",
+      "parts": [
+        {"title": "Comportement", "body": ["Disciplinée et méthodique, l'érinye de jeu de rôle traque sa cible avec une constance presque bureaucratique, reflet de sa fonction de bourreau attitré au sein d'une hiérarchie infernale organisée.[2]"]},
+        {"title": "Habitat", "body": ["Les plans infernaux et les cours démoniaques constituent son territoire d'origine, d'où elle est fréquemment invoquée ou envoyée en mission sur le plan matériel pour punir un damné en particulier."]},
+        {"title": "Alimentation", "body": ["Aucun besoin alimentaire ordinaire ne lui est attribué dans le lore contemporain ; son existence est entièrement tournée vers l'exécution de sa fonction punitive."]},
+        {"title": "Intelligence", "body": ["Rusée et éloquente, l'érinye sait négocier, corrompre ou tromper autant que frapper, une intelligence stratégique qui la distingue des diables les plus brutaux de la hiérarchie infernale."]},
+        {"title": "Reproduction", "body": ["Elle appartient au seul type de diable majeur décrit comme capable de reproduction véritable plutôt que de recrutement, les femelles y occupant une place dominante en écho direct aux Furies grecques.[2]"]},
+        {"title": "Prédateurs", "body": ["Les armes en argent et la magie sainte figurent parmi les rares menaces sérieuses pour l'érinye dans le lore ludique, sa résistance aux armes ordinaires la rendant sinon quasiment invulnérable au combat conventionnel.[2]"]}
+      ]
+    },
+    "reliques": [
+      "L'érinye reste l'un des diables les plus employés dans les campagnes de jeu de rôle mettant en scène les plans infernaux, souvent comme adversaire de haut rang ou comme antagoniste chargée de traquer un personnage ayant rompu un pacte. Son nom continue par ailleurs de circuler dans la culture populaire sous sa forme grecque de Furie, notamment au théâtre et au cinéma, comme symbole de la vengeance implacable."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Get to Know the Erinyes — Tribality", "url": "https://www.tribality.com/2016/10/05/get-to-know-the-erinyes/"},
+    {"id": 2, "title": "Erinyes — Monsters, D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16858-erinyes"}
+  ]
+}

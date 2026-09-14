@@ -1,0 +1,36 @@
+{
+  "description": "Certains dragons naissent puissants ; le dragon d'ombre, lui, le devient en perdant peu à peu tout ce qui le reliait à la lumière.",
+  "sections": {
+    "fascination": [
+      "Il n'existe pas d'espèce de dragon d'ombre à proprement parler : il n'y a que des dragons qui, un jour, ont cessé d'appartenir tout à fait au monde. Nés parfois rouges, verts ou d'un autre métal, ils s'égarent dans le plan de l'Ombre ou s'en imprègnent au point que leurs écailles perdent leur éclat pour une translucidité sombre, presque fumeuse.[1] Ce n'est pas une naissance mais une dérive, et c'est précisément cette origine incertaine qui rend la créature inquiétante : on ne sait jamais quel dragon, autrefois familier, se cache derrière l'ombre qui glisse sans bruit.",
+      "Sa présence trouble parce qu'elle brouille les repères habituels du bestiaire draconique. Ni chromatique ni métallique au sens propre, le dragon d'ombre est un accident de trajectoire, une créature que le lieu a transformée plus sûrement que n'importe quelle lignée. Le silence qui l'entoure, sa capacité à se fondre dans l'obscurité la plus totale, achèvent de le rendre méconnaissable jusqu'à l'instant où il choisit de se révéler.[1]"
+    ],
+    "legendes": [
+      "Le dragon d'ombre apparaît pour la première fois dans le Monster Manual II de 1983, en pleine période d'expansion du bestiaire draconique de la première édition avancée.[2] Il y est déjà conçu comme une variante corrompue plutôt que comme une espèce distincte, une idée qui traversera toutes les éditions suivantes sans jamais être fondamentalement remise en cause.",
+      "Les suppléments ultérieurs precisent son lien avec le plan de l'Ombre, aujourd'hui identifié à l'Ombreterre : certains dragons y naissent, d'autres s'y égarent et en reviennent changés, contaminés par la substance même du lieu.[1][2] Cette double origine, native ou acquise, distingue le dragon d'ombre des autres variantes régionales de dragons et lui confère une place à part, entre monstre et malédiction.",
+      "Dans les Monstrous Manual puis les manuels de la cinquième édition, l'exemple type retenu est souvent celui d'un jeune dragon rouge corrompu par des années passées dans l'Ombreterre, la règle précisant qu'en principe tout vrai dragon peut subir cette transformation.[2] Le dragon d'ombre n'est donc pas un peuple parmi d'autres, mais un devenir possible pour n'importe quel dragon, ce qui explique l'absence d'alignement ou de personnalité fixes qui le caractériserait comme espèce."
+    ],
+    "anomalies": [
+      "Son souffle prend la forme d'un cône de feu sombre et tourbillonnant, dont la brûlure porte la marque de l'Ombreterre plutôt que celle d'un élément ordinaire ; dans certaines versions du monstre, les dégâts qu'il inflige relèvent du nécrotique plutôt que du feu commun.[1] Un trait plus insolite encore le distingue : un humanoïde tué par ce souffle peut se relever sous la forme d'une ombre asservie à la volonté du dragon, prolongeant sa domination bien au-delà du combat lui-même.[1]",
+      "Sa camouflage est sans équivalent chez les autres dragons : ses écailles sombres et presque translucides lui permettent de se fondre dans l'obscurité au point de devenir quasiment invisible dans une pièce non éclairée.[1] Cette discrétion, alliée à une manière de se déplacer sans bruit, en fait un prédateur d'embuscade plutôt qu'un adversaire de confrontation directe, à l'opposé de nombreux dragons qui affichent leur puissance sans détour."
+    ],
+    "naturelle": {
+      "lead": "N'étant pas une espèce à proprement parler mais une transformation, le dragon d'ombre présente un profil plus irrégulier que les dragons de couleur ou de métal, ancré dans le plan de l'Ombre.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le dragon d'ombre agit avec une prudence calculée, préférant l'embuscade et la manipulation à l'affrontement ouvert. Sa méfiance envers les intrus rappelle qu'il a souvent perdu, en gagnant sa nature ombrale, une part de la sociabilité qui caractérisait son espèce d'origine.[1]"]},
+        {"title": "Habitat", "body": ["Il se tient dans le plan de l'Ombre lui-même, ou dans des ruines et des lieux coupés de la lumière du monde matériel, choisissant volontiers les nuits sans lune pour ses incursions.[1][2]"]},
+        {"title": "Alimentation", "body": ["Chasseur d'embuscade, il tire parti de son camouflage presque parfait pour surprendre ses proies avant qu'elles n'aient conscience de sa présence, plutôt que de leur laisser voir approcher un adversaire aussi manifestement redoutable."]},
+        {"title": "Intelligence", "body": ["Son intelligence conserve la mémoire de l'espèce dont il est issu, mais s'oriente davantage vers la dissimulation et le contrôle des créatures qu'il asservit après sa morsure ou son souffle, notamment les ombres nées de ses victimes.[1]"]},
+        {"title": "Reproduction", "body": ["N'étant pas une lignée biologique distincte, le dragon d'ombre ne se reproduit pas comme espèce propre : il apparaît soit par naissance dans l'Ombreterre, soit par transformation progressive d'un dragon ordinaire exposé trop longtemps à ce plan.[1][2]"]},
+        {"title": "Prédateurs", "body": ["Peu de créatures s'aventurent volontairement dans son domaine ombral. Le danger le plus sérieux vient d'aventuriers armés contre les morts-vivants, seuls capables de contrer efficacement les ombres qu'il lève sur son passage."]}
+      ]
+    },
+    "reliques": [
+      "Le dragon d'ombre a nourri, au-delà des tables de jeu, l'image plus générale du dragon corrompu par un lieu plutôt que par une nature innée, un motif repris dans nombre de fictions et de jeux vidéo inspirés de Donjons et Dragons. Sa capacité à relever ses victimes sous forme d'ombres reste l'un des mécanismes les plus souvent cités par les joueurs pour illustrer la cruauté particulière de cette variante.[1][2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Blackcitadel RPG — Shadow Dragon 5e, Stat Block and DM Guide", "url": "https://blackcitadelrpg.com/shadow-dragon-5e/"},
+    {"id": 2, "title": "Dragon (Dungeons & Dragons) — Wikipédia (en anglais)", "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)"}
+  ]
+}

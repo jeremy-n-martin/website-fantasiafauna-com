@@ -1,0 +1,34 @@
+{
+  "description": "Un petit être de landes, plus espiègle que sage : le farfadet appartient à ce petit peuple français qui préfère la farce discrète à la malédiction déclarée.",
+  "sections": {
+    "fascination": [
+      "Le charme du farfadet tient à sa proportion : assez petit pour se glisser partout, assez malicieux pour qu'on lui prête chaque objet égaré, chaque bruit de nuit dans la grange. Il n'a pas la grandeur tragique du fantôme ni la puissance du géant ; il occupe un registre plus intime, celui du foyer et de la ferme, où le surnaturel se mesure en petites contrariétés plutôt qu'en catastrophes.",
+      "Ce qui le rend attachant, c'est aussi son ambiguïté de statut : ni tout à fait fée, ni tout à fait lutin domestique, il circule entre plusieurs catégories du petit peuple selon les régions, comme si le folklore rural avait besoin d'un nom disponible pour toutes les explications qu'aucune autre créature ne couvrait tout à fait."
+    ],
+    "legendes": [
+      "Le farfadet est une créature du folklore français, plus précisément attestée dans le Poitou et la Vendée, où il est aussi appelé fradet, et dans le folklore occitan de Provence sous la forme de petits êtres nommés fadets.[1] Le mot farfadet vient du provençal farfadet (« lutin »), attesté au XVIe siècle, probablement une forme renforcée de fadet, lui-même dérivé de fada ou fado, « fée ».[1]",
+      "Il se distingue traditionnellement du lutin proprement dit, davantage rattaché aux maisons et associé au folklore normand comme esprit domestique, tandis que le farfadet appartient plus nettement à un univers rural et forestier, celui des landes et des champs plutôt que celui de la cheminée et du grenier.[1]",
+      "Petit être malicieux, parfois malveillant ou trompeur selon les versions, le farfadet incarne une figure ambivalente du merveilleux populaire : espiègle avant tout, mais capable, dans certains récits, de nuire sérieusement à qui l'aurait offensé."
+    ],
+    "anomalies": [
+      "Les pouvoirs attribués au farfadet restent modestes en comparaison d'autres créatures du Petit Peuple : disparition d'objets, bruits nocturnes inexpliqués, petits tours joués aux paysans ou aux bêtes de la ferme. Cette échelle réduite est peut-être ce qui a permis à la créature de survivre longtemps dans les explications populaires du quotidien rural, où l'on cherchait moins une menace qu'une cause commode aux petits désagréments."
+    ],
+    "naturelle": {
+      "lead": "Le farfadet appartient au vaste ensemble des petits êtres du folklore rural français, dont les traits varient sensiblement d'une région à l'autre.",
+      "parts": [
+        {"title": "Comportement", "body": ["Facétieux plutôt que cruel, le farfadet agit surtout par petites perturbations : il dérange, cache, chahute, sans viser en général de dommage durable."]},
+        {"title": "Habitat", "body": ["Landes, fermes et abords des villages du Poitou, de la Vendée et de la Provence constituent son territoire attesté, où il se manifeste surtout la nuit.[1]"]},
+        {"title": "Alimentation", "body": ["Les récits populaires ne détaillent guère de régime propre : le farfadet est avant tout une présence agissante, associée à des effets plutôt qu'à des besoins matériels décrits."]},
+        {"title": "Intelligence", "body": ["Rusé sans être savant, il connaît surtout les failles d'une ferme ou d'un chemin — assez pour y semer la confusion, non pour y exercer un pouvoir supérieur."]},
+        {"title": "Reproduction", "body": ["Aucune tradition ne précise de mode de reproduction propre au farfadet, qui appartient à un peuple discret dont l'origine n'est jamais racontée en détail dans les collectes régionales."]},
+        {"title": "Prédateurs", "body": ["Le folklore ne lui prête pas d'ennemi naturel ; seule une offense — un piège, une insulte, un manque d'égard — semble capable de le retourner contre celui qui l'a provoqué."]}
+      ]
+    },
+    "reliques": [
+      "Le nom farfadet a traversé les siècles jusque dans la langue courante française, où il désigne encore aujourd'hui, par extension, une personne un peu extravagante ou fantasque. Le mot proche fadet a par ailleurs prêté son nom au personnage populaire du Petit Poucet dans certaines versions régionales, illustrant la porosité entre ce petit peuple et les contes merveilleux plus largement diffusés.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Farfadet (créature) — Wikipédia", "url": "https://fr.wikipedia.org/wiki/Farfadet_(cr%C3%A9ature)"}
+  ]
+}

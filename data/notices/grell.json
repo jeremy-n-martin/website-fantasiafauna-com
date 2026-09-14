@@ -1,0 +1,34 @@
+{
+  "description": "Un cerveau exposé, sans yeux ni visage, qui vole en silence sous les voûtes des cavernes et referme dix tentacules sur tout ce qui bouge.",
+  "sections": {
+    "fascination": [
+      "Le grell ne regarde pas venir sa proie : il n'a pas d'yeux. Cette absence, loin d'affaiblir la créature, déplace tout le malaise qu'elle inspire. Un plafond de caverne, une voûte de donjon, un puits d'ombre au-dessus des têtes — n'importe lequel de ces vides peut abriter la masse pâle et veinée d'un cerveau flottant, immobile jusqu'à ce que dix bras s'en détachent d'un coup. Le corps du grell tient tout entier dans cette contradiction : une matière que l'on associe à la pensée, à la fragilité, devient ici l'arme la plus redoutable de l'obscurité souterraine.",
+      "Sa lévitation ajoute au trouble. Le grell ne rampe pas, ne bondit pas ; il dérive, silencieux, porté par une force que rien dans son anatomie n'explique visiblement. Ses tentacules, hérissés de barbes minuscules, ne serrent pas seulement leur prise : ils injectent un venin qui paralyse avant même que la victime ait pu comprendre d'où vient l'attaque.[1] Le vertige propre au grell tient à cette suspension de toutes les repères habituels — ni haut ni bas assurés, ni visage à lire, ni bruit annonciateur, seulement un cerveau nu qui plane et qui attend."
+    ],
+    "legendes": [
+      "Le grell n'appartient à aucun folklore antérieur au jeu de rôle : c'est une création entièrement moderne, sans ancêtre dans les traditions populaires ou les bestiaires anciens. Sa première apparition remonte au magazine britannique White Dwarf, avant d'être reprise et officialisée dans le supplément Fiend Folio de Donjons et Dragons, publié en 1981.[1] Ce recueil rassemblait des créatures conçues par des contributeurs extérieurs à l'équipe originelle du jeu, ce qui explique l'étrangeté délibérément non classique de nombreuses entrées, le grell en tête.",
+      "Depuis cette apparition, le grell a été classé parmi les aberrations : une catégorie de créatures que le jeu réserve aux formes de vie dont la biologie et l'origine échappent aux lois ordinaires du monde matériel. Cette étiquette n'explique pas d'où vient le grell — les suppléments successifs restent volontairement discrets sur son origine — mais elle confirme son statut d'anomalie, une créature qui ne s'inscrit dans aucun écosystème connu avant d'y être insérée de force par les donjons qu'elle habite."
+    ],
+    "anomalies": [
+      "Le corps du grell se résume à un cerveau exposé d'environ un mètre cinquante de diamètre, prolongé par un bec long et courbé planté en son centre, et par une dizaine de tentacules pouvant atteindre près de deux mètres chacun.[1] Chaque tentacule est formé d'anneaux musculaires successifs et porte des barbes acérées tous les quelques centimètres, par lesquelles la créature injecte son venin paralysant. Cette architecture ne ressemble à aucune autre créature du bestiaire : ni squelette, ni membres articulés, seulement une masse contractile et un réseau de bras indépendants.",
+      "L'absence totale d'yeux n'empêche pas le grell de repérer ses proies avec précision, ce qui suppose un sens totalement étranger à la vue — vibration de l'air, chaleur, ou une perception que les suppléments ne détaillent jamais complètement. Sa lévitation, elle aussi, reste sans explication anatomique : la créature se déplace en silence au ras des plafonds, ce qui en fait un prédateur particulièrement redouté dans les espaces souterrains où l'attention se porte naturellement vers le sol plutôt que vers les hauteurs."
+    ],
+    "naturelle": {
+      "lead": "Sans ancrage dans aucune tradition antérieure, l'histoire naturelle du grell repose entièrement sur les suppléments de jeu qui l'ont créé et développé depuis 1981.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le grell chasse seul ou en petit groupe, immobile contre une voûte jusqu'au passage d'une proie. Son attaque privilégie la surprise : les tentacules s'abattent avant que la cible n'ait repéré la masse suspendue au-dessus d'elle. Une fois une proie paralysée, la créature referme ses bras sans hâte, sans manifester d'agressivité au-delà du strict nécessaire à sa capture."]},
+        {"title": "Habitat", "body": ["Les cavernes profondes, les réseaux de galeries et les plafonds voûtés des donjons abandonnés constituent son territoire de prédilection. Le grell exploite systématiquement la verticalité de ces espaces, un avantage que peu d'autres créatures souterraines savent occuper aussi efficacement.[1]"]},
+        {"title": "Alimentation", "body": ["Le grell se nourrit des proies qu'il paralyse et immobilise, sans distinction marquée entre créatures humanoïdes, animales ou monstrueuses. Son bec, conçu pour déchirer plutôt que pour mâcher longuement, suggère une prédation rapide plutôt qu'un festin prolongé."]},
+        {"title": "Intelligence", "body": ["Classé parmi les créatures dotées d'un discernement suffisant pour tendre des embuscades réfléchies, le grell ne relève ni de l'automate ni de la bête purement instinctive. Les suppléments lui prêtent une capacité de jugement tactique, sans toutefois lui attribuer de langage ou de culture propre."]},
+        {"title": "Reproduction", "body": ["Aucun cycle de reproduction n'est documenté dans les sources consultées ; le grell demeure, à cet égard, une créature dont l'origine et la perpétuation restent délibérément dans l'ombre, à l'image de son mode de chasse."]},
+        {"title": "Prédateurs", "body": ["Peu de créatures s'attaquent directement à un grell adulte, sa combinaison de discrétion, de venin et de position aérienne le mettant largement hors de portée des prédateurs au sol. Les aventuriers organisés, capables de viser en hauteur, restent sa principale menace recensée."]}
+      ]
+    },
+    "reliques": [
+      "Le grell reste une créature de niche, peu connue en dehors des cercles de joueurs de Donjons et Dragons, mais il illustre bien l'esprit du Fiend Folio : des monstres pensés pour surprendre par leur anatomie plutôt que par leur ressemblance avec un folklore préexistant.[1] Sa silhouette de cerveau flottant a depuis inspiré plusieurs créatures similaires dans d'autres jeux et fictions, sans qu'aucune n'ait atteint la même reconnaissance au sein du médium qui l'a vu naître."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Grell — Forgotten Realms Wiki, Fandom", "url": "https://forgottenrealms.fandom.com/wiki/Grell"}
+  ]
+}

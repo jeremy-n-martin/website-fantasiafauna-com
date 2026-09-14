@@ -1,0 +1,36 @@
+{
+  "description": "Là où leurs cousins githyanki ont choisi la guerre et la conquête, les githzerai ont répondu à la même servitude par une discipline intérieure absolue, opposée sans relâche au chaos du plan qui les abrite.",
+  "sections": {
+    "fascination": [
+      "Vivre dans les Limbes, ce plan où la matière elle-même refuse toute permanence, où le sol peut devenir liquide et le ciel se solidifier sans prévenir, suppose une forme de courage particulière. Le githzerai n'y survit pas en dominant cet environnement par la force, mais en lui opposant une concentration mentale si rigoureuse qu'elle finit par façonner localement l'informe en formes stables, ne serait-ce que pour la durée d'une méditation. Cette victoire de l'esprit sur la matière la plus rétive donne au peuple une dignité tranquille, presque monastique, très différente de la truculence martiale de ses cousins astraux.",
+      "Le contraste entre les deux peuples issus d'une même rébellion contre l'esclavage donne à l'ensemble une profondeur presque philosophique. Là où le githyanki a choisi de retourner la violence subie contre le monde entier, le githzerai a choisi de la retourner contre lui-même, sous la forme d'une discipline sans faille. Deux réponses radicalement opposées à un même traumatisme fondateur, portées chacune jusqu'à ses conséquences les plus extrêmes."
+    ],
+    "legendes": [
+      "Le githzerai apparaît, comme son cousin githyanki, dans le Fiend Folio de 1981, où Charles Stross est crédité de sa création aux côtés du githyanki, du chevalier de la mort et de plusieurs slaads.[1] Les deux peuples gith naissent donc d'un seul geste créatif, conçus dès l'origine comme les deux faces opposées d'une même histoire de libération et de scission.",
+      "La légende interne au jeu, développée surtout à partir du supplément consacré à Planescape et à L'Illithiade dans les années 1990, raconte qu'un peuple unique d'esclaves, réduit en servitude par les flagelleurs mentaux, se libéra sous la conduite d'une meneuse nommée Gith.[2] Une fois la liberté acquise, Gith voulut poursuivre la guerre contre d'autres oppresseurs potentiels, tandis qu'un autre chef, Zerthimon, prôna au contraire la retenue et la discipline intérieure comme réponse à la violence subie.",
+      "Ce désaccord philosophique dégénéra en guerre civile parmi les gith eux-mêmes : les partisans de Gith se replièrent sur le plan Astral et devinrent les githyanki, tandis que les disciples de Zerthimon se retirèrent dans les Limbes et prirent le nom de githzerai.[2] Les éditions successives de Donjons et Dragons, notamment la troisième et la cinquième, ont conservé cette opposition fondatrice comme l'un des rares exemples où un conflit racial trouve son origine non dans une simple guerre territoriale, mais dans un désaccord moral documenté au sein d'un même peuple."
+    ],
+    "anomalies": [
+      "Les capacités psioniques du githzerai se distinguent de celles du githyanki par leur orientation défensive et perceptive plutôt qu'offensive : plusieurs versions du jeu leur attribuent une résistance accrue aux effets mentaux et une capacité à manipuler brièvement la matière chaotique des Limbes pour s'y créer un abri temporaire.[2] Cette différence traduit fidèlement, sur le plan des règles, la philosophie de retenue qui définit le peuple depuis sa création.",
+      "Les monastères githzerai, bâtis à même la substance instable des Limbes grâce à des techniques de concentration collective, constituent l'une des rares architectures stables décrites dans ce plan par les suppléments consacrés à Planescape.[2] Leur existence même est présentée comme un exploit permanent, chaque structure devant être mentalement entretenue pour ne pas se dissoudre dans le chaos environnant."
+    ],
+    "naturelle": {
+      "lead": "Le githzerai n'existe que dans les règles et les récits de Donjons et Dragons ; son histoire naturelle reprend le portrait établi depuis le Fiend Folio de 1981 et approfondi par les suppléments consacrés à Planescape.",
+      "parts": [
+        {"title": "Comportement", "body": ["Retenue, méditation et méfiance mesurée envers les étrangers caractérisent le githzerai, qui privilégie la discipline collective à l'agressivité ouverte de son cousin githyanki.[2]"]},
+        {"title": "Habitat", "body": ["Les Limbes, plan de chaos élémentaire pur, abritent les monastères et forteresses mentales githzerai, bâtis et maintenus par la seule concentration de leurs occupants.[2]"]},
+        {"title": "Alimentation", "body": ["Aucune particularité alimentaire spécifique n'est documentée ; les besoins du githzerai restent proches de ceux d'un humanoïde ordinaire, l'essentiel de sa singularité se situant dans sa discipline mentale plutôt que dans sa physiologie."]},
+        {"title": "Intelligence", "body": ["Peuple pleinement intelligent, organisé en cercles monastiques et en conseils, le githzerai valorise l'étude philosophique et la maîtrise psionique au moins autant que le combat.[2]"]},
+        {"title": "Reproduction", "body": ["Les enfants githzerai sont initiés tôt à la méditation et à la discipline mentale, prolongeant dès le plus jeune âge la philosophie de retenue héritée de Zerthimon."]},
+        {"title": "Prédateurs", "body": ["Les créatures chaotiques natives des Limbes, ainsi que les githyanki avec lesquels la guerre civile ancestrale n'a jamais totalement cessé, comptent parmi les menaces récurrentes citées par les suppléments consacrés à ce peuple.[2]"]}
+      ]
+    },
+    "reliques": [
+      "Le githzerai a bénéficié, comme son cousin githyanki, de la visibilité offerte par le jeu vidéo Baldur's Gate 3 (2023), qui inclut ce peuple parmi ses origines jouables et développe sa philosophie de discipline face au chaos dans plusieurs dialogues et quêtes annexes.[2] Cette exposition récente confirme la persistance d'un peuple conçu dès 1981 comme le contrepoint méditatif d'un cousin plus belliqueux, preuve qu'une opposition philosophique imaginée pour un supplément de règles peut continuer, plus de quarante ans plus tard, à structurer le choix d'un joueur devant son écran."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Githyanki — Wikipédia (en anglais)", "url": "https://en.wikipedia.org/wiki/Githyanki"},
+    {"id": 2, "title": "Githzerai — Forgotten Realms Wiki", "url": "https://forgottenrealms.fandom.com/wiki/Githzerai"}
+  ]
+}

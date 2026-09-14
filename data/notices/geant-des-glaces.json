@@ -1,0 +1,38 @@
+{
+  "description": "Un titan de givre, frère du blizzard : les géants des glaces descendent du premier être du monde nordique et n'ont jamais cessé de défier les dieux qui l'ont dépecé.",
+  "sections": {
+    "fascination": [
+      "Il y a une logique glaçante, au sens propre, dans l'idée que le froid lui-même ait engendré des corps et des volontés. Le géant des glaces n'est pas simplement un être qui vit dans un climat hostile ; il est fait de la substance même de cette hostilité, comme si le gel avait trouvé le moyen de se lever et de marcher. Cette continuité entre l'élément et la créature donne au personnage une cohérence rare : on ne l'imagine pas déplacé dans un autre décor, il est le blizzard devenu corps.",
+      "Le mythe nordique ajoute à cela une origine proprement vertigineuse : tous les êtres du monde, dieux compris, descendent d'un unique corps primordial, dépecé pour bâtir l'univers. Que les géants de givre soient les héritiers directs de ce corps originel, plutôt que de simples créatures créées après coup, leur donne une antériorité sur les dieux eux-mêmes, une dignité cosmogonique que peu d'adversaires mythologiques peuvent revendiquer face à leurs vainqueurs."
+    ],
+    "legendes": [
+      "Dans la mythologie nordique, les Hrímþursar, littéralement les géants de givre ou de rime, forment une branche des Jötnar associée au froid, à la glace et aux forces primordiales de la nature.[1] Le terme dérive du vieux norrois hrím, givre ou rime, et þurs, géant, une étymologie qui inscrit directement la créature dans son élément.[1]",
+      "Ces géants descendent d'Ymir, le premier être du cosmos nordique, né de la rencontre entre le feu de Muspellheim et la glace de Niflheim au sein du vide primordial du Ginnungagap.[1][2] Les récits rapportent que les Hrímþursar ne naissent pas d'une union classique mais bourgeonnent directement du corps d'Ymir, à la manière dont le givre se répand sur une vitre, une image qui souligne leur nature élémentaire plutôt que biologique.[1]",
+      "Le sort d'Ymir façonne ensuite la géographie mythologique tout entière : après sa mort, son sang inonde le Ginnungagap et emporte la plupart des géants qui s'y trouvaient, les rares survivants se réfugiant aux confins du monde, dans le royaume de Jötunheim.[1][2] Cette catastrophe fondatrice explique, dans la cosmologie nordique, pourquoi les géants vivent séparés des dieux d'Ásgard tout en demeurant une source constante de tension, jusqu'au conflit final annoncé lors du Ragnarök."
+    ],
+    "anomalies": [
+      "Les récits nordiques ne présentent pas les Hrímþursar comme un groupe homogène : certains, comme Ymir lui-même, atteignent une taille cosmique capable de fournir la matière d'un monde entier, tandis que d'autres géants de givre nommés individuellement dans les sources, tel Hrímgrímnir ou Hrímnir, apparaissent à une échelle plus proche de celle des dieux qu'ils affrontent ou côtoient.[1] Cette variation d'échelle traverse l'ensemble de la tradition des Jötnar et n'est pas propre aux seuls géants de givre.",
+      "La fantasy de jeu de rôle a repris cette figure en la dotant d'un tout autre registre de pouvoirs : le géant du givre du jeu de rôle moderne se distingue par une force purement martiale, armé d'une hache colossale et capable de lancer des rochers, sans que soit conservée l'idée d'une naissance par bourgeonnement du froid.[3] Des variantes plus récentes, comme le façonneur de glace, ajoutent une dimension magique inédite en canalisant leur pouvoir à travers des runes gravées dans la glace, un ajout mécanique qui n'a pas d'équivalent direct dans les sources nordiques originales.[3]"
+    ],
+    "naturelle": {
+      "lead": "Le géant des glaces appartenant à une tradition folklorique nordique ancienne, largement reprise ensuite par les jeux de rôle modernes, cette histoire naturelle distingue les deux strates plutôt que de les confondre.",
+      "parts": [
+        {"title": "Comportement", "body": ["Les Hrímþursar nordiques oscillent entre hostilité déclarée envers les dieux et relations plus ambivalentes, certains géants de givre se trouvant liés aux Ases par des mariages ou des alliances ponctuelles malgré la rivalité de fond.[1][2]"]},
+        {"title": "Habitat", "body": ["Leur territoire se situe à Jötunheim et dans les régions primordiales de glace associées à Niflheim, des royaumes périphériques par rapport au monde des dieux et des hommes.[1][2]"]},
+        {"title": "Alimentation", "body": ["Aucune source nordique ne détaille de régime alimentaire précis pour les Hrímþursar ; les récits insistent davantage sur leur nature élémentaire que sur leurs besoins matériels.[1]"]},
+        {"title": "Intelligence", "body": ["Plusieurs géants de givre nommés dans les sources nordiques, à l'image de figures consultées ou redoutées pour leur savoir, possèdent une sagesse ancienne que les dieux eux-mêmes viennent parfois chercher, malgré l'hostilité de principe qui les sépare.[1][2]"]},
+        {"title": "Reproduction", "body": ["Selon le mythe fondateur, les premiers géants de givre bourgeonnent directement du corps d'Ymir sans union sexuelle classique, un mode de génération unique qui les distingue des générations suivantes de Jötnar nées de manière plus conventionnelle.[1]"]},
+        {"title": "Prédateurs", "body": ["Les dieux d'Ásgard restent l'adversaire structurel des géants de givre, depuis le meurtre fondateur d'Ymir jusqu'à l'affrontement final promis par le Ragnarök, dans une hostilité qui traverse toute la mythologie nordique.[1][2]"]}
+      ]
+    },
+    "reliques": [
+      "La figure du géant de givre a connu une seconde vie considérable dans le jeu de rôle moderne, où le géant du givre constitue l'un des monstres emblématiques des bestiaires de fantasy, régulièrement enrichi par de nouvelles variantes dans les suppléments consacrés aux géants.[3] Cette version ludique, centrée sur la force martiale et la magie runique, s'éloigne sensiblement de la cosmogonie nordique originale tout en en conservant le nom et l'association au froid.[1][3]",
+      "Le mythe d'Ymir et des Hrímþursar continue par ailleurs d'irriguer la culture populaire contemporaine, des bandes dessinées aux films de super-héros inspirés de la mythologie nordique, où le motif du géant de glace, ennemi ancestral et cosmogonique des dieux, reste immédiatement reconnaissable.[2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Hrímþursar — Nordic Names", "url": "https://www.nordicnames.de/wiki/Hr%C3%ADm%C3%BEursar"},
+    {"id": 2, "title": "Hrímþurs: Norse Frost Giants Born of Primordial Ice", "url": "https://godsandmonsters.info/hrimthurs/"},
+    {"id": 3, "title": "Frost Giant — Monsters, D&D Beyond", "url": "https://www.dndbeyond.com/monsters/16867-frost-giant"}
+  ]
+}

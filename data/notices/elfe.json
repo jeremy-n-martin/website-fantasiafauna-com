@@ -1,0 +1,36 @@
+{
+  "description": "Un peuple ancien, gracieux et parfois impitoyable : l'elfe des légendes germaniques et nordiques n'a rien du bibelot de conte, mais tout d'une puissance de la nature à peine domestiquée.",
+  "sections": {
+    "fascination": [
+      "Il y a dans l'elfe une contradiction que le folklore ne cherche jamais à résoudre : une beauté qui apaise et une présence qui menace. Un être « blanc », lumineux, capable de guérir d'un regard ou d'un chant, mais tout aussi capable d'infliger la maladie, le cauchemar ou la paralysie sans que la victime comprenne pourquoi elle a déplu. Cette ambivalence donne à l'elfe une épaisseur que la fantasy moderne, en le fixant en aristocrate immortel et sage, a souvent aplatie.",
+      "Ce qui frappe surtout, c'est l'échelle du temps qu'incarne le peuple elfique. Là où l'humain compte en décennies, l'elfe semble appartenir à un cycle plus lent, presque géologique, celui des forêts et des tertres. Sa longévité n'est pas un simple bonus de personnage : elle installe un rapport différent à la perte, à la mémoire et à l'attachement, et c'est peut-être cela, plus que les oreilles pointues, qui continue de fasciner."
+    ],
+    "legendes": [
+      "L'elfe est un être surnaturel humanoïde issu du folklore germanique, attesté dans l'ensemble des langues de cette famille ; le mot semble avoir signifié à l'origine « être blanc ».[1] Sa forme la plus documentée vient de la mythologie nordique scandinave, transmise par l'Edda poétique et l'Edda en prose islandaises, où les elfes (álfar, singulier álfr) sont des êtres semi-divins liés à la fertilité, à la nature et au culte des ancêtres.[1]",
+      "Dans la Prose Edda, Snorri Sturluson distingue deux catégories : les elfes de lumière (ljósálfar), plus brillants que le soleil et demeurant à Álfheimr sous l'autorité du dieu Freyr, et les elfes sombres ou noirs (dökkálfar), qui habitent sous terre — un partage souvent rapproché du culte des morts.[1] Cette dualité, plutôt qu'une simple opposition bien/mal, reflète une cosmologie où la lumière et l'obscurité occupent chacune leur monde légitime.",
+      "Dans les cultures médiévales de langue germanique, les elfes sont perçus comme des êtres aux pouvoirs magiques et à la beauté surnaturelle, ambivalents envers les humains : ils peuvent aussi bien les secourir que leur nuire, provoquer des maladies (l'« elf-shot » anglais) ou visiter les rêves.[1] Cette figure diffuse, plus proche de l'esprit de la nature que du personnage individualisé, a nourri des croyances populaires jusque dans les campagnes scandinaves de l'époque moderne.",
+      "La fantasy du XXe siècle, en particulier l'œuvre de J. R. R. Tolkien, a considérablement remodelé la figure : l'elfe devient un peuple noble, artiste et guerrier, doté d'une histoire propre et d'une langue élaborée. Cette synthèse littéraire, reprise ensuite par le jeu de rôle, a fini par éclipser dans l'imaginaire commun la créature plus trouble et plus rurale du folklore d'origine."
+    ],
+    "anomalies": [
+      "Les pouvoirs prêtés aux elfes varient fortement selon les sources : dans les sagas et les récits populaires scandinaves, ils agissent surtout par influence indirecte — maladies inexpliquées, rêves troublants, disparitions d'objets ou d'enfants — plutôt que par une magie spectaculaire.[1] La fantasy moderne, elle, leur attribue volontiers des sorts formalisés, une acuité sensorielle hors norme et une longévité qui se compte en siècles.",
+      "La partition entre elfes lumineux et elfes sombres reste l'un des traits les plus anciens et les plus stables de la tradition : elle a inspiré jusqu'aux hiérarchies de peuples elfiques que l'on retrouve, remaniées, dans nombre d'œuvres et de jeux contemporains, où les elfes noirs souterrains reprennent, sous d'autres noms, l'héritage des dökkálfar."
+    ],
+    "naturelle": {
+      "lead": "Une histoire naturelle de l'elfe doit composer avec deux strates difficiles à superposer : l'esprit de la nature scandinave, diffus et communautaire, et le peuple individualisé de la fantasy moderne.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le folklore nordique dépeint des elfes discrets, rarement vus directement, dont on infère la présence par ses effets — une vache malade, un rêve oppressant, un bruit dans le tertre voisin.[1] La fantasy contemporaine leur prête à l'inverse une vie sociale organisée, faite de conseils, d'artisanat et de traditions transmises sur plusieurs générations."]},
+        {"title": "Habitat", "body": ["Álfheimr pour les elfes de lumière, les profondeurs de la terre pour les elfes sombres : la cosmologie nordique loge chaque catégorie dans un monde qui lui est propre.[1] Les récits populaires plus tardifs situent volontiers leurs demeures dans des tertres, des collines rondes ou des bosquets qu'il valait mieux ne pas déranger."]},
+        {"title": "Alimentation", "body": ["Les sources nordiques ne détaillent guère un régime alimentaire ; l'elfe y est avant tout une présence agissante, non un corps que l'on nourrit au sens ordinaire."]},
+        {"title": "Intelligence", "body": ["Associés à la fertilité, aux ancêtres et à des pouvoirs de guérison ou de nuisance, les elfes du folklore possèdent un savoir qui touche à la vie et à la mort plus qu'à la technique.[1] Ce savoir intime, souvent muet, tranche avec l'éloquence et l'érudition prêtées aux elfes de la fantasy littéraire."]},
+        {"title": "Reproduction", "body": ["Le lien affirmé entre les elfes et le culte des ancêtres suggère une continuité entre les morts et ce peuple invisible, plutôt qu'une reproduction biologique clairement décrite dans les sources anciennes.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucune tradition ne prête à l'elfe de folklore un ennemi naturel : le danger, dans ces récits, vient plutôt de lui vers l'humain que l'inverse, sous forme de maladies ou de maléfices attribués à un elfe offensé."]}
+      ]
+    },
+    "reliques": [
+      "L'héritage le plus tenace de l'elfe nordique dans la culture populaire moderne tient sans doute à sa refonte par J. R. R. Tolkien, dont les Eldar ont fourni le modèle — noblesse, longévité, art et mélancolie — repris ensuite par la quasi-totalité des jeux de rôle et jeux vidéo de fantasy. Le clivage originel entre elfes de lumière et elfes sombres survit, transformé, dans les figures d'elfes noirs souterrains que l'on retrouve dans de nombreux univers contemporains."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Elfe — Wikipédia", "url": "https://fr.wikipedia.org/wiki/Elfe_(nordique)"}
+  ]
+}

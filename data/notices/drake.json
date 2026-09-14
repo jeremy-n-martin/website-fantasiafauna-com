@@ -1,0 +1,38 @@
+{
+  "description": "Le drake occupe une place à part dans les bestiaires de fantasy : ni dragon accompli, ni simple lézard, il incarne la puissance draconique restée inachevée.",
+  "sections": {
+    "fascination": [
+      "Il y a quelque chose d'inquiétant dans une créature qui ressemble à un dragon sans en avoir tous les attributs. Le drake garde les crocs, les griffes, parfois le souffle, mais pas toujours les ailes ni la stature légendaire de son cousin.[1][2] Cette proximité incomplète trouble davantage qu'elle ne rassure : on croit reconnaître un dragon, puis on comprend qu'il s'agit d'autre chose, une force sauvage sans le dessein ni la ruse qu'on prête aux grands dragons.",
+      "Le drake occupe ainsi une position intermédiaire qui varie d'un univers à l'autre, tantôt jeune dragon mâle encore dépourvu d'ailes, tantôt espèce cousine mais distincte.[2] Cette instabilité même fait sa singularité : contrairement au dragon, personnage souvent individualisé et nommé, le drake reste une créature de horde, un danger qui se rencontre en nombre, gardien de repaire plutôt que seigneur d'un territoire."
+    ],
+    "legendes": [
+      "Le drake n'est pas une créature folklorique traditionnelle : aucune tradition orale ancienne ne le distingue clairement du dragon dont il partage l'étymologie, le mot drake dérivant simplement d'anciennes formes germaniques désignant le dragon lui-même. Sa définition actuelle, celle d'un dragon mineur ou d'une bête draconique de rang inférieur, est une construction propre aux jeux de rôle et aux univers vidéoludiques modernes.",
+      "Dans Donjons et Dragons, les bestiaires rangent les drakes parmi les créatures de type dragon qui ne sont pas des « true dragons » : elles partagent l'ascendance et certains traits des grands dragons chromatiques ou métalliques sans posséder leur intelligence ni leur pouvoir magique complet. On les présente comme des créatures plus bestiales, utilisables en nombre dans un encart de rencontre, à la différence du dragon individuel et unique.",
+      "L'univers de Dragon Age, développé par BioWare, propose une déclinaison différente et tout aussi non folklorique : le drake y désigne un dragon mâle mature, un stade de croissance entre le dragonnet et le dragon adulte femelle ailé.[1] Sans ailes développées, doté tout au plus de moignons membraneux aux pattes avant, le drake y combat par la morsure, la griffe, le coup de queue et parfois un jet de flammes, et sa peau sert à la confection d'armures prisées.[1] Cette version illustre bien comment chaque studio ou éditeur redéfinit le terme selon les besoins de son propre bestiaire."
+    ],
+    "anomalies": [
+      "La variation la plus frappante concerne le statut même du mot : selon les univers, drake désigne soit une espèce distincte du dragon, plus petite et moins intelligente, soit un simple stade de développement du dragon lui-même.[1][2] Aucune convergence stricte n'existe entre les studios, ce qui rend chaque rencontre avec un drake dépendante du jeu ou du récit dans lequel elle survient.",
+      "Les capacités attribuées varient dans les mêmes proportions. Certains drakes crachent du feu comme de petits dragons, d'autres se contentent d'une force et d'une robustesse purement physiques, sans le moindre souffle ni la moindre magie innée.[1][2] Ce flottement des pouvoirs signale une créature définie moins par une nature fixe que par le rôle qu'on lui fait jouer : adversaire intermédiaire, monture rare, ou simple curiosité de bestiaire.",
+      "Le trait le plus stable reste l'absence de vol pleinement assumé : nombre de drakes sont représentés sans ailes fonctionnelles, ou avec des ailes trop petites pour porter leur masse, ce qui les distingue visuellement des dragons adultes et les ancre au sol plutôt que dans le ciel.[1]"
+    ],
+    "naturelle": {
+      "lead": "Cette histoire naturelle rassemble des traits communs aux principales déclinaisons du drake dans les jeux de rôle et vidéoludiques, sans qu'aucune tradition unique ne les fédère.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le drake agit le plus souvent comme une bête territoriale et agressive, dépourvue du calcul politique prêté aux grands dragons.[1][2] Il défend farouchement son repaire ou celui du dragon auquel il est associé, sans chercher à étendre son influence au-delà."]},
+        {"title": "Habitat", "body": ["Collines, grottes et lisières de territoires plus dangereux lui servent de refuge habituel. Il occupe volontiers les abords d'un repaire de dragon plus puissant, qu'il contribue à défendre en échange d'un territoire de chasse."]},
+        {"title": "Alimentation", "body": ["Chasseur essentiellement carnivore, il s'attaque au bétail et au gros gibier des régions sauvages qu'il fréquente, sans les stratégies élaborées de manipulation qu'on prête à d'autres créatures draconiques."]},
+        {"title": "Intelligence", "body": ["Son intelligence, généralement présentée comme inférieure à celle des dragons véritables, le rapproche davantage de l'animal sauvage rusé que de la créature capable de langage et de diplomatie.[2] Certaines versions vidéoludiques lui accordent malgré tout une forme de ruse tactique en meute."]},
+        {"title": "Reproduction", "body": ["Lorsque le drake correspond à un stade de croissance du dragon, comme dans Dragon Age, sa place dans le cycle de vie précède l'âge adulte ailé et s'inscrit dans une hiérarchie de maturation propre à l'univers concerné.[1] Dans les versions où il constitue une espèce à part, son cycle reproductif reste peu détaillé, la créature étant surtout définie par son rôle de rencontre."]},
+        {"title": "Prédateurs", "body": ["Le drake affronte surtout des aventuriers ou des chasseurs de primes, sa peau et ses écailles étant recherchées pour la fabrication d'armures résistantes.[1] Dans les hiérarchies où il sert un dragon plus puissant, ce dernier reste la seule autorité qu'il ne conteste pas."]}
+      ]
+    },
+    "reliques": [
+      "Le terme drake continue de désigner, dans de nombreux jeux vidéo de fantasy contemporains, un ennemi ou une monture intermédiaire entre le simple lézard géant et le dragon légendaire, un usage qui doit beaucoup à la popularité de sagas comme Dragon Age.[1]",
+      "Sa polysémie même en fait un mot pratique pour les créateurs de mondes : suffisamment proche du dragon pour évoquer immédiatement une menace draconique, suffisamment distinct pour être multiplié en horde sans affaiblir le prestige des dragons proprement dits.[1][2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Dragon Age Wiki — Drake, stade de croissance du dragon", "url": "https://dragonage.fandom.com/wiki/Drake"},
+    {"id": 2, "title": "Dungeons & Dragons Lore Wiki — Catégorie des dragons mineurs (Lesser dragons)", "url": "https://dungeonsdragons.fandom.com/wiki/Category:Lesser_dragons"}
+  ]
+}

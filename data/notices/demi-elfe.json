@@ -1,0 +1,35 @@
+{
+  "description": "Le demi-elfe n'appartient tout à fait à aucun des deux mondes qui l'ont vu naître ; il porte cette double absence comme d'autres portent un nom.",
+  "sections": {
+    "fascination": [
+      "Il y a dans la figure du demi-elfe une mélancolie qui ne doit rien au malheur et tout à la durée. Un humain vieillit auprès de lui sans qu'il change ; un elfe le regarde grandir puis mourir, quand lui-même se retire à peine de l'enfance. Le double héritage n'est pas une addition de dons, comme le voudrait une arithmétique facile des sangs : c'est une position dans le temps, tenue entre deux horloges qui ne sonnent jamais ensemble. On aime cette figure parce qu'elle rend sensible une expérience que peu de récits savent nommer autrement : celle de vivre au bon rythme de personne.",
+      "Chez Tolkien, cette tension prend la forme d'un choix, non d'une malédiction. Lúthien, puis Arwen des siècles plus tard, renoncent à l'immortalité elfique par amour d'un mortel ; le sang mêlé n'est alors pas un défaut de naissance mais l'occasion d'un acte, l'instant où un être décide de quel côté du temps il veut vivre et mourir.[1] Le demi-elfe des tables de jeu contemporaines a perdu une part de ce tragique fondateur, mais il en garde l'écho : nulle part chez soi, il apprend à faire de cette absence de foyer une manière de circuler entre les peuples que les autres ne fréquentent qu'un à la fois."
+    ],
+    "legendes": [
+      "⚠️ Pas une créature folklorique traditionnelle au sens des mythologies populaires : le demi-elfe n'a pas de généalogie paysanne ni de légende de veillée. Des unions entre elfes et mortels apparaissent bien dans les sagas nordiques, autour de figures comme Skuld dans la saga de Hrólf Kraki, mais c'est la littérature moderne qui construit le type tel qu'on le connaît aujourd'hui.[1]",
+      "Lord Dunsany donne dès 1924, dans Le Roi des elfes, un des premiers demi-elfes de la fantasy moderne avec le personnage d'Orion, né d'une princesse féerique et d'un chevalier humain.[1] Mais c'est J.R.R. Tolkien qui fixe durablement la figure, en construisant sur trois unions successives — Beren et Lúthien, Tuor et Idril, puis Aragorn et Arwen, séparées par des milliers d'années — toute une méditation sur la mortalité et l'immortalité, où le sang mêlé sert de prisme à une réflexion philosophique plutôt que de simple curiosité généalogique.[1]",
+      "Donjons et Dragons reprend le demi-elfe comme peuple jouable dès son édition originale de 1974, et le personnage de Tanis Half-Elven dans le cadre de campagne Dragonlance en popularise l'archétype auprès d'un large public.[1] Les statistiques de la cinquième édition en font l'un des peuples les plus choisis par les joueurs. Le Manuel des joueurs de 2024 marque cependant une rupture : le demi-elfe disparaît comme peuple distinct, les concepteurs jugeant la construction même du « demi- » problématique pour penser l'ascendance mixte dans un jeu contemporain.[1]"
+    ],
+    "anomalies": [
+      "Le trait le plus constant à travers les sources reste l'ascendance féerique résiduelle : les règles classiques accordent au demi-elfe une résistance à certains effets qui charment ou endorment, héritage discret du sang elfique sans les pouvoirs pleins de ce peuple. Sa vision perce mieux l'obscurité qu'un regard purement humain, sans atteindre l'acuité elfique. Cette demi-mesure traverse toute la conception du personnage : jamais l'extrême d'un côté, jamais tout à fait l'autre.",
+      "Les éditions successives du jeu ont surtout fait varier le poids social de cette double appartenance. Les premières versions insistent sur l'isolement, un être toléré sans être pleinement accueilli dans les deux communautés dont il descend. Les traitements plus récents, avant le retrait du peuple en 2024, préfèrent une adaptabilité choisie : le demi-elfe circule entre les cités humaines et les enclaves elfiques précisément parce qu'aucune ne réclame de lui une allégeance totale.[1]"
+    ],
+    "naturelle": {
+      "lead": "Les fictions de jeu et de littérature dessinent un être capable de vivre parmi les deux peuples dont il est issu, sans jamais s'y fondre entièrement.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le demi-elfe des récits de jeu s'illustre souvent dans les métiers de contact : diplomatie, commerce itinérant, exploration. Cette mobilité n'est pas un choix de tempérament isolé mais une réponse à une condition : n'étant l'héritier plein d'aucune tradition, il doit s'en construire une à force de rencontres."]},
+        {"title": "Habitat", "body": ["Les villes frontières, les compagnies marchandes et les routes qui relient les territoires humains aux enclaves elfiques offrent au demi-elfe un terrain où sa double origine devient un atout plutôt qu'un embarras."]},
+        {"title": "Alimentation", "body": ["Aucune source ne lui prête de régime distinct : il partage la table de la communauté humaine ou elfique où le hasard de la naissance ou du voyage l'a placé."]},
+        {"title": "Intelligence", "body": ["Élevé le plus souvent par l'un des deux parents seulement, le demi-elfe grandit entre deux langues et deux mémoires. Cette double éducation en fait fréquemment un médiateur recherché lorsque humains et elfes doivent négocier."]},
+        {"title": "Reproduction", "body": ["La rareté du type, dans les récits qui l'évoquent, tient à la disproportion des durées de vie : un couple humain-elfe voit l'un vieillir quand l'autre demeure jeune, ce qui rend l'union longue rarissime et souvent tragique, comme chez Tolkien.[1]"]},
+        {"title": "Prédateurs", "body": ["Le danger qui pèse sur le demi-elfe est moins bestial que social : le soupçon ou le rejet des puristes des deux camps, plus que toute créature qui le chasserait pour sa chair."]}
+      ]
+    },
+    "reliques": [
+      "Le demi-elfe survit aujourd'hui surtout dans les jeux vidéo et les fictions dérivées du jeu de rôle, où il conserve la fonction de personnage-pont entre cultures que lui avait donnée Tolkien. Le retrait du peuple des règles officielles les plus récentes n'a pas effacé le type : il reste un archétype narratif disponible, indépendant désormais des tables précises qui l'ont, un temps, codifié."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Half-elf — origines littéraires (Tolkien, Dunsany) et histoire éditoriale dans Donjons et Dragons, Wikipédia", "url": "https://en.wikipedia.org/wiki/Half-elf"}
+  ]
+}

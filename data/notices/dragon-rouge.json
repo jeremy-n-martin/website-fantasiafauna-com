@@ -1,0 +1,37 @@
+{
+  "description": "Nul dragon n'incarne mieux l'orgueil et la convoitise que le rouge, tapi sur son trésor au cœur des volcans, persuadé que le monde entier lui doit tribut.",
+  "sections": {
+    "fascination": [
+      "Le dragon rouge est celui que l'on imagine spontanément quand on prononce le mot dragon : la silhouette dressée sur un tas d'or, la gueule crachant les flammes, l'orgueil qui refuse toute négociation. Cette familiarité ne l'appauvrit pas, elle le confirme dans son rôle d'archétype absolu. Sur la couverture des tout premiers ouvrages de règles du jeu qui l'a rendu célèbre, c'est lui, ailes déployées au-dessus d'un trésor, qui a fixé pour des générations de joueurs l'image même du monstre à vaincre.[1]",
+      "Ce qui fascine dans le rouge, ce n'est pas seulement sa puissance destructrice, c'est la conviction absolue qu'il a de la mériter. Il ne vole pas un trésor, il le récupère, puisque tout, dans son esprit, lui appartient par nature. Cette arrogance cosmique transforme chaque rencontre avec lui en un affrontement moral autant que physique : on ne discute pas avec un dragon rouge, on négocie sa propre survie face à un être qui n'admet même pas l'idée d'un interlocuteur égal."
+    ],
+    "legendes": [
+      "Dans la famille des dragons chromatiques de Donjons et Dragons, le rouge occupe depuis l'origine la position de figure la plus redoutée. Chaotique mauvais, associé au feu et à la montagne, il incarne une évolution progressive de la cupidité brute vers une ambition de domination bien plus vaste : les bestiaires récents précisent qu'un dragon rouge adulte a dépassé les excès destructeurs de sa jeunesse pour viser un contrôle discret mais total des territoires environnants, infiltrant guildes et économies plutôt que de se contenter de raids spectaculaires.[2]",
+      "Son habitat privilégié, sommets volcaniques, cavernes de magma, mines abandonnées sous des pics enneigés, ancre cette grandeur dans un décor à sa mesure : rien de discret, rien de modeste. L'odeur de soufre et de pierre ponce qui l'entoure, ses cornes rejetées en arrière, la crête qui court le long de son échine, en font une silhouette reconnaissable entre toutes dans les bestiaires illustrés.[2]",
+      "L'histoire éditoriale du jeu a fait du rouge une sorte d'étalon : chaque nouvelle édition le retravaille en premier, comme s'il fallait, avant tout autre dragon, redéfinir le niveau de menace que représente le pire d'entre eux. Cette position de référence explique pourquoi il reste, plus que tout autre dragon chromatique, associé dans la mémoire collective des joueurs à l'idée même du trésor gardé et du danger ultime.[1][2]"
+    ],
+    "anomalies": [
+      "Son souffle est un cône de flammes d'une puissance redoutable, capable de raser une salle entière en un instant ; les bestiaires modernes lui associent aussi des dégâts qui grimpent nettement avec l'âge du dragon, faisant d'un spécimen ancien l'une des menaces les plus destructrices du jeu.[2]",
+      "Plus surprenant que la seule violence de ce souffle est l'usage stratégique qu'en fait le dragon adulte : loin de détruire aveuglément, il choisit ses cibles pour asseoir sa réputation et intimider des royaumes entiers, érigeant dans son repaire des monuments célébrant ses propres conquêtes, comme s'il tenait à laisser une trace de chaque triomphe.[2]"
+    ],
+    "naturelle": {
+      "lead": "Cette histoire naturelle suit le portrait constitué par les bestiaires successifs de Donjons et Dragons, où le dragon rouge occupe la place du prédateur chromatique le plus emblématique.",
+      "parts": [
+        {"title": "Comportement", "body": ["Dominateur et impitoyable, le dragon rouge cherche moins à survivre qu'à régner. Sa maturité ne l'assagit pas : elle affine seulement ses méthodes, le faisant passer de la destruction directe à une domination plus insidieuse, par la manipulation d'agents et de réseaux entiers.[2] L'orgueil reste toutefois sa constante, quel que soit l'âge du spécimen."]},
+        {"title": "Habitat", "body": ["Montagnes élevées, cavernes volcaniques, anciennes mines naines abandonnées : le rouge s'installe où la chaleur du sol prolonge son propre feu intérieur. Son repaire regorge souvent de monuments personnels, trophées d'une puissance qu'il tient à exhiber plutôt qu'à dissimuler.[2]"]},
+        {"title": "Alimentation", "body": ["Prédateur redoutable, il chasse aussi bien le gros gibier des montagnes que les créatures assez téméraires pour s'aventurer près de son territoire, sans distinction particulière tant que la proie confirme sa domination sur les lieux."]},
+        {"title": "Intelligence", "body": ["Le rouge adulte déploie une intelligence stratégique tournée vers le contrôle économique et politique de sa région : corruption de marchands, infiltration de guildes, alliances de circonstance avec des humanoïdes ambitieux, tout sert son unique projet de domination durable.[2]"]},
+        {"title": "Reproduction", "body": ["Les œufs sont couvés au plus profond du repaire, près des sources de chaleur naturelle qui accélèrent leur développement. Le jeune dragon grandit vite et violemment, traversant une jeunesse marquée par des excès destructeurs que l'âge adulte viendra tempérer sans jamais les faire disparaître."]},
+        {"title": "Prédateurs", "body": ["Peu de créatures rivalisent avec un dragon rouge adulte sur son propre terrain volcanique ; les menaces recensées par les bestiaires restent essentiellement d'autres dragons rivaux ou des coalitions d'aventuriers suffisamment déterminées pour braver ses flammes et son orgueil."]}
+      ]
+    },
+    "reliques": [
+      "Aucun dragon n'a autant façonné l'image populaire du monstre gardien de trésor que le rouge, dont la silhouette orne depuis les débuts du jeu les couvertures de manuels et les affiches promotionnelles. Il reste la référence immédiate lorsqu'on évoque, hors du cercle des joueurs eux-mêmes, ce à quoi ressemble un dragon.",
+      "Cette centralité culturelle en a fait un raccourci narratif commode : convoquer un dragon rouge, dans une fiction ou un jeu, suffit à signaler sans autre explication qu'un danger ultime et une richesse colossale attendent quiconque osera l'affronter."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Who is the Red Dragon on the cover of the Dungeon Master's Screen Reincarnated?", "url": "https://www.dndbeyond.com/forums/d-d-beyond-general/general-discussion/106321-who-is-the-red-dragon-on-the-cover-of-the-dungeon"},
+    {"id": 2, "title": "D&D Beyond — Adult Red Dragon, stat block et description", "url": "https://www.dndbeyond.com/monsters/16771-adult-red-dragon"}
+  ]
+}

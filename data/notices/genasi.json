@@ -1,0 +1,39 @@
+{
+  "description": "Un mortel pétri d'un élément, braise, brise, onde ou roc : le genasi ne descend d'aucun mythe ancien, mais d'un supplément de jeu de rôle publié à la fin du XXe siècle.",
+  "sections": {
+    "fascination": [
+      "Ce qui distingue le genasi, c'est la sobriété de son prodige. Il ne lance pas des sorts spectaculaires ni ne commande des armées d'esprits ; il porte simplement, inscrite dans sa chair, une parenté avec un élément du monde, une mèche de cheveux qui ondule comme de l'air, une peau qui garde la chaleur d'une braise, une odeur de pierre humide qui ne le quitte jamais. Le merveilleux tient ici à la discrétion du signe plus qu'à son ampleur : on peut croiser un genasi sans le reconnaître immédiatement, jusqu'à ce qu'un détail trahisse son ascendance.",
+      "Cette retenue s'accompagne d'une question de filiation plus intime que chez la plupart des peuples de fantasy. Le genasi descend d'un génie, être capricieux et puissant des plans élémentaires, et d'un parent mortel, une union rarement simple à raconter dans une famille. Grandir avec un tel héritage suppose de composer avec un monde qui ne comprend pas toujours ce qu'on porte, et avec un élément intérieur qu'on ne choisit pas mais qu'il faut apprendre à habiter."
+    ],
+    "legendes": [
+      "Le genasi ne provient d'aucune mythologie ni d'aucun folklore antérieur : c'est une création entièrement issue du jeu de rôle sur table. Les quatre lignées originelles, air, terre, feu et eau, apparaissent pour la première fois comme peuples jouables dans le cadre de campagne Planescape, au sein du Planewalker's Handbook publié en 1996 pour la deuxième édition de Donjons et Dragons.[1]",
+      "Dans ce cadre, les genasi sont définis comme des planetouched, des créatures mortelles portant dans leurs veines le sang d'êtres issus de plans d'existence alternatifs ; plus précisément, ce sont des humains dont un ancêtre appartient à la lignée des génies, ce qui leur transmet une affinité élémentaire visible.[1] Cette catégorie de planetouched regroupe alors plusieurs peuples distincts, mais les genasi en constituent l'un des exemples les plus durables.",
+      "La troisième édition du jeu, publiée au tournant des années 2000, reprend et développe le concept pour le cadre des Royaumes oubliés : les quatre genasi apparaissent d'abord dans le supplément Monsters of Faerûn en 2001 sous l'entrée planetouched, puis comme peuples jouables à part entière dans le Forgotten Realms Campaign Setting la même année, avant d'être encore étoffés dans le magazine Dragon numéro 293 en mars 2002 et dans le supplément Races of Faerûn en 2003.[2] Cette suite de publications ancre durablement le genasi dans l'univers des Royaumes oubliés, où des régions entières, comme les côtes autour de la mer des Étoiles Déchues pour les genasi de l'eau, ou le Nord pour ceux de la terre, leur sont associées.[2]",
+      "Le peuple reste depuis un pilier des éditions suivantes du jeu, jusqu'à figurer aujourd'hui comme espèce jouable dans la cinquième édition, preuve d'une popularité qui n'a jamais nécessité de rattachement à une tradition antérieure au jeu de rôle lui-même.[3]"
+    ],
+    "anomalies": [
+      "Le trait distinctif du genasi tient à son apparence : un corps globalement humain, marqué d'une ou deux caractéristiques renvoyant directement à son élément, une chevelure vaporeuse et mouvante pour les genasi de l'air, une peau tirant sur le rouge et parfois tiède au toucher pour ceux du feu.[2] Ces marques s'accompagnent de capacités correspondantes, une résistance ou une affinité liée à l'élément d'origine, qui varient sensiblement d'une édition du jeu à l'autre sans jamais disparaître complètement.[1][2]",
+      "D'une édition à l'autre, le statut même du genasi a changé de nature : simple sous-catégorie de planetouched aux côtés d'autres peuples similaires dans les premières publications, il devient ensuite un peuple jouable autonome et détaillé, avec sa propre géographie d'origine dans les Royaumes oubliés, ce qui témoigne d'une consolidation progressive plutôt que d'une conception d'emblée figée.[1][2]"
+    ],
+    "naturelle": {
+      "lead": "Le genasi étant une création entièrement issue du jeu de rôle, sans ancrage dans un folklore antérieur, cette histoire naturelle reprend le portrait consolidé par les suppléments consacrés aux Royaumes oubliés.",
+      "parts": [
+        {"title": "Comportement", "body": ["Les genasi développent souvent un tempérament marqué par leur élément d'origine, une intensité proche de la colère pour ceux du feu, une adaptabilité fluide pour ceux de l'eau ou de l'air, sans que cela relève d'une règle stricte plutôt que d'une tendance culturelle au sein du peuple.[2]"]},
+        {"title": "Habitat", "body": ["Leur répartition géographique dans les Royaumes oubliés suit largement leur élément : les genasi de la terre sont originaires du Nord et se sont dispersés depuis, tandis que les genasi de l'eau viennent des régions côtières, en particulier autour de la mer des Étoiles Déchues.[2]"]},
+        {"title": "Alimentation", "body": ["Aucune source ne leur attribue de régime alimentaire distinct de celui des humains, dont ils partagent la physiologie générale hormis les traits élémentaires hérités de leur ascendance.[1][2]"]},
+        {"title": "Intelligence", "body": ["Les genasi sont présentés comme pleinement capables de raisonnement, de culture et d'intégration sociale parmi les humains et les autres peuples, leur différence tenant à l'apparence et à certaines capacités plutôt qu'à une cognition distincte.[1]"]},
+        {"title": "Reproduction", "body": ["Le peuple descend directement de l'union entre un génie, être des plans élémentaires, et un parent mortel humain, une origine hybride que les suppléments de jeu qualifient de planetouched, ascendance planaire touchant une lignée mortelle.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucune menace naturelle spécifique n'est associée au genasi dans les suppléments consultés ; leurs difficultés relèvent davantage de l'intégration sociale et de la méfiance parfois suscitée par leur ascendance planaire que d'un prédateur biologique attitré.[1][2]"]}
+      ]
+    },
+    "reliques": [
+      "Le genasi demeure aujourd'hui l'un des peuples jouables les plus appréciés des joueurs de Donjons et Dragons, régulièrement mis à jour dans les éditions successives du jeu et présent dans de nombreux suppléments consacrés aux Royaumes oubliés.[2][3] Sa popularité tient en grande partie à la simplicité de son concept, un humain marqué par un élément, qui se prête à une grande variété d'interprétations narratives sans nécessiter de connaissance mythologique préalable.",
+      "Le peuple a par ailleurs essaimé au-delà de la table de jeu, apparaissant dans des jeux vidéo et des œuvres dérivées inspirées de l'univers de Donjons et Dragons, où l'on retrouve systématiquement le principe des quatre lignées élémentaires établi dès le Planewalker's Handbook de 1996.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Genasi — Forgotten Realms Wiki, Fandom", "url": "https://forgottenrealms.fandom.com/wiki/Genasi"},
+    {"id": 2, "title": "Genasi — WikiProject Dungeons & Dragons Wiki, Fandom", "url": "https://wikiproject-dungeons-dragons.fandom.com/wiki/Genasi"},
+    {"id": 3, "title": "The Genasi Species for Dungeons & Dragons (D&D) Fifth Edition (5e) — D&D Beyond", "url": "https://www.dndbeyond.com/species/23-genasi"}
+  ]
+}

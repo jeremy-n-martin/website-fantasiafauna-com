@@ -1,0 +1,38 @@
+{
+  "description": "Avant les djinns qui hantent lampes et déserts, une race plus ancienne aurait régné sur une terre encore vide d'hommes : le Jann, dont le nom même donne au mot djinn sa racine.",
+  "sections": {
+    "fascination": [
+      "Il y a quelque chose de vertigineux dans l'idée d'une création antérieure à la nôtre, peuplée, gouvernée, puis effacée avant même l'arrivée d'Adam. Le Jann occupe cette place : celle d'un peuple premier, dont on ne sait presque rien sinon qu'il exista, qu'il eut des rois, et qu'il disparut ou fut relégué pour laisser place à l'humanité. Ce vide narratif est précisément ce qui fascine — une préhistoire mythologique dont il ne reste qu'un nom et une filiation revendiquée par des créatures plus tardives.",
+      "Le Jann est aussi une créature de seuil linguistique : son nom, tiré d'une racine signifiant « cacher » ou « voiler », désigne littéralement ce qui échappe au regard. Avant d'être une biographie mythologique, c'est une catégorie de l'invisible, une façon pour une langue de nommer tout ce qui existe sans se montrer — le vent dans le désert, le bruit sans source, la silhouette qui se dérobe entre les dunes."
+    ],
+    "legendes": [
+      "Dans la tradition islamique, al-Jann désigne l'ancêtre des djinns, parfois identifié à un roi nommé Jann ibn Jann, qui aurait régné sur la terre avant la création d'Adam.[1][2] Le Coran (sourates 15:27 et 55:15) mentionne le jann comme créé du feu, avant les anges de lumière et les hommes d'argile, ce qui en fait le point d'origine théologique de toute la lignée des djinns.[2]",
+      "Les exégètes musulmans (mufassirûn) ne s'accordent pas sur l'identité exacte du Jann : certains l'identifient à Iblis lui-même, la figure qui refusera plus tard de se prosterner devant Adam ; d'autres distinguent nettement Jann, père des djinns, d'Iblis, père des démons (shayâtîn) proprement dits.[2] Cette hésitation doctrinale reflète une tension plus large de la démonologie islamique, qui doit concilier plusieurs généalogies surnaturelles héritées de traditions préislamiques.",
+      "Étymologiquement, jann est une forme neutre singulière liée au pluriel jinn ; le terme partage sa racine avec des mots signifiant à la fois « cacher » et, dans certains emplois, « serpent agile », ce qui a conduit plusieurs commentateurs à rapprocher les tout premiers jann d'une forme reptilienne ou serpentine avant leur diversification en jinn aux mille visages.[2]",
+      "Le jeu de rôle Donjons et Dragons a par la suite fait du terme « jann » le nom d'une race de génies proches des éléments, place que la tradition arabo-musulmane originelle ne lui donnait pas : dans les manuels de fantasy, les jann deviennent des esprits nomades du désert, à mi-chemin entre les djinns et les génies élémentaires, un usage qui doit être distingué de la figure théologique antérieure."
+    ],
+    "anomalies": [
+      "Le trait le plus notable du Jann originel est sa fonction de charnière généalogique : il n'est ni tout à fait un djinn ordinaire ni une simple abstraction, mais le nœud par lequel la tradition explique l'existence de tous les esprits de feu ultérieurs. Sa création à partir du feu, antérieure et distincte de celle des anges et des hommes, en fait un être d'une autre substance que la chair — capable, selon les récits, de métamorphose et d'une longévité qui dépasse largement l'échelle humaine.",
+      "Dans les réinterprétations modernes du jeu de rôle, le jann hérite de pouvoirs plus vastes — invisibilité, contrôle du vent et du sable, apparence humaine à volonté — qui prolongent librement l'idée d'un esprit du désert impossible à saisir, sans prétendre reconstituer la théologie islamique dont le nom est issu."
+    ],
+    "naturelle": {
+      "lead": "Le Jann appartient d'abord à une généalogie mythologique et théologique plutôt qu'à une zoologie descriptive ; les traits qui suivent rassemblent ce que la tradition et ses prolongements modernes en disent.",
+      "parts": [
+        {"title": "Comportement", "body": ["Souverain plus que sujet, le Jann est décrit comme ayant régné, gouverné, institué un ordre sur la terre avant l'humanité — un comportement de fondateur plutôt que de simple esprit erratique."]},
+        {"title": "Habitat", "body": ["Le désert, les terres désolées et les ruines lui sont associés, aussi bien dans la tradition arabe que dans ses reprises ludiques, comme si son royaume disparu avait laissé le sable pour seul héritage."]},
+        {"title": "Alimentation", "body": ["Les textes ne lui prêtent aucun régime alimentaire propre ; comme les autres êtres de feu, il est généralement pensé comme affranchi des besoins organiques des créatures de chair."]},
+        {"title": "Intelligence", "body": ["Créature de rang royal dans le récit coranique et ses commentaires, le Jann est crédité d'une sagesse ou d'une ruse antérieure à celle des hommes, à la mesure de son antériorité cosmologique."]},
+        {"title": "Reproduction", "body": ["En tant qu'ancêtre théologique des djinns, le Jann est le point d'origine d'une lignée entière ; les récits s'attachent moins à sa descendance biologique qu'à sa fonction de premier maillon d'une chaîne d'êtres de feu."]},
+        {"title": "Prédateurs", "body": ["Aucune créature ne lui est opposée comme prédateur naturel ; sa disparition ou sa relégation, dans les récits islamiques, tient à l'arrivée d'un ordre nouveau — celui d'Adam et de sa descendance — plutôt qu'à une défaite face à un ennemi précis."]}
+      ]
+    },
+    "reliques": [
+      "Le nom jann survit avant tout dans l'étymologie du mot djinn, aujourd'hui bien plus connu, ce qui fait de cette figure ancienne une sorte d'ancêtre linguistique discret derrière une postérité immense dans les contes, le cinéma et la culture populaire mondiale.",
+      "Dans les jeux de rôle modernes, le jann est devenu un type de génie à part entière, associé au désert et au vent, prolongeant sous une forme ludique l'image d'un esprit ancien et insaisissable sans reprendre la complexité théologique de sa source islamique."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Al-Jānn, Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Al-J%C4%81nn"},
+    {"id": 2, "title": "Jinn, Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Jinn"}
+  ]
+}

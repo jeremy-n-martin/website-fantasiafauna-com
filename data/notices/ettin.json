@@ -1,0 +1,35 @@
+{
+  "description": "Un géant à deux têtes qui se disputent le même gourdin : l'ettin de la fantasy de jeu de rôle transforme une vieille figure folklorique en étude presque comique de la discorde intérieure.",
+  "sections": {
+    "fascination": [
+      "L'ettin fascine par ce qu'il révèle malgré lui : deux consciences distinctes forcées de partager un seul corps, deux volontés qui doivent s'accorder pour marcher, frapper, décider — ou qui s'enlisent dans la querelle au pire moment. Cette division intérieure, portée à l'extérieur sous une forme littéralement visible, donne au monstre une dimension presque psychologique rare chez les géants de fantasy, généralement définis par leur seule masse.",
+      "Il y a aussi quelque chose de tragique dans cette crudité assumée : l'ettin n'a ni la noblesse du géant des glaces ni la ruse d'un démon, seulement la force brute et la mésentente permanente de deux têtes qui ne s'accordent jamais tout à fait, condamnées à cohabiter jusqu'à la fin."
+    ],
+    "legendes": [
+      "⚠️ Pas une créature folklorique traditionnelle au sens d'un mythe daté et localisé, bien que son nom et son image générale s'inspirent de figures de géants bicéphales présentes dans les folklores celtique et germanique. L'image moderne et spécifique de l'ettin à deux têtes provient essentiellement du jeu de rôle, qui a synthétisé ces motifs épars en un monstre codifié et récurrent.[1]",
+      "L'ettin est introduit dans le jeu de rôle par le premier Manuel des Monstres d'Advanced Dungeons & Dragons, en 1977, où il est décrit comme un géant grossier aux traits orcs, littéralement deux individus piégés dans le même corps.[1]",
+      "Le lore ultérieur du jeu lui invente une origine mythique propre : des orcs auraient jadis découvert un temple consacré à Demogorgon, prince démon à deux têtes, et la magie de ce lieu les aurait transformés en géantes moqueries de son image bicéphale ; ces créatures se seraient ensuite dispersées dans les terres sauvages pour devenir les premiers ettins.[1]"
+    ],
+    "anomalies": [
+      "Le trait distinctif de l'ettin reste la division fonctionnelle de son corps entre ses deux têtes, chacune contrôlant une moitié distincte : dans les règles de jeu modernes, cela se traduit par un avantage aux tests de perception et aux jets de résistance contre l'aveuglement, la charme, la surdité, la peur, l'étourdissement ou l'inconscience, la seconde tête restant vigilante quand la première est prise au dépourvu.[1]",
+      "Cette dualité a un revers explicitement noté par le lore ludique : lorsque les deux têtes se querellent, la coordination du corps entier s'en trouve compromise, un défaut qui distingue l'ettin des géants plus unifiés et cohérents des autres traditions de fantasy.[1]"
+    ],
+    "naturelle": {
+      "lead": "L'ettin de jeu de rôle se comporte comme un géant primitif dont la principale originalité biologique tient à sa bicéphalie fonctionnelle.",
+      "parts": [
+        {"title": "Comportement", "body": ["Brutal et peu raffiné, l'ettin agit souvent en solitaire ou en petit groupe, sa coordination interne imparfaite le rendant moins organisé que d'autres géants dans ses raids et embuscades."]},
+        {"title": "Habitat", "body": ["Collines, cavernes et landes isolées constituent son territoire typique, loin des sociétés plus structurées des autres peuples géants."]},
+        {"title": "Alimentation", "body": ["Chasseur et pillard opportuniste, l'ettin se nourrit de ce qu'il parvient à capturer ou à voler aux communautés voisines, sans régime alimentaire spécialisé."]},
+        {"title": "Intelligence", "body": ["Chaque tête de l'ettin possède sa propre personnalité et parfois ses propres priorités, ce qui produit une intelligence combinée supérieure à celle d'un géant ordinaire, mais fréquemment gâchée par le désaccord entre les deux volontés.[1]"]},
+        {"title": "Reproduction", "body": ["Le lore ludique rattache l'origine du peuple ettin à une transformation magique d'orcs par le temple de Demogorgon, plutôt qu'à un processus de reproduction naturel bien défini.[1]"]},
+        {"title": "Prédateurs", "body": ["Les héros aventuriers et les géants rivaux de tailles supérieures figurent, dans le lore de jeu, comme les principales menaces pesant sur l'ettin, dont la vigilance à deux têtes limite les attaques par surprise."]}
+      ]
+    },
+    "reliques": [
+      "L'ettin demeure une rencontre classique des donjons de bas et moyen niveau dans le jeu de rôle contemporain, apprécié pour la simplicité mécanique de sa double vigilance, et a inspiré à son tour d'autres créatures bicéphales dans les jeux vidéo et la fantasy populaire ultérieure."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Ettin — WikiProject Dungeons & Dragons Wiki, Fandom", "url": "https://wikiproject-dungeons-dragons.fandom.com/wiki/Ettin"}
+  ]
+}

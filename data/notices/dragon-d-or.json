@@ -1,0 +1,36 @@
+{
+  "description": "Le plus ancien des dragons du jeu n'est pas le plus terrible mais le plus juste : le dragon d'or porte depuis 1974 le poids d'incarner, à lui seul, la vertu draconique.",
+  "sections": {
+    "fascination": [
+      "Un dragon peut régner par la peur ; le dragon d'or, lui, préfère régner par l'exemple, quitte à s'effacer des siècles durant pour ne pas peser sur les mortels qu'il protège. Sa puissance, la plus grande de tous les dragons métalliques, ne s'exprime presque jamais sans nécessité : il choisit le retrait, la discrétion, la vie recluse dans des palais dissimulés, plutôt que l'ostentation.[1] Cette retenue face à une force considérable donne à la créature une dignité rare, comme si la vraie noblesse consistait à ne jamais démontrer tout ce dont on est capable.",
+      "Sa capacité à revêtir une forme humaine ou animale ajoute une dimension presque tragique à cette discrétion : le protecteur le plus puissant du monde peut marcher, invisible, parmi ceux qu'il veille, sans qu'aucun d'eux ne soupçonne jamais à qui il doit sa sécurité. Le dragon d'or incarne ainsi une justice qui ne cherche pas à être reconnue, une vertu qui se suffit à elle-même."
+    ],
+    "legendes": [
+      "Le dragon d'or est le tout premier dragon métallique du jeu, introduit dès le coffret original de 1974, avant même que les autres métalliques — cuivre, bronze, argent et airain — ne soient ajoutés par le supplément Greyhawk de 1975.[2] Cette antériorité lui confère, dans l'histoire éditoriale du jeu, une forme de préséance que les textes ultérieurs n'ont jamais démentie : il reste constamment présenté comme le plus fort et le plus sage de sa famille.",
+      "Son inspiration puise notamment dans les dragons de la mythologie chinoise, figures de sagesse et de pouvoir bénéfique, une filiation qui tranche avec l'héritage plus nettement européen des dragons chromatiques.[2] Cette origine contribue à expliquer pourquoi le dragon d'or, seul parmi les dragons du jeu, cumule à ce point les attributs de la souveraineté juste : loyauté envers le bien, sagesse proverbiale, autorité qui ne réclame aucune preuve.",
+      "La formalisation de la catégorie des dragons métalliques en 1993 par le Monstrous Manual, puis les développements de la cinquième édition, consolident ce statut de figure suprême : le dragon d'or y est explicitement désigné comme le plus puissant, le plus sage et le plus majestueux des métalliques, un rôle de gardien et de défenseur de la justice qui traverse toutes les versions du jeu sans rupture notable.[1][2]"
+    ],
+    "anomalies": [
+      "Son souffle se décline en deux formes bien distinctes : un cône de feu dévastateur, et un souffle affaiblissant qui n'inflige aucun dégât direct mais impose à ses victimes un désavantage sur leurs actions, tests et jets de sauvegarde de force pendant une minute entière.[1] Cette seconde option, rare parmi les dragons, illustre une préférence pour la neutralisation prolongée plutôt que pour la destruction immédiate, cohérente avec son rôle de gardien plus que de destructeur.",
+      "Comme le dragon d'argent, il possède la capacité de se métamorphoser en bête ou en humanoïde d'une puissance ne dépassant pas la sienne, et de vivre ainsi caché parmi les mortels.[1] Chez le dragon d'or, cette capacité sert le plus souvent une mission de protection discrète, l'amenant à guider ou surveiller des royaumes entiers sous une identité d'emprunt, sans jamais revendiquer publiquement son rôle."
+    ],
+    "naturelle": {
+      "lead": "Le portrait suivant retient la cinquième édition de Donjons et Dragons, où le dragon d'or occupe la position de figure suprême parmi les dragons métalliques.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le dragon d'or agit avec retenue, réservant sa puissance aux situations qui l'exigent réellement. Sa conduite privilégie la médiation et l'exemple plutôt que l'imposition directe de sa force, conformément à son alignement loyal bon.[1]"]},
+        {"title": "Habitat", "body": ["Il s'installe dans des palais cachés, des montagnes sacrées ou de vastes étendues célestes, loin des regards, préférant la solitude d'un lieu retiré à l'exposition d'un territoire ostensiblement marqué.[1]"]},
+        {"title": "Alimentation", "body": ["Ses besoins, comme ceux des autres grands dragons, restent secondaires face à son rôle de gardien ; il chasse sans faste, l'essentiel de son énergie étant tourné vers la protection de son domaine plutôt que vers l'accumulation."]},
+        {"title": "Intelligence", "body": ["Réputé le plus sage des dragons métalliques, le dragon d'or conjugue mémoire, discernement et sens de la justice, des qualités qui en font un conseiller recherché lorsque, sous forme humaine, il consent à se mêler aux affaires des mortels.[1]"]},
+        {"title": "Reproduction", "body": ["Comme les autres vrais dragons, il progresse à travers plusieurs stades de croissance, du dragonnet au très ancien, gagnant à chaque étape en maîtrise de ses deux souffles et de son métamorphisme.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucune créature ordinaire ne menace sérieusement un dragon d'or adulte ; le risque véritable proviendrait plutôt d'un adversaire d'une puissance comparable, dragon rival ou force maléfique organisée, capable de contester son rôle de gardien."]}
+      ]
+    },
+    "reliques": [
+      "Le dragon d'or reste la référence absolue lorsqu'il s'agit d'évoquer, dans la culture du jeu, l'idéal du dragon juste et protecteur. Sa position de doyen des métalliques, établie dès 1974, en a fait un modèle repris dans de nombreuses adaptations vidéoludiques et romanesques dérivées de Donjons et Dragons, où l'apparition d'un dragon d'or signale presque toujours l'irruption d'une autorité morale supérieure dans le récit.[1][2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Adult Gold Dragon, Monsters", "url": "https://www.dndbeyond.com/monsters/16769-adult-gold-dragon"},
+    {"id": 2, "title": "Dragon (Dungeons & Dragons) — Wikipédia (en anglais)", "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)"}
+  ]
+}

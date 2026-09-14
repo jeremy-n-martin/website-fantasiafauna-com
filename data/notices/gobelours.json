@@ -1,0 +1,39 @@
+{
+  "description": "Ni ours ni gobelin, le gobelours frappe depuis l'ombre avant même d'avoir été aperçu : une brute furtive née des tables de jeu, mais dont le nom porte le souvenir bien plus ancien d'un croquemitaine anglais.",
+  "sections": {
+    "fascination": [
+      "Ce qui rend le gobelours redoutable n'est pas sa ruse mais son silence : une masse hirsute capable de rester immobile assez longtemps pour que l'œil la range, par erreur, parmi les rochers ou les fourrés. Le coup part avant que la menace ne soit identifiée, et c'est cette antériorité de la douleur sur la reconnaissance qui donne au gobelours sa réputation. On ne raconte pas d'histoires de gobelours vaincus en combat loyal ; on raconte des embuscades, des campements surpris, des sentinelles qui n'ont rien vu venir.",
+      "Sa silhouette entretient une ambiguïté que son nom résume déjà : ni tout à fait gobelin, ni tout à fait ours, il emprunte à l'un la ruse sociale des clans et à l'autre la carrure et la toison. Cette hybridation n'a rien d'un accident de conception ; elle vise précisément à déjouer une classification trop rapide. Un gobelin, on croit savoir à quoi s'attendre ; un gobelours, dressé dans la pénombre d'une caverne, refuse ce confort et impose sa propre mesure, plus haute, plus large, plus silencieuse qu'annoncé."
+    ],
+    "legendes": [
+      "Le mot anglais bugbear, dont le gobelours est la traduction française, ne naît pas dans un bestiaire de jeu de rôle. Il descend du moyen anglais bugge, désignant une chose effrayante, avec des parentés possibles du côté du gallois ancien bwg, esprit malfaisant ou gobelin, et de l'écossais ancien bogill, gobelin.[1] Le terme rejoint ainsi la famille du bogeyman anglais, cet épouvantail verbal utilisé de longue date pour tenir les enfants à distance des bois et des recoins sombres.",
+      "Dans l'Angleterre médiévale et moderne, le bugbear est décrit comme une sorte d'ours inquiétant rôdant en lisière de forêt pour effrayer les enfants désobéissants, image que reprend notamment la pièce The Buggbears, adaptation anglaise de La Spiritata d'Antonio Francesco Grazzini publiée au XVIe siècle.[1] Cette figure reste floue, plus proche de l'épouvantail verbal que du monstre à la biologie précise : on l'invoque pour avertir, rarement pour la décrire en détail.",
+      "Le passage de cet épouvantail à la brute goblinoïde d'aujourd'hui est un geste des jeux de rôle modernes, Donjons et Dragons en tête, qui ont réemployé le nom anglais pour désigner un grand gobelinoïde hirsute, plus fort et plus rusé que ses cousins gobelins.[1][2] Cette adaptation ludique construit une créature cohérente avec ses propres règles de jeu, sans reprendre la fonction pédagogique et vaguement définie du bugbear traditionnel destiné à effrayer les enfants.",
+      "Il faut donc tenir les deux fils séparés : le mot a une histoire folklorique réelle, mais la créature que l'on rencontre aujourd'hui dans les cavernes et les camps de bandits est une invention de jeu, sans lignée mythologique propre reliant directement le grand gobelinoïde furtif à l'ours effrayant des bois anglais."
+    ],
+    "anomalies": [
+      "Le trait distinctif du gobelours en jeu tient dans deux capacités complémentaires : la Brute, qui ajoute un dé de dégâts supplémentaire à ses attaques de mêlée, et l'Attaque surprise, qui inflige des dégâts additionnels considérables lorsqu'il touche une cible prise au dépourvu lors du premier round de combat.[2] Cette combinaison en fait un adversaire dont la dangerosité se concentre presque entièrement dans l'instant de la surprise, bien plus que dans un affrontement prolongé.",
+      "Sa discrétion n'est pas seulement un talent narratif : les descriptions lui prêtent une aptitude marquée à la discrétion et à la survie en milieu sauvage, cohérente avec un mode de vie fondé sur le raid et l'embuscade plutôt que sur l'assaut frontal.[2] Il privilégie le repli stratégique face à une force supérieure, ce qui le distingue des gobelinoïdes plus impulsifs et souligne un calcul, sinon une intelligence, mis au service exclusif de sa propre survie et de celle de son groupe.",
+      "Les variantes rencontrées selon les bestiaires — chefs de bande, guerriers, éclaireurs — conservent toutes ce socle commun de force et de fourberie, sans jamais reprendre la fonction d'avertissement enfantin du bugbear original ; le gobelours de jeu reste une créature de rencontre hostile, pensée pour surprendre des aventuriers, non pour discipliner des enfants au coin du feu."
+    ],
+    "naturelle": {
+      "lead": "N'ayant pas de tradition folklorique propre, le gobelours se décrit essentiellement à travers son usage dans les jeux de rôle modernes, où il occupe la niche du gobelinoïde le plus massif et le plus dangereux en embuscade.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le gobelours privilégie l'embuscade et le raid éclair, frappant fort dès le premier contact puis engageant un combat classique si la surprise échoue. Il sait aussi se replier lorsque le rapport de force se retourne, un calcul qui le distingue des gobelinoïdes plus impulsifs de son entourage."]},
+        {"title": "Habitat", "body": ["Camps de fortune, collines rocailleuses et cavernes composent son territoire de prédilection, des lieux qui offrent à la fois des points d'observation et des recoins où sa silhouette hirsute se confond avec le terrain."]},
+        {"title": "Alimentation", "body": ["Les bestiaires ne détaillent guère son régime, mais son association constante au raid et à la chasse suggère une subsistance opportuniste, tirée du gibier local et du pillage des convois ou campements qu'il surprend."]},
+        {"title": "Intelligence", "body": ["Sans être des stratèges, les gobelours font preuve d'un calcul tactique certain : choix du moment de l'attaque, usage du terrain, repli organisé face à une force supérieure. Cette intelligence pratique, tournée vers l'embuscade, contraste avec l'absence de toute vie intellectuelle ou artisanale prêtée à d'autres gobelinoïdes."]},
+        {"title": "Reproduction", "body": ["Les sources de jeu ne développent pas de cycle de reproduction propre au gobelours ; il est généralement présenté comme un membre plus robuste de la famille des gobelinoïdes, organisé en bandes ou intégré aux camps d'autres peuples goblinoïdes plutôt qu'en clans indépendants richement décrits."]},
+        {"title": "Prédateurs", "body": ["Sa taille et sa force en font rarement une proie ; le danger vient surtout des aventuriers et des rivaux gobelinoïdes qui contestent son autorité au sein d'un même camp. Aucun prédateur naturel ne lui est attribué de façon constante d'un bestiaire à l'autre."]}
+      ]
+    },
+    "reliques": [
+      "Le mot bugbear a gardé, en anglais courant, un sens dérivé désignant une source récurrente d'agacement ou de crainte irraisonnée — un pet peeve —, trace discrète de son origine d'épouvantail verbal bien avant de devenir un monstre de bestiaire.[1] Le français gobelours, en revanche, n'a pas hérité de cet usage figuré et reste cantonné à son rôle de créature de jeu.",
+      "Cette double vie du nom rappelle que la fantasy contemporaine puise parfois dans des mots dont l'histoire dépasse largement le tableau de statistiques qu'on leur associe aujourd'hui, sans pour autant ressusciter la créature ancienne qu'ils désignaient : le gobelours des cavernes n'est pas l'ours des bois anglais, seulement son lointain homonyme."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Bugbear — étymologie et origine folklorique du croquemitaine anglais, Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Bugbear"},
+    {"id": 2, "title": "Bugbear — statistiques et description du gobelinoïde, aidedd.org (D&D 5e)", "url": "https://www.aidedd.org/dnd/monstres.php?vo=bugbear"}
+  ]
+}

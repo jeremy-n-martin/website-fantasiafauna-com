@@ -1,0 +1,36 @@
+{
+  "description": "Deux figures partagent un même nom : un peuple mythique irlandais venu porter des sacs de terre, et un géant discret des forêts inventé bien plus tard par le jeu de rôle.",
+  "sections": {
+    "fascination": [
+      "Un colosse qui préfère la lisière au trône : voilà ce qui donne au firbolg des tables de jeu son charme particulier. Rien chez lui n'annonce la brutalité qu'on prête d'ordinaire aux géants. Sa carrure imposante sert à porter, à protéger, à s'effacer derrière un tronc plutôt qu'à écraser. Le merveilleux tient à ce contraste : la force la plus manifeste se met au service de la discrétion la plus totale, comme si la nature avait donné un corps de titan à un tempérament de berger.",
+      "Il y a aussi quelque chose d'apaisant dans cette manière d'habiter la forêt sans la dominer. Le firbolg n'exploite pas les bois, il y veille. Sa magie, quand elle se manifeste, ne fracasse rien : elle change une apparence, apaise une blessure, dissout une présence indésirable dans le feuillage. On est loin du fracas des batailles géantes ; on est plutôt du côté du silence des grandes clairières, où un pas trop lourd n'est jamais qu'une politesse retenue."
+    ],
+    "legendes": [
+      "Le nom de firbolg appartient d'abord à l'histoire irlandaise ancienne, bien avant d'entrer dans un manuel de jeu. Le Lebor Gabála Érenn, compilation médiévale relatant les vagues de peuplement mythique de l'Irlande, présente les Fir Bolg comme le quatrième peuple à s'être établi sur l'île, après avoir été réduits en esclavage en Grèce où on les aurait forcés à porter des sacs de terre — d'où viendrait leur nom, littéralement « hommes des sacs ».[1] Revenus en Irlande, ils l'organisent en cinq provinces et y établissent la royauté suprême de Tara, avant d'être renversés par l'arrivée des Tuatha Dé Danann.[1] Rien, dans ces récits, ne fait d'eux des géants : ce sont des humains, fondateurs légendaires d'un ordre politique.",
+      "La créature que l'on rencontre aujourd'hui dans les jeux de rôle n'a presque rien à voir avec ce peuple fondateur. Elle apparaît d'abord dans le Monster Manual II de la première édition de Donjons et Dragons, en 1983, comme une variété de géant.[2] Le tournant décisif survient en 2016, lorsque Volo's Guide to Monsters en fait une race jouable entièrement repensée : un humanoïde lié aux fées, gardien discret de la nature sauvage, dont l'apparence évoque désormais un ours redressé plutôt qu'un simple géant costaud.[2] Cette refonte doit davantage à l'esthétique du monde féerique du jeu qu'à la moindre source irlandaise ; le nom seul a traversé les siècles, pas le contenu.",
+      "Le tableau du site range d'ailleurs le firbolg parmi les créatures sans ancrage folklorique traditionnel : c'est une invention ludique récente, qui emprunte un nom ancien sans en reprendre l'histoire. Il faut donc se garder de lire dans le géant sylvestre actuel un quelconque écho direct des colons mythiques du Lebor Gabála. Les deux figures coexistent sous un même mot, séparées par près de mille ans de récits sans rapport."
+    ],
+    "anomalies": [
+      "Le firbolg des règles modernes se distingue avant tout par sa discrétion physique paradoxale : malgré une taille comprise entre quatre et sept mètres selon les descriptions les plus généreuses de son folklore ludique, il peut dissimuler sa présence et celle de ses compagnons, comme si son lien à la forêt effaçait momentanément son propre volume.[2] Cette capacité de camouflage, associée à des pouvoirs de communication avec les bêtes et les plantes, en fait moins un combattant qu'un gardien : sa force considérable reste en réserve, mobilisée seulement quand la discrétion échoue.",
+      "D'une édition à l'autre, le portrait s'est nettement adouci. Le géant frustre du Monster Manual II laisse place, chez Volo's Guide, à un être posé, philosophe à sa manière, plus enclin à la méditation qu'à l'assaut.[2] Cette évolution reflète un choix éditorial assumé : transformer une menace en allié potentiel, un monstre en peuple jouable doté de sa propre sagesse."
+    ],
+    "naturelle": {
+      "lead": "Le portrait qui suit décrit le firbolg tel que le présentent les jeux de rôle contemporains, seule source de cette figure : la fiche ne doit rien à un folklore irlandais qui ignore ce géant.",
+      "parts": [
+        {"title": "Comportement", "body": ["Réservé, pacifique par tempérament, le firbolg évite le conflit tant qu'une menace ne pèse pas directement sur la forêt qu'il protège. Sa patience est grande, sa colère rare mais alors redoutable."]},
+        {"title": "Habitat", "body": ["Forêts profondes et collines isolées, loin des routes fréquentées. Ses campements, quand ils existent, se fondent dans la végétation au point de rester invisibles à qui ne les cherche pas."]},
+        {"title": "Alimentation", "body": ["Essentiellement cueilleur et chasseur occasionnel, il prélève sans excès, en gardant un souci constant de ne pas épuiser le territoire dont il se sent responsable."]},
+        {"title": "Intelligence", "body": ["Contemplative plutôt que technique : le firbolg excelle moins dans l'artisanat que dans l'observation patiente des cycles naturels et l'interprétation des signes de la forêt."]},
+        {"title": "Reproduction", "body": ["Les communautés, réduites, se transmettent oralement les récits protecteurs de leur territoire. La croissance jusqu'à l'âge adulte est lente, à l'image de la longévité qu'on prête à ce peuple."]},
+        {"title": "Prédateurs", "body": ["Peu de créatures s'attaquent à un géant de cette carrure ; le danger vient plutôt des intrus qui menacent la forêt elle-même, contre lesquels le firbolg réserve sa force."]}
+      ]
+    },
+    "reliques": [
+      "Le firbolg a connu une seconde vie médiatique récente grâce aux séries de web-télévision consacrées aux parties de jeu de rôle filmées, où des personnages de ce peuple ont contribué à populariser son profil de géant débonnaire auprès d'un public bien plus large que celui des seules tables de jeu.[2] Le nom ancien, presque oublié en dehors des études sur le Lebor Gabála, se trouve ainsi rattaché dans l'imaginaire contemporain à une silhouette qu'il n'a jamais désignée avant le XXe siècle finissant."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Fir Bolg — Wikipedia", "url": "https://en.wikipedia.org/wiki/Fir_Bolg"},
+    {"id": 2, "title": "Putting the Fur in Firbolg: The Evolution of a Character Race — D&D Beyond", "url": "https://www.dndbeyond.com/posts/287-putting-the-fur-in-firbolg-the-evolution-of-a"}
+  ]
+}

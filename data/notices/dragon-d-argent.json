@@ -1,0 +1,36 @@
+{
+  "description": "Le dragon d'argent choisit souvent de vivre parmi nous sans écailles ni ailes, préférant à la montagne le visage d'un vieil homme assis près du feu.",
+  "sections": {
+    "fascination": [
+      "Un dragon qui s'ennuie de sa propre grandeur, voilà une idée rare. Le dragon d'argent, pourtant, déserte volontiers les sommets glacés qui lui appartiennent pour marcher parmi les humains sous les traits d'un vieillard bienveillant ou d'une jeune elfe de passage.[1] Il n'a rien à y gagner en puissance ni en trésor ; il y gagne seulement une compagnie qu'aucune montagne ne peut lui offrir. Cette affection pour les mortels, si rare chez une créature de cette envergure, donne au dragon d'argent une tendresse presque mélancolique.",
+      "La rareté même de son apparition sous forme véritable en fait une figure d'autant plus saisissante lorsqu'elle se révèle. Le souffle glacé qui jaillit alors d'une gorge argentée rappelle, par contraste, la puissance que ce vieillard affable dissimulait depuis des années sous une identité d'emprunt. Le vertige tient à cette double vie assumée : un être capable de vivre un demi-siècle parmi nous sans jamais trahir sa vraie nature, jusqu'au jour où elle redevient nécessaire."
+    ],
+    "legendes": [
+      "Le dragon d'argent rejoint la famille des métalliques dès le supplément Greyhawk de 1975, aux côtés du cuivre, du bronze et de l'airain, complétant ainsi l'ensemble fondé par le dragon d'or de 1974.[2] Sa vocation de compagnon des mortels se précise au fil des éditions, jusqu'à devenir l'un des traits les plus célèbres du personnage : les manuels le décrivent comme extrêmement rare et discret, préférant l'apparence d'un humain âgé et bienveillant, ou d'une elfe séduisante, à sa forme de dragon.[1]",
+      "Cette propension au camouflage humain le distingue nettement du dragon d'or, plus ouvertement héroïque, et en fait un personnage narratif privilégié : nombre de campagnes historiques de Donjons et Dragons ont bâti des intrigues entières sur la révélation tardive qu'un mentor ou un allié de longue date était en réalité un dragon d'argent. Son alignement loyal bon s'exprime ainsi moins par l'action directe que par une présence patiente, étalée sur des générations humaines entières.",
+      "La formalisation de la catégorie des dragons métalliques par le Monstrous Manual de 1993 consolide ce profil, qui reste stable jusque dans la cinquième édition : un être froid par son souffle, chaleureux par son comportement, et dont la forme véritable reste un secret précieusement gardé.[1][2]"
+    ],
+    "anomalies": [
+      "Le souffle du dragon d'argent adulte se déploie en un cône de froid glacial, capable de couvrir une large zone et d'infliger des blessures sévères aux créatures qui échouent à s'en protéger.[1] Ce pouvoir contraste fortement avec l'image chaleureuse qu'il cultive en société humaine, rappelant que la douceur de ses manières n'efface jamais la puissance qui sommeille sous l'apparence choisie.",
+      "Son aptitude au métamorphisme n'est pas un simple déguisement : le dragon d'argent peut revêtir la forme d'un humanoïde ou d'une bête dont la puissance ne dépasse pas la sienne, et y demeurer indéfiniment sans que sa nature ne transparaisse.[1] Cette capacité, partagée avec le dragon d'or, fait des deux dragons métalliques les plus proches des affaires humaines les seuls véritablement capables d'en épouser durablement l'existence."
+    ],
+    "naturelle": {
+      "lead": "Le portrait retenu suit la cinquième édition de Donjons et Dragons, où le dragon d'argent apparaît comme le plus proche des sociétés mortelles parmi les métalliques.",
+      "parts": [
+        {"title": "Comportement", "body": ["Discret par nature, le dragon d'argent observe longuement avant de s'engager, préférant l'écoute et l'accompagnement patient à l'intervention spectaculaire. Sa forme humaine lui permet d'agir sans jamais révéler l'ampleur réelle de sa force.[1]"]},
+        {"title": "Habitat", "body": ["Sa forme véritable niche dans les montagnes enneigées et les hauteurs nuageuses, loin des regards. Sous forme humaine, en revanche, il s'installe volontiers dans des villages ou des villes, parfois pour des décennies entières.[1]"]},
+        {"title": "Alimentation", "body": ["Sous sa forme de dragon, il chasse comme n'importe quel grand prédateur des cimes ; sous forme humaine, il partage la table de ceux qu'il côtoie, sans que cette humilité alimentaire trahisse jamais sa vraie nature."]},
+        {"title": "Intelligence", "body": ["Son intelligence s'exprime dans la durée : il retient les générations d'une même famille humaine, apprend leurs coutumes, et peut guider des communautés entières sans jamais se dévoiler, sinon au moment qu'il juge nécessaire.[1]"]},
+        {"title": "Reproduction", "body": ["Comme les autres vrais dragons, il traverse plusieurs stades de croissance, du dragonnet au très ancien ; la maîtrise du métamorphisme s'affine avec l'âge, tout comme la puissance de son souffle glacé.[1]"]},
+        {"title": "Prédateurs", "body": ["Peu de créatures menacent un dragon d'argent adulte dans sa forme véritable ; le risque principal vient plutôt de la découverte accidentelle de sa double identité, qui peut compromettre des décennies de vie humaine construite avec soin."]}
+      ]
+    },
+    "reliques": [
+      "Le dragon d'argent demeure l'archétype du dragon protecteur déguisé, une figure reprise dans de nombreux récits dérivés de Donjons et Dragons où un vieux sage ou une conseillère mystérieuse se révèle, au moment critique, dépositaire d'une puissance draconique insoupçonnée. Cette image a largement dépassé les tables de jeu pour nourrir l'imaginaire plus général du dragon bienveillant vivant caché parmi les hommes.[1][2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Adult Silver Dragon, Monsters", "url": "https://www.dndbeyond.com/monsters/16772-adult-silver-dragon"},
+    {"id": 2, "title": "Dragon (Dungeons & Dragons) — Wikipédia (en anglais)", "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)"}
+  ]
+}

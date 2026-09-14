@@ -1,0 +1,38 @@
+{
+  "description": "Le démonologue ne combat pas le démon : il l'étudie, le nomme et parfois le convoque, convaincu qu'un savoir suffisamment précis vaut protection contre l'abîme qu'il consulte.",
+  "sections": {
+    "fascination": [
+      "Ce qui distingue le démonologue de l'exorciste ou du sorcier tient à une posture presque administrative face à l'invisible : il dresse des listes, vérifie des sceaux, respecte des protocoles. Le vertige propre à cette figure n'est pas celui du pacte irréfléchi, mais celui de la compétence appliquée à l'ingérable — l'idée qu'un cercle bien tracé, un nom correctement prononcé, une heure bien choisie suffiraient à transformer une puissance infernale en interlocuteur négociable. Cette confiance dans la méthode, appliquée à ce qui par nature déborde toute méthode, est la source la plus profonde de sa fascination.",
+      "Le démonologue historique n'est pourtant pas toujours celui qu'on imagine. Certains, comme Johann Weyer au XVIe siècle, mobilisent leur érudition non pour invoquer mais pour innocenter : leur savoir des démons sert à démontrer que les femmes accusées de sorcellerie ne sont pas leurs complices mais des malades qu'il faut soigner plutôt que brûler.[1][2] Le même mot recouvre ainsi le compilateur de grimoires et le médecin sceptique, l'un cherchant le pouvoir de l'abîme, l'autre cherchant à en priver ses juges du prétexte pour condamner les vivants."
+    ],
+    "legendes": [
+      "⚠️ Pas une créature folklorique traditionnelle : le démonologue n'est pas un être surnaturel mais une figure d'érudit, attestée par une histoire documentaire réelle plutôt que par le folklore. Son champ, la démonologie, désigne l'étude savante de la nature, du rang et des pouvoirs des démons, une discipline qui traverse la théologie, la médecine et le droit selon les époques.[2]",
+      "Le médecin Johann Weyer publie en 1563 son De praestigiis daemonum, ouvrage dans lequel il compile un catalogue de démons, la Pseudomonarchia Daemonum, tout en soutenant que la sorcellerie n'existe pas et que ceux qui prétendent la pratiquer souffrent de troubles qu'il convient de traiter comme une maladie plutôt que de punir comme un crime.[1] Ce texte suscite une controverse majeure de la seconde moitié du XVIe siècle : Jean Bodin, magistrat et théoricien politique, lui oppose une réfutation virulente dans sa Démonomanie des sorciers, défendant la réalité de la sorcellerie et la nécessité de la réprimer, tandis que Reginald Scot prolonge en anglais la position sceptique de Weyer.[1]",
+      "Le catalogue dressé par Weyer devient, sans qu'il en soit lui-même l'auteur direct, la source principale de l'Ars Goetia, compilée au milieu du XVIIe siècle et intégrée à la Petite Clé de Salomon : l'ordre des esprits y est modifié, quatre entités supplémentaires y apparaissent et l'une des figures de Weyer en est absente.[3] D'autres démonologues, tel le théologien Thomas d'Aquin, avaient auparavant fixé les comportements dont un chrétien devait se prémunir, tandis que des auteurs comme Heinrich Kramer, connu pour son rôle dans la chasse aux sorcières, prétendaient enseigner comment reconnaître ceux qui traitaient avec les démons.[2]",
+      "Le savoir démonologique connaît un net déclin d'autorité intellectuelle avec le siècle des Lumières, sans jamais disparaître complètement : des auteurs plus récents ont continué à produire une littérature démonologique, de qualité et de rigueur très inégales selon les périodes et les intentions.[2]"
+    ],
+    "anomalies": [
+      "Le trait le plus remarquable du démonologue est la contradiction interne de sa fonction : le même savoir des noms, des rangs et des sceaux démoniaques peut servir à invoquer une entité, comme dans les grimoires de l'Ars Goetia, ou à en démontrer l'innocuité relative afin de protéger des accusés de sorcellerie, comme chez Weyer.[1][3] Aucune autre figure de ce bestiaire ne voit son savoir spécialisé produire des usages aussi opposés selon la main qui le tient.",
+      "Les sources distinguent également des registres très différents de démonologue selon l'époque : le théologien qui catalogue les comportements dangereux pour l'âme, le juriste qui légifère sur la preuve de sorcellerie, le médecin qui requalifie la possession en pathologie, et enfin le compilateur de grimoires qui transforme ce savoir en manuel pratique d'invocation.[1][2][3] Le mot recouvre ainsi des pratiques aussi diverses que la dogmatique, le droit pénal, la médecine et la magie cérémonielle."
+    ],
+    "naturelle": {
+      "lead": "Le démonologue n'est pas une créature au sens biologique mais un type social récurrent : l'érudit qui fait du démon son objet d'étude plutôt que sa terreur immédiate.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le démonologue procède par accumulation méthodique : il compile, compare les sources antérieures, corrige les erreurs qu'il croit déceler chez ses prédécesseurs, à la manière dont l'Ars Goetia reprend et modifie le catalogue antérieur de Weyer.[3]"]},
+        {"title": "Habitat", "body": ["Cabinets d'étude, bibliothèques ecclésiastiques ou universitaires, et pour les plus audacieux les cryptes ou lieux discrets où un cercle d'invocation peut être tracé sans témoin indiscret."]},
+        {"title": "Alimentation", "body": ["Aucune particularité n'est rapportée par les sources ; le démonologue partage la table ordinaire de son milieu, clérical, universitaire ou judiciaire selon les cas."]},
+        {"title": "Intelligence", "body": ["Sa compétence propre est philologique et classificatoire : nommer correctement, situer dans une hiérarchie, distinguer une entité d'une autre que des sources concurrentes auraient pu confondre, comme les quatre esprits que l'Ars Goetia ajoute au corpus de Weyer.[3]"]},
+        {"title": "Reproduction", "body": ["Le savoir démonologique se transmet moins par filiation biologique que par copie, traduction et réédition ; le texte de Weyer, réécrit et complété, resurgit ainsi des siècles plus tard sous l'édition de Mathers et Crowley en 1904.[3]"]},
+        {"title": "Prédateurs", "body": ["L'accusation d'hérésie ou de complicité démoniaque a longtemps menacé le démonologue lui-même, la frontière entre l'érudit qui étudie le démon et le suspect qui le fréquenterait de trop près restant, pour ses contemporains, dangereusement mince."]}
+      ]
+    },
+    "reliques": [
+      "La figure du démonologue survit aujourd'hui dans une veine littéraire et cinématographique abondante, du chercheur sceptique confronté malgré lui au surnaturel jusqu'au personnage de fiction ludique qui invoque et négocie avec des esprits selon des règles précises. Les catalogues renaissants qu'il a produits, en particulier l'Ars Goetia, continuent d'alimenter jeux de rôle, littérature fantastique et jeux vidéo, où noms et sceaux démoniaques circulent désormais très loin du cabinet d'étude qui les avait vus naître.[3]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "De praestigiis daemonum — Johann Weyer et la controverse avec Jean Bodin, Wikipédia", "url": "https://en.wikipedia.org/wiki/De_praestigiis_daemonum" },
+    {"id": 2, "title": "Demonology — histoire de la démonologie comme discipline, Wikipédia", "url": "https://en.wikipedia.org/wiki/Demonology"},
+    {"id": 3, "title": "Ars Goetia — filiation avec la Pseudomonarchia Daemonum et la Petite Clé de Salomon, Wikipédia", "url": "https://en.wikipedia.org/wiki/Ars_Goetia"}
+  ]
+}

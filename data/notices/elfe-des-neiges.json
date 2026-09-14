@@ -1,0 +1,35 @@
+{
+  "description": "Un elfe taillé dans le givre et le silence : une variation moderne du peuple elfique, façonnée par la fantasy pour peupler les confins gelés que le folklore ancien laissait vides.",
+  "sections": {
+    "fascination": [
+      "L'elfe des neiges pousse jusqu'à son terme une idée déjà présente chez l'elfe classique : celle d'un peuple accordé à son milieu au point de s'y fondre. Là où l'elfe des bois épouse la forêt, celui des glaces épouse l'absence — le blanc uniforme, le silence acoustique de la neige fraîche, la lenteur qu'impose le froid à tout ce qui vit. Cette radicalisation d'un trait plutôt qu'une invention ex nihilo explique pourquoi la figure, bien que récente, semble immédiatement crédible.",
+      "Son isolement volontaire ajoute une note mélancolique à l'archétype. L'elfe des neiges n'est pas chassé vers le froid : il l'a choisi, ou en a hérité, et cette adaptation devient une manière de se tenir à l'écart d'un monde jugé trop chaud, trop bruyant, trop pressé. On y retrouve, sous une forme paysagère, la même altérité digne que le folklore prêtait déjà aux elfes."
+    ],
+    "legendes": [
+      "⚠️ Pas une créature folklorique traditionnelle. L'elfe des neiges n'apparaît dans aucune mythologie ancienne répertoriée ; il s'agit d'une variante régionale du peuple elfique développée par la fantasy moderne, sur le modèle de l'elfe germanique et nordique dont il reprend la longévité, la magie et l'ambivalence envers les autres peuples.[1]",
+      "Le procédé — décliner un peuple fantastique en variantes climatiques (des neiges, du désert, des profondeurs) — est une pratique courante du jeu de rôle et de la fantasy de genre depuis la fin du XXe siècle, qui permet de peupler des biomes extrêmes sans inventer de peuple entièrement nouveau à chaque fois. L'elfe des neiges s'inscrit dans cette logique de world-building plutôt que dans une lignée mythologique propre.",
+      "Les traits qu'on lui prête — résistance au froid, teint pâle, isolement culturel, société recluse dans des cités de glace ou des taïgas — prolongent des motifs déjà présents dans le folklore nordique de l'elfe sombre (dökkálfar), habitant des profondeurs et associé à un monde retiré du soleil, ce qui rend la filiation esthétique plausible même en l'absence de source ancienne directe.[1]"
+    ],
+    "anomalies": [
+      "La variation essentielle par rapport à l'elfe générique porte sur l'adaptation physiologique : résistance au froid extrême, parfois capacité à se déplacer sans peine sur la glace ou la neige profonde, et une discrétion sensorielle qui les rend difficiles à repérer dans un paysage uniformément blanc. Ces traits changent sensiblement selon les univers de jeu ou de fiction qui les emploient, aucune version canonique unique ne s'étant imposée.",
+      "Sur le plan social, la plupart des traitements insistent sur un isolement plus marqué que chez les autres elfes : sociétés peu nombreuses, méfiantes envers les étrangers, organisées autour de la survie collective plutôt que de la cour ou de l'art, à l'inverse des elfes des forêts souvent dépeints comme raffinés et sédentaires."
+    ],
+    "naturelle": {
+      "lead": "Faute de tradition ancienne, l'histoire naturelle de l'elfe des neiges se construit par contraste avec celle de l'elfe générique, dont il partage la nature mais dont il pousse l'adaptation au milieu jusqu'à l'extrême.",
+      "parts": [
+        {"title": "Comportement", "body": ["Prudent, économe de ses gestes et de sa parole, l'elfe des neiges type privilégie l'efficacité à l'ornement — une discrétion qui contraste avec l'image plus expansive de l'elfe des bois."]},
+        {"title": "Habitat", "body": ["Banquises, taïgas et cités bâties à même la glace ou creusées dans la roche gelée forment son territoire de prédilection, choisi pour l'isolement qu'il procure autant que pour ses ressources."]},
+        {"title": "Alimentation", "body": ["La chasse et la pêche en milieu polaire, complétées par une agriculture de subsistance sous serre ou en abri, remplacent la cueillette forestière prêtée aux autres peuples elfiques."]},
+        {"title": "Intelligence", "body": ["Un savoir tourné vers la survie — lecture des glaces, prévision des tempêtes, conservation des vivres — occupe, dans cette variante, la place que d'autres elfes réservent à l'art ou à la magie savante."]},
+        {"title": "Reproduction", "body": ["La longévité prêtée au peuple elfique en général s'applique sans changement notable ; seule la rareté des naissances, due à la rigueur du milieu, est parfois soulignée comme un trait distinctif."]},
+        {"title": "Prédateurs", "body": ["Le froid lui-même, plus que toute créature, agit comme principal danger dans la plupart des récits qui mettent en scène ce peuple, aux côtés des prédateurs polaires ordinaires que la fiction leur associe selon les besoins du récit."]}
+      ]
+    },
+    "reliques": [
+      "L'elfe des neiges doit sa popularité aux jeux vidéo et de rôle de fantasy qui cherchent à décliner des biomes exotiques sans multiplier les peuples inédits : il apparaît ainsi, sous des noms variés, dans de nombreux univers où un cadre polaire ou montagneux appelait un peuple qui lui soit propre, prolongeant à sa manière la vieille dualité nordique entre elfes de lumière et elfes des profondeurs.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Elfe — Wikipédia", "url": "https://fr.wikipedia.org/wiki/Elfe_(nordique)"}
+  ]
+}

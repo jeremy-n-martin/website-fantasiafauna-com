@@ -1,0 +1,38 @@
+{
+  "description": "Une présence pèse sur le dormeur avant même que le rêve ne prenne forme : l'incube ne force pas une porte, il se glisse dans le sommeil comme une chose déjà connue.",
+  "sections": {
+    "fascination": [
+      "Ce qui frappe dans la figure de l'incube, ce n'est pas sa laideur ni sa force, mais son point d'entrée : le sommeil lui-même, cet état où le corps ne peut ni fuir ni se défendre. Il n'a pas besoin de forcer une serrure ; il profite d'une vulnérabilité universelle, celle de dormir. Cette proximité avec l'expérience la plus banale — le poids sur la poitrine, l'impossibilité de bouger, la sensation d'une présence dans le noir — donne au mythe une puissance que peu de monstres partagent : chacun peut, une nuit, croire l'avoir frôlé.",
+      "L'incube incarne aussi une ambiguïté morale inconfortable, puisqu'il loge le désir et la terreur dans le même geste. Les récits médiévaux hésitent constamment entre le viol nocturne et la séduction consentie, entre la victime innocente et la pécheresse complaisante. Cette hésitation n'est pas un défaut de cohérence : elle est le cœur du mythe, qui sert justement à nommer une expérience qu'aucune morale simple ne peut trancher — le trouble du rêve érotique et de la paralysie du sommeil, vécus par des sociétés qui n'avaient pas d'autre vocabulaire pour les dire."
+    ],
+    "legendes": [
+      "Le mot incube vient du latin incubare, « se coucher sur, couver » — un verbe déjà employé pour les oiseaux qui couvent leurs œufs, glissé vers l'image d'une entité s'installant sur le corps endormi.[1] Cette étymologie, discutée par les dictionnaires historiques comme le Littré, ancre le démon dans une sensation physique précise : le poids, l'oppression thoracique, avant toute théologie.",
+      "La croyance se développe surtout dans l'Europe médiévale et moderne, où l'incube devient le pendant masculin du succube : le même démon pouvait, selon les théologiens, prendre tour à tour l'une ou l'autre forme pour visiter hommes et femmes.[1][2] Des auteurs comme saint Augustin ou plus tard les démonologues de la chasse aux sorcières associent ces visites nocturnes à la naissance d'enfants difformes, de sorciers, voire de personnages légendaires : certaines généalogies médiévales prêtent ainsi à l'enchanteur Merlin une conception incubique.",
+      "Sur le plan anthropologique, les historiens du folklore relient largement ce mythe à des phénomènes aujourd'hui documentés par la médecine du sommeil : la paralysie du sommeil, accompagnée d'hallucinations de présence et d'une pression sur le torse, produit une expérience terrifiante que les sociétés prémodernes expliquaient par une visite démoniaque plutôt que par un dérèglement neurologique.[2] Le mot anglais nightmare garde d'ailleurs la trace de cette étiologie, mare désignant à l'origine un esprit oppresseur nocturne apparenté à ces figures.",
+      "La démonologie chrétienne intègre ensuite l'incube dans ses classifications savantes, aux côtés des autres esprits tentateurs, sans jamais en fixer une doctrine unique : certains théologiens le tiennent pour un démon à part entière, d'autres pour une simple modalité d'action de Satan lui-même."
+    ],
+    "anomalies": [
+      "Le trait distinctif de l'incube, dans les sources médiévales, tient à son mode d'action : il n'attaque pas de front mais profite du sommeil, exploitant une frontière où la volonté du dormeur est suspendue. Plusieurs récits lui prêtent la capacité de voler sa semence à un homme endormi sous forme de succube, pour la transmettre ensuite comme incube à une femme — un mécanisme théologique tarabiscoté destiné à expliquer comment un démon, dépourvu de corps propre selon la doctrine, pouvait engendrer une descendance.[1]",
+      "Les récits varient aussi sur la conséquence des visites : fatigue et épuisement du dormeur dans les versions les plus sobres, naissance d'enfants marqués ou de figures surnaturelles dans les versions les plus légendaires. Cette variabilité signale moins une incohérence qu'une adaptation constante du motif aux angoisses locales, du village médiéval au tribunal inquisitorial."
+    ],
+    "naturelle": {
+      "lead": "L'incube n'a jamais fait l'objet d'une zoologie fantastique organisée comme d'autres créatures ; il reste avant tout une figure théologique et psychologique, dont les traits se déduisent des récits de visites nocturnes plutôt que d'une description physique stable.",
+      "parts": [
+        {"title": "Comportement", "body": ["Patient et opportuniste, l'incube n'agit que pendant le sommeil de sa victime, jamais à visage découvert en plein jour. Les récits insistent sur sa capacité à revenir nuit après nuit auprès de la même personne, installant une relation presque conjugale et clandestine que rapportent certains procès de sorcellerie."]},
+        {"title": "Habitat", "body": ["Aucun territoire propre ne lui est assigné : il hante les chambres, les alcôves, tout lieu où l'on dort. Sa présence est intimement liée à l'obscurité et à l'isolement du dormeur plutôt qu'à un paysage particulier."]},
+        {"title": "Alimentation", "body": ["Les sources ne lui prêtent pas de faim au sens propre ; il se « nourrit » plutôt de la vigueur, du sommeil ou de la semence de ses victimes, selon une logique de vol vital plus que de subsistance corporelle."]},
+        {"title": "Intelligence", "body": ["Les démonologues le créditent d'une ruse patiente : il choisit ses victimes, imite parfois un amant absent pour mieux tromper la dormeuse, et sait dissimuler ses visites derrière l'explication du rêve."]},
+        {"title": "Reproduction", "body": ["C'est ici que le mythe se fait le plus spéculatif : dépourvu de corps propre selon la théologie, l'incube ne pourrait engendrer sans dérober au préalable une semence humaine, mécanisme que les textes médiévaux détaillent avec un sérieux presque clinique pour sauver la cohérence doctrinale."]},
+        {"title": "Prédateurs", "body": ["Le seul rempart efficace reste rituel et non naturel : prière, eau bénite, crucifix ou exorcisme, selon les manuels de piété et les traités de démonologie qui prescrivent ces remèdes contre ses visites."]}
+      ]
+    },
+    "reliques": [
+      "Le motif de l'incube irrigue toujours la culture populaire, du cinéma d'horreur aux jeux de rôle, où il apparaît généralement comme démon séducteur associé au sommeil et au désir. Sa contrepartie, le succube, a connu une postérité plus large encore dans la fantasy contemporaine, mais les deux figures restent indissociables, l'une ne se comprenant pas sans l'autre.",
+      "La médecine du sommeil moderne, en documentant la paralysie hypnagogique et les hallucinations de présence, a d'une certaine manière « résolu » l'énigme que le mythe cherchait à nommer — sans pour autant faire disparaître la figure elle-même, qui continue de prêter des mots à une expérience que la physiologie explique mais n'apaise pas toujours."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Incubus, Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Incubus"},
+    {"id": 2, "title": "Incubus — Nightmare, Folklore & Supernatural, Encyclopædia Britannica", "url": "https://www.britannica.com/topic/incubus"}
+  ]
+}

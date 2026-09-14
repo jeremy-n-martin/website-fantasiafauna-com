@@ -1,0 +1,35 @@
+{
+  "description": "Le demi-orc porte dans son visage la force d'un peuple que l'on craint et les traits d'un peuple qui le méprise pour cela.",
+  "sections": {
+    "fascination": [
+      "Il y a une brutalité tranquille dans l'idée du demi-orc : un corps taillé pour la guerre, animé d'une endurance que n'explique pas la seule ascendance humaine, et posé au milieu de sociétés qui n'ont pas prévu de place pour lui. Ce n'est pas un hybride paisible comme peut l'être le demi-elfe, réconcilié par la grâce des deux héritages ; c'est une figure de tension, dont la vigueur même rappelle sans cesse aux autres l'origine qu'ils voudraient oublier.",
+      "Ce qui fascine dans cette figure n'est donc pas la force en elle-même, mais ce qu'elle coûte à celui qui la porte : chaque muscle qui impressionne est aussi un signe qui trahit, chaque endurance au combat une preuve supplémentaire du sang que la société environnante tient pour inférieur. Le demi-orc des meilleurs récits ne triomphe pas de cette contradiction ; il apprend à vivre avec, et c'est cet apprentissage, plus que sa hache, qui constitue le véritable sujet des histoires où il apparaît."
+    ],
+    "legendes": [
+      "⚠️ Pas une créature folklorique traditionnelle : le demi-orc n'existe dans aucune mythologie populaire antérieure au XXe siècle. Il naît dans le sillage de l'orc lui-même, une création façonnée par J.R.R. Tolkien pour le légendaire de la Terre du Milieu, où des hybrides orc-humain apparaissent notamment parmi les créatures produites par le magicien Saruman, plus proches d'aspect humain que les redoutables Uruk-hai.[1]",
+      "Le jeu de rôle Donjons et Dragons introduit le demi-orc comme peuple jouable dès la première édition, en 1978, dans le Manuel des joueurs original ; des suppléments ultérieurs élargissent le concept à des croisements hybrides plus exotiques encore, tels l'orc-gobelours ou l'orc-gobelin.[1]",
+      "L'histoire éditoriale du demi-orc est ensuite marquée par des allers-retours révélateurs. La deuxième édition, à la fin des années 1980, le retire des options standard avant de le réintroduire par des suppléments spécialisés. La quatrième édition, à la fin des années 2000, l'exclut d'abord en raison de malaises suscités par ses origines conceptuelles, avant de le réintégrer avec une origine révisée. La cinquième édition, en 2024, va plus loin en supprimant les règles distinctes d'ascendance mixte, les concepteurs estimant que la construction même du terme demi- porte en elle une charge raciste qu'aucun toilettage de règles ne suffit à corriger.[1]"
+    ],
+    "anomalies": [
+      "Le trait le plus constant du demi-orc à travers les éditions est une endurance physique supérieure à la moyenne humaine, souvent traduite par une capacité à rester debout après un coup qui aurait terrassé un adversaire ordinaire. Cette résistance n'est jamais présentée comme magique : elle relève d'une vigueur héritée, brute, cohérente avec la réputation guerrière prêtée à l'orc lui-même.",
+      "Les variations les plus significatives portent sur le traitement narratif du stigmate social. Les premières éditions en font une donnée de fait, rarement interrogée ; les versions plus récentes, avant la suppression du peuple en 2024, cherchent au contraire à démonter le préjugé dont le demi-orc est l'objet, en proposant des origines diverses et des trajectoires qui ne doivent rien à la violence qu'on lui prête d'emblée.[1]"
+    ],
+    "naturelle": {
+      "lead": "Les fictions de jeu de rôle dessinent un être doté d'une force et d'une endurance hors du commun, que la société humaine environnante regarde le plus souvent avec méfiance.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le demi-orc des récits de jeu oscille entre deux postures : l'affirmation d'une identité guerrière assumée, ou au contraire l'effort constant pour s'en distancier et prouver, par la conduite, qu'il n'est pas réductible à l'image qu'on projette sur lui."]},
+        {"title": "Habitat", "body": ["Les marges des sociétés établies, les compagnies mercenaires et les camps itinérants offrent au demi-orc un espace où sa force est valorisée sans qu'on lui demande de justifier son origine."]},
+        {"title": "Alimentation", "body": ["Aucune source ne lui prête de régime particulier ; il partage l'ordinaire, souvent frugal, des compagnies et des routes où il trouve à s'employer."]},
+        {"title": "Intelligence", "body": ["Loin du cliché de la brute peu réfléchie, les traitements récents du type lui prêtent une intelligence pratique aiguisée par la nécessité constante de anticiper le jugement d'autrui."]},
+        {"title": "Reproduction", "body": ["Comme pour le demi-elfe, la naissance d'un demi-orc suppose une union entre deux peuples que tout, dans la fiction, tend à séparer ; les récits en font le plus souvent une circonstance exceptionnelle, rarement le fruit d'une communauté mixte stable."]},
+        {"title": "Prédateurs", "body": ["Le danger principal du demi-orc, dans les fictions qui le mettent en scène, n'est pas une bête qui le traquerait mais le rejet social qu'il doit désamorcer ou affronter à chaque nouvelle rencontre."]}
+      ]
+    },
+    "reliques": [
+      "Le retrait du demi-orc des règles officielles les plus récentes de Donjons et Dragons n'a pas mis fin à son usage narratif : il demeure un personnage-type des jeux vidéo de rôle et des fictions dérivées, où sa tension entre force reconnue et origine stigmatisée continue de fournir un ressort dramatique efficace, indépendant désormais de toute table de règles précise.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Half-orc — origines chez Tolkien et histoire éditoriale dans Donjons et Dragons, Wikipédia", "url": "https://en.wikipedia.org/wiki/Half-orc"}
+  ]
+}

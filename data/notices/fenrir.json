@@ -1,0 +1,37 @@
+{
+  "description": "Le loup enchaîné qui dévorera Odin au Ragnarök : Fenrir n'est pas une simple bête monstrueuse mais une pièce du destin cosmique nordique, dont la mort des dieux dépend.",
+  "sections": {
+    "fascination": [
+      "Ce qui rend Fenrir si singulier parmi les monstres mythologiques, c'est que son destin est connu d'avance — par les dieux eux-mêmes — sans que cette connaissance leur permette de l'éviter. Toute l'histoire de sa capture est celle d'une prophétie qu'on cherche à désamorcer et qui, par le geste même destiné à la contenir, se réalise inexorablement. Enchaîner Fenrir, c'est retarder le Ragnarök, non l'empêcher.",
+      "Le prix payé pour ce sursis ajoute à la scène toute sa gravité tragique : un dieu, Týr, sacrifie sa main pour que le loup accepte de se laisser lier, sachant probablement qu'il est trompé.[2] Ce geste de courage lucide, plus que la force brute de Fenrir, est peut-être ce qui a le plus marqué la mémoire du mythe."
+    ],
+    "legendes": [
+      "Fenrir est un loup monstrueux de la mythologie nordique, fils du dieu rusé Loki, père des loups Sköll et Hati Hróðvitnisson, et destiné selon la prophétie à tuer le dieu Odin lors du Ragnarök, avant d'être lui-même tué par le fils d'Odin, Víðarr.[2] Ce récit est principalement transmis par la Prose Edda de Snorri Sturluson, en particulier dans le chapitre 34 du Gylfaginning.[1]",
+      "Craignant la puissance grandissante du loup, les dieux tentent d'abord de l'enchaîner avec deux liens de fer massifs, Leyding puis Dromi, que Fenrir brise à chaque fois sans effort.[1] Ils font alors fabriquer par les nains Gleipnir, un lien d'apparence légère et souple, tissé de composants impossibles — le bruit des pas d'un chat, la barbe d'une femme, le souffle d'un poisson — qui le rend indestructible malgré sa fragilité apparente.[1]",
+      "Fenrir, méfiant devant cette étrange légèreté, n'accepte de se laisser lier qu'à la condition qu'un dieu place sa main dans sa gueule en gage de bonne foi. Seul Týr s'y résout ; lorsque le loup découvre qu'il ne peut se libérer de Gleipnir, il referme les mâchoires et lui arrache la main.[1] [2]",
+      "Au Ragnarök, Fenrir rompt enfin ses liens et se déchaîne sur le monde : selon la Prose Edda, il avale le soleil, plongeant l'univers dans les ténèbres, puis dévore Odin tout entier lors de l'affrontement final, avant d'être tué à son tour par Víðarr, qui lui déchire les mâchoires ou le transperce le cœur selon les versions.[2]"
+    ],
+    "anomalies": [
+      "La croissance de Fenrir est décrite comme prodigieuse et effrayante dès son plus jeune âge, au point que seul le dieu Týr ose encore l'approcher pour le nourrir — c'est cette peur grandissante qui pousse les dieux à chercher un moyen de l'entraver avant qu'il ne devienne incontrôlable.",
+      "Gleipnir lui-même constitue l'une des singularités les plus célèbres du mythe : un lien fait de matières impossibles à réunir (le bruit d'un pas de chat, la barbe d'une femme, les racines d'une montagne, les nerfs d'un ours, le souffle d'un poisson et la salive d'un oiseau), qui illustre la ruse des nains autant que la puissance nécessaire pour contenir le loup.[1]"
+    ],
+    "naturelle": {
+      "lead": "Fenrir appartient moins à une zoologie qu'à une eschatologie : sa vie entière, de la naissance au Ragnarök, est organisée autour d'une prophétie de destruction.",
+      "parts": [
+        {"title": "Comportement", "body": ["Docile en apparence dans son jeune âge, Fenrir devient de plus en plus difficile à approcher à mesure qu'il grandit, seul Týr conservant assez de confiance de sa part pour continuer à le nourrir."]},
+        {"title": "Habitat", "body": ["Une fois enchaîné, Fenrir est isolé sur l'île de Lyngvi, au milieu d'un lac, où Gleipnir le retient jusqu'au Ragnarök.[1]"]},
+        {"title": "Alimentation", "body": ["La tradition ne décrit pas de régime alimentaire précis pour l'adulte enchaîné, sinon l'épée coincée entre ses mâchoires qui l'empêche de mordre durant sa captivité, selon certaines versions du récit."]},
+        {"title": "Intelligence", "body": ["Fenrir se montre suffisamment rusé pour se méfier de la légèreté suspecte de Gleipnir et pour exiger un gage avant de s'y soumettre, preuve d'une intelligence qui dépasse la simple force animale.[1]"]},
+        {"title": "Reproduction", "body": ["Fils de Loki et de la géante Angrboda, Fenrir est lui-même père des loups Sköll et Hati Hróðvitnisson, poursuivants respectifs du soleil et de la lune dans le ciel.[2]"]},
+        {"title": "Prédateurs", "body": ["Seul Víðarr, fils d'Odin, est destiné à vaincre Fenrir lors du Ragnarök, en lui déchirant la mâchoire ou en le transperçant le cœur selon les versions du récit.[2]"]}
+      ]
+    },
+    "reliques": [
+      "Fenrir demeure l'une des figures les plus reconnaissables de la mythologie nordique dans la culture contemporaine, de la littérature fantasy aux jeux vidéo et aux séries télévisées inspirés des mythes scandinaves, où il incarne systématiquement la menace ultime et le destin funeste qui pèse sur les dieux eux-mêmes."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Gleipnir — Wikipedia", "url": "https://en.wikipedia.org/wiki/Gleipnir"},
+    {"id": 2, "title": "Fenrir — Wikipedia", "url": "https://en.wikipedia.org/wiki/Fenrir"}
+  ]
+}
