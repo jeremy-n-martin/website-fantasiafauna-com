@@ -382,6 +382,37 @@
     pauseMotion();
   }
 
+  function exhibitHtml(creature) {
+    const images = creature.images || [];
+    const current = images[activeImage] || images[0] || {};
+    const staged = foilWrap(
+      current.src,
+      imageTag(current.src, "exhibit-sprite", creature.name, false, 480),
+      "creature-foil exhibit-foil"
+    );
+    return (
+      '<figure class="exhibit">' +
+        '<div class="exhibit-well">' +
+          '<img class="specimen-frame" src="/img/ornaments/specimen-frame.svg?v=3" alt="" aria-hidden="true" width="300" height="300">' +
+          staged +
+        "</div>" +
+        (images.length > 1
+          ? '<button class="exhibit-swap" type="button" aria-label="Changer d’illustration de ' + escapeHtml(creature.name) + '">Changer d’illustration</button>'
+          : "") +
+      "</figure>"
+    );
+  }
+
+  function swapImage() {
+    const route = routeFromLocation();
+    if (route.name !== "creature") return;
+    const creature = bySlug[route.slug];
+    if (!creature || !creature.images || creature.images.length < 2) return;
+    activeImage = (activeImage + 1) % creature.images.length;
+    const figure = app.querySelector(".exhibit");
+    if (figure) figure.outerHTML = exhibitHtml(creature);
+  }
+
   function renderCreature(slug) {
     const creature = bySlug[slug];
     if (!creature) {
@@ -431,12 +462,6 @@
         "</div>"
       : "";
 
-    const staged = foilWrap(
-      current.src,
-      imageTag(current.src, "exhibit-sprite", creature.name, false, 480),
-      "creature-foil exhibit-foil"
-    );
-
     const undocumented = !creature.description && !sections.length
       ? '<p class="undocumented">Notice encore à documenter.</p>'
       : "";
@@ -448,13 +473,7 @@
         "<span>" + escapeHtml(creature.name) + "</span>" +
       "</nav>" +
       '<div class="creature' + (sections.length ? " has-reading" : "") + '">' +
-        '<figure class="exhibit">' +
-          '<div class="exhibit-well">' +
-            '<img class="specimen-frame" src="/img/ornaments/specimen-frame.svg?v=3" alt="" aria-hidden="true" width="300" height="300">' +
-            staged +
-          "</div>" +
-          (current.src ? '<button class="exhibit-zoom" type="button" aria-haspopup="dialog" aria-controls="viewer" aria-label="Agrandir l’illustration de ' + escapeHtml(creature.name) + '">Agrandir l’illustration</button>' : "") +
-        "</figure>" +
+        exhibitHtml(creature) +
         '<div class="sheet-copy">' +
           "<h1>" + escapeHtml(creature.name) + "</h1>" +
           (intro ? '<p class="lede">' + renderNoticeText(intro) + "</p>" : "") +
@@ -571,7 +590,13 @@
 
   document.addEventListener("click", function (event) {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    const zoom = event.target.closest(".exhibit-zoom, .exhibit-sprite");
+    const swap = event.target.closest(".exhibit-swap");
+    if (swap && app.contains(swap)) {
+      event.preventDefault();
+      swapImage();
+      return;
+    }
+    const zoom = event.target.closest(".exhibit-sprite");
     if (zoom && app.contains(zoom)) {
       event.preventDefault();
       openViewer();

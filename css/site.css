@@ -186,8 +186,8 @@ p { text-wrap: pretty; }
 .exhibit-well { position: relative; display: grid; place-items: center; width: 100%; aspect-ratio: 1; background: #000; border: 1px solid #657267; padding: 5px; }
 .exhibit-foil { width: 94%; height: 94%; }
 .exhibit-sprite { object-fit: contain; image-rendering: pixelated; cursor: zoom-in; }
-.exhibit-zoom { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; margin-top: 8px; padding: 9px 12px; border: 1px solid var(--control-line); border-radius: 3px; color: var(--forest); background: var(--surface); }
-.exhibit-zoom:hover { background: var(--wash); }
+.exhibit-zoom, .exhibit-swap { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; margin-top: 8px; padding: 9px 12px; border: 1px solid var(--control-line); border-radius: 3px; color: var(--forest); background: var(--surface); }
+.exhibit-zoom:hover, .exhibit-swap:hover { background: var(--wash); }
 /* Also supports a zoom button wrapping the artwork. */
 .exhibit-well > .exhibit-zoom { margin: 0; padding: 0; height: 100%; background: #000; border: 0; }
 .exhibit-tools { margin-top: 8px; }
@@ -314,7 +314,7 @@ p { text-wrap: pretty; }
   :root, :root[data-theme] { color-scheme: light; --ink: #000; --paper: #fff; --surface: #fff; --wash: #fff; --target: #fff; --muted: #333; --forest: #000; --line: #999; --control-line: #666; }
   body:has(.creature)::before { content: none; display: none !important; background-image: none; }
   body { background: #fff; color: #000; }
-  .site-header, .site-footer, .skip, .toolbar, .toc, .pager, .viewer, .exhibit-zoom, .crumb { display: none !important; }
+  .site-header, .site-footer, .skip, .toolbar, .toc, .pager, .viewer, .exhibit-zoom, .exhibit-swap, .crumb { display: none !important; }
   .wrap { width: 100%; }
   .creature { display: block; }
   .exhibit { float: left; width: 180px; margin: 0 24px 20px 0; break-inside: avoid; }
