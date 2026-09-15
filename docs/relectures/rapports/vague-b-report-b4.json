@@ -1,0 +1,323 @@
+{
+  "batch": "batch-b4.json",
+  "reviewed": [
+    {
+      "slug": "drow",
+      "verdict": "pass",
+      "sha256": "a5a36da5c1ef5a671b3bac341df173b50161ee15519755a49d858abd7ed45ac0",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "C'est dans Le repaire des drows que Gygax développe pour la première fois avec ampleur la société matriarcale du drow, tournée tout entière vers le culte de Lolth",
+          "detail": "Défaut de documentation, non de contenu : la source déclarée [1] est une page Fandom consacrée au seul module D3 (dont la section « Contents » est vide à l'extraction). Elle ne contient ni Lolth, ni Erelhei-Cinlu décrite, ni les romans de Salvatore, ni Menzoberranzan, ni la magie innée du drow, ni les arbalètes de poing empoisonnées — or [1] est appelée une vingtaine de fois, y compris pour des faits des années 1990-2020. Toutes ces affirmations sont exactes : le contrôle par en.wikipedia « Drow (Dungeons & Dragons) » donne « The drow were first mentioned in the Dungeons & Dragons game in the 1st Edition 1977 Advanced Dungeons & Dragons Monster Manual under the \"Elf\" entry », « Gary Gygax invented everything about the drow in the game except for the basic concept of 'dark elves' » et « In D3 Vault of the Drow (1978), the adventurers eventually make it to Erelhei-Cinlu, the vast subterranean city of the drow, which is thoroughly described in the module ». Aucun blocage, mais il faut compléter le dossier de sources (article Drow, romans, suppléments) au lieu de tout appuyer sur une fiche de module."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[1]",
+          "quote": "La figure de Drizzt Do'Urden reste, quatre décennies après sa création",
+          "detail": "Datation optimiste : Drizzt apparaît dans The Icewind Dale Trilogy (1988-1990) ; en 2026 cela fait trente-huit ans. « Près de quatre décennies » serait exact."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://dungeonsdragons.fandom.com/wiki/Vault_of_the_Drow",
+          "status": "verified",
+          "claims_checked": "Le repaire des drows (Vault of the Drow) : écrit par Gary Gygax, publié par TSR en 1978, 32 pages, niveaux 10-14 ; place dans la série G1-G3 / D1-2 / Q1 et rôle de conclusion de la campagne. Non couverts par cette page (vérifiés par source de contrôle, voir issues) : apparition du drow dans le Monster Manual 1977, Lolth, description d'Erelhei-Cinlu, Salvatore/Drizzt, Menzoberranzan, magie innée et arbalètes de poing.",
+          "evidence": "« This module can be played alone, as the conclusion to module D1-2 DESCENT INTO THE DEPTHS OF THE EARTH), or as the third module in a series that forms a special extended adventure (G1-G3 AGAINST THE GIANTS, D1-2, and Q1 QUEEN OF THE DEMONWEB PITS). » — et « Vault of the Drow was released by TSR in 1978 ». Contrôle extérieur : « The drow were first mentioned in the Dungeons & Dragons game in the 1st Edition 1977 Advanced Dungeons & Dragons Monster Manual under the \"Elf\" entry » (en.wikipedia, Drow)."
+        }
+      ],
+      "style_check": "Français adulte et tenu ; le texte range d'entrée le drow du côté de la création de jeu (« Le drow n'est pas une créature folklorique traditionnelle : il s'agit d'une invention de Gary Gygax »), ce qui est la bonne mise au point de faux folklore. Aucune consigne adressée à un auteur, pas d'inventaire de négations."
+    },
+    {
+      "slug": "druide",
+      "verdict": "pass",
+      "sha256": "92743677b6e7b33bb74350a92ce9704350efd2ca89fcffe012ca7ae0b0f03f30",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "conçue par Dennis Sustare, crédité en interne sous le surnom affectueux de « Grand Druide ».[2]",
+          "detail": "L'attribution à Dennis Sustare est exacte, mais l'appel [2] ne la porte pas : la page Eldritch Wizardry ne mentionne jamais Sustare et attribue le supplément à « Gary Gygax and Brian Blume ». Contrôle par d'autres sources : « The druid was the invention of the Dennis Sustare, credited in Eldritch Wizardry (1976) as the 'Great Druid' » (Dungeons & Dragons Lore Wiki, Druid) et, dans l'entretien de Grognardia avec Sustare, « You're specifically thanked in the credits of Supplement III to OD&D, where you're called 'the Great Druid.' » Le crédit interne est donc « the Great Druid » ; « Grand Druide » est par ailleurs un rang de jeu (druide de 20e niveau, AD&D), d'où un risque de confusion. Renvoyer à l'article « Druid (Dungeons & Dragons) » ou au Lore Wiki, et écrire « le Grand Druide » comme citation du crédit."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "avant de devenir une classe de personnage à part entière dans le supplément Eldritch Wizardry publié l'année suivante",
+          "detail": "Écart léger avec [2], qui dit exactement : « The druid, previously appearing in the Greyhawk supplement as a monster, is expanded in Eldritch Wizardry as a sub-class of the cleric ». Le statut de 1976 est celui d'une sous-classe du clerc ; « à part entière » anticipe les éditions suivantes. Les dates (1975 pour Greyhawk, 1976 pour Eldritch Wizardry) sont en revanche confirmées par [2] et par l'article Druid (Dungeons & Dragons) : « Druids appeared, but not as player characters, in the original Greyhawk supplement from 1975. They were presented as a player character class in the Eldritch Wizardry supplement in 1976. »"
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Druid",
+          "status": "verified",
+          "claims_checked": "Statut des druides comme l'une des deux classes honorées de Gaule ; justice et exclusion du sacrifice ; assemblée annuelle en territoire carnute ; exemption d'impôts et de service militaire ; formation jusqu'à vingt ans par mémorisation de vers, doctrine non écrite ; récit de Pline (prêtre en blanc, serpe, tissu blanc, deux taureaux blancs) et doute sur l'or massif ; Cathbad et Mug Ruith remodelés par les auteurs chrétiens ; archéologie (Gournay-sur-Aronde, cuillères de bronze divinatoires, tombe de Stanway) ; consensus scientifique ; interdictions impériales du Ier siècle.",
+          "evidence": "« He presents the druids as one of the two honoured classes of Gaul, alongside the equites ('horsemen'). According to Caesar, they conducted public and private sacrifices [...] and could exclude the disobedient from sacrifice, the harshest of penalties. [...] Once a year they assembled at a consecrated place in the territory of the Carnutes, reckoned the centre of all Gaul. They were exempt from taxation and military service, and trained pupils who might remain in instruction for up to twenty years, memorising a great body of verse. » — « On the sixth day of the moon a white-robed priest climbed the tree and cut the mistletoe with a golden sickle, and it was caught in a white cloth, after which two white bulls were sacrificed. [...] Maier notes that the golden sickle was more probably of gilded bronze » — « The druids are archaeologically elusive. As T. D. Kendrick had observed already in 1927, a great deal of unfounded speculation has been written about them precisely because the direct evidence is so poor. » — « Pairs of bronze 'divining' spoons [...] are thought to have served in divinatory ritual. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Eldritch_Wizardry",
+          "status": "verified",
+          "claims_checked": "Passage du druide de monstre (supplément Greyhawk) à sous-classe du clerc dans Eldritch Wizardry (1976) ; nature de prêtre neutre de la nature ; datation 1976. Non couvert par cette page : Dennis Sustare et le crédit du « Grand/Great Druid » (vérifiés par sources de contrôle — Lore Wiki, entretien Grognardia) ; la page nomme Gygax et Blume comme auteurs.",
+          "evidence": "« The druid, previously appearing in the Greyhawk supplement as a monster, is expanded in Eldritch Wizardry as a sub-class of the cleric, presented as a neutral-aligned priest of nature worship. » — Contrôle extérieur : « credited in Eldritch Wizardry (1976) as the 'Great Druid' » (Dungeons & Dragons Lore Wiki) ; « You're specifically thanked in the credits of Supplement III to OD&D, where you're called 'the Great Druid.' » (entretien Grognardia, 2009)."
+        }
+      ],
+      "style_check": "Voix adulte et nette ; la dualité druide historique / classe de jeu est annoncée et tenue jusqu'au bout, y compris quand les sources sont muettes (« Aucune source antique ne détaille un régime alimentaire particulier », « Aucune règle de succession biologique ») : pas de zoologie inventée. Aucune consigne adressée à un auteur."
+    },
+    {
+      "slug": "elfe",
+      "verdict": "revise",
+      "sha256": "d449cc903914184488457954e284cd161ad80eac82dfa51fa4f9c685aaa7ab29",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.anomalies[1]",
+          "quote": "La partition entre elfes lumineux et elfes sombres reste l'un des traits les plus anciens et les plus stables de la tradition",
+          "detail": "Faux folklore inversé : la notice attribue une grande ancienneté à ce que la source déclarée présente comme une construction tardive et savante. [1] écrit : « Cependant, ces termes ne sont attestés que dans l'Edda en prose et dans les textes qui en dérivent. Les chercheurs considèrent désormais que Snorri reprend des traditions concernant les nains, les démons et les anges. Cette reprise illustre la paganisation par Snorri d'une cosmologie chrétienne tirée de l'Elucidarium » et « Le consensus des chercheurs modernes est que les elfes de Snorri sont basés sur les anges et les démons de la cosmologie chrétienne ». Parler du « trait le plus ancien et le plus stable de la tradition » retourne exactement le propos de la source ; à réécrire (par exemple : distinction savante du XIIIe siècle, largement reprise ensuite)."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[0]",
+          "quote": "les elfes (álfar, singulier álfr) sont des êtres semi-divins liés à la fertilité, à la nature et au culte des ancêtres.[1]",
+          "detail": "Qualification contraire à la source et notions absentes : [1] dit « il ne semble pas qu'il existe de distinction nette entre les hommes et les dieux ; ainsi, comme les Ases, les elfes sont probablement perçus comme des êtres de nature humaine ». Les mots « fertilité » et « culte » sont absents de la page (zéro occurrence), l'ancrage ancestral n'y figure que comme motif littéraire (« les sagas légendaires se concentrent plutôt sur les elfes en tant qu'ancêtres légendaires ») et le seul culte attesté est l'álfablót, un « sacrifice aux elfes ». « semi-divins » est en outre une catégorie que [1] ne donne qu'aux Ribhus de la mythologie indienne, à propos de l'étymologie. À corriger pour ne pas prêter à la tradition un statut et un culte qu'elle ignore."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1]",
+          "quote": "les elfes de lumière (ljósálfar), plus brillants que le soleil et demeurant à Álfheimr sous l'autorité du dieu Freyr",
+          "detail": "Deux traditions distinctes fusionnées en une seule affirmation attribuée à Snorri. [1] situe les ljósálfar « dans les cieux » (« les ljósálfar vivant dans les cieux et les dökkálfar sous la terre »), tandis que le lien avec Álfheimr et Freyr est présenté comme un indice extérieur à l'Edda en prose : « Il existe des indices suggérant que le dieu Freyr est associé aux elfes. En particulier, le poème Grímnismál (début du Xe siècle) mentionne qu'Álfheim [...] est donné à Freyr. » « Sous l'autorité du dieu Freyr » transforme un indice en dépendance établie ; « demeurant à Álfheimr » n'est pas ce que dit la source."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.naturelle.parts[4]",
+          "quote": "Le lien affirmé entre les elfes et le culte des ancêtres suggère une continuité entre les morts et ce peuple invisible, plutôt qu'une reproduction biologique clairement décrite dans les sources anciennes.[1]",
+          "detail": "Même appui manquant que dans legendes[0] : [1] ne parle nulle part d'un culte des ancêtres, seulement d'elfes « ancêtres légendaires » dans les sagas et d'un álfablót. Le refus d'inventer une reproduction biologique est en revanche conforme à la grille (critère 6) et mérite d'être conservé, mais il faut retirer la prémisse du culte des ancêtres ou la documenter."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "un partage souvent rapproché du culte des morts.[1]",
+          "detail": "Le « culte des morts » n'est pas dans [1] : la page relie les dökkálfar à la sphère souterraine et au vocabulaire des démons et des anges de la cosmologie chrétienne, non à un culte funéraire."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://fr.wikipedia.org/wiki/Elfe_(nordique)",
+          "status": "verified",
+          "claims_checked": "Étymologie (« être blanc ») ; prééminence des Eddas islandaises ; distinction de Snorri (ljósálfar/dökkálfar) et sa portée réelle ; appartenance des elfes aux croyances germaniques médiévales, ambivalence (aide/nuisance, maladie) ; elf-shot ; refonte par Tolkien ; habitat des deux catégories ; rapport des elfes aux dieux et aux ancêtres.",
+          "evidence": "« Le mot « elfe » est attesté dans l'ensemble des langues germaniques ; il semble à l'origine avoir signifié « être blanc ». » — « En Islande médiévale, Snorri Sturluson parle dans l'Edda en prose des ljósálfar et dökkálfar (« elfes de lumière et elfes noirs »), les ljósálfar vivant dans les cieux et les dökkálfar sous la terre. Le consensus des chercheurs modernes est que les elfes de Snorri sont basés sur les anges et les démons de la cosmologie chrétienne » — « Cependant, ces termes ne sont attestés que dans l'Edda en prose et dans les textes qui en dérivent. » — « Il ne semble pas qu'il existe de distinction nette entre les hommes et les dieux ; ainsi, comme les Ases, les elfes sont probablement perçus comme des êtres de nature humaine » — « Il existe des indices suggérant que le dieu Freyr est associé aux elfes. » — « Au XXe siècle, les chercheurs qualifient souvent ces maladies de « coups d'elfe » (elf-shot), mais les travaux menés à partir des années 1990 montrent que les preuves médiévales d'une telle croyance sont minces » — « Les textes islandais mentionnent un álfablót (« sacrifice aux elfes ») »."
+        }
+      ],
+      "style_check": "La prose est incarnée et la séparation entre folklore nordique, refonte tolkienienne et fantasy contemporaine est faite proprement (legendes[3], reliques[0]) ; aucune consigne à auteur, aucun inventaire de négations. Le problème n'est pas la voix mais la solidité documentaire de la rubrique legendes, qui accorde à la tradition une ancienneté et un culte des ancêtres démentis par la source déclarée."
+    },
+    {
+      "slug": "elfe-des-neiges",
+      "verdict": "pass",
+      "sha256": "27d2902f7710bb2f78d52cd7b0b94dec3023d3e32f167cd394a38588f460c65e",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "L'elfe des neiges s'inscrit dans cette logique de world-building plutôt que dans une lignée mythologique propre.",
+          "detail": "Anglicisme « world-building » dans un texte français publié. Préférer « construction d'univers » ou « création d'un décor »."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "est une pratique courante du jeu de rôle et de la fantasy de genre depuis la fin du XXe siècle",
+          "detail": "Datation générique invérifiable sur la source déclarée (la page ne traite ni du jeu de rôle ni des variantes climatiques) ; à présenter comme un constat d'usage actuel plutôt que comme une chronologie datée, ou à sourcer."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://fr.wikipedia.org/wiki/Elfe_(nordique)",
+          "status": "verified",
+          "claims_checked": "Modèle de l'elfe germanique et nordique (longévité, magie, ambivalence) ; elfe sombre (dökkálfar) logé sous terre et retiré du soleil, seul point repris pour la filiation esthétique. Rien, dans cette page, ne concerne l'elfe des neiges en tant que tel — ce que la notice dit elle-même (« aucune source ancienne directe »).",
+          "evidence": "« En Islande médiévale, Snorri Sturluson parle dans l'Edda en prose des ljósálfar et dökkálfar (« elfes de lumière et elfes noirs »), les ljósálfar vivant dans les cieux et les dökkálfar sous la terre. » — « Dans les cultures médiévales de langue germanique, les elfes sont considérés comme des êtres dotés de pouvoirs magiques et d'une beauté surnaturelle, ambivalents envers les humains. »"
+        }
+      ],
+      "style_check": "Rubrique honnête : la notice ouvre legendes par « ⚠️ Pas une créature folklorique traditionnelle » et parle d'une logique de construction d'univers « plutôt que [d']une lignée mythologique propre », donc aucune antiquité n'est revendiquée à tort. La description physiologique et sociale est assumée comme description de fiction (« Ces traits changent sensiblement selon les univers [...] aucune version canonique unique ne s'étant imposée »), ce qui évite la zoologie inventée. Réserves : anglicisme et datation vague."
+    },
+    {
+      "slug": "enchanteresse",
+      "verdict": "pass",
+      "sha256": "cd32850bec4dd074f7a8798818edc4e4bcc73dafa2ac17edeaa25164ac0a2ae2",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "un lieu que les Anciens situaient au large des côtes italiennes, en vue du rivage tyrrhénien, non loin de l'île d'Elbe.[2]",
+          "detail": "L'appel [2] attribue cette localisation à un seul auteur : « the early 3rd BC author Apollonius of Rhodes's epic poem Argonautica locates Aeaea somewhere south of Aethalia (Elba), within view of the Tyrrhenian shore (that is, the western coast of Italy) ». « Les Anciens » généralise un témoignage unique ; nommer Apollonios de Rhodes rendrait la phrase exacte."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/sources/dnd/free-rules/spells",
+          "status": "verified",
+          "claims_checked": "Définition de l'école d'enchantement comme magie qui influence les esprits ; classement de l'enchantement parmi des écoles qu'on étudie (évocation, illusion).",
+          "evidence": "Tableau des écoles de magie de la page : « | Enchantment | Influences minds | » ; « | Evocation | Channels energy to create effects that are often destructive | » ; « | Illusion | Deceives the mind or senses | ». Le « « influence les esprits » » cité par la notice est donc une traduction fidèle de « Influences minds »."
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Circe",
+          "status": "verified",
+          "claims_checked": "Filiation (Hélios et l'océanide Persé) ; nom dérivé de kirkos (« hawk or falcon ») ; île d'Éa et palais au milieu d'un bois dense ; situation géographique (au sud d'Aethalia/Elbe, en vue du rivage tyrrhénien) ; chant d'attrait puis métamorphose en porcs ; épithète homérique polypharmakos ; môly donné par Hermès ; année passée sur l'île ; enfants dont Latinus et Télégonos ; baguette ou bâton pour métamorphoser ; réception littéraire contrastée.",
+          "evidence": "« lit. 'hawk' or 'falcon' derived from the word kirkos » — « In most accounts, Circe is described as a daughter of the sun god Helios and the Oceanid Perse. » — « Circe is initially described as a beautiful goddess living in a palace isolated in the midst of a dense wood on her island of Aeaea. [...] She lures any who land on the island to her home with her lovely singing [...] but later drugs them so that they change shape. » — « One of her Homeric epithets is polypharmakos, \"knowing many drugs or charms\". » — « Through the use of these and a magic wand or staff, she would transform her enemies [...] into animals. » — « Hermes provides Odysseus with moly to protect him from Circe's magic. » — « Children | Latinus, Telegonus, Cassiphone, Rhomos, Ardeas, Anteias »."
+        }
+      ],
+      "style_check": "Français adulte, bien écrit, aucun tour de bot ni consigne à un auteur ; la notice sépare nettement la magicienne homérique (métamorphose du corps, magie d'ascendance solaire) de l'école de jeu (influence de l'esprit, discipline enseignée), ce que demande précisément le critère 4. Seule réserve : la localisation attribuée globalement « aux Anciens »."
+    },
+    {
+      "slug": "enchanteur",
+      "verdict": "revise",
+      "sha256": "12ac8c11186187fa8d4d85347917dbaadd360a7211c0ec43a41f288137a1ee49",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1]",
+          "quote": "lui encore qui érige Stonehenge en faisant transporter les pierres depuis l'Irlande par des moyens que le récit qualifie de magiques.[2]",
+          "detail": "Erreur factuelle contredite par la source déclarée. [2] attribue explicitement à l'érudition, et non à la magie, le transport des pierres dans l'Historia de Geoffroy : « In the first, Merlin creates Stonehenge as a burial place for Aurelius Ambrosius, bringing the stones from Mount Killaraus in Ireland. [...] Unlike in the later accounts since Layamon's Brut, Geoffrey's Merlin actually does not use magic in this episode. » La magie n'apparaît dans cet épisode que dans les versions postérieures (Layamon, Wace). Le paragraphe est en outre consacré à Geoffroy (vers 1136), ce qui interdit de lire « le récit » comme désignant les continuations. Corriger en distinguant le récit de Geoffroy (transport des pierres depuis l'Irlande) et les versions ultérieures qui y ajoutent la magie."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.naturelle.parts[5]",
+          "quote": "La leçon reste constante dans toutes les versions de la légende : l'enchanteur le plus redoutable pour un maître de l'influence est celui à qui il a lui-même enseigné l'art de influencer.",
+          "detail": "Surinterprétation de [2], qui écrit : « The Merlin stories often end with his removal from the world », « the form of his prison or grave can be variably a cave, a tree, or a hole, either within or under a large rock, or an invisible tower made of magic with no physical walls » et « Merlin's fate of either demise or eternal imprisonment [...] is recounted differently in several variants ». Le rapt par l'élève est le motif dominant, non une constante de toutes les versions (dans l'Historia, Merlin disparaît simplement du récit)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[5]",
+          "quote": "l'art de influencer",
+          "detail": "Coquille de grammaire : « l'art d'influencer ». À corriger avant publication."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[0]",
+          "quote": "un monument entier transporté par magie depuis l'Irlande pour servir de sépulture à un chef de guerre.[2]",
+          "detail": "Même difficulté que dans legendes[1] : [2] parle du transport depuis « Mount Killaraus in Ireland » sans magie chez Geoffroy. La destination (« une sépulture ») est en revanche exacte : « a burial place for Aurelius Ambrosius », et Ambrosius Aurelianus est bien le chef de guerre romano-britannique."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/sources/dnd/free-rules/spells",
+          "status": "verified",
+          "claims_checked": "École d'enchantement définie comme influence sur les esprits, étudiée et classable parmi les autres écoles.",
+          "evidence": "« | Enchantment | Influences minds | » (tableau des écoles de la page) ; le même tableau distingue l'évocation et l'illusion, comme le fait la notice."
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Merlin",
+          "status": "verified",
+          "claims_checked": "Fixation de la figure par Geoffroy de Monmouth (Historia Regum Britanniae, vers 1136) et fusion Myrddin Wyllt / Ambrosius Aurelianus ; naissance d'un incube et d'une mortelle ; ruse auprès d'Uther Pendragon et d'Ygraine ; construction de Stonehenge ; élève (Viviane/Vivien/Nimue) apprenant les formules qui l'enferment ; formes de la prison (grotte, arbre, tour invisible) ; transformations en cerf ; rôle de conseiller plutôt que de roi. Point en contradiction avec la notice : la magie est absente de l'épisode de Stonehenge chez Geoffroy.",
+          "evidence": "« The familiar depiction of Merlin, based on an amalgamation of historical and legendary figures, was introduced by the 12th-century Catholic cleric Geoffrey of Monmouth » / « Based on | Myrddin Wyllt and Ambrosius Aurelianus » — « When Geoffrey included Merlin in his next work, Historia Regum Britanniae (\"The History of the Kings of Britain\", c. 1136) » — « Merlin's traditional biography casts him as an often-mad cambion, born of a mortal woman and an incubus » — « Merlin's magic enables the new British king, Uther Pendragon, to enter into Tintagel Castle » — « the one often named Viviane or Vivien [...] (including Malory's own Nyneve that his editor William Caxton changed to Nymue, which in turn eventually became the now-popular Nimue) [...] The theme of Merlin's entrapment by a woman became one of the most popular and iconic in his legend. » — « Merlin's connections with stags within the Vita and other stories may be a shadow of the belief in avatars of the Celtic \"horned god\", Cernunnos. » — « In the first, Merlin creates Stonehenge as a burial place for Aurelius Ambrosius, bringing the stones from Mount Killaraus in Ireland. [...] Unlike in the later accounts since Layamon's Brut, Geoffrey's Merlin actually does not use magic in this episode. »"
+        }
+      ],
+      "style_check": "Voix maîtrisée, aucune consigne adressée à un auteur, distinction claire entre Merlin médiéval et l'enchanteur de jeu ; mais deux affirmations (le transport magique des pierres chez Geoffroy, la constance de la fin dans « toutes les versions ») heurtent la source déclarée, et une coquille grammaticale subsiste dans la dernière partie."
+    },
+    {
+      "slug": "ensorceleur",
+      "verdict": "pass",
+      "sha256": "37d0140daab50b2026d2d9361fe1f73203955c468bb1eca4791f645a6879bf48",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[1]",
+          "quote": "la magie sauvage, l'une des origines les plus documentées de la classe, peut naître d'un contact démoniaque, d'une bénédiction divine ou d'une simple gorgée d'eau de source aux propriétés mystérieuses",
+          "detail": "Périmètre trop large de l'appel : ces exemples (le contact d'un démon, la bénédiction d'une dryade, l'eau d'une source mystérieuse, le don d'une divinité de la magie) décrivent dans [1] l'apparition du don de sorcellerie en général (section « Raw Magic »), non la seule magie sauvage : « The touch of a demon, the blessing of a dryad at a baby's birth, or a taste of the water from a mysterious spring might spark the gift of sorcery. So too might the gift of a deity of magic ». Attribuer cette liste à la magie sauvage resserre à tort une règle générale ; « bénédiction divine » aplatit par ailleurs « the blessing of a dryad »."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[3]",
+          "quote": "Le don de sorcellerie restaurée à haut niveau, capable de régénérer des points de sorcellerie au simple repos court, illustre cette maîtrise croissante d'un pouvoir d'abord subi.[1]",
+          "detail": "Vérification partielle : [1] donne bien « Sorcerous Restoration » au 20e niveau dans la table de classe, mais le texte de la capacité tombe dans la partie centrale tronquée de la page extraite ; seule la ressource elle-même est explicitement rattachée au repos long (« You regain all spent sorcery points when you finish a long rest », Font of Magic). La précision « repos court » demande une vérification sur le PHB avant publication."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/classes/sorcerer",
+          "status": "verified",
+          "claims_checked": "Absence de choix de la sorcellerie ; origines innées (lignée, influence extérieure, forces cosmiques) ; imprévisibilité de l'apparition du don et exemples (démon, fée, source mystérieuse, divinité) ; lignée draconique (pacte ou ascendance) et magie sauvage ; métamagie (Extended, Subtle, Twinned, Quickened) payée en points de sorcellerie ; opposition avec le magicien (souplesse contre étendue) ; Charisme comme caractéristique d'incantation ; ailes et traits draconiques ; « Sorcerous Restoration » au 20e niveau.",
+          "evidence": "« One can't study sorcery as one learns a language [...] No one chooses sorcery; the power chooses the sorcerer. » — « Sorcerers carry a magical birthright conferred upon them by an exotic bloodline, some otherworldly influence, or exposure to unknown cosmic forces. » — « The touch of a demon, the blessing of a dryad at a baby's birth, or a taste of the water from a mysterious spring might spark the gift of sorcery. » — « Some sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon » — « sorcerers are every bit as useful to an adventuring party as wizards, making up for a comparative lack of breadth in their magical knowledge with enormous flexibility in using the spells they know » — « ##### Extended Spell », « ##### Subtle Spell », « ##### Twinned Spell », « ##### Quickened Spell [...] change the casting time to 1 bonus action » — « Charisma is your spellcasting ability for your sorcerer spells » — table de classe : « 20th | [...] | Sorcerous Restoration »."
+        }
+      ],
+      "style_check": "Français vif et précis, aucun tour de bot, aucune consigne adressée à un auteur ; la frontière entre savoir étudié (magicien) et don subi (ensorceleur) est posée sans inventaire de négations. Réserves : les exemples de « Raw Magic » sont rattachés à la seule magie sauvage, et la mention du repos court pour Sorcerous Restoration reste à confirmer sur le PHB."
+    },
+    {
+      "slug": "erinye",
+      "verdict": "revise",
+      "sha256": "ab4ffd619442318d474f6384900bd1c32e4705d8358aa445ed9d0d4a8fba8897",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1]",
+          "quote": "les érinyes sont présentées comme d'anciens anges déchus, seul type de diable majeur capable de se reproduire véritablement plutôt que de recruter parmi les mortels ou les rangs inférieurs de l'enfer ; les femelles y occupent une place dominante, en hommage explicite aux Furies grecques d'origine.[2]",
+          "detail": "L'appel [2] ne porte pas ces affirmations : la page D&D Beyond est une fiche de monstre réduite (Hellish Weapons, Magic Resistance, Multiattack, Longsword, Longbow, Parry, « Monster Tags: Devil • Basic Rules (2014), pg. 276 ») et ne contient aucun développement sur les anges déchus ni sur la reproduction. Le passage traduit presque mot pour mot un commentaire de lecteur de cette même page : « there are male, as well as female, Erinyes. There has to be, because they are the only major devil type who actually reproduce, rather than recruiting from mortals or lower ranks. The females tend to be much more prominent (as an homage to the original Greek furies). » Un commentaire d'internaute n'est pas une source, et « en hommage explicite » attribue à l'ouvrage officiel l'interprétation d'un lecteur. Le contrôle (Forgotten Realms Wiki, entrée Erinyes) formule la même idée de façon prudente : « Erinyes were the only types of devils to have possibly been born rather than made from mortal souls. » Citer le Monster Manual ou le wiki FR, et retirer « hommage explicite »."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.anomalies[0]",
+          "quote": "Elle manie fréquemment une épée maudite ou un arc capable d'enchaîner l'âme de sa victime au service de l'enfer, un pouvoir qui dépasse largement celui de ses modèles grecs.",
+          "detail": "Détail inventé, contredit par les sources. La fiche [2] donne une longue épée (« Longsword [...] 8 (1d8 + 4) slashing damage [...] plus 13 (3d8) poison damage ») et un arc long (« Longbow [...] plus 13 (3d8) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned ») : ni malédiction, ni chaîne d'âme. L'enchaînement appartient à une corde, pas à l'arc : « some carry a rope of entanglement » (Tribality, [1]) ; « Their conventional weaponry included powerful ropes of entanglement used to entrap powerful opponents » (contrôle, Forgotten Realms Wiki). À supprimer ou à réécrire (« une longue épée et un arc long enduits de poison »)."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.naturelle.parts[5]",
+          "quote": "Les armes en argent et la magie sainte figurent parmi les rares menaces sérieuses pour l'érinye dans le lore ludique, sa résistance aux armes ordinaires la rendant sinon quasiment invulnérable au combat conventionnel.[2]",
+          "detail": "La fiche [2] telle qu'extraite ne restitue pas le bloc de caractéristiques (donc pas de preuve littérale des résistances), et elle accorde à la créature une Résistance magique : « ***Magic Resistance.*** The erinyes has advantage on saving throws against spells and other magical effects. » — ce qui affaiblit l'idée que la magie soit une menace sérieuse. « Magie sainte » n'est d'ailleurs pas une catégorie de règle en 5e. La résistance aux armes non magiques (et donc l'intérêt de l'argent) est conforme à la lignée des diables : à documenter précisément (édition, page)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[1]",
+          "quote": "ces divinités du châtiment que même les dieux redoutaient",
+          "detail": "[1] dit seulement « Erinyes were said to be older than most of the gods, and reside within Erebus » ; la crainte des dieux est une ampliation non appuyée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.tribality.com/2016/10/05/get-to-know-the-erinyes/",
+          "status": "verified",
+          "claims_checked": "Furies comme divinités chthoniennes de la vengeance, appelées aussi Euménides ; apparition de l'érinye dans le Monster Manual de 1977 et parcours des éditions ; beauté proverbiale ; truesight et télépathie en 5e ; corde d'enchantement ; anges déchus armés d'un arc de feu dans les éditions antérieures ; opposition avec l'iconographie grecque (crones, fouets cloutés).",
+          "evidence": "« The Furies were maiden goddesses [...] and were considered the chthonic deities of vengeance, or sometimes just called the Infernal Goddesses. » — « Originally considered a lesser devil, 5th edition sets them at Challenge 12, giving them truesight and telepathy; some carry a rope of entanglement. » — « This is a pretty good callback to earlier editions of the erinyes, which were fallen angels that shot people with a fiery bow. » — « They all have feathery wings, and wear beautiful armor and weaponry. They also all carry bows. » — « Unlike D&D, who uses them as a devil stand-in for succubus, the Greek Erinyes were horrific to look upon. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/monsters/16858-erinyes",
+          "status": "verified",
+          "claims_checked": "Contenu réel de la page : attaques magiques infligeant des dégâts de poison supplémentaires, résistance magique, attaque multiple, longue épée et arc long empoisonnant, parade ; étiquette « Devil », référence « Basic Rules (2014), pg. 276 ». Non présents sur la page : anges déchus, reproduction, place des femelles, hommage aux Furies, épée maudite, arc enchaînant les âmes (voir issues).",
+          "evidence": "« ***Hellish Weapons.*** The erinyes's weapon attacks are magical and deal an extra 13 (3d8) poison damage on a hit. » — « ***Longbow.** [...] the target must succeed on a DC 14 Constitution saving throw or be poisoned. » — « ***Parry.*** The erinyes adds 4 to its AC against one melee attack that would hit it. » — « Monster Tags: Devil » / « Basic Rules (2014), pg. 276 ». Contrôle extérieur : « Erinyes were the only types of devils to have possibly been born rather than made from mortal souls. » (Forgotten Realms Wiki, Erinyes)."
+        }
+      ],
+      "style_check": "Prose soignée, aucune consigne adressée à un auteur ; la notice marque honnêtement le statut de la créature (« ⚠️ Pas une créature folklorique traditionnelle au sens strict d'un culte ou d'un rite ») et délègue bien la mythologie grecque à [1]. Le problème est ailleurs : une partie du « lore » est en réalité un commentaire de lecteur présenté comme canon, et deux détails matériels (épée maudite, arc qui enchaîne les âmes) sont fabriqués."
+    }
+  ]
+}

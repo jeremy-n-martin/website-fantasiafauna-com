@@ -1,0 +1,393 @@
+{
+  "batch": "batch-b2",
+  "reviewed": [
+    {
+      "slug": "doppelganger",
+      "verdict": "revise",
+      "sha256": "0821c2719a6cf4d764035176f891c449bde238e5652ca4a8acb38747db1cd98e",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.naturelle.parts[4].body[0]",
+          "quote": "Aucune tradition, folklorique ou ludique, ne décrit de cycle de reproduction propre au Doppelgänger : le sosie serait plutôt un phénomène qui frappe un individu isolément qu'une créature engendrant une lignée.",
+          "detail": "Contredit par la source déclarée [3], qui documente précisément une reproduction : « Doppelgangers could only reproduce while in the form of a human, with another human; they lacked reproductive organs in their true form. Doppelgangers looked completely human at birth [...] this was sometimes compared to how cuckoos left their eggs in the nests of other birds. » Le Manuel des monstres 5e que cite la même page ajoute qu'ils « rarely ever had any interest in raising their young ». La rubrique ne peut donc pas affirmer qu'aucune tradition ludique ne décrit de cycle : le matériel publié en décrit un (naissance sous forme humaine, enfance élevée par des humains, demi-doppelgängers). Le lead de `naturelle` annonce d'ailleurs s'appuyer sur « les règles publiées », qui le portent. À réécrire, pas seulement à nuancer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "le romancier allemand Jean Paul le forge dans son roman Siebenkäs, paru en 1796, où une note de bas de page présente le terme comme une création",
+          "detail": "[1] est plus précis : « The first-known use, in the form Doppeltgänger, occurs in the novel Siebenkäs (1796) by Jean Paul [...] the word Doppelgänger also appears in the novel, but with a different meaning. » La première forme forgée est Doppeltgänger : reformuler (« le premier emploi connu, sous la forme Doppeltgänger »)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "Rangé parmi les métamorphes en troisième édition, le Doppelgänger devient un humanoïde monstrueux lorsque cette catégorie disparaît en 3.5.",
+          "detail": "Exact pour la 3e/3.5 ([3], 3rd Edition Statistics, MMv.3.5 pp67-68 ; 1st Edition Statistics, MM1e p29), mais la 5e le classe autrement : « Medium Monstrosity (Shapechanger), Neutral » ([2]). La phrase gagnerait à signaler que la classification a encore changé depuis, plutôt qu'à s'arrêter en 3.5."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Doppelg%C3%A4nger",
+          "status": "verified",
+          "claims_checked": "Jean Paul, Siebenkäs 1796 et la note de bas de page ; Catherine Crowe, The Night-Side of Nature (1848) ; vardøger norvégien ; etiäinen finlandais ; ka égyptien ; qarin/qareen ; « William Wilson » de Poe (1839) ; Les Élixirs du diable de Hoffmann (1815) ; Le Double de Dostoïevski (1846)",
+          "evidence": "« The first-known use, in the form Doppeltgänger, occurs in the novel Siebenkäs (1796) by Jean Paul, in which he explains his newly coined word in a footnote » ; « Catherine Crowe's book on paranormal phenomena, The Night-Side of Nature (1848) helped make the German word well known » ; « In Norse mythology, a vardøger is a ghostly double who is seen performing the person's actions in advance. In Finnish mythology, this pattern is described as having an etiäinen [...] \"a firstcomer\" » ; « In Ancient Egyptian mythology, a ka was a tangible \"spirit double\" having the same memories and feelings as the person to whom the counterpart belongs » ; « Many majority Muslim countries have the concept of a karin or qareen, which is a potentially benevolent or harmful spirit double » ; « In Edgar Allan Poe's 1839 short story \"William Wilson\"... » ; « In The Devil's Elixirs (1815), one of E. T. A. Hoffmann's early novels... »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/monsters/16843-doppelganger",
+          "status": "verified",
+          "claims_checked": "alignement neutre, lecture des pensées superficielles, métamorphose en humanoïde de taille P ou M, comportement d'embuscade",
+          "evidence": "« Doppelgangers are devious shapeshifters that take on the appearance of other humanoids, throwing off pursuit or luring victims to their doom with misdirection and disguise. » ; « Medium Monstrosity (Shapechanger), Neutral » ; « Read Thoughts. The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. » ; « Shapechanger. The doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. » ; « Ambusher. The doppelganger has advantage on attack rolls against any creature it has surprised. »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://forgottenrealms.fandom.com/wiki/Doppelganger",
+          "status": "verified",
+          "claims_checked": "classification par édition (1re éd. MM p. 29 ; 3.5 MM p. 67-68), incapacité à reproduire langage et manières de la victime, et surtout CYCLE DE REPRODUCTION (élément qui contredit la notice)",
+          "evidence": "« Doppelgangers could only reproduce while in the form of a human, with another human; they lacked reproductive organs in their true form. Doppelgangers looked completely human at birth (though certain organs functioned differently)... this was sometimes compared to how cuckoos left their eggs in the nests of other birds. » ; « Because of their laziness and selfishness, they rarely ever had any interest in raising their young. » ; « a normal doppelganger could not duplicate the languages, memories, mannerisms, or personality of their victims » ; « 1st Edition Statistics[MM1e p29] », « 3rd Edition Statistics[MMv.3.5 pp67-68] »"
+        }
+      ],
+      "style_check": "Voix tenue, français adulte, distinction entre le présage folklorique et le monstre de jeu posée sans confusion ; deux amorces d'appréciation (« Il n'y a pas de monstre plus intime que celui-ci ») restent acceptables. Le blocage ne vient pas de la voix mais d'une rubrique qui nie un fait documenté par sa propre source."
+    },
+    {
+      "slug": "dracoliche",
+      "verdict": "revise",
+      "sha256": "21fff699df51668eafae90cdb7d9dd4008e85296c639b4b0924b8af1e991f69c",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.anomalies[1].body[0]",
+          "quote": "un souffle qui a perdu sa nature élémentaire d'origine pour devenir une émanation nécrotique, mêlant les pouvoirs du dragon mort à ceux, plus glacés, de la non-mort.[2]",
+          "detail": "Contredit par la seule source déclarée [2] : « A dracolich retains all the special attack forms of the base creature, including breath weapon, spell use, and spell-like abilities. » Le contrôle 2e édition (Complete Monstrous Compendium, entrée Dracolich) le confirme : « A dracolich can speak, cast spells, and employ the breath weapon of its original form. » Le souffle garde donc son type d'origine ; la notice fabrique une donnée de jeu (souffle devenu nécrotique) et l'appuie sur une page qui dit l'inverse. Le froid existe bien, mais comme dégâts supplémentaires au corps à corps (« deals an extra 1d6 points of cold damage on any successful hit »), pas comme nature du souffle."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "Sa première apparition documentée se situe dans les pages du magazine Dragon, où l'auteur Ed Greenwood, créateur du cadre des Royaumes oubliés, publie en 1986 l'article The Cult of the Dragon [...] Le supplément Waterdeep and the North, paru l'année suivante [...].[2]",
+          "detail": "Les faits sont exacts, mais [2] ne les porte pas : la page RealmsHelps ne mentionne ni magazine Dragon, ni 1986, ni Ed Greenwood, ni Waterdeep and the North, ni le Culte du Dragon. Contrôle extérieur concluant : « The dracolich (night dragon) first appears in the article \"The Cult of the Dragon\", by Ed Greenwood » (WikiProject D&D, infobox « first : Dragon #110 (June 1986) »), et Forgotten Realms Wiki documente Sammaster et le Culte du Dragon. L'appel [2] doit être déplacé vers une source d'histoire éditoriale ; tel quel, il fait porter à une page de règles une datation qu'elle ignore."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "⚠️ Le dracoliche n'est pas une créature du folklore traditionnel",
+          "detail": "La distinction faux folklore / jeu de rôle exigée par la grille est faite, et bien faite, mais le pictogramme d'avertissement n'a pas sa place dans un texte publié : à supprimer, la phrase se suffit."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[2].body[0]",
+          "quote": "son énergie provient de la même source magique que celle qui anime les liches, entretenue par le lien au phylactère plutôt que par une quelconque digestion",
+          "detail": "[2] ne parle pas du régime du dracoliche ; le contrôle 2e édition dit même l'inverse d'une absence totale de rapport à la nourriture : « Diet: None required for sustenance, but as per former dragon type to refuel breath weapon » et « Dracoliches are never hungry, but they must eat in order to refuel their breath weapon. » À reformuler (la faim disparaît, le souffle se recharge)."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.realmshelps.net/monsters/templates/dracolich.shtml",
+          "status": "verified",
+          "claims_checked": "transformation volontaire ou imposée par un incantateur, transfert de l'esprit dans le phylactère, destruction du phylactère comme seule annihilation vraie, apparence squelettique et yeux de lumière froide, taille inchangée ; en revanche : AUCUNE mention de Dragon #110, 1986, Ed Greenwood, Waterdeep and the North",
+          "evidence": "« A dracolich retains all the special attack forms of the base creature, including breath weapon, spell use, and spell-like abilities. » ; « The process usually involves a cooperative effort between an evil dragon and powerful cleric, sorcerer, wizard, but especially powerful spellcasters have been known to coerce an evil dragon undergo the transformation against its will. » ; « its spirit is transfered to its dracolich phylactery regardless of the distance between the phylactery and the dragon's body » ; « destroying that item when a suitable corpse is not within range effectively destroys the dracolich » ; « A dracolich appears as a skeletal or semi-skeletal version of its former self, with glowing points of light in its shadowy eye sockets. » ; « Size is unchanged »"
+        },
+        {
+          "source_id": null,
+          "url": "https://www.completecompendium.com/appendix/dracolic/print",
+          "status": "verified",
+          "claims_checked": "Source de contrôle (hors sources déclarées), 2e édition : souffle conservé à l'identique, régime, habitat aligné sur le dragon d'origine",
+          "evidence": "« A dracolich can speak, cast spells, and employ the breath weapon of its original form. » ; « Diet: None required for sustenance, but as per former dragon type to refuel breath weapon » ; « Dracoliches are never hungry, but they must eat in order to refuel their breath weapon. » ; « Dracoliches are always found in the same habitats as the dragons from which they were created. »"
+        },
+        {
+          "source_id": null,
+          "url": "https://wikiproject-dungeons-dragons.fandom.com/wiki/Dracolich",
+          "status": "verified",
+          "claims_checked": "Source de contrôle (hors sources déclarées) : datation et attribution de la première apparition, revendiquées par la notice sous l'appel [2]",
+          "evidence": "« The dracolich (night dragon) first appears in the article \"The Cult of the Dragon\", by Ed Greenwood » ; encadré « first : Dragon #110 (June 1986) »."
+        },
+        {
+          "source_id": null,
+          "url": "https://forgottenrealms.fandom.com/wiki/Dracolich",
+          "status": "verified",
+          "claims_checked": "Source de contrôle (hors sources déclarées) : Culte du Dragon, phylactère, surnom « Night Dragon » (note de bas de page renvoyant à Dragon #110)",
+          "evidence": "« The first successful dracolich was created by Sammaster the Mad [...] With the aid of the deity Kalzareinad, Sammaster successfully transformed the great red wyrm Shargrailar the Dark into a dracolich in the Year of the Queen's Tears, 902 DR. » ; « its spirit fled and hid in the phylactery, awaiting another suitable body to animate and inhabit. » ; « Like other types of lich, a dracolich was only truly annihilated when its phylactery was destroyed. » ; titre « Dracolich (Night Dragon[Dragon #110]) »"
+        }
+      ],
+      "style_check": "Prose dense et sûre, la non-mort comme choix est bien rendue ; mais la rubrique anomalies fabrique une mécanique de souffle que la source démentit, et l'appel [2] supporte une histoire éditoriale qu'il ne contient pas."
+    },
+    {
+      "slug": "dragon",
+      "verdict": "pass",
+      "sha256": "9c22942bb874ee04c6c6b2ce76546230eb0cc10448274b0687e7e88edd24054b",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Le dragon, décidément, ne appartient à aucune morale fixe avant que chaque culture ne la lui attribue.",
+          "detail": "Élision manquante : « n'appartient ». Coquille de langue dans un texte destiné à la publication — à corriger avant mise en ligne. Je ne la classe pas bloquante : le brief réserve le blocage à l'erreur factuelle, au faux folklore, à la consigne adressée à un auteur, à l'appel orphelin, à la rubrique manquante et à la zoologie inventée. À noter aussi que la phrase repose sur une négation d'appréciation (« aucune morale fixe ») : formulation à alléger."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "dont l'étymologie probable renvoie au verbe voir",
+          "detail": "L'article [1] donne l'étymologie δράκων « serpent » sans passer par le verbe voir ; le rattachement à δέρκομαι (« voir clair ») est l'hypothèse la plus courante chez les hellénistes, mais la source déclarée ne le porte pas. Nuancer (« que l'on rattache souvent à ») ou renvoyer à une source étymologique."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Dragon",
+          "status": "verified",
+          "claims_checked": "entrée du mot en anglais au XIIIe siècle et filiation grecque δράκων ; dragons chinois maîtres des eaux et emblèmes impériaux à partir des Han ; mušḫuššu, Apep, Léviathan ; Héraclès et l'Hydre de Lerne ; saint Georges ; danse du dragon au Nouvel An ; refus d'une morale unique",
+          "evidence": "« The word dragon entered the English language in the early 13th century from Old French dragon, which, in turn, comes from Latin draco (genitive draconis), meaning \"huge serpent, dragon\", from Ancient Greek: δράκων, drákōn » ; « [Chinese dragons] were thought to govern the rain, the sea, and other forms of water, and from the Han dynasty onwards they were emblems of imperial power » ; « Famous prototypical draconic creatures include the mušḫuššu of ancient Mesopotamia; Apep in Egyptian mythology; Vṛtra in the Rigveda; the Leviathan in the Hebrew Bible » ; « the slaying of the Hydra was the second of the Twelve Labors of Heracles » ; « The European dragon of the tale Saint George and the Dragon » ; « During various holidays, including the Spring Festival and Lantern Festival, villagers will construct an approximately sixteen-foot-long dragon... as part of a dragon dance »"
+        }
+      ],
+      "style_check": "La voix est ample sans être grandiloquente et le comparatisme Occident/Chine est mené proprement ; seule coquille à corriger, aucune tournure de bot détectée."
+    },
+    {
+      "slug": "dragon-bleu",
+      "verdict": "pass",
+      "sha256": "a6bea95edf35877d08d1fd2b03eb94df3c79d083f12ed21778ecb7cea96cf5a1",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "La cinquième édition insiste sur un aspect resté discret jusque-là, la vie sociale du dragon bleu.[1]",
+          "detail": "[1] (page D&D Beyond) ne contient aucun texte de description : bloc de statistiques et description du repaire seulement. La société hiérarchisée est en revanche documentée par [2] : « Blue dragons are unusual for chromatics in that they keep fairly well-ordered, hierarchical societies », sans attribution d'édition — et la 2e édition la décrivait déjà, donc « resté discret jusque-là » est à atténuer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "qui leur accorde aussi une résistance à la magie et des attaques physiques élargies.[2]",
+          "detail": "Précision mécanique de 2e édition absente de [2], qui se borne à dater l'emploi de la classification « chromatic dragons » au Monstrous Manual (1993). À sourcer ou à retirer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[4].body[0]",
+          "quote": "chaque étape renforçant la portée de son souffle et l'étendue de son territoire",
+          "detail": "La progression par catégories d'âge est documentée (« True dragons are dragons which increase in power by age categories (wyrmling...) », [2]) et le souffle adulte fait bien 90 pieds ([1]) ; « l'étendue de son territoire » ne l'est pas. La rubrique répond par la croissance plutôt que d'expliciter le silence des sources sur la reproduction : acceptable ici, mais la donnée ajoutée est à retirer."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16765-adult-blue-dragon",
+          "status": "verified",
+          "claims_checked": "ligne de foudre de 90 pieds (≈ 27 m), galeries vitrifiées sous le sable, conduits d'aération, effondrement du repaire sur les assaillants puis récupération du trésor des victimes, habitats désert et littoral",
+          "evidence": "« Lightning Breath (Recharge 5–6). The dragon exhales lightning in a 90-foot line that is 5 feet wide. » ; « Blue dragons make their lairs in barren places, using their lightning breath and their burrowing ability to carve out crystallized caverns and tunnels beneath the sands. » ; « narrow tubes lined with glassy sand ventilate the lair » ; « A blue dragon will collapse the caverns that make up its lair if that lair is invaded. The dragon then burrows out, leaving its attackers to be crushed and suffocated. When it returns later, it collects its possessions — along with the wealth of the dead intruders. » ; « Habitat: Coastal Desert »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)",
+          "status": "verified",
+          "claims_checked": "présence du bleu dans le coffret de 1974, noms pseudo-scientifiques et alignements du Manuel des monstres de 1977, formalisation de la catégorie chromatique au Monstrous Manual de 1993, société hiérarchisée, ruse et illusions, embuscade sous le sable, éditions jusqu'à Fizban's (2021)",
+          "evidence": "« Five evil-aligned dragons (white dragon, black dragon, green dragon, blue dragon, and red dragon), and the lawful-good aligned golden dragon [...] first appeared in the original Dungeons & Dragons \"white box\" set (1974) » ; « The ten dragon types were given pseudoscientific names as follows: black (draco causticus sputem), blue (draco electricus)... » ; « The classification of \"chromatic dragons\" was used in the Advanced Dungeons & Dragons second edition Monstrous Manual (1993) » ; « Blue dragons are unusual for chromatics in that they keep fairly well-ordered, hierarchical societies. » ; « They are more likely to be mocking and manipulative than cruel or murderous to 'lesser' creatures, aided by their natural talents for hallucination. » ; « They often lie in wait just below the surface of the desert for prey. » ; « Last appearance | Fizban's Treasury of Dragons (2021) »"
+        }
+      ],
+      "style_check": "Texte tendu, l'éclair dans le désert est bien servi et les chiffres de jeu sont exacts ; la seule gêne est une attribution d'appel à déplacer de [1] vers [2]."
+    },
+    {
+      "slug": "dragon-d-airain",
+      "verdict": "pass",
+      "sha256": "22e7bc9bb653647d7ffad26198cc8871b559c1b3ec150ba29ba9f26c0423e267",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "il est décrit comme le plus grégaire des vrais dragons, avide de conversation au point de préférer parler que combattre.[1]",
+          "detail": "[1] ne contient pas de texte de description (statistiques et repaire seulement) ; [2] parle d'un « Grand Conversation Hall, where it spends the majority of its time entertaining friends and visitors » et de « Brass wyrmlings [who] probably learn to talk more quickly than the young of any other sentient species », jamais du superlatif « le plus grégaire des vrais dragons », qui vient du Manuel des monstres 5e. Le fait est exact par ailleurs : à porter par une source qui l'énonce, ou à reformuler sans superlatif non sourcé."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[1].body[0]",
+          "quote": "au sein de ruines, d'oasis ou de dunes",
+          "detail": "[1] : « A brass dragon's desert lair is typically a ruin, canyon, or cave network with ceiling holes to allow for sunlight » ; [2] : « Base of operations | Desert, plains » et « The brass dragon prefers to dig its lair inside a desert peak or spire. » Ni oasis ni dunes dans les sources."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16766-adult-brass-dragon",
+          "status": "verified",
+          "claims_checked": "double souffle (ligne de feu, cône de gaz soporifique dont l'effet cesse à la blessure ou au réveil), repaire de ruine/canyon avec ouvertures dans la voûte, alignement chaotique bon",
+          "evidence": "« Fire Breath. The dragon exhales fire in an 60-foot line that is 5 feet wide. » ; « Sleep Breath. The dragon exhales sleep gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it. » ; « A brass dragon's desert lair is typically a ruin, canyon, or cave network with ceiling holes to allow for sunlight. » ; « Huge Dragon, Chaotic Good »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)",
+          "status": "verified",
+          "claims_checked": "entrée de l'airain par le supplément Greyhawk de 1975, antériorité du dragon d'or (1974), formalisation des métalliques en 1993, alignement, souffles",
+          "evidence": "« Brass Dragon | First appearance | Greyhawk (1975) » ; « The Greyhawk Campaign supplement (1975) added the copper dragon, brass dragon, bronze dragon, and silver dragon » ; « The classification of \"metallic dragons\" was used in the Advanced Dungeons & Dragons second edition Monstrous Manual (1993), although the gold(en) dragon first appeared in the original Dungeons & Dragons \"white box\" set (1974) » ; « Distinctions | Breath weapons (cone of sleep gas, line of fire) | Alignment | Chaotic Good »"
+        }
+      ],
+      "style_check": "Le renversement bavard est bien mené et la menace jamais oubliée ; seule une source de superlatif manque, sans que le fait soit faux."
+    },
+    {
+      "slug": "dragon-d-argent",
+      "verdict": "pass",
+      "sha256": "245883fab5d453dcd89e47ae1c9b12b11b087a773edc4a318a6a40866481581e",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "préférant l'apparence d'un humain âgé et bienveillant, ou d'une elfe séduisante, à sa forme de dragon.[1]",
+          "detail": "[2] dit seulement « extremely rare and elusive, preferring to take the guise of kind and elderly humanoids or very young humanoids » ; « elfe séduisante » ne figure ni dans [2] ni dans [1] (page D&D Beyond dépourvue de texte de description). La formulation vient du Manuel des monstres 5e : soit la renvoyer à cette source, soit en retirer « séduisante » et « elfe »."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[4].body[0]",
+          "quote": "la maîtrise du métamorphisme s'affine avec l'âge, tout comme la puissance de son souffle glacé.[1]",
+          "detail": "Sous [1], l'action Change Shape est identique quels que soient les âges ; seul le souffle progresse avec les catégories d'âge. Retirer la première moitié de la phrase."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "fait des deux dragons métalliques les plus proches des affaires humaines les seuls véritablement capables d'en épouser durablement l'existence",
+          "detail": "L'exclusivité du Change Shape aux dragons d'or et d'argent n'est établie par aucune des deux sources déclarées ; la page D&D Beyond du dragon d'airain (lot voisin, même type de source) n'affiche pas cette action, et les URL testées pour les dragons de bronze et de cuivre répondent 404. Affirmation à vérifier avant publication."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16772-adult-silver-dragon",
+          "status": "verified",
+          "claims_checked": "souffle de froid en cône, second souffle paralysant, métamorphose en humanoïde ou bête de puissance inférieure ou égale, alignement loyal bon, repaire des cimes froides",
+          "evidence": "« Cold Breath. The dragon exhales an icy blast in a 60-foot cone. » ; « Paralyzing Breath. The dragon exhales paralyzing gas in a 60-foot cone. » ; « Change Shape. The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. » ; « Huge Dragon, Lawful Good » ; « Silver dragons dwell among the clouds, making their lairs on secluded cold mountain peaks. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)",
+          "status": "verified",
+          "claims_checked": "entrée de l'argent par Greyhawk (1975), rareté et discrétion, goût pour la forme humaine ou elfique, souffles, alignement, habitat de haute montagne",
+          "evidence": "« Silver Dragon | First appearance | Greyhawk (1975) » ; « Silver dragons are the second most powerful of the metallic dragons, and are true friends to all. The silver dragon enjoys the company of humans and elves so much that it will often take the form of a human or elf and live among them for the majority of its life. » ; « Silver dragons are extremely rare and elusive, preferring to take the guise of kind and elderly humanoids or very young humanoids. » ; « Distinctions | Breath weapons (cone of cold, paralyzation gas) ; Base of operations | High mountains »"
+        }
+      ],
+      "style_check": "La double vie du dragon est rendue avec justesse et sans folklore fabriqué ; quelques précisions de jeu sont à réancrer sur leurs sources."
+    },
+    {
+      "slug": "dragon-d-ombre",
+      "verdict": "revise",
+      "sha256": "6b9b3fc0bbff5d1e75f7b96c487ba68215ac9929c7ade78a5b6e313cef3a204d",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1] (et sections.naturelle.parts[4].body[0])",
+          "quote": "Les suppléments ultérieurs precisent son lien avec le plan de l'Ombre, aujourd'hui identifié à l'Ombreterre : certains dragons y naissent, d'autres s'y égarent et en reviennent changés, contaminés par la substance même du lieu.[1][2]",
+          "detail": "La source déclarée dit « the Shadowfell » et « the energy of the plane of shadows corrupts its form ». Or « Ombreterre » désigne en français l'Outreterre (Underdark) : fr.wikipedia, article « Outreterre (Royaumes oubliés) » — « l'Outreterre (en anglais : Underdark) est un lieu fictif constitué d'un vaste réseau souterrain de cavernes et de tunnels qui s'étend sous des continents entiers. On peut aussi retrouver le terme d'Ombre terre (ou Ombre-Terre) dans les anciennes éditions ou les romans des éditions Fleuve noir. » La notice confond donc un plan d'existence avec un réseau de cavernes : un dragon « né dans l'Ombreterre » ou « corrompu par des années passées dans l'Ombreterre » décrit un autre lieu que celui de la source. Le dépôt n'emploie « Ombreterre » que dans cette notice ; les autres notices concernées (chuul, cube-gelatineux, drow, kuo-toa, myconide, ombre, svirfneblin, xorn) écrivent « Outreterre ». Écrire « le Shadowfell » (ou « le plan de l'Ombre ») partout, ou adopter le terme français retenu par le projet."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "Les suppléments ultérieurs precisent son lien avec le plan de l'Ombre",
+          "detail": "Accent manquant : « précisent ». Coquille de langue, à corriger avant mise en ligne."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "Sa camouflage est sans équivalent chez les autres dragons",
+          "detail": "Accord fautif : « camouflage » est masculin (« Son camouflage »). Coquille de langue, à corriger avant mise en ligne."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "Il y est déjà conçu comme une variante corrompue plutôt que comme une espèce distincte",
+          "detail": "La description de 1983 citée par [1] présente une créature à part entière, dotée d'un souffle propre : « Shadow dragons appear as wormlike dragons of lighter and darker shadows. The bat-like wings are semitransparent, as is most of the body. » (Monster Manual II). La lecture « variante corrompue » est celle des éditions postérieures : à dater plutôt qu'à attribuer à l'entrée de 1983."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "dans certaines versions du monstre, les dégâts qu'il inflige relèvent du nécrotique plutôt que du feu commun.[1]",
+          "detail": "Le bloc de statistiques reproduit par [1] fait infliger au souffle des dégâts de feu (« 30-ft cone of roiling shadowy fire... 56 (16d6) fire damage ») et ne réserve le nécrotique qu'à la morsure ; l'affirmation n'est pas portée par la source et « certaines versions » reste vague. À sourcer ou à retirer."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://blackcitadelrpg.com/shadow-dragon-5e/",
+          "status": "verified",
+          "claims_checked": "origine en 1re édition, Monster Manual II (1983), transformation par naissance ou séjour dans le Shadowfell / plan des ombres, écailles qui perdent leur éclat, camouflage et discrétion dans l'obscurité, souffle qui relève les humanoïdes tués en ombres asservies",
+          "evidence": "« Shadow dragons have been a part of Dungeons & Dragons since the game's 1st edition. They were introduced to the 1983 Advanced Dungeons & Dragons sourcebook, the Monster Manual II, written by Gary Gygax. » ; « When a true dragon (as opposed to a Wyvern or a Drake) is born or remains in the Shadowfell for a number of years, the energy of the plane of shadows corrupts its form, warping it into a nightmarish beast made from pure darkness. » ; « their colorful scales lose their lustre and take on a charcoal hue » ; « Shadow Breath (Recharge 5–6). The dragon can exhale a 30-ft cone of roiling shadowy fire... If a humanoid dies from this damage, an undead Shadow rises from its corpse and acts under the command of the Shadow Dragon. » ; « Shadow Stealth. In dim light or darkness, shadow dragons can Hide as a bonus action. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)",
+          "status": "verified",
+          "claims_checked": "présence du dragon d'ombre dans le Monster Manual II (1983) puis dans le Monstrous Manual (1993), rattachement aux dragons planaires du plan d'ombre",
+          "evidence": "« The cloud dragon, the faerie dragon, the mist dragon, and the shadow dragon appeared in the original Monster Manual II (1983). » ; liste des créatures du Monstrous Manual (1993) incluant « shadow dragon » ; « Planar dragons [...] Shadow dragons which inhabit the Shadow Material Plane. »"
+        },
+        {
+          "source_id": null,
+          "url": "https://fr.wikipedia.org/wiki/Outreterre_(Royaumes_oublies)",
+          "status": "verified",
+          "claims_checked": "Source de contrôle (hors sources déclarées) : sens du terme français « Ombreterre / Ombre-Terre » employé par la notice",
+          "evidence": "« Dans le jeu de rôle Donjons et Dragons, l'Outreterre (en anglais : Underdark) est un lieu fictif constitué d'un vaste réseau souterrain de cavernes et de tunnels qui s'étend sous des continents entiers. On peut aussi retrouver le terme d'Ombre terre (ou Ombre-Terre) dans les anciennes éditions ou les romans des éditions Fleuve noir. » (la page « Ombreterre » de fr.wikipedia redirige vers cet article)"
+        }
+      ],
+      "style_check": "La présence inquiétante et l'embuscade ombrale sont bien servies, mais la toponymie française employée pour le plan de l'Ombre envoie le lecteur dans l'Outreterre : c'est le défaut à trancher avant publication."
+    },
+    {
+      "slug": "dragon-d-or",
+      "verdict": "pass",
+      "sha256": "29fd4299e16a967fb0cd88af0318deb0d929ce039fdf77a33639aa9fab724e45",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "le dragon d'or y est explicitement désigné comme le plus puissant, le plus sage et le plus majestueux des métalliques",
+          "detail": "[2] dit seulement : « they are the most powerful of the metallic dragons (in some versions they are the strongest of all dragons), and the most dedicated to defeating evil », et donne « Base of operations | Anywhere, although they prefer secluded lairs ». « Le plus sage » et « le plus majestueux » ne sont pas dans les sources déclarées, et « explicitement » surinterprète. À réancrer sur le Manuel des monstres 5e ou à retirer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "impose à ses victimes un désavantage sur leurs actions, tests et jets de sauvegarde de force pendant une minute entière.[1]",
+          "detail": "[1] est plus étroit : « disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute ». « Leurs actions » couvre plus large que les attaques fondées sur la Force."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[1].body[0]",
+          "quote": "Il s'installe dans des palais cachés, des montagnes sacrées ou de vastes étendues célestes",
+          "detail": "[1] décrit des repaires à l'écart (« Gold dragons make their homes in out-of-the-way places [...] idyllic lakes and rivers, mist-shrouded islands, cave complexes hidden behind sparkling waterfalls, or ancient ruins ») et [2] « secluded lairs » ; l'idée du palais vient de [2] (« lairs often resemble those of elegant human mansions, albeit buried underground »). « Montagnes sacrées » et « étendues célestes » ne sont dans aucune des deux."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16769-adult-gold-dragon",
+          "status": "verified",
+          "claims_checked": "double souffle (cône de feu ; souffle affaiblissant qui n'inflige pas de dégâts mais impose un désavantage sur les attaques, tests et jets de sauvegarde fondés sur la Force pendant une minute), métamorphose, alignement loyal bon, repaires retirés",
+          "evidence": "« Fire Breath. The dragon exhales fire in a 60-foot cone. » ; « Weakening Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. » ; « Change Shape. The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own » ; « Huge Dragon, Lawful Good » ; « Gold dragons make their homes in out-of-the-way places, where they can do as they please without arousing suspicion or fear. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Dragon_(Dungeons_%26_Dragons)",
+          "status": "verified",
+          "claims_checked": "antériorité de 1974, inspiration chinoise, puissance parmi les métalliques, souffles, métamorphose et vie cachée, retrait",
+          "evidence": "« Gold Dragon | First appearance | Dungeons & Dragons \"white box\" set (1974) » ; « Gold dragons are based on creatures from Chinese mythology. » ; « In the game, they are the most powerful of the metallic dragons (in some versions they are the strongest of all dragons), and the most dedicated to defeating evil. They spend the bulk of their lives in human form, seeking out evil and punishing wrongdoers » ; « Distinctions | Breath weapons (cone of fire, weakening gas) » ; « Base of operations | Anywhere, although they prefer secluded lairs »"
+        }
+      ],
+      "style_check": "La retenue du dragon d'or est rendue sans emphase et l'antériorité de 1974 comme la parenté chinoise sont correctement sourcées ; seule une partie des superlatifs doit être réancrée."
+    }
+  ]
+}

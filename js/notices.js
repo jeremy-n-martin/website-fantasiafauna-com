@@ -4685,6 +4685,223 @@ window.FF_NOTICES = {
       }
     ]
   },
+  "div": {
+    "description": "Le div fut d'abord un dieu qu'on cessa d'honorer : la divinité rejetée par la réforme de Zoroastre, devenue peu à peu l'ennemi en armes de l'ordre sacré.",
+    "sections": {
+      "fascination": [
+        "Il y a une étrange violence dans le simple fait de nommer : les daevas partagent une racine avec le mot deva sanskrit et le latin deus, tous deux porteurs de lumière et de sacré, tandis que la forme iranienne bascule vers l'exact opposé, désignant « les dieux qu'il faut rejeter ».[1] Le div hérite de cette fracture linguistique. Il n'est pas un intrus venu d'ailleurs pour menacer un panthéon établi ; il est l'ancien dieu du voisin, celui qu'on adorait hier et qu'il faut désormais combattre, ce qui donne à son hostilité une dimension presque familiale, une rupture plutôt qu'une invasion.",
+        "Le Shahnameh de Ferdowsi prolonge cette ambiguïté en faisant du div tantôt un monstre aux prises physiques avec les héros, tantôt une personnification de défauts humains — l'avidité, la colère, le déshonneur comptent parmi les divs cités par l'épopée.[1] Cette hésitation entre le corps et le vice donne au div une present étrange : on ne sait jamais tout à fait si l'on affronte une créature aux crocs et aux griffes ou un trait de caractère devenu assez grand pour porter une armure. Le div blanc de Mazandaran, qui aveugle les guerriers de Rostam, incarne cette bascule à son point le plus spectaculaire, où le combat épique se double d'un sens moral qui déborde le simple récit d'aventure."
+      ],
+      "legendes": [
+        "Le terme avestique daēuua partage une origine indo-iranienne avec le sanskrit devá et le latin deus, mots qui désignent ailleurs des divinités bienveillantes.[1] En Iran cependant, ce même terme prend une connotation résolument négative, en venant à signifier des dieux qu'il convient de rejeter plutôt que d'honorer. Ce glissement sémantique reste discuté par les spécialistes : les premières hypothèses, formulées au début du XXe siècle, attribuaient à Zoroastre lui-même la transformation délibérée d'anciens « dieux nationaux » en démons dans le cadre de sa réforme religieuse ; des travaux plus récents suggèrent au contraire un processus graduel, une méfiance envers les daevas déjà présente avant même la composition des Gathas.[1]",
+        "Dans les Gathas, les hymnes les plus anciens attribués à Zoroastre, les daevas apparaissent encore comme des divinités authentiques que certains fidèles continuent d'honorer, bien que le prophète les récuse. On leur reproche alors surtout une incapacité à distinguer le vrai du faux, ce qui les place dans une position ambiguë : ni tout à fait démons, ni dieux légitimes.[1] L'Avesta récent tranche cette ambiguïté de façon beaucoup plus nette, en faisant des daevas des entités « sans équivoque hostiles », porteuses de chaos et de désordre. Le Vendidad, dont le nom signifie littéralement « donné contre les daevas », systématise même les méthodes rituelles destinées à les confondre et à les repousser.[1]",
+        "Les textes zoroastriens du Moyen Âge organisent une opposition formelle entre six arch-daevas et les Amesha Spentas, les grandes entités divines du bien : chacun de ces démons incarne la destruction d'une vertu précise, Akoman s'opposant à la Bonne Pensée, Indar à la Vérité, et ainsi de suite.[1] Il faut cependant noter, contre une idée reçue, qu'aucun texte ne présente Angra Mainyu, le principe du mal, comme le créateur ou le père des daevas : leur origine reste distincte de leur maître, une nuance théologique qui complique toute lecture trop simplement dualiste du système.",
+        "C'est dans le Shahnameh de Ferdowsi, la grande épopée persane rédigée autour de l'an mille, que les daevas deviennent des divs proprement dits, entités tantôt démoniaques tantôt allégoriques. L'épopée catalogue une dizaine de démons précis, parmi lesquels Az, l'avidité, Kashm, la colère, et Nang, le déshonneur, dont le portrait oscille constamment entre l'antagoniste surnaturel et le vice humain personnifié.[1] Le div le plus célèbre du poème, le Div Blanc de Mazandaran, affronté par le héros Rostam, illustre ce basculement du mythe religieux vers l'épopée guerrière, où le monstre garde une part de sa fonction morale d'origine."
+      ],
+      "anomalies": [
+        "La nature du div varie considérablement selon la strate du texte considéré. Dans les Gathas, il reste proche d'une divinité déchue, dotée d'un culte réel bien que condamné ; dans l'Avesta récent et le Vendidad, il devient une entité de chaos combattue par des rituels précis ; dans le Shahnameh enfin, il prend une consistance quasi charnelle, affrontable au corps à corps par un héros comme Rostam.[1] Un même nom recouvre ainsi trois régimes d'existence bien distincts, du culte abandonné à la créature d'épopée.",
+        "L'organisation en six arch-daevas opposés terme à terme aux Amesha Spentas donne au système zoroastrien une architecture presque symétrique, rare dans les mythologies comparables : à chaque vertu cardinale correspond un vice personnifié et nommé.[1] Cette symétrie n'empêche pas certains divs, notamment ceux du Shahnameh, de fonctionner aussi bien comme allégorie morale que comme adversaire physique dans un même récit, une double lecture que l'épopée ne cherche jamais à trancher définitivement."
+      ],
+      "naturelle": {
+        "lead": "Les sources permettent de dresser un profil composite du div, à cheval entre l'ancienne divinité déchue de l'Avesta et le monstre combattant du Shahnameh.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le div incarne le désordre plutôt que la simple cruauté : il sème la confusion, brouille le discernement entre le vrai et le faux, et s'oppose systématiquement à l'ordre que défendent les divinités bienveillantes.[1] Dans l'épopée, cette hostilité se traduit par un affrontement direct, souvent violent, contre les héros humains."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les divs du Shahnameh occupent des territoires reculés et hostiles, tel le Mazandaran, région montagneuse associée à la sorcellerie et aux forces obscures dans l'imaginaire persan. Les sources théologiques plus anciennes ne leur assignent pas de lieu fixe, les traitant davantage comme des puissances diffuses que comme des habitants d'un territoire précis."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Aucune source ne décrit de régime alimentaire propre aux daevas ou aux divs : leur nature, qu'elle soit divine déchue ou allégorique, les place hors du besoin biologique ordinaire."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Leur défaut fondateur, selon les Gathas, est précisément une incapacité à discerner la vérité du mensonge — une forme d'aveuglement plus que de bêtise.[1] Cette incapacité ne les empêche pas d'agir avec ruse dans l'épopée, où le Div Blanc parvient à tromper et à affaiblir l'armée de Rostam avant le combat final."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les textes ne décrivent pas de filiation biologique des daevas ; leur multiplicité tient à une classification religieuse et morale — six arch-daevas, dix démons du Shahnameh — plutôt qu'à une reproduction au sens naturel du terme.[1]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Leur opposé structurel, les Amesha Spentas et plus largement les yazatas, ne les chassent pas comme des proies mais les combattent comme des principes rivaux dans l'ordre cosmique.[1] Dans le registre épique, ce sont des héros individuels, au premier rang desquels Rostam, qui les affrontent et les vainquent physiquement."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le mot persan div, descendant direct du daeva avestique, a traversé les siècles jusqu'au vocabulaire courant iranien et à ses langues voisines, où il continue de désigner un démon ou un ogre dans les contes populaires, loin de la subtilité théologique de son origine.[1] Cette survie linguistique témoigne d'une trajectoire inverse à celle de bien des figures mythologiques : ici, c'est le nom d'un dieu qui a fini par nommer son contraire.",
+        "Le Shahnameh continue d'irriguer la culture iranienne contemporaine — littérature, cinéma, arts visuels — où le Div Blanc de Mazandaran reste l'une des images démoniaques les plus reconnaissables de l'épopée persane, rappelant que la figure religieuse ancienne a trouvé, par la poésie, une seconde vie bien plus durable que le culte qu'elle a remplacé.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Daeva — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Daeva"
+      }
+    ]
+  },
+  "djinn": {
+    "description": "Formé d'un feu sans fumée, le djinn partage avec l'être humain le fardeau du libre arbitre, sans partager son argile.",
+    "sections": {
+      "fascination": [
+        "Ce qui distingue le djinn de tant d'autres esprits, c'est qu'il n'échappe pas au jugement. Le Coran le place sur le même plan que l'être humain face à Dieu : tous deux dotés de libre arbitre, tous deux appelés à répondre de leurs actes.[1] Un djinn peut donc croire ou refuser de croire, choisir le bien ou le mal, exactement comme un homme — ce qui interdit d'en faire un simple monstre du désert. Sa nature de feu sans fumée ne le place pas au-dessus de la morale, elle lui donne seulement d'autres moyens : l'invisibilité, la métamorphose, le vol, autant de facultés qui rendent ses choix plus difficiles à surveiller que les nôtres, sans les rendre moins comptables.",
+        "Cette proximité morale avec l'humain, doublée d'une origine matérielle radicalement autre, ouvre un espace narratif d'une rare souplesse : le djinn peut être l'ami, l'amant, le rival ou le tourment d'un être humain, parfois dans le même récit. Le règne du roi Salomon, où des armées de djinns œuvrent sous son autorité, illustre cette possibilité d'alliance sans jamais effacer l'altérité foncière de la créature — un djinn transformé en homme, précise la tradition, garde toujours en lui une part animale, comme une signature discrète de son origine ignée.[1]"
+      ],
+      "legendes": [
+        "Bien avant l'islam, les djinns appartenaient déjà à la religion de l'Arabie préislamique, où on les tenait pour des habitants des lieux désolés, sombres et reculés du désert, et on leur attribuait volontiers la responsabilité des maladies, notamment mentales.[1] Les voyageurs cherchaient leur protection avant de s'aventurer en territoire incertain, une pratique de vénération qui s'est répandue dans toute la péninsule bien avant la révélation coranique.",
+        "Le Coran reprend cette figure préexistante pour en faire une catégorie de création à part entière, distincte à la fois des anges et des humains. Là où l'homme est façonné d'argile, le djinn est formé de « feu sans fumée », selon les termes des sourates 15:27 et 55:15.[1] Cette différence de matière explique, dans la logique du texte, des capacités hors du commun — invisibilité, métamorphose, déplacement rapide — tout en maintenant le djinn dans une condition de créature limitée : comme l'humain, il ignore l'avenir et reste soumis aux mêmes bornes de la connaissance.",
+        "Le trait le plus significatif de cette théologie tient à l'égalité de statut moral qu'elle instaure. Le Coran affirme que les djinns, comme les hommes, ont été créés pour adorer Dieu et qu'ils « peuvent accomplir aussi bien de bonnes que de mauvaises actions ».[1] Il existe ainsi des djinns musulmans pieux et des djinns incroyants et malveillants, ces derniers étant volontiers associés à l'influence des démons. Cette classification morale, plus que la simple opposition bien/mal, structure l'essentiel des récits islamiques les concernant.",
+        "Les djinns forment, selon la tradition, de véritables nations dotées d'un esprit rationnel et d'organisations sociales qui reflètent celles des tribus arabes. Ils peuvent interagir avec les humains de multiples façons — protection, amitié, relation amoureuse, possession — et l'épisode du roi Salomon, qui commande des armées de djinns à son service, reste l'un des exemples les plus célèbres de cette coexistence, âprement discutée par les juristes islamiques quant à la légitimité des unions entre les deux espèces.[1]"
+      ],
+      "anomalies": [
+        "La composition ignée du djinn, opposée à l'argile humaine, fonde l'essentiel de ses pouvoirs distinctifs : invisibilité par défaut, capacité de métamorphose, rapidité de déplacement bien supérieure à celle d'un homme.[1] Ces facultés restent cependant bornées : le djinn ignore l'avenir tout comme l'être humain, ce qui l'écarte d'un statut de divinité mineure pour le maintenir dans la catégorie des créatures soumises au jugement divin.",
+        "La tradition distingue plusieurs types de djinns selon leur rapport à la foi et à l'humain — croyants ou incroyants, bienveillants ou malfaisants, sédentaires des ruines ou errants du désert — sans qu'aucune classification unique ne fasse autorité absolue d'une source à l'autre.[1] Un trait revient cependant souvent : lorsqu'un djinn prend forme humaine, il conserve, dit-on, une part animale décelable, comme si la métamorphose ne pouvait jamais être totale."
+      ],
+      "naturelle": {
+        "lead": "Entre la vénération préislamique et la théologie coranique, les sources dessinent un portrait relativement cohérent du djinn comme peuple parallèle à l'humanité.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Doués de libre arbitre, les djinns choisissent leur conduite comme les humains : certains cherchent la protection ou l'amitié des hommes, d'autres provoquent maladies et troubles mentaux, une croyance déjà attestée avant l'islam.[1] Leur rapport à l'humanité oscille ainsi entre alliance et nuisance selon l'individu plutôt que selon une nature fixe de l'espèce."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les djinns sont traditionnellement associés aux lieux désolés, sombres et reculés du désert, ainsi qu'aux ruines et aux endroits que les humains évitent.[1] Cette préférence pour les marges du territoire habité explique la coutume, attestée en Arabie préislamique, de leur demander protection avant tout voyage en zone incertaine."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Aucune source ne leur attribue de régime alimentaire propre ; leur composition de feu sans fumée les situe hors des besoins biologiques ordinaires attribués aux créatures d'argile.[1]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le Coran leur reconnaît un esprit rationnel et une organisation sociale complexe, comparable à celle des tribus humaines, mais leur rappelle aussi une limite fondamentale : comme l'homme, le djinn ne connaît pas l'avenir.[1] Cette intelligence bornée les place définitivement du côté des créatures soumises plutôt que des puissances omniscientes."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La tradition islamique envisage la possibilité d'unions entre djinns et humains, sujet longuement débattu par les juristes ; la plupart des autorités religieuses jugent ces unions illégitimes, tout en considérant qu'une éventuelle descendance serait dotée de dons particuliers.[1] Entre eux, les djinns forment des nations et des lignées dont les textes ne détaillent pas le mode de reproduction propre."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucun prédateur naturel ne leur est attribué : leur principale contrainte reste le jugement divin auquel ils sont soumis au même titre que les humains, et non une menace physique extérieure.[1]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le roi Salomon commandant des armées de djinns demeure l'un des récits les plus durables de cette tradition, repris et amplifié dans les Mille et Une Nuits puis dans d'innombrables adaptations occidentales, où le djinn enfermé dans une lampe ou un anneau devient un serviteur magique au service d'un souhait — une simplification populaire assez éloignée de la complexité morale que lui accorde le texte coranique.[1]",
+        "La figure du génie de conte de fées, aujourd'hui omniprésente dans le cinéma et le jeu vidéo occidentaux, doit son nom même au djinn arabe, mais en retient surtout le pouvoir de métamorphose et l'origine ignée, en effaçant presque toujours la dimension théologique du libre arbitre et du jugement qui structurait la créature d'origine.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Jinn — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jinn"
+      }
+    ]
+  },
+  "dragon-de-bronze": {
+    "description": "Sur les falaises battues par les vents, le dragon de bronze veille : ni pilleur ni tyran, il a fait des tempêtes et des rivages son royaume et sa curiosité une vertu.",
+    "sections": {
+      "fascination": [
+        "Il y a quelque chose d'apaisant dans l'idée d'un dragon qui choisit le bord du monde plutôt que son cœur enfoui. Le dragon de bronze ne s'enterre pas sous une montagne avec son or : il s'installe où la terre finit et où la mer commence, sur une falaise balayée par l'écume ou dans une grotte à demi noyée par la marée. Sa présence transforme le vide du littoral, ce lieu que l'on traverse sans s'y attarder, en un territoire habité par une intelligence patiente. On l'imagine plané au-dessus des vagues, indifférent à la tempête qu'il pourrait lui-même avoir appelée, simplement parce qu'il aime en observer la force.",
+        "Ce qui distingue le dragon de bronze des autres grandes créatures ailées, c'est sa manière de se mêler sans se dévoiler. Il peut prendre forme humaine ou animale et se glisser parmi les marins, les pêcheurs, les naufragés, pour mieux comprendre leurs histoires avant de choisir d'intervenir ou non. Cette discrétion n'est pas de la ruse malveillante : c'est la patience d'un être qui préfère écouter longtemps avant d'agir. Le merveilleux, ici, tient moins à la puissance du monstre qu'à cette curiosité presque savante, qui fait du dragon un témoin plus qu'un prédateur."
+      ],
+      "legendes": [
+        "Le dragon de bronze appartient à la famille des dragons dits métalliques, une catégorie que Donjons et Dragons a formalisée pour distinguer les grands reptiles ailés bienveillants de leurs cousins chromatiques, plus destructeurs. Dès les premières éditions du jeu, les dragons métalliques sont associés à l'ordre et au bien, chacun recevant un territoire et une personnalité propres. Le bronze hérite du rivage : falaises, îles, estuaires, tout ce qui touche à la mer sans s'y noyer complètement.[1][2]",
+        "Les bestiaires du jeu insistent sur un trait rarement prêté aux dragons : la fascination pour la guerre et la stratégie. Le dragon de bronze n'aime pas seulement observer les batailles navales et les sièges côtiers, il y participe parfois, sous forme humaine, aux côtés d'armées qu'il juge justes.[2] Cette implication directe dans les affaires des mortels le distingue des dragons plus reclus ; il ne se contente pas de juger le monde depuis les hauteurs, il descend s'y mêler, quitte à y prendre des risques qu'un être aussi puissant pourrait aisément éviter.",
+        "Sa fiche de créature dans les règles récentes du jeu le confirme aligné loyal bon, capable de changer de forme, et amphibie : il respire aussi bien l'air que l'eau, nage aussi vite qu'il marche.[1] Son repaire peut abriter l'épave d'un navire qu'il a lui-même récupérée et reconstruite, transformée en coffre-fort ou en nid pour ses œufs — détail qui dit beaucoup de son rapport économe et presque affectueux aux restes que la mer abandonne.[1]"
+      ],
+      "anomalies": [
+        "Le souffle du dragon de bronze prend deux formes bien distinctes selon les sources : une ligne d'éclairs semblable à la foudre, capable de traverser plusieurs adversaires alignés, et un souffle en cône qui, selon les époques et les éditions, sème soit la panique soit repousse violemment quiconque s'y trouve.[1][2] Cette alternance entre l'attaque directe et l'effet de dispersion illustre un tempérament qui préfère souvent écarter une menace plutôt que l'anéantir.",
+        "Les zones qu'il habite depuis longtemps portent la marque de sa présence : le climat alentour devient instable sur plusieurs kilomètres, et les plantes sous-marines proches de son repaire prennent des teintes anormalement vives.[1] Rien ici ne relève d'un pouvoir spectaculaire et volontaire ; c'est plutôt l'empreinte durable d'un corps chargé d'électricité et de magie sur un environnement qui finit par s'y accorder."
+      ],
+      "naturelle": {
+        "lead": "Le portrait retenu ici suit principalement les bestiaires de Donjons et Dragons, où le dragon de bronze reçoit un territoire, un comportement et une place précise parmi les dragons dits métalliques.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Curieux plus que territorial, le dragon de bronze préfère souvent la conversation à l'affrontement. Il aime résoudre des énigmes, tester la sincérité d'un visiteur par des questions détournées, et se montrer bon juge des intentions humaines avant de se révéler sous sa forme véritable.[2] Cette prudence sociale coexiste avec un goût prononcé pour l'action lorsque la cause lui semble juste : peu de dragons s'impliquent autant, et aussi directement, dans les conflits des mortels."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Îles isolées, falaises rongées par l'embrun, grottes à demi immergées : le dragon de bronze choisit des repaires où la terre et l'eau se disputent le terrain.[1] Certains vont jusqu'à récupérer un navire naufragé pour le réinstaller dans leur antre, preuve d'un lien presque sentimental avec les épaves que la mer lui offre."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Amphibie par nature, il chasse aussi bien sur terre que sous les vagues ; les bestiaires le décrivent souvent se nourrissant de poissons et de grandes créatures marines, qu'il traque avec la même patience qu'il met à observer les navires au loin."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Sa réputation de dragon lettré et stratège n'est pas usurpée : il étudie les tactiques militaires, garde en mémoire des batailles vieilles de plusieurs siècles et aime confronter ses souvenirs à ceux des humains qu'il côtoie sous forme déguisée.[2] Cette mémoire longue en fait un interlocuteur redouté par quiconque tenterait de lui mentir sur son passé."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les œufs sont pondus dans des nids abrités, parfois à même la coque d'un navire récupéré, à l'abri des marées et des prédateurs. Le jeune dragon grandit lentement, gagnant au fil des décennies la capacité de changer de forme et l'expérience nécessaire pour naviguer sans crainte parmi les humains."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Peu de créatures s'attaquent à un dragon adulte sur son propre rivage ; le danger vient surtout d'autres dragons rivaux ou de créatures marines de très grande taille. Les œufs et les jeunes restent, eux, vulnérables aux pillards et aux prédateurs côtiers, ce qui explique le soin apporté au choix du repaire."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le dragon de bronze reste l'un des dragons métalliques les plus incarnés dans la culture du jeu de rôle : gardien loyal des côtes, allié potentiel des aventuriers, il sert souvent de figure mentore plutôt que d'obstacle à vaincre. Sa capacité à se fondre parmi les humains en fait un ressort narratif apprécié des meneurs de jeu, qui aiment révéler tardivement qu'un personnage secondaire attachant n'était, depuis le début, qu'un dragon patient.",
+        "Son association avec la mer et les tempêtes le rapproche, dans l'imaginaire des joueurs, d'autres figures de gardiens des eaux, sans jamais se confondre avec elles : là où beaucoup de créatures aquatiques inspirent la crainte, le bronze conserve une réputation de protecteur, ce qui en fait une exception recherchée dans les bestiaires de dragons."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "D&D Beyond — Adult Bronze Dragon, stat block et description",
+        "url": "https://www.dndbeyond.com/monsters/16767-adult-bronze-dragon"
+      },
+      {
+        "id": 2,
+        "title": "Forgotten Realms Wiki — Bronze dragon, alignement et implication dans la guerre",
+        "url": "https://forgottenrealms.fandom.com/wiki/Bronze_dragon"
+      }
+    ]
+  },
   "dryade": {
     "description": "Sous la première entaille de la hache, le chêne saigne : quelqu'un habitait cette ombre.",
     "sections": {
@@ -4828,6 +5045,151 @@ window.FF_NOTICES = {
         "id": 3,
         "title": "How to Become a Medieval Knight - World History Encyclopedia",
         "url": "https://www.worldhistory.org/article/1240/how-to-become-a-medieval-knight"
+      }
+    ]
+  },
+  "enchanteresse": {
+    "description": "Sa voix transforme un homme mieux qu'une lame : il en ressort changé, parfois méconnaissable, toujours convaincu d'avoir choisi lui-même.",
+    "sections": {
+      "fascination": [
+        "Ce qui rend l'enchanteresse redoutable n'est jamais visible au premier regard : ni crocs, ni griffes, mais une voix, un philtre, un geste de baguette. L'école magique qui porte son nom se définit comme celle qui « influence les esprits »[1] — une magie qui n'a pas besoin de vaincre un corps quand elle sait plier une volonté. Circé, dans l'Odyssée, illustre cette économie de moyens : elle ne combat jamais les compagnons d'Ulysse, elle les métamorphose en pourceaux d'un simple attouchement de baguette, après les avoir enivrés d'un philtre.[2]",
+        "L'épithète que lui donne Homère, *polypharmakos*, la femme aux mille poisons et remèdes, résume ce pouvoir d'un mot : la connaissance intime des plantes et des potions, mise au service d'une transformation qui ne tue pas mais dénature.[2] Le danger de l'enchanteresse tient précisément à cette absence de violence apparente — on entre chez elle par curiosité ou par soif, et l'on en ressort avec un corps qui n'est plus le sien."
+      ],
+      "legendes": [
+        "Circé apparaît dans la mythologie grecque comme la fille du Soleil, Hélios, et de l'océanide Persé ; son nom, dérivé du grec *kirkos*, signifie faucon ou épervier.[2] Elle règne seule sur l'île d'Éa, décrite comme couverte d'une forêt dense au milieu de laquelle se dresse son palais — un lieu que les Anciens situaient au large des côtes italiennes, en vue du rivage tyrrhénien, non loin de l'île d'Elbe.[2]",
+        "L'épisode le plus célèbre reste celui d'Ulysse et de son équipage : attirés par son chant, les marins acceptent la coupe qu'elle leur tend et se retrouvent changés en porcs. Seul Ulysse échappe au sortilège grâce à une plante protectrice fournie par Hermès ; il contraint Circé à rendre leur forme humaine à ses compagnons, avant de rester sur son île une année entière, dont naîtront plusieurs enfants, parmi lesquels Latinus et Télégonos.[2]",
+        "La postérité littéraire a fait de Circé l'archétype même de l'enchanteresse occidentale — puissance magique et danger de la séduction réunis dans une même figure, réinterprétée diversement selon les siècles, tantôt monstre à vaincre, tantôt femme savante injustement diabolisée.[2] Le jeu de rôle moderne, de son côté, a repris le terme d'enchantement pour désigner une école de magie entière consacrée à l'influence des esprits, sans toujours conserver le nom propre de la magicienne qui l'incarne le mieux dans la tradition antique.[1]"
+      ],
+      "anomalies": [
+        "Une différence sépare nettement l'enchanteresse antique de l'école de magie qui porte aujourd'hui ce nom. Circé transforme des corps entiers en une autre espèce animale, un pouvoir de métamorphose totale.[2] L'enchantement ludique, en revanche, se concentre sur l'esprit plutôt que sur l'anatomie : charmer, endormir, contraindre une décision — la victime garde son corps, mais plus tout à fait sa volonté.[1] Ce déplacement du corps vers l'esprit marque le passage d'un mythe antique à une mécanique de jeu contemporaine.",
+        "Autre écart notable : Circé agit seule, sur son île, sans hiérarchie ni école qui l'encadre — sa magie est un attribut personnel hérité de son ascendance solaire.[2] L'enchantement de jeu, à l'inverse, se transmet comme une discipline qu'on étudie, classée aux côtés d'autres écoles telles que l'évocation ou l'illusion, ce qui en fait un savoir partageable plutôt qu'un don unique."
+      ],
+      "naturelle": {
+        "lead": "Deux figures se superposent sous ce nom : la magicienne grecque de la tradition homérique, maîtresse d'une île et de ses poisons, et l'archétype que la fantasy moderne a construit à partir de l'école magique de l'enchantement.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Circé attire par le chant avant de frapper par la potion : son comportement suit un rituel d'hospitalité détourné, où l'accueil précède le piège.[2] L'enchanteresse de fantasy conserve ce schéma d'une séduction qui précède la contrainte, préférant convaincre — ou paraître convaincre — plutôt que soumettre par la force brute."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "L'île d'Éa, isolée et boisée, concentre tout le pouvoir de Circé : nul ne l'atteint sans intention, ce qui fait de son territoire un filtre autant qu'un refuge.[2] Tours, cours et îles reculées reviennent comme cadres privilégiés dans les récits ultérieurs d'enchanteresses, toujours à l'écart du monde ordinaire."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le philtre tient lieu de nourriture rituelle dans le mythe : c'est en buvant la coupe offerte par Circé que les compagnons d'Ulysse scellent leur métamorphose, la boisson servant de vecteur au sortilège plutôt que de simple repas.[2]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Homère qualifie Circé de *polypharmakos*, connaisseuse experte des plantes et des potions.[2] Cette érudition botanique et magique, plus que la force, constitue l'essentiel de son pouvoir — un savoir accumulé, transmis dans certaines versions à sa descendance, dont Médée serait selon certains récits une parente."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le séjour d'Ulysse sur l'île d'Éa donne naissance à plusieurs enfants, dont Latinus et Télégonos, ce dernier jouant un rôle majeur dans les traditions tardives sur la mort d'Ulysse.[2] La filiation de Circé s'inscrit ainsi dans la généalogie même des héros qu'elle a d'abord retenus prisonniers."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Ulysse demeure le seul adversaire que la légende attribue à Circé, protégé par une plante magique — le môly — que lui remet Hermès avant la confrontation.[2] Face à cette protection divine, le sortilège de l'enchanteresse échoue, et le rapport de force s'inverse : c'est elle qui doit alors composer avec son hôte."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le môly, la plante blanche à racine noire donnée par Hermès à Ulysse, reste l'objet le plus célèbre associé à cette légende : une contre-magie végétale capable d'annuler le philtre de l'enchanteresse la plus réputée de la tradition grecque.[2]",
+        "La baguette de Circé, avec laquelle elle touche ses victimes pour parachever leur métamorphose, a fourni à l'iconographie occidentale l'un de ses attributs les plus durables : l'instrument court, presque anodin, par lequel un pouvoir considérable se transmet d'un geste.[2]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "D&D Beyond — Basic Rules, écoles de magie et enchantement",
+        "url": "https://www.dndbeyond.com/sources/dnd/free-rules/spells"
+      },
+      {
+        "id": 2,
+        "title": "Circé — mythologie grecque, Odyssée, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Circe"
+      }
+    ]
+  },
+  "ensorceleur": {
+    "description": "Personne ne choisit la magie de l'ensorceleur : elle coule dans son sang depuis avant sa naissance, et c'est elle qui l'a choisi.",
+    "sections": {
+      "fascination": [
+        "L'ensorceleur ne feuillette aucun grimoire pour lancer son premier sort. Sa magie précède tout apprentissage : elle vient d'un sang mêlé à celui d'un dragon, d'un pacte contracté par un ancêtre, ou d'une exposition à des forces cosmiques que nul n'a choisie.[1] Cette antériorité change tout dans le rapport à la magie : là où d'autres l'acquièrent, l'ensorceleur la découvre en lui, souvent malgré lui, comme un organe dont il ignorait l'existence jusqu'au jour où il se met à fonctionner.",
+        "La formule qui résume le mieux cette condition tient en une phrase : « Personne ne choisit la sorcellerie ; c'est le pouvoir qui choisit l'ensorceleur. »[1] L'imprévisibilité de cette apparition fait tout le sel du personnage — la magie sauvage, l'une des origines les plus documentées de la classe, peut naître d'un contact démoniaque, d'une bénédiction divine ou d'une simple gorgée d'eau de source aux propriétés mystérieuses, sans qu'aucune règle ne permette d'anticiper laquelle.[1]"
+      ],
+      "legendes": [
+        "Le jeu de rôle distingue l'ensorceleur du magicien par l'origine même de leur pouvoir : le second étudie la magie dans des ouvrages accumulés au fil d'années de recherche, quand le premier canalise une force qui traverse déjà son corps sans l'avoir sollicitée.[1] Cette opposition entre savoir acquis et don inné recoupe une distinction beaucoup plus ancienne entre le mage-érudit et le sorcier-né, présente dans de nombreuses traditions populaires où certains individus naissent affublés d'un don que d'autres ne pourront jamais acquérir par l'étude.",
+        "Deux lignées structurent classiquement cette magie innée. La lignée draconique remonte à un pacte ancien ou à une ascendance de dragon véritable, conférant à l'ensorceleur une résistance accrue, des traits reptiliens et, à terme, des ailes ou une présence propres aux dragons dont il descend.[1] La magie sauvage, à l'inverse, ne doit rien à une généalogie précise : elle jaillit de façon chaotique et imprévisible, sujette à des débordements incontrôlés que le personnage lui-même ne maîtrise pas toujours.[1]",
+        "L'outil propre à cette magie porte le nom de métamagie : l'ensorceleur dépense des points de sorcellerie pour distordre l'effet d'un sort déjà connu — l'étendre, le rendre silencieux, le lancer sur plusieurs cibles à la fois, l'accélérer au point de le lancer en plus d'un autre sort dans le même round.[1] Cette faculté de modeler un sort existant, plutôt que d'en apprendre sans cesse de nouveaux, distingue nettement l'ensorceleur du magicien : il compense un répertoire plus restreint par une souplesse d'exécution incomparable.[1]"
+      ],
+      "anomalies": [
+        "L'anomalie la plus frappante de cette magie tient à son caractère héréditaire sans être systématiquement transmis : deux enfants d'un même dragon-ancêtre peuvent naître, l'un manifestant le don, l'autre non, sans qu'aucune règle ne permette de prévoir lequel l'héritera.[1] Le pouvoir saute des générations, se cache, resurgit, comme si le sang portait la magie sans jamais garantir son expression.",
+        "La magie sauvage pousse cette imprévisibilité plus loin encore : elle peut se manifester par surprise, produire des effets secondaires erratiques au moment même où l'ensorceleur cherche à la canaliser, si bien que le personnage n'est jamais totalement certain de la forme exacte que prendra son sort.[1] Cette instabilité contraste avec la discipline rigoureuse du magicien, dont chaque sort obéit à une formule fixée d'avance dans un grimoire."
+      ],
+      "naturelle": {
+        "lead": "Il ne s'agit pas d'une espèce mais d'une condition : celle d'un individu chez qui la magie s'est logée avant même sa naissance, sans étude ni choix, et qui doit apprendre à vivre avec un pouvoir qu'il n'a pas demandé.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'ensorceleur navigue à vue avec sa propre magie, apprenant à la canaliser plutôt qu'à la programmer entièrement. Sa force réside dans l'adaptation immédiate d'un sort à la situation, via la métamagie, plutôt que dans la préparation méthodique d'un répertoire.[1] Il agit donc souvent dans l'instant, ajustant l'effet d'un pouvoir déjà là plutôt que d'en apprendre un nouveau pour chaque circonstance."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Aucune règle ne fixe de territoire propre à l'ensorceleur : sa magie voyage avec son sang, dans les lignées nobles comme dans les marges sociales, dans les compagnies itinérantes comme dans les familles sédentaires touchées par un ancêtre dragon ou une bénédiction oubliée.[1]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Rien dans les sources ne prête à l'ensorceleur un régime particulier ; son pouvoir se loge dans le sang et l'esprit, non dans un besoin corporel distinct de celui de tout mortel."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le trait de caractère qui porte sa magie est le charisme plutôt que l'intelligence livresque : la force de sa volonté et de sa présence personnelle canalise le pouvoir, à l'inverse du magicien dont l'érudition mesure la puissance.[1] Le don de sorcellerie restaurée à haut niveau, capable de régénérer des points de sorcellerie au simple repos court, illustre cette maîtrise croissante d'un pouvoir d'abord subi.[1]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La transmission du don suit les lignées de sang, qu'il s'agisse d'un pacte ancestral avec un dragon ou d'une exposition ancienne à une force cosmique ou divine.[1] Mais l'hérédité magique n'obéit à aucune loi stricte : elle peut sauter une génération entière, ou frapper un individu dont nulle ascendance connue n'explique l'apparition du don."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le danger le plus constant pour l'ensorceleur reste sa propre magie sauvage, capable de se retourner contre lui par un débordement incontrôlé au moment le plus inopportun.[1] Contrairement au magicien, qui maîtrise un savoir stable, l'ensorceleur compose en permanence avec une force intérieure qui ne lui obéit jamais totalement."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les points de sorcellerie constituent la ressource la plus caractéristique de cette magie : une réserve intérieure, convertible en emplacements de sorts ou en effets de métamagie, qui matérialise l'idée d'un pouvoir accumulé dans le corps plutôt que consigné sur une page.[1]",
+        "Les ailes et la présence draconiques que développe à terme l'ensorceleur de lignée draconique figurent parmi les manifestations les plus spectaculaires de cette hérédité magique : le corps humain finit par trahir, physiquement, l'ascendance qu'il portait depuis toujours sans le montrer.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "D&D Beyond — Classe de l'Ensorceleur (Sorcerer), origines et métamagie",
+        "url": "https://www.dndbeyond.com/classes/sorcerer"
       }
     ]
   },

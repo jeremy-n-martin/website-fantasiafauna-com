@@ -1,0 +1,319 @@
+{
+  "batch": "b1",
+  "reviewed": [
+    {
+      "slug": "demi-elfe",
+      "verdict": "pass",
+      "sha256": "a6e2d194815d1faeb9deeddff0cbf9ccf3409f7d7540a75fe60afb57f62d95fc",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Donjons et Dragons reprend le demi-elfe comme peuple jouable dès son édition originale de 1974",
+          "detail": "La source déclarée ne date pas l'entrée du demi-elfe comme race jouable ; la sous-page Half-elf (Dungeons & Dragons), ouverte en contrôle, la place dans le supplément Greyhawk de l'édition originale de 1974 (paru en 1975) : « The half-elf first appeared as a player character race in the Greyhawk supplement to the original 1974 edition of Dungeons & Dragons. » Le fond reste juste — le demi-elfe est jouable depuis la première lignée du jeu, et la source générale associe bien le demi-elfe au « 1974 Dungeons & Dragons » — mais la formulation « dès son édition originale de 1974 » mériterait de nommer Greyhawk. Non bloquant."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Half-elf",
+          "status": "verified",
+          "claims_checked": "unions elfe-mortel attestées dans les sagas nordiques (Skuld, Hrólf Kraki's saga) ; Orion, demi-elfe de Lord Dunsany (The King of Elfland's Daughter, 1924) ; les trois unions de Tolkien (Beren/Lúthien, Tuor/Idril, Aragorn/Arwen) ; Tanis Half-Elven et la race demi-elfe de Donjons et Dragons ; demi-elfe troisième race la plus créée sur D&D Beyond en 5e édition ; disparition comme option de personnage dans le Player's Handbook (2024) après critique de la terminologie « half »",
+          "evidence": "Major examples include Skuld and Högni. [...] Perhaps the earliest published half-elf in modern literature is the character Orion in Lord Dunsany's 1924 *The King of Elfland's Daughter*. [...] half-elves were the third most created at 10,454 total, preceded by elves (16,443) and humans (25,248) [...] not listed in the *Player's Handbook* (2024) as a character option."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Half-elf_(Dungeons_%26_Dragons)",
+          "status": "verified",
+          "claims_checked": "Contrôle externe ouvert pendant la relecture, sur le point daté : première apparition du demi-elfe comme race de personnage jouable",
+          "evidence": "The half-elf first appeared as a player character race in the Greyhawk supplement to the original 1974 edition of Dungeons & Dragons."
+        }
+      ],
+      "style_check": "Français adulte et tenu, sans consigne à auteur ni inventaire de négations ; la notice distingue correctement la littérature moderne (Tolkien, Dunsany), le jeu de rôle et le retrait éditorial de 2024. Aucun appel orphelin : [1] renvoie à la seule source déclarée."
+    },
+    {
+      "slug": "demi-orc",
+      "verdict": "pass",
+      "sha256": "577749c7de1c2b4cb023db41f83805a3bc0ab4dbc4cb30e6c25f5f54fc947b55",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[3].body",
+          "quote": "une intelligence pratique aiguisée par la nécessité constante de anticiper le jugement d'autrui",
+          "detail": "Élision manquante : « d'anticiper ». Coquille visible, non bloquante au regard de la ligne appliquée dans le dépôt (chuul : « Élision manquante… Coquille, non bloquante »), mais à corriger avant publication."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[0]",
+          "quote": "Ce n'est pas un hybride paisible comme peut l'être le demi-elfe, réconcilié par la grâce des deux héritages",
+          "detail": "Le demi-elfe y est présenté comme réconcilié par ses deux héritages, alors que la notice demi-elfe du même lot en fait une figure sans foyer (« nulle part chez soi ») et que la source Half-elf écrit des demi-elfes qu'ils « struggle to fit in ». Contradiction de catalogue à arbitrer ; ici, c'est l'esquisse du demi-elfe qui est fautive, pas le propos sur le demi-orc."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Half-orc",
+          "status": "verified",
+          "claims_checked": "hybrides orc-humain créés par Saruman, plus grands et plus humains d'aspect que les Uruk-hai ; introduction comme race de personnage dans le Player's Handbook de 1978 ; variétés hybrides du Dragon #44 (1980), dont orc-bugbear, orc-gnoll et orc-gobelin ; retrait en 2e édition puis retour par suppléments ; exclusion de la 4e édition motivée par les « dark tendencies » de leur création, puis réintégration avec des origines révisées ; suppression des règles d'ascendance mixte en 2024 et propos de Jeremy Crawford sur la construction « half »",
+          "evidence": "the half-orcs were the creation of the wizard Saruman and bore several similarities to Sauron's Uruk-hai but were taller and appeared more man-like. [...] The half-orc was introduced in the first edition *Player's Handbook* (1978) as a player character race. [...] A number of half-orc varieties appeared in *Dragon* #44 (December 1980), including the orc-bugbear, the orc-gnoll, the orc-goblin [...] the half-orc was missing because the design team was concerned about the 'dark tendencies that led to their creation' [...] The half construction is inherently racist so we simply aren't going to include it in the new *Player's Handbook*."
+        }
+      ],
+      "style_check": "Voix juste : récit documenté des éditions, sans consigne au rédacteur ni biologie inventée — l'alimentation et la reproduction sont explicitement laissées à ce que disent les récits. Une seule négation en « ce n'est pas X, c'est Y », pas un inventaire."
+    },
+    {
+      "slug": "demon",
+      "verdict": "revise",
+      "sha256": "a9bf5482f612e42bfe3063716dde94e1c6881844e404bdcd0812425bc918e92b",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1]",
+          "quote": "Le Nouveau Testament évoque les démons à cinquante-cinq reprises",
+          "detail": "Chiffre précis introuvable dans la source déclarée (l'article Demon ne donne aucun comptage du vocabulaire néotestamentaire) et non corroboré par les sources de contrôle consultées : le grec daimonion compte 63 occurrences dans le Nouveau Testament (« daimonion (sixty-three times) ») et une synthèse francophone courante parle de « plus de 80 fois ». Un comptage affirmé comme un fait, non sourcé et contredit par les comptages usuels, est un défaut factuel : corriger le nombre ou l'étayer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "Jean Bodin, magistrat et penseur politique, s'oppose violemment aux thèses de Weyer dans sa Démonomanie des sorciers",
+          "detail": "L'affirmation est exacte (De la démonomanie des sorciers, 1580, réfutation de Weyer), mais la source déclarée [4] — l'article De praestigiis daemonum — ne mentionne ni Bodin ni la Démonomanie : le renvoi ne porte pas. Vérifié en contrôle sur l'article On the Demonomania of the Sorcerers."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "L'islam distingue pour sa part les djinns, êtres moralement ambivalents, et les shayatin, diables assimilables aux démons judéo-chrétiens",
+          "detail": "Constat exact, mais absent de la source déclarée [1], dont la section islamique parle des dīv et des jinn, non des shayatin. À sourcer ou à rattacher à une source effectivement consultée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Demon",
+          "status": "verified",
+          "claims_checked": "daimōn grec d'abord neutre (esprit ou puissance divine, sans connotation de mal) ; acquisition du sens négatif dans la Septante ; démonologie juive issue d'une forme tardive du zoroastrisme pendant la période perse, puis transmise au christianisme et à l'islam ; Augustin fixant la position occidentale du démon comme ange détourné de Dieu ; Paracelse parmi les tenants des esprits ambivalents au XVIe siècle — et vérification négative du comptage néotestamentaire",
+          "evidence": "The Greek terms do not have any connotations of evil or malevolence. [...] The term had first acquired its negative connotations in the Septuagint translation of the Hebrew Bible into Greek [...] Large portions of Jewish demonology, a key influence on Christianity and Islam, originated from a later form of Zoroastrianism, and was transferred to Judaism during the Persian era. [...] Augustine of Hippo (5th century) established the position, that demons are spirits (angels) who turn away from God [...] In the sixteenth century, among proponents of demons as ambivalent spirits, Paracelsus was the most vocal."
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Demonology",
+          "status": "verified",
+          "claims_checked": "la démonologie comme étude savante des démons, selon le contexte théologie, doctrine religieuse ou occultisme",
+          "evidence": "Demonology is the study of demons within religious belief and myth. Depending on context, it can refer to studies within theology, religious doctrine, or occultism."
+        },
+        {
+          "source_id": 3,
+          "url": "https://en.wikipedia.org/wiki/Ars_Goetia",
+          "status": "verified",
+          "claims_checked": "Lemegeton compilé au milieu du XVIIe siècle ; filiation avec la Pseudomonarchia Daemonum de Weyer ; ordre des esprits modifié, quatre esprits ajoutés et Pruflas omis, ce qui date la compilation après 1570 ; édition du texte par Mathers publiée par Crowley en 1904 ; soixante-douze esprits et leurs rangs (rois, ducs, princes, marquis, présidents, comtes, chevaliers)",
+          "evidence": "It was compiled in the mid-17th century from materials several centuries older. [...] The order of the spirits changed between the two, four additional spirits were added to the later work, and one spirit (Pruflas) was omitted. [...] indicates that the *Ars Goetia* could not have been compiled before 1570. [...] This portion of the work was later edited by Samuel Liddell MacGregor Mathers and published by Aleister Crowley in 1904 under the title *The Book of the Goetia of Solomon the King*."
+        },
+        {
+          "source_id": 4,
+          "url": "https://en.wikipedia.org/wiki/De_praestigiis_daemonum",
+          "status": "verified",
+          "claims_checked": "De praestigiis daemonum publié à Bâle en 1563 ; thèse de Weyer (sorcellerie inexistante, dénonciateurs en proie à des troubles mentaux) ; la Pseudomonarchia Daemonum comme appendice du livre ; influence sur le sceptique anglais Reginald Scot — et vérification négative de toute mention de Jean Bodin",
+          "evidence": "first published in Basel in 1563. [...] The book argues that witchcraft does not exist and that those who claim to practice it are suffering from delusions, which should be treated as mental illnesses, rather than punished as witchcraft. [...] The book contains a famous appendix also circulated independently as the *Pseudomonarchia Daemonum* [...] it was one of the principal sources of Reginald Scot's sceptical account of witchcraft, *The Discoverie of Witchcraft*."
+        },
+        {
+          "url": "https://www.gotquestions.org/Francais/d-ou-viennent-les-demons.html",
+          "status": "verified",
+          "claims_checked": "Contrôle externe du comptage contesté : ordre de grandeur des mentions des démons dans le Nouveau Testament (pour comparer au « cinquante-cinq » du texte, absent de la source déclarée)",
+          "evidence": "Le Nouveau Testament mentionne les démons beaucoup plus souvent, les appelant soit « démons » (daimónion), soit « esprits mauvais » plus de 80 fois."
+        }
+      ],
+      "style_check": "Français dense et sûr, sans consigne à auteur ni appel orphelin ([1] à [4] tous déclarés). Les rubriques Alimentation et Reproduction refusent honnêtement la zoologie inventée ; le défaut est un chiffre non sourcé."
+    },
+    {
+      "slug": "demonologue",
+      "verdict": "pass",
+      "sha256": "7033f8c6479ec1262b359572ede688b17b3a13d8cd2d68c4026d383813874159",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "souffrent de troubles qu'il convient de traiter comme une maladie plutôt que de punir comme un crime",
+          "detail": "« Il convient de » figure dans la liste des tournures de bot du brief, mais ici la phrase paraphrase la thèse de Weyer et reste dans un usage courant ; 33 notices déjà approuvées du dépôt contiennent « il faut » ou « il convient », et le précédent apsara (« Il convient de distinguer ces états successifs ») a été classé minor. Non bloquant."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "Jean Bodin, magistrat et théoricien politique, lui oppose une réfutation virulente dans sa Démonomanie des sorciers",
+          "detail": "Fait exact (Démonomanie des sorciers, 1580), mais la source déclarée [1] ne mentionne pas Bodin ; le renvoi ne porte pas. Vérifié en contrôle sur l'article On the Demonomania of the Sorcerers."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "Aucune autre figure de ce bestiaire ne voit son savoir spécialisé produire des usages aussi opposés selon la main qui le tient.",
+          "detail": "Comparaison interne au catalogue, qui engage une notice sur sa place dans l'ensemble : registre d'atelier plutôt que remarque documentaire. Non bloquant, mais le procédé devient visible si plusieurs notices le reprennent."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/De_praestigiis_daemonum",
+          "status": "verified",
+          "claims_checked": "publication à Bâle en 1563 ; thèse sceptique de Weyer traitée comme maladie et non comme crime ; controverse du XVIe siècle ; influence sur Reginald Scot",
+          "evidence": "first published in Basel in 1563. [...] those who claim to practice it are suffering from delusions, which should be treated as mental illnesses, rather than punished as witchcraft. [...] it was one of the principal sources of Reginald Scot's sceptical account of witchcraft, *The Discoverie of Witchcraft*."
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Demonology",
+          "status": "verified",
+          "claims_checked": "définition savante de la démonologie ; Thomas d'Aquin écrivant sur les comportements dont les chrétiens doivent se garder ; Heinrich Kramer et la traque des personnes soupçonnées de commerce avec les démons ; déclin d'autorité au siècle des Lumières (ce dernier point contrôlé sur l'article Demon, seul endroit consulté qui documente explicitement le recul rationaliste)",
+          "evidence": "Demonology is the study of demons within religious belief and myth. Depending on context, it can refer to studies within theology, religious doctrine, or occultism. [...] Theologians like Thomas Aquinas wrote concerning the behaviors of which Christians should be aware, while witch hunters like Heinrich Kramer wrote about how to find and what to do with people they believed were involved with demons."
+        },
+        {
+          "source_id": 3,
+          "url": "https://en.wikipedia.org/wiki/Ars_Goetia",
+          "status": "verified",
+          "claims_checked": "dépendance de l'Ars Goetia envers la Pseudomonarchia de Weyer ; quatre esprits ajoutés et Pruflas omis, compilation après 1570 ; édition Mathers publiée par Crowley en 1904 ; soixante-douze esprits rangés et pourvus de sceaux",
+          "evidence": "The most obvious source for the *Ars Goetia* is Johann Weyer's *Pseudomonarchia Daemonum* [...] The order of the spirits changed between the two, four additional spirits were added to the later work, and one spirit (Pruflas) was omitted. [...] edited by Samuel Liddell MacGregor Mathers and published by Aleister Crowley in 1904 [...] The 72 sigils"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/On_the_Demonomania_of_the_Sorcerers",
+          "status": "verified",
+          "claims_checked": "Contrôle externe : réalité de la réfutation de Weyer par Bodin, absent de la source déclarée",
+          "evidence": "is a treatise on witchcraft and demonology by French jurist and political philosopher Jean Bodin. First published in 1580"
+        }
+      ],
+      "style_check": "Voix nette, sans consigne au rédacteur ; la distinction entre le compilateur de grimoires et le médecin sceptique est le bon ressort, et le traitement de la rubrique naturelle en archétype humain est conforme à la charte. Aucun appel orphelin."
+    },
+    {
+      "slug": "diable",
+      "verdict": "revise",
+      "sha256": "7347a5dbd340f8cf1bbe54da3e53d38c263245cce827efe57687325f6a21c357",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[0]",
+          "quote": "Le mot français « diable » descend du grec diábolos, le calomnieur, lui-même traduction du latin diabolus emprunté par les langues germaniques anciennes.",
+          "detail": "La chaîne étymologique est inversée. La source déclarée établit : « an early Germanic borrowing of the Latin diabolus. This in turn was borrowed from the Greek διάβολος diábolos, 'slanderer' » — c'est le latin qui emprunte au grec, et le latin qui est emprunté par les langues germaniques anciennes. Le texte fait du grec une « traduction du latin », doublement faux : sens de l'emprunt renversé, et « traduction » là où il s'agit d'un emprunt. La phrase se contredit elle-même (« descend du grec » puis « du latin »). À réécrire : notre « diable » vient du latin diabolus, lui-même emprunté au grec diábolos, « calomniateur »."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "le calomnieur",
+          "detail": "Coquille : « calomniateur » — la description du même fichier écrit correctement « du calomniateur »."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Devil",
+          "status": "verified",
+          "claims_checked": "étymologie (vieil anglais dēofol, emprunt germanique au latin diabolus, lui-même pris au grec diábolos « slanderer ») ; śāṭān comme nom commun « accusateur, adversaire » dans l'Ancien Testament ; Pseudo-Denys et la théorie de la privation de bien, ange déchu créé bon ; les ponts du diable du folklore allemand, l'âme du premier passant et le chien envoyé en éclaireur ; renouveau dualiste du XIIe siècle par le catharisme, probablement influencé par le bogomilisme",
+          "evidence": "the Old English dēofol, that in turn represents an early Germanic borrowing of the Latin diabolus. This in turn was borrowed from the Greek διάβολος diábolos, \"slanderer\". [...] The Hebrew term śāṭān was originally a common noun meaning \"accuser\" or \"adversary\" [...] Pseudo-Dionysius the Areopagite and John of Damascus who argued that evil is merely a lack (or removal) of goodness. [...] For example, the devil builds a bridge in exchange for the first passing being's soul, then people let a dog pass the bridge first and the devil is cheated. [...] Cosmological dualism underwent a revival in the 12th century by through Catharism, probably influenced by Bogomilism"
+        }
+      ],
+      "style_check": "La voix du texte est bonne — le diable comme technicien du contrat, l'analyse du folklore des ponts est juste et documentée —, mais l'erreur d'étymologie en tête de rubrique legendes et la coquille « calomnieur » interdisent la publication en l'état. Aucun appel orphelin : un seul [1], une seule source."
+    },
+    {
+      "slug": "diablotin",
+      "verdict": "revise",
+      "sha256": "7ef444b58f42ec41ff1f6060af6ad7b7e216d9a28f244cfe505543e6a48d3cf3",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.fascination[0]",
+          "quote": "Le mot lui-même porte cette histoire d'un glissement de sens. Il désignait à l'origine un jeune rejeton, une pousse tendre sur une branche, avant de nommer les enfants des grandes maisons.",
+          "detail": "Ce glissement de sens est celui de l'anglais imp : « The Old English noun impa meant a young shoot or scion of a plant or tree, and later came to mean the scion of a noble house, or a child in general. » Un lecteur francophone ne peut le rapporter qu'au mot sous lequel la notice est rangée, « diablotin », diminutif de « diable » : la notice lui enseigne donc une fausse étymologie de son propre titre. La suite le dit correctement (legendes[0] : « L'histoire du mot anglais imp, son plus proche parent dans les études folkloriques, éclaire aussi le diablotin français »), ce qui aggrave la contradiction. Corriger en nommant imp dès la première phrase."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "le pétrel diablotin, dont le nom vient de son cri étrange plutôt que d'une quelconque nature démoniaque",
+          "detail": "Affirmation absente de la source déclarée (Imp ne traite pas de l'oiseau) ; la page « Pétrel diablotin » de Wikipédia en français, ouverte en contrôle, ne donne aucune étymologie du nom et ne mentionne ni le cri ni le nocturne. À sourcer ou à présenter comme une hypothèse."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "Les deux usages du mot ne partagent qu'une étymologie d'atmosphère — l'inquiétant, le nocturne — sans lien de filiation réel entre l'esprit facétieux et le volatile.",
+          "detail": "Les deux sens français reposent sur le même mot de base (« diable » + suffixe diminutif) : la filiation lexicale n'est pas nulle, c'est la référence qui diffère (créature folklorique / oiseau de mer). Formulation à préciser pour ne pas dire le contraire de ce qui est vrai."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Imp",
+          "status": "verified",
+          "claims_checked": "étymologie de l'anglais imp (vieil anglais impa, jeune pousse ou scion, puis scion d'une maison noble, puis petit démon au XVIIe siècle via les expressions du XVIe siècle) ; imps « plus dérangeantes que sérieusement menaçantes », de petite taille et disgracieuses, rangées du côté des fées ; canulars, échange d'enfants au berceau, voyageurs égarés ; créatures esseulées en quête d'attention humaine ; familiers de sorcières servant d'espions et d'informateurs, confondus avec des chats noirs, lézards ou crapauds lors des chasses aux sorcières",
+          "evidence": "The Old English noun impa meant a young shoot or scion of a plant or tree, and later came to mean the scion of a noble house, or a child in general. Starting in the 16th century, it was often used in expressions like \"imps of serpents\", \"imp of hell\" [...] and by the 17th century, it came to mean a small demon, a familiar of a witch. [...] Imps are often described as troublesome and mischievous more than seriously threatening or dangerous [...] such as the switching of babies or leading travelers astray [...] the little demons served as spies and informants [...] the so-called imp was merely a black cat, a lizard, a toad or some other form of uncommon pet."
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/P%C3%A9trel_diablotin",
+          "status": "verified",
+          "claims_checked": "Contrôle externe : existence du pétrel diablotin (Pterodroma hasitata), aussi appelé diablotin errant — aucune étymologie du nom, aucun cri, aucune mention du nocturne dans la page consultée",
+          "evidence": "Le **Pétrel diablotin** (***Pterodroma hasitata***), aussi appelé **Diablotin errant**, est une espèce d'oiseau de mer de la famille des Procellariidae, vivant dans la partie ouest de l'Atlantique."
+        }
+      ],
+      "style_check": "La notice est bien écrite et son matériau sur les familiers de sorcières est exact et fort, mais elle attribue au mot français l'histoire sémantique de l'anglais imp : c'est un faux folklore étymologique sur le nom même de la notice, bloquant. Aucun appel orphelin."
+    },
+    {
+      "slug": "div",
+      "verdict": "pass",
+      "sha256": "51d112b2926f1c4a00c5f3759380579d5e41077ab6845db94ce3339f93229c4e",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[1]",
+          "quote": "Cette hésitation entre le corps et le vice donne au div une present étrange",
+          "detail": "Mot corrompu : « present » (anglais) au lieu de « présence ». Coquille lourde mais non bloquante selon la ligne appliquée dans le dépôt (chuul : « Élision manquante… Coquille, non bloquante ») ; à corriger impérativement, elle saute aux yeux dans la deuxième section du texte."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Il faut cependant noter, contre une idée reçue, que",
+          "detail": "Injonction de méthode adressée au lecteur. La tournure est de la famille tolérée par la ligne du dépôt — « il faut » apparaît dans 82 notices dont 24 approuvées — et le contenu (aucun texte ne fait d'Angra Mainyu le père des daevas) est exact et utile. Non bloquant."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Daeva",
+          "status": "verified",
+          "claims_checked": "parenté de daēuua avec le sanskrit devá et le latin deus ; sens négatif pris en Iran ; hypothèse réformiste du début/milieu du XXe siècle (daevas « dieux nationaux » rejetés par Zoroastre) contre hypothèse progressive (développement graduel, méfiance antérieure aux Gathas) ; dans les Gathas, daevas « quite genuine gods, who had, however, been rejected », encore adorés par certains, incapables de discerner le vrai du faux ; Avesta récent : entités « unambiguously hostile » ; Vendidad contraction de vi-daevo-dāta, « given against the daevas » ; six arch-démons opposés aux six Amesha Spentas (Akoman contre Wahman, Indar contre Ardawahisht) ; « Nowhere is Angra Mainyu said to be the creator of the daevas or their father » ; liste de dix démons dans le Shahnameh (Az, Kashm, Nang…) ; Div-e Sapid de Mazandaran aveuglant les hommes de Rostam",
+          "evidence": "shares the same origin of \"Deva\" of Hinduism, which is a cognate with Latin deus (\"god\") [...] a distinct category of \"quite genuine gods, who had, however, been rejected\" [...] In the Gathas, daevas are censured as being incapable of discerning truth (asha-) from falsehood (druj-) [...] In the Younger Avesta, the daevas are unambiguously hostile entities. [...] The Vendidad, a contraction of vi-daevo-dāta, \"given against the daevas\" [...] \"Nowhere is Angra Mainyu said to be the creator of the daevas or their father.\" [...] A list of ten demons is provided in the Shahnameh: Besides the afore-mentioned Az \"greed\", Kashm \"wrath\" (Avestan Aeshma), Nang \"dishonor\" [...] One of the more popular stories from the Shahnameh is that of Rostam and the Dīv-e Sapīd, the \"white demon\" of Mazandaran, who blinds Rostam's men (who are then cured with the blood of the demon's gall). [...] It assumes that the development was gradual, and that a general distrust of the daevas already existed by the time the Gathas were composed."
+        }
+      ],
+      "style_check": "Notice solide et érudite, qui distingue bien strates textuelles et traditions ; aucune consigne au rédacteur, aucun appel orphelin ([1] unique source, dix fois appelée). Le seul vrai défaut est le mot corrompu « present »."
+    },
+    {
+      "slug": "djinn",
+      "verdict": "pass",
+      "sha256": "72f8d85367bdb03b0cc9f2a78a8a8aabe720cde2d722e91ac03e92f24da45244",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[1]",
+          "quote": "un djinn transformé en homme, précise la tradition, garde toujours en lui une part animale, comme une signature discrète de son origine ignée",
+          "detail": "Le fait est bien dans la source — « When they shift into a human form however, they are said to stay partly animal and are not fully human. » — mais le rattachement de cette part animale à l'origine ignée est une interprétation du rédacteur, absente des textes cités. À présenter comme hypothèse si la phrase est conservée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Jinn",
+          "status": "verified",
+          "claims_checked": "djinns de l'Arabie préislamique habitant les lieux désolés, sombres et reculés du désert, tenus pour responsables des maladies et des troubles mentaux ; protection recherchée par les voyageurs ; création de « feu sans fumée » (Coran 15:27 et 55:15) contre l'argile humaine ; créés pour adorer Dieu (51:56) ; libre arbitre leur permettant bonnes et mauvaises actions (7:179, 55:56) ; ignorance de l'avenir comme les hommes ; nations rationnelles et organisations sociales ; unions avec les humains débattues par les juristes, descendance jugée douée de dons particuliers ; forme humaine gardant une part animale ; Salomon commandant des armées de djinns ; génie venu de jinnī",
+          "evidence": "jinn were created from \"smokeless fire\" (Quran 15:27, Quran 55:15) [...] Like humans, the jinn have no knowledge of the future. [...] Because they are supposed to worship God out of free will, they can do both good and evil deeds (7:179, 55:56) [...] Julius Wellhausen observed that jinn were often thought to \"inhabit or haunt desolate, dark and dingy places in the desert\". For that reason, they were held responsible for various diseases and mental illnesses. [...] When they shift into a human form however, they are said to stay partly animal and are not fully human. [...] Offspring of human-jinn relationships are nonetheless usually considered to be gifted and talented people with special abilities. [...] from which the English word \"genie\" is derived"
+        }
+      ],
+      "style_check": "Bonne tenue d'ensemble : le libre arbitre coranique est le vrai ressort de la notice, et les rubriques Alimentation, Reproduction et Prédateurs s'interdisent la zoologie inventée. Seule réserve de forme : les guillemets posés sur des traductions françaises de phrases anglaises (« peuvent accomplir aussi bien de bonnes que de mauvaises actions ») font croire à une citation de texte alors qu'il s'agit d'une reformulation de la source secondaire."
+    }
+  ]
+}

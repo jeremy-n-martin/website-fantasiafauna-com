@@ -1,0 +1,372 @@
+{
+  "batch": "batch-b3",
+  "reviewed": [
+    {
+      "slug": "dragon-de-bronze",
+      "verdict": "pass",
+      "sha256": "81c393075377188fa2ff48f7f231d61e908beb40e70a0a98ccdaaa1b29bb66e7",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "un souffle en cône qui, selon les époques et les éditions, sème soit la panique soit repousse violemment quiconque s'y trouve",
+          "detail": "La source déclarée [1] ne connaît qu'un seul cône, le Repulsion Breath (cône de 30 pieds, poussée de 60 pieds) ; aucune variante « panique » n'y figure, et je n'en trouve pas trace dans les autres éditions du jeu. La prudence de la formule (« selon les époques ») limite la faute, mais l'alternative est présentée comme attestée sans l'être."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Sa fiche de créature dans les règles récentes du jeu le confirme aligné loyal bon, capable de changer de forme, et amphibie",
+          "detail": "Alignement, Change Shape et Amphibious sont exacts, mais la page citée est signalée « Legacy — This doesn't reflect the latest rules and lore » : c'est la fiche 2014, pas les règles récentes. Formulation à ajuster (« la fiche classique du jeu »)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sources[1]",
+          "quote": "Forgotten Realms Wiki — Bronze dragon, alignement et implication dans la guerre",
+          "detail": "Page inaccessible pendant la relecture (échec de récupération, deux tentatives). Le contrôle a été fait sur la fiche D&D Beyond [1], qui couvre les mêmes points (alignement, changement de forme, amphibie, implication dans les conflits des mortels sous forme humaine selon les suppléments)."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16767-adult-bronze-dragon",
+          "status": "verified",
+          "claims_checked": "Alignement loyal bon ; amphibie ; changement de forme ; repaire en grotte côtière et récupération d'une épave comme coffre-fort ou nid ; souffle en ligne d'éclairs et souffle de répulsion en cône ; effets régionaux (météo modifiable sur 6 miles, plantes sous-marines aux teintes éclatantes) ; vitesse de nage égale à la vitesse de marche",
+          "evidence": "« Huge Dragon, Lawful Good » | « Speed 40 ft., Fly 80 ft., Swim 40 ft. » | « Amphibious. The dragon can breathe air and water. » | « A bronze dragon lairs in coastal caves. It might salvage a wrecked ship, reconstruct it within the confines of its lair, and use it as a treasure vault or nest for its eggs. » | « Lightning Breath. The dragon exhales lightning in a 90- foot line that is 5 feet wide. » | « Repulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. » | « Once per day, the dragon can alter the weather in a 6-mile radius centered on its lair. » | « Underwater plants within 6 miles of the dragon's lair take on dazzlingly brilliant hues. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://forgottenrealms.fandom.com/wiki/Bronze_dragon",
+          "status": "inaccessible",
+          "claims_checked": "Alignement loyal bon et implication du bronze dans les guerres des mortels sous forme humaine (legendes[0] et legendes[1])",
+          "evidence": "Aucune preuve littérale : « Failed to fetch url ». Contrôle de remplacement par la fiche D&D Beyond [1], qui porte « Huge Dragon, Lawful Good » et le Change Shape vers une forme humanoïde ou bestiale."
+        }
+      ],
+      "style_check": "Français adulte et incarné, aucune consigne adressée à un auteur ou à un meneur de jeu, aucune tournure bannie, aucun inventaire de négations. La distinction entre création de jeu et folklore est posée d'entrée de rubrique (« une catégorie que Donjons et Dragons a formalisée »)."
+    },
+    {
+      "slug": "dragon-de-cuivre",
+      "verdict": "pass",
+      "sha256": "37c7078e94240a51a1aac9267668764dc157d3eebffb58ee4ddd5c4c6d33da5f",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "Les sources de jeu insistent sur son goût des énigmes, des calembours et des farces élaborées",
+          "detail": "L'appel [2] renvoie à l'article « Explore the Exciting Changes to Dragons in the New Monster Manual », consacré aux règles et aux actions (Rend, Multiattack, Spellcasting, actions légendaires) : il ne contient ni énigme, ni calembour, ni farce, et ne mentionne le cuivre qu'une fois (« the ancient copper dragon uses its magic to delight and create community »). Le trait est réel — contrôle sur la fiche 2024 : « These gregarious dragons are fonts of patience, hospitality, and humor » — mais il n'est pas là où la notice l'envoie. À re-sourcer."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.naturelle.parts[0].body[0]",
+          "quote": "Il pose des énigmes à quiconque approche son repaire, non pour éliminer les faibles d'esprit mais pour se divertir",
+          "detail": "Même remarque : la pratique est attribuée à [2], qui n'en parle pas. Exacte par ailleurs (la fiche 2024 insiste sur l'humour et la parole), mais l'appel doit être déplacé sur une source qui la porte, ou l'affirmation ramenée à ce que dit réellement la source."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Les éditions récentes du jeu accentuent encore ce trait en dotant son territoire d'effets magiques ambiants",
+          "detail": "La page citée [1] est signalée « Legacy — This doesn't reflect the latest rules and lore » (2014). Le fond reste juste (les effets de repaire persistent en 2024 sous la forme « Giggle Fits »), mais « éditions récentes » est approximatif."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16768-adult-copper-dragon",
+          "status": "verified",
+          "claims_checked": "Alignement chaotique bon ; repaire en hautes terres sèches et cavernes étroites ; fausses richesses exposées et vrai trésor dans une antichambre dissimulée ; souffle d'acide en ligne et souffle ralentissant en cône ; empreinte régionale : visage souriant gravé dans la pierre et fous rires des créatures intelligentes",
+          "evidence": "« Huge Dragon, Chaotic Good » | « Copper dragons dwell in dry uplands and on hilltops, where they make their lairs in narrow caves. False walls in the lair hide secret antechambers where the dragon stores valuable ores, art objects, and other oddities it has collected over its lifetime. Worthless items are put on display in open caves to tantalize treasure seekers and distract them from where the real treasure is hidden. » | « Acid Breath. The dragon exhales acid in an 60-foot line that is 5 feet wide. » | « Slowing Breath. The dragon exhales gas in a 60-foot cone. » | « Magic carvings of the dragon's smiling visage can be seen worked into stone terrain and objects within 6 miles of the dragon's lair. » | « Intelligent creatures within 1 mile of the dragon's lair are prone to fits of giggling. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/posts/1889-explore-the-exciting-changes-to-dragons-in-the-new",
+          "status": "verified",
+          "claims_checked": "Article effectivement ouvert, mais c'est un article de présentation des changements de règles du Monster Manual 2024 : il ne documente ni le caractère farceur du cuivre, ni les énigmes. Le contrôle de ces traits a été fait sur une autre source (fiche 2024 du dragon de cuivre : « Dragons of Curiosity and Community »)",
+          "evidence": "« the ancient copper dragon uses its magic to delight and create community » | « Each dragon now has access to the Rend attack, which is its default melee attack. »"
+        }
+      ],
+      "style_check": "Écriture vive et adulte, sans tournure de bot, sans consigne à un auteur ou à un meneur de jeu ; le comique de la créature est traité sans complaisance. Seule réserve : deux appels posés sur une source qui ne porte pas le propos."
+    },
+    {
+      "slug": "dragon-marin",
+      "verdict": "revise",
+      "sha256": "93eef58f4da1133d219b993a911c766be65e06c4b8661fba6c19490c54da9f2d",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[2]",
+          "quote": "ce poisson serpentiforme pouvant dépasser quinze mètres",
+          "detail": "Défaut factuel, et en contradiction avec la source déclarée : l'article [1] écrit « According to biologists, oarfish can grow up to 11 meters long ». Les quinze mètres excèdent la donnée citée. Corriger en « une dizaine de mètres » ou s'en tenir à ce que dit la source."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[2]",
+          "quote": "Les sailors développaient d'ailleurs des rituels et des tabous entiers pour se prémunir de ces créatures, jusqu'à nommer leurs navires d'après des figures mythiques protectrices",
+          "detail": "Deux défauts dans une phrase. D'abord un anglicisme de rédaction resté dans le texte publié (« Les sailors »), que la relecture ne peut pas laisser passer. Ensuite l'affirmation elle-même : l'article [1] ne mentionne ni rituel, ni tabou, ni navire nommé d'après une figure protectrice ; les marins n'y apparaissent que pour avoir pris le Jörmungandr pour une chaîne d'îles. À réécrire et à sourcer, ou à retirer."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "parfois représentées crachant de l'eau par un évent",
+          "detail": "Détail absent de [1], qui décrit seulement des créatures « undulating in the deep water and coiled around ships and boats ». L'évent confondu avec celui d'une baleine est un motif réel des cartes anciennes (Carta Marina d'Olaus Magnus, citée par la source) mais il n'est pas documenté ici : à rattacher au bon passage ou à supprimer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "ou exhale un jet d'eau glaciale et corrosive",
+          "detail": "Variante présentée comme un récit attesté sans source ni appel ; elle relève de l'invention de bestiaire moderne. Tolérable dans une rubrique d'anomalies, mais à marquer comme telle."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.marineinsight.com/maritime-history/the-unexplained-mystery-of-the-sea-serpent/",
+          "status": "verified",
+          "claims_checked": "Jörmungandr encerclant le monde et pris pour une chaîne d'îles ; Léviathan dans l'Ancien Testament et combat Marduk/Tiamat ; serpents marins médiévaux ondulant dans les eaux profondes et s'enroulant autour des navires ; longueur du régalec (oarfish) ; caractère composite et non biologique des récits",
+          "evidence": "« In Norse Mythology, Jǫrmungandr, or “Miðgarðsormr”, is a long sea serpent. It enclosed the entire world, and there are stories of how some sailors mistook it for a chain of islands and lost their lives. » | « the Old Testament mentions a battle between God and a sea monster named Leviathan/Rahab. Even records from Babylon say a combat between their God Marduk and a multi-head serpent called Tiamat. » | « the sea serpents have been depicted as undulating in the deep water and coiled around ships and boats, putting an end to the life of seafarers. » | « According to biologists, oarfish can grow up to 11 meters long »"
+        }
+      ],
+      "style_check": "La voix est bonne — ampleur du récit maritime, pas de tournure de bot, et la rubrique naturelle assume honnêtement que le folklore ne dit rien de la reproduction (règle respectée). Ce sont les faits et un mot anglais resté dans le texte qui imposent la reprise."
+    },
+    {
+      "slug": "dragon-noir",
+      "verdict": "revise",
+      "sha256": "b0aba03d9eb878e61c0a8a644175676a22e0748ab7d031100a107de2e30dc9c5",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sources[1]",
+          "quote": "Wikipedia — Black Dragon (Dungeons & Dragons)",
+          "detail": "Appel trompeur sur la source déclarée : l'URL fournie est la page d'homonymie « Black Dragon » de Wikipédia (elle-même rangée dans la catégorie « Disambiguation pages »). Elle ne contient qu'une ligne utile — « Black dragon (Dungeons & Dragons), an evil species of dragon with an acid-breath weapon » — et ne porte donc ni l'alignement chaotique mauvais attribué en legendes[1], ni la cruauté « la plus vile » de legendes[0], ni la froideur calculatrice de la partie Comportement et de la partie Intelligence, toutes renvoyées à [2]. Pointer vers l'article réel (« Black dragon (Dungeons & Dragons) », qui redirige vers « Dragon (Dungeons & Dragons) ») ou retirer l'appel."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[2]",
+          "quote": "sur plus d'un kilomètre, les points d'eau deviennent viciés au point de rendre malade quiconque en boit",
+          "detail": "La source [1] restreint explicitement l'effet : « Water sources within 1 mile of the lair are supernaturally fouled. Enemies of the dragon that drink such water regurgitate it within minutes. » Ce ne sont pas « quiconque » mais les ennemis du dragon, et la conséquence est une régurgitation en quelques minutes, non une maladie. Défaut factuel : reformuler (« quiconque en boit » → « les ennemis du dragon qui en boivent »)."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "Contrairement au rouge qui règne sur des sommets visibles de loin ou au bleu associé aux déserts",
+          "detail": "Le comparatif est juste dans le jeu, mais [1] ne parle ni du rouge ni du bleu (aucune occurrence de « blue » ni de « desert »). Affirmation non documentée par la source citée : à faire porter par une source réelle, ou à présenter comme une lecture d'ensemble plutôt que sous un appel."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16764-adult-black-dragon",
+          "status": "verified",
+          "claims_checked": "Alignement chaotique mauvais ; amphibie ; immunité à l'acide ; souffle d'acide en ligne ; repaire en marécage en bordure de civilisation, grotte ou ruine partiellement inondée où les victimes fermentent ; ossements rongés, carcasses, scorpions, serpents et centipèdes ; effets régionaux sur les points d'eau et la végétation",
+          "evidence": "« Huge Dragon, Chaotic Evil » | « Amphibious. The dragon can breathe air and water. » | « Damage Immunities Acid » | « Acid Breath (Recharge 5–6). The dragon exhales acid in a 60- foot line that is 5 feet wide. » | « Black dragons dwell in swamps on the frayed edges of civilization. A black dragon’s lair is a dismal cave, grotto, or ruin that is at least partially flooded, providing pools where the dragon rests, and where its victims can ferment. The lair is littered with the acid-pitted bones of previous victims and the fly-ridden carcasses of fresh kills, watched over by crumbling statues. Centipedes, scorpions, and snakes infest the lair » | « The land within 6 miles of the lair takes twice as long as normal to traverse, since the plants grow thick and twisted » | « Water sources within 1 mile of the lair are supernaturally fouled. Enemies of the dragon that drink such water regurgitate it within minutes. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Black_Dragon",
+          "status": "absent",
+          "claims_checked": "Page d'homonymie, et non l'article annoncé : elle ne peut porter aucune des affirmations sur l'alignement, la cruauté ou l'intelligence du dragon noir",
+          "evidence": "« **Black dragon** may refer to: » … « Black dragon (*Dungeons & Dragons*), an evil species of dragon with an acid-breath weapon » … « This [disambiguation](https://en.wikipedia.org/wiki/Help:Disambiguation) page lists articles associated with the title **Black Dragon**. »"
+        }
+      ],
+      "style_check": "Français tenu, images justes (la « froideur administrative de la cruauté »), pas de consigne adressée, pas de tournure bannie. Mais la notice s'appuie sur une source fantôme pour la moitié de ses qualificatifs moraux, et durcit la portée d'un effet régional."
+    },
+    {
+      "slug": "dragon-rouge",
+      "verdict": "revise",
+      "sha256": "4131f2f5fab2270d7c9a2c791b68977e2c6d3d2f60bd91898812e7a18bb27792",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.fascination[0]",
+          "quote": "Sur la couverture des tout premiers ouvrages de règles du jeu qui l'a rendu célèbre, c'est lui, ailes déployées au-dessus d'un trésor, qui a fixé pour des générations de joueurs l'image même du monstre à vaincre",
+          "detail": "La source déclarée [1] est un fil de forum de D&D Beyond consacré à l'écran du maître « Dungeon Master's Screen Reincarnated » — un accessoire de 5e, pas les premiers ouvrages de règles — et le fil conclut à l'inverse de la notice : « As far as I know the dragon on the reincarnated screen is never identified, but the red dragon on the original 5E DM's screen is Thraxata the Flamefiend. » Ni la datation, ni la fonction fondatrice prêtée à cette illustration ne sont dans la source. Attribution fausse : à corriger ou à documenter par une source réelle sur l'histoire éditoriale du jeu."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[0]",
+          "quote": "les bestiaires récents précisent qu'un dragon rouge adulte a dépassé les excès destructeurs de sa jeunesse pour viser un contrôle discret mais total des territoires environnants, infiltrant guildes et économies plutôt que de se contenter de raids spectaculaires",
+          "detail": "Introuvable dans la source citée [2] (fiche Adult Red Dragon, marquée « Legacy — This doesn't reflect the latest rules and lore », soit 2014). Le passage le plus proche est un simple commentaire de lecteur sous cette même page : « It is starting to be more interesting to plan strategy for ruling (through malevolent subversion) covertly… you'll rule every assassin guild in the land… subverting the gem merchants as a way to take control of the economy. » Ce n'est pas un bestiaire. La fiche 2024 dit autre chose : « Adult red dragons are tyrants that claim vast domains and might command armies of followers or significant magical resources… Most red dragons are inattentive rulers. » L'affirmation reparaît en naturelle.parts[0] et parts[3] sous le même appel [2] : à retirer ou à fonder sur une source qui la porte."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "L'histoire éditoriale du jeu a fait du rouge une sorte d'étalon : chaque nouvelle édition le retravaille en premier",
+          "detail": "Ni [1] ni [2] ne documentent cette primauté éditoriale ; le fil de forum ne parle que d'une couverture d'écran, la fiche ne dit rien de l'ordre des refontes. Affirmation invérifiable en l'état : à sourcer ou à reformuler comme une impression de joueur."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[0]",
+          "quote": "dont la silhouette orne depuis les débuts du jeu les couvertures de manuels et les affiches promotionnelles",
+          "detail": "Reprise du motif de couverture sans appel, avec la même imprécision de datation que dans fascination[0]. À harmoniser avec la correction demandée plus haut."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/forums/d-d-beyond-general/general-discussion/106321-who-is-the-red-dragon-on-the-cover-of-the-dungeon",
+          "status": "verified",
+          "claims_checked": "Contenu réel du fil : identification du dragon rouge de la couverture de l'écran du maître (produit 5e) — le fil ne documente ni les premiers ouvrages de règles ni l'image d'Épinal évoquée par la notice",
+          "evidence": "« As far as I know the dragon on the reincarnated screen is never identified, but the red dragon on the original 5E DM's screen is *Thraxata the Flamefiend*. » | question d'ouverture : « The title says it all. Ashardalon? Kistarianth? Klauth? Who knows. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/monsters/16771-adult-red-dragon",
+          "status": "verified",
+          "claims_checked": "Odeur de soufre et de pierre ponce, cornes rejetées en arrière, crête dorsale ; repaire en montagnes élevées, cavernes volcaniques, mines abandonnées ; monuments élevés dans le repaire par les serviteurs ; souffle de feu en cône de 60 pieds dont les dégâts croissent avec l'âge. Ne porte pas, en revanche, la thèse du contrôle discret des guildes et de l'économie",
+          "evidence": "« The odor of sulfur and pumice surrounds a red dragon, whose swept-back horns and spinal frill define its silhouette. » | « Red dragons lair in high mountains or hills, dwelling in caverns under snow-capped peaks, or within the deep halls of abandoned mines and dwarven strongholds. » | « Throughout the lair complex, servants erect monuments to the dragon’s power, telling the grim story of its life, the enemies it has slain, and the nations it has conquered. » | « Fire Breath (Recharge 5–6). The dragon exhales fire in a 60-foot cone. […] taking 63 (18d6) fire damage »"
+        }
+      ],
+      "style_check": "Voix ample et sûre, sans tournure de bot ni consigne adressée. Le problème n'est pas le style : deux affirmations fondatrices (la couverture des origines, la domination feutrée des guildes) sont attribuées à des sources qui ne les portent pas, dont un commentaire de forum."
+    },
+    {
+      "slug": "dragon-vert",
+      "verdict": "pass",
+      "sha256": "94a312e3a03a11dd508da5534a4080f59f4d121b29b0e61a14f08d1a3154a884",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "Les descriptions récentes lui accordent une capacité télépathique qui s'étend aux petites créatures dociles de son territoire",
+          "detail": "Le fait est exact, mais pas dans la source citée : la page [1] (fiche 2014 marquée « Legacy ») dit seulement « Rodents and birds within 1 mile of the dragon's lair serve as the dragon's eyes and ears », sans mot télépathique. Le terme appartient à la fiche 2024 : « Tiny Beasts magically gain the ability to understand Draconic and can communicate telepathically with the dragon while within 1 mile of the lair. » Déplacer l'appel sur la fiche récente."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.anomalies[2]",
+          "quote": "Les variantes d'âge, du dragonnet à l'ancien dragon vert, ajoutent surtout de la puissance brute et une aura de présence de plus en plus redoutable",
+          "detail": "La page citée ne décrit que l'adulte : les stades d'âge (du dragonnet à l'ancien) existent bien dans le jeu — la fiche 2024 en donne même les blocs — mais [1] ne les documente pas. Même remarque pour naturelle.parts[4].body[0], qui a l'honnêteté d'ajouter que ces étapes « relèvent des règles du jeu plutôt que d'une biologie détaillée » : il ne manque que la bonne référence."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Les suppléments consacrés aux dragons détaillent des territoires forestiers disputés avec d'autres espèces chromatiques, des réseaux d'espionnage entretenus grâce à des créatures rendues télépathiques par leur proximité avec le repaire",
+          "detail": "La source [1] ne renvoie à aucun supplément ; elle ne fournit que les effets de repaire. La matière vient de suppléments (Fizban's Treasury of Dragons) et de la fiche 2024 : à citer comme tels. Le reste de la phrase est vérifié (compétition avec le noir dans les bois marécageux et le blanc dans la taïga subarctique)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sources[0]",
+          "quote": "D&D Beyond — Green Dragon (Adult Green Dragon, Ancient Green Dragon), traits, souffle et alignement",
+          "detail": "Le titre déclaré annonce l'ancien dragon vert alors que l'URL ne mène qu'à la fiche de l'adulte (titre réel de la page : « Adult Green Dragon »). Aligner le titre sur le contenu réel, ou ajouter l'URL de la fiche ancienne."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16770-adult-green-dragon",
+          "status": "verified",
+          "claims_checked": "Alignement loyal mauvais ; le plus rusé et déloyal des vrais dragons ; souffle de gaz toxique en cône de 60 pieds ; compétition territoriale avec les dragons noirs en bois marécageux et les blancs en taïga subarctique ; repaire en falaise ou caverne dissimulée ; bêtes et oiseaux des environs au service du dragon ; immunité au poison",
+          "evidence": "« Huge Dragon, Lawful Evil » | « The most cunning and treacherous of true dragons, green dragons use misdirection and trickery to get the upper hand against their enemies. » | « The forest-loving green dragons sometimes compete for territory with black dragons in marshy woods and with white dragons in subarctic taiga. » | « The dragon exhales poisonous gas in a 60-foot cone. » | « Rodents and birds within 1 mile of the dragon’s lair serve as the dragon’s eyes and ears. » | « Damage Immunities Poison »"
+        }
+      ],
+      "style_check": "Français précis et sans emphase, rubriques tenues, aucune consigne adressée à un auteur ou à un meneur de jeu, aucune tournure bannie. La notice annonce honnêtement que la créature naît dans les bestiaires du jeu et non dans un folklore antérieur ; il ne lui manque qu'un meilleur appariement entre affirmations et références."
+    },
+    {
+      "slug": "drake",
+      "verdict": "pass",
+      "sha256": "568afd933509e93fdd1fc0505d3a6530239ab0b520b2bf1173394da79d22e409",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.naturelle.parts[2].body[0]",
+          "quote": "Chasseur essentiellement carnivore, il s'attaque au bétail et au gros gibier des régions sauvages qu'il fréquente",
+          "detail": "Aucun des deux univers déclarés ne documente de régime : la catégorie « Lesser dragons » ne décrit que le rang taxinomique (« species of dragon-type creatures which are not true dragons ») et la fiche Dragon Age ne parle pas de nourriture. La notice sait pourtant signaler une lacune — elle le fait pour la reproduction (« son cycle reproductif reste peu détaillé ») — mais fabrique ici une donnée biologique (règle 6). À transformer en remarque d'absence, ou à fonder sur une source qui la porte."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[1].body[0]",
+          "quote": "Il occupe volontiers les abords d'un repaire de dragon plus puissant, qu'il contribue à défendre en échange d'un territoire de chasse",
+          "detail": "La source Dragon Age documente la recherche du repaire d'une high dragon (« Drakes seek out the lairs of high dragons immediately after reaching maturity » ; « They are commonly found guarding dragon lairs »), non l'échange de service ni le « territoire de chasse ». Détail plausible mais ajouté."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "aucune tradition orale ancienne ne le distingue clairement du dragon dont il partage l'étymologie",
+          "detail": "Exact pour le mot anglais drake (formes germaniques désignant le dragon). Le lecteur francophone peut toutefois confondre avec le drac occitan et provençal — figure folklorique distincte, issue du latin dracō — que la notice ne mentionne pas. Une ligne de mise au point éviterait l'amalgame."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sources[0]",
+          "quote": "Dragon Age Wiki — Drake, stade de croissance du dragon",
+          "detail": "Page restée inaccessible pendant la relecture : l'extracteur a renvoyé à trois reprises le contenu d'une autre page. Contrôle effectué sur le wiki miroir Dragon Age et sur le résumé indexé de la page Fandom : « Drake Scales form a tough natural armor and their hides are prized for making suits of highly effective armor. » Les affirmations de legends[2] sont donc confirmées."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://dragonage.fandom.com/wiki/Drake",
+          "status": "inaccessible",
+          "claims_checked": "Dragon mâle mature, sans ailes développées, moignons aux pattes avant ; combat par la morsure, la griffe, la queue et un jet de flammes ; peau et écailles utilisées pour des armures",
+          "evidence": "Échec direct (« Failed to fetch url »). Preuves de contrôle : « Male dragons never develop into the winged monsters of myth. Their forelegs grow only vestigial spurs where wing membranes would be in female dragons. Drakes seek out the lairs of high dragons immediately after reaching maturity. » et « many would-be dragon hunters have lost their lives to a drake's fiery breath or a crushing blow from its tail. » (wiki miroir Dragon Age) ; « Drake Scales form a tough natural armor and their hides are prized for making suits of highly effective armor. » (résumé indexé de la page déclarée)."
+        },
+        {
+          "source_id": 2,
+          "url": "https://dungeonsdragons.fandom.com/wiki/Category:Lesser_dragons",
+          "status": "verified",
+          "claims_checked": "Les drakes rangés parmi les créatures de type dragon qui ne sont pas des « true dragons », aux côtés des tortues-dragons et des vouivres",
+          "evidence": "« This category is for species of dragon-type creatures which are not [true dragons](/wiki/True_dragon \"True dragon\"). Examples include dragon turtles, drakes and wyverns. »"
+        }
+      ],
+      "style_check": "Voix claire, sans tournure de bot ni consigne adressée ; la notice distingue correctement le mot ancien, le type de créature propre aux jeux et la déclinaison d'un univers vidéoludique précis. Réserve unique : une donnée de régime fabriquée, comme si la rubrique ne pouvait pas avouer son vide."
+    },
+    {
+      "slug": "draugr",
+      "verdict": "pass",
+      "sha256": "f4441820e8cb2dae9fbaf6a3c9724ee40fb47fa7de0d6fc891b025a88a8dc4aa",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "une force surhumaine, suffisante pour briser des os et arracher des toitures",
+          "detail": "La source [1] dit bien « Draugrs usually possess superhuman strength » et rapporte que le corps de Glámr fut retrouvé « with his neck and every bone in his body broken », mais le mot « roof » n'y apparaît nulle part : les toitures arrachées ne sont pas un fait attesté, seulement un voisinage de motifs (ailleurs, le draugr Þórólfr chevauche le toit de sa ferme et Glámr se dresse jusqu'aux poutres). Ramener la phrase à ce que la source porte."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "peut grossir et gonfler jusqu'à atteindre, selon certains récits, la taille d'un bœuf",
+          "detail": "Nuance : dans la source, le gonflement décrit est celui du cadavre retrouvé (Glámr « bloated to the size of a bull », Þórólfr « swollen to the size of an ox »), avant sa mise en marche. L'article attribue par ailleurs aux draugrs le pouvoir de « change their size as well as their mass », ce qui couvre la croissance, mais la formulation mélange les deux motifs."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[5].body[0]",
+          "quote": "de couper sa tête et de la placer contre son séant, ou de le brûler et de disperser ses cendres",
+          "detail": "Le motif est authentique — la Grettis saga le donne mot pour mot (« He drew his short sword, cut off Glam's head and laid it between his thighs ») — mais la source déclarée s'arrête à « The draugr needing to be decapitated to hinder them from further hauntings is a common theme in the family sagas » et à « burned, dismembered or otherwise destroyed » : la dispersion des cendres n'y figure pas. Rien de faux, mais l'appel [1] ne couvre pas la phrase entière."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Draugr",
+          "status": "verified",
+          "claims_checked": "Draugr comme revenant corporel et non fantôme ; Kárr inn gamli explicitement nommé draugr dans la Grettis saga, Glámr jamais appelé ainsi dans le texte mais rangé parmi les draugrs par les chercheurs modernes ; malédiction privant Grettir d'accroître sa force ; berger bleu-noir de l'Eyrbyggja saga se relevant la nuit suivante ; haugbúi et aptrganga ; force surhumaine, odeur de décomposition, teintes bleu-noir ; obscurité temporaire, lumière de tertre, métamorphoses (phoque, taureau, cheval, chat), irruption dans les rêves ; appétit quasi insatiable et bétail mené à la mort ; décapitation, crémation et « seconde mort » ; distinction finale d'avec le zombie de cinéma",
+          "evidence": "« In the written corpus, the *draugr* is regarded not so much as a ghost, but a corporeal [undead] creature, or [revenant] » | « Unlike Kárr inn gamli (Kar the Old) in *Grettis saga*, who is specifically called a draugr, Glámr the ghost in the same saga is never explicitly called a draugr in the text » | « Draugrs have the ability to curse, as shown in *Grettis saga*, where Grettir is cursed to be unable to become stronger. » | « In the *Eyrbyggja saga*, a shepherd is assaulted by a blue-black draugr. The shepherd's neck is broken during the ensuing scuffle. The shepherd rises the next night as a draugr. » | « designated them instead as a *haugbúi* (\"barrow-dweller\") or an *aptrganga* (\"re-walker\") » | « Draugrs usually possess superhuman strength » | « associated with a \"reek of decay\" » | « they could create temporary darkness in daylight hours » | « The draugr's presence might be shown by a great light that glowed from the mound like foxfire. » | « can also change into a great flayed bull, a grey horse with a broken back but no ears or tail, and a cat » | « Draugrs also have the ability to enter into the dreams of the living » | « They also exhibit an immense and nearly insatiable appetite » | « The roaming undead devastated livestock by running the animals to death either by riding them or pursuing them in some hideous, half-flayed form. » | « The draugr needing to be decapitated to hinder them from further hauntings is a common theme in the family sagas. »"
+        }
+      ],
+      "style_check": "La meilleure tenue du lot : français dense, concret, sans tournure de bot ni consigne adressée, et une distinction explicite entre folklore attesté (sagas, haugbúi, aptrganga) et réinvention ludique ou cinématographique. Les réserves portent sur deux détails physiques que la source citée ne porte pas."
+    }
+  ]
+}
