@@ -1,0 +1,35 @@
+{
+  "description": "Serpent aux pattes de lion et d'aigle, le mušḫuššu marche encore sur les briques vernissées de la porte d'Ishtar : un dragon qui ne garde pas un trésor, mais sert un dieu.",
+  "sections": {
+    "fascination": [
+      "Un corps ne devrait pas emprunter à tant d'animaux différents sans devenir absurde. Le mušḫuššu déjoue pourtant ce risque : pattes arrière griffues d'aigle, membres antérieurs de lion, cou et queue longs et serpentins, deux cornes, une langue fourchue et une crête sur la tête composent une silhouette parfaitement lisible sur les briques de Babylone.[1] Le nom lui-même, d'origine sumérienne, se laisse traduire par serpent rougeâtre ou serpent splendide, hésitation qui dit assez la difficulté à enfermer la bête dans un seul mot.",
+      "Ce qui fascine surtout, c'est le silence de la créature. Elle ne parle pas, ne se raconte pas en récits de combat détaillés comme d'autres dragons : elle marche, en frise répétée, aux côtés de taureaux et de lions eux aussi stylisés, sur les murs d'une porte monumentale.[1] Le mušḫuššu n'est pas un adversaire qu'on affronte mais une présence qu'on installe, un ornement de pierre cuite chargé de protéger une ville en la traversant sans fin."
+    ],
+    "legendes": [
+      "L'histoire religieuse du mušḫuššu commence par une défaite. La tradition mésopotamienne raconte que le dragon fut jadis vaincu par Marduk, qui en fit ensuite son animal emblématique et son serviteur plutôt que de le détruire.[1] Ce geste de récupération, fréquent dans les mythologies du Proche-Orient ancien, transforme une menace en garde du corps : la bête vaincue continue d'exister, mais désormais au service de son vainqueur.",
+      "Marduk n'est pas le seul maître du mušḫuššu au fil du temps. La créature avait d'abord été associée à Tishpak, une divinité locale, avant que Marduk ne se l'approprie ; elle devient ensuite, à l'époque néo-babylonienne, l'animal sacré à la fois de Marduk et de son fils Nabu.[1] Cette transmission d'un dieu à l'autre montre que le dragon fonctionne comme un attribut de pouvoir divin, transférable, plutôt que comme une créature liée à un seul récit fondateur.",
+      "Les images du mušḫuššu ne datent pas de la seule époque babylonienne tardive : l'art religieux sumérien en atteste déjà la présence dès le XXIe siècle avant notre ère.[1] La porte d'Ishtar, construite au VIe siècle avant notre ère sous Nabuchodonosor II, ne fait donc qu'accueillir sous une forme monumentale une figure dont la mémoire iconographique traverse près de quinze siècles."
+    ],
+    "anomalies": [
+      "Le mušḫuššu déroute par son absence de combat identifiable dans les sources conservées. À la différence de l'hydre ou du dragon rouge, dont les récits narrent un affrontement précis, le mušḫuššu de Marduk est mentionné comme déjà soumis : le lecteur moderne hérite du résultat d'une lutte, jamais de son déroulement.[1] Cette ellipse narrative est peut-être la vraie anomalie : un dragon dont on ne raconte que la reddition.",
+      "La composition de son corps pose une question de lecture plus que de biologie. Faut-il voir dans les pattes d'aigle et de lion une seule créature cohérente, ou la superposition de plusieurs symboles de puissance royale que l'artiste assemble sans souci d'unité anatomique ?[1] Les bestiaires mésopotamiens semblent privilégier la seconde logique, où l'exactitude du vivant importe moins que l'accumulation des attributs de force."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle du mušḫuššu doit composer avec une source presque exclusivement iconographique et religieuse : la créature est connue par ses représentations et son statut divin, non par des récits de mœurs ou de chasse.",
+      "parts": [
+        {"title": "Comportement", "body": ["Aucune source ne prête au mušḫuššu une initiative propre : il apparaît toujours en fonction d'un maître divin, Tishpak d'abord, puis Marduk et Nabu.[1] Son comportement documenté est celui d'un serviteur et d'un gardien, jamais celui d'un prédateur agissant pour son propre compte."]},
+        {"title": "Habitat", "body": ["Le mušḫuššu occupe avant tout les lieux de culte et de pouvoir : la porte d'Ishtar de Babylone et les temples constituent son territoire attesté, plutôt qu'un environnement naturel comme un marais ou une montagne.[1] Il habite littéralement l'architecture religieuse plus qu'un paysage."]},
+        {"title": "Alimentation", "body": ["Aucune source ne documente de régime alimentaire pour le mušḫuššu, la créature étant transmise par l'image religieuse plutôt que par un récit de mœurs animales."]},
+        {"title": "Intelligence", "body": ["Le statut de serviteur loyal suppose une forme d'obéissance et de reconnaissance de son maître divin, mais aucune source ne détaille une pensée ou un langage propres au mušḫuššu.[1] Son intelligence, si le mot convient, se mesure à sa fidélité plutôt qu'à son discours."]},
+        {"title": "Reproduction", "body": ["Aucune tradition ne mentionne de descendance ni de cycle de reproduction pour le mušḫuššu, dont l'existence documentée reste celle d'une figure unique attachée à des divinités précises plutôt que celle d'une espèce se perpétuant."]},
+        {"title": "Prédateurs", "body": ["Le seul rapport de force attesté est sa défaite ancienne face à Marduk, préalable à son entrée à son service.[1] Aucun autre adversaire naturel ou mythologique ne lui est associé dans les sources disponibles."]}
+      ]
+    },
+    "reliques": [
+      "La porte d'Ishtar elle-même constitue la relique la plus tangible du mušḫuššu : ses briques émaillées, ornées de rangées de dragons, de taureaux et de lions, ont traversé les siècles jusqu'à leur reconstitution dans les collections muséales modernes.[1] Le dragon-serpent y demeure fixé dans la même posture patiente, rappel silencieux d'un temps où la protection d'une cité passait par l'image d'une bête soumise à son dieu plutôt que par ses seules murailles."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Mušḫuššu — dragon-serpent de Marduk et porte d'Ishtar, Wikipédia", "url": "https://en.wikipedia.org/wiki/Mushussu"}
+  ]
+}

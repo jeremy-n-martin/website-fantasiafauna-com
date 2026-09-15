@@ -1,0 +1,35 @@
+{
+  "description": "Un pont qui s'effondre, une nuit de novembre où deux couples voient surgir une ombre ailée : le Mothman n'appartient pas au bestiaire ancien mais à une Amérique industrielle qui se cherche encore des présages.",
+  "sections": {
+    "fascination": [
+      "Ce qui frappe d'abord n'est pas la forme de la créature, mais l'heure de son apparition. Le 15 novembre 1966, près d'un ancien site de munitions de Point Pleasant, en Virginie-Occidentale, deux jeunes couples affirment avoir croisé une silhouette sombre, haute comme un homme, aux yeux rouges et luisants.[1] La presse locale titre aussitôt sur un couple homme-oiseau, cherchant déjà les mots qui manquent pour nommer la chose. Le merveilleux contemporain naît souvent ainsi, non d'un mythe transmis mais d'un fait divers qui refuse de se laisser classer.",
+      "La description elle-même hésite entre deux natures. Les témoins parlent d'un corps musclé, presque humain, que prolongent de grandes ailes blanches ; d'autres insistent sur des yeux qui accrochent la lumière des phares comme ceux d'un animal nocturne.[1] Cette instabilité du portrait, loin d'affaiblir le récit, en nourrit la persistance : chacun peut y reconnaître un fragment de son propre effroi, pourvu que la nuit soit noire et la route déserte."
+    ],
+    "legendes": [
+      "Les observations se répètent dans la région entre novembre 1966 et décembre 1967, sans jamais se stabiliser en un récit unique.[1] Le Mothman n'a ni généalogie mythologique ni rituel qui l'invoque : il apparaît, effraie, disparaît, laissant aux habitants de Point Pleasant le soin de rassembler les témoignages. Cette absence de tradition antérieure distingue nettement la créature des goules ou des elfes dont l'histoire remonte à des siècles de récits oraux.",
+      "Le 15 décembre 1967, le pont de Silver Bridge s'effondre sous le poids du trafic, faisant quarante-six morts.[1] Rien ne relie objectivement cet accident structurel aux apparitions précédentes, mais la coïncidence de calendrier et de lieu suffit à souder les deux événements dans la mémoire collective. L'écrivain John Keel scelle ce rapprochement en 1975 dans son livre The Mothman Prophecies, qui présente la créature comme un signe avant-coureur du désastre plutôt que comme son témoin fortuit.[1] Le cryptide devient alors moins un animal qu'un present hanté par un futur déjà advenu.",
+      "Des explications naturalistes accompagnent la légende depuis ses débuts : des grues du Canada, dont la taille approche celle d'un humain, ou des hiboux dont les yeux réfléchissent la lumière pourraient avoir nourri les premiers témoignages.[1] Cette hypothèse n'annule pas le récit, elle en éclaire la mécanique : un animal mal identifié, une obscurité totale et une actualité locale inquiète suffisent à faire naître une figure que la suite des événements achève de fixer."
+    ],
+    "anomalies": [
+      "Le Mothman ne possède aucun pouvoir stable d'une version à l'autre du récit : ni crachat, ni métamorphose, ni parole. Sa seule constante est le regard, ces yeux rouges rapportés par la quasi-totalité des témoins, et qui semblent porter à eux seuls toute la charge de menace de la créature.[1] Un être défini par un seul trait sensoriel plutôt que par un comportement reste, par construction, difficile à réfuter comme à confirmer.",
+      "La fonction de présage, elle, s'est ajoutée après coup. Aucun témoignage de 1966 n'annonce explicitement une catastrophe : c'est l'effondrement du pont, en 1967, qui reclasse rétrospectivement chaque apparition en avertissement manqué.[1] Le Mothman illustre ainsi un phénomène propre aux légendes modernes, où le sens d'un événement se construit après lui, par l'histoire qu'on lui adosse plus que par ce qu'il a réellement montré."
+    ],
+    "naturelle": {
+      "lead": "Faute de tradition ancienne à consulter, l'histoire naturelle du Mothman se limite aux témoignages de 1966-1967 et à leur réception culturelle ultérieure, sans qu'aucune source ne prétende à une biologie établie.",
+      "parts": [
+        {"title": "Comportement", "body": ["Les récits décrivent une créature qui observe plus qu'elle n'attaque : elle suit des véhicules la nuit, se tient immobile près d'un site industriel abandonné, puis s'évanouit dans l'obscurité.[1] Aucun témoignage ne rapporte de contact physique ou d'agression directe, ce qui distingue le Mothman des monstres dévorants du folklore ancien."]},
+        {"title": "Habitat", "body": ["Les apparitions se concentrent autour de Point Pleasant, en particulier près d'un ancien site de munitions de la Seconde Guerre mondiale à la lisière de la ville.[1] Ce paysage industriel désaffecté, ni tout à fait sauvage ni tout à fait habité, façonne durablement l'image que la légende s'est donnée d'elle-même."]},
+        {"title": "Alimentation", "body": ["Aucune source ne mentionne un régime alimentaire : le Mothman n'est jamais surpris en train de se nourrir, et cette absence participe de son caractère insaisissable plutôt que d'un trait biologique documenté."]},
+        {"title": "Intelligence", "body": ["Rien dans les témoignages ne prête au Mothman une intention communicable ou un langage. Sa présence est perçue comme un signe à interpréter plutôt que comme celle d'un être avec qui dialoguer, ce qui le rapproche des présages plus que des peuples surnaturels dotés d'une société propre."]},
+        {"title": "Reproduction", "body": ["Aucun récit ne suppose de descendance ou de cycle de vie : le Mothman apparaît comme une occurrence isolée, sans les indices de reproduction que suivent d'autres créatures cryptozoologiques."]},
+        {"title": "Prédateurs", "body": ["Aucun ennemi naturel n'est attesté. La créature n'est jamais montrée en position de proie, et la légende ne développe pas de rapport de prédation, à la différence des bestiaires où chaque être trouve sa place dans une chaîne de menaces réciproques."]}
+      ]
+    },
+    "reliques": [
+      "Point Pleasant a transformé l'apparition en patrimoine local plutôt qu'en objet enfoui : la ville organise un festival annuel dédié au Mothman, qui rassemble chaque année plusieurs milliers de visiteurs, et abrite une statue de plus de trois mètres ainsi qu'un musée consacré à l'événement.[1] La créature a également gagné des productions plus récentes, dont des jeux vidéo, prolongeant sous des formes nouvelles un récit né d'une rencontre nocturne au bord d'un pont."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Mothman — origine, témoignages de Point Pleasant et effondrement du Silver Bridge, Wikipédia", "url": "https://en.wikipedia.org/wiki/Mothman"}
+  ]
+}

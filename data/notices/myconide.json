@@ -1,0 +1,35 @@
+{
+  "description": "Sous les galeries humides de l'Outreterre, un peuple de chapeaux et de tiges se tient immobile jusqu'à ce qu'un nuage de spores porte sa pensée à quiconque veut bien la recevoir.",
+  "sections": {
+    "fascination": [
+      "Un champignon qui se dresse sur deux jambes et qui vous regarde reste, dans l'imaginaire du jeu de rôle, une des images les plus étranges du sous-sol. Le myconide mesure de soixante centimètres à plus de trois mètres selon les individus, sa peau prend des teintes de violet, de vert, de rouge, d'orange ou de gris, et un chapiteau en forme de couronne surmonte son crâne bombé.[1] Cette diversité de tailles et de couleurs au sein d'une même espèce évoque moins une race homogène qu'un jardin entier fait de personnes.",
+      "Ce qui distingue vraiment le myconide, c'est l'absence presque totale de bouche parlante dans son rapport aux autres. Il communique par des spores rapport qui établissent un lien télépathique à courte distance, et rassemble sa colonie lors de rituels de fusion où plusieurs individus partagent momentanément une même conscience.[1] Le langage humain, avec ses mots séparés et ses malentendus, cède ici la place à une communion presque organique, où penser ensemble précède le fait de se comprendre."
+    ],
+    "legendes": [
+      "Le myconide appartient au bestiaire des jeux de rôle contemporains et non à une tradition populaire ancienne : aucune mine médiévale ni récit paysan ne rapporte de peuple-champignon comparable avant son apparition dans les univers de fantasy de la fin du XXe siècle.[1] Son terrain d'élection, l'Outreterre, est lui-même une invention ludique, ce vaste réseau souterrain que d'autres peuples, comme les drows, se disputent par la violence pendant que les myconides cultivent leurs galeries en paix.",
+      "L'organisation sociale du myconide se construit en cercles, groupes pouvant réunir jusqu'à une vingtaine d'individus ou davantage, chacun spécialisé dans une tâche : culture, défense, exploration.[1] Un sovereign, généralement le plus grand représentant de la colonie, coordonne l'ensemble des cercles sans qu'aucun récit ne décrive cette autorité comme tyrannique. La fusion périodique entre membres d'un même cercle referme régulièrement les distances que le travail quotidien aurait pu creuser entre eux.",
+      "Le tempérament pacifique du myconide constitue un trait récurrent des descriptions : la créature se montre foncièrement non violente, cherchant des solutions harmonieuses aux conflits plutôt que l'affrontement.[1] Cette réputation ne l'empêche pas de disposer de moyens de défense redoutables, mais ceux-ci relèvent davantage de la dissuasion collective que de l'agression délibérée."
+    ],
+    "anomalies": [
+      "L'arsenal de spores du myconide dépasse la seule communication. Des spores de détresse alertent instantanément toute la colonie d'un danger, des spores hallucinatoires plongent un intrus dans de fausses perceptions incapacitantes, des spores pacifiantes neutralisent un agresseur sans le tuer, et des spores animatrices peuvent relever un cadavre en serviteur temporaire, actif de une à cinq semaines.[1] Cette gamme d'effets, obtenue par un seul organe biologique décliné en plusieurs usages, remplace chez le myconide l'arsenal d'armes et de sortilèges des peuples plus conventionnels.",
+      "La sensibilité à la lumière du jour introduit une fragilité inattendue chez un être par ailleurs redoutable sous terre : exposé au soleil, le myconide subit un désavantage sur ses attaques et sa perception.[1] Cette faiblesse ancre solidement la créature dans son milieu souterrain, contrairement à d'autres humanoïdes de l'Outreterre capables de s'aventurer sans trouble notable à la surface."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle du myconide se limite au portrait fixé par les jeux de rôle contemporains, qui décrivent une créature de type végétal organisée en colonies plutôt qu'en familles individuelles.",
+      "parts": [
+        {"title": "Comportement", "body": ["La créature privilégie l'immobilité et l'observation à l'agitation, se contentant souvent de rester en place au sein de son cercle jusqu'à ce qu'une menace ou une tâche précise requière son intervention.[1] Sa placidité de surface masque une coordination collective rapide, activée dès la diffusion de spores de détresse."]},
+        {"title": "Habitat", "body": ["Le myconide s'installe dans les galeries fraîches, sombres et humides de l'Outreterre, où il cultive de véritables bosquets de champignons géants, à la fois nourriture, matériau et décor de sa colonie.[1] Ce sont des conditions d'humidité et d'obscurité constantes, bien plus qu'un territoire défendu, qui définissent son milieu."]},
+        {"title": "Alimentation", "body": ["Les myconides entretiennent des cultures fongiques qu'ils exploitent pour leur subsistance, cultivant des espèces magiques et ordinaires au sein de leurs bosquets souterrains plutôt que de chasser ou de piller.[1]"]},
+        {"title": "Intelligence", "body": ["Loin de l'image d'une simple moisissure animée, le myconide est décrit comme une créature intelligente en quête d'une forme d'élévation spirituelle, réprouvant la violence par principe plutôt que par simple prudence.[1] La fusion télépathique périodique agit comme un exercice collectif de cette intelligence, où le savoir individuel rejoint temporairement celui du cercle entier."]},
+        {"title": "Reproduction", "body": ["Aucune description détaillée d'un cycle de reproduction sexué n'accompagne le myconide ; son renouvellement passe implicitement par la culture et la croissance de nouveaux individus au sein des bosquets de la colonie, sur le modèle végétal plutôt qu'animal."]},
+        {"title": "Prédateurs", "body": ["Les récits n'attribuent pas de prédateur attitré au myconide, dont les spores défensives suffisent en général à décourager les intrus de l'Outreterre. Le danger le plus documenté reste indirect : la lumière du soleil, seule condition capable d'affaiblir sensiblement la créature sur son propre terrain.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le myconide n'a pas d'objet-relique attesté comparable à une arme ou un bijou : sa mémoire matérielle tient plutôt dans les bosquets fongiques eux-mêmes, transmis de cercle en cercle et entretenus sur plusieurs générations.[1] Ces jardins souterrains, plus que n'importe quel artefact, portent la trace durable d'un peuple qui a choisi de cultiver plutôt que de conquérir."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Myconid — apparence, spores et société des cercles, Arcane Eye", "url": "https://arcaneeye.com/dnd-lore/myconids-the-mushroom-people-of-dnd/"}
+  ]
+}

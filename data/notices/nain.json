@@ -1,0 +1,38 @@
+{
+  "description": "Sorti de la chair d'un géant primordial, le nain porte dans son nom la mémoire d'un serment : celui de la pierre, de l'enclume et d'une dette qu'aucun siècle n'efface.",
+  "sections": {
+    "fascination": [
+      "Selon la Völuspá, les nains furent d'abord tirés de la terre elle-même ; l'Edda en prose va plus loin et les fait naître comme des vers dans la chair d'Ymir, le géant dont le corps démembré devint le monde.[1] Naître d'un cadavre cosmique n'est pas un détail pittoresque : cela ancre le nain dans la matière la plus dense qui soit, celle dont sont faites les montagnes elles-mêmes. Il n'habite pas la terre comme on habite une maison ; il en est, littéralement, un débris animé.",
+      "Le nain moderne, popularisé par Tolkien puis par les jeux de rôle, garde de cette origine une allégeance indéfectible à la roche, mais déplace le merveilleux vers l'atelier plutôt que vers la cosmogonie.[1][2] Barbe tressée, hache de guerre, clan et serment tiennent lieu désormais de mythe des origines. Le regard s'attarde sur une pièce d'armure martelée plutôt que sur la dépouille d'un géant ; le prodige s'est fait artisanal sans perdre sa gravité."
+    ],
+    "legendes": [
+      "Les sources norroises attribuent aux nains la fabrication des trésors les plus précieux des dieux : le marteau Mjöllnir, l'anneau Draupnir, le sanglier Gullinbursti, la lance Gungnir.[1] Ils brassent également l'hydromel de poésie à partir du sang de Kvasir, faisant d'eux les auteurs indirects de l'inspiration poétique elle-même. Le forgeron nain ne se contente donc pas de produire des objets utiles : il façonne les instruments du pouvoir divin et jusqu'à la parole inspirée.",
+      "L'Edda en prose associe les nains aux Svartálfar, les « elfes noirs » du Svartálfaheim, brouillant la frontière entre nain et elfe sombre dans l'imaginaire scandinave.[1] Les récits les plus anciens ne les décrivent pas comme particulièrement petits ; c'est la littérature des sagas, puis la tradition populaire, qui accentue peu à peu leur stature réduite. La petite taille n'est donc pas un trait originel mais une sédimentation tardive.",
+      "Tolkien fixe le modèle contemporain dans Bilbo le Hobbit et Le Seigneur des Anneaux, popularisant au passage le pluriel « dwarves », qu'il reconnaissait lui-même comme un écart grammatical assumé.[1] La plupart des fictions de fantasy qui suivent distinguent nettement le nain de l'elfe sur ce modèle. Les jeux de rôle modernes, dont Donjons et Dragons, en héritent une figure de clan montagnard, artisan et rancunier, aux traditions bien plus détaillées que celles des sagas d'origine.[2]"
+    ],
+    "anomalies": [
+      "L'écart le plus frappant tient à la genèse elle-même : un peuple né de la chair d'un cadavre géant devient, dans la fantasy moderne, une société de clans avec forgerons, rois sous la montagne et lignées héréditaires.[1][2] La cosmogonie s'est effacée derrière la généalogie. On ne demande plus d'où vient le premier nain, mais de quel clan descend celui qu'on rencontre.",
+      "La vision dans le noir, telle que la règle la codifie, ne restitue que des nuances de gris : une pierre précieuse s'y devine à sa forme, non à sa couleur.[2] Ce résidu de l'ancienne familiarité avec l'obscurité souterraine s'est mué en simple capacité sensorielle, débarrassée de tout mystère cosmogonique.",
+      "La résistance nainre au poison, sa maîtrise martiale des armes d'estoc lourdes et sa dextérité artisanale forment un faisceau de traits bien plus systématique que ce que rapportent les sources norroises, où le nain se définit surtout par son habileté à forger plutôt que par un catalogue de résistances.[1][2] Le folklore ancien insistait sur le geste du forgeron ; le jeu moderne insiste sur la fiche de personnage."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle du nain oppose la genèse cosmogonique des sources norroises à la société de clans que dessine la fantasy de jeu de rôle, ici restituée dans sa version classique.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le nain de tradition ludique est décrit comme tenace jusqu'à l'entêtement, fier de son travail et lent à pardonner une offense faite à son clan.[2] Le folklore norrois retient surtout l'habileté du forgeron, capable de produire en une nuit des merveilles que nul autre artisan ne saurait égaler.[1] Dans les deux cas, la valeur du nain se mesure à l'ouvrage accompli plutôt qu'aux paroles échangées."]},
+        {"title": "Habitat", "body": ["Montagnes, salles souterraines et galeries de mine forment le cadre constant du nain, depuis le Svartálfaheim des Eddas jusqu'aux cités sous la montagne du jeu de rôle moderne.[1][2] La pierre n'est jamais un obstacle mais un matériau à habiter, creuser et sculpter en demeure durable."]},
+        {"title": "Alimentation", "body": ["Les sources anciennes ne détaillent guère l'alimentation des nains ; la tradition ludique leur prête un goût prononcé pour la bière brassée et les mets robustes des tables de clan, cohérent avec leur maîtrise reconnue de l'art du brassage.[2]"]},
+        {"title": "Intelligence", "body": ["Le nain conjugue mémoire et technique : il retient les offenses comme il retient les procédés de forge, transmis de génération en génération au sein du clan.[1][2] Cette mémoire à double tranchant explique aussi bien la fidélité aux serments anciens que la persistance des rancunes séculaires envers d'autres peuples."]},
+        {"title": "Reproduction", "body": ["Le jeu de rôle moderne organise la vie nainre en clans où la lignée et le nom de famille priment sur l'individu ; la maturité s'atteint après l'adolescence humaine, mais la longévité dépasse largement un siècle.[2] Les sources norroises restent silencieuses sur ce point, plus intéressées par la fabrication des nains que par leur descendance."]},
+        {"title": "Prédateurs", "body": ["Aucune bête attitrée ne menace universellement le nain ; ses ennemis relèvent plutôt de rivalités de peuples, notamment avec certains elfes ou géants selon les traditions, et de la convoitise que suscitent ses trésors forgés.[1][2] La citadelle taillée dans la roche demeure sa meilleure défense."]}
+      ]
+    },
+    "reliques": [
+      "Le marteau de Thor, l'anneau qui se multiplie chaque neuvième nuit, le sanglier aux soies d'or : ces objets nordiques les plus célèbres portent tous la marque d'un forgeron nain resté anonyme dans le récit qui les célèbre.[1] L'objet survit à l'artisan, et c'est peut-être la relique la plus fidèle à l'esprit du peuple qui l'a façonné.",
+      "La figure du nain barbu, hache au poing, gardien d'une salle sous la montagne, doit l'essentiel de sa diffusion contemporaine à Tolkien puis aux jeux de rôle qui ont systématisé traits, clans et sous-espèces.[1][2] Le lecteur d'aujourd'hui hérite ainsi de deux nains superposés : celui qui forgea les armes des dieux, et celui qui les collectionne."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Dwarf (mythology) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Dwarf_(mythology)"},
+    {"id": 2, "title": "D&D Beyond — Dwarf, espèce et règles de base (2014)", "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/races"}
+  ]
+}

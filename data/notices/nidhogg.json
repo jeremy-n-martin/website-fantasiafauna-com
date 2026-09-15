@@ -1,0 +1,36 @@
+{
+  "description": "Sous les racines du Frêne du monde, un rongement ne s'arrête jamais : Nidhogg ne construit rien, il use, et c'est cette patience négative qui en fait l'une des figures les plus sombres du cosmos nordique.",
+  "sections": {
+    "fascination": [
+      "Ce qui frappe d'abord chez Nidhogg, c'est l'absence de progrès dans son activité. Le dragon ne conquiert pas de territoire, ne poursuit pas de proie fuyante : il ronge, sous Yggdrasil, une racine qui semble se régénérer sans fin pour continuer de nourrir sa morsure.[1] Le cosmos nordique loge ainsi, tout en bas de son arbre-monde, une force d'usure permanente, comme si l'univers entier tenait en équilibre grâce à une blessure jamais refermée.",
+      "L'étymologie même du nom reste disputée par les spécialistes, et cette incertitude ajoute à l'inquiétude qu'il inspire. Le suffixe -hǫggr signifie clairement frappeur ou mordeur, mais le préfixe niðr pourrait désigner ce qui est en bas, tandis que níð évoquerait plutôt l'infamie et le déshonneur.[1] Nidhogg serait alors soit le Mordeur d'en bas, soit le Mordeur de l'infamie qui dévore les cadavres des parjures et des assassins — deux lectures qui, loin de s'exclure, superposent la profondeur géographique et la profondeur morale d'un seul et même monstre."
+    ],
+    "legendes": [
+      "Les sources principales qui le mentionnent, l'Edda poétique et l'Edda en prose de Snorri Sturluson, l'associent d'abord aux morts de Hel et du Niflheim, ces royaumes froids où séjournent ceux qui n'ont pas connu de mort glorieuse.[1] Nidhogg n'est donc pas seulement un ver rongeur de bois : il partage sa demeure avec les damnés et se nourrit, selon certains passages, des cadavres qui lui échoient dans ces bas-fonds cosmiques.",
+      "Sa relation la plus curieuse reste celle qu'il entretient, par l'intermédiaire d'un écureuil nommé Ratatosk, avec l'aigle perché tout en haut d'Yggdrasil.[1] Ratatosk fait la navette le long du tronc pour colporter les insultes échangées entre les deux extrémités de l'arbre, entretenant ainsi une tension permanente entre le sommet et la racine. Ce dispositif donne au monde nordique une architecture verticale traversée de rivalité, où même la médisance trouve sa place officielle dans l'ordre cosmique.",
+      "Au moment du Ragnarök, Nidhogg quitte enfin sa position immobile. Le Völuspá de l'Edda poétique décrit un dragon sombre qui s'envole, portant des cadavres entre ses ailes, scène que les commentateurs lisent tantôt comme un signe supplémentaire de la fin du monde, tantôt comme une note d'espoir ambiguë selon les versions du poème.[1] Cette sortie de la racine vers le ciel referme le cycle : celui qui rongeait la base du monde en devient, l'instant d'un vol, l'image même de son achèvement."
+    ],
+    "anomalies": [
+      "Il est tentant de réduire Nidhogg à un simple ver géant, mais les sources le nomment dragon ou serpent selon les passages, sans jamais totalement trancher sa morphologie.[1] Cette imprécision volontaire, loin d'être une lacune, correspond bien à un être dont la fonction — ronger sans fin une racine invisible — importe davantage que l'apparence exacte.",
+      "La cohabitation de Nidhogg avec les cadavres des damnés ne doit pas non plus être confondue avec un simple charognard : les textes suggèrent une dimension punitive, liée au déshonneur, qui distingue son appétit de celui d'une bête purement carnivore.[1] Manger les morts infâmes revient, dans cette logique, à prolonger leur peine plutôt qu'à simplement les faire disparaître."
+    ],
+    "naturelle": {
+      "lead": "Nidhogg appartient à une cosmologie plus qu'à une zoologie : sa nature se définit par sa position sous l'arbre-monde et par les relations verticales qu'il entretient avec le reste d'Yggdrasil.",
+      "parts": [
+        {"title": "Comportement", "body": ["Un rongement continu, sans relâche ni progression visible, occupe l'essentiel de son activité rapportée par les Eddas.[1] Ce comportement répétitif, presque rituel, ne s'interrompt qu'au moment du Ragnarök, lorsque le dragon quitte enfin les racines pour prendre son envol."]},
+        {"title": "Habitat", "body": ["Les profondeurs d'Yggdrasil, dans les régions froides du Niflheim associées aux morts, constituent son territoire.[1] Cette localisation tout en bas de l'arbre-monde l'oppose structurellement à l'aigle qui occupe la cime, dessinant un axe vertical entre les deux figures."]},
+        {"title": "Alimentation", "body": ["Les racines du frêne cosmique nourrissent d'abord sa morsure, mais les textes lui prêtent aussi la consommation des cadavres des damnés envoyés au Niflheim, en particulier ceux coupables de crimes déshonorants.[1]"]},
+        {"title": "Intelligence", "body": ["Aucune ruse particulière ne lui est attribuée : sa force tient à la constance plutôt qu'à la stratégie. La relation qu'il entretient avec l'aigle passe d'ailleurs par un intermédiaire, l'écureuil Ratatosk, plutôt que par un échange direct, comme si Nidhogg préférait l'hostilité entretenue à la confrontation ouverte.[1]"]},
+        {"title": "Reproduction", "body": ["Aucune source ne mentionne de descendance ou de compagne pour Nidhogg : il apparaît comme une figure unique, sans lignée, attachée à un lieu plutôt qu'à une famille."]},
+        {"title": "Prédateurs", "body": ["Aucun adversaire ne le menace directement dans les Eddas ; sa position tout en bas du monde, parmi les morts, le place hors de portée des dangers ordinaires, jusqu'au bouleversement final du Ragnarök."]}
+      ]
+    },
+    "reliques": [
+      "Le nom de Nidhogg survit surtout par la persistance de l'image cosmologique nordique : un arbre-monde miné par sa base autant que menacé par son sommet, figure reprise depuis dans d'innombrables adaptations modernes de la mythologie scandinave.",
+      "L'ambiguïté de son envol final au Ragnarök continue d'alimenter les lectures divergentes des spécialistes de l'Edda poétique, certains y voyant un ultime signe de destruction, d'autres une note discrète de continuité par-delà la fin du monde.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Níðhöggr — Norse mythology dragon, Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/N%C3%ADðh%C3%B6ggr"}
+  ]
+}

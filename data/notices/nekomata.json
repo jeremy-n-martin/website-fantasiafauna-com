@@ -1,0 +1,37 @@
+{
+  "description": "Un chat ordinaire vieillit, et un jour sa queue se fend en deux : le nekomata commence là où s'arrête la docilité familière du foyer.",
+  "sections": {
+    "fascination": [
+      "Un texte ancien résume le prodige en une phrase : un chat âgé de plusieurs années en vient à posséder deux queues et devient le yokai appelé nekomata.[1] Rien dans l'apparence du chaton ne laisse deviner ce destin ; c'est la seule durée, l'accumulation des années dans la maison, qui produit la métamorphose. Le merveilleux tient à cette lenteur : nul rituel, nul contact magique soudain, seulement le temps qui travaille une bête familière jusqu'à la faire basculer hors de sa nature.",
+      "Le nekomata se distingue nettement du bakeneko, autre chat surnaturel du folklore japonais, par ce nombre de queues : une seule pour le bakeneko, deux pour le nekomata, le terme mata désignant vraisemblablement cette bifurcation, bien que d'autres étymologies soient débattues par les folkloristes.[1] Cette distinction n'est pas un détail savant : elle organise toute une hiérarchie de dangerosité, le nekomata étant réputé nettement plus redoutable que son cousin à queue simple."
+    ],
+    "legendes": [
+      "Certains chercheurs rattachent la légende du nekomata aux récits chinois du xiānlí, des chats-léopards qui acquièrent un pouvoir spirituel divin en vieillissant, suggérant une circulation continentale de ce motif du fauve domestique transfiguré par l'âge.[1] Le folklore japonais aurait ainsi hérité, puis profondément réélaboré, une intuition venue d'ailleurs sur le pouvoir caché des bêtes trop longtemps observées.",
+      "Deux traditions géographiques coexistent. Les nekomata de montagne habitent des sommets isolés, tel le mont Nekomata dans la préfecture de Toyama, et atteignent, selon les récits, une taille comparable à celle d'un lion ou d'un léopard.[1] Les nekomata domestiques, eux, proviennent de chats de maison devenus trop vieux, ce qui explique une croyance populaire déconseillant de garder un chat trop longtemps sous le même toit. Le même nom recouvre ainsi une bête de légende montagnarde et une menace tapie au coin du foyer.",
+      "Contrairement au bakeneko, plus espiègle, le nekomata est décrit comme considérablement plus malveillant : on lui prête des pouvoirs nécromantiques, la capacité de faire danser des cadavres ranimés par ses soins, ainsi que le don de se métamorphoser en forme humaine, le plus souvent celle d'une vieille femme, pour hanter les vivants avec l'apparence de parents disparus.[1] Des feux inexpliqués et des phénomènes étranges accompagnent traditionnellement sa présence."
+    ],
+    "anomalies": [
+      "La confusion la plus fréquente consiste à prendre le nekomata pour un simple synonyme de bakeneko ; les sources folkloriques insistent au contraire sur une distinction stricte, fondée sur le nombre de queues et sur un degré de malveillance très supérieur chez le nekomata.[1] Traiter les deux créatures comme interchangeables efface une hiérarchie que les conteurs japonais tenaient pour essentielle.",
+      "L'écart de taille entre nekomata de montagne, gigantesques, et nekomata domestiques, de stature féline ordinaire malgré leurs pouvoirs, ne s'explique par aucune règle unique : les deux lignées partagent le nom et certains pouvoirs, mais non l'échelle corporelle.[1] Le lecteur moderne, habitué à des catégories nettes, doit accepter que le folklore ancien tolère cette variabilité sans la résoudre.",
+      "La capacité de manipuler les cadavres, souvent associée au nekomata, ne relève pas d'une nécromancie savante comme celle des grimoires occidentaux, mais d'une danse rituelle propre au folklore japonais, un mode d'action qui n'a pas d'équivalent direct dans les traditions nécromantiques européennes.[1]"
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle du nekomata distingue la variété domestique, issue d'un chat de maison vieilli, de la variété montagnarde, gigantesque et sauvage, toutes deux attestées par le folklore japonais.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le nekomata domestique conserve d'abord les habitudes du chat qu'il fut, avant de manifester une malveillance croissante envers ses anciens maîtres, allant jusqu'à provoquer des morts suspectes attribuées à sa vengeance.[1] Le nekomata de montagne se montre plus ouvertement prédateur, profitant de son isolement pour ne répondre d'aucune retenue domestique."]},
+        {"title": "Habitat", "body": ["Maisons, toits et temples abritent le nekomata domestique, resté proche des lieux qu'il fréquentait avant sa transformation.[1] Les sommets isolés, tel le mont Nekomata de Toyama, accueillent la variété montagnarde, à l'écart de toute présence humaine régulière."]},
+        {"title": "Alimentation", "body": ["Aucune source ne détaille un régime alimentaire propre au nekomata au-delà de celui d'un chat ordinaire ; son pouvoir s'exerce moins par prédation nourricière que par manipulation des morts et des apparences.[1]"]},
+        {"title": "Intelligence", "body": ["Le nekomata acquiert, avec l'âge, une intelligence et une parole que le chat commun ne possède pas, ainsi qu'un art de la métamorphose lui permettant de prendre forme humaine, le plus souvent celle d'une vieille femme.[1] Cette intelligence tardive contraste avec l'innocence supposée du chaton dont il est pourtant issu."]},
+        {"title": "Reproduction", "body": ["Le nekomata ne naît pas nekomata : il le devient, par le seul effet du grand âge d'un chat ordinaire, domestique ou sauvage.[1] Il n'existe donc pas de reproduction propre à l'espèce, seulement une transformation individuelle et tardive."]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur naturel n'est attribué au nekomata dans les sources consultées ; sa dangerosité et ses pouvoirs surnaturels le placent au contraire du côté des menaces pour les humains plutôt que des proies.[1]"]}
+      ]
+    },
+    "reliques": [
+      "La croyance populaire déconseillant de garder un chat trop longtemps constitue peut-être la relique la plus vivante du nekomata : une prudence domestique ordinaire, née d'une peur ancienne que la queue d'un compagnon familier ne se dédouble un jour.[1]",
+      "Le mont Nekomata de la préfecture de Toyama porte le nom de la créature jusque dans la géographie contemporaine, preuve que certains lieux gardent la mémoire d'un bestiaire que plus personne ne rencontre, mais que chacun peut encore nommer.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Nekomata — Wikipedia", "url": "https://en.wikipedia.org/wiki/Nekomata"}
+  ]
+}

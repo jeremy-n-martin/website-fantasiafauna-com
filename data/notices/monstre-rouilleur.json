@@ -1,0 +1,36 @@
+{
+  "description": "Un jouet en plastique bon marché, une ressemblance de langouste à hélice, et voilà comment naît une des créatures les plus redoutées des armureries de donjon.",
+  "sections": {
+    "fascination": [
+      "Le monstre rouilleur n'inspire pas la peur d'être dévoré, mais celle d'être désarmé. Son toucher — ou le contact de ses antennes — corrode le fer, transformant en quelques instants une épée fièrement forgée en une poussière rouge inutile.[1] La menace qu'il porte est ainsi entièrement décalée : ce n'est pas la vie du combattant qui est en jeu dans l'immédiat, mais son équipement, ce sur quoi repose toute sa stratégie. Un guerrier privé de sa lame et de son armure redevient soudain aussi vulnérable qu'un être ordinaire, et c'est cette inversion des rapports de force qui donne au monstre rouilleur son originalité durable.",
+      "L'anecdote de sa création ajoute à son charme une touche presque burlesque. Gary Gygax, cherchant des créatures inédites pour ses jeux de guerre du début des années 1970, trouve son inspiration dans un sachet de figurines en plastique bon marché, fabriquées à Hong Kong et vendues comme animaux préhistoriques dans un bazar.[1] Ces jouets s'inspiraient en réalité des kaiju du cinéma japonais, dans la veine d'Ultraman ou de Godzilla. L'une des figurines représentait, selon les mots mêmes de Gygax, « une langouste avec une hélice sur la queue » ; incapable de lui imaginer des capacités de combat traditionnelles, il eut alors l'intuition qui allait faire sa fortune ludique : plutôt que de dévorer la chair, la créature dévorerait le métal.[1]"
+    ],
+    "legendes": [
+      "Le monstre rouilleur fait ses débuts dans Dungeons and Dragons Supplement I: Greyhawk, publié en 1975, et n'a depuis manqué aucune édition majeure du jeu.[1] Sa popularité tient moins à sa dangerosité brute qu'à la façon dont il oblige les joueurs à repenser leur approche : face à lui, la ruse et la fuite valent mieux que l'affrontement frontal, puisque l'insecte possède un odorat extraordinaire pour détecter le métal et une vitesse suffisante pour rattraper des aventuriers en déroute.[1]",
+      "Son apparence a beaucoup évolué au fil des éditions. Les premières illustrations lui donnent l'allure d'une tique cuirassée, à quatre pattes, pourvue d'antennes et d'une queue en forme de pagaie ; les versions plus récentes le rapprochent d'un insecte, évoquant une éphémère géante et dépourvue d'ailes, aux pattes articulées et barbelées.[1] Ce glissement visuel n'a jamais touché à son trait fondamental : la corrosion du fer par contact, qui reste le cœur de son identité depuis la première édition jusqu'à aujourd'hui.[1]"
+    ],
+    "anomalies": [
+      "Le monstre rouilleur ne relève d'aucune tradition folklorique attestée : il naît entièrement dans l'atelier créatif d'un concepteur de jeu, à partir d'un jouet détourné de sa fonction d'origine.[1] Il faut se garder d'y chercher une créature ancienne réinterprétée ; son histoire commence au contraire au XXe siècle, dans un magasin de curiosités en plastique plutôt que dans un bestiaire médiéval.",
+      "Son mécanisme de corrosion pose aussi une question d'échelle rarement résolue par les récits qui le mettent en scène : un contact bref suffit à ruiner en quelques instants une pièce de métal qui a demandé des semaines de forge. Cette disproportion, loin d'être un défaut, constitue l'essentiel de son intérêt ludique — elle transforme un combat en dilemme, puisque dégainer une arme prisée revient à l'offrir en pâture.[1]",
+      "Le monstre rouilleur mérite enfin d'être distingué des prédateurs de fantasy qui tirent leur force de la taille ou de la magie. Sa dangerosité ne vient ni de sa puissance brute ni d'un quelconque pouvoir arcanique, mais d'une seule capacité très spécialisée, ce qui en fait une créature presque unique dans son économie de moyens.[1]"
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle retient ici le monstre rouilleur tel que le documentent les éditions successives du jeu de rôle qui l'a inventé, en l'absence de toute source folklorique antérieure.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le monstre rouilleur ne cherche pas le combat pour lui-même : il traque le métal, guidé par un odorat exceptionnel, et fuit ou poursuit selon que sa proie porte ou non des objets ferreux à sa portée.[1] Sa vitesse le rend redoutable non par l'attaque, mais par l'impossibilité d'échapper à sa poursuite une fois qu'il a repéré une cible intéressante."]},
+        {"title": "Habitat", "body": ["Donjons, arsenaux et caves forment son terrain de prédilection — des lieux où le métal abandonné ou entreposé abonde, offrant une source de nourriture constante. Cette préférence pour les espaces clos et riches en ferraille explique sa réputation de fléau des couloirs de donjon plus que des grands espaces naturels."]},
+        {"title": "Alimentation", "body": ["Le monstre rouilleur se nourrit du fer qu'il vient de corroder, absorbant la rouille produite par son propre toucher ou le contact de ses antennes.[1] Cette alimentation très spécialisée le rend indifférent aux matériaux non ferreux, ce qui laisse aux aventuriers avisés la ressource de désarmer eux-mêmes leur équipement métallique avant de l'affronter."]},
+        {"title": "Intelligence", "body": ["Aucune source ne lui prête une intelligence développée : son comportement reste celui d'un prédateur guidé par l'instinct et l'odorat, sans stratégie élaborée au-delà de la traque du métal et de la fuite ou de la poursuite selon les circonstances.[1]"]},
+        {"title": "Reproduction", "body": ["Les sources consultées ne documentent aucun mode de reproduction propre au monstre rouilleur ; sa fiche de créature, à travers les éditions, se concentre sur ses capacités de corrosion et de détection plutôt que sur son cycle de vie.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur spécifique n'est associé au monstre rouilleur dans les sources ; sa principale vulnérabilité reste stratégique plutôt que biologique, puisque des aventuriers avertis apprennent à le combattre à distance ou à protéger leur équipement plutôt qu'à l'affronter au corps à corps.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le jouet en plastique qui a inspiré Gygax reste l'objet fondateur de cette créature : une figurine bon marché, fabriquée sans intention mythologique, devenue malgré elle l'ancêtre d'un des monstres les plus reconnaissables du jeu de rôle.[1] Peu de créatures de fantasy peuvent revendiquer une origine aussi modeste et aussi précisément documentée.",
+      "La rouille elle-même, résidu de son passage, fonctionne comme la seule relique tangible qu'il laisse derrière lui : une poussière rougeâtre à l'endroit exact où se tenait, quelques instants plus tôt, une arme ou une armure intacte.[1] Ce résidu est moins un trésor qu'un avertissement, la trace visible d'un danger qui a déjà fait son œuvre."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Rust monster — origine, mécanique et histoire du jeu, Wikipédia", "url": "https://en.wikipedia.org/wiki/Rust_monster"}
+  ]
+}

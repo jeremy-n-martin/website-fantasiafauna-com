@@ -1,0 +1,38 @@
+{
+  "description": "Le nécromancien refuse aux morts le droit de se taire : depuis Homère jusqu'aux grimoires médiévaux, il interroge les défunts pour arracher au silence un savoir que les vivants n'ont pas.",
+  "sections": {
+    "fascination": [
+      "La nécromancie se définit comme la pratique consistant à communiquer avec les morts en évoquant leurs esprits sous forme d'apparitions ou de visions, à des fins de divination.[1] Le mot lui-même, du grec désignant le cadavre et la divination, annonce ce programme : faire parler un corps qui ne devrait plus rien avoir à dire. Le prodige ne réside pas dans la résurrection du défunt, mais dans l'instant fragile où sa voix traverse encore le silence de la tombe.",
+      "Le plus ancien récit connu de cette pratique figure dans l'Odyssée, où Ulysse descend aux Enfers consulter les ombres des trépassés sur l'avenir de son voyage.[1] Ce geste inaugural fixe une règle qui traversera les siècles : on ne réveille pas les morts par curiosité gratuite, mais pour obtenir une réponse que nul vivant ne détient. Le nécromancien homérique n'est encore ni sorcier ni hérétique ; il est un voyageur en quête d'orientation, prêt à payer le prix d'une visite au royaume d'Hadès."
+    ],
+    "legendes": [
+      "Des praticiens de la nécromancie sont attestés en Égypte, à Babylone, en Grèce, à Rome et en Chine, tous partageant la conviction que les morts détiennent une connaissance des choses cachées et des événements à venir.[1] Cette universalité géographique suggère moins une doctrine unique qu'une intuition largement partagée : la mort déplace le savoir plutôt que de l'anéantir, et ceux qui l'ont franchie voient ce que les vivants ignorent encore.",
+      "Le Moyen Âge produit des textes plus systématiques, dont le Manuel de magie démoniaque de Munich, qui documente des procédures nécromantiques précises.[1] Les spécialistes y voient une synthèse entre magie astrologique arabe et pratiques d'exorcisme chrétien, un hybride rituel mêlant langage biblique et invocations démoniaques destiné à contourner les interdits ecclésiastiques. Le nécromancien médiéval se présente ainsi en marge du clergé, empruntant ses formules tout en les détournant.",
+      "Les rituels décrits impliquent typiquement un cercle magique tracé au sol ou sur parchemin pour se protéger, des conjurations mêlant mots spéciaux et prières chrétiennes, des offrandes allant de simples objets à des chairs animales, l'usage de plantes de la famille des solanacées aux effets hallucinogènes, et un cadre nocturne, souvent au cimetière, ciblant de préférence des morts récents.[1] Chaque élément du dispositif vise à créer les conditions d'un passage : ni tout à fait le monde des vivants, ni encore celui des morts.",
+      "La fantasy moderne et le jeu de rôle ont largement redéployé la figure : dans les univers comme Donjons et Dragons ou dans nombre de jeux vidéo, la nécromancie se associe désormais surtout à la réanimation de cadavres employés comme armes, ainsi que le montre la classe de nécromancien de la série Diablo.[1] Le savoir divinatoire des origines s'est déplacé vers un pouvoir de commandement sur la chair morte elle-même."
+    ],
+    "anomalies": [
+      "L'écart le plus net sépare la nécromancie antique, tournée vers la consultation et la divination, de la nécromancie de fantasy, tournée vers la fabrication d'une armée de morts-vivants obéissants.[1] Ulysse interrogeait des ombres qui restaient libres de repartir aux Enfers ; le nécromancien de jeu commande des cadavres qui ne repartent nulle part.",
+      "Les grimoires médiévaux, en mêlant prières chrétiennes et invocations démoniaques, produisent une pratique volontairement ambiguë, ni tout à fait licite ni entièrement condamnable selon ses propres termes.[1] Cette hybridation calculée contraste avec l'image univoque du sorcier maléfique que retiennent aujourd'hui la plupart des fictions populaires.",
+      "L'usage de plantes hallucinogènes dans les rituels historiques suggère que l'apparition du mort devait autant à la chimie végétale qu'à l'invocation elle-même, un aspect presque entièrement absent des nécromanciens de fantasy, dont les pouvoirs relèvent d'une magie sans médiation chimique.[1]"
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle du nécromancien distingue le praticien historique, divinateur et rituel, de la figure du jeu de rôle moderne, davantage définie par la maîtrise d'une école de magie du contrôle des morts.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le nécromancien historique agit par nécessité plutôt que par malice : il cherche une réponse précise, souvent liée à un danger ou une décision à venir, et respecte un protocole strict de protection rituelle.[1] Le nécromancien de fantasy, lui, poursuit plus volontiers l'accumulation de pouvoir et de serviteurs, la réanimation devenant une fin en soi."]},
+        {"title": "Habitat", "body": ["Cimetières, champs de bataille récents et lieux de sépulture concentrent la pratique historique, qui exige la proximité d'un mort dont l'esprit n'est pas encore dissipé.[1] Les cryptes et tours isolées peuplent plutôt l'imaginaire de fantasy, où le nécromancien s'entoure de ses propres créations."]},
+        {"title": "Alimentation", "body": ["Les sources historiques ne documentent pas de régime particulier ; les offrandes sacrificielles décrites dans les rituels visent le mort convoqué et non la subsistance du nécromancien lui-même.[1]"]},
+        {"title": "Intelligence", "body": ["La pratique suppose une connaissance livresque considérable : langues sacrées, formules précises, conjonctions astrologiques favorables, comme en témoignent des manuels tels que celui de Munich.[1] Le nécromancien de fantasy hérite de cette érudition sous la forme d'une école de magie codifiée, transmissible par l'étude plutôt que par le seul rituel oral."]},
+        {"title": "Reproduction", "body": ["Aucune tradition, ancienne ou moderne, ne prête au nécromancien une reproduction propre à son état : il s'agit d'un statut acquis par l'étude ou l'initiation, non d'une lignée héréditaire.[1]"]},
+        {"title": "Prédateurs", "body": ["Le nécromancien historique s'expose surtout à la répression ecclésiastique et judiciaire, la pratique ayant longtemps été assimilée à un crime spirituel.[1] Dans la fantasy, ses adversaires sont plutôt les héros chargés de mettre fin à ses légions de morts-vivants."]}
+      ]
+    },
+    "reliques": [
+      "Le Manuel de magie démoniaque de Munich demeure la relique la plus tangible de cette tradition : un texte matériel qui superpose prière chrétienne et invocation interdite, preuve que la frontière entre licite et illicite fut, en son temps, activement négociée plutôt que donnée d'avance.[1]",
+      "De l'Odyssée à Diablo, l'objet qui subsiste n'est pas un artefact mais un geste : interroger la mort plutôt que la fuir. Ce geste, transmis de culture en culture, explique la remarquable stabilité de la figure malgré des siècles de réinterprétation.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Necromancy — Wikipedia", "url": "https://en.wikipedia.org/wiki/Necromancy"}
+  ]
+}

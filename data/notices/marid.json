@@ -1,0 +1,38 @@
+{
+  "description": "Un djinn rebelle, plus proche de l'eau et des profondeurs que de la ruse : le marid porte, dans son nom même, l'idée d'insoumission plutôt que celle d'un empire sur les mers.",
+  "sections": {
+    "fascination": [
+      "Le mot marid signifie rebelle en arabe, et cette étymologie suffit presque à dessiner le personnage : une entité qui n'obéit pas volontiers, qui résiste avant de se soumettre, à la différence d'esprits plus dociles du panthéon islamique des djinns.[1] Ce n'est pas la ruse qui définit d'abord le marid, mais une forme d'insolence têtue, une puissance qui préfère s'opposer plutôt que manœuvrer dans l'ombre.",
+      "Sa place dans la hiérarchie des shayatin — les diables de la tradition islamique — est précisément située : plus malveillant qu'un simple shaytan ordinaire, mais moins redoutable qu'un ifrit.[1] Le marid occupe ainsi un rang intermédiaire, ni piétaille démoniaque ni seigneur incontesté, ce qui en fait une figure paradoxalement plus proche de l'humain par ses failles que les puissances qui le surpassent."
+    ],
+    "legendes": [
+      "La tradition l'identifie parfois aux *devân* de la mythologie perse, signe d'un dialogue ancien entre les démonologies arabe et iranienne, qui se sont mutuellement prêté leurs figures de rébellion et de puissance obscure.[1] Cette parenté transculturelle rappelle que les djinns, loin d'appartenir à un seul corpus fixe, se sont constitués par emprunts successifs entre plusieurs civilisations voisines.",
+      "Dans les *Mille et Une Nuits*, l'édition MacNaghten emploie les mots marid et ifrit de façon presque interchangeable — ainsi dans le conte du Pêcheur — ce qui suggère que les conteurs eux-mêmes ne maintenaient pas toujours une frontière stricte entre ces catégories de djinns.[1] Le marid y apparaît donc moins comme une espèce nettement définie que comme un rôle narratif : celui de la puissance colossale et dangereuse qu'un mortel rusé parvient, contre toute attente, à circonvenir.",
+      "Un trait distingue pourtant le marid de l'ifrit dans la tradition qui les sépare : là où l'ifrit est décrit comme rusé, traître et fourbe, le marid se montre moins habile intellectuellement, et donc plus susceptible d'être manipulé par un humain déterminé.[1] Cette vulnérabilité relative au calcul, contrastant avec sa force brute, explique sans doute pourquoi tant de récits populaires mettent en scène des humains qui déjouent un marid là où ils échoueraient face à un ifrit.",
+      "L'association du marid à la mer, si présente dans l'imaginaire contemporain, ne trouve pas de fondement direct dans la tradition islamique documentée : les sources qui en établissent la généalogie ne mentionnent aucun lien particulier avec les océans, les tempêtes ou les eaux profondes.[1] Cette association est une élaboration plus tardive, largement due à la fantasy de jeu de rôle du XXe siècle, qui a réparti les grandes classes de génies entre les quatre éléments — le djinn à l'air, l'efrit au feu, le dao à la terre et le marid, précisément, à l'eau — construisant ainsi une taxonomie élémentaire absente du corpus arabe originel.[1]"
+    ],
+    "anomalies": [
+      "La principale anomalie du marid tient à l'écart entre sa réputation moderne et sa description traditionnelle : présenté aujourd'hui comme le plus puissant des génies marins, il figure dans les sources anciennes comme un djinn intermédiaire, plus fort qu'un shaytan mais inférieur à un ifrit — sans qu'aucune qualification maritime particulière ne lui soit attribuée à l'origine.[1] Le marid des mers doit donc davantage à l'imagination taxonomique des jeux modernes qu'à une continuité directe avec la démonologie islamique.",
+      "Sa moindre habileté intellectuelle, comparée à l'ifrit, constitue une autre anomalie notable pour une créature de sa puissance : on attendrait d'un être aussi redoutable une ruse à la mesure de sa force, mais la tradition insiste au contraire sur sa vulnérabilité à la manipulation humaine, ce qui rapproche le marid d'une force brute plus que d'un stratège.[1]",
+      "L'usage interchangeable des mots marid et ifrit dans certaines éditions des *Mille et Une Nuits* introduit une instabilité de fond : selon le conte consulté, un même djinn colossal et menaçant peut être désigné par l'un ou l'autre terme, ce qui interdit de tracer une frontière définitive entre les deux catégories dans le corpus narratif populaire.[1]"
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle du marid doit distinguer nettement deux strates : la tradition islamique documentée, qui en fait un djinn rebelle de rang intermédiaire sans lien élémentaire particulier, et l'adaptation ludique moderne, qui en a fait le génie de l'eau par excellence.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le trait comportemental le plus constant du marid est la résistance à l'autorité, inscrite dans son nom même. Moins calculateur que l'ifrit, il agit davantage par la force et l'entêtement que par la manipulation, ce qui le rend, paradoxalement, plus prévisible et donc plus vulnérable à un adversaire humain patient.[1]"]},
+        {"title": "Habitat", "body": ["La tradition islamique ne lui assigne pas de territoire élémentaire précis ; c'est la fantasy moderne de jeu de rôle qui l'a installé dans les océans, les palais de corail et les tempêtes, en miroir des trois autres génies élémentaires associés à l'air, au feu et à la terre.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune source ne documente un régime alimentaire propre au marid ; comme la plupart des djinns, il appartient à un ordre de création distinct de celui des animaux et des hommes, pour lequel la question de la nourriture ne se pose pas dans les mêmes termes."]},
+        {"title": "Intelligence", "body": ["C'est sur ce point que le marid se distingue le plus nettement de l'ifrit : moins rusé, moins retors, il se laisse plus facilement approcher, convaincre ou tromper par un mortel habile, ce qui en fait une figure narrative propice aux récits où l'intelligence humaine triomphe de la force surnaturelle.[1]"]},
+        {"title": "Reproduction", "body": ["La tradition islamique ne détaille pas de mode de reproduction pour les marids ; comme les autres djinns, ils sont généralement présentés comme des créatures de feu façonnées avant l'humanité, dont l'origine relève de la création plutôt que de la filiation biologique."]},
+        {"title": "Prédateurs", "body": ["Le marid n'a pas de prédateur à proprement parler, mais sa moindre habileté intellectuelle en fait une proie relative pour l'ingéniosité humaine : nombre de récits populaires le montrent enfermé, dupé ou lié par un mortel plus rusé que lui, à la différence de l'ifrit, réputé bien plus difficile à circonvenir.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Aucun objet précis n'est traditionnellement rattaché au marid dans le corpus islamique documenté ; c'est la fantasy moderne, avec ses bouteilles, ses lampes et ses anneaux capables d'emprisonner un génie, qui a fourni à l'imaginaire populaire les artefacts qu'on associe aujourd'hui, un peu par contamination avec d'autres djinns célèbres, à cette figure rebelle.[1]",
+      "La taxonomie élémentaire des génies — air, feu, terre, eau — reste elle-même la relique la plus visible laissée par les jeux de rôle du XXe siècle : un système de classification ordonné, étranger à la tradition arabe originelle, mais devenu si répandu qu'il façonne désormais la façon dont on imagine le marid bien plus que les textes anciens qui l'ont vu naître.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Marid — classification et tradition islamique, Wikipédia", "url": "https://en.wikipedia.org/wiki/Marid"}
+  ]
+}

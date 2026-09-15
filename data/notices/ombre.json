@@ -1,0 +1,33 @@
+{
+  "description": "Ni fantôme ni squelette, l'ombre des jeux de rôle est une faim réduite à sa silhouette : un mort dont il ne reste que l'obscurité, et qui se multiplie en volant la force des vivants.",
+  "sections": {
+    "fascination": [
+      "L'ombre ne porte ni visage ni nom : elle est une tache mouvante, une absence de lumière qui se détache du mur pour venir toucher. Sa nature incorporelle lui permet de se faufiler par un interstice large d'à peine deux centimètres et demi, ce qui rend absurde l'idée même de lui barrer la route par une porte ou une grille.[1] On ne se protège pas d'une ombre en fermant une pièce ; on ne s'en protège qu'en gardant la lumière allumée, puisqu'elle agit avec désavantage en plein soleil et redoute particulièrement les dégâts radiants.[1]",
+      "Ce qui distingue l'ombre des autres morts-vivants, c'est la manière dont elle se reproduit : elle ne mord pas pour transmettre une malédiction, elle tue pour engendrer. Quand son attaque de Frappe drainante réduit à zéro la Force d'un humanoïde, une nouvelle ombre surgit du cadavre une à quatre heures plus tard.[1] La créature n'est donc jamais seule très longtemps ; chaque victime devient un berceau, et la crypte que l'on croyait n'abriter qu'un seul prédateur peut, une nuit plus tard, en compter deux."
+    ],
+    "legendes": [
+      "L'ombre appartient au bestiaire moderne des jeux de rôle du XXe siècle plutôt qu'au folklore ancien : c'est une créature pensée pour un système de règles, non une figure héritée de la tradition orale.[1] Son alignement chaotique mauvais et son indice de dangerosité modeste en font une menace de bas niveau, mais une menace insidieuse — le genre de piège qui prend son sens moins par la force brute que par l'effet boule de neige de sa méthode de propagation.",
+      "Son origine planaire la rattache au Plan de l'Ombre, cette version assombrie et appauvrie du monde matériel d'où elle tire son essence.[1] On la trouve aussi bien dans les souterrains et les Outreterres que dans l'obscurité urbaine la plus banale — sous un pont, dans une ruelle sans lampadaire — ce qui en fait une des rares créatures capables de menacer aussi bien le donjon le plus reculé que la rue d'une cité endormie."
+    ],
+    "anomalies": [
+      "Le trait le plus contre-intuitif de l'ombre est sa vulnérabilité à la lumière du jour : une créature entièrement faite d'obscurité ne s'éteint pas au soleil, elle y subsiste, mais désavantagée dans presque tous ses jets.[1] Le contraste entre sa nature — l'absence de forme — et sa capacité à infliger des dégâts bien réels par une simple touche nécrotique rappelle que, dans ce bestiaire, l'incorporel n'est jamais synonyme d'inoffensif."
+    ],
+    "naturelle": {
+      "lead": "L'ombre se décrit moins comme un organisme que comme un processus : une faim qui se propage de cadavre en cadavre, tapie dans l'obscurité qui la nourrit et la dissimule à la fois.",
+      "parts": [
+        {"title": "Comportement", "body": ["L'ombre se dissimule dans la pénombre ou l'obscurité, y prenant l'Action Se cacher dès que l'occasion se présente, ce qui lui confère l'avantage lorsqu'elle attaque une cible qui ne l'a pas repérée.[1] Ce comportement embusqué en fait une prédatrice patiente plutôt qu'une brute qui charge frontalement."]},
+        {"title": "Habitat", "body": ["On la rencontre dans les lieux souterrains et ombreux, dans l'Outreterre, et jusque dans l'obscurité des environnements urbains, mais son véritable foyer reste le Plan de l'Ombre dont elle est originaire.[1] Toute pénombre suffisamment dense peut néanmoins l'abriter temporairement."]},
+        {"title": "Alimentation", "body": ["L'ombre ne se nourrit pas de chair mais de force vitale : sa Frappe drainante inflige des dégâts nécrotiques tout en réduisant directement la Force de sa cible, l'épuisant physiquement plutôt qu'en la blessant au sens ordinaire.[1]"]},
+        {"title": "Intelligence", "body": ["Rien dans sa description n'indique une intelligence élaborée ou un langage : l'ombre agit comme une pulsion de prédation organisée autour de la traque en milieu sombre plutôt que comme une créature capable de stratégie complexe."]},
+        {"title": "Reproduction", "body": ["Son mode de reproduction est unique dans ce bestiaire : lorsqu'un humanoïde meurt sous l'effet de sa Frappe drainante, une nouvelle ombre émerge du corps entre une et quatre heures plus tard, sans rituel ni incubation autre que l'attente dans l'obscurité.[1]"]},
+        {"title": "Prédateurs", "body": ["Sa principale faiblesse tient à la lumière plutôt qu'à un prédateur identifié : elle subit un désavantage général en plein soleil et une sensibilité accrue aux dégâts radiants, tandis qu'elle résiste à l'acide, au froid, au feu, à la foudre et au tonnerre, et se montre immunisée contre le nécrotique et plusieurs effets débilitants.[1]"]}
+      ]
+    },
+    "reliques": [
+      "L'ombre ne laisse ni tombeau ni relique : elle laisse des cadavres vidés de leur force, promesses de futures ombres. Sa postérité tient moins à un objet ou à un lieu qu'à cette mécanique de propagation qui a fait d'elle, dans nombre de parties, l'exemple même de la menace qu'on croit mineure jusqu'à ce qu'elle se multiplie."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Shadow — Monsters, D&D Beyond", "url": "https://www.dndbeyond.com/monsters/5174958-shadow"}
+  ]
+}
