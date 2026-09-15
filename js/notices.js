@@ -2570,6 +2570,83 @@ window.FF_NOTICES = {
       }
     ]
   },
+  "barbare": {
+    "description": "On le reconnaît à son arme ; on le comprend moins vite lorsqu'il la pose pour écouter un poème.",
+    "sections": {
+      "fascination": [
+        "Le barbare de fantasy entre dans une salle comme s'il en mesurait déjà les issues. Ses vêtements portent la route, ses mains connaissent le poids du fer, et les honneurs qu'on lui présente peuvent lui sembler plus embarrassants qu'une menace. Cette silhouette appartient à l'aventure moderne. Elle ne désigne ni une espèce humaine particulière ni un peuple historique dont les membres auraient partagé la même violence. Le mot a longtemps servi à regarder les autres de l'extérieur ; la fiction en a fait un personnage capable de soutenir ce regard.",
+        "Son attrait tient au contraste entre une force immédiatement visible et des règles sociales qu'il n'accepte pas sans examen. Dans une cour où chacun dissimule son intérêt, sa colère paraît franche. Cette franchise peut rassurer ou devenir terrible. Le guerrier libre apporte avec lui la possibilité de refuser un ordre, de quitter une ville, de reprendre une route sans permission. Pourtant ses muscles ne le délivrent ni du chagrin, ni de la faim, ni de la dépendance envers ceux qui réparent ses armes."
+      ],
+      "legendes": [
+        "Le grec barbaros désignait notamment celui qui ne parlait pas grec ; l'usage romain appliqua ensuite le terme aux populations situées hors de sa sphère culturelle et politique.[1] Ce classement renseigne d'abord sur celui qui l'emploie. Il a pu réunir sous une même étiquette des sociétés sans langue, gouvernement ou mode de vie communs. Le guerrier vêtu de peaux que l'imaginaire actuel associe au mot n'est donc pas le portrait fidèle de tous les étrangers de l'Antiquité.",
+        "Une étape décisive du personnage moderne est Conan, créé par Robert E. Howard. Sa première aventure publiée, The Phoenix on the Sword, paraît dans Weird Tales en décembre 1932.[2] Le lecteur n'y rencontre pas un adolescent découvrant son épée, mais un souverain déjà mûr. Conan a pris le trône d'Aquilonie et peine à gouverner ceux qu'il a libérés. Son origine étrangère permet à ses adversaires de présenter son prédécesseur tyrannique comme un roi regretté. La barbarie devient une accusation politique, même lorsque son porteur siège au palais.",
+        "La conspiration rassemble des ambitions très différentes : des nobles, un chef militaire, un poète et un hors-la-loi qui compte trahir ses commanditaires.[2] Le danger se prépare dans les conversations avant d'entrer dans la chambre royale. Howard place ainsi son combattant dans un milieu où la supériorité physique arrive trop tard pour empêcher l'intrigue. Conan devra survivre à ce que son autorité n'a pas su déceler.",
+        "Le sorcier Thoth-Amon, lui-même asservi après avoir perdu son anneau, retrouve son pouvoir et lance un démon contre son maître. Averti en rêve par le sage Epemitreus, Conan reçoit sur son épée le signe protecteur du phénix. L'arme se brise au cours du combat, mais son fragment enchanté permet encore de tuer la créature.[2] Dans cette aventure fondatrice, le barbare ne triomphe donc pas par la seule puissance de ses bras. Sa survie dépend aussi d'une aide surnaturelle et des conflits entre ses ennemis."
+      ],
+      "anomalies": [
+        "Son corps reste humain, même lorsque l'image lui prête une endurance démesurée. L'épaule qui frappe doit pouvoir se relever ; la main blessée serre moins bien la poignée. Les cicatrices racontent une survie plutôt qu'une invulnérabilité. Dans The Phoenix on the Sword, Conan est effectivement blessé, et la rupture de sa lame l'oblige à changer d'arme.[2] Cette vulnérabilité donne leur poids aux affrontements : chaque effort engage un organisme qui pourrait céder.",
+        "L'autre singularité est morale. Conan hésite à tuer Rinaldo parce que les chants du poète l'ont touché ; cette hésitation lui coûte une blessure.[2] Le personnage supposé incapable de finesse reconnaît ainsi une valeur que la nécessité immédiate commanderait d'oublier. Il conserve une sensibilité au milieu de la violence. Réduire le barbare à une colère permanente effacerait précisément ce qui rend cette scène douloureuse.",
+        "Sa force ne permet pas davantage de distinguer une promesse sincère d'un piège. L'ennemi peut attendre, acheter un serviteur ou changer le récit que la ville fait de son roi. Le barbare expose alors une limite très concrète de la puissance personnelle : on peut tenir une porte contre plusieurs assaillants sans savoir comment conserver la confiance de ceux qui vivent derrière elle."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit un archétype humain de fantasy, principalement éclairé par Conan : elle décrit une condition de vie et une transmission culturelle, non une biologie distincte.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'action directe domine son portrait, mais elle ne supprime ni l'attente ni le choix. Le Conan assiégé dans sa chambre improvise avec les armes disponibles ; il réagit à la proximité des corps plutôt qu'à un plan de bataille intact.[2] Hors du combat, cette même autonomie peut prendre la forme d'une résistance aux usages imposés. Son impatience devant les contraintes du gouvernement montre cependant combien une qualité de survivant peut devenir une difficulté de souverain."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le palais d'Aquilonie suffit à démentir l'image d'un être voué aux cavernes. Le barbare peut vivre parmi les tapis, les documents officiels et les gardes sans cesser d'être nommé ainsi.[2] Son habitat le plus caractéristique est donc une frontière sociale : il se trouve à l'intérieur d'un monde dont les maîtres continuent de le tenir pour extérieur. La porte fermée d'une chambre royale peut être aussi dangereuse pour lui qu'un passage isolé dans les montagnes."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Aucun régime commun ne réunit les peuples autrefois qualifiés de barbares. Le personnage de fantasy mange comme un humain soumis à ses ressources, à ses usages et aux circonstances. La viande énorme des illustrations suggère surtout la dépense physique et l'abondance rêvée. Un voyageur doit aussi porter des provisions, trouver de l'eau et accepter ce qu'offre une étape. Ce sont des contraintes humaines ordinaires, pas les habitudes attestées d'une caste universelle de guerriers."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'intelligence du combattant apparaît dans l'ajustement rapide : distance, obstacle, fatigue adverse, arme de remplacement. Celle du gouvernant réclame une autre durée. Conan se heurte à cette différence lorsqu'une population en vient à idéaliser le tyran qu'il a renversé.[2] Comprendre un danger immédiat ne garantit pas de comprendre une opinion collective. Son trouble devant la poésie de Rinaldo ajoute encore une faculté que la caricature du colosse muet laisse rarement voir : il peut être atteint par une parole, même hostile."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "L'archétype se transmet par les histoires, les images et les reprises d'un personnage, tandis que les personnes qu'il représente ont des familles humaines. Le récit de Conan a connu des adaptations en bande dessinée, notamment une version de Roy Thomas publiée en 1976 puis King Conan: The Phoenix on the Sword en 2013.[2] Chaque reprise remet en circulation un équilibre différent entre le roi, l'étranger et le combattant. Une posture reconnaissable peut ainsi survivre à des changements considérables de dessin et de public."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Ses adversaires chassent souvent moins son corps que sa position. Les conjurés du récit de Howard veulent sa couronne et choisissent de l'attaquer au moment où il devrait être sans défense.[2] Le sorcier agit pour une vengeance distincte ; le démon ne partage aucun code guerrier avec sa victime. Ce voisinage d'intérêts rend le péril plus instable qu'un duel. L'isolement, la mauvaise information et la trahison exposent le barbare autant que la pointe d'une lance."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le fragment d'épée marqué du phénix condense une autre image du barbare que la hache gigantesque : une arme abîmée, encore tenue par un homme blessé, reçoit une efficacité qu'elle ne doit plus à sa longueur.[2] L'objet rappelle le secours accepté et la survie de justesse. Il n'est pas le trophée d'un être que rien ne peut atteindre.",
+        "Le nom conserve néanmoins une violence ancienne. Appliqué à une population réelle, il peut transformer la différence en infériorité ; employé pour un héros fictif, il promet souvent l'énergie que la civilisation aurait perdue.[1] Ces deux usages ne se confondent pas. Derrière la silhouette de fantasy, aucun peuple ne doit disparaître dans une masse anonyme de corps furieux. Le personnage devient plus intéressant lorsqu'il possède justement ce que l'insulte lui refuse : une histoire, des attachements et une manière propre de juger."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Barbarian — histoire et usages du terme",
+        "url": "https://en.wikipedia.org/wiki/Barbarian"
+      },
+      {
+        "id": 2,
+        "title": "The Phoenix on the Sword — publication et résumé de la nouvelle de Robert E. Howard",
+        "url": "https://en.wikipedia.org/wiki/The_Phoenix_on_the_Sword"
+      }
+    ]
+  },
   "barde": {
     "description": "Une salle entière peut dépendre de celui qui choisira les mots de sa victoire.",
     "sections": {
@@ -2720,6 +2797,1669 @@ window.FF_NOTICES = {
         "id": 7,
         "title": "Basque Legends",
         "url": "https://www.gutenberg.org/files/34902/34902-h/34902-h.htm"
+      }
+    ]
+  },
+  "bete-du-gevaudan": {
+    "description": "Un nom unique recouvre des morts bien réelles, plusieurs chasses et un animal que les images n'ont jamais réussi à fixer.",
+    "sections": {
+      "fascination": [
+        "La Bête du Gévaudan se tient à une distance inconfortable du merveilleux. On peut imaginer son dos roux entre deux buissons ; on rencontre ensuite le nom d'une enfant morte et l'imagination perd son innocence. Entre 1764 et 1767, des attaques meurtrières frappent cette région du sud de la France. Elles deviennent une affaire nationale, suivie par les journaux et par la cour de Louis XV.[3] Le monstre n'a pas besoin d'un royaume inventé. Ses chemins rejoignent ceux du travail rural.",
+        "Son visage reste pourtant mobile. La mâchoire s'allonge dans une estampe, le poitrail s'élargit dans une autre ; une queue presque féline accompagne parfois un corps de loup.[4] L'œil cherche un animal connu et reçoit un assemblage. Cette hésitation est le ressort durable de sa présence : la Bête semble assez familière pour surgir près d'un troupeau, assez différente pour rendre inutiles les habitudes qui permettaient de vivre auprès des loups."
+      ],
+      "legendes": [
+        "Jeanne Boulet, âgée de quatorze ans, figure au commencement de la série des victimes devenues célèbres. Les récits de 1764 font surtout connaître des femmes et des enfants attaqués dans les campagnes.[3] Derrière leur regroupement sous le nom de la Bête, il y a des personnes parties garder des animaux ou accomplir une tâche quotidienne. Le bilan exact varie selon les compilations et la définition des attaques retenues ; les sources consultées ne donnent pas de total unique suffisamment sûr pour transformer ces morts en un chiffre définitif.",
+        "Le Courrier d'Avignon contribue à porter la nouvelle au-delà du Gévaudan. Lorraine Boissoneault, s'appuyant notamment sur l'historien Jay M. Smith, décrit une presse qui trouve dans les faits divers un sujet moins contraint que les affaires politiques.[3] Les descriptions, les exploits et les échecs se succèdent. La catastrophe locale devient une histoire à épisodes dont des lecteurs éloignés attendent la résolution, tandis que les habitants doivent encore sortir chaque jour.",
+        "Le 12 janvier 1765, Jacques Portefaix et plusieurs enfants réussissent à repousser l'animal avec leurs piques en restant solidaires. Le roi récompense leur résistance et prend en charge l'éducation de Portefaix.[3] Cet épisode ne ressemble guère au duel d'un chasseur invincible contre un monstre. Des enfants se défendent ensemble. Leur réussite montre que les personnes habituellement décrites comme des proies pouvaient aussi agir, s'organiser et sauver leurs compagnons.",
+        "Les grandes chasses se succèdent sans donner de conclusion durable. Après les opérations de Duhamel et l'intervention des d'Enneval, François Antoine tue un grand loup en septembre 1765 ; son corps est envoyé à Versailles. Les attaques reprennent pourtant.[3][4] La victoire officielle et la sécurité réelle des campagnes cessent alors de coïncider. Pour la légende, cette reprise ressemble à un retour d'entre les morts ; pour l'enquête historique, elle oblige d'abord à envisager plusieurs animaux.",
+        "Jean Chastel abat un animal le 19 juin 1767, au terme de cette longue période de terreur.[3] La fin des attaques n'apporte pas une identification unanimement démontrée. Smith privilégie l'explication de plusieurs loups dangereux plutôt que celle d'un monstre unique ; les hypothèses d'un animal exotique ou d'une intervention criminelle existent, mais ne disposent pas toutes du même appui documentaire.[3] Une énigme persistante n'autorise pas à traiter chaque solution comme également probable."
+      ],
+      "anomalies": [
+        "La description publiée par Duhamel, rapportée dans l'article du Smithsonian, mêle un poitrail comparé à celui d'un cheval, un corps rapproché du léopard et une fourrure rousse rayée de noir.[3] Ces comparaisons traduisent un effort pour nommer une silhouette inhabituelle. Elles ne constituent pas un relevé anatomique effectué sur un spécimen unique. Additionner tous les témoignages produirait une créature plus précise sur le papier, mais peut-être moins proche de chacun des animaux aperçus.",
+        "Les pouvoirs surnaturels appartiennent au récit de la peur : résistance aux balles, yeux de feu, bonds extraordinaires, retour après une mort annoncée.[3] Leur logique suit les déconvenues de la chasse. Une cible manquée devient invulnérable ; de nouvelles attaques après l'exposition d'un cadavre deviennent une résurrection. La succession des faits peut nourrir ces interprétations sans prouver les qualités magiques qu'on en déduit.",
+        "Les estampes aggravent encore l'incertitude. La collection présentée par The Public Domain Review rapproche une image allemande de 1764, presque étrangère à la silhouette du loup, de représentations françaises plus félines ou reptiliennes.[4] Le même nom circule plus vite que la connaissance du corps. L'image renseigne alors sur ce que l'on voulait montrer au public, sur la peur et sur la concurrence des explications, autant que sur l'animal poursuivi."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle reste une lecture des attaques et de leur mise en légende ; elle ne suppose ni espèce inconnue établie ni pouvoirs réellement observés.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La sélection fréquente de femmes et d'enfants s'explique d'abord par leur exposition et leur vulnérabilité dans les circonstances décrites, plutôt que par une haine surnaturelle. Le récit de Portefaix souligne l'importance du groupe, des armes disponibles et de la défense coordonnée.[3] La Bête paraît insaisissable aux grandes battues, mais elle peut reculer devant des résistances locales. Cette différence entre l'échec des chasseurs et la réussite de certaines victimes a beaucoup contribué au caractère déroutant de l'affaire."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le Gévaudan des attaques réunit les espaces habités et les terres parcourues pour garder les troupeaux. Les récits associent bois, pâtures et chemins ; l'article du Smithsonian souligne aussi les difficultés des chasseurs étrangers à connaître le terrain et à communiquer avec les habitants.[3] Le danger dépend de cette géographie vécue. Une lisière n'est pas seulement un décor sombre : c'est un endroit où l'on doit passer, où le regard porte moins loin et où l'aide peut tarder."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les atteintes aux corps et les victimes partiellement dévorées donnent à l'affaire sa dimension anthropophage. Les imprimés vont plus loin lorsqu'ils décrivent une créature buvant le sang et emportant des têtes.[4] Ces formules appartiennent à leur présentation sensationnelle. Elles ne suffisent pas à établir un régime exclusif ni une préférence physiologique pour le sang. La distinction compte : un prédateur qui tue et consomme de la chair n'est pas, par cette seule conduite, un vampire animal."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'évitement des pièges fut facilement lu comme une ruse presque humaine. Duhamel eut recours à des appâts empoisonnés et à des soldats déguisés en paysannes, sans obtenir le résultat attendu.[3] Cela décrit surtout un écart entre les stratégies des chasseurs et les rencontres effectives. Plusieurs animaux, des terrains difficiles et des informations tardives peuvent produire l'impression d'un adversaire omniscient. La prudence animale ne doit pas être confondue avec la préméditation morale d'un meurtrier."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La Bête n'a pas de descendance identifiée comme celle d'une espèce singulière. Après le loup tué par Antoine, une femelle et un petit furent également abattus selon le récit de The Public Domain Review.[4] Cet épisode appartient à une chasse aux loups ; il ne démontre pas que tous les responsables des attaques formaient une famille unique. Dans la mémoire collective, en revanche, chaque nouvelle description engendre une variante : loup démesuré, hybride, animal dressé ou être surnaturel."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Ses ennemis attestés sont les hommes mobilisés contre elle : habitants armés, soldats, chasseurs spécialisés et envoyés royaux. Leurs intérêts se recouvrent imparfaitement. Les villageois cherchent une sécurité quotidienne ; les chefs de chasse défendent aussi leur réputation et attendent une récompense.[3] La poursuite devient donc une affaire de pouvoir autant que de pistage. Les loups tués au cours de ces opérations paient matériellement pour une identification qui, dans bien des cas, reste incertaine."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les pièces les plus parlantes sont les gravures, avec leurs légendes assurées et leurs silhouettes incompatibles. Une estampe de M. Ray affirme que l'apparence de l'animal ne fait plus de doute, tout en lui donnant une allure singulière.[4] Cette certitude imprimée est elle-même un document. Elle rappelle combien une image accompagnée d'une affirmation peut fixer une conviction loin du lieu où les faits se déroulent.",
+        "Le nom de la Bête a mieux survécu que ceux de beaucoup de ses victimes. Les épisodes de résistance rétablissent une part de cette présence humaine : Portefaix n'est pas une mesure de la férocité du monstre, mais un enfant qui a combattu avec d'autres.[3] Lire le Gévaudan comme une légende laisse place au frisson des chemins et des bois ; le lire aussi comme une catastrophe historique rend aux morts leur poids, et aux survivants leurs gestes."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Lorraine Boissoneault, Smithsonian Magazine — When the Beast of Gévaudan Terrorized France",
+        "url": "https://www.smithsonianmag.com/history/beast-gevaudan-terrorized-france-countryside-180963820"
+      },
+      {
+        "id": 4,
+        "title": "The Public Domain Review — The Beast of Gévaudan (1764–1767)",
+        "url": "https://publicdomainreview.org/collection/the-beast-of-gevaudan-1764-1767"
+      }
+    ]
+  },
+  "blemmye": {
+    "description": "Ses épaules ne portent rien ; pourtant un visage vous regarde, plus bas, à l'endroit où devrait battre seulement la poitrine.",
+    "sections": {
+      "fascination": [
+        "Le blemmye ne semble pas décapité. Rien, dans sa silhouette traditionnelle, n'appelle une blessure ni une tête à retrouver. Son corps est complet selon une disposition qui n'est pas la nôtre : les yeux et la bouche occupent le torse, tandis que les épaules dessinent une ligne sans cou.[5] Le malaise vient de cette normalité impossible. Il tient une arme, marche auprès d'autres hommes et paraît parfois attendre qu'on lui adresse la parole.",
+        "L'image oblige à déplacer le regard. On cherche spontanément un visage au-dessus des épaules ; il faut baisser les yeux pour rencontrer ceux du blemmye. Dans les miniatures et les gravures, cette petite correction devient une rencontre entière. La créature garde des mains, des jambes et des gestes familiers. Une seule transformation de l'anatomie suffit à rendre étrange tout ce qu'elle fait, sans lui retirer automatiquement la faculté de parler ou de vivre en société."
+      ],
+      "legendes": [
+        "Les traditions antiques connaissent des hommes sans tête, parfois nommés acéphales. Hérodote rapporte l'existence supposée d'êtres dont les yeux se trouvent sur la poitrine ; Pline décrit à son tour des Blemmyes dépourvus de tête, avec bouche et yeux sur le torse.[5] Ces notices relèvent d'une géographie des merveilles transmises à propos de contrées éloignées. Leur présence dans un ouvrage ancien atteste une croyance ou un récit, non la réalité anatomique de ses habitants.",
+        "Une distinction demeure indispensable : les Blemmyes historiques furent une population réelle du désert oriental africain. Leur nom ne fait pas d'eux des hommes sans tête. Le dossier iconographique de Hunter Dukes rappelle cette homonymie et le caractère incertain du passage entre le nom du peuple et la figure monstrueuse.[6] Les explications par des boucliers peints, une posture guerrière ou une méprise sur un animal restent des hypothèses. Aucune ne doit remplacer la légende par une fausse certitude savante.",
+        "Au Moyen Âge, les êtres acéphales voyagent dans les livres. Les Merveilles de l'Orient, les récits d'Alexandre et les compilations encyclopédiques reprennent leurs silhouettes, avec des tailles et des lieux variables.[5] L'autorité du texte ancien permet au prodige de rester plausible même lorsque personne ne peut en montrer un. Le copiste transmet une information ; l'enlumineur lui donne un corps. La succession des deux gestes fait paraître visible ce qui demeure rapporté.",
+        "Une version arménienne du Roman d'Alexandre, citée dans The Public Domain Review, décrit des hommes velus, vêtus de peaux, vivant près de la mer et mangeant du poisson. Ils parlent et offrent des produits de leur collecte aux voyageurs.[6] Ce passage déplace fortement le portrait : les acéphales ne sont pas seulement un spectacle inquiétant sur une rive lointaine. Ils accueillent, échangent, disposent d'une nourriture et d'un milieu quotidien. Leur étrange visage ne condamne pas la rencontre à la violence.",
+        "Les Voyages de Jean de Mandeville font apparaître des variantes avec des yeux dans les épaules et une bouche sur la poitrine, ainsi que d'autres dispositions du visage. À la fin du XVIe siècle, Walter Raleigh rapporte en Guyane des récits concernant les Ewaipanoma, eux aussi réputés sans tête.[6] Il s'agit de transmissions distinctes d'un motif, non du suivi d'une population migratrice. Le changement de continent révèle surtout la facilité avec laquelle une merveille déjà connue vient habiter un nouvel ailleurs."
+      ],
+      "anomalies": [
+        "L'absence de tête n'équivaut pas à l'absence de visage. La distinction sépare le blemmye des revenants décapités qui transportent leur crâne ou reviennent chercher une tête perdue. Chez lui, les organes de la relation restent présents. Le regard répond, la bouche s'ouvre, parfois une barbe descend depuis la poitrine.[5] L'anomalie réside dans leur emplacement. Le corps n'est pas un reste : il est conçu comme une forme entière.",
+        "Les variantes empêchent toutefois de dessiner une anatomie uniforme. Des yeux pectoraux ne voient pas depuis la même hauteur que des yeux placés aux épaules ; certaines descriptions déplacent même le visage vers le dos.[6] Les images ne résolvent pas la question des organes internes. Elles montrent une surface lisible, assez humaine pour porter une expression. Le cerveau, la respiration et le trajet des aliments ne sont pas documentés comme ils le seraient dans une observation zoologique.",
+        "Une conséquence imaginaire de ce visage bas serait une autre manière de s'abriter, de viser ou de tourner le corps. Mais les illustrateurs ne construisent pas toujours un système cohérent : ils donnent volontiers au blemmye un arc ou une arbalète tout en conservant les gestes ordinaires d'un combattant.[6] Ce décalage fait partie de sa force visuelle. Le spectateur reconnaît l'action avant de comprendre que les points de repère de l'action ont changé."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit les vies prêtées aux acéphales dans des récits et des images ; leurs variantes restent séparées, sans inventer une espèce observée.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La version arménienne du Roman d'Alexandre donne aux acéphales une conduite hospitalière : ils se rassemblent et apportent aux arrivants des produits récoltés.[6] D'autres images les montrent armés. L'accueil et la menace ne définissent pas deux sous-espèces ; ils appartiennent à des situations narratives différentes. L'étranger peut être imaginé comme interlocuteur, défenseur de son territoire ou simple curiosité. Une poitrine qui parle n'impose pas, à elle seule, une psychologie monstrueuse."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "L'Afrique des auteurs antiques, les îles des récits médiévaux et la Guyane évoquée par Raleigh ne forment pas une aire de répartition continue.[5][6] Leur trait commun est la distance avec le lecteur auquel on raconte la merveille. Le blemmye se trouve là où un voyage demande encore un relais de témoignages. Dans le récit maritime arménien, cette distance prend cependant une consistance particulière : une côte, des ressources venues de la mer, des habitants qui en connaissent l'usage."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les mangeurs de poisson de la version arménienne constituent une donnée précise, mais locale au texte.[6] Leur nourriture les rapproche du rivage et leur offrande manifeste un surplus partageable. Rien n'autorise à étendre ce régime à tous les acéphales des cartes et des encyclopédies. La bouche dessinée sur la poitrine affirme surtout la possibilité de manger et de parler. Elle ne livre ni une préférence carnivore universelle, ni une voracité particulière envers les voyageurs."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le langage et l'échange attestés dans ce même épisode supposent une compréhension mutuelle possible.[6] Les armes des images suggèrent des techniques connues de leurs dessinateurs, sans constituer la description d'un artisanat effectivement observé. L'absence de tête a pu encourager des interprétations dépréciatives ; elle ne signifie pas, dans tous les récits, absence de raison. Le blemmye met à l'épreuve une habitude du regard : reconnaître un semblable au lieu où l'on attend son visage."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les traditions parlent souvent d'un peuple, donc d'une pluralité durable, plutôt que d'un individu accidentel. Solin présente leur forme comme une condition de naissance, d'après la synthèse des textes antiques consultée.[5] Les sources retenues ne décrivent pas pour autant un cycle reproductif détaillé. Leur continuité la plus visible est celle des manuscrits : un visage pectoral recopié, modifié, puis gravé suffit à donner plusieurs siècles de descendants iconographiques à la même étrangeté."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucun ennemi animal régulier ne se dégage du dossier. Le danger vient parfois du voyageur lui-même. Dans une version française du Roman d'Alexandre, le conquérant capture trente hommes sans tête pour les montrer au reste du monde.[5] La rencontre transforme alors des habitants en curiosités transportables. Cette violence appartient au récit et n'atteste pas une capture historique ; elle montre néanmoins que le personnage réputé monstrueux peut être celui que l'on prive de liberté."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le Psautier de Rutland comporte un archer acéphale ; d'autres œuvres lui prêtent une massue, une arbalète ou la compagnie d'hommes à tête de chien.[6] Ces voisinages installent le blemmye dans une galerie des possibilités du corps humain. Il n'est pas toujours traité sur le même ton : selon la page, il inquiète, amuse ou semble simplement occupé à sa propre vie. La disposition du visage reste reconnaissable même lorsque le reste change.",
+        "L'étymologie de blemmye demeure discutée et ne fournit pas de traduction sûre de son anatomie.[5] Acéphale signifie en revanche sans tête. Les deux mots se recouvrent partiellement dans l'usage du bestiaire, mais l'un porte aussi le nom d'êtres humains historiques. Cette différence empêche de prendre une vieille image pour leur portrait. Le corps imaginaire peut continuer de surprendre sans déformer une seconde fois les personnes auxquelles son nom fut emprunté."
+      ]
+    },
+    "sources": [
+      {
+        "id": 5,
+        "title": "Headless men — traditions antiques et médiévales des acéphales",
+        "url": "https://en.wikipedia.org/wiki/Headless_men"
+      },
+      {
+        "id": 6,
+        "title": "Hunter Dukes, The Public Domain Review — Off with Their Heads: Illustrations of Blemmyes (ca. 1175–1724)",
+        "url": "https://publicdomainreview.org/collection/blemmyes"
+      }
+    ]
+  },
+  "boggart": {
+    "description": "Une main humide se pose sur le visage du dormeur. Le lendemain, la maison a toujours le même nombre d'habitants déclarés.",
+    "sections": {
+      "fascination": [
+        "Le boggart connaît les endroits où la peur coûte peu d'effort. Un lit, une porte, un tournant familier lui suffisent. Dans les traditions anglaises qui le décrivent comme esprit domestique, il dérange les dormeurs, tire leurs draps ou pose une main moite sur leur visage.[7] Il n'a pas besoin de surgir dans un fracas. Sa présence se mesure au sommeil perdu et à la méfiance qui gagne une pièce où l'on se croyait seul.",
+        "D'autres boggarts attendent dehors. Un cheval immense, une apparition sans tête ou un être velu peut porter ce nom, selon le lieu et le récit.[7] Ce flottement n'est pas un défaut du portrait : le mot a servi à désigner plusieurs sortes de rencontres inquiétantes. Le boggart demeure reconnaissable moins par une silhouette constante que par un trouble attaché à une maison, un chemin ou un repli du terrain. On sait où l'on risque de le rencontrer avant de savoir ce que l'on verra."
+      ],
+      "legendes": [
+        "Le nom est particulièrement associé au Lancashire, mais ses récits débordent cette région vers le Yorkshire et d'autres parties du nord et du centre de l'Angleterre. La dialectologue Elizabeth Wright le décrivait comme un nom générique d'apparition ; le folkloriste Simon Young insiste également sur l'étendue de la catégorie.[7] Le petit lutin domestique n'en est donc qu'une figure. Réunir tous les boggarts dans une seule famille de créatures trapues effacerait les usages locaux du mot.",
+        "Lancashire Folklore, publié par John Harland et T. T. Wilkinson en 1867, distingue les boggarts des maisons d'autres manifestations.[7] Certains s'attachent à une famille au point de la suivre lorsqu'elle fuit. Cette possibilité rend le déménagement dérisoire : changer les murs ne suffit pas si le trouble accompagne les personnes. Elle donne aussi à l'esprit une familiarité presque insupportable. Il voyage avec ceux qui voudraient l'abandonner, comme s'il se comptait lui-même parmi les membres du foyer.",
+        "Edwin Waugh rapporte en 1861 une conversation avec un vieux couple à propos du boggart de Grizlehurst. Ses interlocuteurs le disent enterré près d'un tournant, sous un frêne, avec un coq transpercé d'un pieu. Cette sépulture ne l'empêche pas de nuire : portes battantes, rires nocturnes, lumières bleues et traces de sabots composent le récit de ses manifestations.[7] Ce sont les affirmations du couple telles qu'elles ont été publiées, pas la description vérifiée d'une apparition.",
+        "La femme avertit de ne pas le nommer, tandis que son mari refuse de creuser près de sa tombe supposée.[7] L'interdit n'est pas une règle générale selon laquelle tous les esprits disparaîtraient une fois leur nom découvert. Ici, parler peut au contraire attirer une attention dangereuse. Le silence protège une distance fragile. Le frêne et le virage donnent à cette prudence une adresse concrète que le voisinage peut retenir.",
+        "Un autre conte, associé à Mumby dans le Lincolnshire, oppose un fermier à un boggart qui réclame une part de la récolte. L'esprit choisit ce qui pousse sous terre ; le fermier sème de l'orge. Il exige ensuite ce qui pousse au-dessus ; le fermier plante des pommes de terre.[7] Le partage paraît respecté, mais prive chaque fois le boggart de la partie utile. Cette histoire appartient à une famille de contes où un cultivateur trompe un adversaire surnaturel sur les termes d'un marché. La menace domestique devient un partenaire mauvais calculateur."
+      ],
+      "anomalies": [
+        "Son corps est variable jusque dans son échelle. Le boggart de Longar Hede, dans le Yorkshire, est décrit comme un être de la taille d'un veau, couvert de longs poils, aux yeux comparés à des soucoupes, traînant une chaîne bruyante. Celui de Hackensall Hall prend l'apparence d'un énorme cheval.[7] Ces portraits n'établissent pas que tout boggart se métamorphose à volonté. Plusieurs êtres différents peuvent simplement recevoir le même nom.",
+        "L'esprit domestique, lui, se manifeste parfois surtout par les effets qu'il produit. Un drap arraché ou une main sur le visage donne une sensation de contact sans fournir un portrait complet.[7] Le corps du témoin devient le lieu de la rencontre : réveil, froid, pression, peur de se rendormir. Cette proximité distingue le boggart d'une apparition lointaine aperçue sur une colline. Il viole moins une frontière du paysage que la petite enceinte du sommeil.",
+        "Le boggart de Grizlehurst conserve son activité malgré son enterrement supposé.[7] Sa tombe n'agit donc pas comme celle d'un animal mort. Elle rassemble un récit, une interdiction et la crainte de réveiller quelque chose. La contradiction importe : les habitants peuvent savoir où l'esprit est retenu tout en continuant à subir ses sorties. Le confinement décrit une tentative de maîtrise, pas une garantie de disparition."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle rassemble des manifestations folkloriques locales ; le boggart est un nom d'esprit aux formes diverses, non une espèce dotée d'un cycle biologique commun.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le harcèlement domestique tire sa force de la répétition. Une seule porte qui claque peut être oubliée ; la même perturbation plusieurs nuits de suite finit par modifier la vie du foyer. Dans les récits réunis sous ce nom, l'esprit peut s'en prendre aux lits, aux portes et jusqu'à l'attelage : le couple interrogé par Waugh lui attribuait un cheval détaché et une charrette renversée.[7] Son action touche ainsi le repos et le travail, sans nécessiter une attaque sanglante."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les boggarts fréquentent aussi bien les maisons que les lieux extérieurs désignés avec précision. Boggart Hole Clough, à Manchester, conserve leur nom dans un paysage de vallons boisés ; une autre tradition situe une présence dans la caverne calcaire de Cave Ha, près de Giggleswick.[7] La diversité de ces lieux interdit de faire du marais leur milieu obligatoire. Une topographie inquiétante leur convient, mais c'est souvent le récit transmis à son sujet qui rend inquiétant un passage jusque-là ordinaire."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le conte du partage des récoltes donne au boggart un intérêt pour les produits cultivés, sans décrire précisément ce qu'il mange.[7] Il réclame une part et se fait léser par son ignorance des plantes. La nourriture appartient donc à une relation de propriété et d'échange avant de former un régime. Les esprits qui tirent les draps ou effraient les chevaux ne reçoivent pas, dans ces témoignages, de menu commun. Leur présence se reconnaît aux désordres, pas à des restes de repas."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le partenaire du fermier comprend assez le langage pour conclure un accord, mais pas assez la situation pour choisir avantageusement. Il corrige son premier choix et tombe dans le piège inverse.[7] Les apparitions domestiques offrent une autre impression : elles semblent connaître intimement les habitudes de ceux qu'elles tourmentent. Cette différence sépare la ruse d'un être localement redouté et la naïveté comique d'un personnage de conte. Le nom partagé ne leur impose pas le même esprit."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Aucune reproduction uniforme ne relie ces présences. Leur continuité suit plutôt les familles, les lieux et les récits qui les nomment. Un esprit réputé suivre une maisonnée assure sa persistance sans avoir d'enfants ; un tournant associé à une apparition transmet le souvenir aux nouveaux passants.[7] Les collectes du XIXe siècle rendent visible ce second mouvement. Des paroles attachées à un voisinage entrent dans un livre, puis circulent auprès de lecteurs qui ne verront jamais la ferme ni le frêne."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les humains essaient de le contenir, de l'éviter ou de le tromper. La tombe de Grizlehurst relève d'une tentative de fixation rituelle ; le refus de creuser maintient ensuite cette frontière. Le fermier de Mumby obtient le départ de son adversaire en lui rendant le contrat improductif.[7] Aucune de ces issues ne prouve une faiblesse valable pour tous les boggarts. Leurs défaites sont aussi particulières que leurs manifestations : un marché mal compris, un lieu qu'on n'approche plus, une histoire dont le danger cesse enfin."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les variantes boggard, boggert et d'autres graphies gardent la trace des usages dialectaux. Le nom est rattaché au moyen anglais bugge, désignant un esprit ou un monstre, plutôt qu'à une classification zoologique.[7] Sa parenté de vocabulaire avec d'autres noms d'épouvantails surnaturels aide à comprendre son ampleur. Un mot familier pouvait accueillir une nouvelle frayeur sans qu'il soit nécessaire de lui inventer une catégorie différente.",
+        "Dans certains usages du Lancashire, un cheval effrayé pouvait être dit avoir pris peur d'un boggart, même invisible.[7] La réaction de l'animal apportait alors son indice à la croyance humaine : il avait peut-être perçu ce que son conducteur ne voyait pas. Le nom conservé dans les lieux agit de façon comparable. Avant même la nuit et sans qu'aucune forme apparaisse, il prépare le passant à interpréter un bruit, une hésitation du cheval ou un mouvement au bord du chemin."
+      ]
+    },
+    "sources": [
+      {
+        "id": 7,
+        "title": "Boggart — synthèse des collectes de Waugh, Harland et Wilkinson et des travaux sur le folklore anglais",
+        "url": "https://en.wikipedia.org/wiki/Boggart"
+      }
+    ]
+  },
+  "brownie": {
+    "description": "La maison dort ; dans la cuisine, quelqu'un finit le travail et attend qu'on lui laisse sa part sans jamais l'appeler un domestique.",
+    "sections": {
+      "fascination": [
+        "Le brownie se reconnaît d'abord à une fatigue épargnée. Le matin, une besogne laissée en souffrance est achevée, la grange a retrouvé son ordre, le foyer ne ressemble plus à celui qu'on avait quitté. Cet auxiliaire nocturne appartient surtout aux traditions écossaises et anglaises. Il travaille pendant le sommeil des habitants, puis se retire avant de recevoir leurs remerciements.[1] Sa présence rend la maison plus habitable, mais aussi moins entièrement humaine : une volonté y circule dont personne ne possède la clef.",
+        "L'image familière du petit homme brun et hirsute ne doit pas dissimuler l'étrangeté des récits. Certains brownies anciens ont la taille d'un homme, voire davantage ; d'autres se font minuscules, ridés, mal vêtus ou nus.[1] Leur aide ne vient pas d'une bonté docile. Le même être qui soulage une maisonnée juge ses manières, s'offense d'une remarque et reprend ce qu'il a donné. Il faut vivre avec lui, plutôt que compter sur lui comme on compte sur un outil."
+      ],
+      "legendes": [
+        "Le nom s'est diffusé depuis les Lowlands écossaises et la frontière anglaise, avant de devenir une étiquette commode pour plusieurs esprits domestiques britanniques.[1] Cette extension rassemble des voisins sans effacer leurs différences. Le bwbach gallois, le fenodyree de l'île de Man et les hobs anglais ont leurs propres récits. Leur parenté tient notamment au travail nocturne et aux échanges alimentaires ; elle ne prouve pas l'existence d'une population unique répartie sous différents noms.",
+        "À Cranshaws, dans le Berwickshire, un brownie aurait longtemps coupé et battu le grain. Quelqu'un trouva pourtant à redire à la manière dont la récolte avait été fauchée et rangée. La nuit suivante, l'auxiliaire transporta le grain jusqu'à Raven Crag et le dispersa du haut du rocher.[1] La sanction porte exactement sur l'ouvrage déprécié. Rien ne vient remplacer ce que les humains ont perdu : ils retrouvent le travail qu'ils avaient oublié de mesurer.",
+        "Une histoire du Peeblesshire prête au brownie une revanche moins coûteuse. Deux servantes mangent le pain et boivent le lait réservés à l'esprit. Celui-ci s'assied invisiblement entre elles et intercepte leurs bouchées. Chacune accuse l'autre jusqu'à ce qu'un rire révèle le troisième convive.[1] La scène reste à hauteur de table. Une nourriture modeste suffit à rendre perceptible l'hôte invisible et à tracer la limite entre ce qui appartient à la maisonnée et ce qu'elle a promis.",
+        "Le cadeau de vêtements provoque souvent le départ définitif. Sa signification varie : affront, changement de condition ou délivrance. Le Cauld Lad de Hylton, parfois rapproché des brownies et décrit comme le fantôme d'un jeune serviteur, accepte avec joie un manteau et un capuchon avant de disparaître.[1] Ailleurs, la même offrande suscite la colère. Le geste ne possède donc pas une explication universelle ; la perte de l'auxiliaire demeure le dénouement commun."
+      ],
+      "anomalies": [
+        "Le corps du brownie n'obéit pas à un portrait canonique. La synthèse folklorique consultée rapporte des êtres sans nez dans les Lowlands, avec une ouverture au milieu du visage, et d'autres privés de doigts ou d'orteils dans l'Aberdeenshire.[1] Ces détails contrarient justement l'activité qu'on leur attribue. Des mains impossibles accomplissent un ouvrage humain avec une efficacité prodigieuse. Le conte n'explique pas la prise d'un manche ou le mouvement du poignet : l'inquiétude naît de cette compétence sans anatomie rassurante.",
+        "Son invisibilité sert moins à frapper qu'à réserver une distance. L'esprit peut se tenir tout près, prendre une bouchée, déplacer un objet, sans livrer son visage.[1] On connaît ses préférences avant de connaître ses traits. L'observer au travail ou se moquer de lui risque de rompre l'accord. Le regard humain transforme alors une cohabitation consentie en surveillance, et l'auxiliaire refuse d'être inspecté.",
+        "La frontière avec le boggart reste mobile : certaines traditions font d'un brownie offensé un esprit devenu malveillant.[1] Cette transformation ne correspond pas à une mue biologique. C'est une relation qui change de nature. Le bruit nocturne, autrefois rassurant parce qu'il annonçait une besogne terminée, devient le signe que la maison n'accordera plus de repos."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit les habitudes que les récits prêtent à l'hôte domestique ; elle ne lui ajoute ni espèce cachée ni cycle biologique.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le brownie travaille généralement seul et préfère ne pas être vu. Il peut punir les serviteurs négligents en les pinçant pendant leur sommeil ou en dérangeant leurs affaires.[1] Sa discipline n'autorise pourtant pas les maîtres à se décharger sans limite sur lui : un récit lui fait quitter une maison dont la propriétaire a renvoyé tous les domestiques, et n'y revenir qu'après leur réembauche.[1] L'aide surnaturelle complète le travail ordinaire ; elle peut se retirer lorsqu'on transforme un secours en exploitation."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La ferme rassemble son territoire le plus lisible : pièces chauffées, réserves, lieux où l'on prépare et conserve la nourriture. Mais le brownie attaché à une maison peut avoir son séjour particulier dans une grotte, près d'un cours d'eau, d'un étang ou d'un rocher voisin.[1] L'espace domestique déborde ainsi les murs. À la différence d'un meuble ou d'une fondation, l'esprit peut partir vers une autre demeure ; la propriété de la terre ne donne aucun droit sur lui."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Crème, lait, bouillie et petits gâteaux figurent parmi ses offrandes, souvent déposées auprès du foyer.[1] Ce menu n'est pas un relevé de besoins nutritifs. Il révèle la part que la maison accepte de soustraire à sa propre consommation. La façon d'offrir compte autant que le contenu : à Bodsbeck, près de Moffat, le brownie quitte les lieux lorsque le maître l'appelle après avoir versé la crème, au lieu de le laisser la découvrir.[1] Même nourri, il refuse qu'on le convoque comme une bête."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Il comprend les paroles, retient les offenses et choisit des ripostes adaptées. Le grain dispersé répond au reproche sur la récolte ; les bouchées volées sanctionnent celles qu'on lui dérobait.[1] Cette intelligence sociale est plus nette que toute science magique. Elle inclut la fierté professionnelle, le goût de la farce et une lecture parfois intransigeante des intentions humaines. Une bonne volonté maladroite ne suffit pas toujours à réparer un geste mal reçu."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les récits consultés suivent des individus attachés à des lieux, non des familles qui élèveraient des petits. La plupart des brownies décrits sont masculins, mais des figures féminines existent, telle Meg Mullach, la velue.[1] Leur rareté ne fonde aucune règle de reproduction. La continuité visible est celle de la mémoire domestique : on sait qu'un esprit habite ici, on apprend où déposer sa part, puis un départ explique pourquoi les anciens travaux miraculeux ne s'accomplissent plus."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucun chasseur régulier n'organise son existence dans les traditions présentées. Ses périls viennent des humains avec lesquels il demeure : dérision, ingratitude, tentative de baptême ou cadeau qui met fin au service.[1] L'issue habituelle est la séparation plutôt que la mort. Pour la maisonnée, elle se mesure immédiatement dans les tâches redevenues pesantes. Pour le brownie, elle préserve une liberté essentielle : aucune porte fermée ne le condamne à rester utile."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Dans le Herefordshire, une courbure du crochet portant les marmites au-dessus du feu pouvait être appelée le siège du brownie ; un fer à cheval retourné pouvait aussi lui fournir une place.[1] Ce minuscule aménagement donne à l'invisible un volume précis. Entre le métal noirci et la chaleur du foyer, on lui ménage un endroit sans chercher à l'enfermer.",
+        "La littérature enfantine et l'illustration ont ensuite rendu le brownie plus petit et plus souriant. Les Brownies du mouvement des guides doivent leur nom à un récit de Juliana Horatia Ewing inspiré de cette tradition.[1] La disponibilité serviable y passe au premier plan. Les récits plus rugueux conservent pourtant une autre mémoire : celle d'un travailleur susceptible, capable de vider une grange aussi sûrement qu'il l'avait remplie, et dont le consentement ne s'achète pas avec une chemise neuve."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Brownie (folklore) — synthèse des traditions et variantes britanniques",
+        "url": "https://en.wikipedia.org/wiki/Brownie_(folklore)"
+      }
+    ]
+  },
+  "bucca": {
+    "description": "Un poisson reste sur le sable après le retour des barques : quelqu'un doit recevoir sa part, même si personne ne l'a vu.",
+    "sections": {
+      "fascination": [
+        "Le bucca apparaît moins sûrement sous une forme que dans un geste. Des pêcheurs laissent un poisson sur la plage ; aux moissons, on jette un morceau de pain par-dessus l'épaule gauche et l'on répand quelques gouttes de bière.[4] Ces parts retranchées au repas dessinent une présence. Elle demeure au bord des activités humaines, dans ce qui nourrit et ce qui menace de manquer. Le bucca n'a pas besoin de surgir des vagues pour occuper le rivage : le poisson qu'on ne rapporte pas suffit.",
+        "Cet esprit de Cornouailles traverse des milieux que l'imaginaire contemporain sépare volontiers. Il touche à la mer, aux travaux souterrains, aux récoltes et aux peurs domestiques.[4] Ce n'est pas nécessairement le voyage d'un même corps entre tous ces lieux. Le nom peut désigner plusieurs puissances ou plusieurs usages de la peur. À son propos, les gestes sont souvent plus précis que les portraits ; les hommes savent quoi laisser avant de savoir exactement à qui ils le donnent."
+      ],
+      "legendes": [
+        "Dans Cornish Feasts and Folk-lore, Margaret Ann Courtney rassemble les offrandes au bucca et un récit minier qu'elle attribue à William Bottrell. Tom Trevorrow entend les knockers, les esprits frappeurs de la mine, et leur ordonne brutalement de se taire. Des pierres tombent autour de lui. Plus tard, pendant son repas, de petites voix l'avertissent de garder une part de son fuggan, un gâteau de farine et de raisins, pour bucca.[4] Le nom intervient au milieu d'un récit consacré à d'autres esprits : le voisinage folklorique ne se laisse pas réduire à des cases étanches.",
+        "Tom mange pourtant jusqu'à la dernière miette. Les voix changent alors leur avertissement en malédiction ; une malchance persistante l'oblige finalement à quitter la mine.[4] La punition n'a rien d'une attaque de prédateur. Elle suit le travailleur, compromet son métier et ruine son séjour dans un lieu dont il a refusé les usages. Le morceau réclamé était minuscule. C'est le refus entier de partager qui donne à l'affront sa gravité.",
+        "Courtney mentionne deux buccas : Bucca Gwidden, le blanc et bienveillant, et Bucca Dhu, le noir et malveillant.[4] Cette opposition appartient au vocabulaire moral du témoignage recueilli. Elle ne suffit pas à reconstruire deux dieux antiques, deux espèces ou un système religieux complet. Dans la même page, bucca désigne aussi un fantôme, un être dont on menace les enfants, puis un mot moqueur appliqué à quelqu'un qu'on juge sot.[4] Le nom survit en changeant de poids.",
+        "La synthèse moderne situe notamment des offrandes de pêcheurs à Newlyn et Mousehole. Elle rapporte aussi les conjectures de l'antiquaire W. S. Lach-Szyrma, qui rapprochait le bucca d'une ancienne divinité maritime.[5] Ce rapprochement reste une interprétation, non une filiation démontrée. Une pratique recueillie au XIXe siècle peut conserver des éléments anciens sans livrer leur âge ni leur sens d'origine. Les quelques poissons abandonnés sur le sable n'autorisent pas, à eux seuls, à restituer un panthéon perdu."
+      ],
+      "anomalies": [
+        "Le bucca possède une anatomie incertaine parce que sa fonction précède son image. Courtney ne lui attribue pas de queue écailleuse, de branchies ou de taille mesurable lorsqu'elle décrit les offrandes.[4] La figure marine à peau sombre, proche de celle d'un congre, et à chevelure d'algues appartient à un récit de Sea Bucca situé à Lamorna, repris dans la synthèse consultée.[5] Ce portrait rend le personnage visible, mais ne constitue pas la description générale de tous les buccas.",
+        "Dans cette histoire de Lamorna, l'être solitaire aurait été un prince humain frappé d'une malédiction. Il aide les pêcheurs en dirigeant poissons et crabes vers leurs engins, tout en inspirant la crainte par sa capacité de vengeance.[5] Il s'agit d'une variante narrative, et non d'une origine établie de la croyance. Elle déplace l'attention vers un corps exclu de la société humaine, dont la bienveillance conserve quelque chose de douloureux.",
+        "L'anomalie la plus constante tient à l'échelle de sa réponse. Une miette nourrit l'accord ; une omission menace toute une activité. Le bucca agit sur la chance plutôt qu'à travers un arsenal régulier de pouvoirs. Le mineur ne peut pas montrer une blessure qui expliquerait tout : son travail devient simplement impossible. La présence surnaturelle rejoint ainsi les accidents, les pertes et les déceptions dont une communauté laborieuse cherche la cause."
+      ],
+      "naturelle": {
+        "lead": "Le portrait naturaliste reste ici celui d'un esprit dans ses milieux humains ; les variantes marines sont distinguées des pratiques documentées.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le bucca reçoit une part et laisse les hommes poursuivre leurs occupations ; lorsqu'on le néglige, la relation peut devenir hostile. Le récit de Tom Trevorrow insiste sur l'avertissement préalable, répété pendant le repas.[4] L'esprit n'agit donc pas comme une fatalité muette : on lui prête une attente intelligible. Mais il n'existe ni contrat écrit ni autorité capable d'arbitrer le conflit. Le travailleur demeure seul devant des voix qui connaissent son nom et jugent sa conduite."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La plage constitue un lieu d'offrande, non la preuve d'un repaire. Le poisson y reste entre le retour de la pêche et la reprise possible par la mer ou les animaux. La mine, dans le récit transmis par Courtney, fait entendre des voix avant de montrer quoi que ce soit.[4] Ces deux espaces ont en commun d'exiger du travail dans un milieu que l'homme maîtrise imparfaitement. Le bucca s'y attache aux passages : sortie du poisson hors de l'eau, descente du mineur sous la terre, partage de la nourriture."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le poisson des pêcheurs, le pain et la bière des moissonneurs, le gâteau du mineur composent un ensemble d'offrandes exactement lié aux repas des donateurs.[4] On ne peut en déduire un régime omnivore au sens zoologique. La part importe parce qu'elle vient de ce qu'on possède, parfois péniblement acquis. Dans la mine, le didjan réclamé est un tout petit morceau : laisser ce reste n'appauvrit guère le repas, mais reconnaît un autre occupant du lieu."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le bucca des usages humains comprend le partage et son refus. Dans la scène minière, ce sont les knockers qui formulent sa demande et nomment le fautif.[4] Cette médiation empêche de lui attribuer mécaniquement chaque voix entendue sous terre. L'intelligence du monde surnaturel est collective, ou du moins répartie entre des présences voisines. Le travailleur, lui, reçoit un message parfaitement personnel : son comportement a été observé, et son prochain jour de travail en portera les conséquences."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les témoignages retenus ne décrivent aucune descendance du bucca. Sa multiplication est celle des appellations et des récits : bon esprit, puissance dangereuse, fantôme, personnage marin ou menace adressée aux enfants.[4][5] La variante du prince ensorcelé explique une apparition par une transformation individuelle. Elle ne renseigne pas une naissance d'espèce. Les adultes transmettent surtout un nom et des gestes, puis les enfants apprennent à reconnaître ce nom dans les histoires du rivage et de la mine."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucune bête n'est présentée comme son ennemi habituel. Le rapport de force l'oppose aux humains qui le provoquent ou l'oublient. Pourtant, sa prise sur eux peut diminuer autrement : Courtney remarque que traiter quelqu'un de grand bucca peut simplement revenir à le traiter de sot.[4] La puissance redoutée devient alors une insulte familière. Ce glissement ne tue pas l'esprit dans un combat ; il change les circonstances dans lesquelles son nom fait encore peur."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le bucca-boo domestique menace d'emporter les enfants qui pleurent, selon Courtney.[4] Il partage donc avec le croque-mitaine une fonction de contrainte, très éloignée du pêcheur qui espère préserver sa chance. Entre ces usages, aucune silhouette stable n'est nécessaire. Le nom suffit, tant qu'un adulte le prononce avec l'autorité de celui qui sait ce qui rôde hors de la lumière.",
+        "Des courants néopaïens contemporains ont aussi repris le bucca dans leurs rites.[5] Ces appropriations possèdent leur histoire propre ; elles ne rendent pas automatiquement antiques les correspondances qu'elles développent. Le témoignage ancien le plus concret reste plus sobre : quelques gouttes de bière répandues sur le sol, un petit morceau lancé derrière l'épaule, un poisson laissé au bord de l'eau. Chacun de ces gestes réserve à l'invisible une place dans les ressources du jour."
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "Margaret Ann Courtney — Cornish Feasts and Folk-lore, p. 129",
+        "url": "https://en.wikisource.org/wiki/Page:Cornish_feasts_and_folk-lore.djvu/141"
+      },
+      {
+        "id": 5,
+        "title": "Bucca (mythological creature) — traditions et réception moderne",
+        "url": "https://en.wikipedia.org/wiki/Bucca_(mythological_creature)"
+      }
+    ]
+  },
+  "bulette": {
+    "description": "Sous les pas, la terre n'est plus un appui : une gueule cuirassée la traverse et bondit avec elle.",
+    "sections": {
+      "fascination": [
+        "La bulette retire au voyageur une certitude ordinaire : le danger devrait venir de ce qu'on peut voir. Elle progresse sous le sol, perçoit les vibrations, puis surgit assez près pour mordre ou retomber de tout son poids sur sa proie.[2] La plaine dégagée devient aussi inquiétante qu'un bois épais. Il n'y a pas forcément un buisson à surveiller, une porte à barricader, un horizon d'où attendre la charge. La menace occupe précisément ce qui soutient les pieds.",
+        "Sa silhouette rassemble une tête en coin, une large gueule et un corps ramassé sous des plaques naturelles. Le surnom de requin terrestre, ou landshark, désigne ce prédateur fouisseur de Donjons et Dragons.[6] Il ne suppose pas une parenté zoologique avec les poissons. La comparaison porte sur la poursuite invisible et l'irruption de la morsure. La bulette est une invention de fantasy moderne : aucune légende paysanne ancienne ne se cache derrière ses champs éventrés."
+      ],
+      "legendes": [
+        "L'histoire publiée de la bulette commence dans les premiers temps de Donjons et Dragons. La synthèse bibliographique consultée mentionne Dragon no 1 en 1976, puis le Monster Manual de 1977, et une étude intitulée The Ecology of the Bulette dans Dragon no 74, en 1983.[6] Cette chronologie appartient à l'histoire d'un jeu. Les témoignages de rencontres sont des récits produits dans ses mondes imaginaires, non des collectes folkloriques transformées en règles.",
+        "Le monstre aurait été inspiré par un jouet de plastique bon marché.[6] Cette origine matérielle convient à son étrange évidence visuelle : un petit objet dont la forme semble déjà réclamer des mâchoires, un blindage et une manière de traverser le décor. Le bestiaire lui donne ensuite un nom, une attaque et des habitudes. On passe d'une silhouette tenue dans la main à une bête dont il devient possible d'imaginer le poids sous la terre.",
+        "La bulette a été reprise dans les différentes éditions du jeu, avec des changements de détails.[6] Le portrait mécanique retenu ici est celui de la fiche officielle de cinquième édition aujourd'hui signalée comme ancienne version, et non celui de toutes ses incarnations. Cette fiche insiste sur la morsure, la perception des vibrations et le bond meurtrier.[2] Elle ne raconte pas une création du monde, une malédiction ou une guerre entre dieux. Son histoire commence surtout à l'instant où une créature de surface devient une proie.",
+        "Le surnom maritime a conservé sa force malgré les révisions. Une étendue de terre peut cacher la bête comme une eau opaque cache un poisson. Pourtant, l'attaque n'est pas une simple morsure remontant d'une fosse : la bulette peut aussi se projeter hors du sol, franchir un espace et écraser plusieurs adversaires à la réception.[2] Cette seconde violence donne à la rencontre sa brutalité propre. Après avoir cessé d'être solide, la terre semble devenir projectile."
+      ],
+      "anomalies": [
+        "La même fiche lui attribue une vitesse d'enfouissement égale à sa vitesse au sol.[2] Cette équivalence est plus fantastique qu'une griffe particulièrement longue. Creuser cesse d'être une besogne lente qui immobilise l'animal ; le sous-sol devient une voie de circulation. La règle ne détaille pas l'évacuation des déblais ni le maintien d'une galerie derrière elle. La bulette traverse la matière avec la liberté que le jeu accorde à son mode de déplacement, sans fournir pour autant une théorie physique de cette traversée.",
+        "Sa perception des vibrations complète une vision adaptée à l'obscurité.[2] Le corps caché peut ainsi localiser ce qui remue autour de lui sans disposer d'une vue directe à travers la terre. Cette sensibilité ne doit pas devenir une omniscience : elle est une modalité de perception définie par les règles. Dans le portrait imaginaire qu'elle permet, un pas lourd et une course précipitée cessent d'être seulement des bruits ; ils inscrivent la présence du marcheur dans le milieu même du chasseur.",
+        "Le blindage ne condamne pas la bête à ramper lourdement. Son saut peut se faire sans élan, et l'attaque de réception associe choc et lacérations.[2] La contradiction entre masse et détente appartient au plaisir inquiétant de la créature. Elle paraît faite pour encaisser des coups au ras du sol, puis se révèle capable d'occuper soudain l'air. Son arsenal reste corporel : pas de regard enchanteur, pas de souffle élémentaire dans la fiche retenue."
+      ],
+      "naturelle": {
+        "lead": "Cette écologie imaginaire développe les capacités attestées dans le jeu, en conservant les silences de la fiche officielle sur la vie hors combat.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La poursuite sous terre et le bond forment deux moments complémentaires de son attaque. Cachée, la bulette se rapproche ; exposée, elle emploie sa masse pour renverser, puis ses mâchoires pour blesser.[2] Le mouvement importe davantage que la ruse élaborée. Rien, dans cette séquence, n'exige une embuscade préparée depuis des jours ou la compréhension d'un itinéraire humain. La rencontre peut se nouer dès que les vibrations signalent une présence accessible à un corps assez puissant pour surgir sous elle."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Son milieu distinctif est le sous-sol praticable à son déplacement fouisseur. Les champs du portrait populaire donnent à la menace un cadre lisible, mais la fiche officielle consultée ne fournit pas une carte complète de ses territoires.[2] Une galerie utilitaire, un terrier permanent et le passage d'une bête en chasse sont trois choses différentes. Le sillon imaginaire qui accompagne son approche peut illustrer son déplacement sans devenir la preuve qu'elle construit un réseau habité ou aménage des chambres de repos."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La synthèse historique la décrit comme mangeuse d'humains, de chevaux et de halfelins.[6] Ces préférences viennent d'une écologie ludique, avec des choix parfois différents selon les éditions ; elles n'expriment pas une croyance ancienne sur les peuples. La morsure reste son action alimentaire la plus immédiatement lisible. Elle possède un corps de carnivore massif, mais les documents retenus ne donnent ni quantité journalière ni durée de jeûne. Son appétit est décrit à travers les victimes possibles, non par un bilan énergétique."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La fiche officielle lui donne une intelligence très basse et aucun langage.[2] Son absence d'alignement moral la situe du côté d'un danger animal, non d'une malveillance doctrinale. Elle ne promet pas, ne rançonne pas et ne discute pas les raisons d'une intrusion. Une perception efficace suffit néanmoins à rendre l'animal redoutable : peu de compréhension abstraite n'empêche ni de détecter un mouvement ni d'exploiter une possibilité de charge. Sa force tient à cette économie entre sensation et attaque."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La fiche officielle retenue ne décrit ni ponte, ni gestation, ni soins aux jeunes.[2] Son format est celui d'une rencontre avec un individu adulte. La présence de plusieurs bulettes dans un monde imaginaire ne suffit donc pas à attribuer à celle-ci une saison des amours ou une structure familiale. Les versions plus développées du monstre peuvent proposer d'autres éléments, mais ils ne sont pas amalgamés ici. La croissance et le renouvellement de cette population restent hors du champ documenté de ce portrait."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucun ennemi naturel régulier n'est nommé dans les sources retenues. La fiche décrit en revanche une créature résistante, protégée par une armure naturelle, que des adversaires peuvent tout de même blesser et abattre.[2] Sa position de prédateur ne la rend donc pas invulnérable. Sa vulnérabilité la plus visible naît du passage à la surface : le corps jusque-là dissimulé devient une cible. La même irruption qui menace les voyageurs leur donne enfin quelque chose de matériel à affronter."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les représentations et figurines ont entretenu cette silhouette au fil des éditions ; la synthèse bibliographique cite notamment une miniature de la collection Giants of Legend.[6] La bulette revient ainsi à l'objet en volume après être entrée dans le jeu par un objet de plastique. Ce trajet ne diminue pas son étrangeté. Il explique en partie sa lisibilité : même immobile sur une table, la masse inclinée du corps suggère une poussée vers l'avant.",
+        "Une armure naturelle, un saut et une mâchoire suffisent à lui donner une identité distincte des dragons. La bulette n'exige aucune ruine antique ni aucun trésor. Son territoire imaginaire peut commencer dans un terrain banal, entre deux destinations, au moment où la marche semblait ne raconter rien. Lorsque son dos apparaît, l'espace ordinaire a déjà changé : ce qu'on traversait est désormais le domaine d'une bête qui s'y déplace mieux que soi."
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "D&D Beyond — Bulette, fiche officielle de cinquième édition, version Legacy",
+        "url": "https://www.dndbeyond.com/monsters/16818-bulette"
+      },
+      {
+        "id": 6,
+        "title": "Monsters in Dungeons & Dragons — entrée Bulette et historique des publications",
+        "url": "https://en.wikipedia.org/wiki/Bulette_(Dungeons_%26_Dragons)"
+      }
+    ]
+  },
+  "cabire": {
+    "description": "Un marteau résonne à Lemnos ; au large de Samothrace, des marins appellent des dieux dont ils taisent les mystères.",
+    "sections": {
+      "fascination": [
+        "Le Cabire appartient d'abord à un pluriel. Les Cabires, ou Kabeiroi, sont des puissances divines de l'Antiquité grecque, associées à plusieurs cultes et traditions, notamment à Lemnos et aux mystères de Samothrace.[3] Les isoler sous la forme d'un petit forgeron surnaturel ne conserve qu'une partie de leur histoire. Derrière le singulier se pressent des frères, des ancêtres, des initiateurs et des protecteurs que les auteurs anciens eux-mêmes ne parviennent pas toujours à identifier de la même manière.",
+        "Leur présence se laisse approcher par deux sensations très différentes : le choc du métal dans une forge et le soulagement d'un équipage lorsque le vent tombe. Des textes les rattachent à Héphaïstos et à l'art du marteau ; d'autres associent les dieux de Samothrace au secours des navigateurs.[3] Le feu et la mer voisinent sans former une biologie cohérente. Il s'agit de domaines de puissance divine, perçus à travers des récits, des images et des rites dont une partie devait rester secrète."
+      ],
+      "legendes": [
+        "Les fragments des Cabires d'Eschyle font accueillir les Argonautes à Lemnos avec une généreuse provision de vin.[3] La pièce est perdue ; ce qui subsiste laisse entrevoir des dieux hospitaliers et une compagnie de héros ivres, loin d'une procession toujours solennelle. Le rire appartient aussi à leur horizon. Il ne permet cependant pas de reconstituer le déroulement d'une initiation réelle à partir d'une œuvre dramatique fragmentaire.",
+        "Dans les Argonautiques d'Apollonios de Rhodes, Orphée conseille une escale à Samothrace pour que les voyageurs reçoivent l'initiation et poursuivent la traversée avec davantage de confiance. Le poète s'arrête au seuil des rites : il salue l'île et ses puissances sans les raconter.[3] Ce silence est un acte religieux à l'intérieur du texte. Le lecteur rencontre une limite que les héros franchissent et dont le récit ne lui remet pas la clef.",
+        "Diodore de Sicile rapporte une autre scène : au cours d'une tempête, Orphée adresse une prière aux divinités de Samothrace. Le vent s'apaise et deux étoiles paraissent au-dessus des Dioscures. L'équipage attribue son salut à une intervention divine.[3] Le récit rapproche les protecteurs samothraciens et les jumeaux célestes sans imposer une identité simple entre tous leurs noms. La mer délivrée du danger est ici une manifestation plus importante qu'un visage aperçu.",
+        "À Thèbes, Pausanias présente une tradition différente. Déméter aurait confié un dépôt sacré à un Cabire nommé Prométhée et à son fils Aitnaios ; le voyageur refuse d'expliquer la nature de ce dépôt.[3] Le Prométhée local ne doit pas être automatiquement confondu avec le Titan de tous les autres récits. Pausanias raconte aussi des interruptions et des rétablissements du culte. Les Cabires ont donc une géographie religieuse faite de sanctuaires particuliers, de transmissions et de souvenirs locaux, plutôt qu'une légende centrale unique.",
+        "Strabon connaît déjà les difficultés de classement. Il constate que l'on identifie volontiers les dieux de Samothrace aux Cabires tout en discutant l'identité des Cabires eux-mêmes, rapprochés des Courètes, des Corybantes ou des Dactyles.[3] Ces recoupements sont des données de l'histoire religieuse. Ils ne constituent pas une autorisation à fondre tous les danseurs armés et tous les artisans divins en une seule confrérie parfaitement définie."
+      ],
+      "anomalies": [
+        "L'apparence naine appartient à certaines descriptions et comparaisons antiques, notamment au rapprochement opéré par Hérodote avec des figures divines égyptiennes.[3] Elle ne définit pas la taille de chaque puissance honorée sous ce nom. L'image moderne du Cabire comme espèce de nain forgeron simplifie une documentation beaucoup plus mobile. Une statue, un récit de forge et un titre cultuel peuvent désigner des aspects qui ne s'assemblent pas en un portrait physique uniforme.",
+        "Chez Nonnos, les deux fils d'Héphaïstos, Alcon et Eurymédon, combattent dans l'armée de Dionysos. Leur père leur a fabriqué des chevaux métalliques qui soufflent le feu ; leurs armes et leurs regards prolongent l'éclat de la forge.[3] Cette vision tardive possède une vigueur propre : métal animé, poussière soulevée par des sabots sonores, feu maîtrisé jusque dans la bride. Elle demeure celle d'un poème déterminé, et non le compte rendu d'une croyance identique pendant toute l'Antiquité.",
+        "Le secret est leur autre singularité. Hérodote renvoie les initiés à un récit sacré qu'il n'explicite pas ; Pausanias refuse lui aussi de tout écrire.[3] Les contradictions ne viennent donc pas uniquement d'informations perdues par accident. Une partie de ce savoir se transmettait selon des conditions d'accès. L'érudition rencontre ici une fermeture voulue, que les descriptions extérieures et les identifications savantes ne suffisent pas à lever."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle de ces divinités suit leurs lieux, leurs relations et la transmission de leurs cultes, sans transformer les rites antiques en zoologie imaginaire.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Les Cabires apparaissent comme artisans, hôtes, combattants ou puissances secourables selon les textes. Un fragment de Callimaque les fait grandir auprès des fourneaux d'Héphaïstos et apprendre le travail du marteau.[3] Chez Diodore, les dieux répondent aux initiés qui les invoquent dans le péril. La discrétion de leur manifestation n'exclut pas la violence : le secours en mer et la colère contre une profanation appartiennent au même horizon religieux, où une puissance protectrice n'est jamais simplement inoffensive."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Lemnos, Imbros, Samothrace et les sanctuaires béotiens composent des foyers distincts de leurs traditions. Strabon mentionne aussi leur culte dans des cités de Troade.[3] Ces lieux ne sont pas les étapes d'une migration animale. Ils portent des noms divins, des généalogies et des pratiques parfois différentes. La forge lemnienne éclaire la parenté avec Héphaïstos ; le sanctuaire insulaire de Samothrace s'inscrit dans les récits de traversée et de protection. La carte cultuelle conserve les écarts que le mot Cabire tend à masquer."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le vin abondant de la pièce d'Eschyle donne aux Cabires une familiarité de convives.[3] Cette boisson appartient au registre du banquet dramatique, non à un besoin nutritif des dieux. Les offrandes et sacrifices évoqués dans les traditions cultuelles relèvent, eux, des rapports entre communautés et puissances sacrées. Confondre ces plans ferait du repas des héros une recette rituelle. Le partage peut être raconté, célébré ou offert sans avoir partout le même destinataire ni la même fonction."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le savoir des Cabires est tantôt technique, tantôt initiatique. Le marteau exige un apprentissage ; le mystère, une transmission réservée. Diodore rapporte que les initiés passent pour devenir plus pieux et plus justes.[3] Cette amélioration morale appartient au discours antique sur l'initiation, et non à un résultat que l'historien pourrait mesurer. Elle indique toutefois ce qu'on attendait de la relation avec ces dieux : être préservé dans le danger, mais aussi sortir changé de la rencontre avec le sacré."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les généalogies varient. Strabon rapporte qu'Acousilaos fait de Cadmilos un fils de Cabeiro et d'Héphaïstos, puis le père de trois Cabires ; Phérécyde donne directement à Cabeiro et Héphaïstos trois Cabires et trois nymphes cabirides.[3] Nonnos préfère le couple d'Alcon et d'Eurymédon. Ces filiations ordonnent des parentés divines ; elles ne décrivent pas un cycle reproductif. Leur variation montre les efforts des auteurs pour relier des puissances cultuelles à des familles de dieux plus largement connues."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les menaces sont celles de la guerre et de la profanation. Chez Nonnos, Héphaïstos protège ses fils et soigne Eurymédon blessé au combat.[3] Chez Pausanias, des hommes qui violent le sanctuaire thébain sont frappés par une vengeance surnaturelle, sous forme de folie ou de foudre.[3] Ces récits affirment la vulnérabilité d'un combattant dans un poème et l'inviolabilité d'un lieu sacré dans une tradition locale. Ils ne dessinent aucune chaîne alimentaire, mais des rapports de protection et de transgression."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "L'étymologie de Cabire demeure discutée. La compilation savante reproduite par Theoi souligne cette incertitude, tandis que Strabon transmet une explication par le mont Kabeiros.[3] Cette attribution géographique est une proposition ancienne, non une solution linguistique acquise. Les variantes Kabeiroi, Cabeiri ou Cabiri suivent les langues et les translittérations ; leur proximité graphique ne résout pas les différences entre les cultes.",
+        "Diodore rapporte que les Argonautes consacrèrent des coupes dans le sanctuaire de Samothrace après leur salut.[3] Ces objets appartiennent au récit de fondation et de mémoire qu'il transmet. Ils rapprochent le péril passé d'une matière durable, déposée à terre. Le Cabire du bestiaire reste ainsi entouré de choses très humaines : outils, vases et paroles retenues. Son mystère ne demande pas d'inventer une porte souterraine supplémentaire ; les textes antiques en ont déjà fermé plusieurs."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Theoi — Kabeiroi : textes d'Eschyle, Hérodote, Apollonios, Callimaque, Diodore, Strabon, Pausanias et Nonnos",
+        "url": "https://www.theoi.com/Georgikos/Kabeiroi.html"
+      }
+    ]
+  },
+  "cacodemon": {
+    "description": "Le cacodémon n'a pas besoin d'un visage reconnaissable : son nom suffit à désigner ce qui, dans l'invisible, vous veut du mal.",
+    "sections": {
+      "fascination": [
+        "Une silhouette se laisse mal distinguer au fond d'une pièce. Elle pourrait avoir des cornes, des ailes, une face humaine ; aucun de ces détails ne demeure certain. Le cacodémon commence à cet endroit du regard, quand une présence paraît hostile avant même qu'on puisse la nommer. Cette évocation rejoint la définition du Dictionnaire infernal de 1863 : un spectre assez effrayant, mais trop peu reconnaissable pour recevoir une désignation plus précise.[2] Son indétermination n'est donc pas un défaut de portrait. Elle appartient à son identité.",
+        "D'autres monstres portent leur menace dans un organe : la dent, la griffe, l'œil. Celui-ci la porte dans une intention. Le mot désigne un mauvais esprit plutôt qu'un animal d'une forme déterminée.[1] Aussi peut-il inquiéter sans surgir entièrement. Le lecteur attend une figure ; il rencontre une qualification du malheur. Quelque chose agit contre un être humain, et l'on prête à cette action la continuité d'une volonté. Ce soupçon suffit à donner une profondeur inhabitable à la chambre la plus ordinaire."
+      ],
+      "legendes": [
+        "Le nom vient du grec kakodaimōn, passé par le latin ; il associe le mal à daimōn, terme qui ne possède pas nécessairement, en grec, le sens exclusivement mauvais du démon moderne.[1] Traduire toute occurrence de daimon par diable écraserait cette différence. Le cacodémon est défini par sa nocivité au sein d'un vocabulaire plus large des puissances spirituelles. Son opposé, l'agathodémon ou l'eudémon, désigne au contraire un esprit favorable.[1] Nous sommes devant une distinction de fonction, non devant deux races dont les caractères physiques seraient établis.",
+        "Collin de Plancy reprend cette opposition dans le Dictionnaire infernal. Il explique que les anciens donnaient ce nom aux esprits malfaisants, puis présente chaque homme accompagné d'un bon et d'un mauvais démon.[2] Cette phrase appartient à une compilation française du XIXe siècle. Elle transmet une lecture de l'Antiquité ; elle ne suffit pas à faire de tous les Grecs, à toutes les époques, les fidèles d'une croyance identique. Le portrait du compagnon hostile reste néanmoins puissant : l'ennemi n'a plus besoin d'arriver du dehors, puisqu'il partage déjà la vie de celui qu'il poursuit.",
+        "Le même article donne au mot une autre demeure : la douzième maison astrologique, dite mauvaise et soumise aux influences malignes de Saturne.[2] Ici, aucun spectre ne traverse le ciel. Cacodémon devient le nom d'un secteur dans une lecture du destin. Ce déplacement explique une part de sa souplesse : l'appellation peut qualifier une puissance personnelle, une apparition ou une configuration jugée défavorable. Les rapprocher éclaire le mot ; les confondre produirait un monstre que le texte ne décrit pas.",
+        "Les usages plus récents retiennent parfois seulement l'idée générale du démon hostile, puis lui donnent un corps propre à leur univers.[1] Ces silhouettes ne constituent pas des preuves sur la religion grecque. Entre le terme ancien et la créature dessinée, il y a le travail d'une imagination nouvelle. L'histoire du cacodémon est faite de ces prises de forme successives : une catégorie abstraite devient assez familière pour qu'un illustrateur ose enfin lui assigner un visage."
+      ],
+      "anomalies": [
+        "Sa première anomalie est de résister au classement anatomique. L'article de Collin de Plancy ne fixe ni taille, ni nombre de membres, ni matière corporelle ; il insiste sur l'aspect horrible et peu identifiable du spectre.[2] Une ombre nette serait presque rassurante : on pourrait lui compter des doigts, mesurer sa hauteur, reconnaître une démarche. Le cacodémon prive l'observateur de ces prises. Sa terreur repose sur une reconnaissance incomplète, non sur l'accumulation de difformités.",
+        "Le mot peut aussi désigner une personne malveillante dans ses emplois figurés.[1] Cette proximité avec l'humain trouble davantage que des cornes. Un esprit mauvais peut servir à penser la haine, l'adversité ou l'influence corruptrice sans qu'on lui attribue la moindre enveloppe visible. Il faut donc distinguer sa présence littérale, lorsqu'un récit admet un être surnaturel, de l'accusation qui transforme un homme en démon. L'une peuple l'invisible ; l'autre révèle le jugement de celui qui parle.",
+        "Aucun pouvoir unique ne relie sûrement tous ces usages. Le changement de forme apparaît dans des descriptions modernes, mais il n'établit pas un catalogue antique de métamorphoses.[1] Ni feu infernal, ni morsure venimeuse, ni pacte obligatoire ne découle du seul nom. Sa constante est beaucoup plus sobre : une puissance est ressentie comme contraire au bien de la personne. Tout le reste demande un récit particulier."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit les manières dont les textes font agir un mauvais esprit ; les images de proximité qui l'accompagnent relèvent de l'évocation, non d'une zoologie antique retrouvée.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Dans le portrait du mauvais compagnon, l'hostilité est durable : le cacodémon se définit par le rapport défavorable qu'il entretient avec un être humain.[2] Il n'a pas besoin d'une chasse spectaculaire. L'image suggère une présence qui revient, une opposition dont chaque incident semble confirmer l'existence. Cette continuité appartient à l'interprétation de la fortune personnelle ; le dictionnaire ne fournit pas un journal d'apparitions permettant de lui attribuer des heures ou des habitudes précises."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Son domaine le plus net est la proximité humaine, lorsque la compilation le place auprès de chacun ; son autre emplacement est symbolique, dans la douzième maison astrologique.[2] Aucun de ces cadres n'autorise à tracer une aire de répartition. Il n'est pas attaché à une forêt ou à une montagne nommée. L'espace qui l'accueille dépend de ce qu'on cherche à expliquer : le destin d'une personne, une vision inquiétante, l'influence supposée des astres."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les sources consultées ne décrivent aucun repas du cacodémon. Le mal qu'il veut ou représente ne doit pas être transformé automatiquement en nourriture. Dire qu'il se repaît de peur serait une image, pas une tradition établie. Son rapport à la victime est celui d'une influence hostile ; cette différence le sépare des revenants qui prélèvent du sang et des ogres dont les récits montrent matériellement les cuisines."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le terme mauvais esprit suppose une présence à laquelle on prête une orientation, mais il ne mesure ni savoir ni ruse. La figure du compagnon adverse invite à imaginer un ennemi attentif aux faiblesses d'une vie. Le texte de 1863 ne raconte pourtant aucune de ses manœuvres.[2] Son intelligence reste ainsi une attente du lecteur : devant une hostilité personnifiée, on cherche spontanément qui décide, qui prévoit, qui recommencera demain."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Ce nom de catégorie ne possède pas de généalogie commune. Il se transmet entre langues, dictionnaires et images plutôt qu'entre parents et petits. Un esprit peut recevoir l'appellation parce qu'il est tenu pour malfaisant ; cela ne le fait pas naître d'un autre cacodémon. La multiplication du mot dans les représentations explique sa présence dans un bestiaire sans exiger des œufs, une gestation ou une lignée infernale que les textes lus ne donnent pas."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "L'eudémon lui est opposé comme bon esprit, mais opposition ne signifie pas prédation.[1][2] Le dictionnaire ne décrit pas de duel réglé entre les deux compagnons, encore moins une espèce qui consommerait l'autre. Leur voisinage organise une lecture du bien et du mal autour de l'humain. Le cacodémon a donc un contraire lexical et moral clairement nommé ; ses moyens de destruction éventuels restent propres aux récits qui les énoncent."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "L'illustration associée à l'article de 1863 donne un corps à ce que la définition laisse justement méconnaissable.[2] Cette tension mérite de rester visible : une gravure fixe un instant de l'imaginaire, elle ne clôt pas l'histoire du nom. La consulter comme un portrait officiel ferait perdre au cacodémon sa singularité la plus ancienne dans cette compilation, celle d'un spectre qu'on ne sait pas mieux désigner.",
+        "La véritable relique est ici un mot. Son premier élément annonce le mal ; le second conserve le souvenir d'un vocabulaire spirituel moins univoque que notre usage courant de démon.[1] Lorsqu'il passe dans une langue nouvelle ou sur une image nouvelle, le cacodémon change de contours, mais garde cette direction hostile. Il demeure reconnaissable par ce qu'on lui impute, bien avant de l'être par ce qu'on voit."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Cacodemon — synthèse lexicale et historique, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cacodemon"
+      },
+      {
+        "id": 2,
+        "title": "Collin de Plancy, Dictionnaire infernal, 1863 — Cacodémon",
+        "url": "https://fr.wikisource.org/wiki/Dictionnaire_infernal/6e_%C3%A9d.,_1863/Cacod%C3%A9mon"
+      }
+    ]
+  },
+  "cambion": {
+    "description": "Dans le berceau du cambion, la peur porte moins sur ce que l'enfant fera que sur l'identité qu'on lui impose.",
+    "sections": {
+      "fascination": [
+        "Le cheval ploie sous un enfant. Rien, dans le petit corps qu'on lui confie, ne devrait produire un tel poids ; pourtant les jambes de l'animal cèdent. Cette scène, rapportée par le Dictionnaire infernal, donne au cambion une présence plus troublante qu'une grande paire d'ailes.[4] Le monstre tient dans les bras. Il exige le soin réservé aux nouveau-nés, puis semble démentir toutes les proportions de l'enfance. Ce contraste entre apparence vulnérable et puissance anormale gouverne une partie de ses anciens portraits.",
+        "Le cambion contemporain est souvent présenté comme l'enfant d'un humain et d'un démon.[3] Cette définition paraît simple ; son histoire l'est moins. L'enfant échangé, l'enfant de deux démons et l'hybride humain appartiennent à des états différents du nom. Leur réunion crée une figure chargée de soupçons avant même son premier choix. Autour de son berceau, chacun voudrait lire une origine. Lui doit pourtant grandir, avec un corps et une vie qui ne se réduisent pas au récit de ses parents."
+      ],
+      "legendes": [
+        "La synthèse historique consacrée au terme rappelle que Guillaume d'Auvergne, dans le De universo au XIIIe siècle, rapproche les cambiones des enfants échangés. Elle rapporte des nourrissons attribués aux incubes, insatiables au point d'épuiser plusieurs nourrices.[3] Cette acception rejoint le motif du changelin : un enfant étranger aurait pris la place de l'enfant humain. Le cambion commence donc aussi par une substitution, et non uniquement par une union entre deux natures. Ce sont deux inquiétudes distinctes, même si les compilations ont fini par les rapprocher.",
+        "Dans l'édition de 1863 du Dictionnaire infernal, Collin de Plancy attribue à Delancre et à Bodin l'idée que des incubes peuvent s'unir à des succubes et engendrer des cambions.[4] Le petit être n'a alors aucun parent humain. Il pèse davantage que les autres enfants, mange sans grossir et tarirait plusieurs nourrices sans en profiter. Le dictionnaire rapporte aussi un propos attribué à Luther : ces enfants vivraient seulement sept ans, crieraient au toucher et riraient des malheurs domestiques.[4] Il s'agit de croyances rapportées, non de constatations sur des nourrissons réels.",
+        "Le récit du mendiant galicien, repris dans le même article d'après Maïole, déplace le cambion hors du berceau. Un cavalier aide le mendiant à franchir un fleuve et prend l'enfant sur sa monture ; son poids accable le cheval. Plus tard, le mendiant arrêté avoue, selon le récit, transporter un petit démon dont la présence lui assure l'aumône.[4] L'histoire mêle compassion, tromperie et prodige. Elle ne fournit ni lieu exact ni dossier permettant de vérifier l'aventure ; son intérêt réside dans le retournement de l'aide charitable en piège surnaturel.",
+        "La définition d'un enfant né d'un démon et d'un humain s'impose dans des usages littéraires et modernes, puis dans la fantasy ludique ; la synthèse consultée signale notamment le Monster Manual II de Donjons et Dragons en 1983.[3] Les débats médiévaux sur la génération démoniaque ne formaient cependant pas une doctrine unanime. Certains raisonnements privaient les démons de la capacité de créer la vie et imaginaient plutôt un transport de semence humaine.[3] La parenté infernale pouvait donc désigner l'intervention d'un esprit sans lui reconnaître une paternité biologique au sens ordinaire."
+      ],
+      "anomalies": [
+        "L'excès de poids est l'anomalie la plus concrète du cambion décrit par Collin de Plancy. Il se combine étrangement avec une croissance défaillante : l'enfant absorbe beaucoup, mais n'en devient pas plus gras.[4] La matière semble entrer dans un corps dont elle ne nourrit pas l'apparence. Ce portrait repose sur une rupture de réciprocité domestique. Nourrir devrait faire grandir ; porter devrait rester possible ; consoler devrait apaiser. Le cambion contrarie ces gestes quotidiens et rend suspect le soin lui-même.",
+        "Ces signes appellent une lecture prudente. Des récits de substitution ou de filiation démoniaque peuvent transformer la maladie et la différence d'un enfant en accusation contre lui. La notice décrit des représentations historiques ; elle ne les prend pas pour des moyens de reconnaître un être surnaturel. Un nourrisson qui pleure, mange difficilement ou grandit autrement n'atteste aucune origine infernale. L'horreur des textes tient aussi au regard adulte qui préfère parfois un démon à une fragilité qu'il ne comprend pas.",
+        "Les cornes, les ailes et les pouvoirs de séduction appartiennent à des portraits de fantasy particuliers, non à une anatomie valable pour tous les cambions. La définition moderne par double ascendance donne un principe de parenté, pas une liste obligatoire d'organes.[3] Un personnage peut porter des marques visibles de son origine ou demeurer humain d'apparence. La contradiction centrale demeure la même : une naissance est traitée comme une annonce de caractère, alors qu'une généalogie ne raconte pas encore une conduite."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle distingue les enfants suspects des compilations démonologiques et leurs héritiers de fantasy ; elle suit leurs rapports au foyer sans inventer une espèce biologique commune.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le cambion de 1863 crie lorsqu'on le touche et, dans le propos attribué à Luther, ne rit qu'au malheur de la maison.[4] Le rire devient une preuve à charge : là où la famille souffre, l'enfant serait satisfait. Ce trait construit une intention maligne derrière des réactions infantiles. Dans le récit du mendiant, l'action est différente : sa présence favorise l'obtention d'aumônes. Le petit démon peut donc être présenté comme un fardeau autant que comme l'auxiliaire intéressé d'un adulte."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le foyer et le chemin sont les lieux concrets des récits consultés : maison des nourrices, bras du mendiant, passage du fleuve.[4] Leur échelle est humaine. Le cambion ancien ne possède pas nécessairement un château infernal ; il occupe l'endroit réservé à l'enfant dépendant. Le soupçon pénètre ainsi dans l'espace du soin. Même porté sur une route, le petit être demeure au contact d'un adulte qui le protège, le montre ou se sert de lui."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le lait est au centre du portrait démonologique : plusieurs nourrices s'épuisent pour un enfant que rien ne semble faire prospérer.[3][4] L'appétit y signifie une dépense sans retour, un corps qui épuise les ressources de la maisonnée. Aucun banquet sanglant n'est nécessaire. Cette voracité doit rester attachée au cambion nourrisson des textes ; elle ne permet pas d'imposer à tous les hybrides modernes le même régime, encore moins de présenter un trouble de croissance réel comme une marque surnaturelle."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le rire mal placé et l'efficacité auprès des donateurs prêtent au petit corps des intentions qui excèdent son âge.[4] Le récit ne mesure pas son savoir ; il suggère qu'une volonté plus vieille habite l'enfant. Cette dissociation entre âge visible et agent supposé rapproche le cambion du substitué. Dans la figure hybride moderne, au contraire, l'enfance peut être une véritable période de formation : le personnage a une origine extraordinaire, mais son existence ne se limite pas à dissimuler un adulte démoniaque."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Trois mécanismes doivent rester distincts : l'échange d'un enfant, l'union de deux démons rapportée en 1863, et l'ascendance mixte aujourd'hui familière.[3][4] L'échange n'est pas un engendrement. Quant aux spéculations sur les incubes et succubes, elles discutent précisément ce qu'un esprit peut produire avec un corps emprunté. Les sources consultées parlent de la venue du cambion ; elles n'établissent pas sa propre fécondité ni une descendance stable de cambions entre eux."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucun animal chasseur n'apparaît dans ces portraits. Le danger vient plutôt du déchiffrement humain : un adulte croit reconnaître le démon sous l'enfant et lui retire la protection due aux siens. Le mendiant est arrêté et son aveu clôt l'anecdote du fleuve.[4] Cette fin appartient au récit d'accusation. Elle rappelle que l'histoire du cambion porte autant sur ceux qui l'identifient que sur l'être qu'ils prétendent avoir découvert."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le lien ancien avec l'échange demeure perceptible dans l'explication médiévale du mot rapportée par la synthèse historique.[3] Il empêche de réduire son passé à une simple formule de croisement. Dans un cas, une place a été usurpée ; dans l'autre, une naissance réunit deux lignées. Les objets de l'angoisse changent avec ces explications, même lorsque le berceau reste le même.",
+        "La postérité fantastique retient volontiers l'ascendance mixte et le conflit d'appartenance.[3] L'ancien enfant sans croissance devient alors un personnage capable de quitter la maison, de parler pour lui-même et de contredire son héritage. Le contraste est sensible : les compilations le regardaient du dehors, à travers les témoignages d'adultes ; la fiction peut lui rendre une existence qui ne commence ni ne finit avec l'accusation portée sur sa naissance."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Cambion — histoire des acceptions, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cambion"
+      },
+      {
+        "id": 4,
+        "title": "Collin de Plancy, Dictionnaire infernal, 1863 — Cambions",
+        "url": "https://fr.wikisource.org/wiki/Dictionnaire_infernal/6e_%C3%A9d.,_1863/Cambions"
+      }
+    ]
+  },
+  "catoblepas": {
+    "description": "Le catoblépas garde la tête dans l'herbe ; chez Pline, cette lourdeur seule épargne ceux qui passent devant ses yeux.",
+    "sections": {
+      "fascination": [
+        "Une bête reste immobile au bord de l'eau, le front si bas qu'il semble chercher un appui sur le sol. On pourrait la croire épuisée. Le danger naît pourtant du mouvement qu'elle ne fait pas encore : redresser la tête. Dans l'Histoire naturelle de Pline, tous ceux qui voient ses yeux meurent aussitôt.[5] L'infirmité apparente devient ainsi une protection pour le monde alentour. Le catoblépas fascine parce qu'il porte son désastre avec difficulté ; son propre corps retient l'arme dont les hommes doivent se garder.",
+        "Chez Élien, la rencontre prend une autre épaisseur. Une crinière tombe du sommet du crâne sur le visage, les sourcils sont broussailleux, les yeux étroits et injectés de sang regardent la terre.[5] Cette bête a quelque chose d'un grand herbivore mal réveillé, mais son calme n'est pas rassurant. Quand le poil se redresse et que les lèvres découvrent la bouche, l'air lui-même devient dangereux. Entre ces deux portraits, le catoblépas reste un animal pesant, difficile à lire, dont la menace commence bien avant le contact."
+      ],
+      "legendes": [
+        "Pline l'Ancien situe le catoblépas dans l'Éthiopie occidentale, près d'une source nommée Nigris que beaucoup tenaient pour l'origine du Nil. Son texte, cité sur Theoi dans la traduction de Rackham, décrit une bête de taille modérée, peu active, avec une tête d'un poids extrême.[5] L'Éthiopie des géographes antiques ne correspond pas simplement aux frontières du pays contemporain. La source éloignée et l'animal fatal appartiennent ici à une géographie savante de régions dont les renseignements circulent par récits et compilations.",
+        "Le passage se trouve au livre VIII de l'Histoire naturelle, consacré aux animaux terrestres. Le merveilleux y prend la forme d'une notice zoologique : emplacement, dimensions relatives, posture, danger.[5] Aucun héros ne vient terrasser le catoblépas et aucun dieu ne raconte sa métamorphose. Sa présence tient à l'affirmation qu'il existe quelque part un animal dont le regard suffit à tuer. Cette sobriété descriptive donne au prodige une autorité particulière : il entre dans le monde par la porte du savoir, non par celle d'une aventure héroïque.",
+        "Élien, dans De la nature des animaux, VII, 6, place la bête en Libye, terme qui désigne ici l'Afrique, et lui donne environ la taille d'un taureau.[5] Il décrit beaucoup plus précisément son visage, sa crinière et sa nourriture. Le péril vient cette fois d'un souffle âcre et fétide, capable d'infecter l'air ; les animaux qui l'inhalent perdent la voix et sont pris de convulsions mortelles.[5] Ce texte n'est pas la simple répétition de Pline. Il propose un autre mécanisme, matériel et presque visible, là où le premier faisait de la rencontre des regards l'événement fatal.",
+        "La présentation de Theoi évoque le gnou comme possible point de départ d'un récit de voyage embelli.[5] Il s'agit d'une hypothèse de rapprochement, pas de l'identification démontrée d'une espèce. Une tête basse, une allure bovine et une crinière peuvent encourager la comparaison ; elles n'expliquent pas à elles seules le regard meurtrier. Le catoblépas est connu par les textes qui le façonnent. Lui chercher un animal réel peut éclairer sa silhouette, mais ne remplace pas l'histoire de ces textes."
+      ],
+      "anomalies": [
+        "La tête disproportionnellement lourde est le frein du catoblépas plinien. Il la porte avec peine et la laisse pendre continuellement vers le sol.[5] Cette contrainte inscrit une limite dans son pouvoir : il ne dispose pas à chaque instant de l'orientation nécessaire pour tuer. Le détail donne à la rencontre une lenteur singulière. L'observateur ne craint pas d'abord une course ou une charge ; il surveille une encolure, l'effort possible d'un relèvement et la position d'yeux encore cachés.",
+        "Chez Élien, la crinière forme un rideau sur le visage. Avant l'émission du souffle, la bête frémit, hérisse ce poil et retrousse les lèvres.[5] Le danger possède donc une séquence corporelle. Il ne sort pas d'une bouche abstraite : le lecteur voit une musculature se tendre et une masse de crins se soulever. Les racines vénéneuses dont l'animal se nourrit rapprochent son régime de sa toxicité, sans que le texte établisse pour autant une chimie vérifiable de ce poison.",
+        "Réunir le regard de Pline et le souffle d'Élien produit le catoblépas cumulatif de nombreuses images de bestiaire. Les deux armes sont pourtant attestées dans des descriptions différentes.[5] Leur distinction permet de comprendre deux peurs : voir ce qui ne doit pas être vu, ou respirer un air devenu nocif. Dans la première, une distance visuelle suffit ; dans la seconde, l'espace autour du corps se transforme en zone dangereuse. Le monstre n'a pas besoin de poursuivre ceux que sa seule proximité condamne."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle qui suit reste celle des animaux décrits par Pline et Élien ; elle garde séparées leurs variantes plutôt que d'inventer une population observée dans les marais africains.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Pline insiste sur l'inactivité des membres et sur la tête pendante.[5] Élien lui prête au contraire une conscience de son pouvoir : l'animal sait ce qu'il peut faire, tandis que les autres bêtes s'écartent de lui.[5] Cette assurance n'exige ni poursuite ni agitation constante. Le catoblépas d'Élien peut occuper un lieu en laissant les autres en reconnaître le danger ; lorsqu'il menace, son corps donne des signes précis avant de libérer le souffle."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "L'indication la plus localisée est le voisinage de la source Nigris chez Pline ; Élien donne le cadre africain plus large de la Libye.[5] Il serait abusif d'en déduire un marais précis, une profondeur d'eau ou une migration saisonnière. Le bord de source fournit néanmoins un décor saisissant : un lieu auquel les animaux doivent revenir pour boire devient inquiétant par la présence d'un seul herbivore. Cette image prolonge le texte sans constituer une observation supplémentaire."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Élien le fait manger des racines empoisonnées.[5] Le détail éloigne le catoblépas du carnassier ordinaire : il tue, mais les victimes de son souffle ne sont pas présentées comme ses repas. Sa bouche cherche dans le sol une nourriture que d'autres éviteraient. La tête basse reçoit ainsi une seconde cohérence, liée cette fois au pâturage. Pline ne précise pas ce régime ; il ne faut pas lui attribuer rétrospectivement l'ensemble des habitudes données par Élien."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'affirmation d'Élien selon laquelle la bête connaît son pouvoir lui accorde davantage qu'un réflexe aveugle.[5] Elle ne lui donne pourtant ni langage ni projet politique. Son intelligence tient dans un rapport immédiat à l'environnement : elle sait la menace qu'elle représente, et les autres animaux semblent la savoir aussi. Cette reconnaissance mutuelle suffit à organiser l'évitement. Le silence autour d'elle peut alors être lu comme une conséquence de sa présence, sans lui prêter un esprit humain."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les deux extraits antiques consultés ne donnent ni naissance, ni accouplement, ni petit. Leurs auteurs s'intéressent au spécimen dangereux, déjà formé, et aux signes permettant de le reconnaître. Une femelle protégeant son veau serait une scène naturaliste concevable, mais elle n'est pas attestée dans ces passages. Le catoblépas y entre directement dans l'âge de sa puissance : lourd chez Pline, capable de souffler le poison chez Élien, sans histoire préalable de croissance."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Élien décrit des animaux qui fuient aussi loin qu'ils le peuvent ; il ne nomme aucun prédateur capable de traverser l'air infecté.[5] Le pouvoir du catoblépas forme une défense qui paraît suffire à son isolement. Chez Pline, la limite est intérieure : le poids de la tête empêche l'exposition permanente de ses yeux. Les textes montrent donc davantage ce qui protège les autres de lui que ce qui pourrait le vaincre, et ne racontent aucune chasse victorieuse."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le nom grec renvoie à celui qui regarde vers le bas, selon l'explication donnée sur Theoi.[5] Il conserve la posture avant de nommer le meurtre. Cette précision distingue le catoblépas des monstres baptisés d'après leur cruauté : son appellation commence par un geste presque banal, que la description transforme ensuite en mécanisme de survie pour les témoins.",
+        "La même page reproduit un catoblépas du manuscrit Der Naturen Bloeme daté de 1350 et conservé à la Bibliothèque nationale des Pays-Bas.[5] La présence de l'animal dans un manuscrit médiéval atteste la transmission de cette figure, non celle d'une rencontre réelle. D'une compilation antique à l'image peinte, son corps acquiert de nouveaux contours. Il garde pourtant une consigne visuelle très simple : regarder l'animal avec assez d'attention pour comprendre pourquoi il ne faut pas croiser ses yeux."
+      ]
+    },
+    "sources": [
+      {
+        "id": 5,
+        "title": "Theoi — Katobleps : Pline, Histoire naturelle VIII, 77 ; Élien, De la nature des animaux VII, 6",
+        "url": "https://www.theoi.com/Thaumasios/Katoblepones.html"
+      }
+    ]
+  },
+  "cauchemar": {
+    "description": "Quelqu'un pèse sur la poitrine du dormeur, mais la voix qui pourrait appeler au secours reste enfermée dans sa gorge.",
+    "sections": {
+      "fascination": [
+        "La chambre est reconnaissable. Le lit n'a pas bougé ; la porte se trouve au même endroit. Pourtant une présence occupe maintenant l'espace entre le corps et la nuit. Le cauchemar folklorique commence dans cette intimité violée : un être s'assied sur le dormeur, le comprime et lui retire la possibilité de crier.[6][7] La terreur ne dépend pas d'un paysage inconnu. Elle naît de l'impossibilité de défendre le lieu où l'on devait pouvoir s'abandonner au sommeil.",
+        "Le mot désigne aujourd'hui couramment un mauvais rêve ; la créature ancienne donne un agent à l'oppression. Au lieu d'une suite d'images effrayantes, elle propose un poids, une intention et parfois une forme visible.[7] Elle peut être spectre, sorcière, démon ou animal. Ces visages ne se recouvrent pas exactement, mais tous rapprochent le danger du corps immobile. Le monstre a déjà franchi la distance que tant d'autres récits consacrent à parcourir. Lorsqu'on le perçoit, il est sur soi."
+      ],
+      "legendes": [
+        "Les traditions germaniques et slaves connaissent, sous des noms apparentés tels que mare, mara ou zmora, une présence malveillante qui s'assied, marche ou chevauche sur la poitrine des dormeurs.[6] La synthèse consultée souligne la fréquence des figures féminines et la possibilité de changements de forme. Ce voisinage de noms et de gestes ne constitue pas une religion européenne unique. Il rassemble des traditions dont les récits locaux peuvent donner des origines et des caractères différents à l'oppresseur nocturne.",
+        "L'article Cauchemar du Dictionnaire infernal de 1863 commence par décrire l'oppression et la difficulté respiratoire survenant pendant le sommeil, puis explique comment on en fit un monstre.[7] Collin de Plancy rapporte les figures d'une sorcière ou d'un spectre pressant le ventre, ainsi que celle d'un démon qui étouffe. Sa présentation conserve les croyances tout en prenant ses distances avec leur explication surnaturelle. Le livre est donc à la fois un réservoir de récits et un commentaire du XIXe siècle sur leur crédibilité.",
+        "Une de ses anecdotes se déroule pendant les guerres de la République française en Italie. Des soldats sont logés dans une église profanée ; les habitants les avertissent qu'on y éprouve une suffocation nocturne accompagnée de la vision d'un gros chien. Les soldats se moquent de l'avertissement, puis chacun voit un chien noir sur son estomac. Leurs officiers passent à leur tour la nuit sur place et subissent le même tourment.[7] L'article ne donne ni régiment, ni date, ni localité permettant de vérifier cet épisode. Il faut le lire comme un récit rapporté, non comme une observation collective établie.",
+        "Le dictionnaire attribue aussi à Bodin un témoignage sur des sorciers et sorcières du Valois, en Picardie, appelés cauchemares, qu'on chasserait par la prière.[7] Le terme peut ainsi désigner une personne tenue pour responsable du mal nocturne, et non seulement une espèce de fantôme. La peur sort alors du lit et atteint les relations entre voisins. Donner un nom à l'oppresseur procure une explication ; désigner quelqu'un comme son auteur peut faire naître une accusation bien réelle.",
+        "La médecine actuelle décrit la paralysie du sommeil comme une impossibilité temporaire de bouger ou de parler à l'endormissement ou au réveil. Elle peut s'accompagner d'une impression de présence et de pression sur le corps.[8] Ce rapprochement éclaire plusieurs motifs de l'oppresseur nocturne, sans établir que chaque conte ou chaque mauvais rêve relève de ce phénomène. Le récit folklorique organise une expérience dans une culture ; la description médicale cherche à comprendre un état du sommeil. Leurs objets se rencontrent, mais leurs explications ne sont pas interchangeables."
+      ],
+      "anomalies": [
+        "Le cauchemar peut peser sans présenter un corps stable. Le dormeur éprouve une contrainte massive, alors que la figure qui la cause change selon le récit : femme, spectre ou chien noir dans les exemples rassemblés par Collin de Plancy.[7] Cette disproportion entre poids ressenti et forme incertaine le distingue du géant assis sur sa proie. La matière du monstre semble empruntée à la sensation : la poitrine cède, donc quelque chose doit l'écraser.",
+        "La voix est sa seconde prise. Empêcher le cri revient à isoler une personne au milieu même d'une maison habitée. Les récits rapportés par le dictionnaire associent cette parole dérobée à l'impossibilité de respirer librement et de se réveiller pour demander de l'aide.[7] Une porte ouverte ne suffit plus à protéger. Le voisin peut être proche et demeurer inaccessible ; la terreur se mesure alors à la faible distance qu'un simple appel aurait franchie.",
+        "Les manifestations médicalement décrites ne prouvent aucune visite surnaturelle. Le NHS précise que la paralysie du sommeil peut être effrayante, mais qu'elle est sans danger en elle-même ; l'épisode peut durer plusieurs minutes.[8] Ce constat ne retire rien à l'intensité du vécu. Il permet de séparer le sentiment très réel d'une présence de l'existence d'un agresseur dans la chambre. Le bestiaire conserve la créature comme explication historique et image, non comme diagnostic."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit l'oppresseur des récits européens ; ses gestes appartiennent au folklore, tandis que les rapprochements avec le sommeil restent explicitement médicaux.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'attaque est rapprochée et immobilisante. La mare s'assied ou chevauche sur la poitrine ; les figures françaises rapportées pressent aussi le ventre.[6][7] Le cauchemar n'a pas besoin d'emporter sa victime : il transforme le repos en effort infructueux. Le récit italien joue même sur la répétition, puisque les officiers revivent l'expérience de leurs hommes. Cette seconde nuit appartient à la construction de l'anecdote : elle rend plus difficile, pour ses personnages, le refuge dans la moquerie."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Son territoire est un corps endormi autant qu'une chambre. Lit domestique et église transformée en cantonnement suffisent dans les exemples consultés.[7] Le lieu le plus inquiétant est souvent familier, parce qu'il aurait dû garantir la sécurité. Dans l'anecdote militaire, la réputation du bâtiment et l'avertissement des habitants précèdent les visions. Le récit laisse ainsi voir comment un lieu reçoit une histoire avant que ses nouveaux occupants y ferment les yeux."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les textes retenus montrent le cauchemar qui comprime et effraie, mais ne le décrivent pas en train de manger. La respiration entravée est un effet de l'assaut, non la preuve qu'il se nourrit de souffle. De même, parler d'un esprit nourri par la peur serait une interprétation poétique. La créature se définit suffisamment par ce qu'elle fait au dormeur ; elle n'a pas besoin d'une ration quotidienne d'angoisse pour garder sa puissance d'évocation."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La forme de sorcière lui donne une intention humaine ; celle du chien noir la rend moins explicite.[7] Dans les deux cas, la victime interprète une pression comme une action dirigée contre elle. Le silence de l'agresseur laisse ouverte la question de son but. L'entité n'explique pas sa venue, ne négocie pas et ne formule aucune demande dans ces exemples. Sa volonté se déduit du geste oppressif, ce qui la rend plus difficile encore à apaiser par la parole."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les sources ici consultées n'établissent pas de naissance commune aux différentes figures. Certaines sont des esprits, d'autres des personnes accusées de tourmenter les dormeurs.[6][7] Leur continuité est surtout celle d'une expérience racontée : quelqu'un éprouve une oppression, trouve un nom connu pour la décrire et transmet ce nom. Ce mécanisme culturel explique la persistance de la figure sans exiger une lignée unique qui unirait les sorcières du Valois aux mara scandinaves."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le dictionnaire mentionne une pierre creuse suspendue dans l'écurie comme protection, et la prière contre les cauchemares attribuées au Valois.[7] Ces pratiques appartiennent aux croyances rapportées ; leur efficacité n'est pas démontrée par leur présence dans le livre. Le réveil met fin à l'épisode dans la définition donnée par Collin de Plancy. Aujourd'hui, des épisodes fréquents accompagnés de peur du sommeil ou de fatigue justifient un avis médical, selon le NHS.[8] Le soin ne requiert aucune chasse au démon."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le second élément du français cauchemar appartient à la famille germanique de mare, d'après la synthèse étymologique consultée.[6] En anglais, le nom de l'oppresseur n'a pas la même origine que mare au sens de jument.[6] Cette homonymie ne suffit donc pas à faire du cauchemar folklorique un cheval. Les montures infernales de fantasy sont des créations distinctes ; elles ne remplacent pas l'être qui pèse sur les dormeurs.",
+        "La pierre trouée suspendue dans une écurie garde la trace matérielle d'une défense nocturne, tandis que le chien noir du cantonnement conserve une silhouette facile à raconter.[7] Entre ces deux images, le cauchemar n'a jamais besoin de laisser une carcasse. Son vestige le plus durable est la mémoire au matin : une pièce intacte, un corps libéré, et la certitude d'avoir affronté quelque chose que personne, dans la maison, n'a entendu entrer."
+      ]
+    },
+    "sources": [
+      {
+        "id": 6,
+        "title": "Mare (folklore) — traditions et étymologie, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mare_(folklore)"
+      },
+      {
+        "id": 7,
+        "title": "Collin de Plancy, Dictionnaire infernal, 1863 — Cauchemar",
+        "url": "https://fr.wikisource.org/wiki/Dictionnaire_infernal/6e_%C3%A9d.,_1863/Cauchemar"
+      },
+      {
+        "id": 8,
+        "title": "NHS — Sleep paralysis",
+        "url": "https://www.nhs.uk/conditions/sleep-paralysis"
+      }
+    ]
+  },
+  "centaure": {
+    "description": "Le sabot frappe la terre tandis que la main se referme sur une coupe : chez le centaure, deux façons d'habiter le monde tiennent dans un seul corps.",
+    "sections": {
+      "fascination": [
+        "Vu de loin, il pourrait passer pour un cavalier arrêté dans les arbres. Puis il tourne, et rien ne se sépare : la poitrine humaine monte directement du poitrail du cheval. Aucun mors, aucune selle, aucun ordre transmis d'un corps à l'autre. Le désir et la course disposent des mêmes muscles. Cette continuité rend le centaure plus troublant qu'un homme simplement accompagné d'une monture.",
+        "Les récits grecs lui donnent volontiers la montagne pour domaine et le banquet pour épreuve. Sous les branches, sa puissance paraît à sa place ; entre les tables, elle devient encombrante et bientôt meurtrière. Pourtant, réduire tous les centaures à la violence effacerait leur variété. Les textes connaissent aussi leur vie familiale, et Chiron demeure le plus célèbre démenti à l'image d'une foule uniquement brutale.[1]"
+      ],
+      "legendes": [
+        "Dans la deuxième Pythique de Pindare, Ixion poursuit une ressemblance d'Héra façonnée dans un nuage. De cette union naît Kentauros, qui s'accouple aux juments de Magnésie, sur les pentes du Pélion. Les descendants réunissent alors la forme des deux parents. D'autres versions font naître les centaures directement d'Ixion et de la nuée. Ces généalogies voisines ne se superposent pas exactement : elles donnent chacune une explication narrative au corps double.[1]",
+        "Le mariage de Pirithoos chez les Lapithes transforme cette parenté en guerre. Invités aux noces, les centaures s'enivrent et s'en prennent aux femmes présentes. Dans l'Odyssée, l'histoire d'Eurytion sert déjà d'avertissement contre l'abus du vin : privé de jugement, il commet des violences dans la maison de son hôte, puis subit une mutilation. La querelle s'étend ensuite aux deux groupes. Le crime se produit à l'intérieur d'une hospitalité offerte, ce qui lui donne sa gravité particulière.[1]",
+        "Les combats deviennent un grand sujet de poésie et d'image. Le Bouclier d'Héraclès oppose les lances des Lapithes aux pins brandis par les centaures. Les arbres arrachés prolongent la montagne jusqu'au milieu de la bataille ; les armes travaillées répondent aux masses prises dans le paysage. Cette opposition appartient à la manière dont les Grecs racontent leurs adversaires mythiques. Elle ne décrit aucun peuple historique dont les centaures seraient le portrait fidèle.[1]",
+        "Diodore de Sicile rapporte aussi une explication rationalisante : les prétendus êtres doubles auraient été les premiers cavaliers, transformés en monstres par le récit. C'est une interprétation antique, non la preuve retrouvée de l'origine du mythe. Le centaure ne se laisse pas ramener avec certitude à un malentendu visuel. La même tradition qui cherche à l'expliquer continue de raconter sa naissance dans un nuage.[1]"
+      ],
+      "anomalies": [
+        "La forme devenue familière possède quatre jambes équines et deux bras humains. Le buste remplace le cou et la tête du cheval. Mais les œuvres anciennes ne suivent pas toutes ce montage : une autre disposition conserve les jambes humaines à l'avant et leur ajoute l'arrière-train équin. L'iconographie travaille donc la jonction avant d'en faire une silhouette presque évidente. Le monstre a une histoire de formes, pas un squelette définitivement fixé.[1]",
+        "Son anatomie soulève des questions que les récits n'ont pas besoin de résoudre : comment s'accordent la respiration de la course et celle de la parole, où passe la nourriture, quel volume d'organes occupe le torse ? Aucune réponse physiologique unique n'est attestée dans les textes consultés. L'effet recherché reste visible à la surface : la force du cheval porte un visage capable de colère, de raisonnement et de reconnaissance.",
+        "L'ivresse constitue une autre rupture, moins spectaculaire mais décisive. Eurytion comprend assez le monde humain pour entrer chez Pirithoos ; il ne respecte plus ses règles après avoir bu. Le drame suppose une responsabilité, pas seulement un instinct animal. Le vin n'est donc pas un poison propre à l'espèce : il devient, dans cet épisode, l'agent d'une perte de mesure et d'une violence condamnée.[1]"
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit les paysages et les gestes des récits grecs ; ses observations de silhouette relèvent d'un imaginaire naturaliste, non d'une zoologie ancienne retrouvée.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Les centaures de Thessalie se déplacent en groupe, participent à des noces et combattent ensemble. Leur sociabilité existe avant la catastrophe du banquet. Chez Philostrate, elle prend même une couleur domestique : des petits jouent auprès de leurs mères, certains pleurent, d'autres se nourrissent ou gambadent. Cette scène décrite comme une peinture ouvre une fenêtre très différente de la mêlée des Lapithes. La communauté connaît des gestes de soin aussi bien que des accès de violence.[1]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le Pélion donne au centaure ses pentes, ses grottes et ses sources. Philostrate insiste sur les frênes dont le bois fournit de bonnes hampes de lance, ainsi que sur les vallons où vivent les familles. Le lieu n'est pas une steppe sans arbres : l'eau, les abris rocheux et les bois comptent dans cette présence montagnarde. D'autres groupes sont situés dans le Péloponnèse ou à Chypre ; ils appartiennent à des dossiers distincts et ne forment pas une carte de migrations animales.[1]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La synthèse de Theoi présente les centaures montagnards comme des chasseurs de bêtes sauvages, tandis que les épisodes de banquet les montrent partageant la nourriture et surtout le vin des hommes. Rien n'autorise à leur attribuer un régime exclusivement herbivore parce qu'ils ont des sabots. Le contraste alimentaire le mieux raconté oppose plutôt la vie dans les montagnes aux usages de la table, où boire exige une retenue dont l'absence fait éclater l'assemblée.[1]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Les textes leur donnent des noms, des filiations et des compétences différenciées. Le Bouclier d'Héraclès nomme notamment Asbolos comme devin. Chiron, que la tradition distingue des centaures violents, empêche d'assimiler leur forme à une incapacité de connaître. Même les adversaires des Lapithes agissent dans une histoire de parenté, d'invitation et de vengeance. Leur esprit appartient au monde des relations humaines, jusque dans les obligations qu'ils transgressent.[1]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La naissance issue de Kentauros et des juments explique une origine collective ; elle n'impose pas que chaque génération recommence cette union. Les centauresses et les petits décrits par Philostrate témoignent d'une autre représentation, familiale et durable. Les nourrissons ont encore des formes peu arrêtées ; chez ceux qui bondissent apparaissent crinière et sabots tendres. Ce détail relève d'une description littéraire d'image, précieuse précisément parce qu'elle ne prétend pas établir la durée d'une gestation.[1]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les ennemis dont les récits gardent les noms sont des combattants, non des carnivores placés au-dessus du centaure dans une chaîne alimentaire. Les Lapithes les repoussent, et Héraclès affronte d'autres groupes dans le Péloponnèse. L'exil suit parfois la défaite. La vulnérabilité de ces corps puissants vient des armes, de la guerre et de leurs propres débordements ; aucune invincibilité ne découle de l'alliance du torse humain avec la masse équine.[1]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Une branche brandie suffit souvent à reconnaître le centaure au combat, mais la main peut aussi tenir un instrument. La documentation iconographique réunie par Theoi montre des centaures associés au cortège de Dionysos, à la musique et à Éros. Le même corps passe de l'assaut à la danse, puis à une puissance soumise au désir. L'image élargit ainsi la gamme d'émotions que le seul récit des noces pourrait laisser dans l'ombre.[1]",
+        "Le nom grec Kentauros a reçu différentes explications, dont un rapprochement avec le taureau signalé comme incertain par Theoi. Il vaut mieux garder cette incertitude que transformer une étymologie séduisante en événement historique. Ce qui demeure assuré dans les textes et les œuvres, c'est une présence reconnaissable : un être capable de tendre la main tout en prenant son élan sur quatre sabots.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Theoi — Kentauroi : Pindare, Homère, Diodore, Philostrate et iconographie",
+        "url": "https://www.theoi.com/Georgikos/KentauroiThessalioi.html"
+      }
+    ]
+  },
+  "cerbere": {
+    "description": "À l'entrée des morts, un chien remue la queue. Il accueille volontiers ceux qu'il ne laissera jamais repartir.",
+    "sections": {
+      "fascination": [
+        "Cerbère garde une porte dont presque tous les voyageurs ne connaissent qu'un sens. Sa terreur vient de cette dissymétrie. Hésiode le montre caressant les nouveaux arrivants de ses oreilles et de sa queue, puis guettant ceux qui tentent de ressortir pour les dévorer. Les gestes familiers du chien subsistent, mais leur promesse a changé : l'accueil n'annonce aucune protection pour le visiteur.[2]",
+        "Les trois têtes occupent l'image avant même que les mâchoires se referment. Elles donnent à un seul gardien l'épaisseur d'une meute. Pourtant, Cerbère reste attaché à un lieu et à une fonction ; il ne parcourt pas la Grèce en quête de villages. Lorsqu'il paraît au grand jour, c'est qu'un héros l'a arraché à son poste. Le monde des vivants reçoit alors, au bout d'une chaîne, un morceau de sa propre frontière avec la mort."
+      ],
+      "legendes": [
+        "Homère connaît déjà le chien d'Hadès, mais les passages de l'Iliade et de l'Odyssée réunis par Theoi ne lui donnent ni le nom de Cerbère ni ses trois têtes. Héraclès rappelle avoir ramené ce chien grâce à l'aide d'Hermès et d'Athéna. Hésiode précise ensuite sa filiation : Échidna l'a conçu avec Typhon. Il lui attribue cinquante têtes et un aboiement de bronze, bien loin du décompte devenu habituel.[2]",
+        "Dans la Bibliothèque du Pseudo-Apollodore, rapporter Cerbère constitue le douzième travail d'Héraclès. Hadès autorise le héros à emporter l'animal s'il peut le maîtriser sans employer les armes qu'il a apportées. Protégé par sa peau de lion, Héraclès l'étreint malgré les morsures de sa queue serpentine. Il le présente à Eurysthée, puis le reconduit dans le royaume souterrain. L'exploit est une capture suivie d'un retour, et non la mise à mort du gardien.[2]",
+        "Diodore propose une autre accentuation : accueilli favorablement par Perséphone, Héraclès reçoit Cerbère enchaîné. La faveur de la souveraine et la force physique ne tiennent donc pas partout la même place. Le passage entre les mondes dépend aussi de leurs maîtres. Un héros peut franchir la limite à titre exceptionnel sans abolir l'ordre qui retient les morts derrière lui.[2]",
+        "Les lieux de remontée se multiplient. Strabon mentionne le cap Ténare ; Pausanias rapporte des traditions d'Hermione, de Trézène et du mont Laphystion. Il conserve même l'explication d'Hécatée de Milet : le chien d'Hadès aurait été un serpent venimeux du Ténare. Pausanias discute ces récits au lieu de les fondre en une seule géographie. Les grottes grecques deviennent des accès revendiqués à l'aventure, non les entrées démontrées d'un réseau souterrain réel.[2]"
+      ],
+      "anomalies": [
+        "Chez le Pseudo-Apollodore, trois têtes de chien se prolongent par une queue de serpent et des têtes de serpents dressées sur le dos. Cette multiplication n'est pas décorative : la queue mord Héraclès pendant qu'il immobilise l'avant du corps. Cerbère possède ainsi une défense à l'endroit où l'adversaire croirait avoir dépassé les mâchoires. Le corps demeure canin, mais aucune prise n'offre tout à fait la sécurité attendue.[2]",
+        "Le nombre de têtes varie selon les auteurs. Hésiode en compte cinquante ; des poètes parlent de cent ou emploient simplement l'idée de multiplicité. Ces différences appartiennent à la puissance de l'exagération et à l'histoire du motif. Les expliquer par des sous-espèces de chiens infernaux ajouterait une classification absente des textes. Cerbère est un individu mythique dont les portraits divergent.[2]",
+        "Dans les Métamorphoses d'Ovide, la lumière du jour blesse ses yeux quand Héraclès le tire hors des profondeurs. Ses aboiements secouent l'air et son écume tombe sur les prés. Le poème fait naître de cette salive l'aconit empoisonné. Le lien est une origine fabuleuse de la plante : il ne constitue évidemment ni une explication botanique ni une indication d'usage.[2]"
+      ],
+      "naturelle": {
+        "lead": "L'observation naturaliste reste ici imaginaire : Cerbère est le gardien singulier d'un royaume mythique, et les textes racontent ses fonctions plutôt que le cycle d'une espèce.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Sa conduite dépend du mouvement des passants. Entrer et sortir ne provoquent pas la même réaction. Le chien décrit par Hésiode reconnaît la tentative de fuite et la punit ; sa férocité sert donc une consigne. Chez Ovide, l'arrivée de Junon lui arrache simultanément trois aboiements. La vigilance peut devenir vacarme sans que le visiteur soit pour autant une proie ordinaire. Cerbère réagit aux passages, aux présences et aux infractions de son territoire.[2]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les portes d'Hadès, les abords de l'Achéron et le seuil de Perséphone composent son domaine. Ces désignations relèvent de la topographie poétique des morts. Une salle ou une rive suffit à concentrer toute sa charge : maintenir la séparation. Les cavernes du monde grec donnent une ouverture visible à cet ailleurs, mais les auteurs ne décrivent pas une tanière avec couchage, réserve de nourriture ou portée cachée derrière les pierres.[2]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Hésiode le dit dévoreur de ceux qui cherchent à quitter les Enfers. Apulée, dans le récit de Psyché, lui réserve pourtant une autre nourriture : les gâteaux qui permettent de passer devant lui. Le roman précise même que ses menaces ne peuvent plus nuire aux morts, ce qui contraste avec la voracité du gardien hésiodique. L'appétit fonctionne selon les besoins de chaque récit, tantôt châtiment, tantôt faiblesse que le voyageur peut détourner.[2]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Cerbère n'a pas besoin d'un long discours pour montrer qu'il distingue ses visiteurs. Son accueil trompeur, sa surveillance du retour et sa résistance à Héraclès dessinent une attention dirigée. Il reste néanmoins vulnérable aux moyens qui interrompent sa tâche : une nourriture offerte, une autorisation souveraine, la force d'un héros. Les textes consultés n'en font pas un juge des vies humaines ; il garde le passage, sans prononcer lui-même le destin moral de chaque âme.[2]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Échidna et Typhon lui donnent une place dans la généalogie des monstres. Cette naissance explique son appartenance à un monde de formes démesurées, mais aucun des passages consultés ne raconte une descendance de Cerbère. Sa continuité tient au retour à son poste après l'exploit d'Héraclès. Il n'est pas remplacé par ses petits : le même nom, le même gardien et la même porte réapparaissent d'une visite aux Enfers à l'autre.[2]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Héraclès est son adversaire le plus matériel : il l'approche, le saisit et l'entraîne. Ce rapport ne relève pas de la prédation, puisque le chien doit être présenté vivant puis rendu. Les autres dangers portent surtout sur sa vigilance. Son échec ouvre momentanément une voie ; il ne détruit pas le royaume qu'il protège. La puissance de Cerbère se mesure à la rareté des passages réussis, non à une invulnérabilité que les récits démentent eux-mêmes.[2]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les vases réunis dans le dossier de Theoi montrent Héraclès accompagné de Cerbère, parfois avec Hermès. La chaîne rend l'exploit immédiatement lisible : le chien de la limite est devenu captif. À côté de cette imagerie héroïque, les textes comiques peuvent rappeler le vol du gardien comme une offense domestique. Dans les Grenouilles d'Aristophane, Éaque reproche furieusement au prétendu Héraclès d'avoir emporté son chien. Le monstre terrible appartient aussi à une maison qui réclame son bien.[2]",
+        "Les explications du nom Kerberos restent discutées ; les rapprochements proposés par la source ne suffisent pas à en fixer le sens. Sa postérité visuelle dépend beaucoup moins de cette énigme que de quelques traits tenaces : plusieurs museaux sur un même poitrail, des serpents mêlés au pelage, une entrée que l'on n'ose franchir. Même ramené parmi les hommes, il conserve dans sa résistance la direction de son véritable foyer, sous la terre.[2]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "Theoi — Kerberos : textes d'Homère, Hésiode, Apollodore, Ovide, Pausanias et Apulée",
+        "url": "https://www.theoi.com/Ther/KuonKerberos.html"
+      }
+    ]
+  },
+  "chaman": {
+    "description": "Une voix s'adresse à ceux que l'assemblée ne voit pas. Autour d'elle, des personnes attendent une guérison, une réponse ou le retour d'une mer praticable.",
+    "sections": {
+      "fascination": [
+        "Le chaman est une personne, non une créature. Ce nom désigne, selon les contextes, des spécialistes religieux auxquels leur communauté reconnaît un rapport particulier avec les esprits. Leur présence dans un bestiaire ouvre donc sur des pratiques humaines et des religions vivantes. Les puissances qu'ils invoquent appartiennent aux croyances concernées ; leur existence ne peut être présentée comme un fait zoologique.[3]",
+        "L'attention se porte volontiers sur l'instant où une voix change, où un geste semble répondre à un interlocuteur invisible. Mais la cérémonie rassemble aussi ceux qui préparent, écoutent et attendent. À Jeju, en Corée, les rites du Chilmeoridang Yeongdeunggut engagent notamment les plongeuses et les propriétaires de bateaux. La mer dont ils demandent l'apaisement est celle de leur travail quotidien. La scène religieuse reste attachée à des embarcations, à des aliments et aux risques d'une vie insulaire.[6]"
+      ],
+      "legendes": [
+        "Le mot vient d'un terme des langues mandchoues-toungouses. Son extension bien au-delà de l'Asie septentrionale a produit une catégorie comparative très large. Britannica rappelle que son emploi pour des traditions différentes demeure discuté : partager une pratique de guérison, de divination ou de transe ne suffit pas à rendre identiques leurs systèmes religieux. Un spécialiste nommé chaman dans une description extérieure conserve une histoire locale et, souvent, un titre propre.[3]",
+        "Dans les traditions nord-asiatiques décrites par l'article, le spécialiste est tenu pour capable de communiquer avec l'autre monde, de soigner ou d'accompagner les âmes des morts. La vocation peut être comprise comme un choix des puissances surnaturelles. Ces propositions rapportent ce que les communautés attribuent à la fonction ; elles ne constituent ni un diagnostic médical ni la démonstration d'un pouvoir. Le soin rituel et l'observation clinique répondent à des cadres différents.[3]",
+        "Le rite de Jeju fournit un exemple situé, sans prétendre résumer toutes ces pratiques. Durant le deuxième mois lunaire, les officiants s'adressent à Grand-mère Yeondeung, déesse des vents, au Roi Dragon Yongwang et aux dieux des montagnes. L'accueil comporte des prières pour la pêche ainsi qu'un jeu en trois actes destiné aux dieux ancestraux. Deux semaines plus tard, les adieux comprennent des offrandes et la mise à la mer d'un bateau de paille.[6]",
+        "Le départ de Yeondeung, au quinzième jour, est associé dans ce rite à l'arrivée du printemps, aux semences et à l'apaisement des eaux. L'UNESCO a inscrit le Chilmeoridang Yeongdeunggut sur sa Liste représentative en 2009. Cette reconnaissance porte sur un patrimoine culturel vivant ; elle ne transforme pas un récit religieux en vérité scientifique et n'autorise pas davantage à considérer les participants comme les figurants d'un passé disparu.[6]"
+      ],
+      "anomalies": [
+        "Ce qui semble extraordinaire à un observateur n'est pas une anatomie différente. La transe ou l'expérience extatique occupe une place importante dans la définition générale proposée par Britannica, mais l'article insiste sur les notions, les actes et les objets qui l'entourent. Un état corporel isolé ne suffit donc pas à définir toute la fonction. Le sens vient aussi de la situation rituelle et de la reconnaissance accordée à la personne qui officie.[3]",
+        "Le voyage de l'âme, la conversation avec des esprits et la guérison sont des capacités attribuées, avec des variations considérables selon les traditions. Les réunir dans un catalogue de pouvoirs ferait disparaître leurs conditions d'exercice. Une cérémonie pour la mer, une consultation individuelle et l'accompagnement d'un mort ne sont pas trois emplois interchangeables d'une même technique universelle. Le vocabulaire commun recouvre des relations religieuses différentes.[3][6]",
+        "L'image d'un homme solitaire coiffé de plumes est particulièrement réductrice. Les descriptions historiques recensées par Britannica comprennent des femmes, des hommes et des personnes transgenres. Ni le sexe, ni un costume unique, ni une origine supposée hors de la société ne définit à lui seul le rôle. À Jeju, la participation publique de familles maritimes rend sensible cette inscription collective : l'officiant parle dans un réseau de personnes, d'obligations et d'attentes.[3][6]"
+      ],
+      "naturelle": {
+        "lead": "Les six rubriques décrivent ici une fonction humaine et ses milieux sociaux, sans biologie imaginaire ; l'exemple de Jeju reste distinct de la synthèse consacrée aux traditions nord-asiatiques.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le déroulement d'une cérémonie impose une suite d'actes plutôt qu'une agitation indifférenciée. À Jeju, appeler les divinités, prier pour la pêche, jouer pour les ancêtres et prendre congé occupent des moments identifiés. L'assemblée ne reçoit pas seulement un spectacle : elle participe à une demande concernant ses ressources et sa sécurité. Le calendrier et les destinataires donnent à chaque geste une place que l'observateur perdrait en ne regardant que la transe.[6]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La Sibérie et les autres régions septentrionales de l'Asie constituent le foyer historique du terme, tandis que son emploi élargi couvre des contextes très divers.[3] L'exemple coréen mène au littoral de Jeju, aux lieux de culte villageois et aux eaux exploitées par les plongeuses. La fonction ne possède donc pas un habitat naturel comparable à celui d'une espèce forestière. Elle se situe dans des communautés, leurs lieux de mémoire et les espaces dont dépend leur subsistance.[6]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les aliments apparaissent dans la documentation de Jeju comme des offrandes préparées collectivement : boissons et gâteaux de riz accompagnent notamment le rite d'adieu. Leur présence relie le travail des participants à l'accueil des puissances invoquées. Elle ne renseigne pas sur un régime alimentaire particulier des officiants. Le contenu d'une offrande et le repas quotidien d'une personne sont deux choses différentes, même lorsque la cérémonie emploie des produits familiers à tous.[6]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La fonction mobilise une connaissance des récits, des destinataires et de l'ordre des actes. Dans la synthèse de Britannica, les personnes reconnues comme chamans sont aussi consultées à propos d'événements à venir, d'animaux perdus ou des perspectives de chasse et de pêche. Il s'agit de compétences et de capacités qui leur sont attribuées socialement. Les décrire exige de prendre au sérieux les demandes des participants, sans affirmer que la divination prédit effectivement l'avenir.[3]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La continuité pertinente est celle d'une pratique. Une communauté conserve des occasions de se réunir, des récits à transmettre et des personnes capables d'assumer une charge. L'idée d'une vocation choisie par les esprits, signalée dans la synthèse générale, appartient à certaines conceptions religieuses ; elle ne permet pas de conclure à une hérédité biologique du rôle.[3] À Jeju, la participation des plongeuses, des propriétaires de bateaux et des anciens montre que la durée du rite dépend aussi de ceux qui le soutiennent matériellement.[6]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les personnes concernées connaissent les vulnérabilités humaines, mais aucun prédateur propre à leur fonction ne peut être défini. Dans le rite de Jeju, l'inquiétude collective se tourne vers les eaux agitées, les récoltes et la pêche incertaine.[6] Le danger est celui que la communauté cherche à traverser avec l'aide des puissances invoquées. Assimiler les autres religions ou les personnes sceptiques à des ennemis naturels installerait une hostilité que cette description des pratiques n'autorise pas."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les habits et accessoires tiennent une place importante dans les descriptions du chamanisme nord-asiatique, mais leur signification dépend du contexte qui les emploie.[3] Un objet retiré de sa cérémonie ne conserve pas à lui seul la voix, les relations et les obligations de son propriétaire. La silhouette exotique peut facilement devenir plus visible que la personne. La lecture attentive rend aux participants leurs noms de lieux, leurs activités et leurs préoccupations concrètes.",
+        "À Jeju, le petit bateau de paille lancé par les hommes âgés du village est un objet particulièrement précis.[6] Il transporte le regard de l'assemblée vers une eau dont elle attend sa subsistance. Il reste fragile, fabriqué et confié aux vagues par des mains humaines. Dans cette fragilité se comprend mieux le rite : des personnes accomplissent ensemble un départ et expriment, selon leur tradition, l'espoir de pouvoir reprendre la mer."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Encyclopaedia Britannica — Shamanism",
+        "url": "https://www.britannica.com/topic/shamanism"
+      },
+      {
+        "id": 6,
+        "title": "UNESCO — Jeju Chilmeoridang Yeongdeunggut",
+        "url": "https://ich.unesco.org/en/RL/jeju-chilmeoridang-yeongdeunggut-00187"
+      }
+    ]
+  },
+  "changeling": {
+    "description": "Le berceau est à la même place, mais le récit prétend que l'enfant a changé. Derrière ce soupçon féerique se tient une histoire très réelle de vulnérabilité.",
+    "sections": {
+      "fascination": [
+        "Le changeling apparaît dans l'espace le plus familier : une chambre, un foyer, les bras d'un parent. Le conte affirme qu'un être surnaturel a été laissé à la place d'un enfant enlevé. Rien ne doit nécessairement bouger dans la maison ; c'est la confiance dans la présence aimée qui se défait. La peur tient à cette proximité, à un visage quotidien soudain interprété comme celui d'un étranger.[4]",
+        "Cette figure exige une distinction ferme entre le personnage et les personnes accusées de l'être. Dans l'histoire européenne, des enfants malades ou handicapés ont subi abandon, violences et parfois meurtre parce qu'on les croyait remplacés. Aucun comportement, aucune particularité corporelle ou difficulté de développement ne prouve une substitution surnaturelle. Les récits renseignent sur les croyances et les peurs de ceux qui les racontent, jamais sur une monstruosité des enfants concernés.[4]"
+      ],
+      "legendes": [
+        "D. L. Ashliman rassemble des traditions des îles Britanniques, d'Allemagne et de Scandinavie. Leurs ravisseurs ne portent pas tous le même nom : elfes, fées ou autres habitants d'un monde voisin interviennent selon les régions. Le noyau commun est un échange clandestin, mais ses motifs et son dénouement changent. Certains récits rendent l'enfant enlevé, d'autres laissent sa disparition sans réparation. Une seule fin heureuse ne résume donc pas tout le dossier.[4]",
+        "Dans un conte des frères Grimm traduit par Ashliman, une préparation culinaire absurde avec des coquilles d'œufs étonne le prétendu nourrisson. Il parle alors comme un être bien plus vieux que son apparence, évoquant l'âge d'une forêt. Les elfes rapportent l'enfant et emportent leur substitut. Le merveilleux se concentre dans cette voix ancienne qui sort du berceau. Cet épisode est un motif narratif, pas une méthode permettant de reconnaître un être caché.[4]",
+        "Thomas Keightley rapporte une version située dans les Highlands écossais. Deux hommes de Strathspey, engagés dans le commerce clandestin du whisky, trouvent sur leur chemin l'enfant d'une connaissance. Le récit explique que la bénédiction prononcée par sa mère a contraint les fées à l'abandonner. Les hommes le conservent jusqu'à leur prochaine visite, puis révèlent la substitution. Les trajets et le commerce local donnent à l'aventure une géographie familière, tandis que son dénouement violent appartient au conte.[5]",
+        "Ashliman souligne que ces histoires ont souvent circulé comme des légendes crédibles, appuyées sur un lieu précis, un témoin supposé fiable ou une autorité religieuse. Leur force sociale ne venait donc pas seulement du plaisir de raconter. L'essai cite des procédures judiciaires relatives aux mauvais traitements infligés à des personnes soupçonnées d'être des changelings. La distance entre le récit merveilleux et l'accusation pouvait se refermer sur un enfant réel.[4]"
+      ],
+      "anomalies": [
+        "Le personnage peut être un enfant des fées, un être très âgé dissimulé ou un substitut enchanté. Cette diversité interdit de lui attribuer une anatomie stable. La différence essentielle porte sur l'identité prétendue : celui qui occupe la place ne serait pas celui qu'on attend. Les descriptions de faim, de pleurs ou de croissance inhabituelle appartiennent au discours du soupçon. Les reprendre comme des signes objectifs reproduirait précisément l'erreur qui a exposé des enfants à la violence.[4]",
+        "L'âge discordant fournit une anomalie proprement littéraire. Le changeling se souvient d'un paysage que personne dans la maison n'a connu ; il parle avec l'expérience d'un vieillard alors que tous le prennent pour un nourrisson. Dans les variantes analysées par Ashliman, cet âge peut aussi devenir une dépendance interminable, étendue sur plusieurs générations. Le temps féerique pénètre ainsi la durée domestique et rend impossible l'attente ordinaire de voir grandir l'enfant.[4]",
+        "La capacité de jouer d'un instrument ou de converser en secret apparaît dans le corpus britannique réuni par Ashliman.[5] Elle met en scène une activité cachée quand les adultes sont absents ou regardent ailleurs. Le récit crée ainsi ses propres preuves : ce qui semblait impuissance était feinte, ce qui paraissait silence était dissimulation. Ce mécanisme explique la suspicion interne à la légende ; il ne fournit aucune grille pour interpréter une personne réelle."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle décrit le personnage et la circulation des récits, sans transformer leurs accusations en biologie ; les enfants et adultes historiquement visés restent des personnes humaines.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Dans la légende, le substitut cherche généralement à conserver sa place jusqu'à ce qu'une parole ou un geste le trahisse. Les récits organisent donc une alternance entre dépendance visible et autonomie secrète. Mais leurs personnages ne suivent pas tous le même dessein : l'être laissé au berceau peut lui-même dépendre des ravisseurs qui l'y ont installé. La responsabilité du rapt ne revient pas automatiquement à celui qui occupe la place vide.[4][5]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le foyer humain est le lieu du remplacement, tandis que collines et demeures féeriques accueillent l'enfant emporté dans différentes versions britanniques.[5] L'histoire relie ainsi deux maisons plutôt qu'un monstre à sa tanière. Une porte, un chemin ou un moment d'absence suffit à les rapprocher. Les lieux nommés rendent la légende racontable entre voisins ; ils n'attestent pas qu'un enlèvement surnaturel s'y soit réellement produit.[4]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "L'appétit excessif revient fréquemment dans les textes étudiés par Ashliman. Il rend visible la peur d'un foyer qui manque de ressources et imagine devoir nourrir indéfiniment une bouche supplémentaire. Cette lecture historique éclaire le motif, mais la pauvreté ne justifie aucun mauvais traitement. Dans la vie réelle, les besoins alimentaires d'un enfant ou ses difficultés à se nourrir relèvent du soin. Ils ne permettent jamais de distinguer un enfant humain d'un prétendu intrus.[4]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La réplique sur l'âge de la forêt montre un savoir disproportionné au petit corps. C'est l'un des ressorts comiques de certaines versions, malgré la noirceur de l'ensemble : l'étonnement fait oublier au personnage son rôle de nourrisson. Le conte repose sur une rupture de vraisemblance délibérée. Il ne doit pas être inversé en soupçon contre les enfants dont les façons de parler, d'apprendre ou de communiquer diffèrent des attentes de leur entourage.[4]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "L'échange tient lieu d'arrivée dans le récit ; il n'est pas une naissance. Certaines explications prêtent aux ravisseurs le désir d'obtenir des enfants humains vigoureux, tandis que d'autres font de l'acte une malveillance envers les familles.[4] Ces raisons supposées appartiennent à la logique des légendes. Elles ne composent pas une théorie cohérente de la reproduction féerique. La parenté y est surtout une question douloureuse de reconnaissance : qui manque, qui attend et à qui l'enfant sera rendu."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le danger documenté concerne avant tout les personnes accusées. Ashliman examine le rôle de voisins, de propriétaires et de religieux dont les conseils donnaient une caution collective à la violence.[4] Les prétendues épreuves de reconnaissance n'ont aucune validité et peuvent tuer ; leurs détails opératoires n'ont pas place ici. Le personnage féerique peut s'enfuir dans le conte, mais un enfant exposé à la maltraitance ne dispose d'aucune sortie merveilleuse. Cette différence demeure essentielle à la lecture."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les recueils conservent des mots anciens et des jugements aujourd'hui blessants sur le handicap. Leur consultation demande de séparer le témoignage historique de sa langue déshumanisante. Ashliman met en rapport les récits et les conditions de vie des familles, mais une interprétation rétrospective ne permet pas d'attribuer un diagnostic précis à chaque enfant d'une légende. Un dossier folklorique n'est pas un dossier médical.[4]",
+        "Le motif des coquilles d'œufs reste une image singulière : des objets minuscules interrompent une dissimulation vieille comme une forêt. On peut y entendre l'étrangeté du conte sans accepter son soupçon envers le berceau. La mémoire de ces histoires comprend aussi les adultes qui ont cru reconnaître un monstre et les personnes qui en ont souffert. Leur place dans le merveilleux ne doit pas faire disparaître cette seconde histoire, moins spectaculaire et autrement irréversible.[4]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "D. L. Ashliman, University of Pittsburgh — Changelings: An Essay",
+        "url": "https://sites.pitt.edu/~dash/changeling.html"
+      },
+      {
+        "id": 5,
+        "title": "D. L. Ashliman — Changeling Legends from the British Isles and Ireland",
+        "url": "https://sites.pitt.edu/~dash/britchange.html"
+      }
+    ]
+  },
+  "chevalier": {
+    "description": "Sous le heaume, un homme respire ; autour de lui, toute une société entretient la promesse du fer.",
+    "sections": {
+      "fascination": [
+        "Le chevalier entre dans le merveilleux sans changer de corps. Ses mains restent humaines, avec leurs ampoules et leurs ongles cassés ; une armure suffit pourtant à lui donner la silhouette d'un être à part. Le visage disparaît, le torse devient surface réfléchissante, le cheval hausse le regard au-dessus de la foule. Avant même le premier coup, cette hauteur et ce bruit de métal organisent la rencontre. L'inconnu qui approche porte les moyens de protéger une route ou de la fermer.",
+        "L'attrait de cette figure tient à une inquiétude très concrète : qui décide de l'usage de sa force ? Le même équipement accompagne le secours et la menace. La noblesse supposée du geste ne se lit pas dans le poli d'une cuirasse. Le chevalier du bestiaire est donc un archétype humain, issu de la chevalerie européenne et amplifié par l'imaginaire ; il ne possède ni sang particulier ni bonté garantie. Sa dignité demeure une conduite à tenir, souvent plus fragile que son bouclier."
+      ],
+      "legendes": [
+        "Le chevalier solitaire appartient surtout à l'image que nous aimons garder. Dans son étude des idées reçues sur les armes, le Metropolitan Museum rappelle qu'en campagne un chevalier dépend d'écuyers, de serviteurs et d'hommes qui soignent ses chevaux et son équipement. Derrière eux travaillent artisans et paysans. Les armées comprennent aussi archers, piquiers et autres combattants à pied ; elles ne sont jamais une simple assemblée de cavaliers nobles.[1] Une silhouette peut dominer une enluminure sans résumer le monde qui la nourrit.",
+        "La naissance noble et le titre de chevalier ne se confondent pas davantage. Le même musée souligne qu'on devient chevalier par une création reconnue, et que des hommes non nobles peuvent accéder à cette condition, notamment pour leur valeur militaire. Tous les nobles ne sont donc pas chevaliers, et tous les porteurs d'armure ne le sont pas non plus.[1] Cette distinction restitue au personnage une histoire personnelle : quelqu'un l'a reconnu, équipé ou admis, et cette reconnaissance engage d'autres personnes que lui.",
+        "L'armure trop lourde pour permettre de monter à cheval est une légende moderne particulièrement tenace. Le Metropolitan Museum situe la diffusion de la plaisanterie de la grue à la fin du XIXe siècle et rappelle son emploi dans le film Henry V de Laurence Olivier, en 1944, malgré les objections des conseillers historiques.[1] Le chevalier de cinéma reste suspendu entre ciel et selle ; son modèle historique pouvait monter, marcher et se relever. La maladresse comique a fini par masquer un artisanat conçu pour le mouvement."
+      ],
+      "anomalies": [
+        "Son enveloppe métallique est un assemblage, non une coquille d'un seul tenant. Les pièces suivent les membres ; des lames se recouvrent, des rivets mobiles et des courroies autorisent les articulations. Le musée donne pour une armure de campagne complète une masse habituelle de vingt à vingt-cinq kilogrammes, répartie sur le corps plutôt que suspendue à un seul point.[1] Le poids existe, mais il n'abolit pas le geste. On comprend mieux le chevalier en regardant un genou plier qu'en imaginant une statue creuse.",
+        "L'équipement varie aussi selon son usage. Certaines protections de tournoi, destinées à une épreuve brève et spécialisée, deviennent beaucoup plus contraignantes que les armures de bataille.[1] Confondre les deux transforme un outil exceptionnel en vêtement quotidien. Dans le portrait imaginaire, le chevalier ôte donc son casque quand l'occasion le permet, vérifie une attache, soulage une épaule. Ces gestes ordinaires rendent sensible ce que la belle surface dissimule : un corps qui doit conserver sa mobilité et ménager ses forces."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit une condition humaine : son milieu, ses besoins et sa transmission. Les scènes de proximité relèvent d'une évocation naturaliste, non d'une espèce inventée.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le chevalier se déplace au sein d'un groupe, même lorsqu'il en occupe l'avant. Les dépendances matérielles attestées par les collections d'armes interdisent de le réduire au cavalier perpétuellement isolé.[1] À l'étape, son autorité rencontre des problèmes modestes : une monture fatiguée, une sangle usée, un homme absent. Dans notre évocation, sa véritable discipline se voit alors dans sa manière d'attendre les autres. L'impatience d'un seul peut désorganiser toute la troupe ; le courage au combat ne dispense pas d'écouter celui qui connaît l'état des chevaux."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Sa présence suppose des lieux où conserver, réparer et remplacer le matériel. Le Metropolitan Museum décrit des armures courantes vendues sur les marchés, dans les foires et dans les boutiques urbaines, à côté des commandes prestigieuses produites par des ateliers célèbres.[1] Le château ne suffit donc pas à dessiner son territoire. La route vers la ville, l'atelier et le lieu du rassemblement militaire appartiennent aussi à son existence. À travers ces circulations, le métal porté au combat garde la trace d'un réseau de métiers."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Sous l'acier demeure un organisme qui mange, boit et se fatigue. Il faut également entretenir les chevaux et les personnes de l'entourage : le besoin dépasse largement la ration d'un guerrier. Cette dépendance prolonge celle que décrit le musée entre chevalerie, paysannerie et artisanat.[1] Aucun menu unique ne résume des siècles de pratiques. Dans l'évocation d'une halte, la force du groupe tient à la nourriture effectivement disponible, aux réserves conservées et au temps laissé aux bêtes. Une bannière ne remplace ni l'eau ni le fourrage."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'habileté du combattant est faite de gestes appris et de décisions rapides. Le maniement d'une armure articulée et d'une épée équilibrée demande autre chose que de la puissance : le musée insiste sur la sophistication et l'efficacité de ces armes entre des mains exercées.[1] Notre portrait lui prête l'attention d'un praticien. Il regarde les appuis, la pente et la distance avant de s'engager. Hors du combat, comprendre ce que ses compagnons savent faire devient aussi important que mesurer ses propres capacités ; l'assurance aveugle expose tout le monde."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La chevalerie se transmet par des institutions et des apprentissages, sans coïncider exactement avec l'hérédité. L'accès au titre par reconnaissance d'autres chevaliers ou de détenteurs d'autorité distingue précisément cette condition de la simple naissance.[1] Les familles peuvent fournir des moyens, des relations et une mémoire ; elles ne font pas surgir d'emblée un combattant formé. La continuité du groupe passe aussi par ceux qui enseignent l'entretien des armes et la vie en campagne. Un écuyer apprend auprès d'un homme particulier, dont il découvre nécessairement les défauts autant que les prouesses."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Ses adversaires sont humains, nombreux et diversement équipés. Archers, piquiers, arbalétriers et soldats munis d'armes à feu figurent parmi les forces qui soutiennent ou affrontent la chevalerie au cours des périodes considérées par le musée.[1] L'armure protège sans supprimer la vulnérabilité. L'isolement, la perte du cheval ou la rupture d'un groupe modifient la situation d'un combattant. Dans cette histoire de dépendances, l'ennemi n'a pas besoin d'être un dragon : il suffit parfois qu'il demeure hors de portée et refuse le combat attendu."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les armures de musée peuvent fausser notre regard par leur splendeur. Le Metropolitan Museum avertit que les pièces de qualité supérieure y sont particulièrement visibles, tandis qu'une grande partie des équipements ordinaires a disparu ou demeure en réserve.[1] L'or gravé et les surfaces impeccables ne donnent donc pas la mesure de toutes les existences militaires. Entre l'objet royal et la pièce d'occasion s'étend une gamme de ressources, de réparations et d'usures qui rend au chevalier sa diversité sociale.",
+        "Une armure vide conserve une présence presque animale, mais ses articulations rappellent sans cesse l'absent. Le cou appelle une nuque, le gantelet une paume, la visière deux yeux capables de peur. Cette relique explique une part du merveilleux chevaleresque : un homme a trouvé le moyen de paraître autre que lui-même sans cesser d'être mortel. La rencontre devient vraiment troublante lorsque la visière se lève et qu'au lieu d'une figure parfaite apparaît un visage épuisé."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Dirk H. Breiding — Arms and Armor—Common Misconceptions and Frequently Asked Questions, Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/essays/arms-and-armor-common-misconceptions-and-frequently-asked-questions"
+      }
+    ]
+  },
+  "chupacabra": {
+    "description": "Au matin, une bête gît dans l'enclos. Le prédateur a disparu ; son nom arrive avant que l'on sache ce qui l'a tuée.",
+    "sections": {
+      "fascination": [
+        "Le chupacabra se rencontre d'abord à travers les restes qu'on lui attribue. Un animal domestique mort, une morsure jugée étrange, l'impression que le sang manque : la scène appelle un responsable. La légende lui en fournit un, furtif et assez singulier pour expliquer ce qui paraît sortir des habitudes d'un élevage. Son pouvoir d'inquiétude tient à cette place vacante entre le dommage visible et la cause encore inconnue. L'absence du prédateur devient presque un trait de son portrait.",
+        "Deux silhouettes circulent sous son nom. L'une se dresse sur les pattes arrière, évoque un grand kangourou reptilien et porte de grands yeux rouges ; l'autre marche à quatre pattes et ressemble à un canidé dépourvu de poils.[4] Le contraste est considérable. Pourtant, le même soupçon relie ces apparitions : une créature aurait approché les bêtes à la faveur de la nuit pour leur prendre du sang. Le récit reconnaît un mode d'attaque avant de s'accorder sur un corps."
+      ],
+      "legendes": [
+        "La synthèse de Robert Lewis pour l'Encyclopædia Britannica situe les premiers signalements du chupacabra en 1995, à Porto Rico. Des attaques sur des chèvres, des moutons et d'autres animaux domestiques lui sont alors attribuées ; les carcasses auraient été laissées sans être mangées et vidées de leur sang.[4] Ces dernières caractéristiques appartiennent aux récits rapportés, non à la reconnaissance scientifique d'un nouvel animal. La légende est contemporaine. Lui donner une antiquité autochtone certaine effacerait le contexte dans lequel son nom s'est diffusé.",
+        "Les premières descriptions réunies par Britannica évoquent surtout la forme dressée et reptilienne. Aucun spécimen correspondant n'est trouvé. Des sceptiques ont proposé que certains témoignages aient subi l'influence du film de science-fiction horrifique Species, sorti la même année et montrant un monstre d'apparence voisine.[4] Cette hypothèse explique une ressemblance possible, pas tous les signalements par une cause unique. Une image de cinéma peut entrer dans un récit sans que chaque témoin ait consciemment décidé d'inventer ce qu'il raconte.",
+        "D'autres observations se répandent ensuite dans les Amériques, jusqu'aux États-Unis. La forme quadrupède, canine et sans poils, se rencontre dans nombre des mêmes régions.[4] Le déplacement du nom ne prouve donc pas la migration d'une population zoologique. Il montre aussi la disponibilité d'une explication : lorsque survient un animal méconnaissable, une appellation déjà connue peut lui être appliquée. Le chupacabra change d'allure en conservant sa fonction de responsable inquiétant.",
+        "Des corps présentés comme ceux de chupacabras ont effectivement été examinés. D'après Britannica, les biologistes les ont identifiés comme des coyotes, des chiens ou des hybrides de canidés ; leur perte de poils résultait de la gale, liée à l'acarien Sarcoptes scabiei.[4] Cette explication possède un poids différent du rapprochement visuel : elle porte sur des animaux matériels. Elle ne constitue pas la preuve que chaque histoire ancienne possède le même détail clinique, mais elle retire aux spécimens concernés leur statut de créatures inconnues."
+      ],
+      "anomalies": [
+        "L'anatomie du chupacabra ne se laisse pas stabiliser. Entre le bipède reptilien et le quadrupède canin, changent la posture, les proportions et l'ensemble de la locomotion.[4] Les traiter comme deux âges ou deux sexes d'une même espèce demanderait des observations qui ne sont pas établies. Dans la légende, cette plasticité entretient la recherche : une photographie qui contredit un portrait peut servir à en ouvrir un autre plutôt qu'à clore la question.",
+        "Le corps sans fourrure est particulièrement trompeur parce qu'il retire à l'animal une partie de ce qui permet de le reconnaître. La silhouette paraît inhabituelle avant même que le regard distingue les signes de maladie. Les cas de canidés atteints de gale évoqués par Britannica donnent une explication concrète à cette étrangeté.[4] Le merveilleux naît alors d'une détresse réelle. Derrière l'image du prédateur indestructible peut se trouver une bête affaiblie qui survit difficilement.",
+        "L'aspiration totale du sang est l'autre anomalie majeure. Elle fonde le nom et l'effroi, mais les récits de carcasses exsangues ne suffisent pas à établir un organe spécialisé ni une physiologie vampirique.[4] L'absence de chair consommée, lorsqu'elle est rapportée, n'autorise pas davantage à conclure que seul le sang a été prélevé. La légende transforme un constat sommaire en opération précise ; l'enquête doit au contraire conserver la différence entre ce qui a été vu et ce qui a été déduit."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle décrit une légende contemporaine et les animaux parfois pris pour elle, sans supposer l'existence d'une espèce vampirique.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le chupacabra légendaire approche les animaux domestiques et les abandonne après l'attaque, selon les signalements fondateurs réunis par Britannica.[4] Son comportement se définit par la surprise des propriétaires : personne ne l'a nécessairement observé durant la mise à mort. Cette asymétrie laisse une grande place à la reconstruction. Un cri entendu, une ombre entrevue et une carcasse découverte peuvent entrer dans la même histoire alors que leur lien reste à démontrer."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Porto Rico constitue le foyer initial des signalements dans la source consultée, puis le récit gagne d'autres parties des Amériques.[4] Le lieu caractéristique reste la bordure du monde domestique : un enclos, une ferme, le voisinage d'animaux dont on connaît les habitudes. Cette proximité explique l'intensité de la peur. La menace n'occupe pas une contrée inaccessible ; elle traverse l'espace où l'on nourrit les bêtes et où l'on s'attend à les retrouver vivantes le lendemain."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le sang des animaux d'élevage est son aliment supposé, les chèvres ayant donné leur nom au monstre. La légende inclut cependant aussi les moutons et d'autres bêtes domestiques.[4] Pour les canidés malades effectivement identifiés, une autre hypothèse a été avancée : affaiblis par la gale, ils pourraient attaquer le bétail parce que les proies sauvages leur sont devenues plus difficiles à prendre.[4] Ce scénario relève de la prédation animale ordinaire, non d'une spécialisation dans l'absorption du sang."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le récit lui prête facilement une habileté exceptionnelle, déduite de son absence au moment où l'on découvre les dégâts. Pourtant, disparaître avant l'arrivée d'un humain ne démontre ni calcul surnaturel ni volonté de laisser un message. La version reptilienne peut suggérer une créature étrangère aux animaux connus ; la version canine conserve les gestes d'un prédateur familier. Le rapprochement proposé avec Species appartient à l'histoire des interprétations, pas à une preuve d'origine extraterrestre.[4]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Aucun cycle reproducteur du chupacabra n'est établi par la source consultée. Les spécimens reconnus comme chiens, coyotes ou hybrides appartiennent à des animaux connus, et ne renseignent pas la descendance du monstre légendaire.[4] La prolifération observable est celle des récits et des images. Chaque nouvelle identification proposée ajoute un cas au dossier public ; elle peut aussi rapprocher des corps très différents sous un nom commun. La répétition des signalements ne remplace pas l'existence d'une population suivie."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "La légende ne lui attribue pas de prédateur stable. Ses poursuivants sont humains : ils cherchent à voir, capturer, photographier ou faire identifier ce qui rôde près des élevages. Les examens des prétendus spécimens changent souvent l'objet de cette poursuite, puisque plusieurs se révèlent être des canidés malades.[4] Le corps cesse alors d'être une preuve merveilleuse pour devenir un cas animal. Cela n'efface pas les pertes subies par les propriétaires ; cela modifie l'explication qu'on peut leur donner."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le nom vient des mots espagnols chupar, sucer, et cabra, chèvre : il désigne littéralement un suceur de chèvres.[4] Sa force tient à sa brièveté et à la précision apparente de l'accusation. Il dit déjà ce que ferait la créature avant qu'on ait fixé son apparence. Une fois le mot connu, une bête étrange n'est plus seulement étrange ; elle peut devenir le candidat à une action redoutée.",
+        "Britannica relève l'entrée rapide des deux formes du monstre dans le cinéma à petit budget et montre une représentation issue de l'exposition Bloodsuckers: Legends to Leeches du Royal Ontario Museum.[4] Ces objets donnent une silhouette durable à une créature dont les témoignages divergent. La maquette et le film ne prouvent pas l'animal ; ils prouvent que l'histoire a acquis assez de contours pour être reconnue. À côté des corps mal identifiés subsiste ainsi un autre chupacabra, fait d'images, qui n'a pas besoin d'une espèce nouvelle pour continuer à circuler."
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "Robert Lewis — Chupacabra, Encyclopædia Britannica",
+        "url": "https://www.britannica.com/topic/chupacabra"
+      }
+    ]
+  },
+  "chuul": {
+    "description": "Une pince sort de l'eau trouble ; sous la carapace, les tentacules attendent déjà ce qu'elle va leur apporter.",
+    "sections": {
+      "fascination": [
+        "Le chuul ressemble d'abord à un crustacé beaucoup trop grand. Cette comparaison rassure pendant un instant : une carapace, des pinces, un animal d'eau. Puis apparaissent les parties qui ne vont pas ensemble. Le corps mêle des caractères de crustacé, d'insecte et de serpent ; près de la bouche, des tentacules prennent le relais des membres préhensiles.[6] La créature appartient à Donjons et Dragons. Son étrangeté est une construction de fantasy ludique, pas une anomalie zoologique signalée dans un marais réel.",
+        "Le mouvement de capture lui donne sa présence singulière. La pince saisit et comprime ; la victime passe ensuite vers des appendices qui l'immobilisent par une sécrétion paralysante.[6] La peur vient de ce transfert. Le chuul ne se contente pas d'avoir atteint sa proie : il la fait circuler entre ses armes. Ce qui semblait être le pire, tomber dans la pince, n'était encore que la première étape. L'eau trouble peut cacher presque toute cette mécanique jusqu'au moment du contact."
+      ],
+      "legendes": [
+        "Les traditions du chuul sont celles des éditions de Donjons et Dragons. Le document de référence de l'édition 3.5, consultable dans le Hypertext d20 SRD, le classe parmi les aberrations aquatiques et lui donne les marais tempérés pour environnement.[6] Cette catégorie le distingue d'un crustacé géant ordinaire. Le texte décrit un prédateur d'êtres intelligents, assez capable de langage pour parler la langue commune, ou la langue des profondeurs dans sa variété souterraine.[6] La rencontre peut donc impliquer un esprit compréhensible derrière une anatomie rebutante.",
+        "La notice officielle accessible sur D&D Beyond renvoie aux Basic Rules de 2014. Elle conserve les pinces, les tentacules paralysants et la respiration dans l'air comme dans l'eau. Elle attribue aussi au chuul un sens de la magie, fonctionnant à volonté à proximité, et mentionne l'Outreterre comme habitat.[5] Ces traits appartiennent à cette présentation. Les reporter sans distinction dans toutes les versions produirait un monstre composite que chaque édition n'a pas nécessairement décrit.",
+        "Les deux textes font ressortir des accents différents. Le document 3.5 détaille la chasse au bord de l'eau et insiste sur un nageur médiocre qui préfère attaquer sur terre ou dans une faible profondeur.[6] La page de 2014 met notamment à disposition le sens de la magie.[5] L'un donne une silhouette de chasseur embusqué ; l'autre ajoute une manière de percevoir ce que ses yeux ne peuvent identifier. Cette comparaison suffit à montrer l'évolution de la figure, sans lui inventer un conte antique ou une origine religieuse.",
+        "Sa parole, dans la version 3.5, rend la découverte plus dérangeante. Le voyageur n'affronte pas seulement une bouche affamée. Il peut être reconnu comme une personne par ce qui s'apprête à le dévorer.[6] Une forme aussi éloignée de l'humain ne garantit aucune ignorance de l'humain. La carapace masque peut-être une conversation possible, mais cette possibilité n'annonce ni hospitalité ni merci."
+      ],
+      "anomalies": [
+        "L'assemblage anatomique répartit les tâches avec une précision cruelle. Les pinces retiennent et écrasent ; les tentacules exsudent la substance paralysante ; dans le texte 3.5, les mandibules blessent la victime maintenue près de la bouche.[6] Le venin n'est donc pas lancé à distance. Il intervient quand la prise est déjà acquise. Cette contrainte laisse une différence essentielle entre être à portée du monstre et être enfermé dans ses appendices.",
+        "Dans les règles de 2014, la paralysie résulte d'un empoisonnement temporaire auquel la victime peut résister puis tenter d'échapper.[5] L'effet n'est ni une pétrification ni une transformation durable du corps. Il retire momentanément le mouvement, ce qui suffit près d'une bouche et au-dessus d'une eau où l'on risque de sombrer. L'apparente immobilité de la proie peut dissimuler une lutte qui se poursuit sans gestes visibles.",
+        "Le sens de la magie constitue une autre anomalie. D&D Beyond précise que ce trait fonctionne comme la détection de la magie tout en n'étant pas lui-même magique.[5] Sa perception ne se réduit donc pas à un sort lancé par un mage sous une carapace. Le détail change l'approche d'un visiteur chargé d'objets enchantés : cacher l'éclat d'une lame ne cache pas nécessairement ce qui attire ce sens. Rien dans cette capacité, prise seule, ne démontre cependant une compréhension savante de chaque enchantement."
+      ],
+      "naturelle": {
+        "lead": "Cette écologie appartient aux règles fictives de Donjons et Dragons ; les différences entre les présentations 3.5 et 2014 restent séparées.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le chuul de la version 3.5 attend près de la rive, immergé dans une eau trouble, jusqu'à entendre une proie suffisamment proche. Lorsqu'il affronte plusieurs adversaires, il cherche à garder une pince disponible et peut lâcher une victime paralysée ou morte pour en saisir une autre.[6] Ce choix révèle une conduite adaptée à la menace. La possession d'un premier corps ne l'absorbe pas au point d'oublier les autres combattants. Son embuscade peut devenir une succession de captures plutôt qu'un repas immédiat."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les marais tempérés du document 3.5 lui donnent des rives basses et des eaux opaques. Le même texte mentionne une variété souterraine, tandis que la page de 2014 indique l'Outreterre.[6][5] Être aquatique ne signifie pas être condamné à l'immersion : la version 3.5 peut survivre indéfiniment sur terre, et celle de 2014 respire dans les deux milieux.[6][5] Une berge sèche ne constitue donc pas une frontière sûre. La faible profondeur convient même particulièrement au chasseur décrit dans le premier texte."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le document 3.5 nomme expressément les êtres intelligents parmi ses proies.[6] Ce choix alimentaire ne doit pas devenir une liste arbitraire de peuples préférés. Ce qui est décrit avec précision, c'est la manière d'approcher la nourriture de la bouche tout en maintenant la prise. Les mandibules peuvent attaquer une victime encore retenue par les tentacules.[6] La présence de parole chez ce prédateur donne au repas une gravité particulière : l'intelligence de la proie n'est pas une raison de l'épargner."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le chuul de l'édition 3.5 parle et adapte l'emploi de ses pinces au nombre d'adversaires.[6] Il ne s'agit donc pas seulement d'un réflexe de capture déclenché par tout mouvement. La sélection d'une position d'embuscade et le maintien d'un membre libre témoignent d'une tactique. Dans la version 2014, sentir la magie ajoute une information sensorielle.[5] Cette faculté ne permet pas de conclure à une omniscience : détecter une présence surnaturelle et connaître les intentions de son porteur sont deux opérations différentes."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les deux notices consultées ne donnent pas de cycle reproducteur. Le document 3.5 autorise des rencontres avec un individu solitaire, un couple ou un petit groupe.[6] Cette organisation ne suffit pas à identifier les liens entre les individus : deux chuuls ne sont pas nécessairement un couple reproducteur, et un groupe ne prouve pas une famille. Leur ressemblance avec des crustacés n'autorise pas davantage à leur attribuer une ponte, une larve ou une mue déterminée. Les textes décrivent ici les adultes rencontrés, pas leur développement."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucun prédateur naturel fixe n'est établi par ces sources. Les dangers lisibles dans leur description viennent des adversaires capables d'éviter ou de rompre la prise. La version 3.5 n'est pas une excellente nageuse, malgré sa vie aquatique ; sa préférence pour la rive limite l'image d'un poursuivant irrésistible en pleine eau.[6] En combat, conserver une pince libre l'aide à se défendre mais impose aussi des choix. La créature peut abandonner ce qu'elle a capturé lorsqu'un péril plus immédiat approche."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Une pince de chuul suffit à évoquer sa force, mais elle dit peu de ce qui rendait son propriétaire dangereux. Séparée du corps, elle a perdu les tentacules vers lesquels elle conduisait ses prises et les mandibules qui les attendaient. Dans cette évocation de trophée imaginaire, l'objet le plus spectaculaire n'est ainsi qu'une partie d'un dispositif vivant. Les appendices souples, moins faciles à conserver et à montrer, portaient l'arme qui supprimait le mouvement.",
+        "Le nom chuul est conservé ici comme nom de créature de jeu. Les références consultées ne fondent aucune étymologie folklorique assurée ; sa sonorité ne suffit pas à le rattacher à un peuple ancien ou à une divinité. Sa véritable signature reste l'enchaînement de gestes décrit par les règles.[6][5] Dans le souvenir d'une rencontre, le bruit de l'eau et la fermeture d'une pince annoncent déjà les tentacules que l'on n'a pas encore vus."
+      ]
+    },
+    "sources": [
+      {
+        "id": 5,
+        "title": "Chuul — D&D Beyond, Basic Rules (2014)",
+        "url": "https://www.dndbeyond.com/monsters/16824-chuul"
+      },
+      {
+        "id": 6,
+        "title": "Chuul — Hypertext d20 SRD, règles 3.5",
+        "url": "https://www.d20srd.org/srd/monsters/chuul.htm"
+      }
+    ]
+  },
+  "clerc": {
+    "description": "Sous la maille, un symbole sacré porte les marques du pouce qui le serre avant chaque combat.",
+    "sections": {
+      "fascination": [
+        "Le clerc reste debout auprès du blessé lorsque les autres regardent déjà vers la sortie. Son bouclier protège deux corps. Une main cherche la plaie, l'autre retient un emblème dont le métal a pris la chaleur de sa peau. Cette image appartient à la fantasy : elle réunit la vulnérabilité d'un soignant, l'équipement d'un combattant et la certitude troublante qu'une puissance invisible peut répondre à sa voix.",
+        "Son autorité ne vient pas nécessairement de sa taille ni de son rang. Dans une compagnie perdue sous terre, celui qui sait rappeler un mort à la vie ou tenir les revenants à distance devient le centre des décisions. Pourtant, il porte lui aussi des provisions et doit dormir. Le contraste donne au clerc sa présence particulière : un être mortel accueille un pouvoir qui le dépasse, sans cesser d'avoir les mains sales et les genoux meurtris.",
+        "La bonté ne résume pas cet archétype. Le dieu servi peut aimer la guerre, les ruses ou la tempête autant que la guérison. Dans les règles de Donjons et Dragons de 2014, ces orientations prennent la forme de domaines divins distincts.[1] L'emblème aperçu au cou d'un inconnu renseigne donc moins sur sa bienveillance que sur la puissance à laquelle il a consacré ses gestes."
+      ],
+      "legendes": [
+        "Le clerc présenté ici est un personnage de fantasy ludique, non une catégorie de saint ni une description des ministres d'une religion réelle. Donjons et Dragons en fait un intermédiaire entre les mortels et les plans des dieux, capable de canaliser une magie divine.[1] Le vocabulaire religieux sert à décrire un fonctionnement fictif : des prières produisent des effets définis, des divinités accordent des capacités, des morts animés peuvent fuir devant un symbole.",
+        "La présentation de 2014 distingue expressément ce personnage des officiants ordinaires. Tous ceux qui entretiennent un temple, accomplissent des sacrifices ou conduisent les prières ne possèdent pas sa magie. Certains occupent même des charges religieuses surtout politiques. Le clerc doué de pouvoirs reste rare au sein de ces institutions.[1] Cette distinction évite de peupler chaque sanctuaire d'une armée de guérisseurs miraculeux : le service quotidien et l'élection surnaturelle ne se confondent pas.",
+        "Le départ en aventure découle souvent d'une obligation envers le dieu. La source décrit la recherche de reliques dans des tombeaux, la défense des fidèles, des négociations de paix et la fermeture de passages par lesquels des puissances démoniaques pourraient entrer.[1] Ces missions donnent des destins très différents. Le même équipement convient au gardien d'une procession menacée et au voyageur qui descend dans une tombe pour y reprendre un objet sacré.",
+        "Ses rapports avec la hiérarchie demeurent tendus sans être nécessairement hostiles. Le temple peut solliciter son aide et un supérieur peut l'exiger.[1] Mais le personnage reçoit aussi une vocation personnelle. Dans ce cadre imaginaire, une parole entendue au fond d'un sanctuaire peut peser davantage qu'un ordre écrit. La difficulté humaine demeure entière : discerner ce qui oblige, ce qui séduit et ce qui n'est que sa propre volonté habillée de certitude."
+      ],
+      "anomalies": [
+        "Le corps du clerc n'est pas une anomalie zoologique. Son étrangeté réside dans les effets qui passent par lui. La version de 2014 lie l'incantation à la Sagesse et autorise l'emploi d'un symbole sacré comme focaliseur.[1] Une plaque gravée ou un emblème de bouclier devient ainsi un instrument de travail. La valeur du métal n'explique pas le phénomène : c'est sa relation au culte qui lui donne sa place dans le geste.",
+        "Le renvoi des morts-vivants a des limites précises. Le clerc présente son symbole et prononce une prière ; les créatures concernées doivent pouvoir le voir ou l'entendre. Celles qui succombent à cet effet cherchent à s'éloigner, tandis que les plus faibles peuvent être détruites lorsque le clerc devient assez puissant.[1] Il ne s'agit donc pas d'une répulsion permanente émanant de son corps. Une porte close, la distance et la résistance de l'adversaire comptent.",
+        "Même la faveur divine connaît une économie. Les sorts préparés et les usages du conduit divin ne sont pas inépuisables ; les repos permettent de retrouver ces ressources. L'intervention directement demandée à la divinité reste incertaine avant le sommet de la progression prévue par ces règles.[1] Cette dépendance explique le silence après la prière autant que l'éclair qui la suit. Le clerc peut être fidèle, épuisé et incapable d'accomplir un nouveau prodige."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit une vocation et son milieu social dans la fantasy de Donjons et Dragons, principalement selon les règles de 2014 ; elle ne décrit pas une espèce ni les pratiques d'un culte réel.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La journée du clerc comporte un temps de prière et de méditation au cours duquel il prépare ses sorts.[1] Le choix engage déjà la journée suivante : assister des compagnons, affronter des ennemis ou répondre à une menace pressentie. Au bivouac, cette préparation impose un moment de retrait. Son calme apparent peut cacher un inventaire très concret des dangers, des blessés encore fragiles et des protections dont le groupe manquera demain."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les temples forment des points d'attache plutôt que des tanières. Le clerc aventurier garde souvent des rapports avec un ordre ou un sanctuaire, mais ses missions l'entraînent au-delà des lieux habités.[1] Il appartient ainsi à deux espaces : une communauté qui reconnaît ses signes, et des chemins où personne ne connaît son nom. Dans une cité étrangère, un symbole familier peut lui ouvrir une porte ; ailleurs, le même signe révèle immédiatement ses alliances."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Ses besoins suivent ceux du peuple auquel il appartient. La vocation ne prescrit aucun régime universel dans la présentation consultée. La nourriture relève donc de l'individu, du voyage et de son culte particulier. Une ration partagée conserve son importance même auprès d'un faiseur de miracles : les réserves magiques ont d'autres usages, le groupe doit tenir dans la durée et le repos exige davantage qu'une formule prononcée au bord du feu."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'intuition occupe une place majeure dans la définition de ses pouvoirs, mais elle n'exclut ni le savoir ni la discussion. Histoire, médecine, persuasion et religion figurent parmi les compétences proposées par les règles de 2014.[1] Deux clercs peuvent ainsi différer profondément : l'un comprend les corps et les blessures, l'autre les textes et les hommes. Leur accord doctrinal ne leur donne pas automatiquement la même lecture d'une crise ni le même talent pour la résoudre."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La transmission concerne une vocation. La source distingue l'apprentissage des prières et des rites de la capacité surnaturelle elle-même, liée à la dévotion et au choix divin.[1] Une école peut former des officiants sans produire à volonté des clercs magiciens. Cette limite laisse une place à l'inattendu : l'élève le plus savant n'est pas forcément celui auquel répond la puissance invoquée. Les règles présentées n'établissent aucune hérédité obligatoire de ce don."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les adversaires du clerc sont ceux de ses engagements. Protéger des fidèles ou fermer un passage démoniaque l'expose aux forces qu'il contrarie.[1] Au combat, ses ennemis ont une raison immédiate de l'atteindre : tant qu'il reste debout, les autres peuvent retrouver leurs forces. Cette pression ne lui confère aucune immunité. Il faut garder son accès aux blessés, préserver son repos et compter avec les limites d'un corps aussi accessible aux armes que celui de ses compagnons."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "L'objet le plus reconnaissable reste le symbole sacré. Les règles lui donnent une fonction d'incantation, mais sa présence visible affirme aussi une appartenance.[1] Usé, réparé ou transmis, il conserve quelque chose de la vie matérielle du personnage. Une relique recherchée dans un tombeau a un autre poids : elle engage le culte entier, les revendications de ses gardiens et parfois le devoir de ramener ce qui avait été perdu.",
+        "La masse et le bouclier dessinent une silhouette familière, sans imposer un uniforme à tous les clercs. La classe dispose d'armes courantes et d'armures ; certains domaines ajoutent d'autres maîtrises.[1] Le clerc guérisseur, le serviteur d'un dieu guerrier et le gardien d'un savoir sacré ne sont donc pas des copies portant des insignes différents. Leurs moyens et leurs obligations déplacent leur place parmi les vivants, jusque dans la manière de se tenir auprès d'une porte encore fermée."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "AideDD — Clerc, règles de Donjons et Dragons 2014",
+        "url": "https://www.aidedd.org/regles/classes/clerc"
+      }
+    ]
+  },
+  "cocatrix": {
+    "description": "La crête d'un coq au-dessus d'une queue de serpent : le malheur a éclos dans la basse-cour.",
+    "sections": {
+      "fascination": [
+        "Une cocatrix garde assez du coq pour que sa monstruosité demeure intime. Le bec, la crête et les pattes appartiennent à un animal que l'on entend derrière une clôture. Puis le regard descend vers la queue écailleuse, parfois vers des ailes de dragon, et la reconnaissance se défait. Le péril n'est pas arrivé des montagnes. Il s'est glissé dans une forme domestique, avec cette insolence du petit animal qui relève la tête devant un être beaucoup plus grand.",
+        "La peur repose sur une disproportion. La cocatrix n'a pas besoin d'une gueule assez vaste pour dévorer un homme : le regard ou le souffle peuvent suffire à le tuer dans les traditions qui la rapprochent du basilic.[2][6] Sa taille n'annonce donc pas sa puissance. Une cour de ferme prend les dimensions d'un champ de bataille dès qu'un animal dont on distingue encore les plumes possède une arme contre laquelle la distance semble inutile.",
+        "Son origine renverse le geste le plus familier de l'élevage. Un œuf, habituellement promesse de nourriture ou de renouvellement, devient le contenant d'une catastrophe. Encore faut-il que cet œuf ait été pondu par un coq et couvé par une bête étrangère à la basse-cour.[2] Le monstre apparaît à la jonction de deux impossibilités ; son corps les conserve, comme si la coquille n'avait jamais réussi à réunir correctement ses occupants."
+      ],
+      "legendes": [
+        "Cocatrix et basilic ont une histoire mêlée. Les sources médiévales et leurs traductions ne tracent pas partout la frontière nette que proposent certains bestiaires modernes. La synthèse du Medieval Bestiary rassemble sous le basilic les noms Cocatris et Cockatrice, avec des images allant du serpent à crête au coq terminé par une queue de serpent.[6] Une illustration ne suffit donc pas à identifier deux espèces anciennes supposées distinctes : les noms et les formes ont circulé ensemble.",
+        "La synthèse historique consacrée à la cockatrice attribue à Alexandre Neckam, dans De naturis rerum, vers 1180, un basilic issu d'un œuf de coq couvé par un crapaud. Le serpent remplace le crapaud dans d'autres versions. Elle relève aussi que John Trevisa traduit basiliscus par cockatrice dans sa traduction de Barthélemy l'Anglais en 1397.[2] Ces passages décrivent une transformation du vocabulaire autant qu'une naissance monstrueuse. La cocatrix se précise au fil de textes qui reprennent et déplacent des matériaux antérieurs.",
+        "Son regard meurtrier devient une comparaison immédiatement intelligible dans le théâtre anglais. Dans Richard III, Shakespeare fait assimiler Richard à une cockatrice sortie d'un ventre maternel maudit ; dans Roméo et Juliette, l'œil fatal de la bête exprime la violence d'une nouvelle redoutée.[2] Le monstre ne surgit pas matériellement sur scène. Sa simple évocation donne au regard humain et à la parole un pouvoir d'empoisonnement.",
+        "La pétrification appartient notamment à sa postérité littéraire. Dans The Worm Ouroboros d'E. R. Eddison, paru en 1922, le regard de la cocatrix transforme les vivants en pierre.[2] Cette variante ne résume pas tous les témoignages précédents, qui parlent souvent de mort sans métamorphose minérale. Confondre les deux efface une différence sensible : un corps abattu par le poison ne laisse pas la même trace qu'un visiteur encore debout, immobilisé pour toujours."
+      ],
+      "anomalies": [
+        "Son anatomie varie d'une image à l'autre. Le coq à queue de serpent peut prendre des ailes et une allure draconique ; le basilic apparenté peut rester presque entièrement serpent.[2][6] La crête fait le lien entre des silhouettes éloignées. Elle rappelle à la fois la basse-cour et la couronne attribuée au roi des serpents. La monstruosité procède moins d'un assemblage stable que d'une hésitation tenace entre l'oiseau qui se dresse et le reptile qui rampe.",
+        "Le répertoire du basilic médiéval comprend un souffle destructeur, une odeur mortelle pour les serpents, un sifflement dangereux et un venin qui remonte jusqu'au porteur d'une lance après la blessure.[6] Ces propriétés appartiennent au dossier partagé avec la cocatrix ; elles ne doivent pas être empilées comme les organes fixes de chaque spécimen. Leur point commun est une contamination qui dépasse le contact direct. Même une arme longue ne garantit plus la séparation entre la victime et l'assaillant.",
+        "La faiblesse accompagne pourtant l'excès. La belette peut combattre le monstre ; le chant du coq le fait trembler et peut le tuer dans les versions réunies par le Medieval Bestiary.[6] Le parent domestique retrouve ainsi une autorité sur son double dévoyé. Quant au miroir qui retourne le regard contre la cocatrix, la synthèse anglophone le donne parmi les moyens légendaires de la vaincre.[2] Aucun de ces remèdes ne constitue une règle identique dans tous les textes."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle suit ici les motifs médiévaux partagés avec le basilic et leurs prolongements littéraires ; les rapprochements de milieu restent une lecture imaginaire, non une zoologie attestée.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le monstre agit surtout par sa présence dangereuse. Les textes rassemblés insistent sur ce qu'il tue, corrompt ou fait fuir, davantage que sur une journée de chasse.[6] Cette immobilité relative a sa force : une bête posée au bord d'un passage peut suffire à rendre tout le lieu inaccessible. La rencontre commence au moment où les regards se croisent, parfois avant que l'humain ait reconnu la crête familière ou compris pourquoi les autres animaux se tiennent loin."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le dossier du basilic préfère les lieux secs et mentionne une caverne où pénètre la belette.[6] L'œuf de coq attire cependant l'imagination vers les abords des habitations. Ces deux cadres ne doivent pas être fondus en une aire de répartition précise. La basse-cour concerne l'origine du prodige, la cavité son repaire dans certains récits. Entre elles, la cocatrix transporte le sentiment qu'une chose issue du foyer peut revenir le rendre inhabitable."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Tuer n'est pas nécessairement manger. La tradition résumée par le Medieval Bestiary précise même que les autres animaux refusent les cadavres touchés par le basilic.[6] Elle décrit ainsi les conséquences de son poison, sans donner à la cocatrix un régime régulier. L'image d'une zone privée de charognards lui convient mieux qu'un menu inventé : les corps demeurent hors du circuit ordinaire de la faim, et le silence des bêtes avertit du danger."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La cocatrix des témoignages consultés n'a ni cour ni doctrine. Son efficacité peut tenir à un regard, sans calcul humain démontré. Le miroir introduit une ruse de l'adversaire plutôt qu'une conversation avec le monstre.[2] Cette différence compte : l'être dangereux n'a pas besoin de comprendre le procédé qui le perd. La peur se concentre sur une propriété de son corps, tandis que l'intelligence du récit passe à celui qui découvre comment la retourner."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le récit décrit une génération extraordinaire plutôt qu'un accouplement entre cocatrix. L'œuf vient du coq ; le crapaud le couve dans une version fréquente. Le Medieval Bestiary conserve une séquence où un poussin mâle sort de la coquille puis développe sa queue serpentine après sept jours.[6] Le délai est remarquable : le prodige n'est pas nécessairement visible au premier instant. Une apparence presque normale précède la révélation d'un corps que personne n'aurait dû laisser naître."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "La belette tient le rôle d'ennemie capable d'entrer dans la retraite du basilic et de le tuer ; certaines versions la font mourir elle aussi pendant le combat.[6] Ce détail retire au remède sa facilité. La victoire ne signifie pas l'immunité parfaite ni le retour immédiat à l'ordre. Le chant du coq et le miroir relèvent d'autres rapports : l'un provoque une réaction fatale, l'autre détourne une arme. Ils ne forment pas une chaîne alimentaire."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les images gardent les variations que les classifications tendent à aplanir. Le Medieval Bestiary signale des manuscrits où basilic et regulus disposent d'entrées ou d'illustrations séparées, ainsi que des représentations de la belette attaquant le monstre.[6] La page enluminée peut donc montrer une distinction locale sans trancher pour toute la tradition. Le nom royal, la crête et la queue deviennent des indices à lire ensemble, avec le texte qui les accompagne.",
+        "La cocatrix a aussi quitté la page pour l'ornement. La synthèse anglophone montre un relief au-dessus d'une porte du Belvedere Castle, à New York, édifice de 1869.[2] Fixée dans la pierre, la bête ne menace plus réellement l'entrée : elle en conserve le seuil sous forme d'image. Cette survie décorative respecte assez bien son ancien pouvoir. On lève les yeux pour regarder une figure dont la renommée repose précisément sur le danger de la regarder."
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "Wikipedia — Cockatrice, histoire et variantes littéraires",
+        "url": "https://en.wikipedia.org/wiki/Cockatrice"
+      },
+      {
+        "id": 6,
+        "title": "The Medieval Bestiary — Basilisk",
+        "url": "https://bestiary.ca/beasts/beast265.htm"
+      }
+    ]
+  },
+  "colosse": {
+    "description": "Ses doigts dépassent les statues ordinaires ; même tombé, le colosse oblige à lever les yeux.",
+    "sections": {
+      "fascination": [
+        "Au pied du colosse, le visage se dérobe. On distingue d'abord une cheville, une jointure, la masse d'un orteil contre lequel un homme pourrait s'adosser. L'ensemble appartient au paysage avant d'appartenir à un corps. La distance nécessaire pour voir la statue entière empêche de saisir les détails qui la rendent presque vivante. Cette oscillation entre monument et présence donne au colosse une puissance que la taille seule n'explique pas.",
+        "La fantasy franchit ensuite un seuil très mince : le monument bouge. Une pluie de poussière tombe d'une épaule ; une ombre se déplace alors que le soleil n'a pas changé. Le personnage humain comprend trop tard qu'il s'était arrêté auprès d'un pied. Ce réveil est l'interprétation imaginaire retenue ici, non un épisode attribué au colosse historique de Rhodes. La pierre animée et le bronze antique se ressemblent, mais ne possèdent pas la même histoire.",
+        "Même sans mouvement, la ruine conserve quelque chose d'une dépouille. Pline décrit les cavités ouvertes dans les membres brisés du colosse de Rhodes et des doigts plus grands que la plupart des statues.[3] La chute révèle un intérieur que le spectateur n'aurait jamais dû voir. Le regard passe alors du visage divin aux procédés de construction, avec un mélange d'admiration et d'indiscrétion presque anatomique."
+      ],
+      "legendes": [
+        "Le colosse de Rhodes représentait Hélios et était attribué à Charès de Lindos. Strabon le décrit déjà renversé par un tremblement de terre, brisé aux genoux, et rapporte que les habitants ne l'ont pas relevé en raison d'un oracle.[3] C'est une statue monumentale réelle, consacrée à une divinité ; rien dans ce témoignage n'en fait une créature qui marchait sur le rivage. Sa présence dans un bestiaire relève de la postérité imaginaire des statues géantes.",
+        "La figure dressée jambes écartées au-dessus de l'entrée du port appartient aux reconstructions tardives, non à une disposition antique solidement établie. La synthèse consultée retrace cette image jusqu'à des traditions et représentations médiévales puis modernes.[3] Elle a pourtant durablement modifié notre manière de voir le colosse : un navire passant entre ses jambes paraît reconnaître une souveraineté physique du dieu sur les arrivants. L'image est forte, mais sa force ne constitue pas une preuve archéologique.",
+        "Talos fournit un autre dossier, cette fois mythologique. Dans les Argonautiques d'Apollonios de Rhodes, ce géant de bronze garde la Crète, dont il fait le tour trois fois par jour, et repousse les Argonautes à coups de rochers.[5] Son mouvement ne vient donc pas d'une animation moderne ajoutée à une statue historique. Le récit antique lui donne un corps invulnérable presque partout, une mission et une manière spectaculaire de la remplir.",
+        "Médée le vainc sans opposer à sa masse une force équivalente. Chez Apollonios, elle l'attaque par ses pouvoirs ; troublé, Talos écorche sa cheville contre une roche et perd son ichor. Le pseudo-Apollodore rassemble d'autres versions : elle lui retire le clou qui ferme son vaisseau après lui avoir promis l'immortalité, ou une flèche de Poeas atteint la cheville.[5] Ces morts alternatives gardent le même contraste entre un corps immense et une ouverture minuscule.",
+        "Les origines de Talos divergent également. Il peut être le survivant d'une race de bronze ou une œuvre associée à Héphaïstos ; les textes rassemblés ne le réduisent pas tous au même automate.[5] Le rapprocher des colosses de fantasy éclaire un motif partagé, celui du gardien métallique, sans établir une généalogie unique pour chaque statue animée. Le monument de Rhodes et le gardien crétois restent deux figures distinctes."
+      ],
+      "anomalies": [
+        "Le colosse imaginaire conserve la matière du monument tout en lui demandant les gestes du vivant. Une statue de pierre fléchit le genou ; le bronze cesse d'être une enveloppe fixe. L'anomalie se situe dans cette articulation. Les plis sculptés d'un vêtement, les assemblages de blocs et les patines demeurent visibles, mais ne suffisent plus à expliquer ce qui se déplace. Le spectateur connaît les matériaux et ne reconnaît plus leur comportement.",
+        "Talos possède une solution mythique particulière à ce problème : un vaisseau unique relie le haut du corps aux chevilles, avec un point de fermeture ou de fragilité selon les versions.[5] Il n'est pas constitué d'une mécanique moderne décrite pièce par pièce. Son bronze abrite un principe vital qui peut s'écouler. La surface invulnérable protège ainsi quelque chose d'aussi périssable qu'une réserve de sang, et le récit rend la matière métallique vulnérable sans la changer en chair.",
+        "L'effondrement appartient pleinement à cette anatomie. Le Talos d'Apollonios vacille puis tombe avec fracas ; le poète le compare à un pin entamé par la hache.[5] La mort engage l'espace autour de lui. Pour le colosse de fantasy, le sol, les pentes et les constructions voisines deviennent une part de la rencontre : une main posée sans violence peut barrer une rue, et une chute menacer ceux que l'on croyait déjà sauvés."
+      ],
+      "naturelle": {
+        "lead": "Ce portrait distingue la vie matérielle du monument, les récits antiques de Talos et une évocation naturaliste assumée du colosse animé de fantasy.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le gardien de bronze agit selon un territoire et une tâche. Talos parcourt la Crète et refuse l'approche de l'Argo par des jets de pierre.[5] Sa violence n'est pas celle d'un animal attiré par une proie. Elle s'exerce à la frontière, contre une arrivée. Dans le prolongement imaginaire de cette figure, l'immobilité d'un colosse peut donc être une attente plutôt qu'un sommeil ; le premier pas répond au franchissement d'une limite que les voyageurs n'avaient pas vue."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le colosse appartient aux espaces assez ouverts pour rendre son échelle perceptible : rivage, enceinte, esplanade ou plaine de ruines dans le portrait de fantasy. Talos demeure lié à une île précise, la Crète.[5] Un gardien aussi vaste transforme le terrain en instrument. Les rochers qu'il arrache deviennent des projectiles, les promontoires des postes de surveillance. Il n'occupe pas simplement un lieu ; ses mouvements déterminent les endroits où les autres peuvent encore passer."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les textes consultés ne donnent pas de repas à Talos. Son ichor explique sa mort, sans établir un combustible qu'il consommerait chaque jour.[5] Pour le monument, la continuité tient plutôt aux bâtisseurs et aux réparations. Dans l'évocation de fantasy, un colosse peut rester debout très longtemps sans chasser ; l'absence de nourriture visible le distingue immédiatement du géant de chair. Ajouter un fourneau ou une réserve d'énergie particulière reviendrait à choisir une autre invention, non à compléter le témoignage antique."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Talos reconnaît les arrivants et répond à leur approche. La variante où Médée promet de le rendre immortel lui donne aussi une attente susceptible d'être trompée.[5] Une obéissance régulière n'implique donc pas nécessairement l'absence d'esprit. Cette nuance trouble la rencontre avec un gardien monumental : sa répétition peut venir d'une consigne, d'une fidélité ou d'un choix. Le bronze ne permet pas, à lui seul, de décider s'il comprend la solitude de sa fonction."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le monument est construit, mais les récits de Talos proposent plusieurs commencements. Une fabrication liée à Héphaïstos et la survie d'une ancienne race ne racontent pas la même naissance.[5] La première suppose un artisan ; la seconde fait de l'être une exception historique. Aucun de ces témoignages ne décrit des générations régulières de colosses. Leur rareté tient précisément à cette origine singulière, que ne remplace pas l'existence de statues nombreuses dans une même cité."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le séisme abat le colosse de Rhodes ; la ruse et la blessure atteignent Talos.[3][5] Ces dangers appartiennent à des registres différents, mais ramènent tous deux la grandeur à ses appuis. Le colosse animé de fantasy garde cette fragilité concevable : il dépend du sol qui le porte et de ce qui relie ses parties. Sa puissance ne fait pas disparaître l'usure, les fissures ou les points d'accès ; elle rend seulement leur découverte plus difficile depuis la hauteur d'un homme."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Pline insiste sur les blocs de pierre visibles à l'intérieur du colosse renversé, qui contribuaient à sa stabilité.[3] La ruine révèle donc une construction composite plutôt qu'un corps massif entièrement coulé. Ce détail donne au vestige une beauté technique : sous la forme humaine demeure le travail des hommes, leur connaissance des charges et leur effort pour faire tenir une image au-dessus d'eux.",
+        "La page de Theoi reproduit également un cratère attique à figures rouges représentant Talos et les Argonautes, conservé au musée Jatta.[5] Le bronze vivant y appartient au récit figuré, tandis que les évocations de Rhodes reconstruisent un monument disparu. Entre ces deux héritages, le colosse du bestiaire garde sa double présence : œuvre dont on peut examiner la matière, corps dont on attend avec inquiétude le prochain mouvement."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Wikipedia — Colossus of Rhodes, avec passages de Strabon et Pline",
+        "url": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes"
+      },
+      {
+        "id": 5,
+        "title": "Theoi — Talos, textes antiques et iconographie",
+        "url": "https://www.theoi.com/Gigante/GiganteTalos.html"
+      }
+    ]
+  },
+  "croquemitaine": {
+    "description": "On a seulement prononcé son nom ; l'enfant regarde désormais la porte autrement.",
+    "sections": {
+      "fascination": [
+        "Le croquemitaine entre rarement le premier dans une chambre. Une voix l'a précédé, celle d'un adulte qui menace de le faire venir si l'enfant ne se couche pas ou franchit une limite. La porte reste fermée. Derrière, un bruit ordinaire suffit à donner un corps à la menace. Cette scène évocatrice résume son pouvoir sans lui inventer un conte d'origine : il occupe l'intervalle entre ce qui a été dit et ce que l'on croit entendre.",
+        "Son visage peut rester inconnu. Là où un dragon réclame des ailes, une gueule et des écailles, le croquemitaine se contente parfois d'une silhouette imaginée. La synthèse folklorique consultée souligne la diversité de ses aspects, humains, animaux ou fantastiques.[4] Le manque de précision n'est pas un défaut de mémoire. Il laisse à chaque enfant la charge de remplir l'ombre avec les détails qui l'inquiètent déjà.",
+        "Le plus troublant est sa proximité avec la protection. On le fait intervenir pour interdire un lieu dangereux, imposer une heure de retour ou obtenir l'obéissance.[4] Il promet d'ajouter une violence à celle dont il faudrait préserver l'enfant. Le foyer qui devrait rassurer devient alors la source d'une information menaçante, présentée avec toute l'autorité de ceux dont dépend la sécurité quotidienne."
+      ],
+      "legendes": [
+        "Croquemitaine désigne en français une figure de menace adressée aux enfants, plutôt qu'un personnage doté partout du même récit. La synthèse consultée situe l'apparition littéraire du mot au début du XIXe siècle et rappelle son emploi chez Collin de Plancy.[4] Cette attestation du nom n'établit pas une date de naissance pour toutes les pratiques consistant à effrayer les petits : les figures et les appellations locales possèdent leurs histoires propres.",
+        "L'entrée Babau du Dictionnaire infernal, dans l'édition de 1863 directement consultée, compare les menaces des nourrices du midi de la France avec Croquemitaine à Paris et Pier-Jan Claes en Flandre. Collin de Plancy décrit le Babau comme une sorte d'ogre ou de fantôme et lui attribue une dévoration des enfants jugés méchants.[7] Le rapprochement est celui d'un auteur du XIXe siècle. Il documente un usage et une manière de classer les personnages, non une identité parfaite entre eux.",
+        "Ce bref témoignage montre combien une menace peut se suffire à elle-même. Le Babau est nommé, son action annoncée, les enfants concernés désignés. On ne raconte ni sa naissance ni une aventure complète. Le croquemitaine se tient dans ce voisinage de paroles courtes, souvent répétées. Il n'a pas besoin du déroulement d'un conte merveilleux : l'attente de sa venue doit agir sur le comportement présent de l'auditeur.",
+        "Les limites surveillées changent avec le milieu. La synthèse décrit des êtres postés près des eaux, qui menacent de noyer les imprudents, et des figures hivernales censées manger les extrémités exposées au froid.[4] Ces fonctions ne doivent pas être attribuées toutes ensemble à un unique monstre français. Elles révèlent des manières différentes de donner une volonté hostile à un danger réel, en l'attachant au lieu où l'enfant pourrait le rencontrer.",
+        "Il arrive aussi que la communauté prête ce rôle à une personne réelle, notamment quelqu'un de marginalisé ou d'apparence inquiétante à ses yeux.[4] La peur cesse alors d'être sans conséquence pour autrui. Un passant peut devenir la preuve vivante d'une histoire qu'il n'a jamais racontée. Cette part sociale du croquemitaine demande de distinguer la réputation fabriquée de la personne qui la subit ; le récit dit quelque chose des regards portés sur elle, pas de sa nature."
+      ],
+      "anomalies": [
+        "L'absence d'anatomie fixe constitue sa singularité principale. Un homme, une vieille femme, une bête ou une forme incomplète peuvent remplir une fonction comparable sans devenir les variantes biologiques d'une espèce.[4] L'imaginaire naturaliste proposé ici le reconnaît donc à la manière dont il est annoncé : une apparition possible, une faute à éviter et une prise redoutée. Son corps vient ensuite, quand la peur cherche où accrocher ses détails.",
+        "Il possède une connaissance troublante des interdits domestiques. Il semble savoir qu'un enfant n'a pas dormi ou s'est éloigné. Cette vigilance ne relève pas d'un pouvoir universel attesté ; elle découle de la menace telle qu'elle est formulée. L'adulte connaît la désobéissance et annonce une sanction extérieure. Dans l'expérience de l'enfant, cette liaison peut donner au monstre une présence étendue bien au-delà de ce que ses sens lui permettent de vérifier.",
+        "Sa venue reste assez prochaine pour être crédible, assez différée pour ne pas exiger de preuve. Le croquemitaine peut attendre dehors tandis que l'enfant demeure au lit. La vérification elle-même devient difficile : ouvrir la porte suppose d'affronter ce que l'on redoute. Cette observation explique le fonctionnement de la menace, sans lui attribuer une règle magique. Un placard ou un couloir ne contiennent pas nécessairement un être ; ils offrent une surface sur laquelle l'incertitude peut se fixer."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle décrit la circulation d'une figure de peur dans la parole et les lieux familiers ; ses observations de présence sont une interprétation imaginaire, non la biologie d'un être attesté.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Il attend, approche, saisit ou menace de punir selon la parole qui l'introduit. L'entrée de Collin de Plancy oppose même la dévoration du Babau à une punition par le fouet.[7] L'action n'est donc pas toujours identique. Ce qui demeure est son lien avec une conduite exigée de l'enfant. Le personnage survient à propos : sa menace répond à une situation immédiate, puis il peut disparaître de la conversation dès que l'obéissance a été obtenue."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les bords de l'eau et les heures nocturnes figurent parmi les cadres signalés par la synthèse folklorique.[4] Dans l'évocation domestique, il occupe aussi les espaces que l'enfant ne surveille pas : l'autre côté d'une porte, le bas d'un escalier, une pièce sans lumière. Ce sont des lieux de perception incomplète plutôt qu'un territoire mesurable. Une lampe déplacée peut changer leur aspect ; elle ne corrige pas aussitôt la parole qui les a rendus menaçants."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La dévoration est une menace attestée pour plusieurs figures rapprochées du croquemitaine, notamment le Babau de Collin de Plancy.[7] Elle exprime une disparition totale et une punition disproportionnée. Rien n'autorise à en tirer des habitudes de chasse ou des besoins nutritifs. L'affirmation selon laquelle tous les croquemitaines se nourriraient littéralement de peur appartient à certaines inventions fantastiques, pas au dossier traditionnel réuni ici. La peur est l'effet recherché par la menace, non un aliment démontré."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Son efficacité dépend beaucoup de ceux qui parlent de lui. Ils choisissent le moment, le lieu et la faute supposée. Le monstre semble alors remarquablement informé, mais le récit ne fournit pas toujours de pensée autonome à examiner. L'enfant, en revanche, raisonne : il écoute, rapproche les bruits de l'avertissement et cherche des indices. La rencontre se déroule en grande partie dans ce travail d'interprétation, où un son minuscule peut recevoir une explication démesurée."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le nom passe d'une bouche à l'autre. La diversité relevée dans les traditions tient à cette transmission et aux usages locaux, sans exiger une famille de monstres.[4] Un enfant peut reprendre la menace auprès d'un plus jeune ; une expression survivre après que les adultes ont cessé de la prendre au sérieux. La figure se renouvelle alors par le contexte. Celui qui la raconte sait parfois qu'elle est inventée, tandis que son nouvel auditeur doit encore apprendre à en douter."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucun adversaire zoologique stable n'appartient au portrait consulté. Ce qui affaiblit cette peur relève plutôt de l'expérience et de la confiance : reconnaître l'origine d'un bruit, explorer un lieu accompagné, entendre l'adulte retirer sa menace. Il s'agit d'une lecture du mécanisme narratif, non d'un rite folklorique de destruction. La disparition du personnage peut être graduelle. Le nom reste connu longtemps après que l'on a cessé de croire qu'un être l'attend derrière la porte."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les graphies croque-mitaine et croquemitaine coexistent. L'étymologie du second élément reste discutée dans la synthèse consultée ; aucune explication unique n'y est assurée.[4] Le rapprochement spontané avec les mitaines et les doigts menacés par le froid est séduisant, mais ne suffit pas à prouver l'origine du mot. La sonorité, elle, reste concrète : on y entend le geste de croquer avant même de savoir quelle forme possède celui qui s'en charge.",
+        "La littérature et le cinéma ont donné des corps plus fixes à cette fonction ancienne. La synthèse mentionne notamment la nouvelle de Stephen King connue en français sous le titre Le Croque-mitaine, ainsi que l'emploi du terme pour des tueurs de fiction.[4] Ces œuvres ne révèlent pas le véritable visage d'un personnage folklorique caché. Elles conservent sa capacité à faire attendre une intrusion, mais décident enfin de ce qui apparaîtra lorsque la porte s'ouvrira."
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "Wikipédia — Croque-mitaine, fonctions et traditions comparées",
+        "url": "https://fr.wikipedia.org/wiki/Croque-mitaine"
+      },
+      {
+        "id": 7,
+        "title": "Collin de Plancy — Dictionnaire infernal, 6e édition, 1863, Babau (Wikisource)",
+        "url": "https://fr.wikisource.org/wiki/Dictionnaire_infernal/6e_%C3%A9d.,_1863/Babau"
       }
     ]
   },

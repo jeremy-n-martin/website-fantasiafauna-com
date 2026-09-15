@@ -1,0 +1,311 @@
+{
+  "batch": "batch-3",
+  "reviewed": [
+    {
+      "slug": "chevalier",
+      "verdict": "pass",
+      "sha256": "a2858cf4b5028430c3c1e9f8d73256e30e30a83b4c88fe95cbd3b0104ef23719",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "sections.naturelle.parts[0].body[0] ; sections.naturelle.parts[3].body[0] ; sections.anomalies[1]",
+          "quote": "Dans notre évocation, sa véritable discipline se voit alors dans sa manière d'attendre les autres. / Notre portrait lui prête l'attention d'un praticien. / Dans le portrait imaginaire, le chevalier ôte donc son casque quand l'occasion le permet",
+          "detail": "Rappels du cadre imaginaire placés au milieu des paragraphes. Le procédé est celui de la notice de référence (tyrannoeil : « Ce qui suit est le portrait que la fantasy moderne a fini par se donner »), mais il y est employé une seule fois, dans le lead. Ici il revient trois fois dans le corps et alourdit la lecture. Non bloquant : aucune consigne, aucune évaluation de ce qui conviendrait au texte.",
+          "suggested_fix": "Garder l'annonce du lead et fondre les rappels de corps ; décrire directement les gestes."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.metmuseum.org/essays/arms-and-armor-common-misconceptions-and-frequently-asked-questions",
+          "status": "verified",
+          "claims_checked": "Chevalier rarement seul ; dépendance en campagne à des écuyers, serviteurs et palefreniers, plus paysans et artisans ; armées comprenant aussi archers, piquiers, arbalétriers et porteurs d'armes à feu ; chevalerie conférée par création (autres chevaliers, seigneurs, parfois prêtres) et non par naissance, anoblissement possible de non-nobles ; armures de qualité moyenne achetées toutes faites sur les marchés, foires et boutiques urbaines ; pièces de qualité supérieure surexposées en musée, équipements ordinaires perdus ou en réserve.",
+          "evidence": "During a campaign, a knight depended on a small host of retainers, squires, and attendants who lent armed support and looked after his horses, armor, and other equipment—not to mention peasants and craftsmen, who made the organization of a feudal society with its warrior class possible in the first place. / supported (and opposed) by foot soldiers, such as archers, pikemen, crossbowmen, and handgunners / Knights were not born but created, by other knights, feudal lords, or sometimes priests. And, under certain conditions, people of non-noble birth could be knighted / Armor of low to medium quality, affordable to burghers, mercenaries, and lower nobility, could be bought, ready-made, at markets, trading fairs, and in urban shops. / much of the plainer arms and armor of the common man and lower nobility has been either relegated to storerooms or lost over the centuries"
+        },
+        {
+          "source_id": 1,
+          "url": "https://www.metmuseum.org/essays/arms-and-armor-common-misconceptions-and-frequently-asked-questions",
+          "status": "verified",
+          "claims_checked": "Masse d'une armure de campagne complète 20 à 25 kg (45-55 lbs) répartie sur tout le corps ; assemblage de lames et de plaques liées par rivets mobiles et courroies de cuir ; armures de tournoi plus contraignantes, portées peu de temps ; poids augmenté au XVIIe siècle pour la rendre pare-balles ; légende de la grue née à la fin du XIXe siècle comme plaisanterie, diffusée en fiction puis immortalisée en 1944 dans le film Henry V de Laurence Olivier malgré les protestations de ses conseillers historiques ; épées légères et efficaces entre des mains exercées.",
+          "evidence": "An entire suit of field armor (that is, armor for battle) usually weighs between 45 and 55 lbs. (20 to 25 kg) ... while most modern equipment is chiefly suspended from the shoulders or waist, the weight of a well-fitted armor is distributed all over the body / Each element in turn consisted of lames (strips of metal) and plates, linked by movable rivets and leather straps / Armor for certain types of tournaments was made for very specific occasions and would have been worn only for limited periods of time / This notion appears to have originated during the late nineteenth century as a joke. It entered popular fiction during the following decades, and the image was finally immortalized in 1944 when Sir Laurence Olivier used it in his movie Henry V—despite the protestations of his historical advisors / these swords were light, sophisticated, and sometimes beautifully decorated. As illustrated by documents and works of art, such a sword, in the hands of a skilled warrior, could be used with terrible efficiency"
+        }
+      ],
+      "style_check": "Français adulte et incarné, aucune tournure de bot répertoriée, aucune consigne à auteur ; la seule réserve est la répétition du rappel du cadre imaginaire. Cohérence avec l'accroche du catalogue (js/fiches.js : « L'idéal armé, entre vœu et fer. ») et avec la mention « pas une créature folklorique traditionnelle » : le chevalier est bien traité comme un archétype humain, jamais comme une espèce."
+    },
+    {
+      "slug": "chevalier-de-la-mort",
+      "verdict": "revise",
+      "sha256": "721e294aa850513aaf9386e12857c21d2cc985d1bf0d71ecc629016529b1726a",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "category": "style/consigne",
+          "location": "sections.legendes[2] ; sections.naturelle.parts[4].body[0]",
+          "quote": "Cette notice n'attribue pas à chaque chevalier une faute identique, un dieu unique ou une cérémonie de création commune. [...] Il n'est pas nécessaire de leur inventer un chroniqueur pour rendre sensible le désastre d'une fidélité qui survit à son objet.",
+          "detail": "Paragraphe de méthode : la notice commente sa propre conduite éditoriale (« Cette notice n'attribue pas... ») puis donne une consigne à l'auteur (« Il n'est pas nécessaire de leur inventer un chroniqueur »). Même tour dans naturelle.parts[4] : « le portrait ne transforme pas sa morsure ou son épée en contagion ». Le brief bannit les consignes adressées à un auteur et l'inventaire de négations. La distinction à faire (capacités de règles contre biographie inventée) est légitime et doit être conservée, mais formulée comme un constat sur les sources. Précédents du dépôt : « La notice parle de sa propre conduite éditoriale » (behemoth, revise) ; la tournure « il n'est pas nécessaire » apparaît dans 6 notices et n'en a fait passer aucune (4 revues).",
+          "suggested_fix": "Remplacer par un constat : « La source de règles ne décrit que des capacités ; aucune faute, divinité ou cérémonie de création n'y est rattachée. » Supprimer la phrase sur le chroniqueur."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "sections.fascination[1]",
+          "quote": "L'histoire imaginaire développée autour de cette silhouette ne constitue pas une tradition médiévale retrouvée ; elle accompagne une créature dont les pouvoirs sont documentés dans Donjons et Dragons.",
+          "detail": "La distinction faux folklore / jeu de rôle est requise par la grille et bien faite ; la phrase est longue et redouble une information déjà donnée. Non bloquant.",
+          "suggested_fix": "Une phrase suffit : « La figure appartient à la fantasy de jeu de rôle, pas à une tradition médiévale. »"
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 5,
+          "url": "https://www.aidedd.org/dnd/monstres.php?vf=chevalier-de-la-mort",
+          "status": "verified",
+          "claims_checked": "Mort-vivant lanceur de sorts de paladin ; Résistance à la magie (avantage aux jets de sauvegarde contre sorts et effets magiques) ; Général des Morts (morts-vivants choisis à 18 m ou moins, lui compris, avantage contre les capacités qui les repoussent) ; Attaques multiples = trois attaques d'épée longue ; épée longue tranchante + 4d8 nécrotiques ; Orbe de feu infernal 1/jour (10d6 feu + 10d6 nécrotiques, rayon 6 m, se propage au-delà des coins) ; Parade (ajoute 6 à la CA, doit voir l'attaquant et tenir en main une arme de corps à corps).",
+          "evidence": "***Général des Morts***. À moins que le chevalier de la mort soit incapable d'agir, les morts-vivants de son choix à 18 mètres ou moins de lui (lui y comprit) bénéficient d'un avantage à leurs jets de sauvegarde contre les capacités qui repoussent les morts-vivants. / ***Attaques multiples***. Le chevalier de la mort effectue trois attaques avec son épée longue. / ***Épée longue***. [...] 9 (1d8 + 5) dégts tranchants, ou 10 (1d10 + 5) dégts tranchants si utilisée à deux mains, plus 18 (4d8) dégts nécrotiques. / ***Orbe de feu infernal (1/jour)***. [...] La sphère se propage au-delà des coins. / ***Parade***. Le chevalier de la mort ajoute 6 à sa CA contre une attaque au corps à corps qui le toucherait. Pour ce faire, il doit voir l'attaquant et avoir en main une arme de corps à corps. / ***Résistance à la magie***. Le chevalier de la mort a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques."
+        }
+      ],
+      "style_check": "Faits de règles exacts et bien attribués ; faux folklore correctement traité (jeu de rôle annoncé comme tel, accroche du catalogue « Un paladin retourné, fidèle à la tombe. » reprise fidèlement) ; aucune biologie inventée (le régime et la transmission absents de la source sont signalés comme absents). Le blocage vient du paragraphe de méthode de legendes[2] et de la consigne « il n'est pas nécessaire de »."
+    },
+    {
+      "slug": "chien-de-l-enfer",
+      "verdict": "revise",
+      "sha256": "6b0ba0f08ad08baf035e4f78401ac1e6e9bd2f846e37dc3c8fde72a208d88e05",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "category": "consigne à auteur",
+          "location": "sections.reliques[1]",
+          "quote": "La comparaison avec les traditions plus anciennes gagne à conserver leurs différences",
+          "detail": "Reprise de la tournure bannie par le brief (« la notice gagne à »), déjà sanctionnée dans le dépôt : « L'illustration du berserker gagne à conserver cette différence » (berserker, revise, « Conseil à l'illustrateur ») et « Le récit gagne à respecter cette différence » (troglodyte, revise). La phrase transforme la clôture de la notice en consigne de rédaction. Le contenu (ne pas confondre Cerbère, Black Shuck et le chien de feu ludique) est juste et doit être gardé.",
+          "suggested_fix": "« Leurs histoires ne se remplacent pas » suffit, ou : « Le rapprochement des silhouettes ne comble pas les différences entre ces trois figures. »"
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "sections.naturelle.parts[4].body[0]",
+          "quote": "Le portrait laisse donc les origines ouvertes plutôt que de placer des petits dans chaque fournaise.",
+          "detail": "Même famille de remarque d'atelier (« plutôt que de placer des petits »), avec un trait d'humour qui détonne dans une rubrique documentaire. Le fait est juste : les sources ne donnent aucun cycle reproducteur. Non bloquant en soi, à corriger avec la phrase précédente.",
+          "suggested_fix": "« Aucune des sources réunies ne décrit de cycle reproducteur : la meute apparaît comme un groupe déjà constitué. »"
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://www.theoi.com/Ther/KuonKerberos.html",
+          "status": "verified",
+          "claims_checked": "Cerbère gardien des portes de l'Hadès ; Théogonie 769 : il accueille les entrants par la queue et les deux oreilles, empêche la sortie et dévore ceux qu'il surprend à revenir par les portes ; filiation Typhon + Échidna (Théogonie 310) ; Pseudo-Apollodore, Bibliothèque 2,125 : maîtrise sans armes, montré à Eurysthée, ramené ensuite dans le royaume d'Hadès.",
+          "evidence": "as people go in he fawns on all, with actions of his tail and both ears, but he will not let them go back out, but lies in wait for them and eats them up, when he catches any going back through the gates. / [1.1] TYPHOEUS & EKHIDNA (Hesiod Theogony 310, Quintus Smyrnaeus 6.260, Hyginus Pref & Fab 30) / Herakles asked Pouton (Pluton) [Haides] for Kerberos (Cerberus), and was told to take the hound if he could overpower it without using any of the weapons he had brought with him. [...] After showing Kerberos to Eurystheus, he took it back to Haides' realm."
+        },
+        {
+          "source_id": 4,
+          "url": "https://en.wikipedia.org/wiki/Black_Shuck",
+          "status": "verified",
+          "claims_checked": "Descriptions variables ; tantôt présage de mort, tantôt apparition compagnonnable ; description de W. A. Dutt (1901) : rôde sur les chemins sombres et les sentiers solitaires, pas sans aucun bruit, un seul œil de feu au milieu de la tête ; récit d'Abraham Fleming : Bungay, Suffolk, « the fourth of this August » 1577, dans une grande tempête de pluie violente, éclairs et tonnerre, devant l'assemblée réunie dans l'église.",
+          "evidence": "it is sometimes recorded as an omen of death, but, in other instances, is described as companionable / although his howling makes the hearer's blood run cold, his footfalls make no sound. You may know him at once, should you see him, by his fiery eye; he has but one, and that, like the Cyclops', is in the middle of his head. / A straunge, and terrible Wunder wrought very late in the parish church of Bungay [...] namely the fourth of this August, in the yeere of our Lord 1577. in a great tempest of violent raine, lightning, and thunder [...] With the appeerance of an horrible shaped thing, sensibly perceived of the people then and there assembled."
+        },
+        {
+          "source_id": 6,
+          "url": "https://www.aidedd.org/dnd/monstres.php?vo=hell-hound",
+          "status": "verified",
+          "claims_checked": "Ouïe et odorat aiguisés (avantage aux tests de Perception fondés sur l'ouïe ou l'odorat) ; avantage tactique dès qu'un allié se tient à 1,50 m de la cible (Pack Tactics) ; morsure perçante accompagnée de dégâts de feu ; souffle de feu en cône de 4,50 m à recharger (5-6) ; la fiche ne dit rien du régime ni de la reproduction.",
+          "evidence": "***Keen Hearing and Smell***. The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell. / ***Pack Tactics***. The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated. / ***Bite***. [...] 7 (1d8 + 3) piercing damage plus 7 (2d6) fire damage. / ***Fire Breath (Recharge 5-6)***. The hound exhales fire in a 15-foot cone."
+        }
+      ],
+      "style_check": "Très bonne séparation faux folklore / jeu de rôle : Cerbère, Black Shuck et le chien de feu ludique restent dans leurs traditions, l'accroche du catalogue (« Un molosse de braise aux yeux de charbon. ») est annoncée comme image moderne, et aucune zoologie n'est inventée. Le blocage tient à une seule tournure bannie en fin de notice."
+    },
+    {
+      "slug": "chimere",
+      "verdict": "revise",
+      "sha256": "62b09a8f02b8d34bb3a6af1350fd4d83202c2319b6f19ee5903163fffa8e0398",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "category": "consigne à auteur",
+          "location": "sections.naturelle.parts[1].body[0] ; sections.anomalies[0] ; sections.naturelle.parts[4].body[0]",
+          "quote": "Il n'est pas nécessaire d'y ajouter un antre détaillé ou un réseau de tanières. [...] Il serait trompeur de reconstruire un squelette unique à partir de toutes ces formulations. [...] La notice ne lui attribue donc ni ponte saisonnière ni population de petits composites.",
+          "detail": "Trois notes de méthode : une consigne (« il n'est pas nécessaire d'ajouter »), une mise en garde sur la façon de lire les textes, et un commentaire de la notice sur sa propre conduite (« La notice ne lui attribue donc ni... »). Les faits sont exacts et l'avertissement contre un squelette unique est utile, mais il doit être dit comme une propriété des textes anciens, non comme une règle d'écriture. Précédents du dépôt : « il n'est pas nécessaire » : 6 notices, 0 passée, 4 revues ; « La notice parle de sa propre conduite éditoriale » (behemoth, revise) ; accumulation de mises en garde transformant les rubriques en notes de méthode (basilic, revise).",
+          "suggested_fix": "Réécrire en constats : « Aucun antre ni aucune tanière n'est décrit. » / « Les formulations varient ; aucune ne décrit un squelette unique. » / « Aucun cycle reproducteur n'est décrit : sa naissance relève d'une généalogie divine. »"
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "sections.anomalies[1]",
+          "quote": "Dans notre évocation naturaliste, le poil du lion reçoit la lueur du souffle tandis que la tête caprine se relève au-dessus de lui.",
+          "detail": "Rappel du cadre imaginaire au milieu de la rubrique. Le procédé est admis (la notice de référence annonce ce cadre), mais devient répétitif avec le lead. Non bloquant.",
+          "suggested_fix": "Laisser l'image se tenir seule, sans « Dans notre évocation naturaliste »."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.theoi.com/Ther/Khimaira.html",
+          "status": "verified",
+          "claims_checked": "Iliade VI, 179-182 : Iobatès envoie Bellérophon tuer la Chimère, être d'origine immortelle et non humain, lion par-devant, serpent par-derrière, chèvre au milieu, soufflant le feu ; victoire « obéissant aux présages des immortels », sans récit du combat dans ce passage ; Théogonie 319 : fille d'Échidna et Typhon, trois têtes (lion, chèvre, serpent), grande, terrible, forte et rapide, tuée par Pégase et Bellérophon ; elle enfante ensuite, avec Orthros, le Sphinx et le lion de Némée ; Pseudo-Apollodore, Bibliothèque 2,31-32 : dessein meurtrier d'Iobatès, bête que même une foule d'hommes aurait peine à dompter, troisième tête (médiane) de chèvre par laquelle elle souffle le feu, campagne dévastée et troupeaux ravagés, Bellérophon sur Pégase s'élève dans les airs et l'abat à l'arc ; mention de la lance à pointe de plomb dans la présentation du dossier, tenue à l'écart dans la notice ; Strabon, Géographie 14,3,5 : scène du mythe près du Cragos en Lycie, ravin Khimaira non loin ; Platon, République 588c : Chimère, Scylla et Cerbère comme formes réunies en une seule.",
+          "evidence": "First he [King Iobates of Lykia] sent him [Bellerophon] away with orders to kill the Khimaira (Chimera) none might approach; a thing of immortal make, not human, lion-fronted and snake behind, a goat in the middle, and snorting out the breath of the terrible flame of bright fire. He killed the Khimaira, obeying the portents of the immortals. / She [Ekhidna] bore the Khimaira (Chimera), who snorted raging fire, a beast great and terrible, and strong and swift-footed. Her heads were three [...] But Khimaira (Chimera) was killed by Pegasos (Pegasus) and gallant Bellerophon. But she also, in love with Orthos, mothered the deadly Sphinx [...] and the Nemeian Lion. / he ordered Bellerophon to slay the Khimaira (Chimera), assuming that he would instead be destroyed himself [...] For it was a single being that had the force of three beasts, the front part of a lion, the tail of a drakon, and the third--middle--head was that of a goat, through which it breathed out fire. It despoiled the countryside and ravaged the herds. [...] flying high into the air brought down the Khimaira with his bow and arrows. / He rode into battle on the back of the winged horse Pegasos and drove a lead-tipped lance into its flaming throat, choking the beast on molten metal. / Kragos (Cragus) [a coastal mountain in Lykia], which has eight promontories and a city of the same name. The scene of the myth of Khimaira (Chimera) is laid in the neighborhood of these mountains. / One of those natures that the ancient fables tell of, as that of the Khimaira (Chimera) or Skylla (Scylla) or Kerberos (Cerberus), and the numerous other examples that are told of many forms grown together in one."
+        }
+      ],
+      "style_check": "Excellente rigueur documentaire : les quatre versions (Homère, Hésiode, Pseudo-Apollodore, Strabon) restent distinctes, le motif de la lance de plomb est explicitement écarté de la version retenue, et aucune zoologie n'est inventée (ni ponte, ni régime déduits des trois têtes). Seul défaut : trois notes de méthode, dont une consigne explicite, qui imposent une révision."
+    },
+    {
+      "slug": "chort",
+      "verdict": "revise",
+      "sha256": "50fbfc8d1079dd3d38c937672d45a8936923db03205f386db84e0b951ed066b1",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "category": "consigne à auteur",
+          "location": "sections.anomalies[2]",
+          "quote": "Il faut garder cette amplitude, plutôt que transformer chaque apparition en attaque sanglante.",
+          "detail": "Consigne éditoriale publiée : la notice dit au rédacteur ou au meneur de jeu ce qu'il doit faire du personnage. Le brief bannit les consignes adressées à un auteur, à un illustrateur ou à un meneur de jeu, et la tournure « il faut garder » est déjà sanctionnée dans le dépôt (poltergeist, revise ; 3 notices concernées, aucune passée). Le constat qui précède (amplitude comique, utilité morale, victimes cupides) est juste et documenté ; seule la dernière phrase est à retirer. Point d'arbitrage pour la vague : une notice d'un autre lot (clerc) contient la même tournure « Il faut garder... » et a été passée par son relecteur — la règle doit être appliquée uniformément, sinon le lot 3 paraîtra plus sévère que les autres.",
+          "suggested_fix": "Terminer sur le constat : « Ces versions lui laissent tantôt une utilité morale, tantôt une dignité perdue sans que ses pouvoirs faiblissent. »"
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "sections.fascination[1] ; sections.legendes[0]",
+          "quote": "Dans les contes tchèques et slovaques, le čert sait prendre une apparence séduisante",
+          "detail": "L'alternance des graphies (chort, čert, czart) est expliquée et légitime, mais elle demande une dernière passe de cohérence typographique dans le corps du texte. Non bloquant.",
+          "suggested_fix": "Garder « le chort » dans le corps de la notice et réserver les formes slaves aux passages qui traitent du nom."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Chort",
+          "status": "verified",
+          "claims_checked": "Formes du nom : russe чёрт, biélorusse et ukrainien чорт, polonais czart et czort, tchèque et slovaque čert ; démons subalternes dans le christianisme populaire, enfer parfois plein de čerts et dirigé par Lucifer ; le čert n'est pas le diable ; contes tchèques et slovaques : ventes d'âme contre argent, pouvoir ou accomplissement d'une tâche, victimes cupides emportées en enfer, héros rusé retournant le marché ; construction de murs de château en un jour, creusement d'étangs et de berges, déplacement de grandes pierres ; véritable forme : petit homme poilu, queue, cornes, un ou deux sabots ; reconnaissance à de petites cornes cachées dans les cheveux noirs bouclés ou à une jambe à sabot cachée dans des bottes hautes ; expressions russes de malédiction et d'exaspération ; étymologie discutée (sorcellerie, couper, tracer).",
+          "evidence": "a **chort** (Russian: чёрт, Belarusian and Ukrainian: чорт, Serbo-Croatian: čort or črt, Polish: czart and czort, Czech and Slovak: čert [...] / In folk Christianity, they are considered lesser minions of Satan. / Sometimes, hell is full of čerts and is ruled by the devil (or archdevil) Lucifer. / Čert is not the devil, although they might have a lot in common. / This way, čert is often tricked to build castle walls in a day, dig fish ponds or even whole river banks, move large stones or create hills and mountains. / The true form of Čert is often a smallish hairy man with a tail, horns and one or two hoofs. But he is a shapeshifter [...] one can recognize čert by small horns hidden in black curly hair, or a single hoofed leg hidden in high boots. / The word is used in various Russian expressions (curses) [...] чёрт побери (chort poberi) – meaning \"be taken by the demon\" [...] to express frustration / One is that it is the past passive participle of an unattested verb (nouns: *čarъ, *čara (\"magic, sorcery\")) [...] Another theory is that it is a substantivized t-participle of *ker- (to cut, to chop) [...] Proto-Slavic *čьrtъ represents a derivative of *čersti / čьrtǫ 'to draw a line, furrow'"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Christmas_Eve_(Gogol)",
+          "status": "verified",
+          "claims_checked": "Premier récit du second volume du recueil de 1832 Evenings on a Farm Near Dikanka ; action à Dikanka, en Ukraine ; le diable vole la lune et la cache dans sa poche, veut se venger du forgeron Vakoula qui peint des images religieuses ; Solokha, mère de Vakoula, est une sorcière, et le diable se cache dans un sac de charbon ; Vakoula emporte les sacs en les prenant pour du charbon ; Patsyuk mange des varenyky qui volent dans sa bouche après être passés dans une bassine de crème ; Vakoula menace du signe de la croix, le diable l'emporte vers Saint-Pétersbourg et rétrécit dans sa poche ; Oksana exige les souliers de la tsarine (Catherine) ; Vakoula peint ensuite le diable en enfer dans l'église, les villageois crachent dessus.",
+          "evidence": "is the first story in the second volume of the 1832 collection Evenings on a Farm Near Dikanka [...] The story opens with a description of the winter scenery of Dikanka, Ukraine, a witch flying across the night sky and the devil stealing the moon and hiding it in his pocket [...] the devil is free to roam around and torment people as he pleases, so he decides to find a way to get back at the village blacksmith, Vakula, because he paints religious art in the church. / Solokha is with the devil in her home, when someone knocks at the door. She hides the devil in a coal sack [...] Vakula spots the sacks and carries them to his forge, taking them for coal / Patsyuk eats magical varenyky that fly down into a basin of cream and then into his mouth / Vakula tricks the devil into thinking he will obey him, then grabs his tail and threatens to use the sign of the cross until he agrees to help. / Fearing the cross, the devil takes him into the sky en route to St. Petersburg [...] has the devil (who shrinks into his pocket) transport him into the palace [...] glorifies her slippers, which she finds amusing and agrees to give them to him. / In the church the blacksmith has made another painting, showing the devil in hell, which villagers spit on"
+        }
+      ],
+      "style_check": "Documentation solide : traditions slaves, couche chrétienne populaire, conte littéraire de Gogol et étymologie discutée restent séparés ; l'accroche du catalogue (« Un diable slave, cornu et moqueur. ») est tenue. Un seul défaut bloquant, la consigne finale d'anomalies[2]."
+    },
+    {
+      "slug": "chronomancien",
+      "verdict": "revise",
+      "sha256": "f0d36089ba1323aa6fa2397c0f8dd7d0647bf87aada51a2480c6d39547f16f60",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "category": "consigne à auteur",
+          "location": "sections.reliques[0] ; sections.anomalies[0]",
+          "quote": "Le sablier convient à cette figure parce qu'il rend la durée visible sans révéler l'avenir. [...] Il ne faut pas étendre ce mécanisme à l'effacement de tous les souvenirs ou de tous les événements du monde.",
+          "detail": "Deux tournures de la famille bannie : « convient à cette figure » (le brief cite « convient mieux à » ; 3 notices concernées dans le dépôt, aucune passée, 2 revues) et « Il ne faut pas étendre... », prescription sur la façon de lire et d'employer le pouvoir. Le fond est juste ; c'est le destinataire qui bascule vers le rédacteur.",
+          "suggested_fix": "« Le sablier rend la durée visible sans révéler l'avenir : deux instants semblables ne sont pas le même instant retrouvé. » Pour l'anomalie : « Le mécanisme documenté reste local ; il ne porte ni sur les souvenirs ni sur les événements du monde. »"
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "cohérence",
+          "location": "sections.fascination[1], à confronter à js/fiches.js (entrée chronomancien)",
+          "quote": "Son corps reste celui d'une personne. Aucun organe visible n'explique son pouvoir.",
+          "detail": "La fiche courte du catalogue donne pour le chronomancien « taille : 2 à 3 m » et « poids : 150 à 300 kg », valeurs identiques à celles du chuul et incompatibles avec le corps humain décrit par la notice. Le texte de la notice paraît juste ; c'est la donnée de la fiche qui semble erronée. À arbitrer par le parent, hors notice.",
+          "suggested_fix": "Corriger la fiche (mesures humaines) ou la laisser vide, selon la règle « ne pas inventer de mesures lorsque les données sont absentes »."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "sections.naturelle.parts[1].body[0]",
+          "quote": "Rien ne l'attache pourtant à une tour.",
+          "detail": "Utile pour corriger l'habitat de la fiche courte (« Tours, paradoxes, seuils d'époques »), mais la négation répond à la fiche plutôt qu'à une source. Non bloquant.",
+          "suggested_fix": "Formuler positivement : « Le mage travaille là où il peut répéter une mesure : atelier, seuil, terrain. »"
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://wiki.guildwars2.com/wiki/Chronomancer",
+          "status": "verified",
+          "claims_checked": "Spécialisation d'élite de l'envoûteur (mesmer) débloquée avec l'extension Heart of Thorns ; puits créant de brèves ondulations temporelles qui donnent des bienfaits aux alliés et ralentissent les ennemis ; Continuum Split : faille dans le continuum espace-temps, retour au point d'origine avec santé, endurance et recharges antérieures, durée accrue par illusion brisée, retour prématuré si la faille est détruite ; bouclier (Echo of Memory) qui bloque les attaques ; Tides of Time : onde temporelle qui arrête les ennemis qu'elle traverse, son retour réduisant le rechargement.",
+          "evidence": "Chronomancer is an elite specialization for the mesmer unlocked with the Heart of Thorns expansion. / Chronomancers manipulate the battlefield through the use of wells, creating brief ripples in time that give their allies various boons and slowing your enemies. / unlocking a new shatter skill, Continuum Split, that creates a brief rift in the space-time continuum for the chronomacer to exploit, before shifting to the original timeline with their previous health, endurance, and cooldowns [...] Duration increases with each illusion shattered. [...] You are transported back prematurely if the rift is destroyed. / **Block incoming attacks for a short duration.** / Tides of Time [...] launch a wave of temporal energy that damages and stops enemies it passes through, then returns to you. Touching the returning wave reduces the recharge of this skill."
+        }
+      ],
+      "style_check": "Cadrage honnête : figure de fantasy moderne, source de jeu annoncée, différences entre imaginaire et règles maintenues, accroche du catalogue (« Un mage qui plie les heures comme du fil. ») respectée, et aucune biologie inventée. Le blocage porte sur le registre (deux tournures prescriptives), pas sur le fond."
+    },
+    {
+      "slug": "chupacabra",
+      "verdict": "pass",
+      "sha256": "da7c582c3d858d0073f685bbbf387e313b9f9c1a64148af0fc662304ef2b17ed",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "sections.anomalies[2]",
+          "quote": "La légende transforme un constat sommaire en opération précise ; l'enquête doit au contraire conserver la différence entre ce qui a été vu et ce qui a été déduit.",
+          "detail": "Seule trace d'un registre prescriptif dans la notice : elle porte sur la conduite de l'enquête, non sur la rédaction, et le constat qui suit est exact. Acceptable en l'état ; à surveiller si le tour revient ailleurs dans le lot.",
+          "suggested_fix": "Facultatif : « La légende transforme un constat sommaire en opération précise : ce qui a été vu et ce qui a été déduit n'ont pas la même valeur. »"
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 4,
+          "url": "https://www.britannica.com/topic/chupacabra",
+          "status": "verified",
+          "claims_checked": "Nom dérivé de l'espagnol chupar (« sucer ») et cabra (« chèvre »), traduisible par « suceur de chèvres » ; premiers signalements en 1995 à Porto Rico, attaques imputées à la créature sur chèvres, moutons et autres animaux domestiques, carcasses laissées sans être mangées et vidées de leur sang ; descriptions anciennes : créature debout, grand kangourou reptilien aux grands yeux rouges ; aucun spécimen trouvé, des sceptiques évoquant l'influence du film Species (1995) ; autres signalements dans les Amériques et jusqu'aux États-Unis ; seconde forme plus petite, quadrupède, d'apparence canine et sans poils ; spécimens réels identifiés par des biologistes comme coyotes, chiens ou hybrides canins, apparence due à la gale (acarien Sarcoptes scabiei), hypothèse que les proies sauvages échappent aux bêtes affaiblies ; les deux formes utilisées comme monstres de cinéma à petit budget ; maquette de l'exposition « Bloodsuckers: Legends to Leeches » du Royal Ontario Museum.",
+          "evidence": "The name is derived from the Spanish words chupar (\"to suck\") and cabra (\"goat\") and can be translated as \"goat-sucker.\" / Chupacabras were first reported in 1995, in Puerto Rico, where they were blamed for attacks on goats, sheep, and other domestic animals, supposedly leaving uneaten carcasses that were drained of blood. Early reports described a creature that stood upright and resembled a large reptilian kangaroo with huge red eyes. No actual specimens were found, and skeptics suggested that \"witnesses\" may have been influenced by the Hollywood science-fiction horror film Species (1995) [...] But other sightings were reported throughout the Americas and as far north as the United States. / These chupacabras were smaller and stood upon four feet. They were generally canine in appearance but hairless. Actual specimens were produced, but they were identified by biologists as coyotes, dogs, or canine hybrids. The animals owed their strange appearance to hair loss resulting from mange, an infestation of the mite Sarcoptes scabiei. It was suggested that the canines attacked livestock because the debilitating effects of the infestation put wild prey out of their reach. / Both types of the creatures served as monsters in low-budget motion pictures. / Model of a chupacabra from the exhibit \"Bloodsuckers: Legends to Leeches\" at the Royal Ontario Museum, Toronto."
+        }
+      ],
+      "style_check": "Satisfait la grille sur tous les points : légende contemporaine datée et située, aucune antiquité autochtone attribuée à tort, distinction maintenue entre récit de témoins et reconnaissance scientifique, et refus explicite de fabriquer une physiologie vampirique à partir de carcasses exsangues. Style sobre, sans consigne."
+    },
+    {
+      "slug": "chuul",
+      "verdict": "pass",
+      "sha256": "fa8b0f00717f77383c633a7d90fb9549ca3c139f6e803cf3d788ce970970e9d0",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "langue",
+          "location": "sections.legendes[0]",
+          "quote": "consultable dans le Hypertext d20 SRD",
+          "detail": "Élision manquante devant une initiale vocalique : « dans l'Hypertext d20 SRD ». Coquille, non bloquante.",
+          "suggested_fix": "« consultable sur l'Hypertext d20 SRD »."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "sections.reliques[1] ; sections.legendes[2] ; sections.naturelle.parts[2].body[0]",
+          "quote": "Dans cette évocation de trophée imaginaire, l'objet le plus spectaculaire n'est ainsi qu'une partie d'un dispositif vivant. / Les reporter sans distinction dans toutes les versions produirait un monstre composite que chaque édition n'a pas nécessairement décrit.",
+          "detail": "Deux rappels de méthode et un rappel du cadre imaginaire. Ils restent descriptifs (aucune consigne à l'auteur) et le dépôt tolère ce tour : « ne doit pas devenir » apparaît dans 7 notices dont 4 passées. Non bloquant, mais le lot gagnerait à alléger ces retours sur l'atelier.",
+          "suggested_fix": "Préférer des constats sur les textes : « Aucune des deux présentations ne décrit les descendants. »"
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 5,
+          "url": "https://www.dndbeyond.com/monsters/16824-chuul",
+          "status": "verified",
+          "claims_checked": "Basic Rules (2014) : aberration de taille G, chaotique mauvaise ; Amphibious (respire dans l'air et dans l'eau) ; Sense Magic (perçoit la magie à 36 m à volonté, fonctionne comme détection de la magie sans être magique) ; Multiattack (deux attaques de pince, plus tentacules si une créature est agrippée) ; Pincer (agrippe une créature de taille G ou moins) ; Tentacules (jet de sauvegarde de CON DD 13, empoisonné puis paralysé, jet répétable à chaque tour) ; habitat indiqué : Outreterre (« Habitat: Underdark — Basic Rules (2014), pg. 267 ») — cette ligne n'apparaît que dans le HTML brut de la page ; elle a été vérifiée par extraction directe, l'extraction markdown l'omettant.",
+          "evidence": "***Amphibious.*** The chuul can breathe air and water. / ***Sense Magic.*** The chuul senses magic within 120 feet of it at will. This trait otherwise works like the detect magic spell but isn't itself magical. / ***Multiattack.*** The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once. / ***Tentacles.*** One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. / Habitat: Underdark Basic Rules (2014), pg. 267"
+        },
+        {
+          "source_id": 6,
+          "url": "https://www.d20srd.org/srd/monsters/chuul.htm",
+          "status": "verified",
+          "claims_checked": "Hypertext d20 SRD (3.5) : aberration aquatique de taille G ; environnement « Temperate marshes » ; organisation « Solitary, pair, or pack (3-5) » ; description « a horrible mix of crustacean, insect, and serpent », guettant des proies intelligentes à dévorer, amphibie mais mauvais nageur préférant la terre ou l'eau très peu profonde ; parle le commun (ou le commun des profondeurs pour la variété souterraine) ; combat : saisit et étreint, garde une pince libre, peut lâcher une victime paralysée ou morte pour en saisir une autre ; tentacules paralysants (DD 19, 6 rounds) et mandibules infligeant 1d8+2 par round à la victime tenue ; survit indéfiniment sur terre.",
+          "evidence": "A horrible mix of crustacean, insect, and serpent, the chuul is an abomination that lurks submerged or partially submerged, awaiting intelligent prey to devour. Although amphibious, chuuls are not good swimmers and actually prefer to be on land or in very shallow water when they attack. / Chuuls speak Common (or Undercommon, for the underground variety). / It tries to always have one claw free, so if it faces a large number of opponents, it drops a paralyzed or dead victim and continues attempting to grab, constrict, and paralyze the rest. / While held in the tentacles, paralyzed or not, a victim automatically takes 1d8+2 points of damage each round from the creature's mandibles. / Environment: Temperate marshes / Organization: Solitary, pair, or pack (3-5) / Although chuuls are aquatic, they can survive indefinitely on land."
+        }
+      ],
+      "style_check": "Bon travail de séparation entre les deux éditions, chaque trait attribué à sa source ; la créature est clairement présentée comme une invention de jeu et non comme une anomalie zoologique, et les silences (reproduction, prédateur) sont expliqués plutôt que comblés. Seules des remarques mineures de langue et de registre."
+    }
+  ]
+}

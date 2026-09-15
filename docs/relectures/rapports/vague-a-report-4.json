@@ -1,0 +1,372 @@
+{
+  "batch": "batch-4.json",
+  "reviewed": [
+    {
+      "slug": "clerc",
+      "verdict": "pass",
+      "sha256": "f608b4eba42a56bd1ec3d4d3636844340befa9fd971c7c07730ba245f3ae48cd",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[2]",
+          "quote": "Cette dépendance explique le silence après la prière autant que l'éclair qui la suit.",
+          "detail": "La rubrique enchaîne plusieurs phrases construites sur le même moule démonstratif — cf. « Cette limite laisse une place à l'inattendu » (naturelle.parts[4]) et « Cette distinction évite de peupler chaque sanctuaire » (legendes[1]). Le raisonnement est juste, mais le rythme devient mécanique sur la longueur. Non bloquant."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "Le corps du clerc n'est pas une anomalie zoologique.",
+          "detail": "Formule de garde utile — le catalogue contient des archétypes humains — mais la négation seule, sans relance narrative, a un léger parfum de note d'auteur. Une affirmation positive ferait le même travail."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.aidedd.org/regles/classes/clerc",
+          "status": "verified",
+          "claims_checked": "Vérifié sur la page réelle : intermédiaires entre les mortels et les plans des dieux ; le clerc n'est pas un religieux ordinaire ; domaines divins distincts (duperie, guerre, lumière, nature, savoir, tempête, vie) ; Sagesse comme caractéristique d'incantation ; symbole sacré comme focaliseur ; renvoi des morts-vivants (vue ou ouïe, 9 m, sauvegarde de Sagesse, fuite) ; destruction des morts-vivants à partir du niveau 5 ; sorts préparés au repos long après un temps pour prier et méditer ; compétences Histoire, Intuition, Médecine, Persuasion, Religion ; maîtrises (armes courantes, armures légères et intermédiaires, boucliers) ; missions (reliques dans des tombeaux, protection des fidèles, négociation de la paix, scellement d'un portail démoniaque) ; Intervention divine incertaine jusqu'au niveau 20 ; conduit divin limité par les repos.",
+          "evidence": "« Tous les acolytes ou officiants des temples ou des lieux saints ne sont pas clercs. » | « Chaque mort-vivant qui peut vous voir ou vous entendre et qui se trouve à 9 mètres ou moins de vous doit effectuer un jet de sauvegarde de Sagesse. » | « Préparer une nouvelle liste de sorts de clerc nécessite du temps pour prier et méditer » | « Vous pouvez utiliser un symbole sacré comme focaliseur d'incantation pour vos sorts de clerc. » | « Destruction des morts-vivants (FP 1/2) » (table de classe, niveau 5) | « rechercher des reliques saintes dans des tombeaux antiques… négocier la paix entre des nations en guerre, ou sceller un portail qui permettrait à un prince démon d'entrer dans le monde »"
+        }
+      ],
+      "style_check": "Français adulte et incarné, aucune consigne adressée à un auteur, aucun inventaire de négations ; la distinction entre archétype ludique et religion réelle est posée d'entrée (legendes[0]) et l'histoire naturelle décrit une vocation, pas une espèce. Seule réserve : la répétition du moule « Cette X explique… »."
+    },
+    {
+      "slug": "cocatrix",
+      "verdict": "pass",
+      "sha256": "45c3c1b607fba68d5735d30f12e3dce57a6621919cc5a53d54d875e2cf02fd53",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[2]",
+          "quote": "L'image d'une zone privée de charognards lui convient mieux qu'un menu inventé",
+          "detail": "« lui convient mieux » frôle la recommandation adressée à l'auteur — la liste noire proscrit « convient mieux à ». Ici le sujet est la créature, pas l'écrivain : ce n'est donc pas un manquement, mais la tournure reste à surveiller. Une formulation positive (« L'image du charognard qui se détourne du cadavre dit mieux la chose qu'un menu inventé ») évite l'ambiguïté."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "John Trevisa traduit basiliscus par cockatrice dans sa traduction de Barthélemy l'Anglais en 1397.[2]",
+          "detail": "La source date le De proprietatibus rerum d'environ 1260 : c'est la traduction de Trevisa qui date de 1397. La phrase de la notice est exacte (la date porte bien sur la traduction), mais un lecteur pressé peut rattacher 1397 au traité latin."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Cockatrice",
+          "status": "verified",
+          "claims_checked": "Vérifié : Neckam, De naturis rerum (v. 1180), basilic issu d'un œuf de coq couvé par un crapaud, serpent possible dans d'autres versions ; Trevisa traduisant basiliscus par cockatrice en 1397 ; Richard III (la duchesse d'York) ; Roméo et Juliette (III, 2) ; The Worm Ouroboros (1922), regard qui pétrifie ; miroir parmi les moyens de la tuer ; relief au-dessus d'une porte du Belvedere Castle (1869).",
+          "evidence": "« According to Alexander Neckam's De naturis rerum (c. 1180), the basilisk (basiliscus) was the product of an egg laid by a rooster and incubated by a toad » | « was translated by John Trevisa as cockatrice (1397) » | « A cockatrice hast thou hatch'd to the world, Whose unavoided eye is murderous » | « having a cockatrice look at itself in a mirror is one of the few sure-fire ways to kill it » | « The glance of its eye sufficeth to turn to stone any living thing that standeth before it » | « A cockatrice overdoor at Belvedere Castle (1869) »"
+        },
+        {
+          "source_id": 6,
+          "url": "https://bestiary.ca/beasts/beast265.htm",
+          "status": "verified",
+          "claims_checked": "Vérifié : Cocatris, Cockatrice, Kokatris, Koketrice parmi les autres noms du basilic ; crête et queue de serpent ; odeur qui tue les serpents ; sifflement mortel ; venin remontant la lance ; regard qui tue un homme ; les autres animaux ne touchent pas une bête tuée par le basilic ; la belette seule le tue, parfois en mourant elle-même ; le chant du coq provoque des convulsions ; œuf de coq couvé par un crapaud, poussin mâle, queue serpentine après sept jours ; lieux secs et caverne ; entrées ou illustrations séparées du basilic et du regulus ; couronne du roi des serpents.",
+          "evidence": "« Other names : … Cocatris, Cockatrice, Kokatris, Koketrice … » | « The basilisk is described as a crested snake or as a cock with a snake's tail. » | « The poison of the basilisk is so strong that if it is stabbed with a spear the poison will flow up the spear to infect the person holding it. » | « Other animals will not eat or even touch any animal that was killed by a basilisk. » | « The only animal that can directly kill a basilisk is the weasel. » | « Sometimes the weasel may itself be killed in the fight. » | « The basilisk is hatched by a toad from a cock's egg… after seven days it grows the tail of a serpent. » | « Some manuscripts have separate entries and/or illustrations for the basilisk and the regulus »"
+        }
+      ],
+      "style_check": "Très bonne tenue : la notice tient ensemble tradition médiévale, histoire du vocabulaire, théâtre élisabéthain et fantasy du XXe siècle sans confondre les régimes de vérité, et l'histoire naturelle dit ce que les textes ne disent pas plutôt que d'inventer une biologie. Aucune tournure de bot relevée."
+    },
+    {
+      "slug": "colosse",
+      "verdict": "pass",
+      "sha256": "053f9cc6100829ed8367680da9c071b150f38a52408b659ecd691a9b55f684b7",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[2]",
+          "quote": "Ajouter un fourneau ou une réserve d'énergie particulière reviendrait à choisir une autre invention, non à compléter le témoignage antique.",
+          "detail": "Phrase de méthode : elle expose au lecteur la règle d'écriture du portrait. C'est défendable et utile contre la zoologie inventée, mais « reviendrait à choisir » est un énoncé méta qui gagnerait à être fondu dans le récit du témoignage."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.lead",
+          "quote": "Ce portrait distingue la vie matérielle du monument, les récits antiques de Talos et une évocation naturaliste assumée du colosse animé de fantasy.",
+          "detail": "Clause de cadrage bienvenue, mais sa formulation est reprise d'une notice à l'autre du lot (même dispositif en clerc, cocatrix, croquemitaine) : l'ensemble finit par se lire comme un gabarit."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes",
+          "status": "verified",
+          "claims_checked": "Vérifié : statue d'Hélios due à Charès de Lindos ; effondrement au séisme de 226 av. J.-C. ; Strabon la décrivant renversée, brisée aux genoux, non relevée sur l'avis d'un oracle ; Pline décrivant les doigts plus grands que la plupart des statues, les cavernes ouvertes dans les membres brisés et les blocs de pierre internes ; jambes écartées au-dessus du port comme construction de l'imaginaire médiéval.",
+          "evidence": "« but it now lies on the ground, having been thrown down by an earthquake and broken at the knees. In accordance with a certain oracle, the people did not raise it again. » (Strabon) | « Few men can clasp the thumb in their arms, and its fingers are larger than most statues. Where the limbs are broken asunder, vast caverns are seen yawning in the interior. Within it, too, are to be seen large masses of rock, by the weight of which the artist steadied it while erecting it. » (Pline) | « The harbour-straddling Colossus was a figment of medieval imaginations » | « the Rhodians sold the equipment left behind for 300 talents… and decided to use the money to build a colossal statue of their patron god, Helios »"
+        },
+        {
+          "source_id": 5,
+          "url": "https://www.theoi.com/Gigante/GiganteTalos.html",
+          "status": "verified",
+          "claims_checked": "Vérifié : Talos gardien de la Crète tournant trois fois par jour et repoussant les Argonautes à coups de rochers ; invulnérable sauf sous un tendon de la cheville, un vaisseau unique du haut du corps aux chevilles fermé par un clou de bronze ; vaincu par la magie de Médée ou par la flèche de Poéas ; deux origines possibles (œuvre d'Héphaïstos ou dernier de la race de bronze) ; comparaison avec un pin abattu à la hache ; cratère attique à figures rouges reproduit par la page.",
+          "evidence": "« The giant was given the task of patrolling the island and circled it three times a day, driving off pirates with volleys of rocks. » | « He had one blood vessel that extended from his neck down to his ankles, the lower end of which was held in place by a bronze stud. » | « she promised to make him immortal and then removed the stud, so that his ichor all flowed out and he expired. Still others say that an arrow from Poeas in the ankle finished him. » | « According to others he was instead the last of the ancient bronze race of man. » | « he grazed his ankle on a sharp rock and the ichor ran out of him like molten lead… Thus a tall pine up in the hills is left half-felled by the woodman's sharp axe… till at last it snaps off at the stump and crashes down. » | « Talos and the Argonauts, Athenian red-figure krater C4th B.C., Archaeological National Museum Jatta »"
+        }
+      ],
+      "style_check": "La notice sépare nettement le monument attesté, la figure mythologique et le colosse animé assumé comme lecture de fantasy : c'est exactement l'exigence de la grille. Pas de consigne à auteur, pas de zoologie inventée ; seule réserve, la clause de cadrage légèrement procédurale du lead."
+    },
+    {
+      "slug": "croquemitaine",
+      "verdict": "pass",
+      "sha256": "e8061b4286597e3d20fc3d3b6549a33cd0552d912f3755e6f626d478174a7667",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[5]",
+          "quote": "Il s'agit d'une lecture du mécanisme narratif, non d'un rite folklorique de destruction.",
+          "detail": "Le réflexe de qualification est louable — rien n'est présenté comme un rituel attesté — mais la phrase parle de la notice plutôt que de la créature. Rester dans le sujet donnerait : « Ce qui dissipe le croquemitaine n'a rien d'un rituel : reconnaître un bruit, ouvrir la porte accompagné, entendre l'adulte retirer sa menace. »"
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "L'entrée Babau du Dictionnaire infernal, dans l'édition de 1863 directement consultée, compare les menaces des nourrices du midi de la France avec Croquemitaine à Paris et Pier-Jan Claes en Flandre.",
+          "detail": "Exact : le texte de Wikisource (6e éd., 1863, p. 70) est identique mot pour mot. À noter pourtant que la synthèse [4] renvoie la même phrase au Dictionnaire infernal de 1828 ; préciser l'édition consultée, comme fait ici, est la bonne pratique. Point de vigilance si d'autres notices citent la même source avec une autre date."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 4,
+          "url": "https://fr.wikipedia.org/wiki/Croque-mitaine",
+          "status": "verified",
+          "claims_checked": "Vérifié : apparition littéraire du mot au début du XIXe siècle et emploi chez Collin de Plancy ; diversité des aspects (homme, femme, animal, créature fantasmatique) ; menaces liées aux cours d'eau et aux gelures ; personnes réelles endossant le rôle ; mention de la nouvelle de Stephen King et de l'emploi du terme pour des tueurs de fiction ; graphies croque-mitaine et croquemitaine ; étymologie discutée (mitaine).",
+          "evidence": "« Le mot « croque-mitaine » apparaît dans la littérature au début du XIXe siècle. » | « Leurs noms sont extrêmement variables et… leur aspect est assez mal défini… homme, femme, animal… ou même créature fantasmatique » | « Un croque-mitaine peut se dissimuler aux abords d'un cours d'eau ou d'un étang, afin de noyer les imprudents. Dans les régions où l'hiver peut être rigoureux, un croque-mitaine mange le nez et les doigts de l'enfant » | « Des personnes réelles et vivantes (âgées, au physique inquiétant, ou vivant en retrait de la communauté) endossent souvent, volontairement ou non, la personnalité du croque-mitaine » | « La plupart des dictionnaires étymologiques éludent la question ou mentionnent simplement la difficulté de trouver l'étymologie exacte »"
+        },
+        {
+          "source_id": 7,
+          "url": "https://fr.wikisource.org/wiki/Dictionnaire_infernal/6e_%C3%A9d.,_1863/Babau",
+          "status": "verified",
+          "claims_checked": "Vérifié mot pour mot : comparaison des nourrices du midi de la France avec Croquemitaine (Paris) et Pier-Jan Claes (Flandre) ; Babau décrit comme ogre ou fantôme ; dévoration opposée au simple fouet.",
+          "evidence": "« Babau, espèce d'ogre ou de fantôme dont les nourrices menacent les petits enfants dans les provinces du midi de la France, comme on les effraye à Paris de Croquemitaine, et en Flandre de Pier-Jan Claes, qui est Polichinelle. Mais Babau ne se contente pas de fouetter, il mange en salade les enfants qui sont méchants. » (Collin de Plancy, Dictionnaire infernal, 6e éd., 1863, p. 70)"
+        }
+      ],
+      "style_check": "Voix adulte et sobre, sans jugement sur les croyances ; la notice distingue le témoignage daté de l'usage vivant et refuse d'attribuer un régime ou une anatomie à une figure sans corps fixe. Deux formules de méthode légèrement méta, rien de plus."
+    },
+    {
+      "slug": "cynocephale",
+      "verdict": "pass",
+      "sha256": "0ce175d234da66ac1007c4b16dd766adb4389d0a45064eb6dc8cde4783b00445",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[1]",
+          "quote": "Il y a une élégance particulière dans la façon dont cette figure a traversé les siècles sans jamais se stabiliser tout à fait.",
+          "detail": "Amorce d'appréciation générique : c'est le type de phrase qui pourrait ouvrir n'importe quelle notice. Le fait à décrire — deux millénaires de réemplois contradictoires — porte plus que le commentaire."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "description",
+          "quote": "Aux marges des cartes antiques, là où les géographes cessaient d'affirmer et commençaient à rapporter, vivait un peuple à tête de chien, ni tout à fait bête ni tout à fait homme.",
+          "detail": "La description est au passé alors que les autres notices du lot ouvrent sur un présent d'évocation. Ce n'est pas une faute, mais l'écart se verra dans un catalogue à formulaire constant ; le présent (« vit un peuple ») uniformiserait sans rien perdre."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[0]",
+          "quote": "Le cynocéphale survit aujourd'hui surtout dans l'histoire de l'art sacré, à travers les icônes orthodoxes de saint Christophe à tête canine[1]",
+          "detail": "« survit aujourd'hui » appelle une nuance fournie par la source : celle-ci précise que cette iconographie n'est pas soutenue par l'Église orthodoxe et qu'elle a été proscrite par Moscou au XVIIIe siècle. Sans cet ajout, le lecteur peut comprendre la dévotion comme vivante."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Cynocephaly",
+          "status": "verified",
+          "claims_checked": "Vérifié : Ctésias (Indica) plaçant des cynocéphales en Inde ; Mégasthène (montagnes, aboiements, peaux de bêtes, chasse) ; récits libyens rapportés par Hérodote ; cynocephalus comme nom gréco-romain d'un singe probablement babouin ; Paul Diacre (guerre obstinée, sang humain, propagande auprès de l'ennemi) ; Augustin, Cité de Dieu XVI, 8 (descendance d'Adam) ; icônes orthodoxes de saint Christophe ; Reprebus capturé sous Dioclétien en Cyrénaïque ; hypothèse Cananeus lu comme caninus ; Ibn Battûta (bouche canine, île entre l'Inde et Sumatra) ; Marco Polo (Angamanain, Andaman) ; Colomb et les Taïnos.",
+          "evidence": "« In the fifth century BC, the Greek physician Ctesias, in his Indica, wrote a detailed report on the existence of cynocephali in India. » | « Megasthenes claimed to know about dog-headed people in India who lived in the mountains, communicated through barking, wore the skins of wild animals and lived by hunting. » | « Herodotus reports claims by ancient Libyans that such creatures inhabit the east of their lands » | « The Greeks and Romans called a species of ape cynocephalus. This species is suspected to be a baboon. » | « They spread the rumor among the enemy that these men wage war obstinately, drink human blood » | « Augustine of Hippo mentioned the cynocephalics in The City of God, Book XVI, Chapter 8, in the context of discussing whether such beings were descendants of Adam » | « the icon was proscribed in the 18th century by Moscow » | « a man named Reprebus… set during the reign of the Emperor Diocletian… a misreading of the Latin term Cananeus (Canaanite) as caninus » | « Ibn Battuta encountered what were described as dog-mouthed people… living on an island between India and Sumatra » | « The Travels of Marco Polo mentions dog-headed barbarians on the island of Angamanain, or the Andaman Islands. » | « Christopher Columbus reported that the Taíno were familiar with the cynocephali. »"
+        }
+      ],
+      "style_check": "La notice fait le travail attendu sur les points difficiles : elle explique les rubriques vides au lieu de les remplir (« Aucune source antique ou médiévale consultée ne détaille de cycle de reproduction ») et traite les cynocéphales comme un motif récurrent, non comme une espèce. Quelques amorces d'appréciation génériques à resserrer."
+    },
+    {
+      "slug": "dactyle",
+      "verdict": "revise",
+      "sha256": "86cf8a3b75d9f720e0ed4b7e6cdc2426f3ffe6acd9d1f2de131501bb012327f8",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.reliques[0]",
+          "quote": "le terme dactyle a donné son nom au pied métrique de la poésie grecque et latine, une longue suivie de deux brèves, dont le rythme évoquerait la frappe régulière du marteau sur l'enclume.[1]",
+          "detail": "Appel trompeur sur la source déclarée : la page Dactyls (mythology), cible de l'URL [1], ne parle jamais de métrique ni d'enclume. Contrôle par Wikipedia « Dactyl (poetry) » : le nom du pied vient du grec δάκτυλος, « doigt », avec l'analogie du doigt — « A dactyl is like a finger, having one long part followed by two short stretches » — et non d'un rythme de marteau ni des Dactyles. L'étymologie du marteau n'est attestée nulle part ; la notice adosse à [1] une explication que [1] ne porte pas. Soit citer une source qui documente cette lecture, soit s'en tenir au fait métrique et à l'analogie du doigt."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.naturelle.parts[1]",
+          "quote": "Une tradition parallèle situe des Dactyles similaires sur le mont Ida de Troade, en Anatolie, ce qui a pu favoriser des confusions entre deux cortèges portant le même nom mais rattachés à des cultes régionaux distincts.",
+          "detail": "La source [1] mentionne des Dactyles phrygiens, mais jamais le mont Ida de Troade ni une tradition parallèle anatolienne. L'affirmation est prudente et probablement exacte, mais elle n'est pas documentée dans la source citée : à sourcer, ou à ramener à ce que dit [1] (Dactyles crétois ; Dactyles phrygiens au service d'Adrasté)."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "Les historiens des religions antiques voient généralement dans ces figures le souvenir mythifié de corporations réelles d'artisans et de guérisseurs de l'âge du bronze",
+          "detail": "La source attribue cette lecture à un seul chercheur et la présente comme une conjecture : « Walter Burkert surmises that, as the societies of lesser gods mirrored actual cult associations, guilds of smiths corresponded to the daktyloi in real life. » Parler des « historiens des religions antiques » et d'un « voient généralement » transforme une hypothèse signée en consensus. Nommer Burkert garde la force de l'idée sans l'inflater."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[0]",
+          "quote": "Il y a quelque chose de saisissant dans l'idée que le métal soit né d'un geste de douleur.",
+          "detail": "Amorce d'appréciation générique, doublée plus loin par « Ce qui frappe ensuite, c'est la modestie relative de ces figures » : deux ouvertures de paragraphe construites sur le même réflexe d'étonnement. Le contenu le supporte, la formule s'use."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[3]",
+          "quote": "Ce savoir se distingue de la sagesse divine proprement dite : il s'agit d'une compétence acquise et enseignable, non d'une omniscience.",
+          "detail": "L'opposition « non d'une omniscience » répond à une objection que personne n'a posée : c'est l'amorce d'un inventaire de négations. Une formulation positive — un savoir de métier, transmissible, qui ne doit rien aux dieux — est plus concise."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Dactyl_(mythology)",
+          "status": "verified",
+          "claims_checked": "Source accessible (l'URL déclarée redirige vers « Dactyls (mythology) »). Vérifié : Anchiale enfonçant ses doigts dans la terre en travail, à la caverne idéenne du mont Ida (ou Psychro) ; étymologie « doigts » (Δάκτυλοι) ; nombre variable — dix le plus souvent, trois, trente-trois ; association à la Grande Mère Cybèle ou Rhéa ; parenté avec Corybantes et Cabires ; invention du travail du métal au feu par les Dactyles du mont Ida en Crète ; enseignement du travail des métaux, des mathématiques et de l'alphabet ; Acmon l'enclume, Damnameneus le marteau, Celmis la coulée ; Dactyles crétois guérisseurs Paionios, Epimedes, Iasios ; hypothèse de Burkert sur les guildes de forgerons. Non trouvé dans la source : toute mention de métrique, de pied dactylique ou de rythme de marteau, ainsi que le mont Ida de Troade.",
+          "evidence": "« As she squatted in labor she dug her fingers into the earth (Gaia), which brought forth these daktyloi Idaioi » | « Their numbers vary, but often they were ten spirit-men… Three is just as often given as their number. They are sometimes instead numbered as thirty-three. » | « The Dactyls of Mount Ida in Crete invented the art of working metals into usable shapes with fire » | « they taught metalworking, mathematics, and the alphabet to humans » | « Three Phrygian Dactyls… Acmon (the anvil), Damnameneus (the hammer), and Celmis (casting). » | « In Crete, three Dactyls bore names suggestive of healing: Paionios…, Epimedes, and Iasios. » | « Walter Burkert surmises that, as the societies of lesser gods mirrored actual cult associations, guilds of smiths corresponded to the daktyloi in real life. »"
+        }
+      ],
+      "style_check": "Écriture pleine, aucun tour du type « il convient de » ni consigne adressée à un auteur, et les rubriques sans données (Alimentation, Prédateurs) sont traitées comme un silence des sources. Le défaut n'est pas la voix mais la traçabilité : deux affirmations précises — l'étymologie du pied métrique et l'Ida de Troade — sont adossées à une source qui ne les contient pas."
+    },
+    {
+      "slug": "dame-blanche",
+      "verdict": "revise",
+      "sha256": "3aedae629e6deb39b7393da775ccba55b25613a0bffc600f27c1458c55c7628a",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.anomalies[1]",
+          "quote": "Une variante plus rare, dite Dame Verte, viendrait de traditions galloises associant les fées à des vêtements verts, couleur de camouflage forestier plutôt que de deuil.[1]",
+          "detail": "Contredit frontalement la source déclarée : « Il ne s'agit pas d'une variante exceptionnelle, car elles sont signalées dans de nombreux lieux. » Le reste de la phrase est exact (pays de Galles, fées habillées de vert pour se cacher dans les feuillages), mais « plus rare » inverse ce que dit [1]. Écrire par exemple : variante chromatique, qu'on ne peut dire exceptionnelle."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.anomalies[2]",
+          "quote": "la disparition brutale du véhicule, souvent découverte seulement à l'arrivée, quand le passager se retourne vers un siège vide.[1]",
+          "detail": "La source décrit la disparition de la femme, non du véhicule : « une femme habillée en blanc fait de l'auto-stop la nuit et, après être montée dans un véhicule, disparaît brusquement, soit à l'approche d'un passage dangereux en poussant un cri d'alarme, soit en arrivant à une adresse donnée. » Le « siège vide » n'apparaît nulle part dans [1], et le cas de Palavas confirmé par la même page montre la dame s'évanouissant sous les yeux des occupants. La « mécanique narrative distincte » annoncée est donc inexacte."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.naturelle.parts[1]",
+          "quote": "Chaque département français revendique traditionnellement son propre pont ou son propre château hanté par une Dame Blanche locale, ce qui en fait sans doute le fantôme le plus répandu du folklore français.",
+          "detail": "Généralisation non soutenue par [1] : l'article cite des sites précis (châteaux, landes, grottes, cascade d'Auvinyà, chute Montmorency, lac de Paladru) et n'énonce ni répartition départementale ni superlatif. Le mot « pont » n'y apparaît que comme toponyme de l'affaire de Palavas (« Pont des Quatre-Canaux », « Pont vert »), pas comme catégorie de lieux. Une formulation non quantifiée suffirait."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "et associées dans certains cycles à des figures comme Merlin ou Mélusine.[1]",
+          "detail": "La source nomme « la reine Guenièvre de la légende arthurienne et la fée Mélusine », pas Merlin : la substitution fait dire à [1] une parenté qu'elle n'établit pas. Mélusine, elle, est bien attestée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[1]",
+          "quote": "Ses lieux de prédilection recoupent presque tous les espaces de passage ou de frontière : ponts, allées de châteaux, landes isolées, virages routiers.[1]",
+          "detail": "Même remarque à échelle moindre : châteaux, landes et bois sont dans [1] ; « ponts » et « virages routiers » n'y figurent que par le cas de Palavas. L'appel couvre ici un ensemble plus large que la source."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "jeune femme en blanc disparue sur une route nationale après un accident dans un virage",
+          "detail": "Le mot « nationale » est absent de [1] (aucune occurrence de « nationale ») et le cas documenté se situe près d'un pont-canaux à Palavas-les-Flots. Détail concret inventé : soit le retirer, soit s'en tenir à une route de nuit."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[1]",
+          "quote": "Ce qui frappe, dans la longue histoire de cette apparition, c'est sa capacité à changer de véhicule sans changer de fonction.",
+          "detail": "Amorce d'appréciation générique, du même type que « Il y a une élégance particulière » dans la notice cynocéphale. Le propos est juste, la formule interchangeable."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://fr.wikipedia.org/wiki/Dame_blanche_(l%C3%A9gende)",
+          "status": "verified",
+          "claims_checked": "Source accessible et réellement ouverte. Vérifié avec succès : appellation recouvrant des mythes de natures diverses ; fées mi-déesses mi-sorcières habitant landes et forêts, parentes de Guenièvre et de Mélusine ; lavandières de nuit (Kannerez-noz, Bean nighe) lavant leur linge en chantant au clair de lune ; Mélusine au château de Lusignan, hurlements et sifflements, mort annoncée sous trois jours ; note de Paul Sébillot en 1880 ; deuil blanc des reines de France jusqu'au XVIe siècle ; auto-stoppeuse fantôme (Palavas-les-Flots, 1981) ; origine galloise possible des dames vertes. En revanche, ces affirmations ne sont pas dans la source : la rareté des dames vertes, la disparition du véhicule, la répartition par département et le superlatif du fantôme le plus répandu, Merlin, la route nationale.",
+          "evidence": "« L'appellation dame blanche est donnée à des mythes ou à des apparitions de natures diverses. » | « Il ne s'agit pas d'une variante exceptionnelle, car elles sont signalées dans de nombreux lieux. » | « Dans le scénario le plus courant, une femme habillée en blanc fait de l'auto-stop la nuit et, après être montée dans un véhicule, disparaît brusquement, soit à l'approche d'un passage dangereux en poussant un cri d'alarme, soit en arrivant à une adresse donnée. » | « une parenté évidente avec la reine Guenièvre de la légende arthurienne et la fée Mélusine » | « son apparition sur une des tours du château de Lusignan, accompagnée de hurlements lugubres et de sifflements, annonçait la mort d'un membre de la famille dans les trois jours » | « En 1880, le folkloriste Paul Sébillot note que les dames blanches semblent avoir cessé d'annoncer les morts aristocratiques, mais qu'elles restent très présentes en tant que fantômes de lieux » | « une ancienne tradition voulait que les reines de France portent le deuil de leur royal époux dans des vêtements blancs, ce qui leur valait le surnom de reines blanches ou de dames blanches »"
+        }
+      ],
+      "style_check": "Voix tenue, aucun tour de la liste noire, et l'histoire naturelle traite honnêtement les rubriques sans données (Alimentation, Reproduction, Prédateurs) au lieu de fabriquer une biologie. Le problème est ailleurs : trois affirmations factuelles — la rareté des dames vertes, la disparition du véhicule, la généralisation par département — sont contredites ou ignorées par la seule source déclarée."
+    },
+    {
+      "slug": "dao",
+      "verdict": "revise",
+      "sha256": "b11cb4963752a9a67dcea15ed1a50d0347df0e7130f0229cbbc05075093bc9f6",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.anomalies[2]",
+          "quote": "des dao nobles, les plus rares de leur espèce, qui auraient renoncé à la capacité d'exaucer des vœux en échange d'un pouvoir personnel accru et qui gouvernent leurs semblables ainsi que des créatures asservies comme les élémentaires de terre ou les xorns.[2]",
+          "detail": "L'appel [2] renvoie à une fiche de monstre 5e (traversée de la terre, désagrégation, sorts innés, équilibre, attaques) : elle ne contient ni dao noble, ni vœu, ni xorn, ni esclave. [1] ne mentionne que l'apparition des nobles dao et du Grand Khan pour Al-Qadim, sans rien dire des vœux. Le contrôle par une source extérieure donne même l'inverse : « Noble dao can use any of the following spell-like abilities at will three times per day… fulfill the wish of a creature from the Prime Material Plane (in a perverse way) » (Monstrous Compendium Al-Qadim Appendix, entrée Noble Dao) et « A dao can also grant a limited wish, once per day » (entrée Genie of Zakhara, Dao). Le motif du renoncement aux vœux n'est attesté dans aucune des sources déclarées et se trouve contredit par une source de contrôle : à retirer, ou à documenter précisément (édition et ouvrage) si une autre édition le porte."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "avant que la créature ne poursuive son parcours dans les éditions suivantes du jeu, jusqu'aux compendiums de monstres de la cinquième édition.[1]",
+          "detail": "L'appel [1] s'arrête à la troisième édition (« The dao appeared in the third edition Manual of the Planes (2001) ») ; la présence en 5e est documentée par [2]. Déplacer l'appel, ou mentionner les deux sources."
+        },
+        {
+          "severity": "major",
+          "blocking": false,
+          "location": "sections.naturelle.parts[1]",
+          "quote": "où ils font venir des esclaves pour extraire gemmes et minerais.[1]",
+          "detail": "[1] dit seulement que les dao mènent souvent des opérations d'extraction de gemmes sur le plan élémentaire de la Terre ou sur le plan matériel — pas de main-d'œuvre servile. Le fait est exact (contrôle : « A typical mazework comprises 4 to 40 (4d10) dao, and 8 to 80 (8d10) slaves… Xorn and other creatures who can move through stone serve the dao as scouts », entrée Genie of Zakhara, Dao), mais il n'est pas dans la source appelée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[0]",
+          "quote": "Les dao sont décrits comme orgueilleux et âpres au gain, plus attachés à l'accumulation de richesses minérales qu'à la conquête ou au conflit ouvert.[1]",
+          "detail": "[1] ne décrit pas leur caractère : aucune mention d'orgueil ni de cupidité. Le portrait moral vient d'ailleurs ; à vérifier sur une source qui le porte, ou à présenter comme une lecture des suppléments."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "ancrée dans les mines et les cités souterraines de sa région Zakhara",
+          "detail": "« cités souterraines » est absent de [1], qui se borne à signaler l'entrée « genie of Zakhara » du Land of Fate. Le décor des mazeworks souterrains vient des suppléments Al-Qadim, ce que la notice ne dit pas."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[0]",
+          "quote": "régulièrement citée dans les discussions de joueurs comme l'archétype du génie avare et minéral, en contrepoint du djinn plus volage associé à l'air.[1]",
+          "detail": "Renvoi à un usage communautaire — les discussions de joueurs — présenté sous un appel de source, alors que [1] n'en parle pas. Une affirmation invérifiable de ce type n'a pas besoin d'appel : la supprimer ou l'assumer comme remarque d'usage."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://wikiproject-dungeons-dragons.fandom.com/wiki/Dao",
+          "status": "verified",
+          "claims_checked": "La page déclarée n'a pas pu être lue en HTML (web_extract : Failed to fetch url ; navigateur : vérification de sécurité Cloudflare). Le contenu de la même page a été obtenu par l'API MediaWiki du site (api.php?action=parse&page=Dao, pageid 3099), qui rend le wikitexte ; la vérification porte sur cette base, que je signale comme substitut au HTML. Confirmé : Dragon #66 (octobre 1982) comme première apparition en 1re édition ; The Lost Caverns of Tsojcanth (1982) ; Monster Manual II (1983) ; entrée générique du Monstrous Compendium Volume One (1989) et Monstrous Manual (1993) ; noble dao et Grand Khan pour Al-Qadim (Monstrous Compendium Al-Qadim Appendix, 1992) ; entrée genie of Zakhara dans le Land of Fate (1992) ; Manuel des plans (2001) en 3e édition ; dao issus du plan élémentaire de la Terre menant des opérations d'extraction de gemmes. Non trouvé : cinquième édition, renoncement des nobles aux vœux, xorns, esclaves, caractère orgueilleux.",
+          "evidence": "« The dao first appeared in first edition Advanced Dungeons & Dragons in Dragon #66 (October 1982). » | « The dao then appeared in the adventure module The Lost Caverns of Tsojcanth (1982), and was reprinted in the first edition Monster Manual II (1983). » | « The dao appeared in second edition under the genie heading in Monstrous Compendium Volume One (1989), and in the Monstrous Manual (1993). » | « The noble dao and the Great Khan of the dao appeared for the Al-Qadim setting in the Monstrous Compendium Al-Qadim Appendix (1992). » | « The dao appeared in the third edition Manual of the Planes (2001). » | « The dao are genies from the Elemental Plane of Earth, and often run gem-mining operations there or on the Material Plane. » (via https://wikiproject-dungeons-dragons.fandom.com/api.php?action=parse&page=Dao&prop=wikitext)"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.aidedd.org/dnd/monstres.php?vo=dao",
+          "status": "verified",
+          "claims_checked": "Fiche 5e réellement ouverte. Confirmé : traversée de la terre et de la pierre non travaillées sans perturbation de la matière ; désagrégation du corps en poudre cristalline à la mort, l'équipement restant ; sorts innés (à volonté détection du bien et du mal, détection de la magie, modelage de la pierre ; 3 par jour passemuraille, déplacement de terre, don des langues ; 1 par jour invisibilité, forme gazeuse, invocation d'élémentaire de terre, plus phantasmal killer, changement de plan, mur de pierre) ; avantage aux jets contre les effets qui font tomber à terre. Aucun élément sur les dao nobles, les vœux, les xorns ou les esclaves.",
+          "evidence": "« Elemental Demise. If the dao dies, its body disintegrates into crystalline powder, leaving behind only equipment the dao was wearing or carrying. » | « At will: detect evil and good, detect magic, stone shape ; 3/day each: passwall, move earth, tongues ; 1/day each: conjure elemental (earth elemental only), gaseous form, invisibility, phantasmal killer, plane shift, wall of stone » | « Sure-Footed. The dao has advantage on Strength and Dexterity saving throws made against effects that would knock it prone. » | « Earth Glide. The dao can burrow through nonmagical, unworked earth and stone. While doing so, the dao doesn't disturb the material it moves through. »"
+        }
+      ],
+      "style_check": "La notice fait correctement le travail de faux folklore : elle déclare d'entrée que le dao n'est pas une créature traditionnelle mais une invention de jeu de rôle, et ses rubriques Alimentation, Reproduction et Prédateurs disent l'absence de données au lieu d'inventer une biologie. Le problème est documentaire : plusieurs affirmations précises — nobles renonçant aux vœux, xorns asservis, esclaves des mines, profil moral — ne figurent dans aucune des deux sources appelées, et l'une est contredite par une source de contrôle."
+    }
+  ]
+}

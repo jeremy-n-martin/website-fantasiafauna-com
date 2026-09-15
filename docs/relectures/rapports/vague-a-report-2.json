@@ -1,0 +1,288 @@
+{
+  "batch": "batch-2",
+  "reviewed": [
+    {
+      "slug": "cacodemon",
+      "verdict": "pass",
+      "sha256": "10a2e017308648d55dc62e0150f7c7c8030d4b58ed8b6c1395161f21d8b3c7fc",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[2]",
+          "quote": "Ni feu infernal, ni morsure venimeuse, ni pacte obligatoire ne découle du seul nom.",
+          "detail": "Empilement de trois négations dans une même phrase : c'est le seul endroit du lot où la prose prend un tour d'inventaire négatif. Non bloquant (la phrase reste informative et n'est pas adressée à un auteur), mais c'est le passage à alléger si l'on veut une voix plus affirmative."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Cacodemon",
+          "status": "verified",
+          "claims_checked": "étymologie grecque kakodaimōn via le latin ; daimōn neutre en grec ; opposé agathodémon/eudémon ; « mauvais esprit » et non animal d'une forme fixe ; emploi figuré pour une personne malveillante",
+          "evidence": "A cacodemon (also spelled cacodaemon, cacodaimon, kakodemon, kakodaemon, or kakodaimon) is an evil spirit or (in the modern sense of the word) a demon. The opposite of a cacodemon is an agathodaemon or eudaemon, a good spirit or angel. The word cacodemon comes through Latin from the Ancient Greek kakodaimōn, meaning an \"evil spirit\", whereas daimon would be a neutral spirit in Greek. ... A cacodemon is also said to be a malevolent person."
+        },
+        {
+          "source_id": 2,
+          "url": "https://fr.wikisource.org/wiki/Dictionnaire_infernal/6e_%C3%A9d.,_1863/Cacod%C3%A9mon",
+          "status": "verified",
+          "claims_checked": "définition de 1863 (spectre peu reconnaissable) ; bon et mauvais démon pour chaque homme ; douzième maison du soleil dite cacodémon à cause de Saturne ; absence de taille, de membres et de matière corporelle dans l'article",
+          "evidence": "Cacodémon, mauvais démon. C'est le nom que les anciens donnaient aux esprits malfaisants. Mais ils appelaient spécialement ainsi un monstre effrayant, un spectre horrible, qui n'était pas assez reconnaissable pour être désigné autrement. Chaque homme avait son bon et son mauvais démon, eudémon et cacodémon. Les astrologues appelaient aussi la douzième maison du soleil, qui est la plus mauvaise de toutes, cacodémon, parce que Saturne y répand ses malignes influences"
+        }
+      ],
+      "style_check": "Français adulte et tenu, aucun cliché de la liste noire ; la notice sépare correctement Antiquité grecque, compilation de 1863 et reprises modernes (Doom, Riordan ne sont même pas invoqués comme sources de savoir). Seul point : l'inventaire de négations signalé, mineur."
+    },
+    {
+      "slug": "cambion",
+      "verdict": "pass",
+      "sha256": "6665cba72ccc7debab4a532367e4c7f86a67b73ef400a840a4059017fa5a5dd6",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "La notice décrit des représentations historiques ; elle ne les prend pas pour des moyens de reconnaître un être surnaturel.",
+          "detail": "Auto-référence au texte lui-même (« la notice »), registre le plus proche dans ce lot de l'interdit « la notice gagne à ». Ce n'est pas une consigne adressée à un auteur et la mise en garde est éditorialement utile (enfants réels maltraités), donc non bloquant."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sources",
+          "quote": "\"id\": 3 ... \"id\": 4",
+          "detail": "Numérotation héritée d'un registre global : les ids commencent à 3 alors que la notice n'a que deux sources. Aucun appel orphelin (les deux ids sont appelés, [3] et [4]), mais la renumérotation en 1-2 serait plus propre si le champ redevient un jour public."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://en.wikipedia.org/wiki/Cambion",
+          "status": "verified",
+          "claims_checked": "Guillaume d'Auvergne, De universo (XIIIe s.) : cambiones = enfants échangés, nourrissons attribués aux incubes épuisant plusieurs nourrices ; définition moderne par union humain/démon ; Monster Manual II de 1983 ; medieval débats et Malleus Maleficarum (les démons incapables d'engendrer, transport de semence)",
+          "evidence": "William of Auvergne, in his 13th-century work De Universo, wrote of \"cambiones, from cambiti, that is 'having been exchanged'\": the \"sons of incubi demons\". These false infants constantly wail for milk and cannot be satisfied even by four nurses. ... It also appeared as a hybrid of human and demon in Dungeons & Dragons' 1983 Monster Manual II. ... Moreover, to beget a child is the act of a living body, but devils cannot bestow life upon the bodies they assume"
+        },
+        {
+          "source_id": 4,
+          "url": "https://fr.wikisource.org/wiki/Dictionnaire_infernal/6e_%C3%A9d.,_1863/Cambions",
+          "status": "verified",
+          "claims_checked": "attribution à Delancre et Bodin de l'union incube/succube ; poids excessif, mange sans grossir, trois nourrices ; propos de Luther (sept ans, crie au toucher, rit des malheurs du foyer) ; récit du mendiant galicien d'après Maïole et le cheval qui plie",
+          "evidence": "Cambions, enfants des démons. Delancre et Bodin pensent que les démons incubes peuvent s'unir aux démons succubes, et qu'il naît de leur commerce des enfants hideux qu'on nomme cambions, lesquels sont beaucoup plus pesants que les autres, avalent tout sans être plus gras, et tariraient trois nourrices qu'ils n'en profiteraient pas mieux. Luther ... dit dans ses Colloques que ces enfants-là ne vivent que sept ans ; il raconte qu'il en vit un qui criait dès qu'on le touchait, et qui ne riait que quand il arrivait dans la maison quelque chose de sinistre. ... Maïole rapporte qu'un mendiant galicien excitait la pitié publique avec un cambion ; ... le petit enfant sur son cheval, mais qu'il était si lourd que le cheval pliait sous le poids."
+        }
+      ],
+      "style_check": "Bonne tenue : la distinction changelin / enfant de deux démons / hybride moderne est faite explicitement, et la fin du texte ne transforme pas un retard de croissance réel en signe surnaturel. Deux remarques mineures seulement (auto-référence, numérotation des sources)."
+    },
+    {
+      "slug": "catoblepas",
+      "verdict": "pass",
+      "sha256": "81cb5714dd1c5e4b46adb5b8b164bb7e446eb5deef173c7e541e4991640a7715",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[2] (Alimentation)",
+          "quote": "Pline ne précise pas ce régime ; il ne faut pas lui attribuer rétrospectivement l'ensemble des habitudes données par Élien.",
+          "detail": "« il ne faut pas » est une prescription impersonnelle, donc à la lisière de la famille interdite (« n'imposez pas »). Elle porte bien sur la matière (ce que Pline dit ou ne dit pas), pas sur un auteur/illustrateur/meneur de jeu : non bloquant. Même famille dans reliques (« pourquoi il ne faut pas croiser ses yeux »)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[0]",
+          "quote": "Une bête reste immobile au bord de l'eau",
+          "detail": "La source (Pline, NH 8.77) place une source, le Nigris, dans le voisinage de l'animal et le décrit « inactive with the rest of its limbs » : le bord de l'eau est une mise en scène, pas une donnée du texte. Détail de prose, sans conséquence factuelle."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 5,
+          "url": "https://www.theoi.com/Thaumasios/Katoblepones.html",
+          "status": "verified",
+          "claims_checked": "Pline NH VIII, 77 (trad. Rackham) : Éthiopie occidentale, source Nigris tenue pour l'origine du Nil, taille modérée, membres inactifs, tête très lourde pendante, mort de tous ceux qui voient ses yeux ; Élien, De la nature des animaux VII, 6 : Libye, taille d'un taureau, crinière tombant du crâne, sourcils broussailleux, yeux étroits et injectés regardant le sol, racines empoisonnées, souffle fétide infectant l'air, perte de la voix et convulsions mortelles, bête consciente de son pouvoir, autres animaux fuyant ; hypothèse du gnou ; nom grec = « Downward-Looking » ; manuscrit Der Naturen Bloeme (1350), Bibliothèque nationale des Pays-Bas",
+          "evidence": "In Western Aethiopia ... there is a spring, the Nigris, which most people have supposed to be the source of the Nile . . . In its neighbourhood there is an animal called the Catoblepas, in other respects of moderate size and inactive with the rest of its limbs, only with a very heavy head which it carries with difficulty--it is always hanging down to the ground; otherwise it is deadly to the human race, as all who see its eyes expire immediately.  //  Libya [i.e. Africa] is the parent ... In appearance it is about he size of a bull ... it feeds upon poisonous roots ... it emits from its throat pungent and foul-smelling breath, so that the whole air overhead is infected, and any animals that approach and inhale it are grievously afflicted, lose their voice, and are seized with fatal convulsions. This beast is conscious of its power ... and other animals know it too and flee from it as far away as they can.  //  The Katobleps may have been a fanciful traveller's account of the African gnu.  //  Translation: Downward-Looking (katô, blepô)  //  Catoblepas, Der Naturen Bloeme manuscript (1350), National Library of the Netherlands"
+        }
+      ],
+      "style_check": "Voix sobre et documentaire, qui maintient séparés Pline et Élien au lieu de fabriquer un catoblépas cumulatif ; la rubrique Alimentation signale explicitement que Pline est muet sur le régime. Rien de bloquant, deux remarques mineures."
+    },
+    {
+      "slug": "cauchemar",
+      "verdict": "pass",
+      "sha256": "8bca648f6d5d4a3be2114328f2928c498bf09de5fa7e5a6d29c2392f7983bdb0",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Il faut le lire comme un récit rapporté, non comme une observation collective établie.",
+          "detail": "Consigne de lecture impersonnelle (« il faut le lire »), parente lointaine du « il convient de » interdit. Elle s'adresse au lecteur et non à un auteur/illustrateur, et le contenu est juste : non bloquant."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[2]",
+          "quote": "Le bestiaire conserve la créature comme explication historique et image, non comme diagnostic.",
+          "detail": "Méta-énoncé sur le site lui-même. Utile pour écarter la confusion avec la médecine, mais c'est le texte qui parle de son propre dispositif."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 6,
+          "url": "https://en.wikipedia.org/wiki/Mare_(folklore)",
+          "status": "verified",
+          "claims_checked": "mare/mara/zmora comme entité malveillante germanique et slave s'asseyant, marchant ou chevauchant la poitrine des dormeurs ; fréquence des figures féminines et changement de forme ; étymologie : -mar de cauchemar emprunté au germanique par l'ancien français, homonymie sans lien avec mare = jument",
+          "evidence": "A mare ... is a malicious entity in Germanic and Slavic folklore that sits, walks, or \"rides\" on people's chests while they sleep, bringing on nightmares. ... It is often a female being with magical abilities for haunting its victim, including the ability to shapeshift. ... It is etymologically unrelated to its homonym mare, meaning female horse. ... The -mar in French cauchemar ('nightmare') is borrowed from the Germanic through Old French mare."
+        },
+        {
+          "source_id": 7,
+          "url": "https://fr.wikisource.org/wiki/Dictionnaire_infernal/6e_%C3%A9d.,_1863/Cauchemar",
+          "status": "verified",
+          "claims_checked": "article débutant par l'oppression respiratoire du sommeil puis l'invention du monstre ; sorcière ou spectre pressant le ventre, démon étouffant ; pierre creuse suspendue dans l'écurie ; anecdotes du cantonnement dans une église profanée et du chien noir (sans régiment, date ni lieu) ; cauchemares du Valois d'après Bodin chassés par la prière ; réveil mettant fin à l'épisode",
+          "evidence": "Cauchemar. On appelle ainsi un embarras dans la poitrine, une oppression et une difficulté de respirer qui surviennent pendant le sommeil, causent des rêves fatigants, et ne cessent que quand on se réveille. ... Les uns imaginaient dans cet accident une sorcière ou un spectre qui pressait le ventre des gens endormis, leur dérobait la parole et la respiration, et les empêchait de crier et de s'éveiller pour demander du secours ; les autres, un démon qui étouffait les gens. ... on ne savait d'autre remède pour se garantir du cauchemar que de suspendre une pierre creuse dans l'écurie de sa maison ... Dans les guerres de la république française en Italie, on caserna en une église profanée un de nos régiments. ... Bodin conte qu'au pays de Valois, en Picardie, il y avait de son temps une sorte de sorciers et de sorcières qu'on appelait cauchemares, qu'on ne pouvait chasser qu'à force de prières."
+        },
+        {
+          "source_id": 8,
+          "url": "https://www.nhs.uk/conditions/sleep-paralysis",
+          "status": "verified",
+          "claims_checked": "impossibilité de bouger ou de parler à l'endormissement ou au réveil ; impression de présence et de pression ; caractère effrayant mais sans danger ; durée de plusieurs minutes ; consultation conseillée en cas d'épisodes fréquents avec peur du sommeil ou fatigue",
+          "evidence": "Sleep paralysis is when you cannot move or speak as you are waking up or falling asleep. It can be scary but it's harmless and most people will only get it once or twice in their life. ... These feelings can last up to several minutes. ... See a GP if: You often have sleep paralysis and you feel: very anxious or scared to go to sleep; tired all the time due to lack of sleep."
+        }
+      ],
+      "style_check": "Le meilleur équilibre du lot : folklore, compilation du XIXe siècle et médecine restent sur trois plans distincts, avec l'étymologie traitée correctement (le cauchemar n'est pas un cheval). Deux tournures mineures relevées ci-dessus."
+    },
+    {
+      "slug": "centaure",
+      "verdict": "pass",
+      "sha256": "2564b2e2cc1b14ffbff4fc36efaacaa52fab32845a66a86f84779506635fdb94",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[1]",
+          "quote": "Il vaut mieux garder cette incertitude que transformer une étymologie séduisante en événement historique.",
+          "detail": "C'est la tournure du lot la plus proche de l'interdit « convient mieux à » : une prescription impersonnelle sur ce qu'il faut faire du matériau. Elle ne vise ni un auteur, ni un illustrateur, ni un meneur de jeu et la prudence étymologique est conforme au source : non bloquant."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sources",
+          "quote": "\"id\": 1",
+          "detail": "Source unique numérotée [1] ici alors que le même site Theoi porte l'id 2 dans cerbere et 3 dans chien-de-l-enfer : vestige d'une numérotation globale non renumérotée. Aucun appel orphelin."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.theoi.com/Georgikos/KentauroiThessalioi.html",
+          "status": "verified",
+          "claims_checked": "Pindare, 2e Pythique : Ixion et la nuée, naissance de Kentauros, juments de Magnésie au Pélion, descendance de double forme ; autres versions (Ixion et la nuée directement) ; Odyssée 21, Eurytion ivre mutilé chez Peirithoos ; mariage lapithe et enlèvement des femmes ; Bouclier d'Héraclès, Asbolos devin, pins brandis ; Diodore, explication rationalisante des premiers cavaliers ; les deux dispositions anatomiques ; Philostrate, scène familiale des petits et centauresses ; chasse, frênes du Pélion, Péloponnèse et Chypre, Héraclès ; cortège de Dionysos, musique, Éros ; étymologie par le taureau marquée incertaine",
+          "evidence": "She reared him up and named him Kentauros (Centaurus), and the Magnesian mares knew his as mate by Pelion's ridges; and that strange race was born [the Centaurs], like to both parents, their mother's form below, above their sire's.  //  Wine it was that darkened the wits of Eurytion the Kentauros (Centaur) in the palace of bold Peirithoos ... they lopped off his ears and nose with the ruthless bronze  //  the Kentauroi (Centaurs) were gathered against them on the other side with Petraios (Petraeus) and Asbolos the diviner ... and they had pinetrees of gold in their hands  //  others say that it was the Kentauroi born of Ixion and Nephele who were called Hippokentauroi, because they were the first to essay the riding of horses, and that they were then made into a fictitious myth, to the effect that they were of double form  //  In the first they appear as men down to their legs and feet, but the hind part consists of the body, tail, and hind legs of a horse  //  Of the baby Kentauroi here some lie wrapped in swaddling clothes, some have discarded their swaddling clothes, some seem to be crying ... the children ... The bodies of the infants have not yet taken on their definite shape  //  They were a primitive race who made their homes in caves, hunted wild animals for food and armed themselves with rocks and tree branches  //  Translation: Bull-Slayer? (tauros)"
+        }
+      ],
+      "style_check": "Très bonne discipline documentaire : les généalogies concurrentes sont présentées comme telles, l'explication antiquisante de Diodore est signalée comme interprétation et non comme preuve, et aucune physiologie interne n'est inventée. Une seule tournure prescriptive à surveiller."
+    },
+    {
+      "slug": "cerbere",
+      "verdict": "pass",
+      "sha256": "f86143e42e587baaaca7ba9a7f94d864bb00adc6ca85bcc9757247120ee8f1d2",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sources",
+          "quote": "\"id\": 2",
+          "detail": "Source unique portant l'id 2 (héritage d'une numérotation globale) ; [2] est bien le seul appel du texte, donc nul orphelin. Renumérotation cosmétique souhaitable."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "Les expliquer par des sous-espèces de chiens infernaux ajouterait une classification absente des textes.",
+          "detail": "Réfutation par l'hypothèse invoquée : le procédé est un peu défensif (on discute une erreur que personne ne commet forcément dans la notice) mais il sert la règle « pas de taxonomie inventée ». Mineur."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.theoi.com/Ther/KuonKerberos.html",
+          "status": "verified",
+          "claims_checked": "Hésiode, Théogonie 769 : le chien caresse de la queue et des oreilles ceux qui entrent, puis dévore ceux qui ressortent ; Homère : chien d'Hadès sans nom ni description multiple, retour grâce à Hermès et Athéna ; Théogonie 310 : fils d'Échidna et Typhon, cinquante têtes, aboiement de bronze ; Apollodore : douzième travail, défense d'user des armes apportées, peau de lion, morsures de la queue-serpent, présentation à Eurysthée puis retour aux Enfers, trois têtes de chien, queue-serpent et têtes de serpents sur le dos ; Diodore : accueil de Perséphone, Cerbère enchaîné ; Strabon, cap Ténare ; Pausanias, Hermione, Trézène, mont Laphystion, explication d'Hécatée (serpent) ; Ovide, Métamorphoses 7 : jour blessant les yeux, triple aboiement, écume donnant l'aconit ; Ovide, Métamorphoses 4 : Junon et les trois aboiements simultanés ; Apulée : gâteaux offerts et menaces inoffensives pour les morts ; Aristophane, Grenouilles : Éaque réclamant son chien ; étymologie du nom donnée comme incertaine",
+          "evidence": "as people go in he fawns on all, with actions of his tail and both ears, but he will not let them go back out, but lies in wait for them and eats them up, when he catches any going back through the gates.  //  But I brought the hound out of Haides' house and up to earth, because Hermes helped me on my way, and gleaming-eyed Athene.  //  the savage, the bronze-barking dog of Haides, fifty-headed  //  As a twelfth labour Herakles was to fetch Kerberos (Cerberus) from Haides' realm. Kerberos had three dog-heads, a serpent for a tail, and along his back the heads of all kinds of snakes.  //  was told to take the hound if he could overpower it without using any of the weapons he had brought with him ... despite bites from the serpent-tail ... After showing Kerberos to Eurystheus, he took it back to Haides' realm.  //  being welcomed like a brother by Persephone ... receiving the dog Kerberos in chains  //  But Hekataios (Hecataeus) of Miletos gave a plausible explanation, stating that a terrible serpent lived on Tainaron, and was called the Hound of Hades  //  blinking, screwing up his eyes against the sunlight and the blinding day, the hell-hound Cerberus, fast on a chain of adamant. His three throats filled the air with triple barking ... and spattered the green meadows with white spume.  //  Immediately Cerberus sprang at her with his three heads and gave three barks together.  //  though his menaces are futile since he can do them no harm ... You must disarm him by offering him a cake as his spoils.  //  Who seized our Kerberos (Cerberus) by the throat, and fled, and ran, and rushed, and bolted, haling of the dog, my charge!  //  Kerberos' name perhaps means \"Death-Daemon of the Dark\""
+        }
+      ],
+      "style_check": "Notice dense et propre : variations du nombre de têtes et des lieux de remontée traitées comme des divergences de textes, non comme des sous-espèces, et la descendance du gardien est explicitement laissée absente. Aucun défaut bloquant."
+    },
+    {
+      "slug": "chaman",
+      "verdict": "pass",
+      "sha256": "25d624384fb531d6699bf5baf5763dec7e7b6221a26143f629dab3629a251064",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[5] (Prédateurs)",
+          "quote": "Assimiler les autres religions ou les personnes sceptiques à des ennemis naturels installerait une hostilité que cette description des pratiques n'autorise pas.",
+          "detail": "Phrase de portée méta (« cette description des pratiques ») qui commente la notice plutôt que son objet. Elle évite heureusement d'inventer un prédateur, ce que la grille exige, donc non bloquant ; c'est la seule phrase à reprendre si l'on veut retirer toute autoréférence."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sources",
+          "quote": "\"id\": 3 ... \"id\": 6",
+          "detail": "Deux sources numérotées 3 et 6 : vestige d'un registre global (le même Theoi Kerberos porte l'id 3 dans une autre notice). Les deux ids déclarés sont appelés dans le texte, aucun orphelin."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://www.britannica.com/topic/shamanism",
+          "status": "verified",
+          "claims_checked": "origine mandchoue-toungouse du mot (šaman, « celui qui sait ») ; emploi discuté pour des systèmes religieux différents ; transe/expérience extatique comme définition générale mais insistance sur les notions, actes et objets liés à la transe ; chamanes choisis par des êtres surnaturels ; fonction de soin, de communication avec l'autre monde et d'accompagnement des morts ; femmes, hommes et personnes transgenres dans les ethnographies ; consultation pour événements à venir, animaux perdus, perspectives de chasse et de pêche ; foyer historique en Asie septentrionale",
+          "evidence": "The term shamanism comes from the Manchu-Tungus word šaman ... The shamans recorded in historical ethnographies have included women, men, and transgender individuals of every age from middle childhood onward. ... Opinions differ as to whether the term shamanism may be applied to all religious systems in which a central personage is believed to have direct intercourse with the transcendent world ... the essence of shamanism lies not in the general phenomenon but in specific notions, actions, and objects connected with trance ... Shamans are believed to be chosen by supernatural beings, often against their will ... They are believed to foresee events, find lost animals, forecast hunting prospects ... the term applies in the strictest sense only to the religious systems and phenomena of the peoples of northern Asia and the Ural-Altaic"
+        },
+        {
+          "source_id": 6,
+          "url": "https://ich.unesco.org/en/RL/jeju-chilmeoridang-yeongdeunggut-00187",
+          "status": "verified",
+          "claims_checked": "rite du deuxième mois lunaire à Jeju pour la mer calme, la récolte et la pêche ; destinataires : Grand-mère Yeondeung déesse des vents, Roi Dragon Yongwang, dieux des montagnes ; rite d'accueil (appel des dieux, prières pour la pêche, jeu en trois actes) ; adieux deux semaines plus tard (offrandes de boissons et gâteaux de riz, bateau de paille lancé par les hommes âgés) ; départ au quinzième jour, printemps, semences, apaisement des eaux ; soutien des plongeuses et des propriétaires de bateaux ; inscription en 2009",
+          "evidence": "The Jeju Chilmeoridang Yeongdeunggut is a ritual held in the second lunar month to pray for calm seas, an abundant harvest and a plentiful sea catch. ... Village shamans perform a series of rituals to the goddess of the winds (Grandmother Yeondeung), the Dragon King Yongwang and mountain gods. The Yeondeung Welcome Rite includes a ceremony to call the gods, prayers for a good catch, and a three-act play to entertain the ancestral gods; the Yeondeung Farewell Rite two weeks later includes offerings of drinks and rice cakes ... and the launching of a straw boat into the sea by the village's senior men. As the goddess Yeondeung departs on the fifteenth day, marking the arrival of spring, she sows seeds and calms the troubled waters. Besides the shamans, the Yeongdeunggut is primarily supported by the female divers and ship owners ... Inscribed in 2009 (4.COM) on the Representative List of the Intangible Cultural Heritage of Humanity"
+        }
+      ],
+      "style_check": "Le cas le plus délicat du lot (religion vivante) est traité correctement : la notice dit explicitement qu'il s'agit de pratiques humaines et de religions actuelles, refuse le costume unique et l'homme solitaire à plumes, et rapporte les attributions comme croyances sans les valider ni les railler. Six rubriques détournées vers le social plutôt que remplies de biologie fictive : conforme à la grille."
+    },
+    {
+      "slug": "changeling",
+      "verdict": "pass",
+      "sha256": "d284a3af51b4eec186260f533718feeb692db333bfe87bfe75d473fd0518022b",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[0]",
+          "quote": "Leur consultation demande de séparer le témoignage historique de sa langue déshumanisante.",
+          "detail": "Prescription de lecture impersonnelle (« demande de séparer »), du même registre que « il convient de ». Le fond est juste (recueils du XIXe siècles porteurs de jugements sur le handicap) et rien n'est adressé à un auteur : non bloquant."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[5] (Prédateurs)",
+          "quote": "Les prétendues épreuves de reconnaissance n'ont aucune validité et peuvent tuer ; leurs détails opératoires n'ont pas place ici.",
+          "detail": "Mention explicite de ce que le texte choisit de ne pas décrire : procédé un peu démonstratif, mais le choix éthique est bon et évite justement de diffuser des recettes de maltraitance. Mineur."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 4,
+          "url": "https://sites.pitt.edu/~dash/changeling.html",
+          "status": "verified",
+          "claims_checked": "corpus de traditions britanniques, allemandes et scandinaves ; conte des coquilles d'œufs (le substitut parle comme un être plus vieux que la forêt, les elfes rendent l'enfant) ; crédibilité de légende (lieu précis, témoin fiable, autorité religieuse) ; procédures judiciaires pour mauvais traitements et meurtres de présumés changelings ; appétit excessif ; dépendance interminable sur plusieurs générations ; conseils de voisins, propriétaires et pasteurs donnant une caution collective ; motifs des ravisseurs (renforcer leur race ou nuire aux humains)",
+          "evidence": "These accounts -- which, unlike most fantasy tales, were actually widely believed -- suggest that a physically or mentally abnormal child is very likely not the human parents' offspring at all, but rather a changeling ... changeling legends frequently are set in a precisely identified time and location ... \"A reliable citizen of Leipzig told the following story.\" ... Court records between about 1850 and 1900 in Germany, Scandinavia, Great Britain, and Ireland reveal numerous proceedings against defendants accused of torturing and murdering suspected changelings. ... Typically the changeling responds with surprise, claiming that he is as old as a nearby forest, but has never before witnessed such a sight. ... The fact that the changelings' ravenous appetite is so frequently mentioned indicates that the parents of these unfortunate children saw in their continuing existence a threat to the sustenance of the entire family. ... In three of their tales, the advice comes from ordinary people: a neighbor, a stranger on the street, and an unidentified person. In two other instances, the mothers -- peasant women -- are advised by their feudal landlords, and in one tale ... the mother receives information from her pastor ... He ate so much that the people at Lindheim had been living from hand to mouth, generation after generation, on his account."
+        },
+        {
+          "source_id": 5,
+          "url": "https://sites.pitt.edu/~dash/britchange.html",
+          "status": "verified",
+          "claims_checked": "version de Keightley située à Strathspey, trafic de whisky non taxé, enfant trouvé au bord de la route, bénédiction de la mère forçant les fées à l'abandonner, enfant gardé jusqu'à la prochaine visite puis restitution et sort violent du substitut ; instrument joué secrètement par un substitut (cornemuse, pipeau) ; collines féeriques accueillant l'enfant enlevé",
+          "evidence": "A couple of Strathspey lads who dealt in whiskey that never paid duty, which they used to purchase in Glenlivat, and sell at Badenoch and Fort William ... The fairies had taken away the real child and left a stock, but, owing to the pious ejaculation of the mother, they had been forced to drop it. ... they took the child with them, and kept it till the next time they had occasion to visit Glenlivat ... they forthwith proceeded to dispose of their new charge. For this purpose they got an old creel to put him in and some straw to light under it.  //  what did the tailor hear behind him but the sweet music of the bagpipes ... a little old grey-headed man with a pipe of straw in his mouth, busy playing a tune  //  A changeling, found playing pipes behind a tub of meal, was put on a shovel over the fire and vanished.  //  your son is in Brorra-cheill in a digh there (that is, a round green hill frequented by fairies)"
+        }
+      ],
+      "style_check": "La frontière entre le personnage de conte et les enfants réels maltraités est tenue avec fermeté, y compris dans la rubrique Prédateurs qui place le danger du côté des accusateurs. Aucun défaut bloquant ; deux tournures prescriptives mineures."
+    }
+  ]
+}

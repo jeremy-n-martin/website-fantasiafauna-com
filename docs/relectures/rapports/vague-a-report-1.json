@@ -1,0 +1,245 @@
+{
+  "batch": "batch-1",
+  "reviewed": [
+    {
+      "slug": "barbare",
+      "verdict": "pass",
+      "sha256": "dfbf047bd9674325f331a3efbd1c8f9b3fcff88118d4070fafdfe2b40c25b2cc",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.lead",
+          "quote": "Cette histoire naturelle suit un archétype humain de fantasy, principalement éclairé par Conan",
+          "detail": "Le lead annonce honnêtement la limite : toute la rubrique naturelle s'appuie pour l'essentiel sur une seule nouvelle (The Phoenix on the Sword). Ce n'est pas un défaut bloquant — la notice revendique l'archétype et non une espèce — mais un lecteur attentif remarquera que six parties de biographie sont illustrées par un unique récit."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[4].body",
+          "quote": "L'archétype se transmet par les histoires, les images et les reprises d'un personnage, tandis que les personnes qu'il représente ont des familles humaines.",
+          "detail": "Formulation un peu lourde à la charnière de la phrase ; la suite (adaptations 1976 et 2013) rachète la remarque. Style seulement."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Barbarian",
+          "status": "verified",
+          "claims_checked": "origine grecque barbaros (non-grec) puis usage romain élargi aux peuples hors de la sphère culturelle et politique de l'empire",
+          "evidence": "A barbarian is, etymologically, a foreigner, specifically someone whose language and customs differ from those of the speaker. In ancient Greece, the term designated non-Greeks, while in the Roman world it referred more generally to peoples living outside the cultural and political sphere of the empire."
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/The_Phoenix_on_the_Sword",
+          "status": "verified",
+          "claims_checked": "parution Weird Tales décembre 1932 ; Howard y crée Conan ; Conan mûr, roi d'Aquilonie ; Thoth-Amon asservi après le vol de son anneau, démon lancé contre Ascalante ; Epemitreus et le phénix marqué sur l'épée ; épée brisée sur le heaume de Gromel ; hésitation devant Rinaldo blessante ; adaptations Roy Thomas (1976) et King Conan (2013)",
+          "evidence": "first published in Weird Tales magazine in December 1932. The tale, in which Howard created the character of Conan [...] A middle-aged Conan of Cimmeria tries to govern the turbulent kingdom of Aquilonia. [...] Conan hesitates to kill Rinaldo, whose songs once touched the King's heart – this scruple proves costly, as Rinaldo manages to stab him before being killed. [...] the demon is then slain by Conan with the shard of his enchanted sword. [...] Writer Roy Thomas and artists Vicente Alcázar and Yong Montano adapted the story in Conan the Barbarian Annual #2 (1976). [...] Writer Timothy Truman [...] adapted the story in King Conan: The Phoenix on the Sword (2013)."
+        }
+      ],
+      "style_check": "Français adulte et incarné, sans tournure de bot : aucun « il convient de », aucune consigne adressée à un auteur, aucun inventaire de négations. La notice distingue correctement l'insulte historique, la création littéraire moderne (Howard) et l'usage contemporain."
+    },
+    {
+      "slug": "bete-du-gevaudan",
+      "verdict": "pass",
+      "sha256": "3c80d2d72ca0c2c361b329ae6737928e419e1477c1e7f7a22919ab690989bb81",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[4].body",
+          "quote": "Après le loup tué par Antoine, une femelle et un petit furent également abattus selon le récit de The Public Domain Review.",
+          "detail": "Exact (« Antoine also killed the wolf's similarly enormous mate and cub »), mais l'article rattache l'attribution au Smithsonian ; la source PDR ne fait que reprendre Smith. Le renvoi [4] est défendable, la nuance de chaîne de citation serait un plus."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://www.smithsonianmag.com/history/beast-gevaudan-terrorized-france-countryside-180963820",
+          "status": "verified",
+          "claims_checked": "Jeanne Boulet, 14 ans, première victime ; attaques quasi exclusivement féminines et enfantines ; Courrier d'Avignon et faits divers censure politique ; Jacques Portefaix le 12 janvier 1765, enfants et piques, récompense et éducation payées par Louis XV ; Duhamel (appâts empoisonnés, soldats déguisés en paysannes) ; d'Ennevals puis François Antoine, loup tué en septembre 1765 et envoyé à Versailles, reprise des attaques deux mois plus tard ; Jean Chastel le 19 juin 1767 ; explication retenue d'une infestation de loups ; description de Duhamel (poitrail de cheval, corps de léopard, fourrure rousse à raie noire) ; pouvoirs surnaturels (balles, yeux de feu, retour d'entre les morts)",
+          "evidence": "The monster's first victim was Jeanne Boulet, a 14-year-old girl watching her sheep. [...] François Morénas, creator and editor of the Courrier d'Avignon, used a new type of reporting called faits divers [...] The young boy and a group of children were out in a meadow with a herd of cattle on January 12, 1765, when the beast attacked. Working together, they managed to scare it off with their pikes. [...] At last, in September 1765, he shot and killed a large wolf. He had the body sent to the court at Versailles [...] to bring the creature down with a bullet on June 19, 1767. [...] In his words, it had a \"breast as wide as a horse,\" \"a body as long as a leopard's,\" and fur that's that was \"red with a black stripe.\" [...] \"The best and most likely explanation is Gévaudan had a serious wolf infestation,\""
+        },
+        {
+          "source_id": 4,
+          "url": "https://publicdomainreview.org/collection/the-beast-of-gevaudan-1764-1767",
+          "status": "verified",
+          "claims_checked": "estampe allemande de septembre 1764 ; queue féline ; imprimé décrivant une bête buvant le sang et emportant les têtes ; estampe de M. Ray affirmant que l'apparence ne fait plus de doute ; femelle et petit abattus ; conclusion au pluriel (« Beasts ») ; première diffusion par le Courrier d'Avignon",
+          "evidence": "A German print from September 1764 shows the Beast, looking more like a quadrupedal kangaroo than a wolf or hyena [...] supple furry tail — mobile like a cat's and can knock you over. [...] \"it drinks their Blood, cuts off their Heads, and carries them off.\" [...] In this engraving by the French printer M. Ray [...] the text assures us that \"There can no longer be any doubt regarding the appearance of the ferocious animal ravaging the Gévaudan\". [...] Although Antoine also killed the wolf's similarly enormous mate and cub, the attacks continued. [...] in June 1767 the hunter Jean Chastel laid low the last of what had turned out to be the Beasts of the Gévaudan."
+        }
+      ],
+      "style_check": "Voix sobre et adulte ; la notice refuse explicitement de donner un bilan chiffré unique et signale ses incertitudes, ce qui est l'attitude attendue. Aucune consigne à auteur, aucune zoologie inventée (le lead désamorce l'hypothèse d'une espèce)."
+    },
+    {
+      "slug": "blemmye",
+      "verdict": "pass",
+      "sha256": "f446205753929b5a4664de5b1eac8911201a1a2721c9e2879df793983f95d4e3",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "parfois une barbe descend depuis la poitrine",
+          "detail": "La source citée (Headless men) dit « beards reaching their knees » à propos des acéphales dorés du Roman d'Alexandre en prose ; l'image d'une barbe partant de la poitrine est une reconstruction plausible mais non littérale. Mineur."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Les Merveilles de l'Orient, les récits d'Alexandre et les compilations encyclopédiques reprennent leurs silhouettes, avec des tailles et des lieux variables.",
+          "detail": "Vérifié, mais l'appel cite la seule page de synthèse [5] alors que cette phrase recoupe aussi le dossier iconographique [6]. Coordination des appels perfectible."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 5,
+          "url": "https://en.wikipedia.org/wiki/Headless_men",
+          "status": "verified",
+          "claims_checked": "Hérodote et les akephaloi ; Pline, bouche et yeux sur la poitrine ; Solin, condition de naissance ; captivité de trente hommes sans tête dans la version française du Roman d'Alexandre ; étymologie non fixée ; Blemmyes = peuple réel (Beja)",
+          "evidence": "Solinus adds they are believed to be born with their head part dismembered, their mouth and eyes deposited on the breast. [...] In the French version, Alexander captures 30 of the headless to show the rest of the world, an element lacking in the Latin original. [...] Various etymologies had been proposed for the origins of the name \"Blemmyes\", and the question is considered unsettled."
+        },
+        {
+          "source_id": 6,
+          "url": "https://publicdomainreview.org/collection/blemmyes",
+          "status": "verified",
+          "claims_checked": "Hérodote et Pline (citations littérales) ; Psautier de Rutland et archer acéphale ; version arménienne du Roman d'Alexandre (hommes velus, vêtus de peaux, mangeurs de poisson, offrant leur collecte) ; Mandeville (yeux dans les épaules, bouche au milieu du torse, visage dans le dos) ; Raleigh et les Ewaipanoma ; peuple réel des Blemmyes ancêtre des Beja ; attribution à Hunter Dukes",
+          "evidence": "The eyes, nose, and mouth were all present on their chest. [...] \"the headless that have their eyes in their breasts\" [...] \"have no heads, their mouths and eyes being seated in their breasts\" [...] The thirteenth-century Rutland Psalter illustrates a headless archer [...] They were hairy and dressed in skins, a fish-eating sea people. And they gathered there, on land and from the sea, hydna [...] The narrator describes seeing \"ugly folk without heads, who have eyes in each shoulder; their mouths are round, like a horseshoe, in the middle of their chest\" [...] Sir Walter Raleigh reports rumors about the existence of men called Ewaipanoma [...] there was a real Eastern Desert people — ancestors of today's Beja — once known by this name. [...] Text by Hunter Dukes"
+        }
+      ],
+      "style_check": "Phrase claire, jamais professorale ; la notice distingue correctement le peuple historique, la légende antique et l'usage médiéval. Aucune tournure de bot. Petite réserve : « Le dossier iconographique de Hunter Dukes » est le seul endroit où l'auteur de la source est nommé en corps de texte — utile, pas gênant."
+    },
+    {
+      "slug": "boggart",
+      "verdict": "pass",
+      "sha256": "be0bf73fe649927e4bb7046b7d46bee968fcbba958830b42cd61954bb7bd163a",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[0]",
+          "quote": "Le nom est rattaché au moyen anglais bugge, désignant un esprit ou un monstre, plutôt qu'à une classification zoologique.",
+          "detail": "Vérifié (« These forms all point to an origin with the Middle English word bugge (a spirit or monster) »). La source précise que la parenté avec bucca/pwca/Puck reste incertaine ; la notice ne l'affirme pas, donc rien à corriger."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 7,
+          "url": "https://en.wikipedia.org/wiki/Boggart",
+          "status": "verified",
+          "claims_checked": "Wright « generic name for an apparition » et Young ; Lancashire Folklore (1867) de Harland et Wilkinson distinguant les house boggarts ; main moite sur le visage et draps arrachés ; boggart suivant une famille ; interdiction de le nommer ; récit de Grizlehurst publié par Edwin Waugh en 1861 (tournant, frêne, coq traversé d'un pieu, portes, rires, lumières bleues, sabots, cheval détaché et charrette renversée) ; conte de Mumby (orge puis pommes de terre) ; boggart de Longar Hede ; cheval de Hackensall Hall ; caverne de Cave Ha à Giggleswick ; Boggart Hole Clough à Manchester ; étymologie par bugge ; cheval effrayé dit avoir « took boggarts »",
+          "evidence": "The dialectologist Elizabeth Wright described the boggart as \"a generic name for an apparition\" [...] The 1867 book Lancashire Folklore by Harland and Wilkinson makes a distinction between \"house boggarts\" and other types. [...] the boggart crawls into people's beds at night and puts a clammy hand on their faces [...] the boggart was buried at a nearby bend in the road under an ash tree, along with a cockerel with a stake driven through it. [...] \"Never name it [the boggart]\" the old woman repeated, and her husband stated that he would never dig near its grave. [...] the farmer plants barley [...] so the farmer plants potatoes. [...] The \"Boggart of Longar Hede\" from Yorkshire was said to be a fearsome creature the size of a calf, with long shaggy hair and eyes like saucers. [...] The \"Boggart of Hackensall Hall\" in Lancashire had the appearance of a huge horse. [...] One is said to haunt Cave Ha, a limestone cavern at Giggleswick [...] a skittish or runaway horse was said to have \"took boggarts\" [...] with an aggrandizing suffix making boggart, a great big bugge."
+        }
+      ],
+      "style_check": "Voix nette, anecdotes bien tenues ; aucune consigne à auteur. La notice prend soin de présenter les affirmations du couple comme des dires publiés (« Ce sont les affirmations du couple telles qu'elles ont été publiées »), exactement ce qu'attend la grille. Une seule source (page de synthèse), signalée comme telle."
+    },
+    {
+      "slug": "brownie",
+      "verdict": "pass",
+      "sha256": "69933056e79cba7b4dd3d7844906956eda3bb219060a8953fb7246e98224c646",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Brownie_(folklore)",
+          "status": "verified",
+          "claims_checked": "travail nocturne et offrandes de crème, lait, bouillie, petit gâteau laissés au foyer ; punition des serviteurs négligents (pincements, objets dérangés) ; départ après le renvoi des domestiques et retour seulement après leur réembauche ; brownie de Bodsbeck près de Moffat, parti après qu'on l'a appelé au lieu de le laisser trouver la crème ; Cranshaws et Raven Crag ; conte des deux servantes de Peeblesshire ; Cauld Lad de Hylton et le manteau/capuchon ; Meg Mullach ; absence de nez dans les Lowlands et de doigts dans l'Aberdeenshire ; séjour dans une grotte, près d'un ruisseau, d'un étang ou d'un rocher ; crook du Herefordshire et fer à cheval retourné ; Ewing et les Brownies du mouvement des guides",
+          "evidence": "come out at night while the owners of the house are asleep and perform various chores and farming tasks. [...] The brownie will punish household servants who are lazy or slovenly by pinching them while they sleep [...] One story describes a brownie who left the house after the stingy housewife fired all the servants [...] The brownie of Bodsbeck, near the town of Moffat in Scotland, left for the nearby farm of Leithenhall after the owner of Bodsbeck called for him after pouring his cream, instead of letting him find the cream himself. [...] the brownie carried all the grain to Raven Crag two miles away and hurled it off the cliff [...] the brownie sat between them invisibly and whenever either of them tried to eat the bannock or drink the milk, the brownie would steal it from them. [...] After the servants presented him with a green mantle and hood, he is supposed to have joyfully sung before disappearing [...] female brownies, such as Meg Mullach (or \"Hairy Meg\") [...] Brownies of the Scottish Lowlands were said not to have noses, but instead had merely a single hole in the centre of their face. In Aberdeenshire, brownies are sometimes described as having no fingers or toes. [...] a particular nearby cave, stream, rock, or pond. [...] the pothook [...] was known in Herefordshire as the \"brownie's seat\" or \"brownie's sway\". If the hook did not have crook on it, people would hang a horseshoe on it upside-down so the brownie would have a place to sit. [...] The Brownies in the Girl Guides are named after a short story by Juliana Horatia Ewing based on brownie folklore."
+        }
+      ],
+      "style_check": "Aucun défaut relevé. Français soutenu et incarné, aucune formule bannie, aucune consigne à auteur, aucune zoologie inventée (le lead écarte explicitement l'espèce et le cycle biologique)."
+    },
+    {
+      "slug": "bucca",
+      "verdict": "pass",
+      "sha256": "2d9093c96727fa856e9bac0779c6d5d9fe0bfdbd2347e25da3a4b8a2dcfbb737",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[2].body",
+          "quote": "Dans la mine, le didjan réclamé est un tout petit morceau",
+          "detail": "Exact au regard de la note de bas de page de Courtney (« Didjan, a tiny bit »), mais la rubrique Légendes parle, elle, du fuggan (« gâteau de farine et de raisins » exactement selon la même note). Les deux mots viennent de la même chanson ; l'alternance fuggan/didjan sans rappel explicite peut dérouter un lecteur qui ne les relie pas. Style seulement."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 4,
+          "url": "https://en.wikisource.org/wiki/Page:Cornish_feasts_and_folk-lore.djvu/141",
+          "status": "verified",
+          "claims_checked": "récit de Tom Trevorrow attribué à Bottrell et aux knockers ; chanson réclamant le fuggan ; Tom mange tout et la malédiction le chasse de la mine ; poisson laissé sur le sable ; pain jeté par-dessus l'épaule gauche et bière répandue à la moisson ; bucca-boo terreur des enfants ; bucca nom de fantôme ; « great bucca » = sot ; Bucca Gwidden et Bucca Dhu ; gloses fuggan (gâteau de farine et de raisins) et didjan (un tout petit morceau)",
+          "evidence": "Mr. Bottrell tells a similar story of a man named Tom Trevorrow, who when he was working underground heard the knockers just before him, and roughly told them \"to be quiet and go.\" [...] \"Tom Trevorrow ! Tom Trevorrow ! Leave some of thy ' fuggan ' * for bucca, Or bad luck to thee to-morrow ! \"  But Tom took no notice and ate up every crumb [...] such persistent ill-luck followed him that he was obliged to leave the mine. [...] Fishermen left a fish on the sands for bucca, and in the harvest a piece of bread at lunch-time was thrown over the left shoulder, and a few drops of beer spilled on the ground for him, to ensure good luck. [...] Bucca, or bucca-boo, was [...] the terror of children [...] It was also the name of a ghost; but now-a-days to call a person a \"great bucca\" simply implies that you think him a fool. There were two buccas — \" 'Bucca Gwidden,' the white, or good spirit, 'Bucca Dhu,' the black, malevolent one.\"  Fuggan, a cake made of flour and raisins often eaten by miners for dinner, t Didjan, a tiny bit."
+        },
+        {
+          "source_id": 5,
+          "url": "https://en.wikipedia.org/wiki/Bucca_(mythological_creature)",
+          "status": "verified",
+          "claims_checked": "offrandes de poisson à Newlyn et Mousehole ; conjecture de Lach-Szyrma sur une divinité maritime antique ; conte du Sea Bucca de Lamorna (peau sombre de congre, algues pour cheveux, prince humain maudit, poissons et crabes poussés vers les engins, vengeance redoutée, part de la prise laissée sur la plage) ; réappropriation par des groupes néopaïens",
+          "evidence": "One such beach used for this purpose was the area of Newlyn [...] Similar offerings were recorded on the beaches of Mousehole [...] Rev W. S. Lach-Szyrma [...] suggested the Bucca had originally been an ancient pagan deity of the sea [...] though his claims are mainly conjecture. [...] The Tale of the Sea Bucca describes the Bucca inhabiting Lamorna Cove with the dark brown skin of a conger eel and a tangle of seaweed for hair [...] He was a very lonely creature who had once been a human prince cursed by a witch, but was very fond of children. He assisted the Lamorna fishermen by driving fish into their nets and crabs into their pots, yet was capable of terrible vengeance [...] Neopagan groups, principally the Witchcraft coven of Ros An Bucca, have begun to acknowledge the Bucca in their rites."
+        }
+      ],
+      "style_check": "Aucun défaut relevé. La notice sépare proprement le témoignage recueilli, la conjecture d'antiquaire et la réappropriation néopaïenne contemporaine — exactement la distinction demandée par la grille."
+    },
+    {
+      "slug": "bulette",
+      "verdict": "pass",
+      "sha256": "70003c93478cb9f71b8718075ef0e15789f85c522870877a0c9bf91ef67b0e88",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "La synthèse bibliographique consultée mentionne Dragon no 1 en 1976, puis le Monster Manual de 1977, et une étude intitulée The Ecology of the Bulette dans Dragon no 74, en 1983.",
+          "detail": "La page consultée liste bien Dragon #1 (1976) et Dragon #74 (1983) ; le Monster Manual de 1977 y apparaît par la colonne « Page 12 » et par la section « Monster Manual (1977) », pas sous forme de titre dans la ligne Bulette. Fait exact, formulation un peu plus affirmative que la source. Non bloquant."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/monsters/16818-bulette",
+          "status": "verified",
+          "claims_checked": "fiche 5e marquée Legacy ; CA 17 (armure naturelle) ; Vitesse 40 ft. et Burrow 40 ft. (enfouissement égal à la marche) ; Darkvision 60 ft. et Tremorsense 60 ft. ; Intelligence 2 ; Unaligned ; Langues — ; Standing Leap (saut sans élan) ; Bite ; Deadly Leap associant contondant et tranchant ; PV 94",
+          "evidence": "Legacy   This doesn't reflect the latest rules and lore. [...] Large Monstrosity, Unaligned [...] Armor Class   17   (natural armor) [...] Hit Points   94 [...] Speed   40 ft., Burrow 40 ft. [...] INT 2 (-4) [...] Senses  Darkvision 60 ft., Tremorsense 60 ft. [...] Languages  -- [...] ***Standing Leap.*** The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start. [...] ***Bite.** [...] ***Deadly Leap.** [...] take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage."
+        },
+        {
+          "source_id": 6,
+          "url": "https://en.wikipedia.org/wiki/Bulette_(Dungeons_%26_Dragons)",
+          "status": "verified",
+          "claims_checked": "Dragon #1 (1976), Dragon #74 « The Ecology of the Bulette » (1983) ; surnom landshark ; se nourrit d'humains, de chevaux et de halfelins ; origine par un jouet de plastique bon marché ; monstre créé spécifiquement pour le jeu et présent dans toutes les éditions ; miniature du set Giants of Legend #67 (2004)",
+          "evidence": "**Bulette** | 12 | Dragon #1 (1976), Dragon #74 \"The Ecology of the Bulette\" (1983), MC2 – Monstrous Compendium Volume Two (1989), Monstrous Manual (1993), Monster Manual (2000), Monster Manual v.3.5 (2003), D&D Miniatures: Giants of Legend set #67 (2004) | This \"slow-witted, roughly bullet-shaped\" monster also known as landshark burrows underground and feeds on humans, horses, and halflings. Originally inspired by a cheap plastic toy, the bulette was one of the first monsters specifically created for *D&D*, and has been included in every edition of *D&D*, although various aspects of the monster have changed from edition to edition."
+        }
+      ],
+      "style_check": "Aucun défaut relevé. Faux folklore évité de front : la notice déclare l'origine moderne du monstre et rappelle qu'aucune légende paysanne ne le précède. Les silences de la fiche (reproduction, vie hors combat) sont explicitement présentés comme des silences plutôt que comblés."
+    },
+    {
+      "slug": "cabire",
+      "verdict": "pass",
+      "sha256": "a053fcc9b55852d890ed648f33200c980327f072842dfc1e429f76b8114b729c",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[4].body",
+          "quote": "Phérécyde donne directement à Cabeiro et Héphaïstos trois Cabires et trois nymphes cabirides.",
+          "detail": "La compilation distingue Cabeiro (mère de Cadmilos) et Cabeira, fille de Protée, mère des trois Cabires par Héphaïstos. La notice emploie « Cabeiro » pour les deux ; variantes quasi homographes, mais la source les sépare. Mineur."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "L'apparence naine appartient à certaines descriptions et comparaisons antiques",
+          "detail": "Exact (« dwarfish sons of Hephaistos »), mais l'image du nain forgeron vient aussi du rapprochement des Pataïkoi phéniciens ; la notice dit bien « notamment », donc rien à corriger — simple repère de précision."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://www.theoi.com/Georgikos/Kabeiroi.html",
+          "status": "verified",
+          "claims_checked": "Eschyle, Cabires (pièce perdue) : vin lemnien promis aux Argonautes ; Apollonios, Argonautiques 1.916 : Orphée et l'initiation pour une traversée plus confiante, silence sur les rites ; Diodore 4.43.1 : tempête, prière d'Orphée, vent apaisé, deux astres au-dessus des Dioscures ; Diodore 4.49.8 : coupes dédiées à Samothrace après le salut ; Pausanias 9.25.5 : Prométhée et Aitnaios, dépôt confié et refus d'écrire ; Pausanias : profanateurs frappés de folie ou de foudre ; Nonnos 14.17 et 29.193 : Alcon et Eurymédon, chevaux de bronze soufflant le feu, armes de la forge ; Nonnos 30.42 : Eurymédon blessé à l'aine, soigné par son père ; Callimaque, Aetia fr. 115 : enfance auprès des fourneaux de Lemnos, apprentissage du marteau ; Acousilaos/Cadmilos et cadres généalogiques ; étymologie incertaine et mont Kabeiros",
+          "evidence": "In the Cabiri by Aeschylus, the two gods welcomed the Argonauts to their island and initiated them in a drunken orgy. [...] He [Orpheus] wished them, by holy initiation, to learn something of the secret rites, and so sail on with greater confidence across the formidable sea. Of the rites I say no more [...] And immediately the wind died down and two stars fell over the heads of the Dioskouroi (Dioscuri) [...] and dedicated in the sacred precinct the bowls which are preserved there even to this day. [...] Demeter came to know Prometheus, one of the Kabeiroi, and Aitnaios (Aetnaeus) his son, and entrusted something to their keeping [...] What was entrusted to them, and what happened to it, seemed to me a sin to put into writing [...] all these immediately were struck with madness, and flung themselves to their deaths into the sea or from the tops of precipices. [...] they were destroyed by thunder and lightning from heaven. [...] Alkon (Alcon) and Eurymedon well skilled at the forge [...] These father Hephaistos had made with his inimitable art, breathing defiant fire between their teeth [...] Eurymedon [one of the Kabeiroi] drove and guided the fiery mouths of the ironfoot steeds with a fiery bridle [...] He wounded [the Kabeiros (Cabeirus)] Eurymedon, cut through the groin with his blood-stained spear [...] And they [the Kabeiroi] grew up secretly by the furnaces of Hephaistos (Hephaestus) [on Lemnos], learning the art of the hammer. [...] Acusilaus called Cadmilus a son of Cabeiro and Hephaestus, and that he made the three Cabeiri the sons, and the Cabeirian nymphs the daughters, of Cadmilus. According to Pherecydes, [...] the three Cabeiri and the three Cabeirian nymphs were the children of Cabeira, the daughter of Proteus, by Hephaestus. [...] The meaning of the name Cabeiri is quite uncertain [...] who derived their name from mount Cabeirus in Berecyntia."
+        }
+      ],
+      "style_check": "Aucun défaut relevé. La notice traite des divinités de religion vivante comme des objets d'histoire religieuse, sans inventer ni nature ni biologie, et le lead formule explicitement ce refus. Aucune consigne à auteur, aucune tournure de bot."
+    }
+  ]
+}
