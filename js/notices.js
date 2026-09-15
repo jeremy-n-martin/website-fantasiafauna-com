@@ -225,6 +225,2351 @@ window.FF_NOTICES = {
       }
     ]
   },
+  "acolyte": {
+    "description": "Près de l'autel, une main présente le livre au moment juste : l'acolyte donne au service une présence visible.",
+    "sections": {
+      "fascination": [
+        "L'acolyte attire rarement le premier regard. On remarque le célébrant, la lumière, le mouvement d'une assemblée ; puis on distingue celui ou celle qui aide ces gestes à s'accomplir. Dans l'Église latine, son ministère se rapporte particulièrement au service de l'autel et à l'assistance du prêtre et du diacre.[2] Cette proximité avec le centre de la célébration a nourri une silhouette familière de l'imaginaire : la personne qui accompagne, apporte, attend et connaît l'ordre des choses avant que les autres ne le voient.",
+        "La force de cette figure tient à une attention exercée. Un livre doit être disponible, un objet transmis, une place laissée libre. Le détail matériel et la signification religieuse se rencontrent dans le même geste. Pour les fidèles, le rite appartient à une vie de foi ; pour l'observateur, la coordination de ses participants rend sensible le travail qui soutient une cérémonie. L'acolyte est une fonction humaine, inscrite dans une communauté réelle, avant d'être un personnage d'aventure ou un serviteur de sanctuaire imaginaire."
+      ],
+      "legendes": [
+        "L'histoire documentée de l'acolytat suit celle des ministères chrétiens. Dans sa lettre Ministeria quaedam, datée du 15 août 1972, Paul VI rappelle que certaines fonctions liturgiques et caritatives ont progressivement été associées à la préparation aux ordres sacrés. L'ostiariat, le lectorat, l'exorcistat et l'acolytat étaient ainsi appelés ordres mineurs dans l'Église latine.[2] Les noms désignaient des charges différentes. Leur voisinage dans un parcours ecclésiastique ne donne pas à l'acolyte toutes les attributions attachées aux autres fonctions.",
+        "La réforme de 1972 remplace, pour les fonctions conservées dans son cadre, le vocabulaire des ordres mineurs par celui des ministères et parle d'institution plutôt que d'ordination. Le lectorat et l'acolytat sont maintenus et peuvent être confiés à des laïcs, sans être réservés aux candidats au sacrement de l'ordre. L'entrée dans l'état clérical est rattachée au diaconat.[2] Cette distinction change la manière de reconnaître l'acolyte : son service peut être une charge stable, et non seulement un degré provisoire sur la route du sacerdoce.",
+        "Le texte de Paul VI réservait encore l'institution aux hommes. Dans sa lettre du 10 janvier 2021 au préfet de la Congrégation pour la doctrine de la foi, François expose l'ouverture du lectorat et de l'acolytat institués aux femmes. Il fonde cette possibilité sur le baptême, la confirmation et la distinction entre ministères institués et ministères ordonnés.[3] Une acolyte relève donc de cette histoire contemporaine du ministère, avec une préparation et une reconnaissance publique ; sa présence ne doit pas être présentée comme une simple exception au cérémonial.",
+        "Le mot circule aussi loin de son sens ecclésial précis. Dans son emploi ordinaire, il désigne un compagnon ou un second, parfois avec une nuance de complicité. La fantasy retient souvent cette position d'assistant et lui ajoute des pouvoirs selon l'univers concerné. Ce déplacement de sens explique la rencontre du terme dans un bestiaire, mais ne fournit aucune raison de prêter aux personnes qui servent une religion vivante les capacités magiques ou les intentions d'un personnage fictif."
+      ],
+      "anomalies": [
+        "Ce qui paraît singulier à l'observateur est surtout une répartition soigneuse des responsabilités. Ministeria quaedam permet à l'acolyte de distribuer la communion comme ministre extraordinaire lorsque les ministres ordinaires manquent, sont empêchés, ou que l'affluence le justifie. Dans les cas extraordinaires indiqués, il peut aussi exposer le Saint-Sacrement et le reposer, mais sans donner la bénédiction au peuple.[2] La proximité d'un objet sacré n'efface donc pas les limites de la charge. Un même espace réunit des participants dont les fonctions demeurent distinctes.",
+        "L'acolyte peut également préparer d'autres fidèles à porter le missel, la croix ou les cierges et à assister ponctuellement les ministres.[2] Une partie de son autorité consiste ainsi à rendre d'autres personnes capables de servir. Cela évite de confondre tout assistant visible avec un acolyte institué : François distingue explicitement les ministères reconnus par un acte liturgique des nombreux services exercés sans rite particulier d'institution.[3] Le vêtement ou la position près de l'autel ne suffisent pas, à eux seuls, à connaître le statut de la personne."
+      ],
+      "naturelle": {
+        "lead": "Pour cette fonction humaine, les six observations portent sur la vie communautaire, la formation et la transmission du service. Le cadre retenu est celui de l'acolytat dans l'Église latine, dont les textes permettent de préciser les responsabilités.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le service demande de connaître le déroulement d'une célébration et d'agir avec une attention tournée vers les autres participants. Paul VI demande à l'acolyte de pénétrer le sens spirituel du culte et d'être un exemple de dignité et de respect.[2] Cette exigence unit savoir pratique et disposition intérieure. La disponibilité importe autant que le geste bien exécuté : celui qui aide doit reconnaître un besoin, laisser à chacun sa fonction et soutenir la participation commune plutôt que chercher à occuper le premier plan."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "L'autel est le centre fonctionnel de la charge, au sein d'une église et d'une assemblée. Mais le texte de 1972 associe ce service à l'amour du peuple de Dieu, particulièrement des faibles et des malades.[2] Son horizon dépasse donc l'espace où se tient la cérémonie. La lettre de François situe à son tour les ministères dans la vie des Églises locales, avec leurs besoins liturgiques, leur service des pauvres et leur mission d'annonce.[3] Le milieu de l'acolyte est une communauté organisée, dont le bâtiment est le lieu visible de rassemblement."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La nourriture intervient ici par la place de l'Eucharistie dans la vie chrétienne. Ministeria quaedam demande à l'acolyte d'y participer avec piété, de s'en nourrir et d'en approfondir la connaissance.[2] Le langage désigne une réalité sacramentelle pour les croyants, et non un régime distinct imposé à une catégorie de personnes. Cette relation explique pourquoi les tâches matérielles de l'autel s'accompagnent d'une formation spirituelle : porter, présenter ou distribuer engage le sens que la communauté reconnaît à la célébration."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'apprentissage porte sur les gestes, les limites de compétence et la compréhension du culte. Savoir à quel moment intervenir requiert une connaissance partagée du rite ; savoir pourquoi on le fait relève de la formation demandée par les textes. François insiste sur une préparation adaptée et sur le discernement des pasteurs avant l'institution.[3] L'acolyte expérimenté peut ensuite aider à préparer d'autres assistants.[2] La connaissance circule ainsi entre instruction, pratique régulière et transmission, plutôt que de dépendre d'une aptitude mystérieuse révélée à quelques élus."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La fonction se renouvelle par l'admission et la formation de nouvelles personnes. Le texte de 1972 prévoit une demande librement écrite et signée, des qualités et un âge convenables, ainsi qu'une volonté ferme de servir ; le ministère est conféré selon un rite d'institution.[2] La lettre de 2021 étend aux candidates cette reconnaissance et confie aux conférences épiscopales le soin de définir les critères de préparation.[3] Cette continuité repose sur une décision personnelle et communautaire. Pour les candidats au diaconat ou au sacerdoce, l'exercice de l'acolytat participe aussi à la préparation de leurs futures responsabilités.[2]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les fragilités de la charge sont celles d'un service humain : confusion des responsabilités, préparation insuffisante, recherche de prestige aux dépens de l'assemblée. La lettre de François met précisément en garde contre une vie ecclésiale enfermée dans la revendication d'espaces de pouvoir et rapporte les ministères au bien de la communauté.[3] Il s'agit d'une exigence institutionnelle et spirituelle, non du portrait d'un ennemi héréditaire. L'acolyte dépend de relations de confiance ; les rivalités de place peuvent détériorer ce que la coordination des gestes devrait rendre possible."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le missel, la croix et les cierges constituent un petit répertoire d'objets expressément mentionné dans Ministeria quaedam à propos de la préparation des assistants.[2] Leur rôle éclaire la silhouette de l'acolyte mieux qu'un attribut unique : le livre rend les paroles disponibles, les autres objets participent à l'ordre visible de la célébration. Les mains qui les portent restent au service d'un usage partagé. On reconnaît moins une possession personnelle qu'une responsabilité confiée pour un temps.",
+        "Deux mots gardent la trace des transformations historiques : ordination et institution. Leur distinction dans la réforme de Paul VI, puis l'explication des ministères laïcs par François, permettent de lire les images anciennes et les pratiques récentes sans les confondre.[2][3] L'acolyte peut préparer une ordination future ou exercer durablement son ministère comme laïc. Derrière la silhouette de l'assistant demeure donc une histoire de statut, de vocation et de reconnaissance, que le seul mot de serviteur ne suffit pas à raconter."
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "Paul VI — Ministeria quaedam, 15 août 1972, traduction française",
+        "url": "https://www.ceremoniaire.net/depuis1969/docs/ministeria_quae.html"
+      },
+      {
+        "id": 3,
+        "title": "François — Lettre sur l'accès des femmes aux ministères du lectorat et de l'acolytat, 10 janvier 2021",
+        "url": "https://www.vatican.va/content/francesco/fr/letters/2021/documents/papa-francesco_20210110_lettera-donne-lettorato-accolitato.html"
+      }
+    ]
+  },
+  "aitvaras": {
+    "description": "Un feu passe au-dessus des champs ; dans une maison, le grain augmente, et les voisins commencent à compter leurs pertes.",
+    "sections": {
+      "fascination": [
+        "L'aitvaras appartient à la maison lituanienne, à ses réserves et à ses inquiétudes. On le voit pourtant traverser le ciel sous une forme lumineuse : boule de feu, longue perche embrasée, silhouette étirée que les récits comparent parfois à une serviette. À l'intérieur, le même esprit peut ressembler à un coq, un chat noir, un crapaud ou un petit animal.[1] Entre ces apparitions, le lien est une adresse : quelque part, quelqu'un l'attend et profite de ses voyages.",
+        "Sa richesse a une odeur de cuisine et de grenier. Elle se mesure en pain, en avoine, en foin, en biens utiles à une famille paysanne. Mais le merveilleux entre aussi dans les comptes du voisinage. Si une exploitation prospère sans explication visible, l'aitvaras donne un corps au soupçon. Ce qui arrive chez les uns peut avoir quitté les autres. Une lueur au-dessus d'un toit devient alors un indice, et le repas laissé près des meules prend l'allure d'un salaire clandestin."
+      ],
+      "legendes": [
+        "La Visuotinė lietuvių enciklopedija présente l'aitvaras comme un être mythique et un esprit domestique des traditions lituaniennes. Elle situe le nom dans les récits des Aukštaitis orientaux et occidentaux ; en Samogitie, le nom kaukas peut désigner cette figure, tandis que d'autres appellations apparaissent au nord et au sud-est du pays.[1] Cette géographie des noms invite à suivre les récits locaux plutôt qu'à aligner partout un dragon identique. Les catégories se recouvrent, et leur vocabulaire varie avec les conteurs.",
+        "Une première famille de récits lui prête un pouvoir d'abondance. Un crapaud court sur des pains qui viennent d'être cuits ; ailleurs, un kaukas apporte trois brins d'herbe qui deviennent trois charretées de foin. L'esprit peut aimer les chevaux et leur donner de l'avoine.[1] La maison bénéficie ici d'une augmentation merveilleuse de ses ressources. Perdre son auxiliaire devient un malheur, comparable à la disparition d'un soutien dont dépendait la prospérité quotidienne.",
+        "D'autres récits accusent explicitement l'esprit de prendre ses richesses chez autrui. Le possesseur est alors condamné par son entourage. Un valet mange volontairement la nourriture destinée aux aitvaras, provoque leur colère, puis les brûle : cette séquence figure dans la synthèse de l'encyclopédie lituanienne.[1] Le foyer n'est donc pas toujours uni autour de son protecteur. Un domestique peut refuser le bénéfice que son maître accepte et transformer une ration dérobée en moyen de rupture.",
+        "L'acquisition elle-même ressemble parfois à une mauvaise affaire. Des gens achètent l'être à Riga ou à Königsberg sous l'apparence d'un charbon, d'un morceau de bois ou d'un insecte ; d'autres rapportent une entrave trouvée et introduisent ainsi l'esprit chez eux.[1] L'objet insignifiant déplace la frontière du conte : il suffit de ramasser quelque chose, puis de le faire entrer. Certaines personnes cherchent ensuite à se débarrasser de cet achat imprudent. Aucun pacte solennel n'est nécessaire pour que l'hospitalité devienne embarrassante."
+      ],
+      "anomalies": [
+        "Le changement de forme associe des corps familiers à une apparition aérienne disproportionnée. Le coq de la cour, le chat et le crapaud se reconnaissent à quelques pas ; le feu volant se repère d'un champ à l'autre. L'encyclopédie mentionne même une forme de bourdon.[1] Cette diversité empêche de fixer une anatomie commune. Elle donne plutôt à l'esprit plusieurs manières d'être découvert : comme animal logé près des provisions, comme présence minuscule, ou comme trajet lumineux révélant la maison qu'il dessert.",
+        "Son pouvoir économique reste contradictoire jusque dans ses effets sur les chevaux. Il peut les nourrir, mais aussi les tourmenter ; il peut enrichir son maître tout en l'obligeant à travailler sans mesure. La mort des propriétaires passe, dans certains récits, pour particulièrement pénible.[1] L'abondance ne supprime donc pas la fatigue. L'auxiliaire attendu finit par imposer son rythme, et les biens accumulés cessent d'être une promesse de repos. Ces variantes expriment des jugements différents sur l'alliance domestique, plutôt que les étapes obligatoires d'une même malédiction."
+      ],
+      "naturelle": {
+        "lead": "L'histoire de cet esprit se lit dans les usages du foyer : où on le garde, ce qu'on lui sert, comment on l'obtient et pourquoi on veut parfois le chasser. Ses formes animales appartiennent au récit, non à une espèce zoologique.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'aitvaras est un pourvoyeur avec lequel on entretient une relation suivie. On peut chercher à l'apprivoiser en déposant des œufs préparés sur les meules ou en répandant des grains.[1] Le geste suppose une présence susceptible de revenir et d'accepter une habitude. Mais cette familiarité demeure exigeante : le maître reçoit des biens, nourrit son auxiliaire et doit composer avec sa colère. La prospérité se construit autour d'une attention répétée, assez concrète pour qu'un valet puisse l'interrompre en mangeant la portion réservée."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Grenier à provisions, combles, meules et rebord de fenêtre sont ses emplacements attestés dans la synthèse lituanienne.[1] Ces lieux dessinent les circulations d'une maison agricole : on y stocke, on y transforme le grain, on y regarde dehors. L'aitvaras occupe ainsi des espaces de travail et de passage. Son domaine terrestre tient dans quelques recoins, tandis que son vol relie le foyer aux richesses dispersées du pays. Une vaste caverne remplie de pièces d'or lui conviendrait moins que le voisinage immédiat du pain."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les repas mentionnés comprennent des œufs cuisinés, des boulettes et des crêtes de coq.[1] Ce sont des nourritures préparées et déposées, qui rattachent l'esprit au travail de la cuisine. Les grains servent aussi à l'attirer. Leur présence dans un rite d'apprivoisement ne suffit toutefois pas à établir un régime unique pour toutes ses formes. Dans les récits, la ration importe surtout comme part réservée : la manger à sa place signifie rompre la relation, avec les conséquences que peut avoir la colère du bénéficiaire."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Les échanges avec les humains montrent une volonté, des préférences et une capacité de réaction. L'esprit s'attache aux ressources domestiques, s'irrite quand son repas disparaît et peut imposer un travail excessif.[1] On reconnaît ici les traits d'un partenaire difficile, plutôt qu'une simple ruse animale. Les propriétaires doivent interpréter son arrivée et ses demandes ; les voisins, eux, interprètent les effets de ses courses. Son intelligence se manifeste par les relations qu'il organise autour de lui, jusque dans les désaccords entre habitants d'une même maison."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Une naissance extraordinaire est attribuée à un œuf pondu par un coq âgé de neuf ou douze ans ; la même source signale aussi un motif faisant intervenir un « œuf » de verrat.[1] Ces parentés impossibles relèvent du merveilleux de l'éclosion. Elles voisinent avec des acquisitions par achat, découverte ou capture pendant le vol. Les contes s'intéressent donc à l'origine de la relation avec l'humain davantage qu'à une population d'esprits : l'événement décisif est le moment où un foyer obtient son aitvaras."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Ses adversaires sont surtout ceux qui refusent ses services ou désapprouvent leur provenance. Le valet incendiaire appartient à cette opposition humaine, tout comme les propriétaires désireux de se défaire d'une acquisition irréfléchie.[1] Aucune chaîne alimentaire stable ne ressort de ces récits. Le danger vient de la rupture d'une alliance : un esprit nourri, toléré ou recherché devient une présence à expulser. À cette échelle, la maison protectrice peut se retourner contre son hôte surnaturel."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les noms conservés par l'encyclopédie comprennent pūkis, damavykas, sparyžius, koklikas, skalsininkas et gausinėlis. Elle rapproche aussi la figure du pūķis letton, de l'esprit de feu russe ou biélorusse, du kratt estonien et d'autres pourvoyeurs voisins.[1] Ce réseau permet de comparer les motifs du vol, du service et de la richesse ; il ne transforme pas chaque appellation en synonyme exact dans toutes les traditions. Le nom régional garde la trace d'un usage particulier.",
+        "Les objets les plus mémorables sont modestes : une entrave ramassée, un charbon acheté, une portion d'œufs sur une meule. Ils donnent à l'aitvaras une présence plus troublante qu'un trésor inaccessible. On pourrait les toucher avant de comprendre leur rôle. Dans ces récits de prospérité contestée, le surnaturel ne s'annonce pas toujours par le feu du ciel ; il peut déjà attendre à l'endroit où la famille range sa nourriture."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Visuotinė lietuvių enciklopedija — aitvaras",
+        "url": "https://www.vle.lt/straipsnis/aitvaras"
+      }
+    ]
+  },
+  "alchimiste": {
+    "description": "L'alchimiste surveille une matière qui change de couleur et cherche, dans ce changement visible, la preuve d'une transformation plus profonde.",
+    "sections": {
+      "fascination": [
+        "Un récipient chauffé, un dépôt sur le verre, un métal dont la surface pâlit : l'émerveillement de l'alchimiste commence souvent par des phénomènes réellement observables. Leur interprétation ouvre ensuite des perspectives immenses. Si la matière change ainsi d'apparence et de propriétés, jusqu'où peut-on conduire sa métamorphose ? L'histoire de l'alchimie est traversée par cette confiance dans la possibilité d'imiter ou d'améliorer la nature.[4] Le personnage appartient aux pratiques humaines du savoir et de l'atelier ; ses ambitions ont fourni à la fiction certains de ses plus persistants prodiges.",
+        "La pierre philosophale condense ces ambitions dans un objet supposé capable de transformer les métaux ordinaires en or.[4] À côté de cette promesse célèbre, l'alchimiste historique travaille aussi sur les substances médicinales, les minerais et les procédés de transformation. Son atelier tient ensemble des résultats utiles et des attentes qui ne seront pas confirmées. La fascination vient de cette proximité : le même praticien peut réussir une séparation difficile et croire qu'une découverte beaucoup plus radicale se trouve au bout d'une nouvelle série d'essais."
+      ],
+      "legendes": [
+        "L'historien Lawrence M. Principe situe la formation de l'alchimie gréco-égyptienne dans la rencontre des traditions artisanales et philosophiques, probablement au IIIe siècle de notre ère. Zosime de Panopolis, actif vers 300, est l'un des premiers praticiens dont subsistent des renseignements relativement substantiels. Ses écrits décrivent des appareils et des opérations comme la distillation, la sublimation ou la filtration.[4] Ce point de départ concerne une lignée historique précise, poursuivie ensuite dans des milieux arabophones et latins ; il ne résume pas toutes les traditions de transformation de la matière à travers le monde.",
+        "Zosime cite des prédécesseurs. Parmi eux figure Marie, souvent appelée Marie la Juive, à laquelle il attribue divers appareils et techniques. Le chauffage doux au bain d'eau reste associé à son nom dans le bain-marie.[4] Cette survivance est plus solide que la plupart des portraits légendaires d'adeptes : un geste de laboratoire et de cuisine porte encore la mémoire d'une autorité ancienne. Elle rappelle aussi que l'image exclusivement masculine du vieillard barbu devant son fourneau rétrécit l'histoire des personnes auxquelles les textes reconnaissent un savoir.",
+        "Au XIVe siècle, le franciscain Jean de Roquetaillade donne à ses recherches une urgence religieuse. Dans son Livre de lumière, rédigé vers 1350, il explique vouloir aider l'Église à traverser les tribulations attendues au temps de l'Antéchrist. L'or recherché doit soutenir les croyants ; des substances médicinales doivent préserver leur santé.[4] Son attachement à la pauvreté franciscaine et sa quête de transmutation ne sont donc pas, dans sa propre pensée, incompatibles. L'alchimie devient un moyen matériel de répondre à une histoire sacrée qu'il croit imminente.",
+        "La séparation entre chimie et alchimie s'est faite plus tard et moins nettement que ne le suggère un récit de victoire soudaine de la raison. James R. Voelkel rappelle que les deux termes étaient largement synonymes pendant la vie de Robert Boyle. Le Sceptical Chymist de 1661 n'est pas un manifeste rejetant toute transmutation : les manuscrits et les recherches de Boyle témoignent de son intérêt pour cette quête.[5] L'alchimiste ne disparaît donc pas au moment où paraît un livre fondateur ; les catégories du savoir se redessinent progressivement autour de pratiques longtemps voisines."
+      ],
+      "anomalies": [
+        "La transmutation espérée possède un appui trompeur dans certains changements réels. Des vapeurs issues de matières contenant du zinc peuvent donner au cuivre la couleur de l'or en produisant du laiton ; d'autres traitements blanchissent le cuivre.[4] Un métal semble ainsi acquérir les signes d'un autre. Zosime cherche des principes derrière ces observations. Son raisonnement part d'une expérience matérielle, mais une couleur nouvelle ne prouve pas que l'élément recherché a été obtenu. C'est dans cet intervalle entre phénomène et conclusion que s'étendent beaucoup de promesses alchimiques.",
+        "Le langage secret complique encore l'examen. Métaphores, codes et omissions peuvent recouvrir des opérations effectives. Principe montre qu'une préparation attribuée à Roquetaillade exige un constituant absent de la liste annoncée : il pouvait être présent comme impureté ou avoir été volontairement laissé sous silence.[4] Une recette apparemment impossible appelle donc une enquête sur les matériaux disponibles et les habitudes d'écriture. Cela n'authentifie pas la fabrication d'or ; cela permet de comprendre pourquoi reproduire une expérience ancienne demande davantage qu'une lecture littérale.",
+        "La fiction peut accorder à l'alchimiste la réussite que les ateliers historiques poursuivaient : or produit à volonté, guérison parfaite, longévité extraordinaire. Le statut de ces effets change alors. Dans l'histoire des savoirs, la pierre philosophale reste une matière recherchée et supposée ; dans une œuvre qui la fait agir, elle devient un objet merveilleux. La distinction préserve à la fois la puissance de la légende et la réalité plus hésitante des expériences, dont les réussites partielles ne démontrent pas la promesse finale."
+      ],
+      "naturelle": {
+        "lead": "L'alchimiste est ici un praticien humain. Son histoire naturelle suit les conditions de l'atelier, les ressources consommées et la transmission du savoir, en s'appuyant surtout sur la tradition gréco-égyptienne puis européenne étudiée dans les sources consultées.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Observer, comparer et reprendre une opération occupent une place centrale dans les écrits de Zosime. Principe souligne qu'il commente les effets différents d'une même vapeur sur plusieurs matières et s'étonne des propriétés nouvelles que produit leur combinaison.[4] Cette attention dément l'image d'une recherche entièrement menée au hasard. Elle coexiste avec la conviction que la transmutation est possible. Une théorie peut orienter l'essai et recevoir des corrections, tout en conservant un horizon que le praticien ne parvient pas à atteindre."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "L'atelier se trouve au croisement d'autres activités matérielles. Plusieurs instruments décrits par Zosime dérivent d'ustensiles de cuisine, de parfumerie ou d'autres métiers.[4] Fourneaux et récipients appartiennent ainsi à une culture technique partagée. Bien plus tard, les origines de l'alchimie dans la métallurgie, la teinture et la distillation contribuent encore à son image de travail enfumé et salissant.[5] Le cabinet solitaire des représentations cache cette dépendance envers des savoir-faire, des approvisionnements et des objets fabriqués par d'autres mains."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le vin offre un exemple précis de la rencontre entre substance quotidienne et ambition médicinale. Roquetaillade s'intéresse à son distillat, qu'il appelle une eau ardente ou eau de vie, et à sa capacité de conserver des matières qui se corrompent à l'air.[4] Il y cherche une quintessence susceptible de protéger le corps. Cette espérance historique ne vaut pas recommandation thérapeutique. Elle montre comment l'observation d'une conservation réelle a pu nourrir une théorie beaucoup plus ambitieuse de la santé et du vieillissement."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La compétence associe lecture, manipulation et interprétation. Les autorités anciennes fournissent des procédés et des concepts ; l'expérience confronte ces héritages à des substances dont la composition peut varier. Déchiffrer un texte exige parfois de reconnaître un nom figuré ou une impureté tacitement incluse.[4] Le savoir alchimique est donc à la fois livresque et pratique. Sa difficulté n'excuse pas toutes les affirmations : elle explique pourquoi l'historien doit examiner séparément ce qu'un auteur observe, ce qu'il suppose et ce qu'il prétend réussir."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La succession des praticiens passe par les textes et l'enseignement. Zosime cite Marie ; plusieurs de ses écrits s'adressent à Théosébie, présentée comme une possible élève, dont Principe souligne toutefois que l'existence historique reste incertaine.[4] La figure de la destinataire donne forme à une transmission, même lorsque sa biographie échappe. Copies, commentaires et traductions déplacent ensuite les connaissances entre langues et époques. Chaque reprise peut préserver un procédé, le transformer ou rendre plus obscure une indication autrefois évidente à l'atelier."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les menaces les mieux visibles dans ces sources sont l'échec de reproduction et la perte de crédibilité. Au XIXe siècle, Cyprien Théodore Tiffereau affirme avoir transformé de l'argent en or au Mexique ; les essais parisiens ne permettent pas de retrouver son résultat.[4] L'épisode montre la différence entre posséder un échantillon présenté comme preuve et démontrer une opération reproductible. Plus largement, le soupçon de charlatanisme attaché à la fabrication d'or contribue à éloigner cette recherche de la chimie devenue respectable.[5]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le bain-marie et l'expression eau-de-vie sont des survivances discrètes de cette histoire. Le premier conserve le nom de Marie ; la seconde prolonge le vocabulaire latin d'aqua vitae employé dans les recherches sur la distillation.[4] Ces héritages restent proches du geste : chauffer sans brutalité, recueillir une fraction volatile, conserver une substance. Ils rendent l'alchimie tangible sans exiger que l'on accepte ses théories anciennes ou ses promesses de perfection métallique.",
+        "Les livres portent une autre mémoire, parfois trompeuse. Dans la première édition du Sceptical Chymist, le mot désignant les alchimistes figure en grandes lettres rouges sur la page de titre. Voelkel explique comment des lecteurs ultérieurs y ont vu l'annonce d'une rupture avec l'alchimie que l'œuvre et les activités de Boyle ne confirment pas.[5] Un objet conservé peut ainsi nourrir une légende historique aussi tenace qu'une pierre merveilleuse. Le relire rend à l'alchimiste sa place inconfortable : parmi ceux qui ont produit du savoir, tout en poursuivant un résultat qui leur échappait."
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "Lawrence M. Principe — The Secrets of Alchemy, Science History Institute",
+        "url": "https://www.sciencehistory.org/stories/magazine/the-secrets-of-alchemy"
+      },
+      {
+        "id": 5,
+        "title": "James R. Voelkel — Alchemists, Unite!, Science History Institute",
+        "url": "https://www.sciencehistory.org/stories/magazine/alchemists-unite"
+      }
+    ]
+  },
+  "alerion": {
+    "description": "Deux oiseaux couleur de feu gouvernent le ciel ; à la naissance de leurs petits, ils s'en vont mourir dans la mer.",
+    "sections": {
+      "fascination": [
+        "L'alérion du bestiaire possède la majesté de l'aigle et une destinée beaucoup plus étrange. Ses ailes coupent comme des rasoirs, son plumage a la couleur du feu, et le monde entier ne porte qu'un couple adulte. Tout semble préparer une créature conquérante. Pourtant, son histoire conduit vers un nid abandonné et une procession funèbre au-dessus de l'eau : les parents se noient après l'éclosion, laissant aux autres oiseaux le soin d'élever leurs petits.[1]",
+        "Cette souveraineté se reconnaît surtout à ceux qui l'entourent. Les oiseaux ordinaires escortent les adultes jusqu'à la mer, puis reviennent nourrir les héritiers. Le merveilleux tient à cette fidélité collective. Entre le dernier envol des parents et le premier envol de leurs descendants, le règne repose sur des nourriciers d'autres espèces. L'oiseau le plus puissant dépend, dans son âge fragile, de tout un peuple ailé."
+      ],
+      "legendes": [
+        "Le récit appartient à la tradition française des bestiaires attribués à Pierre de Beauvais. La synthèse spécialisée Medieval Bestiary le rattache à ce corpus et signale un récit analogue dans certaines versions de la Lettre du Prêtre Jean, texte des merveilles orientales.[1] Ces indications situent l'alérion dans une culture écrite qui accueille les animaux lointains, leurs propriétés extraordinaires et leurs significations possibles au sein d'une même description du monde.",
+        "L'attribution demande toutefois une nuance. Le catalogue d'un manuscrit illustré vendu par Sotheby's distingue une version courte et une version longue du Bestiaire. Il expose les raisons textuelles pour lesquelles la longue version pourrait être postérieure à Pierre lui-même, notamment ses rapports avec un ouvrage achevé en 1246.[2] Parler du bestiaire « attribué à Pierre de Beauvais » conserve donc la précision nécessaire sans effacer le nom sous lequel cette tradition a circulé.",
+        "Dans le manuscrit décrit par ce catalogue, daté approximativement de 1285, l'oiseau figure sous le nom d'aleryous. La notice du catalogue le présente comme le plus grand des oiseaux et résume déjà le motif des parents qui se jettent dans la mer, tandis qu'un autre oiseau prend soin de la génération nouvelle.[2] Le détail compte : la mort marine et l'assistance au nid sont attestées dans la description d'un témoin matériel, et ne résultent pas seulement des compilations fantastiques récentes.",
+        "La version synthétisée par Medieval Bestiary ordonne le cycle avec une grande netteté. À soixante ans, la femelle pond deux œufs ; l'incubation dure soixante jours. L'éclosion entraîne le départ des parents, suivis d'autres oiseaux, puis leur noyade volontaire.[1] Le retour des accompagnateurs vers le nid achève l'histoire. On peut y lire une méditation sur la succession et la charge des survivants ; cette lecture reste une interprétation du récit, plutôt qu'une allégorie particulière que les sources consultées imposeraient.",
+        "Le rapprochement avec le phénix vient naturellement et apparaît dans la source spécialisée : la rareté extrême, le renouvellement et la mort rapprochent les deux oiseaux.[1] Mais l'alérion possède une histoire familiale. Des œufs donnent des descendants, les adultes disparaissent, et d'autres êtres assurent la continuité. Le lecteur suit ainsi une succession de générations, avec une séparation irréversible entre ceux qui meurent et ceux qui grandissent."
+      ],
+      "anomalies": [
+        "Son anatomie merveilleuse se concentre dans les ailes. Leur tranchant de rasoir transforme l'organe du vol en arme, tandis que la couleur de feu rend la silhouette immédiatement reconnaissable.[1] Rien, dans cette description, n'oblige à imaginer des flammes véritables ou un pouvoir d'incendie. Le plumage peut évoquer une braise sans brûler ; cette distinction garde au texte sa précision et évite de prêter à l'oiseau les propriétés de tous les êtres ignés.",
+        "Le contraste le plus surprenant oppose les ailes dangereuses à la vulnérabilité finale. Cet oiseau domine les autres, mais il entre dans l'eau pour y mourir. Le récit donne une conduite, sans expliquer un mécanisme physique particulier de noyade.[1] Sa singularité tient aussi au nombre : le couple est unique, puis les deux petits prennent sa place. L'expression d'unicité décrit donc surtout le maintien d'une seule lignée souveraine, avec le bref passage où parents et descendants se rencontrent.",
+        "L'alérion héraldique possède une autre anatomie. Le Dictionnaire de l'Académie française le définit comme une petite aigle figurée sans bec ni pattes, avec les ailes abaissées.[8] Cette forme graphique doit être distinguée de l'oiseau du bestiaire, plus grand qu'un aigle et pourvu d'ailes coupantes. L'absence de bec appartient au vocabulaire du blason ; elle ne permet pas de déduire comment le souverain fabuleux se nourrirait."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle de l'alérion suit ici le cycle transmis par le bestiaire. Ses données précises concernent surtout la naissance et la mort ; sa nourriture et la géographie exacte de son séjour restent hors du récit.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'alérion règne sur les autres oiseaux, qui manifestent cette prééminence par une escorte et par leurs soins aux jeunes.[1] Son comportement connu tient à un départ réglé : les adultes quittent le nid après l'éclosion et gagnent ensemble la mer. La troupe qui les accompagne revient ensuite vers les petits. La souveraineté prend ainsi la forme d'un ensemble de relations, davantage que celle d'une chasse ou d'un territoire défendu."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le nid et la mer constituent les deux lieux nécessaires du récit. L'un abrite la relève, l'autre reçoit les adultes. La parenté signalée avec certaines versions de la Lettre du Prêtre Jean inscrit le motif dans l'imaginaire des merveilles de l'Orient, sans fournir une aire de répartition zoologique.[1] Une montagne précise, une île nommée ou un climat déterminé ajouteraient une carte que cette documentation ne dessine pas."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La nourriture apparaît indirectement par l'assistance des autres oiseaux aux jeunes alérions, entretenus jusqu'à ce qu'ils sachent voler.[1] Ce soin implique une dépendance prolongée du nid, mais le menu demeure indéterminé. La ressemblance avec l'aigle rend une alimentation carnée imaginable ; elle reste une déduction, insuffisante pour transformer l'alérion en chasseur de telle proie. Le bestiaire s'attache au devoir des nourriciers plutôt qu'au contenu de leur bec."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le départ coordonné des parents et le retour des accompagnateurs donnent au monde des oiseaux une conduite ordonnée.[1] Aucun dialogue n'est nécessaire pour rendre cette organisation intelligible. On peut observer dans le récit une reconnaissance du couple et une continuité des soins, sans leur attribuer des institutions humaines détaillées. Les autres oiseaux savent où revenir ; les petits sont attendus comme les futurs occupants de la place laissée vide."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Deux œufs, pondus lorsque la femelle atteint soixante ans, éclosent après soixante jours dans la version résumée par Medieval Bestiary.[1] Cette précision numérique contraste avec le silence sur l'accouplement et la croissance ultérieure. La reproduction commande toute la destinée des adultes : ils partent dès que les petits sont nés. L'élevage change alors de responsables, passant des parents disparus à la communauté des oiseaux jusqu'à l'apprentissage du vol."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le cycle décrit ne donne aucun chasseur à l'alérion. Sa mort vient de son propre plongeon, non d'une défaite contre une créature plus forte.[1] Les ailes tranchantes et la supériorité sur les oiseaux composent une puissance armée ; elles ne sauvent pourtant pas les parents du terme fixé par la naissance. La fragilité se déplace vers les petits, dont la survie repose sur la présence des nourriciers."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le mot a conservé plusieurs vies. L'Académie française relève au XIIe siècle le sens de « grande espèce d'aigle » et donne une origine dans un ancien bas francique reconstruit, adhalarjo.[8] Le sens héraldique actuel, celui d'une petite aigle privée de bec et de pattes, réduit donc une ancienne grandeur à un signe compact. Le même nom peut appeler un oiseau souverain dans une page de merveilles et une figure strictement conventionnelle dans des armoiries.",
+        "Les variantes Aleiron, Aleryous, Avelerion et Ilerion recensées par Medieval Bestiary rappellent la mobilité du nom dans sa transmission.[1] Elles invitent à reconnaître un motif au-delà d'une graphie unique. Le manuscrit décrit par Sotheby's, avec ses miniatures animales encadrées et ses chapitres français, offre pour sa part un objet concret où cette tradition a vécu.[2] Derrière le grand oiseau couleur de feu demeurent des feuillets, des copistes et des images : les supports modestes d'une espèce qui ne devait jamais compter plus d'un couple régnant."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Medieval Bestiary — Alerion",
+        "url": "https://bestiary.ca/beasts/beast4798.htm"
+      },
+      {
+        "id": 2,
+        "title": "Sotheby's — Bestiary attributed to Pierre de Beauvais, lot 53",
+        "url": "https://www.sothebys.com/en/auctions/ecatalogue/2007/western-and-oriental-manuscripts-l07241/lot.53.html"
+      },
+      {
+        "id": 8,
+        "title": "Dictionnaire de l'Académie française — alérion",
+        "url": "https://www.dictionnaire-academie.fr/article/A9A1130"
+      }
+    ]
+  },
+  "alp": {
+    "description": "Une porte verrouillée laisse encore passer l'Alp : il lui suffit d'un trou de serrure pour venir peser sur la poitrine du dormeur.",
+    "sections": {
+      "fascination": [
+        "La chambre est fermée, mais quelque chose y entre. Le dormeur voudrait appeler ; sa voix ne vient pas. L'Alp se reconnaît à cette oppression qui immobilise le corps et fait du lit un lieu d'impuissance. Dans les traditions allemandes réunies par D. L. Ashliman, l'être nocturne peut se glisser par les ouvertures les plus étroites et peser sur une poitrine jusqu'à empêcher la respiration.[5] Le danger possède la taille d'une fissure et le poids d'un corps impossible à soulever.",
+        "Il arrive pourtant que ce visiteur doive revenir au matin pour boire un café. Cette brusque familiarité appartient aussi au folklore : à Zwickau, selon le recueil de Köhler, l'invitation suffit à le faire partir.[5] L'adversaire qui dominait le sommeil devient un hôte attendu. Une phrase prononcée au bon moment transporte la rencontre dans la journée, parmi les tasses et les visages reconnaissables, là où la victime retrouve une prise sur ce qui l'effrayait."
+      ],
+      "legendes": [
+        "Les frères Grimm consacrent une entrée de leurs Deutsche Sagen de 1816 à l'Alp. Dans la traduction présentée par Ashliman, ils réunissent des observations et des moyens de défense plutôt qu'une aventure unique : trous dans les murs, chevaux épuisés, cheveux noués et visiteurs qui prennent parfois la forme d'un petit papillon blanc.[5] Ce dossier composite permet de mesurer l'étendue du motif sans supposer que chaque localité lui prêtait tous ces attributs.",
+        "L'un de ces récits suit un Alp en déplacement. Des gardiens de troupeaux le voient traverser une étendue d'eau dans une barque, avec une rame qu'il apporte lui-même. Il attache soigneusement l'embarcation sur l'autre rive, puis revient plus tard. Les hommes finissent par la déplacer. L'Alp proteste avec tant de véhémence et de menaces qu'ils la remettent à sa place.[5] L'esprit capable de franchir un mur par un trou possède ici des contraintes de voyage très matérielles.",
+        "Le Sagenbuch des Erzgebirges de Johann August Ernst Köhler, publié en 1886, rapporte le cas d'une jeune fille visitée par le trou de la serrure. Incapable de crier pendant l'attaque, elle demande à sa sœur de l'appeler par son nom durant la nuit ; l'Alp reprend alors son passage et s'en va.[5] L'aide vient d'une personne éveillée. Ce détail donne au récit une dimension domestique précise : le sommeil d'un membre de la maison devient l'affaire d'un autre.",
+        "Bernhard Baader recueille à Bühl une histoire plus violente, publiée en 1851. Un artisan du bois attend son visiteur, bouche l'ouverture après l'entrée d'un chat et immobilise l'animal en clouant une patte. Au matin, une femme se trouve à sa place, une main retenue. Il l'épouse ; elle donne naissance à trois enfants. Lorsqu'il rouvre un jour le trou par lequel elle était entrée, elle redevient chat et s'enfuit.[5] Le mariage naît ici d'une captivité. La disparition finale rétablit le passage que l'homme avait condamné.",
+        "Alp, Mahr, Mara et plusieurs formes dialectales se voisinent dans ces recueils. Ashliman les rapproche comme désignations d'êtres qui oppressent les dormeurs, tout en conservant les provenances des récits.[5] Les frontières varient selon les lieux et les collecteurs. Une division rigide entre un Alp toujours masculin et une Mara toujours féminine rendrait mal compte de l'Alp de Bühl, dont la forme humaine est celle d'une femme."
+      ],
+      "anomalies": [
+        "La matière de l'Alp obéit à une logique de passage. Chez les Grimm, il peut entrer par un trou minuscule, mais reste prisonnier si l'on bouche cette même ouverture, même lorsque les portes sont ensuite ouvertes.[5] La largeur disponible importe moins que le chemin emprunté. C'est une règle narrative très concrète : retrouver l'entrée permet de transformer une intrusion subie en capture, sans qu'il soit nécessaire de vaincre l'être par la force.",
+        "Ses apparences changent aussi les proportions. Un chat dans le récit de Baader, un petit papillon blanc dans une croyance rapportée par les Grimm : ces formes légères produisent une oppression disproportionnée.[5] Le corps visible ne mesure pas la puissance ressentie. La littérature secondaire décrit également le rapprochement entre ces attaques et la paralysie du sommeil.[3] Cette lecture contemporaine éclaire certains symptômes ; elle ne constitue ni un diagnostic rétrospectif de chaque témoignage ni une preuve de la créature.",
+        "L'Alp peut être lié à une personne. Les Grimm rapportent la croyance qu'un individu envoie le visiteur par sa pensée, notamment vers quelqu'un qu'il déteste ; d'autres traditions font apparaître une connaissance lorsqu'on nomme l'agresseur.[5] Ces récits transportent les conflits du voisinage jusque dans le sommeil. Ils témoignent aussi du risque d'accuser un être humain sur la foi d'un cauchemar, d'une particularité physique ou d'une réputation."
+      ],
+      "naturelle": {
+        "lead": "L'Alp appartient aux récits de visitation nocturne. Son histoire naturelle décrit les gestes, passages et relations que les collectes lui attribuent, en gardant séparées les variantes locales plutôt qu'en construisant une espèce uniforme.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Il revient parfois plusieurs nuits auprès du même dormeur, comme dans l'histoire de Bühl. La répétition permet à la victime d'organiser une veille et de chercher un complice.[5] D'autres attaques touchent les animaux : les Grimm attribuent à l'Alp les chevauchées qui laissent les chevaux épuisés au matin, et Köhler rapporte qu'on lui imputait certaines morts de petits animaux.[5] L'agitation nocturne laisse ainsi ses indices dans la chambre comme dans les bâtiments d'élevage."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les lieux les mieux décrits sont les maisons qu'il visite : atelier où l'on dort, pièce partagée, porte percée ou mur fissuré. Son propre domicile demeure à distance. Les Alps capturés chez les Grimm se plaignent d'avoir laissé chez eux de petits enfants qui périront s'ils ne reviennent pas.[5] Ce foyer évoqué hors scène leur prête des obligations ordinaires, tandis que la traversée en barque montre que leur ronde peut demander un véritable trajet."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les textes de la collecte consultée insistent sur l'épuisement et l'oppression plutôt que sur un repas arraché à la victime. L'invitation à boire, ou à prendre le café dans la variante de Zwickau, appartient au moyen de rompre l'attaque.[5] Elle introduit un échange hospitalier dans une relation jusque-là violente. L'Alp entre ainsi dans l'univers de la nourriture humaine par une promesse de rencontre, sans qu'on puisse en tirer un régime biologique général."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Il comprend une proposition, proteste lorsqu'on lui enlève une barque et peut promettre de ne plus troubler une maison en échange de sa libération.[5] Cette aptitude à négocier est essentielle : la personne oppressée cherche moins à le détruire qu'à obtenir son départ. L'Alp connaît également les objets défensifs. Les Grimm avertissent qu'il peut retourner un peigne à lin placé sur le corps et diriger ses dents contre le dormeur, déjouant ainsi une protection mal choisie.[5]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les petits enfants invoqués par les captifs et les trois enfants de la femme-chat de Bühl donnent une place à la parenté dans ces histoires.[5] Ils ne dessinent pas un cycle de reproduction commun. Dans le second récit, les naissances prolongent une vie humaine après la capture, jusqu'à la réouverture du passage. La femme part alors seule ; le texte s'attache à sa fuite, laissant le devenir de la famille hors champ."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Ses adversaires sont surtout les habitants qui identifient l'ouverture, veillent auprès du lit ou prononcent les paroles libératrices. Les traditions recueillies proposent aussi des gestes et des objets protecteurs, dont la disposition des chaussures ou la présence d'acier.[5] Ces pratiques sont des témoignages de croyance, non des traitements médicaux. Leur diversité montre combien les moyens de défense restent locaux : même les objets censés protéger peuvent devenir dangereux dans une autre version."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le nom survit dans les mots allemands Alptraum, rêve d'Alp, et Alpdruck, pression d'Alp. Ashliman rappelle sa parenté étymologique avec elf et distingue la mare du mot anglais nightmare d'une jument : le terme renvoie à l'être oppresseur.[5] La langue conserve ainsi une présence sur la poitrine là où l'usage moderne ne désigne souvent plus qu'un mauvais rêve.",
+        "Les protections racontent aussi la vie matérielle des maisons. Une serrure, des chaussures au pied du lit, un outil de préparation du lin deviennent les points d'appui d'une lutte contre l'invisible. Un charme westphalien recueilli par Adalbert Kuhn appelle explicitement le Père, le Fils et le Saint-Esprit, tout en imposant au visiteur des tâches interminables.[5] La prière chrétienne et la ruse domestique coexistent dans ces témoignages. Elles rendent au dormeur une action possible, si réduite soit-elle, au moment où son propre corps semble lui refuser tout secours."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Wikipedia — Alp (folklore), synthèse et rapprochement avec la paralysie du sommeil",
+        "url": "https://en.wikipedia.org/wiki/Alp_(folklore)"
+      },
+      {
+        "id": 5,
+        "title": "D. L. Ashliman — Night-Mares, traductions de Grimm, Köhler, Baader et autres collecteurs",
+        "url": "https://sites.pitt.edu/~dash/nightmare.html"
+      }
+    ]
+  },
+  "amarok": {
+    "description": "L'Amarok peut emporter un renne entre ses mâchoires, arracher une âme à distance ou apprendre à un enfant humilié la force qui lui manque.",
+    "sections": {
+      "fascination": [
+        "Un grand animal revient avec un renne entier dans la gueule. Ses petits ont disparu. L'homme qui les a tués se croit à l'abri dans une caverne, mais l'Amarok descend vers un lac et en retire quelque chose qui ressemble à un être humain. Au même instant, le meurtrier s'effondre : l'animal a saisi son âme.[6] Cette scène donne à la puissance du loup une portée qui dépasse la morsure. La roche cache le corps, tandis que la vie reste exposée ailleurs.",
+        "Un autre récit place devant l'Amarok un enfant maltraité, incapable de grandir. L'animal l'entoure de sa queue et le jette au sol ; de petits os tombent du garçon. Ce qui semblait une attaque devient le commencement d'un apprentissage.[7] L'Amarok peut donc rencontrer un humain autrement qu'en prédateur. Sa force punit une violence dans un conte et répond à une faiblesse dans l'autre, sans que ces deux relations se réduisent à un caractère moral unique."
+      ],
+      "legendes": [
+        "Les récits présentés ici viennent de Tales and Traditions of the Eskimo, recueil de Hinrich Rink transmis par l'Internet Sacred Text Archive. Le titre historique emploie une désignation aujourd'hui discutée ; il reste celui du document cité. La matière racontée appartient à des traditions inuit, notamment groenlandaises, et le livre la transmet à travers la sélection, la traduction et les commentaires d'un collecteur.[6][7] Ce cadre distingue les récits localisés d'un portrait prétendument commun à toutes les populations arctiques.",
+        "Le conte intitulé The Amarok situe l'action au fjord de Nook, également nommé Godthaab dans le texte. Un homme endeuillé cherche une excitation assez forte pour l'arracher à sa douleur. Il entend qu'un Amarok a été signalé et part à sa rencontre avec un parent. Les deux hommes trouvent les petits en l'absence de l'adulte. L'homme en deuil les tue tous ; son compagnon, épouvanté, se réfugie dans une caverne, où l'autre le rejoint.[6] Le récit fait donc commencer la violence chez l'humain.",
+        "L'adulte revient en portant un renne entier, cherche sa progéniture, puis se dirige vers le lac. Le compagnon observe la forme humaine tirée de l'eau et voit aussitôt le meurtrier tomber près de lui. La conclusion explique que l'Amarok, auquel rien ne reste caché, lui a enlevé son âme.[6] L'attaque s'accomplit sans poursuite dans la caverne. Celui qui a épargné les petits demeure le témoin d'une mort qu'un refuge physique n'a pu empêcher.",
+        "Kagsagsuk développe une tout autre rencontre. Rink précise avoir composé sa version à partir de neuf copies provenant du Groenland et du Labrador.[7] Le jeune orphelin subit la cruauté de son entourage : il dort parmi les chiens, reçoit les restes sans couteau et endure coups et humiliations. Sa mère nourricière lui apprend comment chercher la force. Seul entre les montagnes, il appelle un seigneur de la force ; un grand animal ayant la forme d'un Amarok lui apparaît.[7]",
+        "La bête enroule sa queue autour de lui et le renverse plusieurs fois. De petits os de phoque, semblables à des jouets, tombent de son corps ; l'Amarok explique qu'ils empêchaient sa croissance. Les rencontres se répètent jusqu'à ce que l'enfant résiste. Son maître lui annonce alors qu'il pourra tuer trois grands ours quand viendra le moment voulu.[7] La force arrive par étapes, après une extraction merveilleuse puis un entraînement, et le garçon doit encore la dissimuler à son entourage.",
+        "La suite de Kagsagsuk est dure. Après avoir vaincu les ours, l'ancien enfant humilié retourne sa puissance contre ceux qui l'ont maltraité et tue les habitants de la maison, épargnant les pauvres qui avaient été bons envers lui.[7] Réduire le conte à l'histoire rassurante d'un loup guérisseur effacerait cette vengeance. L'Amarok rend possible le renversement de la situation ; le récit laisse ensuite voir ce que devient une force immense entre les mains d'un être longtemps soumis à la cruauté."
+      ],
+      "anomalies": [
+        "Le renne porté entier mesure la puissance de l'animal par un geste plutôt que par une hauteur chiffrée.[6] Le conte ne donne pas de taille précise, de pelage consacré ni d'yeux lumineux. Dans Kagsagsuk, la queue devient un organe de préhension capable d'enserrer et de projeter un enfant.[7] Ces deux détails appartiennent à des scènes différentes : ensemble, ils montrent une force prodigieuse, sans constituer une fiche anatomique complète.",
+        "La prise de l'âme introduit une autre relation entre le corps et l'espace. L'homme se tient dans la caverne ; une forme humaine peut pourtant être tirée du lac, et sa chute coïncide avec ce geste.[6] Le texte explique l'effet, mais ne propose pas une théorie générale du séjour des âmes dans l'eau. La scène garde sa précision inquiétante : l'Amarok découvre ce que la cachette dissimule, puis agit sur une présence que son adversaire ne maîtrise pas.",
+        "Dans le récit de l'orphelin, les os retirés du corps rendent visible l'obstacle à la croissance. Le commentaire de l'animal leur attribue directement ce rôle.[7] Ils appartiennent à la logique merveilleuse du conte, et non à une maladie identifiable à distance. La guérison et l'apprentissage se suivent : Kagsagsuk se sent d'abord plus léger, puis acquiert, au fil des rencontres, une vigueur que l'Amarok lui-même ne peut plus faire céder."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle reste attachée aux deux récits de Rink consultés. L'Amarok y apparaît comme un animal puissant et comme un interlocuteur surnaturel ; les traditions inuit concernées conservent leur portée propre, au-delà des classifications d'un bestiaire.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'adulte du conte du fjord cherche ses petits dès son retour, puis frappe l'homme responsable de leur mort.[6] Celui de Kagsagsuk répond à un appel, parle au garçon et règle la progression de ses épreuves.[7] Dans les deux cas, son action répond à une relation précise. Le portrait souvent répété d'un loup qui dévore automatiquement tout chasseur solitaire laisse de côté cette diversité, particulièrement le rôle formateur de la seconde histoire."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le fjord, l'intérieur des terres, une caverne et un lac composent le paysage du premier conte.[6] Pour Kagsagsuk, le lieu de rencontre se trouve entre de hautes montagnes, à l'écart des hommes qui l'humilient.[7] Cet éloignement permet une relation secrète avec la puissance animale. Le village reste proche dans les conséquences : le garçon y retourne chaque jour, y cache sa vigueur et y accomplira finalement les actes annoncés."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le renne transporté dans les mâchoires fournit une indication alimentaire concrète.[6] Son arrivée auprès des petits situe cette prise dans un contexte familial, même si le texte ne raconte pas le repas qui aurait suivi. L'épisode de l'âme relève d'un acte mortel distinct : le récit dit qu'elle est retirée, sans décrire sa consommation. Il convient donc de conserver séparés le gibier rapporté et le pouvoir exercé sur l'homme."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'Amarok formateur diagnostique l'obstacle merveilleux à la croissance, explique ce qu'il fait et invite Kagsagsuk à revenir. Il conseille ensuite au garçon de maintenir ses anciennes habitudes jusqu'au moment de révéler sa puissance.[7] Sa connaissance porte à la fois sur le corps et sur la conduite humaine. Dans The Amarok, la découverte du meurtrier malgré sa cachette étend cette faculté au-delà de la perception ordinaire.[6]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La présence de petits est essentielle au récit du fjord, puisqu'elle motive le crime puis la réaction de l'adulte.[6] Elle suffit à montrer une parenté animale, sans renseigner sur la gestation, la saison des naissances ou le nombre habituel de jeunes. Le texte anglais consulté parle de l'adulte sans fixer explicitement son sexe. L'image fréquemment reprise d'une mère vengeresse constitue donc une précision supplémentaire, que ce passage seul ne permet pas d'imposer."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les jeunes sont tués par un humain tandis que l'adulte est absent.[6] Le danger attesté pour la famille vient ainsi d'un geste de violence opportuniste. Les deux contes retenus ne mettent aucun animal au-dessus de l'Amarok dans une chaîne de prédation. Les ours affrontés par Kagsagsuk mesurent la force acquise par l'enfant ; ils ne sont pas présentés comme des ennemis habituels de son maître.[7]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Rink accompagne l'apparition dans Kagsagsuk d'une précision lexicale : il présente l'Amarok comme un animal désormais fabuleux, originellement un loup.[7] Cette remarque de collecteur doit rester située, plutôt que devenir une étymologie universelle valable pour toutes les langues inuit. La graphie Amarok est conservée ici parce qu'elle est celle du récit consulté ; les variations contemporaines de transcription n'autorisent pas à fusionner toutes les figures qui portent un nom voisin.",
+        "La note finale de Kagsagsuk rapporte que plusieurs lieux du Groenland montraient des ruines associées au héros. Elle transmet aussi la remarque ironique d'un narrateur sur le goût des Européens pour les curiosités : s'ils croyaient vraiment au récit, pourquoi les grands collectionneurs n'emportaient-ils pas une pierre de son prétendu piège à ours ?[7] Cette voix rappelle que les personnes qui transmettaient ces histoires observaient aussi leurs auditeurs. L'Amarok nous arrive par des livres, mais autour de sa puissance se tiennent des conteurs, des lieux revendiqués et des regards capables de répondre à ceux qui les interrogent."
+      ]
+    },
+    "sources": [
+      {
+        "id": 6,
+        "title": "Hinrich Rink — Tales and Traditions of the Eskimo, 132. The Amarok",
+        "url": "https://sacred-texts.com/nam/inu/tte/tte2-132.htm"
+      },
+      {
+        "id": 7,
+        "title": "Hinrich Rink — Tales and Traditions of the Eskimo, 1. Kagsagsuk",
+        "url": "https://sacred-texts.com/nam/inu/tte/tte2-001.htm"
+      }
+    ]
+  },
+  "amphiptere": {
+    "description": "Deux ailes prennent appui sur un corps de serpent : l'amphiptère emporte dans l'air toute la souplesse des bêtes rampantes.",
+    "sections": {
+      "fascination": [
+        "L'amphiptère se reconnaît d'abord à ce qui porte son poids. Un serpent ordinaire épouse le terrain ; celui-ci ouvre des ailes. La ligne du dos se prolonge jusqu'à la queue sans rencontrer de pattes, et le déploiement latéral transforme cette longueur sinueuse en silhouette aérienne. Dans le vocabulaire héraldique européen, le nom désigne précisément un serpent ailé.[1] Le dessin suffit à faire imaginer un mouvement : les replis que l'on suivait sur le sol semblent se poursuivre dans le vent.",
+        "Cette forme possède une élégance particulière parmi les dragons. La masse du quadrupède a disparu ; restent une tête, une longue courbe et l'envergure. Sur un écu, le corps peut s'enrouler tandis que les ailes occupent les espaces laissés libres. L'impression de légèreté naît de cet équilibre graphique. Elle ne permet pourtant de déduire ni la taille de l'animal, ni sa douceur : le serpent conserve sa gueule, même lorsque les ailes lui donnent l'allure d'un ornement."
+      ],
+      "legendes": [
+        "L'amphiptère figure dans les armoiries européennes ; les récits antiques décrivent, bien plus tôt, d'autres serpents ailés. Les armes de la famille Potier et les supports associés aux ducs de Tresmes et de Gesvres offrent des exemples de cette silhouette héraldique.[1]",
+        "Bien avant ce vocabulaire héraldique, Hérodote raconte une enquête sur les serpents ailés. Au livre II des Histoires, il dit s'être rendu dans un lieu d'Arabie voisin de Bouto, où un passage montagneux débouche sur une plaine. Il y voit des amas d'ossements et de colonnes vertébrales. L'explication lui vient des habitants : au printemps, les serpents voleraient vers l'Égypte, mais des ibis leur barreraient la route et les tueraient.[6] Le détail est précieux : Hérodote rapporte avoir vu des restes, tandis que le vol et le combat lui sont racontés.",
+        "Au livre III, les mêmes merveilles entrent dans l'économie des aromates. De petits serpents ailés, diversement colorés et nombreux autour de chaque arbre, garderaient les arbres à encens d'Arabie. Les récolteurs brûleraient du styrax pour les chasser avec la fumée, puis recueilleraient la précieuse matière.[6] L'image possède une précision presque pratique : l'arbre convoité, les gardiens suspendus autour de lui, la fumée qui rend momentanément l'approche possible. Le récit explique la difficulté d'obtenir un produit venu de loin.",
+        "Élien reprend la défense de l'Égypte par l'ibis noir. Il transmet aussi, sous l'autorité de Mégasthène, une autre histoire située en Inde : des serpents ailés sortiraient la nuit et leur urine provoquerait des plaies sur les corps qu'elle atteint.[6] Ce second tableau appartient à un autre lieu et à une autre chaîne de témoignages. Le réunir aux gardiens de l'encens pour fabriquer les habitudes d'une espèce unique effacerait ce que les récits ont de particulier. L'amphiptère héraldique permet de reconnaître une silhouette commune, pas de confondre ces traditions."
+      ],
+      "anomalies": [
+        "L'union du serpent et de l'aile pose un problème visible : aucun membre ne soutient la créature au repos. L'image peut résoudre cette difficulté en enroulant la queue ou en courbant tout le corps. Ce sont des possibilités de dessin, non des observations de locomotion. La notice encyclopédique moderne rassemble plusieurs formes d'ailes et de revêtements, mais signale elle-même l'absence de références pour une partie de ces descriptions.[1] Une couleur obligatoire ou un plumage universel seraient donc des précisions trompeuses.",
+        "Les témoignages antiques donnent surtout des pouvoirs dangereux et des moyens de les contenir. Chez Hérodote, la fumée de styrax éloigne les gardiens des arbres ; les ibis arrêtent leur passage vers l'Égypte.[6] Le merveilleux admet ici des limites matérielles. Un oiseau et une substance odorante suffisent là où l'on attendrait une arme héroïque. Le serpent ailé conserve ainsi une place dans les gestes humains de récolte et dans les affrontements entre animaux, même si l'histoire racontée relève de la zoologie merveilleuse."
+      ],
+      "naturelle": {
+        "lead": "L'amphiptère des armoiries possède une forme, mais aucune écologie commune attestée. Les observations suivantes distinguent donc la figure héraldique des serpents ailés décrits par Hérodote et Élien, dont les récits fournissent des conduites et des lieux précis.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Chez Hérodote, le serpent ailé apparaît tantôt en rassemblements autour des arbres, tantôt dans un déplacement saisonnier vers l'Égypte.[6] Ces deux scènes donnent une bête abondante, capable d'occuper un lieu ou de suivre un passage. Le gardien de l'encens réagit à la fumée ; son retrait permet une récolte. Le dessin héraldique retient de lui la courbe du serpent et le déploiement des ailes."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "L'Arabie des Histoires est une terre lointaine d'aromates ; le défilé conduisant vers la plaine égyptienne forme une frontière où s'accumulent les restes des envahisseurs.[6] Arbres et passage montagneux jouent des rôles différents : les premiers abritent une ressource, le second concentre une migration supposée. Le récit indien rapporté par Élien élargit la géographie des serpents volants, mais concerne une apparition nocturne distincte. Aucun de ces lieux ne constitue une aire de répartition scientifiquement établie."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Hérodote entoure les arbres à encens de serpents ailés ; il raconte comment la fumée les disperse, mais ne décrit pas leurs repas.[6] Autour de l'arbre, ils restent les gardiens d'une richesse que les hommes viennent récolter."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La garde des arbres peut évoquer une surveillance intentionnelle. Le passage d'Hérodote ne donne cependant ni parole aux serpents ni pacte avec un maître du lieu.[6] Leur résistance suffit à expliquer pourquoi l'encens se récolte difficilement. Sur les armoiries, une posture vigilante appartient au langage de l'image ; elle n'établit pas une psychologie animale. L'amphiptère reste particulièrement ouvert à l'interprétation parce que sa silhouette exprime la tension et le mouvement avec très peu de traits."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Hérodote attribue aux vipères et aux serpents ailés d'Arabie une génération meurtrière : la femelle tue le mâle pendant l'accouplement, puis les petits déchirent le corps maternel pour sortir.[6] L'auteur présente cette destruction des parents comme une limitation providentielle du nombre d'animaux dangereux. Il s'agit d'une explication antique de l'équilibre du vivant, chargée d'une logique de vengeance familiale, et non d'une donnée à appliquer aux reptiles réels ou à toutes les images d'amphiptères."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "L'ibis est l'adversaire nommé avec le plus de netteté. Selon le témoignage rapporté par Hérodote, il attend les serpents au passage et les tue avant leur entrée en Égypte ; Élien reprend ce rôle protecteur en précisant l'ibis noir.[6] L'oiseau défend ainsi une terre entière dans l'explication traditionnelle. La fumée des récolteurs représente une autre contrainte, mais elle chasse les gardiens sans être présentée comme une prédation. Ces moyens d'action appartiennent aux récits antiques concernés."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le nom est expliqué par l'idée de deux ailes dans la synthèse moderne ; ses graphies voisines comprennent notamment amphithere et amphitere.[1] Ce voisinage lexical favorise aujourd'hui le classement de dragons très divers sous une même étiquette. La figure héraldique demeure le repère le plus simple : un serpent muni d'ailes. Une ressemblance avec un serpent emplumé d'une autre culture ne prouve ni identité religieuse ni filiation historique.",
+        "La postérité récente transforme parfois cette forme en espèce de naturaliste imaginaire. La série Dragonology, citée dans l'encyclopédie, emploie ainsi l'amphithère dans sa fiction de dragons réels et le rapproche des récits de Quetzalcóatl.[1] Ce rapprochement appartient au dispositif de ces livres. L'amphiptère conserve ailleurs une existence plus ancienne et plus sobre, dans les armoiries : une courbe entre deux ailes, assez précise pour être reconnue, assez libre pour varier avec la main qui la trace."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Amphiptere — synthèse encyclopédique et références héraldiques",
+        "url": "https://en.wikipedia.org/wiki/Amphiptere"
+      },
+      {
+        "id": 6,
+        "title": "Theoi — Ophis Pterotos : extraits d'Hérodote et d'Élien",
+        "url": "https://www.theoi.com/Thaumasios/OphiesPteretoi.html"
+      }
+    ]
+  },
+  "amphisbene": {
+    "description": "Une tête à chaque extrémité : devant l'amphisbène, le recul lui-même peut devenir une attaque.",
+    "sections": {
+      "fascination": [
+        "Il suffit d'attendre que le serpent se détourne pour comprendre l'erreur. À l'endroit où devrait traîner sa queue, une seconde tête regarde. L'amphisbène des textes gréco-romains possède une gueule à chaque bout du corps.[2] La peur vient moins d'une taille extraordinaire que de cette extrémité devenue active : contourner l'animal ne permet plus d'atteindre un arrière inoffensif. Le regard cherche un commencement, puis découvre qu'il en existe deux.",
+        "La symétrie trouble aussi la notion de départ. Un serpent ordinaire désigne sa route avec la tête ; chez l'amphisbène, le sens peut s'inverser sans demi-tour. Élien décrit précisément cette alternance.[2] Le corps conserve sa longueur et ses ondulations, mais change la fonction de ses extrémités. Cette économie de moyens donne à la créature une étrangeté durable : aucun membre nouveau, aucune masse spectaculaire, seulement une seconde bouche qui bouleverse toute l'organisation du vivant."
+      ],
+      "legendes": [
+        "L'amphisbène apparaît déjà dans l'Agamemnon d'Eschyle. Au moment où Cassandre cherche les mots capables de dire la violence de Clytemnestre, elle évoque ce monstre, puis Scylla.[2] L'animal appartient donc à un répertoire assez parlant pour devenir une comparaison tragique. La référence vise une menace humaine, au cœur du palais et du mariage. Elle ne raconte pas une chasse à l'amphisbène : sa force est celle d'un nom capable de rendre la meurtrière soudain étrangère à l'humanité.",
+        "Pline l'Ancien, dans le livre VIII de l'Histoire naturelle, présente sa double tête avec une ironie amère : une seule bouche à venin aurait dû suffire.[2] La seconde gueule devient un excès de la nature. Cette remarque importe autant que l'anatomie, car elle montre comment l'encyclopédiste organise le merveilleux. La créature n'est pas isolée dans un monde de conte ; elle entre dans une enquête sur les animaux, où le danger et l'étonnement se mêlent à la description.",
+        "Élien précise le mouvement au livre IX de son traité Sur les animaux : lorsque l'amphisbène avance, une tête sert de tête et l'autre occupe la place de la queue ; lorsqu'elle repart dans l'autre sens, les rôles s'échangent.[2] Ailleurs, il rapporte une affirmation de Nicandre selon laquelle la dépouille de l'animal, enroulée autour d'un bâton de marche, éloignerait serpents et autres bêtes dangereuses. La créature devient alors une ressource protectrice pour le voyageur, par l'intermédiaire de sa peau abandonnée.",
+        "Dans les Dionysiaques de Nonnos, la forme pénètre l'orfèvrerie divine. Le collier d'Harmonie ressemble à une amphisbène d'or : le dos s'articule, les cous se courbent, les deux têtes se rejoignent à l'avant de la poitrine. Le poète décrit les gueules et un aigle d'or associé au serpent.[2] Le bijou possède une souplesse presque inquiétante. La merveille tient au travail de la matière, qui paraît imiter un animal assez fidèlement pour en laisser pressentir le poison."
+      ],
+      "anomalies": [
+        "L'amphisbène antique ne porte pas deux têtes côte à côte, comme une fourche placée au sommet du cou. Elles occupent les deux extrémités du même axe corporel.[2] Cette distinction commande toute sa singularité. Un monstre à plusieurs cous peut continuer à posséder un arrière ; celui-ci en change à volonté. La description d'Élien organise une alternance fonctionnelle plutôt qu'un conflit permanent entre deux individus. Elle laisse intacte la question des organes intérieurs, qu'une image extérieure ne résout pas.",
+        "Le venin sort des deux bouches chez Pline et dans la comparaison développée par Nonnos.[2] Le danger est donc réparti aux deux bouts, mais cela ne suffit pas à établir deux estomacs, deux personnalités ou deux systèmes nerveux indépendants. La menace se décrit par ce qu'elle montre et par ce qu'elle peut infliger. Son corps oblige l'observateur à garder les deux extrémités dans son attention, même lorsque l'une paraît momentanément suivre l'autre.",
+        "Un rapprochement souvent trompeur concerne un animal décrit par Diodore de Sicile dans des îles merveilleuses. Petit et rond comme une tortue, il possède quatre yeux et quatre bouches associés à des marques diagonales ; ses aliments rejoignent un seul estomac et son sang peut recoller un membre récemment tranché.[2] Theoi le rapproche de l'amphisbène, mais la citation de Diodore décrit une autre construction corporelle. Chez Diodore, c'est le sang de cet animal à quatre bouches qui possède le pouvoir réparateur."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit le serpent des auteurs antiques. Leurs observations supposées, leurs comparaisons poétiques et leurs recettes merveilleuses sont conservées avec leurs attributions ; elles ne forment pas une zoologie expérimentale.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'alternance des directions est le comportement le mieux décrit. L'amphisbène choisit une extrémité conductrice, puis peut repartir par l'autre quand le mouvement l'exige.[2] Rien dans ce passage d'Élien ne la condamne à hésiter entre deux volontés adverses. Le prodige est au contraire l'aisance du changement. Au lieu de ramener laborieusement la tête vers l'arrière, tout le serpent redistribue son avant et son après ; la retraite demeure un mouvement mené par une bouche capable de mordre."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La synthèse de Theoi situe le serpent fabuleux en Libye, dans la géographie antique.[2] Cette indication appartient à une représentation ancienne des contrées africaines, et non à une carte de populations observées. Les extraits réunis le font surtout circuler entre tragédie, histoire naturelle et poésie. Le palais d'Agamemnon l'accueille comme comparaison, la poitrine d'Harmonie comme forme de collier : deux présences littéraires qui ne sont pas des habitats. Son territoire textuel est mieux documenté que sa tanière."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les deux gueules concentrent les remarques antiques sur l'émission du poison et le sens du déplacement.[2] Le dossier consulté ne décrit pas les proies du serpent. La mention d'un estomac unique chez Diodore concerne la petite créature insulaire à quatre bouches, pas l'amphisbène serpentine. Garder cette séparation permet de comprendre les textes sans remplir leurs silences avec une anatomie empruntée. Dans le portrait du serpent, les bouches se signalent d'abord comme armes et comme pôles du mouvement."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Élien lui attribue une adaptation immédiate à la direction nécessaire : une extrémité devient tête selon le besoin.[2] Cela décrit une coordination, sans mettre en scène de langage ni de raisonnement humain. Chez Eschyle, le nom du monstre contribue à qualifier une femme meurtrière ; la ruse de Clytemnestre demeure celle du personnage tragique. Elle ne se transforme pas pour autant en faculté zoologique de tous les amphisbènes. La comparaison poétique amplifie une menace, elle ne transmet pas un caractère héréditaire."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les passages antiques réunis ici suivent le mouvement, le venin et les usages de la dépouille, mais ne racontent pas la naissance des petits.[2] La mue évoquée par Élien atteste surtout une manière de penser la continuité de l'animal : après l'abandon de sa peau, quelque chose de sa puissance subsisterait dans cette enveloppe. La transmission la mieux visible est donc celle d'une protection supposée, du serpent au marcheur, par un objet que celui-ci porte sur son bâton."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le collier d'Harmonie décrit par Nonnos associe un aigle d'or aux deux têtes du serpent.[2] Cette confrontation appartient à un bijou poétique ; elle ne démontre pas que les aigles chassent habituellement l'amphisbène. Les textes cités mettent surtout l'animal face à l'homme, qui redoute ses deux bouches ou recherche sa dépouille protectrice. Le voyageur tenant le bâton décrit par Élien représente une relation différente de la chasse : il emporte avec lui un reste censé tenir les autres dangers à distance."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le grec amphisbaina est expliqué par l'idée de marcher dans les deux sens, à partir de amphi et bainô.[2] Le nom décrit donc un mouvement, alors que le regard moderne retient volontiers la seule multiplication des têtes. Cette précision rend à la créature son étrangeté propre : deux directions restent ouvertes à un seul corps. Les graphies latines amphisbaena et françaises amphisbène prolongent ce nom ancien sans constituer à elles seules des espèces différentes.",
+        "La page documentaire de Theoi reproduit une amphisbène issue du manuscrit Der Naturen Bloeme, daté de 1350 et conservé à la Bibliothèque nationale des Pays-Bas.[2] Cette présence montre la poursuite médiévale du motif. Entre le bâton enveloppé de peau, le collier décrit par Nonnos et la créature peinte dans un livre, l'amphisbène laisse surtout des objets et des images. Chaque support choisit ce qu'il conserve : une vertu protectrice, la souplesse d'une ligne d'or ou l'évidence dérangeante des deux gueules."
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "Theoi — Amphisbaena : Eschyle, Élien, Pline, Nonnos et Diodore",
+        "url": "https://www.theoi.com/Thaumasios/Amphisbainai.html"
+      }
+    ]
+  },
+  "ange": {
+    "description": "L'ange entre, prononce un nom et change le cours d'une vie ; parfois, il avait marché longtemps aux côtés de celui qui le découvre.",
+    "sections": {
+      "fascination": [
+        "Dans l'Évangile selon Luc, Zacharie voit l'ange debout à droite de l'autel de l'encens. La scène a un emplacement exact, une heure rituelle, une foule qui attend dehors. La peur saisit le prêtre avant que Gabriel lui annonce la naissance d'un fils.[7] L'apparition angélique dérange ainsi un ordre familier : le sanctuaire reste le sanctuaire, mais quelqu'un s'y tient qui parle avec une autorité venue d'ailleurs. La première merveille est cette présence.",
+        "L'ange peut aussi demeurer longtemps méconnu. Dans le livre de Tobie, un compagnon de voyage dont on cherche encore à fixer le salaire révèle qu'il est Raphaël, l'un des sept anges présents devant la gloire du Seigneur.[5] Les hommes tombent alors face contre terre. La rencontre réunit une proximité quotidienne et une distance soudaine : celui que l'on croyait pouvoir rémunérer appartenait à un autre ordre. L'étonnement porte sur tout le voyage rétrospectivement éclairé.",
+        "Les anges appartiennent à des traditions religieuses vivantes ; les présenter parmi les êtres merveilleux exige de respecter ce statut. Le portrait développé ici s'appuie principalement sur des textes bibliques et sur la doctrine catholique, avec un repère coranique distinct. Il ne prétend pas résumer toutes les conceptions juives, chrétiennes et musulmanes dans un même personnage ailé. Pour les croyants, ces figures concernent la relation de Dieu au monde et aux personnes, bien au-delà d'une silhouette familière."
+      ],
+      "legendes": [
+        "Gabriel apparaît deux fois dans le premier chapitre de Luc. À Zacharie, il annonce Jean ; envoyé ensuite à Nazareth, il s'adresse à Marie et annonce Jésus.[7] Les conversations ont leur rythme propre. Zacharie demande comment reconnaître l'accomplissement d'une promesse qui lui paraît contredire la vieillesse du couple ; il devient muet jusqu'à son accomplissement. Marie interroge le mode de la conception annoncée, puis consent. Dans les deux scènes, l'ange parle à une personne nommée et l'inscrit dans une histoire qui la dépasse.",
+        "Lorsqu'il révèle son identité, Raphaël raconte avoir présenté les prières de Tobith et de Sarra devant Dieu et avoir été envoyé pour guérir.[5] Son discours replace ses actes dans la volonté divine. Il exhorte les hommes à la prière juste, à l'aumône et à la célébration des œuvres de Dieu. La révélation de son identité ne cherche donc pas à détourner vers lui la reconnaissance des bénéficiaires ; elle réoriente cette reconnaissance vers celui qui l'a envoyé.",
+        "L'Apocalypse déploie une scène collective. Michel et ses anges combattent le Dragon et ses anges ; le Dragon est précipité sur la terre, puis le texte le nomme Diable et Satan.[4] Le vocabulaire de guerre appartient ici à une vision religieuse où se disent l'accusation, la persécution et la victoire. Les deux camps ne forment pas des espèces animales concurrentes. La chute transforme la situation du monde humain, puisque le Dragon poursuit ensuite la Femme et sa descendance.",
+        "Dans le Coran, le premier verset de la sourate Fâtir loue Dieu comme créateur des cieux et de la terre et présente les anges comme messagers pourvus d'ailes, par deux, trois ou quatre.[9] Ce verset fournit un repère propre à la tradition islamique. Il ne doit pas être fondu avec les représentations chrétiennes pour établir une anatomie commune ou une échelle identique des puissances. La fonction de messager rapproche les vocabulaires ; les textes et leurs interprétations gardent leur contexte religieux."
+      ],
+      "anomalies": [
+        "Le Catéchisme de l'Église catholique définit les anges comme des créatures spirituelles, personnelles, douées d'intelligence et de volonté, et immortelles.[3] Cette définition pose une distance entre leur nature et les corps visibles que l'imagination leur prête. Elle cite Augustin pour distinguer la nature, esprit, de la fonction, ange. Un visage, une robe ou une aile dans une représentation rendent la présence reconnaissable ; ils ne constituent pas dans cette doctrine les organes d'un animal céleste.",
+        "Au chapitre 12 de Tobie, Raphaël revient sur les repas partagés. Il explique aux hommes que ce qu'ils avaient cru voir lorsqu'il mangeait était une apparence.[5] L'expérience partagée demeure réelle pour les personnages, mais son interprétation change. Ils ont voyagé et vécu auprès de lui sans comprendre ce qu'ils voyaient. Un geste aussi familier que manger avait suffi à leur cacher la nature de leur compagnon.",
+        "L'autorité angélique demeure celle d'un envoyé. Gabriel déclare se tenir devant Dieu et avoir été chargé de parler à Zacharie ; Raphaël attribue sa venue à la volonté divine.[7][5] Leur connaissance et leurs actes prennent place dans une mission. La précision des messages leur donne une puissance saisissante, mais les textes cités ne les présentent pas comme des divinités indépendantes disposant chacune d'un domaine rival. Leur venue relie une décision divine à une situation humaine particulière."
+      ],
+      "naturelle": {
+        "lead": "Les catégories d'histoire naturelle décrivent ici des modes de présence, des missions et des rapports aux humains. Le cadre principal reste celui des textes bibliques cités et de la doctrine catholique ; il remplace une biologie imaginaire par les distinctions que ces traditions établissent elles-mêmes.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'ange aborde, annonce, explique et rassure. Chez Luc, Gabriel demande à Zacharie puis à Marie de ne pas craindre ; Raphaël adresse une parole semblable aux deux hommes prosternés.[7][5] La crainte ne signifie donc pas à elle seule hostilité du visiteur : elle marque le bouleversement de la rencontre. Le messager ajuste ensuite son discours à la situation. Il répond à une interrogation, dévoile le sens d'événements déjà vécus ou donne une orientation pour la suite."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le ciel désigne, dans le Catéchisme, le lieu des créatures spirituelles entourant Dieu, au sein d'une explication qui distingue ce sens du simple firmament.[3] Les récits montrent en même temps des anges présents parmi les humains : près de l'autel de Zacharie, dans la maison où Gabriel rejoint Marie, aux côtés de la famille de Tobie.[7][5] Ces déplacements sont ordonnés par une mission. Le ciel et la demeure humaine ne se relient pas ici comme deux milieux entre lesquels migrerait une population animale."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Raphaël fournit la déclaration la plus explicite du dossier : le repas que ses compagnons croyaient observer relevait de l'apparence.[5] La scène ne supprime pas l'hospitalité humaine ; elle fait apparaître que celle-ci s'adressait à un être dont les besoins avaient été mal compris. Dans la doctrine catholique, la contemplation et le service de Dieu caractérisent leur existence spirituelle.[3] Parler de nourriture au sens corporel manquerait donc la distinction que le récit et la doctrine prennent soin d'établir."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le Catéchisme attribue expressément aux anges intelligence et volonté.[3] Les dialogues en donnent une expression narrative : Gabriel répond à des questions différentes, tandis que Raphaël explique après coup ce que les humains ignoraient de leur propre histoire.[7][5] Le savoir apparaît lié à une parole reçue et à une tâche accomplie. Cette intelligence personnelle se distingue aussi de l'omniscience divine : les scènes mettent en avant le contenu précis d'un message plutôt qu'un inventaire illimité de connaissances."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Dans Luc, Jésus répond à une question sur le mariage après la résurrection en disant que les ressuscités ne prennent ni femme ni mari, ne peuvent plus mourir et sont semblables aux anges.[8] Le passage articule ainsi mariage, mortalité et condition à venir. Le Catéchisme place pour sa part l'origine des anges dans l'acte créateur de Dieu.[3] Leur continuité relève de cette existence spirituelle et immortelle, plutôt que du renouvellement des générations qui organise la vie des sociétés humaines."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "L'Apocalypse nomme un adversaire et un combat : Michel affronte le Dragon, chacun avec ses anges.[4] L'enjeu est la place dans le ciel et le sort de ceux que le Dragon accuse ou poursuit. Ce langage de lutte ne décrit pas une consommation des vaincus. Il appartient à une vision du conflit religieux et moral. La doctrine catholique affirme en outre l'immortalité des anges ; le mot prédateur doit donc céder ici devant ceux d'adversaire, de persécuteur et de combat spirituel.[3]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "La trace angélique demeure aussi dans la prière. Le Catéchisme rappelle que la liturgie de l'Église joint sa louange à celle des anges, invoque leur assistance et honore particulièrement Michel, Gabriel, Raphaël et les anges gardiens.[3] Il cite l'accompagnement demandé aux anges dans la liturgie des défunts. La figure se tient ainsi près du commencement d'une vie annoncée et près de son terme, dans une pratique religieuse qui reste actuelle pour les fidèles.",
+        "Avant de quitter Tobie et son père, Raphaël leur demande de mettre les événements par écrit, puis remonte auprès de celui qui l'a envoyé.[5] Les hommes se relèvent et ne le voient plus. Ce qui demeure est un récit à transmettre, une gratitude à exprimer et une manière nouvelle de comprendre l'aide reçue. Dans cet épisode, la disparition n'efface pas la présence ; elle laisse aux témoins la responsabilité de raconter avec justesse ce qui leur est arrivé."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Catéchisme de l'Église catholique — Le ciel et la terre, paragraphes 325–354",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1B.HTM"
+      },
+      {
+        "id": 4,
+        "title": "AELF — Apocalypse, chapitre 12",
+        "url": "https://www.aelf.org/bible/Ap/12"
+      },
+      {
+        "id": 5,
+        "title": "AELF — Tobie, chapitre 12",
+        "url": "https://www.aelf.org/bible/Tb/12"
+      },
+      {
+        "id": 7,
+        "title": "AELF — Évangile selon Luc, chapitre 1",
+        "url": "https://www.aelf.org/bible/Lc/1"
+      },
+      {
+        "id": 8,
+        "title": "AELF — Évangile selon Luc, chapitre 20",
+        "url": "https://www.aelf.org/bible/Lc/20"
+      },
+      {
+        "id": 9,
+        "title": "Coran — sourate Fâtir, verset 1, texte arabe",
+        "url": "https://quran.com/35/1"
+      }
+    ]
+  },
+  "ankou": {
+    "description": "Dans le grincement d'une charrette nocturne, une paroisse reconnaît celui qui vient chercher ses morts.",
+    "sections": {
+      "fascination": [
+        "L'Ankou possède l'équipement d'un travailleur : un véhicule, une faux, un territoire à parcourir. Cette familiarité rend sa venue plus inquiétante qu'une apparition sans attaches. Les roues peuvent ressembler à celles du voisin ; le chemin est celui que l'on emprunte chaque matin. Dans les traditions de Basse-Bretagne, le bruit du char transporte jusque dans la maison une menace que personne ne souhaite vérifier en ouvrant la porte.[1] La mort connaît les accès du village.",
+        "Sa silhouette hésite entre le vieillard démesurément maigre, coiffé d'un grand feutre, et le squelette enveloppé d'un linceul.[1] L'une conserve les restes d'un visage humain ; l'autre expose déjà ce que deviennent les corps. Toutes deux appartiennent au même monde rural, où les enterrements, les outils et les chemins font partie de l'expérience commune. L'Ankou effraie moins par l'étrangeté de son apparence que par sa manière de poursuivre, au-delà du tombeau, une besogne parfaitement reconnaissable."
+      ],
+      "legendes": [
+        "La Légende de la mort en Basse-Bretagne, publiée sous le nom d'Anatole Le Braz en 1893, constitue un jalon essentiel de sa transmission écrite. Le volume décrit une charge paroissiale : le dernier mort de l'année reçoit pour l'année suivante la charrette et la faux.[2] Le collecteur fixe ainsi une croyance où l'ouvrier de la mort est lui-même un défunt. La silhouette commune peut cacher un homme que ses futurs passagers ont connu vivant. Cette proximité donne à la tournée une dimension collective, presque domestique.",
+        "La règle connaît des variantes : la synthèse des traditions mentionne aussi le premier mort de l'année nouvelle, selon les paroisses.[1] Il faut conserver cette différence plutôt que chercher un calendrier valable partout. Le personnage appartient à des communautés particulières, avec leurs usages et leurs versions. Dans le passage de 1893, la multiplicité des Ankous paroissiaux semble déjà tendre vers une figure unique de la Mort, exécutrice des volontés de Dieu.[2] Cette lecture relève du commentaire savant du volume ; elle montre aussi combien le folklore recueilli reste inséré dans un horizon chrétien.",
+        "Une anecdote consignée dans ce même passage révèle l'effet concret de la croyance. Des fraudeurs auraient transporté leurs marchandises de nuit en laissant les roues de leurs charrettes mal graissées. Le grincement retenait les habitants chez eux, par crainte de rencontrer le conducteur funèbre.[2] Le récit fait entrer la contrebande dans l'histoire du surnaturel. Un bruit pouvait suffire à vider un chemin, et des hommes savaient tirer parti de cette prudence. Il s'agit d'un témoignage rapporté par le livre, non d'une pratique dont chaque occurrence serait documentée.",
+        "Sur le littoral, la circulation des morts prend aussi la forme du Bag noz, le bateau de nuit. La synthèse consultée cite Paul Sébillot : à l'île de Sein, son homme de barre serait le dernier noyé de l'année ; à Audierne, une autre tradition désigne le premier mort.[1] Ce voisinage maritime éclaire l'Ankou sans transformer chaque barque fantôme en sa propriété. La route des défunts emprunte les moyens de transport des vivants, et la mer introduit ses propres disparitions, celles des corps que les familles ne retrouvent jamais."
+      ],
+      "anomalies": [
+        "La faux possède un montage singulier : son tranchant est tourné vers l'extérieur. Le geste de l'Ankou pousse donc l'outil en avant, à l'inverse du faucheur qui ramène sa lame vers lui.[1] Le détail compte davantage qu'une arme démesurée. Une petite inversion suffit à soustraire un outil quotidien à l'ordre des travaux humains. La moisson reste lisible, mais le mouvement qui la produit a changé de sens.",
+        "Sous sa forme squelettique, sa tête peut tourner au sommet de la colonne vertébrale comme une girouette, afin de surveiller la région qui lui est confiée.[1] Cette mobilité impossible répond à sa fonction de collecteur itinérant. Dans le texte de 1893, la rencontre visuelle elle-même devient mortelle ou annonce un décès prochain.[2] Ces motifs doivent rester liés aux récits qui les portent : ils expriment la proximité fatale de l'apparition, plutôt qu'un ensemble de pouvoirs identiques dans toutes les descriptions."
+      ],
+      "naturelle": {
+        "lead": "L'Ankou relève d'une charge surnaturelle parmi les morts. Son histoire naturelle suit donc une tournée, une succession et les rapports d'une communauté avec ses défunts, plutôt que le cycle biologique d'un animal.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Il parcourt son ressort et recueille les âmes. Le grincement de son véhicule annonce le passage avant que le conducteur soit aperçu.[1] Les récits organisent ainsi une rencontre surtout auditive : les vivants écoutent, reconnaissent un signe et se retirent. L'efficacité de l'Ankou tient à cette dissymétrie. Lui circule ; ceux qui le craignent restent derrière leurs murs. La nuit transforme une opération de transport en événement que chacun peut entendre sans pouvoir en vérifier la destination."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La paroisse fournit son territoire le plus précis dans la tradition recueillie par Le Braz.[2] Chemins et cimetières forment les points d'un espace habité, fréquenté jusque dans la mort. Les monts d'Arrée apparaissent aussi comme un domaine associé à l'Ankou dans des traditions cornouaillaises.[1] Cette géographie de landes et de lieux obscurs élargit le paysage de la crainte ; elle coexiste avec l'échelle beaucoup plus proche du village et de sa communauté funéraire."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le vocabulaire de la collecte est essentiel : l'Ankou emporte les âmes des défunts dans sa charrette.[1] Les sources retenues décrivent ce transport, sans lui attribuer de repas d'âmes ou de chair. Sa maigreur appartient à la représentation de la mort et du vieillissement. La récolte humaine remplit un véhicule, non un estomac ; le rapprochement avec la moisson vient de l'outil et du travail, et doit conserver ce sens funéraire."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'Ankou exerce une fonction réglée, avec une mission territoriale et une capacité de surveillance.[1][2] Son comportement se comprend à travers des catégories humaines : connaître un parcours, venir chercher quelqu'un, assurer une charge. La tradition peut même juger son titulaire. Lorsque les décès deviennent particulièrement nombreux, on parle d'un Ankou méchant.[1] Cette appréciation donne un caractère au collecteur et permet à la communauté de nommer, à travers lui, une année de deuils éprouvante."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La continuité du personnage passe par l'héritage annuel de ses outils. Un mort succède à un autre, tandis que la tournée demeure.[2] L'identité individuelle du titulaire compte moins que la permanence de la charge, mais elle entretient un lien troublant avec les familles : le conducteur appartient à la même population que ceux qu'il emporte. La fin de l'année devient ainsi une frontière dans l'administration des morts autant que dans le calendrier des vivants."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "La relation décrite par les récits est celle des vivants devant une puissance funéraire, et non celle d'un chasseur affrontant une proie. Dans le passage de 1893, les habitants cherchent surtout à éviter la rencontre et restent chez eux au bruit des roues.[2] La crainte règle leur conduite. Le cadre chrétien où l'Ankou accomplit une volonté supérieure situe aussi sa puissance : le conducteur demeure un exécutant, même lorsque sa figure se confond avec celle de la Mort."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les représentations sculptées donnent un corps durable à cette présence mobile. L'ossuaire de La Roche-Maurice et l'église de Ploumilliau conservent des images de l'Ankou mentionnées dans la documentation consultée.[1] La pierre et le bois placent la mort au milieu d'espaces religieux fréquentés par les familles. Ces figures appartiennent à l'histoire chrétienne des lieux autant qu'à celle des contes ; les regarder seulement comme des monstres ferait perdre une part de leur fonction.",
+        "Le nom breton connaît notamment les formes Ankoù et, en vannetais, Ankeu.[1] Les rapprochements étymologiques et les hypothèses d'une ascendance divine celtique demandent davantage de prudence que la description des motifs effectivement recueillis. Le dossier le plus solide demeure celui du travailleur funèbre, de la succession paroissiale et du char grinçant. Le détail des roues mal graissées en conserve une trace particulièrement humaine : jusque dans un livre consacré à l'au-delà, la peur dépend parfois de l'entretien d'un essieu."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Ankou — Wikipédia, synthèse des traditions et de l'iconographie",
+        "url": "https://fr.wikipedia.org/wiki/Ankou"
+      },
+      {
+        "id": 2,
+        "title": "La Légende de la mort en Basse-Bretagne, édition de 1893, vue 51 — Wikisource",
+        "url": "https://fr.wikisource.org/wiki/Page:Le_Braz_-_La_l%C3%A9gende_de_la_mort_en_Basse_Bretagne_1893.djvu/51"
+      }
+    ]
+  },
+  "anzu": {
+    "description": "Une gueule de lion ouverte dans le ciel, des ailes capables d'assombrir la terre : Anzu donne au tonnerre un corps et à la révolte un voleur.",
+    "sections": {
+      "fascination": [
+        "L'oiseau Anzu réunit deux puissances immédiatement reconnaissables : le rapace qui domine le ciel et le lion dont le rugissement porte au loin. Dans les images étudiées par l'assyriologue Dahlia Shehata, la tête est léonine, le reste du corps celui d'un grand oiseau de proie.[3] L'association fait entendre la silhouette avant même qu'on la voie bouger. Au-dessus des hommes, un battement d'ailes devient passage de nuages ; la voix de la bête évoque l'orage qui éclate.",
+        "Cette puissance peut protéger ou menacer. L'histoire mésopotamienne d'Anzu conserve des images bienveillantes, puis des récits où il met en péril l'ordre divin en dérobant la Tablette des Destins.[3] La même ampleur d'ailes couvre un porteur d'amulette ou obscurcit le monde. Cette variation empêche de réduire l'oiseau à un adversaire éternel des dieux. L'eau qu'il représente entretient aussi la vie ; la violence du ciel et sa fécondité appartiennent à la même présence."
+      ],
+      "legendes": [
+        "Le récit le plus développé raconte le vol de la Tablette des Destins, insigne d'Enlil, puis la fuite d'Anzu vers les montagnes d'où il provient. Privés de cet objet, les dieux demeurent frappés de stupeur. Ninurta, fils d'Enlil, reçoit la mission de combattre l'oiseau et de rétablir l'ordre.[3] L'affrontement engage donc aussi une relation filiale : le fils défend l'autorité du père, mais sa victoire lui permet d'accéder lui-même à une souveraineté accrue parmi les dieux.",
+        "La force seule échoue. Lorsque Ninurta décoche ses flèches, Anzu utilise la puissance de la tablette pour ordonner aux éléments de l'arme de retourner à leurs origines : le bois ou roseau de la hampe à sa matière première, les plumes aux oiseaux, les tendons aux animaux dont ils proviennent.[3] Le projectile se défait avant d'atteindre son but. La scène donne à la parole une autorité matérielle : l'oiseau peut décomposer un objet fabriqué et défaire le travail qui l'a rendu meurtrier.",
+        "Dans son explication de la version babylonienne standard, Shehata souligne la ruse enseignée par Enki, dieu de la sagesse. Ninurta doit tirer une nouvelle flèche au moment où Anzu renvoie les plumes vers les oiseaux ; l'ordre détourne alors le projectile vers le corps de l'oiseau lui-même.[3] La formule protectrice fournit le moyen de la blessure. Cette lecture situe la victoire dans une compréhension précise du pouvoir ennemi, plutôt que dans une simple augmentation de la force du héros.",
+        "Les textes ne livrent pourtant pas une histoire uniforme. Shehata distingue notamment une transmission paléo-babylonienne provenant de Suse, des fragments sumériens de Nippur et d'Ur, puis la version babylonienne standard surtout connue par des manuscrits du premier millénaire avant notre ère, dont ceux de la bibliothèque d'Assurbanipal.[3] Une composition de Sultantepe adopte une allure plus hymnique. Les lacunes des tablettes laissent certains développements incertains, notamment autour de la tentation de Ninurta de conserver pour lui le pouvoir reconquis.",
+        "Le déplacement des rôles est plus ancien encore. Des traditions du troisième millénaire rapprochent l'affrontement du dieu solaire Utu ; ailleurs, Anzu apparaît auprès de Ningirsu comme une puissance associée au dieu.[3] Ces témoignages interdisent de projeter rétrospectivement la figure du voleur vaincu sur toutes les images de l'oiseau. Un compagnon maîtrisé, une protection portée sur soi et un ennemi abattu répondent à des conceptions différentes du rapport entre les dieux et les forces naturelles."
+      ],
+      "anomalies": [
+        "La construction du corps relie le ciel aux montagnes. Les ailes appartiennent au domaine aérien, tandis que la naissance parmi les hauts sommets rattache Anzu à la terre.[3] Son ombre et son rugissement se prêtent à une lecture météorologique : les ailes évoquent les nuages porteurs d'eau, la gueule du lion le tonnerre. Shehata présente cette interprétation à partir des textes et des images. Elle éclaire une puissance ancienne sans transformer chaque détail du plumage en code symbolique obligatoire.",
+        "La Tablette des Destins ajoute au corps orageux une capacité d'un autre ordre. Elle donne aux paroles de son détenteur une efficacité souveraine.[3] Anzu possède ainsi un pouvoir emprunté, acquis par le vol, qu'il faut distinguer de sa nature d'oiseau. La menace vient de la rencontre entre une force mobile, capable de regagner les montagnes, et un objet qui règle les relations du monde. Le conflit porte autant sur la détention légitime de cet objet que sur la destruction d'une bête.",
+        "La lecture des caractères cunéiformes peut modifier jusqu'à son anatomie. Shehata rapporte avoir réexaminé un passage où l'on croyait lire un nez semblable à une scie : elle y reconnaît plutôt les ailes, dont le bord dentelé s'accorde avec l'iconographie.[3] Ce détail rappelle la matière concrète du dossier. Le portrait que nous dressons dépend de signes petits, endommagés ou mal compris, autant que des grandes scènes de combat conservées dans les récits."
+      ],
+      "naturelle": {
+        "lead": "Anzu appartient aux récits religieux de la Mésopotamie ancienne. Les observations qui suivent concernent ses manifestations textuelles et figurées ; elles distinguent le corps de l'oiseau, ses fonctions naturelles et les pouvoirs de l'objet qu'il dérobe.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Dans le récit du vol, il s'empare d'un insigne de souveraineté et se retire dans son domaine montagneux.[3] Sa conduite suppose une rupture avec le monde divin dont il s'est approché. Les images plus anciennes peuvent au contraire le présenter comme un compagnon ou une puissance protectrice. L'agressivité dépend donc de la relation établie avec les dieux : force associée à leur action dans un cas, puissance devenue indépendante dans l'autre."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les hauts sommets sont son lieu d'origine et son refuge après le larcin.[3] Le ciel fournit l'espace du combat et de l'activité orageuse. Cette géographie réunit la hauteur rocheuse, les nuages et l'eau attendue sur les terres habitées. L'oiseau circule entre des domaines que les hommes voient communiquer lorsque l'orage se forme sur les montagnes, puis avance au-dessus des plaines. Son éloignement demeure visible depuis le monde cultivé."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le corps de rapace suggère une capacité de prédation, mais le dossier étudié ici insiste sur l'eau apportée au monde plutôt que sur les repas d'Anzu.[3] La relation nourricière est surtout celle de la pluie avec la terre. L'apparition de l'oiseau et son installation auprès des dieux interviennent dans une situation initiale de manque d'eau. La question du ravitaillement des vivants occupe ainsi une place plus ferme dans le récit que celle de sa propre subsistance."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Anzu parle, commande et adapte sa défense aux armes dirigées contre lui.[3] La décomposition des flèches montre une pensée capable de reconnaître les matériaux et leur provenance. Son échec vient cependant de l'application d'une formule que l'adversaire retourne contre son propre corps. Le récit oppose deux usages de l'intelligence : une autorité verbale rendue efficace par l'objet souverain et une ruse attentive au sens exact de cette autorité."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les traditions abordent son apparition dans les montagnes ; un fragment sumérien examiné par Shehata semble également introduire un jeune Anzu comme compagnon de Ninurta avant une rupture.[3] La spécialiste présente cette reconstruction avec prudence, à partir d'un texte difficile. Ces motifs permettent de parler d'origine et de jeunesse, mais ne définissent pas une population d'oiseaux ni un cycle de ponte. Chaque état d'Anzu appartient d'abord à une histoire particulière."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Ninurta est son adversaire décisif dans la version babylonienne standard, avec l'aide de la sagesse d'Enki.[3] Le combat relève d'une restauration de l'autorité divine. D'autres témoignages donnent au dieu solaire une place dans la victoire. La diversité des vainqueurs suit celle des traditions : elle ne constitue pas une chaîne alimentaire, mais l'histoire de plusieurs manières d'attribuer aux dieux le contrôle des puissances de l'orage."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les amulettes et les bijoux du troisième millénaire donnent à Anzu une fonction protectrice attestée dans l'analyse de Shehata.[3] Ses ailes étendues y ont une valeur différente de leur ombre menaçante dans le combat. La silhouette peut être portée près du corps humain, alors que les récits la déploient à l'échelle du ciel. Ce passage de dimensions ne diminue pas sa puissance ; il la place au service de celui qui recherche une protection.",
+        "La Tablette des Destins reste l'objet le plus célèbre attaché à son nom. Shehata rapproche ses désignations des règles, plans et pouvoirs qui organisent le monde, tout en soulignant que sa matière exacte demeure incertaine.[3] La réduire à une liste où tout avenir serait écrit ferait perdre cette dimension de souveraineté. Le vol d'Anzu porte sur ce qui rend les décisions opérantes ; l'argile conservée des récits nous transmet l'histoire d'une autre tablette, dont la possession ébranle les dieux."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Dahlia Shehata — Anzu: the many faces of a monster, entretien et transcription, Thin End of the Wedge",
+        "url": "http://www.wedgepod.org/episode-7-dahlia-shehata-anzu-the-many-faces-of-a-monster-transcript"
+      }
+    ]
+  },
+  "apsara": {
+    "description": "La danse d'une apsara peut honorer les dieux, troubler un ascète ou laisser sur une paroi de temple le mouvement suspendu d'un corps céleste.",
+    "sections": {
+      "fascination": [
+        "L'apsara apparaît dans un univers où la beauté possède une efficacité propre. Un regard, un déplacement du corps, la musique qui accompagne une danse peuvent infléchir la résolution d'un homme et intéresser le gouvernement des dieux. Les traditions hindoues la connaissent notamment comme une danseuse de la cour d'Indra, liée aux gandharvas musiciens.[4] Sa présence donne une forme sensible au plaisir céleste : les palais divins ont leur mouvement, leurs parures et leurs interprètes.",
+        "Les sculptures rendent cette grâce par la courbure du torse et le détail des ornements. Dans sa présentation d'une apsara en grès de l'Uttar Pradesh, Soma Ghosh insiste sur la torsion du corps et sur la fluidité donnée aux bijoux.[5] La pierre paraît retenir un mouvement en cours. Cette aisance visuelle a toutefois son envers dans les récits : une apsara peut obéir à un ordre qui l'effraie, aimer un mortel ou devenir mère. La danseuse céleste garde une histoire au-delà de l'instant offert au regard."
+      ],
+      "legendes": [
+        "Le Rigveda nomme Urvashi et conserve un dialogue entre elle et son amant mortel Pururavas.[4] Cette attestation ancienne donne aux apsaras une profondeur littéraire qui précède les grands ensembles sculptés des temples. Les versions ultérieures reprennent leur union et leur séparation ; le théâtre sanskrit de Kalidasa en fait la matière du Vikramorvashiyam.[5]",
+        "Dans le Mahabharata, Menaka intervient dans une lutte d'influence entre la cour divine et l'ascèse. Vishvamitra accumule par ses austérités une puissance qui inquiète Indra. Le dieu envoie l'apsara pour détourner le sage de sa pratique. Menaka redoute la colère d'un ascète aussi puissant, mais obéit ; son union avec lui conduit à la naissance de Shakuntala.[4] La scène engage donc plusieurs volontés inégales. La séduction remplit une mission politique et religieuse, tandis que l'enfant prolonge ses conséquences dans le monde humain.",
+        "Shakuntala raconte elle-même cette origine dans l'épopée. Le récit associe sa naissance à l'abandon de l'enfant sur les bords d'une rivière.[4] L'apsara entre ainsi dans une généalogie, et la distance entre le ciel et la terre se mesure à une séparation familiale. La beauté céleste, souvent décrite depuis le regard des spectateurs, devient ici une question d'ascendance : une fille humaine doit dire de quels parents elle est née et comment elle a été laissée parmi les hommes.",
+        "Tilottama possède une autre fonction dans le Mahabharata : elle intervient contre les frères asuras Sunda et Upasunda et contribue à délivrer le monde de leur violence.[4] Urvashi, de son côté, rencontre aussi Arjuna dans un épisode de séduction distinct de son histoire avec Pururavas.[4] Ces noms individualisent les apsaras. Elles partagent des qualités et un milieu céleste, mais leurs actions répondent à des situations différentes ; les réunir sous l'image d'une tentatrice anonyme effacerait les choix narratifs des textes.",
+        "Le Ramayana et les traditions puraniques rattachent leur origine au barattage de l'océan.[4] Leur association avec l'eau possède ainsi une expression cosmologique, à côté de leurs fonctions de cour. Dans les cultures bouddhiques, elles appartiennent également à des ensembles d'êtres célestes représentés auprès des figures sacrées.[4] Ces circulations témoignent d'adaptations religieuses et artistiques : les traditions hindoues et bouddhiques demeurent des cadres distincts, vivants, dont les images ne se réduisent pas à un répertoire de monstres merveilleux."
+      ],
+      "anomalies": [
+        "La forme humaine de l'apsara est généralement jeune et gracieuse ; les descriptions lui attribuent aussi la capacité de changer d'apparence.[4] Sa singularité ne demande donc pas un assemblage de membres animaux. Elle tient à une beauté active, à une mobilité céleste et à la maîtrise des arts qui retiennent l'attention. La familiarité du corps permet précisément la rencontre amoureuse avec un mortel, tout en laissant subsister la différence de condition entre les partenaires.",
+        "L'identité personnelle passe surtout par les récits. La synthèse iconographique consultée remarque que les apsaras nommées dans les textes ne possèdent pas nécessairement des attributs physiques permettant de les reconnaître individuellement dans les images.[4] Une danseuse sculptée ne devient donc pas Menaka ou Urvashi par sa seule élégance. La position dans un ensemble, la présence d'autres personnages et la scène représentée comptent davantage qu'un détail corporel isolé.",
+        "La puissance de séduction rencontre aussi des limites sociales et sacrées. Menaka craint la réaction de Vishvamitra alors même qu'elle accomplit l'ordre d'Indra.[4] Le pouvoir d'émouvoir ne garantit ni la liberté d'agir ni l'absence de danger. L'apsara traverse des relations d'autorité où la faveur d'un dieu et la colère d'un ascète peuvent peser sur la même rencontre. La grâce visible ne supprime pas cette vulnérabilité."
+      ],
+      "naturelle": {
+        "lead": "Les apsaras forment une catégorie d'êtres célestes dont les traditions racontent les activités et les relations. Leur histoire naturelle suit ces milieux religieux et littéraires, sans leur attribuer un régime ou une physiologie uniformes.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La danse auprès d'Indra et l'accompagnement musical des gandharvas constituent leur activité collective la plus connue.[4] Les épopées peuvent ensuite détacher une figure de cet ensemble pour lui confier une mission ou une histoire amoureuse. Cette alternance entre cortège et personnage individuel explique la variété de leurs apparitions : dans une scène de cour, elles concourent à une fête divine ; dans un récit nommé, leurs décisions et leurs relations occupent le premier plan."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les palais des dieux accueillent leurs danses, tandis que leurs origines et certaines rencontres les rattachent aux eaux.[4] Le ciel et la rivière ne définissent pas deux espèces différentes. Ils correspondent à des lieux d'apparition et à des épisodes particuliers, depuis le barattage cosmique jusqu'à l'histoire de Shakuntala. Sur terre, les temples donnent aux apsaras une demeure figurée : leur présence sculptée accompagne l'architecture sacrée et les images des divinités."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les sources retenues s'attardent sur les plaisirs de la cour, les arts et les parures, sans définir de nourriture propre aux apsaras. La Kaushitaki Upanishad les associe notamment aux onguents, aux guirlandes, aux vêtements et aux poudres aromatiques.[4] Ce sont les matières d'un accueil et d'une beauté célestes, non les éléments d'un régime alimentaire. Elles renseignent sur leur milieu sensible, où l'odeur, le toucher et l'apparence comptent autant que la musique."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La maîtrise de la danse et des rapports de cour suppose un savoir du geste, du rythme et de l'attention d'autrui.[4] Les récits donnent aussi la parole aux apsaras : Urvashi dialogue avec Pururavas, Menaka évalue le danger de sa mission. Leurs actions se comprennent à partir de cette sensibilité aux situations. La beauté constitue l'un de leurs moyens d'action ; le discours, l'émotion et la conscience des conséquences appartiennent également à leur portrait."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Deux échelles doivent être distinguées. Le barattage de l'océan explique une origine collective dans certaines traditions, tandis que la naissance de Shakuntala raconte la maternité d'une apsara particulière.[4] L'une concerne l'apparition d'êtres célestes au cours d'un événement cosmique ; l'autre fait passer une lignée dans le monde humain. L'enfant de Menaka conserve ainsi dans son histoire familiale la trace d'une rencontre que l'ordre divin avait d'abord provoquée pour interrompre une ascèse."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le danger se situe dans les rapports de pouvoir, plutôt que dans la chasse. La crainte de Menaka devant la colère possible du sage révèle les risques que comporte une mission imposée par Indra.[4] Les apsaras évoluent parmi des êtres capables d'agir sur leur destinée. Leurs adversités varient avec chaque récit : l'autorité divine, la puissance ascétique ou la séparation d'avec un partenaire humain dessinent des limites plus précises qu'un ennemi naturel commun à toutes."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le terme sanskrit apsaras est traditionnellement rapproché de l'eau et du mouvement ; la synthèse consultée rapporte l'explication du dictionnaire Monier-Williams, qui évoque le fait d'aller dans les eaux ou entre les eaux des nuages.[4] Cette lecture convient à plusieurs associations anciennes, mais le mot français apsara désigne aujourd'hui des figures dont les fonctions se sont largement développées dans les récits et les arts.",
+        "À Angkor, une distinction iconographique évite une confusion fréquente : les figures féminines dansantes ou prêtes à danser sont appelées apsaras, tandis que les figures debout, frontales, comparables à des gardiennes, relèvent du terme devata.[4] Toutes les femmes sculptées d'un temple ne portent donc pas le même nom. L'attitude du corps et sa place dans l'architecture importent. Le regard retrouve alors, dans une flexion du genou ou une disposition des bras, une différence que l'usage touristique tend parfois à effacer.",
+        "La présentation de Soma Ghosh rassemble des exemples de sculpture, de relief et de peinture, jusqu'aux œuvres de Raja Ravi Varma consacrées à Urvashi et à Menaka.[5] Ces supports conservent des aspects différents de leur présence : mouvement d'une danseuse, scène familiale ou séparation amoureuse. L'apsara demeure reconnaissable par son appartenance au monde céleste, mais chaque œuvre choisit le moment où ce monde rencontre les regards et les vies humaines."
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "Apsara — Wikipedia, traditions littéraires et iconographie",
+        "url": "https://en.wikipedia.org/wiki/Apsara"
+      },
+      {
+        "id": 5,
+        "title": "Soma Ghosh — Apsaras in art: depictions of celestial nymphs",
+        "url": "https://deccanviews.wordpress.com/2017/01/16/apsaras-in-art-depictions-of-celestial-nymphs"
+      }
+    ]
+  },
+  "arachne": {
+    "description": "Ses doigts savaient tout faire avec un fil ; devenue araignée, Arachne conserve son art et perd le monde qui l'admirait.",
+    "sections": {
+      "fascination": [
+        "Avant les huit pattes, il y a les mains. Ovide s'attarde sur leur mouvement : elles assouplissent la laine, étirent les fibres, font tourner le fuseau et conduisent l'aiguille. Les nymphes quittent leurs vignes ou leurs eaux pour regarder travailler cette jeune femme de Lydie.[1] Arachne entre dans le merveilleux par une habileté humaine. Le spectacle commence auprès du métier à tisser, dans l'attention donnée à une matière qui devient image.",
+        "Son histoire trouble parce que son talent résiste au jugement qui la frappe. La déesse elle-même ne trouve aucune faute à son ouvrage.[1] Le fil admirable et la toile misérable appartiennent donc à la même artiste. Entre eux passe un châtiment qui change la taille du corps, sa place parmi les vivants et la manière dont autrui le regarde. Ce que l'on admirait devient ce que l'on balaie dans un coin de maison."
+      ],
+      "legendes": [
+        "Le récit suivi ici ouvre le livre VI des Métamorphoses d'Ovide. Il appartient à la poésie latine nourrie de mythes grecs ; la déesse y porte le nom de Minerve, correspondant romain d'Athéna. Arachne est une mortelle de condition modeste. Son père exerce le métier de teinturier à Colophon et sa mère est morte. La renommée de leur fille vient de son travail, nullement d'une ascendance royale.[1] Ce détail social donne au concours sa tension particulière : une artisane réclame que l'on reconnaisse ce qu'elle sait faire.",
+        "Minerve arrive d'abord sous les traits d'une vieille femme. Elle conseille à la tisseuse de rechercher les éloges des humains tout en respectant la supériorité divine. Arachne repousse cette médiation avec colère et exige que la déesse vienne concourir elle-même. Le déguisement tombe. Les témoins honorent Minerve ; Arachne rougit, pâlit, puis maintient son défi.[1] Ovide laisse ainsi apparaître un instant de trouble avant l'obstination. Le danger est compris, puis accepté.",
+        "Les deux ouvrages composent des discours opposés. Minerve représente sa victoire dans la querelle pour Athènes, avec l'olivier offert à la cité, puis place aux angles des exemples de mortels punis pour avoir rivalisé avec les dieux. Arachne rassemble au contraire les métamorphoses dont les puissances divines se servent pour approcher ou tromper des femmes : Europe et le taureau, Léda et le cygne, Danaé et l'or figurent dans cet ensemble.[1] Son accusation prend la forme d'images parfaitement exécutées. L'objet du concours devient aussi le sujet du conflit.",
+        "Minerve déchire l'étoffe et frappe la jeune femme avec sa navette de buis. Arachne, accablée par l'humiliation, se pend. La déesse la sauve de la mort, mais lui impose de rester suspendue, ainsi qu'à sa descendance. Elle l'asperge d'un suc associé aux herbes d'Hécate ; le corps se réduit et devient araignée.[1] La pitié conserve ici une violence terrible. Une lecture centrée sur l'orgueil peut suivre l'avertissement initial ; une lecture attentive à la destruction de l'œuvre peut entendre aussi la brutalité d'un pouvoir offensé. Ces interprétations naissent des tensions mêmes du poème."
+      ],
+      "anomalies": [
+        "La métamorphose procède par pertes et déplacements. Les cheveux tombent, le nez et les oreilles disparaissent, la tête devient minuscule. Les doigts se rassemblent aux côtés du corps sous forme de longues pattes ; l'abdomen concentre ce qui reste et produit désormais le fil.[1] La description poétique conserve des correspondances visibles entre l'artisane et l'animal. Les membres autrefois occupés à manier une matière extérieure entourent maintenant un corps qui fournit lui-même cette matière.",
+        "L'Arachne d'Ovide est donc une araignée issue d'une transformation complète. La femme au buste humain dressé sur un abdomen géant relève d'une autre construction imaginaire. Lui attribuer rétrospectivement cette silhouette ferait perdre la précision du récit antique : son humiliation passe justement par la réduction du corps. Son pouvoir attesté demeure le tissage. Le texte ne lui donne ni royaume souterrain, ni armée de servantes, ni faculté d'ensorceler ses victimes.[1]",
+        "Une autre anomalie est morale : l'excellence technique n'offre aucune protection. Arachne franchit la limite qui sépare une compétition entre œuvres d'une contestation de l'autorité. Minerve peut juger, concourir et punir à la fois. Le concours ne possède donc pas l'impartialité d'une épreuve artisanale ordinaire. La beauté irréprochable du tissu rend la fin plus douloureuse, puisque la défaite ne corrige aucune maladresse."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit une personne métamorphosée et la continuité de son geste. Les détails zoologiques du monde réel éclairent l'image seulement lorsqu'ils restent distincts du destin raconté par Ovide.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Arachne travaille sous les regards, puis défend avec véhémence la propriété de son savoir. Elle refuse de partager sa renommée avec Minerve et ne retire pas ses paroles lorsque celle-ci apparaît.[1] Après la transformation, le poème la montre encore occupée à tisser. Il conserve cette activité comme une dernière fidélité à elle-même, tandis que disparaissent les conversations, les spectatrices et l'atelier qui donnaient à son travail une existence publique."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le premier paysage est lydien : les nymphes viennent du Tmolos et du Pactole admirer la tisseuse, dont la famille est liée à Colophon.[1] Ces noms ancrent le prodige dans l'Asie Mineure antique, parmi des lieux habités et des activités textiles. La fin resserre brutalement l'espace autour d'un fil de suspension. Ovide ne lui attribue ensuite aucun territoire particulier."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La nourriture reste hors du récit d'Arachne : son économie visible est celle de la laine, des teintures et du travail. Pour les araignées réelles, l'Australian Museum décrit une alimentation prédatrice, avec liquéfaction des tissus des proies avant ingestion.[5] Cette comparaison mesure la transformation suggérée par le mythe, mais le poème n'en tire aucune scène de chasse. Il s'arrête au retour du fil, laissant le repas de l'animal au-delà de son dernier vers."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Sa toile prouve une pensée capable de composer. Elle choisit plusieurs épisodes, distingue les personnages et organise leur ressemblance autour des déguisements divins. Le dessin d'Europe paraît si vivant que ses pieds semblent se relever au-dessus de l'eau.[1] Cette virtuosité mêle connaissance des récits, observation des attitudes et maîtrise de la couleur. Le texte conserve le tissage après la métamorphose sans préciser quelle mémoire humaine demeure dans l'esprit de l'araignée."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La descendance apparaît dans la sentence de Minerve : les générations futures partageront la suspension imposée à leur ancêtre.[1] Le mythe relie ainsi un destin individuel à une forme animale durable. Son mécanisme est généalogique et punitif. Les sacs de soie contenant les œufs, décrits chez les araignées réelles par l'Australian Museum, appartiennent à la zoologie ; Ovide ne raconte ni ponte ni naissance d'une première couvée.[5]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "L'adversaire décisive est Minerve, dont la puissance atteint à la fois l'œuvre et le corps. La destruction du tissu précède la métamorphose : Arachne perd d'abord ce qui démontrait publiquement son talent.[1] Le récit n'organise ensuite aucune chaîne de prédateurs autour d'elle. Sa vulnérabilité est déjà entière dans cette rencontre inégale, où une mortelle peut réussir son ouvrage sans obtenir le droit de le conserver."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "La navette de buis est l'objet le plus rude de l'histoire. Conçue pour faire passer le fil, elle devient l'instrument des coups.[1] Le métier, les fibres et les teintures rendent pourtant les deux rivales presque semblables durant le concours : toutes deux préparent leur ouvrage et retroussent leurs vêtements pour travailler. Cette proximité des gestes donne son poids à la différence des pouvoirs. L'une peut défaire ce que l'autre a créé, puis refaire son corps.",
+        "Les bordures achèvent le contraste entre les étoffes. Minerve entoure son récit d'olivier, son arbre consacré ; Arachne termine le sien par des fleurs mêlées au lierre.[1] Ces marges végétales encadrent deux usages de l'image, célébration d'une souveraineté ou exposition de ses abus. Aucun tissu matériel ne nous est transmis par la légende. Sa véritable relique est cette description minutieuse, assez précise pour faire apparaître une œuvre que la déesse détruit avant qu'elle puisse survivre à son auteure."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Ovide, Métamorphoses VI — traduction Brookes More, Theoi",
+        "url": "https://www.theoi.com/Text/OvidMetamorphoses6.html"
+      },
+      {
+        "id": 5,
+        "title": "Spiders — Australian Museum",
+        "url": "https://australian.museum/learn/animals/spiders"
+      }
+    ]
+  },
+  "araignee-geante": {
+    "description": "Sous la voûte, un fil remue ; ce qui l'a tendu peut envelopper un voyageur entier.",
+    "sections": {
+      "fascination": [
+        "L'araignée géante change la place de l'être humain dans une scène familière. La toile que l'on écarte d'habitude avec une branche devient un obstacle à hauteur de poitrine ; le petit paquet suspendu sous une poutre prend les dimensions d'un corps. La menace se découvre souvent avant sa propriétaire. Des fils barrent le passage, certains vibrent, et le plafond cesse d'être une surface inerte. Dans les règles de Donjons et Dragons de 2014, les repaires souterrains de ces créatures portent effectivement des cocons contenant leurs anciennes victimes.[2]",
+        "Le gigantisme rend perceptible une manière étrangère d'habiter l'espace. Une araignée peut se tenir au-dessus du chemin, contre une paroi ou au fond d'une fissure ; les directions que le marcheur distingue deviennent pour elle des supports comparables. La version ludique accentue cette aisance en lui permettant de grimper jusque sous les plafonds.[2] L'angoisse vient autant de cette liberté de mouvement que de la morsure : l'animal semble disposer d'une pièce supplémentaire dans chaque pièce, celle que les humains ne peuvent atteindre."
+      ],
+      "legendes": [
+        "L'expression « araignée géante » désigne un motif de fantasy plutôt qu'un personnage doté d'une histoire unique. La présente notice prend pour référence précise la créature des Basic Rules de Donjons et Dragons de 2014, dont la fiche officielle décrit les fils adhésifs, le venin et les tanières.[2] Cette attribution permet de distinguer une version documentée de l'ensemble plus vaste des araignées monstrueuses. Sa taille fabuleuse n'exige, dans ces règles, aucune métamorphose humaine préalable.",
+        "Le récit antique d'Arachne offre un contraste utile. Chez Ovide, une tisseuse de Lydie rivalise avec Minerve, puis devient une petite araignée après la destruction de son ouvrage et une condamnation divine.[1] Le sujet est l'art, l'autorité et la survie d'un geste. L'araignée géante prédatrice déplace l'intérêt vers le corps du visiteur pris dans la soie. Ces deux figures partagent le tissage ; leur proximité visuelle ne constitue pas une généalogie attestée de l'une à l'autre.",
+        "La fiche de 2014 assemble un animal et son milieu en quelques propriétés concrètes. Elle lui donne une perception exacte des créatures qui touchent la même toile, la liberté de circuler dans ses propres fils et la possibilité de projeter de la matière adhésive depuis l'abdomen.[2] Ce sont des conventions de jeu identifiables. Leur effet est de transformer le repaire en piège actif : toucher le décor revient déjà à avertir l'occupante, même lorsqu'elle demeure cachée.",
+        "La zoologie offre une autre profondeur à cette invention. L'Australian Museum décrit des araignées qui capturent leurs proies dans des toiles, d'autres qui les poursuivent ou les attendent en embuscade.[5] Le monstre de fantasy privilégie certaines de ces stratégies et les concentre dans une silhouette immédiatement lisible. L'image de la grande tisseuse relève donc d'une sélection : la diversité réelle des araignées dépasse largement le seul filet circulaire tendu entre deux branches."
+      ],
+      "anomalies": [
+        "Le modèle anatomique comporte deux grandes régions, céphalothorax et abdomen, ainsi que quatre paires de pattes articulées. Les organes producteurs de fils se trouvent sur l'abdomen ; les yeux, les pièces buccales et les pattes appartiennent à la partie antérieure.[5] À l'échelle monstrueuse, cette répartition rend le corps facile à reconnaître. Les pattes écartées agrandissent sa présence bien au-delà de son volume central, tandis que l'abdomen donne une origine charnelle au réseau qui l'entoure.",
+        "La projection de toile décrite par Donjons et Dragons est une arme à distance dont la cible reste entravée jusqu'à ce qu'elle se libère ou que les fils soient détruits. Les règles précisent que ce réseau est vulnérable au feu.[2] Cette propriété doit rester attachée à l'édition citée : elle n'est pas une loi valable pour toute soie, réelle ou imaginaire. Elle introduit surtout une limite à un pouvoir impressionnant ; le piège demeure un objet matériel que l'on peut rompre.",
+        "La morsure de cette même version associe blessure et poison. Si les dégâts du poison abattent la victime selon les conditions indiquées par les règles, celle-ci reste vivante mais empoisonnée et paralysée pendant une heure.[2] Le danger se prolonge ainsi au-delà du choc initial. Une silhouette immobile dans un cocon peut encore être une personne à sauver, et la réserve de nourriture prend une dimension autrement inquiétante qu'un simple amas d'ossements."
+      ],
+      "naturelle": {
+        "lead": "L'écologie décrite ici appartient à la version de 2014 de Donjons et Dragons. Les comparaisons avec les araignées étudiées par les naturalistes sont signalées séparément, notamment pour les étapes de vie que cette fiche de jeu laisse ouvertes.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La capture commence par la préparation du terrain : toiles élaborées et filaments adhésifs immobilisent les proies, tandis que le contact avec le réseau renseigne l'araignée sur leur position.[2] Cette perception donne à l'attente une efficacité particulière. Le mouvement impatient d'un prisonnier peut rendre sa présence plus nette. Chez les araignées réelles aussi, les vibrations et le toucher participent à la perception du monde, souvent davantage qu'une excellente vue.[5]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La description officielle privilégie le sous-sol, les plafonds et les fentes obscures envahies de toiles. Son classement des milieux inclut également forêt, marais, désert et espaces urbains.[2] Le point commun est moins une température précise que la possibilité de fixer des fils et de se dissimuler. Une cavité devient dangereuse lorsqu'elle fournit des points d'ancrage en hauteur, une retraite étroite et un passage emprunté par des proies : le lieu travaille alors avec la chasseuse."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les cocons contenant les victimes identifient clairement une prédatrice dans la fiche de jeu.[2] La notice officielle ne détaille pas son appareil digestif. Chez les araignées réelles, des fluides digestifs liquéfient les tissus avant leur absorption, et les parties dures restent après le repas.[5] Ce rapprochement explique l'effroi particulier attaché aux enveloppes abandonnées, sans imposer à toutes les araignées fabuleuses une physiologie que leurs auteurs auraient nécessairement définie."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le sens de la toile est une faculté située : l'araignée doit être en contact avec le réseau pour localiser exactement les autres êtres qui le touchent.[2] Il ne s'agit donc pas d'une connaissance générale de tout ce qui se passe dans la caverne. Cette condition donne au prédateur une intelligence pratique du lieu. Le système de perception des araignées réelles, fondé notamment sur des poils sensoriels et les vibrations, rend cette spécialisation concevable sans la confondre avec une parole ou un raisonnement humain.[5]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les Basic Rules consultées ne fixent ni nombre d'œufs ni durée de croissance. Le modèle zoologique est pourtant précis : les femelles fabriquent des sacs de soie protecteurs, les jeunes en sortent puis se dispersent ; la croissance passe par des mues.[5] Ces faits éclairent la fonction multiple de la soie, qui peut abriter une naissance aussi bien qu'un repas. Ils restent des points de comparaison, et non une couvée officiellement décrite pour le monstre de 2014."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "La fiche ne nomme aucun mangeur régulier d'araignées géantes. Elle décrit plutôt les moyens dont une proie ou un adversaire dispose pour briser l'entrave : force, destruction des fils, exposition de ceux-ci au feu.[2] Dans la nature, les araignées possèdent diverses défenses, depuis le camouflage jusqu'à la fuite au bout d'un fil ; certaines peuvent abandonner une patte saisie par un ennemi.[5] La grandeur fantastique ne doit donc pas faire oublier la vulnérabilité du modèle animal. Le réseau protège une créature qui a elle aussi besoin d'une retraite."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "La soie est la matière emblématique de cette rencontre. Chez les araignées réelles, plusieurs types de fils servent à construire un abri, envelopper une proie, protéger les œufs ou assurer une ligne de sécurité.[5] Le motif fantastique tire sa richesse de cette pluralité. Une nappe blanche peut être un chemin, une fermeture ou une enveloppe ; sa fonction ne se révèle parfois qu'au mouvement de ce qu'elle contient. La douceur apparente de la matière contraste avec la violence de son usage.",
+        "Les vestiges du repaire racontent une occupation plutôt qu'une victoire unique. Les cocons mentionnés dans la source officielle conservent les captures passées, pendant que de nouvelles toiles barrent encore les accès.[2] Cette accumulation différencie l'araignée géante d'un monstre qui détruit simplement sur son passage. Elle installe une activité durable dans les ruines ou les cavernes et transforme les traces des disparus en éléments de son habitat. Le silence du lieu peut ainsi être celui d'un piège entretenu, et non celui d'un lieu désert."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Ovide, Métamorphoses VI — Theoi",
+        "url": "https://www.theoi.com/Text/OvidMetamorphoses6.html"
+      },
+      {
+        "id": 2,
+        "title": "Giant Spider — D&D Beyond, Basic Rules (2014)",
+        "url": "https://www.dndbeyond.com/monsters/16895-giant-spider"
+      },
+      {
+        "id": 5,
+        "title": "Spiders — Australian Museum",
+        "url": "https://australian.museum/learn/animals/spiders"
+      }
+    ]
+  },
+  "arbaletrier": {
+    "description": "L'arbalétrier porte une tension qu'il peut retenir : entre l'effort d'armer et le départ du trait s'ouvre le temps de viser.",
+    "sections": {
+      "fascination": [
+        "L'arme donne au tireur une silhouette ramassée. Un arc traverse une pièce de bois tenue devant le corps ; le regard suit la direction du trait. Tout paraît tendu vers un point encore éloigné. L'arbalétrier appartient aux fonctions humaines de la guerre, de la chasse et du tir. Son étrangeté, au milieu d'un bestiaire, vient de cette puissance extérieure qu'un mécanisme lui permet de garder en attente. Le danger tient autant à l'immobilité du porteur qu'à son geste final.",
+        "La matière empêche de réduire cette figure à une simple silhouette militaire. Une arbalète d'Europe centrale conservée au Metropolitan Museum associe notamment bois de charme, corne, tendons animaux, colle, écorce de bouleau, bois de cerf, métal, chanvre et cuir.[6] Sous l'apparente sobriété du tireur se trouve donc un objet composé, issu de plusieurs savoir-faire. L'efficacité de l'arme dépend d'une rencontre entre le travail des matières et l'attention de celui qui s'en sert."
+      ],
+      "legendes": [
+        "L'arbalétrier médiéval est une réalité historique avant de devenir un archétype de fantasy. Le Deutsches Historisches Museum rappelle l'emploi militaire de l'arbalète au Moyen Âge, puis son usage pour la chasse, ainsi que la place majeure du tir dans les villes et les cours princières.[4] Le mot rassemble par conséquent des existences différentes. Un combattant engagé dans une opération, un chasseur de cour et un membre d'une société de tir peuvent manier des armes apparentées sans appartenir au même milieu social.",
+        "L'histoire de l'objet dépasse largement le cadre médiéval. Le Metropolitan Museum souligne une utilisation de l'arbalète sur plus de deux millénaires et présente un catalogue européen couvrant les années 1250 à 1850.[3] Cette longue durée interdit d'en faire un équipement uniforme. Les matériaux, les dispositifs d'armement et les décors changent ; les collections montrent aussi bien des éléments d'arcs composites que des armes à arc d'acier et des systèmes de tension distincts.[3]",
+        "Les rassemblements de tireurs avaient une existence publique. Selon le Deutsches Historisches Museum, les sociétés de tir, particulièrement dans les villes du Saint-Empire, tenaient un rôle social important, et leurs fêtes participaient à la représentation de la cité.[4] L'arbalétrier pouvait ainsi être vu en plein jour, parmi ses voisins, dans une compétition réglée. Ce cadre urbain donne une autre couleur à sa réputation : adresse reconnue, appartenance collective et prestige civique comptent autant que l'image du tireur embusqué.",
+        "À la Renaissance et à l'époque baroque, les armes portent des décors iconographiques élaborés. Le musée berlinois les rattache au travail de fabricants professionnels et aux usages sociaux de l'objet.[4] Les collections du Metropolitan conservent aussi des arbalètes associées à des propriétaires de haut rang, notamment le comte Ulrich V de Wurtemberg et Matthias Corvin, roi de Hongrie.[3] La richesse de ces pièces corrige l'idée d'une arme réservée aux combattants modestes. Posséder une arbalète pouvait aussi signifier disposer d'un objet coûteux, visible et personnel."
+      ],
+      "anomalies": [
+        "La singularité technique est la séparation entre l'armement et la visée. Le mécanisme retient la corde après la mise en tension ; le tireur peut ensuite préparer le départ du projectile. Cette réserve d'effort distingue son geste de celui d'un archer maintenant directement la traction. Le Metropolitan replace d'ailleurs l'arbalète dans une histoire des mécanismes d'armes et souligne les liens entre cette évolution technique et celle des armes à feu.[3] La force stockée reste matérielle, dépendante de l'état de l'arc, de la corde et du dispositif de retenue.",
+        "Les accessoires exposés avec les armes donnent la mesure de cette diversité. Le catalogue du Metropolitan présente des arbalètes accompagnées d'un levier de tension ou d'un cranequin, dispositif d'armement à mécanisme.[3] La présence de ces objets rappelle que le départ du trait n'est qu'un moment de l'usage. Il faut préparer l'arme, la manipuler, disposer des accessoires correspondants et recommencer. La puissance ne supprime donc pas le travail ; elle le déplace avant le tir.",
+        "L'archétype de l'homme implacable vient en partie de cette attente mécanique. Pourtant, une même arme peut être soigneusement décorée et effectivement dangereuse. Les incrustations, les matériaux précieux ou les symboles ne rendent pas sa fonction fictive.[3][4] L'arbalétrier se tient à cette jonction du bel objet et du projectile. Son équipement peut afficher une position sociale tout en exigeant une familiarité pratique avec des pièces soumises à l'usure."
+      ],
+      "naturelle": {
+        "lead": "L'arbalétrier est un rôle humain. Les six rubriques suivantes décrivent donc ses cadres de vie, ses besoins, la transmission du savoir et les périls de sa fonction, plutôt qu'une biologie particulière.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La conduite du tireur s'organise autour d'une succession de gestes : préparer, armer, orienter, tirer, puis remettre l'équipement en état de servir. Au concours, cette attention se déroule devant d'autres participants ; à la chasse, elle dépend de la présence du gibier ; en guerre, elle s'inscrit dans une action collective. Ces trois usages sont attestés par les collections et leur présentation historique.[4] La patience du personnage est donc moins un tempérament universel qu'une exigence liée à sa fonction."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les villes et les cours princières forment des cadres documentés du tir à l'arbalète.[4] Autour du porteur de l'arme, il faut aussi considérer les lieux où celle-ci est fabriquée, conservée et réparée. La variété des matériaux visibles dans les collections fait apparaître tout un environnement artisanal derrière l'image du combattant isolé.[3][6] L'arbalétrier appartient à un monde où l'équipement circule entre ateliers, réserves et espaces d'usage ; son existence déborde largement le rempart qui résume souvent sa silhouette."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les conditions du repas changent avec le lieu où sert l'arbalétrier : séjour en ville, déplacement militaire ou fréquentation d'une cour placent le tireur dans des organisations différentes.[4] La chasse ajoute un usage alimentaire de l'arme, lorsqu'elle sert à prendre du gibier."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le savoir utile associe appréciation de la situation et connaissance de l'objet. Une arbalète accompagnée d'un levier ou d'un cranequin suppose de savoir employer cet accessoire avec l'arme correspondante.[3] Le jugement se poursuit dans le choix du moment où tirer et dans le contrôle de l'équipement. La compétition publique rend l'adresse observable ; la fabrication professionnelle, attestée par le musée berlinois, rappelle de son côté qu'utiliser une arme et la produire sont des compétences distinctes.[4]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La continuité de cette fonction passe par l'apprentissage et les groupes qui entretiennent sa pratique. Les sociétés de tir documentées dans le Saint-Empire fournissent un cadre durable de rencontres, de fêtes et de reconnaissance sociale.[4] Elles permettent de comprendre comment une habileté peut rester vivante hors du combat. Du côté matériel, les fabricants transmettent des savoir-faire propres aux armes. Le renouvellement des tireurs et celui des artisans se rejoignent autour d'objets que l'on continue à entretenir, à comparer et à utiliser."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les dangers sont humains et circonstanciels : adversaires dans un conflit, blessures, accidents ou défaillance de l'équipement. L'arbalétrier doit composer avec le temps nécessaire à sa préparation et avec l'espace qui le sépare de sa cible. À une autre échelle, l'évolution des armements transforme sa place : le Metropolitan rappelle que la puissance de feu finit par éclipser la domination ancienne de l'arbalète.[3] Les usages de chasse et de compétition expliquent cependant la persistance de l'objet au-delà de sa prééminence militaire.[4]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les armes conservées offrent des biographies incomplètes mais concrètes. La pièce d'Europe centrale attribuée avec prudence à l'Autriche conserve une combinaison de matières végétales et animales que son aspect extérieur ne suffirait pas à révéler.[6] Un inventaire de matériaux raconte ainsi autre chose que la seule forme du projectile : choix d'un bois, assemblage de corne et de tendons, protection et finition. L'arbalétrier tient entre ses mains le résultat de décisions prises par des artisans avant lui.",
+        "Le catalogue du Metropolitan rapproche les arbalètes de leurs accessoires, de traits et même d'un grand bouclier d'infanterie, le pavois.[3] Ces voisinages restituent un équipement plutôt qu'une arme détachée de tout usage. Les fêtes urbaines étudiées par le musée berlinois ajoutent à ces objets leur public et leurs cérémonies.[4] Entre la salle d'armes et la place de la ville, la figure retrouve une épaisseur humaine : quelqu'un porte l'objet, s'exerce, est regardé et mesure son adresse à celle d'autres tireurs."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "A Deadly Art: European Crossbows, 1250–1850 — Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/met-publications/a-deadly-art-european-crossbows-1250-1850"
+      },
+      {
+        "id": 4,
+        "title": "The Crossbow – Terror and Beauty — Deutsches Historisches Museum",
+        "url": "https://www.dhm.de/en/exhibitions/archive/2019/the-crossbow-terror-and-beauty"
+      },
+      {
+        "id": 6,
+        "title": "Crossbow, Central European, possibly Austria — Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/art/collection/search/23336"
+      }
+    ]
+  },
+  "archer": {
+    "description": "Entre la main qui lâche la corde et la cible, l'archer confie sa vie à un bref trajet dans l'air.",
+    "sections": {
+      "fascination": [
+        "L'archer se reconnaît à une posture avant de se reconnaître à un costume. Un bras présente l'arc ; l'autre ramène la corde vers le visage. Tout le corps participe à cette opposition. Le moment visible est court, mais il rassemble des gestes répétés jusqu'à devenir familiers. Dans un bestiaire peuplé de cuirasses naturelles et de souffles meurtriers, cette figure humaine conserve une singularité : elle se mesure à des êtres plus puissants qu'elle avec du bois, une corde et une pointe.",
+        "La distance lui donne son prestige et son inquiétude. L'adversaire aperçoit parfois le tireur trop tard ; le tireur, lui, doit décider alors que la cible peut encore bouger. L'adresse semble abolir l'espace, mais chaque obstacle lui rend son épaisseur. Une branche, un parapet, un déplacement imprévu suffisent à changer l'issue. La silhouette de l'archer reste donc tendue entre assurance et fragilité : il peut frapper loin, sans avoir cessé d'être vulnérable."
+      ],
+      "legendes": [
+        "Le mot recouvre une fonction humaine, exercée dans des sociétés et des circonstances très diverses. Pour lui donner un corps historique précis, les objets du Mary Rose sont particulièrement précieux. Ce navire anglais a livré 172 arcs longs, plus de deux mille flèches complètes et plusieurs milliers de fragments. Le musée conserve aussi les coffres qui les abritaient. Cet ensemble montre l'archerie comme une activité collective équipée à grande échelle, loin de la seule image du tireur solitaire.[1]",
+        "À bord, les arcs et les flèches étaient entreposés dans la partie basse du navire, vers l'arrière ; une partie avait été montée pour le combat. Les archers pouvaient tirer depuis les hunes et les ponts supérieurs. Des panneaux de bois disposés sur le pont ménageaient des positions pour les tireurs. L'arc appartient ici au même système de défense que d'autres armes : sa présence n'exige ni une forêt silencieuse ni un monde dépourvu d'artillerie.[1]",
+        "La fantasy ludique en retient souvent une autre figure, celle de l'éclaireur. Les règles de base de Donjons et Dragons de 2014 décrivent le scout comme un chasseur et pisteur susceptible de vendre ses services, de guider des voyageurs ou d'effectuer des reconnaissances militaires. Son équipement comprend un arc long et une épée courte. Cette association situe l'archer dans une compétence plus vaste : savoir trouver le chemin et observer compte autant que décocher.[2]",
+        "Ces deux portraits se complètent sans se confondre. Le combattant embarqué dépend d'un équipage et de réserves préparées ; l'éclaireur fictif lit un terrain qu'il parcourt. Dans les deux cas, le tir est pris dans une organisation humaine. Le nom d'archer indique l'arme et la pratique, pas le caractère moral : protéger une route, servir une garnison ou poursuivre une prime sont des engagements différents. L'arc permet les mêmes gestes à des personnes dont les loyautés s'opposent."
+      ],
+      "anomalies": [
+        "Son extraordinaire pouvoir est d'abord matériel. Les arcs longs du Mary Rose sont taillés dans une seule pièce d'if, à la jonction du bois de cœur et de l'aubier. Le facteur d'arcs exploite leurs propriétés différentes pour obtenir un ressort naturel. Leur longueur va approximativement de 1,84 à 2,11 mètres. Une telle arme dépasse souvent l'image d'un petit arc léger que l'on tendrait du bout des doigts : elle engage la force du tireur et la résistance du bois.[1]",
+        "La flèche est un assemblage plus délicat que ne le laisse croire sa silhouette. Neuf essences ont été identifiées parmi les exemplaires étudiés du navire ; le peuplier domine. Les empennages provenaient d'oies ou de cygnes. Les plumes et les pointes ont largement disparu, mais les traces conservées permettent d'en restituer certains caractères. L'efficacité du tir repose ainsi sur plusieurs métiers et plusieurs matières, réunis dans un objet consommable que le combat disperse.[1]",
+        "La limite est inscrite dans le geste même. L'archer doit disposer d'une flèche, d'un espace pour armer et d'une trajectoire praticable. Une arme à distance ne dispense ni de protection ni d'une solution lorsque l'ennemi arrive au contact. L'épée courte de l'éclaireur de Donjons et Dragons rend cette contrainte explicite.[2] Le merveilleux de l'archer tient souvent à la précision prêtée à son tir ; l'arme historique, elle, rend aussi visibles l'effort, la préparation et l'usure."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle de l'archer est celle d'une pratique humaine : elle suit les lieux de travail, les besoins du corps, l'apprentissage et les périls du métier. Les vestiges du Mary Rose et l'éclaireur de fantasy servent ici de deux cadres distincts.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Avant le tir vient une suite de vérifications modestes : disposer de son arme, choisir sa position et pouvoir atteindre ses munitions. Les objets retrouvés séparément dans le Mary Rose suggèrent que des archers circulaient à bord au moment du naufrage.[1] Cette mobilité importe : le combattant réel transporte son matériel, rejoint un emplacement et dépend du mouvement de ceux qui l'entourent. L'immobilité du tireur au moment décisif n'est qu'un instant dans une activité plus longue."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le pont d'un navire, une fortification et un chemin de reconnaissance composent des milieux très différents. Les collections du Mary Rose rappellent que des arcs étaient produits pour les navires royaux comme pour les places fortifiées.[1] Dans les règles de 2014, l'éclaireur pratique au contraire la chasse et le pistage.[2] Le trait commun est fonctionnel : il faut pouvoir observer et disposer d'un dégagement suffisant. Une forêt n'est favorable que là où ses troncs et ses branches laissent réellement passer la flèche."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le corps du tireur partage les besoins ordinaires de ses compagnons. La force exigée par l'arc long empêche de séparer durablement l'adresse de l'état physique. Le matériel naval consulté ne donne pas un menu propre aux archers ; leur subsistance relève de l'approvisionnement du groupe. La chasse, explicitement associée à l'éclaireur dans Donjons et Dragons, offre un autre rapport à la nourriture : l'arme sert alors à obtenir du gibier plutôt qu'à garder une distance de combat.[2]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Observer une cible ne suffit pas : il faut reconnaître ce qui peut la masquer, estimer son mouvement et décider si le tir vaut la dépense d'une flèche. Le profil ludique de l'éclaireur associe perception, discrétion, survie et connaissance de la nature.[2] Ces compétences dessinent une intelligence attentive, attachée aux indices concrets. Le meilleur observateur peut d'ailleurs renoncer à tirer : conserver sa position cachée ou rapporter une information répond parfois mieux à sa mission."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La continuité du métier passe par l'apprentissage et la fabrication. Un nouvel archer doit acquérir les gestes ; de nouveaux arcs et de nouvelles flèches doivent suivre. Les coffres et les nombreux exemplaires du Mary Rose rendent tangible cette seconde transmission, celle des ateliers vers les combattants.[1] Le savoir ne réside donc pas seulement dans le bras du tireur. Il se conserve aussi dans le choix du bois, la taille de l'arme et l'assemblage des projectiles."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Ses adversaires sont ceux de sa communauté ou de son engagement. Le tireur peut être lui-même visé, débordé ou privé de sa position. En mer, le navire ajoute un péril commun à tous : l'arme portée ne protège pas de la disparition du pont sous les pieds. Les objets du Mary Rose témoignent de cette vulnérabilité collective.[1] Dans l'aventure fantastique, l'éclaireur reste pareillement un combattant humain, dont la vigilance augmente les chances sans abolir le risque."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les protège-bras sont des reliques particulièrement proches du geste. Le Mary Rose en a livré vingt-quatre, surtout en cuir, destinés à protéger le bras d'arc du retour de la corde. Plusieurs portent des estampages ; deux montrent les armes réunies de Catherine d'Aragon et d'Henri VIII.[1] L'objet utilitaire conserve ainsi une marque politique là où l'arc nu pourrait sembler anonyme.",
+        "Le musée signale aussi une encoche en corne et une ou peut-être deux cordes identifiées comme du chanvre ou du lin.[1] Ces survivances fragiles rendent à l'archer une présence moins spectaculaire que la flèche parfaite : celle d'une main occupée à entretenir ce qui peut casser. Sous les images héroïques demeure cette relation patiente à l'équipement, dont dépend le prochain tir."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Mary Rose Museum — Archery and longbows on the Mary Rose",
+        "url": "https://maryrose.org/discover/collections/the-weaponry-of-the-mary-rose/longbows-and-arrows"
+      },
+      {
+        "id": 2,
+        "title": "D&D Beyond — Basic Rules (2014), Monsters : Scout",
+        "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters"
+      }
+    ]
+  },
+  "archidemon": {
+    "description": "L'archidémon donne un nom propre à la catastrophe : derrière les monstres apparaît une volonté qui prétend régner.",
+    "sections": {
+      "fascination": [
+        "Une multitude de démons peut remplir un gouffre ; un archidémon lui donne un maître. Le terme désigne une prééminence, sans fixer à lui seul une silhouette ou une généalogie. Dans la fantasy de Donjons et Dragons, les princes démons sont des puissances singulières entourées de serviteurs, de rivaux et parfois de fidèles mortels.[2] Leur arrivée change la mesure du danger. Le voyageur ne rencontre plus seulement une créature hostile, mais les intérêts d'un royaume qui débordent jusqu'à lui.",
+        "Cette souveraineté garde quelque chose d'instable. Les seigneurs abyssaux revendiquent une supériorité que leurs semblables cherchent à leur enlever. Leurs corps rendent cette rivalité visible : Demogorgon est bicéphale, Juiblex une masse de boue et de limon, Zuggtmoy une reine des champignons.[4] Chacun semble vouloir imposer à l'ensemble du vivant sa propre manière de le défaire. L'horreur varie avec le maître : morsure, dissolution ou invasion fongique n'ont ni la même matière ni la même lenteur."
+      ],
+      "legendes": [
+        "L'idée d'un chef des démons possède un ancrage chrétien précis. Dans Matthieu 12, après une guérison accomplie par Jésus, ses adversaires l'accusent de chasser les démons par Béelzébul, qualifié de prince des démons. Jésus répond par l'image du royaume divisé contre lui-même, puis par celle de l'homme fort qu'il faut lier avant de piller sa maison.[6] Le passage porte sur l'autorité spirituelle et le sens de la guérison. Il n'établit pas un catalogue d'espèces infernales.",
+        "Cette distinction importe pour lire les métamorphoses ultérieures du motif. Le texte évangélique appartient à une religion vivante ; les princes démons de Donjons et Dragons sont des personnages d'un univers fictif. Dans les règles de base de 2014, les fiélons comprennent plusieurs familles, et beaucoup servent des archidiables ou des princes démons.[2] Le jeu transforme l'idée de domination surnaturelle en rapports entre personnages, domaines et armées, avec lesquels les aventuriers peuvent entrer en conflit.",
+        "La synthèse consacrée par Ben Lawrance aux seigneurs démons de la cinquième édition présente Demogorgon comme détenteur du titre de Prince des Démons, disputé notamment par Orcus et Graz'zt. Orcus commande à des morts-vivants depuis Thanatos ; Baphomet règne sur un labyrinthe ; Juiblex et Zuggtmoy partagent un même niveau abyssal, Shedaklah.[4] Leurs domaines différencient les formes de domination. Les réunir sous le nom d'archidémon sert à reconnaître leur rang, sans leur attribuer une histoire identique.",
+        "Les récits d'origine rapportés dans cette synthèse évoquent aussi une ancienne opposition entre obyriths et tanar'ri, les seconds s'étant soulevés contre les premiers.[4] Cette histoire appartient à la cosmologie du jeu, non à une tradition religieuse ancienne. Elle introduit dans l'Abîme une profondeur politique : certains monstres sont des souverains déchus, d'autres des héritiers de révolte. Le règne actuel conserve les restes d'une victoire dont les vaincus n'ont pas tous disparu."
+      ],
+      "anomalies": [
+        "L'archidémon échappe à l'anatomie commune parce que son identité est individuelle. Le visage double de Demogorgon ne prédit pas la forme de Juiblex. La spécialisation touche aussi les pouvoirs : Fraz-Urb'luu est associé à la tromperie, tandis que Zuggtmoy cherche à infecter les vivants par ses spores.[4] Un corps peut donc être une arme, un milieu contaminant ou un masque. La couronne, lorsqu'une image lui en donne une, explique moins le personnage que la façon dont il atteint les autres.",
+        "Le document de référence ouvert de la version 3.5 donne aux démons une appartenance aux plans chaotiques mauvais et souligne leur violence jusque contre leurs semblables. Il décrit pourtant des comportements élaborés : le babau choisit ses victimes et prépare des embuscades.[7] La férocité n'exclut donc pas le calcul. Chez un seigneur démon, cette coexistence rend la négociation précaire : une proposition peut être comprise avec finesse et néanmoins rejetée par orgueil ou par désir de nuire.",
+        "La mort elle-même dépend du lieu. Dans le portrait de cinquième édition synthétisé par Dungeon Mister, un seigneur démon abattu hors de l'Abîme y retourne au lieu de subir une destruction définitive ; il peut toutefois être emprisonné ailleurs.[4] Une victoire locale ne clôt donc pas forcément l'affaire. Le pouvoir de revenir change la patience du monstre autant que celle de ses ennemis, mais cette règle reste liée à cet univers : elle ne décrit pas tous les archidémons de la littérature."
+      ],
+      "naturelle": {
+        "lead": "Le cadre qui suit est principalement celui des seigneurs abyssaux de Donjons et Dragons. Il décrit leur existence fictive et leurs rapports de pouvoir ; les passages évangéliques conservent leur statut propre de textes religieux.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Un seigneur démon rassemble des subordonnés par sa puissance et poursuit des rivalités qui peuvent durer bien au-delà d'une vie humaine. La synthèse de cinquième édition lui attribue la recherche de pouvoir, le recrutement d'âmes et la guerre contre ses ennemis.[4] Sa cour n'offre guère de repos : les lieutenants servent une force qu'ils peuvent aussi convoiter. La soumission est une situation présente, toujours exposée à une nouvelle démonstration de puissance."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "L'Abîme réunit des domaines dont les différences comptent autant que l'appartenance commune. Le labyrinthe de Baphomet enferme et désoriente ; les fosses de limon associées à Juiblex donnent à la souillure une étendue territoriale. Dagon, dans cette version ludique du nom, demeure sous les mers de Shadowsea.[4] Ces paysages prolongent les seigneurs qui les occupent. Traverser leurs frontières expose à une forme précise de menace, plutôt qu'à une chaleur infernale uniforme."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La faim prend des sens différents selon les individus. Juiblex est présenté comme une faim suintante, tandis qu'Orcus s'intéresse au règne des morts-vivants.[4] Les âmes recherchées par les seigneurs servent notamment à accroître leurs rangs ; les qualifier toutes de nourriture effacerait cette fonction. Les sources consultées décrivent surtout l'appropriation des êtres et leur transformation. La dévoration appartient à certains portraits, la contamination ou l'asservissement à d'autres, sans régime alimentaire commun établi."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Fraz-Urb'luu porte le titre de Prince des Mensonges ; Dagon joue, dans la synthèse consultée, un rôle de conseiller ancien auprès d'autres puissances.[4] L'intelligence abyssale comporte donc l'expérience, la manipulation et la capacité de prévoir. Elle demeure orientée par les obsessions personnelles. La présence de rivaux oblige le souverain à surveiller davantage que son seul territoire : l'alliance proposée par un voisin peut annoncer une occasion de conquête aussi bien qu'un piège."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les sources ludiques rassemblées parlent de métamorphoses, d'ascension et de maternités monstrueuses plutôt que d'un cycle reproductif unique. Pale Night y apparaît comme une mère de démons ; d'autres individus peuvent gagner assez de puissance pour accéder au rang de seigneur.[4] Devenir archidémon est alors une transformation de statut autant que de corps. Une armée nouvelle peut provenir de créatures modifiées et d'âmes capturées, sans être la descendance biologique du souverain qui la commande."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les principaux périls viennent de puissances capables de contester son règne : autres démons, diables, êtres célestes et adversaires mortels exceptionnels.[4] L'affrontement entre Demogorgon, Orcus et Graz'zt interdit de considérer le titre princier comme une sécurité acquise. Dans Matthieu, l'image de l'homme fort lié exprime une tout autre victoire, spirituelle.[6] Les deux cadres placent une limite à la domination démoniaque, mais par des logiques qu'il convient de garder distinctes."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les noms constituent les traces les plus tenaces de ces figures. Béelzébul apparaît dans la controverse de Matthieu ; Demogorgon, Orcus ou Baphomet désignent dans Donjons et Dragons des personnages dotés de territoires et de rivalités propres.[6][4] La réutilisation d'un nom ne transmet pas automatiquement toute son histoire antérieure.",
+        "Le contraste avec l'archidiable est particulièrement net dans la classification ludique : le démon relève du chaos mauvais, le diable d'un ordre mauvais.[7][3] Cette opposition organise deux façons de redouter le pouvoir. Autour de l'archidémon, la hiérarchie risque de céder sous la violence de ceux qui la composent. Son trône est moins une garantie de stabilité que l'endroit où se concentrent les convoitises."
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "D&D Beyond — Basic Rules (2014), Monsters",
+        "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters"
+      },
+      {
+        "id": 3,
+        "title": "Hypertext d20 SRD — Devil (version 3.5)",
+        "url": "https://www.d20srd.org/srd/monsters/devil.htm"
+      },
+      {
+        "id": 4,
+        "title": "Ben Lawrance, Dungeon Mister — Demon Lords: DnD 5e Guide",
+        "url": "https://dungeonmister.com/lore/people/demon-lords-in-dnd"
+      },
+      {
+        "id": 6,
+        "title": "Matthieu 12 — Bible Louis Segond (1910)",
+        "url": "https://saintebible.com/lsg/matthew/12.htm"
+      },
+      {
+        "id": 7,
+        "title": "Hypertext d20 SRD — Demon (version 3.5)",
+        "url": "https://www.d20srd.org/srd/monsters/demon.htm"
+      }
+    ]
+  },
+  "archidiable": {
+    "description": "L'archidiable règne à travers des subordonnés, des obligations et des sentences : son enfer continue de fonctionner en son absence.",
+    "sections": {
+      "fascination": [
+        "L'archidiable fait peur par l'étendue de ce qui lui obéit. Une créature peut garder une porte ; lui possède ceux qui gardent les portes, les routes qui y conduisent et les raisons pour lesquelles on vous y attend. Dans Donjons et Dragons, les archidiables dominent une société infernale hiérarchisée, dont Asmodeus occupe le sommet.[5] La puissance prend ainsi une forme administrative : le visiteur peut subir la volonté du maître bien avant d'apercevoir son visage.",
+        "La froideur attendue de cette figure connaît pourtant des fissures. Dispater se retranche dans une tour de fer ; Levistus gouverne alors même qu'il est emprisonné dans la glace ; Zariel conduit des armées.[5] Ces portraits de fantasy montrent trois rapports au pouvoir : se protéger, commander à distance, s'exposer à la guerre. Le rang commun n'efface ni la peur ni la colère. Il leur donne des moyens considérables et assez de serviteurs pour en faire souffrir tout un domaine."
+      ],
+      "legendes": [
+        "Le christianisme fournit des images anciennes d'autorité démoniaque, mais pas la carte des Neuf Enfers du jeu. Dans Matthieu 12, Béelzébul est nommé prince des démons au cours d'une accusation dirigée contre Jésus. La réponse évoque le royaume de Satan et l'impossibilité pour une maison divisée de subsister.[6] Il s'agit d'une controverse religieuse sur l'origine du pouvoir de guérison. Lire ce passage comme un organigramme infernal lui ferait perdre son propos.",
+        "La distinction systématique entre diables organisés et démons chaotiques appartient ici à la construction ludique. Le document de référence de Donjons et Dragons 3.5 décrit les diables comme des fiélons issus des plans loyaux mauvais.[3] Les règles de base de 2014 mentionnent ensuite les archidiables parmi les maîtres auxquels obéissent de nombreux fiélons.[2] Ce vocabulaire transforme une opposition morale en géographie et en hiérarchie fictives ; il ne résume pas la doctrine des Églises chrétiennes.",
+        "Dans la présentation de cinquième édition réunie par Ben Lawrance, les Neuf Enfers sont placés sous l'autorité d'Asmodeus, qui garde Nessus et attribue d'autres domaines à des souverains subordonnés. Sous les seigneurs des niveaux servent également des ducs, généraux et dirigeants que le terme archidiable peut englober.[5] Le nombre de territoires ne suffit donc pas à compter tous les titulaires du rang. L'enfer possède plusieurs étages de commandement, et chacun ouvre un espace aux ambitions.",
+        "Les successions donnent à cet ordre son histoire. Zariel règne sur Avernus tandis que Bel, ancien détenteur du pouvoir, reste un général. En Stygie, Levistus doit compter avec Geryon, qui souhaite reprendre sa place. Fierna et Belial partagent le gouvernement de Phlegethos dans le portrait consulté.[5] Les noms ne désignent pas seulement une collection de monstres : ils forment des relations de dépendance, de famille et de rivalité. Une défaite peut laisser un prétendant assez puissant pour attendre son retour."
+      ],
+      "anomalies": [
+        "L'anomalie la plus nette de Levistus est politique autant que physique. Asmodeus l'a enfermé dans un bloc de glace, mais il continue de gouverner par télépathie.[5] Son immobilité ne libère pas ses sujets. Cette séparation du corps et du commandement distingue l'archidiable d'un prédateur qui devrait poursuivre sa proie : une volonté enfermée peut encore envoyer des ordres, recevoir des nouvelles et provoquer des conséquences très loin de sa prison.",
+        "Le rang ne possède pas d'anatomie obligatoire. Zariel est présentée comme un ange déchu ; la synthèse décrit Baalzebul sous une forme de limace monstrueuse et Asmodeus comme le souverain muni d'un sceptre de rubis.[5] Ces traits relèvent de personnages et de versions déterminés. Une transformation corporelle peut exprimer une sanction ou une histoire individuelle, tandis que l'autorité demeure. Les cornes et les ailes, fréquentes dans l'imaginaire infernal, ne suffisent donc pas à reconnaître tous les maîtres.",
+        "Les serviteurs donnent aussi une mesure concrète de leurs moyens. Le document 3.5 explique que de nombreux diables utilisent la peur pour disperser un groupe et les illusions pour brouiller l'appréciation du danger ; des renforts apparents peuvent être fictifs ou réellement invoqués.[3] Cette tactique prolonge la domination par l'incertitude. L'adversaire doit résister à l'assaut tout en décidant ce qui existe, et risque de consacrer ses forces à une menace fabriquée."
+      ],
+      "naturelle": {
+        "lead": "Cette histoire naturelle suit les archidiables des Neuf Enfers de Donjons et Dragons, surtout dans les portraits associés à la cinquième édition. Leur continuité relève des charges, des alliances et des métamorphoses ; les règles 3.5 citées pour leurs serviteurs restent explicitement distinctes.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'archidiable délègue. Les ducs administrent des portions de territoire et commandent sous les souverains des niveaux ; cette organisation libère leurs supérieurs pour les conflits de plus grande ampleur.[5] L'obéissance apparente laisse toutefois circuler les calculs. Un serviteur ambitieux cherche l'occasion d'améliorer son rang, et un seigneur peut souhaiter un domaine plus avantageux. L'ordre infernal se maintient avec ces rivalités plutôt qu'en leur absence : chacun tente de faire jouer la structure à son profit."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les Neuf Enfers constituent un plan distinct de l'Abîme démoniaque. Avernus, Dis, Minauros, Phlegethos, Stygia, Malbolge, Maladomini, Cania et Nessus forment la succession présentée dans la synthèse consultée.[5] À l'intérieur de cette géographie, certains lieux resserrent encore le pouvoir : la tour de Dispater protège son retrait, la prison glacée de Levistus concentre sa punition. Le palais et la geôle peuvent ainsi devenir deux centres de gouvernement, également redoutables pour ceux qui leur obéissent."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La recherche des âmes est un objectif explicite des diables dans la présentation de cinquième édition.[5] Elle concerne la capture et l'emprise sur les mortels, davantage qu'un menu attribuable à tous les souverains. Les portraits consultés ne donnent pas de régime physiologique commun aux archidiables. Leur appétit se lit surtout dans ce qu'ils cherchent à posséder : Mammon est caractérisé par l'avidité, Asmodeus par sa prééminence, leurs rivaux par l'espoir de gagner une place plus haute.[5]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La ruse suppose une connaissance des personnes autant que de la magie. Méphistophélès est présenté comme un maître des savoirs magiques et des affaires infernales, tout en restant intérieurement instable. Titivilus, conseiller de Dispater, exerce une influence importante malgré une puissance relativement moindre.[5] Ces exemples empêchent de réduire l'intelligence au pouvoir brut. Savoir parler au souverain, filtrer les informations et prendre en charge ses affaires peut donner une autorité que le corps seul n'aurait jamais conquise."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les parentés et les nominations coexistent. Glasya est la fille d'Asmodeus et reçoit Malbolge ; Fierna est celle de Belial et partage le gouvernement de Phlegethos.[5] Ces liens familiaux comptent dans les biographies, mais ne fournissent pas un cycle biologique général. La perpétuation du pouvoir passe aussi par les promotions, les destitutions et le maintien d'anciens souverains dans des fonctions subalternes. L'enfer renouvelle ses dirigeants sans nécessairement faire disparaître ceux qu'il remplace."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les démons figurent parmi leurs ennemis collectifs dans la Guerre du Sang, aux côtés d'autres adversaires comme les êtres célestes.[5] Le danger intérieur reste tout aussi pressant : un rival peut chercher à reprendre un territoire, un inférieur à monter en grade, Asmodeus à punir. Levistus en offre le cas le plus visible. La prison démontre qu'un archidiable peut être neutralisé physiquement par une autorité supérieure tout en conservant une influence suffisante pour demeurer dangereux."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le sceptre de rubis d'Asmodeus concentre la fonction des insignes : dans le portrait consulté, il accompagne son droit de régner sur l'ensemble infernal.[5] À l'opposé, le bloc de glace de Levistus rend sa sanction visible. L'un manifeste une autorité reconnue, l'autre la capacité du souverain à contraindre ses pairs. Ces objets disent la place de leur porteur plus précisément qu'une simple accumulation d'armes.",
+        "L'expression d'archidiable juriste, familière à la fantasy, résume une attente : la domination peut emprunter la forme d'une obligation plutôt que celle d'une charge brutale. Les sources consultées établissent surtout la hiérarchie, l'ambition et la capture des âmes ; elles ne permettent pas d'attribuer un modèle de contrat identique à chaque personnage.[5] Le détail d'un pacte dépend donc du récit concerné. Ce qui demeure dans cette figure est la menace d'un pouvoir qui prétend avoir raison de contraindre."
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "D&D Beyond — Basic Rules (2014), Monsters",
+        "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters"
+      },
+      {
+        "id": 3,
+        "title": "Hypertext d20 SRD — Devil (version 3.5)",
+        "url": "https://www.d20srd.org/srd/monsters/devil.htm"
+      },
+      {
+        "id": 5,
+        "title": "Ben Lawrance, Dungeon Mister — Archdevils in D&D 5e",
+        "url": "https://dungeonmister.com/lore/people/archdevils-in-dnd"
+      },
+      {
+        "id": 6,
+        "title": "Matthieu 12 — Bible Louis Segond (1910)",
+        "url": "https://saintebible.com/lsg/matthew/12.htm"
+      }
+    ]
+  },
+  "archimage": {
+    "description": "La porte paraît sans serrure. L'homme qui attend derrière a eu des années pour préparer votre arrivée.",
+    "sections": {
+      "fascination": [
+        "L'archimage concentre la puissance dans une silhouette encore vulnérable : une main capable de trembler, un visage que l'âge a travaillé, une voix dont dépend parfois le passage entre deux mondes. Le mot désigne une dignité de mage accompli, un archétype de fantasy. Sous les robes et les protections magiques demeure un individu, avec une histoire et des choix. Son apparente fragilité rend plus troublante la distance qui le sépare des autres mortels.",
+        "Dans le portrait des règles de Donjons et Dragons de 2014, il consacre sa vie à l'étude des arts occultes et atteint généralement un âge avancé.[1] Cette lente accumulation donne à sa présence un poids particulier. Chaque rencontre met face à face le temps bref du visiteur et des années de travail invisible. L'archimage peut avoir préparé plusieurs issues à une conversation qui commence à peine ; le calme prend alors une valeur inquiétante."
+      ],
+      "legendes": [
+        "L'archimage appartient à la famille des grands maîtres de la magie, mais son titre change de sens selon les œuvres. Le modèle retenu ici est celui, précisément documenté, des Basic Rules de Donjons et Dragons publiées en 2014. Leur notice le présente comme un lanceur de sorts extrêmement expérimenté, dont la puissance repose sur l'intelligence et sur une longue étude.[1] Elle fournit un portrait utilisable pour plusieurs personnages, plutôt que la biographie d'un ancêtre commun.",
+        "Trois destins se dessinent dans ce texte. Les archimages bienveillants conseillent les rois et les reines ; les mauvais gouvernent en tyrans et recherchent l'état de liche. Ceux qui se tiennent à l'écart de ces engagements s'isolent dans des tours reculées afin de travailler sans interruption.[1] La même connaissance peut donc soutenir une cour, l'asservir ou lui fermer sa porte. La morale relève de celui qui exerce le pouvoir, tandis que le titre mesure surtout l'étendue de ses moyens.",
+        "L'apprenti introduit une autre relation. Un archimage en accueille habituellement un ou plusieurs, et protège sa demeure par de nombreux gardiens et défenses magiques.[1] Le retrait reste ainsi habité. Derrière la tour solitaire existe une petite société où circulent les demandes, les leçons et l'autorisation de franchir certains seuils. Celui qui sait tout faire seul conserve quelqu'un à instruire. La succession entre déjà dans cette maison que l'on imaginait soustraite au temps.",
+        "La liche représente l'issue la plus sombre de ce rapport à la durée. Les règles décrivent sa recherche comme l'ambition de certains archimages malfaisants, sans en faire le destin obligatoire de la profession.[1] Le vieux maître peut demeurer un conseiller mortel. Chez celui qui refuse cette limite, le savoir cesse pourtant d'être seulement un héritage : il devient le moyen de garder indéfiniment sa place."
+      ],
+      "anomalies": [
+        "Le corps de l'archimage porte une seconde enveloppe, préparée par ses propres sorts. La fiche de 2014 prévoit une armure de mage, une peau de pierre et une protection mentale lancées avant le combat.[1] Leur présence explique pourquoi une silhouette désarmée résiste à des attaques redoutables. Cette défense dépend d'actes accomplis en amont. La puissance visible au moment de la rencontre contient donc déjà une histoire : celle des précautions prises avant l'ouverture de la porte.",
+        "Son répertoire associe l'invisibilité et le déguisement à la lecture des pensées, à la scrutation et à la téléportation. Il comprend aussi le contresort, le bannissement, un mur de force et l'arrêt du temps.[1] Une telle diversité lui permet d'agir sur les conditions mêmes d'une confrontation. Il peut se soustraire au regard, interdire un passage, renvoyer une présence ou quitter les lieux. La violence directe reste une possibilité parmi des moyens souvent plus difficiles à percevoir.",
+        "Les règles fixent cependant des ressources distinctes et limitées pour les sortilèges les plus élevés, alors que l'invisibilité et le déguisement lui sont accordés à volonté dans cette version.[1] Cette asymétrie dessine un maître puissant mais tenu de choisir. Dépenser son effet le plus rare modifie la suite de la journée. Son intelligence se reconnaît autant dans ce qu'il réserve que dans ce qu'il montre."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle de cet archétype humain suit une carrière, un entourage et les conditions matérielles du savoir. Le portrait de 2014 fournit ici un cadre situé ; les autres mondes de fantasy peuvent organiser différemment leurs dignités magiques.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le travail assidu et le besoin de tranquillité dominent le portrait officiel.[1] L'isolement protège d'abord l'attention. Chez le conseiller, cette attention se partage avec les affaires d'un royaume ; chez le tyran, elle se transforme en surveillance. Une même interruption peut donc recevoir une réponse patiente ou devenir une offense politique. La réputation de l'archimage dépend de ces usages quotidiens autant que de ses prodiges."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La tour éloignée accueille les maîtres qui souhaitent étudier à l'écart, tandis que la fonction de conseiller les rapproche des souverains. Les demeures sont défendues par des protections et des gardiens magiques.[1] Leur organisation sépare les espaces accessibles des lieux réservés. Le seuil devient une frontière de connaissance : entrer dans la maison ne signifie pas être admis dans le lieu où son propriétaire travaille."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La fiche décrit un personnage occupé à étudier et à gouverner, sans lui assigner de nourriture surnaturelle.[1] Les besoins du corps demeurent donc ceux de l'individu concerné. Cette banalité compte dans son portrait : un maître qui peut quitter instantanément les lieux appartient encore à la vie domestique. Les repas, le repos et le service de sa maison ramènent l'immensité de son savoir à une journée humaine."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'intelligence détermine explicitement sa capacité à lancer les sorts dans les règles de 2014.[1] Elle se déploie aussi dans l'anticipation : préparer les protections, distinguer une menace d'une visite, garder une issue disponible. La liste de ses moyens suppose un esprit qui compare des solutions. La force brute impressionne ; la possibilité d'obtenir le même résultat par une action presque invisible rend l'archimage beaucoup moins prévisible."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La continuité du titre passe par l'apprentissage. Les élèves mentionnés dans la description officielle placent la transmission au cœur de sa demeure.[1] Ils héritent d'un enseignement, et peut-être de responsabilités, plutôt que d'une nature différente. Devenir maître engage du temps et des décisions personnelles. Le savoir transmis peut survivre à celui qui l'a réuni, alors même que l'élève donnera à cette puissance une orientation opposée."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les adversaires de l'archimage appartiennent aux conflits qu'il traverse. Les protections de sa demeure visent les intrus ; sa résistance magique et son contresort répondent à d'autres utilisateurs de magie.[1] Son arsenal révèle ainsi les périls qu'il prévoit. Le maître le mieux préparé reste exposé à l'erreur d'appréciation, notamment lorsqu'il confond la faiblesse apparente d'un visiteur avec l'absence de danger."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les objets les plus révélateurs sont parfois les moins imposants. La fiche de combat donne une simple dague à ce personnage capable de téléportation et d'arrêt du temps.[1] Cette arme conserve l'échelle de la main au milieu des phénomènes immenses. Elle rappelle aussi la différence entre l'objet que voit le visiteur et les pouvoirs qu'il doit seulement supposer.",
+        "La tour, les protections et les apprentis forment les traces durables de son activité. Après sa disparition, une demeure défendue peut continuer à tenir les curieux à distance ; cette possibilité découle du rôle donné aux gardiens, sans constituer un récit particulier rapporté par les règles. L'archimage laisse surtout une question de succession : qui comprend assez bien son œuvre pour l'habiter, et qui aura le droit de décider ce qu'il faut en transmettre ?"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "D&D Beyond — Archmage, Basic Rules (2014)",
+        "url": "https://www.dndbeyond.com/monsters/16789-archmage"
+      }
+    ]
+  },
+  "arimaspe": {
+    "description": "Aux confins du Nord antique, des cavaliers à l'œil unique disputent aux griffons l'or qui sort de la terre.",
+    "sections": {
+      "fascination": [
+        "L'Arimaspe apparaît avec son adversaire. D'un côté, un homme monté sur un cheval ; de l'autre, un corps de lion pourvu d'ailes et d'un bec d'aigle. Entre eux se trouve l'or. Leurs affrontements donnent aux confins du monde grec une agitation presque visible : des ailes ouvertes au-dessus des cavaliers, une terre précieuse que chaque camp veut garder, un combat dont les voyageurs n'aperçoivent que les récits rapportés.[2]",
+        "L'œil unique suffit à éloigner cet homme de l'humanité familière, mais les textes lui conservent un peuple, des voisins et des échanges. Les Arimaspes appartiennent à l'ethnographie merveilleuse de l'Antiquité : des populations décrites depuis le bord incertain du savoir géographique. Leur étrangeté tient à cette proximité troublante. Ils font la guerre, convoitent des richesses et transmettent des offrandes, tout en portant sur le visage le signe d'un ailleurs presque inaccessible.[2]"
+      ],
+      "legendes": [
+        "Hérodote rapporte au livre IV de ses Histoires le récit d'Aristéas de Proconnèse. Ce poète, saisi par Apollon, aurait atteint les Issédons ; au-delà habitaient les Arimaspes, puis les griffons gardiens de l'or, et enfin les Hyperboréens, dont le territoire s'étendait jusqu'à la mer.[2] Cette suite de peuples et de créatures donne une profondeur au Nord. Chaque étape promet une autre frontière, et le voyage connu se prolonge par des paroles venues de plus loin.",
+        "La guerre anime cette géographie. Selon le récit transmis par Hérodote, les Arimaspes auraient repoussé les Issédons, qui auraient à leur tour chassé les Scythes de leurs terres. Les Hyperboréens seuls échappent à la succession des hostilités.[2] L'Arimaspe occupe donc une place précise dans une explication ancienne des déplacements de populations. Sa lutte avec les griffons appartient au même horizon que des guerres entre voisins humains.",
+        "Hérodote rend également visible la chaîne des témoignages. L'histoire des hommes à un œil et des gardiens de l'or vient des Issédons ; les Scythes la recueillent, puis les Grecs la reçoivent des Scythes.[2] Cette circulation importe autant que le prodige. Le lecteur rencontre une information de plusieurs mains, transportée sur de grandes distances. Au livre III, l'historien reconnaît son incertitude sur la manière dont l'or septentrional est produit, avant de mentionner le vol attribué aux Arimaspes.[2]",
+        "Dans le Prométhée enchaîné transmis sous le nom d'Eschyle, Prométhée avertit Io d'éviter les griffons et les Arimaspes cavaliers qui vivent près du courant aurifère de Plouton.[2] Le peuple devient un danger sur une route d'exil. Pausanias lui donne ailleurs une fonction plus paisible : les offrandes des Hyperboréens passent par les Arimaspes, puis par les Issédons et les Scythes, avant de gagner le monde grec et Délos.[2] Les mêmes confins peuvent transmettre une menace ou un don sacré."
+      ],
+      "anomalies": [
+        "L'unicité de l'œil constitue le trait commun des descriptions. Pline l'Ancien précise sa position au milieu du front ; Pausanias rapporte que les Arimaspes naissent tous avec un seul œil.[2] L'anomalie concerne donc un peuple entier dans ces textes. Elle accompagne une identité collective, tandis que leurs activités restent celles d'hommes capables de monter à cheval, de combattre et de participer aux relations entre populations.",
+        "Leur ressemblance avec d'autres figures monoculaires s'arrête aux éléments effectivement décrits. Les passages réunis autour des Arimaspes mettent l'accent sur les cavaliers et la guerre pour l'or, sans leur donner la stature démesurée ou le métier de forgeron associés à certains Cyclopes.[2] Leur force vient de l'organisation d'un peuple et de la continuité de ses raids. Le griffon, immense et ailé, conserve dans le couple la silhouette animale la plus spectaculaire.",
+        "La richesse sort elle-même des profondeurs. Pausanias dit que l'or gardé par les griffons provient de la terre ; Pline décrit ces animaux comme des extracteurs qui défendent ce qu'ils ont découvert.[2] Le conflit oppose ainsi deux appropriations du même bien. Chez Pline, la convoitise est attribuée aux deux camps : le bec monstrueux et le visage humain se répondent dans un désir partagé."
+      ],
+      "naturelle": {
+        "lead": "Les témoignages antiques présentent les Arimaspes comme un peuple lointain et merveilleux. Leur histoire naturelle suit ces récits situés, avec leurs activités et leurs voisins, plutôt qu'une espèce zoologique dont l'existence aurait été établie.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La guerre récurrente domine les témoignages. Les cavaliers prennent l'or aux griffons et exercent une pression sur les peuples voisins dans le récit d'Aristéas transmis par Hérodote.[2] Pourtant, la chaîne d'offrandes décrite par Pausanias leur confère aussi un rôle d'intermédiaire. Leur conduite varie avec le propos du texte : guerriers aux limites du voyage, ils deviennent relais lorsque le récit suit la circulation des présents destinés à Apollon."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Leur pays se situe au-delà des Issédons dans la séquence rapportée par Hérodote. Pline les place dans le vaste Nord scythique, à proximité des régions associées au vent du nord et aux monts Riphées.[2] Ces indications dessinent une géographie antique des confins. Les distances, les frontières et les équivalences modernes restent incertaines ; transformer cette succession narrative en emplacement exact ferait perdre la nature même du témoignage."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les passages antiques consultés suivent l'or, les guerres et les offrandes plutôt que les repas.[2] Leur économie visible repose sur la possession et la circulation de biens. Le cheval implique un rapport durable avec un animal domestique, mais les textes cités ne décrivent ni cultures ni troupeaux nourriciers. La vie quotidienne demeure derrière la scène du combat, comme si les voyageurs avaient retenu seulement ce qui rendait ce peuple mémorable."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Monter des chevaux, affronter les gardiens d'un gisement et prendre place dans une chaîne d'échanges supposent une conduite sociale élaborée.[2] Le récit ne leur attribue aucun pouvoir mental particulier lié à l'œil unique. Leur intelligence se lit dans les actions humaines qui leur sont prêtées : poursuivre une richesse difficile d'accès, intervenir contre des voisins et transmettre les biens venus d'une région plus éloignée encore."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Pausanias affirme que tous les Arimaspes naissent avec un œil.[2] Cette phrase fait de la particularité corporelle un caractère collectif dès la naissance, sans détailler unions, familles ou croissance des enfants. La permanence du peuple suffit au récit. Les générations demeurent implicitement derrière les guerres répétées et les circuits de transmission, mais aucune généalogie connue dans ces extraits n'explique l'origine de leur singularité."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les griffons sont leurs adversaires constants autour de l'or.[2] Le rapport relève de la rivalité territoriale et de la garde d'un trésor ; les sources citées ne décrivent pas une alimentation régulière des griffons fondée sur la chair des Arimaspes. La différence importe : l'homme approche volontairement un danger pour saisir une richesse, et l'animal protège un bien auquel le récit lui reconnaît un attachement farouche."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Hérodote explique le nom par deux mots qu'il présente comme scythes : arima, « un », et spou, « œil ».[2] Il s'agit d'une étymologie antique rapportée par l'historien. Elle appartient à la manière dont les Grecs comprenaient le nom reçu de leurs informateurs ; sa valeur de témoignage reste distincte d'une démonstration linguistique moderne.",
+        "Les peintures de vases réunies par Theoi montrent la fortune du combat entre Arimaspes et griffons dans l'art grec.[2] Cette opposition compose une image immédiatement tendue : l'aile agrandit l'animal, le cheval prolonge l'élan de l'homme, et le trésor peut rester hors champ. Même quand l'or disparaît de la représentation, le conflit demeure reconnaissable. Le peuple dont le territoire nous échappe conserve ainsi un geste, fixé sur la terre cuite."
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "Theoi — Arimaspoi, textes antiques",
+        "url": "https://www.theoi.com/Phylos/Arimaspoi.html"
+      }
+    ]
+  },
+  "artificier": {
+    "description": "Une armure répond à sa main, une arme garde sa lumière : l'artificier confie à la matière une part de son savoir.",
+    "sections": {
+      "fascination": [
+        "L'artificier de fantasy se reconnaît à ce qui continue d'agir après son passage. Une lame éclaire la route ; un bouclier repousse celui qui le frappe ; un petit serviteur porte la magie jusqu'à une main éloignée.[4] Le prodige prend une forme maniable. On peut le sangler sur son dos, le prêter à un compagnon, sentir son poids dans une paume. Cette proximité rend le merveilleux presque domestique, même lorsque l'objet sert à traverser un champ de bataille.",
+        "Son pouvoir attire le regard vers le travail. La pièce enchantée conserve une forme, un usage et un porteur. La magie améliore un geste existant ou lui ajoute une possibilité inattendue. L'artificier appartient ainsi aux archétypes de praticiens savants de la fantasy moderne. Son identité tient à une compétence acquise et à une relation particulière aux objets ; les individus qui l'exercent peuvent avoir des origines et des tempéraments très différents."
+      ],
+      "legendes": [
+        "Le français artificier possède d'abord une histoire professionnelle bien réelle. Le Dictionnaire de l'Académie française le fait dériver d'artifice et situe le mot au XVIe siècle. Il désigne le spécialiste civil ou militaire des pièces d'artifice, puis celui qui travaille sur les munitions et les engins explosifs, notamment pour les neutraliser.[5] Ce sens historique conserve l'idée d'une maîtrise technique exigeante. La figure enchantée du catalogue relève d'un autre domaine : l'imaginaire ludique.",
+        "Donjons et Dragons fournit une version précisément décrite de cet artisan magique. Dans l'article de D&D Beyond consacré aux infusions de la cinquième édition, l'artificier peut conférer des propriétés magiques à des objets ordinaires. Certaines améliorations renforcent une arme ou une protection ; d'autres reproduisent des objets magiques déterminés.[4] La matière reçoit donc un effet réglé, dont la nature dépend du savoir du fabricant. La présente notice suit cette version à infusions, sans étendre ses mécanismes à toutes les éditions.",
+        "Le même article insiste sur le partage de ces créations. L'artificier peut renforcer l'arme d'un allié ou aider un autre lanceur de sorts à conserver sa concentration.[4] Cette circulation donne à la profession une place singulière dans le groupe. Une victoire obtenue par un compagnon peut dépendre d'un objet préparé ailleurs et auparavant. Le mérite du fabricant se répartit entre plusieurs mains, parfois loin du lieu où il se trouve.",
+        "L'homoncule serviteur rend cette activité plus étrange encore. La création peut prendre une apparence choisie et accomplir des actions sur instruction ; elle peut aussi transmettre un sort de contact lancé par son maître lorsqu'elle reste dans la portée prévue.[4] L'atelier produit alors une présence mobile. Le lien entre le fabricant, le petit auxiliaire et la personne touchée dessine une magie de délégation, faite de distances mesurées et de tâches confiées."
+      ],
+      "anomalies": [
+        "La propriété surnaturelle s'attache à un support. L'article décrit notamment une arme lumineuse capable d'éblouir, un bouclier qui repousse un attaquant et une armure dotée de gantelets projetables revenant vers le porteur.[4] Chaque objet conserve son rôle premier tout en le débordant. La défense devient mouvement ; l'arme devient aussi éclairage. Ces extensions restent liées à des infusions particulières, plutôt qu'à un pouvoir indifférencié de rendre toute invention possible.",
+        "Les limites sont inscrites dans le savoir disponible. La reproduction d'objets magiques suit des listes et des conditions de progression ; certaines créations exigent une expérience élevée.[4] L'artificier ne dispose donc pas immédiatement de tout ce qu'il peut imaginer. La compétence se construit par acquisitions successives. Entre le désir d'un objet et sa réalisation subsiste une distance, que l'apprentissage réduit sans abolir toutes les contraintes.",
+        "L'armure à propulsion arcanique présentée dans cette version peut remplacer des membres manquants et résiste à une tentative de retrait contre la volonté du porteur.[4] Ce détail transforme le rapport entre corps et équipement. Une protection devient également un moyen d'agir et de se déplacer. L'objet peut prendre une place intime dans la vie de celui qui le porte, bien au-delà du moment où une attaque frappe sa surface."
+      ],
+      "naturelle": {
+        "lead": "Pour cette fonction de fantasy, les six rubriques suivent les conditions d'exercice, l'apprentissage et les liens entre fabricant et utilisateurs. Les propriétés évoquées appartiennent à la version à infusions documentée par D&D Beyond.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'artificier répartit une partie de sa puissance entre les objets confiés à ses compagnons.[4] Son attention porte donc sur leurs usages : une protection doit parvenir au bon porteur, une arme améliorée répondre à un besoin réel. Cette dimension collective distingue le praticien du collectionneur qui conserve tout pour lui. Le choix de l'équipement révèle à qui il accorde sa confiance et quel danger il estime prioritaire."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "L'article consulté décrit une classe d'aventurier et ses créations, sans lui assigner un territoire naturel.[4] Son espace se définit surtout par l'accès aux objets et par la proximité des utilisateurs. L'atelier appartient à son imaginaire, mais le produit de son travail voyage : armures et armes suivent les chemins de leurs porteurs. Une part de son activité se lit ainsi dans l'équipement d'un groupe plutôt que dans un bâtiment unique."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le praticien conserve les besoins corporels de l'individu qui exerce cette fonction. Les ressources surnaturelles concernent les objets : certaines infusions disposent de charges, comme celle qui aide à maintenir la concentration, dont une partie se renouvelle à l'aube.[4] Cette distinction évite de confondre repas, repos et entretien d'un pouvoir. Un dispositif rechargé n'implique pas que son créateur soit lui-même reposé ou disponible pour une nouvelle expédition."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Son savoir consiste à faire correspondre un effet précis à un support et à un usage. La reproduction magique impose de connaître une création déterminée, tandis que les améliorations d'équipement répondent à des fonctions différentes.[4] L'ingéniosité apparaît dans ces choix. Une modification peu spectaculaire peut sauver un compagnon en préservant sa concentration ; un objet éclatant peut rester moins utile que la protection discrète adaptée au péril rencontré."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La continuité de l'artificier est celle d'une compétence. Le système décrit une progression dans laquelle le nombre d'infusions connues augmente avec l'expérience.[4] Le titre se gagne par développement du savoir, tandis que les objets peuvent être reproduits selon des règles propres. L'homoncule relève encore d'un autre processus : c'est un serviteur créé. Réunir ces phénomènes sous une seule naissance ferait disparaître la différence entre élève, ouvrage et auxiliaire animé."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les périls apparaissent en creux dans ses inventions. Le casque de vigilance vise la surprise ; le bouclier de répulsion éloigne un agresseur ; les protections de concentration répondent aux chocs qui risquent d'interrompre un sort.[4] Cet inventaire ressemble à une mémoire des accidents possibles. L'artificier combat les adversaires de son groupe, mais aussi la défaillance d'un dispositif placé au mauvais endroit ou confié trop tard à son utilisateur."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les créations conservent la signature fonctionnelle du fabricant : une lame qui éclaire, une armure qui assiste le mouvement, un homoncule qui transmet le contact.[4] Leur valeur se mesure au geste qu'elles rendent possible. Ce sont des objets que l'on porte et que l'on expose à l'usure des aventures ; leur histoire se mêle à celle des mains qui les reçoivent.",
+        "Le mot français ajoute à cette figure une résonance différente de celle d'un simple enchanteur. L'artificier historique fabrique, manipule ou neutralise des dispositifs dont les effets exigent un savoir spécialisé.[5] La fantasy reprend cette proximité entre compétence et responsabilité, tout en remplaçant les procédés réels par des mécanismes surnaturels. Devant l'objet achevé, l'émerveillement s'accompagne d'une question très concrète : à qui fera-t-on confiance pour s'en servir ?"
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "D&D Beyond — Artificer 201: The Best Infusions for Artificers",
+        "url": "https://www.dndbeyond.com/posts/1353-artificer-201-the-best-infusions-for-artificers"
+      },
+      {
+        "id": 5,
+        "title": "Dictionnaire de l’Académie française — artificier",
+        "url": "https://www.dictionnaire-academie.fr/article/A9A2708"
+      }
+    ]
+  },
+  "aspidochelone": {
+    "description": "Les marins ont trouvé du sable, allumé leur feu et cru toucher terre. Puis l'île plonge.",
+    "sections": {
+      "fascination": [
+        "L'aspidochelone offre d'abord ce que l'équipage espère : une surface stable au milieu des vagues. Le sable recouvre son dos, sa masse paraît assez vaste pour recevoir des hommes, et l'immobilité confirme l'illusion. Les navigateurs débarquent, amarrent leur navire, préparent un repas. La catastrophe commence lorsque la chaleur du feu atteint la peau de l'animal. Il s'enfonce alors pour se refroidir, entraînant vers le fond les hommes et leur bâtiment.[3]",
+        "Toute la terreur tient dans le changement d'échelle. Ce qui semblait être un morceau du monde possède une sensibilité et un mouvement propres. Le feu, geste rassurant de la halte, réveille la profondeur sous les pieds. La créature laisse assez de temps pour que la confiance s'installe ; puis elle retire le sol. Dans le bestiaire médiéval, son immense corps donne une forme particulièrement concrète au danger d'un refuge trompeur.[3]"
+      ],
+      "legendes": [
+        "Le nom Aspidochelone appartient au vaste dossier médiéval de la baleine et du monstre marin. Le répertoire The Medieval Bestiary rassemble sous cette entrée de nombreux noms, dont cetus, balena et fastitocalon.[3] Cette réunion documentaire recouvre des traditions et des descriptions variables. Le motif le plus reconnaissable reste celui de l'animal pris pour une île, auprès duquel les navigateurs commettent une erreur fatale.",
+        "Les textes anciens avaient déjà donné aux baleines des dimensions propres à troubler la perception. Dans son Hexameron, Ambroise décrit les géants de l'Atlantique comme des îles ou des montagnes lorsqu'ils apparaissent à la surface. Le recueil de sources consulté montre aussi comment Pline et Solin accumulent les descriptions d'animaux immenses, capables de dépasser la mâture et de projeter des masses d'eau.[6] Ces tableaux nourrissent un horizon marin où la taille suffit à rendre l'identification incertaine.",
+        "Au XIIIe siècle, Jacques de Vitry rapporte le danger des baleines prises pour des îles montagneuses pendant les tempêtes. Les marins y attachent leurs navires et allument des feux ; la brûlure provoque la plongée qui les emporte.[6] La comparaison devient un enchaînement d'actions. L'animal offre involontairement ou trompeusement une escale, et l'équipage transforme cette apparence en certitude par ses gestes ordinaires.",
+        "La lecture morale des bestiaires reconnaît dans cette tromperie l'action du diable, qui attire les hommes avant de les entraîner vers l'enfer. Un second motif complète le premier : la baleine affamée ouvre sa gueule, exhale une odeur suave, attire les petits poissons puis les engloutit.[3] L'escale et le parfum ont la même douceur initiale. Le commentaire chrétien fait de ces séductions une mise en garde contre les désirs qui rendent imprudent."
+      ],
+      "anomalies": [
+        "Le dos peut porter du sable, et certaines descriptions vont jusqu'à y faire pousser herbes, buissons et petits arbres. Le texte de Barthélemy l'Anglais reproduit dans le dossier documentaire explique cette végétation par la terre accumulée sur l'animal devenu énorme avec l'âge.[6] La peau disparaît sous un paysage. La confusion repose donc sur plusieurs indices convergents : étendue, immobilité et présence de matières normalement associées au rivage.",
+        "La bouche parfumée compose une autre anomalie, moins visible mais tout aussi décisive. Jacques de Vitry décrit une ouverture qui laisse passer de petits poissons, attirés par l'odeur du souffle. Thomas de Cantimpré reprend ce motif et tente de l'articuler à une anatomie de la gorge, tout en mentionnant l'engloutissement de Jonas.[6] Ces rapprochements appartiennent aux efforts des encyclopédistes pour réunir des autorités diverses ; ils produisent une créature dont les dimensions et les capacités varient avec les récits convoqués.",
+        "La plongée sous l'effet du feu conserve pourtant une simplicité physique. La chaleur atteint une peau épaisse ; l'animal cherche la fraîcheur de l'eau.[3] La lecture morale lui prête une puissance de tromperie, tandis que l'action racontée peut ressembler à une réaction de défense. Cette tension rend l'épisode durable : pour les hommes, une attaque dévastatrice ; pour la masse vivante sous eux, un mouvement provoqué par la douleur."
+      ],
+      "naturelle": {
+        "lead": "L'aspidochelone relève d'une histoire naturelle morale et merveilleuse. Les observations sur les baleines, les autorités livresques et les récits de fausse île s'y rencontrent ; leurs détails gardent ici le nom des auteurs qui les transmettent.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "De longues stations à la surface permettent au sable de couvrir son dos dans le récit synthétisé par The Medieval Bestiary.[3] Cette immobilité prépare la méprise. Le mouvement final est soudain du point de vue des marins, mais répond à une sensation accumulée dans la peau. L'épisode oppose ainsi deux durées : celle de l'installation humaine, assez lente pour sembler sûre, et celle d'une plongée qui défait tout."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La créature occupe la pleine mer, là où une terre inattendue peut sauver un équipage. Ambroise situe ses baleines démesurées dans les profondeurs de l'Atlantique, loin des côtes ; d'autres autorités du dossier privilégient les mers de l'Inde pour leurs animaux gigantesques.[6] Ces lieux appartiennent à des descriptions distinctes. Le motif de l'île vivante circule plus largement que les localisations précises données à telle baleine par tel auteur."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les petits poissons se dirigent vers l'odeur suave qui sort de la gueule ouverte, puis disparaissent lorsqu'elle se referme.[3] La chasse se fait par attraction. Dans l'interprétation morale, les poissons figurent ceux qui cèdent aux séductions du monde. Le parfum devient donc simultanément un moyen de capture dans le récit animal et une image du désir dans son commentaire religieux ; les deux lectures partagent le même mouvement vers une douceur dangereuse."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La ruse est surtout affirmée par l'allégorie, qui identifie le monstre au trompeur infernal.[3] L'histoire des navigateurs décrit des indices mal interprétés, puis une réaction à la chaleur. Elle laisse ouverte la part d'intention attribuable à l'animal. La menace peut ainsi naître autant de l'erreur humaine que d'un dessein monstrueux : la certitude des marins grandit alors que leur connaissance du lieu reste presque nulle."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le récit de la fausse île suit un adulte immense et reste silencieux sur sa naissance. Les encyclopédies élargissent pourtant le dossier de la baleine : Thomas de Cantimpré décrit des petits abrités dans la bouche pendant la tempête, puis rendus à la mer lorsque le calme revient.[6] Cette sollicitude appartient à sa baleine encyclopédique. Elle enrichit le voisinage documentaire de l'aspidochelone sans constituer un cycle reproductif commun à toutes ses versions."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les marins de la fausse île deviennent victimes après avoir cherché une halte ; ils abordent un lieu supposé, sans mener une chasse.[3] Les sources encyclopédiques réunissent aussi des récits de capture des baleines par les hommes.[6] La distinction change le rapport de force : l'animal merveilleux peut engloutir un équipage entier, tandis que la baleine des descriptions de pêche devient une ressource convoitée, vulnérable malgré ses dimensions."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les images médiévales de la baleine-île fixent le moment où les deux interprétations du lieu restent visibles ensemble : des hommes occupent le dos, tandis que le spectateur reconnaît déjà la bête.[3] Cette double vue donne à l'image sa cruauté particulière. Celui qui regarde sait où se trouvent les marins ; les personnages, absorbés par leurs tâches, ignorent encore ce que leur sol va faire.",
+        "La diversité des noms conservés autour d'Aspidochelone montre la circulation du motif entre langues et recueils.[3] Son unité tient moins à une anatomie constante qu'à une scène : une traversée interrompue, un feu posé sur une surface trompeuse, l'eau qui reprend tout. Le monstre demeure reconnaissable jusque sous la végétation, parce que sa véritable forme se révèle dans cet instant où le rivage cesse de tenir."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "The Medieval Bestiary — Whale (Aspidochelone)",
+        "url": "https://bestiary.ca/beasts/beast282.htm"
+      },
+      {
+        "id": 6,
+        "title": "The Medieval Bestiary — Whale, Sources",
+        "url": "https://bestiary.ca/beasts/beastsource282.htm"
+      }
+    ]
+  },
+  "assassin": {
+    "description": "Dans la foule du palais, une présence ordinaire suffit à faire trembler ceux que protègent des murailles.",
+    "sections": {
+      "fascination": [
+        "L'assassin de l'imaginaire porte une menace à hauteur d'homme. Le dragon annonce son approche ; lui peut partager le visage, la langue et les habitudes de ceux qui attendent dans une antichambre. Son pouvoir romanesque tient à cette proximité : la distance entre le souverain et le passant semble soudain dérisoire. Une porte ouverte par courtoisie devient inquiétante, un nom prononcé à voix basse prend le poids d'une condamnation.",
+        "La silhouette encapuchonnée, les vêtements sombres et la lame cachée composent aujourd'hui un archétype reconnaissable. Ce portrait rassemble des conventions de fiction plutôt qu'un uniforme historique. Sous son apparente unité se croisent le meurtrier politique, le tueur rémunéré, le vengeur et le serviteur d'une cause. Leurs raisons divergent ; le même mot les rapproche parce que tous placent une vie précise au centre de leur action."
+      ],
+      "legendes": [
+        "L'histoire du nom traverse une communauté réelle. Les croisés et d'autres Européens du Moyen Âge appliquèrent des formes du mot assassin aux ismaéliens nizârites de Syrie. Farhad Daftary rattache cette appellation aux variantes d'un terme arabe employé comme injure par leurs adversaires. L'Encyclopaedia Iranica rappelle également ce caractère péjoratif.[1][2] Les nizârites appartiennent à une tradition de l'islam chiite ; leur histoire religieuse dépasse largement les violences auxquelles le nom européen les a durablement associés.",
+        "Au XIIe siècle, Rashid al-Din Sinan dirige la communauté nizârite syrienne. Il devient, dans les récits des croisés, le fameux Vieux de la Montagne. Les actions de certains fidâ'îs contre des ennemis de leur communauté suscitent des récits de dévouement absolu, bientôt grossis par la rumeur.[1] La figure du maître retiré dans sa forteresse prend une dimension presque surnaturelle : ses ordres semblent abolir la crainte de mourir, tandis que ses adversaires ignorent jusqu'où s'étend son influence.",
+        "Les narrateurs européens cherchent une explication à cet engagement. Ils développent des histoires de drogue, d'obéissance aveugle et d'initiation secrète. Marco Polo popularise une version où intervient un jardin présenté comme le paradis : les jeunes hommes y auraient goûté les délices promises en récompense de leurs missions. Daftary étudie cet ensemble comme une construction légendaire ; aucune preuve n'établit l'emploi systématique du haschisch pour motiver les fidâ'îs, et les sources musulmanes contemporaines hostiles restent muettes sur ce prétendu procédé.[1] Le jardin appartient donc à l'histoire des représentations européennes.",
+        "Une fois son contexte oublié, l'appellation devient en Europe un nom commun désignant le meurtrier.[1] Ce déplacement explique une confusion persistante : l'assassin de fiction paraît parfois descendre directement d'un ordre universel, intact depuis les croisades. En réalité, le mot a changé d'échelle et de sens. La mémoire d'une minorité religieuse, une légende d'Orient et la catégorie beaucoup plus vaste du meurtre prémédité se sont déposées dans les mêmes syllabes."
+      ],
+      "anomalies": [
+        "Son anomalie est sociale. Les institutions organisent la protection autour de barrières visibles : gardes, titres, interdictions, distances. L'assassin imaginaire menace cette organisation de l'intérieur. Il oblige à soupçonner les relations elles-mêmes. L'inquiétude gagne alors le repas, le service domestique, la poignée de main ; la personne protégée découvre que vivre exige précisément les contacts qu'elle voudrait contrôler.",
+        "La fiction lui prête souvent une maîtrise physique presque infaillible et un détachement sans fissure. Ces qualités relèvent du personnage stylisé. Le corps humain demeure soumis à la fatigue, à la blessure et à la peur ; les motivations comportent des hésitations que l'image du masque efface. Cette tension donne sa gravité à l'archétype : derrière l'exécution apparemment mécanique d'une volonté subsiste quelqu'un qui choisit, obéit, doute ou se trompe.",
+        "L'autre puissance attribuée à l'assassin est celle de la réputation. Dans les légendes étudiées par Daftary, le récit de l'obéissance des fidâ'îs participe à l'effroi bien au-delà d'un événement précis.[1] L'adversaire redoute ce qu'il croit possible. La rumeur agrandit ainsi la présence d'un groupe, au risque de transformer chacun de ses membres en menace supposée."
+      ],
+      "naturelle": {
+        "lead": "L'assassin est ici un archétype humain. Son histoire naturelle suit les dépendances, les apprentissages et les périls que la fiction associe à cette fonction, en les séparant des communautés historiques auxquelles son nom fut appliqué.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le personnage vit sous le poids d'un acte futur. Dans le récit, les conversations ordinaires prennent une seconde valeur : promesse à tenir, loyauté éprouvée, soupçon qu'il faut porter. Le silence auquel on le reconnaît traduit cette vie divisée. Certains assassins fictifs revendiquent leur mission ; d'autres la subissent ou cherchent à s'en défaire. Leur apparente froideur peut donc recouvrir des rapports très différents à la responsabilité."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le palais et la ville dominent son paysage imaginaire parce qu'ils concentrent le pouvoir et ses dépendances. La forteresse lointaine appartient plutôt au décor des légendes européennes sur les nizârites.[1] Entre ces deux lieux, le personnage change de statut : redoutable présence anonyme au milieu des autres, il devient disciple ou subordonné lorsqu'il rejoint celui qui lui donne ses ordres."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Sa subsistance relève des mêmes besoins que celle des personnes qu'il côtoie. La fiction préfère souvent montrer le repas comme une épreuve de confiance : accepter la table d'autrui signifie reconnaître une hospitalité, parfois renouer avec une existence commune. Quant aux récits de recrutement par une substance intoxicante, ils appartiennent au dossier légendaire décrit plus haut, et ne constituent pas un régime historique des fidâ'îs.[1]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'intelligence de l'archétype se mesure surtout à sa lecture des êtres humains. Une grande habileté peut servir une compréhension médiocre de sa propre cause. Le maître du secret reste parfois aveugle à la manipulation dont il fait l'objet. Cette dissociation entre compétence et jugement distingue le personnage tragique de la simple silhouette invincible : savoir accomplir un acte laisse entière la question de sa justice."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le rôle se transmet dans les fictions par l'apprentissage, le serment ou l'imitation d'un prédécesseur. La famille et la naissance restent celles d'êtres humains ; c'est l'appartenance qui transforme leur vie. Les récits européens d'initiation au jardin paradisiaque montrent combien cette transmission a fasciné les observateurs extérieurs, jusqu'à leur faire prendre une invention pour l'explication d'un engagement religieux et politique.[1]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les adversaires du personnage sont des personnes et des institutions : ceux qui enquêtent, ceux qui le poursuivent, parfois ceux qui l'emploient. La trahison pèse davantage que la force brute dans son imaginaire. Le même secret qui protège sa mission peut l'isoler lorsqu'il cherche de l'aide. Sa vulnérabilité devient alors particulièrement humaine : il lui manque quelqu'un à qui raconter toute son histoire."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le nom conserve une violence ancienne exercée par la désignation. Son rapprochement étymologique avec les formes arabes liées au haschisch a longtemps servi de preuve circulaire à la légende de la drogue. Daftary distingue l'histoire du terme injurieux de celle des pratiques réellement attestées.[1] Une étymologie peut expliquer un mot tout en laissant fausse l'histoire que ce mot a fait naître.",
+        "La capuche, le sceau d'un ordre imaginaire ou la lame devenue emblème rendent visible ce qui devrait rester caché. Ce paradoxe appartient à l'image moderne de l'assassin : le personnage secret possède une silhouette immédiatement identifiable. La lecture historique laisse derrière ces attributs de fiction des communautés, des conflits et des témoignages qu'une seule image sombre avait recouverts."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Farhad Daftary — Assassin, Institute of Ismaili Studies",
+        "url": "https://www.iis.ac.uk/scholarly-contributions/assassin"
+      },
+      {
+        "id": 2,
+        "title": "Encyclopaedia Iranica — ASSASSINS",
+        "url": "https://www.iranicaonline.org/articles/assassins"
+      }
+    ]
+  },
+  "asura": {
+    "description": "À la même corde que les dieux, les asuras tirent sur le serpent qui doit faire surgir de l'océan le breuvage d'immortalité.",
+    "sections": {
+      "fascination": [
+        "Le barattage de l'océan offre une rencontre saisissante : les adversaires habituels des dieux travaillent avec eux à une œuvre immense. La montagne Mandara devient un bâton, le serpent Vasuki une corde, et la mer de lait une cuve dont chacun attend la même récompense.[3] L'asura apparaît ici dans l'effort, tendu vers une promesse qu'il partage avec son ennemi. Sa force compte dans la naissance du merveilleux.",
+        "Le mot désigne des êtres religieux dont les histoires restent présentes dans des fêtes, des images et des pratiques hindoues. Certains sont de terribles souverains ; d'autres donnent des exemples de dévotion ou conservent le souvenir d'un règne heureux.[3] Le nom seul laisse donc le visage ouvert. Il faut rencontrer Mahishasura, Prahlada ou Bali dans leur récit particulier pour comprendre ce qui les anime et ce qui leur advient."
+      ],
+      "legendes": [
+        "Dans les couches anciennes du Rig-Veda, asura qualifie une puissance ou une autorité élevée, divine et parfois humaine. Agni, Varuna et Savitr peuvent recevoir ce titre ; Rudra est appelé à la fois asura et deva dans un vers. Le sens évolue ensuite, jusqu'à désigner une classe d'adversaires des devas dans les textes védiques plus tardifs.[3] Les milliers d'années traversées par le terme expliquent ces emplois différents. Une traduction uniforme par démon efface cette histoire.",
+        "Dans le récit du barattage rapporté par le Mahabharata, devas et asuras s'accordent pour obtenir l'amrita. Après l'apparition du breuvage, Vishnu prend la forme séduisante de Mohini et le distribue aux dieux. Un asura, nommé Svarbhanu ou Rahu, réussit à en boire sous un déguisement ; dénoncé par le Soleil et la Lune, il est décapité par Vishnu. Sa tête immortelle est liée aux éclipses dans la tradition.[3] L'alliance de départ se défait au moment précis où son fruit paraît enfin accessible.",
+        "Le Devi Mahatmya raconte la victoire de Durga sur Mahishasura, l'asura-buffle. Ce combat nourrit les célébrations de Durga Puja et de Vijayadashami.[3] La puissance animale de l'adversaire donne à la confrontation un corps massif, tandis que la déesse manifeste une souveraineté capable de le vaincre. La scène appartient à une mémoire rituelle vivante : les images exposées et honorées pendant les fêtes portent une présence religieuse qui dépasse leur valeur d'illustration.",
+        "D'autres histoires déplacent le jugement. Prahlada, fils de Hiranyakashipu, se consacre à Vishnu malgré l'hostilité de son père ; le dieu intervient pour le protéger sous sa forme de Narasimha. Au Kerala, Mahabali demeure le roi dont le retour annuel est associé à Onam, après sa confrontation avec Vishnu sous la forme de Vamana.[3] La parenté asura accueille ainsi l'oppresseur, le fidèle persécuté et le souverain regretté. Leurs destins demandent chacun une lecture propre."
+      ],
+      "anomalies": [
+        "La métamorphose appartient aux pouvoirs que les traditions associent à de nombreux asuras. Charles Preston rapproche cette faculté de la maya, pouvoir d'illusion et de transformation déjà attaché aux puissances védiques.[3] Le corps révèle alors une capacité plutôt qu'une espèce : aspect humain, force animale et manifestation extraordinaire répondent aux besoins d'un récit donné. Une seule silhouette à cornes ou à plusieurs bras réduirait cette variété à un emblème moderne.",
+        "Leur puissance peut approcher celle des dieux, au point de rendre nécessaire l'intervention d'une divinité particulière. Taraka est ainsi lié au récit de la naissance de Skanda, fils de Shiva et Parvati, destiné à le vaincre.[3] L'adversaire impose une échelle au conflit : les alliances divines et les naissances elles-mêmes entrent dans son histoire. Son existence pèse sur l'organisation du monde avant que survienne le combat.",
+        "L'appartenance et la conduite demeurent distinctes. Le dévouement de Prahlada à Vishnu subsiste au sein d'une famille dominée par un ennemi du dieu.[3] Cette proximité rend le conflit douloureux : le fils et le père partagent une maison et une lignée, mais leurs fidélités les séparent. Le merveilleux conserve ici l'intimité d'une épreuve familiale."
+      ],
+      "naturelle": {
+        "lead": "Ce portrait suit principalement les traditions hindoues védiques, épiques et puraniques. Les rubriques décrivent leurs relations et leurs récits ; les autres emplois religieux du terme, notamment bouddhiques, possèdent des cadres distincts.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Rivalité, alliance temporaire et dévotion coexistent selon les personnages. Le barattage montre des asuras capables d'un effort commun avec les devas ; l'histoire de Prahlada montre une fidélité à Vishnu qui résiste à l'autorité paternelle.[3] L'hostilité envers les dieux domine de nombreux récits, mais chaque action prend son sens dans une histoire nommée. L'ambition d'un souverain et la ferveur d'un enfant appellent des jugements différents."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Leur espace est cosmologique et narratif. Autour de l'océan de lait, une montagne entière sert d'instrument ; dans la mémoire de Mahabali, le récit rejoint le Kerala et le retour attendu du roi.[3] Ces lieux relient des échelles très éloignées, depuis les opérations qui concernent le monde jusqu'au territoire célébré par une communauté. Ils donnent aux asuras une géographie de rencontres, de règnes et de défaites."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "L'amrita occupe une place décisive parce que l'obtenir transforme le rapport à la mort. Le récit détaille sa conquête et sa distribution plutôt qu'une nourriture quotidienne commune à tous les asuras.[3] Le breuvage rend sensible leur désir de durée : les forces dépensées dans le barattage visent une existence délivrée de sa limite. La déception du partage appartient dès lors à la même histoire que la reprise de la guerre."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Les asuras agissent comme des personnes capables de décision, de discours et d'engagement. Rahu comprend comment approcher le breuvage réservé aux dieux ; Prahlada discerne une fidélité supérieure aux ordres de son père.[3] La ruse et la dévotion représentent ici deux usages très différents de l'esprit. Leur coexistence empêche de faire de l'intelligence asura une simple aptitude collective à tromper."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les généalogies épiques distinguent notamment les Daityas, enfants de Diti, et les Danavas, enfants de Danu. Ces deux figures maternelles sont épouses de Kashyapa ; Aditi, mère des Adityas, appartient au même réseau familial.[3] La parenté rapproche donc des lignées ensuite opposées. Elle donne aux guerres cosmiques le caractère d'une lutte entre proches, dont les branches conservent la mémoire d'une origine partagée."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Leurs vainqueurs sont les adversaires précis du récit : Durga affronte Mahishasura, Skanda Taraka, et Narasimha Hiranyakashipu.[3] Ces combats relèvent de l'ordre religieux et moral, avec des formes divines adaptées à chaque crise. La défaite de Bali possède encore une autre tonalité, puisque la tradition d'Onam conserve son retour bienveillant. Mourir, être soumis ou revenir ne composent jamais une seule destinée asura."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le Metropolitan Museum of Art conserve un bronze indien intitulé Durga Mahishasura.[4] Ce titre réunit les deux protagonistes de la scène : l'adversaire devient reconnaissable à travers la victoire de la déesse. Dans les représentations du combat, la relation entre les corps compte autant que leurs attributs isolés ; elle donne une forme visible au récit transmis.",
+        "Les explications anciennes qui découpent asura comme l'opposé de sura appartiennent à une réinterprétation du mot, postérieure à ses emplois védiques comme titre de puissance.[3] L'histoire du vocabulaire rejoint ici celle des images : les traditions reprennent une forme héritée et lui donnent des valeurs nouvelles. Le lecteur rencontre ainsi des êtres dont le nom a lui-même traversé plusieurs mondes religieux."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Charles Preston — Asura, Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/topic/asura"
+      },
+      {
+        "id": 4,
+        "title": "Metropolitan Museum of Art — Durga Mahishasura",
+        "url": "https://www.metmuseum.org/art/collection/search/39227"
+      }
+    ]
+  },
+  "augure": {
+    "description": "Un bâton recourbé découpe le ciel ; au-dessous, une cité attend de savoir si elle peut agir.",
+    "sections": {
+      "fascination": [
+        "L'augure regarde un espace que les autres traversent sans le voir. Le ciel, le cri d'un oiseau, l'apparition d'un éclair deviennent les éléments d'une réponse. À Rome, cette attention s'inscrit dans la vie publique : une assemblée, une élection ou le départ d'une armée peuvent dépendre de l'interprétation des auspices.[5] La puissance du personnage tient à la disproportion entre la discrétion du signe et les conséquences de sa reconnaissance.",
+        "Son instrument, le lituus, est un bâton sans nœuds dont l'extrémité se recourbe. Avec ses insignes, l'augure possède une autorité immédiatement visible.[5] Pourtant son geste essentiel consiste à attendre. Les hommes ont déjà discuté, préparé leur entreprise, réuni leurs forces ; quelqu'un doit encore examiner si les dieux l'approuvent. Cette suspension donne à la figure une gravité particulière, faite de maîtrise du rite et d'attention à ce qui échappe aux volontés humaines."
+      ],
+      "legendes": [
+        "Dans le premier livre de son Histoire romaine, Tite-Live place les auspices au commencement de la cité. Romulus observe depuis le Palatin, Rémus depuis l'Aventin. Six vautours se présentent d'abord à Rémus ; un nombre double apparaît ensuite à Romulus. Chaque camp proclame son favori vainqueur, l'un invoquant la priorité, l'autre le nombre. La querelle s'achève dans la violence et la mort de Rémus.[6] Ce récit de fondation montre que la présence d'un signe laisse encore ouverte la question de son interprétation.",
+        "L'inauguration de Numa reçoit chez Tite-Live un traitement plus calme. Le futur roi est conduit à la citadelle et s'assied sur une pierre. L'augure, la tête couverte, délimite des régions du ciel, choisit un repère aussi éloigné que porte son regard, puis pose une main sur la tête de Numa et demande à Jupiter des signes déterminés.[6] Le paysage devient un espace réglé. Le pouvoir royal entre dans une relation religieuse exprimée par des gestes, des directions et des paroles précises.",
+        "Ces scènes appartiennent au récit romain des origines, écrit bien après l'époque qu'il décrit. L'histoire du collège des augures demeure obscure dans ses premiers siècles. En revanche, son importance politique et son évolution institutionnelle sont documentées : la loi Ogulnia de 300 avant notre ère ouvre des places aux plébéiens et porte le collège à neuf membres ; ses effectifs augmentent encore par la suite.[5] L'accès au savoir religieux rejoint ainsi les transformations du partage du pouvoir.",
+        "La charge est viagère et recherchée. Les augures peuvent examiner les irrégularités d'une prise d'auspices et conseiller les autorités sur leurs conséquences.[5] Derrière l'image du vieillard absorbé par le vol des oiseaux apparaît donc un spécialiste des procédures publiques. Sa compétence engage la validité d'une action autant que son caractère favorable. Le rite possède une mémoire, des règles et des interprètes autorisés."
+      ],
+      "anomalies": [
+        "Le domaine de l'augure associe la nature observable à une volonté divine. La foudre, les mouvements ou les cris des oiseaux prennent sens dans une consultation précise. Les Romains distinguent les signes sollicités, auspicia impetrativa, de ceux qui surviennent spontanément, auspicia oblativa.[5] La différence porte sur la rencontre : tantôt les hommes posent une question, tantôt un événement les oblige à interrompre ce qu'ils avaient entrepris.",
+        "Son pouvoir historique réside dans une fonction reconnue. L'augure de fantasy, capable de visions ou de prophéties détaillées, prolonge librement le nom vers une autre catégorie de personnage. L'officiant romain intervient surtout sur l'approbation divine d'une entreprise proposée.[5] Cette précision change le rapport au temps : le futur reste à accomplir, mais le présent reçoit une permission ou un obstacle.",
+        "Les pratiques divinatoires romaines forment plusieurs domaines voisins. L'examen des entrailles des victimes sacrificielles relève notamment des haruspices, fréquemment associés à la tradition étrusque.[5] Leur présence dans la même culture religieuse explique les rapprochements, sans effacer les fonctions particulières. Le lituus, l'oiseau et la délimitation du ciel orientent le portrait de l'augure vers son propre champ de compétence."
+      ],
+      "naturelle": {
+        "lead": "L'augure appartient aux institutions humaines de la Rome ancienne. Les six rubriques suivent ici l'exercice de sa charge, son environnement rituel et la transmission de son autorité.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'observation exige un cadre, un moment et une question. Britannica situe généralement la prise des auspices entre minuit et l'aube du jour prévu pour l'entreprise.[5] Dans le récit de Numa, l'augure précise d'abord les signes attendus avant de les recevoir.[6] Cette préparation donne au geste son caractère public et contrôlé : l'interprète travaille dans une procédure que sa communauté reconnaît, avec des conséquences qui dépassent sa personne."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La citadelle domine la scène d'inauguration de Numa, mais les circonstances déterminent le lieu de la consultation. Un emplacement est choisi en fonction de l'acte envisagé ; l'observateur peut y installer sa tente à l'avance.[5][6] Le paysage utile est celui où un horizon se laisse ordonner. La ville demeure présente au-dessous de ce ciel, puisque la question religieuse concerne ses magistrats, ses assemblées ou ses armées."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Dans le dossier augural, la nourriture intervient surtout par l'observation du comportement alimentaire des oiseaux, mentionnée parmi les signes recevables.[5] Un acte animal ordinaire entre ainsi dans une décision humaine majeure. La table personnelle de l'officiant relève de sa vie romaine ; le trait singulier du rite est ailleurs, dans l'attention accordée à la manière dont un autre vivant mange, se déplace ou fait entendre sa voix."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'augure rassemble mémoire des usages, précision du langage et jugement sur les circonstances. Il lui faut reconnaître une irrégularité, évaluer une information et comprendre quelle autorité la rapporte. Une annonce faite par un magistrat peut obliger un autre magistrat à suspendre une assemblée, tandis que la déclaration d'un particulier n'a pas la même portée.[5] La compétence religieuse rencontre donc une connaissance fine des positions civiques."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La continuité passe par le recrutement au collège. D'abord pourvues par cooptation, les places deviennent soumises à une sélection par les tribus avec la loi Domitia de 104 avant notre ère.[5] Ces changements déplacent les voies d'accès à une charge conservée à vie. Les hommes se succèdent ; l'institution transmet une autorité que la naissance seule ne suffit plus toujours à réserver aux mêmes groupes."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les pressions viennent de la vie politique et des contestations de procédure. Un avis religieux peut contrarier une décision attendue ; une erreur peut susciter un examen après les faits.[5] Le conflit se joue alors autour de la validité du signe et des droits de celui qui l'annonce. La querelle de Romulus et Rémus en donne une image légendaire extrême : voir les oiseaux ne garantit aucun accord entre les hommes.[6]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le lituus et la trabea, vêtement aux marques colorées décrit parmi les insignes de la fonction, rendent l'augure reconnaissable.[5] Le bâton concentre sa manière d'agir : une main dessine des limites dans un espace sans murs. Chez Tite-Live, le simple changement de main du lituus accompagne le passage de l'observation à la prière pour Numa.[6] L'objet garde la précision d'une cérémonie.",
+        "Les expressions françaises de bon ou de mauvais augure ont conservé la relation entre un signe présent et une issue attendue. Leur usage quotidien a largement détaché le mot de son collège romain. Le personnage antique reste pourtant plus singulier que ce sens diffus : un homme investi d'une charge, devant un horizon délimité, s'adresse aux dieux au nom d'une action encore suspendue."
+      ]
+    },
+    "sources": [
+      {
+        "id": 5,
+        "title": "Encyclopaedia Britannica — Augur",
+        "url": "https://www.britannica.com/topic/augur"
+      },
+      {
+        "id": 6,
+        "title": "Tite-Live — History of Rome, livre I, traduction D. Spillan",
+        "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm"
+      }
+    ]
+  },
+  "automate": {
+    "description": "La main se lève, l'oiseau chante, puis le ressort arrive au bout de sa course : une vie entière semblait tenir dans ce mouvement.",
+    "sections": {
+      "fascination": [
+        "Un automate commence par une attente. L'objet est là, immobile, avec un visage peint, des plumes ou des doigts articulés. Puis un mouvement se produit et le regard du spectateur change de nature. Il cherche une intention dans la rotation d'une tête, une respiration dans le soulèvement d'un vêtement. La mécanique a créé un intervalle où l'on sait que l'objet est fabriqué tout en lui accordant les premiers signes d'une présence.",
+        "L'histoire des automates comprend des figures humaines qui écrivent ou jouent de la musique, des oiseaux chanteurs et des scènes entières mises en mouvement.[7] Leur pouvoir d'émerveillement tient souvent à une action modeste accomplie avec justesse. Un oiseau minuscule surgissant d'une tabatière peut retenir l'attention autant qu'une grande statue. Le travail caché sous la surface donne au détail visible une apparente liberté."
+      ],
+      "legendes": [
+        "La mythologie grecque connaît Talos, gardien de bronze de la Crète. Dans les Argonautiques d'Apollonios de Rhodes, il parcourt l'île trois fois par jour et lance des rochers contre les navigateurs qui cherchent à aborder. Son corps invulnérable possède une faiblesse près de la cheville : une veine protégée par une peau mince. Sous l'effet de la magie de Médée, il se blesse contre un rocher, perd son ichor et s'abat.[8] La matière métallique conserve ainsi une vulnérabilité presque organique.",
+        "Les versions antiques divergent. Le Pseudo-Apollodore rapporte tantôt un survivant de la race de bronze, tantôt un être associé à l'art d'Héphaïstos ; sa mort peut résulter du retrait d'un clou qui ferme son vaisseau vital, ou d'une flèche.[8] Talos appartient à un récit mythique, avec des variantes de naissance et de destruction. Le rapprochement avec l'automate éclaire sa forme artificielle, sans transformer l'histoire en compte rendu d'une machine construite.",
+        "L'histoire des techniques possède ses propres documents. Héron d'Alexandrie décrit des appareils actionnés par l'eau, des poids et la vapeur. Dans le monde islamique médiéval, al-Jazari réalise des dispositifs hydrauliques pour les princes artuqides ; Britannica mentionne notamment ses paons mobiles.[7] Ici, le merveilleux passe par des mécanismes dont l'agencement produit un effet prévu. Un récipient, un débit ou une masse en mouvement fournissent la force que le spectateur attribue spontanément à la figure.",
+        "À la Renaissance, les jardins offrent aux mécanismes hydrauliques de vastes décors, comme les installations de la villa d'Este à Tivoli. Le ressort d'acier rend aussi possible une source de mouvement transportable. Des nefs de table, objets précieux en forme de navires, associent alors le travail de l'orfèvre à celui du mécanicien.[7] L'automate change d'échelle et de public : il se rencontre dans une fête, sur une table ou au détour d'une promenade.",
+        "Aux XVIIIe et XIXe siècles, les tableaux mécaniques et les oiseaux chanteurs multiplient ces surprises. Les frères Rochat se spécialisent dans de petits oiseaux capables d'apparaître sous un panneau de tabatière ou de s'animer dans une cage.[7] La virtuosité consiste autant à réduire le mécanisme qu'à composer le spectacle. La boîte qui tient dans la main renferme une scène dont l'ouverture semble faire entrer un vivant dans la pièce."
+      ],
+      "anomalies": [
+        "Le corps de l'automate sépare l'apparence du mouvement et sa cause. La bouche peut s'ouvrir à l'endroit où le spectateur attend un souffle, tandis que la force vient du socle. Des transmissions conduisent cette force jusqu'aux parties visibles. Selon les modèles, une horlogerie ou un dispositif hydraulique organise la séquence.[7] La surface raconte un geste ; l'intérieur en règle la durée et l'amplitude.",
+        "L'autonomie demeure relative. L'objet fonctionne après sa mise en mouvement, selon un agencement prévu.[7] Cette limite fait partie de sa beauté : chaque reprise restitue une suite d'actions qui semblait fugitive. L'automate mécanique historique doit être distingué de l'être artificiel conscient que la fiction lui substitue parfois. Une impression de vie peut naître d'un regard bien orienté, sans qu'aucune volonté habite les yeux.",
+        "Talos montre une autre logique. Son ichor s'échappe comme une substance vitale, et sa chute est décrite par Apollonios avec l'image d'un arbre qui cède.[8] Les métaux et le vivant communiquent dans le mythe. La fragilité de la cheville possède la valeur d'une faille narrative, tandis qu'un mécanisme réel dépend de l'état concret de ses pièces et de son alimentation en énergie."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle de l'automate décrit ici un objet fabriqué, entretenu et parfois personnifié. Les besoins matériels des machines historiques restent distincts de la vie surnaturelle accordée aux gardiens de métal des mythes.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La répétition caractérise les automates de spectacle. Une figure accomplit une séquence, revient au repos, puis recommence lors d'une nouvelle activation. Les tableaux mécaniques peuvent distribuer ces actions entre plusieurs personnages ou éléments du paysage.[7] Le spectateur se met alors à attendre le retour d'un détail : une roue, un bras, une apparition. La régularité du dispositif lui permet de comparer ce qu'il avait pris d'abord pour un geste spontané."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La machine vit matériellement dans le milieu que son constructeur lui a préparé. Une fontaine suppose une installation d'eau ; une scène mécanique se loge dans son cadre ; un oiseau miniature emporte son dispositif dans une boîte ou une cage.[7] Le socle et le décor participent à son fonctionnement autant qu'à son apparence. Déplacer l'objet peut donc signifier déplacer tout le petit monde technique qui rend son animation possible."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Eau, poids ou ressort fournissent l'énergie selon les appareils historiques.[7] Le mot alimentation retrouve ici un sens littéral de fourniture : le mouvement visible dépend d'une réserve ou d'un flux. Lorsque cette ressource manque, la figure s'arrête au milieu de ce qui paraissait être son activité. L'immobilité révèle soudain le travail extérieur dont dépendait son apparente initiative."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'ingéniosité appartient d'abord à la conception du dispositif. Écrire, dessiner ou jouer un morceau figure parmi les performances des androïdes mécaniques, mais l'action exécutée suit l'organisation de la machine.[7] Le public y reconnaît des activités humaines chargées de sens. Cette rencontre entre une séquence matérielle et un geste culturel explique pourquoi quelques mouvements de doigts suscitent des questions que ne poserait pas la rotation nue d'une roue."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La continuité dépend des ateliers et de la transmission des savoir-faire. Chaque nouvel exemplaire exige une fabrication, un assemblage et des réglages ; les modèles conservés nécessitent ensuite des artisans capables de les maintenir en état. Britannica souligne ce rôle des spécialistes dans la survie des automates historiques.[7] Une famille de machines se reconnaît ainsi par les choix de ses fabricants et par les mains qui ont continué leur travail."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "L'usure et la perte des compétences de réparation menacent la durée du mouvement. Un automate intact en apparence peut demeurer silencieux faute de pouvoir être remis en fonctionnement avec prudence. La conservation doit alors arbitrer entre l'objet matériel et la répétition du spectacle. Le mythe choisit une fin plus spectaculaire : Talos s'effondre lorsque sa substance vitale s'écoule, et le gardien cesse d'interdire le rivage aux Argonautes.[8]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les catégories anciennes d'objets conservent des surprises que le mot robot tend aujourd'hui à recouvrir. Une nef de table, un tableau animé ou une tabatière à oiseau réunissent décoration, savoir mécanique et plaisir du spectacle.[7] Ils font entrer l'automate dans l'histoire des arts autant que dans celle des techniques. Leurs matériaux précieux et leurs petites ouvertures déterminent la manière dont le mouvement se laisse découvrir.",
+        "Un automate arrêté garde le commencement d'un geste. Sa conservation expose ce double état : œuvre visible et événement en attente. Les récits de statues animées portent cette attente vers une véritable vie ; l'objet historique la ramène au travail de son fabricant. Sous les plumes ou le visage peint, le mécanisme garde la forme patiemment calculée d'une surprise."
+      ]
+    },
+    "sources": [
+      {
+        "id": 7,
+        "title": "Encyclopaedia Britannica — Automaton",
+        "url": "https://www.britannica.com/technology/automaton"
+      },
+      {
+        "id": 8,
+        "title": "Theoi — Talos, textes antiques",
+        "url": "https://www.theoi.com/Gigante/GiganteTalos.html"
+      }
+    ]
+  },
+  "baba-yaga": {
+    "description": "Dans la forêt, une vieille femme revient en mortier ; derrière elle, un balai efface le chemin qui permettrait de la suivre.",
+    "sections": {
+      "fascination": [
+        "La maison se tient sur des pattes de poule. À l'intérieur, Baba Yaga s'étire près du poêle, trop longue pour la pièce, le nez parfois planté dans le plafond. Son corps connaît les proportions du cauchemar : une jambe osseuse, des dents de fer dans certaines variantes, une vieillesse qui remplit toute la demeure. Elle flaire l'arrivée du visiteur avant de le voir.[1] Le refuge attendu au milieu des bois appartient à quelqu'un qui sait déjà que l'on approche.",
+        "Ses instruments viennent du ménage. Le mortier transporte, le pilon propulse, le balai dissimule les traces. Ces objets usés, tenus mille fois dans des mains humaines, acquièrent une terrible autonomie. Baba Yaga garde aussi l'autorité d'une maîtresse de maison : elle exige le repas, distribue les corvées, inspecte le travail. Entrer chez elle oblige à accepter une hospitalité dont les règles peuvent finir dans le four.[6]"
+      ],
+      "legendes": [
+        "Baba Yaga appartient aux traditions narratives slaves, particulièrement aux contes russes transmis par les grandes collectes du XIXe siècle. Elle y poursuit plusieurs carrières : dévorante, donatrice d'objets ou de renseignements, parfois l'une de trois sœurs portant le même nom. Cette diversité conserve les choix des conteurs. Les récits réunis autour d'elle composent une famille de rencontres plutôt qu'une biographie suivie.[1]",
+        "Dans Vasilissa la Belle, donné en anglais par W. R. S. Ralston d'après les collections russes, une marâtre fait éteindre la dernière lumière du foyer. La jeune fille doit aller chercher du feu chez Baba Yaga. Elle emporte une poupée reçue de sa mère mourante ; nourrie en secret, celle-ci conseille et protège sa propriétaire. Sur la route passent un cavalier blanc, un rouge, puis un noir. Le jour se lève, le soleil paraît, la nuit tombe au rythme de leur passage.[6]",
+        "La clairière présente une clôture d'ossements surmontée de crânes lumineux. Baba Yaga accepte de donner du feu en échange d'un service. Il faut nettoyer, cuisiner, préparer le linge et trier des grains en quantités impossibles. La poupée accomplit les tâches. Lorsque Vasilissa questionne la vieille sur les cavaliers, celle-ci reconnaît son Jour, son Soleil et sa Nuit. La jeune fille garde pour elle ses interrogations sur les mains désincarnées qui travaillent dans la maison : cette retenue lui vaut l'approbation de son hôtesse.[6]",
+        "L'aveu de la bénédiction maternelle provoque finalement son renvoi. Baba Yaga lui remet pourtant le feu promis, porté par un crâne. Le conte maintient jusqu'au départ cette alliance inquiétante entre parole tenue et menace de dévoration. Dans un autre parcours, celui du jeune Ivan présenté dans La Fille-tsar, les Baba Yaga successives se transmettent le voyageur et lui indiquent où poursuivre sa recherche. Leur savoir a des limites géographiques ; une sœur peut connaître ce que l'autre ignore.[1][6]"
+      ],
+      "anomalies": [
+        "La jambe osseuse et l'odorat exceptionnel donnent à la vieille une proximité avec la mort, sans que tous les récits expliquent son origine. Elle reconnaît une odeur humaine ou russe dans un lieu où celle-ci paraît étrangère. Le voyageur devient une intrusion sensible, presque une nourriture entrée d'elle-même dans la cuisine. Le nez démesuré prolonge cette faculté ; il peut toucher le plafond tandis que le reste du corps encombre le poêle.[1]",
+        "Sa maison possède une mobilité propre dans de nombreuses versions : elle tourne sur ses pattes et oblige le visiteur à obtenir l'accès à sa porte. Chez Vasilissa, la puissance s'étend à la clôture et aux serviteurs invisibles. Des bras sans corps emportent les récoltes ; les yeux des crânes remplacent le soleil après son coucher.[1][6] Chaque partie du domaine accomplit une besogne. L'étrangeté naît de ce travail réglé, poursuivi avec des membres humains séparés de leurs propriétaires.",
+        "Le lien avec les heures du jour devient explicite dans Vasilissa, où les trois cavaliers sont ses serviteurs. Il demeure propre à cette version. Les contes où elle renseigne un héros mettent plutôt en avant sa connaissance des routes et des êtres lointains. Son pouvoir change d'étendue selon l'aventure : une cuisine peut concentrer un ordre cosmique, puis redevenir la demeure isolée d'une vieille redoutable.[1][6]"
+      ],
+      "naturelle": {
+        "lead": "Son histoire naturelle suit les usages de sa maison et les rencontres conservées par les contes ; les variantes donnent davantage de gestes quotidiens que d'explications sur sa naissance.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Elle questionne, commande et vérifie. Dans Vasilissa, elle examine les corvées achevées avec le dépit de ne trouver aucun prétexte à punir. Elle invite pourtant la jeune fille à parler, puis approuve sa prudence. La curiosité doit respecter une frontière entre ce qui se voit dehors et les affaires intérieures. Cette susceptibilité domestique donne un visage précis au danger : il faut comprendre les convenances d'une maison où l'hôtesse mange les indiscrets.[6]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les bois épais séparent sa demeure des habitations ordinaires. La clairière de Vasilissa, illuminée par les crânes, forme un espace entièrement surveillé. D'autres récits éloignent sa cabane jusqu'aux royaumes de conte, au-delà d'une rivière de feu. Les étapes du voyage comptent davantage qu'une carte : quitter le foyer, traverser le couvert, attendre devant une porte dont l'occupante détient l'ouverture.[1][6]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Son anthropophagie se mêle à un appétit de table très concret. Ralston décrit un souper de viande suffisant pour douze personnes, arrosé de kvas, d'hydromel, de bière et de vin. Vasilissa reçoit quelques restes, notamment du pain et du cochon de lait. La menace d'être mangée sanctionne l'échec des tâches ; le repas ordinaire montre déjà la disproportion entre l'appétit de l'hôtesse et la part abandonnée à sa servante.[6]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Baba Yaga sait interroger et reconnaître une réponse habile. Sa science des chemins permet au héros d'avancer vers une destination inaccessible ; ses questions éprouvent autant la tenue du visiteur que ses intentions. Face à Vasilissa, elle cherche la source d'une réussite inexplicable. La bénédiction de la mère, nommée enfin, lui suffit pour interrompre le séjour. Elle accepte le fait et chasse celle qui en bénéficie.[1][6]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les trois sœurs rencontrées par Ivan établissent une parenté entre plusieurs Baba Yaga. Elles occupent des demeures semblables et partagent leur nom, tout en possédant des renseignements différents. Cette famille narrative autorise plusieurs présences de la vieille dans un même voyage. Les sources retenues laissent sa naissance et la succession des générations hors du récit ; elle apparaît déjà âgée, installée, reconnue dans son autorité.[1]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "La jeune fille menacée conserve ici l'avantage grâce à une aide minuscule : sa poupée nourrie de quelques bouchées. La vieille dispose de serviteurs prodigieux, mais ignore longtemps ce soutien caché. Le rapport de force se déplace vers les tâches qu'elle impose et les engagements qu'elle prend. Dans cette version, la délivrance passe par le travail accompli et la protection maternelle plutôt que par la mise à mort de Baba Yaga.[6]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Baba appartient au vocabulaire slave de la femme âgée et de la grand-mère, avec des nuances variables selon les langues. L'élément Yaga conserve une étymologie discutée. Les rapprochements proposés avec la colère, l'effroi ou la maladie éclairent des pistes linguistiques ; aucune traduction unique ne les réunit avec certitude.[1] Le nom garde ainsi sa rugosité, familière dans sa première moitié et moins saisissable dans la seconde.",
+        "Le mortier, la cabane et le crâne suffisent à reconnaître sa présence dans une image. Chacun déplace un usage familier : préparer la nourriture devient voyager, habiter devient tourner sur des jambes, éclairer devient porter une tête morte. Dans Vasilissa, le feu est un bien nécessaire obtenu au prix d'un passage chez la dévoreuse. La vieille demeure au fond des bois ; ce qu'elle remet à la voyageuse peut franchir la clôture.[6]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Baba Yaga — synthèse des traditions et variantes",
+        "url": "https://en.wikipedia.org/wiki/Baba_Yaga"
+      },
+      {
+        "id": 6,
+        "title": "W. R. S. Ralston — Russian Fairy Tales",
+        "url": "https://www.gutenberg.org/files/22373/22373-h/22373-h.htm"
+      }
+    ]
+  },
+  "baku": {
+    "description": "Au réveil, le cauchemar peut encore attendre son mangeur : le baku reçoit ce que le dormeur voudrait oublier.",
+    "sections": {
+      "fascination": [
+        "La trompe avance au-dessus de pattes puissantes, quelquefois griffues. Selon les images, des défenses ou des cornes renforcent cette tête d'éléphant posée sur un corps emprunté à d'autres bêtes. Le baku japonais porte une anatomie de protecteur : assez redoutable pour repousser le mal, assez proche des animaux connus pour prendre place près du sommeil humain. Sa nourriture la plus célèbre est le mauvais rêve.[2] Il menace ainsi une peur qui, quelques instants auparavant, paraissait avoir tout pouvoir.",
+        "Le dormeur échappe à la scène nocturne en ouvrant les yeux ; le baku s'occupe de ce qui reste. L'image donne une matière à l'angoisse, quelque chose qu'une bouche peut saisir et faire disparaître. Sa silhouette trapue contraste avec cette proie insaisissable. Là où le cauchemar multipliait les poursuites et les chutes, un animal vient manger. Ce changement d'échelle rend au réveil une simplicité presque domestique."
+      ],
+      "legendes": [
+        "Le baku vient d'un ensemble de représentations chinoises associées au mo, transmises au Japon. Son histoire rassemble plusieurs fonctions protectrices, dont la dévoration des songes constitue un développement particulier. La synthèse documentaire consacrée à la créature le situe au Japon dès l'époque de Muromachi. Cette circulation transporte un nom et des images dont les significations se réorganisent selon les textes et les usages.[2]",
+        "Le manuscrit japonais Sankai Ibutsu, du début du XVIIe siècle, décrit une chimère chinoise timide : trompe et défenses d'éléphant, oreilles de rhinocéros, queue de bovin, corps d'ours et pattes de tigre. Elle protège contre les épidémies et les influences mauvaises. La dévoration des cauchemars manque encore à ce portrait précis, tandis qu'une illustration japonaise de 1791 lui attribue expressément la destruction des rêves.[2] Cette différence montre le passage d'une protection générale à une relation intime avec la nuit.",
+        "La tradition rapportée autour de son invocation prête au dormeur une formule simple : demander au baku de manger son rêve. Les descriptions modernes de cet usage donnent parfois une répétition de l'appel, notamment pour les enfants. Des talismans placés près du lit prolongent cette protection avant même l'endormissement.[2] La demande transforme le récit effrayant en une offrande dont on accepte volontiers de se dessaisir.",
+        "Une version plus inquiétante avertit qu'un baku encore affamé pourrait dévorer les espoirs et les désirs après le cauchemar. Cette extension figure dans la synthèse moderne consultée ; elle mérite d'être distinguée de la chimère protectrice décrite dans le manuscrit ancien.[2] Elle déplace le danger vers la quantité du repas : effacer ce qui fait souffrir devient risqué si le mangeur poursuit son œuvre au-delà de ce qu'on lui a confié."
+      ],
+      "anomalies": [
+        "Le baku cumule des membres que les classifications animales séparent. Le détail varie : une image conserve surtout la trompe, une autre insiste sur les griffes, les défenses ou les cornes. Le corps composite du Sankai Ibutsu fournit un portrait situé, tandis que les estampes et sculptures offrent d'autres arrangements.[2] Cette souplesse anatomique explique que deux baku reconnaissables puissent paraître presque étrangers l'un à l'autre.",
+        "Son rapport au rêve appartient au registre de la protection surnaturelle. La bouche absorbe une expérience, avec ses images et son effet sur le dormeur. Les récits d'invocation décrivent le soulagement attendu ; ils laissent ouverte la question de ce qui demeure du songe à l'intérieur de l'animal. La faim devient une opération sur la mémoire nocturne, sans recevoir pour autant une physiologie détaillée.[2]",
+        "Le mot japonais baku désigne également le tapir, notamment le tapir malais. Ce voisinage lexical favorise les représentations récentes proches de ce mammifère à courte trompe. La chimère ancienne, avec ses emprunts à l'ours, au tigre et à l'éléphant, conserve cependant une autre construction.[2] Entre l'animal zoologique et le protecteur imaginaire circule une ressemblance du museau ; les pouvoirs attribués au second relèvent des croyances et des images."
+      ],
+      "naturelle": {
+        "lead": "Les traditions décrivent surtout une rencontre entre l'animal protecteur et le sommeil humain. Son habitat et ses repas se lisent dans les usages de ses images ; sa croissance et sa reproduction restent hors du portrait transmis.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le baku est appelé plutôt que traqué. Le dormeur prend l'initiative après un songe pénible, ou recherche sa protection avant la nuit. Cette disponibilité lui donne une présence discrète : l'efficacité attendue se mesure au retour du repos. Le qualificatif de timide, attaché à la chimère du Sankai Ibutsu, colore autrement les mêmes défenses et les mêmes griffes. Une armure animale peut appartenir à une créature qui évite l'affrontement.[2]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le lit, son voisinage et les objets qui l'accompagnent forment le territoire concret de l'appel. Le baku apparaît aussi dans la sculpture des temples et des sanctuaires japonais, ainsi que dans les petites pièces sculptées appelées netsuke.[2] Sa présence se partage entre la demeure, l'objet porté et l'architecture protectrice. Une image minuscule et un ornement de bois peuvent accueillir la même tête à trompe, sans supposer des populations animales installées dans chacun de ces lieux."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les cauchemars constituent son régime dans la tradition onirique. Le repas peut être demandé au réveil, lorsque les images restent assez proches pour troubler la chambre pourtant familière. La variante où l'appétit s'étend aux désirs transforme ce service en risque.[2] Le contraste entre ces deux versions tient à la frontière du songe offert : dans l'une, le dormeur retrouve la paix ; dans l'autre, la faim atteint ce qui rendait sa vie désirable."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'invocation suppose un être capable de recevoir une adresse et de distinguer la nourriture désignée. Les pratiques rapportées lui accordent cette compréhension sans développer un langage propre ni une société de baku. L'animal demeure le destinataire d'une requête humaine.[2] Cette économie du dialogue convient à l'heure du réveil : quelques mots suffisent pour confier une terreur que l'on aurait du mal à raconter tout entière."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Une légende d'origine, reprise dans les présentations modernes, explique son assemblage par les morceaux restés disponibles après la création des autres animaux. Elle raconte la fabrication d'une forme, plutôt qu'une succession de parents et de petits.[2] Dans les objets, cette forme se transmet par le travail des artistes : une trompe est conservée, des griffes accentuées, une queue modifiée. Les témoignages consultés documentent mieux ces générations d'images que le cycle de vie de l'être représenté."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les forces mauvaises et les rêves pénibles occupent la place de ses adversaires. Le baku les repousse ou les consomme selon la tradition retenue ; aucun chasseur régulier du baku n'apparaît dans les sources consultées. Le danger le plus singulier vient plutôt de son propre appétit dans les versions qui lui donnent faim d'espoirs.[2] Un protecteur trop efficace y menace la personne même qu'il devait délivrer."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le Los Angeles County Museum of Art conserve une œuvre du XVIIIe siècle intitulée Baku: Monster that Eats Nightmares, dans la collection Raymond et Frances Bushell.[7] Ce témoin matériel donne au mangeur de songes une existence à l'échelle d'un objet conservé, daté et nommé. L'image protectrice traverse le temps tandis que les nuits auxquelles elle a pu être associée échappent aux archives.",
+        "Le baku survit particulièrement bien aux changements de support. Estampe, sculpture architecturale et petite figure maniable gardent sa trompe comme signe de reconnaissance.[2] Le nom commun au tapir rapproche aujourd'hui le rêve d'une bête réelle ; les formes composites plus anciennes rappellent une imagination faite de défenses, de griffes et de fragments assemblés. Dans les deux cas, la créature reste assez visible pour que l'on puisse adresser sa peur à quelqu'un."
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "Baku (mythology) — histoire et description documentées",
+        "url": "https://en.wikipedia.org/wiki/Baku_(mythology)"
+      },
+      {
+        "id": 7,
+        "title": "LACMA — Baku: Monster that Eats Nightmares, XVIIIe siècle",
+        "url": "https://collections.lacma.org/node/192199"
+      }
+    ]
+  },
+  "balor": {
+    "description": "Le fouet ramène sa victime dans la chaleur du corps ; la longue épée y ajoute la foudre. Le balor de Donjons et Dragons combat avec tout l'espace qui l'entoure.",
+    "sections": {
+      "fascination": [
+        "La menace commence avant le coup. Autour du balor, les matières inflammables prennent feu ; le toucher brûle. Son fouet atteint une cible éloignée et la tire vers cette fournaise, tandis que l'épée associe le tranchant à la foudre. Dans les règles de Donjons et Dragons de 2014, la mort du démon déclenche encore une explosion.[5] Sa présence transforme une victoire possible en problème de distance : chaque pas vers lui augmente le prix du combat.",
+        "Balor désigne aussi un personnage de la mythologie irlandaise, chef fomorien au regard destructeur, vaincu par Lug. La ressemblance des noms favorise leur confusion, particulièrement lorsqu'un portrait de démon reçoit un œil meurtrier. Les deux figures appartiennent à des corpus distincts : un récit mythologique irlandais et un monstre de jeu de rôle moderne.[3][5] Le portrait principal qui suit concerne le démon ; le géant conserve ici son histoire propre, sans filiation traditionnelle supposée entre eux."
+      ],
+      "legendes": [
+        "Le balor décrit par les Basic Rules de 2014 appartient à Donjons et Dragons. Sa fiche officielle le classe comme démon et définit une série de pouvoirs de combat : aura de feu, résistance à la magie, armes magiques, épée, fouet et téléportation.[5] Cette version fournit un cadre précis. Les valeurs et les facultés d'une autre édition peuvent différer ; la silhouette guerrière ne suffit donc pas à garantir l'identité de tous les portraits publiés sous ce nom.",
+        "Dans Cath Maige Tuired, accessible dans la traduction d'Elizabeth A. Gray publiée par CELT, Balor est l'un des chefs qui encouragent l'armée des Fomoire. Il tue Núadu à la main d'argent et Macha, fille d'Ernmas. Puis il rencontre Lug sur le champ de bataille. Son œil destructeur demeure fermé hors des combats ; quatre hommes doivent en soulever la paupière au moyen d'un anneau. L'armée exposée à ce regard perd sa capacité de résistance.[3]",
+        "Le récit explique ce poison par un accident ancien : Balor avait regardé par une fenêtre pendant que les druides de son père préparaient une mixture magique. Les vapeurs s'étaient fixées dans son œil. Face à Lug, il ordonne qu'on relève sa paupière. Une pierre de fronde traverse alors son crâne et emporte l'œil vers l'arrière, tournant son pouvoir contre sa propre armée. Le corps qui s'effondre écrase encore des guerriers fomoriens.[3]",
+        "Lug est son petit-fils : le même texte donne Ethne, fille de Balor, en épouse à Cían, et fait naître Lug de cette union.[3] La bataille brise donc une parenté au sein d'un conflit entre peuples apparentés. Le démon ludique possède une autre logique, définie par ses actions et ses résistances. Le regard empoisonné et les quatre porteurs de paupière appartiennent au Balor irlandais ; la fiche de 2014 du démon ne lui attribue aucun regard incendiaire.[5]"
+      ],
+      "anomalies": [
+        "L'aura du démon rend son voisinage dangereux même lorsqu'il n'attaque pas directement. Les êtres proches subissent la chaleur et les objets inflammables abandonnés s'embrasent. Frapper au corps à corps expose aussi l'assaillant au feu de contact.[5] Cette défense donne une densité particulière à l'air qui l'entoure. L'armement ennemi peut atteindre sa chair, mais le geste réussi conserve un coût immédiat.",
+        "Ses deux armes produisent des effets différents. L'épée longue inflige des blessures accompagnées de foudre ; le fouet ajoute le feu et peut attirer la cible vers son maître. La téléportation transporte le balor et son équipement jusqu'à un emplacement libre qu'il voit.[5] Ainsi, la distance qu'un adversaire croyait avoir gagnée peut disparaître sans course d'approche. Le démon choisit entre rapprocher sa victime et se rapprocher lui-même.",
+        "Le dernier pouvoir s'active à sa mort : une explosion embrase la zone et détruit ses armes. La règle distingue les objets inflammables délaissés de ceux qui sont portés ou tenus.[5] Ces précisions appartiennent à la physique conventionnelle du jeu. Elles produisent une fin spectaculaire, très différente de l'œil retourné contre les Fomoire : dans un cas, le corps décharge le feu ; dans l'autre, l'arme du regard change de direction.[3]"
+      ],
+      "naturelle": {
+        "lead": "Cette écologie concerne le démon des règles de 2014. Elle décrit ses interactions attestées avec les combattants et les objets ; la parenté du Balor irlandais demeure traitée séparément.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Son enchaînement d'attaques associe l'épée et le fouet. La complémentarité de ces gestes permet de maintenir une pression proche tout en menaçant plus loin. Le pouvoir d'attraction du fouet rapproche une cible de l'aura brûlante.[5] Le combat donne donc au balor une conduite lisible : retenir l'ennemi dans une zone qui lui nuit, puis punir ceux qui tentent d'y intervenir. Cette lecture découle de ses facultés, plutôt que d'une observation zoologique."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le cadre est celui de la fantasy démoniaque de Donjons et Dragons. La fiche consultée documente surtout le monstre en action, sans fournir une description de sa demeure. Ses pouvoirs imposent néanmoins des effets locaux précis : près de lui, le combustible laissé libre prend feu ; sa téléportation exige une destination visible et inoccupée.[5] Les obstacles qui coupent la vue comptent ainsi davantage qu'une simple longueur de terrain à parcourir."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le feu de son aura consume des objets, mais les règles ne le présentent pas comme un repas. La fiche de 2014 laisse le régime alimentaire du balor indéterminé.[5] Le vocabulaire de la dévoration convient à l'impression produite par les flammes ; l'activité décrite demeure une combustion. Bois, tissus ou matériel abandonné deviennent vulnérables dans son voisinage, ce qui explique les traces d'incendie sans lui attribuer une digestion de la chaleur."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La combinaison de ses facultés permet des choix tactiques : frapper, attirer, changer instantanément de place. La téléportation transporte également ses armes et conserve donc sa capacité de combat à l'arrivée. Sa résistance à la magie complique les tentatives d'entrave par sortilège.[5] Ces dispositions rendent insuffisante l'image d'une masse enflammée qui avance droit devant elle. Les règles lui donnent plusieurs façons de modifier un affrontement déjà engagé."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La source ludique retenue ne décrit ni naissance ni mode de multiplication des balors.[5] Leur présence est celle d'une catégorie de monstres disponible dans cet univers. La généalogie appartient, en revanche, au récit irlandais : Balor engendre Ethne, mère de Lug, et rencontre son descendant dans la bataille.[3] Cette parenté éclaire la tragédie mythologique ; elle reste extérieure à toute explication de l'origine du démon homonyme."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les adversaires du démon sont des combattants capables de surmonter ses défenses. La règle ne lui assigne aucun prédateur régulier. Sa mort constitue elle-même un dernier danger pour les vainqueurs proches, pris dans l'explosion.[5] Pour le Balor irlandais, l'adversaire porte un nom et une arme : Lug et sa fronde. Le récit conserve un duel décisif, là où le jeu organise une rencontre susceptible d'être répétée avec d'autres personnages.[3]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le fouet et l'épée forment les attributs matériels du démon, mais la mort les détruit dans la version de 2014.[5] Un trophée attendu disparaît ainsi avec son propriétaire. Le détail prolonge la violence jusque dans l'après-combat : l'arme qui attirait, la lame chargée de foudre et le corps brûlant connaissent une destruction commune. Les discussions de joueurs sur leur récupération relèvent ensuite de l'interprétation des règles.",
+        "Le Balor irlandais laisse une autre image : l'anneau de la paupière, les hommes qui le soulèvent et la pierre traversant la tête.[3] Ces objets racontent une puissance énorme dépendante d'un geste collectif, vaincue dans le bref instant où elle devient utilisable. Les réunir avec le fouet du démon fabriquerait un troisième portrait. Le nom circule entre les lectures ; chaque silhouette gagne à garder ses armes, ses textes et sa fin."
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Cath Maige Tuired — traduction Elizabeth A. Gray, CELT, University College Cork",
+        "url": "https://celt.ucc.ie/published/T300010.html"
+      },
+      {
+        "id": 5,
+        "title": "D&D Beyond — Balor, Basic Rules (2014)",
+        "url": "https://www.dndbeyond.com/monsters/16797-balor"
+      }
+    ]
+  },
+  "banshee": {
+    "description": "La maison entend pleurer dehors avant d'apprendre qui manque parmi les siens.",
+    "sections": {
+      "fascination": [
+        "La banshee arrive d'abord par la voix. Une lamentation se lève près d'une demeure ; quelqu'un écoute et reconnaît un deuil dont la nouvelle n'est pas encore venue. Dans les traditions irlandaises, cette femme surnaturelle annonce la mort d'un membre de la famille à laquelle elle est attachée.[4] L'effroi tient à cette avance sur les vivants. La porte est encore fermée, les gestes ordinaires continuent, mais une voix extérieure sait déjà ce qui a changé.",
+        "Lorsqu'elle se montre, les récits lui prêtent des âges et des vêtements différents. Une vieille femme minuscule, une jeune morte de la famille, une silhouette enveloppée sous les arbres : ces apparitions partagent moins un corps qu'une douleur audible. Ses yeux peuvent être rougis par les larmes et ses longs cheveux dénoués passent parfois sous un peigne.[4] Le visage d'une endeuillée suffit alors à faire pressentir la catastrophe."
+      ],
+      "legendes": [
+        "Le nom anglais banshee transcrit l'irlandais bean sí, issu d'une expression ancienne désignant la femme du síd, le tertre associé aux êtres de l'autre monde. La figure appartient au folklore irlandais, où les liens entre certaines familles et leur annonciatrice occupent une place essentielle.[4] Son appel se comprend dans un paysage de maisons, de lignées et de lieux surnaturels connus. Il s'adresse à des proches, même lorsque l'auditeur ignore encore lequel est concerné.",
+        "La lamentation funèbre, ou caoineadh, fournit un arrière-plan humain à cette voix. Les femmes qui la pratiquaient pouvaient être sollicitées pour leur talent à pleurer les morts. La banshee transporte ce geste de deuil avant l'annonce ou avant le décès lui-même. Elle peut faire entendre sa plainte pour une personne morte au loin, lorsque la famille attend encore des nouvelles.[4] Cette distance donne au motif une force particulière : l'absent rejoint les siens par une voix qui ne lui appartient pas.",
+        "Lady Wilde rapporte plusieurs apparences, dont celle d'une jeune parente morte, douée pour le chant, qui reçoit la mission d'annoncer le malheur aux siens. Elle décrit également une femme voilée sous les arbres et une silhouette passant au clair de lune. Ces versions, citées dans la synthèse consultée, associent la beauté du chant à une mission douloureuse.[4] La messagère peut partager l'histoire de ceux qu'elle vient affliger ; son chagrin devient alors une forme de fidélité.",
+        "D'autres témoignages donnent à cette présence un privilège de lignée. Le dictionnaire irlandais-anglais de John O'Brien rapporte la croyance selon laquelle les familles anciennes et nobles seraient honorées de ces lamentations nocturnes. Des traditions restreignent encore cette association à certaines ascendances irlandaises.[4] Ces distinctions témoignent des hiérarchies et des récits d'origine entretenus par leurs transmetteurs. Elles décrivent des prétentions familiales situées, plutôt qu'une frontière universelle imposée à toutes les apparitions."
+      ],
+      "anomalies": [
+        "Son pouvoir le plus stable est une connaissance prématurée du deuil. Le chant franchit la distance qui sépare une mort lointaine de ceux qui devront l'apprendre. Dans certaines versions, il précède encore l'événement.[4] L'incertitude porte alors sur le moment exact : annonce d'une disparition accomplie ou présage d'une perte imminente. Les deux possibilités donnent à l'écoute la même gravité, car la maison reçoit une nouvelle qu'elle ne peut vérifier immédiatement.",
+        "La plainte peut devenir un cri perçant, mais sa fonction traditionnelle principale reste l'annonce. L'idée d'une attaque sonore meurtrière appartient à d'autres réemplois de la figure et ne doit pas absorber les récits de lamentation familiale. La source consultée rapporte néanmoins une variante du Leinster où la voix brise le verre.[4] Une puissance physique se greffe ici sur le son ; elle conserve son ancrage régional plutôt que de définir toutes les banshees.",
+        "Le corps résiste à un portrait unique. La taille varie, parfois exceptionnellement haute, souvent très petite ; les vêtements passent du gris au blanc, avec du vert dans certaines descriptions. Des cheveux rouges apparaissent dans le témoignage attribué à Lady Fanshawe.[4] Les larmes et les cheveux ont une continuité plus forte que les couleurs. Ils rendent visible un deuil qui, ailleurs, peut demeurer entièrement entendu."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle de la banshee suit ses rapports avec les familles et les lieux de l'annonce. Les récits s'intéressent à son apparition, à sa voix et à son départ ; ils laissent sa subsistance matérielle hors champ.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Elle pleure, parfois assise ou accroupie, parfois aperçue en mouvement. Le peignage des longs cheveux accompagne la lamentation dans certaines versions, jusqu'à devenir une condition du chant. Plusieurs banshees réunies peuvent annoncer la disparition d'une personne éminente ou sainte.[4] Le nombre des voix amplifie alors la portée du deuil. La scène conserve pourtant son geste premier : une femme accomplit publiquement une douleur dont les humains vont bientôt comprendre la cause."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le nom renvoie aux tertres de l'autre monde, tandis que les témoignages placent souvent la voix autour des habitations. Les arbres, la nuit et le voisinage immédiat de la maison donnent au récit des points d'écoute. La banshee accompagne aussi symboliquement une famille dont un membre se trouve loin.[4] Son territoire paraît ainsi dessiné par la parenté autant que par le sol : la maison reçoit l'annonce, même lorsque la mort s'est produite ailleurs."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les récits retenus ne décrivent aucun repas de banshee. La lamentation ressemble au travail d'une pleureuse, et plusieurs versions lui donnent l'identité d'une morte ou d'une femme féerique.[4] Lui attribuer la consommation des âmes modifierait la relation transmise : ici, elle accompagne la perte et l'annonce aux vivants. Le corps montré conserve les signes humains de l'épuisement et des pleurs, sans que le conte prolonge cette apparence en besoins alimentaires."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Elle reconnaît ceux auxquels son chant est destiné et sait ce qui atteint leur parenté. Ce savoir dépasse les informations accessibles aux habitants de la maison, particulièrement lors d'un décès lointain. Les versions qui en font une ancienne membre de la famille ajoutent une mémoire personnelle à cette connaissance surnaturelle.[4] La voix peut ainsi paraître étrangère par sa provenance et familière par l'attachement qui la ramène vers les mêmes vivants."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La continuité se raconte par l'association à une lignée et, dans certaines versions, par la transformation du statut d'une morte. Une jeune femme décédée devient annonciatrice pour ses proches ; d'autres récits parlent d'un fantôme lié à une mort violente ou à des couches fatales.[4] Ces explications forment des origines alternatives. Elles donnent à la banshee une histoire antérieure possible, tandis que les naissances successives appartiennent surtout à la famille dont elle suit les deuils."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "La tradition consultée lui assigne une mission d'annonce plutôt qu'une place dans une chaîne de chasse. Les humains qui l'entendent sont des témoins effrayés ou endeuillés ; ils cherchent surtout à comprendre pour qui elle pleure.[4] La mort demeure l'événement autour duquel se noue la rencontre. Cette relation explique la persistance du récit après la disparition de la voix : la nouvelle reçue plus tard donne sens à ce que quelqu'un avait entendu."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le peigne, les cheveux et le voile rendent la banshee reconnaissable dans les images, tandis que la langue conserve son rapport au tertre. La transcription anglaise a fixé une forme immédiatement identifiable ; bean sí garde plus directement la femme et son appartenance à l'autre monde.[4] Entre ces noms circule la même difficulté à saisir une présence dont le témoignage le plus fort peut être un son dans l'obscurité.",
+        "La bean nighe écossaise, lavandière aperçue en train de nettoyer des vêtements ensanglantés destinés à ceux qui vont mourir, offre un rapprochement régional. Le geste et la scène diffèrent : le linge au gué remplace la plainte près de la maison.[4] Ces figures voisines donnent des formes sensibles à une connaissance de la mort. La banshee irlandaise garde sa singularité dans la lamentation adressée aux proches, assez tôt pour que l'annonce elle-même devienne un souvenir familial."
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "Banshee — traditions irlandaises, témoignages et sources historiques",
+        "url": "https://en.wikipedia.org/wiki/Banshee"
+      }
+    ]
+  },
   "barde": {
     "description": "Une salle entière peut dépendre de celui qui choisira les mots de sa victoire.",
     "sections": {
@@ -522,6 +2867,84 @@ window.FF_NOTICES = {
       }
     ]
   },
+  "cyclope": {
+    "description": "L'œil unique appartient aussi bien au mangeur d'hommes qu'aux ouvriers de la foudre.",
+    "sections": {
+      "fascination": [
+        "Dans la caverne de Polyphème, le lait et les fromages rendent la scène presque domestique. Le géant connaît son troupeau, organise sa traite et ferme son logis d'une pierre que les visiteurs ne peuvent déplacer. C'est au milieu de cette économie pastorale que surgit l'anthropophagie. L'effroi ne vient pas d'un chaos total : il vient d'une maison tenue par quelqu'un pour qui les hommes sont des aliments.[4]",
+        "Le Cyclope possède pourtant d'autres visages. Chez Hésiode, ses représentants façonnent la foudre de Zeus ; ailleurs, ils construisent des murailles dont les blocs paraissent excéder le travail humain. Le même œil rond accompagne donc la brutalité, la maîtrise technique et la puissance des bâtisseurs. Réduire tous les Cyclopes à Polyphème ferait disparaître les deux derniers portraits.[5]"
+      ],
+      "legendes": [
+        "La Théogonie nomme Brontès, Stéropès et Argès, enfants de Gaia et d'Ouranos. Leur force s'accompagne de savoir-faire : ils donnent à Zeus le tonnerre et l'éclair. Cette généalogie les situe parmi les puissances divines des commencements. Ils ne sont pas les bergers isolés que rencontre Ulysse, et leur relation au souverain olympien contraste avec l'insolence de Polyphème.[5]",
+        "Au chant IX de l'Odyssée, Ulysse entre avec ses compagnons dans une caverne et attend son propriétaire. Polyphème, fils de Poséidon et de Thoosa, refuse la protection que les suppliants invoquent au nom des dieux. Il dévore plusieurs hommes. Le héros comprend qu'il ne suffit pas de le tuer pendant son sommeil : personne ne pourrait alors déplacer la pierre de l'entrée. Il faut neutraliser le gardien sans supprimer sa force.[4]",
+        "Le vin apporté par Ulysse et le nom de Personne préparent l'évasion. Le géant enivré s'endort ; les hommes enfoncent un pieu chauffé dans son œil. Lorsque ses voisins viennent aux cris, la réponse selon laquelle Personne l'agresse les détourne de l'aider. Les prisonniers sortent ensuite cachés sous les béliers. La ruse agit successivement sur le corps, le langage et les habitudes du berger.[4]",
+        "Ulysse compromet cependant sa victoire en révélant son identité depuis le navire. Polyphème peut alors demander à Poséidon de punir le véritable responsable. Dans d'autres œuvres antiques, le géant devient amoureux de Galatée. Le dossier de Theoi rassemble notamment le Polyphème chanteur et le récit où il écrase son rival Acis sous un rocher. La violence ne disparaît pas ; elle entre dans une histoire de désir, de refus et de jalousie.[4]",
+        "Une troisième famille de traditions attribue aux Cyclopes des constructions monumentales, notamment les murailles de Tirynthe et de Mycènes. Ces bâtisseurs ne doivent pas être automatiquement identifiés aux trois fabricants de foudre ou aux bergers homériques. Les classifications antiques elles-mêmes distinguent plusieurs groupes. L'adjectif cyclopéen conserve cette admiration devant des pierres dont la taille semble réclamer des ouvriers surhumains.[5]"
+      ],
+      "anomalies": [
+        "L'œil unique est explicitement placé au front dans la description hésiodique. Chez Homère, c'est surtout Polyphème que l'épisode permet de reconnaître comme monoculaire ; généraliser tous ses caractères à ses voisins dépasse ce que le poème précise. Les représentations et les synthèses ultérieures ont rendu le modèle plus uniforme que ne le sont les textes.[5]",
+        "La force du géant crée sa propre limite. Il ferme l'entrée avec une aisance qui condamne les hommes, puis ouvre lui-même le passage nécessaire à leur fuite. Son ouïe et son toucher remplacent un moment la vue, sans déjouer la cachette sous les bêtes. Rien n'oblige à expliquer cette défaite par une déficience générale de l'intelligence : Ulysse exploite une situation exceptionnelle.",
+        "L'habileté des Cyclopes divins interdit justement d'associer automatiquement monocularité et stupidité. Les artisans de Zeus travaillent une arme cosmique ; les bâtisseurs dressent des ouvrages durables. L'anomalie anatomique sert plusieurs puissances narratives et ne représente pas une leçon sur les capacités de personnes réelles ayant perdu un œil."
+      ],
+      "naturelle": {
+        "lead": "Il existe plusieurs mondes cyclopéens. Le portrait pastoral éclaire Polyphème ; les généalogies et les métiers divins conviennent mieux à ses homonymes artisans.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Les Cyclopes homériques vivent en maisonnées séparées, sans assemblées communes telles que les conçoit le monde d'Ulysse. Chaque chef gouverne les siens. Ce regard grec sur l'absence d'institutions ne doit pas devenir l'affirmation qu'ils n'ont aucune vie sociale : les voisins entendent les cris de Polyphème et viennent s'informer. Leur retrait n'est pas une solitude absolue.[4]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La caverne, le pâturage et le rivage forment le territoire du berger. L'identification à la Sicile appartient à des localisations antiques développées autour du récit ; il ne faut pas lire l'Odyssée comme un itinéraire touristique exact. Les forges volcaniques et les chantiers de murailles relèvent d'autres traditions cyclopéennes, avec leurs propres attaches géographiques.[4][5]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Polyphème tire lait et fromage de ses bêtes, mais mange aussi ses captifs. Cette juxtaposition importe davantage qu'une étiquette de carnivore : le récit déforme une hospitalité attendue en repas pris aux dépens des invités. Les Cyclopes fabricants de foudre ne reçoivent pas pour autant ce régime. Aucune nécessité documentaire ne transforme tous les ouvriers divins en anthropophages.[4]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le berger sait élever, compter et protéger son troupeau ; il peut parler et adresser une prière efficace. Sa défaite vient d'une ruse qu'il ne prévoit pas et d'un vin auquel il résiste mal. Les Cyclopes artisans représentent une autre intelligence, celle de la fabrication. Leur nom couvre donc plusieurs rapports au savoir, pas un degré unique sur une échelle de bestiaire.[4][5]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les textes donnent des filiations plutôt qu'un cycle zoologique. Les trois Cyclopes hésiodiques naissent de Gaia et d'Ouranos ; Polyphème de Poséidon et de Thoosa. Le monde homérique évoque les familles que les Cyclopes gouvernent. Ces indications suffisent à montrer que l'œil unique ne définit pas une espèce isolée de toutes les autres puissances mythologiques.[4][5]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Leur taille les place hors d'une chaîne alimentaire ordinaire. Ulysse représente un adversaire capable de retourner leurs habitudes contre eux, non un prédateur régulier. Pour Polyphème, la blessure entraîne la vengeance plutôt que la mort. Cette survie prolonge considérablement sa portée dans le récit : l'homme échappe à la caverne, mais pas immédiatement au père du géant.[4]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le mot Cyclope renvoie traditionnellement à l'œil rond. L'image d'un pieu dirigé vers le front apparaît dans l'art antique ; Theoi reproduit notamment une œnochoé attique à figures noires conservée au Louvre. L'épisode se reconnaît à quelques positions de corps et à une longue pièce de bois, sans qu'il faille représenter tout le voyage d'Ulysse.[4][5]",
+        "Les murailles qualifiées de cyclopéennes offrent une autre survivance, minérale plutôt que monstrueuse. Devant leurs blocs, la fiction rend sensible l'effort disparu du chantier. Entre la pierre qui ferme une caverne et celle qui protège une cité, la puissance du Cyclope change de destination : elle peut emprisonner des visiteurs ou servir la durée d'un ouvrage."
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "POLYPHEMUS (Polyphemos) - Cyclops Giant of Greek Mythology",
+        "url": "https://www.theoi.com/Gigante/GigantePolyphemos.html"
+      },
+      {
+        "id": 5,
+        "title": "Cyclopes - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cyclopes"
+      }
+    ]
+  },
   "dryade": {
     "description": "Sous la première entaille de la hache, le chêne saigne : quelqu'un habitait cette ombre.",
     "sections": {
@@ -665,6 +3088,319 @@ window.FF_NOTICES = {
         "id": 3,
         "title": "How to Become a Medieval Knight - World History Encyclopedia",
         "url": "https://www.worldhistory.org/article/1240/how-to-become-a-medieval-knight"
+      }
+    ]
+  },
+  "gnoll": {
+    "description": "Une tête de hyène au-dessus d'un bouclier : le gnoll moderne donne des armes à une faim qui sait poursuivre.",
+    "sections": {
+      "fascination": [
+        "La lance annonce un combattant ; la gueule annonce un repas. Le gnoll de Donjons et Dragons tient ces deux promesses ensemble. Humanoïde à tête de hyène, il attaque ses victimes et dévore leur chair dans la description officielle de la cinquième édition ancienne.[6] Sa silhouette déplace donc la frontière habituelle entre l'ennemi que l'on affronte et la bête par laquelle on risque d'être mangé. Le bouclier ne civilise pas la morsure : il lui permet d'arriver jusqu'au corps adverse.",
+        "Le nom possède pourtant une autre chambre, beaucoup plus silencieuse. Chez Lord Dunsany, les gnoles vivent dans une maison haute et étroite, au fond d'un bois que le village voisin refuse de regarder.[1] Leur anatomie demeure dans l'ombre. Ce sont des propriétaires de pierres précieuses et des surveillants redoutables, non les hommes-hyènes décrits par le jeu. Entre ces figures proches par le nom, la peur change de mouvement : l'une attend derrière les arbres ; l'autre fond sur une victime armée."
+      ],
+      "legendes": [
+        "Dans The Book of Wonder, Dunsany raconte comment le cambrioleur Nuth envisage de pratiquer son art chez les gnoles. Le récit commence à Londres, parmi les arrangements d'un professionnel qui ne manque ni de clientèle ni d'assurance. Il forme un apprenti, Tommy Tonker, puis décide de voler les énormes émeraudes dont les gnoles décoreraient leur demeure. Les deux hommes comptent emporter les pierres sur un manteau, et abandonner l'une d'elles si le poids devient excessif. Cette précaution terre à terre rend leur entreprise plus inquiétante : le danger surnaturel entre dans une comptabilité de voleur.[1]",
+        "Le bois ne présente aucun chemin fréquenté. Dans le village le plus proche, toutes les maisons lui tournent le dos et aucune fenêtre ne donne de son côté. Nuth et Tonker avancent malgré ces avertissements ; ils aperçoivent notamment le squelette d'un braconnier cloué à une porte dans un chêne. Arrivés à la maison, ils rencontrent un silence si profond que le souffle de Tonker devient une indiscrétion. L'apprenti renonce enfin au vol. Il est déjà observé.[1]",
+        "Les gnoles ont percé des trous dans les troncs. Ils saisissent Tonker par-derrière et l'emportent ; le narrateur refuse de dire ce qu'ils lui font. Nuth, surpris par ce dispositif qu'il ne connaissait pas, réussit à s'esquiver.[1] Rien dans ce passage n'autorise à donner aux gnoles une tête de hyène, ni à transformer leur victime en repas avéré. La violence est certaine ; sa forme exacte reste volontairement soustraite au lecteur.",
+        "Le gnoll de Donjons et Dragons relève d'une autre définition, fixée par un bestiaire de jeu. La fiche officielle consultée est marquée comme appartenant aux anciennes règles et connaissances de l'univers. Elle décrit un humanoïde hostile, doté de sa propre langue, d'armes et d'une capacité nommée Rampage.[6] Le rapprochement avec Dunsany exige donc de conserver les graphies et les portraits distincts. Une ressemblance de nom ne constitue pas une tradition orale commune, encore moins la preuve qu'un peuple ancien aurait raconté l'existence de guerriers-hyènes."
+      ],
+      "anomalies": [
+        "Le gnoll ludique associe une bouche animale à des mains capables de manier lance et arc long. La morsure n'est pas un simple détail de portrait : elle figure parmi ses attaques, au même titre que les armes. Il porte une armure de peaux et un bouclier dans la fiche classique consultée.[6] Sa menace vient de cette polyvalence. La distance d'un archer, l'allonge d'une lance et le contact des dents appartiennent au même adversaire ; le désarmer ne supprime pas son dernier moyen d'attaque.",
+        "La capacité Rampage donne une forme précise à son emballement. Lorsqu'il abat une créature par une attaque de mêlée pendant son tour, il peut avancer de nouveau et mordre.[6] La chute d'une victime ouvre ainsi le chemin de la suivante. C'est une propriété de règles, non une observation zoologique : elle traduit la férocité en déplacement supplémentaire. Sa vision dans l'obscurité facilite également la poursuite, sans lui conférer pour autant l'invisibilité ni l'invulnérabilité.",
+        "Chez Dunsany, l'anomalie se situe dans la distribution du regard. Les voleurs surveillent une fenêtre et une maison ; les habitants les observent depuis les arbres.[1] Le piège repose sur une erreur de localisation. La demeure concentre l'attention parce qu'elle contient le trésor supposé, tandis que le bois entier appartient aux guetteurs. Aucun sort explicitement nommé n'est nécessaire à cette supériorité. Des trous dans l'écorce suffisent à défaire l'expérience d'un maître cambrioleur."
+      ],
+      "naturelle": {
+        "lead": "Deux portraits littéraires restent ici séparés : les gnoles forestiers de Dunsany et le combattant anthropophage des anciennes règles de la cinquième édition de Donjons et Dragons. Leurs textes décrivent surtout des rencontres dangereuses, beaucoup moins une vie complète.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le gnoll du jeu attaque sans avertissement et poursuit le massacre jusque dans la consommation des victimes.[6] Les gnoles du conte font au contraire preuve d'une patience défensive : ils laissent approcher les intrus, surveillent leur tentative et interviennent lorsque l'apprenti descend de son échelle.[1] Cette différence interdit de confondre la furie d'assaut avec le guet d'une propriété. Dans les deux cas, l'être humain perd l'initiative, mais ni le territoire ni les gestes de ses adversaires ne sont les mêmes."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La maison des gnoles est ancienne, étroite, élevée, avec une fenêtre verdâtre et des planches desséchées. Le bois alentour garde les traces d'intrusions punies ; le village voisin organise jusqu'à ses ouvertures pour éviter de le voir.[1] Cet habitat possède une profondeur sociale : la peur a modifié l'architecture humaine. La fiche du gnoll de jeu consultée ne détermine pas un milieu exclusif. Lui attribuer automatiquement toutes les habitudes d'une hyène de savane ferait passer une ressemblance de tête pour une écologie attestée."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La chair des victimes constitue le seul aliment explicitement nommé pour le gnoll dans la description officielle retenue.[6] Elle suffit à établir son anthropophagie possible, mais ne détaille ni besoins quotidiens ni digestion particulière. Chez Dunsany, les émeraudes sont un butin convoité, pas une nourriture. Le sort de Tonker n'est pas raconté jusqu'au bout : les cris et l'enlèvement ne prouvent pas, à eux seuls, qu'il ait été dévoré.[1]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le langage et l'usage de plusieurs armes distinguent le gnoll d'un simple carnivore. Sa fiche lui accorde une intelligence faible relativement à la norme humaine du jeu, sans effacer ces compétences.[6] Les gnoles de Dunsany déjouent pour leur part une expertise professionnelle. Nuth comprend leur ruse trop tard pour sauver son apprenti. Leur aptitude la plus manifeste consiste à observer sans être observés, puis à choisir le moment où la fuite devient difficile.[1]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Aucun des deux textes retenus n'expose un cycle reproductif. Les gnoles habitent depuis longtemps leur maison ; cette ancienneté n'indique ni leur âge individuel ni leur façon de se renouveler.[1] La fiche ludique présente un adversaire déjà adulte et équipé. Elle ne permet pas de choisir entre naissance ordinaire, transformation ou intervention surnaturelle. Ces questions appartiennent aux développements propres à chaque univers et ne peuvent être résolues par la seule anatomie de sa tête."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Nuth et Tonker viennent prendre les richesses des gnoles, non chasser une espèce. Leur intrusion rencontre une défense meurtrière et laisse le maître vivant, l'apprenti disparu.[1] Dans le jeu, le gnoll reste un adversaire que des blessures peuvent abattre ; sa fiche ne lui attribue aucune immunité générale.[6] Les combattants capables de tenir leurs rangs lui opposent donc une résistance concrète, tandis qu'une victime qui tombe peut lui donner l'élan nécessaire pour atteindre un autre corps."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les émeraudes de Dunsany sont les objets les plus lourds de cette histoire, bien qu'elles ne quittent jamais la maison. Nuth en calcule la masse probable en comparant de petites pierres à de la roche commune.[1] Ce travail préparatoire rend le trésor presque tangible. La prudence du voleur porte cependant sur le transport d'une richesse, quand elle aurait dû porter sur ceux qui la gardent.",
+        "Le bouclier et l'arc du gnoll moderne produisent une image différente : celle d'un ennemi qui partage une partie de l'équipement humain sans partager l'interdit de dévorer l'adversaire.[6] La notice officielle et le conte conservent ainsi deux héritages lisibles. D'un côté, un corps nettement décrit ; de l'autre, une présence que les trous des arbres révèlent sans jamais lui donner un visage complet."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Lord Dunsany — The Book of Wonder, How Nuth Would Have Practised His Art Upon the Gnoles",
+        "url": "https://www.gutenberg.org/cache/epub/7477/pg7477-images.html"
+      },
+      {
+        "id": 6,
+        "title": "D&D Beyond — Gnoll, fiche Legacy de la cinquième édition",
+        "url": "https://www.dndbeyond.com/monsters/16904-gnoll"
+      }
+    ]
+  },
+  "gnome": {
+    "description": "La terre qui arrête nos pas laisse passer le gnome : avant le bonnet et les engrenages, il fut l'habitant d'un élément fermé aux hommes.",
+    "sections": {
+      "fascination": [
+        "Une paroi de roche n'est pas une porte murée pour le gnome de Paracelse. Il traverse la terre aussi aisément que l'être humain se déplace dans l'air.[2] Cette différence donne au sous-sol une profondeur inhabitable pour nous, mais familière pour lui. Il n'a pas besoin de découvrir une galerie derrière chaque pierre : la matière elle-même lui offre passage. Le merveilleux tient à ce renversement discret de notre expérience du monde, dans lequel ce qui semble plein peut être le milieu de vie d'un autre peuple.",
+        "Le gnome des jeux modernes a souvent les pieds beaucoup plus solidement posés sur le plancher. Dans le portrait classique de Donjons et Dragons, un atelier bourdonne autour de lui, les idées se pressent dans sa conversation, des broderies et des bijoux ornent ses vêtements de tons terrestres.[3] La roche ne s'ouvre plus nécessairement devant son corps ; il l'étudie, la travaille, y construit son logis. Sa petite taille rapproche l'œil des détails : une pièce d'horlogerie, une gemme taillée, la jointure bien dissimulée d'une porte."
+      ],
+      "legendes": [
+        "Le nom de gnome appartient à l'histoire savante de la Renaissance. Paracelse emploie Gnomi et Pygmæi pour les êtres de la terre dans son traité sur les nymphes, sylphes, pygmées, salamandres et autres esprits, publié après sa mort.[2] Ce classement rattache les créatures à des éléments plutôt qu'à une zoologie des forêts. Le gnome est ainsi défini par le milieu auquel son existence convient. Il faut le distinguer des nains et des esprits domestiques que les traductions ou les images ont parfois rangés sous le même nom.",
+        "Ce système ne naît pas dans un paysage vide. Les récits de mineurs germaniques connaissent de petits êtres souterrains, désignés notamment comme Bergmännlein, les petits hommes de la montagne. Georg Agricola rapporte des esprits qui imitent le travail, rient, lancent de petites pierres ou accompagnent la découverte de minerais.[2] La galerie de mine est un lieu propice à cette présence : les hommes y entendent des chocs dont l'origine leur échappe, cherchent une richesse invisible et travaillent sous une masse qu'ils ne maîtrisent jamais entièrement.",
+        "Paracelse donne à ses habitants élémentaires un statut plus étrange que celui de fantômes. Ils mangent, boivent et parlent ; pourtant leur rapport à la matière diffère du nôtre.[2] Leur petitesse ne résume donc pas leur nature. Les réduire à des vieillards miniatures ferait perdre l'essentiel du dispositif : une création peut abriter plusieurs sortes de vivants, chacune pourvue d'un milieu accessible à son corps et fermé aux autres.",
+        "Dans la cinquième édition classique de Donjons et Dragons, le gnome devient un peuple jouable, avec des familles, des métiers, une langue et une longue durée de vie. La page officielle consultée conserve expressément l'étiquette Legacy, qui signale des règles et un portrait anciens.[3] Ses gnomes des roches fabriquent de petits mécanismes ; les communautés ordinaires recherchent les collines boisées et cachent leurs demeures. Ce développement ludique possède sa cohérence propre. Il ne constitue pas une transcription du traité de Paracelse."
+      ],
+      "anomalies": [
+        "L'échelle du corps varie selon ces traditions. Paracelse décrit ses gnomes comme hauts de deux empans ; le jeu classique leur donne une taille petite relativement aux humains, mais suffisante pour manier des outils, voyager et vivre parmi eux.[2][3] Le changement le plus profond concerne toutefois la consistance des obstacles. Le gnome élémentaire traverse la terre ; celui du jeu dispose plutôt d'une bonne vision dans les ténèbres. Il ne faut pas transférer au second, par simple continuité du nom, le pouvoir du premier.",
+        "La vision nocturne décrite par les règles anciennes laisse subsister une limite sensible : dans l'obscurité, le gnome distingue des nuances de gris, pas les couleurs.[3] Une gemme peut donc être reconnue à sa forme sans livrer aussitôt tout son éclat. Le même ensemble de règles le rend particulièrement résistant à certaines atteintes magiques visant les facultés mentales. La petitesse du corps n'implique pas la fragilité de l'esprit ; elle s'accompagne ici d'une défense que la force physique ne mesure pas.",
+        "Les inventions du gnome des roches restent modestes et matérielles. La fiche lui permet de construire un jouet animé, un allume-feu ou une boîte à musique. Ces objets réclament des outils, des matériaux et de l'entretien.[3] Leur merveilleux tient précisément à cette dépendance : un ressort doit être réparé, une boîte refermée arrête sa mélodie. L'inventeur n'est pas un magicien dont chaque souhait prendrait corps ; il connaît les pièces, les gestes et les défaillances."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle distingue l'être élémentaire de la Renaissance des communautés décrites par le jeu moderne. Le premier habite la terre comme un milieu ; les secondes offrent un portrait social plus développé, retenu ici dans sa version classique de la cinquième édition.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Les gnomes de Donjons et Dragons mêlent curiosité et application. Leur goût des plaisanteries n'empêche pas de consacrer beaucoup de temps à une recherche ou à un ouvrage. Ils acceptent l'erreur, recommencent, parlent vite, mais savent aussi écouter.[3] Les rires de l'atelier ne sont donc pas le signe d'un travail négligé. La communauté valorise une activité continue, où le jeu et la découverte restent proches jusque dans les occupations les plus techniques."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les demeures classiques se cachent dans des collines boisées, protégées par l'adresse des constructeurs et de simples illusions. À l'intérieur, les logis sont chaleureux et accueillants pour les visiteurs admis ; un étranger indésirable peut passer sans même reconnaître l'entrée.[3] Cette discrétion ne signifie pas une haine du plein air. Les gnomes apprécient la surface vivante et lumineuse, contrairement à l'image d'un peuple condamné à ne jamais quitter la profondeur."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Chez Paracelse, manger et boire comptent parmi les actes qui rapprochent les habitants élémentaires des êtres humains.[2]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La langue gnome du jeu emploie l'écriture naine et se distingue par ses traités techniques et ses catalogues de connaissances naturelles. Les gnomes établis dans les pays humains exercent notamment comme ingénieurs, sages, artisans ou précepteurs.[3] Un même maître peut enseigner à plusieurs générations d'une famille humaine. Cette continuité donne à l'apprentissage une épaisseur singulière : l'élève grandit et vieillit devant quelqu'un qui a déjà connu ses parents enfants."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les familles du portrait ludique comportent parents, tantes, oncles et anciens du clan. Plusieurs proches donnent chacun un nom à l'enfant, auquel viennent s'ajouter des surnoms.[3] La naissance entre ainsi dans une histoire collective avant même que le jeune gnome choisisse comment se présenter aux étrangers. Sa maturation physique suit approximativement celle des humains, mais l'installation dans une vie adulte se situe souvent autour de quarante ans ; la longévité annoncée peut approcher cinq siècles.[3] Ces durées relèvent du jeu, pas d'une croyance uniforme des mineurs européens."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les entrées dissimulées des demeures gnomes constituent une défense avant tout contact hostile. Les gnomes des profondeurs, appelés svirfneblin dans le jeu, vivent sous des contraintes plus rudes : ils se méfient des étrangers et privilégient la survie de leurs petites communautés.[3] Ce sont des différences de milieu et de relations avec les voisins, plutôt qu'une liste universelle de carnivores. Aucun prédateur attitré ne relie à lui seul l'être de Paracelse, l'artisan des collines et l'habitant des profondeurs."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "L'origine lointaine du mot reste moins sûre que son usage par Paracelse. Le rapprochement proposé avec une expression grecque signifiant habitant de la terre demeure une hypothèse discutée, non une traduction antique solidement attestée.[2] Le nom ne prouve donc pas l'existence d'un gnome identique dans la Grèce ancienne. Son histoire documentée commence avec une élaboration savante, à laquelle les siècles suivants ont donné d'autres visages.",
+        "Les figurines de jardin se répandent à partir du XIXe siècle, puis gagnent une grande popularité au siècle suivant.[2] Elles exposent en plein jour un personnage longtemps associé au caché. À côté de cette silhouette décorative, le gnome du jeu conserve des objets plus actifs : boîte à musique, jouet mécanique, instruments d'artisan.[3] Ces deux postérités n'épuisent pas le gnome élémentaire. Sous le sourire peint ou derrière l'établi subsiste un nom autrefois donné à celui pour qui la pierre n'était pas une prison."
+      ]
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "Gnome — synthèse historique, Paracelse et traditions minières, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Gnome"
+      },
+      {
+        "id": 3,
+        "title": "D&D Beyond — Gnome, espèces et règles Legacy, dont Basic Rules (2014)",
+        "url": "https://www.dndbeyond.com/species/18-gnome"
+      }
+    ]
+  },
+  "gobelin": {
+    "description": "Sous la montagne, une conversation traverse la cloison : le gobelin possède une maison, des rancunes et des pieds qu'il ne veut surtout pas laisser écraser.",
+    "sections": {
+      "fascination": [
+        "Le gobelin est assez proche de l'homme pour habiter derrière son mur, assez différent pour que ce voisinage devienne insupportable. Son nom a longtemps servi à désigner de petits êtres inquiétants ou malicieux, sans leur imposer partout la même figure.[4] Il appartient à une zone où le bruit nocturne prend une intention : quelqu'un dérange, observe ou se moque. La petite taille n'adoucit pas nécessairement cette présence. Elle lui permet d'occuper des lieux que l'habitant humain croit avoir entièrement inspectés.",
+        "Dans The Princess and the Goblin de George MacDonald, la montagne possède un étage inférieur peuplé de familles hostiles. Les mineurs y entendent des travaux et des conversations ; les gobelins creusent, déménagent leurs meubles et préparent une attaque.[7] Cette proximité matérielle rend leur royaume plus troublant qu'un enfer lointain. Une mince paroi sépare le travail quotidien des hommes d'une autre société, qui leur reproche d'occuper le monde du dessus."
+      ],
+      "legendes": [
+        "L'histoire du mot passe par le français médiéval gobelin et le latin médiéval gobelinus. La synthèse étymologique consultée relève ce dernier chez Orderic Vitalis, à propos d'un démon d'Évreux, puis le mot français dans la tradition écrite de la fin du XIIe siècle.[4] Ces attestations ne décrivent pas une espèce à peau verte et à longues oreilles. Elles situent un nom dans le vocabulaire des êtres nuisibles ou trompeurs, avant sa carrière dans la littérature fantastique.",
+        "Le terme anglais goblin s'est ensuite prêté à des emplois très larges. Les rapprochements avec les brownies, les lutins ou les kobolds témoignent de cette circulation des noms.[4] Ils ne signifient pas que toutes ces figures possèdent une origine identique. Un auxiliaire domestique susceptible, un esprit de mine et un ennemi de conte peuvent partager une traduction sans partager leurs usages. La comparaison éclaire une parenté de situations ; elle effacerait les traditions si elle transformait chaque petit être européen en membre d'un même peuple.",
+        "MacDonald joue lui-même de cette souplesse : au début de son roman, les êtres souterrains sont appelés selon les gens gnomes, kobolds ou gobelins. Le narrateur rapporte plusieurs explications locales à leur départ sous terre : des taxes jugées trop lourdes, des obligations déplaisantes ou un gouvernement devenu plus sévère. Il présente ces explications comme des légendes internes au pays de son récit.[7] Elles ne sont donc pas un témoignage historique sur des habitants réels chassés des montagnes.",
+        "Le jeune mineur Curdie découvre leur projet en écoutant une famille à travers la roche. Les détails domestiques arrivent avant le complot : une charge portée sur la tête, des chaussures interdites, des meubles à transporter. Puis le danger s'élargit à la princesse Irene et à la maison royale. L'histoire aboutit à une inondation dont les gobelins sont eux-mêmes victimes ; plusieurs survivants quittent la région, tandis que certains deviennent plus doux et se rapprochent des brownies écossais.[7] Le récit ne les enferme donc pas tous dans une malignité sans changement possible."
+      ],
+      "anomalies": [
+        "Le corps des gobelins de MacDonald distribue sa résistance de manière inégale. Le crâne est d'une dureté remarquable, au point de rendre les casques superflus à leurs yeux ; les pieds sont au contraire extrêmement sensibles.[7] Cette disproportion détourne la violence héroïque. Frapper noblement un adversaire à la tête risque d'être inutile, tandis qu'un geste beaucoup moins majestueux peut le mettre en fuite. La connaissance de l'anatomie importe davantage que la puissance du coup.",
+        "Les orteils deviennent un sujet d'horreur dans une conversation gobeline. Le père explique à sa famille l'étrangeté de pieds humains divisés en plusieurs extrémités ; les chaussures lui paraissent destinées à cacher cette disgrâce.[7] Le conte retourne ainsi le regard du lecteur. Ce que l'homme considère comme une forme normale inspire ailleurs du dégoût. La reine et ses chaussures introduisent des exceptions, des secrets et des distinctions de rang dans ce qui semblait d'abord n'être qu'un détail anatomique.",
+        "Les vers et les chansons offrent une autre protection. Les mineurs connaissent des rimes efficaces contre les gobelins ; en inventer de nouvelles, de la bonne sorte, peut être plus efficace encore.[7] Il s'agit d'une propriété du monde de MacDonald, pas d'une recette universelle contre tous les lutins. Le courage de Curdie prend ici une forme sonore et pratique : il tient sa voix, trouve son rythme, et empêche la peur de le réduire au silence."
+      ],
+      "naturelle": {
+        "lead": "Le mot gobelin recouvre des traditions trop diverses pour soutenir une biologie commune. Le portrait qui suit prend pour terrain principal les habitants souterrains de MacDonald, dont le roman décrit les foyers et les faiblesses avec une précision inhabituelle.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Les gobelins du roman gardent une affection les uns pour les autres, même lorsque leurs rapports avec les humains deviennent cruels. Leur hostilité s'alimente à un grief transmis contre les habitants de la surface et les descendants du roi tenu pour responsable de leur retrait.[7] Cette rancune devient une occupation politique. Un roi et un gouvernement coordonnent les projets nuisibles, tandis que les conversations familiales mêlent petites vanités, disputes et plaisir d'imaginer la déconvenue des voisins."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les montagnes contiennent des cavernes naturelles et des galeries creusées pour le minerai. Les deux réseaux se rencontrent, rapprochant dangereusement mineurs et gobelins. Certaines cavités débouchent dans des ravins ou sur les pentes ; les habitants d'en bas sortent surtout la nuit.[7] Ils aménagent aussi de nouvelles maisons lorsqu'une exploitation humaine menace de percer leurs parois. Leur territoire n'est pas immobile : il se déplace au rythme des coups de pioche entendus de part et d'autre."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Curdie surprend une famille qui prévoit de souper avant son départ vers un nouveau logement.[7] Ce repas atteste un rythme domestique, sans fournir à lui seul un menu complet. Le roman met davantage l'accent sur les meubles, les lits et les déplacements que sur une chaîne alimentaire détaillée. La menace des gobelins de ce récit ne repose donc pas sur une anthropophagie automatiquement attachée à leur nom. Elle vient de l'enlèvement, du complot et de leur connaissance des passages souterrains."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Leur ingéniosité croît dans le monde souterrain : ils savent creuser, organiser des travaux, dissimuler leurs intentions et préparer des actions collectives.[7] Leur jugement reste toutefois encombré de préjugés. La conversation sur les chaussures montre comment un détail aperçu peut engendrer une explication assurée et fausse du comportement humain. Leur intelligence n'empêche pas cette erreur ; elle lui donne des arguments. Curdie tire justement profit des paroles qu'ils échangent en croyant leur intimité protégée par la pierre."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Parents et enfants apparaissent explicitement dans le récit. La dynastie royale possède également une histoire familiale : une première reine venue du dessus est morte à la naissance du prince, et une seconde reine occupe sa place.[7] Ces relations font des gobelins une population romanesque avec des générations, pas seulement une troupe surgie pour une bataille. Le texte raconte aussi une transformation progressive des habitants après leur retrait souterrain ; cette explication imaginaire ne vaut pas théorie scientifique de l'hérédité."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Leurs adversaires sont surtout les mineurs, les défenseurs de la maison royale et Curdie. Le danger décisif vient pourtant de l'eau : l'inondation envahit les passages et laisse de nombreux morts, dont la reine, retrouvée avec une chaussure de pierre encore attachée.[7] La montagne qui protégeait la société gobeline devient un piège hydraulique. Les survivants ne subissent pas tous le même sort ; le dénouement laisse place au départ, à l'adoucissement des mœurs et à de nouveaux rapports avec les humains."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les origines plus lointaines de gobelin demeurent discutées. Les rapprochements avec le grec kobalos ou le germanique kobold sont des propositions étymologiques, non des filiations assez sûres pour identifier une créature unique à travers les langues.[4] La forme médiévale est mieux documentée que cette préhistoire du mot. Une telle incertitude n'enlève rien à sa fécondité littéraire ; elle empêche seulement d'en faire le nom immuable d'une espèce antique.",
+        "Chez MacDonald, les reliques les plus révélatrices seraient une chaussure, une pioche et une table aux pieds soigneusement comptés lors d'un déménagement.[7] Ces objets donnent à l'ennemi une vie hors du combat. La chaussure protège une faiblesse et signale un privilège ; la pioche rapproche les gobelins de ceux qu'ils détestent ; le meuble oblige une famille monstrueuse à résoudre les mêmes problèmes qu'un foyer humain. Le royaume sous la montagne reste inquiétant parce qu'il est habitable, et que ses habitants y discutent déjà lorsque quelqu'un approche l'oreille du mur."
+      ]
+    },
+    "sources": [
+      {
+        "id": 4,
+        "title": "Goblin — synthèse lexicale et folklorique, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Goblin"
+      },
+      {
+        "id": 7,
+        "title": "George MacDonald — The Princess and the Goblin, Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/708/pg708-images.html"
+      }
+    ]
+  },
+  "jackalope": {
+    "description": "Ses bois sont authentiques, son lièvre aussi ; c’est leur rencontre qui ment.",
+    "sections": {
+      "fascination": [
+        "Une tête de lièvre naturalisée regarde la salle, deux bois dressés au-dessus des oreilles. Le jackalope possède cette manière tranquille de présenter une impossibilité : aucune grimace, aucun effet surnaturel ne vient avertir le visiteur. Le trophée emprunte à la taxidermie son assurance documentaire. Si une bête a été chassée puis accrochée au mur, elle a bien dû courir quelque part. La plaisanterie commence précisément dans ce petit raisonnement.",
+        "Le nom associe le jackrabbit américain à l’antilope, mais les montages célèbres emploient des bois de cervidé. L’incohérence convient à cet animal de conversation, dont chaque détail supplémentaire peut être inventé pour éprouver la crédulité du voyageur. À Douglas, dans le Wyoming, l’existence de la farce est solidement documentée ; celle d’une espèce hybride ne l’est pas. Le plaisir consiste à tenir simultanément la preuve entre les mains et à reconnaître son assemblage.[9][11]"
+      ],
+      "legendes": [
+        "La ville de Douglas reproduit un article où le taxidermiste Ralph Herrick attribue à son frère Douglas et à lui-même la création du jackalope en 1934. Un lièvre récemment tué aurait été posé près de bois dans leur atelier ; Douglas aurait proposé de le monter dans cette disposition. Il s’agit du récit de fabrication donné par ses artisans, non d’une observation animale. D’autres présentations locales retiennent plus largement les années 1930.[9][7]",
+        "Le premier trophée est vendu à Roy Ball et exposé dans son hôtel LaBonte. Les archives du Wyoming rapportent sa disparition en 1977.[7] L’objet passe ainsi par les étapes habituelles d’une petite célébrité locale : achat, exposition publique, souvenirs photographiques et vol. Le fait qu’il ait été dérobé ne rend pas son animal plus réel, mais donne à la plaisanterie une relique perdue. Un exemplaire fabriqué peut avoir une histoire parfaitement sérieuse.",
+        "Les histoires racontées aux touristes lui prêtent une voix capable d’imiter celle des humains. Les archives évoquent des cow-boys qui l’auraient entendu joindre son chant aux leurs autour du feu. On le dit aussi redoutable lorsqu’il se sent menacé.[7] La bête acquiert donc les talents utiles au conteur : elle peut répondre sans se montrer et expliquer, par sa dangerosité ou sa discrétion, pourquoi personne ne l’approche de trop près.",
+        "La chasse bénéficie même de permis de fantaisie. La règle reproduite par la municipalité autorise la poursuite entre minuit et deux heures du matin, le 31 juin.[9] Une date impossible protège admirablement une population inexistante. Ce détail donne au récit sa tonalité exacte : ce n’est pas une fraude zoologique dissimulée à tout prix, mais une invitation à comprendre le jeu, parfois après avoir déjà acheté son permis.",
+        "Un vrai lapin peut pourtant porter des excroissances qui ressemblent à des cornes. Le Smithsonian décrit un lapin à queue blanche conservé dans ses collections, infecté par le papillomavirus de Shope. La maladie produit des tumeurs kératinisées, notamment sur la tête.[11] Ce cas ne prouve ni les bois de cervidé ni le chant du jackalope. Il fournit un voisinage troublant entre une farce taxidermique et une anomalie pathologique réelle, sans établir que les Herrick se soient inspirés de cette dernière."
+      ],
+      "anomalies": [
+        "Les bois transforment l’équilibre de la silhouette. Le lièvre, animal de fuite dans notre imagination familière, reçoit un équipement de confrontation. Les grandes oreilles et la ramure se disputent le sommet de la tête ; cet encombrement produit une allure à la fois fière et peu pratique. Le montage n’a pas à résoudre les contraintes d’un crâne vivant. Il lui suffit d’être assez soigné pour que l’œil accepte brièvement la combinaison.",
+        "Les excroissances virales du vrai lapin relèvent d’un autre mécanisme. Le Smithsonian les distingue expressément des assemblages de peaux et de bois vendus dans les boutiques ; près de la bouche, elles peuvent gêner l’alimentation de l’animal malade.[11] Les confondre avec une ramure décorative effacerait cette souffrance. Le merveilleux du jackalope gagne à rester du côté de l’objet fabriqué, tandis que le spécimen pathologique demeure un document d’histoire naturelle."
+      ],
+      "naturelle": {
+        "lead": "Le jackalope a une écologie à deux étages : celle que lui prêtent les conteurs et celle, vérifiable, des ateliers, des commerces et des souvenirs qui le font circuler.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Il se dérobe à la rencontre tout en se montrant assez bavard dans les récits pour imiter les voix humaines. La documentation de Douglas mentionne ce talent et reconnaît que l’origine de plusieurs anecdotes reste inconnue.[9] Cette mobilité narrative permet au conteur de varier son caractère : agressif si l’on demande à le saisir, chanteur si la veillée réclame un compagnon. Ce sont des variantes de plaisanterie, non les observations répétées d’un comportement animal."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Son territoire déclaré est l’Ouest américain ; ses sites les mieux attestés sont les murs d’hôtel, les boutiques et l’atelier du taxidermiste. À Douglas, monuments, panneaux et objets urbains prolongent cette présence.[7] La prairie fournit une distance utile : le visiteur peut croire que la bête se tient juste au-delà de son itinéraire. L’animal matériel, lui, voyage dans une boîte et trouve très bien sa place dans un bureau loin du Wyoming."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les sources locales consultées ne fixent aucun menu commun au jackalope. Il serait facile de lui attribuer celui d’un lièvre, mais cela reviendrait à développer nous-mêmes la farce. Sa version naturalisée ne mange rien ; elle mobilise le travail des artisans et l’argent des amateurs. Le lapin atteint de papillomatose doit, pour sa part, continuer à se nourrir malgré ses lésions : c’est là une question biologique réelle, distincte de la légende.[11]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L’imitation vocale lui donne une intelligence taquine dans les histoires de campement.[7] Le récit n’établit cependant pas s’il comprend les chants ou reproduit seulement leurs sons. L’ingéniosité la mieux documentée appartient à ses fabricants et à ses ambassadeurs, qui savent répondre aux questions embarrassantes. Un visiteur veut entreprendre un élevage ? L’artisan lui fournit une explication saisonnière qui remet la capture à plus tard, selon l’anecdote rapportée par Douglas.[9]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "L’hypothèse d’un élevage fait partie des conversations amusées rapportées par la municipalité, pas d’une réussite agricole.[9] Les jackalopes connus se multiplient par fabrication : un nouveau montage, une carte postale, une sculpture. Les archives soulignent la poursuite de cette activité par Ralph Herrick après que son frère s’en est détourné.[7] La transmission de la technique et de la plaisanterie explique leur abondance sans inventer un accouplement entre un cervidé et un lièvre."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le chasseur muni d’un permis impossible constitue son adversaire de théâtre. Dans le monde des objets, les périls sont différents : le trophée initial est volé et une statue de Douglas a été détruite par un véhicule, puis reconstruite.[7] Cette vulnérabilité matérielle donne au jackalope une mortalité presque municipale. Une réparation, un nouvel exemplaire ou un autre récit suffisent pourtant à le réinstaller au même endroit."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le dossier des archives du Wyoming conserve des cartes postales et le récit d’un projet de reconnaissance comme créature mythique de l’État, proposé en 2013 sans aboutir lors de cette session.[7] Cela ne démontre aucun statut biologique ; cela montre qu’une invention comique peut devenir assez attachée à un lieu pour entrer dans sa conversation politique.",
+        "Un spécimen taxidermique et un lapin malade peuvent donc se retrouver dans des collections pour des raisons opposées. L’un témoigne d’un savoir-faire et d’une plaisanterie partagée ; l’autre permet de comprendre une infection.[11] Les regarder correctement ne dissipe pas tout étonnement. Le jackalope reste convaincant quelques secondes, même lorsque l’on sait exactement comment on l’a fabriqué."
+      ]
+    },
+    "sources": [
+      {
+        "id": 7,
+        "title": "Greetings From… Douglas! - Wyoming Postscripts - WordPress.com",
+        "url": "https://wyostatearchives.wordpress.com/2014/04/21/greetings-from-douglas"
+      },
+      {
+        "id": 9,
+        "title": "The Legend of the Jackalope — City of Douglas",
+        "url": "https://www.cityofdouglas.org/255/The-Legend-of-the-Jackalope"
+      },
+      {
+        "id": 11,
+        "title": "The World's Scariest Rabbit",
+        "url": "https://www.si.edu/stories/worlds-scariest-rabbit"
       }
     ]
   },
@@ -891,6 +3627,229 @@ window.FF_NOTICES = {
       }
     ]
   },
+  "oreade": {
+    "description": "Une voix traverse le ravin ; la montagne grecque a ses habitantes, et leurs vies durent parfois autant que les arbres.",
+    "sections": {
+      "fascination": [
+        "L'Oréade apparaît là où le relief cesse d'être un décor. Une pente boisée, une grotte fraîche ou le passage étroit entre deux rochers peuvent être sa demeure. Elle a figure de jeune femme, non de bloc de granit animé. Sa présence donne une intimité étrange aux hauteurs : le voyageur croyait marcher dans un espace désert, il traverse un lieu habité. Les nymphes montagnardes des textes grecs dansent et élèvent des enfants ; leurs gestes familiers rendent le paysage plus proche sans le rendre entièrement accessible.[1]",
+        "Le nom semble promettre la nudité des sommets, mais les Oréades fréquentent aussi les forêts qui les couvrent. Pins et chênes, ombre des cavernes, vallons herbeux composent leur monde. La frontière avec les Dryades est donc poreuse : une même nymphe peut appartenir à une montagne et dépendre d'un arbre. Cette souplesse est précieuse. Elle empêche de transformer la Grèce des poètes en jardin zoologique où chaque puissance disposerait d'une seule case.[1]"
+      ],
+      "legendes": [
+        "Dans la Théogonie, Hésiode nomme les montagnes parmi les premières puissances issues de Gaia et les présente comme les séjours des nymphes qui habitent leurs vallons. Le récit installe ces présences dans un monde encore en formation. Il ne raconte pas l'invention tardive d'une race destinée à garder les sentiers : montagnes et habitantes appartiennent à la profondeur divine du paysage. Le détail des généalogies varie ensuite avec les textes et les territoires.[1]",
+        "L'Hymne homérique à Aphrodite leur confie une tâche beaucoup plus précise. Après son union avec Anchise, la déesse annonce que leur fils Énée sera élevé par les nymphes du mont Ida. Elles le garderont jusqu'à ce qu'il soit devenu un jeune garçon, puis le présenteront à son père. Le futur héros grandit ainsi hors des maisons humaines, mais nullement sans soins. Les nourrices de la montagne assurent la transition entre sa naissance divine et son retour auprès d'Anchise.[1]",
+        "Le même passage s'attarde sur leur condition. Ces nymphes ne se rangent tout à fait ni parmi les mortels ni parmi les immortels. Elles mangent l'ambroisie, prennent part aux danses divines et vivent très longtemps. Pourtant un pin ou un chêne a poussé avec chacune d'elles ; quand son arbre se dessèche, perd son écorce et laisse tomber ses branches, la nymphe meurt avec lui. Cette description concerne les nourrices montagnardes de l'hymne. Elle ne permet pas d'affirmer que toute Oréade, dans chaque tradition, possède nécessairement son arbre jumeau.[1]",
+        "D'autres textes font entendre leurs chœurs. Chez Aristophane, Dionysos danse parmi les nymphes des montagnes tandis qu'Écho répète les voix dans les rochers et le feuillage. Dans les Argonautiques d'Apollonios de Rhodes, les nymphes des cimes et des cavernes participent au monde nocturne des chants en l'honneur d'Artémis. L'Oréade n'est donc pas condamnée à une solitude mélancolique. La montagne accueille des groupes, des célébrations et des rencontres dont les humains n'aperçoivent qu'une partie.[1]"
+      ],
+      "anomalies": [
+        "Sa première étrangeté tient à cette durée intermédiaire. L'immortalité ne constitue pas un simple interrupteur allumé ou éteint : une vie peut dépasser toute mémoire humaine et demeurer vulnérable. L'arbre associé aux nymphes de l'Ida rend cette longue existence visible. Le bois vieillit à leur place sous les yeux du passant, puis les deux vies s'éteignent ensemble. La mort reste organique, progressive, et non l'effet obligatoire d'un combat.[1]",
+        "Aucune anatomie minérale stable ne caractérise les Oréades antiques. Leur attribuer une peau pierreuse, le pouvoir universel de traverser le roc ou une insensibilité au froid ferait entrer des inventions de fantasy dans la description ancienne. Les textes consultés privilégient leur beauté, leurs déplacements, leurs liens familiaux et leur relation aux lieux. Le prodige réside dans leur présence et leur condition, davantage que dans un catalogue d'armes surnaturelles.[1]",
+        "Une Oréade peut également recevoir une identité locale plutôt qu'un nom de catégorie. La synthèse de Theoi rassemble notamment les nymphes de Cyllène, de l'Othrys et du Cithéron. Cette géographie explique pourquoi leurs fonctions divergent : ici une nourrice, ailleurs une prophétesse ou une figure poursuivie. Les rapprocher aide à lire le paysage religieux grec ; les fondre en un seul personnage effacerait justement ce que les récits ont conservé de chaque montagne.[1]"
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle de l'Oréade se lit dans les rapports entre un corps, un lieu et une durée. Les indications suivantes suivent les textes antiques cités, sans convertir leurs nymphes en population animale.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La danse collective occupe une place que la rencontre fortuite avec un voyageur ne doit pas masquer. Les nymphes montagnardes se réunissent, chantent, accompagnent des dieux et peuvent recevoir la garde d'un enfant. Les nourrices d'Énée savent aussi le rendre à sa famille au moment prévu. Leur liberté de mouvement s'inscrit dans des relations et des engagements ; une silhouette aperçue seule sur un versant ne raconte pas toute leur vie.[1]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le mont Ida de l'hymne est une montagne sacrée et boisée. Plus largement, les désignations antiques associent les Oréades aux reliefs et aux grottes, parfois au massif particulier dont elles portent le nom. Il serait trompeur de leur réserver les seules neiges éternelles. Une nymphe des hauteurs peut demeurer à l'abri d'un arbre ou dans un vallon, à portée de la vie pastorale autant que des sommets.[1]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "L'ambroisie est explicitement mentionnée dans l'Hymne à Aphrodite. Cette nourriture les rapproche des dieux, alors que leur mortalité les en sépare. Elle suffit à défaire l'image d'un régime montagnard composé par analogie de baies et de racines. Le poème ne décrit ni récoltes ni réserves hivernales : il utilise le repas pour situer leur condition, et non pour mesurer les ressources nécessaires à leur entretien.[1]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Elles comprennent la parole divine et prennent soin d'Énée sur plusieurs années. Rien n'invite à leur prêter un esprit animal ou une conscience végétale privée de langage. Les figures prophétiques rangées parmi les nymphes montagnardes montrent même que certaines détiennent un savoir recherché par les hommes. Cette capacité appartient à des personnages déterminés ; chaque Oréade n'est pas pour autant un oracle disponible au détour du chemin.[1]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "L'hymne évoque leurs unions avec les Silènes et avec Hermès dans les cavernes. Un fragment attribué à Hésiode, conservé par Strabon, fait quant à lui naître les nymphes montagnardes d'une lignée liée aux filles d'Hécatéros. Ce sont des généalogies mythiques, non deux descriptions concurrentes d'un cycle reproducteur. Elles rattachent les nymphes à d'autres habitants divins des montagnes et expliquent des parentés plutôt que des effectifs.[1]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les sources ne leur assignent pas une espèce qui les chasserait. Le danger le mieux défini dans l'hymne est la fin de l'arbre contemporain de leur naissance. Les mortels respectent ces arbres sacrés et ne les abattent pas à la hache. Ce passage exprime une protection religieuse du lieu ; il ne fournit pas une règle générale selon laquelle tout bûcheron tuerait nécessairement une Oréade en coupant un pin.[1]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Oréade vient du grec désignant la nymphe de la montagne, sur oros, « montagne ». Le mot conserve un rapport au relief que les images modernes peuvent perdre en ajoutant ailes et accessoires féeriques. Dans l'iconographie réunie par Theoi, les rapprochements avec les ménades rappellent surtout les cortèges et la danse. Reconnaître une Oréade sur une image demande un contexte ; son corps ne porte pas une marque zoologique infaillible.[1]",
+        "Le témoignage le plus durable tient peut-être au respect d'un arbre que personne ne devrait toucher. L'Hymne à Aphrodite ne demande pas au lecteur de croire que le bois ressemble à une femme. Il raconte deux existences attachées l'une à l'autre. Lorsque la nymphe quitte enfin la lumière, c'est tout un endroit de la montagne, longtemps vivant et familier, qui a changé.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Dryades & Oreiades - Nymphs",
+        "url": "https://www.theoi.com/Nymphe/Dryades.html"
+      }
+    ]
+  },
+  "pooka": {
+    "description": "Le pooka peut vous emporter sur son dos ou laver votre vaisselle ; dans les deux cas, c'est lui qui décide quand le service prend fin.",
+    "sections": {
+      "fascination": [
+        "Un animal parle, et la route change de maître. Le voyageur qui croyait choisir sa monture devient le passager d'une intention étrangère. Le pooka irlandais tient cette position inconfortable entre secours et enlèvement : il porte, mais ne se laisse pas conduire. On peut s'accrocher à lui sans savoir où il va, ni si le retour rendra ce qu'on avait au départ.",
+        "Sa silhouette n'est pas enfermée dans le cheval noir que privilégient de nombreux portraits modernes. L'anthologie de W. B. Yeats lui donne des formes de cheval, d'âne, de taureau, de chèvre et d'aigle.[6] Cette mobilité animale interdit de le reconnaître par une seule anatomie. Ce qui demeure est l'écart entre l'apparence familière d'une bête et sa conduite : elle connaît votre langue, juge votre réponse et dispose d'un chemin que vous ne voyez pas."
+      ],
+      "legendes": [
+        "Fairy and Folk Tales of the Irish Peasantry réunit sous la direction de Yeats des textes d'auteurs différents. Le groupe consacré au pooka comprend notamment The Piper and the Puca de Douglas Hyde et The Kildare Pooka de Patrick Kennedy.[6] Ces voix ne constituent pas un témoignage unique. Hyde présente une traduction de l'irlandais ; Kennedy raconte une aventure domestique à la manière d'un conteur. Leur rapprochement conserve deux pookas dont les fonctions divergent fortement.",
+        "Dans le récit de Hyde, un joueur de cornemuse de Dunmore, dans le comté de Galway, rentre d'une danse. Il ne sait jouer qu'un air. Près d'un petit pont, le pooka le hisse sur son dos ; le musicien se cramponne à ses longues cornes et proteste, car sa mère attend l'argent destiné à son tabac. La bête lui impose un nouvel air et lui donne soudain la capacité de le jouer.[6] Le détail du tabac garde la scène à hauteur de foyer, même lorsque la chevauchée quitte les routes humaines.",
+        "Le pooka conduit le musicien à Croagh Patrick, frappe le sol du pied et ouvre une entrée vers une assemblée de vieilles femmes. Le garçon doit jouer pour elles. Un jars qu'il avait volé et mangé reparaît au service de la table, puis lui offre de nouvelles cornemuses. Au retour, les pièces reçues deviennent des feuilles et le nouvel instrument produit des cris d'oies. En revanche, ses anciennes cornemuses rendent désormais une musique admirable.[6] Le don véritable demeure dans son savoir, tandis que la récompense apparente se dérobe.",
+        "Le pooka du Kildare, chez Kennedy, arrive sous la forme d'un grand âne dans une cuisine où portes et ustensiles font grand bruit la nuit. Un garçon caché près du foyer le voit chauffer l'eau, laver la vaisselle et balayer. La créature explique ensuite avoir été un domestique paresseux, condamné après sa mort à réparer sa négligence. Elle demande un manteau chaud pour supporter les nuits dehors. Dès que les serviteurs le lui offrent, sa punition s'achève et ils doivent reprendre le ménage.[6] Ce revenant laborieux ne se réduit guère à un démon des landes.",
+        "Yeats cite également, par l'intermédiaire de Hyde, un récit manuscrit concernant un cheval qui émerge d'une colline du Leinster et répond aux questions sur l'année à venir autour de novembre. Il discute lui-même son identification au pooka et le rapproche des chevaux d'eau.[6] La prudence appartient déjà à la source : cet oracle équin est un rapprochement proposé, non un épisode qu'il faudrait attribuer sans réserve à tout pooka."
+      ],
+      "anomalies": [
+        "La métamorphose fournit des corps adaptés aux scènes. Le dos et les cornes du pooka de Hyde donnent au cavalier de quoi tenir pendant la course ; les membres de l'âne de Kennedy deviennent assez habiles pour manipuler seaux, plats et vêtements.[6] La cohérence recherchée est celle de l'action. Le conte ne s'arrête pas pour expliquer comment un sabot saisit une cuillère, et cette hésitation entre pied et main participe même à son humour.",
+        "Les récompenses ont une double valeur. L'or du musicien perd sa substance au matin, l'instrument neuf trahit son apparence, mais une compétence acquise pendant la nuit reste utilisable.[6] Le pooka peut donc transformer durablement la vie d'un humain sans lui remettre un trésor durable. L'échange oblige à réévaluer ce qui a réellement été obtenu : richesse promise, farce sonore ou apprentissage inattendu.",
+        "Le manteau du pooka domestique modifie quant à lui un statut. Le vêtement ne chasse pas une bête allergique au tissu ; il atteste que le travail mérite enfin une récompense et libère un ancien serviteur.[6] Son départ paraît ingrat aux bénéficiaires, qui comptaient sur une aide perpétuelle. Le conte leur retire cette commodité au moment exact où ils pensaient l'avoir consolidée."
+      ],
+      "naturelle": {
+        "lead": "Les récits irlandais donnent au pooka plusieurs manières d'exister ; son portrait doit suivre leurs situations plutôt que fabriquer une espèce homogène.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Il prend l'initiative de la rencontre et conduit l'action. Chez Hyde, le pooka enlève le musicien, le forme, le présente comme un excellent joueur puis le ramène près du pont.[6] La brutalité du départ n'annonce donc pas une mise à mort. Le passager subit une épreuve dont il ne comprend qu'après coup les bénéfices et les moqueries. Sa résistance s'exprime par des protestations très humaines auxquelles la monture répond sans perdre son allure."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Montagnes solitaires et ruines figurent dans l'introduction de Yeats, mais les contes ouvrent aussi des cuisines, des ponts et une salle cachée à Croagh Patrick.[6] Le seuil est particulièrement actif : porte qu'on claque, passage qu'un pied ouvre, bord de chemin où l'homme est déposé. Le pooka circule entre ces espaces au lieu d'habiter exclusivement une tanière. Le loger seulement dans une lande ferait disparaître son rapport aux maisons et au travail."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Dans le récit du Kildare, le garçon terrifié croit d'abord que l'âne va le manger ; celui-ci s'intéresse en réalité au feu et à la vaisselle.[6] La peur de la dévoration est démentie par l'action. Le banquet de Hyde, lui, fournit un emploi au musicien, sans dresser le menu du pooka. La forme de cheval ne suffit donc pas à imposer le fourrage, pas plus que le masque inquiétant ne permet d'inventer une préférence pour la chair humaine."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le pooka parle avec précision, sait enseigner et comprend les obligations sociales. Celui du Kildare explique la cause de sa peine, ses conditions de travail et ce qui pourrait le soulager.[6] Sa plainte contre le froid nocturne lui donne une vulnérabilité concrète. Chez Hyde, sa maîtrise musicale dépasse celle du garçon et passe directement dans son jeu. Il s'agit, dans les deux contes, d'un interlocuteur compétent, pas d'une monture douée d'une simple ruse animale."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Kennedy donne une origine individuelle à son personnage : un homme mort revient travailler sous une forme d'âne.[6] Cette explication vaut pour ce récit, sans convertir tous les pookas en domestiques défunts. Les autres aventures présentent une créature déjà active lorsqu'elle rencontre un humain. Leur transmission repose sur des épisodes et des lieux nommés ; le portrait n'a pas besoin d'ajouter une généalogie, une portée ou un élevage de jeunes métamorphes."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Les histoires retenues mettent surtout en jeu la domination temporaire du pooka et les conditions de sa sortie. Le musicien est reconduit ; le serviteur mort est délivré par un manteau.[6] Aucun chasseur naturel n'organise ces fins. Pour l'homme emporté, tenir bon et parler sont plus pertinents qu'affronter la monture comme du gibier. Pour les domestiques, le risque est de perdre une aide dont ils ont abusé, non d'être dévorés dans leur sommeil."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Pooka est une graphie anglaise du nom irlandais généralement écrit púca. Yeats évoque un rapprochement avec poc, le bouc, et une filiation supposée avec le Puck de Shakespeare, mais les présente comme des propositions.[6] Ces spéculations ne seront pas transformées ici en étymologie assurée. La parenté d'allure entre esprits farceurs est suggestive ; elle ne suffit pas à établir le trajet historique d'un mot.",
+        "Les objets laissés par ces contes sont modestes et précis : cornemuses anciennes devenues excellentes, feuilles à la place des pièces, manteau adapté aux quatre membres d'un âne. Aucun ne fonctionne comme une relique authentifiée. Ils retiennent plutôt la logique de chaque rencontre. Le pooka de Hyde corrige la valeur des cadeaux ; celui de Kennedy termine une dette de travail. Leurs plaisanteries ont des conséquences que le matin n'efface pas toutes."
+      ]
+    },
+    "sources": [
+      {
+        "id": 6,
+        "title": "W. B. Yeats, éd. — Fairy and Folk Tales of the Irish Peasantry : Douglas Hyde, The Piper and the Puca ; Patrick Kennedy, The Kildare Pooka",
+        "url": "https://www.gutenberg.org/files/33887/33887-h/33887-h.htm"
+      }
+    ]
+  },
+  "preta": {
+    "description": "Le preta revient devant une maison où le repas est servi, mais où personne ne se souvient de lui.",
+    "sections": {
+      "fascination": [
+        "Un ventre énorme sous une gorge trop étroite : l'image du preta rend la faim visible jusque dans la forme qui empêche de l'apaiser. La bouche promet un passage que le corps refuse. Devant la nourriture, l'être souffre encore, soit parce qu'il ne peut l'avaler, soit parce qu'elle se transforme avant de le nourrir.[7] Cette figure ne demande pourtant pas seulement qu'on détourne les yeux d'un corps effrayant. Elle oblige à regarder celui qui attend à la porte.",
+        "Le preta appartient à des traditions religieuses vivantes, notamment bouddhiques ; le traiter comme un monstre à combattre manquerait une grande partie de son histoire. Il peut être un parent défunt auquel les vivants doivent assistance.[7] Le repas auquel il n'accède pas est alors celui d'une famille qui continue sans lui. L'étrangeté du corps rejoint une expérience moins lointaine : être absent de la table et dépendre du souvenir des autres."
+      ],
+      "legendes": [
+        "Le terme sanskrit preta signifie le défunt, celui qui est parti ; le pali emploie peta. L'historienne des religions Adeana McNicholl rappelle que la figure précède la formation du bouddhisme et qu'elle ne désigne pas d'emblée un habitant uniformément affamé d'un monde séparé.[7] Dans le cadre brahmanique qu'elle décrit, des rites accomplis par les parents vivants aident le mort à rejoindre les ancêtres. Cette situation de passage doit être distinguée du devenir bouddhique du preta comme catégorie de renaissance.",
+        "Le Petavatthu, collection du canon pali, rassemble des récits de défunts aux conditions diverses. Certains souffrent de faim et de soif ; d'autres connaissent des plaisirs ou occupent de belles demeures. McNicholl insiste sur cette diversité, progressivement resserrée dans les portraits ultérieurs du fantôme affamé.[7] Une immense panse et une bouche minuscule sont donc une iconographie importante, mais elles ne résument pas tous les personnages des textes anciens.",
+        "Dans le Tirokudda Kanda, les défunts se tiennent hors des murs, aux carrefours et près des portes de leurs anciennes maisons. Le repas est abondant, mais personne ne se rappelle leur présence. Les proches compatissants font alors des dons en leur faveur ; les bénéficiaires s'en réjouissent et souhaitent longue vie aux donateurs.[8] Le texte transforme le souvenir en action. Les lamentations seules ne produisent pas le même bienfait que l'offrande correctement dirigée vers la communauté monastique.",
+        "McNicholl expose le récit associé au roi Bimbisara : des parents devenus pretas attendent qu'il dédie une offrande à leur intention. Le roi oublie cette dédicace et entend leurs plaintes pendant la nuit. Instruit par le Bouddha, il recommence le don, cette fois en leur faveur ; leur condition s'améliore.[7] Ce développement narratif éclaire le texte liturgique, mais ne doit pas être présenté comme s'il figurait intégralement dans les vers du Tirokudda Kanda.",
+        "Les histoires de Mulian secourant sa mère prolongent, dans le bouddhisme d'Asie orientale, cette préoccupation pour le sort des morts. L'aide passe par des offrandes à la communauté monastique et se rattache aux fêtes des revenants.[7] Ces pratiques ont des cadres locaux distincts. Elles ne constituent pas un rite unique célébré partout de manière identique, et l'ensemble des ancêtres honorés ne se confond pas avec une population de spectres malveillants."
+      ],
+      "anomalies": [
+        "L'impossibilité de manger peut venir du corps ou du monde perçu. Dans les portraits étudiés par McNicholl, l'aliment se change parfois en feu, en insectes ou en substances répugnantes.[7] Le malheur ne tient alors pas à une simple pénurie. Ce qui pourrait satisfaire un autre être devient inaccessible au preta. Le récit matérialise une condition d'existence où l'objet désiré se dérobe au moment du contact.",
+        "L'aspect corporel est lié à une explication karmique dans les traditions bouddhiques qui font des pretas un domaine de renaissance. L'avarice et l'attachement figurent parmi les conduites mises en rapport avec leur souffrance.[7] Ce langage religieux sur les actes et leurs conséquences ne doit pas devenir une accusation contre les personnes réellement affamées. La misère humaine n'autorise personne à déduire des fautes commises dans une existence antérieure.",
+        "La transformation par l'offrande complique heureusement le tableau d'une faim sans issue. Dans les récits, une assistance peut améliorer l'état du défunt ou favoriser une autre renaissance.[7] Le preta n'est donc pas nécessairement condamné à une éternité immobile. Les liens avec les vivants ouvrent une possibilité d'action, ce qui explique la place donnée aux parents, aux religieux et aux donateurs plutôt qu'à des chasseurs de monstres."
+      ],
+      "naturelle": {
+        "lead": "Les rubriques suivantes suivent principalement les récits bouddhiques et leur lecture historique ; elles décrivent une condition religieuse, pas une espèce animale.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le Tirokudda Kanda montre des défunts qui reviennent vers les lieux familiaux et attendent d'être pris en considération.[8] Leur rassemblement est silencieux dans l'ouverture du texte, tandis que d'autres récits leur donnent des plaintes ou un dialogue. Après le don, ils peuvent exprimer de la reconnaissance. Cette capacité à répondre fait du preta un partenaire moral : souffrant et dépendant, mais encore capable de souhaiter le bien de ceux qui l'aident."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les carrefours, murs et montants de porte du texte pali dessinent un espace de proximité empêchée.[8] Le preta est près des siens, sans participer normalement à leur vie. Les représentations d'un domaine distinct sur la roue des renaissances proposent une autre organisation du monde.[7] L'une situe le défunt à notre seuil ; l'autre le place dans une condition cosmologique. Leur coexistence est plus juste qu'une carte réduite aux cimetières et aux terrains abandonnés."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le texte pali précise que ce domaine n'a ni agriculture, ni élevage, ni commerce : les défunts y dépendent de ce qui est donné ici.[8] La nourriture possède donc une dimension relationnelle. La présenter comme une ration suffit mal à expliquer le rite, où comptent aussi l'intention et la destination du don. Dans les développements étudiés par McNicholl, l'offrande au sangha et la dédicace du mérite permettent d'aider là où le simple aliment tendu au preta échoue.[7]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Les pretas des récits peuvent reconnaître leurs proches, exposer leur histoire et instruire les vivants sur les actes qui ont conduit à leur condition. McNicholl relève notamment des personnages dont l'expérience du don modifie les convictions et qui deviennent à leur tour des témoins de son efficacité.[7] Leur corps n'épuise donc pas leur identité. La bouche réduite de l'image ne signifie ni absence de pensée ni incapacité générale à prendre part à un échange."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Dans la cosmologie bouddhique considérée ici, on devient preta par renaissance ; on ne constitue pas une lignée de prédateurs nourrissant leurs petits.[7] Cette appartenance est une condition parmi d'autres dans le cycle des existences. Certains textes anciens accordent à ces défunts une vie plus variée que la seule privation, ce qui déconseille de fabriquer une règle physiologique universelle. Le sujet pertinent est le passage vers cet état et la possibilité de le quitter."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "La faim, la soif et l'impuissance à recevoir dominent leur souffrance ; une chaîne de chasse n'explique pas le tableau. Les vivants et les religieux peuvent intervenir comme soutiens plutôt que comme adversaires.[7][8] Dans le récit de Bimbisara, comprendre les cris conduit à renouveler une offrande, non à attaquer ceux qui les poussent. Le changement de réponse humaine, de la peur à l'assistance, détermine le dénouement."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les rouleaux japonais de revenants affamés et les roues tibétaines des renaissances donnent au preta des corps immédiatement lisibles ; l'article de McNicholl reproduit ces deux registres visuels.[7] Une peinture ne raconte cependant pas toute la diversité textuelle. La regarder comme l'illustration exacte de chaque récit ferait disparaître les parents reconnaissants, les interlocuteurs et les défunts dont la condition change.",
+        "Les lectures contemporaines rapprochent aussi le fantôme affamé de l'avidité ou de l'addiction.[7] Cette interprétation psychologique peut éclairer l'impossibilité d'être satisfait, mais elle ne remplace pas les pratiques funéraires ni les croyances de ceux pour qui les pretas sont des êtres réels. Le catalogue conserve ces niveaux distincts. Devant leur faim, l'histoire religieuse demande d'abord qui se souvient, qui donne et à qui le bienfait est destiné."
+      ]
+    },
+    "sources": [
+      {
+        "id": 7,
+        "title": "Adeana McNicholl — Who Were the Hungry Ghosts, Really?",
+        "url": "https://tricycle.org/article/who-were-the-hungry-ghosts-really"
+      },
+      {
+        "id": 8,
+        "title": "Tirokudda Kanda: Hungry Shades Outside the Walls, traduction de Thanissaro Bhikkhu",
+        "url": "https://www.accesstoinsight.org/tipitaka/kn/pv/pv.1.05.than.html"
+      }
+    ]
+  },
   "quetzalcoatl": {
     "description": "Des plumes vertes couvrent les anneaux du serpent ; de leurs replis émerge un visage qui connaît le chemin des morts.",
     "sections": {
@@ -1043,6 +4002,469 @@ window.FF_NOTICES = {
       }
     ]
   },
+  "revenant": {
+    "description": "On a fermé la tombe ; dans la rue, les chiens recommencent à aboyer contre celui qu'on y a porté.",
+    "sections": {
+      "fascination": [
+        "Le revenant conserve une adresse. Chez Guillaume de Newburgh, un mort du Buckinghamshire revient d'abord vers le lit de sa femme, puis tourmente ses frères et le voisinage.[7] Il ne surgit pas d'un ailleurs entièrement inconnu : on l'a fréquenté, accompagné au tombeau, pleuré peut-être. Son retour bouleverse des relations déjà établies. La peur porte sur la porte familière qu'il sait retrouver et sur le corps dont les proches ont eux-mêmes organisé l'ensevelissement.",
+        "Le terme français permet de rassembler des morts qui reviennent, mais leurs récits n'ont pas tous la même logique. Cette notice s'attache surtout aux morts corporels décrits par un chroniqueur anglais de la fin du XIIe siècle. Ils pèsent, frappent et troublent les animaux.[7] Ce choix les distingue du fantôme seulement visible et du mort-vivant standardisé des jeux. Une dette ou une vengeance peut expliquer certains retours ; elle ne constitue pas la règle de toutes les apparitions."
+      ],
+      "legendes": [
+        "Au livre V de son Histoire des affaires anglaises, Guillaume de Newburgh rapporte plusieurs cas qu'il tient de religieux ou d'autres informateurs. Il souligne la difficulté de croire à ces corps sortant du tombeau, puis invoque l'abondance des témoignages de son temps.[7] Son texte est une source sur des récits et sur leur réception médiévale, non une constatation moderne de résurrections. Il mêle enquête, jugement moral et interprétation chrétienne du prodige.",
+        "Dans le Buckinghamshire, l'homme mort écrase presque sa femme sous son poids. Des veilleurs le repoussent ; les autres maisons organisent à leur tour une surveillance nocturne. L'affaire parvient à l'évêque de Lincoln. Celui-ci rejette la destruction du corps proposée par certains et fait déposer sur sa poitrine une lettre d'absolution. Le récit affirme que les troubles cessent alors.[7] Le remède agit sur le statut religieux du défunt. Il n'exige ni combat héroïque ni arme extraordinaire.",
+        "À Berwick, un homme riche et présenté comme malhonnête parcourt les rues après sa mort, poursuivi par des chiens. Les habitants craignent les coups, mais aussi l'air corrompu par ses déplacements. Des jeunes gens déterrent le cadavre, le démembrent et le brûlent. L'agitation cesse, sans empêcher l'épidémie que le chroniqueur rapporte ensuite.[7] Cette fin moins rassurante compte : supprimer le corps n'efface pas instantanément toutes les conséquences que la communauté lui attribue.",
+        "À Melrose, un chapelain trop passionné de chasse revient près de la demeure de sa protectrice. Un veilleur resté seul dans le cimetière le frappe à la hache. Le matin, la blessure apparaît sur le corps exhumé ; celui-ci est brûlé hors du monastère.[7] Dans le récit d'Anantis, deux frères prennent l'initiative d'ouvrir une tombe pendant que les notables délibèrent. Le cadavre gonflé et sanglant est détruit, et la maladie cesse cette fois.[7] Guillaume juxtapose plusieurs manières de résoudre la peur, sans leur donner un protocole unique."
+      ],
+      "anomalies": [
+        "Ces revenants traversent une frontière que le récit maintient pourtant visible. Ils ont un tombeau où retourner, un corps susceptible d'être blessé, parfois un linceul qui contient mal son gonflement.[7] Le texte ne les décrit pas comme des vivants simplement rétablis. À Melrose, la tombe s'ouvre pour recevoir le fuyard puis se referme ; dans le Buckinghamshire, certains témoins voient l'apparition tandis que d'autres perçoivent sa présence sans la voir.[7] Leur matérialité n'obéit donc pas aux règles d'un organisme ordinaire.",
+        "La maladie suit parfois leurs sorties. Guillaume parle d'un air infecté par le cadavre, explication qui appartient à son récit et à sa représentation du danger.[7] Il ne décrit pas une contagion transformant chaque victime en nouveau revenant. Le corps gonflé d'Anantis est comparé à une sangsue remplie de sang, mais cette comparaison ne suffit pas non plus à en faire un vampire qui mordrait systématiquement ses voisins. Les images doivent rester attachées aux gestes effectivement racontés."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle du revenant commence après une vie humaine et un enterrement. Elle suit les liens persistants du défunt avec les lieux, les vivants et les pratiques funéraires.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Les morts de Guillaume reviennent vers des personnes ou dans des espaces connus. L'un harcèle sa femme, un autre rôde autour de la chambre de son ancienne protectrice ; les chiens accompagnent plusieurs sorties de leurs aboiements.[7] La répétition contraint les habitants à veiller et à se réunir. La peur se mesure alors dans la vie interrompue : personne n'ose sortir, les voisins surveillent leur maison, et le repos devient une tâche collective."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La tombe reste le point de retour, tandis que les rues, les cours et les chambres constituent le territoire parcouru.[7] Le cimetière n'est donc pas un repaire isolé du village : il appartient à son organisation quotidienne. Le cas de Melrose fait même jouer la limite du monastère, dont les religieux empêchent le mort de troubler l'intérieur.[7] Les seuils religieux et domestiques comptent davantage que le climat ou le relief pour comprendre ces déplacements."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le chroniqueur montre des violences, du sang et une corruption attribuée au cadavre ; il ne donne pas à ses revenants un régime alimentaire commun.[7] Le sang découvert dans la tombe d'Anantis sert de signe effrayant lors de l'exhumation. Lire cette scène comme la preuve d'un repas nocturne ajouterait un événement absent. La menace porte d'abord sur la sécurité et la santé du groupe, même lorsque l'imagerie corporelle paraît annoncer des vampires plus tardifs."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le mort du Buckinghamshire cherche à surprendre des proches assoupis et se heurte à leur vigilance. Celui de Berwick annonce, selon le récit, que les habitants n'auront pas de paix tant qu'il ne sera pas brûlé.[7] Il reste donc des conduites intentionnelles et parfois une parole. Guillaume hésite cependant sur l'agent qui anime ces corps, qu'il rapporte volontiers à une action satanique. La volonté du défunt et celle de la puissance supposée agir en lui ne se séparent pas toujours nettement."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Un revenant apparaît lorsqu'une personne décédée revient, et non lorsqu'un couple de morts donne naissance à un petit. Chez Guillaume, la mauvaise conduite antérieure et les circonstances de la fin orientent plusieurs portraits.[7] Cela relève d'une interprétation morale des destins, pas d'une hérédité. Les victimes d'une épidémie ne deviennent pas automatiquement ses semblables. La communauté redoute la multiplication des morts ; elle ne raconte pas nécessairement une multiplication des corps marcheurs."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Des voisins, des religieux et parfois des parents prennent en charge la cessation des troubles. Lettre d'absolution, garde armée et destruction du corps sont des réponses distinctes chez Guillaume.[7] Aucune ne doit être présentée comme une prescription contemporaine. Ces récits documentent la peur et les solutions imaginées ou attribuées aux communautés. Ils rappellent aussi que l'autorité religieuse peut s'opposer à la violence funéraire plutôt que l'ordonner systématiquement."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "À Wharram Percy, dans le Yorkshire, des os humains médiévaux portent des traces de coupe, de brûlure et de fractures après la mort. L'équipe présentée par Historic England propose qu'ils proviennent de corps mutilés pour empêcher leur retour, après comparaison avec d'autres explications.[8] C'est une interprétation archéologique argumentée, non une preuve de revenants. La localisation des marques, notamment vers la tête et le cou, est un élément du raisonnement, pas un détail décoratif.",
+        "Les analyses isotopiques des dents suggèrent des personnes ayant grandi dans une région proche ; la synthèse écarte donc l'idée simple de restes traités ainsi parce qu'ils seraient ceux d'étrangers lointains.[8] L'inquiétude pouvait concerner les siens. Entre la lettre placée sur une poitrine chez Guillaume et les marques conservées sur des os réels, il reste deux types de traces à ne pas confondre : ce qu'un texte raconte et ce qu'une fouille permet d'observer."
+      ]
+    },
+    "sources": [
+      {
+        "id": 7,
+        "title": "William of Newburgh — History of English Affairs, Book Five",
+        "url": "https://sourcebooks.web.fordham.edu/basis/williamofnewburgh-five.asp"
+      },
+      {
+        "id": 8,
+        "title": "Historic England — Archaeological Evidence of the Living Dead",
+        "url": "https://historicengland.org.uk/whats-new/news/archaeological-evidence-living-dead-in-mediaeval-england"
+      }
+    ]
+  },
+  "rusalka": {
+    "description": "Dans les saules, une jeune morte attend que quelqu'un entre dans la ronde.",
+    "sections": {
+      "fascination": [
+        "La rusalka ne reste pas sagement au fond d'un lac. Elle gagne les branches, les prés, les abords du village ; l'eau semble l'accompagner jusque dans l'herbe. Cette mobilité dérange l'image familière de la femme-poisson. Une silhouette aux cheveux dénoués se balance au-dessus du chemin et pourrait passer pour une jeune fille, si le promeneur ne connaissait la réputation du lieu. Les traditions slaves réunies sous ce nom font circuler le danger entre plusieurs milieux, plutôt que de l'enfermer dans les profondeurs.[1]",
+        "Son attrait tient à des gestes humains devenus impraticables pour les vivants. Chanter, rire, danser ensemble : rien ne paraît d'abord annoncer une attaque. Pourtant la ronde peut continuer jusqu'à la mort de celui qui l'a rejointe. Le piège n'exige ni prison ni chaînes ; les jambes du danseur et le désir de rester suffisent. Dans certaines traditions, l'herbe pousse ensuite plus épaisse à l'endroit foulé par les rusalki. Le même passage laisse donc une terre vigoureuse et un corps épuisé.[2]"
+      ],
+      "legendes": [
+        "Rusalka est un singulier ; rusalki désigne ces êtres au pluriel. Le vocabulaire et les portraits varient selon les régions slaves. La synthèse encyclopédique consultée distingue notamment des récits ukrainiens associés à l'eau et des traditions biélorusses qui accordent davantage de place aux bois et aux champs. Sous une étiquette commode pour les livres, on rencontre des apparitions dont les lieux, les noms locaux et les attitudes ne coïncident pas exactement. Une rusalka de catalogue ne doit pas effacer cette géographie.[1]",
+        "Une explication répandue rattache ces présences aux morts prématurées : jeunes femmes noyées, enfants morts sans baptême, existences interrompues avant leur accomplissement social. Britannica retient ces deux derniers profils dans sa définition. La référence au baptême appartient à un monde christianisé ; elle empêche de présenter chaque détail comme le vestige intact d'une religion antérieure. Les récits donnent aux morts qui n'ont pas rejoint normalement leur place une demeure proche des vivants, au bord de l'eau.[2]",
+        "Le retour possède aussi son calendrier. Au commencement de l'été, la semaine des rusalki autorise leurs sorties : elles montent dans les saules et les bouleaux, puis dansent à la nuit. Le promeneur n'entre donc pas seulement dans un mauvais endroit ; il peut y entrer au mauvais moment. La saison qui offre les longues soirées et la verdure rend certaines rencontres particulièrement périlleuses. Le calendrier rituel donne un rythme collectif à ce qui semblerait autrement un accident isolé.[2]",
+        "Leur beauté n'est pas constante. Les descriptions du nord de la Russie peuvent montrer des êtres hirsutes et hostiles, loin des jeunes femmes séduisantes privilégiées par la peinture. Le rapprochement encyclopédique avec les vile du domaine danubien relève d'une comparaison entre figures voisines, non d'une preuve que tous ces noms recouvrent un personnage identique. Quant à l'interprétation des rusalki comme anciennes dispensatrices de fertilité, elle reste une lecture historique des motifs, et non un récit d'origine partagé par toutes les communautés.[1][2]"
+      ],
+      "anomalies": [
+        "La chevelure libre compte davantage que les écailles. Les versions rassemblées décrivent des cheveux clairs, sombres ou verdâtres ; la couleur ne fournit donc aucun critère universel. Leur désordre les oppose aux coiffures réglées de la vie sociale. Dans un corps autrement humain, ce détail suffit à signaler une personne sortie des usages ordinaires. Lui ajouter systématiquement une queue de poisson ferait perdre la possibilité de courir dans les champs ou de participer à une ronde terrestre.[1]",
+        "La violence peut emprunter le rire. Plusieurs traditions rapportent des chatouilles mortelles, ailleurs la danse impose un effort dont la victime ne peut se dégager. Ces supplices détournent une proximité normalement familière : le contact n'a rien d'un coup de griffe, mais devient tout aussi fatal. Le portrait demeure variable, tantôt jeune et attirant, tantôt repoussant. Cette diversité ne se résout pas en un pouvoir de métamorphose universel ; elle appartient d'abord aux histoires différentes que l'on raconte.[1][2]"
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle des rusalki suit des apparitions saisonnières et des destins de mortes. Ses repères sont les lieux fréquentés et les rencontres racontées, plutôt que les organes d'une espèce aquatique.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La compagnie des autres rusalki est un motif important : elles se réunissent, chantent et dansent. La rencontre dangereuse commence lorsque l'humain rejoint cette activité. Les récits de ronde montrent une sociabilité fermée, accessible en apparence mais impossible à quitter sans dommage. D'autres portraits insistent sur l'embuscade. Il faut conserver les deux attitudes, car la danseuse visible et l'être caché qui attaque ne produisent pas la même peur.[1][2]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Lacs et rivières constituent des demeures fréquentes ; les saules et les bouleaux servent de stations pendant les sorties estivales. Les traditions des champs empêchent pourtant de tracer une limite nette à quelques pas de la berge. Le territoire de la rusalka suit une continuité de fraîcheur et de végétation. Dans une évocation du catalogue, l'ombre d'une branche au-dessus d'un sentier convient ainsi mieux qu'un palais sous-marin ajouté sans tradition précise.[1][2]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "La mort d'un danseur n'est pas décrite comme un repas. Les motifs de noyade, de chatouilles ou d'épuisement appartiennent à l'agression et ne suffisent pas à faire des rusalki des mangeuses de chair. Leur association à l'humidité et aux pousses concerne la vitalité des champs. On peut observer ce voisinage entre végétation et mort humaine sans imaginer que les corps servent d'engrais surnaturel ou qu'une énergie mesurable nourrit ces esprits.[1][2]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Une invitation suppose la compréhension d'autrui : la rusalka sait attirer l'attention, reconnaître un passant et l'entraîner dans une activité partagée. Ses chants et ses jeux lui donnent une conduite proche de celle des humains, même lorsque leur issue est cruelle. Le récit la traite comme une présence avec laquelle une relation pourrait commencer, non comme un poisson guidé par un appât. C'est précisément cette possibilité de relation qui rend l'approche risquée.[2]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le récit d'apparition remplace ici la généalogie animale. Une existence interrompue peut se poursuivre sous une autre condition ; la morte rejoint des êtres qui lui ressemblent par leur destin. Les enfants sans baptême et les jeunes noyées ne forment pas deux stades d'un cycle de croissance. Ce sont des explications distinctes de la présence des rusalki, liées au statut des morts et aux rites qui les accompagnent.[2]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "L'animal susceptible de chasser une rusalka n'occupe aucune place dans ce portrait. Le rapport dangereux unit surtout les rusalki et les humains. Les éviter pendant leur saison de sortie constitue une réponse plus conforme aux récits que la recherche d'un adversaire plus fort. Le risque est situé : un homme peut traverser un paysage ordinaire, puis compromettre sa vie en acceptant une ronde à laquelle il ne devrait pas participer.[2]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "L'histoire du nom ramène au calendrier : la synthèse étymologique relie rusalka aux formes slaves désignant les fêtes voisines de la Pentecôte, par l'intermédiaire du grec et du latin Rosalia. Cette filiation lexicale ne prouve pas que chaque croyance dérive directement d'une cérémonie romaine. Elle montre plutôt comment un nom de fête a pu devenir un nom d'êtres associés à cette période.[1]",
+        "La peinture favorise les groupes pâles au bord de l'eau : l'article reproduit notamment les Rusalki de Kramskoï et de Pruszkowski. Ces images rendent sensibles l'attente et la réunion nocturne, mais leur beauté silencieuse sélectionne une partie de la tradition. La rusalka hirsute, celle des champs et celle qui tue en riant restent nécessaires au portrait. Sans elles, une figure aux nombreux visages se réduirait à une mélancolique baigneuse.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Rusalka",
+        "url": "https://en.wikipedia.org/wiki/Rusalka"
+      },
+      {
+        "id": 2,
+        "title": "Rusalka | Water Nymph, Folklore & Mythology",
+        "url": "https://www.britannica.com/topic/rusalka"
+      }
+    ]
+  },
+  "sasquatch": {
+    "description": "Une empreinte dans la vallée Harrison ne raconte pas la même histoire à tous ceux qui la regardent.",
+    "sections": {
+      "fascination": [
+        "Entre les troncs du Nord-Ouest pacifique, la silhouette humaine change d'échelle. Un dos velu, une marche sur deux jambes, puis la forêt refermée : le Sasquatch moderne est souvent raconté dans cet intervalle trop court pour devenir une observation complète. Son nom évoque une présence proche de nous, assez grande pour paraître indéniable, assez furtive pour laisser le témoin seul avec son souvenir. Mais ce portrait de primate caché ne recouvre pas toute l'histoire du nom.[8][9]",
+        "Chez les Sts'ailes, dans la vallée de la rivière Harrison en Colombie-Britannique, sasq'ets appartient à une tradition vivante de protection du territoire. Dans le témoignage de Kelsey Charlie recueilli par la BBC, il peut passer entre les domaines physique et spirituel et prendre d'autres formes. Une rencontre peut être reçue comme un signe favorable et un rappel des règles de vie avec la terre. Réduire cette présence à un singe manquant dans les inventaires ferait disparaître ce qu'elle signifie pour ceux qui la nomment.[8]"
+      ],
+      "legendes": [
+        "Le reportage de Lisa Kadane donne la parole à des membres de la communauté et situe le mot dans la langue halq'eméylem. Sasquatch est une adaptation anglaise de sasq'ets, expliqué comme l'homme velu ; Kelsey Charlie le rattache également à Sasq'ets Tel, montagne où ces êtres se réunissent. Ce nom local ne doit pas servir d'étiquette indistincte à tous les êtres sauvages des peuples autochtones d'Amérique du Nord. Une parenté de silhouette n'abolit ni les langues ni les traditions particulières.[8]",
+        "En 1929, J. W. Burns publie dans Maclean's un article présentant les géants velus de Colombie-Britannique, à partir d'histoires partagées par des Sts'ailes. Le récit atteint ainsi un public canadien plus large. Ce passage à la presse constitue un moment de circulation, non la naissance de la tradition. Les lecteurs rencontrent désormais les histoires par un intermédiaire écrit, dans un dispositif qui favorise la curiosité pour une créature extraordinaire et laisse moins de place aux relations locales avec le territoire.[8]",
+        "Le phénomène américain Bigfoot prend un nouvel essor avec les grandes empreintes de Bluff Creek médiatisées en 1958. Live Science rapporte que la famille de Ray Wallace les a ensuite attribuées à une fabrication de celui-ci. L'épisode documente un canular précis ; il ne permet ni d'expliquer chaque témoignage par la fraude ni de traiter la tradition sts'ailes comme une conséquence de ces traces. Les deux histoires se croisent dans la culture populaire, mais leur chronologie et leur statut restent distincts.[9]",
+        "Le film tourné en 1967 par Roger Patterson et Bob Gimlin à Bluff Creek devient une autre pièce célèbre : une forme velue traverse le terrain, et chacun examine sa démarche. L'authenticité alléguée du sujet demeure contestée ; l'article scientifique de vulgarisation considère probable l'hypothèse du costume. Le film est une image réelle à interpréter, pas une preuve reconnue de l'existence d'une espèce. Ce qu'il montre avec certitude, c'est la puissance d'une courte séquence dans la durée d'une controverse.[9]"
+      ],
+      "anomalies": [
+        "Les deux principaux cadres de lecture divergent sur ce que pourrait être une preuve. L'hypothèse cryptozoologique postule un grand primate matériel : elle réclame donc des restes, une provenance contrôlée et des analyses reproductibles. Le changeforme décrit par Charlie peut au contraire devenir arbre, roche ou animal et circuler entre deux domaines. Sa disparition n'y pose pas le même problème. Mélanger ces cadres permettrait de réclamer une découverte zoologique tout en la soustrayant à toute vérification.[8][9]",
+        "Les récits modernes lui attribuent une forte pilosité, une grande stature et la bipédie. Ce sont des descriptions rapportées, sans mensurations établies sur un spécimen. Les sons supposés, des cris aux coups sur le bois, ne définissent pas davantage une langue ou un système de communication démontré. Live Science rappelle que certains enregistrements peuvent provenir d'animaux connus et que la distance rend parfois leur identification impossible. Un bruit non identifié n'acquiert pas pour autant un auteur extraordinaire.[9]",
+        "Les poils, traces et fragments présentés comme indices n'ont pas établi l'existence d'un primate nord-américain inconnu. La synthèse consultée souligne les matériaux ordinaires, les déterminations impossibles et les fraudes rencontrées dans ces dossiers. Cela laisse aux témoignages leur intérêt humain sans leur donner automatiquement une portée biologique. Le catalogue décrit donc une figure culturelle et un cryptide allégué ; il ne range pas le Sasquatch parmi les animaux reconnus par la zoologie.[9]"
+      ],
+      "naturelle": {
+        "lead": "Le paysage peut être décrit avec précision, mais l'animal supposé ne possède pas d'écologie vérifiée. La tradition de sasq'ets et les hypothèses sur Bigfoot sont ici présentées sous leur propre statut.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Dans la parole sts'ailes recueillie par la BBC, l'apparition peut rappeler aux humains leur accord avec le territoire. Entendre l'être ou voir ses traces peut déjà compter comme rencontre, sans poursuite ni capture. Les enquêtes cryptozoologiques cherchent au contraire à prolonger le contact et à obtenir un enregistrement. Le comportement le mieux documenté est souvent celui des personnes : certaines reçoivent un signe, d'autres organisent une recherche à partir d'un indice.[8]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La vallée Harrison associe forêt côtière dense, montagnes abruptes et lacs. Le reportage y décrit notamment de grands thuyas, des pruches et des épicéas de Sitka. Ce cadre donne des lignes de vue interrompues et une impression de profondeur derrière les itinéraires balisés. Il explique la force locale du récit, sans prouver qu'une population inconnue s'y cache. Pour les Sts'ailes, le territoire est aussi un lieu habité et nommé, non une étendue vide attendant une découverte extérieure.[8]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Charlie rapporte avoir vu deux Sasquatch boire au lac Harrison ; cette déclaration reste un témoignage situé. Elle ne permet pas d'établir un régime général. Les suppositions d'omnivorie que l'on pourrait tirer d'une ressemblance avec les primates demanderaient des observations indépendantes. Dans la tradition présentée, vivre de la terre décrit surtout une relation d'appartenance et de responsabilité. Transformer cette parole en liste de baies, de poissons et de proies lui ferait dire autre chose.[8]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le protecteur capable de se manifester à quelqu'un possède, dans ce cadre narratif, une intention. Il ne se réduit pas à l'instinct d'un animal timide. Quant au Bigfoot recherché par les enquêteurs, les arguments tirés de sa discrétion restent circulaires si l'absence de preuve devient la démonstration de son intelligence supérieure. Une trace difficile à expliquer renseigne d'abord sur les limites de l'observation, avant de renseigner sur les facultés d'un être supposé.[8][9]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Une espèce de grand primate ne pourrait se maintenir avec un unique survivant éternel. Live Science rappelle qu'une hypothèse zoologique exige une population viable, avec les conséquences ordinaires de la naissance, de la diversité génétique et de la mortalité. Ce raisonnement ne fournit aucun cycle reproductif connu du Sasquatch ; il précise ce que l'hypothèse devrait expliquer. Les récits spirituels n'ont pas à être convertis artificiellement en réponses à ces contraintes biologiques.[9]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucune chaîne alimentaire vérifiée ne permet de lui attribuer des prédateurs. Dans la recherche moderne, la menace la plus visible vient du désir humain de capturer ou de rapporter un corps. Cette logique s'accorde mal avec le statut de protecteur respecté que décrit Charlie. Elle invite aussi à la prudence réelle : une forme mal vue dans les bois peut être une personne ou un animal connu, jamais une permission de poursuivre une cible incertaine.[8][9]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Au musée de Harrison décrit dans le reportage, les moulages d'empreintes et les coupures de presse côtoient un tambour et une réplique de masque présentés avec une contribution sts'ailes. Leur voisinage est instructif : certains objets exposent la quête de preuves, d'autres la présence du sasq'ets dans la vie de la communauté. Les réunir dans une même salle ne leur donne pas la même fonction documentaire.[8]",
+        "Les Sasquatch Days comprennent notamment des courses de canoës et des danses sts'ailes. Le reportage en rappelle une première édition en 1938. Cette continuité publique montre que le nom ne survit pas seulement grâce aux photographies floues. Il appartient aussi à des rassemblements, à des gestes transmis et à un emblème communautaire. La silhouette populaire de l'homme velu ne devrait pas masquer ceux qui continuent à lui donner une place précise dans leur propre histoire.[8]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 8,
+        "title": "The true origin of Sasquatch",
+        "url": "https://www.bbc.com/travel/article/20220720-the-true-origin-of-sasquatch"
+      },
+      {
+        "id": 9,
+        "title": "Is Bigfoot real? Everything you need to know about the Sasquatch | Live Science",
+        "url": "https://www.livescience.com/24598-bigfoot.html"
+      }
+    ]
+  },
+  "satyre": {
+    "description": "La queue chevaline trahit le danseur avant que le vin ne le fasse parler.",
+    "sections": {
+      "fascination": [
+        "Le satyre arrive rarement seul dans l'image grecque. Il accompagne un mouvement : celui d'une coupe qu'on lève, d'un instrument porté aux lèvres, d'un cortège dont les pas débordent l'ordre ordinaire. Son corps reste assez humain pour que l'on reconnaisse chaque geste, puis les oreilles animales et la queue de cheval empêchent de le confondre avec un convive. Ce léger déplacement suffit à rendre le désir visible, comme si la retenue sociale avait quitté le corps avant le vêtement.[10]",
+        "Sa joie peut inquiéter. Le satyre boit, danse et recherche les plaisirs, mais des récits le montrent aussi voleur ou agresseur. Le transformer en aimable musicien des sous-bois effacerait cette violence. À l'inverse, n'y voir qu'un prédateur ferait disparaître le comique de ses vantardises et sa place auprès de Dionysos. Il appartient à un monde où le rire et la crainte peuvent naître du même personnage, parfois au cours de la même rencontre.[10]"
+      ],
+      "legendes": [
+        "Les satyres sont des figures de la mythologie et de la religion grecques, souvent liées au cortège dionysiaque. Strabon, dans les passages réunis par Theoi, les rapproche des ministres des dieux et des danseurs des rites. Cette proximité sacrée ne les rend ni exemplaires ni invulnérables. Elle les situe dans un ensemble de pratiques, de musiques et de récits, bien différent de la classification moderne en races jouables ou en monstres de forêt.[10]",
+        "Le Cyclope d'Euripide donne à Silène et à ses fils satyres une situation peu glorieuse. Partis à la recherche de Dionysos, ils ont été jetés par les vents près de l'Etna et réduits en servitude par Polyphème. Les jeunes gardent les troupeaux ; Silène nettoie la caverne et remplit les auges. Le cortège du dieu a perdu sa fête et travaille pour un maître brutal. Leur plainte prend sa force dans ce contraste très concret entre la danse désirée et les tâches imposées.[11]",
+        "Lorsque Ulysse arrive avec du vin, Silène accepte aussitôt d'échanger les provisions de son maître contre cette boisson. Il sent le vin avant de le goûter ; une fois servi, il retrouve déjà l'envie de danser. L'occasion de commerce devient tentation et risque. Le personnage ne ressemble pas à un animal apprivoisé par la nourriture : il marchande, dissimule et comprend parfaitement la valeur de ce qu'il est prêt à céder, même si son appétit l'emporte sur la prudence.[11]",
+        "Le chœur participe ensuite à la délivrance surtout par la parole : Ulysse doit compter sur ses propres compagnons pour agir, tandis que les satyres encouragent et se moquent du Cyclope aveuglé. Leur retour espéré au service de Dionysos termine la pièce. Cette conduite ne justifie pas de leur attribuer une lâcheté biologique ; elle compose une mécanique théâtrale où ceux qui parlent fort hésitent au moment du danger. Le satyre possède ici une fonction comique aussi précise que son costume.[11]",
+        "D'autres traditions sont plus sombres. Le Pseudo-Apollodore raconte qu'Argos tue un satyre qui dérobe les troupeaux des Arcadiens. Dans le récit d'Amymone, un satyre menace la jeune femme venue chercher de l'eau et doit être chassé par Poséidon. Ces épisodes ne relèvent pas d'une simple gaudriole : ils montrent des personnes et des biens exposés à une violence. Les conserver empêche de confondre l'énergie érotique des images avec une innocence générale.[10]"
+      ],
+      "anomalies": [
+        "Les jambes de bouc ne constituent pas le meilleur point de départ pour reconnaître le satyre grec ancien. Les représentations décrites par Theoi lui donnent un nez retroussé, des oreilles animales et une queue chevaline. Les rapprochements ultérieurs avec les Pans et les faunes favorisent les cornes et les pieds caprins. Il ne s'agit pas d'une transformation vécue par tous les satyres, mais d'une histoire des types visuels et de leur mélange.[10]",
+        "L'âge modifie également le portrait. Les silènes âgés, souvent chauves et barbus, voisinent avec les jeunes satyres et les figures enfantines. Cette diversité offre aux artistes des corps lourds, bondissants ou assoupis, sans obliger à les ranger dans des espèces séparées. Dans la pièce d'Euripide, le rapport entre Silène et ses fils rend même la différence d'âge dramatique : l'ancien négocie et sert le maître tandis que les jeunes forment le chœur.[10][11]",
+        "La musique n'est pas un pouvoir uniforme d'envoûtement. Les sources le montrent avec des instruments à vent, des coupes, des outres, parfois le thyrse du cortège dionysiaque. Ces objets indiquent des activités et des appartenances. Leur présence ne prouve pas que toute mélodie puisse commander aux esprits ou faire pousser la vigne. Un satyre de fantasy doté de tels sorts relève d'une réélaboration, même lorsqu'il conserve les accessoires antiques.[10]"
+      ],
+      "naturelle": {
+        "lead": "Le satyre se connaît par ses scènes : cortège, banquet, poursuite et théâtre. Les six repères suivants suivent ces témoignages sans transformer une figure religieuse et artistique en mammifère à sabots.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La fête constitue une activité collective, avec danse et musique auprès de Dionysos. Mais le satyre sait aussi dormir, attendre, dérober ou mentir. Le Silène d'Euripide adapte sa conduite aux personnes présentes : avec Ulysse, le vin ouvre une négociation ; devant Polyphème, la peur modifie aussitôt le récit des événements. Cette souplesse intéressée fait vivre le personnage mieux qu'une agitation perpétuelle, et laisse voir la différence entre ses désirs et ses moyens.[10][11]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Bois, montagnes et grottes forment son domaine habituel, mais le cortège le met en route plutôt qu'il ne l'enferme dans une tanière. La caverne de Polyphème est une demeure de captivité, non un habitat choisi par les satyres. Les images de banquet et les représentations théâtrales l'introduisent en outre dans des espaces humains. Sa présence relie le sauvage aux usages de la cité, au lieu de l'en tenir absolument éloigné.[10][11]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le vin est un désir attesté avec une insistance particulière. Chez Euripide, son absence rend le pays du Cyclope triste aux yeux de Silène ; son retour bouleverse le commerce des agneaux et des fromages. Ces nourritures sont des provisions échangées dans la scène, pas un régime spécifique établi pour tous les satyres. Rien dans leurs traits équins ou caprins n'oblige à les faire brouter. Leur table appartient aux plaisirs racontés, non à une déduction tirée des oreilles.[11]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La fable de l'homme et du satyre lui donne même une exigence de cohérence. Voyant son compagnon souffler pour réchauffer ses doigts puis pour refroidir son repas, il refuse une amitié avec quelqu'un qui souffle le chaud et le froid. Le raisonnement se trompe sur un geste quotidien, mais formule un jugement moral. Le satyre peut donc observer, questionner et condamner ; sa proximité avec l'animal n'abolit ni parole ni pensée.[10]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les généalogies rassemblées sont multiples. Un fragment hésiodique transmis par Strabon rattache satyres et nymphes aux filles d'Hécatéros ; ailleurs interviennent des dieux rustiques, des nymphes ou Silène. Euripide fait explicitement du vieux Silène le père du chœur. Ces parentés situent les personnages dans un réseau mythique. Elles ne donnent pas une durée de gestation et n'autorisent pas à décrire toute union avec une nymphe comme un mécanisme de reproduction automatique.[10][11]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Argos peut tuer un satyre voleur, Poséidon en chasser un autre et Polyphème asservir le groupe d'Euripide. Ces adversaires sont des puissances du récit, pas les prédateurs d'une population sauvage. La vulnérabilité varie avec la scène : l'agresseur devient fugitif, le danseur devient berger captif. L'appartenance au cortège d'un dieu n'épargne donc pas la contrainte ; elle donne aussi aux satyres un maître et une fête qu'ils cherchent à retrouver.[10][11]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Les vases permettent de suivre une main autour d'une amphore, un souffle dans un instrument ou une queue derrière le danseur. Leurs accessoires rendent les satyres reconnaissables sans légende écrite. Le théâtre ajoute un autre niveau : des hommes costumés forment un chœur de satyres et jouent leur écart avec la conduite humaine. Le corps animalisé est ainsi une construction artistique visible, pas seulement une créature que les textes situent au loin.[10][11]",
+        "La confusion avec les faunes et les Pans a légué au mot moderne une silhouette caprine presque automatique. Retrouver le satyre chevalin ne retire rien à ses métamorphoses ultérieures ; cela redonne simplement aux œuvres anciennes leur précision. Entre le vieux Silène affairé à nettoyer une grotte et le jeune danseur tenant sa coupe, il existe déjà assez de variété pour ne pas réduire tout le cortège à un seul musicien cornu.[10][11]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 10,
+        "title": "SATYRS (Satyroi) - Fertility Spirits of Greek Mythology",
+        "url": "https://www.theoi.com/Georgikos/Satyroi.html"
+      },
+      {
+        "id": 11,
+        "title": "The Cyclops by Euripides",
+        "url": "https://classics.mit.edu/Euripides/cyclops.html"
+      }
+    ]
+  },
+  "scylla": {
+    "description": "Six hommes quittent le navire sans avoir lâché le nom de leur capitaine.",
+    "sections": {
+      "fascination": [
+        "Scylla attaque de trop haut pour qu'on la voie bien. Sa demeure s'ouvre à mi-hauteur d'une falaise lisse, inaccessible aux hommes ; une flèche tirée depuis le navire n'atteindrait pas le fond de la caverne. Le marin distingue la roche, cherche une forme dans l'ombre, puis quelque chose saisit un compagnon. Dans l'Odyssée, la terreur vient de cette distance entre un refuge visible et un corps qui se dérobe au regard jusqu'à l'instant où ses cous se détendent.[15]",
+        "Sa voix ressemble au cri d'un jeune chien. Le contraste avec les six gueules et leurs rangées de dents ne rend pas le monstre moins redoutable ; il retire au bruit toute proportion rassurante. Face à elle, Charybde bouleverse l'eau entière. L'une prélève les corps, l'autre menace le navire. Entre ces deux périls, Ulysse doit accepter qu'une route praticable ne soit pas une route sans morts.[15]"
+      ],
+      "legendes": [
+        "Au chant XII de l'Odyssée, Circé décrit le passage à Ulysse et lui conseille de longer Scylla plutôt que de risquer la destruction totale dans Charybde. Le héros demande encore s'il pourrait combattre. La réponse le ramène à sa condition : Scylla est immortelle, et s'attarder pour s'armer pourrait lui laisser le temps d'enlever un second groupe de marins. La recommandation est de ramer vite et d'invoquer Crataïs, sa mère, pour empêcher une nouvelle attaque.[15]",
+        "Ulysse tait à ses compagnons le danger de Scylla, craignant qu'ils abandonnent leurs rames. Il met pourtant son armure et prend deux lances, malgré l'avertissement. Tandis que tous regardent l'eau de Charybde, six hommes sont arrachés au bâtiment. Homère compare leur enlèvement à une pêche depuis un promontoire : les corps montent encore vivants vers la roche. La force de leurs bras, utile jusque-là pour conduire le navire, ne peut plus rien lorsque leurs mains cherchent un secours dans le vide.[14][15]",
+        "Les récits de métamorphose lui donnent une autre histoire. Dans les Métamorphoses d'Ovide, Scylla est d'abord une jeune femme aimée de Glaucus. Elle fuit le dieu marin ; celui-ci sollicite Circé, qui voudrait être aimée à sa place. Repoussée, la magicienne empoisonne la baie où Scylla vient se baigner. Des formes canines apparaissent autour de ses hanches. La jeune femme essaie de les fuir avant de comprendre qu'elles font désormais partie de son propre corps.[14]",
+        "Cette version rend la monstruosité acquise et subie, contrairement au portrait homérique qui ne raconte pas une jeune fille changée par Circé. Ovide relie ensuite la violence contre les compagnons d'Ulysse à la haine de Scylla pour la magicienne, puis la transforme en écueil avant le passage des navires troyens. Le récit explique ainsi à la fois une dévoreuse et une roche dangereuse. Il ne faut pas insérer cette biographie dans les paroles de Circé chez Homère comme si les deux poèmes donnaient un seul témoignage.[14]",
+        "D'autres généalogies l'attachent à Phorcys, à Hécate ou à des parents monstrueux. Une tradition rapportée par Lycophron la fait tuer par Héraclès puis ramener à la vie par son père. Ces variantes modifient sa vulnérabilité et sa place dans les familles divines. Elles enrichissent son dossier sans annuler l'invincibilité qui gouverne le choix d'Ulysse : chaque récit fixe les possibilités de ses propres héros.[14]"
+      ],
+      "anomalies": [
+        "Le corps homérique possède douze pieds, six longs cous et six têtes, chacune armée de trois rangées de dents. L'essentiel du corps reste au fond de la grotte, tandis que les têtes cherchent leur prise autour du rocher. Cette anatomie répartit l'attaque : une tête emporte un homme, et les autres frappent en même temps. Scylla n'a donc pas besoin de renverser un navire pour en défaire l'équipage.[15]",
+        "Les œuvres antiques lui donnent aussi un buste féminin et une partie inférieure marine entourée de chiens. Cette silhouette composite ne reproduit pas exactement le monstre aux cous démesurés de l'Odyssée. Dans le récit d'Ovide, la découverte des gueules à la place des membres rend l'anatomie douloureusement intime : les animaux qu'elle voudrait repousser la suivent parce qu'ils sont elle. L'iconographie et les poèmes retiennent ainsi des manières différentes de rendre une multiplicité menaçante dans un corps unique.[14]",
+        "La roche complète ses armes. Elle place Scylla hors de portée, canalise la trajectoire du bâtiment et lui offre l'obscurité. Lui attribuer seulement des dents ferait perdre une moitié du danger. L'autre moitié tient à Charybde, dont les mouvements détournent l'attention et interdisent une fuite facile sur le côté. Les deux monstres n'ont pas besoin de coopérer consciemment pour que leur voisinage forme un piège.[15]"
+      ],
+      "naturelle": {
+        "lead": "Homère donne à Scylla une chasse et un poste d'affût remarquablement concrets. Ce portrait concerne un être singulier ; les autres poètes lui ajoutent des origines et des destins qu'il faut distinguer.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Elle guette depuis sa caverne et projette ses têtes vers les prises accessibles. Circé craint une seconde attaque si le navire reste trop longtemps sous le rocher : l'agression n'est donc pas limitée à un prélèvement rituel unique. La vitesse de passage compte. Le capitaine qui s'arrête pour sauver les premiers captifs pourrait exposer d'autres hommes, ce qui donne à la scène sa cruauté pratique autant que sa violence.[15]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La falaise est haute, polie, enveloppée de nuage à son sommet ; la grotte regarde vers l'ouest et l'Érèbe. En face se trouvent une roche plus basse et le figuier associé à Charybde. Des auteurs antiques, dont Pline cité dans le dossier, situent ensuite ces dangers dans le détroit de Messine. Cette localisation appartient à la réception géographique du mythe ; elle ne transforme pas chaque détail du paysage homérique en relevé topographique.[14][15]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le poème nomme des dauphins, des chiens de mer et d'autres grandes créatures marines parmi ses prises. Les humains s'ajoutent à cette pêche lorsque les bateaux passent trop près. Scylla est donc explicitement dévoreuse, non simplement responsable d'un naufrage. La comparaison du marin avec le poisson tient à la position du corps capturé : tiré hors de son milieu, il reste vivant assez longtemps pour comprendre qu'aucun appui ne le retiendra.[14][15]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Chez Homère, la précision de la chasse importe davantage que le dialogue : Scylla ne propose ni énigme ni marché. Les conseils passent par Circé et par l'invocation de Crataïs. Ovide lui donne en revanche la peur, la découverte de sa transformation puis la volonté de se venger. Cette psychologie appartient à sa version de la jeune femme mutilée. Elle ne doit pas devenir rétroactivement l'intention explicite de toutes les attaques du monstre homérique.[14][15]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Crataïs est nommée comme sa mère dans l'Odyssée, et les mythographes proposent plusieurs pères ou couples parentaux. Ces généalogies expliquent une appartenance au monde divin et monstrueux. Elles ne décrivent pas une population de Scyllas se reproduisant dans les détroits. Même lorsque des poètes emploient le nom au pluriel parmi les formes infernales, ce pluriel ne fournit ni portée ni cycle biologique pour la dévoreuse rencontrée par Ulysse.[14][15]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Pour l'équipage homérique, le combat n'offre aucune issue. Héraclès peut pourtant la tuer dans une autre tradition, et son père la restaure ensuite. La contradiction devient lisible dès que les récits sont séparés. Les armes d'un héros ne constituent pas une vulnérabilité universelle de Scylla. Dans l'Odyssée, les moyens utiles sont le mouvement du navire, l'aide divine espérée et l'acceptation terrible d'une perte qu'Ulysse ne sait empêcher.[14][15]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "La Scylla marine ne doit pas être confondue avec Scylla, fille de Nisos, autre personnage du mythe grec. Le dossier de Theoi signale que les textes antiques eux-mêmes peuvent brouiller les noms. De même, les rapprochements proposés avec des mots grecs évoquant le chien ou la déchirure expliquent des associations possibles, sans livrer une étymologie absolument certaine. Le nom propre a une histoire plus complexe qu'une simple traduction descriptive.[14]",
+        "Dans les vases et reliefs rassemblés par Theoi, les chiens autour du corps féminin permettent d'identifier Scylla sans peindre tout le détroit. Le récit maritime, lui, conserve un autre détail : les compagnons appellent encore Ulysse pendant leur enlèvement. Ce souvenir empêche de réduire le passage à une énigme de navigation résolue par le bon choix. Le navire survit, mais le capitaine reste témoin de ceux qu'il n'a pas pu ramener.[14]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 14,
+        "title": "SCYLLA (Skylla) - Sea Monster of Greek mythology",
+        "url": "https://www.theoi.com/Pontios/Skylla.html"
+      },
+      {
+        "id": 15,
+        "title": "Book XII of Homer's Odyssey - The Internet Classics Archive",
+        "url": "https://classics.mit.edu/Homer/odyssey.12.xii.html"
+      }
+    ]
+  },
+  "selkie": {
+    "description": "La peau cachée sous le toit contient le chemin du retour vers la mer.",
+    "sections": {
+      "fascination": [
+        "La selkie laisse sur la grève un objet que nul vêtement ordinaire ne remplace. Sans sa peau de phoque, elle peut marcher, parler et vivre parmi les humains, mais ne peut plus reprendre sa route marine. La métamorphose dépend donc d'une chose assez souple pour être pliée et assez précieuse pour commander une existence. Un coffre fermé ou une cache sous les poutres peut séparer deux mondes plus sûrement qu'une falaise.[16][17]",
+        "Le conte ne demande pas seulement si l'on peut aimer un être venu de la mer. Il montre ce qui arrive lorsque quelqu'un confisque sa possibilité de partir. La femme peut élever des enfants et participer à la vie du foyer tout en regardant l'eau avec tristesse. Ce chagrin persistant ne contredit pas l'affection donnée aux siens. Il rappelle que le mariage a commencé par un refus de rendre ce qui lui appartenait.[16]"
+      ],
+      "legendes": [
+        "Les récits de selkies sont particulièrement associés aux Orcades et aux Shetland. Le terme vient du vocabulaire scots du phoque ; il n'implique pas nécessairement, dans chaque emploi, une créature surnaturelle. Les collecteurs n'ont pas toujours utilisé les mêmes distinctions entre gens-phoques, êtres marins et finfolk. La synthèse consultée rapporte les efforts de Walter Traill Dennison pour séparer ces catégories, ainsi que les objections formulées ensuite. Le classement du bestiaire reste donc un outil de lecture, non une nomenclature unanimement fixée par les conteurs.[17]",
+        "La version publiée par NorthLink sous le titre The Selkie Wife situe l'histoire à North Ronaldsay. Un homme de Westness descend chercher des coquillages pour appâter ses lignes. Il entend rire et découvre des selkies sous forme humaine sur une roche plate, leurs peaux déposées à proximité. Il s'approche puis s'empare de l'une d'elles. Tous regagnent l'eau, sauf une femme qui le supplie de lui rendre sa peau. Il refuse et la garde pour épouse.[16]",
+        "La maison prospère et des enfants naissent, mais la femme continue de chercher sa peau. Un jour, la plus jeune fille reste auprès d'elle avec un pied blessé. La mère parle d'une belle peau qui servirait à lui faire des chaussures ; l'enfant révèle alors avoir vu son père dissimuler une peau argentée en haut du mur, sous la pente du toit. Ce sont les détails d'une vie domestique, la blessure, le lit, le rangement observé en cachette, qui ouvrent le chemin de la fuite.[16]",
+        "La mère embrasse sa fille, récupère la peau et rejoint la mer. Un phoque mâle vient à sa rencontre : c'est l'époux qu'elle avait parmi les siens. Elle adresse un adieu à l'homme de Westness lorsque son bateau revient, puis disparaît avec son compagnon marin. Dans cette version, le mari terrestre la cherche encore mais ne revoit plus son visage. Le dénouement ne répare pas toutes les pertes ; il rend à la selkie un choix dont elle avait été privée.[16]",
+        "D'autres récits déplacent la cache, font intervenir un coffre ou donnent aux enfants de futurs aperçus d'un phoque près du rivage. Les selkies masculins occupent aussi une place dans la tradition, notamment comme amants de femmes humaines et pères d'enfants. La synthèse mentionne la ballade du grand silkie de Sule Skerry, où le père revient chercher son enfant. Ces histoires élargissent le portrait au-delà de l'épouse captive ; elles ne constituent pas les épisodes successifs d'une même famille.[17]"
+      ],
+      "anomalies": [
+        "La selkie n'est pas une femme terminée par une queue de poisson. Elle passe d'un corps à l'autre en retirant ou en remettant sa peau. La différence compte : sous forme humaine, elle peut vivre dans une ferme sans dispositif particulier ; sous forme de phoque, elle rejoint les siens dans l'eau. Les traditions shetlandaises rapportées décrivent même la peau comme une tenue permettant le trajet entre une demeure sous-marine et les récifs, avec une valeur individuelle irremplaçable.[17]",
+        "Les moments de transformation varient selon les récits. Certaines versions les lient à la marée ou à des intervalles déterminés, mais les conteurs ne s'accordent pas sur une règle unique. Le nombre sept revient dans plusieurs histoires et dans la ballade. En faire une loi générale, selon laquelle toute selkie ne pourrait changer de forme qu'une fois en sept ans, réduirait des variantes narratives à une fausse périodicité naturelle.[17]",
+        "Le vol n'annule ni la mémoire ni la volonté. Dans l'histoire de Westness, la femme continue de savoir qui elle est et cherche activement son bien. Le pouvoir de l'homme repose sur la cache, non sur une transformation mentale qui la rendrait heureuse d'obéir. Ce mécanisme donne au récit sa dureté : une captivité peut prendre la forme extérieure d'une maison prospère, avec des habitudes et des relations réelles qui ne suffisent pas à la rendre libre.[16]"
+      ],
+      "naturelle": {
+        "lead": "L'histoire des gens-phoques suit les passages entre la côte et le foyer. Les habitudes des phoques réels fournissent un décor familier, mais ne prouvent aucune des parentés ou métamorphoses racontées.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le groupe de North Ronaldsay se repose et rit sur une roche ; le danger humain déclenche une fuite immédiate vers les peaux. La selkie captive se montre ensuite patiente et attentive à la maison. Elle observe les absences, interroge son enfant et agit dès que la cache est connue. La mélancolie n'est donc pas toute sa conduite. Le retour à l'eau résulte aussi d'une recherche persévérante, menée avec les moyens limités dont elle dispose.[16]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La grève et les roches proches de l'eau servent de seuils. Elles permettent le repos du groupe et l'abandon provisoire des peaux, mais exposent les selkies à celui qui approche sans être vu. La maison humaine devient ensuite un second milieu, imposé à l'épouse et familier à ses enfants. Le conte fait tenir la distance entre ces lieux dans un objet transportable : la mer peut rester visible de la porte tout en étant inaccessible.[16]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les coquillages du début sont destinés aux hameçons du pêcheur, non au repas des selkies. Cette précision situe l'homme dans une économie littorale sans définir celle du peuple marin. De même, la prospérité de la ferme ne détaille pas ce que mange l'épouse. Lui attribuer automatiquement un régime de poisson cru sous forme humaine serait une invention. Le conte s'intéresse aux liens de subsistance du foyer, mais son conflit porte sur la peau et le retour.[16]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "La selkie parle et comprend les relations humaines. Elle sait aussi présenter sa recherche sous une forme que l'enfant peut saisir : une peau pour des chaussures destinées au pied blessé. Ce détour n'est pas un sort, mais une manière d'obtenir une information. Lors des adieux, elle distingue l'affection pour l'homme terrestre de l'amour pour son compagnon marin. Sa parole organise une histoire personnelle, plutôt qu'une simple opposition d'instincts entre terre et eau.[16]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les unions avec les humains peuvent donner des enfants, comme dans la version de Westness. D'autres récits leur prêtent des particularités physiques, notamment des membranes entre les doigts, expliquées par une ascendance marine. Ce sont des motifs de parenté folklorique, pas une explication médicale des différences corporelles réelles. Tous les descendants ne reçoivent pas automatiquement une peau ni un pouvoir de transformation : la transmission varie selon l'histoire qui les met en scène.[16][17]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "L'homme qui vole la peau constitue ici l'adversaire décisif. Il ne chasse pas la selkie pour la manger ; il veut empêcher son départ et obtenir une épouse. Les traditions plus larges associent aussi les phoques à la crainte de malheurs lorsqu'on les tue. Le dossier raconte donc surtout les risques du contact humain, entre capture et atteinte portée aux êtres de la mer, plutôt qu'un inventaire des animaux qui chasseraient une espèce surnaturelle.[16][17]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "La peau n'est pas un trophée anonyme. Sa couleur argentée, son emplacement au-dessus du lit et le souvenir de la petite fille la rendent presque palpable dans la version de Westness. La cache domestique devient le centre du conte parce qu'elle contient la possibilité d'une séparation. Le lecteur peut suivre son déplacement depuis la roche jusqu'au toit, puis du toit à la mer : tout le destin de la femme change avec ces trajets.[16]",
+        "La synthèse rappelle des récits apparentés en Islande et dans les îles Féroé, ainsi que le rapprochement avec les contes de femmes-oiseaux dont on cache le vêtement. Cette parenté de motif aide à comparer les récits sans leur imposer une origine unique. Dans le conte de la selkie, la peau de phoque conserve surtout une précision insulaire : elle appartient à un animal que les habitants peuvent voir respirer et disparaître au large, assez proche pour qu'on imagine derrière son regard une personne qui se souvient.[17]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 16,
+        "title": "An Orkney Folk Tale: The Selkie Wife - NorthLink Ferries",
+        "url": "https://www.northlinkferries.co.uk/orkney-blog/an-orkney-folk-tale-the-selkie-wife"
+      },
+      {
+        "id": 17,
+        "title": "Selkie - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Selkie"
+      }
+    ]
+  },
   "shoggoth": {
     "description": "Sous la glace, une main-d'œuvre sans visage continue de parler avec la voix de ses maîtres morts.",
     "sections": {
@@ -1189,6 +4611,84 @@ window.FF_NOTICES = {
         "id": 4,
         "title": "W. B. Yeats, Fairy and Folk Tales of the Irish Peasantry",
         "url": "https://www.gutenberg.org/files/33887/33887-h/33887-h.htm"
+      }
+    ]
+  },
+  "simurgh": {
+    "description": "Dans un nid de montagne, un enfant rejeté par les hommes grandit sous une aile capable de le rendre au monde.",
+    "sections": {
+      "fascination": [
+        "La grandeur du Simurgh se mesure d'abord à un geste de soin. L'oiseau descend vers un nourrisson abandonné, l'emporte dans son nid et le nourrit parmi ses petits. Ses serres auraient pu saisir une proie ; elles recueillent un fils. Dans le Livre des rois de Ferdowsi, cette puissance ailée ne sert pas seulement à agrandir le ciel. Elle corrige la faute d'un père et rend possible la naissance d'une lignée héroïque.[3][5]",
+        "Son plumage traverse des mondes que l'on gagne à ne pas confondre. Le Simurgh de l'épopée persane, le Sēnmurw des textes moyen-perses et l'oiseau souverain de la poésie soufie ont une histoire commune, mais ils n'accomplissent pas les mêmes tâches. L'un protège Zāl, un autre participe à la dispersion des semences, un autre encore attend au terme d'une quête spirituelle. Leur continuité tient à des transformations, pas à une anatomie immuable.[3]"
+      ],
+      "legendes": [
+        "L'Encyclopædia Iranica rattache le nom au moyen-perse Sēnmurw et, plus anciennement, à l'oiseau Saēna de la tradition avestique. Dans les textes de cosmologie zoroastrienne, il se tient sur l'arbre aux nombreuses semences. Ses mouvements font tomber des graines que d'autres puissances contribuent à répandre avec l'eau. Le végétal, l'oiseau et les pluies participent ensemble au renouvellement du monde ; cette fonction cosmique ne se réduit pas au rôle d'un grand rapace.[3]",
+        "Dans le Shāhnāmeh, Sām rejette son fils Zāl à cause de sa chevelure blanche. La différence physique devient pour le père un présage honteux. Le Simurgh trouve l'enfant sur la montagne, le prend en pitié et l'élève. Lorsque Sām revient repentant, le jeune homme doit quitter son premier foyer. Les commentaires du Smithsonian soulignent sa réticence : retrouver un père humain signifie aussi perdre la proximité quotidienne de la mère ailée.[5]",
+        "Avant la séparation, l'oiseau donne à Zāl de quoi le rappeler en brûlant une plume. Ce secours devient décisif lorsque Rudāba ne peut mettre au monde Rostam. Le Simurgh indique comment pratiquer l'opération et soigner la blessure ; le récit associe vin, plantes et contact de la plume. Il s'agit d'une scène médicale merveilleuse de l'épopée, non d'un protocole utilisable ni d'une preuve que la chirurgie serait née de cet épisode.[3]",
+        "Plus tard, Rostam et son cheval Rakhsh reviennent blessés du combat contre Esfandiyār. Le Simurgh retire les flèches, guérit les plaies et révèle le moyen de vaincre l'adversaire, tout en avertissant du destin funeste attaché à sa mort. La science de l'oiseau n'efface donc pas la tragédie. Il peut indiquer une issue immédiate sans rendre innocent le choix du héros.[3]",
+        "Chez ʿAttār, dans le Mantiq al-tayr, la quête change d'échelle. Les oiseaux cherchent leur souverain au-delà de montagnes presque inaccessibles. Trente arrivent au terme du voyage et se reconnaissent dans le Simurgh. Le rapprochement entre sī morgh, « trente oiseaux », et son nom porte une révélation poétique ; il ne constitue pas l'étymologie historique du mot. L'épisode appartient à la mystique soufie, pas à un inventaire de nids merveilleux.[3]"
+      ],
+      "anomalies": [
+        "La représentation la plus familière aujourd'hui est celle d'un immense oiseau aux plumes déployées. Pourtant, des images sassanides traditionnellement identifiées au Sēnmurw montrent un être composite, avec une tête canine, des ailes et une queue apparentée à celle du paon. Les rapports exacts entre ces images et les textes ont suscité des discussions savantes. Rien n'autorise à imposer automatiquement cette tête de chien au Simurgh de Ferdowsi.[3]",
+        "Les classifications anciennes elles-mêmes hésitent. Des passages du Bundahišn le rangent parmi les oiseaux, d'autres le rapprochent des chauves-souris et lui attribuent des caractères de mammifère ; les traditions divergent aussi sur la ponte et l'allaitement. Ces contradictions renseignent l'histoire des représentations. Les résoudre par une espèce hybride universelle ferait perdre la trace des textes qui ont successivement tenté de le décrire.[3]",
+        "L'épopée connaît en outre un autre Simurgh, monstrueux adversaire d'Esfandiyār. Le héros le tue grâce à un chariot hérissé de lames. La présence de deux figures portant le même nom empêche de faire de la bienveillance un attribut absolu. La protectrice de Zāl est aimante dans une relation précise ; le nom peut ailleurs désigner un danger colossal.[3]"
+      ],
+      "naturelle": {
+        "lead": "Une observation naturaliste doit rester attachée à chaque récit. Le nid de Zāl permet d'approcher un oiseau nourricier ; l'arbre des semences et la quête soufie relèvent d'autres ordres d'existence.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "La protectrice intervient quand Zāl l'appelle, conseille et accompagne plutôt qu'elle ne se substitue constamment aux héros. Elle accepte aussi la séparation d'avec l'enfant élevé. Ce retrait distingue son affection de la possession : l'humain peut reprendre sa place parmi les siens tout en conservant un lien avec la montagne. La plume rend cette distance habitable.[3][5]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Dans l'épopée, l'Alborz abrite le nid inaccessible où grandit Zāl. La hauteur explique la séparation initiale d'avec les hommes et la difficulté du retour de Sām. Dans la poésie de ʿAttār, les montagnes de Qāf appartiennent à une géographie spirituelle. Ces lieux ne doivent pas être superposés comme deux aires de répartition relevées sur une carte ornithologique.[3]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Ferdowsi donne à l'oiseau une conduite de rapace cherchant de la nourriture pour ses jeunes. Selon l'analyse d'Iranica, il choisit pour l'enfant la chair la plus tendre, dont le sang remplace le lait absent. Cette adaptation reste une image épique du soin interspécifique, nullement un conseil alimentaire. Les nourritures offertes dans d'autres contes de transport aérien appartiennent à leurs variantes propres.[3]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Sa parole unit l'expérience de l'éducatrice au savoir du guérisseur et à une connaissance du destin. L'avertissement concernant Esfandiyār montre les limites morales de cette science : connaître une conséquence n'oblige pas celui qui écoute à choisir sagement. Chez ʿAttār, l'oiseau devient un objet de connaissance spirituelle ; son intelligence ne se mesure plus comme celle d'un personnage conversant avec un héros.[3]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les petits présents dans le nid rendent la maternité explicite dans l'histoire de Zāl. Ils accueillent l'enfant au sein d'une famille déjà constituée. Cela ne suffit pas à fixer une durée d'incubation ou une longévité. Les divergences des textes moyen-perses sur l'oviparité et l'allaitement doivent rester visibles, plutôt que d'être amalgamées en une biologie fabriquée.[3][5]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "La protectrice de Zāl n'a pas de prédateur régulier dans les épisodes considérés. Le Simurgh hostile peut tomber devant l'ingéniosité d'Esfandiyār ; dans des contes apparentés, des serpents menacent les oisillons et provoquent l'intervention reconnaissante d'un héros. Ces adversaires appartiennent à des intrigues différentes. Leur réunion en chaîne alimentaire serait aussi trompeuse que la fusion de toutes les figures sous une seule identité.[3]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "La plume condense une relation personnelle. Elle n'est pas un ingrédient interchangeable : Zāl la reçoit au moment où l'oiseau le laisse partir, et son usage réactive une promesse. Les présentations consultées divergent sur le nombre de plumes remises. Ce détail rappelle que traductions, commentaires et images transmettent des versions qu'il convient de nommer plutôt que de corriger arbitrairement.[3][5]",
+        "Les manuscrits illustrés multiplient les scènes du nid, de la reconnaissance et du départ. Le Smithsonian conserve et présente notamment des images où Zāl est aperçu par une caravane puis retrouve Sām. Un jeune homme à cheveux blancs parmi les oiseaux suffit à identifier l'histoire : l'iconographie garde la singularité qui avait provoqué l'abandon et dont l'épopée fait désormais le signe d'une destinée protégée.[5]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 3,
+        "title": "Encyclopædia Iranica, SIMORḠ",
+        "url": "https://www.iranicaonline.org/articles/simorg"
+      },
+      {
+        "id": 5,
+        "title": "Smithsonian, Zal and the Simurgh",
+        "url": "https://asia-archive.si.edu/learn/shahnama/zal-and-the-simurgh"
       }
     ]
   },

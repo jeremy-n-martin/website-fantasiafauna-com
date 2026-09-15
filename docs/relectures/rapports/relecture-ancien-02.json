@@ -1,0 +1,368 @@
+{
+  "reviewed": [
+    {
+      "slug": "elementaire",
+      "verdict": "revise",
+      "assessment": "Faits Paracelse/Gabalis et D&D vérifiés ; interprétations de matière vivante annoncées, à conserver.",
+      "issues": [
+        {
+          "type": "conseil_aux_auteurs",
+          "location": "anomalies[0]",
+          "quote": "la masse animée doit avoir des limites de cohésion ou des vulnérabilités si le récit veut rendre sa présence manipulable.",
+          "correction": "Remplacer par : « Les univers de fantasy donnent à ces formes des résistances et des vulnérabilités différentes. » Ne pas imposer une règle de construction narrative.",
+          "required": true
+        },
+        {
+          "type": "consignes_repetitives",
+          "location": "naturelle / Alimentation, Habitat, Reproduction",
+          "quote": "On évitera donc de transformer chaque incendie en repas d'un élémentaire de feu ou chaque érosion en digestion.",
+          "correction": "Supprimer cette phrase. Dans Habitat, remplacer la fin prescriptive par « Ce paysage relève alors de l’univers choisi. » Dans Reproduction, remplacer la dernière phrase par « Les modes de naissance des masses animées dépendent de chaque univers. » Les silences documentaires restent légitimes.",
+          "required": true
+        }
+      ],
+      "sha256": "3b7f3078d690d9d94bdf9752280777c1f6a7c289cacf67d201fcda62ed288af4",
+      "sha256_after": "3b7f3078d690d9d94bdf9752280777c1f6a7c289cacf67d201fcda62ed288af4",
+      "unchanged": true,
+      "read_entire_notice": true,
+      "source_checks": [
+        {
+          "id": 0,
+          "url": "https://en.wikipedia.org/wiki/Elemental",
+          "title": "Elemental - Wikipedia",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-0.md",
+          "content_sha256": "0e5c612d3363142613549e6526673d1f32f753f897ccc36abc118cb8853713ba",
+          "claim": "Paracelse : 1566, corps, nourriture, vêtements, milieux et âme par mariage ; Gabalis 1670",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "cal beings as belonging to one of the four elements. Part of the *Philosophia Magna,* this book was first printed in 1566 after Paracelsus' death.[[2]](#cite_note-2) He wrote the book to \"describe the creatures that are outside the cognizance of the light of nature, how they are to be understood, what marvellous works God has created\". He states that there is more bliss in describing these \"divine objects\" than in describing fencing, court etiquette, cavalry, and other worldly pursuits.[[3]](#cite_note-3) The following is his archetypal being for each of the four elements:[[4]](#cite_note-4)\n\n* [Gnome](https://en.wikipedia.org/wiki/Gnome \"Gnome\"), being of earth\n* [Undine](https://en.wikipedia.org/wiki/Undine \"Undine\"), being of water\n* [Sylph](https://en.wikipedia.org/wiki/Sylph \"Sylph\"), being of air\n* [Salamander](https://en.wikipedia.org/wiki/Salamanders_in_folklore \"Salamanders in folklore\"), being of fire\n\nThe concept of elementals seems to have been conceived by [Paracelsus](https://en.wikipedia.org/wiki/Paracelsus \"Paracelsus\") in the 16th century, though he did not in fact use the term \"elemental\" or a German equivalent.[[5]](#cite_note-5) He regarded them not so much as spirits but as beings between creatures and spirits, generally being invisible to mankind but having physical and commonly humanoid bodies, as well as eating, sleeping, and wearing clothes like humans. Paracelsus gave common names for the elemental types, as well as correct names, which he seems to h",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        },
+        {
+          "id": 12,
+          "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters",
+          "title": "Basic Rules for Dungeons and Dragons (D&D) Fifth Edition (5e) - D&D Beyond",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-12.md",
+          "content_sha256": "afe2c4e032fee9536fcb5fb93cc8e396ba75b9b98caebc6468a577c828a37536",
+          "claim": "Type élémentaire 2014 : masses, formes biologiques et génies",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "dragons, but less powerful, less intelligent, and less magical, such as wyverns and pseudodragons.\n\n**Elementals** are creatures native to the elemental planes. Some creatures of this type are little more than animate masses of their respective elements, including the creatures simply called elementals. Others have biological forms infused with elemental energy. The races of genies, including djinn and efreet, form the most important civilizations on the elemental planes. Other elemental creatures include azers, invisible stalkers, and water weirds.\n\n**Fey** are magical creatures closely tied to the forces of nature. They dwell in twilight groves and misty forests. In some worlds, they are closely tied to the Feywild, also called the Plane of Faerie. Some are also found in the Outer Planes, particularly the planes of Arborea and the Beastlands. Fey include dryads, pixies, and satyrs.\n\n**Fiends** are creatures of wickedness that are native to the Lower Planes. A few are the servants of deities, but many more labor under the leadership of archdevils and demon princes. Evil priests and mages sometimes summon fiends to the material world to do their bidding. If an evil celestial is a rarity, a good fiend is almost inconceivable. Fiends include demons, devils, hell hounds, rakshasas, and yugoloths.\n\n**Giants** tower over humans and their kind. They are humanlike in shape, though some have multiple heads (ettins) or deformities (fomorians). The six varieties of true giant are hill ",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        }
+      ]
+    },
+    {
+      "slug": "invocateur",
+      "verdict": "revise",
+      "assessment": "Archétype humain et contexte chrétien correctement distingués de la fantasy ; révision locale seulement.",
+      "issues": [
+        {
+          "type": "conseil_aux_auteurs",
+          "location": "naturelle / Alimentation",
+          "quote": "Sacrifices et offrandes, lorsqu’un univers les exige, doivent être décrits comme les conditions d’un rite particulier, jamais comme les besoins biologiques communs de tous les mages.",
+          "correction": "Remplacer par « Dans certains univers de fantasy, sacrifices et offrandes conditionnent le rite ; l’invocateur reste soumis aux besoins humains. » Il s’agit de décrire, non de prescrire la rédaction.",
+          "required": true
+        }
+      ],
+      "sha256": "eb21f15f2165ee331f74a528787982d24907eba3bd4abaf91d3cd22f5fda5e45",
+      "sha256_after": "eb21f15f2165ee331f74a528787982d24907eba3bd4abaf91d3cd22f5fda5e45",
+      "unchanged": true,
+      "read_entire_notice": true,
+      "source_checks": [
+        {
+          "id": 1,
+          "url": "https://www.folger.edu/blogs/collation/how-to-conjure-demons",
+          "title": "How to Conjure Demons Using the Holdings at the Folger Shakespeare Library: A Primer | Folger Shakespeare Library",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-1.md",
+          "content_sha256": "7e1684a9f762b6fb7c323001f2c7362d9e58890c4ff02b1527e3aab75f6a6fbb",
+          "claim": "V.b.26 : deux volumes, 1577–1583, titre de reliure tardif trompeur",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "owever, everything changed when I discovered the two volumes of a 16th century grimoire, one with a modern binding misleadingly titled *Key of Solomon.* Though the Folger’s grimoire is not the actual *Key of Solomon*, the manuscript draws on Solomonic and other traditions. The binding with the title was added by a later owner in reference to *The Key of Solomon* and *The Lesser Key of Solomon*.\n\n![A brown leather cover of a book with the title and some simple floral figures on it.](https://images.folger.edu/uploads/2026/07/042427-Small_1500px.jpg?fit=300%2C300 \"042427-Small_1500px\") \n\n*Book of magic, with instructions for invoking spirits*, etc, ca. 1577-1583. Call number: [V.b.26 (2)](https://catalog.folger.edu/record/228887), [front outside cover](https://digitalcollections.folger.edu/img42427).\n\nA foundational text in Western occultism, *The Lesser Key of Solomon* is an anonymously authored compilation of materials dating back several centuries. Cobbled together from a variety of sources in the 17th century, *The Lesser Key of Solomon* continues the tradition of *The* *Key of Solomon* written during the 14th or 15th century*.* Although the *Key* and *Lesser Key* contain a variety of information, including the use of plants for medicinal purposes, it is the details on summoning and controlling 72 spirits found in *The Lesser Key of Solomon* that led to the book’s infamy — elements also included in the Folger’s grimoire.\n\n![A page with a large circular drawing at the top of ",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        },
+        {
+          "id": 2,
+          "url": "https://www.folger.edu/blogs/shakespeare-and-beyond/grimoires-and-games",
+          "title": "Grimoires and games | Folger Shakespeare Library",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-2.md",
+          "content_sha256": "ff11a60c87ca23117c2866e3178d8a84a66a28ae333a27059cd199e4e2de82b2",
+          "claim": "Page 48, cercle, dés, sceaux, Scot 1584 et A Night at the Library",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "s/farmers-gin/), was inspired by a spell in the grimoire designed to enhance gameplay.\n\nThe spell, [on page 48 of volume one](https://digitalcollections.folger.edu/bib228887-238418), features a large ceremonial circle divided into four parts, the names of spirits to invoke, incantations, little illustrated die, and lots of perplexing sigils.\n\nSigils, also referred to as “seals,” are abstract symbols commonly used in western magical practice. These enigmatic designs often include alchemical and astrological symbols and traditionally represent the “true name” of a spirit. Knowledge of a spirit’s true name, such as in the well-known story of Rumpelstiltskin, gives the magician power over that spirit, allowing it to be summoned for aid or bound to carry out the magician’s will. The lists of spirit sigils and summoning spells documented in early modern grimoires, like the ones featured in this spell’s magical circle and sigils, were part of the accepted Christian over culture, often representing Biblical angels and demons such as Michael or Raphael. Ceremonial magicians like Elizabeth I’s court astrologer and advisor John Dee relied on the authority of the Christian god to call up and command the service of these beings.\n\nSigils are still used by practitioners of magic today. In fact, our spell for enhancing gameplay features two sigils used by modern occultists, “Fear No Foe” and “Master of Spirits.” Both sigils are also referenced in Reginald Scot’s 1584 [*The Discoverie of Witc",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        }
+      ]
+    },
+    {
+      "slug": "jabberwock",
+      "verdict": "revise",
+      "assessment": "Récit et iconographie vérifiés. Interprétation du quatrain final annoncée et admissible.",
+      "issues": [
+        {
+          "type": "inventaire_de_negations",
+          "location": "naturelle / Habitat, Alimentation, Intelligence, Reproduction",
+          "quote": "Aucune grotte, aucun trésor souterrain ni territoire cartographié ne sont nécessaires au poème.",
+          "correction": "Supprimer cette phrase. Garder tulgey, les troncs et Tumtum. Alimentation : garder les mâchoires et une seule réserve « Le poème ne raconte aucun repas. » Supprimer le retour sur le fromage déjà traité dans Légendes. Intelligence : garder bruit et gilet, supprimer la liste parle/s’habille/vie bourgeoise. Reproduction : conserver seulement l’adversaire singulier et le silence sur sa descendance, sans liste couple/œuf/petit ni hypothèse d’extinction. Ce cumul, non la prudence documentaire elle-même, motive revise.",
+          "required": true
+        },
+        {
+          "type": "conseil_aux_auteurs",
+          "location": "naturelle / Reproduction",
+          "quote": "Dans un bestiaire inspiré de Carroll, inventer une descendance serait un prolongement créatif légitime à condition de la donner comme telle, plutôt que de la glisser dans le livre original.",
+          "correction": "Supprimer ce conseil ; ne pas remplacer le silence du poème par une biologie inventée.",
+          "required": true
+        }
+      ],
+      "sha256": "6a56317591fd01653ee1eae297ee7dd6acd457fd94c4c9cd559c4dd0fe8aa9f1",
+      "sha256_after": "6a56317591fd01653ee1eae297ee7dd6acd457fd94c4c9cd559c4dd0fe8aa9f1",
+      "unchanged": true,
+      "read_entire_notice": true,
+      "source_checks": [
+        {
+          "id": 11,
+          "url": "https://www.gutenberg.org/files/12/12-h/12-h.htm",
+          "title": "Through the Looking-glass | Project Gutenberg",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-11.md",
+          "content_sha256": "5fe3b3ee4465a9926f70a79b5229ee9f91a95dfc523d2ed6c7d2248111ab7ba7",
+          "claim": "Chapitres I et VI : miroir, poème, combat, tête, toves/fromage/cadrans",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": " it up to a glass, the words will all go the right way again.”\n\nThis was the poem that Alice read.\n\nJABBERWOCKY.  \n   \n ’Twas brillig, and the slithy toves  \n     Did gyre and gimble in the wabe;  \n All mimsy were the borogoves,  \n     And the mome raths outgrabe.  \n   \n “Beware the Jabberwock, my son!  \n     The jaws that bite, the claws that catch!  \n Beware the Jubjub bird, and shun  \n     The frumious Bandersnatch!”  \n   \n He took his vorpal sword in hand:  \n     Long time the manxome foe he sought—  \n So rested he by the Tumtum tree,  \n     And stood awhile in thought.  \n   \n And as in uffish thought he stood,  \n     The Jabberwock, with eyes of flame,  \n Came whiffling through the tulgey wood,  \n     And burbled as it came!  \n   \n One, two! One, two! And through and through  \n     The vorpal blade went snicker-snack!  \n He left it dead, and with its head  \n     He went galumphing back.  \n   \n “And hast thou slain the Jabberwock?  \n     Come to my arms, my beamish boy!  \n O frabjous day! Callooh! Callay!”  \n     He chortled in his joy.  \n   \n ’Twas brillig, and the slithy toves  \n     Did gyre and gimble in the wabe;  \n All mimsy were the borogoves,  \n     And the mome raths outgrabe.\n\n“It seems very pretty,” she said when she had finished it, “but it’s *rather* hard to understand!” (You see she didn’t like to confess, even to herself, that she couldn’t make it out at all.) “Somehow it seems to fill my head with ideas—only I don’t exactly know what they are! However, *so",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        },
+        {
+          "id": 10,
+          "url": "https://victorianweb.org/art/illustration/tenniel/lookingglass/1.9.html",
+          "title": "Jabberwocky — Illustrations for \"Through the Looking Glass\" by John Tenniel",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-10.md",
+          "content_sha256": "4e5de05d2eae0faa226e5e493c5a2bb34f973ee55c0d6dc0c19560a6b6c779eb",
+          "claim": "Tenniel 1871, Dalziel ; image effectivement vue : ailes, gilet boutonné, queue et griffes",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "oll/index.html) —> [Next](2.1.html)]\n\n[![](1.9.jpg)](1.9.jpg)\n\nJabberwocky\n\nSir John Tenniel\n\n1871\n\nWood-engraving by Dalziel\n\nIllustration for the first chapter of Lewis Carroll's Through the Looking Glass\n\nSee below for commentary; mouse over the text for links.\n\nIn 2000 student assistants from the University Scholars Program, National University of Singapore, scanned this image and added text under the supervision of [George P. Landow](../../../../../cv/gplbio.html).\n\n[You may use this image without prior permission for any scholarly or educational purpose as long as you (1) credit the site and (2) link your document to this URL in a web document or cite the Victorian Web in a print one.]\n\n[![](../../../../icons2/usp2.gif)](../../../../misc/usp.html)\n\n### Commentary by [Ray Dyer](../../../../misc/dyer.html)\n\nThe dragons of Arthurian Legend would seem to have weighed heavily with Tenniel - as with almost all Victorian readers from their childhood and illustrated nursery tales - in his evocative illustration for Carroll's curious poem about the slaying of an extraordinary monster. Click [here](../../../../authors/carroll/jabberwocky.html) for an analysis of aspects of the whole poem.\n\nThe modern preference and use of the term \"Monster\" offers interesting parallels to the mind-set of educated Victorians and earlier generations. The Biblical Hebrews knew of the Canaanites, who had their \"Moloch\" [SOED Gk. *Molokh* from the Hebrew *melek* = king; then via substitution of vowel ",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        }
+      ]
+    },
+    {
+      "slug": "jackalope",
+      "verdict": "pass",
+      "assessment": "Objets et anecdotes précis. Les dénégations servent le sujet même de la farce. 1934 est fidèlement attribué au témoignage municipal ; le Smithsonian donne 1932, variante à noter dans le contrôle, pas motif pour corriger arbitrairement la notice. La causalité papillomavirus → invention Herrick reste correctement non établie.",
+      "issues": [],
+      "sha256": "0cd15a75be6b5e3294f53812a08fa0ca47328e8550577d359c30e093186bea8a",
+      "sha256_after": "0cd15a75be6b5e3294f53812a08fa0ca47328e8550577d359c30e093186bea8a",
+      "unchanged": true,
+      "read_entire_notice": true,
+      "source_checks": [
+        {
+          "id": 8,
+          "url": "https://www.cityofdouglas.org/255/The-Legend-of-the-Jackalope",
+          "title": "The Legend of the Jackalope | Douglas, WY - Official Website",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-8.md",
+          "content_sha256": "df1b9108941398f1d3a09ca0495cbfb1b535f2152080274c81b4aa6e430d6d9a",
+          "claim": "Herrick 1934 ; permis 31 juin minuit–2 h ; imitation et élevage",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "But Ralph Herrick, a taxidermist here, admits, somewhat reluctantly, that his brother, Doug, and he created the jackalope in 1934.\n\nOne evening when they were late for dinner, they placed a recently killed rabbit beside a pair of antlers on the floor of the taxidermy shop. \"When we came back, Doug said 'Let's mount it the way it is', \", Herrick said.\n\nSince that time, Herrick's jackalope trophy business has continued to grow. \"Lately, I can't make 'em fast enough,\" he said.\n\nThe Douglas Chamber of Commerce issues thousands of jackalope hunting licenses every year to tourists, and signs on the highway near here tell motorists to \"watch out for the jackalope\".\n\nAlthough the creature's fame has spread throughout the West, Herrick and a South Dakota company are the only two concerns now producing eucalypts. Herrick's brother stopped making them more than 25 years ago. Gift shops in town do a brisk business selling jackalope postcards and other novelty items.\n\nThe jackalope was the main attraction here until discoveries of vast deposits of uranium, coal, oil and natural gas more than doubled the town's population to 7500 in the last three years. Herrick said his business has grown independently of the town' new-found prosperity, as persons from around the county began to hear about the jackalope.\n\nsome parts of this tourist industry have never been very popular, like canned jackalope mild, but Herrick sold more than 165 trophies at up to $35 each last year, and he has already sold",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        },
+        {
+          "id": 7,
+          "url": "https://wyostatearchives.wordpress.com/2014/04/21/greetings-from-douglas",
+          "title": "Greetings From… Douglas! | Wyoming Postscripts",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-7.md",
+          "content_sha256": "7df21b581a36648cebdeadb37fe7e62e54157da30a016265c7443d39663be93a",
+          "claim": "Roy Ball/LaBonte, vol 1977, statue, chants et projet 2013 non adopté",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": " Roy Ball, who installed it proudly in the town’s LaBonte Hotel. The mounted horned rabbit head was stolen in 1977.\n\nThe town of Douglas erected an 8-foot-tall statue of the jackalope on one of Center streets islands, which met its demise when a four wheel drive pick up tried to run it over. The statue was re-constructed in Jackalope Square in the center of Douglas, where it stands to this day. Proud city fathers\n\nlater added a 13-foot-tall jackalope cutout on a hillside and placed jackalope images on park benches and fire trucks, among other things. Now the largest jackalope in the world resides at the Douglas Railroad Interpretative Center.\n\nAcknowledging the animal’s purported propensity to attack ferociously anything that threatened it, the city also posted warning signs: “Watch out for the jackalope.”\n\nThe Douglas Chamber of Commerce has issued thousands of jackalope hunting licenses, despite rules specifying that the hunter can hunt only between midnight and 2 a.m. each June 31.\n\nTourist-shop clerks in Douglas told and retold tales of cowboys who remembered harmonious jackalope joining their nightly campfire songs. Visitors rarely have left Douglas without buying jackalope postcards and trinkets.\n\nThe state of Wyoming trademarked the jackalope name in 1965. Twenty years later, Gov. Ed Herschler, crediting Douglas Herrick with the animal’s creation, designated Wyoming the jackalopes’ official home. The governor proclaimed Douglas to be the “Home of the Jackalope”.\n\nMr. H",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        },
+        {
+          "id": 9,
+          "url": "https://www.si.edu/stories/worlds-scariest-rabbit",
+          "title": "The World's Scariest Rabbit",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-9.md",
+          "content_sha256": "9b9f9a45544c9b9347bf3965a7d3295a34d81becf5060fbdfefc6795d051fbbe",
+          "claim": "Shope, kératinisation, gêne alimentaire ; date alternative 1932",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "pts cells in the human cervix to build cancerous tumors, in rabbits the papillomavirus manifests as hard, keratinized horns. If they develop near the mouth, the tumors can become large enough that they interfere with the host’s ability to eat, eventually causing starvation. Such papillomaviruses are found throughout the animal kingdom, including in other mammals, birds and reptiles.\n\nAlthough American virologist Richard Shope discovered the virus in the 1930s, its distinctive symptoms in rabbits and hares have mystified and inspired people for centuries. Descriptions of horned hares as real or mythical creatures date back to medieval and early Renaissance times, appearing in Bavarian folklore and early scientific texts. Stories and illustrations of horned rabbits as real animals last appeared in scientific books in the late 1700s, after which the idea of a horned hare as a distinct species was mostly rejected.\n\n![Image 5: Plate XLVII of Animalia Qvadrvpedia et Reptilia (Terra) by Joris Hoefnagel, circa 1575, showing a \"horned hare\" (Photo: Wikipedia)](https://www.si.edu/sites/default/files/blog/animalia_qvadrvpedia_et_reptilia_terra_plate_xlvii1.jpg)\n\nPlate XLVII of Animalia Qvadrvpedia et Reptilia (Terra) by Joris Hoefnagel, circa 1575, showing a “horned hare” (Photo: Wikipedia)\n\nSightings of virus-affected rabbits in North America are thought to have influenced the resurrection of the horned rabbit legend. The term “jackalope” was most likely coined by taxidermists who repr",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        }
+      ]
+    },
+    {
+      "slug": "mimique",
+      "verdict": "revise",
+      "assessment": "Fiche 2014 vérifiée dans le bloc officiel, pas dans les commentaires : amorphe, adhérence conditionnelle, acide, INT 5 et aucune langue.",
+      "issues": [
+        {
+          "type": "conseils_aux_auteurs",
+          "location": "naturelle / Habitat et Intelligence ; reliques[1]",
+          "quote": "Pour mettre en scène cette mimique, la patience et une réponse simple au contact suffisent à produire une menace convaincante.[5]",
+          "correction": "Remplacer par « Son intelligence limitée s’accorde à un affût patient et à une réaction au contact. » Habitat : remplacer la phrase « Coffres, portes et mobilier donnent au concepteur… » par « Coffres, portes et mobilier invitent les visiteurs à s’approcher ou à prendre appui. » Reliques : remplacer « La meilleure variation… » par « Chaque nouvel objet imité menace un autre geste quotidien. »",
+          "required": true
+        },
+        {
+          "type": "consigne_editoriale",
+          "location": "naturelle / Reproduction",
+          "quote": "Les variantes développées par d'autres ouvrages doivent être rattachées à leur propre contexte au lieu d'être projetées sur toutes les mimiques, de toutes les éditions.",
+          "correction": "Conserver « La fiche utilisée ne décrit aucun mode de reproduction. » Supprimer le conseil final et les suggestions division/bourgeonnement sans donnée publiée.",
+          "required": true
+        }
+      ],
+      "sha256": "5ea7e88dde3679e8d32ec773a4db65e337a837369a60aa8e3e22ca99cabd4d6c",
+      "sha256_after": "5ea7e88dde3679e8d32ec773a4db65e337a837369a60aa8e3e22ca99cabd4d6c",
+      "unchanged": true,
+      "read_entire_notice": true,
+      "source_checks": [
+        {
+          "id": 5,
+          "url": "https://www.dndbeyond.com/monsters/16957-mimic",
+          "title": "Mimic - Monsters - D&D Beyond",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-5.md",
+          "content_sha256": "a541a4ca7b04ddbf3ddeedec26f2cf0a040893cb933a2570aa04a15960d40601",
+          "claim": "D&D Beyond Legacy : capacités et caractéristiques",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "Bonus  +2\n\n![](https://www.dndbeyond.com/file-attachments/0/579/stat-block-header-bar.svg)\n\nTraits\n\n***Shapechanger.*** The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.\n\n***Adhesive (Object Form Only).*** The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also [grappled](/sources/dnd/free-rules/rules-glossary#GrappledCondition) by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.\n\n***False Appearance (Object Form Only).*** While the mimic remains motionless, it is indistinguishable from an ordinary object.\n\n***Grappler.*** The mimic has advantage on attack rolls against any creature [grappled](/sources/dnd/free-rules/rules-glossary#GrappledCondition) by it.\n\nActions\n\n***Pseudopod.** Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8 + 3) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.\n\n***Bite.** Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage.\n\n## Comments\n\n* 1\n* [2](/monsters/16957-mimic?page=2)\n* [3](/monsters/16957-mimic?page=3)\n* [4](/monsters/16957-mimic?page=4)\n* [5](/monsters/16957-mimic?page=5)\n* …\n* [11](/monsters/16957-mimic?page=11)\n* [Next](/monsters/16957-mimic?",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        }
+      ]
+    },
+    {
+      "slug": "minotaure",
+      "verdict": "revise",
+      "assessment": "Variantes antiques, poings/massue, anatomie et noms vérifiés. Beuglement d’ouverture : évocation du motif attesté, pas faux folklore. Corrections locales, sans appauvrir les traditions.",
+      "issues": [
+        {
+          "type": "consigne_editoriale",
+          "location": "naturelle / Intelligence",
+          "quote": "Le silence du captif laisse aux écrivains un espace considérable ; il faut seulement distinguer cet espace des éléments réellement transmis.",
+          "correction": "Remplacer le paragraphe par « Les récits cités donnent surtout accès à ses actes : il demeure dans sa prison, dévore les victimes du tribut et affronte Thésée. Son intériorité reste silencieuse. » La consigne aux écrivains et les facultés absentes prennent ici la place du portrait.",
+          "required": true
+        },
+        {
+          "type": "digression_prescriptive",
+          "location": "naturelle / Alimentation",
+          "quote": "Il serait vain de calculer comment quatorze victimes suffisent pendant des années : la périodicité appartient au récit de domination, non à une comptabilité métabolique.[6]",
+          "correction": "Remplacer par « Le rythme du tribut mesure la domination de Minos sur Athènes.[6] » Garder la réserve précédente sur l’absence de régime entre les tributs ; supprimer la réprimande adressée à un calcul imaginaire.",
+          "required": true
+        }
+      ],
+      "sha256": "28095a4b3255ae2251bc305a3997fdcd54b8abde2df9027047a88d686f624ae3",
+      "sha256_after": "28095a4b3255ae2251bc305a3997fdcd54b8abde2df9027047a88d686f624ae3",
+      "unchanged": true,
+      "read_entire_notice": true,
+      "source_checks": [
+        {
+          "id": 3,
+          "url": "https://www.theoi.com/Ther/Minotauros.html",
+          "title": "MINOTAUR (Minotauros) - Bull-Headed Man of Greek Mythology",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-3.md",
+          "content_sha256": "18439ef3e2f63a885deec01b24ded1fe52a0d60be2a37d544fd81cc973637fbd",
+          "claim": "Apollodore, Diodore, Plutarque, Hygin, Ovide, Callimaque et iconographie",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "l behind him as he went in. He came across the Minotauros in the furthest section of the labyrinth, killed him with jabs of his fist, and then made his way out again by pulling himself along the thread.\"\n\nCallimachus, Hymn 4 to Delos 311 ff (trans. Mair) (Greek poet C3rd B.C.) :  \n \"[Theseus] escaped the cruel bellowing and the wild [Minotauros (Minotaur)] son of Pasiphae and the coiled habitation of the crooked labyrinth.\"\n\nStrabo, Geography 10. 4. 8 (trans. Jones) (Greek geographer C1st B.C. to C1st A.D.) :  \n \"[Minos] was tyrannical, harsh, and an exactor of tribute, representing in tragedy the story of the Minotauros (Minotaur) and the Labyrinth, and the adventures of Theseus and Daidalos (Daedalus).\"\n\nPausanias, Description of Greece 1. 24. 1 (trans. Jones) (Greek travelogue C2nd A.D.) :  \n \"[On the Akropolis (Acropolis) in Athens] is represented the fight which legend says Theseus fought with the so-called Tauros (Bull) of Minos [the Minotauros], whether this was a man or a beast of nature he is said to have been in the accepted story. For even in our time women have given birth to far more extraordinary monsters than this.\"\n\nPausanias, Description of Greece 1. 27. 10 :  \n \"Minos sailed against Athens with a fleet, not believing that the Athenians were innocent of the death of Androgeos (Androgeus) [killed by the Marathonian Bull], and sorely harassed them until it was agreed that he should take seven maidens and seven boys for the Minotauros (Minotaur) that was said to",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        }
+      ]
+    },
+    {
+      "slug": "modron",
+      "verdict": "revise",
+      "assessment": "Marche, promotions, Primus et fonctions contrôlés. La tension esprit axiomatique/dissidents figure bien dans la source officielle ; cosmologie annoncée, pas faux folklore.",
+      "issues": [
+        {
+          "type": "conseil_aux_auteurs",
+          "location": "legendes[2]",
+          "quote": "Une notice ne doit donc pas transformer cette hypothèse interne à l'univers en mission officiellement connue de tous.[7]",
+          "correction": "Supprimer la dernière phrase : l’incertitude de la mission est déjà explicite dans la précédente.",
+          "required": true
+        },
+        {
+          "type": "commentaire_de_source_hors_portrait",
+          "location": "naturelle / Alimentation",
+          "quote": "Ses plaisanteries sur la vie de bureau ne doivent pas être prises pour des indications culinaires.",
+          "correction": "Supprimer cette mise en garde au rédacteur sur des plaisanteries absentes de la notice ; garder le régime non défini et l’entretien par les décatons.",
+          "required": true
+        }
+      ],
+      "sha256": "17f48247f41189cc9cbb6b5fc378a1584073fc5bc7120762a86c112272ae0090",
+      "sha256_after": "17f48247f41189cc9cbb6b5fc378a1584073fc5bc7120762a86c112272ae0090",
+      "unchanged": true,
+      "read_entire_notice": true,
+      "source_checks": [
+        {
+          "id": 6,
+          "url": "https://www.dndbeyond.com/posts/1596-the-5-hierarch-modrons-of-planescape-adventures-in",
+          "title": "The 5 Hierarch Modrons of Planescape: Adventures in the Multiverse | Dungeons & Dragons",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-6.md",
+          "content_sha256": "ebf9e6dc1c51b28c9a45fc1675afbede9e28a335225a88fca73a36b1423171c3",
+          "claim": "289 ans/17 cycles ; cathédrale, succession, télépathie, poussière et cinq hiérarques",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": "and then every modron in existence would subsequently get a promotion.\n\n**The Great Modron March**\n\nEvery 289 years (or 17 cycles on Mechanus), a massive army of modrons leave Mechanus by Primus’ order and travel the Outer Planes in what is known as the Great Modron March. No one knows exactly why Primus insists on this march, but most believe it is to gather information.\n\n## 5 Types of Hierarch Modrons\n\nManaging a team is hard work! But someone’s gotta do it. And the hierarch modrons are likely the most methodical managers in the multiverse. Here’s a preview of them:\n\n![Hierarch modrons oversee work done in Mechanus](https://www.dndbeyond.com/attachments/10/935/hierarch-modrons-irina-nordsol.jpg)\n\n**Shared Traits Among Hierarch Modrons**\n\nLike all modrons, the hierarch modrons possess the Axiomatic Mind ability, making them totally unable to behave in any way that’s contrary to their nature, even by magical means. They also all have advantage on initiative rolls and they all disintegrate into dust upon death (which is sad but also efficient, I guess?).\n\nBut the hierarchs possess a few special abilities that their subordinates don’t. Each of them has the ability to cast [plane shift](/spells/2206-plane-shift) on themselves once per day, and they all possess 120 feet of true sight.\n\nHierarch modrons also can communicate telepathically, giving them the ability to communicate with all modrons, no matter their rank, and other creatures. All of these extra perks allow hierarch mod",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        }
+      ]
+    },
+    {
+      "slug": "oreade",
+      "verdict": "pass",
+      "assessment": "Attributions précisément situées : nourrices d’Énée, ambroisie, arbre jumeau, mort conjointe ; Hésiode/Strabon et hymne non fusionnés. Réserves liées à des confusions identifiables, pas un inventaire autonome. Quelques formules didactiques relèvent du goût et ne bloquent pas l’approbation.",
+      "issues": [],
+      "sha256": "701dcf1142a54451187d2718a76830d1eaeb2feb9d119437b719b31b5080b3da",
+      "sha256_after": "701dcf1142a54451187d2718a76830d1eaeb2feb9d119437b719b31b5080b3da",
+      "unchanged": true,
+      "read_entire_notice": true,
+      "source_checks": [
+        {
+          "id": 4,
+          "url": "https://www.theoi.com/Nymphe/Dryades.html",
+          "title": "DRYADS & OREADS (Dryades & Oreiades) - Tree & Mountain Nymphs of Greek Mythology",
+          "evidence_file": "tmp/editorial/relecture-ancien-02/source-4.md",
+          "content_sha256": "7782c09894d22d51a585c5a511065b169d068c337aca262eb017c33ad34b2e92",
+          "claim": "Hymne Aphrodite 256 ; Hésiode/Strabon ; Aristophane et Apollonios",
+          "status": "verified",
+          "url_title_content_coherent": true,
+          "evidence": " we, the rich-haired Nymphai (Nymphs), daughters of Zeus the aigis-holder, outlive ten Phoinixes.\"\n\nHomeric Hymn 5 to Aphrodite 256 ff (trans. Evelyn-White) (Greek epic C7th or 6th B.C.) :  \n \"[Aphrodite addresses Ankhises (Anchises) :] ‘As for the child [their son Aeneas], as soon as he sees the light of the sun, the deep-breasted Mountain (*oreskôoi*) Nymphai (Nymphs) [i.e. Oreads] who inhabit this great and holy mountain [Ida] shall bring him up. They rank neither with mortals nor with immortals: long indeed do they live, eating ambrosia and treading the lovely dance among the immortals, and with them the Seilenoi (Silens) and the sharp-eyed Argeiphontes [Hermes] mate in the depths of pleasant caves; but at their birth pines or high-topped oaks spring up with them upon the fruitful earth, beautiful, flourishing trees, towering high upon the lofty mountains (and men call them holy places of the immortals, and never mortal lops them with the axe); but when the fate of death (*moira thanatoio*) is near at hand, first those lovely trees wither where they stand, and the bark shrivels away about them, and the twigs fall down, and at last the life of the Nymphe and of the tree leave the light of the sun together. These Nymphai shall keep my son [Aeneas] with them and rear him, and as soon as he is come to lovely boyhood, the goddesses (*theiai*) will bring him here to you and show you your child . . . Say he is the offspring of one of the flower-like Nymphe who inhabit this fores",
+          "method": "Extraction URL unique ; titre et contenu confrontés au sujet ; passages clés effectivement lus."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "elementaire",
+      "invocateur",
+      "jabberwock",
+      "jackalope",
+      "mimique",
+      "minotaure",
+      "modron",
+      "oreade"
+    ],
+    "requested_count": 8,
+    "reviewed_count": 8,
+    "missing": [],
+    "duplicates": [],
+    "full_text_read": true,
+    "raw_sha256_before_after_equal": true,
+    "verdict_counts": {
+      "revise": 6,
+      "pass": 2
+    }
+  },
+  "methodology": "Lecture intégrale des huit JSON et de la charte ; contrôle documentaire indépendant par extractions successives à URL unique, vérification URL/titre/contenu et image Tenniel vue. Les citations de problèmes ont été comparées automatiquement aux textes. Fantasy annoncée et silence documentaire admis. Aucun faux folklore ni erreur factuelle structurante identifié dans les attributions contrôlées ; revise motive des consignes publiées ou un inventaire de négations, pas une préférence littéraire.",
+  "limitations": [
+    "Contrôle des attributions structurantes, pas de toutes les éditions non citées.",
+    "Paracelse contrôlé ici via la synthèse effectivement citée, sans collation de son édition originale.",
+    "Smithsonian donne 1932 et la municipalité 1934 ; le texte attribue correctement 1934 au témoignage municipal."
+  ],
+  "writes": "Rapport et pièces de contrôle exclusivement sous tmp/editorial/relecture-ancien-02 ; aucune modification de notice ou de Git."
+}

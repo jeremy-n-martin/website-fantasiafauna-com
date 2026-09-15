@@ -1,0 +1,441 @@
+{
+  "reviewed": [
+    {
+      "slug": "redcap",
+      "verdict": "revise",
+      "sha256": "fd652f860ee914b1b9b2a567240c99e87cd3f841fde956022f0374c56e28667c",
+      "sha256_after": "fd652f860ee914b1b9b2a567240c99e87cd3f841fde956022f0374c56e28667c",
+      "bytes_unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.reliques[1]",
+          "quote": "Il n'est pas nécessaire d'ajouter une armure de guerre ou des cornes pour le rendre menaçant.",
+          "category": "style_editorial_necessaire",
+          "reason": "Conseil à l’illustrateur et ajout négatif gratuit après un portrait matériel déjà précis. La révision vise ce changement de destinataire, non le choix littéraire du bonnet.",
+          "correction": "Supprimer cette phrase et remplacer le début du paragraphe par : « Le bonnet, le fer et la dent composent le portrait de Henderson : tissu souillé, équipement lourd, fragment de corps.[6] » Conserver la tour et le vieillard dans la fin descriptive."
+        },
+        {
+          "location": "sections.naturelle.parts[5].body[0]",
+          "quote": "ni promettre une protection réelle contre les dangers ordinaires des bâtiments ruinés.",
+          "category": "style_editorial_necessaire",
+          "reason": "Avertissement contemporain hors sujet qui rompt le registre du bestiaire. Le statut narratif de la dent est déjà explicitement posé.",
+          "correction": "Terminer après « La dent laissée après la disparition donne une preuve interne à l’histoire : quelque chose de matériel reste là où le corps n’est plus. » Garder l’attribution à Henderson en tête."
+        }
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.ronelthemythmaker.com/repugnant-red-caps-atozchallenge-folklore",
+          "title": "Repugnant Redcaps - Ronel the Mythmaker",
+          "status": "verified",
+          "claim": "Portrait Henderson 1879, pierres, sang dans bonnet, fer, Écritures/croix et dent.",
+          "evidence": "Redcap, Redcomb, or Bloody Cap, is a sprite of another sort from the friendly Brownie. He is cruel and malignant of mood, and resides in spots which were once the scene of tyranny — such as Border castles, towers, peelhouses. He is depicted as a short thickset old man, with long prominent teeth, skinny fingers armed with talons like eagles, large eyes of a fiery-red colour, grisly hair streaming down his shoulders, iron boots, a pikestaff in his left hand, and a red cap on his head. when benighted or shelterless travellers take refuge in his haunts, he flings huge stones at them; nay, unless he is much maligned, her murders them outright, and catches their blood in his cap, which thus acquires its crimson hue.\n\nThis ill-conditioned goblin may, however, be driven away by repeating Scripture words, or holding up the Cross; he will then yell dismally, or vanish in a flame of fire, leaving behind him a large tooth on the spot where he was last seen.\n\n![](https://i0.wp.com/www.ronelthemythmaker.com/wp-content/uploads/2020/04/redcap_by_onholyservicebound_dctsrn0-fullview.jpg?fit=640%2C729&ssl=1)\n\n[Image credit.](https://www.deviantart.com/onholyservicebound/art/Redcap-775645164)\n\n### ***The Element Encyclopedia of Fairies*****by Lucy Cooper**\n\nMalevolent goblins from the Anglo-Scottish border, so-called because they dyed their hats with blood. They were said to haunt ruined castles t",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/henderson.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Redcap",
+          "title": "Redcap - Wikipedia",
+          "status": "verified",
+          "claim": "Robin Redcap, Leyden/Scott, trois cadenas ; Soulis légendaire et emprisonnement distincts.",
+          "evidence": "Scottish nobleman [William de Soulis](https://en.wikipedia.org/wiki/William_de_Soulis \"William de Soulis\") was said in folklore to have a redcap [familiar](https://en.wikipedia.org/wiki/Familiar \"Familiar\") called \"Robin Redcap\". This entity was said to have wrought much harm and ruin in the lands of his master's dwelling, [Hermitage Castle](https://en.wikipedia.org/wiki/Hermitage_Castle \"Hermitage Castle\"). Ultimately, William was (according to legend) taken to the [Ninestane Rig](https://en.wikipedia.org/wiki/Ninestane_Rig \"Ninestane Rig\"), a [stone circle](https://en.wikipedia.org/wiki/Stone_circle \"Stone circle\") near the castle, then wrapped in lead and boiled to death.[[9]](#cite_note-Mack146-9) In reality, William de Soulis was imprisoned in [Dumbarton Castle](https://en.wikipedia.org/wiki/Dumbarton_Castle \"Dumbarton Castle\") and died there, following his confessed complicity in the conspiracy against [Robert the Bruce](https://en.wikipedia.org/wiki/Robert_the_Bruce \"Robert the Bruce\") in 1320.\n\n[Sir Walter Scott](https://en.wikipedia.org/wiki/Sir_Walter_Scott \"Sir Walter Scott\") in *[Minstrelsy of the Scottish Border](https://en.wikipedia.org/wiki/Minstrelsy_of_the_Scottish_Border \"Minstrelsy of the Scottish Border\")* (1802) records a [ballad](https://en.wikipedia.org/wiki/Ballad \"Ballad\") written by [John Leyden](https://en.wikipedia.org/wiki/John_Leyden \"John Leyden\") entitled \"Lord Soulis\" in which Redcap has granted his master safety against weapons and lives in a chest secured by three strong padlocks.[[10]](#cite_note-10) Scott states that the redcap is a class of spirits that haunts old castles, and that every ruined tower in the south of Scotland was supposed to have one of these spirits residing within.[[11]](#cite_note-11) Robin Redcap should not be co",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/redcap.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Redcap",
+          "title": "Redcap - Wikipedia",
+          "status": "verified",
+          "claim": "Variante favorable de Grantully.",
+          "evidence": "The tale of a redcap in [Perthshire](https://en.wikipedia.org/wiki/Perthshire \"Perthshire\") depicts him as a more benign little man living in a room high up in [Grantully Castle](https://en.wikipedia.org/wiki/Grandtully_Castle \"Grandtully Castle\"). He bestows good fortune on those who see or hear him.[[2]](#cite_note-Briggs-2)\n\nThe *[kabouter](https://en.wikipedia.org/wiki/Kabouter \"Kabouter\")* (*",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/redcap.json",
+          "url_title_content_coherent": true
+        }
+      ],
+      "assessment": "Attributions structurantes vérifiées. Révisions de destinataire/registre uniquement ; aucune fausse origine folklorique démontrée. Préserver les conventions fantasy et les silences documentaires."
+    },
+    {
+      "slug": "revenant",
+      "verdict": "pass",
+      "sha256": "62b1e6ce21f5e6dd4b4e692c030e354ff283264b4ad15716ce538b5db5e970e3",
+      "sha256_after": "62b1e6ce21f5e6dd4b4e692c030e354ff283264b4ad15716ce538b5db5e970e3",
+      "bytes_unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "url": "https://sourcebooks.web.fordham.edu/basis/williamofnewburgh-five.asp",
+          "title": "Internet History Sourcebooks: Medieval Sourcebook",
+          "status": "verified",
+          "claim": "Buckingham, épouse, lettre d’absolution ; chapitres 22–24 effectivement lus.",
+          "evidence": "In these days a wonderful event befell in the county of Buckingham, which I, in the first instance, partially heard from certain friends, and was afterwards more fully informed of by Stephen, the venerable archdeacon of that province. A certain man died, and, according to custom, by the honorable exertion of his wife arid kindred, was laid in the tomb on the eve of the Lord's Ascension. On the following night, however, having entered the bed where his wife was reposing, he not only terrified her on awaking, but nearly crushed her by the insupportable weight of his body. The next night, also, h",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/newburgh.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://sourcebooks.web.fordham.edu/basis/williamofnewburgh-five.asp",
+          "title": "Internet History Sourcebooks: Medieval Sourcebook",
+          "status": "verified",
+          "claim": "Épidémie de Berwick persistante après destruction du corps.",
+          "evidence": "Being burnt, tranquility appeared to be restored to them; but a pestilence, which arose in consequence, carried off the greater portion of them: for never did it so furiously rage elsewhere, though it was at that time general throughout all the borders of England, as shall be more fully explained in its proper place.   ---   Chapter 24:  Of certain prodigies    <[to index](#Index)>  [1] It would not be easy to believe that the corpses of the dead should sally (I know not by what agency) from their graves, and should wander about to the terror or destruction of the living, and again return to t",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/newburgh.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://sourcebooks.web.fordham.edu/basis/williamofnewburgh-five.asp",
+          "title": "Internet History Sourcebooks: Medieval Sourcebook",
+          "status": "verified",
+          "claim": "Blessure à la hache, Melrose.",
+          "evidence": "he struck the axe which he wielded in his hand deep into his body. On receiving this wound, the monster groaned aloud, and turning his back, fled with a rapidity not at all interior to that with which he had advanced, while the admirable man urged his flying foe from behind, and compelled him to seek his own tomb again; which opening of its own accord, and receiving its guest from the advance of the pursuer, immediately appeared to close again with the same facility. In the meantime, they who, impatient of the coldness of the night, had retreated to the fire ran up, though somewhat too late, and, having heard what had happened, rendered needf",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/newburgh.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://sourcebooks.web.fordham.edu/basis/williamofnewburgh-five.asp",
+          "title": "Internet History Sourcebooks: Medieval Sourcebook",
+          "status": "verified",
+          "claim": "Anantis, deux frères et cadavre gonflé ; maladie cesse après destruction.",
+          "evidence": "two young men (brothers), who had lost their father by this plague, mutually encouraging one another, said, \"This monster has already destroyed our father, and will speedily destroy us also, unless we take steps to prevent it. Let us, therefore, do some bold action which will at once ensure our own safety and revenge our father's death. There is no one to hinder us; for in the priest's house a feast is in progress, and the whole town is as silent as if deserted. Let us dig up this baneful pest, and burn it with fire.\"  [7] Thereupon snatching up a spade of but indifferent sharpness of edge, and hastening to the cemetery, they began to dig; and whilst they were thinking that they would have t",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/newburgh.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://historicengland.org.uk/whats-new/news/archaeological-evidence-living-dead-in-mediaeval-england",
+          "title": "New Archaeological Evidence Throws Light on Efforts to Resist “the Living Dead” in Medieval England | Historic England",
+          "status": "verified",
+          "claim": "Wharram Percy : hypothèse archéologique, marques tête/cou, isotopes locaux.",
+          "evidence": "Strontium isotopes in teeth reflect the geology on which an individual was living as their teeth formed in childhood. A match between the isotopes in the teeth and the geology around Wharram Percy suggests they grew up in an area close to where they were buried, possibly in the village. This was surprising to us as we first wondered if the unusual treatment of the bodies might relate to their being from further afield rather than local.\"\n\n[IMAGE: Left lateral view of a mid-lower thoracic vertebra, showing two approximately parallel, obliquely orientated knife cuts.]\n\nA mid-lower thoracic vertebra, showing two approximately parallel knife cuts\n\n## Cannibalism discounted\n\nFamines were quite common in Medieval times, so another possibility seemed to be that the remains were of corpses that had been cannibalised by starving villagers. However, the evidence did not seem to fit. For example, in cannibalism, knife marks on bone tend to cluster around major muscle attachments or large joints, but at Wharram Percy the knife marks were not at these locations but mainly in the head and neck area.\n\nSimon Mays concludes: \"The idea that the Wharram Percy bones are the remains of corpses burnt and dismembered to stop them walking from their graves seems to fit the evidence best. If we are right, then this is the first good archaeological evidence we have for this practice. It shows us a dark side of Medieval beliefs and provides a graphic reminder of how different the Medieval view of the w",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-11.json",
+          "url_title_content_coherent": true
+        }
+      ],
+      "assessment": "Attributions structurantes vérifiées ; récit situé, variantes distinctes et réserves documentaires proportionnées. Pas de changement nécessaire."
+    },
+    {
+      "slug": "roc",
+      "verdict": "revise",
+      "sha256": "8f78e16a866c11d75ef5fb13209849658b488811d9828d65da5a9beb6a0c0ef6",
+      "sha256_after": "8f78e16a866c11d75ef5fb13209849658b488811d9828d65da5a9beb6a0c0ef6",
+      "bytes_unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.reliques[1]",
+          "quote": "Une illustration fidèle peut conserver cette modestie du témoin.",
+          "category": "style_editorial_necessaire",
+          "reason": "La conclusion donne des instructions de représentation plutôt que de décrire le roc ; le plumage incandescent et la couronne refusés sont un inventaire sans ancrage.",
+          "correction": "Remplacer les deux premières phrases par « Dans le deuxième voyage, l’homme noué à une patte et l’œuf pris pour une construction donnent au roc son échelle.[10] » Poursuivre sur l’ombre des ailes et conserver la dernière phrase."
+        },
+        {
+          "location": "sections.anomalies[0]",
+          "quote": "Ce détail remplace avantageusement un chiffre d'envergure arbitraire.",
+          "category": "style_editorial_necessaire",
+          "reason": "Commentaire de fabrication de notice, et non observation sur la créature.",
+          "correction": "Supprimer cette phrase ; relier directement la mesure de l’œuf aux gestes humains qui rendent la disproportion sensible. Aucune envergure nouvelle à inventer."
+        }
+      ],
+      "source_checks": [
+        {
+          "url": "https://en.wikisource.org/wiki/The_Book_of_the_Thousand_Nights_and_One_Night/The_Second_Voyage_of_Sindbad_the_Sailor",
+          "title": "The Book of the Thousand Nights and One Night/The Second Voyage of Sindbad the Sailor - Wikisource, the free online library",
+          "status": "verified",
+          "claim": "Payne 1882, œuf-dôme, éléphants entendus et serpent vu.",
+          "evidence": "At this sight my wonder redoubled and I bethought me of a story that I had heard aforetime of pilgrims and travellers, how in certain islands dwells a huge bird, called the roc, which feeds its young on elephants, and was assured that the ​dome aforesaid was none other than one of its eggs. As I looked and wondered at the marvellous works of God the Most High, the bird alighted on the egg and brooded over it with its wings covering it and its legs spread out behind it on the ground, and in this posture it fell asleep, glory be to Him who sleepeth not! When I saw this, I arose and unwinding the linen of my turban, twisted it into a rope, with which I girt my middle and bound myself fast to the roc’s feet, saying in myself, “Peradventure, this bird may carry me to a land of cities and inhabitants, and that will be better than abiding in this island.”\n\nI passed the night on wake, fearing to sleep, lest the bird should fly away with me at unawares; and as soon as the dawn broke and day appeared, the roc gave a great cry and spreading its wings, flew up with me into the air. It ceased not to soar, till I thought it had reached the limit of the skies, after which it descended, little by little, till it lighted on the top of a high hill. As soon as I found myself on the earth, I made haste to unbind myself; quaking for fear of the bird, though it took no heed of me nor was ware of me, and loosing the linen of my turban from its feet, made off. Presently, I saw it catch up something from the ground and rise into the air with it, and observing this narrowly, saw it to be a huge grea",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-0.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://en.wikisource.org/wiki/The_Book_of_the_Thousand_Nights_and_One_Night/The_Second_Voyage_of_Sindbad_the_Sailor",
+          "title": "The Book of the Thousand Nights and One Night/The Second Voyage of Sindbad the Sailor - Wikisource, the free online library",
+          "status": "verified",
+          "claim": "Sortie de la vallée par un aigle, distinct du premier roc.",
+          "evidence": "Hardly had I done this, when an eagle swooped down upon the meat and driving its talons into it, flew up with it and me clinging thereto and alighted on the top of one of the mountains, where it fell to rending the carcase; but there arose a great noise of shouting and clattering of wood, at which the bird took fright and flew away.\n\nThen I loosed myself from the meat, with clothes daubed with blood therefrom, and stood up; whereupon up came the merchant, who had cried out at the eagle, and seeing me standing there, bespoke me not, but was affrighted at me and shook with fear. However, he went up to the carcase and turning it over, found no d",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-0.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://en.wikisource.org/wiki/The_Book_of_the_Thousand_Nights_and_One_Night/The_Fifth_Voyage_of_Sindbad_the_Sailor",
+          "title": "The Book of the Thousand Nights and One Night/The Fifth Voyage of Sindbad the Sailor - Wikisource, the free online library",
+          "status": "verified",
+          "claim": "Cinquième voyage : petit tué, deux parents, deux rochers, poupe et naufrage.",
+          "evidence": "When the rocs saw this, they flew off and we crowded sail on the ship, thinking to get beyond their reach; but presently they reappeared and flew after us, each with a huge rock in its claws, that it had brought from the mountains. As soon as the male bird came up with us, he let fall upon us the rock he held in his talons; but the master steered the ship aside, so that the rock missed her by some small matter and plunged into the sea with such violence, that the ship surged up and sank into the trough of the sea and the bottom of the ocean appeared to us. Then the she-bird let fall her rock, which was smaller than that of her mate, and as fore-ordained fate would have it, it fell on the poop of the ship and crushed it, breaking the rudder into twenty pieces; whereupon the vessel foundered and all on board were cast into the sea.\n\nAs for me, I struggled for dear life, till God threw in my way one of the planks of the ship, to which I clung and bestriding it, fell a-paddling with my hands and feet. Now the ship had gone down hard by an island and the winds and waves bore me on, till, by permission of God the Most High, they cast me up on the shore of the island, at the last gasp for toil and distress and hunger and thirst. So I landed more dead than alive, and throwing myself down on the beach, lay there awhile, till I began to recover myself, when I walked about the island and found ​it as it were one of the pleasaunces of Paradise, abounding in trees, laden with ripe fruits,",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-1.json",
+          "url_title_content_coherent": true
+        }
+      ],
+      "assessment": "Attributions structurantes vérifiées. Révisions de destinataire/registre uniquement ; aucune fausse origine folklorique démontrée. Préserver les conventions fantasy et les silences documentaires."
+    },
+    {
+      "slug": "rodeur",
+      "verdict": "revise",
+      "sha256": "c5d8cc594d8eced0a3fc2889ba7ce1c3fd2980017aada5881f08728ada3d879b",
+      "sha256_after": "c5d8cc594d8eced0a3fc2889ba7ce1c3fd2980017aada5881f08728ada3d879b",
+      "bytes_unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.fascination[0-1], sections.naturelle.parts[0,2,4,5], sections.reliques[1]",
+          "quote": "Pour mettre cette qualité en scène, on peut lui faire comparer plusieurs passages, attendre qu'un bruit se répète ou changer de route pour ménager ses compagnons.",
+          "category": "style_editorial_necessaire",
+          "reason": "Le texte glisse régulièrement vers un atelier d’écriture : « Pour l’évoquer », « Le personnage devient intéressant », « Décrire ces contraintes vaut mieux », « montrer un apprenti », « Un bon adversaire ». L’archétype humain et les propositions de fantasy sont licites ; ce sont les conseils aux auteurs qui doivent disparaître.",
+          "correction": "Conserver l’annonce d’interprétation dans le lead. Écrire ensuite « Dans l’interprétation du catalogue, il compare plusieurs passages, attend qu’un bruit se répète et change de route pour ménager ses compagnons. » Décrire de même les réserves qui imposent l’itinéraire, l’apprenti qui vérifie une trace, la fatigue et les tâches concurrentes ; supprimer les évaluations de ce qui fait un bon personnage/adversaire. Présenter carte et sangle comme son équipement imaginaire, sans consigne d’illustration."
+        }
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.dndbeyond.com/classes/5-ranger",
+          "title": "The Ranger Class for Dungeons & Dragons (D&D) Fifth Edition (5e) - D&D Beyond",
+          "status": "verified",
+          "claim": "Ranger 2014 : mentor, cercle druidique ou apprentissage solitaire.",
+          "evidence": "Creating a Ranger\n\nAs you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger’s ways? Did you leave your apprenticeship, or was your mentor slain—perhaps by the same kind of monster that became your favored enemy? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, trained in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking, and even a magical connection to nature through the necessity of surviving in the wilds.\n\nWhat’s the source of your particular hatred of a certain kind of enemy? Did a monster kill someone you loved or destroy your home village? Or did you see too much of the destruction these monsters cause and commit yourself to reining in their depredations? Is your adventuring career a continuation of your work in protecting the borderlands, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?\n\n> **QUICK BUILD**\n>\n> You can make a ranger quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. (Some rangers who focus on two-weapon fighting make Strength higher ",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-2.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://www.dndbeyond.com/classes/5-ranger",
+          "title": "The Ranger Class for Dungeons & Dragons (D&D) Fifth Edition (5e) - D&D Beyond",
+          "status": "verified",
+          "claim": "Natural Explorer : collecte et pistage sous conditions.",
+          "evidence": "#### Natural Explorer\n\nYou are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.\n\nWhile traveling for an hour or more in your favored terrain, you gain the following benefits:\n\n* Difficult terrain doesn’t slow your group’s travel.\n* Your group can’t become lost except by magical means.\n* Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.\n* If you are traveling alone, you can move stealthily at a normal pace.\n* When you forage, you find twice as much food as you normally would.\n* While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.\n\nYou choose additional favored terrain types at 6th and 10th level.\n\n#### Fighting Style\n\nAt 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options.\n\nYou can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n##### Archery\n\nYou gain a +2 bonus to attack rolls you make with ranged weapons.\n\n##### Defense\n\nWhile you are we",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-2.json",
+          "url_title_content_coherent": true
+        }
+      ],
+      "assessment": "Attributions structurantes vérifiées. Révisions de destinataire/registre uniquement ; aucune fausse origine folklorique démontrée. Préserver les conventions fantasy et les silences documentaires."
+    },
+    {
+      "slug": "rokurokubi",
+      "verdict": "revise",
+      "sha256": "1dd63f4fed4fe8c1ed513597a9ccf43d117ccfc8bb4e78fca32b70f6fca3c0d0",
+      "sha256_after": "1dd63f4fed4fe8c1ed513597a9ccf43d117ccfc8bb4e78fca32b70f6fca3c0d0",
+      "bytes_unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.anomalies[0]",
+          "quote": "Une illustration doit choisir son mécanisme au lieu de transformer un cou étiré en fil invisible selon les besoins de la scène.",
+          "category": "style_editorial_necessaire",
+          "reason": "Instruction directe à l’illustrateur ; elle est inutile pour préserver la distinction documentaire, qui est correcte et déjà exposée.",
+          "correction": "Remplacer par « Le cou continu et la tête entièrement détachée impliquent deux formes distinctes de l’errance nocturne. » Garder les attributions à Yokai.com et Hearn et la discussion des noms."
+        }
+      ],
+      "source_checks": [
+        {
+          "url": "https://yokai.com/rokurokubi",
+          "title": "Rokurokubi | Yokai.com",
+          "status": "verified",
+          "claim": "Servante et conte d’Oyotsu/Tōtōmi.",
+          "evidence": "Legends: A lord noticed that the oil in his lamps was vanishing at an alarming rate, and suspected one of his servant girls might be a rokurokubi. He decided to spy upon the girl. After she had fallen asleep, he crept into her room and watched over her. Soon he noticed vapors and ectoplasm forming around her chest and neck. A little while later, the servant girl rolled over in her sleep, however only her body moved! The head stayed in its place, and the neck lay stretched out between the two. The next day he fired her. She was fired from every place at which she subsequently worked. The poor girl never understood why she had such back luck with her employment. She never found out that she was a rokurokubi.\n\nAn old tale from Tōtōmi Province (Shizuoka Prefecture) tells of a monk who eloped with a young lady named Oyotsu. While traveling, Oyotsu became sick. Treating her would have used up all of their travel money, so the monk murdered Oyotsu and stole the remaining money. On his travels, he stayed at an inn owned by a man with a beautiful daughter. The wicked monk shared a bed with the innkeeper’s daughter, and during the night her neck stretched and her face changed into that of Oyotsu. She angrily accused him of murdering her. The next morning the monk, regretting his evil deeds, confessed the murder of Oyotsu to the innkeeper. The monk also told the innkeeper what he had seen the night before. The innkeeper confessed that he, too, had murdered his wife for her money. He used the money to build his inn, and as a punishment his own daughter was transformed into a rokurokubi. Afterwards, the monk rejoined his temple, built a grave for Oyotsu, and prayed for her soul every day. What happened to the innkeeper’s daughter is never mentioned.\n\n---\n\n##### You might also like:\n\n* [Nukekubi](https://yokai.com/nukekubi/)\n* [Jigoku](https://yokai.com/jigoku/)\n* [Himamushi nyūdō](https://yokai.com/himamushinyuudou/)\n* [Taira no Masakado](https://yokai.com/tairanomasakado/)\n\n[Ohaguro bettari](https://yokai.com/ohagurobettari/ \"Ohaguro bettari\")[Nukekubi](https://yokai.com/nukekubi/ \"Nukekubi\")\n ",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-3.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://collections.mfa.org/objects/234803",
+          "title": "Rokurokubi (Long-necked monster) – Works – Museum of Fine Arts, Boston",
+          "status": "verified",
+          "claim": "Kyosen, 1765, estampe polychrome et mois sur paravent.",
+          "evidence": "## Rokurokubi (Long-necked monster)\n\n  \nろくろ首\n\n[Kikurensha Kyosen](/search/Objects/peopleSearch%3AKikurensha%20Kyosen;jsessionid=663E6899DCB1D13081C0A89A7B96F083) (Japanese, 1722–1777)\n\nJapanese\n\nEdo period\n\n1765 (Meiwa 2)\n\n---\n\nMedium/Technique Woodblock print (nishiki-e); ink and color on paper\n\nDimensions Vertical chūban; 26.7 x 18.4 cm (10 1/2 x 7 1/4 in.)\n\nCredit Line William S. and John T. Spaulding Collection\n\nAccession Number21.7174\n\nNOT ON VIEW\n\nCollections[Asia](/search/Objects/collectionTerms%3AAsia;jsessionid=663E6899DCB1D13081C0A89A7B96F083), [Prints and Drawings](/search/Objects/collectionTerms%3APrints%20and%20Drawings;jsessionid=663E6899DCB1D13081C0A89A7B96F083)\n\nClassifications[Prints](/search/Objects/classifications%3APrints;jsessionid=663E6899DCB1D13081C0A89A7B96F083)\n\n---\n\nCatalogue Raisonné Waterhouse, The Harunobu Decade (2013), #648; Ukiyo-e shūka supp. 2 (1982), pl. 622; TNM Ukiyo-e cat. 1 (1960), #596\n\nDescriptionLong months on the background screen, short months on its brocade border.\n\nSigned Kyosen gakō   \n 巨川画工\n\nMarks Artist's seal: Kyosen no in\n\nProvenanceAugust 1919, purchased by William S. and John T. Spaulding from Frederick W. Gookin; December 1, 1921, given by William S. and John T. Spaulding to the Museum.\n\n---\n\n## Choose Collection",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-4.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://www.gutenberg.org/files/1210/1210-h/1210-h.htm",
+          "title": "The Project Gutenberg eBook of Kwaidan: Stories and Studies of Strange Things, by Lafcadio Hearn",
+          "status": "verified",
+          "claim": "Séparation sans blessure et déplacement du corps.",
+          "evidence": "For one instant he stood bewildered,—imagining a crime. But in another moment he perceived that there was no blood, and that the headless necks did not look as if they had been cut. Then he thought to himself:—“Either this is an illusion made by goblins, or I have been lured into the dwelling of a Rokuro-Kubi... (4) In the book *Sōshinki* (5) it is written that if one find the body of a Rokuro-Kubi without its head, and remove the body to another place, the head will never be able to join itself again to the neck. And the book further says that when the head comes back and finds that its body has been moved, it will strike itself upon the floor three times,—bounding like a ball,—and will pant as in great fear, and presently die. Now, if these be Rokuro-Kubi, they mean me no good;—so I shall be justified in following the instructions of the book.”...\n\nHe seized the body of the aruji by the feet, pulled it to the window, and pushed it out. Then he went to the back-door, which he found barred; and he surmised that the heads had made their exit through the smoke-hole in the roof, which had been left open. Gently unbarring the door, he made his way to the garden, and proceeded with all possible caution to the grove beyond it. He heard voices talking in the grove; and he went in the di",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/hearn.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://www.gutenberg.org/files/1210/1210-h/1210-h.htm",
+          "title": "The Project Gutenberg eBook of Kwaidan: Stories and Studies of Strange Things, by Lafcadio Hearn",
+          "status": "verified",
+          "claim": "Vers/insectes et protection par récitation.",
+          "evidence": "They were eating worms and insects which they found on the ground or among the trees. Presently the head of the aruji stopped eating and said:—\n\n“Ah, that traveling priest who came to-night!—how fat all his body is! When we shall have eaten him, our bellies will be well filled... I was foolish to talk to him as I did;—it only set him to reciting the sûtras on behalf of my soul! To go near him while he is reciting would be difficult; and we cannot touch him so long as he is praying. But as it is now nearly morning, perhaps he has gone to sleep... Some one of you go to the house and see what the fellow is doing.”\n\nAnother head—the head of a young woman—immediately rose up and flitted to the house, lightly as a bat. After a few minutes it came back, and cried out huskily, in a tone of great alarm:—\n\n“That traveling priest is not in the house;—he is gone! But that is not the worst of the matter. He has taken the body of our aruji; and I do not know where he has put it.”\n\nAt this announcement the head of the aruji—distinctly visible in the moonlight—assumed a frightful aspect: its eyes op",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/hearn.json",
+          "url_title_content_coherent": true
+        }
+      ],
+      "assessment": "Attributions structurantes vérifiées. Révisions de destinataire/registre uniquement ; aucune fausse origine folklorique démontrée. Préserver les conventions fantasy et les silences documentaires."
+    },
+    {
+      "slug": "runiste",
+      "verdict": "revise",
+      "sha256": "d93a14d5f82329a1bfebb1463dea701aaaca5c9eb1057e60251716aa87ee41f8",
+      "sha256_after": "d93a14d5f82329a1bfebb1463dea701aaaca5c9eb1057e60251716aa87ee41f8",
+      "bytes_unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.anomalies[0-1], sections.naturelle.parts[2,4], sections.reliques[1]",
+          "quote": "Fantasia Fauna peut construire un monde où le signe agit réellement, à condition d'annoncer cette convention.",
+          "category": "style_editorial_necessaire",
+          "reason": "Consigne de conception d’univers publiée à la place du portrait. Même glissement dans « cette idée autorise des intrigues », « peuvent montrer », « peut faire apprendre » et « il gagne à savoir ». La magie du runiste est pourtant annoncée dès l’ouverture et n’a pas à être rejetée.",
+          "correction": "Écrire « Dans l’interprétation de Fantasia Fauna, le signe agit réellement et son effet demeure attaché au support après le départ du graveur. » Transformer les autres propositions en observations internes à cette convention : inscriptions falsifiées/restaurées, repas interrompus, novice qui copie avant de graver. Terminer par son travail de mémoire, sans évaluer ce qui rend le personnage convaincant."
+        }
+      ],
+      "source_checks": [
+        {
+          "url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/religion-magic-death-and-rituals/runic-magic",
+          "title": "Runic magic - National Museum of Denmark",
+          "status": "verified",
+          "claim": "Odin neuf nuits ; Egil guérisseur.",
+          "evidence": "In the poem Hávamál, we learn that the god Ódin hung in a tree for nine nights, pierced by a spear, neither drinking nor eating in order to attain knowledge about runes. Such a drastic approach to becoming a runic literate was unlikely used by the Vikings. But in the Icelandic sagas, we often hear that the Vikings had used runic magic and - in the late Medieval folk songs - rune casting is mentioned as a method to gain a girl’s attention and love. Runic magic seems more of a Medieval and Early Modern invention than a Viking-Age fact.\n\n## Runic magic\n\n![Runic magic](/typo3temp/assets/images/csm_Glavendrup_stenen_ee7cee5ebd_9153f57fb3.jpg \"The Glavendrup stone displays a warning to anyone who damages or moves the stone.\")\n\nThe Glavendrup stone displays a warning to anyone who damages or moves the stone.\n\n![Runic magic](/typo3temp/assets/images/csm_credit_Nick_Fraser_Runemagi_01_1009e2b68c_a9e775d6a2.jpg \"Runic letters. Photo: Nick Fraser.\")\n\nRunic letters. Photo: Nick Fraser.\n\nAccording to the sagas, runic inscriptions held magical powers. With the aid of inscriptions, you could predict the future, protect a person against misfortune, imbue objects with different qualities, or you could write down conjurations, curses, and spells. Most runic inscriptions that have been found, however, contain more down-to-earth messages. These have been carved for everyday use.\n\nIn the sagas, we hear how runes and magical words were used in relation to health. In Egil Skallagrimsson’s saga, the skald Egil uses runes to cure a young girl, who has been enchanted by false runes. Egil carves new runes, places them under her pillow and as a result the girl is healed. The moral of the story is that runes and words can be dangerous in the wrong hands.\n\nRunes carved upon rune stones also served a variety of purposes. For example, the inscription on the Glavendrup stone on Funen contains a warning to anyone who would dare to damage or move the stone.\n\nThe runic inscription reads: *Ragnhildr placed this stone in memory of Alli the Pale, priest of the sanctuary, honourable þegn of the retinue. Alli's sons made this monument in memory of their father, and his wife in memory of her husband. And Sóti carved these runes in memory of his lord. Þórr hallow these runes. A warlock be he who damages(?) this stone or drags it (to stand) in memory of another.* This last sentence puts a curse upon a",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-5.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/religion-magic-death-and-rituals/runic-magic",
+          "title": "Runic magic - National Museum of Denmark",
+          "status": "verified",
+          "claim": "Glavendrup : Ragnhild, Alli, Sóti, Thor et malédiction.",
+          "evidence": "The runic inscription reads: *Ragnhildr placed this stone in memory of Alli the Pale, priest of the sanctuary, honourable þegn of the retinue. Alli's sons made this monument in memory of their father, and his wife in memory of her husband. And Sóti carved these runes in memory of his lord. Þórr hallow these runes. A warlock be he who damages(?) this stone or drags it (to stand) in memory of another.* This last sentence puts a curse upon anyone who damages the stone or places it as a monument to another person.\n\n## Omens\n\nThe Vikings also used omens – warnings from nature – to predict the future. This is described in the sagas. The Vikings believed that natural occurrences were messages from the gods. Omens could be deduced from, for example, observing the way in which birds flew or horses galloped. Such warnings could also come from rare natural phenomena, like solar eclipses.\n\n![Runic magic](/typo3temp/assets/images/csm_Solformoerkelse_Credit_Matthias_Buehler_bfde247c8f_33c6917d6d.jpg",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-5.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/power-and-aristocracy/rune-stones",
+          "title": "Rune stones - National Museum of Denmark",
+          "status": "verified",
+          "claim": "Pierres colorées et visibles près des routes.",
+          "evidence": "The rune stones of the Viking period were erected in memory of the dead – mostly powerful people – and their honourable deeds. They were intended to be visible and were painted in bright colours. The stones often stood near roads or bridges, where many people passed by. They were not necessarily placed at the burial of the person they commemorated.\n\nThe rune stones bring us very close to the Vikings. Their inscriptions feature the names of the people who lived and died at this time. They also provide information about the travels, great achievements and sad fates of these individuals.\n\n![Rune stones in Scandinavia](/typo3temp/assets/images/csm_glavendrup-credit-roberto-fortuna-natmus_33dd5728f9_3af5168203.jpg \"The Glavendrup stone. It was r",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-6.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/power-and-aristocracy/rune-stones",
+          "title": "Rune stones - National Museum of Denmark",
+          "status": "verified",
+          "claim": "Grensten chrétien ; peine à Rimsø et Ålum.",
+          "evidence": "Rune stone from Grensten, near Randers, with Christian runic inscription. \")\n\nRune stone from Grensten, near Randers, with Christian runic inscription. \"Tóki Smith raised this stone in memory of Hrifli, son of Ásgeirr Bjǫrn's son. May God help their souls.\"\n\n## Sad fates\n\nThe texts upon rune stones sometimes also express emotions. An inscription on a stone from Rimsø, which was raised by Thorir in memory of his mother, concludes by stating that a mother’s death is the worst thing that can happen to a son. In addition, a stone at Ålum, in North Jutland, bears the inscription Þyrvé, Végautr's wife, had this stone raised in memory of Þorbjǫrn, son of Sibbi, her sister's son, whom she cared for more than had he been her own son / than a dear son.  \n  \n Read more about how the [Vikings also used runes for magic](/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/religion-magic-death-and-rituals/runic-magic/).",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-6.json",
+          "url_title_content_coherent": true
+        }
+      ],
+      "assessment": "Attributions structurantes vérifiées. Révisions de destinataire/registre uniquement ; aucune fausse origine folklorique démontrée. Préserver les conventions fantasy et les silences documentaires."
+    },
+    {
+      "slug": "rusalka",
+      "verdict": "pass",
+      "sha256": "5c9ccbd7be7f530a58aadf913fa0d61d3ed8de8a4892b09fdc37eda0b90ce7b6",
+      "sha256_after": "5c9ccbd7be7f530a58aadf913fa0d61d3ed8de8a4892b09fdc37eda0b90ce7b6",
+      "bytes_unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "url": "https://www.britannica.com/topic/rusalka",
+          "title": "Rusalka | Water Nymph, Folklore & Mythology",
+          "status": "verified",
+          "claim": "Morts précoces, variantes, saison, danse mortelle et herbe épaissie.",
+          "evidence": "**rusalka**, in Slavic mythology, lake-dwelling [soul](https://www.britannica.com/topic/soul-religion-and-philosophy) of a child who died unbaptized or of a virgin who was drowned (whether accidentally or purposely). Slavs of different areas have assigned different personalities to the *rusalki*. Around the [Danube River](https://www.britannica.com/place/Danube-River), where they are called *vile* (singular *vila*), *rusalki* are beautiful, charming girls, dressed always in light robes of mist, singing sweet, bewitching songs to the passersby. The *rusalki* of northern [Russia](https://www.britannica.com/place/Russia) are ugly, unkempt, [wicked](https://www.britannica.com/dictionary/wicked), invariably naked, and always eager to ambush humans. All *rusalki* love to entice men—the *vile* to enchant them and the northern *rusalki* to torture them.\n\nDuring *rusalki* week, at the beginning of the [summer](https://www.britannica.com/science/summer-season), the nymphs are supposed to emerge from the water and climb into weeping willow and birch trees until night, when they dance in rings in the moonlight. Any person joining them must dance until he dies. After that week, grass grows thicker where they trod.",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-7.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Rusalka",
+          "title": "Rusalka - Wikipedia",
+          "status": "verified",
+          "claim": "Ukraine/eau, Belarus/champs et forêts ; cheveux et chatouilles.",
+          "evidence": "Specifics pertaining to rusalki differed among regions. In most tales they lived without men. In stories from [Ukraine](https://en.wikipedia.org/wiki/Ukraine \"Ukraine\"), they were often linked with water. In [Belarus](https://en.wikipedia.org/wiki/Belarus \"Belarus\") they were linked with the forest and field. They were usually pictured as beautiful naked maidens, but in some areas they were imagined as hideous and hairy.[[19]](#cite_note-19) They were said to tickle men to death.[[20]](#cite_note-20) According to some Russian beliefs, rusalki had the appearance of very pale little girls with green hair and long arms. In other beliefs, they were described as naked girls with light brown hair.[*[citation needed](https://en.wikipedia.org/wiki/Wikipedia:Citation_needed \"Wikipedia:Citation needed\")*]\n\nIn [Poland](https://en.wikipedia.org/wiki/Poland \"Poland\") and [Czech Republic](https://en.wikipedia.org/wiki/Czech_Republic \"Czech Republic\"), water rusalki/rusalky were younger and fair-haired, while the forest ones looked more mature and had black hair – but in both cases, if someone looked up close, their hair turned green, and the faces became distorted.[[21]](#cite_note-21) They killed their victims by tickling them to death or forcing them to participate in a frenzied dance.[[22]](#cite_note-22) In Polish folklore, the term rusalka could also stand for [boginka](https://en.wikipedia.org/wiki/Boginka \"Boginka\"), [dziwożona](https://en.wikipedia.org/wiki/Dziwożona \"Dziwożona\") and various other entities.[[23]](#cite_note-23)\n\n## Rusalka week\n\n[[edit](/w/index.php?title=Rusalka&action=edit&section=5 \"Edit section: Rusalka week\")]\n\nMain article: [Green week](https://en.wikipedia.org/wiki/Green_week \"Green week\")\n\nSee also: [Rosalia (festival)](https://en.wikipedia.org/wiki/Rosalia_(festival) \"Rosalia (festival)\") and [Pentecost](https://en.wikipedia.org/wiki/Pentecost \"Pentecost\")\n\nThe *rusalki* were believed to be at their most dangerous during the 'Rusalka week' ([Russian](https://en.wikipedia.org/wiki/Russian_language \"Russian language\"): Русальная неделя, [romanize",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/rusalka.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Rusalka",
+          "title": "Rusalka - Wikipedia",
+          "status": "verified",
+          "claim": "Rusalija, grec rousália et latin Rosalia.",
+          "evidence": "The term \"Rusalka\" derives from \"rusalija\" ([Church Slavonic](https://en.wikipedia.org/wiki/Church_Slavonic_language \"Church Slavonic language\"): рѹсалиѩ, [Old East Slavic](https://en.wikipedia.org/wiki/Old_East_Slavic_language \"Old East Slavic language\"): русалиꙗ, [Bulgarian](https://en.wikipedia.org/wiki/Bulgarian_language \"Bulgarian language\"): русалия, [Serbo-Croatian Cyrillic](https://en.wikipedia.org/wiki/Serbian_Cyrillic_alphabet \"Serbian Cyrillic alphabet\"): русаље) which entered Slavic languages, via [Byzantine Greek](https://en.wikipedia.org/wiki/Byzantine_Greek \"Byzantine Greek\") \"rousália\" ([Medieval Greek](https://en.wikipedia.org/wiki/Medieval_Greek_language \"Medieval Greek language\"): ῥουσάλια),[[4]](#cite_note-endemicgreekrousalia-4) from the [Latin](https://en.wikipedia.org/wiki/Latin \"Latin\") \"[Rosālia](https://en.wikipedia.org/wiki/Rosalia_(festival) \"Rosalia (festival)\")\" as a name for [Pentecost](https://en.wikipedia.org/wiki/Pentecost \"Pentecost\") and the days adjacent to it.[[5]](#cite_note-5) Long-standing, likely pre-Christian, annual traditions resulted in that time of year being associated with spirits ([navki](https://en.wikipedia.org/wiki/Navka \"Navka\"), [mavki](https://en.wikipedia.org/wiki/Mavka \"Mavka\")) which were subsequently named for the holiday.[[6]](#cite_note-6)[[7]](#cite_note-7)[[8]](#cite_note-FOOTNOTEFasmer1987520-8)[[9]](#cite_note-FOOTNOTEChernykh1999128-9)[[10]](#cite_note-FOOTNOTELevkievskaya2000234-10)[[11]](#cite_note-11)\n\n## O",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/rusalka.json",
+          "url_title_content_coherent": true
+        }
+      ],
+      "assessment": "Attributions structurantes vérifiées ; récit situé, variantes distinctes et réserves documentaires proportionnées. Pas de changement nécessaire."
+    },
+    {
+      "slug": "sahuagin",
+      "verdict": "revise",
+      "sha256": "d25b8be99161e64449f6d3b9e8e59be40d983315c05bc2bf838279e146cfca1a",
+      "sha256_after": "d25b8be99161e64449f6d3b9e8e59be40d983315c05bc2bf838279e146cfca1a",
+      "bytes_unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.naturelle.parts[0].body[0], sections.reliques[1]",
+          "quote": "Une rencontre réussie peut commencer par un comportement anormal des requins : au lieu de se disperser, ils répondent au même choix de cible.",
+          "category": "style_editorial_necessaire",
+          "reason": "Conseil de mise en jeu, prolongé par « Elle laisse aux joueurs le temps de comprendre » et « Pour une scène crédible » en Comportement. L’interprétation tactique d’Ammann est correctement annoncée ; elle peut rester.",
+          "correction": "Remplacer la conclusion par « Dans une évocation fondée sur cette télépathie, plusieurs requins convergent vers la même cible alors que leur maître reste hors de vue.[3] » En Comportement, écrire simplement « Le repli vers l’eau compte autant que la première morsure lorsque le raid cherchait une victoire facile. »"
+        }
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.dndbeyond.com/monsters/17003-sahuagin",
+          "title": "Sahuagin - Monsters - D&D Beyond",
+          "status": "verified",
+          "claim": "Humanoïde ancien : immersion 4 h, requins et armes.",
+          "evidence": "Medium Humanoid (Sahuagin), Lawful Evil\n\n![](https://www.dndbeyond.com/file-attachments/0/579/stat-block-header-bar.svg)\n\nArmor Class   12   (natural armor)\n\nHit Points   22   (4d8 + 4)\n\nSpeed   30 ft., Swim 40 ft.\n\n![](https://www.dndbeyond.com/file-attachments/0/579/stat-block-header-bar.svg)\n\nSTR\n\n13 (+1)\n\nDEX\n\n11 (+0)\n\nCON\n\n12 (+1)\n\nINT\n\n12 (+1)\n\nWIS\n\n13 (+1)\n\nCHA\n\n9 (-1)\n\n![](https://www.dndbeyond.com/file-attachments/0/579/stat-block-header-bar.svg)\n\nSkills  [Perception](/sources/dnd/free-rules/playing-the-game#Skills) +5\n\nSenses  [Darkvision](/sources/dnd/free-rules/rules-glossary#Darkvision) 120 ft., Passive Perception 15\n\nLanguages  Sahuagin\n\nChallenge  1/2 (100 XP)\n\nProficiency Bonus  +2\n\n![](https://www.dndbeyond.com/file-attachments/0/579/stat-block-header-bar.svg)\n\nTraits\n\n***Blood Frenzy.*** The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points.\n\n***Limited Amphibiousness.*** The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating.\n\n***Shark Telepathy.*** The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy.\n\nActions\n\n***Multiattack.*** The sahuagin makes two melee attacks: one with its bite and one with its claws or spear.\n\n***Bite.** Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 3 (1d4 + 1) piercing damage.\n\n***Claws.** Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 3 (1d4 + 1) slashing damage.\n\n***Spear.** Melee or *Ranged Weapon Attack:** +3 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.\n\n## Comments\n\n* 1\n* [2](/monsters/17003-sahuagin?page=2)\n* [3](/monsters/17003-sahuagin?page=3)\n* [Next](/monsters/17003-sahuagin?page=2)\n\n* [cojoMan](/members/cojoMan)\n\n   \n\n  [![cojoMan's avatar](https://www.dndbeyond.com/avatars/thumbnails/26004/35/55/55/637890057243110966.png)](/members/cojoMan)\n\n  + Rhymer\n  + Join Date:  6/4/2017\n  + Posts:  40\n  + Member Details\n\n  [#1](?comment=1)   [cojoMan](/members/cojoMan)\n  + [View User Profile](/members/cojoMan)\n  + [Send Message](/private-messages/send?recipient=cojoMan) Posted Jun 8, 2018\n\n  I really tho",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-8.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://www.dndbeyond.com/monsters/5195190-sahuagin-warrior",
+          "title": "Sahuagin Warrior - Monsters - D&D Beyond",
+          "status": "verified",
+          "claim": "Fiélon révisé : résistances, griffes et charge aquatique.",
+          "evidence": "Medium Fiend, Lawful Evil\n\nAC   12     Initiative   +0 (10)\n\nHP   22   (4d8 + 4)\n\nSpeed   30 ft., Swim 40 ft.\n\n| Mod | Save |\n| --- | --- |\n| STR | 13 | +1 | +1 |\n| DEX | 11 | +0 | +0 |\n| CON | 12 | +1 | +1 |\n\n| Mod | Save |\n| --- | --- |\n| INT | 12 | +1 | +1 |\n| WIS | 13 | +1 | +1 |\n| CHA | 9 | −1 | −1 |\n\nSkills  [Perception](/sources/dnd/free-rules/playing-the-game#Skills) +5\n\nResistances  Acid, Cold\n\nSenses  [Darkvision](/sources/dnd/free-rules/rules-glossary#Darkvision) 120 ft.; Passive Perception 15\n\nLanguages  Sahuagin\n\nCR  1/2 (XP 100; PB +2)\n\nTraits\n\n***Blood Frenzy.*** The sahuagin has [Advantage](/sources/dnd/free-rules/rules-glossary#Advantage) on attack rolls against any creature that doesn’t have all its Hit Points.\n\n***Limited Amphibiousness.*** The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.\n\n***Shark Telepathy.*** The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy.\n\nActions\n\n***Multiattack.*** The sahuagin makes two Claw attacks.\n\n***Claw.** Melee Attack Roll:* +3, reach 5 ft. *Hit:* 4 (1d6 + 1) Slashing damage.\n\nBonus Actions\n\n***Aquatic Charge.*** The sahuagin swims up to its Swim Speed straight toward an enemy it can see.\n\n## Comments\n\n* [DovDragon2011](/members/DovDragon2011)\n\n   \n\n  [![DovDragon2011's avatar](https://secure.gravatar.com/avatar/4bc06b666a611ccdd9512ddee8454a08?d=https://www.dndbeyond.com/attachments/thumbnails/0/14/240/160/avatar_2.png&s=55)](/members/DovDragon2011)\n\n  + Evoker\n  + Join Date:  8/30/2020\n  + Posts:  103\n  + Member Details\n\n  [#1](?comment=1)   [DovDragon2011](/members/DovDragon2011)\n  + [View User Profile](/members/DovDragon2011)\n  + [Send Message](/private-messages/send?recipient=DovDragon2011) Posted Feb 20, 2025\n\n  Now a literal \"sea devil\".\n\n  Rollback Post to Revision RollBack\n* [Healn15](/members/Healn15)\n\n   \n\n  [![Healn15's avatar](https://www.dndbeyond.com/avatars/thumbnails/45888/884/55/55/638686910093304780.jpeg)](/members/Healn15)\n\n  + Veteran\n  + Join Date:  1/26/2022\n  + Post",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-9.json",
+          "url_title_content_coherent": true
+        },
+        {
+          "url": "https://www.themonstersknow.com/sahuagin-tactics",
+          "title": "Sahuagin Tactics - The Monsters Know What They’re Doing",
+          "status": "verified",
+          "claim": "Interprétation géographique et tactique d’Ammann.",
+          "evidence": "**Sahuagin** are fierce, amphibious fish-men that live underwater but emerge periodically to raid coastal settlements. Although the *Monster Manual* says they “dwell in the deepest trenches of the ocean,” that’s a bit far for even a creature with a 40-foot swimming speed. Those ocean trenches are as far from the coasts as the highest mountains are, and you don’t often hear about the yeti of the Himalayas spending an afternoon staging a raid on Kolkata, or the Tatzelwürmer of the Alps popping down to Genoa for some late-night ravaging. These are distances of hundreds of miles we’re talking about. So chances are, any sahuagin that player characters encounter are going to be denizens of shallower depths. Maybe they’re the border reivers of the ocean kingdom.\n\nWhen they come ashore to raid, they do so at night, as implied by their 120 feet of darkvision. They can’t come far inland, since their Limited Amphibiousness gives them only four hours of air breathing before they have to return to the water. Unlike, say, [merrows](http://www.themonstersknow.com/merrow-tactics/), sahuagin can move about on land as easily as any other humanoid.\n\nIn this environment, they’re basic brutes. Their Multiattack gives them one weapon or claw attack and one bite attack. Since their armor class doesn’t include a shield, we can presume that they wield their spears two-handed for the greater damage.\n\nBecause their Blood Frenzy feature gives them advantage on attacks against any opponent who’s taken damage already, they’ll press this advantage, continuing to attack any enemy they’ve bloodied rather than switch targets, even for opportunistic reasons.\n\nHowever, sahuagin are not dumb. In fact, their Intelligence and Wisdom are higher than those of the average humanoid. They’ll attack with discipline, in cohesive units, perhaps even splitting up to flank or encircle a group of enemies. And they’ll",
+          "evidence_file": "tmp/editorial/relecture-ancien-05/source-10.json",
+          "url_title_content_coherent": true
+        }
+      ],
+      "assessment": "Attributions structurantes vérifiées. Révisions de destinataire/registre uniquement ; aucune fausse origine folklorique démontrée. Préserver les conventions fantasy et les silences documentaires."
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "redcap",
+      "revenant",
+      "roc",
+      "rodeur",
+      "rokurokubi",
+      "runiste",
+      "rusalka",
+      "sahuagin"
+    ],
+    "reviewed": [
+      "redcap",
+      "revenant",
+      "roc",
+      "rodeur",
+      "rokurokubi",
+      "runiste",
+      "rusalka",
+      "sahuagin"
+    ],
+    "expected_count": 8,
+    "reviewed_count": 8,
+    "pass_count": 2,
+    "revise_count": 6,
+    "missing": [],
+    "all_notices_read_entirely": true,
+    "all_raw_sha256_unchanged": true
+  },
+  "method": "Lecture entière des huit JSON, charte, skills éditoriaux et Tyrannœil. Sources relues en vérifiant URL/titre/corps. Caches batch-08/d consultés pour Hearn et aptitudes Ranger, sources web indépendantes pour les attributions clés. Les rapports des rédacteurs ne valent pas preuve.",
+  "scope": "Aucune notice ni état Git modifié ; seuls rapport et extraits dédiés écrits.",
+  "limitations": [
+    "Contrôle des attributions clés, pas inventaire exhaustif de toutes les traditions.",
+    "Newburgh initialement tronqué : chapitres 22–24 ensuite effectivement lus dans le contenu web complet.",
+    "bs4 absent ; recours aux extractions web, sans installation."
+  ]
+}

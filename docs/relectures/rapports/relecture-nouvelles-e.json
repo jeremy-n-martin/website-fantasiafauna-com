@@ -1,0 +1,214 @@
+{
+  "reviewed": [
+    {
+      "slug": "baba-yaga",
+      "verdict": "pass",
+      "sha256": "d18a13692edcb1f5678a90b629a25e14bc7c0e81cfbd0fc3145130c4a84572e7",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Baba_Yaga",
+          "consulted": "tmp/editorial/reprise-w10/source-1.txt, lignes 150–178",
+          "checked": "Attributs corporels, cabane tournante, trois sœurs de La Fille-tsar, odorat, rivière de feu et étymologie.",
+          "result": "Concordance ; les rôles et les variantes restent distincts, aucune origine divine affirmée."
+        },
+        {
+          "source_id": 6,
+          "url": "https://www.gutenberg.org/files/22373/22373-h/22373-h.htm",
+          "consulted": "tmp/editorial/reprise-w10/ralston-conte.txt, lignes 5–163",
+          "checked": "Poupée maternelle, extinction commandée par la marâtre, cavaliers, clôture, nourriture, tri, mains, bénédiction et don du crâne.",
+          "result": "Récit correctement situé chez Ralston. Le résumé des tâches condense leur répartition : la poupée laisse notamment la cuisine à Vasilissa (ligne 95), sans modifier le rôle de cette aide dans la délivrance.",
+          "evidence": "That was my dark Night; they are all trusty servants of mine."
+        }
+      ],
+      "scope": "full_independent_editorial_and_documentary_review",
+      "read_entire_notice": true,
+      "style_check": "Présence domestique précise, récit développé, aucun remplissage zoologique. Quelques phrases interprétatives sur le travail et la maison restent lisibles comme commentaire, non comme conte retrouvé.",
+      "sha256_before": "d18a13692edcb1f5678a90b629a25e14bc7c0e81cfbd0fc3145130c4a84572e7",
+      "sha256_after": "d18a13692edcb1f5678a90b629a25e14bc7c0e81cfbd0fc3145130c4a84572e7",
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "baku",
+      "verdict": "pass",
+      "sha256": "e6e6985303f6469fc310b537fd8c5c3830abbf82127b1bacb5d2f461456e7bb0",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Baku_(mythology)",
+          "consulted": "tmp/editorial/reprise-w10/source-2.txt, lignes 90–102",
+          "checked": "Mo chinois, Muromachi, Sankai Ibutsu, image de 1791, invocation, tapir, talismans, faim des espoirs et origine par assemblage.",
+          "result": "Concordance avec la synthèse. La faim des espoirs et le récit des fragments sont prudemment attribués aux présentations modernes ; ils ne sont pas projetés dans le manuscrit ancien."
+        },
+        {
+          "source_id": 7,
+          "url": "https://collections.lacma.org/node/192199",
+          "consulted": "Consultation directe web_extract de la page LACMA ; cache lacma.txt également lu.",
+          "checked": "Titre, XVIIIe siècle, collection Raymond et Frances Bushell.",
+          "result": "Confirmés directement ; le cache local est une seule phrase et ne suffisait pas à documenter un objet au-delà de ces métadonnées.",
+          "evidence": "Unknown, Baku: Monster that Eats Nightmares, 18th century, Los Angeles County Museum of Art, Raymond and Frances Bushell Collection"
+        }
+      ],
+      "scope": "full_independent_editorial_and_documentary_review",
+      "read_entire_notice": true,
+      "style_check": "Texte cohérent et distinctif, mais la peur devenue repas et le soulagement sont reformulés dans plusieurs rubriques ; allègement possible, non bloquant. Les absences biologiques sont bornées aux témoignages consultés.",
+      "sha256_before": "e6e6985303f6469fc310b537fd8c5c3830abbf82127b1bacb5d2f461456e7bb0",
+      "sha256_after": "e6e6985303f6469fc310b537fd8c5c3830abbf82127b1bacb5d2f461456e7bb0",
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "balor",
+      "verdict": "pass",
+      "sha256": "edba79e1bb98fd0ed9523c4361a4333109c51722a356c9bbc3ade5e41dda1142",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://celt.ucc.ie/published/T300010.html",
+          "consulted": "tmp/editorial/reprise-w10/cath-maige-tuired.txt, lignes 210, 327 et 550–559",
+          "checked": "Généalogie Ethne/Cían/Lug, commandement, morts de Núadu/Macha, quatre hommes et anneau, mixture des druides, fronde et corps écrasant les Fomoire.",
+          "result": "Tous les faits structurants contrôlés concordent. Le corps écrasant des guerriers est bien dans Gray, pas une addition moderne.",
+          "evidence": "Four men would raise the lid of the eye by a polished ring in its lid."
+        },
+        {
+          "source_id": 5,
+          "url": "https://www.dndbeyond.com/monsters/16797-balor",
+          "consulted": "tmp/editorial/reprise-w10/source-5.txt, lignes 24–43",
+          "checked": "Basic Rules 2014 : aura/contact, armes magiques, épée-foudre, fouet-feu/traction, téléportation visible et inoccupée, explosion et destruction des armes.",
+          "result": "Concordance. Aucun regard du géant transféré au démon ; généalogie irlandaise non utilisée comme reproduction du monstre. Les tactiques sont explicitement une lecture de ses facultés. Les commentaires de joueurs ne sont pas traités comme règles officielles.",
+          "evidence": "The explosion ignites flammable objects in that area that aren’t being worn or carried, and it destroys the balor’s weapons."
+        }
+      ],
+      "scope": "full_independent_editorial_and_documentary_review",
+      "read_entire_notice": true,
+      "style_check": "Distinction des deux corpus solide. Répétitions du couple fouet/épée et de la séparation irlandais/ludique, notamment dans les dernières rubriques, non bloquantes ; aucune fusion documentaire.",
+      "sha256_before": "edba79e1bb98fd0ed9523c4361a4333109c51722a356c9bbc3ade5e41dda1142",
+      "sha256_after": "edba79e1bb98fd0ed9523c4361a4333109c51722a356c9bbc3ade5e41dda1142",
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "banshee",
+      "verdict": "pass",
+      "sha256": "abb1fe38ee062abad5e532ef53420db94291fd1200f0227a5a0a419334dd6a9a",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 4,
+          "url": "https://en.wikipedia.org/wiki/Banshee",
+          "consulted": "tmp/editorial/reprise-w10/source-4.txt, lignes 121–165",
+          "checked": "Bean sí, lamentation, Wilde/Fanshawe/O’Brien, décès lointain ou imminent, peigne, lignées, Leinster, origines alternatives et bean nighe.",
+          "result": "Concordance avec la synthèse réellement citée. Les textes historiques sont rapportés par son intermédiaire, ce qui est annoncé pour Wilde. Le verre brisé est localisé au Leinster, les ascendances sont des croyances situées et la lavandière écossaise reste un rapprochement, non une identité.",
+          "evidence": "She would sing it when a family member died or was about to die, even if the person had died far away and news of their death had not yet come."
+        }
+      ],
+      "scope": "full_independent_editorial_and_documentary_review",
+      "read_entire_notice": true,
+      "style_check": "Voix adulte et familiale, détails localisés. Quelques reprises du motif de la nouvelle reçue en avance ; pas de biologie inventée ni de cri létal présenté comme définition universelle.",
+      "sha256_before": "abb1fe38ee062abad5e532ef53420db94291fd1200f0227a5a0a419334dd6a9a",
+      "sha256_after": "abb1fe38ee062abad5e532ef53420db94291fd1200f0227a5a0a419334dd6a9a",
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "amphiptere",
+      "verdict": "pass",
+      "sha256": "c8ba0dff6ed80501919d5057374219ab64adebeb2c7ca2811caea5d7489805f9",
+      "issues": [],
+      "source_checks": [
+        {
+          "consulted": "tmp/editorial/relecture-nouvelles-a.json ; tmp/editorial/corrections-nouvelles.json ; diff HEAD du fichier concerné avec contexte",
+          "checked": "Attributions conservées et conformité des seules corrections aux recherches déjà validées.",
+          "result": "Aucune recherche ancienne refaite. Les modifications journalisées reproduisent exactement les octets courants et la base HEAD possède l’empreinte validée dans la revue A."
+        }
+      ],
+      "scope": "targeted_correction_diff_against_HEAD_and_prior_review",
+      "read_entire_notice": false,
+      "style_check": "Les trois coupes réduisent les justifications éditoriales sans supprimer la distinction armoiries/récits antiques ni inventer un régime. « Le dessin héraldique retient de lui » a un antécédent un peu flottant après Hérodote ; préférer éventuellement « Le dessin héraldique retient la courbe du serpent… ». Non bloquant car l’ouverture parle d’autres serpents ailés et le lead maintient explicitement les corpus distincts.",
+      "correction_checks": {
+        "head_sha256": "83a3b044082fda931db4ddb0f3be96868c25e1f495c135794d826653efec64fe",
+        "prior_review_sha256": "83a3b044082fda931db4ddb0f3be96868c25e1f495c135794d826653efec64fe",
+        "log_before_sha256": "83a3b044082fda931db4ddb0f3be96868c25e1f495c135794d826653efec64fe",
+        "log_after_sha256": "c8ba0dff6ed80501919d5057374219ab64adebeb2c7ca2811caea5d7489805f9",
+        "head_matches_prior_and_log": true,
+        "current_matches_log_after": true,
+        "logged_changes_reproduce_current_bytes": true,
+        "replacement_occurrences": [
+          1,
+          1,
+          1
+        ],
+        "logged_change_count": 3
+      },
+      "sha256_before": "c8ba0dff6ed80501919d5057374219ab64adebeb2c7ca2811caea5d7489805f9",
+      "sha256_after": "c8ba0dff6ed80501919d5057374219ab64adebeb2c7ca2811caea5d7489805f9",
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "amphisbene",
+      "verdict": "pass",
+      "sha256": "d745baa55cda53a8996e6e6e7b22ff6bada14de7c6146ce19b417cef26fe2846",
+      "issues": [],
+      "source_checks": [
+        {
+          "consulted": "tmp/editorial/relecture-nouvelles-a.json ; tmp/editorial/corrections-nouvelles.json ; diff HEAD du fichier concerné avec contexte",
+          "checked": "Attributions conservées et conformité des seules corrections aux recherches déjà validées.",
+          "result": "Aucune recherche ancienne refaite. Les modifications journalisées reproduisent exactement les octets courants et la base HEAD possède l’empreinte validée dans la revue A."
+        }
+      ],
+      "scope": "targeted_correction_diff_against_HEAD_and_prior_review",
+      "read_entire_notice": false,
+      "style_check": "La substitution remplace une interdiction de méthode par une attribution positive précise. La séparation du serpent double et de l’animal quadribouche demeure nette ; aucune généralisation du sang réparateur.",
+      "correction_checks": {
+        "head_sha256": "93bfd92d25617f96717342965969611b46f31f12e300dd80644e1be46d139da7",
+        "prior_review_sha256": "93bfd92d25617f96717342965969611b46f31f12e300dd80644e1be46d139da7",
+        "log_before_sha256": "93bfd92d25617f96717342965969611b46f31f12e300dd80644e1be46d139da7",
+        "log_after_sha256": "d745baa55cda53a8996e6e6e7b22ff6bada14de7c6146ce19b417cef26fe2846",
+        "head_matches_prior_and_log": true,
+        "current_matches_log_after": true,
+        "logged_changes_reproduce_current_bytes": true,
+        "replacement_occurrences": [
+          1
+        ],
+        "logged_change_count": 1
+      },
+      "sha256_before": "d745baa55cda53a8996e6e6e7b22ff6bada14de7c6146ce19b417cef26fe2846",
+      "sha256_after": "d745baa55cda53a8996e6e6e7b22ff6bada14de7c6146ce19b417cef26fe2846",
+      "unchanged_since_review_start": true
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "baba-yaga",
+      "baku",
+      "balor",
+      "banshee",
+      "amphiptere",
+      "amphisbene"
+    ],
+    "reviewed_count": 6,
+    "full_review_count": 4,
+    "targeted_review_count": 2,
+    "pass_count": 6,
+    "revise_count": 0,
+    "missing": [],
+    "head": "d936d002bf57a66af97fc966cecebf831ce3a83f",
+    "all_unchanged_during_review": true,
+    "hash_algorithm": "SHA-256 des octets bruts des fichiers ; git show HEAD pour les bases des corrections",
+    "hash_comparison": "Empreintes effectivement calculées avant et après les lectures ; comparaison aux deux bornes, pas surveillance continue.",
+    "all_have_five_sections_and_six_natural_parts": true,
+    "all_citation_ids_resolved": true,
+    "source_policy": "Charte, Tyrannœil, skills éditoriaux et ledger w10 lus ; extraits utiles réellement relus ; confirmation directe des métadonnées LACMA. Les notices nouvelles ont été lues intégralement ; pour les deux anciennes, lecture du diff et de son contexte uniquement.",
+    "documentary_limitations": [
+      "Banshee repose sur la synthèse Wikipedia citée, non sur une consultation indépendante de chaque livre historique.",
+      "Histoire du baku contrôlée dans la synthèse secondaire et métadonnées LACMA ; manuscrit Sankai Ibutsu non consulté directement.",
+      "Contrôle documentaire et rédactionnel, sans rendu navigateur ni test de clic des citations."
+    ],
+    "overall_findings": "Quatre notices nouvelles recevables ; deux corrections recevables dans leur périmètre ciblé. Aucun mélange Balor irlandais/démon D&D ni transfert du sang réparateur de Diodore au serpent double. Réserves stylistiques non bloquantes détaillées par notice.",
+    "writes": [
+      "tmp/editorial/relecture-nouvelles-e.json"
+    ],
+    "notices_modified": false,
+    "git_modified": false
+  }
+}

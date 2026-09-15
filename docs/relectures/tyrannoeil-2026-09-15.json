@@ -1,0 +1,85 @@
+{
+  "slug": "tyrannoeil",
+  "verdict": "pass",
+  "reviewer": "coordinateur (session website-fantasia)",
+  "date": "2026-09-15",
+  "scope": "relecture documentaire et stylistique complète, sources ouvertes pendant la relecture",
+  "sha256": "431582518c10883035338f6b0247fe98188264f0bc7c24c3ba30dbdf0776446d",
+  "canonical_digest": "0903fdb00c8a6013dbe1c631b70442e67118a369d3d46974637f186172dafbbf",
+  "issues": [
+    {
+      "severity": "minor",
+      "blocking": false,
+      "location": "sections.anomalies[2]",
+      "quote": "les rayons des pédoncules cessent eux-mêmes d'agir à l'intérieur de ce cône",
+      "detail": "La source [6] décrit le rayon d'antimagie comme un cône de 140 pieds et note que l'articulation entre l'œil central et les pédoncules est « peu claire » dans le texte d'origine. La notice présente comme établie une règle que la source déclare confuse. Non bloquant : la formulation reste dans le registre du jeu et n'attribue rien au folklore."
+    }
+  ],
+  "source_checks": [
+    {
+      "source_id": 1,
+      "url": "https://en.wikipedia.org/wiki/Beholder_(Dungeons_%26_Dragons)",
+      "status": "verified",
+      "claims_checked": "Greyhawk (1975) comme première apparition, dix pédoncules oculaires, « Sphere of Many Eyes » / « Eye Tyrant ».",
+      "evidence": "The beholder was introduced with the first Dungeons & Dragons supplement, Greyhawk (1975) ... a levitating globe with ten magical eye stalks."
+    },
+    {
+      "source_id": 2,
+      "url": "https://celt.ucc.ie/published/T300010.html",
+      "status": "verified",
+      "claims_checked": "Quatre hommes soulèvent la paupière de Balor ; l'armée qui regarde son œil n'offre plus de résistance.",
+      "evidence": "Four men would raise the lid of the eye by a polished ring in its lid. The host which looked at that eye, even if they were many thousands in number, would offer no resistance to warriors."
+    },
+    {
+      "source_id": 3,
+      "url": "https://www.theoi.com/Gigante/GiganteArgosPanoptes.html",
+      "status": "verified",
+      "claims_checked": "Argos aux cent yeux, dont une partie reste toujours éveillée.",
+      "evidence": "He derived his surname, Panoptes, the all-seeing, from his possessing a hundred eyes, some of which were always awake."
+    },
+    {
+      "source_id": 4,
+      "url": "https://ebible.org/fraLSG/EZK01.htm",
+      "status": "verified",
+      "claims_checked": "Vision d'Ézéchiel 1 au bord du fleuve Kebar ; roues remplies d'yeux (1,18).",
+      "evidence": "Il a une vision de la gloire de Dieu sur les rives du fleuve Kebar (1:1-3, 15)."
+    },
+    {
+      "source_id": 5,
+      "url": "https://saintebible.com/ezekiel/10-12.htm",
+      "status": "verified",
+      "claims_checked": "Ézéchiel 10,12 : corps, dos, mains, ailes des chérubins et roues remplis d'yeux.",
+      "evidence": "Tout le corps des chérubins, leur dos, leurs mains, et leurs ailes, étaient remplis d'yeux, aussi bien que les roues tout autour, les quatre roues."
+    },
+    {
+      "source_id": 6,
+      "url": "https://dumpstatadventures.com/blog/deep-dive-the-beholder",
+      "status": "verified",
+      "claims_checked": "Création attribuée à la famille Kuntz et à Gygax ; dix rayons distincts ; écologie de 1983 (Dragon #76) : cône d'antimagie, omnivorie et chair humaine, ponte d'œufs rejetés par la bouche.",
+      "evidence": "Beholders are asexual and lay 1-4 eggs per year ... they vomit the foot-long eggs out of their mouths. ... Beholders eat a massive amount and are omnivores. Human flesh is one of their favorites."
+    },
+    {
+      "source_id": 7,
+      "url": "https://www.dndbeyond.com/compendium/cyclopedia/vgtm/beholders",
+      "status": "verified",
+      "claims_checked": "Reproduction par le rêve, petits yeux ouverts pendant le sommeil, autosatisfaction exclusive, rivaux de son espèce, visiteurs classés entre nourriture, montures et serviteurs.",
+      "evidence": "on extremely rare occasions when a beholder dreams of another beholder, the act creates a warp in reality ... Even when it sleeps, its smaller eyes remain open, scanning its lair for threats."
+    },
+    {
+      "source_id": 8,
+      "url": "https://prm.web.ox.ac.uk/files/amuletspdf",
+      "status": "verified",
+      "claims_checked": "Perles bleues au cou d'un âne, main d'argent gravée d'hébreu, main de Fatima.",
+      "evidence": "This amulet consists of a string of blue beads ... It was hung around the neck of a donkey, and would have been used to protect it, as animals could also sometimes be victims of the Evil Eye."
+    },
+    {
+      "source_id": 9,
+      "url": "https://www.metmuseum.org/essays/medusa-in-ancient-greek-art",
+      "status": "verified",
+      "claims_checked": "Pétrification par le regard et lecture apotropaïque de Méduse.",
+      "evidence": "Medusa is best known for having hair made of snakes and for her ability to turn anyone she looked at to stone, literally to petrify."
+    }
+  ],
+  "style_check": "Voix tenue, aucun conseil adressé à un auteur ou à un meneur de jeu, aucune série de négations. L'écart entre folklore ancien et création de jeu est explicitement posé, et le passage d'histoire naturelle annonce sa nature d'écologie de fiction.",
+  "limitation": "Contrôle documentaire par les sources déclarées dans la notice, non par les éditions originales des suppléments de jeu."
+}

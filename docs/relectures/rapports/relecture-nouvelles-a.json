@@ -1,0 +1,344 @@
+{
+  "reviewed": [
+    {
+      "slug": "acolyte",
+      "verdict": "pass",
+      "sha256": "3058e2bb1adf14308b8c158cd458aa511f4b7f2327e59021f9ebc97efed6591b",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.ceremoniaire.net/depuis1969/docs/ministeria_quae.html",
+          "consulted": "tmp/editorial/reprise-w1/extractions.json",
+          "checked": "Sections I–IV, VI–IX et XI : ministères laïcs, service de l’autel, communion extraordinaire, exposition sans bénédiction, admission et institution.",
+          "result": "L’acolytat est correctement distingué des autres ordres mineurs et du sacerdoce."
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.vatican.va/content/francesco/fr/letters/2021/documents/papa-francesco_20210110_lettera-donne-lettorato-accolitato.html",
+          "consulted": "tmp/editorial/reprise-w1/extractions.json",
+          "checked": "Lettre du 10 janvier 2021 : baptême/confirmation, ministères institués, ouverture aux femmes et critères des conférences épiscopales.",
+          "result": "Attributions structurantes confirmées ; la lettre explique la réforme plutôt que de constituer à elle seule son instrument canonique."
+        }
+      ],
+      "style_check": "Quelques phrases abstraites sur le service et la reconnaissance, mais gestes concrets et statut humain bien maintenus ; aucun conseil aux auteurs.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "aitvaras",
+      "verdict": "pass",
+      "sha256": "90c7ea5cd68d8d42be4f4222e0f37cae213aa1f166b0c6bca218663c953168ba",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.vle.lt/straipsnis/aitvaras",
+          "consulted": "tmp/editorial/reprise-w1/extractions.json",
+          "checked": "« Rytų ir vakarų aukštaičių » ; « maitinamas kiaušiniene, kukuliais, gaidžių skiauterėmis » ; « 9 ar 12 metų gaidys » ; « bernas tyčia suvalgo ... sudegina ».",
+          "result": "Noms régionaux, offrandes, œuf extraordinaire, acquisition, vol de biens et valet incendiaire confirmés dans le texte lituanien. Le motif du verrat est bien présent (« iš kuilio kiaušinio »), laissé entre guillemets dans la notice ; il ne s’agit pas d’une reproduction zoologique inventée."
+        }
+      ],
+      "style_check": "Foyer, provisions, voisinage et valet donnent une présence singulière. Point lexical secondaire restant prudent : bitinas rendu par « bourdon » pourrait appeler « faux-bourdon » ; recherche lexicale complémentaire non concluante, donc non traité comme faute établie.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "alchimiste",
+      "verdict": "pass",
+      "sha256": "7424789fdcf550a7c7d69045d1451edf6b70714284605608a6368577bd3a1410",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 4,
+          "url": "https://www.sciencehistory.org/stories/magazine/the-secrets-of-alchemy",
+          "consulted": "tmp/editorial/reprise-w1/extractions.json",
+          "checked": "Passages Zosimos, John of Rupescissa et Tiffereau : « probably in the third century AD », « active around 300 AD », « Book of Light, written about 1350 ».",
+          "result": "Chronologie, Marie/bain-marie, Théosébie possiblement littéraire, impureté de sel, quintessence du vin et échec de reproduction des résultats de Tiffereau confirmés."
+        },
+        {
+          "source_id": 5,
+          "url": "https://www.sciencehistory.org/stories/magazine/alchemists-unite",
+          "consulted": "tmp/editorial/reprise-w1/extractions.json",
+          "checked": "« throughout Boyle’s lifetime, the terms chemistry and alchemy ... were basically synonymous » ; titre de 1661 en lettres rouges.",
+          "result": "La continuité avec Boyle et la réinterprétation ultérieure de son livre sont fidèles à Voelkel."
+        }
+      ],
+      "style_check": "Bonne prose d’histoire des savoirs, précise sans promesse de magie authentifiée. Pas de conseil de pratique dangereuse.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "alerion",
+      "verdict": "pass",
+      "sha256": "2edf6d690f0e822d5ef43e5bfc680fabd468d32e5a391634d6fa5736e51cc270",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://bestiary.ca/beasts/beast4798.htm",
+          "consulted": "tmp/editorial/reprise-w2/retrieval.json",
+          "checked": "« the female lays two eggs, which take sixty days to hatch » ; « the parents ... fly to the sea, plunge in, and drown ».",
+          "result": "Cycle 60 ans/60 jours, couple unique, ailes tranchantes, couleur de feu et oiseaux nourriciers confirmés ; ce cycle est attesté, non inventé pour remplir la biologie."
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.sothebys.com/en/auctions/ecatalogue/2007/western-and-oriental-manuscripts-l07241/lot.53.html",
+          "consulted": "tmp/editorial/reprise-w2/retrieval.json",
+          "checked": "Catalogue : manuscrit « probably c.1285 » ; dépendance possible de l’Image du Monde achevé en 1246 ; folio 12v « The Alerion (aleryous) ».",
+          "result": "Attribution prudente à Pierre justifiée ; noyade et oiseaux nourriciers confirmés dans la description du folio 12v. Le milieu tronqué du cache a été effectivement lu dans le fichier complet.",
+          "supplementary_read": "C:/Users/ynphe/AppData/Local/hermes/profiles/website-fantasia/cache/web/www.sothebys.com-ac96ef0371.md, ligne 137 et contexte"
+        },
+        {
+          "source_id": 8,
+          "url": "https://www.dictionnaire-academie.fr/article/A9A1130",
+          "consulted": "tmp/editorial/reprise-w2/complements.json",
+          "checked": "« Petite aigle ... avec les ailes abaissées et sans bec ni pattes » ; ancien bas francique *adhalarjo.",
+          "result": "Définition héraldique et étymologie confirmées, correctement séparées du bestiaire."
+        }
+      ],
+      "style_check": "Cycle très présent, parfois répété entre légendes et histoire naturelle ; les réserves sur une carte ou des proies inventées sont un peu démonstratives, sans invalider la notice.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "alp",
+      "verdict": "pass",
+      "sha256": "dc309bf3a2b6d2e60ea3eb5f222876aec589d0aa4bffd9e2a8c7ec59ed059013",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 5,
+          "url": "https://sites.pitt.edu/~dash/nightmare.html",
+          "consulted": "tmp/editorial/reprise-w2/primary.json",
+          "checked": "Grimm 1816, Köhler 1886, Baader 1851 et Kuhn 1859 : barque, serrure, café à Zwickau, femme-chat de Bühl, trois enfants, peigne à lin et charme trinitaire.",
+          "result": "Récits et localisations vérifiés dans les traductions publiées par Ashliman ; variantes non fusionnées. Les enfants sont effectivement présents, pas une reproduction plaquée."
+        },
+        {
+          "source_id": 3,
+          "url": "https://en.wikipedia.org/wiki/Alp_(folklore)",
+          "consulted": "tmp/editorial/reprise-w2/retrieval.json",
+          "checked": "La page rapproche les attaques de « sleep apnea and sleep paralysis ».",
+          "result": "Rapprochement moderne confirmé dans la source secondaire et justement présenté sans diagnostic individuel."
+        }
+      ],
+      "style_check": "Récits concrets et localisés, rythme varié. Les réserves médicales sont utiles et non du remplissage.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "amarok",
+      "verdict": "pass",
+      "sha256": "5308b4f09a7afe3e59b9cf08d5d77d35e326a2c061bf1957e58276dbd26cd10b",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 6,
+          "url": "https://sacred-texts.com/nam/inu/tte/tte2-132.htm",
+          "consulted": "tmp/editorial/reprise-w2/primary.json",
+          "checked": "« holding a whole reindeer between its jaws » ; « taken the soul out of his body ».",
+          "result": "Fjord de Nook, meurtre des petits, caverne, lac et prélèvement de l’âme confirmés. Le texte ne fixe pas explicitement le sexe de l’adulte."
+        },
+        {
+          "source_id": 7,
+          "url": "https://sacred-texts.com/nam/inu/tte/tte2-001.htm",
+          "consulted": "tmp/editorial/reprise-w2/complements.json",
+          "checked": "« constructed from nine different copies » ; « seal-bones, like small toys » ; « Only the poor people who had been kind to him he spared ».",
+          "result": "Origines groenlandaises/Labrador, extraction des os, entraînement, trois ours, vengeance et remarque du narrateur sur les collectionneurs vérifiés. Bonne fidélité à la violence du conte."
+        }
+      ],
+      "style_check": "Deux récits distincts gardent leur vigueur ; le refus de projeter une biologie universelle est motivé par le corpus.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "amphiptere",
+      "verdict": "pass",
+      "sha256": "83a3b044082fda931db4ddb0f3be96868c25e1f495c135794d826653efec64fe",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Amphiptere",
+          "consulted": "tmp/editorial/reprise-w3/research.json",
+          "checked": "Définition « type of winged serpent found in European heraldry » ; Potier, Tresmes, Gesvres ; Dragonology et Quetzalcóatl.",
+          "result": "Confirmé dans la synthèse citée ; celle-ci renvoie à Fox-Davies mais son ouvrage n’a pas été consulté directement durant cette revue. La réserve sur les descriptions anatomiques non sourcées est fondée."
+        },
+        {
+          "source_id": 6,
+          "url": "https://www.theoi.com/Thaumasios/OphiesPteretoi.html",
+          "consulted": "tmp/editorial/reprise-w3/research-extra.json",
+          "checked": "Hérodote II.75 et III.107–110 ; Élien II.38 et XVI.41.",
+          "result": "Ossements vus versus combats rapportés, encens/styrax, ibis, génération meurtrière et récit indien nocturne vérifiés. La chaîne ibis-serpents et la reproduction violente sont bien attestées dans ces textes, et non une biologie inventée de l’amphiptère héraldique."
+        }
+      ],
+      "style_check": "Tendance à répéter « ne permet pas », « ne constitue pas », « sans… attribuer » dans plusieurs rubriques. Allègement conseillé, non bloquant : conserver les distinctions une fois posées sans transformer chaque paragraphe en justification éditoriale.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "amphisbene",
+      "verdict": "pass",
+      "sha256": "93bfd92d25617f96717342965969611b46f31f12e300dd80644e1be46d139da7",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.theoi.com/Thaumasios/Amphisbainai.html",
+          "consulted": "tmp/editorial/reprise-w3/research.json",
+          "checked": "Eschyle Agamemnon 1232 ; Élien VIII.8 et IX.23 ; Pline VIII.85 ; Nonnos V.146 ; Diodore II.58.",
+          "result": "Deux extrémités actives, déplacements inversés, peau sur un bâton et collier d’Harmonie confirmés. La séparation entre serpent et animal insulaire quadribouche de Diodore corrige une confusion réelle possible. L’image Der Naturen Bloeme 1350 est bien légendée ainsi sur Theoi."
+        }
+      ],
+      "style_check": "Prose parfois plus proche du commentaire de méthode que du bestiaire, surtout « Garder cette séparation permet… » et répétition du dossier Diodore. Allègement conseillé, non bloquant ; ce ne sont pas des conseils explicites aux auteurs.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "ange",
+      "verdict": "revise",
+      "sha256": "9c11eaa59ab9d578db5d0cd9ba5f875a71dae3eb8f8e660c2e3d26735f1d50e9",
+      "issues": [
+        {
+          "id": "ANGE-01",
+          "severity": "minor",
+          "type": "attribution_textuelle",
+          "locations": [
+            "sections.anomalies[1]",
+            "sections.reliques[1]"
+          ],
+          "quotes": [
+            "Le chapitre final de Tobie",
+            "Le livre de Tobie se termine par une consigne très concrète"
+          ],
+          "problem": "Le départ de Raphaël et l’ordre de mise par écrit sont en Tb 12,19–22 ; le livre continue. Tb 14 rapporte notamment les morts de Tobith et de Tobie. Les deux formulations localisent donc à tort cet épisode au terme du livre.",
+          "requested_change": "Remplacer par « Au chapitre 12 de Tobie » et « Avant de quitter Tobie et son père, Raphaël… ».",
+          "evidence_url": "https://www.aelf.org/bible/Tb/14"
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://www.vatican.va/archive/FRA0013/__P1B.HTM",
+          "consulted": "tmp/editorial/reprise-w3/research.json",
+          "checked": "Catéchisme §§326–330, 335–336 et 350–352.",
+          "result": "Créatures spirituelles personnelles, intelligence/volonté, immortalité, création et liturgie confirmées ; attribution au catholicisme explicite."
+        },
+        {
+          "source_id": 4,
+          "url": "https://www.aelf.org/bible/Ap/12",
+          "consulted": "tmp/editorial/reprise-w3/research.json",
+          "checked": "Apocalypse 12, 7–17 : Michel, Dragon, anges et poursuite de la Femme.",
+          "result": "Combat spirituel rapporté fidèlement sans chaîne alimentaire."
+        },
+        {
+          "source_id": 5,
+          "url": "https://www.aelf.org/bible/Tb/12",
+          "consulted": "tmp/editorial/reprise-w3/research.json",
+          "checked": "Tobie 12, 12–22 : Raphaël, prières, guérison, repas apparent et mise par écrit.",
+          "result": "Épisode confirmé, mais ce chapitre n’est pas la fin du livre : voir issue ANGE-01 et contrôle direct de Tb 14."
+        },
+        {
+          "source_id": 7,
+          "url": "https://www.aelf.org/bible/Lc/1",
+          "consulted": "tmp/editorial/reprise-w3/research-extra.json",
+          "checked": "Luc 1, 8–38 et 59–64 : encens, Gabriel, annonces et mutisme.",
+          "result": "Les deux annonces et la scène de l’autel sont confirmées."
+        },
+        {
+          "source_id": 8,
+          "url": "https://www.aelf.org/bible/Lc/20",
+          "consulted": "Consultation directe web_extract de https://www.aelf.org/bible/Lc/20 ; cache initial rejeté (contenu étranger).",
+          "checked": "Contrôle direct AELF Luc 20, 34–36 : « ne prennent ni femme ni mari » ; « ils sont semblables aux anges ».",
+          "result": "Affirmation confirmée directement. Le cache luc20-verified.json et le ledger w3 sont contaminés par un contenu de Quran.com : ils ne pouvaient servir de preuve de Luc 20."
+        },
+        {
+          "source_id": 9,
+          "url": "https://quran.com/35/1",
+          "consulted": "tmp/editorial/reprise-w3/research-extra.json",
+          "checked": "Coran 35:1 : « جاعل الملايكة رسلا اولي اجنحة مثنى وثلاث ورباع ».",
+          "result": "Le texte arabe consulté mentionne messagers et ailes par deux, trois et quatre ; le repère islamique est séparé du portrait catholique."
+        }
+      ],
+      "style_check": "Ton respectueux des religions vivantes. Plusieurs précautions ont un caractère métadiscursif, mais répondent ici à un risque réel de mélange doctrinal.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "ankou",
+      "verdict": "pass",
+      "sha256": "68a6e23f6d1a7559c9970e5816c4b2c89bdae18c12a336040ed4917b00b6d54d",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://fr.wikipedia.org/wiki/Ankou",
+          "consulted": "tmp/editorial/reprise-w4/research.json",
+          "checked": "Portrait, faux tournée en dehors, tête-girouette, premier/dernier mort, Bag noz de Sein/Audierne, monts d’Arrée, iconographie.",
+          "result": "Motifs présents dans la synthèse consultée. Cornouaillais est utilisé au contexte breton, sans déplacement vers les Cornouailles anglaises."
+        },
+        {
+          "source_id": 2,
+          "url": "https://fr.wikisource.org/wiki/Page:Le_Braz_-_La_l%C3%A9gende_de_la_mort_en_Basse_Bretagne_1893.djvu/51",
+          "consulted": "tmp/editorial/reprise-w4/research2.json",
+          "checked": "« le dernier mort de l’année ... hérite pour un an de la charrette et de la faulx » ; fraudeurs et roues mal graissées.",
+          "result": "Les deux éléments sont présents à la vue 51. Le commentaire sur l’unification des Ankous est correctement présenté comme commentaire savant du volume, non comme parole d’un conteur."
+        }
+      ],
+      "style_check": "Détails matériels et chute de l’essieu réussis. Absence de biologie inventée ; la collecte d’âmes n’est pas confondue avec une consommation.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "anzu",
+      "verdict": "pass",
+      "sha256": "0cc130829ae6ef8671c66cad1cfb1029b661fac9a56c7ee077483a8687fbb42f",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "http://www.wedgepod.org/episode-7-dahlia-shehata-anzu-the-many-faces-of-a-monster-transcript",
+          "consulted": "tmp/editorial/reprise-w4/research2.json",
+          "checked": "Shehata 3:04, 7:50, 10:31, 12:05, 16:15, 17:34–26:44.",
+          "result": "Corps léonin/rapace, eau, vol de la tablette, flèches décomposées, ruse des plumes, versions de Suse/Nippur/Ur/Sultantepe, jeune Anzu et ailes en scie confirmés. Le milieu manquant du cache a été lu dans le fichier intégral. Les hypothèses de Shehata demeurent attribuées, et la notice n’en fait pas un récit pan-mésopotamien uniforme.",
+          "supplementary_read": "C:/Users/ynphe/AppData/Local/hermes/profiles/website-fantasia/cache/web/www.wedgepod.org-7c5fa12912.md, lignes 105–153"
+        }
+      ],
+      "style_check": "Entretien spécialisé exploité avec une attribution suivie. Quelques généralisations évocatrices sur ciel/plaine restent des images, non de nouvelles traditions prétendument attestées.",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "acolyte",
+      "aitvaras",
+      "alchimiste",
+      "alerion",
+      "alp",
+      "amarok",
+      "amphiptere",
+      "amphisbene",
+      "ange",
+      "ankou",
+      "anzu"
+    ],
+    "reviewed_count": 11,
+    "pass_count": 10,
+    "revise_count": 1,
+    "missing": [],
+    "all_notices_read_in_full": true,
+    "all_have_five_sections_and_six_natural_parts": true,
+    "hash_algorithm": "SHA-256 on original file bytes",
+    "hashes_computed_after_full_read": true,
+    "all_unchanged_during_review": true,
+    "verification_scope": "Empreintes comparées avant lecture et après lecture complète et contrôle documentaire. Aucune notice ni Git modifiés par le relecteur. Cette comparaison atteste un contenu identique aux deux bornes ; elle ne constitue pas une surveillance continue du système de fichiers.",
+    "source_policy": "Extraits sauvegardés et ledgers w1–w4 effectivement consultés ; passages tronqués utiles complétés depuis les fichiers intégraux. Contrôle direct de Luc 20, Tobie 14 et Medieval Bestiary. Les affirmations non contredites par le silence des traditions ne sont pas signalées comme erreurs.",
+    "documentary_limitations": [
+      "Le fichier luc20-verified.json contient Fâtir 35:1 malgré une URL AELF ; contrôle direct réussi, anomalie de dossier à réparer hors de ce rapport.",
+      "Les formes héraldiques de l’amphiptère sont contrôlées dans la synthèse citée, non dans l’ouvrage de Fox-Davies lui-même.",
+      "Le point lexical bitinas/bourdon reste non tranché ; il ne fonde pas le verdict."
+    ],
+    "overall_findings": "Aucune invention folklorique structurante ni chaîne biologique non attestée décelée dans le corpus consulté. Une correction textuelle certaine dans ange. Réserves stylistiques non bloquantes sur le métadiscours méthodologique récurrent, surtout amphiptere/amphisbene. Aucun conseil explicite aux auteurs."
+  }
+}

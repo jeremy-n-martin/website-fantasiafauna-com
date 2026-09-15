@@ -1,0 +1,675 @@
+{
+  "reviewed": [
+    {
+      "slug": "aarakocra",
+      "verdict": "pass",
+      "sha256": "ad550f1e938bf766a4171dcab58cd770a3292db14746c1667c5b959c3799ce32",
+      "sha256_end": "ad550f1e938bf766a4171dcab58cd770a3292db14746c1667c5b959c3799ce32",
+      "concurrent_change": false,
+      "initial_verdict": "revise",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Les trois consignes signalées ont disparu : plumage décrit dans son édition, alimentation positive, dragon et gargouilles présentés comme adversaires situés.",
+      "documentary_and_voice_review": "Les ajouts sur les langues écrites, les formes brèves des noms, les territoires de chasse élargis et l’apprentissage des usages sont présents dans la source officielle. Les images du nid et du vol illustrent ces motifs sans inventer un conte.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 1,
+          "url": "https://www.dndbeyond.com/species/4-aarakocra"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.fascination[0]",
+        ".sections.legendes[0]",
+        ".sections.legendes[1]",
+        ".sections.legendes[2]",
+        ".sections.anomalies[0]",
+        ".sections.naturelle.lead",
+        ".sections.naturelle.parts[0].body[0]",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[3].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sections.reliques[0]",
+        ".sections.reliques[1]",
+        ".sources[0].title"
+      ]
+    },
+    {
+      "slug": "aasimar",
+      "verdict": "pass",
+      "sha256": "e54cffb0b085ca7a82867fe15cf7bcdc87845a2ce00ec28797ebb25a5bf4d4cc",
+      "sha256_end": "e54cffb0b085ca7a82867fe15cf7bcdc87845a2ce00ec28797ebb25a5bf4d4cc",
+      "concurrent_change": false,
+      "initial_verdict": "revise",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Les injonctions de Légendes, Comportement, Habitat et Reproduction sont remplacées par les gestes du mortel et les limites de ses dons.",
+      "documentary_and_voice_review": "Guérison une fois par repos long, révélation au niveau trois pendant une minute, langues indépendantes et caractéristiques liées à l’historique concordent. La voix garde parfois un vocabulaire analytique, mais ne prescrit plus une écriture ni une généalogie fictive.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 2,
+          "url": "https://www.wargamer.com/dnd/aasimar"
+        },
+        {
+          "id": 3,
+          "url": "https://www.dndbeyond.com/posts/1783-the-10-species-in-the-2024-players-handbook"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".description",
+        ".sections.fascination[0]",
+        ".sections.fascination[1]",
+        ".sections.legendes[0]",
+        ".sections.legendes[3]",
+        ".sections.anomalies[0]",
+        ".sections.anomalies[1]",
+        ".sections.anomalies[2]",
+        ".sections.naturelle.lead",
+        ".sections.naturelle.parts[0].body[0]",
+        ".sections.naturelle.parts[1].body[0]",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[3].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sections.reliques[0]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "aboleth",
+      "verdict": "pass",
+      "sha256": "290b9d1887a7fb57f551407c7ff06a21f204b345188df61534543f20180ef4a4",
+      "sha256_end": "290b9d1887a7fb57f551407c7ff06a21f204b345188df61534543f20180ef4a4",
+      "concurrent_change": false,
+      "initial_verdict": "revise",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Les jugements sur l’intérêt narratif du monstre et les consignes au récit sont supprimés ; les seuils d’acquisition des souvenirs et le retour du même individu sont explicites.",
+      "documentary_and_voice_review": "Consume Memories exige une cible charmée ou saisie et zéro PV pour acquérir les souvenirs d’un humanoïde. Psychic Drain restaure le monstre. Les maladies de 2014 et la malédiction de 2025 restent distinctes ; la fin du charme ne promet pas la guérison de la peau.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 4,
+          "url": "https://www.dndbeyond.com/monsters/5194867-aboleth"
+        },
+        {
+          "id": 5,
+          "url": "https://www.dndbeyond.com/monsters/16762-aboleth"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".description",
+        ".sections.fascination[1]",
+        ".sections.legendes[0]",
+        ".sections.legendes[2]",
+        ".sections.legendes[3]",
+        ".sections.anomalies[0]",
+        ".sections.anomalies[1]",
+        ".sections.anomalies[2]",
+        ".sections.naturelle.lead",
+        ".sections.naturelle.parts[0].body[0]",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[3].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sections.reliques[0]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "cryomancien",
+      "verdict": "pass",
+      "sha256": "b7c0edf8ce3fe3df6453a4eafb7a367a7fcc1de886a9404634cd63faf9aed0ac",
+      "sha256_end": "b7c0edf8ce3fe3df6453a4eafb7a367a7fcc1de886a9404634cd63faf9aed0ac",
+      "concurrent_change": false,
+      "initial_verdict": "revise",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Les conseils de conception, de menu et de mise en scène sont retirés dans tous les lieux signalés.",
+      "documentary_and_voice_review": "Le cadrage initial déclare expressément les scènes quotidiennes comme interprétation imaginaire du catalogue. Pont, réserve froide et apprentissage ne sont donc pas proposés comme folklore ni comme règles de Guild Wars 2. Les nouveaux détails nommés du jeu concordent avec sa table de compétences.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 6,
+          "url": "https://wiki.guildwars2.com/wiki/Water_Attunement"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.fascination[1]",
+        ".sections.legendes[0]",
+        ".sections.legendes[1]",
+        ".sections.legendes[2]",
+        ".sections.legendes[3]",
+        ".sections.anomalies[0]",
+        ".sections.anomalies[1]",
+        ".sections.anomalies[2]",
+        ".sections.naturelle.lead",
+        ".sections.naturelle.parts[0].body[0]",
+        ".sections.naturelle.parts[1].body[0]",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[3].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sections.reliques[0]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "dryade",
+      "verdict": "pass",
+      "sha256": "6c6e780694b84ab1a4289d6a783941b3ba2cecf89fff45610fd8e2af45cf59a0",
+      "sha256_end": "6c6e780694b84ab1a4289d6a783941b3ba2cecf89fff45610fd8e2af45cf59a0",
+      "concurrent_change": false,
+      "initial_verdict": "revise",
+      "initial_issues_count": 2,
+      "initial_points_resolution": "Guirlandes et tablettes sont rendues au chêne d’Ovide ; l’autel est séparément attribué à Paraibios conseillé par Phinée chez Apollonios. Les contre-exemples de photosynthèse et d’œufs sont retirés.",
+      "documentary_and_voice_review": "Les nouveaux détails sur ambroisie, arbres surgissant à la naissance, mort conjointe, homme décapité et arbres voisins écrasés sont attestés dans les extraits cités. Le groupe de nymphes nourricières est situé, non érigé en régime universel.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 7,
+          "url": "https://www.theoi.com/Nymphe/Nymphai3Myths.html"
+        },
+        {
+          "id": 8,
+          "url": "https://www.theoi.com/Nymphe/Dryades.html"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.fascination[1]",
+        ".sections.anomalies[0]",
+        ".sections.naturelle.lead",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "ecuyer",
+      "verdict": "pass",
+      "sha256": "181d96b09ca318e5c3505a88f0f8fc8d33406103d3ce5488586c8c47af7afcc5",
+      "sha256_end": "181d96b09ca318e5c3505a88f0f8fc8d33406103d3ce5488586c8c47af7afcc5",
+      "concurrent_change": false,
+      "initial_verdict": "revise",
+      "initial_issues_count": 2,
+      "initial_points_resolution": "Les conseils à auteur et les rappels zoologiques répétitifs ont cédé la place au service, à l’exercice et à la formation humaine.",
+      "documentary_and_voice_review": "Genoux et pieds, quintaine, anneau, poteau, armes alourdies, discipline des pages, instruction lettrée et variantes d’adoubement sont documentés par Cartwright. Les scènes de secours développent les tâches attestées, sans créer une profession fantastique.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 9,
+          "url": "https://www.worldhistory.org/article/1240/how-to-become-a-medieval-knight"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.fascination[0]",
+        ".sections.fascination[1]",
+        ".sections.legendes[2]",
+        ".sections.legendes[3]",
+        ".sections.anomalies[0]",
+        ".sections.anomalies[1]",
+        ".sections.naturelle.lead",
+        ".sections.naturelle.parts[0].body[0]",
+        ".sections.naturelle.parts[1].body[0]",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[3].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "marilith",
+      "verdict": "pass",
+      "sha256": "74dd7e77530a13c7112655115c4ed88ec871b9cdd6288b4789d7995ccb5d106b",
+      "sha256_end": "74dd7e77530a13c7112655115c4ed88ec871b9cdd6288b4789d7995ccb5d106b",
+      "concurrent_change": false,
+      "initial_verdict": "revise",
+      "initial_issues_count": 2,
+      "initial_points_resolution": "La télépathie est désormais affirmée, distinguée de la coordination des bras ; les formulations de mise en scène sont supprimées.",
+      "documentary_and_voice_review": "Portée de 120 pieds, réponse mentale sans langue commune ni contact visuel, vision véritable, attaques automatiques de la queue et conditions de parade concordent avec les règles 2014. Aucun régime ni reproduction inventé pour remplir les rubriques.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 10,
+          "url": "https://www.dndbeyond.com/monsters/16952-marilith"
+        },
+        {
+          "id": 11,
+          "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.fascination[1]",
+        ".sections.legendes[0]",
+        ".sections.legendes[2]",
+        ".sections.legendes[3]",
+        ".sections.anomalies[2]",
+        ".sections.anomalies[3]",
+        ".sections.naturelle.lead",
+        ".sections.naturelle.parts[0].body[0]",
+        ".sections.naturelle.parts[1].body[0]",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[3].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "quetzalcoatl",
+      "verdict": "pass",
+      "sha256": "79303ec50ea4964ea0f35c8f56597c67459e3e032d4c8b9220b162ee5d61781c",
+      "sha256_end": "79303ec50ea4964ea0f35c8f56597c67459e3e032d4c8b9220b162ee5d61781c",
+      "concurrent_change": false,
+      "initial_verdict": "revise",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Stade larvaire, vertèbres, petits serpents et conseils d’évocation ont disparu ; le cadrage religieux demeure.",
+      "documentary_and_voice_review": "Epcololli, disque solaire, tête coupée, quatre soleils, os et sang, ainsi que provenance Bullock/acquisition 1825 concordent avec le musée. Masque à tubes, offrandes et bûcher restent attribués à la synthèse citée, sans fusion avec une biologie animale.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 12,
+          "url": "https://www.britishmuseum.org/collection/object/E_Am1825-1210-11"
+        },
+        {
+          "id": 13,
+          "url": "https://www.britannica.com/topic/Quetzalcoatl"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.fascination[0]",
+        ".sections.legendes[0]",
+        ".sections.anomalies[0]",
+        ".sections.anomalies[1]",
+        ".sections.naturelle.lead",
+        ".sections.naturelle.parts[1].body[0]",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[3].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sections.reliques[0]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "sidhe",
+      "verdict": "pass",
+      "sha256": "977251eb3d9ce884d3d68d5f0952b477ead1ed15c70865fa5db9e8f848d4c8ea",
+      "sha256_end": "977251eb3d9ce884d3d68d5f0952b477ead1ed15c70865fa5db9e8f848d4c8ea",
+      "concurrent_change": false,
+      "initial_verdict": "revise",
+      "initial_issues_count": 2,
+      "initial_points_resolution": "La consigne au bestiaire est remplacée par une affirmation directe de la réalité humaine de l’enfant ; le faux taux de naissance est retiré.",
+      "documentary_and_voice_review": "Les ajouts sur veille de mai tous les sept ans, chaume arraché, lait à la fenêtre et épouses de la Saint-Jean sont bien dans l’introduction de Yeats. Le conditionnel et l’attribution maintiennent leur statut de croyance, non de causalité réelle.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 14,
+          "url": "https://www.gutenberg.org/files/33887/33887-h/33887-h.htm"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.fascination[0]",
+        ".sections.anomalies[1]",
+        ".sections.anomalies[2]",
+        ".sections.naturelle.lead",
+        ".sections.naturelle.parts[1].body[0]",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[3].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "barde",
+      "verdict": "pass",
+      "sha256": "befdc8eed8b7b2a19e0940e58e3a8ea2379671eec64173c16cd1ef7196d325fc",
+      "sha256_end": "befdc8eed8b7b2a19e0940e58e3a8ea2379671eec64173c16cd1ef7196d325fc",
+      "concurrent_change": false,
+      "initial_verdict": "pass",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "La justification du classement et le commentaire sur le récit d’aventure sont supprimés.",
+      "documentary_and_voice_review": "La conclusion décrit le témoin qui façonne le souvenir des exploits. C’est une interprétation lisible de la fonction narrative, compatible avec le barde accompagnant les héros dans la source officielle, non une nouvelle affirmation historique.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 15,
+          "url": "https://www.dndbeyond.com/classes/1-bard"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.fascination[1]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "basajaun",
+      "verdict": "pass",
+      "sha256": "add0e7c46cd527be16a79e8f5a5d92c934ad8578e05e6567fb1664bb468f3183",
+      "sha256_end": "add0e7c46cd527be16a79e8f5a5d92c934ad8578e05e6567fb1664bb468f3183",
+      "concurrent_change": false,
+      "initial_verdict": "pass",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Les trois avertissements répétitifs sont retirés ; Hirigaray et la singularité du récit hostile restent visibles.",
+      "documentary_and_voice_review": "Château, mince colonne de fumée, hôte pastoral et repas de lait/fromage se recoupent chez Webster. Les variantes ne sont pas fondues en un tempérament ou un régime universel.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 16,
+          "url": "https://www.gutenberg.org/files/34902/34902-h/34902-h.htm"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.naturelle.parts[0].body[0]",
+        ".sections.naturelle.parts[1].body[0]",
+        ".sections.naturelle.parts[2].body[0]"
+      ]
+    },
+    {
+      "slug": "cu-sith",
+      "verdict": "pass",
+      "sha256": "4ece54455bdb517a5fe921d6b6201316528983e9acbb9ccdf96cbc98acee7571",
+      "sha256_end": "4ece54455bdb517a5fe921d6b6201316528983e9acbb9ccdf96cbc98acee7571",
+      "concurrent_change": false,
+      "initial_verdict": "pass",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Les commentaires sur ce que le lecteur peut ajouter et sur la fécondité ont disparu.",
+      "documentary_and_voice_review": "Le large, la course entendue, les trois aboiements et le refuge reprennent Campbell. Naissance et alimentation restent inconnues : les demeures invisibles relèvent de l’évocation de ce silence, non d’un nouveau cycle de vie.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 17,
+          "url": "https://www.gutenberg.org/files/61730/61730-h/61730-h.htm"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.anomalies[2]",
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[4].body[0]"
+      ]
+    },
+    {
+      "slug": "meduse",
+      "verdict": "pass",
+      "sha256": "f5def16f704ac8ad53c1465608fd5d0f45ddba64e66eee7023545515d66f269e",
+      "sha256_end": "f5def16f704ac8ad53c1465608fd5d0f45ddba64e66eee7023545515d66f269e",
+      "concurrent_change": false,
+      "initial_verdict": "pass",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Les réserves scolaires sont condensées ; les enfants et le meurtre commandité prennent la place des faux modèles zoologiques.",
+      "documentary_and_voice_review": "La naissance de Pégase et Chrysaor au meurtre, le sommeil et le transport de la tête concordent. L’allusion à l’or de Chrysaor correspond au motif de l’épée d’or dans les textes rassemblés ; aucun mode de reproduction généralisé.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 18,
+          "url": "https://www.theoi.com/Pontios/Gorgones.html"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]"
+      ]
+    },
+    {
+      "slug": "melusine",
+      "verdict": "pass",
+      "sha256": "2e0193e7e77a1228b029e3d1730ed291b8d58ef1bc95f0d9694564dfea2fe1c9",
+      "sha256_end": "2e0193e7e77a1228b029e3d1730ed291b8d58ef1bc95f0d9694564dfea2fe1c9",
+      "concurrent_change": false,
+      "initial_verdict": "pass",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "La chasse hypothétique aux petits mammifères est supprimée au profit de l’hospitalité et de la maison.",
+      "documentary_and_voice_review": "La reformulation demeure une lecture de l’abondance familiale et des ressources de la bâtisseuse, attestées dans l’introduction savante. Elle n’ajoute ni menu précis ni comportement de serpent.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 19,
+          "url": "https://www.psupress.org/books/titles/978-0-271-05412-4.html"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.naturelle.parts[2].body[0]"
+      ]
+    },
+    {
+      "slug": "rakshasa",
+      "verdict": "pass",
+      "sha256": "f094f5c5e6e2e13620b0e7ecb2167603bffdac076e3b24fb701352e35650963a",
+      "sha256_end": "f094f5c5e6e2e13620b0e7ecb2167603bffdac076e3b24fb701352e35650963a",
+      "concurrent_change": false,
+      "initial_verdict": "pass",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Les trois injonctions à décrire ou conserver ont disparu ; les décisions des personnages et les usages religieux sont affirmés directement.",
+      "documentary_and_voice_review": "Le contraste Ravana/Vibhishana, les dix têtes du seul roi et les effigies de Dussehra concordent avec les deux articles. La clôture conserve une tradition religieuse vivante, sans la réduire à un monstre de jeu.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 20,
+          "url": "https://www.britannica.com/topic/rakshasa"
+        },
+        {
+          "id": 21,
+          "url": "https://www.britannica.com/topic/Ravana"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.anomalies[0]",
+        ".sections.naturelle.parts[0].body[0]",
+        ".sections.reliques[1]"
+      ]
+    },
+    {
+      "slug": "triton",
+      "verdict": "pass",
+      "sha256": "2f6c76ae1fb40e2c9e1f81b8580c4d65a45ed31f5f5a207906b037dd19907287",
+      "sha256_end": "2f6c76ae1fb40e2c9e1f81b8580c4d65a45ed31f5f5a207906b037dd19907287",
+      "concurrent_change": false,
+      "initial_verdict": "pass",
+      "initial_issues_count": 1,
+      "initial_points_resolution": "Les réserves sur régime de poisson, ponte et chaîne alimentaire sont remplacées par les missions, les parentés et les affrontements.",
+      "documentary_and_voice_review": "Pallas et Athéna sont bien élevées auprès de Triton ; le texte complet d’Apollodore sur la page Pallas confirme leur pratique commune et la mort accidentelle. Conque et adversaires restent situés dans textes et images, non transformés en écologie.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 22,
+          "url": "https://www.theoi.com/Pontios/Triton.html"
+        },
+        {
+          "id": 23,
+          "url": "https://www.theoi.com/Nymphe/NymphePallas.html"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.naturelle.parts[2].body[0]",
+        ".sections.naturelle.parts[4].body[0]",
+        ".sections.naturelle.parts[5].body[0]",
+        ".sources[0].title"
+      ]
+    },
+    {
+      "slug": "troll",
+      "verdict": "pass",
+      "sha256": "0970667f88fad084e6f1e3aacd9786f306a5f575fb9541db640a49183e99ff51",
+      "sha256_end": "0970667f88fad084e6f1e3aacd9786f306a5f575fb9541db640a49183e99ff51",
+      "concurrent_change": false,
+      "initial_verdict": "pass",
+      "initial_issues_count": 2,
+      "initial_points_resolution": "L’épisode du concours remplace une généralité ; la consigne de référencement en Reproduction est supprimée.",
+      "documentary_and_voice_review": "Le fromage pressé, l’aide à l’abattage, le sac attaché au ventre puis fendu et le troll qui s’éventre concordent avec le conte reproduit par Visit Norway. L’épisode reste singulier et Trollhunter distinct du folklore.",
+      "issues": [],
+      "concrete_corrections_requested": [],
+      "sources_cross_checked": [
+        {
+          "id": 24,
+          "url": "https://www.visitnorway.com/things-to-do/art-culture/the-mythical-norwegian-trolls"
+        }
+      ],
+      "changed_fields_reviewed": [
+        ".sections.legendes[2]",
+        ".sections.naturelle.parts[4].body[0]"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.dndbeyond.com/species/4-aarakocra"
+    },
+    {
+      "id": 2,
+      "url": "https://www.wargamer.com/dnd/aasimar"
+    },
+    {
+      "id": 3,
+      "url": "https://www.dndbeyond.com/posts/1783-the-10-species-in-the-2024-players-handbook"
+    },
+    {
+      "id": 4,
+      "url": "https://www.dndbeyond.com/monsters/5194867-aboleth"
+    },
+    {
+      "id": 5,
+      "url": "https://www.dndbeyond.com/monsters/16762-aboleth"
+    },
+    {
+      "id": 6,
+      "url": "https://wiki.guildwars2.com/wiki/Water_Attunement"
+    },
+    {
+      "id": 7,
+      "url": "https://www.theoi.com/Nymphe/Nymphai3Myths.html"
+    },
+    {
+      "id": 8,
+      "url": "https://www.theoi.com/Nymphe/Dryades.html"
+    },
+    {
+      "id": 9,
+      "url": "https://www.worldhistory.org/article/1240/how-to-become-a-medieval-knight"
+    },
+    {
+      "id": 10,
+      "url": "https://www.dndbeyond.com/monsters/16952-marilith"
+    },
+    {
+      "id": 11,
+      "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters"
+    },
+    {
+      "id": 12,
+      "url": "https://www.britishmuseum.org/collection/object/E_Am1825-1210-11"
+    },
+    {
+      "id": 13,
+      "url": "https://www.britannica.com/topic/Quetzalcoatl"
+    },
+    {
+      "id": 14,
+      "url": "https://www.gutenberg.org/files/33887/33887-h/33887-h.htm"
+    },
+    {
+      "id": 15,
+      "url": "https://www.dndbeyond.com/classes/1-bard"
+    },
+    {
+      "id": 16,
+      "url": "https://www.gutenberg.org/files/34902/34902-h/34902-h.htm"
+    },
+    {
+      "id": 17,
+      "url": "https://www.gutenberg.org/files/61730/61730-h/61730-h.htm"
+    },
+    {
+      "id": 18,
+      "url": "https://www.theoi.com/Pontios/Gorgones.html"
+    },
+    {
+      "id": 19,
+      "url": "https://www.psupress.org/books/titles/978-0-271-05412-4.html"
+    },
+    {
+      "id": 20,
+      "url": "https://www.britannica.com/topic/rakshasa"
+    },
+    {
+      "id": 21,
+      "url": "https://www.britannica.com/topic/Ravana"
+    },
+    {
+      "id": 22,
+      "url": "https://www.theoi.com/Pontios/Triton.html"
+    },
+    {
+      "id": 23,
+      "url": "https://www.theoi.com/Nymphe/NymphePallas.html"
+    },
+    {
+      "id": 24,
+      "url": "https://www.visitnorway.com/things-to-do/art-culture/the-mythical-norwegian-trolls"
+    }
+  ],
+  "coverage": {
+    "expected": [
+      "aarakocra",
+      "aasimar",
+      "aboleth",
+      "cryomancien",
+      "dryade",
+      "ecuyer",
+      "marilith",
+      "quetzalcoatl",
+      "sidhe",
+      "barde",
+      "basajaun",
+      "cu-sith",
+      "meduse",
+      "melusine",
+      "rakshasa",
+      "triton",
+      "troll"
+    ],
+    "expected_count": 17,
+    "reviewed_count": 17,
+    "unique_count": 17,
+    "complete": true,
+    "verdict_counts": {
+      "pass": 17,
+      "revise": 0
+    },
+    "changed_during_review": [],
+    "all_sha256_unchanged": true
+  },
+  "method": "Relecture indépendante ciblée des corrections : charte, rapport initial, référence Tyrannœil, diff Git de chaque fichier contre HEAD puis comparaison sémantique des champs JSON pour neutraliser les reformattages. Lecture des nouveaux passages et recoupement des modifications factuelles substantielles dans les pages effectivement consultées. Empreintes SHA-256 calculées sur les octets avant et après contrôle.",
+  "scope": {
+    "only_authored_file": "tmp/editorial/relecture-corrections-02.json",
+    "notice_files_modified": false,
+    "git_modified": false,
+    "extra_agents_or_cli": false,
+    "shoggoth": "Hors périmètre ; inchangé selon le contexte, non revalidé ici."
+  },
+  "verdict_policy": "pass signifie que les corrections demandées sont résolues sans nouvelle erreur nécessitant une correction dans les passages contrôlés. Ce n’est ni une nouvelle expertise exhaustive de chaque notice ni une validation de toutes les traditions. Les évocations clairement annoncées comme interprétations ne sont pas traitées comme des faits documentaires nouveaux.",
+  "limitations": [
+    "Certaines pages longues ont été lues par passages pertinents ; les éléments inchangés ne font pas tous l’objet d’une nouvelle recherche.",
+    "Une extraction concurrente a renvoyé des contenus D&D/Wargamer sous des URL discordantes : ces associations ont été écartées et les URL concernées relues directement par HTTP, avec statut 200 et URL finale contrôlés.",
+    "Britannica a refusé le téléchargement HTTP direct des pages Rakshasa/Ravana (403) ; leurs textes ont ensuite été consultés par web_extract, y compris le passage Good demons du fichier complet.",
+    "Aucun rendu du site ni test de navigation inclus dans cette relecture."
+  ]
+}

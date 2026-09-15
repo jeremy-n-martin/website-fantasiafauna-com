@@ -1,0 +1,305 @@
+{
+  "reviewed": [
+    {
+      "slug": "archimage",
+      "verdict": "pass",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "sections.legendes[2]",
+          "quote": "Celui qui sait tout faire seul",
+          "detail": "Hyperbole un peu absolue au regard des limites exposées ensuite ; « ce maître si autonome » serait plus mesuré. Ne constitue pas ici une capacité de jeu affirmée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16789-archmage",
+          "consulted": "web_extract direct, puis cache/web/www.dndbeyond.com-d4246caf3d.md lignes 145–190",
+          "status": "verified",
+          "claims_checked": "Portrait Legacy 2014, conseillers/tyrans/liches/tours, apprentis et défenses ; sorts, précautions avant combat, Intelligence, emplacements limités, invisibilité et déguisement à volonté, dague.",
+          "evidence": "The archmage can cast [disguise self](/spells/2069-disguise-self) and [invisibility](/spells/2159-invisibility) at will"
+        }
+      ],
+      "style_check": "Archétype humain situé, évocation de la préparation cohérente ; spéculation après la mort expressément signalée. Quelques commentaires généraux sur la transmission, sans folklore fabriqué.",
+      "sha256": "29c6d54f2a30e898614f8d15593e37bc5c0fa03bfd3532a9cf7c772a5db246bd",
+      "scope": "full_notice",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "arimaspe",
+      "verdict": "pass",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.theoi.com/Phylos/Arimaspoi.html",
+          "consulted": "web_extract direct de Theoi ; cache primaire rejeté pour association URL/contenu incorrecte",
+          "status": "verified",
+          "claims_checked": "Hérodote III.116, IV.13 et IV.27 ; Prométhée 802 ; Pausanias I.24.6 et I.31.2 ; Pline IV.88 et VII.10 : cavaliers, œil frontal, migrations, chaîne des témoignages/offrandes, extraction de l’or et étymologie attribuée.",
+          "evidence": "the Arimaspoi are men all born with one eye",
+          "limitation": "Lecture des traductions rassemblées par Theoi, non collation grecque/latine. Iconographie contrôlée par légendes et références de la page, non examen autonome des objets."
+        }
+      ],
+      "style_check": "Le peuple reste un témoignage antique, non une espèce authentifiée. Les échanges et les offrandes évitent de réduire la notice à une silhouette monoculaire ; prudence géographique et linguistique justifiée.",
+      "sha256": "6dab4b1320e22784acdbaaf9266dcafcb5ac033096f7fdf56ea1eab3d90b4b67",
+      "scope": "full_notice",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "artificier",
+      "verdict": "pass",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 4,
+          "url": "https://www.dndbeyond.com/posts/1353-artificer-201-the-best-infusions-for-artificers",
+          "consulted": "tmp/editorial/reprise-w8/research-extra.json et complément cache/web/www.dndbeyond.com-5e876bc66c.md lignes 100–199",
+          "status": "verified",
+          "claims_checked": "Infusions, progression, partage ; homoncule et contact à portée ; arme lumineuse, bouclier de répulsion, gantelets revenants, armure remplaçant les membres, retrait interdit, charges à l’aube et casque de vigilance.",
+          "evidence": "The infused item regains 1d4 charges daily at dawn, allowing you to take your mental fortress from one adventure to the next.",
+          "limitation": "Article officiel de conseils sur la version à infusions ; pas un contrôle de toutes les éditions de la classe."
+        },
+        {
+          "source_id": 5,
+          "url": "https://www.dictionnaire-academie.fr/article/A9A2708",
+          "consulted": "tmp/editorial/reprise-w8/research-extra.json, entrée Académie",
+          "status": "verified",
+          "claims_checked": "XVIe siècle, dérivation d’artifice, profession civile/militaire, montage/démontage et neutralisation.",
+          "evidence": "Étymologie : xvie siècle. Dérivé d’artifice."
+        }
+      ],
+      "style_check": "Profession réelle et classe ludique nettement séparées ; mécanismes assez situés pour éviter une universalisation. Matérialité des objets bien rendue ; aucune recette réelle dangereuse.",
+      "sha256": "bdf5577ba74a3ab251ca243897e8579502e08f3b38333b1229f68d277ac99677",
+      "scope": "full_notice",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "aspidochelone",
+      "verdict": "pass",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://bestiary.ca/beasts/beast282.htm",
+          "consulted": "web_extract direct de beast282.htm",
+          "status": "verified",
+          "claims_checked": "Sable sur le dos, fausse île, feu/plongée/noyade, odeur attirant les petits poissons, interprétation diabolique.",
+          "evidence": "After a time the heat penetrates the whale's thick skin, and it dives to cool itself."
+        },
+        {
+          "source_id": 6,
+          "url": "https://bestiary.ca/beasts/beastsource282.htm",
+          "consulted": "tmp/editorial/reprise-w8/research-extra.json et cache/web/bestiary.ca-8572172967.md, passages nommés",
+          "status": "verified",
+          "claims_checked": "Pline et Solin : taille/jets ; Ambroise : Atlantique/îles ; Jacques de Vitry : tempête/feu/odeur ; Thomas : gorge/Jonas/jeunes dans la bouche ; Barthélemy : terre et végétation ; capture des baleines.",
+          "evidence": "when their offspring are small, whales receive them in the mouth.",
+          "limitation": "Traductions et paraphrases du répertoire ; Jacques de Vitry est explicitement une traduction assistée par machine, non vérification du latin original."
+        }
+      ],
+      "style_check": "Motif distinctif solide. Les variantes encyclopédiques, la lecture morale et la réaction corporelle restent séparées ; le passage sur les petits n’invente pas un cycle universel.",
+      "sha256": "6bf951cd408117aee62665b0b895aa6f97851b9139e76014768743c48d5f4f66",
+      "scope": "full_notice",
+      "read_entire_notice": true,
+      "unchanged_since_review_start": true
+    },
+    {
+      "slug": "ange",
+      "verdict": "pass",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 5,
+          "url": "https://www.aelf.org/bible/Tb/12",
+          "consulted": "web_extract direct pendant cette relecture",
+          "status": "verified",
+          "claims_checked": "Tb 12,12–15 : prières, guérison et révélation ; 12,19 : repas apparent ; 12,20–22 : ordre de mise par écrit, remontée, disparition. Navigation AELF jusqu’au chapitre 14 : ce départ ne termine pas le livre.",
+          "evidence": "Mettez par écrit tout ce qui vous est arrivé. » Alors l’ange remonta au ciel."
+        }
+      ],
+      "correction_result": "ANGE-01 résolu dans Anomalies et Reliques ; également dans Légendes : « Lorsqu’il révèle son identité » remplace le dénouement du livre. La phrase sur le geste familier est une interprétation évocatrice du repas apparent, non une nouvelle localisation chronologique.",
+      "sha256": "668abafb47cd5a66a2d13a8eb41b3a8fd48796122aa2e47b188957b14f63b704",
+      "scope": "correction_diff_only",
+      "read_entire_notice": false,
+      "unchanged_since_review_start": true,
+      "correction_integrity": {
+        "head_sha256": "9c11eaa59ab9d578db5d0cd9ba5f875a71dae3eb8f8e660c2e3d26735f1d50e9",
+        "head_matches_prior_review": true,
+        "head_matches_journal_before": true,
+        "current_matches_journal_after": true,
+        "journal_reconstructs_current_content": true
+      }
+    },
+    {
+      "slug": "apsara",
+      "verdict": "pass",
+      "issues": [],
+      "source_checks": [
+        {
+          "consulted": "tmp/editorial/relecture-nouvelles-b.json, entrée apsara ; diff HEAD et journal",
+          "status": "prior_verification_preserved",
+          "claims_checked": "Suppression exacte de l’injonction « Il convient de distinguer… ». Les références Rigveda/Kalidasa et la distinction temporelle restent dans les phrases conservées.",
+          "limitation": "Aucune nouvelle recherche documentaire : contrôle ciblé du diff seulement."
+        }
+      ],
+      "correction_result": "Réserve stylistique précédente levée sans perte de contenu factuel.",
+      "sha256": "028abc1aa133fc45cbb2239209d3fa8e821669806a30b654b03a882cd432c349",
+      "scope": "correction_diff_only",
+      "read_entire_notice": false,
+      "unchanged_since_review_start": true,
+      "correction_integrity": {
+        "head_sha256": "37816a353c0fd3d9d1dcb215c0f5b9bbcb515dbdf2462816376144060dda283d",
+        "head_matches_prior_review": true,
+        "head_matches_journal_before": true,
+        "current_matches_journal_after": true,
+        "journal_reconstructs_current_content": true
+      }
+    },
+    {
+      "slug": "arachne",
+      "verdict": "pass",
+      "issues": [],
+      "source_checks": [
+        {
+          "consulted": "tmp/editorial/relecture-nouvelles-b.json, entrée arachne ; diff HEAD et journal",
+          "status": "prior_verification_preserved",
+          "claims_checked": "Suppression exacte de la pointe « l’immensité du malheur… » ; contexte lydien, fil et absence de territoire ultérieur conservés.",
+          "limitation": "Aucune nouvelle recherche documentaire : contrôle ciblé du diff seulement."
+        }
+      ],
+      "correction_result": "Réserve stylistique précédente levée sans modification du récit d’Ovide.",
+      "sha256": "3ae35d7bed86f1f20098f9850aae5e694d1eeb4bd75e7eb8d25191444a3b326a",
+      "scope": "correction_diff_only",
+      "read_entire_notice": false,
+      "unchanged_since_review_start": true,
+      "correction_integrity": {
+        "head_sha256": "f6b5b17e8cf3e190ce4a59d464d8ef68769341ee789f1f837ab850056db42acb",
+        "head_matches_prior_review": true,
+        "head_matches_journal_before": true,
+        "current_matches_journal_after": true,
+        "journal_reconstructs_current_content": true
+      }
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "archimage",
+      "arimaspe",
+      "artificier",
+      "aspidochelone",
+      "ange",
+      "apsara",
+      "arachne"
+    ],
+    "reviewed_count": 7,
+    "complete_notices_read": [
+      "archimage",
+      "arimaspe",
+      "artificier",
+      "aspidochelone"
+    ],
+    "correction_only": [
+      "ange",
+      "apsara",
+      "arachne"
+    ],
+    "missing": [],
+    "verdict_counts": {
+      "pass": 7,
+      "revise": 0
+    },
+    "reference_material": [
+      "docs/charte-editoriale.md",
+      "data/notices/tyrannoeil.json",
+      "fantasia-fauna-editorial",
+      "humanizer",
+      "grounded-citations"
+    ],
+    "structure_checked": {
+      "archimage": {
+        "five_sections": true,
+        "natural_parts_in_order": true,
+        "unresolved_citations": []
+      },
+      "arimaspe": {
+        "five_sections": true,
+        "natural_parts_in_order": true,
+        "unresolved_citations": []
+      },
+      "artificier": {
+        "five_sections": true,
+        "natural_parts_in_order": true,
+        "unresolved_citations": []
+      },
+      "aspidochelone": {
+        "five_sections": true,
+        "natural_parts_in_order": true,
+        "unresolved_citations": []
+      },
+      "ange": {
+        "five_sections": true,
+        "natural_parts_in_order": true,
+        "unresolved_citations": []
+      },
+      "apsara": {
+        "five_sections": true,
+        "natural_parts_in_order": true,
+        "unresolved_citations": []
+      },
+      "arachne": {
+        "five_sections": true,
+        "natural_parts_in_order": true,
+        "unresolved_citations": []
+      }
+    },
+    "head_compared": "d936d002bf57a66af97fc966cecebf831ce3a83f",
+    "integrity": {
+      "method": "SHA-256 des octets bruts, relevés avant lecture puis après relecture et contrôles documentaires ; comparaison des deux bornes, pas surveillance continue.",
+      "before_sha256": {
+        "archimage": "29c6d54f2a30e898614f8d15593e37bc5c0fa03bfd3532a9cf7c772a5db246bd",
+        "arimaspe": "6dab4b1320e22784acdbaaf9266dcafcb5ac033096f7fdf56ea1eab3d90b4b67",
+        "artificier": "bdf5577ba74a3ab251ca243897e8579502e08f3b38333b1229f68d277ac99677",
+        "aspidochelone": "6bf951cd408117aee62665b0b895aa6f97851b9139e76014768743c48d5f4f66",
+        "ange": "668abafb47cd5a66a2d13a8eb41b3a8fd48796122aa2e47b188957b14f63b704",
+        "apsara": "028abc1aa133fc45cbb2239209d3fa8e821669806a30b654b03a882cd432c349",
+        "arachne": "3ae35d7bed86f1f20098f9850aae5e694d1eeb4bd75e7eb8d25191444a3b326a"
+      },
+      "after_sha256": {
+        "archimage": "29c6d54f2a30e898614f8d15593e37bc5c0fa03bfd3532a9cf7c772a5db246bd",
+        "arimaspe": "6dab4b1320e22784acdbaaf9266dcafcb5ac033096f7fdf56ea1eab3d90b4b67",
+        "artificier": "bdf5577ba74a3ab251ca243897e8579502e08f3b38333b1229f68d277ac99677",
+        "aspidochelone": "6bf951cd408117aee62665b0b895aa6f97851b9139e76014768743c48d5f4f66",
+        "ange": "668abafb47cd5a66a2d13a8eb41b3a8fd48796122aa2e47b188957b14f63b704",
+        "apsara": "028abc1aa133fc45cbb2239209d3fa8e821669806a30b654b03a882cd432c349",
+        "arachne": "3ae35d7bed86f1f20098f9850aae5e694d1eeb4bd75e7eb8d25191444a3b326a"
+      },
+      "all_unchanged": true,
+      "notices_modified_by_reviewer": false
+    },
+    "documentary_incidents": [
+      {
+        "file": "tmp/editorial/reprise-w8/research-primary.json",
+        "detail": "Les trois associations URL/contenu sont permutées : URL Archmage contient Arimaspoi ; URL Arimaspoi contient Whale ; URL Whale contient Archmage. Ce cache ne constitue pas une preuve correctement attribuée.",
+        "resolution": "Trois extractions directes séparées des véritables URL, titres et contenus vérifiés ; complément de la fiche Archmage lu. Aucune correction de cache effectuée (lecture seule)."
+      }
+    ],
+    "limitations": [
+      "Aucun rendu navigateur ni test de clic de citation : relecture textuelle/documentaire demandée.",
+      "Sources des trois corrections non réétudiées, hormis le contrôle direct de Tobie 12 demandé.",
+      "Les passages antiques et médiévaux sont vérifiés dans les traductions/répertoires cités, pas dans tous les originaux."
+    ],
+    "findings": {
+      "invented_folklore_detected": false,
+      "unattested_biological_chain_asserted_as_fact_detected": false,
+      "advice_to_authors_detected": false,
+      "blocking_issue_detected": false,
+      "raphael_departure_verified": "Tobie 12,20–22 ; le livre continue jusqu’au chapitre 14. Trois formulations concernées corrigées, dont Légendes."
+    },
+    "only_repository_file_written": "tmp/editorial/relecture-nouvelles-c.json"
+  }
+}

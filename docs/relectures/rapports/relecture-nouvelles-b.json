@@ -1,0 +1,437 @@
+{
+  "reviewed": [
+    {
+      "slug": "apsara",
+      "verdict": "pass",
+      "sha256": "37816a353c0fd3d9d1dcb215c0f5b9bbcb515dbdf2462816376144060dda283d",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "legendes[0]",
+          "quote": "Il convient de distinguer ces états successifs",
+          "detail": "Injonction de méthode et registre de dossier documentaire; une distinction énoncée directement serait plus naturelle. Pas de conseil aux auteurs ni d’invention folklorique."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 4,
+          "url": "https://en.wikipedia.org/wiki/Apsara",
+          "consulted": "tmp/editorial/reprise-w4/research.json; extrait complet référencé dans cache/web/en.wikipedia.org-0e9b6bae0d.md, sections Etymology, Literature, In arts, Cambodia",
+          "status": "verified",
+          "claims_checked": "Urvashi et Pururavas dans le Rigveda; mission de Menaka, crainte de Vishvamitra, naissance et abandon de Shakuntala; Tilottama et les deux asuras; Urvashi et Arjuna; barattage; Kaushitaki Upanishad; absence d’attributs individuels systématiques; distinction apsara/devata à Angkor.",
+          "evidence": "Menaka trembled at the thought of angering such a powerful ascetic, but she obeyed the god's order.",
+          "limitation": "Vérification dans une synthèse secondaire, non lecture directe des textes sanskrits. Le fichier research.json seul est tronqué : son complément intégral a bien été consulté."
+        },
+        {
+          "source_id": 5,
+          "url": "https://deccanviews.wordpress.com/2017/01/16/apsaras-in-art-depictions-of-celestial-nymphs",
+          "consulted": "tmp/editorial/reprise-w4/research3.json",
+          "status": "verified",
+          "claims_checked": "Sculpture en grès de l’Uttar Pradesh, torsion et bijoux fluides; Kalidasa, Vikramorvashiyam; peintures de Raja Ravi Varma.",
+          "evidence": "The jewellery also has a sense of fluidity along her supple body."
+        },
+        {
+          "url": "https://www.worldhistory.org/image/5522/apsara-uttar-pradesh",
+          "consulted": "web_extract direct pendant la revue",
+          "status": "verified",
+          "claims_checked": "Contrôle supplémentaire de la localisation Uttar Pradesh, distincte de l’autre apsara du Madhya Pradesh illustrée sur Wikipédia.",
+          "evidence": "Dancing celestial attendant (apsara). From [India](/india/) (Uttar Pradesh). Early 12th century CE. Sandstone."
+        }
+      ]
+    },
+    {
+      "slug": "arachne",
+      "verdict": "pass",
+      "sha256": "f6b5b17e8cf3e190ce4a59d464d8ef68769341ee789f1f837ab850056db42acb",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "naturelle.parts[1]",
+          "quote": "l’immensité du malheur tient dans ce logement presque sans volume",
+          "detail": "Pointe métaphorique un peu appuyée; appréciation stylistique non bloquante, sans donnée zoologique inventée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.theoi.com/Text/OvidMetamorphoses6.html",
+          "consulted": "tmp/editorial/reprise-w5/research.json, Ovide VI, 1–145",
+          "status": "verified",
+          "claims_checked": "Condition modeste, Colophon, Tmolos/Pactole; déguisement, concours et contenu des étoffes; ouvrage sans défaut; navette de buis, pendaison, suc d’Hécate, réduction intégrale et descendance suspendue; bordures olivier et fleurs/lierre.",
+          "evidence": "Minerva could not find a fleck or flaw—even Envy can not censure perfect art"
+        },
+        {
+          "source_id": 5,
+          "url": "https://australian.museum/learn/animals/spiders",
+          "consulted": "tmp/editorial/reprise-w5/spiders.json, Reproduction and lifecycle; How do spiders catch their prey?",
+          "status": "verified",
+          "claims_checked": "Digestion externe et sacs d’œufs vérifiés comme zoologie comparée, explicitement non attribués au récit antique.",
+          "evidence": "Females weave silk egg sacs, which may contain hundreds of eggs."
+        }
+      ]
+    },
+    {
+      "slug": "araignee-geante",
+      "verdict": "pass",
+      "sha256": "c10e2271b0b28b71b81711d556a7d07d5ba46317c74b69b82ad7180c6892aae6",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.theoi.com/Text/OvidMetamorphoses6.html",
+          "consulted": "tmp/editorial/reprise-w5/research.json, Ovide VI, 129–145",
+          "status": "verified",
+          "claims_checked": "Arachne réduite à une petite araignée, sans filiation affirmée avec le monstre géant.",
+          "evidence": "her head shrunk rapidly in size, as well as all her body, leaving her diminutive"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/monsters/16895-giant-spider",
+          "consulted": "tmp/editorial/reprise-w5/research.json, fiche Giant Spider",
+          "status": "verified",
+          "claims_checked": "Basic Rules 2014; marche au plafond, perception conditionnée au contact de la même toile; projection abdominale; cocons; poison paralysant une heure à zéro point de vie; vulnérabilité des fils au feu; liste des habitats.",
+          "evidence": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+        },
+        {
+          "source_id": 5,
+          "url": "https://australian.museum/learn/animals/spiders",
+          "consulted": "tmp/editorial/reprise-w5/spiders.json, Characteristics, Reproduction and lifecycle, Behaviours and adaptations",
+          "status": "verified",
+          "claims_checked": "Deux régions corporelles, quatre paires de pattes; soie, vibrations, digestion, ponte et mues; aut amputation et fuite sur fil. La notice laisse ces comparaisons distinctes de la biologie du jeu.",
+          "evidence": "Spiders moult to grow."
+        }
+      ]
+    },
+    {
+      "slug": "arbaletrier",
+      "verdict": "pass",
+      "sha256": "e130a787e7d2e21c8ecc8d2881246b8818879554563345605c68f66b459327bc",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "naturelle.parts[2]",
+          "quote": "Ses besoins sont ceux d’un humain au travail : manger, boire et récupérer après l’effort.",
+          "detail": "Phrase générale de remplissage, mais adaptation humaine conforme à la charte; le reste de la partie retrouve les contextes documentés."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://www.metmuseum.org/met-publications/a-deadly-art-european-crossbows-1250-1850",
+          "consulted": "tmp/editorial/reprise-w5/research.json, page de présentation du catalogue du Met et légendes des objets",
+          "status": "verified",
+          "claims_checked": "Usage sur deux millénaires; concurrence des armes à feu; catalogue 1250–1850; arcs composites/aciers; Ulrich V, Matthias Corvin; levier, cranequin, traits et pavois.",
+          "evidence": "they remained in use for more than two thousand years",
+          "limitation": "La page de présentation et ses légendes ont été lues, pas le catalogue intégral."
+        },
+        {
+          "source_id": 4,
+          "url": "https://www.dhm.de/en/exhibitions/archive/2019/the-crossbow-terror-and-beauty",
+          "consulted": "tmp/editorial/reprise-w5/research.json, DHM",
+          "status": "verified",
+          "claims_checked": "Guerre médiévale, chasse, tir citadin et princier; fabricants; iconographie Renaissance/baroque; rôle civique des sociétés de tir.",
+          "evidence": "Shooting clubs, particularly in the cities of the Holy Roman Empire, took on an important social role"
+        },
+        {
+          "source_id": 6,
+          "url": "https://www.metmuseum.org/art/collection/search/23336",
+          "consulted": "tmp/editorial/reprise-w5/crossbow.json",
+          "status": "verified",
+          "claims_checked": "Attribution prudente à l’Europe centrale, éventuellement Autriche; liste des matières, dont charme, tendons, écorce de bouleau et chanvre.",
+          "evidence": "Wood (European hornbeam), horn, animal sinew, animal glue, birch bark, staghorn, iron alloy, hemp, leather"
+        }
+      ]
+    },
+    {
+      "slug": "archer",
+      "verdict": "pass",
+      "sha256": "0fc3ef603aa0c4868fa4519496fd00d2c3985220bf787b0f409357a803ca6976",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://maryrose.org/discover/collections/the-weaponry-of-the-mary-rose/longbows-and-arrows",
+          "consulted": "tmp/editorial/reprise-w6/extractions-initiales.json, Mary Rose",
+          "status": "verified",
+          "claims_checked": "172 arcs, plus de 2000 flèches, coffres et emplacement; arcs en if cœur/aubier, 1839–2113 mm; neuf essences, peuplier, oie/cygne; 24 protège-bras, deux marques royales; encoche en corne et une ou deux cordes.",
+          "evidence": "There are 172 longbows (of 250 listed for the ship), over 2,000 complete arrows and about 7,000 fragments."
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters",
+          "consulted": "tmp/editorial/reprise-w6/extractions-initiales.json, Scout",
+          "status": "verified",
+          "claims_checked": "Compétences Nature/Perception/Stealth/Survival; épée courte et arc long; chasse, pistage, guidage et reconnaissance rémunérés.",
+          "evidence": "Scouts are skilled hunters and trackers who offer their services for a fee."
+        }
+      ]
+    },
+    {
+      "slug": "archidemon",
+      "verdict": "pass",
+      "sha256": "3e847161274042a1e393e3fdedeefb3ebd9a33735b60b72de9ca1fa7619e4cdf",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "reliques[0]",
+          "quote": "Une identification demande toujours de savoir de quel texte et de quel monde il est question.",
+          "detail": "Conclusion méthodologique générique, proche d’une consigne éditoriale. La distinction des univers est utile mais gagnerait à rester concrète."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters",
+          "consulted": "tmp/editorial/reprise-w6/extractions-initiales.json, Fiends",
+          "status": "verified",
+          "claims_checked": "Autorité des archidiables et princes démons sur de nombreux fiélons dans les Basic Rules 2014.",
+          "evidence": "many more labor under the leadership of archdevils and demon princes"
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.d20srd.org/srd/monsters/devil.htm",
+          "consulted": "tmp/editorial/reprise-w6/extractions.json, Devil, introduction",
+          "status": "verified",
+          "claims_checked": "Diables des plans loyaux mauvais; pour archidiable, tactiques de peur et renforts illusoires vérifiés.",
+          "evidence": "Devils are fiends from lawful evil-aligned planes."
+        },
+        {
+          "source_id": 6,
+          "url": "https://saintebible.com/lsg/matthew/12.htm",
+          "consulted": "tmp/editorial/reprise-w6/extractions.json, Matthieu 12, 22–29",
+          "status": "verified",
+          "claims_checked": "Béelzébul prince des démons dans une accusation; réponse du royaume divisé et de l’homme fort lié. Aucun organigramme infernal imputé à l’Évangile.",
+          "evidence": "Cet homme ne chasse les démons que par Béelzébul, prince des démons."
+        },
+        {
+          "source_id": 4,
+          "url": "https://dungeonmister.com/lore/people/demon-lords-in-dnd",
+          "consulted": "tmp/editorial/reprise-w6/extractions.json, Dungeon Mister, Demon Lords",
+          "status": "verified",
+          "claims_checked": "Demogorgon bicéphale et rivalités; Thanatos, labyrinthe de Baphomet, Shedaklah; révolte tanar’ri/obyriths; Fraz-Urb’luu, spores de Zuggtmoy, Dagon/Shadowsea; retour dans l’Abîme; âmes recrutées et Pale Night.",
+          "evidence": "gaining more souls of mortals to fill their demonic ranks",
+          "limitation": "Synthèse de Ben Lawrance explicitement nommée par la notice; ne constitue pas une vérification primaire de chaque édition de D&D."
+        },
+        {
+          "source_id": 7,
+          "url": "https://www.d20srd.org/srd/monsters/demon.htm",
+          "consulted": "tmp/editorial/reprise-w6/extractions.json, Demon et Babau/Combat",
+          "status": "verified",
+          "claims_checked": "Chaos mauvais, violence entre démons et sélection tactique des victimes par le babau; édition 3.5 expressément distinguée.",
+          "evidence": "Babaus are sneaky and sly. They attack the most powerful foe first"
+        }
+      ]
+    },
+    {
+      "slug": "archidiable",
+      "verdict": "pass",
+      "sha256": "9df5c25919bcd8f147602604975e92a4d4d8ef3d324d0457d57fb03e541e7c98",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters",
+          "consulted": "tmp/editorial/reprise-w6/extractions-initiales.json, Fiends",
+          "status": "verified",
+          "claims_checked": "Autorité des archidiables et princes démons sur de nombreux fiélons dans les Basic Rules 2014.",
+          "evidence": "many more labor under the leadership of archdevils and demon princes"
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.d20srd.org/srd/monsters/devil.htm",
+          "consulted": "tmp/editorial/reprise-w6/extractions.json, Devil, introduction",
+          "status": "verified",
+          "claims_checked": "Diables des plans loyaux mauvais; pour archidiable, tactiques de peur et renforts illusoires vérifiés.",
+          "evidence": "Devils are fiends from lawful evil-aligned planes."
+        },
+        {
+          "source_id": 6,
+          "url": "https://saintebible.com/lsg/matthew/12.htm",
+          "consulted": "tmp/editorial/reprise-w6/extractions.json, Matthieu 12, 22–29",
+          "status": "verified",
+          "claims_checked": "Béelzébul prince des démons dans une accusation; réponse du royaume divisé et de l’homme fort lié. Aucun organigramme infernal imputé à l’Évangile.",
+          "evidence": "Cet homme ne chasse les démons que par Béelzébul, prince des démons."
+        },
+        {
+          "source_id": 5,
+          "url": "https://dungeonmister.com/lore/people/archdevils-in-dnd",
+          "consulted": "tmp/editorial/reprise-w6/source-5-archidiables-complet.md, What are Archdevils, Lords of Nine, Dukes of Hell",
+          "status": "verified",
+          "claims_checked": "Neuf niveaux et Asmodeus; ducs subordonnés; Zariel/Bel, Levistus/Geryon et télépathie dans la glace; Fierna/Belial, Glasya; Titivilus; Baalzebul limace, Méphistophélès, sceptre de rubis et Guerre du Sang.",
+          "evidence": "This forces him to rule telepathically while holding at bay his predecessor, Geryon",
+          "limitation": "Biographies contrôlées contre la synthèse secondaire citée, non contre toutes les éditions primaires du jeu. La notice conserve cette attribution."
+        }
+      ]
+    },
+    {
+      "slug": "gnoll",
+      "verdict": "pass",
+      "sha256": "1ad95ccdb71a268aac6f0e138f75d9cc58a803a4c1cccf4fabc2a73b387bf68d",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.gutenberg.org/cache/epub/7477/pg7477-images.html",
+          "consulted": "tmp/editorial/reprise-w7/dunsany.txt, conte How Nuth Would Have Practised His Art Upon the Gnoles lu en entier",
+          "status": "verified",
+          "claims_checked": "Londres, apprentissage de Tonker, émeraudes pesées, manteau et abandon éventuel d’une pierre; village sans fenêtres côté bois, braconnier cloué, maison et trous dans les arbres; enlèvement et fuite de Nuth; sort final expressément tu.",
+          "evidence": "And where they took him\n\nit is not good to ask, and what they did with him I shall not say."
+        },
+        {
+          "source_id": 6,
+          "url": "https://www.dndbeyond.com/monsters/16904-gnoll",
+          "consulted": "tmp/editorial/reprise-w7/gnoll.md, partie officielle avant Comments",
+          "status": "verified",
+          "claims_checked": "Legacy, tête de hyène, anthropophagie, armes/armure/bouclier, langue, INT 6 et Rampage; aucun cycle reproductif dans la fiche.",
+          "evidence": "Gnolls are feral, hyena-headed humanoids that attack without warning, slaughtering their victims and devouring their flesh."
+        }
+      ]
+    },
+    {
+      "slug": "gnome",
+      "verdict": "pass",
+      "sha256": "7e3c8769d87612662900ec0e5235bde914387bc3e3ee3dbaf0866934d365c3ee",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "naturelle.parts[2]",
+          "quote": "Leur attribuer une nourriture de métal, de cristaux ou de racines exclusivement",
+          "detail": "Longue réfutation d’une biologie absente, qui exhibe le travail du rédacteur au lieu de décrire la figure. La prudence documentaire est correcte; possibilité de resserrement."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Gnome",
+          "consulted": "tmp/editorial/reprise-w7/gnome.md, introduction, Etymology, Paracelsus",
+          "status": "verified",
+          "claims_checked": "Gnomi/Pygmæi, publication posthume; deux empans; déplacement dans la terre; manger/boire/parler; Agricola et Bergmännlein, minerais; dérivation grecque hypothétique; figurines XIXe–XXe.",
+          "evidence": "They are able to move through solid earth, as easily as humans move through air",
+          "limitation": "Synthèse secondaire consultée, pas édition primaire de Paracelse ou Agricola."
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.dndbeyond.com/species/18-gnome",
+          "consulted": "tmp/editorial/reprise-w7/retrieval.json, page Gnome avant Comments",
+          "status": "verified",
+          "claims_checked": "Legacy et sous-versions nommées; vêtements, ateliers, collines boisées et illusions; noms multiples, maturation/âge; alphabet nain, enseignement; niveaux de gris; jouet, allume-feu, boîte à musique et entretien; prudence des svirfneblin.",
+          "evidence": "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40."
+        }
+      ]
+    },
+    {
+      "slug": "gobelin",
+      "verdict": "pass",
+      "sha256": "8a00fc67228aa0b765f348e54a9c5eb61568004e0cfd47b5e2a3ab80e74599b3",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 4,
+          "url": "https://en.wikipedia.org/wiki/Goblin",
+          "consulted": "tmp/editorial/reprise-w7/goblin.md, introduction et Etymology",
+          "status": "verified",
+          "claims_checked": "Gobelinus chez Orderic Vitalis/Évreux; français fin XIIe; origine grecque/germanique laissée incertaine; emploi collectif non assimilé à une espèce.",
+          "evidence": "referring to a demon expelled from a church in [Évreux]",
+          "limitation": "Contrôle dans la synthèse lexicale citée, pas collation du manuscrit médiéval."
+        },
+        {
+          "source_id": 7,
+          "url": "https://www.gutenberg.org/cache/epub/708/pg708-images.html",
+          "consulted": "tmp/editorial/reprise-w7/macdonald.md, chapitres 1, 7–8 et 32, passages ciblés du roman",
+          "status": "verified",
+          "claims_checked": "Légendes internes des taxes; famille déménageant, crâne dur/pieds tendres, orteils, première reine morte en couches, souper et table à sept pieds; efficacité des rimes; inondation, chaussure de pierre de la reine, survivants devenant semblables aux brownies.",
+          "evidence": "most of those who remained grew milder in\ncharacter, and indeed became very much like the Scotch brownies."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "apsara",
+      "arachne",
+      "araignee-geante",
+      "arbaletrier",
+      "archer",
+      "archidemon",
+      "archidiable",
+      "gnoll",
+      "gnome",
+      "gobelin"
+    ],
+    "reviewed_count": 10,
+    "complete_notices_read": [
+      "apsara",
+      "arachne",
+      "araignee-geante",
+      "arbaletrier",
+      "archer",
+      "archidemon",
+      "archidiable",
+      "gnoll",
+      "gnome",
+      "gobelin"
+    ],
+    "missing": [],
+    "verdict_counts": {
+      "pass": 10,
+      "revise": 0
+    },
+    "structure_checked": {
+      "five_sections": true,
+      "six_natural_parts_in_order": true
+    },
+    "integrity": {
+      "method": "SHA-256 des octets bruts avant lecture et après lecture/revue; égalité sur les dix fichiers.",
+      "before_sha256": {
+        "apsara": "37816a353c0fd3d9d1dcb215c0f5b9bbcb515dbdf2462816376144060dda283d",
+        "arachne": "f6b5b17e8cf3e190ce4a59d464d8ef68769341ee789f1f837ab850056db42acb",
+        "araignee-geante": "c10e2271b0b28b71b81711d556a7d07d5ba46317c74b69b82ad7180c6892aae6",
+        "arbaletrier": "e130a787e7d2e21c8ecc8d2881246b8818879554563345605c68f66b459327bc",
+        "archer": "0fc3ef603aa0c4868fa4519496fd00d2c3985220bf787b0f409357a803ca6976",
+        "archidemon": "3e847161274042a1e393e3fdedeefb3ebd9a33735b60b72de9ca1fa7619e4cdf",
+        "archidiable": "9df5c25919bcd8f147602604975e92a4d4d8ef3d324d0457d57fb03e541e7c98",
+        "gnoll": "1ad95ccdb71a268aac6f0e138f75d9cc58a803a4c1cccf4fabc2a73b387bf68d",
+        "gnome": "7e3c8769d87612662900ec0e5235bde914387bc3e3ee3dbaf0866934d365c3ee",
+        "gobelin": "8a00fc67228aa0b765f348e54a9c5eb61568004e0cfd47b5e2a3ab80e74599b3"
+      },
+      "after_sha256": {
+        "apsara": "37816a353c0fd3d9d1dcb215c0f5b9bbcb515dbdf2462816376144060dda283d",
+        "arachne": "f6b5b17e8cf3e190ce4a59d464d8ef68769341ee789f1f837ab850056db42acb",
+        "araignee-geante": "c10e2271b0b28b71b81711d556a7d07d5ba46317c74b69b82ad7180c6892aae6",
+        "arbaletrier": "e130a787e7d2e21c8ecc8d2881246b8818879554563345605c68f66b459327bc",
+        "archer": "0fc3ef603aa0c4868fa4519496fd00d2c3985220bf787b0f409357a803ca6976",
+        "archidemon": "3e847161274042a1e393e3fdedeefb3ebd9a33735b60b72de9ca1fa7619e4cdf",
+        "archidiable": "9df5c25919bcd8f147602604975e92a4d4d8ef3d324d0457d57fb03e541e7c98",
+        "gnoll": "1ad95ccdb71a268aac6f0e138f75d9cc58a803a4c1cccf4fabc2a73b387bf68d",
+        "gnome": "7e3c8769d87612662900ec0e5235bde914387bc3e3ee3dbaf0866934d365c3ee",
+        "gobelin": "8a00fc67228aa0b765f348e54a9c5eb61568004e0cfd47b5e2a3ab80e74599b3"
+      },
+      "unchanged_during_review": true,
+      "notices_modified_by_reviewer": false
+    },
+    "scope": "Lecture entière des dix notices, description, cinq rubriques, six parties et sources. Contrôle indépendant des attributions structurantes dans les extractions sauvegardées et leurs compléments, sans reprendre les verdicts des rapports des rédacteurs. Registres ledger.json w4 à w7 lus.",
+    "findings": {
+      "invented_folklore_detected": false,
+      "unattested_biological_chain_asserted_as_fact_detected": false,
+      "advice_to_authors_detected": false,
+      "botlike_prose": "Quelques formulations méthodologiques et générales non bloquantes, localisées dans issues; pas de bavardage de chatbot ni de canevas interchangeable au point d’exiger une réécriture.",
+      "declared_fiction": "Cadres D&D, éditions et récits littéraires sont identifiés; absence documentaire des régimes et reproductions respectée. Les professions restent humaines."
+    },
+    "limitations": [
+      "Les sources secondaires d’apsara et du gnome historique établissent le soutien documentaire, pas une collation philologique des originaux.",
+      "Les archidiables et princes démons ont été contrôlés contre Ben Lawrance et les SRD réellement cités, non contre l’intégralité du corpus officiel de chaque édition.",
+      "Les URL historiques n’ont pas toutes été retestées en ligne; le contrôle porte prioritairement sur leurs textes sauvegardés, comme demandé."
+    ],
+    "only_repository_file_written": "tmp/editorial/relecture-nouvelles-b.json"
+  }
+}

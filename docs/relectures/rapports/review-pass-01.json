@@ -1,0 +1,623 @@
+{
+  "reviewed": [
+    {
+      "slug": "aarakocra",
+      "sha256": "745228014f857f8315580ddf9faa1e8124d6a206d19bbb4da78ac79a72c3697e",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "location": "sections.naturelle.parts[2].body[0], parts[5].body[0]; sections.anomalies[0]",
+          "reason": "Restes explicites de consignes à auteur : « convient mieux à la notice », « Le récit gagne à distinguer », « n’imposent pas à toute campagne ». Ils interrompent un portrait autrement incarné.",
+          "suggested_fix": "Garder les faits sur le régime, le dragon et les gargouilles ; supprimer les évaluations de ce qui convient à la notice ou à une campagne.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Portrait aérien précis et distinctif ; nids ouverts, toilette et nuances de parole bien exploités.",
+        "Source officielle substantielle ; ponte, maturité, colonies et variations des Royaumes oubliés correctement rapportées."
+      ]
+    },
+    {
+      "slug": "aasimar",
+      "sha256": "ac63d0f69d9de12a17ea1730afd5c4391691d00c2b74373f887d1012a553e694",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "location": "sections.legendes[3]; naturelle.parts[0], [1], [4]",
+          "reason": "La notice revient au discours d’atelier : « le récit doit encore lui donner une famille », « Cette lecture invite à montrer un personnage », « Lui réserver systématiquement », « Dans le cadre du catalogue, la question la plus solide ». L’histoire naturelle est surtout un commentaire sur les possibilités d’écriture.",
+          "suggested_fix": "Conserver le cadrage des versions une fois, puis décrire positivement le mortel, ses dons limités et ses relations ; retrancher ces injonctions et la question adressée implicitement à l’auteur.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Différences Monsters of the Multiverse / Manuel 2024 correctement situées.",
+        "Pas d’assimilation abusive aux anges des religions ; contraste entre guérison, lumière dangereuse et peur propre à cette figure."
+      ]
+    },
+    {
+      "slug": "aboleth",
+      "sha256": "9e2e794ce23a7e5d0aa4cd6848587be3139b4be19469da70381e788450128de9",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "location": "sections.legendes[2]; naturelle.parts[3].body[0], parts[4].body[0]",
+          "reason": "Commentaires de conception restants : « Le récit dispose ainsi », « L’Aboleth reste plus intéressant lorsqu’on respecte ces seuils », « Le récit doit distinguer ». Le texte évalue la qualité du monstre et conseille son emploi au lieu de poursuivre l’observation.",
+          "suggested_fix": "Remplacer les jugements d’intérêt et obligations narratives par les limites factuelles déjà présentes : contact télépathique visible, acquisition conditionnelle des souvenirs, reconstitution du même individu.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Distinction 2014/2025 particulièrement solide : maladie et malédiction ne sont pas fusionnées.",
+        "Bonne évocation de la dépendance à l’eau ; ruines, domination et retour corporel appuyés sur les règles officielles."
+      ]
+    },
+    {
+      "slug": "barde",
+      "sha256": "29eb32cc2f2437c58baf7c97a84701252ff4ec43fe1e2d03907e29b1339704f6",
+      "verdict": "pass",
+      "issues": [
+        {
+          "severity": "minor",
+          "location": "sections.fascination[1]; sections.reliques[1]",
+          "reason": "« Le bestiaire lui fait ici une place » et « pose enfin un problème délicieux au récit d’aventure » restent légèrement extérieurs au portrait. Le reste décrit effectivement le métier, sans conseils de conception dominants.",
+          "suggested_fix": "Retirer la justification du classement et faire du dernier paragraphe une observation directe sur le barde témoin et auteur des exploits.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Distinction entre profession celtique, institutions médiévales et classe magique nette.",
+        "Voix centrée sur noms, patronage et mémoire ; pas de généalogie historique déduite d’une comparaison littéraire."
+      ]
+    },
+    {
+      "slug": "basajaun",
+      "sha256": "be230f4105a3eacbccba1e63e1144c345c51be3a53fbb0c42b15e2b4df94c327",
+      "verdict": "pass",
+      "issues": [
+        {
+          "severity": "minor",
+          "location": "sections.naturelle.parts[0], [1], [2]",
+          "reason": "Les précautions « Les fusionner… », « il n’autorise pas… », « le lecteur… ne doit pas composer… » répètent la même mise en garde après que les variantes ont été clairement séparées.",
+          "suggested_fix": "Alléger ces trois fins de paragraphe ; maintenir l’attribution à Hirigaray et l’exception vampirique, utiles et documentées.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Récit rare du doigt sucé contrôlé chez Webster, sans le généraliser au folklore basque.",
+        "Basa-Andre et Basa-Jaun correctement distingués ; Ancho, fromages, graines et cloches réellement attestés."
+      ]
+    },
+    {
+      "slug": "cryomancien",
+      "sha256": "26d6238be7bc522d2d0e682762d0ed0044658c2d9263bee5e8af43a9553130ee",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "location": "sections.legendes[3]; anomalies[2]; naturelle.parts[1], [2], [5]; reliques[1]",
+          "reason": "Le texte est encore une fiche d’atelier : « Ils deviennent intéressants lorsque le récit… », « portrait plus vivant », « Il faut choisir cette règle », « Prévoir des repas », « limites narratives plus fécondes », « Chaque récit doit décider ». La correction de voix du brief n’est pas appliquée.",
+          "suggested_fix": "Recentrer sur la présence et les gestes du praticien ; garder un seul cadrage de l’interprétation du catalogue et les exemples de Guild Wars 2. Supprimer les conseils à auteur plutôt que les déguiser en règles folkloriques.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Le statut de spécialisation moderne est honnête ; aucun ancien ordre inventé.",
+        "L’exemple Guild Wars 2 est présenté comme comparaison, pas comme nom officiel de métier ni origine historique. Pouvoirs cités concordants."
+      ]
+    },
+    {
+      "slug": "cu-sith",
+      "sha256": "ee0292e2963677760a828fd22d5fbf87f254dea0eb3f863c73c65c23c249b603",
+      "verdict": "pass",
+      "issues": [
+        {
+          "severity": "minor",
+          "location": "sections.naturelle.parts[2], [4]; sections.anomalies[2]",
+          "reason": "« Laisser ouverte cette question évite d’ajouter… », « On peut parler… on ne peut pas… » et « L’imagination… doit laisser… » alourdissent la prudence par du commentaire éditorial.",
+          "suggested_fix": "Conserver les silences documentaires en phrases courtes, sans expliquer au lecteur comment compléter ou ne pas compléter le portrait.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Détails canins et menace des trois aboiements fidèlement repris de Campbell.",
+        "Bran n’est pas confondu avec tous les chiens féeriques ; la poursuite n’est pas réduite à un présage de mort."
+      ]
+    },
+    {
+      "slug": "dryade",
+      "sha256": "f629cfaea1a2406fd52b687eec80eaa7fab8cc51aa3150daa1655e901133eaaf",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "location": "sections.reliques[1]",
+          "reason": "Après « une guirlande, une tablette […] un autel dressé pour demander pardon », « Ovide les place sur l’arbre avant que celui-ci ne saigne » attribue aussi l’autel à Ovide et le suspend implicitement au chêne. Les objets de deux récits ont été fusionnés.",
+          "suggested_fix": "Réserver la phrase sur le chêne aux guirlandes et tablettes d’Ovide (Métamorphoses VIII, 738 sqq.) ; rattacher séparément l’autel réparateur à Paraibios chez Apollonios (Argonautiques II, 471 sqq.).",
+          "evidence_url": "https://www.theoi.com/Nymphe/Nymphai3Myths.html"
+        },
+        {
+          "severity": "minor",
+          "location": "sections.naturelle.parts[2], [4]",
+          "reason": "Les négations sur photosynthèse et « œufs de nymphes » ramènent la voix à des évidences zoologiques que le cadrage avait déjà écartées.",
+          "suggested_fix": "Garder le propos sur les offrandes et les généalogies ; retirer les contre-exemples artificiels.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Érysichthon, Paraibios et les deux Dryopé sont racontés avec des attributions distinctes dans Légendes.",
+        "Ouverture forte et liens arbre/personne précis ; aucune généalogie historique tirée de ressemblances modernes."
+      ]
+    },
+    {
+      "slug": "ecuyer",
+      "sha256": "5a2725119cfbcc51c7335fac8b1208df18c4dd3b391440bf7bc9fd816844740d",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "location": "sections.legendes[2]; anomalies[0–1]; naturelle.parts[2]; reliques[1]",
+          "reason": "Cas manifeste de voix d’atelier, jusque dans les exemples interdits par le brief : « Dans un récit de dragon, cette fonction offre… », « possibilités de mise en scène », « Le roman peut exploiter », « Pour une notice de bestiaire ».",
+          "suggested_fix": "Supprimer les conseils de conception ; raconter le secours au chevalier, le soin des chevaux et l’entretien des armes à partir des faits déjà présents.",
+          "evidence_url": null
+        },
+        {
+          "severity": "minor",
+          "location": "sections.anomalies[0]; naturelle.parts[2], [4], [5]",
+          "reason": "Rappels répétitifs : aucune anomalie anatomique, aucune nourriture propre, naissance comme les humains, absence de biologie fantastique.",
+          "suggested_fix": "Limiter le cadrage humain au lead ; employer la place gagnée pour la formation et le service effectivement documentés.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Source Cartwright soutient formation, service de bataille, quintaine, coût de l’adoubement et exemple de Chaucer.",
+        "Âges non rigidifiés ; écuyer adulte explicitement distingué du jeune héros promis à la chevalerie."
+      ]
+    },
+    {
+      "slug": "marilith",
+      "sha256": "0668c58ddf665319e283c9abe2a5d574bf9804fd8f3414d798627d9db7707dce",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "location": "sections.naturelle.parts[3].body[0]",
+          "reason": "« sans ajouter une faculté télépathique non nécessaire » laisse entendre que la télépathie serait un ajout gratuit, alors que la fiche retenue indique explicitement « Languages Abyssal, Telepathy 120 ft. ». La coordination des bras n’a pas besoin d’elle, mais la créature la possède bien.",
+          "suggested_fix": "Dire seulement qu’un esprit coordonne les six bras ; supprimer cette réserve ou distinguer cette coordination de la télépathie réellement indiquée dans la source.",
+          "evidence_url": "https://www.dndbeyond.com/monsters/16952-marilith"
+        },
+        {
+          "severity": "major",
+          "location": "sections.naturelle.parts[0], [1], [2], [4], [5]; reliques[1]",
+          "reason": "Voix presque entièrement tournée vers le concepteur : « Une mise en scène fidèle », « des décors possibles », « Une histoire peut lui prêter », « Pour cette notice », « Leur intérêt consiste », « laisser les personnages chercher ».",
+          "suggested_fix": "Conserver la portée, les réactions, la prise et les limites de la parade sous forme descriptive ; retirer conseils de mise en scène et commentaires sur la notice. Ne pas remplacer le manque de récit par des traditions inventées.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Six épées, queue limitée à une cible, parade, réactions multiples et téléportation correctement vérifiées.",
+        "La ressemblance avec les divinités indiennes n’est pas présentée comme une filiation."
+      ]
+    },
+    {
+      "slug": "meduse",
+      "sha256": "236973418c1ece22e06d3794ca22bfbe7d0992395e623591f6ab9e7c0c1d6901",
+      "verdict": "pass",
+      "issues": [
+        {
+          "severity": "minor",
+          "location": "sections.naturelle.parts[2], [4], [5]",
+          "reason": "Trois rubriques insistent successivement sur l’absence de menu, de reproduction par décapitation et de chaîne alimentaire. Le cadrage individuel était déjà posé ; ces contre-exemples un peu scolaires atténuent la tension du portrait.",
+          "suggested_fix": "Condenser les réserves et garder les données positives : enfants nommés, sommeil, meurtre commandité, tête transportée.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Hésiode, Ovide et Apollodore nettement séparés ; viol et changement de chevelure attribués à Ovide sans universalisation.",
+        "Lecture de la dépossession annoncée comme interprétation ; excellente continuité entre tête vivante, arme et gorgoneion."
+      ]
+    },
+    {
+      "slug": "melusine",
+      "sha256": "450a3cd5d1729fa3ccf2f14489d394bc42d479dc86a9861850c477b483297156",
+      "verdict": "pass",
+      "issues": [
+        {
+          "severity": "minor",
+          "location": "sections.naturelle.parts[2].body[0]",
+          "reason": "Le détour par une hypothétique chasse aux petits mammifères est une négation zoologique inutile après le cadrage biographique.",
+          "suggested_fix": "Supprimer cet exemple ; garder fêtes, hospitalité et entretien de la maison.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Très bonne notice de personne, non d’espèce : bâtisseuse, mère et souveraine restent présentes.",
+        "Distinction décisive entre regard clandestin pardonné et divulgation publique bien vérifiée ; récit dynastique séparé de la chronique historique."
+      ]
+    },
+    {
+      "slug": "quetzalcoatl",
+      "sha256": "d70b9a6ebdfed013fcaa82090a36f452a9f1a20703c4f9bbea58fca685d3a451",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "location": "sections.naturelle.parts[2], [4]; sections.anomalies[0–1]",
+          "reason": "La voix s’appesantit sur des contresens inventés pour les réfuter : « petits serpents emplumés », « Le visage humain n’est pas un stade larvaire », « nombre de vertèbres » ; s’y ajoutent « Dans cette notice » et « Pour évoquer Quetzalcoatl ». Le brief interdit précisément cette inflation de négations biologiques pour un dieu.",
+          "suggested_fix": "Maintenir le cadrage religieux dans le lead ; décrire la création des humains, les offrandes et les images sans conseils d’illustration ni faux cycle larvaire.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "British Museum utilisé avec précision : objet, pierre verte, symboles d’autorité et création par os/sang.",
+        "Pas de continuité historique fabriquée entre Teotihuacan, Tula et les Mexicas ; bûcher et radeau distingués comme variantes."
+      ]
+    },
+    {
+      "slug": "rakshasa",
+      "sha256": "30a1efb650e3134883462791ab56e1bb3c8e4545c7ebb1842ae54d0f8f809f2e",
+      "verdict": "pass",
+      "issues": [
+        {
+          "severity": "minor",
+          "location": "sections.anomalies[0]; naturelle.parts[0]; reliques[1]",
+          "reason": "« Une description fidèle doit suivre », « empêcherait de raconter » et « le rakshasa du catalogue doit conserver » sont des résidus d’atelier, moins envahissants que dans les notices de professions mais dispensables.",
+          "suggested_fix": "Affirmer directement la diversité des personnages et leur provenance épique/religieuse ; supprimer les impératifs adressés au rédacteur.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Ravana savant et dévot, Vibhishana allié et rites védiques empêchent une réduction à un monstre uniforme.",
+        "Origines multiples et protection incomplète situées ; aucune certitude archéologique imposée à Lanka."
+      ]
+    },
+    {
+      "slug": "shoggoth",
+      "sha256": "51fb6520155181a65d428b8e8b4094c1260ff8943df12f6751c5103806f5a757",
+      "verdict": "pass",
+      "issues": [],
+      "strengths": [
+        "Solide lecture directe de Lovecraft : fabrication, fission, cerveau semi-stable, révolte, tissus transportés et ordres parlés concordent.",
+        "Point de vue des maîtres explicitement critiqué comme lecture, non transformé en fait extérieur au récit ; voix singulière de travail et d’insurrection.",
+        "Pas de datation géologique erronée reproduite, de culte ancien inventé ni de métabolisme fabriqué."
+      ]
+    },
+    {
+      "slug": "sidhe",
+      "sha256": "ee582932aea1a2754615a957289be4765aa7df93c9616477bbede7fa4f355f61",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "location": "sections.anomalies[2]",
+          "reason": "« Pour un bestiaire, la bonne distance consiste à décrire la croyance et ses ressorts… » est une consigne éditoriale publiée. L’avertissement sur les enfants vulnérables est justifié, mais le destinataire bascule vers l’auteur.",
+          "suggested_fix": "Conserver la distinction entre croyance et enfant réel ; exprimer directement que maladie, handicap et différence de comportement ne prouvent aucune substitution surnaturelle, sans parler de la rédaction du bestiaire.",
+          "evidence_url": null
+        },
+        {
+          "severity": "minor",
+          "location": "sections.naturelle.parts[4].body[0]",
+          "reason": "La fin « On peut décrire… on ne peut en déduire un taux de naissance féerique » prolonge inutilement un avertissement biologique déjà formulé.",
+          "suggested_fix": "Terminer sur les alliances et les histoires familiales, sans faux calcul démographique.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Le récit de Frank Martin conserve le doute chronologique du narrateur : très bon contrôle contre un présage fabriqué.",
+        "Aos sí, demeure/occupants, origines concurrentes et statut éditorial de Yeats bien distingués."
+      ]
+    },
+    {
+      "slug": "triton",
+      "sha256": "f43b0a809a880c20d5d7a5259b835280d5698069c6960af058f2a66d9a757c3b",
+      "verdict": "pass",
+      "issues": [
+        {
+          "severity": "minor",
+          "location": "sections.naturelle.parts[2], [4], [5]",
+          "reason": "La fin d’Alimentation et les réserves sur ponte/chaîne alimentaire redisent le cadrage divin. Le lecteur est assez informé pour ne pas attendre un régime de poisson.",
+          "suggested_fix": "Condenser les réserves ; préserver les filles nommées, l’éducation d’Athéna et les fonctions marines attestées.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Conque d’Ovide, Géants d’Hygin, fontaine de Properce et filles de Triton contrôlés dans les textes cités.",
+        "Singulier/pluriel et iconographie de la lutte bien séparés ; Nérée reste une hypothèse de rapprochement, pas un substitut historique."
+      ]
+    },
+    {
+      "slug": "troll",
+      "sha256": "f67ab9d2d1cb57782bb85f2abc378abea89371799270b3d2eec70f96dfbd3d44",
+      "verdict": "pass",
+      "issues": [
+        {
+          "severity": "minor",
+          "location": "sections.legendes[1–2]; sections.naturelle.parts[0], [3]",
+          "reason": "Le portrait accumule des fonctions de conte sans raconter un épisode nommé. « Le troll occupe, garde ou convoite » et la ruse restent plus génériques que dans Basajaun ou Cu-sith, malgré deux sources riches.",
+          "suggested_fix": "Remplacer une généralité par un épisode précis déjà disponible chez Visit Norway : The Boy Who Had an Eating Match with a Troll, avec fromage pressé et sac recevant la bouillie. Raconter ce conte sans généraliser ses ruses à tous les trolls.",
+          "evidence_url": "https://www.visitnorway.com/things-to-do/art-culture/the-mythical-norwegian-trolls"
+        },
+        {
+          "severity": "minor",
+          "location": "sections.naturelle.parts[4].body[0]",
+          "reason": "« Une règle moderne […] doit porter le nom de l’œuvre qui l’invente » demeure une instruction de référencement à auteur.",
+          "suggested_fix": "Garder l’attribution des traits de Trollhunter, supprimer la consigne générale.",
+          "evidence_url": null
+        }
+      ],
+      "strengths": [
+        "Trollhunter nettement isolé du folklore ; pétrification et éclatement ne sont pas présentés comme un mécanisme universel.",
+        "Cadre norvégien et rôle de Kittelsen précis ; les théories ethniques de Dasent ne sont pas avalisées."
+      ]
+    }
+  ],
+  "coverage": {
+    "expected": [
+      "aarakocra",
+      "aasimar",
+      "aboleth",
+      "barde",
+      "basajaun",
+      "cryomancien",
+      "cu-sith",
+      "dryade",
+      "ecuyer",
+      "marilith",
+      "meduse",
+      "melusine",
+      "quetzalcoatl",
+      "rakshasa",
+      "shoggoth",
+      "sidhe",
+      "triton",
+      "troll"
+    ],
+    "reviewed_count": 18,
+    "complete": true,
+    "checks": [
+      {
+        "slug": "aarakocra",
+        "sources_consulted": [
+          {
+            "url": "https://www.dndbeyond.com/species/4-aarakocra",
+            "verified": "Texte officiel intégral hors commentaires : Air, plumes, propriété, nids, dragon vert, Sceptre, gargouilles, ponte et âges concordent."
+          }
+        ]
+      },
+      {
+        "slug": "aasimar",
+        "sources_consulted": [
+          {
+            "url": "https://www.dndbeyond.com/posts/1783-the-10-species-in-the-2024-players-handbook",
+            "verified": "Article officiel : ajout aux règles de base, choix de révélation à chaque activation, portée émotionnelle et rayonnement blessant."
+          },
+          {
+            "url": "https://www.wargamer.com/dnd/aasimar",
+            "verified": "Guide lu : mortel des plans supérieurs, humanoïde petit/moyen, résistances, soins, lumière, minute de transformation et repos long."
+          }
+        ]
+      },
+      {
+        "slug": "aboleth",
+        "sources_consulted": [
+          {
+            "url": "https://www.dndbeyond.com/monsters/5194867-aboleth",
+            "verified": "Fiche 2025 lue : quatre tentacules, mucus, Consume Memories, Dominate Mind, Psychic Drain, Eldritch Restoration."
+          },
+          {
+            "url": "https://www.dndbeyond.com/monsters/16762-aboleth",
+            "verified": "Fiche ancienne lue : deux maladies distinctes, ruines, actions de repaire et effets régionaux."
+          }
+        ]
+      },
+      {
+        "slug": "barde",
+        "sources_consulted": [
+          {
+            "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bard",
+            "verified": "Article intégral lu : étymologie celtique, Lucain/Ammien, concours gallois, privilèges et généalogies irlandaises. Source vieillie, déjà contextualisée par la notice."
+          },
+          {
+            "url": "https://www.dndbeyond.com/classes/1-bard",
+            "verified": "Présentation officielle lue : paroles créatrices, magie d’inspiration, charme/illusion, voyages et témoignage héroïque."
+          }
+        ]
+      },
+      {
+        "slug": "basajaun",
+        "sources_consulted": [
+          {
+            "url": "https://nabasque.eus/mythology.html",
+            "verified": "Passages sur San Martin et sur Albistur/Zegama lus : semences, force et avertissement d’orage concordent."
+          },
+          {
+            "url": "https://www.gutenberg.org/files/34902/34902-h/34902-h.htm",
+            "verified": "Chapitre IV et conte Basa-Jauna lus : hospitalité, peigne, trois frères, doigt, ravin, dents, bœufs et trois coups à chacun ; note sur vampire et paragraphe sur cloches vérifiés."
+          }
+        ]
+      },
+      {
+        "slug": "cryomancien",
+        "sources_consulted": [
+          {
+            "url": "https://wiki.guildwars2.com/wiki/Water_Attunement",
+            "verified": "Table des compétences lue : Water Attunement, Frost Aura, Frozen Ground, Ice Shards, Ice Spike et Healing Rain ; soutien/gel bien rapportés."
+          }
+        ]
+      },
+      {
+        "slug": "cu-sith",
+        "sources_consulted": [
+          {
+            "url": "https://www.gutenberg.org/files/61730/61730-h/61730-h.htm",
+            "verified": "Passage Dogs lu : stirk de deux ans, vert, queue, brugh, fentes, course/galop, empreintes, trois aboiements, Bran et chiens ordinaires."
+          }
+        ]
+      },
+      {
+        "slug": "dryade",
+        "sources_consulted": [
+          {
+            "url": "https://www.theoi.com/Nymphe/Nymphai3Myths.html",
+            "verified": "Extraits Ovide VIII/IX, Apollonios II et Antoninus 32 lus ; vérification détaillée des objets, malédictions et métamorphoses."
+          },
+          {
+            "url": "https://www.theoi.com/Nymphe/Dryades.html",
+            "verified": "Définition et étymologie drys, liens des hamadryades aux arbres, diversité des essences et généalogies lues."
+          }
+        ]
+      },
+      {
+        "slug": "ecuyer",
+        "sources_consulted": [
+          {
+            "url": "https://www.worldhistory.org/article/1240/how-to-become-a-medieval-knight",
+            "verified": "Article entier jusqu’à Knights in Warfare lu : détails matériels, cursus, exceptions, Chaucer, étymologie et cérémonie concordent."
+          }
+        ]
+      },
+      {
+        "slug": "marilith",
+        "sources_consulted": [
+          {
+            "url": "https://www.dndbeyond.com/monsters/16952-marilith",
+            "verified": "Fiche 2014 lue intégralement hors commentaires ; télépathie explicitement présente, autres pouvoirs concordants."
+          },
+          {
+            "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/monsters",
+            "verified": "Définition officielle Fiends lue : plans inférieurs et inclusion des démons."
+          }
+        ]
+      },
+      {
+        "slug": "meduse",
+        "sources_consulted": [
+          {
+            "url": "https://www.theoi.com/Pontios/Gorgones.html",
+            "verified": "Hésiode 270 sqq., Ovide IV 770 sqq., Apollodore II 38–46 et présentation iconographique lus : généalogie, prairie, sanctuaire, miroir, ailes/mains, enfants, Polydectès et bouclier concordent."
+          }
+        ]
+      },
+      {
+        "slug": "melusine",
+        "sources_consulted": [
+          {
+            "url": "https://www.psupress.org/books/titles/978-0-271-05412-4.html",
+            "verified": "Introduction savante substantielle lue par passages : roman de 1393, Présine/Élinas, dix fils, secrets successifs, Maillezais, chrétienté, signes des fils, envol, pénitence et stratégie de preuve."
+          }
+        ]
+      },
+      {
+        "slug": "quetzalcoatl",
+        "sources_consulted": [
+          {
+            "url": "https://www.britishmuseum.org/collection/object/E_Am1825-1210-11",
+            "verified": "Notice muséale lue : Am1825,1210.11, hauteur 33,10 cm, 1325–1521, oreilles/coquillage, serpent, pierre verte, os et sang."
+          },
+          {
+            "url": "https://www.britannica.com/topic/Quetzalcoatl",
+            "verified": "Article lu par passages : Teotihuacan, variantes de Tula, offrandes, calmecac, Cholula, Ehecatl et temple circulaire concordent."
+          }
+        ]
+      },
+      {
+        "slug": "rakshasa",
+        "sources_consulted": [
+          {
+            "url": "https://www.britannica.com/topic/rakshasa",
+            "verified": "Article lu : Markandeya Purana/Uttarakanda, soir/nouvelle lune, Maricha, Putana, Vibhishana et rites de Lanka."
+          },
+          {
+            "url": "https://www.britannica.com/topic/Ravana",
+            "verified": "Article lu : lettré et musicien, Shiva, généalogie Pulastya, Mandodari, Kubera, protection, flèche de Brahma et Dussehra."
+          }
+        ]
+      },
+      {
+        "slug": "shoggoth",
+        "sources_consulted": [
+          {
+            "url": "https://www.hplovecraft.com/writings/texts/fiction/mm.aspx",
+            "verified": "Texte primaire consulté par passages : création protoplasmique, fission, guerre moléculaire, résistance au froid, adaptation terrestre, mer souterraine, succion, fuite, Tekeli-li et référence à Poe."
+          }
+        ]
+      },
+      {
+        "slug": "sidhe",
+        "sources_consulted": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Aos_S%C3%AD",
+            "verified": "Étymologie, usage anglais Sidhe, Tuatha Dé Danann/fils de Míl, lieux protégés, aubépine et temps liminaires lus ; synthèse secondaire signalant elle-même un manque de citations."
+          },
+          {
+            "url": "https://www.gutenberg.org/files/33887/33887-h/33887-h.htm",
+            "verified": "The Trooping Fairies et Frank Martin and the Fairies lus : lait sur appui, tailles changeantes, fêtes, récoltes, musique, cercueil et doute après enterrement."
+          }
+        ]
+      },
+      {
+        "slug": "triton",
+        "sources_consulted": [
+          {
+            "url": "https://www.theoi.com/Pontios/Triton.html",
+            "verified": "Synthèse et extraits Hésiode, Apollodore, Pausanias, Hygin, Ovide, Properce, Stace, Hérodote et Apollonios consultés ; principales affirmations concordantes."
+          }
+        ]
+      },
+      {
+        "slug": "troll",
+        "sources_consulted": [
+          {
+            "url": "https://www.visitnorway.com/things-to-do/art-culture/the-mythical-norwegian-trolls",
+            "verified": "Article consulté : entretien Ohrvik, sagas, Asbjørnsen/Moe, Kittelsen, encadré Trollhunter et conte de compétition alimentaire."
+          },
+          {
+            "url": "https://www.gutenberg.org/files/8933/8933-h/8933-h.htm",
+            "verified": "Introduction et passages de contes consultés : bouillie/saucisses/anthropophagie, forêts, richesses, soleil et éclatement ; explications historiques du traducteur distinguées."
+          }
+        ]
+      }
+    ],
+    "expected_count": 18,
+    "unique_count": 18,
+    "missing": [],
+    "unexpected": [],
+    "notices_with_consulted_source": 18,
+    "distinct_consulted_urls": 28,
+    "verdict_counts": {
+      "revise": 9,
+      "pass": 9
+    },
+    "issue_counts": {
+      "critical": 0,
+      "major": 10,
+      "minor": 12
+    },
+    "snapshot_verification": {
+      "method": "SHA-256 calculé sur les octets des 18 fichiers avant lecture puis recalculé après la relecture ; empreintes identiques.",
+      "changed_during_review": [],
+      "all_unchanged": true
+    },
+    "method": "Lecture intégrale des 18 notices, de la charte, du brief avec correction de voix et du Tyrannœil de référence. Lecture effective de pages ou de passages pertinents des sources citées ; aucun simple extrait de moteur tenu pour une consultation. Vérification documentaire et relecture française, non simple contrôle de structure ou de longueur.",
+    "verdict_policy": "pass : aucun point critique ou majeur relevé, retouches mineures possibles. revise : correction nécessaire avant validation. Les verdicts valent pour les empreintes indiquées.",
+    "evidence_policy": "evidence_url est nul pour les constats de voix ou de langue fondés sur le texte local ; les écarts documentaires portent l’URL effectivement consultée.",
+    "findings": [
+      "Deux points documentaires ciblés : autel d’Apollonios réattribué à Ovide dans Dryade ; télépathie présentée comme ajout évitable alors que la fiche Marilith la donne explicitement.",
+      "Défaut dominant : conseils à auteur et précautions biologiques répétitives dans plusieurs notices. Les meilleures notices racontent des événements propres à leur figure.",
+      "Aucun folklore fabriqué ni anachronisme historique majeur supplémentaire identifié dans les passages contrôlés. Cette conclusion ne constitue pas une validation exhaustive de toutes les variantes des traditions."
+    ],
+    "scope": {
+      "notice_files_modified": false,
+      "only_authored_file": "tmp/editorial/review-pass-01.json",
+      "blocked_batch_05_touched": false,
+      "git_commit_or_push": false
+    },
+    "limitations": [
+      "Plusieurs sources longues ont été lues par passages pertinents, pas intégralement dans toutes leurs sections.",
+      "Les entrées Barde et Sidhe emploient notamment une encyclopédie ancienne ou une synthèse collaborative ; ce niveau de source est signalé dans les contrôles.",
+      "La relecture ne remplace pas une vérification de rendu du site ; aucune intégration ni modification des notices effectuée."
+    ]
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "reviewed": [
+    {
+      "slug": "assassin",
+      "verdict": "pass",
+      "sha256": "efdbe5fef39966d6950232bf0bf30b419697e53a63326e43ba4aa49b793259a5",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "naturelle.parts[2] et [5]",
+          "quote": "La fiction préfère souvent montrer le repas comme une épreuve de confiance",
+          "detail": "Commentaire d’archétype assez général, sans œuvre nommée pour l’illustrer; plusieurs conclusions morales donnent un tour essayistique. Non bloquant: ces commentaires sont explicitement fictionnels et ne sont pas imputés aux nizârites historiques."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.iis.ac.uk/scholarly-contributions/assassin",
+          "status": "verified",
+          "consulted": "web_extract direct pendant cette relecture",
+          "claims_checked": "Nom appliqué aux nizârites de Syrie; Sinan au XIIe siècle, Vieux de la Montagne; injure liée au haschisch, absence de preuve de drogue systématique; silence des sources musulmanes hostiles; jardin de Marco Polo et passage au nom commun. Communauté chiite distinguée de son image européenne.",
+          "evidence": "There is no evidence that suggests that hashish or any other drug was used in any systematic fashion to motivate the fida’is"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.iranicaonline.org/articles/assassins",
+          "status": "verified",
+          "consulted": "web_extract direct pendant cette relecture",
+          "claims_checked": "Caractère péjoratif médiéval de la désignation.",
+          "evidence": "pejorative name given to Neẓāri Ismaʿilis by their adversaries during the Middle Ages.",
+          "limitation": "Renvoi terminologique bref, non deuxième enquête historique complète."
+        }
+      ],
+      "scope": "complete"
+    },
+    {
+      "slug": "asura",
+      "verdict": "pass",
+      "sha256": "c0dd78592a993884a3d93ce0eee9763c73ba931805e6279750ab23c525db339a",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "category": "style",
+          "location": "fascination[1], legendes[3], naturelle.parts[0]",
+          "quote": "Leurs destins demandent chacun une lecture propre.",
+          "detail": "La nécessité de distinguer chaque personnage est répétée alors que les exemples la rendent déjà claire. Légère insistance méthodologique, sans confusion religieuse ni biologie inventée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://www.britannica.com/topic/asura",
+          "status": "verified",
+          "consulted": "web_extract direct et complément cache/web/www.britannica.com-56b4a1a014.md, lignes 163–229; corps signé Charles Preston, FAQ IA écartées",
+          "claims_checked": "Titre védique humain/divin, Agni/Varuna/Savitr/Rudra; évolution sémantique et fausse étymologie privative; Mandara/Vasuki, Mohini, Rahu; Durga Puja/Vijayadashami; Skanda/Taraka; Prahlada/Narasimha; Mahabali et Onam au Kerala; généalogies Diti/Danu/Kashyapa/Aditi; maya.",
+          "evidence": "it functions as a descriptor and does not indicate a class of beings",
+          "limitation": "Synthèse secondaire effectivement citée; pas de collation des textes sanskrits. Périmètre hindou explicite, pas de fusion avec les cosmologies bouddhiques."
+        },
+        {
+          "source_id": 4,
+          "url": "https://www.metmuseum.org/art/collection/search/39227",
+          "status": "verified",
+          "consulted": "web_extract direct pendant cette relecture",
+          "claims_checked": "Objet du Met: titre Durga Mahishasura, bronze, Inde. Aucune date ou provenance plus précise prétendue.",
+          "evidence": "Durga Mahishasura, Bronze, India",
+          "limitation": "Extraction limitée au titre et à la légende, suffisante pour les seules données matérielles citées."
+        }
+      ],
+      "scope": "complete"
+    },
+    {
+      "slug": "augure",
+      "verdict": "pass",
+      "sha256": "ae01b44b6098c9d2d5c9a1247811a87a7274936e123bb7d524ce12fe67ccdece",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 5,
+          "url": "https://www.britannica.com/topic/augur",
+          "status": "verified",
+          "consulted": "web_extract direct; corps de l’article Augur, pas FAQ générées par IA",
+          "claims_checked": "Charge humaine romaine, collège, loi Ogulnia 300 et neuf membres, charge viagère, loi Domitia 104; lituus/trabea; auspices sollicités ou incidents, oiseaux/foudre; minuit/aube, tente; portée des annonces des magistrats et examen des irrégularités; distinction des haruspices.",
+          "evidence": "The office of augur, which was bestowed only upon persons of distinguished merit and was much sought after by reason of its political importance, was held for life."
+        },
+        {
+          "source_id": 6,
+          "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm",
+          "status": "verified",
+          "consulted": "cache/web/www.gutenberg.org-7d1f53ecd8.md, lignes 91–93 et 115; ligne 115 intégrale relue par Python pour dépasser la troncature par ligne de read_file",
+          "claims_checked": "Tite-Live I, 6–7: Palatin/Aventin, six et douze vautours, conflit et mort de Rémus. I, 18: pierre, citadelle, tête couverte, régions célestes, repère distant, changement de main du lituus, prière avec main sur Numa et réception des signes.",
+          "evidence": "Then having shifted the lituus into his left hand, placing his right hand on the head of Numa",
+          "limitation": "Traduction anglaise de Spillan; URL Gutenberg non retestée en ligne. Récit des origines traité comme récit tardif, pas compte rendu contemporain."
+        }
+      ],
+      "scope": "complete"
+    },
+    {
+      "slug": "automate",
+      "verdict": "pass",
+      "sha256": "0b5026ed4aed3a6b23d8274f2f06a8f81fefac6a140e59ec643b6e680f017f03",
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 7,
+          "url": "https://www.britannica.com/technology/automaton",
+          "status": "verified",
+          "consulted": "web_extract direct et complément cache/web/www.britannica.com-57bb94606c.md, lignes 229–239; corps rédactionnel seulement",
+          "claims_checked": "Mécanismes relativement autonomes; androïdes écrivant/dessinant/jouant; Héron eau/poids/vapeur; al-Jazari, Artuqides et paons hydrauliques; Tivoli, ressorts et nefs; Rochat, oiseaux/tabatières/cages, tableaux XVIIIe–XIXe; entretien par artisans spécialisés.",
+          "evidence": "a small corps of highly skilled artisans whose dearly priced services keep the objects in working order.",
+          "limitation": "FAQ IA erronée sur le siècle d’al-Jazari écartée; la notice ne reprend pas cette erreur."
+        },
+        {
+          "source_id": 8,
+          "url": "https://www.theoi.com/Gigante/GiganteTalos.html",
+          "status": "verified",
+          "consulted": "web_extract direct, citations du Pseudo-Apollodore et d’Apollonios intégralement lues",
+          "claims_checked": "Apollonios: Talos fait trois tours, rochers, peau mince à la cheville, magie de Médée, blessure et ichor, comparaison du pin abattu. Pseudo-Apollodore: race de bronze ou rapport à Héphaïstos, clou retiré ou flèche; variantes non fusionnées avec une machine historique.",
+          "evidence": "when he grazed his ankle on a sharp rock and the ichor ran out of him like molten lead."
+        }
+      ],
+      "scope": "complete"
+    },
+    {
+      "slug": "arbaletrier",
+      "verdict": "pass",
+      "sha256": "a0881ae986900b384f8c7e0cba4ec0ddf5c68f3eb336afbd3de01d06b0030e40",
+      "issues": [],
+      "source_checks": [
+        {
+          "status": "inherited_prior_validation_unchanged_claims",
+          "consulted": "tmp/editorial/relecture-nouvelles-b.json + tmp/editorial/corrections-nouvelles.json + git diff HEAD sur cette notice",
+          "claims_checked": "Seule Alimentation change: retrait des évidences physiologiques et resserrement de la chasse. La phrase conserve des situations humaines; aucun régime spécifique ou autosubsistance universelle ajouté. Citation [4] inchangée. Remarque stylistique antérieure levée.",
+          "limitation": "Contrôle des seules corrections et de leur contexte immédiat; recherches précédemment validées non refaites."
+        }
+      ],
+      "scope": "targeted_corrections",
+      "correction_comparison": {
+        "head_sha256": "e130a787e7d2e21c8ecc8d2881246b8818879554563345605c68f66b459327bc",
+        "prior_sha256": "e130a787e7d2e21c8ecc8d2881246b8818879554563345605c68f66b459327bc",
+        "journal_before_matches_head": true,
+        "journal_after_matches_current": true,
+        "journal_reproduces_current_json": true,
+        "head_matches_prior": true
+      }
+    },
+    {
+      "slug": "archidemon",
+      "verdict": "pass",
+      "sha256": "af717977fe562cf7025db39260d31a6b3463b347fbac9b62bd56b35ea389401f",
+      "issues": [],
+      "source_checks": [
+        {
+          "status": "inherited_prior_validation_unchanged_claims",
+          "consulted": "tmp/editorial/relecture-nouvelles-b.json + tmp/editorial/corrections-nouvelles.json + git diff HEAD sur cette notice",
+          "claims_checked": "Seule la dernière phrase méthodologique de reliques[0] est supprimée. Béelzébul reste rattaché à Matthieu et les autres personnages à D&D; la phrase sur la non-transmission automatique des histoires demeure. Remarque stylistique antérieure levée.",
+          "limitation": "Contrôle des seules corrections et de leur contexte immédiat; recherches précédemment validées non refaites."
+        }
+      ],
+      "scope": "targeted_corrections",
+      "correction_comparison": {
+        "head_sha256": "3e847161274042a1e393e3fdedeefb3ebd9a33735b60b72de9ca1fa7619e4cdf",
+        "prior_sha256": "3e847161274042a1e393e3fdedeefb3ebd9a33735b60b72de9ca1fa7619e4cdf",
+        "journal_before_matches_head": true,
+        "journal_after_matches_current": true,
+        "journal_reproduces_current_json": true,
+        "head_matches_prior": true
+      }
+    },
+    {
+      "slug": "gnome",
+      "verdict": "pass",
+      "sha256": "ac5f01d5680831fcb6d7cfc4e95613855e98bd8a892ef3004c193f162164768c",
+      "issues": [],
+      "source_checks": [
+        {
+          "status": "inherited_prior_validation_unchanged_claims",
+          "consulted": "tmp/editorial/relecture-nouvelles-b.json + tmp/editorial/corrections-nouvelles.json + git diff HEAD sur cette notice",
+          "claims_checked": "Seule Alimentation est raccourcie. Le constat attribué à Paracelse et son appel [2] demeurent. Le retrait des réfutations ne crée aucun régime de métal, cristaux ou racines; aucune fusion avec les gnomes ludiques. Remarque stylistique antérieure levée.",
+          "limitation": "Contrôle des seules corrections et de leur contexte immédiat; recherches précédemment validées non refaites."
+        }
+      ],
+      "scope": "targeted_corrections",
+      "correction_comparison": {
+        "head_sha256": "7e3c8769d87612662900ec0e5235bde914387bc3e3ee3dbaf0866934d365c3ee",
+        "prior_sha256": "7e3c8769d87612662900ec0e5235bde914387bc3e3ee3dbaf0866934d365c3ee",
+        "journal_before_matches_head": true,
+        "journal_after_matches_current": true,
+        "journal_reproduces_current_json": true,
+        "head_matches_prior": true
+      }
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "assassin",
+      "asura",
+      "augure",
+      "automate",
+      "arbaletrier",
+      "archidemon",
+      "gnome"
+    ],
+    "reviewed_count": 7,
+    "complete_notices_read": [
+      "assassin",
+      "asura",
+      "augure",
+      "automate"
+    ],
+    "targeted_corrections_reviewed": [
+      "arbaletrier",
+      "archidemon",
+      "gnome"
+    ],
+    "missing": [],
+    "verdict_counts": {
+      "pass": 7
+    },
+    "head": "d936d002bf57a66af97fc966cecebf831ce3a83f",
+    "structure_checked": {
+      "assassin": {
+        "five_sections": true,
+        "six_natural_parts_in_order": true,
+        "citations_resolved": true,
+        "sources_all_called": true
+      },
+      "asura": {
+        "five_sections": true,
+        "six_natural_parts_in_order": true,
+        "citations_resolved": true,
+        "sources_all_called": true
+      },
+      "augure": {
+        "five_sections": true,
+        "six_natural_parts_in_order": true,
+        "citations_resolved": true,
+        "sources_all_called": true
+      },
+      "automate": {
+        "five_sections": true,
+        "six_natural_parts_in_order": true,
+        "citations_resolved": true,
+        "sources_all_called": true
+      },
+      "arbaletrier": {
+        "five_sections": true,
+        "six_natural_parts_in_order": true,
+        "citations_resolved": true,
+        "sources_all_called": true
+      },
+      "archidemon": {
+        "five_sections": true,
+        "six_natural_parts_in_order": true,
+        "citations_resolved": true,
+        "sources_all_called": true
+      },
+      "gnome": {
+        "five_sections": true,
+        "six_natural_parts_in_order": true,
+        "citations_resolved": true,
+        "sources_all_called": true
+      }
+    },
+    "integrity": {
+      "method": "SHA-256 des octets bruts par hashlib avant lecture des sept notices/corrections puis après relecture; pas empreinte JSON canonique.",
+      "before_sha256": {
+        "assassin": "efdbe5fef39966d6950232bf0bf30b419697e53a63326e43ba4aa49b793259a5",
+        "asura": "c0dd78592a993884a3d93ce0eee9763c73ba931805e6279750ab23c525db339a",
+        "augure": "ae01b44b6098c9d2d5c9a1247811a87a7274936e123bb7d524ce12fe67ccdece",
+        "automate": "0b5026ed4aed3a6b23d8274f2f06a8f81fefac6a140e59ec643b6e680f017f03",
+        "arbaletrier": "a0881ae986900b384f8c7e0cba4ec0ddf5c68f3eb336afbd3de01d06b0030e40",
+        "archidemon": "af717977fe562cf7025db39260d31a6b3463b347fbac9b62bd56b35ea389401f",
+        "gnome": "ac5f01d5680831fcb6d7cfc4e95613855e98bd8a892ef3004c193f162164768c"
+      },
+      "after_sha256": {
+        "assassin": "efdbe5fef39966d6950232bf0bf30b419697e53a63326e43ba4aa49b793259a5",
+        "asura": "c0dd78592a993884a3d93ce0eee9763c73ba931805e6279750ab23c525db339a",
+        "augure": "ae01b44b6098c9d2d5c9a1247811a87a7274936e123bb7d524ce12fe67ccdece",
+        "automate": "0b5026ed4aed3a6b23d8274f2f06a8f81fefac6a140e59ec643b6e680f017f03",
+        "arbaletrier": "a0881ae986900b384f8c7e0cba4ec0ddf5c68f3eb336afbd3de01d06b0030e40",
+        "archidemon": "af717977fe562cf7025db39260d31a6b3463b347fbac9b62bd56b35ea389401f",
+        "gnome": "ac5f01d5680831fcb6d7cfc4e95613855e98bd8a892ef3004c193f162164768c"
+      },
+      "unchanged_during_review": true,
+      "notices_modified_by_reviewer": false
+    },
+    "scope": "Lecture entière indépendante des quatre nouvelles notices: description, cinq rubriques, six parties et sources. Pour les trois autres, uniquement diff contre HEAD, rapprochement avec revue b et journal de corrections, sans refaire les recherches validées. Charte, Tyrannœil, fantasia-fauna-editorial, humanizer et grounded-citations lus.",
+    "findings": {
+      "invented_zoology_detected": false,
+      "living_traditions": "Asura: cadre hindou, textes et fêtes nommés, Onam situé au Kerala; traditions bouddhiques explicitement hors champ. Assassin: nizârites chiites réels séparés des légendes européennes et de l’archétype fictif.",
+      "human_functions": "Assassin et augure restent humains; modification d’arbaletrier conserve ce cadre. Automate reste un objet fabriqué; Talos relève séparément du récit antique.",
+      "botlike_prose": "Deux réserves mineures localisées; pas de remplissage interchangeable exigeant révision ni conseil de rédaction au lecteur."
+    },
+    "limitations": [
+      "Vérification documentaire des nouvelles notices contre les sources réellement citées; pas de revue philologique des originaux sanskrits/latins/grecs.",
+      "Sept URL des nouvelles notices ouvertes directement; Tite-Live lu dans le cache intégral, pas de test du lien public pendant cette revue.",
+      "Pas de test de rendu ou de clic des citations dans le site; contrôle éditorial et structurel local."
+    ],
+    "only_repository_file_written": "tmp/editorial/relecture-nouvelles-d.json"
+  }
+}

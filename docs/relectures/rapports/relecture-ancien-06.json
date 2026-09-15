@@ -1,0 +1,501 @@
+{
+  "reviewed": [
+    {
+      "slug": "salamandre",
+      "verdict": "revise",
+      "sha256": "7b22777a972d983597d3f537ee3e03950fdfc17bf0e06307e0f951507b4f625b",
+      "sha256_after": "7b22777a972d983597d3f537ee3e03950fdfc17bf0e06307e0f951507b4f625b",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "type": "style",
+          "location": "naturelle / Habitat",
+          "quote": "Il ne faut pas l'envoyer automatiquement dans les volcans",
+          "reason": "Instruction adressée au rédacteur ; décor exclu sans rôle documentaire.",
+          "correction": "Remplacer par : « Le feu du bestiaire est celui d’un foyer ; chez Paracelse, il devient un milieu d’existence. » Conserver le puits et l’arbre de Rochester.",
+          "required": true
+        },
+        {
+          "type": "style",
+          "location": "naturelle / Alimentation",
+          "quote": "Aucune de ces versions ne justifie un régime de charbon ou de minerai ajouté par commodité.",
+          "reason": "Exclusion de possibilités inventées et commentaire d’atelier, après une distinction déjà suffisante.",
+          "correction": "Supprimer cette phrase ; garder nourriture de feu chez Léonard et contamination chez Rochester.",
+          "required": true
+        },
+        {
+          "type": "style",
+          "location": "naturelle / Intelligence",
+          "quote": "Une salamandre savante de fantasy peut partir de ce second héritage ; elle ne devrait pas être présentée comme le portrait ordinaire du bestiaire.",
+          "reason": "Conseil aux auteurs plutôt que description.",
+          "correction": "Supprimer cette phrase ou la remplacer par une variante moderne effectivement nommée et sourcée ; conserver la distinction animal/élémentaire.",
+          "required": true
+        },
+        {
+          "type": "attribution",
+          "location": "naturelle / Reproduction",
+          "quote": "D'autres récits religieux attribuent précisément à la salamandre une naissance dans un feu entretenu.",
+          "reason": "Attribution vague alors que la source nomme la tradition ; ce n’est pas une invention mais une localisation nécessaire.",
+          "correction": "Nommer la tradition talmudique (Hagigah 27a) dans la phrase, sans imposer de durée unique puisque Midrash et Rachi divergent.",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 6,
+          "url": "https://www.kentarchaeology.org.uk/records/rochester-bestiary-salamander",
+          "returned_url": "https://www.kentarchaeology.org.uk/records/rochester-bestiary-salamander",
+          "title": "Salamander, Rochester Bestiary, c.1230 — Kent History & Archaeology",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-salamandre-6.json",
+          "excerpts": [
+            "a poma inficit vene- It is called salamander, for it is able to withstand fire. Among all venomous creatures, it has the greatest power. Whilst others harm people one at a time, this one can harm many simultaneously. If it creeps into a tree, it poisons all the fruits no. et eos qui ea ederint inficit veneno et sic oc- cidit. Que etiam vel si in puteum cadat(changed from cadant) vis ve- neni eius potantes interimit. Ista contra in- cendia repugnans; sola animalium ignes ex- tinguit. Vivit enim in mediis flamis; sine dolo- re. et consumptione. et non solum non uritur; set extinguit incendium et flammas and the poison kills those who eat them. If this creature falls into a well, its venom kills those who drink the water. It withstands fire[1]: it is the only animal able t",
+            "matched resilience and an almost magical defiance of nature’s fiercest element. In Christian bestiaries, the salamander’s supposed ability to endure fire without harm was interpreted as a symbol of purity and faith. Just as the salamander could supposedly live in flames without being burned, the true believer could pass through the fires of temptation and sin without being corrupted. This made the salamander symbolic of steadfastness in faith and the soul's triumph over the trials of earthly life. It was also likened to Christ or saints who endured suffering and emerged unscathed, representing the idea of resurrection and eternal life. This interpretation reinforced the salamander’s status as a creature that, through divine grace, could conquer the fiery trials of the w"
+          ],
+          "ledger_registration": "[1] https://www.kentarchaeology.org.uk/records/rochester-bestiary-salamander"
+        },
+        {
+          "source_id": 7,
+          "url": "https://en.wikipedia.org/wiki/Salamanders_in_folklore",
+          "returned_url": "https://en.wikipedia.org/wiki/Salamanders_in_folklore",
+          "title": "Salamanders in folklore - Wikipedia",
+          "provenance": "existing_local_extraction_not_live",
+          "live_http_status": 403,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/batch-08/e/salamandre-histoire.md",
+          "excerpts": [
+            "s\").[[3]](#cite_note-ragan2023-3)\n\n### Classical\n\n**Aristotle, Pliny, Nicander, Aelian**\n\nThe standard lore of the salamander as a creature enduring fire and extinguishing it was known by the Ancient Greeks, as far back as the 4th century BC, by [Aristotle](https://en.wikipedia.org/wiki/Aristotle \"Aristotle\") (384–322 BC) and his successor [Theophrastus](https://en.wikipedia.org/wiki/Theophrastus \"Theophrastus\") (c. 371–c. 287 BC)[[3]](#cite_note-ragan2023-3) who gave such description of the σαλαμάνδρα (*salamandra*). The salamander's mastery over fire is described by Aristotle in his *[History of Animals](https://en.wikipedia.org/wiki/History_of_Animals \"History of Animals\")*,[[4]](#cite_note-4)[[5]](#cite_note-FOOTNOTEHillman200194-5) while his *[Generation of Animals",
+            "infinite, burning desire\".[[69]](#cite_note-andreani2016-82)\n\n### Renaissance\n\n[Leonardo da Vinci](https://en.wikipedia.org/wiki/Leonardo_da_Vinci \"Leonardo da Vinci\") (1452–1519) wrote the following on the \"*salamãndra*\" : \"This has no digestive organs, and gets no food but from the fire, in which it constantly renews its scaly skin. The salamander, which renews its scaly skin in the fire,―for virtue\".[[70]](#cite_note-davinci-tr-richter-83)[[f]](#cite_note-suda-scaled-42)\n\nCommentators in Europe still persisted in grouping \"crawling things\" (*reptiles* or *reptilia* in Latin) together and thus creatures in this group, which typically included salamanders (Latin *salamandrae*), [dragons](https://en.wikipedia.org/wiki/European_dragon \"European dragon\") (Latin *dracones*",
+            "h to survive the fire as it scurried away.[[72]](#cite_note-bullfinch-85)\n\n#### Paracelsus\n\n![](//upload.wikimedia.org/wikipedia/commons/thumb/0/01/Salamander_%28Paracelsus%29.jpg/250px-Salamander_%28Paracelsus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)\n\n[Paracelsus](https://en.wikipedia.org/wiki/Paracelsus \"Paracelsus\") (1493–1541) suggested that salamanders were the [elementals](https://en.wikipedia.org/wiki/Elemental \"Elemental\") of [fire](https://en.wikipedia.org/wiki/Fire_(classical_element) \"Fire (classical element)\"),[[73]](#cite_note-Paracelsus-86)[[74]](#cite_note-87)[[76]](#cite_note-89) which has had substantial influence on the role of salamanders in the occult. Paracelsus, contrary to the prevalent belief at the time, cons",
+            "d king and salamander.[[97]](#cite_note-brill-dict-gnosis-alchemyiii-112)\n\n#### Gessner\n\n![The more realistic \"salamandra\"](//upload.wikimedia.org/wikipedia/commons/thumb/d/db/Conr._Gesneri_Tigurini_medicin%C3%A6_et_philosophiae_professoris_in_Schola_Tigurina%2C_Histori%C3%A6_animalium_liber_II_%28Page_80%29_BHL40218280-detail.jpg/250px-Conr._Gesneri_Tigurini_medicin%C3%A6_et_philosophiae_professoris_in_Schola_Tigurina%2C_Histori%C3%A6_animalium_liber_II_%28Page_80%29_BHL40218280-detail.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)\n![The more fanciful \"salamandra\"](//upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Conr._Gesneri_Tigurini_medicin%C3%A6_et_philosophiae_professoris_in_Schola_Tigurina%2C_Histori%C3%A6_animalium_liber_II_%28Page"
+          ],
+          "ledger_registration": "[2] https://en.wikipedia.org/wiki/Salamanders_in_folklore"
+        }
+      ],
+      "assessment": "Rochester : venin collectif et feu vérifiés dans traduction et latin ; symbolisme chrétien bien placé dans le commentaire moderne. Cache Wikipedia cohérent : Pline et son doute, Élien forgerons et naissance, Léonard sans organes digestifs, Paracelse, images et Gessner. Aucun faux folklore détecté ; resserrement éditorial nécessaire."
+    },
+    {
+      "slug": "sasquatch",
+      "verdict": "pass",
+      "sha256": "f9dfb87e1587c3fe0c5210dd22b5739df3a1d9efe1bf4dfe19f8823ca4439434",
+      "sha256_after": "f9dfb87e1587c3fe0c5210dd22b5739df3a1d9efe1bf4dfe19f8823ca4439434",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 8,
+          "url": "https://www.bbc.com/travel/article/20220720-the-true-origin-of-sasquatch",
+          "returned_url": "https://www.bbc.com/travel/article/20220720-the-true-origin-of-sasquatch",
+          "title": "The true origin of Sasquatch",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-sasquatch-8.json",
+          "excerpts": [
+            "rlie explained, Sts'ailes tradition holds that the creature can change from its physical form to a rock, tree or even another animal. \"My grandpa used to say, 'The slollicum is a shapeshifter and can walk in the two realms, the spiritual and the physical. That's why you'll never catch him,'\" he said. But he's not surprised people are still trying. \"I think [Sasquatch] resonates because all cultures in the world had some thing, like a supernatural being, and through time and evolution and humanness, we've lost a lot of these things,\" said Charlie. Perhaps science has made us all sceptics. Charlie told me about how he saw two Sasquatch drinking water from Harrison Lake in 2002, a dusk sighting that made his hair stand up on end. At the time, he was bashful to tell anyone ",
+            " of the creature, the Sts'ailes passed down songs and stories about sasq'ets In 1929, J.W. Burns, a Canadian government agent, published an article in Maclean's magazine titled Introducing B.C.'s Hairy Giants , which he wrote based on stories shared by Sts'ailes community members he'd befriended. The article presented Sasquatch to the rest of Canada, and the tale took off from there. This intersection of Sasquatch as symbolic totem, and Sasquatch as living primate, has taken the story beyond mere speculation in Harrison Hot Springs. The town has become a magnet for those seeking answers, like the 26 percent of Canadians that believe cryptids such as Sasquatch are \"definitely\" or \"probably\" real, according to an Angus Reid Institute public opinion poll from 2016. \"People",
+            "es. Every June, visitors can attend Sasquatch Days , which have been held since 1938. At the event, West Coast First Nations gather for canoe races, salmon barbeque and Sts'ailes Sasquatch dances. courtesy Kelsey Charlie A historical photo shows Sts'ailes community members dressed in sasq'ets costumes for the original 1938 Sasquatch Days festival (Credit: courtesy Kelsey Charlie) \"Your first thought is, these [visitors] are going to be crazy, but they're not,\" said Reyerse. \"They're like ordinary people and some of their stories are pretty compelling.\" The town also draws researchers such as Thomas Steenburg, who has written four books on the subject, including In Search of Giants: Bigfoot Sasquatch Encounters , and has appeared as a guest speaker on the subject at even",
+            "cience has made us all sceptics. Charlie told me about how he saw two Sasquatch drinking water from Harrison Lake in 2002, a dusk sighting that made his hair stand up on end. At the time, he was bashful to tell anyone what he'd seen, fearing derision. Lisa Kadane \"The word comes from a mountain that's called Sasq'ets Tel, the place where the Sasquatch gather,\" said Kelsey Charlie, a Sts'ailes band councillor (Credit: Lisa Kadane) \"You don't want to have people looking at you in a certain way,\" Charlie explained. \"Then again, I thought, ' Xwem xwem sq'welewel ,' which in our language means, 'you're proud of who you are, where you come from and what you belong to.\" So, he shared his story. Ultimately, seeing Sasquatch is considered a blessing and a sign of good luck, Char"
+          ],
+          "ledger_registration": "[3] https://www.bbc.com/travel/article/20220720-the-true-origin-of-sasquatch"
+        },
+        {
+          "source_id": 9,
+          "url": "https://www.livescience.com/24598-bigfoot.html",
+          "returned_url": "https://www.livescience.com/24598-bigfoot.html",
+          "title": "Is Bigfoot real? Everything you need to know about the Sasquatch | Live Science",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-sasquatch-9.json",
+          "excerpts": [
+            "he 1958 discovery. The footprints near Bluff Creek were a prank by a man called Ray Wallace, his children revealed after his death in 2002, according to Smithsonian Magazine. By that time, though, Bigfoot was firmly established in popular culture across the continent. Since the 1958 article was published, a wealth of other claims have been made about Sasquatch tracks, casts, photos, videos, and other \"evidence.\" You may like Rare animals spotted, California due a major quake, photon split into infinite others, and China 'tames nature.' Strange 'hobbit' species walked more like us than like 'Lucy,' hip bones reveal Diminutive species 'the Hobbit' did not hunt or control fire, deepening the mystery of its ancestry, dwarf elephant bones reveal Related: Infographic: Trackin",
+            "s still debated but it was likely a hoax, with the ape-like figure just a human wearing a costume. What to read next 70 mind-blowing science facts about our incredible world Sharks reveal their secret lives, coldest temperature recorded in Antarctica, geoglyphs hint at lost Amazonian civilization and why inflammation causes false memories. Watch the first-ever footage of a rare deep-sea squid in the northeastern Pacific Brian Regal , an associate professor of the history of science at Kean University in New Jersey and author of \" Searching for Sasquatch: Crackpots, Eggheads, and Cryptozoology \" (Palgrave Macmillan, 2011), previously told Live Science that people project their own views onto Patty. \"You look at it and you see what you want to believe,\" he said. With the ",
+            "to doubt the existence of Bigfoot. A single creature can't breed and maintain a population, much less a species. For Bigfoot to be viable, it would need to have a population, or populations, large enough to avoid inbreeding and low genetic diversity, or else face extinction. The existence of multiple Bigfoot increases the chances that one would be killed by a hunter or hit by a motorist on a highway, or even found dead (by accident, disease, or old age) by a hiker or farmer at some point, yet no bodies have ever been found. People do occasionally claim to find bones or other large body parts. For example, a man in Utah discovered what he thought was a fossilized Bigfoot skull in 2013. A paleontologist confirmed that the \"skull\" was simply an oddly weathered rock, Live S"
+          ],
+          "ledger_registration": "[4] https://www.livescience.com/24598-bigfoot.html"
+        }
+      ],
+      "assessment": "BBC : Charlie, Sts’ailes, sasq’ets, métamorphoses, lac, musée, Burns 1929 et fête 1938 contrôlés. Live Science : Wallace, film et population viable contrôlés. Les réserves séparent utilement tradition vivante et preuve zoologique ; ne pas les supprimer sous prétexte de négations."
+    },
+    {
+      "slug": "satyre",
+      "verdict": "pass",
+      "sha256": "dfc86f40ab194232618657b97764c6a890d3fea1647041fdb2740e7391052b85",
+      "sha256_after": "dfc86f40ab194232618657b97764c6a890d3fea1647041fdb2740e7391052b85",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 10,
+          "url": "https://www.theoi.com/Georgikos/Satyroi.html",
+          "returned_url": "https://www.theoi.com/Georgikos/Satyroi.html",
+          "title": "SATYRS (Satyroi) - Fertility Spirits of Greek Mythology (Roman Fauns)",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-satyre-10.json",
+          "excerpts": [
+            " as animalistic men with asinine ears, pug noses, reclining hair-lines, and the tails of horses. As companions of Dionysos they were usually shown drinking, dancing, playing flutes and sporting with the Mainades (Maenads). Some of the more specific types of Satyroi were the Panes (goat-legged satyrs), Seilenoi (Silens) (elderly satyrs), Satyriskoi (Satyrisci) (child satyrs), and Tityroi (flute-playing satyrs). Actors dressed as Satyroi formed the choruses of the so-called Satyr-plays which were performed at the festivals of the god Dionysos. FAMILY OF THE SATYRS PARENTS [1.1] THE HEKATERIDES (Hesiod Fragments of Unknown Position 6) [1.2] THE DAKTYLOI & THE HEKATERIDES (Strabo 10.3.19) [2.1] Various rustic gods incl HERMES , SEILENOS , PAN & THE OREAIDES (various sources",
+            "hite) (Greek epic C8th or 7th B.C.) : \"But of them [the daughters of Hekateros (Hecaterus)] were born the divine mountain nymphs ( theai nymphai oureiai ) and the tribe ( genos ) of worthless, helpless Satyroi (Satyrs).\" Homeric Hymn 5 to Aphrodite 256 ff (trans. Evelyn-White) (Greek epic C7th to 4th B.C.) : \"The deep-breasted Mountain Nymphai [the Oreades] who inhabit this great and holy mountain . . . with them the Seilenoi (Silens) and the sharp-eyed Argeiphontes [Hermes] mate in the depths of pleasant caves.\" [N.B. Presumably Satyroi (Satyrs) were the offspring of these unions.] Strabo, Geography 10. 3. 19 (trans. Jones) (Greek geographer C1st B.C. to C1st A.D.) : \"These Daimones [the Kouretes (Curetes), Satyroi (Satyrs) and Oreiades (Oreads)] . . . were called, not",
+            " together with handsome Lyaios (Lyaeus) [Dionysos], Eros (Love) and Aphrodite.\" Aesop, Fables 60 (Chambry) (trans. Gibbs) (Greek fable C6th B.C.) : \"The Man and the Satyros (Satyr). A Man and a Satyros once drank together in token of a bond of alliance being formed between them. One very cold wintry day, as they talked, the Man put his fingers to his mouth and blew on them. When the Satyros asked the reason for this, he told him that he did it to warm his hands because they were so cold. Later on in the day they sat down to eat, and the food prepared was quite scalding. The Man raised one of the dishes a little towards his mouth and blew in it. When the Satyros again inquired the reason, he said that he did it to cool the meat, which was too hot. ‘I can no longer consid",
+            "thmiastae in which the creatures compete in the contests of the Isthmian Games. ARGUS-PANOPTES & THE ARCADIAN SATYR Pseudo-Apollodorus, Bibliotheca 2. 4 (trans. Aldrich) (Greek mythographer C2nd A.D.) : \"He [Argos Panoptes] also ambushed and slew a Satyros (Satyr) that was hurting the Arkadians (Arcadians) by stealing their herds.\" AMYMONE & THE ARGIVE SATYR Pseudo-Apollodorus, Bibliotheca 2. 13 (trans. Aldrich) (Greek mythographer C2nd A.D.) : \"[When Danaus arrived in the land of Argos] the land was without water, thanks to Poseidon, who, in anger at Inakhos (Inachus) for testifying that the region belonged to Hera, had dried up even the springs. So Danaus sent his daughters to find water. One of them, Amymone, while searching threw a spear at a deer and hit a sleeping"
+          ],
+          "ledger_registration": "[5] https://www.theoi.com/Georgikos/Satyroi.html"
+        },
+        {
+          "source_id": 11,
+          "url": "https://classics.mit.edu/Euripides/cyclops.html",
+          "returned_url": "https://classics.mit.edu/Euripides/cyclops.html",
+          "title": "The Internet Classics Archive | The Cyclops by Euripides",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-satyre-11.json",
+          "excerpts": [
+            "g thereof on the edge of the downs; while my appointed task is to stay here and fill the troughs and sweep out the cave, or wait upon the ungodly Cyclops at his impious feasts. His orders now compel obedience; I have to scrape out his house with the rake you see, so as to receive the Cyclops, my absent master, and his sheep in clean caverns. But already I see my children driving their browsing flocks towards me. What means this? is the beat of feet in the Sicinnis dance the same to you now as when ye attended the Bacchic god in his revelries and made your way with dainty steps to the music of lyres to the halls of Althaea? The CHORUS OF SATYRS enters, driving a flock of goats and sheep. Servants follow them. CHORUS singing strophe Offspring of well-bred sires and dams, ",
+            "es here, or Bacchantes thyrsus-bearing; no roll of drums, or drops of sparkling wine by gurgling founts; nor is it now with Nymphs in Nysa I sing a song of Bacchus, Bacchus! to the queen of love, in quest of whom I once sped on with Bacchantes, white of foot. Dear friend, dear Bacchic god, whither art roaming alone, waving thy auburn locks, while I, thy minister, do service to the one-eyed Cyclops, a slave and wanderer I, clad in this wretched goat-skin dress, severed from thy love? SILENUS Hush, children! and bid our servants fold the flocks in the rock-roofed cavern. LEADER OF THE CHORUS to Servants Away! To SILENUS But prithee, why such haste, father? SILENUS I see the hull of a ship from Hellas at the shore, and men, that wield the oar, on their way to this cave wit"
+          ],
+          "ledger_registration": "[6] https://classics.mit.edu/Euripides/cyclops.html"
+        }
+      ],
+      "assessment": "Theoi et Euripide contrôlés : traits équins, cortège, Hécatérides, Argos, Amymone, fable du chaud et froid, servitude et tâches de Silène. Les nuances concernant caprin/équin et violence/comique sont pertinentes. Les considérations naturalistes restent rattachées aux scènes."
+    },
+    {
+      "slug": "sciapode",
+      "verdict": "revise",
+      "sha256": "39dc4cd71454399443dc13fd4b725ec521643cc77645642082d728df9fc8c17f",
+      "sha256_after": "39dc4cd71454399443dc13fd4b725ec521643cc77645642082d728df9fc8c17f",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "type": "style",
+          "location": "naturelle / Comportement",
+          "quote": "On peut évoquer cette sieste sans lui inventer des danses rituelles, une organisation guerrière ou une façon particulière de saluer.",
+          "reason": "Conseil de rédaction et liste gratuite de traits absents.",
+          "correction": "Supprimer cette phrase ; garder l’alternance entre bonds et pause à l’ombre du pied.",
+          "required": true
+        },
+        {
+          "type": "style",
+          "location": "naturelle / Habitat",
+          "quote": "Le décor du catalogue peut montrer un terrain découvert sous le soleil, à condition de le présenter comme une évocation du motif et non comme un site identifié par une enquête.",
+          "reason": "Instruction de composition destinée à l’auteur.",
+          "correction": "Remplacer par : « Le pied levé dessine un abri dans un paysage dominé par la chaleur. » Le cadre d’évocation est déjà posé.",
+          "required": true
+        },
+        {
+          "type": "style",
+          "location": "naturelle / Alimentation",
+          "quote": "Le sciapode n'absorbe pas la lumière par son pied, et son repos ne prouve aucune photosynthèse merveilleuse.",
+          "reason": "Négation d’une invention jamais introduite, suivie d’un conseil sur le repas d’une scène.",
+          "correction": "Remplacer le paragraphe par : « Les passages retenus décrivent son abri et ses déplacements, mais restent silencieux sur son alimentation. » Ne pas remplir artificiellement ce silence.",
+          "required": true
+        },
+        {
+          "type": "style",
+          "location": "naturelle / Reproduction",
+          "quote": "Ajouter des œufs, une division du pied ou une hérédité chiffrée transformerait une interrogation ancienne sur la parenté en invention biologique sans appui dans le texte.",
+          "reason": "Nouvel inventaire de négations/instructions sans tradition à discuter.",
+          "correction": "Supprimer cette dernière phrase ; la pluralité du peuple et la parenté adamique suffisent.",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 12,
+          "url": "https://www.theoi.com/Phylos/Skiapodes.html",
+          "returned_url": "https://www.theoi.com/Phylos/Skiapodes.html",
+          "title": "SCIAPODS (Skiapodes) - One-Legged Giant-Footed Tribe of Greek Legend",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-sciapode-12.json",
+          "excerpts": [
+            " things which he asked about, Iarkhas said that they never had existed at all.\" Pliny the Elder, Natural History 7. 23 (trans. Rackham) (Roman encyclopedia C1st A.D.) : \"He [Ctesias, Greek historian C5th B.C.,] also describes a tribe of men [in India or Ethiopia] called Monocoli (One-Legged) who have only one leg, and who move in jumps with surprising speed; the same are called Sciapodes (Shadow-Foots) tribe, because in the hotter weather they lie on their backs on the ground and protect themselves with the shadow of their feet.\" ALTERNATE NAMES Greek Name Μονοκωλος Μονοκωλοι Transliteration Monokôlos Monokôloi Latin Spelling Monocolus Monocoli Translation One-Legged ( monos, kôlon ) SOURCES GREEK Philostratus, Life of Apollonius of Tyana - Greek Biography C2nd A.D. Eus",
+            "adow-Footed) or Makrokephaloi (Macrocephali) (Long-Headed), and as to the other poetical fancies which the treatise of Skylax recounts about them, he said that they didn't live anywhere on the earth, and least of all in India.’\" Philostratus, Life of Apollonius of Tyana 6. 23 - 25 : \"The Nasamones and the Androphagoi (Man-Eaters) and the Pygmaioi (Pygmies) and Skiapodes (Sciapods) (Shadow-Foots) people are also tribes of Aithiopia (Ethiopia), and they extend as far as the Okeanos Aithiopos (the Ethiopian Ocean), which no mariners ever enter except as castaways who do so against their will.\" Eusebius, Treatise Against Hierocles 21 (trans. Jones) (Greek rhetorician C4th A.D.) : \"He [Apollonios of Tyana] also asked them [the Brahmans of India] about Men who live undergroun"
+          ],
+          "ledger_registration": "[7] https://www.theoi.com/Phylos/Skiapodes.html"
+        },
+        {
+          "source_id": 13,
+          "url": "https://www.newadvent.org/fathers/120116.htm",
+          "returned_url": "https://www.newadvent.org/fathers/120116.htm",
+          "title": "CHURCH FATHERS: City of God, Book XVI (St. Augustine)",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-sciapode-13.json",
+          "excerpts": [
+            "ear, and do not live beyond their eighth. So, too, they tell of a race who have two feet but only one leg, and are of marvellous swiftness, though they do not bend the knee: they are called Skiopodes, because in the hot weather they lie down on their backs and shade themselves with their feet. Others are said to have no head, and their eyes in their shoulders; and other human or quasi- human races are depicted in mosaic in the harbor esplanade of Carthage , on the faith of histories of rarities. What shall I say of the Cynocephali, whose dog-like head and barking proclaim them beasts rather than men? But we are not bound to believe all we hear of these monstrosities. But whoever is anywhere born a man , that is, a rational, mortal animal, no matter what unusual appearan",
+            "we hear of these monstrosities. But whoever is anywhere born a man , that is, a rational, mortal animal, no matter what unusual appearance he presents in color, movement, sound, nor how peculiar he is in some power, part, or quality of his nature, no Christian can doubt that he springs from that one protoplast. We can distinguish the common human nature from that which is peculiar, and therefore wonderful. The same account which is given of monstrous births in individual cases can be given of monstrous races. For God , the Creator of all, knows where and when each thing ought to be, or to have been created, because He sees the similarities and diversities which can contribute to the beauty of the whole. But He who cannot see the whole is offended by the deformity of the"
+          ],
+          "ledger_registration": "[8] https://www.newadvent.org/fathers/120116.htm"
+        }
+      ],
+      "assessment": "Pline/Ctésias, Philostrate contradictoire et Nuremberg vérifiés. New Advent dit effectivement « two feet but only one leg » : pas une faute de lecture de la notice. Attribution explicitement limitée à la traduction Dods acceptable ; ne pas transformer sans examen du latin cette particularité en fait sur toutes les versions anciennes. Les conseils de rédaction et exclusions imaginaires demandent correction."
+    },
+    {
+      "slug": "scylla",
+      "verdict": "pass",
+      "sha256": "d616b23ab029c4b3b24141c2a53cd1e7f0ce6023ae8500c42b844192d467fd43",
+      "sha256_after": "d616b23ab029c4b3b24141c2a53cd1e7f0ce6023ae8500c42b844192d467fd43",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 14,
+          "url": "https://www.theoi.com/Pontios/Skylla.html",
+          "returned_url": "https://www.theoi.com/Pontios/Skylla.html",
+          "title": "SCYLLA (Skylla) - Sea Monster of Greek mythology",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-scylla-14.json",
+          "excerpts": [
+            "lmost reached the shores of Ausonia [Italy].\" THE SLAYING OF SCYLLA BY HERACLES Lycophron, Alexandra 44 ff (trans. Mair) (Greek poet C3rd B.C.) : \"[Herakles] also slew the fierce hound [Skylla (Scylla)] that wached the narrow straits of the Ausonian sea, fishing over her cave, the bull-slaying lioness whom her father [Phorkys (Phorcys)] restored to life, burning her flesh with brands : she who feared not Leptynis [Persephone], goddess of the underworld.\" Lycophron, Alexandra 648 ff : \"The hybrid monster [Skylla] that formerly died by the hand of Mekisteus [Herakles], the hide-clad Spademan, the Cattle-driver.\" Pseudo-Hyginus, Preface (trans. Grant) (Roman mythographer C2nd A.D.) : \"Scylla, who was woman above, but dog-forms below, whom Hercules killed.\" THE METAMORPHOSI",
+            " \"Scylla stayed there where she was and, when the first chance came to vent her rage and hate on Circe, robbed Ulixes [Odysseus] of his comrades.\" SCYLLA & THE VOYAGE OF THE ARGONAUTS Scylla, Apulian red-figure vase fragment C4th B.C., The J. Paul Getty Museum Apollonius Rhodius, Argonautica 4. 786 ff (trans. Rieu) (Greek epic C3rd B.C.) : \"[The goddess Hera addresses Thetis :] ‘I brought them [the Argonauts] safely through the Wandering Rocks, where fiery blasts rage and roar and the rollers break in foam on jagged reefs. But it still remains for them to pass the great cliff of Skylla (Scylla) and the gurgling whirlpool of Kharybdis (Charybdis).’\" Apollonius Rhodius, Argonautica 4. 825 : \"[Hera commands the sea-goddess Thetis to guide the Argonauts safely past Skylla (",
+            "esting heavily on panting Titan [Typhoeus], shall burn with such threats as I?\" Pliny the Elder, Natural History 3. 87 (trans. Rackham) (Roman encyclopedia C1st A.D.) : \"In these Straits [i.e. the Straits of Messina] is the rock of Scylla and also the whirlpool of Charybdis, both notoriously treacherous.\" Statius, Silvae 3. 2. 85 (trans. Mozley) (Roman poetry C1st A.D.) : \"Whether eddying Charybdis be heaving or the maid [Scylla] that ravages the Sicilian deep.\" Nonnus, Dionysiaca 18. 245 ff (trans. Rouse) (Greek epic C5th A.D.) : \"The countenance . . . of Skylla with a marshalled regiment of thronging dogs' heads.\" Suidas s.v. Skylla (trans. Suda On Line) (Byzantine Greek Lexicon C10th A.D.) : \"Skylla (Scylla) : The story used to be told that there is a monster in the "
+          ],
+          "ledger_registration": "[9] https://www.theoi.com/Pontios/Skylla.html"
+        },
+        {
+          "source_id": 15,
+          "url": "https://classics.mit.edu/Homer/odyssey.12.xii.html",
+          "returned_url": "https://classics.mit.edu/Homer/odyssey.12.xii.html",
+          "title": "The Internet Classics Archive | The Odyssey by Homer",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-scylla-15.json",
+          "excerpts": [
+            "and no one- not even a god- could face her without being terror-struck. She has twelve mis-shapen feet, and six necks of the most prodigious length; and at the end of each neck she has a frightful head with three rows of teeth in each, all set very close together, so that they would crunch any one to death in a moment, and she sits deep within her shady cell thrusting out her heads and peering all round the rock, fishing for dolphins or dogfish or any larger monster that she can catch, of the thousands with which Amphitrite teems. No ship ever yet got past her without losing some men, for she shoots out all her heads at once, and carries off a man in each mouth. \"'You will find the other rocks lie lower, but they are so close together that there is not more than a bowsh",
+            "of your men; so drive your ship past her at full speed, and roar out lustily to Crataiis who is Scylla's dam, bad luck to her; she will then stop her from making a second raid upon you. \"'You will now come to the Thrinacian island, and here you will see many herds of cattle and flocks of sheep belonging to the sun-god- seven herds of cattle and seven flocks of sheep, with fifty head in each flock. They do not breed, nor do they become fewer in number, and they are tended by the goddesses Phaethusa and Lampetie, who are children of the sun-god Hyperion by Neaera. Their mother when she had borne them and had done suckling them sent them to the Thrinacian island, which was a long way off, to live there and look after their father's flocks and herds. If you leave these floc"
+          ],
+          "ledger_registration": "[10] https://classics.mit.edu/Homer/odyssey.12.xii.html"
+        }
+      ],
+      "assessment": "Homère XII : voix, anatomie, caverne, régime marin, Crataïs, second enlèvement. Theoi : Ovide métamorphose et roche avant les Troyens, Lycophron mort/résurrection et Pline Messine contrôlés. Séparation des variantes nette ; évocation du navire et des captifs légitime."
+    },
+    {
+      "slug": "selkie",
+      "verdict": "pass",
+      "sha256": "a17676c45d262e55d87cdf7758250a2f2139a96523d936923bc53bc7c6ce0a3d",
+      "sha256_after": "a17676c45d262e55d87cdf7758250a2f2139a96523d936923bc53bc7c6ce0a3d",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 16,
+          "url": "https://www.northlinkferries.co.uk/orkney-blog/an-orkney-folk-tale-the-selkie-wife",
+          "returned_url": "https://www.northlinkferries.co.uk/orkney-blog/an-orkney-folk-tale-the-selkie-wife/",
+          "title": "An Orkney Folk Tale: The Selkie Wife | NorthLink Ferries",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-selkie-16.json",
+          "excerpts": [
+            "e couldn’t return to the sea without it, but he refused. The man of Westness in North Ronaldsay went down to the shore one day to gather shellfish for bait for his fish hooks. Suddenly, he heard the sound of laughter in the distance. He followed the sound and saw that it was a group of selkie folk, sunning themselves on a flat rock. He knew that some seals could take off their skin and become human , and he could see their empty skins lying nearby. The selkie girls were beautiful and Westness wanted to win one as his wife. He crawled, quietly, towards the skins before running through a pool of water to reach the skins. The selkie folk panicked, rushing to grab their skin and dive into the sea. But Westness was able to snatch one from the shore and he walked home carryin",
+            "en to gather shellfish for bait. Her youngest girl was left at home, as she had hurt her foot. The selkie wife started to tidy the house, but she was really searching for her lost skin. Her little girl asked her what she was looking for. Her mother said that she was looking for a lovely skin, to make the girl a pair of shoes to sooth her sore foot. The child smiled and said that she knew where a bonnie skin was hidden. The selkie wife stopped what she was doing, frozen by this news, and asked where it was. Her daughter told her that when her dad thought she was asleep one day he took a lovely silvery skin down from the top of the wall, under the slope of the roof, just above the bed. The selkie wife ran to the place and took down her stolen skin. She kissed her child go",
+            "hter told her that when her dad thought she was asleep one day he took a lovely silvery skin down from the top of the wall, under the slope of the roof, just above the bed. The selkie wife ran to the place and took down her stolen skin. She kissed her child goodbye, with tears in her eye, and ran down to the shore. She pulled on her skin with a cry of joy and dived into the sea. A large male seal swam to her and they met lovingly, for he was her selkie husband. Just then she saw Westness and her sons’ boat sailing around the headland. She swam towards it and, lifting the skin from her face, said: “Good man of Westness, farewell to thee, I liked you well, you were good to me, but I loved far more my man of the sea.” With that she covered her face and the two seals dived ",
+            "to the sea. A large male seal swam to her and they met lovingly, for he was her selkie husband. Just then she saw Westness and her sons’ boat sailing around the headland. She swam towards it and, lifting the skin from her face, said: “Good man of Westness, farewell to thee, I liked you well, you were good to me, but I loved far more my man of the sea.” With that she covered her face and the two seals dived down into the deeps and were seen no more. Westness searched the shore for the rest of his days, looking for his selkie wife, but he never saw her beautiful face again. By Tom Muir Tom is a champion of folk tales from Orkney, bringing them back to the public through books and as a professional storyteller. His day job is at the Orkney Museum. Along with his wife, Rhon"
+          ],
+          "ledger_registration": "[11] https://www.northlinkferries.co.uk/orkney-blog/an-orkney-folk-tale-the-selkie-wife"
+        },
+        {
+          "source_id": 17,
+          "url": "https://en.wikipedia.org/wiki/Selkie",
+          "returned_url": "https://en.wikipedia.org/wiki/Selkie",
+          "title": "Selkie - Wikipedia",
+          "provenance": "existing_local_extraction_not_live",
+          "live_http_status": 403,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/batch-08/e/selkie-histoire.md",
+          "excerpts": [
+            "e implication of transformation into human form.[[3]](#cite_note-4)\n\n[W. Traill Dennison](https://en.wikipedia.org/wiki/Walter_Traill_Dennison \"Walter Traill Dennison\") insisted *selkie* was the correct term to be applied to these shapeshifters, to be distinguished from the [merfolk](https://en.wikipedia.org/wiki/Merfolk \"Merfolk\"), and that [Samuel Hibbert](https://en.wikipedia.org/wiki/Samuel_Hibbert-Ware \"Samuel Hibbert-Ware\") committed an error in referring to them as *mermen* and *mermaids*.[[4]](#cite_note-FOOTNOTEDennison1893173-5) However, when other Norse cultures are examined, Icelandic writers also refer to the seal-wives as merfolk (*marmennlar*).[[5]](#cite_note-jon_gudmundsson-eng-6)\n\nThere also seems to be some conflation between the selkie and [finfolk](",
+            " In *Ursilla's rumour*, the contacted male selkie promised to visit her at the \"seventh stream\" or springtide.[[28]](#cite_note-FOOTNOTEDennison1893176-32) In the [ballad](https://en.wikipedia.org/wiki/Ballad \"Ballad\") *[The Great Silkie of Sule Skerry](https://en.wikipedia.org/wiki/The_Great_Silkie_of_Sule_Skerry \"The Great Silkie of Sule Skerry\")*, the seal-husband promised to return in seven years; the number \"seven\" being commonplace in balladry.[[30]](#cite_note-34)\n\nAccording to one version, the selkie could only assume human form once every seven years because they are bodies that house condemned souls.[[21]](#cite_note-Baily's_Magazine-25) There is the notion that they are either humans who had committed sinful wrongdoing,[[16]](#cite_note-FOOTNOTEDennison189317",
+            "s to make transit from there to the reefs above the sea. However, each skin was unique and irreplaceable.[[17]](#cite_note-FOOTNOTEHibbert1891261-19)\n\nThe shape-shifting nature of selkies within Shetland tradition is detailed in the Scottish ballad *[The Great Silkie of Sule Skerry](https://en.wikipedia.org/wiki/The_Great_Silkie_of_Sule_Skerry \"The Great Silkie of Sule Skerry\")*:\n\n> I am a man upo' da land;  \n>  I am a selkie i' da sea.  \n>  An' whin I'm far fa every strand,  \n>  My dwelling is in Shöol Skerry.\n\nThere is also a story in which a woman gives birth to an unusual child after having met a selkie.[[34]](#cite_note-38)\n\nIn the tale of \"Gioga's Son\", a group of seals resting in the [Ve Skerries](https://en.wikipedia.org/wiki/Ve_Skerries \"Ve Skerries\") were ambu",
+            "a fee.[[26]](#cite_note-30)\n\nChildren born between human and seal-folk may have webbed hands, as in the case of the Shetland mermaid whose children had \"a sort of web between their fingers\",[[27]](#cite_note-FOOTNOTEHibbert1891264-31) or \"Ursilla\" rumoured to have children sired by a male selkie, such that the children had to have the webbing between their fingers and toes made of horny material clipped away occasionally. Some of the descendants actually did have these hereditary traits, according to [Walter Traill Dennison](https://en.wikipedia.org/wiki/Walter_Traill_Dennison \"Walter Traill Dennison\"), who was related to the family.[[28]](#cite_note-FOOTNOTEDennison1893176-32)[[29]](#cite_note-FOOTNOTEMcEntire2007128-33)\n\n### Binding rules and sinful origin\n\n[[edit](/w"
+          ],
+          "ledger_registration": "[12] https://en.wikipedia.org/wiki/Selkie"
+        }
+      ],
+      "assessment": "Conte NorthLink signé Tom Muir réellement lu : North Ronaldsay, Westness, appâts, pied blessé, peau sous le toit, mari marin et adieux exacts. Cache Wikipedia identifiable : Dennison/Bruford, périodicités variables, peau individuelle et enfants palmés. Lecture de la captivité est une interprétation du récit, pas un folklore ajouté."
+    },
+    {
+      "slug": "simurgh",
+      "verdict": "pass",
+      "sha256": "dbf110087c404f0dde892a3a92697d1244f391f8c1c15cbb21300f1c2b29a751",
+      "sha256_after": "dbf110087c404f0dde892a3a92697d1244f391f8c1c15cbb21300f1c2b29a751",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "source_id": 3,
+          "url": "https://www.iranicaonline.org/articles/simorg",
+          "returned_url": "https://www.iranicaonline.org/articles/simorg",
+          "title": "SIMORḠ - Encyclopaedia Iranica",
+          "provenance": "existing_local_extraction_not_live",
+          "live_http_status": 403,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/batch-09/simurgh-source.json",
+          "excerpts": [
+            "), Sīna-Mrū (Pāzand), a fabulous, mythical bird. The name derives from Avestan *mərəγō saēnō* ‘the bird Saēna’, originally a raptor, either eagle or falcon, as can be deduced from the etymologically identical Sanskrit *śyená*. Saēna is also attested as a personal name which is derived from the bird name.\n\nIn the Avestan Yašt 14.41 Vərəθraγna, the deity of victory, wraps *xᵛarnah*, fortune, round the house of the worshipper, for wealth in cattle, like the great bird Saēna, and as the watery clouds cover the great mountains, which means that Saēna will bring rain. In Yašt 12.17 Saēna’s tree stands in the middle of the sea Vourukaša, it has good and potent medicine, is called all-healing, and the seeds of all plants are deposited on it. This scanty information is supplemen",
+            " rear him with her own young, which also showed love for the boy. She chose the most tender meat for him so that he could suck the blood as a substitute for the milk he lacked. When Zāl was grown up, Sām had a dream that made him repent his sin, and set out in search of his son. He found him with the Simorḡ, who returned the young man to his father. Before letting him go, she gave him one of her feathers: by burning it he would be able to call her for help (*Šāh-nāma*, ed. Mohl, I, p. 217ff.). The first time she was called for assistance was at the birth of Zāl’s son, Rostam. The bird suggested they anaesthetize the mother with wine before opening up her side and also prescribed the herbs for healing the wound; the healing was completed by touching the wound with the bi",
+            "ontradictions. While in 10 and 22 the Sēnmurw is a bird, in 23 it is one of the species of bats: they are of the genera of the dog, the bird, and the muskrat because they fly like a bird, have teeth like a dog and a cave for dwelling like the muskrat. Zādspram 3.65 does not make the bats a separate genus, but counts them and the Sēnmurw among the birds, though they are of a different nature, having teeth and feeding their young with milk from their breasts. *Bundahišn* 13.23 contradicts not only 10 and 22 but also 15.13, where the Sēnmurw is counted among the oviparous birds. From this stare of affairs it can be inferred that there was an older version, in which the Sēnmurw was a bird pure and simple as in the Avesta, and a later one, in which she was a bat, and that th",
+            "orḡ.” Fauth (p. 128) sees in this a memory of the Sēnmurw dispersing the seeds. Thirty birds (*si morḡ*) that have survived the hard and perilous quest for their king reach his palace. Coming face to face with the sun of his majesty they realize that they, the thirty birds of the outer world, are one with the Simorḡ of the inner world. Finally the birds lose themselves forever in the Simorḡ they, the shadows, are lost in him, the sun.\n\nThe classification of the Sēnmurw as a bat belonging to three genera in the *Bundahišn* has led Camilla Trever to identify a composite animal in Sasanian art as the Sēnmurw. This animal has the head of a dog, the wings and—in most examples—the tail of a peacock. It has precursors in Scythian art of a millennium earlier, one example of whi",
+            "the castle of Arjāsp. To overcome the huge monster Esfandiār constructs a large chariot spiked all over with swords which cut the bird to pieces (IV, p. 509f.). It is not impossible that both birds are originally identical and the Simorḡ is ambivalent. Her benevolent behavior towards Zāl was due to God’s intervention, and went against her nature as a raptor. In the contemptuous description of Zāl’s origin it is said that the Simorḡ spared the child because she could not stomach him (IV, p. 612).\n\nTrever (pp. 20-21) quotes two Kurdish folktales about a bird called Sīmīr, the Kurdish reflex of Simorḡ. In one of them the hero rescues the young of the birds by killing a snake that is crawling up the tree to devour them. As a reward Sīmīr gives him three of her feathers; by "
+          ],
+          "ledger_registration": "[13] https://www.iranicaonline.org/articles/simorg"
+        },
+        {
+          "source_id": 5,
+          "url": "https://asia-archive.si.edu/learn/shahnama/zal-and-the-simurgh",
+          "returned_url": "https://asia-archive.si.edu/learn/shahnama/zal-and-the-simurgh/",
+          "title": "Zal and the Simurgh - Smithsonian's National Museum of Asian Art",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-simurgh-5.json",
+          "excerpts": [
+            " When the phoenix flies from her nest in search of food for her fledglings, she takes pity on the infant and raises him as her own. One day, a passing caravan catches sight of the noble youth, “whose body was like a cypress tree, whose chest was like a mountain of silver, and whose waist was as slim as a reed.” News of the event reaches Sam, who deeply regrets abandoning his son. Sam and his retinue arrive to find young Zal perched on a mountain peak. At first Zal is reluctant to leave the only home he has ever known, but the magical bird convinces him to go with his father. The phoenix hardens her heart for their parting and gives Zal two of her feathers to burn whenever he needs her help. She urges Zal to “go and see what fate has in store” for him. Content Introducti",
+            " with his father. The phoenix hardens her heart for their parting and gives Zal two of her feathers to burn whenever he needs her help. She urges Zal to “go and see what fate has in store” for him. Content Introduction Kayumars & Hushang Jamshid Zahhak Faraydun Strikes Zahhak Zal and the Simurgh Rustam & Rakhsh Kay-Kavus Afrasiyab’s Night Attack Iskandar Ardashir & Ardavan The Game of Chess Firdawsi: His Times & Today"
+          ],
+          "ledger_registration": "[14] https://asia-archive.si.edu/learn/shahnama/zal-and-the-simurgh"
+        }
+      ],
+      "assessment": "Smithsonian contrôlé en direct : abandon, adoption, réticence au départ, deux plumes. Iranica lu dans extraction locale cohérente (URL, titre SIMORḠ, auteur Hanns-Peter Schmidt, contenu spécialisé) après 403 direct : Saēna, semences, chair tendre, opération, Esfandiyār, chariot, chauve-souris, iconographie et trente oiseaux. Différence une/deux plumes réelle, correctement laissée ouverte. Aucun ajout biologique indu."
+    },
+    {
+      "slug": "troglodyte",
+      "verdict": "revise",
+      "sha256": "c0d0226221a8c09fa85600479036ff55714208253c16fef97433e88f218939a7",
+      "sha256_after": "c0d0226221a8c09fa85600479036ff55714208253c16fef97433e88f218939a7",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "type": "style",
+          "location": "naturelle / Comportement",
+          "quote": "elle n'empêche pas un auteur de distinguer les individus.",
+          "reason": "Adresse à l’auteur dans la notice.",
+          "correction": "Terminer après l’explication de la convention morale de cette édition, sans prescrire une méthode de création.",
+          "required": true
+        },
+        {
+          "type": "style",
+          "location": "naturelle / Alimentation",
+          "quote": "Une aventure peut choisir chasse ou élevage, mais ces ajouts relèvent alors de son monde particulier, et non d'une propriété démontrée par la fiche de combat.",
+          "reason": "Conseil aux auteurs qui allonge un silence documentaire légitime.",
+          "correction": "Supprimer cette phrase ; conserver une formulation brève du silence du SRD sur l’alimentation.",
+          "required": true
+        },
+        {
+          "type": "style",
+          "location": "anomalies §3",
+          "quote": "Le récit gagne à respecter cette différence entre localisation et perception",
+          "reason": "Commentaire d’atelier plutôt que présence du monstre.",
+          "correction": "Remplacer la proposition par : « La perception de cette odeur ne donne pas une localisation exacte » et garder le javelot.",
+          "required": true
+        },
+        {
+          "type": "style",
+          "location": "naturelle / Habitat",
+          "quote": "Ces avantages rendent les cavernes favorables sans établir que le moindre rayon de soleil le détruirait : la référence ne lui donne pas cette faiblesse.",
+          "reason": "Négation gratuite d’un pouvoir/risque absent ; répétée avec transparence, traversée des murs, ponte et prédateurs hypothétiques.",
+          "correction": "Remplacer par : « Sa vision nocturne et son camouflage lui donnent l’avantage dans les cavernes. » Élaguer également les exclusions imaginaires ; ne pas inventer de biologie pour compenser.",
+          "required": true
+        },
+        {
+          "type": "source_inexploitable",
+          "location": "sources [4] et reliques §1",
+          "quote": "Le nom invite à une confusion supplémentaire avec l'oiseau appelé troglodyte.",
+          "reason": "L’URL CNRTL ne fournit aucun article exploitable : ancien extrait réduit à des onglets et une mention d’édition, direct à « Portail lexical ». Le sens lexical n’est pas réfuté, mais sa preuve manque.",
+          "correction": "Remplacer ou compléter [4] par une entrée de dictionnaire réellement lue couvrant habitat humain et oiseau ; vérifier le contenu, pas seulement le titre.",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://www.d20srd.org/srd/monsters/troglodyte.htm",
+          "returned_url": "https://www.d20srd.org/srd/monsters/troglodyte.htm",
+          "title": "Troglodyte :: d20srd.org",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": true,
+          "status": "checked",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-troglodyte-2.json",
+          "excerpts": [
+            "the rest carry one or two javelins and clubs. They normally conceal themselves, launch a volley of javelins, then close to attack. If the battle goes against them, they retreat and attempt to hide. Stench ( Ex ) When a troglodyte is angry or frightened, it secretes an oily, musk-like chemical that nearly every form of animal life finds offensive. All living creatures (except troglodytes) within 30 feet of a troglodyte must succeed on a DC 13 Fortitude save or be sickened for 10 rounds. The save DC is Constitution-based. Creatures that successfully save cannot be affected by the same troglodyte’s stench for 24 hours. A delay poison or neutralize poison spell removes the effect from the sickened creature. Creatures with immunity to poison are unaffected, and creatures res",
+            "inst them, they retreat and attempt to hide. Stench ( Ex ) When a troglodyte is angry or frightened, it secretes an oily, musk-like chemical that nearly every form of animal life finds offensive. All living creatures (except troglodytes) within 30 feet of a troglodyte must succeed on a DC 13 Fortitude save or be sickened for 10 rounds. The save DC is Constitution-based. Creatures that successfully save cannot be affected by the same troglodyte’s stench for 24 hours. A delay poison or neutralize poison spell removes the effect from the sickened creature. Creatures with immunity to poison are unaffected, and creatures resistant to poison receive their normal bonus on their saving throws . Skills The skin of a troglodyte changes color somewhat, allowing it to blend in with",
+            "ch. Automatic Languages: Draconic. Bonus Languages: Common, Giant, Goblin, Orc. Favored Class: Cleric. Level adjustment +2. The Hypertext d20 SRD TM is owned by BoLS Interactive LLC . The text on this page is Open Game Content, and is licensed for public use under the terms of the Open Game License v1.0a . ‘d20 System’ and the ‘d20 System’ logo are trademarks of Wizards of the Coast, Inc. and are used according to the terms of the d20 System License version 6.0. A copy of this License can be found at www.wizards.com/d20 .",
+            ": Clutch (2-5), squad (6-11 plus 1-2 monitor lizards ), or band (20-80 plus 20% noncombatants plus 3-13 monitor lizards ) Challenge Rating : 1 Treasure : 50% coins; 50% goods; 50% items Alignment : Usually chaotic evil Advancement : By character class Level Adjustment : +2 A troglodyte stands about 5 feet tall and weighs about 150 pounds. Troglodytes speak Draconic. Combat Half of a group of troglodytes are armed only with claws and teeth; the rest carry one or two javelins and clubs. They normally conceal themselves, launch a volley of javelins, then close to attack. If the battle goes against them, they retreat and attempt to hide. Stench ( Ex ) When a troglodyte is angry or frightened, it secretes an oily, musk-like chemical that nearly every form of animal life find"
+          ],
+          "ledger_registration": "[15] https://www.d20srd.org/srd/monsters/troglodyte.htm"
+        },
+        {
+          "source_id": 4,
+          "url": "https://www.cnrtl.fr/definition/academie8/troglodyte",
+          "returned_url": "https://www.cnrtl.fr/definition/academie8/troglodyte",
+          "title": "Portail lexical",
+          "provenance": "live",
+          "live_http_status": 200,
+          "url_title_content_coherent": false,
+          "status": "unusable",
+          "evidence_file": "tmp/editorial/relecture-ancien-06/source-troglodyte-4.json",
+          "excerpts": [],
+          "ledger_registration": "[16] https://www.cnrtl.fr/definition/academie8/troglodyte"
+        }
+      ],
+      "assessment": "SRD 3.5 réel contrôlé : humanoïde reptilien, langue, camouflage, musc peur/colère, immunité poison, javelots/retraite, groupes et prêtre. Fantasy annoncée donc recevable. La source CNRTL est vide de définition tant en direct que dans le cache initial : ne pas compter le titre comme preuve lexicale."
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "salamandre",
+      "sasquatch",
+      "satyre",
+      "sciapode",
+      "scylla",
+      "selkie",
+      "simurgh",
+      "troglodyte"
+    ],
+    "reviewed_count": 8,
+    "full_text_read_count": 8,
+    "pass_count": 5,
+    "revise_count": 3,
+    "missing": [],
+    "all_raw_hashes_unchanged": true,
+    "scope": "Lecture seule des notices et de Git. Écriture uniquement dans le rapport et son répertoire réservé.",
+    "standard": "Fantasy annoncée, évocation et silences documentaires admis. Révisions exigées pour consignes aux auteurs, négations de traits inventés, attribution trop vague ou référence sans contenu, non pour goût littéraire.",
+    "limits": [
+      "Les textes Wikipedia et Iranica bloqués en direct ont été contrôlés dans les extractions initiales dont sujet, titre et URL concordent ; disponibilité live non certifiée.",
+      "Relecture textuelle et documentaire, pas audit du rendu web."
+    ]
+  }
+}

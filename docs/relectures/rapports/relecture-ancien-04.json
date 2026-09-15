@@ -1,0 +1,324 @@
+{
+  "reviewed": [
+    {
+      "slug": "phenix",
+      "verdict": "revise",
+      "sha256": "e51e6d6645674e3e6b5c10e6f3e5d2104768618adca4f2dfd04fa08279292ece",
+      "sha256_after": "e51e6d6645674e3e6b5c10e6f3e5d2104768618adca4f2dfd04fa08279292ece",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "anomalies[2], naturelle/Habitat, Alimentation et Intelligence",
+          "quote": "Le feu n'autorise pas toutes les extensions que la fantasy pourrait souhaiter.",
+          "kind": "editorial",
+          "problem": "La prudence devient ici un commentaire sur ce que la fantasy devrait écrire ; elle se prolonge en inventaire de pouvoirs, régimes et comportements refusés. Ce défaut relève du mandat explicite, non de la présence légitime de versions divergentes.",
+          "correction": "Remplacer anomalies[2] par un développement centré sur la combustion et le retour déjà décrits. En Habitat supprimer « On ne devrait donc pas installer automatiquement une population de phénix sur les autels égyptiens. » ; en Alimentation garder la fonction funéraire de la myrrhe et des rameaux, retirer le régime de braises imaginaire ; en Intelligence retirer « On peut admirer cette compétence sans lui prêter des discours prophétiques. ». Conserver intégralement la distinction père/fils et renaissance.",
+          "necessary": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 1,
+          "title": "The Phoenix: A Universal Mythical Bird?",
+          "url": "https://www.curationist.org/editorial-features/article/the-phoenix:-a-universal-mythical-bird",
+          "status": "confirmed_cached",
+          "check": "Extrait Curationist lu : Bénou/héron, filiation discutée, oiseau unique, renaissance chrétienne, médaille italienne regardant le soleil. Cache cohérent par titre, auteur et liens internes ; accès HTTP direct 403.",
+          "evidence": "source-1-cache.md"
+        },
+        {
+          "id": 2,
+          "title": "Phoenix (mythology)",
+          "url": "https://en.wikipedia.org/wiki/Phoenix_(mythology)",
+          "status": "confirmed",
+          "check": "Texte Wikipédia ré-extrait, titre Phoenix (mythology), citation d’Hérodote sur la boule de myrrhe et citation de Pline sur les couleurs ; apparition de 47 également attestée dans Curationist.",
+          "evidence": "source-2-extract.md"
+        }
+      ],
+      "assessment": "Révision ciblée : ne pas réécrire les attributions documentaires confirmées ni supprimer le cadrage fictionnel légitime."
+    },
+    {
+      "slug": "pixie",
+      "verdict": "revise",
+      "sha256": "cf80518ede4c380ce1f810045fd6628dbe70cb13b9c82af94fc74ed075902c3a",
+      "sha256_after": "cf80518ede4c380ce1f810045fd6628dbe70cb13b9c82af94fc74ed075902c3a",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "naturelle/Intelligence",
+          "quote": "ne lui laissant échapper que ses pans de manteau",
+          "kind": "factual_translation",
+          "problem": "Contresens sur la fuite de John Taprail : chez Courtney, il s’échappe AVEC le trésor mais abandonne ses pans aux poursuivants. La phrase française fait échapper les pans, et laisse entendre que lui-même est retenu.",
+          "correction": "Écrire : « les piskies découvrent sa manœuvre et le poursuivent ; il leur échappe avec le trésor, mais laisse les pans de son manteau entre leurs mains.[3] »",
+          "necessary": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 3,
+          "title": "Margaret Ann Courtney — Cornish Feasts and Folk-lore (1890), Fairies",
+          "url": "https://www.gutenberg.org/files/54637/54637-h/54637-h.htm",
+          "status": "confirmed_with_translation_error",
+          "check": "Courtney, chapitre Fairies : classification est/ouest, Polperro/Portallow/Seaton/coupe, Robin Hicks, nourriture et habits, poches retournées, pisky paws, pierres/fuseaux confirmés. John Taprail abandonne ses pans et conserve le trésor : correction nécessaire.",
+          "evidence": "source-3.txt"
+        }
+      ],
+      "assessment": "Révision ciblée : ne pas réécrire les attributions documentaires confirmées ni supprimer le cadrage fictionnel légitime."
+    },
+    {
+      "slug": "poltergeist",
+      "verdict": "revise",
+      "sha256": "8bacb171662b54c689843bae2b49af6f003a9cbf11383f47ce975fac66b9f066",
+      "sha256_after": "8bacb171662b54c689843bae2b49af6f003a9cbf11383f47ce975fac66b9f066",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "legendes[4], anomalies[1–2], naturelle et reliques[0]",
+          "quote": "Une notice documentaire doit, elle, conserver la différence entre une scène écrite pour effrayer et un événement dont on cherche encore la cause.",
+          "kind": "editorial",
+          "problem": "La notice répète presque dans chaque rubrique une leçon de méthode ou une réfutation. L’avertissement initial sur le statut des témoignages est nécessaire ; ses reprises envahissent le portrait, qui devient un guide d’enquête.",
+          "correction": "Supprimer cette phrase métarédactionnelle. Rassembler la réserve sur la preuve et les causes ordinaires dans le cadrage initial et Prédateurs. En anomalies, conserver les coups et leur code ; supprimer « Pour l'analyse, il faut alors distinguer le bruit enregistré, le code convenu et l'interprétation donnée par les personnes présentes. ». En Alimentation conserver les effets de la peur sur les habitants et une seule distinction avec la nourriture imaginaire, sans le final « Il faut garder séparés… ». En Reproduction garder la circulation des affaires et supprimer la dernière phrase sur les descendants et l’enfant créateur. Conserver le statut non établi de la psychokinèse et la protection des personnes.",
+          "necessary": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 5,
+          "title": "Psi Encyclopedia — Poltergeists (Overview)",
+          "url": "https://psi-encyclopedia.spr.ac.uk/articles/poltergeists-overview",
+          "status": "confirmed",
+          "check": "Titre et contenu SPR cohérents : Anthoinette de Grollée/Lyon 1526, voix et coups, Gauld/Cornell et critères, RSPK, Amityville fabriqué ou exagéré. Le texte de notice situe honnêtement la parapsychologie et ne la valide pas scientifiquement.",
+          "evidence": "source-5.txt"
+        },
+        {
+          "id": 4,
+          "title": "Britannica — Poltergeist",
+          "url": "https://www.britannica.com/topic/poltergeist-occultism",
+          "status": "limited",
+          "check": "Accès HTTP direct bloqué ; définition déjà corroborée par la SPR. Attribution précise des craquements de vieilles maisons non recontrôlée sur une extraction fraîche dans cette session.",
+          "evidence": "source-4.txt"
+        }
+      ],
+      "assessment": "Révision ciblée : ne pas réécrire les attributions documentaires confirmées ni supprimer le cadrage fictionnel légitime."
+    },
+    {
+      "slug": "pooka",
+      "verdict": "pass",
+      "sha256": "21bf39ba8aa74a8ae5d91fe6d0c2d72c978d56b2a6ebe2b26b00a642c4dd58a2",
+      "sha256_after": "21bf39ba8aa74a8ae5d91fe6d0c2d72c978d56b2a6ebe2b26b00a642c4dd58a2",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "id": 6,
+          "title": "W. B. Yeats, éd. — Fairy and Folk Tales of the Irish Peasantry : Douglas Hyde, The Piper and the Puca ; Patrick Kennedy, The Kildare Pooka",
+          "url": "https://www.gutenberg.org/files/33887/33887-h/33887-h.htm",
+          "status": "confirmed",
+          "check": "Introduction et deux contes lus : cinq formes, Dunmore, mère/tabac à priser, cornes, Croagh Patrick, jars mangé, pièces/feuilles, anciens instruments, âne domestique et manteau libérateur. Étymologie poc et lien Puck bien présentés comme conjectures.",
+          "evidence": "source-6.txt"
+        }
+      ],
+      "assessment": "Pass : portrait nourri de contes précis ; les réserves portent sur des confusions réelles, pas une biologie à fabriquer. Les rares commentaires de catalogue ne justifient pas à eux seuls une reprise globale."
+    },
+    {
+      "slug": "preta",
+      "verdict": "pass",
+      "sha256": "bd39835f960f6f47a452198905b70c0f3cf890a7bc84df92712a2e348ea774b9",
+      "sha256_after": "bd39835f960f6f47a452198905b70c0f3cf890a7bc84df92712a2e348ea774b9",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "id": 7,
+          "title": "Adeana McNicholl — Who Were the Hungry Ghosts, Really?",
+          "url": "https://tricycle.org/article/who-were-the-hungry-ghosts-really",
+          "status": "confirmed",
+          "check": "McNicholl ré-extraite : ventre/gorge, diversité ancienne du Petavatthu, sens departed, antériorité brahmanique, Bimbisara et seconde offrande, Mulian, feu/insectes, dédicace au sangha, métaphore d’addiction ; titre/auteur/contenu cohérents.",
+          "evidence": "source-7-extract.md"
+        },
+        {
+          "id": 8,
+          "title": "Tirokudda Kanda: Hungry Shades Outside the Walls, traduction de Thanissaro Bhikkhu",
+          "url": "https://www.accesstoinsight.org/tipitaka/kn/pv/pv.1.05.than.html",
+          "status": "confirmed",
+          "check": "Tirokudda Kanda, traduction Thanissaro : défunts aux murs/carrefours/portes, repas et oubli, reconnaissance, agriculture/élevage/commerce absents et dons au Sangha. Aucun Bimbisara dans les vers : distinction juste.",
+          "evidence": "source-8.txt"
+        }
+      ],
+      "assessment": "Pass : voix parfois analytique, mais respect des traditions vivantes et distinction sources/liturgie particulièrement solides. Les précautions religieuses et le silence physiologique sont justifiés."
+    },
+    {
+      "slug": "pretre",
+      "verdict": "revise",
+      "sha256": "ed6f8ca28ba019014bb68f97b97bc4fb8e9ae1a896b6f33751114b61363acea5",
+      "sha256_after": "ed6f8ca28ba019014bb68f97b97bc4fb8e9ae1a896b6f33751114b61363acea5",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "naturelle/Comportement",
+          "quote": "Une scène de prière gagne en présence lorsqu'elle engage des personnes précises plutôt qu'une simple pose devant un autel.",
+          "kind": "editorial",
+          "problem": "Conseil adressé à l’auteur, et non description de l’archétype annoncé. Plusieurs rubriques suivent ce mode prescriptif.",
+          "correction": "Retirer cette phrase et transformer « ces tâches invitent à montrer un personnage au travail » en « Dans le portrait de Fantasia Fauna, l’officiant écoute les demandes, vérifie le rôle des assistants et explique ses décisions. » Le cadrage fictionnel existant suffit, sans feindre un folklore.",
+          "necessary": true
+        },
+        {
+          "location": "naturelle/Prédateurs ; reliques[0]",
+          "quote": "Les conflits gagnent à porter sur ces décisions plutôt que sur une haine automatique entre catégories humaines.",
+          "kind": "editorial",
+          "problem": "Deuxième conseil de scénarisation ; « leur forme doit suivre un culte défini » en reliques donne aussi des consignes de création.",
+          "correction": "Supprimer la phrase citée. Remplacer « Dans une création de fantasy, leur forme doit suivre un culte défini. » par « Leur forme et leur usage varient avec le culte représenté. ». Garder l’alliance avec le tyran, qui est bien dans le texte officiel de D&D.",
+          "necessary": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 9,
+          "title": "Catéchisme de l'Église catholique — The Sacrament of Holy Orders in the Economy of Salvation, 1539–1553",
+          "url": "http://www.vatican.va/content/catechism/en/part_two/section_two/chapter_three/article_6/ii_the_sacrament_of_holy_orders_in_the_economy_of_salvation.html",
+          "status": "confirmed",
+          "check": "Catéchisme 1547 distingue sacerdoce commun/ministériel et ordre ; 1550 mentionne faiblesse, domination, erreur et péché ; 1551 service. URL HTTPS finale et titre cohérents.",
+          "evidence": "source-9.txt"
+        },
+        {
+          "id": 10,
+          "title": "D&D Beyond — Priest (Legacy)",
+          "url": "https://www.dndbeyond.com/monsters/16985-priest",
+          "status": "confirmed",
+          "check": "Fiche officielle Priest marquée Legacy : Any Race/Any Alignment, Medicine/Persuasion/Religion, Wisdom, sorts cités, Divine Eminence, mace, acolytes, tyran et sectes. Variante ludique explicitement séparée des clergés réels.",
+          "evidence": "source-10.txt"
+        }
+      ],
+      "assessment": "Révision ciblée : ne pas réécrire les attributions documentaires confirmées ni supprimer le cadrage fictionnel légitime."
+    },
+    {
+      "slug": "pyromancien",
+      "verdict": "revise",
+      "sha256": "f2728f8908e27717f66c86a6ec6d520087f9b8e006905e1697ad3fd95d372464",
+      "sha256_after": "f2728f8908e27717f66c86a6ec6d520087f9b8e006905e1697ad3fd95d372464",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "naturelle/Comportement",
+          "quote": "Ce sont des propositions de mise en scène, pas des coutumes attestées d'un ordre ancien.",
+          "kind": "editorial",
+          "problem": "Le paragraphe explicite un atelier d’écriture (« les habitudes les plus révélatrices seraient… ») au lieu d’habiter la fiction pourtant correctement annoncée.",
+          "correction": "Après le contraste Chandra/moine, écrire directement sous le cadrage du catalogue : « Avant le sort, le praticien observe les corps autour de lui, choisit une direction libre et peut interrompre son geste. » Supprimer la phrase citée. Ces gestes sont une interprétation autorisée, pas une erreur documentaire.",
+          "necessary": true
+        },
+        {
+          "location": "anomalies[0,2] ; naturelle/Habitat",
+          "quote": "Ajouter un ennemi résistant au feu ne dispense pas de donner au personnage autre chose à faire que brûler plus fort.",
+          "kind": "editorial",
+          "problem": "Conseils aux auteurs récurrents, doublés de négations sur les pouvoirs et l’anatomie.",
+          "correction": "Supprimer la phrase citée ainsi que « Un monde fictif cohérent précise ce que la magie protège et ce qui demeure dangereux autour d'elle. ». En Habitat supprimer la prescription « Son logement doit accueillir une personne, ses proches et ses activités, pas seulement fournir un fond rouge à son portrait. ». Conserver la différence divination/maîtrise des flammes et la protection observée chez Chandra ; condenser Alimentation en besoins humains ordinaires et source magique d’énergie laissée aux conventions de l’œuvre.",
+          "necessary": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 11,
+          "title": "Wiktionnaire — pyromancie",
+          "url": "https://fr.wiktionary.org/wiki/pyromancie",
+          "status": "confirmed",
+          "check": "Wiktionnaire ré-extrait, entrée pyromancie : divination par feu/flammes et citation du Dictionnaire universel de mythologie (1855).",
+          "evidence": "source-11-extract.md"
+        },
+        {
+          "id": 12,
+          "title": "Doug Beyer — Chandra's Origin: Fire Logic",
+          "url": "https://magic.wizards.com/en/news/feature/chandras-origin-fire-logic-2015-06-10",
+          "status": "confirmed",
+          "check": "Page officielle Doug Beyer, Jun 10 2015, Chandra’s Origin: Fire Logic : famille d’inventeurs, transport, Baral, premières flammes, fuite et moines/anneau final. Fiction Magic clairement située.",
+          "evidence": "source-12.txt"
+        }
+      ],
+      "assessment": "Révision ciblée : ne pas réécrire les attributions documentaires confirmées ni supprimer le cadrage fictionnel légitime."
+    },
+    {
+      "slug": "qilin",
+      "verdict": "revise",
+      "sha256": "514096ef97efaccc51e146f60f6e5ba9ff7a5fda7bf6c92fa35a499e06a92546",
+      "sha256_after": "514096ef97efaccc51e146f60f6e5ba9ff7a5fda7bf6c92fa35a499e06a92546",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "naturelle/Comportement et Habitat",
+          "quote": "On peut ainsi imaginer son pas lent entre les pousses sans inventer une nouvelle aventure locale : la scène développe une conduite attestée.",
+          "kind": "editorial",
+          "problem": "Commentaire sur le droit d’écrire une scène plutôt que scène ou exposé. Le paragraphe Habitat répète une consigne destinée à l’illustrateur.",
+          "correction": "Remplacer la phrase citée par « Son pas lent entre les pousses donne une forme visible à cette retenue. » : interprétation annoncée par le portrait, admissible. Supprimer « Une forêt sacrée peut convenir à une illustration de catalogue, mais elle ne doit pas devenir un habitat universel auquel toutes les traditions auraient assigné la bête. ». Garder les lieux attestés et le refus de leur donner une aire de répartition.",
+          "necessary": true
+        },
+        {
+          "location": "naturelle/Alimentation",
+          "quote": "Lui attribuer de la rosée, des pierres précieuses ou une ration de feuilles mortes ajouterait une physiologie absente de cette description.",
+          "kind": "editorial",
+          "problem": "Inventaire d’inventions réfutées, inutile après l’énoncé exact du silence de la source ; ce passage rejoint les consignes métarédactionnelles des autres rubriques.",
+          "correction": "Supprimer cette phrase. Conserver « Elle ne donne pas pour autant un menu complet. » et l’abstention rapportée par Britannica ; ne pas remplacer ce silence par un régime inventé.",
+          "necessary": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 13,
+          "title": "Joanne Taylor — Qilin (Chinese Unicorn), World History Encyclopedia",
+          "url": "https://www.worldhistory.org/Qilin",
+          "status": "confirmed",
+          "check": "Joanne Taylor / Qilin (Chinese Unicorn) : Shijing, commentaires, capture année 14/481, Liji, girafe/Bengale/1414 et influence visuelle, girin/kirin, enfants et rangs. Aucun glissement de la girafe vers une origine du mythe dans la notice.",
+          "evidence": "source-13.txt"
+        },
+        {
+          "id": 14,
+          "title": "Britannica — Qilin",
+          "url": "https://www.britannica.com/topic/qilin",
+          "status": "confirmed",
+          "check": "Britannica ré-extraite : végétation vivante/herbe, couple sous Yao, qi mâle/lin femelle, tablette de jade et refus attribué à Yongle. La divergence avec WHE est explicitement préservée.",
+          "evidence": "source-14-extract.md"
+        },
+        {
+          "id": 15,
+          "title": "Birmingham Museum of Art — The Qilin",
+          "url": "https://www.artsbma.org/spotlight-on-the-collection-january-2018",
+          "status": "partially_confirmed",
+          "check": "Extraction fraîche The Qilin / Birmingham Museum of Art confirme ailes, écailles et quatre sabots fendus ; URL de l’image inclut T.2014.254. La date Han orientaux et le matériau ne figurent pas dans son texte nettoyé actuel, mais sont dans le cache initial intitulé et identifié ; pas de contradiction établie.",
+          "evidence": "../batch-08/c/qilin-extraits.txt"
+        }
+      ],
+      "assessment": "Révision ciblée : ne pas réécrire les attributions documentaires confirmées ni supprimer le cadrage fictionnel légitime."
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "phenix",
+      "pixie",
+      "poltergeist",
+      "pooka",
+      "preta",
+      "pretre",
+      "pyromancien",
+      "qilin"
+    ],
+    "reviewed_count": 8,
+    "full_text_read_count": 8,
+    "pass_count": 2,
+    "revise_count": 6,
+    "missing": [],
+    "all_raw_hashes_unchanged": true,
+    "scope": "Lecture intégrale des huit JSON, charte et skills ; contrôle des attributions clés, non audit exhaustif de chaque source secondaire.",
+    "source_limitations": [
+      "Plusieurs accès HTTP 403 ; recours aux extractions récentes et aux caches explicitement identifiés.",
+      "Curationist contrôlé sur cache initial cohérent, pas sur page fraîche.",
+      "Datation/matériau du bronze Birmingham : seulement cache initial ; morphologie confirmée fraîchement.",
+      "Britannica poltergeist : détail des craquements non recontrôlé fraîchement."
+    ],
+    "files_modified": "Uniquement tmp/editorial/relecture-ancien-04.json et son répertoire auxiliaire ; aucune notice ni opération Git modifiée."
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "reviewed": [
+    {
+      "slug": "barbegazi",
+      "verdict": "revise",
+      "sha256": "a81af5ea2971957e8c0a881268829a5ccfc7ce7384663d7ae841a4c6bfb62774",
+      "sha256_before": "a81af5ea2971957e8c0a881268829a5ccfc7ce7384663d7ae841a4c6bfb62774",
+      "sha256_after": "a81af5ea2971957e8c0a881268829a5ccfc7ce7384663d7ae841a4c6bfb62774",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.naturelle.parts[2].body[0] — Alimentation",
+          "phrase": "Une histoire illustrée pourrait lui offrir un repas, à condition d'assumer cette invention.",
+          "reason": "Conseil explicite à un auteur dans une notice encyclopédique ; la réserve sur le régime est légitime, cette injonction ne l'est pas.",
+          "correction": "Supprimer cette phrase. Garder : « Le portrait moderne décrit ses activités hivernales, mais laisse son alimentation hors champ. »",
+          "kind": "style éditorial",
+          "required": true
+        },
+        {
+          "location": "sections.naturelle.parts[4].body[0] — Reproduction",
+          "phrase": "Il faut distinguer l'idée d'une population imaginaire de la tentation de remplir toutes les cases d'un élevage de créatures.",
+          "reason": "Commentaire de fabrication de notice, doublant une série de négations sur petits, couples et durée de vie.",
+          "correction": "Remplacer le paragraphe par : « Les présentations modernes évoquent les barbegazi au pluriel sans raconter leur naissance. Leur retour suit les premières neiges : c'est la saison qui rythme leur présence. »",
+          "kind": "style éditorial",
+          "required": true
+        },
+        {
+          "location": "sections.naturelle.parts[5].body[0] — Prédateurs",
+          "phrase": "Cette invulnérabilité narrative ne doit évidemment pas devenir un conseil de conduite en montagne : le personnage n'offre aucune indication fiable pour juger de la sécurité d'une pente réelle.",
+          "reason": "Avertissement au lecteur disproportionné, extérieur au portrait et répétant le statut fictif déjà clairement annoncé.",
+          "correction": "Supprimer cette phrase ; conserver le retrait devant la chaleur et l'absence de prédateur nommé. Ne pas combler ce silence par un ennemi inventé.",
+          "kind": "style éditorial",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 1,
+          "url": "https://godsandmonsters.info/barbegazi",
+          "title": "Barbegazi: Avalanche-Surfing Snow Gnomes of the Alps",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Portrait moderne : pieds-raquettes/skis, avalanche, sifflement, sauvetage, moutons, sommeil estival et barbe glacée confirmés. La notice ne reprend pas comme certitude son attribution folklorique franco-suisse.",
+          "evidence_excerpt": "ers.\n\n**What do barbegazi do in summer?**\n\nBarbegazi cannot tolerate warmth, so during the summer months they retreat into caves and tunnels and enter a kind of dormancy. They only come back out when the first snow of winter falls.\n\n**Why are barbegazi so rarely seen?**\n\nBarbegazi live only at high, cold altitudes that few people reach, and their white fur lets them blend almost perfectl",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-0.json"
+        },
+        {
+          "id": 2,
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Barbegazi",
+          "title": "Wikipedia:Articles for deletion/Barbegazi - Wikipedia",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Suppression en août 2023 pour notoriété non établie, et non verdict scientifique prouvant une invention : distinction exacte de la notice.",
+          "evidence_excerpt": "idering whether or not these beasts are notable. But the consensus here is that notability for these creatures can't be established according to Wikipedia standards. [***L***iz](https://en.wikipedia.org/wiki/User:Liz \"User:Liz\") [***Read!***](https://en.wikipedia.org/wiki/Special:Contributions/Liz \"Special:Contributions/Liz\") [***Talk!***](https://en.wikipedia.org/wiki/User_talk",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-1.json"
+        }
+      ],
+      "scope_note": "Aucune erreur de folklore certaine décelée dans les attributions contrôlées. Les corrections demandées portent uniquement sur les éléments explicités ; les interprétations annoncées et le silence documentaire sont admis."
+    },
+    {
+      "slug": "barghest",
+      "verdict": "revise",
+      "sha256": "80225881e8642b19481bdaa6a97b2a9e8483a8cd4dce070cbafdd14b6c83c3b9",
+      "sha256_before": "80225881e8642b19481bdaa6a97b2a9e8483a8cd4dce070cbafdd14b6c83c3b9",
+      "sha256_after": "80225881e8642b19481bdaa6a97b2a9e8483a8cd4dce070cbafdd14b6c83c3b9",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.naturelle.parts[2], [3], [4] — Alimentation, Intelligence, Reproduction",
+          "phrase": "L'élever, le croiser avec un loup ou expliquer les différentes silhouettes par des stades de croissance serait construire une nouvelle fantasy, non restituer les récits du nord anglais.",
+          "reason": "Inventaire de possibilités réfutées, après les repas de cadavres puis la langue, la philosophie et la stratégie militaire : répétition du procédé signalé par la demande, non nécessité documentaire.",
+          "correction": "En Reproduction, supprimer cette dernière phrase et garder la continuité locale d'une hantise. En Intelligence, remplacer « sans lui attribuer une langue, une philosophie ou une stratégie militaire » par « perceptible dans sa façon de suivre et d'arrêter le marcheur ». En Alimentation, garder une seule réserve sur les repas et le développement sur le meneur funèbre ; supprimer la phrase « Sa grande gueule suffit... ». Ne pas supprimer les distinctions de formes réellement attestées.",
+          "kind": "style éditorial",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 8,
+          "url": "https://www.icysedgwick.com/barguest-folklore",
+          "title": "The Barguest: Demon Dog, Silly Sprite or Spectral Hound? - Icy Sedgwick",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Henderson 1879, lieu près de Leeds/Oxwells, procession avant le décès du squire, plaie incurable, variantes de Darlington/Whitby/Lancashire et marche synchronisée : confirmés.",
+          "evidence_excerpt": " told him about the Barguest having seen the procession as a child. Apparently, the procession happened *before* the death of the local squire (1879: 275).\n\n[![](https://www.icysedgwick.com/wp-content/uploads/2024/06/bella-pisani-GRTq-Kf-HTEfg-unsplash.jpg)](https://www.icysedgwick.com/wp-content/uploads/2024/06/bella-pisani-GRTq-Kf-HTEfg-unsplash.jpg",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-7.json"
+        },
+        {
+          "id": 7,
+          "url": "https://en.wikipedia.org/wiki/Barghest",
+          "title": "Barghest - Wikipedia",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Ballade du Troller’s Gill chez Hone, invocation magique et marques sur la poitrine ; invisibilité et motif du franchissement des rivières confirmés comme motifs, pas zoologie.",
+          "evidence_excerpt": "agic \"Ritual magic\"). The man's lifeless body is discovered soon afterward with inhuman marks upon his breast.[[3]](#cite_note-Hone-3) There is also a story of a Barghest entering the city of [York](https://en.wikipedia.org/wiki/York \"York\") occasionally where, according to legend, it preys on lone travellers in the city's narrow [Snickelways](https://en.wi",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-6.json"
+        }
+      ],
+      "scope_note": "Aucune erreur de folklore certaine décelée dans les attributions contrôlées. Les corrections demandées portent uniquement sur les éléments explicités ; les interprétations annoncées et le silence documentaire sont admis."
+    },
+    {
+      "slug": "basilic",
+      "verdict": "revise",
+      "sha256": "e29f7998740c54047587088f7528ea708a6e883c527196daee2e2a15ca634f33",
+      "sha256_before": "e29f7998740c54047587088f7528ea708a6e883c527196daee2e2a15ca634f33",
+      "sha256_after": "e29f7998740c54047587088f7528ea708a6e883c527196daee2e2a15ca634f33",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.naturelle.parts[1], [3], [4], [5] — fins de paragraphes",
+          "phrase": "Cette solution doit rester attachée à sa tradition : les protections par miroir ou les moyens particuliers d'une fiction ultérieure ne forment pas automatiquement un arsenal cumulatif.",
+          "reason": "La notice répète la consigne de ne pas fusionner les versions à propos de la répartition, de la royauté, de la ponte et des protections. Les distinctions historiques sont utiles ; l'accumulation de mises en garde transforme plusieurs rubriques en notes de méthode.",
+          "correction": "En Prédateurs, terminer sur le combat mortel entre belette et basilic ; supprimer la phrase citée. En Habitat, supprimer « Ce déplacement littéraire n'autorise pas... ». En Intelligence, remplacer la négation sur une « administration de sujets » par « Sa royauté désigne l'ascendant du serpent sur les autres animaux ». En Reproduction, conserver l'attribution médiévale et le motif de l'œuf, supprimer la clôture sur incubation et fécondité. Conserver le silence de la rubrique Alimentation, qui est pertinent et n'appelle aucune invention.",
+          "kind": "style éditorial",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 9,
+          "url": "https://www.ebsco.com/research-starters/zoology/basilisk",
+          "title": "Basilisk | Zoology | Research Starters | EBSCOhost",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Ungvarsky : Pline, marque blanche, lance meurtrière, belette, œuf du vieux coq couvé par le crapaud attribué à Pierre de Beauvais, puits de Vienne et Harry Potter confirmés. Source secondaire clairement annoncée ; aucune prétention à une lecture directe de Pierre.",
+          "evidence_excerpt": "at is born when an old rooster, or cock, lays an egg in a pile of animal feces. If a toad sits on the egg to hatch it, the account said, a strange creature would be born with the head of a rooster, the tail of a snake, and wings like a bat. The beast would then slither off to a cellar, cave, well, or other dark underground place to await a victim.\n\nDesp",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-8.json"
+        }
+      ],
+      "scope_note": "Aucune erreur de folklore certaine décelée dans les attributions contrôlées. Les corrections demandées portent uniquement sur les éléments explicités ; les interprétations annoncées et le silence documentaire sont admis."
+    },
+    {
+      "slug": "behemoth",
+      "verdict": "revise",
+      "sha256": "541fc1508fcdcdebdefcce86c2740e5ce688b68774edadce18b1527dd22299d1",
+      "sha256_before": "541fc1508fcdcdebdefcce86c2740e5ce688b68774edadce18b1527dd22299d1",
+      "sha256_after": "541fc1508fcdcdebdefcce86c2740e5ce688b68774edadce18b1527dd22299d1",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.legendes[4] et sections.anomalies[0]",
+          "phrase": "Une notice respectueuse des traditions juives ne choisit pas à leur place une signification unique.",
+          "reason": "La notice parle de sa propre conduite éditoriale, puis donne un conseil à la fantasy (« doit reconnaître son propre geste de réécriture »). Ce sont des consignes d'auteur, pas des informations sur Béhémoth.",
+          "correction": "Remplacer la fin de legendes[4] par « Ces lectures font du banquet tantôt un festin des temps derniers, tantôt une image de la jouissance spirituelle. » avec [12]. Dans anomalies[0], conserver l'explication des comparaisons de métal et supprimer les deux dernières phrases sur l'armure mécanique et la réécriture. Respecter les traditions religieuses et leurs différences, sans choisir une lecture unique.",
+          "kind": "style éditorial",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 10,
+          "url": "https://www.aelf.org/bible/Jb/40",
+          "title": "AELF — Livre de Job — chapitre 40",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Job 40,15–23 : herbe, force, bronze/fer, lotus/roseaux/saules, calme devant le Jourdain. Le verset 17 est bien « Il se raidit comme un cèdre » dans l’AELF.",
+          "evidence_excerpt": " sa force est dans ses reins, et sa vigueur dans les muscles de son ventre.\n\n17 Il se raidit comme un cèdre, les nerfs de ses cuisses s’entrelacent !\n\n18 Ses os sont des tubes de bronze, ses membres, comme des barres de fer.\n\n19 C’est lui la première des œuvres de Dieu ; son Créateur lui fournit un glaive.\n\n20 Les montagnes lui paient leur tribut, ainsi q",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-9.json"
+        },
+        {
+          "id": 3,
+          "url": "https://www.jewishencyclopedia.com/articles/9841-leviathan-and-behemoth",
+          "title": "LEVIATHAN AND BEHEMOTH - JewishEncyclopedia.com",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Jewish Encyclopedia : hypothèse hippopotame, forme égyptienne inexistante, Hénoch 60, II Esdras 6 et Apocalypse syriaque de Baruch 29,4 ; séparation et banquet confirmés.",
+          "evidence_excerpt": "t. R. i. 4).\n\n\"On that day [the day of judgment] two monsters will be produced: a female monster, named 'Leviathan,' to dwell in the depths of the ocean over the fountains of the waters; but the male is called 'Behemoth,' who occupies with his breast a waste wilderness named 'Dendain' [read \"the land of Naid\" after LXX., ἐν γη Ναίδ = ![](https://stora",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-2.json"
+        }
+      ],
+      "scope_note": "Aucune erreur de folklore certaine décelée dans les attributions contrôlées. Les corrections demandées portent uniquement sur les éléments explicités ; les interprétations annoncées et le silence documentaire sont admis."
+    },
+    {
+      "slug": "berserker",
+      "verdict": "revise",
+      "sha256": "de6d91a672b7c38dd33abce9acbd188136ba1d5d4e2804fbb1ffcad787f68bbc",
+      "sha256_before": "de6d91a672b7c38dd33abce9acbd188136ba1d5d4e2804fbb1ffcad787f68bbc",
+      "sha256_after": "de6d91a672b7c38dd33abce9acbd188136ba1d5d4e2804fbb1ffcad787f68bbc",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.legendes[3] et sections.naturelle.parts[1].body[0]",
+          "phrase": "L'illustration du berserker gagne à conserver cette différence, au lieu d'accumuler tous les accessoires nordiques réputés spectaculaires.",
+          "reason": "Conseil à l'illustrateur, répété dans Habitat avec le paysage qui « convient à une illustration ».",
+          "correction": "Supprimer la phrase citée et celle sur la forêt/falaise de la rubrique Habitat. Garder la distinction entre iconographie de l'âge du Fer et équipements vikings, puis décrire positivement les milieux sociaux : suite, expédition, campement, salle.",
+          "kind": "style éditorial",
+          "required": true
+        },
+        {
+          "location": "sections.naturelle.parts[4].body[0] — Reproduction",
+          "phrase": "Dans un univers de fantasy, une initiation doit être présentée comme une règle de cet univers, non comme un rite historique reconstitué.",
+          "reason": "Nouvelle instruction de rédaction ; s'ajoute aux réfutations de régime d'ours, gène de rage et intoxication obligatoire.",
+          "correction": "Supprimer la phrase. Recentrer la rubrique sur la transmission humaine des techniques et de la réputation, en gardant leur formulation comme possibilités, non comme rite attesté. Remplacer la phrase sur le « gène de rage » par « Certaines histoires attachent aussi ces qualités à une lignée. » seulement si une saga précise est ajoutée ; sinon la supprimer.",
+          "kind": "style éditorial",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 11,
+          "url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/weapons/berserkers",
+          "title": "Berserkers",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Musée national du Danemark : armure/tunique retirées, boucliers mordus, rois et jarls, nudité psychologique, corne de Møgeltønder vers 400 et incertitude iconographique confirmés. La notice maintient justement les réserves sur diagnostics et champignons.",
+          "evidence_excerpt": "y also refer to the fact that the fighters had a bear’s strength and wildness.\n\nThey were even known to bite their own shields out of pure rage. The berserkers were dangerous warriors and the sagas describe how they could sometimes form whole combat groups that fought in the same bloodthirsty manner. Several of the sagas inform us about berserkers, and how kings and earls d",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-10.json"
+        }
+      ],
+      "scope_note": "Aucune erreur de folklore certaine décelée dans les attributions contrôlées. Les corrections demandées portent uniquement sur les éléments explicités ; les interprétations annoncées et le silence documentaire sont admis."
+    },
+    {
+      "slug": "cube-gelatineux",
+      "verdict": "revise",
+      "sha256": "02c4fdda87112d796c47f54bd9a8079c1beca32bb336cb9401f56a32029b07c6",
+      "sha256_before": "02c4fdda87112d796c47f54bd9a8079c1beca32bb336cb9401f56a32029b07c6",
+      "sha256_after": "02c4fdda87112d796c47f54bd9a8079c1beca32bb336cb9401f56a32029b07c6",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.naturelle.parts[5].body[0] — Prédateurs",
+          "phrase": "tandis que des maîtres de donjon fictifs le capturent pour s'en servir",
+          "reason": "« Maître de donjon » désigne normalement l'arbitre du jeu ; la source distingue les DM qui mettent en scène le monstre des malfaiteurs qui le piègent dans la fiction. La phrase brouille ces deux niveaux.",
+          "correction": "Remplacer par « tandis que certains malfaiteurs le capturent pour en faire un piège vivant ».[3]",
+          "kind": "précision terminologique",
+          "required": true
+        },
+        {
+          "location": "sections.naturelle.lead et attribution des règles de sections.anomalies",
+          "phrase": "Les règles décrivent un organisme nettoyeur assez cohérent pour surprendre, sans constituer une physiologie complète.",
+          "reason": "L'origine de 1974 est située, mais les propriétés mécaniques modernes (couverture totale, engloutissement, perception aveugle) restent désignées par « les règles » sans édition. La charte demande de situer les versions importantes.",
+          "correction": "Ajouter au lead « Le portrait suit ici le guide de Roll20 consacré à la cinquième édition de Donjons et Dragons. » Le lien d'entrée du guide conduit explicitement au compendium dnd5e. Garder Glabbagool comme exception de l'aventure Out of the Abyss, sans extrapoler son intelligence.",
+          "kind": "attribution de version",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 12,
+          "url": "https://pages.roll20.net/dnd/gelatinous-cube",
+          "title": "Guide to Monsters: Gelatinous Cube - Dungeons & Dragons Honor Among Thieves",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Kat Kruger/Roll20 : Gygax, Monsters & Treasure 1974, transparence/couverture, acide/asphyxie, vibrations, absence de sommeil, Juiblex et Glabbagool dans Out of the Abyss confirmés. Lien dnd5e présent. Article promotionnel et secondaire, pas texte folklorique.",
+          "evidence_excerpt": "world mythologies, the gelatinous cube was an original invention of Gary Gygax. It first appeared in the original Dungeons & Dragons \"white box\" set (1974) in the Monsters & Treasure book.\n\nAlthough they are transparent in nature and creatures inside the cube can be seen, their oozy form also gives total cover. This fact might explain why the characters in *Dungeons & D",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-11.json"
+        }
+      ],
+      "scope_note": "Aucune erreur de folklore certaine décelée dans les attributions contrôlées. Les corrections demandées portent uniquement sur les éléments explicités ; les interprétations annoncées et le silence documentaire sont admis."
+    },
+    {
+      "slug": "cyclope",
+      "verdict": "pass",
+      "sha256": "2454ca2eb1359d7137e10b2c1f14b0b53d83a8f8a45dda3d1a429bb8941d6ffc",
+      "sha256_before": "2454ca2eb1359d7137e10b2c1f14b0b53d83a8f8a45dda3d1a429bb8941d6ffc",
+      "sha256_after": "2454ca2eb1359d7137e10b2c1f14b0b53d83a8f8a45dda3d1a429bb8941d6ffc",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [],
+      "source_checks": [
+        {
+          "id": 4,
+          "url": "https://www.theoi.com/Gigante/GigantePolyphemos.html",
+          "title": "POLYPHEMUS (Polyphemos) - Cyclops Giant of Greek Mythology",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Theoi : filiation Poséidon/Thoosa, économie pastorale, ruse Personne/béliers, prière à Poséidon, Galatée/Acis et œnochoé du Louvre confirmés.",
+          "evidence_excerpt": "lation\n\nMany Words (*poly, phêmê*)\n\n[![Cyclops Polyphemus blinded by Odysseus | Athenian black-figure oinochoe C6th B.C. | Musée du Louvre, Paris](../image/L8.1Polyphemos.jpg)](../Gallery/L8.1.html) \n\nCyclops Polyphemus blinded by Odysseus, Athenian black-figure oinochoe C6th B.C., [Musée du Louvre](http://www.louvre.fr/)\n\n \n\nPOLYPHEMOS (Polyphemus) was a ma",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-3.json"
+        },
+        {
+          "id": 5,
+          "url": "https://en.wikipedia.org/wiki/Cyclopes",
+          "title": "Cyclopes - Wikipedia",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Cyclopes : trois groupes, Brontès/Stéropès/Argès fils de Gaia/Ouranos, foudre de Zeus, bâtisseurs de Tirynthe/Mycènes et prudence sur la monocularité homérique confirmés.",
+          "evidence_excerpt": ", and [Arges](https://en.wikipedia.org/wiki/Arges_(Cyclops) \"Arges (Cyclops)\"), sons of [Uranus](https://en.wikipedia.org/wiki/Uranus_(god) \"Uranus (god)\") and [Gaia](https://en.wikipedia.org/wiki/Gaia_(mythology) \"Gaia (mythology)\") and creators of [Zeus](https://en.wikipedia.org/wiki/Zeus \"Zeus\")'s characteristic weapon, the [thunder",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-4.json"
+        }
+      ],
+      "scope_note": "Pass : distinctions entre traditions nécessaires, pas inventaire gratuit de négations. Récits précis, prose suffisamment incarnée ; aucune correction obligatoire retenue."
+    },
+    {
+      "slug": "dullahan",
+      "verdict": "revise",
+      "sha256": "874b42a00bb4aaa2e3bc95e73a426633feeaa58a61d14d150377ff63a26e12c6",
+      "sha256_before": "874b42a00bb4aaa2e3bc95e73a426633feeaa58a61d14d150377ff63a26e12c6",
+      "sha256_after": "874b42a00bb4aaa2e3bc95e73a426633feeaa58a61d14d150377ff63a26e12c6",
+      "unchanged": true,
+      "full_text_read": true,
+      "issues": [
+        {
+          "location": "sections.naturelle.parts[0].body[0] — Comportement",
+          "phrase": "Un récit de dullahan gagne donc à préserver l'incertitude de l'approche.",
+          "reason": "Conseil explicite à un auteur alors que les deux rencontres fournissent déjà la matière d'une constatation encyclopédique.",
+          "correction": "Remplacer par « Ces deux rencontres laissent incertaine l'intention de celui qui approche. » Garder la phrase suivante. La lecture de Croker confirme les différences entre les deux épisodes ; ne pas uniformiser les chevaux en noir ni ajouter l'or comme faiblesse obligatoire.",
+          "kind": "style éditorial",
+          "required": true
+        }
+      ],
+      "source_checks": [
+        {
+          "id": 6,
+          "url": "https://www.gutenberg.org/files/39752/39752-h/39752-h.htm",
+          "title": "The Project Gutenberg eBook of Canada eBook of Fairy Legends And Traditions Of The South Of Ireland, by T. Crofton Croker",
+          "status": "checked",
+          "url_title_content_coherent": true,
+          "result": "Croker, chapitres Hanlon’s Mill et The Headless Horseman lus dans le texte complet : Charley, achats à Fermoy, Con Buckley, cheval blanc/tête détachée, bras droit, habit rouge, accident centenaire de Kilcummer ; Michael, six chevaux noirs et carrosse silencieux confirmés. Voir croker-extrait.md, extrait du cache complet ; la première extraction était tronquée.",
+          "evidence_excerpt": ". I’ve tried you, and I ought to know; and that’s the sort of man for my money. A hundred years it is since my horse and I broke our necks at the bottom of Kilcummer hill, and ever since I have been trying to get a man that dared to ride with me, and never found one before. Keep, as you have always done, at the tail of the hounds, never balk a ditch, nor turn away from a stone wall, an",
+          "evidence_file": "tmp/editorial/relecture-ancien-01/source-5.json"
+        }
+      ],
+      "scope_note": "Aucune erreur de folklore certaine décelée dans les attributions contrôlées. Les corrections demandées portent uniquement sur les éléments explicités ; les interprétations annoncées et le silence documentaire sont admis."
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "barbegazi",
+      "barghest",
+      "basilic",
+      "behemoth",
+      "berserker",
+      "cube-gelatineux",
+      "cyclope",
+      "dullahan"
+    ],
+    "reviewed_count": 8,
+    "pass_count": 1,
+    "revise_count": 7,
+    "all_texts_read_in_full": true,
+    "byte_hashes_before_after_identical": true,
+    "notice_or_git_writes": false,
+    "method": "Charte et skills éditoriaux lus ; huit notices intégrales et Tyrannœil lus. Extractions fraîches contrôlées par cohérence URL/titre/contenu, sans validation fondée sur les rapports d’auteur. Cyclope : grande ligne legendes relue via parsing après troncature d’affichage. Croker : lecture de la section pertinente du texte complet après extraction tronquée.",
+    "limits": "Contrôle des attributions structurantes et anecdotes nommées, pas édition critique exhaustive ni vérification visuelle du site. Sources secondaires identifiées comme telles. Passages interprétatifs ne sont pas traités comme erreurs au seul motif de leur caractère imaginaire."
+  }
+}
