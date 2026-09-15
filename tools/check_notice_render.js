@@ -47,6 +47,11 @@ for (const heading of doc.querySelectorAll('#naturelle h3')) {
 assert.ok(doc.querySelector('.lede').compareDocumentPosition(doc.querySelector('.dossier')) & win.Node.DOCUMENT_POSITION_FOLLOWING);
 assert.deepEqual(Array.from(doc.querySelectorAll('.dossier dt'), n => n.textContent),
   ['Origine', 'Taille', 'Poids', 'Famille', 'Danger', 'Habitat imaginaire', 'Trait remarquable']);
+const measurements = Array.from(doc.querySelectorAll('.dossier dd')).map(n => n.textContent);
+const fiche = win.FF_FICHES.tyrannoeil;
+assert.equal(measurements[1], fiche.taille, 'the dossier shows the recorded size');
+assert.equal(measurements[2], fiche.poids, 'the dossier shows the recorded weight');
+assert.doesNotMatch(measurements[1] + measurements[2], /non renseign/i);
 // L'agrandissement se fait désormais en cliquant l'illustration elle-même ; le bouton
 // button.exhibit-zoom que ce test exigeait a été volontairement remplacé par la bascule
 // d'illustration. La couverture est maintenue : clic sur l'image, bascule, dialogue et

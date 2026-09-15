@@ -57,9 +57,8 @@
     if (!fiche) return "";
     const rows = [
       ["Origine", escapeHtml(fiche.origine)],
-      // No verified measurements exist in the published data yet.
-      ["Taille", "Non renseignée"],
-      ["Poids", "Non renseigné"],
+      ["Taille", fiche.taille ? escapeHtml(fiche.taille) : "Non renseignée"],
+      ["Poids", fiche.poids ? escapeHtml(fiche.poids) : "Non renseigné"],
       ["Famille", escapeHtml(fiche.famille)],
       ["Danger", dangerDots(fiche.danger)],
       ["Habitat imaginaire", escapeHtml(fiche.habitat)],
