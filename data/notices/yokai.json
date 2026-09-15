@@ -1,0 +1,36 @@
+{
+  "description": "Yokai ne nomme aucune créature en particulier : c'est le mot que le Japon donne à tout ce qui, dans l'ombre d'un couloir ou le fond d'un étang, refuse de rester explicable.",
+  "sections": {
+    "fascination": [
+      "Demander à quoi ressemble un yokai revient à demander à quoi ressemble une exception. Le terme désigne une classe entière d'entités et d'esprits surnaturels du folklore japonais — métamorphes, fantômes, démons, farceurs — sans se réduire à aucun d'entre eux.[1] Le kappa des rivières, le tengu des montagnes, l'oni cornu, le kitsune aux queues multiples : chacune de ces figures, déjà documentée pour elle-même ailleurs sur ce site, n'est qu'un exemple particulier rangé sous cette même étiquette générale. Le yokai, en tant que tel, n'a pas de silhouette fixe ; il a une fonction, celle de nommer l'étrangeté qui échappe encore à l'explication ordinaire.",
+      "Cette amplitude est précisément ce qui fascine. Un objet du quotidien laissé sans entretien, un bruit sans origine repérable, un animal au comportement anormal peuvent tous, selon les récits, franchir le seuil et devenir yokai.[1] Le mot n'exige ni crocs ni fourrure : une vieille lanterne oubliée ou un vieil outil de cuisine y ont autant droit de cité qu'un monstre des rivières. C'est un folklore qui prend soin d'expliquer l'inexplicable sans jamais épuiser son répertoire."
+    ],
+    "legendes": [
+      "L'étymologie du terme vient du chinois yāoguài, et les caractères qui le composent portent l'idée de suspect, de douteux — une désignation qui pointe vers l'ambiguïté plutôt que vers une nature précise.[1] D'autres noms coexistent dans la tradition japonaise, comme mononoke ou ayakashi, chacun mettant l'accent sur une nuance différente de la même inquiétude : la présence qui trouble sans se laisser identifier.",
+      "Le folkloriste Tsutomu Ema a proposé de classer ces entités selon leur forme véritable — humaine, animale, végétale, objet, phénomène naturel — et selon la nature de leur métamorphose, tentative pour mettre un peu d'ordre dans une catégorie qui, par nature, résiste au classement.[1] Le Japon médiéval donne aux yokai leurs premières formes visuelles dans les rouleaux peints emakimono et les récits otogi-zōshi, mais c'est la période d'Edo qui bouleverse le genre : l'essor de l'imprimerie et d'une culture éditoriale de masse standardise et diffuse ces figures à travers tout le pays.[1]",
+      "C'est dans ce contexte qu'émerge Toriyama Sekien, artiste actif au XVIIIe siècle, dont les bestiaires illustrés — à commencer par le Gazu Hyakki Yagyō, le Défilé nocturne des cent démons en images — codifient des dizaines de yokai avec un nom, un dessin et une brève description.[1][2] Sekien ne se contente pas de recueillir des récits existants : il en invente une partie, s'inspirant de contes populaires ou de sa seule imagination. Plusieurs de ses créations ont ensuite été prises, par le public, pour des figures traditionnelles bien plus anciennes qu'elles ne le sont réellement."
+    ],
+    "anomalies": [
+      "La véritable anomalie du yokai tient à son statut de catégorie plutôt que d'espèce. Contrairement au kappa ou au tengu, qui possèdent une forme, un habitat et des habitudes récurrentes d'un récit à l'autre, le mot yokai peut recouvrir un danger de rivière, un animal facétieux, un outil animé ou une simple création éditoriale moderne, sans qu'aucun trait physique commun ne les relie.[1] Chercher le portrait-robot du yokai revient donc à chercher le portrait-robot du mot monstre : la démarche échoue par construction.",
+      "Une seconde anomalie tient à la porosité entre invention artistique et croyance populaire. Les bestiaires de Sekien, œuvres d'un artiste identifié travaillant au XVIIIe siècle, ont fini par se fondre dans le folklore qu'ils prétendaient documenter, au point que plusieurs de ses inventions passent aujourd'hui pour des créatures traditionnelles bien plus anciennes.[1] Le yokai illustre ainsi, mieux qu'aucune autre entrée de ce site, la manière dont un livre peut nourrir en retour la légende qu'il croyait seulement transcrire."
+    ],
+    "naturelle": {
+      "lead": "Parler d'histoire naturelle du yokai est un exercice à contre-emploi : le terme ne décrit pas une espèce mais un cadre, à l'intérieur duquel chaque créature particulière — kappa, tengu, oni, kitsune et bien d'autres, déjà traitées ailleurs sur ce site — développe sa propre biologie légendaire.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le comportement varie entièrement selon l'entité désignée : certains yokai trompent et effraient, d'autres protègent des lieux ou des objets, d'autres encore n'agissent qu'en révélant, par leur simple apparition, qu'un événement échappe à l'explication ordinaire.[1]"]},
+        {"title": "Habitat", "body": ["Les yokai occupent tous les milieux du Japon traditionnel : rivières et étangs pour les esprits aquatiques, montagnes pour les figures ailées, maisons et objets domestiques pour les esprits nés d'un usage prolongé ou d'un abandon.[1]"]},
+        {"title": "Alimentation", "body": ["Aucun régime commun ne peut être attribué à la catégorie : certains yokai se nourrissent de peur, d'autres de proies concrètes, d'autres n'ont besoin de rien pour subsister, leur existence tenant davantage du récit que de la biologie."]},
+        {"title": "Intelligence", "body": ["Le folkloriste Tsutomu Ema a tenté de classer ces entités selon leur forme véritable et l'origine de leur métamorphose, preuve que la tradition japonaise leur reconnaît une diversité de nature suffisante pour appeler une taxonomie propre.[1]"]},
+        {"title": "Reproduction", "body": ["N'étant pas une espèce mais une catégorie, le yokai ne connaît pas de reproduction au sens biologique ; sa perpétuation tient plutôt à la transmission des récits, renouvelée à chaque génération d'illustrateurs et de conteurs, de Toriyama Sekien jusqu'aux bestiaires contemporains."]},
+        {"title": "Prédateurs", "body": ["Faute d'anatomie commune, aucun prédateur ne peut être attribué à l'ensemble des yokai ; certains, comme l'oni ou le tengu, occupent au contraire le sommet de la hiérarchie surnaturelle dans leurs récits respectifs."]}
+      ]
+    },
+    "reliques": [
+      "Le Gazu Hyakki Yagyō de Toriyama Sekien, publié en 1776, reste la relique la plus tangible de cette tradition : un catalogue illustré qui a fixé, pour des générations de lecteurs, le visage de dizaines de yokai jusque-là transmis par la seule parole.[1][2] Les rouleaux peints emakimono et les récits otogi-zōshi de l'époque médiévale, antérieurs à Sekien, témoignent d'une iconographie déjà en formation avant l'explosion éditoriale de l'époque d'Edo. Pour les figures spécifiques que ce catalogue a contribué à populariser — kappa, tengu, oni, kitsune —, on se reportera aux fiches qui leur sont consacrées ailleurs sur ce site."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Yōkai — Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Y%C5%8Dkai"},
+    {"id": 2, "title": "Toriyama Sekien — Japan Society of Boston", "url": "https://www.japansocietyboston.org/post/toriyama-sekien"}
+  ]
+}

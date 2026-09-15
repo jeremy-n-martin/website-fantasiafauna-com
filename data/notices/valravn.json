@@ -1,0 +1,35 @@
+{
+  "description": "Le valravn ne vole pas seulement au-dessus des champs de bataille : il y attend depuis des années le sang précis qui lui rendra son visage de chevalier.",
+  "sections": {
+    "fascination": [
+      "Un corbeau ordinaire se contente de charognes. Le valravn, lui, poursuit un projet : redevenir un homme. La légende danoise le présente comme un chevalier changé en oiseau, dont la malédiction ne peut être rompue qu'en buvant le sang du cœur d'un jeune garçon — une condition si précise, si cruelle, qu'elle transforme chaque apparition du corbeau en une menace ciblée plutôt qu'en un simple présage de mort.[1] Le merveilleux tient ici à l'attente : combien d'années un oiseau patiente-t-il pour une seule gorgée de sang qui le rendra à lui-même ?",
+      "La ballade Valravnen, documentée dès le milieu du XVIe siècle, ne présente pourtant pas d'abord un monstre, mais un allié ambigu.[1] Le corbeau aide une jeune femme à rejoindre son fiancé, en échange d'une promesse : le premier enfant né de cette union lui reviendra. Le pacte, accepté dans l'urgence du désir, se referme des années plus tard avec la rigueur d'une dette qu'aucune richesse ne peut racheter."
+    ],
+    "legendes": [
+      "Dans la ballade, lorsque le fils promis vient au monde, le corbeau revient réclamer son dû. Le père offre châteaux et terres en compensation, mais l'oiseau refuse tout substitut : seul l'enfant convient.[1] Ce refus marque la différence essentielle entre le valravn et une simple créature vorace — ce n'est pas la faim qui le guide, mais l'exactitude d'un contrat auquel rien ne peut se substituer.",
+      "Le dénouement retourne l'horreur en merveille : en buvant le sang du cœur de l'enfant, le corbeau se change en « le plus beau chevalier qui ait jamais marché sur terre », et l'enfant, contre toute attente, est rendu à la vie.[1] La violence du geste se résout ainsi en une double restauration — celle du chevalier et celle de l'enfant —, comme si le sacrifice annoncé n'avait été, depuis le début, qu'une étape nécessaire vers une réparation plus grande que la perte elle-même.",
+      "Le nom valravn s'est aussi fixé dans l'héraldique, où il désigne une figure composite mêlant des traits de loup et d'aigle, portée notamment sur les armoiries de la famille danoise éteinte des Ulfeldt.[1] Cet usage héraldique, distinct du récit de la ballade, montre combien le nom a essaimé au-delà de son origine folklorique, jusqu'à devenir un simple motif de blason détaché de toute malédiction."
+    ],
+    "anomalies": [
+      "La transformation du valravn ne s'opère jamais par un sort récité ou un objet magique : elle exige un acte précis, la consommation du sang du cœur d'un enfant, qui fait de la créature un être suspendu entre deux natures tant que ce geste n'a pas eu lieu.[1] Cette dépendance à un acte extérieur — et non à une volonté propre suffisante — distingue le valravn des changeformes qui maîtrisent seuls leur métamorphose : il reste prisonnier d'une condition que lui seul ne peut réunir.",
+      "Le pacte initial de la ballade, conclu par la jeune femme en échange d'une aide bienveillante, révèle une ambiguïté morale rare pour une créature de malédiction : le corbeau n'est ni un simple monstre ni un simple bienfaiteur, mais un contractant rigoureux dont l'aide, acceptée sans mesurer son prix, se paie toujours au moment le plus douloureux possible.[1] Le folklore danois en fait ainsi une leçon sur la nature des dettes non lues plutôt qu'un pur récit d'épouvante."
+    ],
+    "naturelle": {
+      "lead": "Le valravn appartient au folklore et à la ballade danoise plus qu'à un bestiaire naturaliste ; les traits qu'on peut lui attribuer proviennent presque tous du récit de Valravnen et de son usage héraldique.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le valravn agit selon la logique du pacte plus que selon un instinct animal : il aide, il attend, puis il réclame, avec une constance qui traverse les années sans jamais faiblir.[1] Sa patience narrative en fait une figure presque juridique, plus proche du créancier que du prédateur."]},
+        {"title": "Habitat", "body": ["Les champs de bataille, les routes nocturnes et les toits des maisons sont les lieux associés au corbeau surnaturel, des espaces de passage où son observation silencieuse peut se prolonger sans être remarquée."]},
+        {"title": "Alimentation", "body": ["Sa seule nourriture véritablement documentée dans la légende est le sang du cœur d'un enfant, condition unique et non substituable de sa métamorphose — aucune autre offrande, fût-elle un château, ne peut la remplacer.[1]"]},
+        {"title": "Intelligence", "body": ["Le valravn parle, négocie et tient parole à sa manière : son intelligence est celle d'un être capable de patienter des années pour honorer un contrat, une rigueur qui le rapproche davantage d'un chevalier déchu que d'un simple animal métamorphosé."]},
+        {"title": "Reproduction", "body": ["Aucune source ne documente de reproduction pour le valravn : la ballade ne connaît qu'un seul individu, dont l'existence semble bornée par sa propre malédiction plutôt que par un cycle biologique."]},
+        {"title": "Prédateurs", "body": ["Rien dans le folklore ne lui attribue d'ennemi naturel ; sa seule délivrance possible passe par l'accomplissement du pacte, non par la disparition sous les coups d'un adversaire."]}
+      ]
+    },
+    "reliques": [
+      "Le nom du valravn survit aujourd'hui bien au-delà de la ballade médiévale, jusque dans des blasons héraldiques anciens et des créations contemporaines — jeux vidéo, comédie musicale, attraction de parc à thème — qui reprennent son nom sans toujours en conserver le récit d'origine.[1] Ce qui demeure, d'une version à l'autre, c'est l'image d'un oiseau noir dont l'apparence dissimule un destin humain interrompu, en attente d'un geste qui le libère."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Valravn — folklore et ballade danoise, transformation et héraldique, Wikipédia", "url": "https://en.wikipedia.org/wiki/Valravn"}
+  ]
+}

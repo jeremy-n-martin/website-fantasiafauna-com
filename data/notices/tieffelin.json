@@ -1,0 +1,36 @@
+{
+  "description": "Un visage humain que des cornes et un regard sans pupille désignent à la méfiance : le tieffelin porte un péché qui n'est pas le sien.",
+  "sections": {
+    "fascination": [
+      "Ce qui frappe d'abord chez le tieffelin, c'est l'écart entre l'origine du trait et sa lecture par autrui. Des cornes, une queue, des yeux d'une seule couleur sans sclère ni pupille visibles : rien de tout cela n'est choisi, rien n'est acquis par un pacte personnel. C'est un héritage de sang, transmis par des générations, et pourtant chacun de ceux qui le portent doit répondre, seul, du regard qu'il suscite.[1]",
+      "La fascination tient à ce renversement : la marque du corps précède tout acte, et pourtant elle est lue comme un jugement moral. Peau aux teintes humaines étendues jusqu'au rouge, cheveux virant au bleu, au violet ou au cramoisi, cornes en spirale d'antilope ou recourbées comme celles d'un bélier — le tieffelin ressemble assez à un être humain pour que la différence saute aux yeux plutôt qu'elle ne s'efface.[1]"
+    ],
+    "legendes": [
+      "Le tieffelin appartient au vocabulaire des jeux de rôle modernes plutôt qu'à un folklore ancien : aucune tradition populaire ne le nomme avant son apparition dans les bestiaires et les manuels de personnages joueurs. Son origine fictive raconte pourtant une histoire ancienne dans sa forme : celle d'un pacte scellé par des ancêtres, dont la portée dépasse largement la vie de ceux qui l'ont conclu.[1]",
+      "Ce pacte, selon les sources consultées, aurait introduit dans une lignée humaine la puissance infernale d'Asmodée, un seigneur des Neuf Enfers. La faute originelle n'appartient donc pas au tieffelin lui-même : elle remonte à un accord passé par des générations disparues, dont il hérite les conséquences visibles sans en avoir jamais partagé l'intention.[1]",
+      "D'autres lignées, moins centrales dans la tradition mais présentes dans les variantes du jeu, rattachent certains tieffelins à d'autres puissances infernales qu'Asmodée. Ce pluriel de bloodlines multiplie les nuances de cornes, de teintes et de traits sans jamais changer la donnée essentielle : un sang mêlé à une force qui n'est pas humaine, et un corps qui en garde la trace pour toujours."
+    ],
+    "anomalies": [
+      "L'anomalie la plus commentée par les sources est morale plutôt que biologique : l'héritage infernal du tieffelin n'affecte ni son caractère ni ses choix. Rien dans son sang ne le pousse vers le mal, et pourtant les autres peuples supposent le contraire, persuadés que la marque du corps trahit nécessairement une marque de l'âme.[1] Cette confusion, entretenue par la peur plus que par l'observation, façonne l'essentiel de son existence sociale.",
+      "Le tieffelin vit ainsi une double vie de fiction : celle que son apparence impose au regard d'autrui, et celle, généralement banale, de ses actes réels. « Les regards et les murmures, la violence et l'insulte » forment le quotidien que la tradition attribue à beaucoup d'entre eux, sanction d'une faute qu'ils n'ont pas commise mais dont ils portent, littéralement, le visage.[1]"
+    ],
+    "naturelle": {
+      "lead": "Le tieffelin n'appartient à aucun folklore traditionnel : c'est une création de la fantasy de jeu de rôle, pensée comme un peuple jouable au physique humain marqué d'un héritage infernal transmis par le sang plutôt que choisi.",
+      "parts": [
+        {"title": "Comportement", "body": ["Habitué très tôt à la méfiance d'autrui, le tieffelin développe souvent une indépendance marquée et une capacité à tracer sa propre voie plutôt qu'à chercher l'approbation d'un groupe qui commence par le juger sur son apparence.[1] Ce trait n'est pas universel, mais il revient comme une réponse logique à un environnement social hostile de naissance."]},
+        {"title": "Habitat", "body": ["Villes, marges des royaumes et compagnies itinérantes accueillent plus volontiers le tieffelin que les communautés fermées, où sa différence visible attire immédiatement l'attention. Beaucoup choisissent une vie de mouvement plutôt que d'enracinement, moins par goût que par nécessité."]},
+        {"title": "Alimentation", "body": ["Aucune source ne signale de régime particulier : le tieffelin partage l'alimentation humaine ordinaire, son héritage infernal ne touchant que l'apparence et non la physiologie digestive."]},
+        {"title": "Intelligence", "body": ["Le tieffelin est présenté comme aussi capable qu'un être humain sur le plan intellectuel, sans aptitude ni faiblesse particulière liée à son sang. Sa vivacité sociale, en revanche, se développe souvent plus tôt que la moyenne, faite d'une lecture précoce des regards et des préjugés d'autrui."]},
+        {"title": "Reproduction", "body": ["L'héritage infernal se transmet par filiation, de génération en génération, depuis le pacte originel. Un tieffelin engendre le plus souvent d'autres tieffelins, ou des enfants dont le trait peut rester discret avant de s'affirmer, preuve que le sang ancien continue de circuler bien après l'accord qui l'a introduit."]},
+        {"title": "Prédateurs", "body": ["Le tieffelin n'a pas de prédateur naturel au sens animal du terme ; sa menace la plus constante reste sociale, portée par des communautés promptes à l'exclure ou à le suspecter sur la seule foi de son apparence, plutôt que par une créature qui le traquerait spécifiquement."]}
+      ]
+    },
+    "reliques": [
+      "Le tieffelin reste une figure sans passé archéologique ou textuel ancien : sa seule mémoire est celle des univers de jeu qui l'ont fait naître, où les récits de pactes ancestraux avec des seigneurs infernaux tiennent lieu de mythologie fondatrice. Aucune relique matérielle ne l'atteste, aucune tombe ne porte ses cornes sculptées.",
+      "Ce qui demeure, d'une édition à l'autre des règles, c'est l'insistance sur un même motif : une faute qui précède la naissance, un corps qui en témoigne malgré lui, et une vie entière à répondre, ou à refuser de répondre, pour un choix qu'on n'a jamais fait.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Tiefling, espèce et héritage infernal", "url": "https://www.dndbeyond.com/species/7-tiefling"}
+  ]
+}

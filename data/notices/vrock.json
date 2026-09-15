@@ -1,0 +1,34 @@
+{
+  "description": "Sous le masque du charognard, l'Abîme envoie ses recrues les plus nombreuses : le vrock danse et empoisonne avant que les puissances supérieures ne daignent se déplacer.",
+  "sections": {
+    "fascination": [
+      "Le vrock ne cherche pas à ressembler à un dragon ou à un prince déchu : il copie un vautour, l'oiseau des charognes, et pousse cette ressemblance jusqu'à l'excès démoniaque. Bec et serres composent son arsenal ordinaire, comme s'il fallait rappeler que la démonologie du jeu de rôle recycle d'abord des formes reconnaissables avant de les tordre.[1] Cette économie de moyens, presque triviale au regard des seigneurs de l'Abîme, explique pourquoi le vrock occupe le bas de l'échelle tanar'ri : il n'est pas conçu pour impressionner un dieu, mais pour submerger un village ou une compagnie de mercenaires par le nombre.",
+      "Sa véritable signature reste le nuage de spores toxiques qu'il exhale en cercle autour de lui, invisible jusqu'à ce que la toux et le poison s'installent.[1] Une créature qui empoisonne par simple exhalaison, sans morsure ni griffe, déplace le danger du contact vers l'air respiré — une inversion familière aux bestiaires de champignons et de miasmes, ici greffée sur un corps de rapace. Le cri assourdissant qui complète son répertoire, capable de figer sur place tout ce qui n'est pas lui-même démoniaque, achève de faire du vrock une arme sonore et chimique autant que griffue."
+    ],
+    "legendes": [
+      "Le vrock appartient en propre à l'histoire moderne du jeu de rôle : aucune tradition religieuse ou folklorique antérieure ne le nomme sous cette forme précise. Les documents consultés le classent sans ambiguïté parmi les tanar'ri, la caste inférieure des démons de l'Abîme dans la cosmologie de Donjons et Dragons.[1] Le nom lui-même, sans racine attestée en dehors du jeu, fonctionne comme une étiquette taxonomique plus que comme un héritage mythologique — à l'inverse d'un diable ou d'un djinn, dont le nom porte la mémoire de siècles de croyance.",
+      "Une figure ancienne des éditions antérieures du jeu, la Danse de la Ruine, mérite d'être rapportée avec prudence : plusieurs vrocks réunis pouvaient, dit-on, unir leurs mouvements pour déchaîner une décharge dévastatrice.[1] Cette capacité collective a disparu des règles les plus récentes, ce qui n'efface pas son importance dans l'imaginaire des joueurs de longue date. On y retrouve un principe récurrent des bestiaires de jeu : une créature mineure isolément peut devenir redoutable en groupe organisé, quand ses semblables se synchronisent."
+    ],
+    "anomalies": [
+      "La disparition de la Danse de la Ruine dans les règles actuelles illustre combien le vrock reste une créature en évolution constante d'une édition à l'autre, plutôt qu'une entité figée par une source unique.[1] Sa résistance à la magie, mentionnée dans les fiches récentes, tranche avec son rang le plus bas parmi les tanar'ri : le vrock n'est donc pas seulement de la chair à canon jetée en première ligne, il conserve une part de la nature abyssale qui rend tout démon difficile à ensorceler.",
+      "Le cri stupéfiant épargne explicitement les autres démons alentour, une précision qui suggère une arme calibrée pour le champ de bataille mixte plutôt qu'un simple hurlement de rage. Elle indique aussi une forme de solidarité tactique entre créatures de l'Abîme, qui ne se neutralisent pas elles-mêmes en combattant côte à côte."
+    ],
+    "naturelle": {
+      "lead": "N'appartenant à aucune tradition antérieure au jeu de rôle, le vrock se décrit surtout par ses statistiques de combat et son rôle dans la hiérarchie tanar'ri, tels que les présentent les bestiaires modernes de Donjons et Dragons.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le vrock combat en frappant du bec et des serres avant de recourir à ses armes toxiques ou sonores, signe d'une créature qui économise ses ressources les plus coûteuses pour le moment décisif.[1] Placé en première ligne des invasions démoniaques, il agit moins par stratégie individuelle que par nombre et par l'effet de surprise de ses nuages empoisonnés."]},
+        {"title": "Habitat", "body": ["Son territoire naturel reste l'Abîme lui-même, mais les récits de combat le situent surtout sur les champs de bataille où l'Abîme déverse ses troupes, aux côtés d'autres tanar'ri de rang comparable."]},
+        {"title": "Alimentation", "body": ["Aucune source consultée ne détaille un régime alimentaire propre au vrock ; sa ressemblance avec le vautour, oiseau charognard par excellence, reste avant tout symbolique et visuelle plutôt que comportementale.[1]"]},
+        {"title": "Intelligence", "body": ["Classé au bas de la hiérarchie tanar'ri, le vrock n'est pas présenté comme un stratège : il obéit, fonce et frappe, laissant aux démons supérieurs le soin de la ruse et du plan d'ensemble."]},
+        {"title": "Reproduction", "body": ["Les bestiaires ne décrivent pas de cycle de reproduction pour le vrock, conformément à l'usage pour les créatures issues d'un plan démoniaque plutôt que d'une biologie terrestre."]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur naturel n'est associé au vrock dans les sources consultées ; son seul risque documenté vient des aventuriers et des démons rivaux qui l'affrontent sur le terrain.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Aucune relique ou objet culturel ne se rattache au vrock dans les sources consultées : sa postérité reste circonscrite aux bestiaires et aux tables de jeu, sans le débordement vers la culture populaire qu'ont connu d'autres démons plus prestigieux du même univers."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Vrock, bestiaire et statistiques de combat", "url": "https://www.dndbeyond.com/monsters/17047-vrock"}
+  ]
+}

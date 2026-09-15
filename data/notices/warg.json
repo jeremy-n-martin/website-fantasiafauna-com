@@ -1,0 +1,35 @@
+{
+  "description": "Ni tout à fait loup, ni tout à fait démon, le warg porte dans son nom la trace d'un vieux mot nordique pour l'être banni — et sur son dos, les cavaliers de l'ombre.",
+  "sections": {
+    "fascination": [
+      "Un loup qui parle, qui complote, qui accepte de porter un cavalier sur son dos sans en devenir une simple monture domestiquée : le warg de Tolkien déplace la bête de la marge animale vers une intelligence malveillante à part entière.[1] Dans Le Hobbit, ces créatures se réunissent, échangent des plans de raid et coordonnent leurs attaques avec les gobelins, une scène de conseil de guerre prêtée à des loups qui suffit à elle seule à sortir la créature du bestiaire ordinaire.",
+      "Le philologue Tom Shippey a relevé que Tolkien construit son warg à l'intersection de deux mots anciens : le vieux norrois vargr, qui désigne le loup mais aussi le criminel mis hors-la-loi, et le vieil anglais wearh, le proscrit.[1] Le warg n'est donc pas seulement un grand loup féroce ; il porte dans son étymologie même l'idée d'un être rejeté de toute communauté légitime, ce qui éclaire son alliance naturelle avec les gobelins et les orques, autres parias de la géographie morale de la Terre du Milieu."
+    ],
+    "legendes": [
+      "Les racines mythologiques du warg plongent dans la mythologie nordique, où plusieurs loups monstrueux jouent un rôle cosmique : Fenrir, destiné à tuer Odin lors du Ragnarök, et Sköll et Hati, qui poursuivent sans relâche le Soleil et la Lune à travers le ciel.[1] Tolkien puise dans ce fond commun l'idée d'un loup dont la menace dépasse la simple prédation, pour en faire une créature porteuse d'un basculement de l'ordre du monde, à l'échelle réduite de ses propres récits.",
+      "Dans Le Hobbit, les wargs démontrent une intelligence articulée : ils parlent, tiennent conseil et préparent des embuscades aux côtés des gobelins, avant de servir de montures de guerre aux cavaliers orques dans les batailles du Seigneur des Anneaux.[1] Les adaptations cinématographiques de Peter Jackson amplifient ce rôle militaire en les jetant dans des charges frontales contre les cavaliers du Rohan, prolongeant à l'écran une alliance déjà scellée dans le texte.",
+      "La postérité du warg déborde largement Tolkien. Donjons et Dragons l'a intégré très tôt à son bestiaire sous ce même nom, avant de le renommer worg pour des raisons de droits d'auteur liés à la marque déposée.[1] George R. R. Martin, de son côté, réinvente le principe en le détachant du loup lui-même : dans Le Trône de fer, les wargs deviennent des humains capables de projeter leur conscience dans l'esprit d'un animal, transformant une espèce menaçante en un don, ou une malédiction, propre à certains personnages."
+    ],
+    "anomalies": [
+      "Le double héritage étymologique du warg, mi-loup mi-hors-la-loi, ne se retrouve dans aucune autre grande créature du bestiaire de fantasy avec la même netteté : la plupart des monstres empruntent un nom à une seule tradition, quand celui du warg fusionne délibérément deux langues et deux images de la marginalité.[1] Cette double origine explique pourquoi le warg reste difficile à réduire à un simple loup surdimensionné, malgré les adaptations qui l'ont parfois simplifié en une monture de guerre sans profondeur.",
+      "Le renommage en worg dans certaines éditions de Donjons et Dragons, motivé par le droit des marques plutôt que par une évolution du folklore, illustre une anomalie propre à l'histoire moderne du bestiaire fantastique : ici, ce n'est pas la légende qui change de nom au fil des siècles, mais une contrainte commerciale contemporaine qui impose une variante orthographique.[1]"
+    ],
+    "naturelle": {
+      "lead": "Créature de la fantasy littéraire du XXe siècle avant tout, le warg emprunte son urgence à Tolkien et sa filiation mythologique à la tradition nordique ; son histoire naturelle décrit donc une bête de guerre autant qu'un loup.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le warg tient conseil, planifie des raids et coordonne ses attaques avec les gobelins et les orques, un comportement de meute stratège plus proche de l'armée organisée que du prédateur solitaire.[1]"]},
+        {"title": "Habitat", "body": ["Les récits situent les wargs dans les landes et les forêts sauvages de la Terre du Milieu, mais aussi au sein même des armées de l'ombre, où ils campent aux côtés de leurs alliés gobelins et orques."]},
+        {"title": "Alimentation", "body": ["Aucune source consultée ne détaille de régime alimentaire spécifique au warg au-delà de sa nature de loup prédateur ; son rôle narratif privilégie la chasse à l'homme et au cavalier plutôt que la subsistance ordinaire.[1]"]},
+        {"title": "Intelligence", "body": ["Doué de parole et de raisonnement stratégique dans Le Hobbit, le warg dépasse largement l'intelligence animale attendue d'un loup, ce qui justifie son statut de créature à part dans le bestiaire de Tolkien plutôt que de simple variante de loup géant.[1]"]},
+        {"title": "Reproduction", "body": ["Aucune source consultée ne décrit de cycle de reproduction propre au warg ; les textes de Tolkien le traitent comme une espèce déjà constituée, sans généalogie détaillée."]},
+        {"title": "Prédateurs", "body": ["Les wargs affrontent surtout les cavaliers du Rohan et les compagnons de la Communauté de l'Anneau comme adversaires directs ; aucun prédateur naturel ne leur est attribué dans les sources consultées, leur alliance avec les orques les plaçant plutôt du côté des agresseurs.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le nom même du warg fait figure de relique linguistique : en fusionnant le vieux norrois vargr et le vieil anglais wearh, Tolkien a légué au genre de la fantasy un mot-valise savant, aujourd'hui repris dans les jeux de rôle et la littérature sans que la plupart de ses utilisateurs en connaissent la double origine philologique.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Wikipedia (en) — Warg, étymologie et postérité littéraire et ludique", "url": "https://en.wikipedia.org/wiki/Warg"}
+  ]
+}

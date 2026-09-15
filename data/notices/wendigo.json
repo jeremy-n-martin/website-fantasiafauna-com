@@ -1,0 +1,35 @@
+{
+  "description": "Quand la famine dure trop longtemps dans les forêts du Nord, un dernier interdit peut céder — et c'est alors la faim elle-même qui se lève, décharnée, pour marcher sous les traits d'un esprit.",
+  "sections": {
+    "fascination": [
+      "Le wendigo n'effraie pas d'abord par la force brute, mais par ce qu'il révèle de la fragilité humaine face au manque. Les traditions de plusieurs peuples algonquiens, dont les Ojibwés, les Cris, les Naskapis et les Innus, en font un être surnaturel malveillant et cannibale, intimement lié aux hivers les plus rudes du Nord.[1] La chercheuse Emily Zarka résume la portée du personnage en trois idées : il incarne l'hiver, il personnifie la faim, et il donne corps à l'égoïsme — trois forces qui, ensemble, menacent la survie d'une communauté entière lorsque les provisions manquent.",
+      "L'érudit ojibwé Basil Johnston décrit une silhouette émaciée, la peau desséchée tendue sur les os, d'une teinte grise de cendre, à l'aspect proprement squelettique.[1] Cette description ne cherche pas l'effet spectaculaire d'un monstre de fiction : elle traduit littéralement la famine, poussée à son terme le plus terrible, jusqu'à devenir une figure qui marche encore. Le wendigo, en ce sens, est moins un prédateur venu de l'extérieur qu'un miroir grossissant de ce que l'hiver et la disette peuvent faire à un corps humain."
+    ],
+    "legendes": [
+      "Le récit central du wendigo tient à sa double capacité de possession et de transformation : un être humain peut devenir wendigo par un contact prolongé avec l'esprit, ou en franchissant lui-même l'interdit ultime du cannibalisme.[1] L'esprit peut aussi posséder un individu, le poussant peu à peu vers le désir de chair humaine puis vers le meurtre. Cette logique narrative fait du wendigo une figure de la contagion morale autant que surnaturelle : nul n'est à l'abri, la frontière entre la victime de la famine et le monstre qu'elle engendre restant dangereusement mince.",
+      "Les ethnographes ont documenté, sous le nom de psychose du wendigo, un syndrome culturellement circonscrit chez certains individus en situation de privation extrême : un désir intense de chair humaine, accompagné de la peur de devenir soi-même un cannibale.[1] Des cas rapportés, comme ceux de Swift Runner en 1878 ou de Jack Fiddler au début du XXe siècle, ont nourri les archives de ce phénomène, à la croisée de la croyance communautaire et de la détresse psychologique réelle vécue dans des conditions de survie extrêmes.",
+      "Les études contemporaines, menées notamment par des chercheurs et penseurs autochtones, invitent à ne pas réduire le wendigo à un simple monstre de récit d'horreur : il est aujourd'hui relu comme une figure conceptuelle de la cupidité, du déséquilibre écologique et des dommages causés par la colonisation.[1] Cette lecture replace le wendigo dans une pensée politique et environnementale vivante, plutôt que dans le seul répertoire du folklore pittoresque destiné à un public extérieur."
+    ],
+    "anomalies": [
+      "Le wendigo échappe à la logique habituelle des créatures dévorantes du bestiaire mondial en ceci qu'il ne naît pas nécessairement d'une lignée ou d'une espèce, mais d'un basculement individuel : n'importe quel être humain, en cédant à la faim ou à l'appât d'un dernier repas interdit, peut en théorie devenir wendigo.[1] Cette porosité entre l'humain et le monstre, entre la victime et la menace, distingue fondamentalement le wendigo des démons ou des esprits nés d'un plan étranger au nôtre.",
+      "La reconnaissance clinique, même contestée, d'une psychose du wendigo constitue une anomalie rare dans l'histoire des créatures folkloriques : peu de figures surnaturelles ont ainsi traversé la frontière entre récit communautaire et vocabulaire ethnographique documenté, au point de nommer un trouble observé chez des personnes réelles en situation de famine extrême.[1]"
+    ],
+    "naturelle": {
+      "lead": "Issu des traditions vivantes de plusieurs peuples algonquiens, le wendigo se décrit moins comme une espèce animale que comme un état de transformation lié à la faim, au froid et à la transgression d'un interdit fondamental.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le wendigo pousse ses victimes, par possession ou par tentation, vers le désir de chair humaine et le meurtre, agissant davantage comme une contagion morale que comme un prédateur au comportement animal prévisible.[1]"]},
+        {"title": "Habitat", "body": ["Les récits situent le wendigo dans les forêts hivernales du Nord et dans les périodes de famine prolongée, son apparition étant intimement liée aux conditions extrêmes du climat plutôt qu'à un territoire fixe."]},
+        {"title": "Alimentation", "body": ["La faim insatiable de chair humaine définit littéralement le wendigo, jusqu'à faire de cet appétit sans fin l'essence même de la créature plutôt qu'un simple trait de comportement.[1]"]},
+        {"title": "Intelligence", "body": ["Le wendigo agit avec une intention reconnaissable, capable de posséder un esprit humain et de le pousser progressivement vers la transgression, ce qui suppose une forme de ruse ou de persistance dépassant l'instinct animal brut."]},
+        {"title": "Reproduction", "body": ["Le wendigo ne se reproduit pas au sens biologique : il se propage par transformation d'êtres humains, que ce soit par contact prolongé avec l'esprit ou par l'acte de cannibalisme lui-même, ce qui en fait une figure de contagion plutôt que de filiation.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur naturel n'est attribué au wendigo dans les sources consultées ; sa disparition, dans les récits traditionnels, tient davantage à des rituels communautaires ou à l'issue de l'hiver qu'à l'intervention d'une autre créature."]}
+      ]
+    },
+    "reliques": [
+      "Les cas documentés de psychose du wendigo, comme ceux de Swift Runner ou de Jack Fiddler, fonctionnent aujourd'hui comme des archives ethnographiques à part entière : elles rappellent que la figure du wendigo n'est pas un simple motif littéraire importé, mais une croyance ayant eu des conséquences réelles et documentées au sein des communautés concernées.[1] Les relectures contemporaines par des penseurs autochtones, qui associent le wendigo à la cupidité et à la destruction écologique, prolongent cette mémoire sous une forme résolument actuelle plutôt que purement rétrospective.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Wikipedia (en) — Wendigo, folklore algonquien et psychose ethnographique", "url": "https://en.wikipedia.org/wiki/Wendigo"}
+  ]
+}

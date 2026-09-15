@@ -1,0 +1,34 @@
+{
+  "description": "Une empreinte trop grande dans la neige fraîche, jamais suivie jusqu'au bout : voilà tout ce que le monde extérieur a jamais tenu du yéti.",
+  "sections": {
+    "fascination": [
+      "Pour les Sherpas et les Tibétains, le yéti n'a jamais été une énigme à résoudre mais une présence à respecter. Le mot lui-même viendrait de racines tibétaines évoquant le lieu rocheux et l'ours, et la tradition en distingue plusieurs variétés selon la taille et la couleur de la fourrure, du colossal Nyalmo au plus modeste Rang Shim Bombo.[1] Cette créature des hauteurs y tient un rôle spirituel : gardien de sites sacrés, avertissement contre l'orgueil de l'homme qui s'aventure trop loin dans l'altitude.",
+      "L'Occident ne s'empare de la figure qu'au XXe siècle, et par un malentendu resté célèbre. En 1921, l'expédition du lieutenant-colonel Charles Howard-Bury relève au pied de l'Everest de vastes empreintes que ses guides sherpas attribuent au metoh-kangmi, l'homme-ours des neiges. Le journaliste Henry Newman traduit maladroitement metoh par immonde, forgeant ainsi l'expression Abominable Snowman qui allait fixer, pour des décennies de presse occidentale, le nom d'une créature que personne n'avait jamais vue de près.[1]"
+    ],
+    "legendes": [
+      "Les décennies suivantes multiplient les rapports de terrain sans jamais produire de preuve tangible. N. A. Tombazi affirme en 1925 avoir observé une silhouette bipède près du glacier de Zemu ; en 1951, l'alpiniste Eric Shipton photographie des empreintes marquées de deux orteils proéminents qui feront le tour du monde. Tenzing Norgay lui-même, qui gravira l'Everest avec Edmund Hillary en 1953, rapporte avoir croisé des traces avant de devenir, avec le temps, plus sceptique sur leur origine.[1] Chaque expédition d'alpinisme himalayenne du siècle semble ainsi porter, en marge de son objectif sommital, sa propre anecdote de yéti.",
+      "Ce foisonnement de témoignages a longtemps entretenu l'idée d'un hominidé inconnu survivant dans les replis les plus reculés de la chaîne. Mais la créature n'a jamais livré ni dépouille complète, ni ossement incontestable : seulement des poils, des empreintes et des récits, transmis d'expédition en expédition sans jamais converger vers une preuve matérielle décisive."
+    ],
+    "anomalies": [
+      "L'anomalie la plus frappante du yéti n'est pas son apparence, mais sa dissolution progressive sous l'analyse scientifique. Des études d'ADN menées sur des échantillons présentés comme yétis — poils, os, dents, peau, excréments recueillis dans des musées et des collections privées — ont identifié systématiquement leur origine réelle : sur neuf spécimens examinés, huit provenaient d'ours, la dernière d'un chien.[1] Plus précisément, les analyses ont rattaché ces échantillons à l'ours brun de l'Himalaya, à l'ours bleu du Tibet ou à l'ours noir d'Asie, sans qu'aucun ne corresponde à un primate inconnu.",
+      "Cette conclusion scientifique ne dissout pourtant pas entièrement la figure : elle en change seulement le statut. Le yéti reste, pour les populations himalayennes, une entité spirituelle et un repère culturel, indépendamment de ce que révèlent les laboratoires occidentaux sur quelques poils envoyés depuis les vitrines d'un musée."
+    ],
+    "naturelle": {
+      "lead": "Le yéti oscille entre deux régimes d'existence : celui, spirituel et intégré, des traditions sherpas et tibétaines, et celui, cryptozoologique et contesté, des expéditions occidentales et des laboratoires modernes.",
+      "parts": [
+        {"title": "Comportement", "body": ["Dans les récits himalayens, le yéti se tient à distance des hommes et n'intervient que pour avertir ou punir l'imprudence ; les rapports occidentaux du XXe siècle, plus fragmentaires, ne décrivent guère qu'une silhouette entraperçue puis disparue."]},
+        {"title": "Habitat", "body": ["Le yéti fréquente les glaciers, les cols et les hautes neiges de l'Himalaya, à des altitudes où la présence humaine reste rare et où les traces, une fois relevées, s'effacent vite sous la neige suivante."]},
+        {"title": "Alimentation", "body": ["Aucune source ne documente un régime alimentaire précis ; la tradition orale n'insiste jamais sur ce point, préférant décrire son rôle de gardien plutôt que ses habitudes de subsistance."]},
+        {"title": "Intelligence", "body": ["Les récits sherpas lui prêtent une forme de discernement quasi humain, capable de choisir ses apparitions et ses avertissements, bien loin de l'animal sauvage que suggéraient les premières traductions occidentales du terme."]},
+        {"title": "Reproduction", "body": ["Aucune tradition ne détaille de cycle reproductif du yéti ; les trois variétés distinguées par la légende — Nyalmo, Chuti, Rang Shim Bombo — se différencient par la taille et la couleur, non par une filiation décrite.[1]"]},
+        {"title": "Prédateurs", "body": ["Les analyses d'ADN ayant rattaché la quasi-totalité des échantillons connus à des ours de l'Himalaya, ces mêmes ours restent, faute de yéti confirmé, les meilleurs candidats à occuper l'espace écologique qu'on lui prêtait."]}
+      ]
+    },
+    "reliques": [
+      "Les empreintes photographiées par Eric Shipton en 1951 demeurent la relique la plus célèbre de la légende, reproduites dans la presse du monde entier sans jamais être authentifiées comme la trace d'un animal inconnu. À ces images s'ajoutent les rares reliques physiques conservées dans des monastères himalayens — scalps et fourrures présentés comme yétis — dont les analyses génétiques modernes ont, l'une après l'autre, ramené l'origine à des ours ou à un chien.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Yeti — Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Yeti"}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "description": "Ni brigand grossier ni simple vaurien, le voleur transforme la disparition d'un objet en un art : de la Cour des Miracles aux tables de jeu de rôle, il vit de ce que les autres ne voient pas venir.",
+  "sections": {
+    "fascination": [
+      "Le voleur ne tire pas son pouvoir de la force, mais de l'absence : une bourse manquante, une serrure ouverte sans effraction visible, un garde qui n'a rien vu passer. Cette économie de la discrétion fascine précisément parce qu'elle inverse le rapport de force ordinaire des récits d'aventure. Là où le guerrier impose sa présence, le voleur triomphe en effaçant la sienne, et le lecteur savoure un succès qui ne doit rien à la puissance brute.",
+      "Le personnage a considérablement changé de statut moral au fil du temps. Le voleur n'est plus systématiquement l'être méprisable défini par son absence de remords ; il devient un aventurier roublard, souvent amusant à incarner, une figure ambiguë entre le hors-la-loi et le héros débrouillard.[1] Cette bascule explique sa popularité durable dans les jeux de rôle médiévaux-fantastiques, où l'on aime jouer l'habileté et la ruse davantage que la seule vertu."
+    ],
+    "legendes": [
+      "L'histoire réelle offre au voleur un décor bien plus organisé que le simple bandit isolé des chemins. Au cœur de Paris, la Cour des Miracles rassemblait mendiants, tire-laine et faux estropiés dans un quartier où la police n'osait s'aventurer, protégé par un droit d'asile de fait.[2] Le nom venait d'une ironie cruelle : des infirmes simulés le jour retrouvaient chaque soir, comme par miracle, l'usage de leurs membres.",
+      "Cette société interlope n'avait rien d'anarchique. Elle obéissait à une hiérarchie précise, couronnée par un « roi de Thunes » ou Grand Coësre, secondé par des lieutenants appelés cagoux chargés de former les nouvelles recrues à l'argot, langage codé propre au milieu.[2] Les mendiants et voleurs se répartissaient eux-mêmes en catégories reconnues — narquois, rifodés, malingreux, piètres, marfaux — chacune avec sa spécialité de ruse ou de simulation, preuve d'une véritable corporation du vol.",
+      "Devenir voleur accompli exigeait un apprentissage rigoureux : les candidats pickpockets subissaient des épreuves physiques exigeantes avant d'obtenir le titre de maître dans leur spécialité.[2] Cette dimension de métier appris, transmis et sanctionné par des pairs, a nourri l'archétype littéraire et ludique du voleur : non un simple opportuniste, mais un professionnel formé selon des règles propres à son monde.",
+      "La fantasy de jeu de rôle a repris cette figure en la formalisant sous le nom de Rogue, une classe entière consacrée à la ruse plutôt qu'à la force brute.[3] Le personnage y frappe avec précision plutôt qu'avec puissance, privilégie la mobilité et l'esquive, et partage avec ses semblables un argot secret — l'écho ludique direct du parler codé des anciennes cours des miracles."
+    ],
+    "anomalies": [
+      "Le voleur de jeu de rôle bénéficie d'une attaque sournoise qui récompense la discrétion plutôt que la puissance frontale : porter le coup avec avantage, ou pendant qu'un allié détourne l'attention, inflige des dégâts supplémentaires croissants avec l'expérience.[3] Cette mécanique traduit fidèlement l'intuition populaire du voleur habile — non celui qui frappe fort, mais celui qui frappe juste, au moment où personne ne regarde.",
+      "Sa mobilité tactique dépasse celle des autres archétypes martiaux : une action supplémentaire chaque tour lui permet de courir, de se dégager d'un adversaire sans risque ou de se dissimuler instantanément.[3] Rien dans cette capacité n'évoque la magie ; elle décrit simplement une agilité méthodique, l'aptitude à ne jamais rester là où l'adversaire s'attend à le trouver.",
+      "L'expertise du voleur porte sur des compétences précises plutôt que sur un talent diffus : crochetage, discrétion, escamotage se voient doublés d'une maîtrise que les autres classes n'atteignent pas.[3] Cette spécialisation ludique reproduit, sous une forme chiffrée, la répartition en catégories de spécialistes qu'on trouvait déjà dans l'organisation historique de la Cour des Miracles."
+    ],
+    "naturelle": {
+      "lead": "Faute d'une zoologie propre, l'histoire naturelle du voleur emprunte à deux sources : les corporations criminelles réellement attestées dans les villes européennes, et l'archétype ludique moderne qui en a hérité les grandes lignes.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le voleur cultive la discrétion comme principe de survie, préférant l'esquive et la ruse à l'affrontement ouvert.[3] Les récits historiques insistent sur son organisation en catégories spécialisées de mendicité et de subterfuge, chacune répondant à un rôle précis dans l'économie criminelle de la Cour des Miracles.[2]"]},
+        {"title": "Habitat", "body": ["Villes, guildes et toits composent son territoire naturel, loin des grands espaces ouverts qui favorisent le combattant frontal. La Cour des Miracles elle-même formait une enclave urbaine protégée, un quartier où la loi ordinaire ne pénétrait pas et où prospérait toute une économie parallèle.[2]"]},
+        {"title": "Alimentation", "body": ["Le voleur vit de ce qu'il prélève sur autrui plutôt que de ce qu'il produit lui-même — bourses, objets de valeur, informations monnayables. Cette dépendance à la proie d'occasion façonne un mode de vie précaire, toujours suspendu à la prochaine opportunité."]},
+        {"title": "Intelligence", "body": ["Le voleur de jeu de rôle partage avec ses semblables un argot secret, langage codé permettant de communiquer sans être compris des non-initiés et de reconnaître les signes d'une guilde.[3] Cette même fonction se retrouvait déjà, sous une forme bien réelle, dans l'argot des mendiants organisés du Paris médiéval, transmis par un apprentissage formel.[2]"]},
+        {"title": "Reproduction", "body": ["L'entrée dans le métier suit un parcours d'apprentissage plutôt qu'une naissance particulière : de jeunes recrues étaient formées aux techniques du vol et de la simulation par des maîtres reconnus, avant de passer des épreuves qui leur ouvraient le statut de professionnel accompli.[2] La filiation du voleur est donc une filiation de savoir-faire, transmise de maître à apprenti."]},
+        {"title": "Prédateurs", "body": ["La police reste le danger constant du voleur, qu'il s'agisse des rondes urbaines ordinaires ou d'une répression ciblée : à Paris, une action systématique conduite sous Louis XIV a fini par démanteler les quartiers protégés où prospéraient les corporations de mendiants et de tire-laine.[2] Le voleur de fantasy affronte un péril comparable, sous forme de gardes, de rivaux de guilde et de victimes devenues méfiantes."]}
+      ]
+    },
+    "reliques": [
+      "L'expression « Cour des Miracles » garde aujourd'hui un sens figuré, désignant tout lieu de désordre et de simulation où rien n'est ce qu'il paraît être, souvenir direct des quartiers parisiens où les mendiants réputés infirmes retrouvaient chaque soir l'usage de leurs jambes.[2] Le mot a ainsi survécu bien après la disparition matérielle des lieux qu'il décrivait.",
+      "Dans les univers de jeu de rôle contemporains, le voleur — devenu Rogue — a conservé cette réputation de professionnel plutôt que de simple opportuniste : compétences doublées, langage codé, palette d'archétypes allant du cambrioleur pur à l'enquêteur ou à l'aventurier repenti.[3] L'objet volé a changé de forme, mais l'art de la disparition, lui, demeure la même signature."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Voleur — Wikipédia", "url": "https://fr.wikipedia.org/wiki/Voleur"},
+    {"id": 2, "title": "Cour des Miracles — synthèse historique, Wikipédia", "url": "https://fr.wikipedia.org/wiki/Cour_des_Miracles"},
+    {"id": 3, "title": "D&D Beyond — Rogue, classe et règles", "url": "https://www.dndbeyond.com/classes/rogue"}
+  ]
+}

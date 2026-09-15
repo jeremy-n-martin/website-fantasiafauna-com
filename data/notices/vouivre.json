@@ -1,0 +1,36 @@
+{
+  "description": "Un serpent ailé pose son escarboucle dans l'herbe pour se baigner nue de tout éclat : quiconque la lui vole devient riche, à condition de survivre à sa fureur.",
+  "sections": {
+    "fascination": [
+      "La vouivre ne garde pas son trésor dans un coffre mais sur son propre front. Cette pierre précieuse, l'escarboucle, brille d'un éclat qu'on dit visible de loin la nuit, et pourtant la créature doit régulièrement s'en délester pour se baigner.[1] Le moment le plus dangereux de son existence coïncide donc avec le moment où elle est la plus vulnérable — une contradiction qui a nourri, dans les campagnes de Franche-Comté et du Jura, des générations de récits sur l'audacieux qui tenterait sa chance.",
+      "Le paysage même de ces régions semble taillé pour elle : sources vives, grottes discrètes, failles karstiques où l'eau disparaît sous la roche avant de ressurgir plus loin. La vouivre y trouve un territoire naturel, mi-terrestre mi-aquatique, qui explique pourquoi tant de lieux-dits de l'est de la France portent encore aujourd'hui son nom, souvenir d'un temps où l'on croyait fermement à sa présence sous telle fontaine ou telle caverne.[1]"
+    ],
+    "legendes": [
+      "Le mot vouivre descend du latin vipera, qui donne en ancien français wivre dès le milieu du XIIe siècle.[1] Cette filiation linguistique la rapproche étymologiquement de la vipère plus que du dragon proprement dit, même si son apparence — un serpent doté de deux pattes, de deux ailes et d'une queue — la classe aujourd'hui parmi les figures draconiques régionales.",
+      "Les légendes locales varient sensiblement d'un village à l'autre : ici elle ressemble à un serpent géant pur, là on lui prête une tête de chat ou des traits d'oiseau.[1] Un rendez-vous récurrent structure plusieurs de ces récits, notamment autour du mont Beuvray, où la vouivre sortirait de terre une fois par an, à Pâques, moment que guettaient les villageois désireux de surprendre son bain et de s'emparer de sa pierre.[1]",
+      "La postérité littéraire de la créature doit beaucoup à Marcel Aymé, dont le roman La Vouivre a popularisé la figure bien au-delà de son terroir d'origine, fixant dans l'imaginaire national un serpent ailé jusque-là surtout connu localement.[1] Le nom a également essaimé dans la toponymie de l'est de la France et de la Suisse romande, preuve d'un ancrage régional profond et durable."
+    ],
+    "anomalies": [
+      "Une confusion fréquente mérite d'être corrigée : la vouivre n'est pas la wyverne anglo-saxonne, malgré une parenté étymologique évidente et des silhouettes parfois proches.[1] La wyverne appartient à l'héraldique et aux bestiaires médiévaux d'origine anglo-normande, tandis que la vouivre reste ancrée dans un folklore rural français, attaché à des lieux précis plutôt qu'à un symbole héraldique généralisé.",
+      "L'escarboucle elle-même échappe à toute description stable : les récits l'appellent tantôt pierre précieuse, tantôt œil retiré de son orbite, tantôt simple joyau frontal sans autre précision.[1] Cette imprécision volontaire entretient le suspense de la légende — nul témoin ne semble s'être suffisamment approché pour en rapporter une description définitive, ce qui est aussi bien la preuve de sa dangerosité que de son pouvoir de fascination."
+    ],
+    "naturelle": {
+      "lead": "Le folklore franc-comtois et alpin ne propose pas une vouivre unique mais une famille de récits locaux, dont on peut néanmoins dégager les traits les plus constants.",
+      "parts": [
+        {"title": "Comportement", "body": ["La vouivre alterne vol dans les airs et repos au sol, avec un moment de vulnérabilité récurrent : le bain rituel durant lequel elle dépose son escarboucle à distance, généralement sur une pierre plate ou dans l'herbe.[1] Sa réputation de gardienne de trésor s'accompagne d'une fureur redoutée envers quiconque tente de s'emparer de son bien pendant cette absence."]},
+        {"title": "Habitat", "body": ["Sources, grottes et failles composent son territoire de prédilection, avec une présence toponymique marquée dans l'est de la France et en Suisse romande.[1] Le mont Beuvray figure parmi les lieux les plus cités pour son apparition annuelle à Pâques, ce qui suggère un lien étroit entre la créature et certains sites considérés comme sacrés ou remarquables de longue date."]},
+        {"title": "Alimentation", "body": ["Les sources disponibles ne détaillent pas de régime alimentaire propre à la vouivre ; son activité rapportée se concentre presque exclusivement sur la garde de son trésor et de son escarboucle plutôt que sur la chasse."]},
+        {"title": "Intelligence", "body": ["La vouivre agit avec une prudence calculée, imposant un rituel de bain répété plutôt qu'un comportement erratique, ce qui suppose une forme de mémoire des lieux et des habitudes.[1] Rien dans les récits ne lui prête cependant de langage ni de relation suivie avec les humains, à la différence d'esprits plus sociables du folklore régional."]},
+        {"title": "Reproduction", "body": ["Aucune tradition rassemblée ne détaille la reproduction de la vouivre ; les récits la présentent généralement comme une créature solitaire et unique par vallée ou par site, sans mention de descendance ou de compagnon."]},
+        {"title": "Prédateurs", "body": ["Le seul danger véritable de la vouivre reste l'audace humaine : le voleur assez rapide pour s'emparer de l'escarboucle pendant le bain, épisode qui structure la plupart des légendes locales et se solde presque toujours par la fuite précipitée du larron ou par sa mort.[1] Aucune créature rivale ne lui est opposée dans les récits recueillis."]}
+      ]
+    },
+    "reliques": [
+      "La filiation avec le latin vipera reste la trace la plus solide laissée par la vouivre dans la langue française, un souvenir linguistique qui a traversé les siècles bien après que la créature elle-même s'est retirée dans le seul registre du conte.[1]",
+      "Le roman de Marcel Aymé demeure aujourd'hui la porte d'entrée la plus commune vers cette figure autrefois strictement régionale, tandis que la toponymie de l'est de la France continue de porter, dans le nom de sources et de hameaux, la mémoire discrète d'un serpent ailé qu'on croyait autrefois voir sortir de terre à Pâques.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Vouivre — description, origine et légendes régionales, Wikipédia", "url": "https://fr.wikipedia.org/wiki/Vouivre"}
+  ]
+}

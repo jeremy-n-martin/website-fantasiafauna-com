@@ -1,0 +1,35 @@
+{
+  "description": "Sous la roche la plus dense se cache parfois un ventre : le xorn ne creuse pas la pierre, il s'y déplace comme un poisson dans l'eau, et il y trouve son repas.",
+  "sections": {
+    "fascination": [
+      "Un mineur qui frappe le roc espère du minerai, jamais un visage. Le xorn renverse cette attente : sa masse pierreuse traverse la terre et la roche non travaillées sans les déplacer, sans laisser de galerie ni de trace de son passage.[1] Il ne fore pas un tunnel qu'un homme pourrait suivre ; il se fond dans la matière et en ressort ailleurs, comme si le sous-sol entier lui appartenait en secret. L'inquiétude qu'il inspire tient à cette discrétion totale : nul écho de pioche, nul éboulement n'annonce sa présence sous vos pieds.",
+      "Son corps porte trois bras griffus et trois yeux à paupières de pierre qui voient dans toutes les directions, surmontés d'une bouche unique et puissante logée au sommet du crâne.[2] Cette anatomie ne doit rien à la commodité humaine : elle sert un être pour qui l'or et la pierre précieuse comptent parmi les seules nourritures concevables. Le xorn peut ainsi flairer, à travers des dizaines de mètres de roche, l'emplacement d'une bourse de pièces ou d'une veine de gemmes, comme un limier suivrait une odeur de sang.[1]"
+    ],
+    "legendes": [
+      "Le xorn appartient au bestiaire des jeux de rôle de fantasy plutôt qu'à une tradition populaire antérieure ; aucune créature attestée dans un folklore européen ou asiatique ne lui correspond terme à terme.[1][2] Il est rattaché au plan élémentaire de la Terre, un monde entièrement composé de roche et de métal où de telles morphologies deviennent plausibles. Le jeu le présente comme un élémentaire neutre, dépourvu d'ambitions de conquête : il ne cherche ni pouvoir ni territoire, seulement la prochaine bouchée de minerai précieux.",
+      "Sur le plan matériel, le xorn passe pour un visiteur égaré plutôt qu'un habitant naturel. Privé de l'abondance métallique de son monde d'origine, il doit parcourir de vastes étendues souterraines pour se nourrir, ce qui le pousse parfois à croiser des mineurs ou des chercheurs de trésor dans les entrailles de l'Outreterre.[1] Cette rencontre tourne rarement à l'amitié : un gisement disputé entre un xorn affamé et une équipée de fouilleurs ne laisse guère de place à la négociation, et la créature associe vite l'odeur du métal frappé à celle de la chair qui le porte."
+    ],
+    "anomalies": [
+      "La capacité la plus étrange du xorn n'est pas sa force, mais son rapport au vide et au plein. Une paroi rocheuse continue, pour lui, de tenir lieu d'air libre : il s'y meut sans effort apparent tant que la roche demeure naturelle et non travaillée par une main humaine.[1] Une pierre taillée, un mur maçonné, une porte renforcée de métal ouvré échappent en revanche à ce passage silencieux — la matière façonnée par l'artifice résiste là où la pierre brute s'efface.",
+      "Son alimentation pose une seconde énigme : incapable de digérer la matière organique, le xorn se nourrit exclusivement de métaux précieux et de pierres fines, qu'il broie et savoure comme n'importe quel prédateur savourerait sa proie.[1] Une pièce d'or ou un diamant devient ainsi, à ses yeux, un mets recherché plutôt qu'un trésor à thésauriser. Cette faim explique pourquoi l'on retrouve parfois, près d'un gisement dévasté, des monnaies et des joyaux disparus sans qu'aucune trace de pillage humain ne subsiste."
+    ],
+    "naturelle": {
+      "lead": "Le xorn appartient au bestiaire moderne des jeux de rôle, sans ancrage dans une tradition populaire antérieure. Son histoire naturelle décrit un élémentaire minéral dont les habitudes s'organisent entièrement autour de la roche et du métal.",
+      "parts": [
+        {"title": "Comportement", "body": ["Neutre plutôt que malveillant, le xorn ne cherche ni conquête ni domination. Sa conduite s'oriente presque uniquement vers la détection et la consommation de matières précieuses ; un individu rassasié se montre indifférent aux intrus, tandis qu'un individu affamé devient redoutable envers quiconque se dresse entre lui et un gisement.[1]"]},
+        {"title": "Habitat", "body": ["Originaire du plan élémentaire de la Terre, le xorn s'égare parfois jusque dans l'Outreterre du monde matériel, où il erre à travers veines minérales, grottes profondes et galeries naturelles à la recherche de nourriture.[1]"]},
+        {"title": "Alimentation", "body": ["Le xorn se nourrit exclusivement de métaux précieux et de pierres fines, qu'il détecte par une forme d'odorat portant à plusieurs dizaines de mètres ; il ne peut digérer aucune matière organique.[1]"]},
+        {"title": "Intelligence", "body": ["Le xorn raisonne et communique, mais son univers mental reste centré sur la survie et la traque du métal. Il ne développe ni société complexe ni ambition politique, ce qui le distingue des humanoïdes et des géants du même bestiaire."]},
+        {"title": "Reproduction", "body": ["Aucune tradition ludique ne détaille de cycle de reproduction propre au xorn ; les sources le présentent comme un élémentaire dont l'origine tient davantage à la nature du plan de Terre qu'à une filiation biologique."]},
+        {"title": "Prédateurs", "body": ["Sa capacité à fondre dans la roche protège le xorn de la plupart des dangers de surface. Ses véritables adversaires restent les mineurs, aventuriers et créatures capables de le surprendre au moment où il émerge pour se nourrir, lorsque son corps redevient vulnérable."]}
+      ]
+    },
+    "reliques": [
+      "Le xorn ne possède pas de relique attestée par une tradition ancienne, faute d'antériorité folklorique. Sa postérité se limite pour l'instant aux bestiaires de jeu de rôle où il apparaît, depuis les premières éditions jusqu'aux compilations contemporaines, comme une variation sur le thème de l'élémentaire minéral affamé de trésor."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Xorn, Monsters", "url": "https://www.dndbeyond.com/monsters/17066-xorn"},
+    {"id": 2, "title": "Forgotten Realms Wiki — Xorn (Fandom)", "url": "https://forgottenrealms.fandom.com/wiki/Xorn"}
+  ]
+}

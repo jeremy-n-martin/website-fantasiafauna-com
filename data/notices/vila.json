@@ -1,0 +1,36 @@
+{
+  "description": "Belle sœur de sang des héros, la vila danse en cercle sur les cimes slaves du sud et punit d'une même main légère le serment trahi.",
+  "sections": {
+    "fascination": [
+      "La vila déjoue d'emblée l'attente d'un esprit unique et cohérent : le folklore slave méridional en distingue plusieurs sortes selon le milieu qu'elles habitent, celles des forêts, celles des eaux, celles des nuages qui parcourent le ciel nocturne dans un vacarme de flûtes et de tambours.[1] Cette multiplicité déplace la question habituelle du merveilleux : il ne s'agit pas de savoir ce qu'est une vila, mais où elle se trouve, car son caractère et ses pouvoirs varient avec son domaine.",
+      "Ce qui frappe surtout, c'est l'alliance chez elle de la grâce et de la sévérité. Belle, jeune pour toujours, vêtue de blanc, la vila danse en cercle, chasse, soigne par les herbes de la montagne et peut se changer en cygne, en faucon, en cheval ou en loup.[1] Mais la même créature qui offre son amitié aux héros et guérit leurs blessures punit sans retenue quiconque manque de respect à son endroit ou trahit un serment prêté sous son regard, jusqu'à la maladie et la mort.[1] Aucune des deux faces n'efface l'autre : la beauté n'annule pas le danger, elle le rend seulement plus difficile à anticiper."
+    ],
+    "legendes": [
+      "Dans l'épopée slave méridionale, la vila devient une figure de compagnonnage guerrier : elle jure une sororité de sang avec le héros, l'assiste au combat, le nourrit et le guide, parfois lui offre des objets magiques qui décident de l'issue d'une bataille.[1] Cette alliance n'est jamais acquise une fois pour toutes ; elle repose sur un respect que le héros doit continuer de mériter, sous peine de voir se retourner contre lui la même puissance qui le protégeait.",
+      "Le folklore distingue traditionnellement trois grandes familles de vile : les zagorkinje des forêts, les brodarice des eaux et des rivières, et les vile oblakinje qui habitent les nuages et bâtissent, dit-on, de splendides châteaux à leurs franges.[1] Ces dernières, en particulier, parcourent le ciel la nuit dans un bruit de pipeaux et de tambours qui annonce leur passage bien avant qu'on ne les aperçoive.",
+      "La colère de la vila frappe avec une netteté presque rituelle : quiconque l'appelle sans respect ou rompt une promesse prêtée devant elle risque de devenir raide et de succomber à la maladie dans les années qui suivent.[1] D'autres récits lui prêtent le pouvoir d'attirer les imprudents dans des rondes dansées jusqu'à l'épuisement, ou de substituer un enfant humain par un changelin, brouillant la frontière entre bienveillance et rapt."
+    ],
+    "anomalies": [
+      "La vila ne se laisse pas réduire à la catégorie de fée occidentale ni à celle de nymphe grecque, bien qu'elle en partage certains traits : sa fonction de sœur de sang jurée à un héros humain, engagée dans les guerres et les épopées, n'a pas d'équivalent exact dans ces traditions voisines.[1] La comparer trop vite à une fée de conte de fées occidental effacerait cette dimension guerrière et contractuelle qui la définit dans l'épopée slave méridionale.",
+      "Sa métamorphose en cygne, en faucon, en cheval ou en loup n'est pas un déguisement occasionnel mais une capacité constitutive, au même titre que la danse ou le tir à l'arc.[1] Il faut donc se garder de chercher une apparence unique et stable de la vila : la forme féminine vêtue de blanc n'est qu'une des faces sous lesquelles elle choisit de se montrer."
+    ],
+    "naturelle": {
+      "lead": "Cette histoire naturelle suit la vila du folklore slave méridional dans ses trois grandes familles, sans la confondre avec les fées ou nymphes d'autres traditions européennes.",
+      "parts": [
+        {"title": "Comportement", "body": ["La vila chasse, danse en cercle et cherche l'amitié des hommes forts et courageux, qu'elle assiste contre leurs ennemis lorsqu'elle leur accorde sa faveur.[1] Elle punit en retour, avec une sévérité proportionnée, l'irrespect ou le parjure commis envers elle."]},
+        {"title": "Habitat", "body": ["Trois milieux se partagent les vile : la forêt pour les zagorkinje, l'eau et les rivières pour les brodarice, les nuages et les cimes pour les vile oblakinje, qui y bâtiraient de splendides châteaux aériens.[1] Montagnes, forêts profondes et sources sacrées définissent ainsi son territoire d'ensemble."]},
+        {"title": "Alimentation", "body": ["Aucune nourriture matérielle ne lui est attribuée par les récits ; ses pouvoirs de guérison par les herbes de montagne suggèrent en revanche une connaissance intime des plantes plutôt qu'un régime alimentaire propre.[1]"]},
+        {"title": "Intelligence", "body": ["La vila manie l'arc avec une précision infaillible, soigne par les herbes et se change en plusieurs animaux à volonté, signes d'une intelligence rusée et d'une maîtrise magique étendue plutôt que d'une simple force brute.[1]"]},
+        {"title": "Reproduction", "body": ["Le folklore ne décrit pas de reproduction régulière chez les vile, mais leur prête le pouvoir d'enlever un enfant humain pour le remplacer par un changelin, brouillant ainsi la frontière entre leur propre lignée et celle des hommes.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucun adversaire naturel ne leur est attribué ; le principal risque décrit est de leur manquer de respect ou de trahir un serment prêté devant elles, ce qui retourne leur pouvoir protecteur en punition mortelle.[1]"]}
+      ]
+    },
+    "reliques": [
+      "L'épopée slave méridionale reste le principal réceptacle de la mémoire des vile, où leur alliance de sang avec les héros a traversé les siècles à travers le chant plus que par un texte fixe unique.[1]",
+      "Les trois familles de vile, forêt, eau et nuage, continuent de structurer la manière dont le folklore régional répartit aujourd'hui encore ses esprits féminins de la nature, chacune conservant son domaine et ses manières propres d'aider ou de punir.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Vila (fairy) — nymphe slave méridionale, sororité de sang et trois familles, Wikipédia", "url": "https://en.wikipedia.org/wiki/Vila_(fairy)"}
+  ]
+}

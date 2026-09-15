@@ -1,0 +1,36 @@
+{
+  "description": "Un esprit suspendu à un arbre du bûcher, qui n'entre dans un cadavre que pour mieux poser une énigme au roi venu le capturer.",
+  "sections": {
+    "fascination": [
+      "Le vétala ne cherche pas de corps par nécessité de survie mais par goût de la présence dans le monde des vivants : il investit un cadavre au terrain de crémation et s'en sert comme d'un véhicule temporaire, indifférent à la décomposition ou à l'identité du mort qu'il anime.[1] Ce détail suffit à le distinguer d'un simple revenant : ce n'est pas son propre corps qu'il réclame, mais n'importe quel corps disponible, comme si la mort matérielle n'avait plus aucune prise sur sa manière de se déplacer.",
+      "Sa relation au temps est plus étrange encore que sa relation au corps. Échappant aux lois de l'espace et du temps, le vétala posséderait une connaissance trouble du passé, du présent et de l'avenir.[1] Un être qui prend n'importe quel cadavre et qui voit au-delà du présent immédiat ne ressemble à aucun fantôme d'attachement : il erre dans le temps autant que dans les corps, ce qui fait de chaque rencontre avec lui un moment où l'interlocuteur ne sait jamais tout à fait à qui, ni à quelle époque, il s'adresse."
+    ],
+    "legendes": [
+      "Le cycle narratif le plus célèbre attaché au vétala est le Vetala Panchavimshati, les vingt-cinq récits du vétala.[1] Le roi Vikramaditya reçoit la mission de capturer, dans un terrain de crémation, un cadavre suspendu à un arbre et possédé par l'esprit. Chaque fois que le roi le charge sur son épaule pour l'emporter, le vétala lui raconte une histoire qui s'achève sur une énigme ; s'il répond correctement tout en gardant le silence, la règle lui impose de rompre son mutisme, et le cadavre s'échappe aussitôt pour retourner se pendre à son arbre.[1]",
+      "Ce jeu se répète vingt-quatre fois de suite, le roi acceptant chaque fois de recommencer sa marche silencieuse jusqu'au palais. Ce n'est qu'à la vingt-cinquième histoire, lorsque Vikramaditya échoue enfin à répondre, que le vétala renonce à fuir et lui témoigne son respect, lui offrant alors des dons magiques.[1] L'échec final n'est donc pas une défaite du roi : c'est la condition même pour que l'esprit consente à collaborer plutôt qu'à s'échapper indéfiniment.",
+      "Au-delà du cycle narratif, le vétala occupe une place religieuse locale, en particulier dans la région du Konkan, où sa forme divinisée, Betal, est vénérée comme l'époux de la déesse Shantadurga et comme le chef de l'ensemble des entités surnaturelles.[1] Ce culte régional montre que le vétala n'est pas resté un simple personnage de conte : il a pu devenir, par endroits, une figure de dévotion à part entière."
+    ],
+    "anomalies": [
+      "Le vétala n'est ni purement malveillant ni purement protecteur, et les récits ne cherchent pas à trancher : le même esprit peut rendre fou, tuer des enfants, provoquer des fausses couches, mais aussi garder des villages entiers de ses assauts.[1] Cette ambivalence structurelle interdit de le ranger simplement parmi les démons ou parmi les gardiens ; il occupe les deux rôles selon les circonstances, sans qu'aucune règle ne permette de prédire lequel prévaudra.",
+      "Sa capacité à connaître le passé, le présent et l'avenir en fait un informateur autant qu'un adversaire : dans le cycle de Vikramaditya, c'est précisément ce savoir hors du temps qui alimente ses histoires et ses énigmes.[1] Un être aussi indifférent aux lois ordinaires de la matière et du temps ne peut être combattu par la force seule ; c'est par l'esprit, en répondant correctement à ses questions, que le roi finit par le maîtriser."
+    ],
+    "naturelle": {
+      "lead": "Cette histoire naturelle suit le vétala tel que le décrit la tradition hindoue et le cycle du Vetala Panchavimshati, sans le confondre avec d'autres esprits possesseurs de cadavres d'autres cultures.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le vétala alterne malice et bienveillance selon les récits : il peut rendre fou ou provoquer la mort d'un enfant, mais aussi veiller sur un village entier.[1] Face à Vikramaditya, il choisit un jeu réglé, l'histoire suivie d'une énigme, plutôt qu'un affrontement direct, révélant un goût prononcé pour la parole et le défi intellectuel."]},
+        {"title": "Habitat", "body": ["Le terrain de crémation reste son lieu propre, souvent associé à un arbre auquel le cadavre qu'il habite reste suspendu entre deux tentatives de capture.[1] C'est un territoire de passage entre les morts et les vivants, cohérent avec sa fonction d'esprit qui traverse les deux mondes."]},
+        {"title": "Alimentation", "body": ["Aucune nourriture matérielle ne lui est attribuée dans le cycle narratif ; son activité se concentre sur la possession, le déplacement et la parole plutôt que sur un besoin de subsistance corporelle."]},
+        {"title": "Intelligence", "body": ["Sa connaissance transcende les limites humaines du temps : passé, présent et avenir lui seraient également accessibles, ce qui nourrit les histoires complexes et les énigmes qu'il pose au roi.[1] Cette intelligence n'est pas mise au service d'un plan précis, mais d'un jeu répété dont les règles l'obligent lui-même."]},
+        {"title": "Reproduction", "body": ["Le vétala ne se reproduit pas au sens biologique : il occupe des cadavres existants plutôt que d'engendrer une descendance, ce qui le rapproche davantage d'un principe errant que d'une espèce animale."]},
+        {"title": "Prédateurs", "body": ["Seule une intelligence rusée, capable de répondre à ses énigmes tout en respectant la contrainte du silence, parvient à le retenir un temps ; aucune force physique ni aucun prédateur naturel ne lui est opposé dans la tradition.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le cycle des vingt-cinq récits du vétala reste le document le plus durable attaché à cette figure, transmis comme un ensemble de contes-cadres où chaque histoire enchâsse la suivante jusqu'à l'énigme finale.[1] Sa structure en boucle, brisée seulement à la vingt-cinquième tentative, a inspiré des reprises narratives bien au-delà de son texte d'origine.",
+      "Le culte de Betal dans le Konkan prolonge cette mémoire sous une forme religieuse plutôt que littéraire, faisant du vétala un chef des entités surnaturelles vénéré localement, preuve que la frontière entre personnage de conte et objet de dévotion peut, dans cette tradition, s'effacer presque entièrement.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Vetala — esprit possesseur de cadavres et cycle de Vikramaditya, Wikipédia", "url": "https://en.wikipedia.org/wiki/Vetala"}
+  ]
+}

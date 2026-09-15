@@ -1,0 +1,37 @@
+{
+  "description": "Entre le saint et le charlatan, le thaumaturge fait de la place publique la scène d'un prodige : avant le sortilège de fantasy, il fut un titre porté par des évêques.",
+  "sections": {
+    "fascination": [
+      "Un mot grec désigne, littéralement, celui qui fait des œuvres étonnantes : thauma, la merveille, et ergon, l'œuvre. Le thaumaturge n'invente pas un système magique séparé du monde ; il agit dans le monde commun, devant témoins, et c'est cette visibilité qui fait sa fascination. Contrairement au sorcier de cabinet ou à l'enchanteur de forêt, il opère en place publique, dans une ville, devant une foule dont le regard devient la preuve.[1]",
+      "La fantasy de jeu de rôle a repris ce nom pour désigner un lanceur de sorts dont le pouvoir tient moins à l'étude qu'à l'effet spectaculaire produit sur autrui. Guérisons soudaines, apparitions, conversions de foules : le thaumaturge de fiction hérite d'un répertoire ancien, celui du prodige qui convainc sans démontrer. Le prestige du personnage repose sur cette ambiguïté durable entre le sacré et l'illusion, jamais tout à fait résolue."
+    ],
+    "legendes": [
+      "Le titre de Thaumaturgus est resté attaché à un nom précis : Grégoire de Néocésarée, évêque du Pont au IIIe siècle, mort vers 270. Né sous le nom de Théodore, il se convertit au christianisme après avoir rencontré le théologien Origène, dont il suit l'enseignement pendant sept ans avant de revenir diriger l'Église de sa ville natale.[1]",
+      "Une tradition ancienne, rapportée par les sources chrétiennes, prête à son épiscopat un effet démographique inversé : il aurait trouvé sa ville avec dix-sept chrétiens seulement, et l'aurait quittée, trente ans plus tard, avec dix-sept païens qui n'auraient pas encore été convertis.[1] Que le chiffre soit exact ou non, il donne la mesure du prodige attendu d'un tel homme : moins un miracle isolé qu'une transformation continue de la communauté par la seule autorité spirituelle.",
+      "Ce titre de « faiseur de prodiges » ne désigne pas un pouvoir personnel détaché de toute fonction. Il accompagne une charge d'évêque, un enseignement reçu, une légitimité construite dans la durée. Le mot grec, latinisé en Thaumaturgus, jette sur son porteur, selon les mots mêmes de la tradition qui l'a conservé, un voile de légende que l'histoire documentée ne dissipe jamais tout à fait.[1]",
+      "La fantasy moderne a détaché ce titre de tout contexte religieux précis pour en faire une classe ou un archétype de personnage, capable de sorts d'apparence miraculeuse sans lien nécessaire avec une Église. Le nom traverse ainsi les siècles en perdant son ancrage historique mais en gardant l'essentiel : la capacité de produire, devant les autres, ce qu'ils ne savent pas expliquer."
+    ],
+    "anomalies": [
+      "Le prodige antique et médiéval se distingue du sortilège de fantasy par son absence de mécanique visible. Grégoire ne récite aucune formule, ne consulte aucun grimoire : son pouvoir procède de sa sainteté, c'est-à-dire d'une relation à l'invisible que la tradition chrétienne ne cherche pas à décomposer en règles.[1] Le thaumaturge de jeu, à l'inverse, dispose souvent d'une liste de sorts précis, rechargés selon un rythme fixe — une codification que rien dans la figure historique n'annonçait.",
+      "Une tension traverse le mot depuis son origine : le même geste peut être lu comme miracle sacré ou comme habileté trompeuse. Les sources antiques elles-mêmes ne séparent pas toujours nettement le saint du magicien accompli, et c'est cette ambiguïté, plutôt qu'une liste de pouvoirs, qui constitue le noyau anormal du personnage. Le thaumaturge n'est jamais certifié par une seule autorité : il l'est par l'effet produit sur ceux qui le regardent."
+    ],
+    "naturelle": {
+      "lead": "Il ne s'agit pas ici d'une créature au sens zoologique, mais d'un type humain récurrent, entre le titre ecclésiastique historique et l'archétype de lanceur de sorts que la fantasy en a tiré.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le thaumaturge agit en public plus qu'en secret. Sa force sociale dépend de témoins : une guérison accomplie sans personne pour la voir ne fonde aucune réputation. Il recherche donc les lieux de rassemblement — place, sanctuaire, cour — où l'effet de son geste se propage par le récit autant que par l'observation directe."]},
+        {"title": "Habitat", "body": ["Villes, sanctuaires et cours forment son terrain naturel. La figure historique de Grégoire s'attache à une cité précise, Néocésarée, dont il devient l'évêque ; la fantasy conserve ce lien à un lieu civique plutôt qu'à une forêt ou une tour isolée, propres à d'autres types de magiciens."]},
+        {"title": "Alimentation", "body": ["Aucune tradition ne prête au thaumaturge un régime particulier : sa singularité ne touche pas au corps mais à l'effet qu'il produit sur celui d'autrui, par la guérison ou la conversion."]},
+        {"title": "Intelligence", "body": ["Le thaumaturge historique tient son autorité d'un enseignement reçu — sept années d'étude auprès d'Origène, dans le cas de Grégoire — avant d'exercer lui-même une charge. Le prodige n'est donc pas présenté comme un don brut mais comme l'aboutissement d'une formation, même si son effet final déborde toute explication technique.[1]"]},
+        {"title": "Reproduction", "body": ["La figure ne se transmet pas par filiation biologique mais par succession de charge et de réputation : un titre comme Thaumaturgus s'attache à une personne précise et ne se répète que par imitation ou par nomination dans une tradition religieuse ou fictionnelle."]},
+        {"title": "Prédateurs", "body": ["Le principal danger du thaumaturge est le soupçon d'imposture. Sa proximité avec le charlatan, constante depuis l'Antiquité, fait de la contestation publique — l'accusation de tromperie — la menace la plus persistante pesant sur sa réputation, bien plus qu'un adversaire surnaturel identifiable."]}
+      ]
+    },
+    "reliques": [
+      "Le nom de Grégoire Thaumaturge a traversé la tradition chrétienne orientale et occidentale comme celui d'un saint reconnu, cité dans des textes théologiques bien après sa mort. Sa légende démographique — la ville presque entièrement convertie — a circulé dans les récits hagiographiques comme un exemple canonique du pouvoir de conviction attribué aux saints.[1]",
+      "En quittant le vocabulaire religieux pour celui des jeux de rôle et de la fantasy contemporaine, le mot a perdu son ancrage à une personne et à une Église précises, mais gardé son sens littéral : celui qui fait des œuvres qui étonnent. De l'évêque du Pont au lanceur de sorts des tables de jeu, la continuité tient à ce seul principe, l'effet visible avant l'explication."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Gregory Thaumaturgus, Wikipédia (en anglais)", "url": "https://en.wikipedia.org/wiki/Gregory_Thaumaturgus"}
+  ]
+}

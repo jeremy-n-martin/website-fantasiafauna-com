@@ -1,0 +1,34 @@
+{
+  "description": "Un arbre, une source, une fortune enterrée : chacun peut abriter un yaksha, gardien capable d'accueillir le voyageur comme de le dévorer.",
+  "sections": {
+    "fascination": [
+      "Approcher un vieil arbre sacré, dans certaines régions de l'Inde, c'est risquer de déranger davantage qu'un tronc. Le yaksha habite volontiers ces lieux — eaux, forêts, terres sauvages — et s'y tient comme le gardien discret d'une richesse qu'on ne voit pas.[1] Il ne réclame pas de temple pour exister : une racine, une grotte, un monticule de terre suffisent à en faire un sanctuaire. Le passant qui néglige les usages, qui coupe une branche ou souille une source, s'expose alors à une présence qui n'a jamais quitté les lieux.",
+      "Le trait le plus singulier du yaksha n'est pas sa force, mais sa duplicité de nature. La même créature peut se montrer fée bienveillante des bois et, l'instant d'après, revenante féroce qui guette et dévore l'imprudent, à la manière des rakshasas.[1] Cette alternance n'est pas un accident de récit : elle définit le personnage. On ne sait jamais, en s'adressant à un yaksha, si l'on parle à un protecteur ou à un piège."
+    ],
+    "legendes": [
+      "Les yakshas apparaissent conjointement dans les traditions hindoue, bouddhiste et jaïne, ce qui en fait l'une des figures surnaturelles les plus largement partagées de l'Asie du Sud.[1] Leur roi, Kubera, règne sur eux et protège le monde en tant que gardien de la richesse et de la prospérité. Corpulent, chargé de bijoux, il gouverne une cour entière d'esprits attachés chacun à un arbre, un point d'eau, une colline ou une ville, selon un maillage qui recouvre le territoire d'un réseau de gardiens locaux.",
+      "À côté des yakshas masculins existent les yakshinis, leurs pendants féminins, associées à la fertilité autant qu'à la garde.[1] Dans les traditions jaïne et bouddhiste en particulier, les couples de yaksha et yakshini deviennent des divinités tutélaires placées aux abords des temples d'Asie du Sud et du Sud-Est, la yakshini se tenant traditionnellement du côté gauche des images sacrées. Leur présence sculptée aux portes des sanctuaires ne relève donc pas du simple décor : elle prolonge dans la pierre le rôle de sentinelle qu'on leur prête dans les récits."
+    ],
+    "anomalies": [
+      "Le yaksha occupe une position architecturale peu commune pour un esprit : on le retrouve, taillé dans la pierre, comme élément porteur autant que décoratif dans les temples du Népal et de la Thaïlande.[1] La figure surnaturelle devient alors littéralement colonne, cariatide chargée de soutenir un édifice tout en le protégeant. Peu de génies tutélaires connaissent un tel passage du récit oral à la fonction structurelle.",
+      "Sa dualité pose une autre énigme : contrairement à la plupart des esprits gardiens qui se rangent nettement du côté du bien ou du mal, le yaksha refuse cette clarté.[1] Certains récits le présentent comme un généreux dispensateur de richesse à qui sait l'honorer ; d'autres le montrent guettant les voyageurs égarés pour les dévorer. Cette instabilité même semble constituer sa nature véritable, plutôt qu'une contradiction entre des sources rivales."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle du yaksha s'organise autour d'un territoire précis — arbre, source, colline ou trésor — et d'une fidélité à ce lieu qui dépasse tout ce qu'on observerait chez un animal ordinaire.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le comportement du yaksha varie selon l'accueil qu'on lui réserve : respect et offrandes appellent sa bienveillance, tandis que profanation ou indifférence peuvent réveiller sa face la plus redoutable, celle qui guette et attaque le voyageur imprudent.[1]"]},
+        {"title": "Habitat", "body": ["Le yaksha réside dans les eaux, les arbres, les forêts et les terres sauvages, mais aussi dans les trésors enfouis qu'il a charge de garder ; chaque individu semble attaché à un site précis plutôt qu'errant sur un vaste territoire.[1]"]},
+        {"title": "Alimentation", "body": ["Les récits ne détaillent guère un régime ordinaire ; seule sa face la plus sombre le montre dévorant les voyageurs égarés, à la manière des rakshasas, plutôt qu'assurant sa subsistance par une chasse régulière.[1]"]},
+        {"title": "Intelligence", "body": ["Suffisamment rusé pour négocier, récompenser ou tromper les mortels qui le sollicitent, le yaksha agit avec un discernement propre aux esprits tutélaires plutôt qu'avec l'instinct d'une simple bête gardienne."]},
+        {"title": "Reproduction", "body": ["Les traditions distinguent le yaksha masculin de la yakshini féminine, associée à la fertilité ; les deux figures forment souvent un couple tutélaire représenté ensemble aux abords des sanctuaires, sans que les récits détaillent de filiation entre individus.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur naturel n'est attribué au yaksha : sa position de gardien, et son rattachement à la cour de Kubera, roi de la richesse et protecteur du monde, en font plutôt une menace ou un allié qu'une proie."]}
+      ]
+    },
+    "reliques": [
+      "Le nom même de yaksha demeure attaché à Kubera, dont la ville céleste d'Alaka concentre la richesse et l'autorité sur l'ensemble de ces esprits.[1] Les sculptures de yakshas et de yakshinis, colonnes vivantes des temples anciens, restent aujourd'hui l'une des traces les plus tangibles de cette tradition : en soutenant les porches et les linteaux, elles continuent, silencieusement, d'exercer la fonction de garde qu'on leur prêtait il y a des siècles."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Yaksha — Wikipédia (anglais)", "url": "https://en.wikipedia.org/wiki/Yaksha"}
+  ]
+}

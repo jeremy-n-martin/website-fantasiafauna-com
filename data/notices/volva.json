@@ -1,0 +1,39 @@
+{
+  "description": "Un bâton, un manteau semé de pierres précieuses, une voix qui traverse les mondes : la volva chante le destin devant les dieux eux-mêmes, et Odin l'écoute sans l'interrompre.",
+  "sections": {
+    "fascination": [
+      "Dans une salle de ferme, une femme s'assoit sur une estrade surélevée. Elle ne prêche pas, elle ne combat pas : elle regarde au loin, et ce qu'elle rapporte engage l'avenir de tout le village. La volva impressionne d'abord par ce paradoxe tranquille — une autorité qui ne s'impose ni par la force ni par le rang, mais par la seule capacité à voir ce que personne d'autre ne perçoit. Les sociétés germaniques anciennes accordaient aux femmes un élément de sainteté et un don de prophétie, au point qu'un peuple batave préférait composer avec les empereurs de Rome plutôt qu'avec ses propres devineresses.[1]",
+      "Le vertige atteint son sommet dans la Völuspá, poème où une voyante déjà morte récite à Odin lui-même l'histoire du monde, de sa création à sa destruction annoncée.[2] Le dieu le plus rusé du panthéon nordique n'a d'autre choix que d'écouter, immobile, la parole d'une morte relevée pour l'occasion. Ce renversement — le maître des runes réduit au silence devant une voix qu'il ne maîtrise pas — donne à la volva une stature que peu de figures féminines du mythe nordique égalent."
+    ],
+    "legendes": [
+      "Le mot volva signifie littéralement « porteuse de bâton », et ce bâton, ou völr, constitue à la fois l'outil et l'insigne de sa fonction.[1] Les fouilles archéologiques confirment son importance rituelle : plusieurs sépultures de haut rang scandinave ont livré des bâtons de métal, preuve que l'objet accompagnait la défunte comme un attribut de pouvoir, au même titre qu'une épée pour un guerrier.",
+      "La pratique magique associée à la volva porte un nom précis, le seiðr, exécuté depuis une estrade rituelle appelée seiðhjallr.[1] Cette magie combinait convocation d'esprits protecteurs, envoi de doubles animaux pour recueillir des informations à distance, prédiction et manipulation du temps ou du destin par la performance ritualisée plutôt que par un simple sortilège isolé.",
+      "Le récit de Þorbjörg lítilvölva, la petite voyante, détaille un costume d'une richesse frappante : manteau noir orné de pierres précieuses, capuche d'agneau doublée de fourrure de chat blanc, collier de perles de verre, gants de peau de chat.[1] Cette description, transmise par la littérature norroise, montre que le vêtement n'était pas accessoire : chaque pièce signalait un statut spirituel élevé, reconnaissable au premier regard par toute l'assemblée.",
+      "Les volvas ne restaient pas fixées à un seul foyer. Elles voyageaient de ferme en ferme, parfois accompagnées d'une suite de disciples, pour livrer leurs prédictions et recevoir en retour une rémunération convenue.[1] Cette itinérance faisait d'elles des spécialistes recherchées plutôt que de simples figures locales, capables de porter leur art d'une communauté à l'autre selon la demande."
+    ],
+    "anomalies": [
+      "L'archéologie funéraire apporte une confirmation matérielle inhabituelle pour une figure aussi liée au mythe. La tombe de Fyrkat contenait une femme installée dans un char tiré par des chevaux, parée d'anneaux d'orteils en argent, accompagnée de bols de bronze d'Asie centrale, de graines de jusquiame aux propriétés hallucinogènes et d'une baguette de métal.[1] Rien dans cet inventaire ne relève de la légende : ce sont des objets réels, retrouvés en contexte funéraire réel.",
+      "La sépulture du navire d'Oseberg, l'une des plus riches découvertes vikings, renfermait à son tour des graines de cannabis, un bâton de bois et un chariot orné de neuf chats, animaux consacrés à la déesse Freyja.[1] La coïncidence entre ces éléments — plante psychoactive, bâton rituel, symbolique féline liée à la magie — suggère que la pratique décrite dans les sagas correspondait à des gestes funéraires attestés, et non à une pure invention littéraire postérieure.",
+      "Le respect accordé à la volva n'excluait pas une forme de malaise social. Le seiðr qu'elle pratiquait était par ailleurs jugé peu compatible avec la virilité guerrière lorsqu'un homme s'y adonnait, ce qui n'était pas le cas pour une femme investie de cette fonction.[1] Cette asymétrie révèle une société qui réservait certains pouvoirs à un genre précis, sans que la logique en soit toujours explicitée dans les textes eux-mêmes."
+    ],
+    "naturelle": {
+      "lead": "La volva n'appartient pas à une zoologie du merveilleux mais à l'histoire religieuse scandinave : praticienne humaine investie d'un rôle rituel, elle est ici décrite à travers les sources littéraires norroises et les découvertes archéologiques qui les recoupent.",
+      "parts": [
+        {"title": "Comportement", "body": ["La volva conjugue une autorité tranquille et une disponibilité rémunérée : elle ne s'impose pas par la force, mais on la sollicite pour ses prédictions, et elle répond selon un protocole précis, souvent depuis une estrade surélevée.[1] Sa parole engage l'assemblée qui l'écoute, y compris les figures les plus puissantes du panthéon dans la fiction du Völuspá.[2]"]},
+        {"title": "Habitat", "body": ["Halls de ferme, assemblées rituelles et routes de campagne composent son territoire : la volva n'a pas de sanctuaire fixe, mais un réseau de communautés qui l'accueillent à tour de rôle lors de ses tournées.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune source ne détaille un régime propre à la volva ; elle partage la table des foyers qui la reçoivent en échange de ses services divinatoires, rémunération qui pouvait prendre la forme de nourriture, de biens ou d'hospitalité prolongée.[1]"]},
+        {"title": "Intelligence", "body": ["Sa compétence relève d'un savoir rituel appris et transmis, non d'un don brut : maîtrise du seiðr, connaissance des formules et des gestes propres à l'estrade de convocation, mémoire des généalogies et des destins qu'elle est appelée à réciter.[1] La Völuspá la présente comme dépositaire d'une histoire cosmique entière, de la création du monde à sa destruction annoncée.[2]"]},
+        {"title": "Reproduction", "body": ["Les sources ne décrivent pas de transmission héréditaire systématique de la fonction ; certains récits évoquent en revanche des groupes de disciples voyageant avec une volva établie, suggérant un apprentissage par compagnonnage plutôt que par filiation stricte.[1]"]},
+        {"title": "Prédateurs", "body": ["La volva ne semble redouter aucune créature en particulier, mais sa pratique portait une charge sociale ambivalente : associée à un pouvoir redouté, elle pouvait aussi susciter la méfiance, notamment lorsque le seiðr était rattaché à des accusations de sorcellerie malveillante dans certains récits scandinaves tardifs.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Les bâtons de métal retrouvés dans des sépultures de haut rang scandinave restent l'une des preuves matérielles les plus directes du rôle rituel de la volva, confirmant que l'objet central des sagas correspondait à une pratique funéraire bien réelle plutôt qu'à un simple motif littéraire.[1]",
+      "La Völuspá elle-même a traversé les siècles comme le texte fondateur de la cosmologie nordique, transmettant jusqu'à nous, par la voix d'une morte relevée pour l'occasion, le récit complet de la naissance et de la fin du monde selon la tradition préchrétienne.[2] Peu de figures mythologiques ont ainsi survécu presque exclusivement par leur parole."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Völva — synthèse historique et archéologique, Wikipédia (en anglais)", "url": "https://en.wikipedia.org/wiki/V%C3%B6lva"},
+    {"id": 2, "title": "Völuspá — poème de la voyante, tradition norroise", "url": "https://en.wikipedia.org/wiki/V%C3%B6lusp%C3%A1"}
+  ]
+}

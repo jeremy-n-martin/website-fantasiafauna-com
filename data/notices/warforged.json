@@ -1,0 +1,35 @@
+{
+  "description": "Forgé pour combattre et non pour vivre, le warforged a survécu à la guerre qui l'a fait naître ; il lui reste à inventer ce que signifie continuer d'exister.",
+  "sections": {
+    "fascination": [
+      "Un corps de bois, de pierre et de métal, animé au point de ressentir la peur, l'attachement ou le deuil : le warforged déplace la frontière habituelle entre l'outil et la personne.[1] Il n'est l'héritier d'aucune légende ancienne, mais l'invention consciente d'un monde de fiction, Eberron, où la magie industrielle a produit des soldats en série avant que ceux-ci ne réclament, une fois la guerre finie, le statut d'êtres à part entière. Ce basculement du statut d'objet à celui de personne, acté par traité plutôt que par nature, fait du warforged une créature politique autant que fantastique.",
+      "Son immunité relative à la maladie, sa réparation par la magie plutôt que par le repos, son absence de sexe biologique bien qu'il puisse endosser un genre social : chaque trait technique du warforged prolonge la même question, celle d'un corps conçu sans les besoins qui définissent le vivant ordinaire.[1] La créature n'est donc jamais tout à fait libérée de sa fonction d'origine — combattre, encaisser, durer — même lorsqu'elle cherche un métier, une foi ou une communauté loin des champs de bataille qui l'ont vue naître."
+    ],
+    "legendes": [
+      "L'histoire officielle d'Eberron fait remonter les tout premiers warforged à des corps-hôtes destinés à des esprits quori, avant que les géants de Xen'drik ne développent leurs propres versions du procédé.[1] Mais la lignée qui compte pour le monde moderne du jeu naît des forges de la maison Cannith, guildes d'artisans-magiciens engagées dans la Dernière Guerre. Cannith y voit d'abord des soldats increvables, produits en série pour épargner des vies humaines sur le front.",
+      "Le tournant survient en l'an 965 du Royaume, lorsque l'artisan Aarren d'Cannith perfectionne le procédé de création au point de produire des êtres pleinement sensibles, capables d'émotions, de liens et même de faire l'expérience de la mort.[1] Chaque génération suivante gagne en subtilité de pensée. Aarren lui-même finit par refuser de traiter ses créations comme de simples outils et abandonne le projet, convaincu d'avoir engendré une forme de vie et non une arme perfectionnée — un conflit moral qui annonce celui que la société entière devra trancher.",
+      "La fin de la Dernière Guerre, scellée par le traité de Thronehold en 996 du Royaume, reconnaît légalement les warforged comme des personnes et ferme définitivement les forges de création.[1] La liberté ainsi obtenue ne résout pourtant rien de l'essentiel : privés de la guerre qui donnait un sens immédiat à leur existence, de nombreux warforged peinent à trouver leur place, subissent la discrimination et se retrouvent réduits à des emplois de servitude déguisée."
+    ],
+    "anomalies": [
+      "Un être qui ne vieillit pas selon les rythmes biologiques, que la magie répare plutôt que ne soigne, et qui pourtant peut mourir, aimer ou perdre la foi : le warforged cumule des attributs que les bestiaires attribuent d'ordinaire séparément aux constructions inertes et aux personnes vivantes.[1] Cette hybridation délibérée constitue moins une anomalie de la nature qu'une anomalie voulue par ses créateurs, rattrapés ensuite par les conséquences éthiques de leur propre réussite.",
+      "Le développement rapide de cultes et de croyances propres chez les warforged libérés, explorant la nature ambiguë de leur âme et l'idée d'une libération collective, contredit l'image d'une créature purement mécanique.[1] Une population entière s'invente ainsi une vie spirituelle en quelques décennies à peine, là où d'autres peuples mettent des siècles à formuler leurs premiers mythes."
+    ],
+    "naturelle": {
+      "lead": "Le warforged doit tout à l'ingénierie magique d'Eberron plutôt qu'à une évolution naturelle ; son histoire naturelle se lit donc comme une histoire de fabrication, de guerre, puis d'émancipation.",
+      "parts": [
+        {"title": "Comportement", "body": ["Conçus pour l'obéissance martiale, de nombreux warforged conservent après la guerre une discipline et une endurance remarquables, qu'ils redirigent vers des métiers, des quêtes personnelles ou la recherche d'un sens à leur existence libérée du combat.[1]"]},
+        {"title": "Habitat", "body": ["Sans besoin de logis contre le froid ou la faim, les warforged se retrouvent dans les anciennes forges, les compagnies mercenaires ou les cités d'Eberron, selon qu'ils cherchent à fuir leur passé militaire ou à s'y raccrocher."]},
+        {"title": "Alimentation", "body": ["Le corps de bois, de pierre et de métal du warforged n'exige ni nourriture ni sommeil ; seule une magie de réparation entretient sa condition, à la place du repos biologique.[1]"]},
+        {"title": "Intelligence", "body": ["Pleinement sensibles depuis les perfectionnements d'Aarren d'Cannith, les warforged raisonnent, ressentent et se souviennent comme des personnes à part entière, capacité qui a précisément justifié leur reconnaissance légale en 996 du Royaume.[1]"]},
+        {"title": "Reproduction", "body": ["Aucune reproduction biologique n'existe chez les warforged : leur nombre dépendait entièrement des forges de création de la maison Cannith, fermées depuis le traité de Thronehold, ce qui borne définitivement leur population aux générations déjà nées de la guerre.[1]"]},
+        {"title": "Prédateurs", "body": ["N'étant pas une proie biologique, le warforged affronte plutôt la discrimination sociale et l'exploitation par le travail forcé comme principales menaces de son existence d'après-guerre, plus que tout prédateur naturel.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le traité de Thronehold lui-même fait figure de relique politique pour les warforged : document juridique plus que talisman, il reste la seule pièce qui garantit leur statut de personnes plutôt que de biens, rappel que leur émancipation tient à l'encre d'un accord de paix et non à une quelconque grâce surnaturelle.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Wikipedia (en) — Warforged, origine dans Eberron et statut post-Dernière Guerre", "url": "https://en.wikipedia.org/wiki/Warforged"}
+  ]
+}

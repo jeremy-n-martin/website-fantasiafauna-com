@@ -1,0 +1,37 @@
+{
+  "description": "Une écorce immobile, puis un pas de géant : le tréant naît d'un dépit littéraire avant de devenir le gardien végétal des forêts de jeu.",
+  "sections": {
+    "fascination": [
+      "Un tronc parmi d'autres, une ramure banale — et soudain la forêt marche. Le tréant tire l'essentiel de son pouvoir de cette confusion initiale : rien ne le distingue d'un arbre ordinaire tant qu'il demeure immobile, une capacité que les bestiaires de jeu nomment fausse apparence.[1] Le promeneur qui s'appuie contre son écorce ou campe sous ses branches ne sait jamais s'il repose sous un arbre ou sous un juge silencieux de la forêt.",
+      "Sa force, une fois révélée, dépasse largement celle d'un colosse de chair : elle suffit à arracher des pierres, renverser des palissades, réduire une fortification de bois en un empilement de débris.[1] Mais cette puissance s'accompagne d'une lenteur délibérée, presque philosophique — le tréant ne se précipite jamais, et sa décision de combattre mûrit avec la patience d'un être dont l'échelle de temps se compte en siècles plutôt qu'en instants."
+    ],
+    "legendes": [
+      "Le tréant descend directement des Ents imaginés par J.R.R. Tolkien, bergers des arbres du Fangorn menés par Sylvebarbe.[2] Tolkien concevait ces géants sylvestres en réaction à sa propre déception envers Macbeth : frustré que la forêt de Birnam ne soit, chez Shakespeare, qu'une ruse de bûcherons camouflés, il voulut imaginer des arbres qui marchent réellement à la guerre.[2] Le mot ent lui-même vient du vieil anglais et désigne un géant — une étymologie qui inscrit la créature dans une antiquité linguistique bien antérieure à la fantasy moderne.",
+      "Lorsque Donjons et Dragons paraît en 1974, ses concepteurs reprennent directement le nom d'ent pour leurs arbres animés.[2] Mais la maison qui gérait alors les droits sur l'œuvre de Tolkien, Elan Merchandising, adresse en 1975 une mise en demeure exigeant l'abandon du terme.[2] Le jeu renomme aussitôt la créature tréant — un nom qui s'impose depuis dans la fantasy ludique, y compris pour des créatures qui n'ont plus aucun lien direct avec le récit de Tolkien.",
+      "La fiche de monstre consultée présente le tréant comme une créature Loyal Bon, de taille Immense, dotée d'une force colossale (23) contrebalancée par une agilité limitée (8), et capable de communiquer en commun, en druidique, en elfique et en sylvestre — un éventail de langues qui trahit sa vocation de médiateur autant que de gardien.[1] Cette capacité de dialogue le distingue nettement d'une simple force de la nature : le tréant négocie, avertit, parfois pardonne, avant de frapper."
+    ],
+    "anomalies": [
+      "La fausse apparence du tréant pose une question que peu de créatures posent aussi frontalement : où s'arrête l'arbre et où commence le monstre ? Rien dans sa forme immobile ne trahit sa conscience ; c'est seulement le mouvement — un pas, un geste, une branche qui se love comme un bras — qui révèle la créature sous le végétal. Cette ambiguïté fait du tréant un gardien par nature invisible, dont la seule présomption de menace suffit à dissuader qui la soupçonne.",
+      "Sa capacité à animer un ou deux arbres voisins, une fois par jour, prolonge son pouvoir bien au-delà de son propre corps : les arbres ainsi réveillés partagent ses caractéristiques mais restent muets et d'une intelligence rudimentaire, de simples exécutants plutôt que des pairs.[1] Le tréant ne crée donc pas une communauté d'égaux, mais une milice temporaire — la forêt entière peut, l'espace d'un combat, devenir une armée sans jamais cesser d'être une forêt.",
+      "Son unique faiblesse marquante, le feu, referme la logique de la créature sur elle-même : ce qui fait sa force — le bois, la lenteur, la masse végétale — est aussi ce qui la rend vulnérable à l'élément le plus ancien opposé aux forêts. Il résiste en revanche aux coups contondants et perforants, comme si sa nature ligneuse absorbait ce que le métal inflige d'ordinaire à la chair.[1]"
+    ],
+    "naturelle": {
+      "lead": "Le tréant s'observe surtout à travers la fiche de monstre qui codifie son comportement dans les jeux de rôle contemporains, elle-même héritière directe des Ents littéraires de Tolkien.",
+      "parts": [
+        {"title": "Comportement", "body": ["Gardien plus que prédateur, le tréant privilégie l'avertissement à l'attaque : sa lenteur de décision, proverbiale, laisse toujours le temps à un intrus de rebrousser chemin avant que le combat ne devienne inévitable.[1][2] Une fois la violence engagée, en revanche, il la mène avec toute la puissance que sa masse autorise."]},
+        {"title": "Habitat", "body": ["Il vit dans les forêts anciennes et les sanctuaires sylvestres, des lieux où la continuité de la canopée depuis des siècles semble être la condition même de son existence. Il ne s'éloigne guère des bois qu'il protège, dont il paraît indissociable."]},
+        {"title": "Alimentation", "body": ["Aucune source ne lui prête de régime alimentaire précis : créature végétale, le tréant semble tirer sa subsistance du sol et de la lumière plutôt que d'une prédation quelconque, à l'image des arbres dont il partage la nature."]},
+        {"title": "Intelligence", "body": ["Sa maîtrise de plusieurs langues, dont le commun et l'elfique, en fait un interlocuteur capable de diplomatie et non un simple obstacle animé.[1] Cette intelligence articulée le rapproche du berger plus que de la bête, une continuité directe avec le rôle que Tolkien assignait à ses Ents.[2]"]},
+        {"title": "Reproduction", "body": ["Ni les bestiaires de jeu ni les sources littéraires ne documentent de cycle de reproduction pour cette créature : le tréant semble surgir de la forêt elle-même, éveillé plutôt qu'engendré, comme si chaque individu était une exception à la règle végétale plutôt que le fruit d'une lignée."]},
+        {"title": "Prédateurs", "body": ["Le feu reste sa menace la plus documentée, capable de ravager en quelques instants ce que des siècles de croissance ont bâti. Les bûcherons et les incendies de forêt, plus que tout prédateur vivant, constituent le danger constant qui pèse sur son existence."]}
+      ]
+    },
+    "reliques": [
+      "L'histoire du tréant est d'abord celle d'un litige de droits d'auteur : sans la mise en demeure de 1975, la créature porterait sans doute encore le nom d'ent dans les bestiaires de jeu.[2] Ce changement de nom, purement juridique à l'origine, a fini par produire une figure autonome, détachée du récit de Tolkien et devenue un archétype à part entière du gardien végétal, repris depuis dans d'innombrables mondes de fantasy sans plus jamais nommer sa source."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Treant — Monsters, D&D Beyond", "url": "https://www.dndbeyond.com/monsters/17037-treant"},
+    {"id": 2, "title": "Ent — inspiration de Tolkien et postérité dans la fantasy, Wikipédia", "url": "https://en.wikipedia.org/wiki/Ent"}
+  ]
+}

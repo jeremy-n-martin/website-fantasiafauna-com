@@ -1,0 +1,40 @@
+{
+  "description": "Avant d'être une créature, le wraith fut une heure : celle, précise, où le double d'un vivant se montre pour annoncer sa mort prochaine.",
+  "sections": {
+    "fascination": [
+      "Ce qui frappe dans le wraith des campagnes écossaises, c'est qu'il ne hante pas après coup : il précède. L'apparition surprend les proches d'un mourant avant que le trépas n'ait eu lieu, et son heure même porte un sens — la voir le matin promettait une longue vie encore, la voir le soir annonçait une mort proche.[1][2] Le mort n'est donc pas encore mort quand son double se montre ; le temps du deuil commence avant la fin, dans un entre-deux où l'on croise déjà la silhouette de qui respire encore.",
+      "Le wraith incorporé par la fantasy moderne a perdu cette précision temporelle pour gagner une présence beaucoup plus agressive. Il ne se contente plus d'annoncer une mort : il la donne. Sa simple traversée flétrit les plantes alentour, et son contact vide littéralement la vie de sa victime.[3] D'un présage silencieux, il est devenu une menace active — la haine qui a remplacé le deuil, la malveillance qui a remplacé l'omen."
+    ],
+    "legendes": [
+      "Le mot apparaît dans les textes écrits dès 1513, sous la plume de Gavin Douglas traduisant l'Énéide en scots ; son origine antérieure reste incertaine, entre un ancien terme désignant la colère, le vieux norrois vörðr, « gardien », et un mot gaélique pour spectre, sans qu'aucune filiation ne s'impose fermement.[1][2] Cette obscurité même est révélatrice : le wraith naît dans les dictionnaires du folklore écossais sans étymologie assurée, comme s'il fallait accepter de ne pas tout expliquer pour qu'un présage garde sa force.",
+      "Les attestations dialectales situent bien le phénomène dans la sensibilité populaire plutôt que dans la spéculation savante. En 1712, Robert Wodrow note qu'on a vu « her wrath, and a signe she would dye » ; en 1772, le poète Fergusson évoque le « deadly wraith » d'un homme encore vivant.[2] Le mot circule alors dans un usage quotidien, attaché à des événements précis et datés, loin de toute théorie générale sur les esprits.",
+      "Le dix-huitième siècle ajoute une seconde figure au même nom : le wraith devient aussi un esprit des eaux, une hagère décharnée vêtue de vert qui hante rivières et gués, appelant les voyageurs d'un doigt osseux pour mieux les noyer.[2] Rien ne relie logiquement le double annonciateur de mort et la noyeuse des rivières, sinon le même mot qui les recouvre tous deux — signe que le folklore écossais a moins cherché la cohérence qu'une famille d'inquiétudes partageant un nom commun.",
+      "La fantasy de jeu de rôle retient surtout l'idée d'une apparition liée à la mort, mais la débarrasse de son ambiguïté temporelle et de sa passivité. Le wraith devient une entité de pure malveillance, tenue à l'existence par la seule force de sa volonté, capable de voler et de traverser murs et créatures comme un terrain difficile.[3] Son contact prélève la vie plutôt que de l'annoncer, et toute victime réduite à néant par ce drain peut, à son tour, se relever en spectre à son service — jusqu'à sept simultanément.[3] Le présage silencieux a ainsi engendré sa propre descendance de spectres."
+    ],
+    "anomalies": [
+      "La plus grande discontinuité tient au moment même de l'apparition. Le wraith écossais se montre autour de la mort, parfois avant qu'elle survienne ; le wraith de fantasy, lui, est déjà et pour toujours un mort, sans plus aucun lien avec l'instant du trépas d'autrui.[1][2][3] Ce glissement du présage vers la prédation change la nature entière de la créature, qui passe du signe à l'agresseur.",
+      "Le wraith de jeu redoute la lumière du soleil, qui trouble sa vue et son adresse au combat — une faiblesse qui n'a aucun équivalent dans le folklore écossais, où l'apparition se moque des heures du jour tant qu'elle respecte l'échéance qui lui est propre.[2][3] Cette vulnérabilité solaire appartient au vocabulaire plus large du mort-vivant de fantasy, non à la tradition d'origine.",
+      "Sa capacité à traverser les objets et les créatures comme un terrain simplement difficile, tout en subissant des dégâts s'il s'arrête à l'intérieur d'une matière solide, décrit une incorporéité incomplète et négociée plutôt qu'une immatérialité totale.[3] Le wraith écossais, purement visuel, n'avait pas à se soucier de ce genre de contrainte physique : il apparaissait et disparaissait sans jamais se heurter à un mur."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle sépare ici deux figures bien distinctes : le présage écossais lié au moment de la mort, et l'entité de fantasy devenue prédatrice à part entière, retenue dans sa version classique de jeu de rôle de cinquième édition.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le wraith folklorique n'agit pas : il se montre, à l'heure qui lui est propre, sans intention hostile déclarée.[1][2] Le wraith de jeu, à l'inverse, poursuit activement les vivants et cherche le contact qui privera sa proie de sa force vitale, une malveillance concentrée que rien ne vient tempérer.[3]"]},
+        {"title": "Habitat", "body": ["Le folklore le situe aux abords des maisons où l'on veille un mourant, mais aussi dans les rivières et les gués pour sa variante aquatique du XVIIIe siècle.[2] La créature de jeu préfère les ruines, les brumes et les lieux où la mort s'est produite en nombre, environnements qui prolongent son lien originel avec le trépas."]},
+        {"title": "Alimentation", "body": ["Le wraith écossais ne consomme rien ; il n'existe que pour être vu.[1][2] Le wraith ludique se nourrit au contraire de force vitale, un prélèvement qui réduit durablement le potentiel de sa victime plutôt que sa seule vigueur immédiate.[3]"]},
+        {"title": "Intelligence", "body": ["Rien dans le folklore ne prête au double annonciateur une pensée propre : il obéit à un mécanisme de présage, pas à une volonté.[1][2] Le wraith de fantasy, lui, agit par choix et par haine, une malice suffisamment organisée pour élever des spectres à son service.[3]"]},
+        {"title": "Reproduction", "body": ["Le wraith de jeu ne naît pas : il relève un cadavre humanoïde mort depuis moins d'une minute et le transforme en spectre inférieur, jusqu'à sept à la fois.[3] Aucune tradition écossaise ne prête à l'apparition funèbre une telle descendance ; elle reste un phénomène solitaire, propre à chaque mourant."]},
+        {"title": "Prédateurs", "body": ["Le wraith de jeu redoute les armes bénies ou d'argent et perd de son efficacité en pleine lumière du jour.[3] Le wraith du folklore, purement visuel et passager, n'a par nature aucun ennemi : on ne combat pas un présage, on l'observe et on en redoute la confirmation."]}
+      ]
+    },
+    "reliques": [
+      "Le mot lui-même reste la relique la plus tenace de cette histoire : une origine incertaine, disputée entre plusieurs langues, qui n'a jamais empêché le terme de s'installer solidement dans le folklore écossais dès le début du XVIe siècle.[1][2] Cette obscurité étymologique contraste avec la précision presque rituelle de ses usages populaires, où l'heure de l'apparition comptait davantage que son pourquoi.",
+      "De cette double vie — présage silencieux puis prédateur actif — la fantasy contemporaine n'a gardé que le second visage, plus spectaculaire et plus jouable. Le double annonciateur de mort s'est ainsi effacé derrière l'entité qui la donne, et il faut retourner aux dictionnaires du scots pour retrouver la figure originelle, plus discrète et, à sa manière, plus glaçante encore.[1][2][3]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Wraith — page de homonymie, Wikipédia", "url": "https://en.wikipedia.org/wiki/Wraith"},
+    {"id": 2, "title": "Dictionaries of the Scots Language — entrée « wraith », Scottish National Dictionary", "url": "https://dsl.ac.uk/entry/snd/wraith_n"},
+    {"id": 3, "title": "D&D Beyond — Wraith, fiche de monstre", "url": "https://www.dndbeyond.com/monsters/17064-wraith"}
+  ]
+}
