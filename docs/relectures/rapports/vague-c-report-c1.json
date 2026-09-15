@@ -1,0 +1,421 @@
+{
+  "batch": "c1",
+  "reviewed": [
+    {
+      "slug": "exorciste",
+      "verdict": "pass",
+      "sha256": "dd1d99e85f5643611b440eba36885f81a3245d29954e05d99f628fa5db9ba645",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[3].body[0]",
+          "quote": "bien plus qu'une simple bravoure",
+          "detail": "Tournure de la famille bannie par le brief (« bien plus qu'un simple »). Aucune incidence factuelle : réécriture de confort."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[0].body[0]",
+          "quote": "le rituel prévoit des assistants, des témoins, parfois un médecin consulté en amont[1]",
+          "detail": "La source [1] porte explicitement la consultation médicale préalable et le mandat épiscopal, mais ne dit rien des « assistants » ni des « témoins » du rite. Affirmation plausible et non choquante, mais non littéralement portée par la source déclarée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Exorcism",
+          "status": "verified",
+          "claims_checked": "Grand exorcisme au Rituale Romanum ; préalable médical/psychiatrique ; invocation du Christ, de la Vierge, des saints et de l'archange Michel ; exorcismes hebdomadaires répétés des années ; tous les prêtres orthodoxes formés + critère des reliques/lieux saints ; manuels luthériens du XVIe s. ; étapes de l'exorcisme islamique et Al-Fatiha ; rite juif (rabbin kabbaliste, minyan de dix hommes, psaume 91 trois fois, shofar) ; Robbie Mannheim 1949 et inspiration de Blatty.",
+          "evidence": "« all priests of the Orthodox Church are trained and equipped to perform exorcisms » ; « Orthodox priests learn to distinguish demonic possession from mental illness, namely by observing whether the subject reacts negatively to holy relics or places » ; « several weekly exorcisms over many years are sometimes required to expel a deeply entrenched demon » ; « The Jewish exorcism ritual is performed by a rabbi who has mastered Kabbalah. Also present is a minyan (a group of ten adult males)... The group recites Psalm 91 three times, and then the rabbi blows a shofar » ; « (1949) A boy identified as Robbie Mannheim... became the chief inspiration for The Exorcist, a horror novel and movie written by William Peter Blatty »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Anneliese_Michel",
+          "status": "verified",
+          "claims_checked": "Soixante-sept séances entre 1975 et 1976 ; diagnostic d'épilepsie du lobe temporal et de troubles psychotiques ; arrêt des soins médicaux par la famille ; mort de dénutrition à 23 ans, 30 kg, genoux brisés ; condamnation pour homicide par négligence en 1978 ; tombe devenue lieu de pèlerinage.",
+          "evidence": "« A total of 67 exorcism sessions, one or two each week lasting up to four hours each, were performed over approximately ten months in 1975 and 1976 » ; « She weighed 30 kg (66 lb), suffered broken knees from continuous genuflections » ; « She was diagnosed with epileptic psychosis (temporal lobe epilepsy) and manic depression » ; « In April 1978, the Michels and the two priests were convicted of negligent homicide » ; « Michel's gravesite remains a pilgrimage site as she is \"revered by small groups of Catholics who believe she atoned for wayward priests and sinful youth.\" »"
+        }
+      ],
+      "style_check": "Français adulte et tenu, sans consigne à auteur ni inventaire de négations ; les images (le nom comme arme, l'invisible contesté) portent. Une seule tournure bannie, sans gravité."
+    },
+    {
+      "slug": "fauve-desagregateur",
+      "verdict": "revise",
+      "sha256": "d9edc938a71bc85e9dd0c41b838b4a3231f74ec79b671ac9c8afcdb285c8308b",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.anomalies[2] ; sections.naturelle.parts[4].body[0]",
+          "quote": "un très petit nombre d'individus âgés se retireraient vers le plan d'Achéron pour s'y repaître de métal en abondance, puis s'enfermeraient environ trois ans dans un cocon filé avant une possible métamorphose en dragon de rouille.[3]",
+          "detail": "La source déclarée [3] (aidedd, « Oxydeur — Monstre Stat Block ») ne contient que le bloc statistique 5e (Iron Scent, Rust Metal, Bite, Antennae) : ni Achéron, ni cocon, ni dragon de rouille, ni durée de trois ans. Le fait est exact et vérifiable, mais dans le texte de 2e édition repris par d'autres pages (« The extremely few rust monsters who lived long enough to reach old age somehow transported themselves to the plane of Acheron... they encased themselves in cocoons made of spun metal, where they stayed for three years... they emerged from their cocoons as rust dragon wyrmlings », monstershuffler.com, d'après le Forgotten Realms Wiki). Une page de bloc statistique ne peut pas porter un récit de lore : reprendre la citation vers la source 2e édition (Monstrous Manual / reprise en ligne)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "à la fin des années 1960, Gary Gygax déniche dans une boutique à bas prix un sachet de figurines",
+          "detail": "Le corps de texte de la source [1] situe la scène « In the early 1970s » ; seule la citation de Gygax rapportée par la même page remonte à « the late 60s and early 70s ». Datation à aligner sur ce que la source affirme au premier chef."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Rust_monster",
+          "status": "verified",
+          "claims_checked": "Origine par une figurine de jouet hong-kongaise ; « homard avec une hélice au bout de la queue » ; première parution dans le supplément Greyhawk en 1975 ; vitesse « quatre fois plus vite » dans les premières règles ; bactérie de l'estomac et du sang (Dragon #88) ; évolutions graphiques 1re/2e/3e édition.",
+          "evidence": "« he came across a bag of small plastic toys euphemistically labeled \"prehistoric animals\" » ; « One of the figurines looked like an absurd lobster with a propeller at the end of its tail » ; « First appearance | Dungeons and Dragons Supplement I: Greyhawk (1975) » ; « Characters hoping to save their armor and weapons by avoiding it found they could not outrun it, since it moved about four times as fast as the average character » ; « it is a strange bacteria living in the rust monster's stomach and blood stream that caused metal to rust »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/monsters/17001-rust-monster",
+          "status": "verified",
+          "claims_checked": "Odorat du métal, corrosion de l'arme, antennes, morsure — capacités 5e confirmées (odorat du fer, contact des antennes, morsure).",
+          "evidence": "« ***Iron Scent.*** The rust monster can pinpoint, by scent, the location of ferrous metal within 30 feet of it. » ; « ***Antennae.*** The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.aidedd.org/dnd/monstres.php?vo=rust-monster",
+          "status": "verified",
+          "claims_checked": "Nom français « Oxydeur » et capacités 5e ; en revanche la page ne porte AUCUN des éléments de la source 3 invoqués par la notice (Achéron, cocon, trois ans, dragon de rouille, « monstre rouilleur »).",
+          "evidence": "Contenu intégral de la page : « # Rust Monster / ***Iron Scent***... ***Rust Metal***... ***Bite***... ***Antennae***... » puis l'image ; aucune mention de lore. Chaîne « Achéron », « cocon », « larvaire », « dragon de rouille », « trois ans » : absentes (vérifié sur le HTML servi)."
+        }
+      ],
+      "style_check": "Voix juste et images efficaces (la matière la plus dure devenue la plus vulnérable) ; le paragraphe « le choix de le présenter ici comme fauve » reste un méta-commentaire léger mais non prescriptif."
+    },
+    {
+      "slug": "fee-dragon",
+      "verdict": "pass",
+      "sha256": "360e76ece2b30249e178a3b97971c2247c5c2d6683778b3eb73e858ccfe25586",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "Les bestiaires successifs distinguent une version plus ancienne du fée-dragon, conservée à titre historique sur les plateformes de règles, et une version actualisée qui affine son tempérament chaotique bon...[2]",
+          "detail": "La source [2] (profil 5e d'aidedd) ne mentionne aucune « version plus ancienne » conservée : c'est la source [1] (« Faerie Dragon (Older) », D&D Beyond) qui porte ce fait. Citation à repointe."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "Il apparaît dans les suppléments consacrés aux créatures draconiques mineures de Donjons et Dragons[1][2]",
+          "detail": "Formulation trop vague pour être vérifiée : ni [1] ni [2] ne rattachent la créature à des suppléments « consacrés aux créatures draconiques mineures ». Préciser le supplément et l'édition, ou atténuer."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/17108-faerie-dragon-older",
+          "status": "verified",
+          "claims_checked": "Taille d'un chat et ailes de papillon ; humeur espiègle ; invisibilité supérieure maintenue tant que dure la concentration ; colifichets et friandises échangés contre information ou passage ; télépathie limitée à 60 pieds ; table des couleurs par âge (rouge à violet) et sorts gagnés en vieillissant ; souffle d'euphorie une minute.",
+          "evidence": "« A faerie dragon is a cat-sized dragon with butterfly wings. » ; « ***Superior Invisibility.*** As a bonus action, the dragon can magically turn invisible until its concentration ends » ; « ***Limited Telepathy.*** Using telepathy, the dragon can magically communicate with any other faerie dragon within 60 feet of it. » ; « offering it \"treasure\" in the form of sweets, baked goods, and baubles in exchange for information or safe passage through its territory » ; table « Red | 5 years or less ... Violet | 51 years or more »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.aidedd.org/dnd/monstres.php?vo=faerie-dragon",
+          "status": "verified",
+          "claims_checked": "Version 5e française : sorts innés qui s'ajoutent avec l'âge et le changement de couleur, télépathie limitée, invisibilité supérieure, souffle d'euphorie (1 minute), résistance à la magie.",
+          "evidence": "« As the dragon ages and changes color, it gains additional spells as shown below. » ; « ***Euphoria Breath (Recharge 5-6)***. The dragon exhales a puff of euphoria gas... for 1 minute »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.donjondudragon.fr/drs/ad-d2/bestiaire-monstrueux/502145-dragon-f%C3%A9e.html",
+          "status": "verified",
+          "claims_checked": "Dragon fée 2e édition : couleurs du nouveau-né rouge au grand ver noir, ailes de papillon, forêts, alignement chaotique bon, télépathie jusqu'à trois kilomètres, souffle euphorisant, réticence à nuire sauf acculé ou en défense de son repaire.",
+          "evidence": "« Les dragons fées évitent le combat et n’infligent jamais intentionnellement des dégâts à moins qu'ils ne soient acculés ou qu'ils ne défendent leurs repaires. » ; « changeant au fur et à mesure qu'ils vieillissent, de rouge pour un nouveau-né, à noir pour un grand ver » ; « Tous les dragons fées peuvent communiquer par télépathie les uns avec les autres jusqu'à une distance maximum de 3 kilomètres. »"
+        }
+      ],
+      "style_check": "Texte vif, sans consigne ni tic de langage ; la frontière entre invention ludique et folklore européen est tracée honnêtement (« pas d'ancêtre direct dans les bestiaires folkloriques »)."
+    },
+    {
+      "slug": "forgelet",
+      "verdict": "revise",
+      "sha256": "93094de4d5fc96395adbb9f152f303ccafcacfd05a1b91f0acbfad557a845442",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[2] ; sections.naturelle.parts[4].body[0]",
+          "quote": "cet être artificiel que certains traités du XVIe siècle prétendaient faire naître en vase clos.[2]",
+          "detail": "La source déclarée [2] (https://fr.wikipedia.org/wiki/Homoncule) est une page d'homonymie (bandeau {{homonymie}} aujourd'hui) : elle se limite à « En alchimie, un homoncule est une réplique d'un être humain créé par l'alchimie » et renvoie à l'article Homoncule (alchimie). Elle ne mentionne ni le XVIe siècle ni la naissance en vase clos — précisément le type de source que le brief exclut (page d'homonymie). Reprendre l'article détaillé Homoncule (alchimie) ou une source sur Paracelse."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[0], [3] ; sections.anomalies[2] ; sections.naturelle.lead",
+          "quote": "cette notice choisit d'assumer cette incertitude plutôt que de l'habiller de fausses sources / Cette notice s'abstient donc de lui inventer une généalogie précise qu'aucune source ne confirmerait / Cette rareté documentaire ne doit pas être maquillée en profondeur historique qu'elle n'a pas",
+          "detail": "Notes de méthode et prescriptions adressées au rédacteur : la notice commente sa propre conduite éditoriale et donne des consignes (« ne doit pas être maquillée », « s'abstient de... »). Le brief bannit les consignes à l'auteur, et le dépôt les a déjà sanctionnées (docs/relectures/rapports/vague-a-report-3.json, chevalier-de-la-mort : « Il n'est pas nécessaire de leur inventer un chroniqueur »). Les faits (absence d'attestation de la créature) peuvent être dits en une phrase factuelle, sans discours de méthode répété quatre fois."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Gnome",
+          "status": "verified",
+          "claims_checked": "Kobolds/esprits de mine selon Agricola : imitateurs, rieurs, lanceurs de cailloux, capables de signaler un riche filon d'argent ; filiation du gnome paracelsien avec les légendes de mineurs.",
+          "evidence": "« Agricola recorded that according to the legends of that profession, these mining spirits acted as miming and laughing pranksters who sometimes threw pebbles at miners, but could also reward them by depositing a rich vein of silver ore. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://fr.wikipedia.org/wiki/Homoncule",
+          "status": "verified",
+          "claims_checked": "Page accessible, mais il s'agit d'une page d'homonymie : elle ne porte pas l'affirmation du XVIe siècle ni du « vase clos ».",
+          "evidence": "Wikitexte de la révision : « {{homonymie}} ... == Alchimie et religion == * En alchimie, un [[Homoncule (alchimie)|homoncule]] est une réplique d'un être humain créé par l'alchimie. » (aucune mention du XVIe siècle ni d'un vase clos)."
+        }
+      ],
+      "style_check": "Écriture propre et prudente, mais dominée par le commentaire de méthode (« faute de source canonique », « la plus grande honnêteté consiste à… ») qui alourdit la rubrique et adresse au lecteur des consignes d'écriture."
+    },
+    {
+      "slug": "gargouille",
+      "verdict": "revise",
+      "sha256": "daa5ef8cb2b2bcd1a80d678646b2e8bd87de6c12cb00a5dd13bcd293244d4841",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[0] et [2] ; sections.naturelle.parts[1].body[0]",
+          "quote": "Le mot gargouille désigne d'abord, en architecture, l'extrémité sculptée d'un chéneau destinée à rejeter l'eau de pluie loin des murs et des fondations, une solution technique attestée sur les édifices gothiques dès le XIIIe siècle.[1]",
+          "detail": "La source [1] est la page d'homonymie « Gargoyle (disambiguation) » : elle ne contient que « A gargoyle is a grotesque statue. Gargoyle may also refer to: Gargoyle (monster), a type of fantasy and horror monster… ». Ni chéneau, ni XIIIe siècle, ni fonction d'évacuation : page d'homonymie, cas nommément exclu par le brief. (Les faits sont vrais — l'article fr « Gargouille » et l'article en « Gargoyle » les portent — mais pas la source déclarée.)"
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1]",
+          "quote": "Ce récit, rattaché au Privilège de Saint-Romain qui accordait chaque année à l'évêque de Rouen le droit de gracier un condamné à mort, n'est cependant attesté par écrit qu'à partir de 1394, ce qui en fait une invention tardive des chanoines rouennais destinée à justifier ce privilège.[3]",
+          "detail": "La date de 1394 est absente des sources déclarées [3] et [4]. L'article fr « Privilège de saint Romain » rapporte au contraire, d'après Floquet, un commencement « vers le milieu du XIIe siècle » et une enquête royale de 1210 établissant l'exercice du privilège sous Henri II. Le fait (première mention écrite du dragon en 1394) est corroboré ailleurs (diocèse de Rouen : « Confirmé sous Charles VI en 1394 dans un texte qui mentionne la gargouille pour la première fois ») : c'est un chiffre absent de la source déclarée, à repointer."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1] ; sections.naturelle.parts[5].body[0]",
+          "quote": "Le monstre fut conduit en ville, brûlé, mais sa tête et son cou, trop endurcis par le feu qu'il crachait, refusèrent de brûler ; on les fixa alors au mur de la cathédrale, en souvenir du prodige.[4]",
+          "detail": "L'article en « Romanus of Rouen » (source [4]) ne contient pas ce récit : il se borne à « depicted with a Gargouille », évêque de Rouen, sous Dagobert I (629-39), et à une liste de miracles sans le dragon. Le récit du bûcher et de la tête est porté par la redirection en « Gargouille » → article « Gargoyle » (« the monster is led back to Rouen and burned, but its head and neck would not burn... so the head was mounted upon the cathedral walls »), non déclarée. Citation à repointe."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.reliques[0]",
+          "quote": "Le film d'animation Le Bossu de Notre-Dame en 1996 a encore renforcé cette association, en donnant la parole à trois gargouilles complices du personnage principal.[6]",
+          "detail": "La source [6] est l'article sur la série télévisée Gargoyles : elle ne mentionne ni Notre-Dame de Paris, ni Le Bossu de Notre-Dame, ni le film de 1996. L'affirmation (vraie) est attribuée à une page qui n'en parle pas."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[5].body[0]",
+          "quote": "Aucune tradition, ancienne ou moderne, ne documente de mode de reproduction pour la gargouille",
+          "detail": "Formulation de méthode défensive (inventaire de ce que la notice ne dit pas) plutôt que récit ; à resserrer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "qui dévastait les rives de la Seine et dévorait les habitants.[3][4]",
+          "detail": "La source [3] parle d'un « monstre des eaux... qui désolait les marais de la rive gauche » ; ni [3] ni [4] ne disent qu'il dévorait les habitants (l'idée vient de la source [2]). Simple précision d'attribution."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Gargoyle_(disambiguation)",
+          "status": "verified",
+          "claims_checked": "Page accessible mais purement homonymique : elle ne porte aucune des affirmations architecturales (chéneau, rejet des eaux, XIIIe siècle) qu'elle est censée soutenir.",
+          "evidence": "« A **gargoyle** is a grotesque statue. **Gargoyle** may also refer to: * Gargoyle (monster), a type of fantasy and horror monster »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://mysteres-de-france.com/mysteres-et-legendes-internationales/la-creature-mythique-du-gargouille-dans-la-mythologie-europeenne/",
+          "status": "verified",
+          "claims_checked": "Page de blog SEO : étymologie « garg- = gorge » + « gouille » ; récit rouennais (inondations, dévoration des habitants, tête et cou résistants aux flammes) ; la page situe en revanche saint Romain au VIIIe siècle et fait consigner la légende au XIIIe siècle.",
+          "evidence": "« Le terme « gargouille » provient du latin **garg-, signifiant gorge**, et de l'ancien français **gouille**, évoquant la gueule ou l'ouverture par laquelle s'écoule l'eau. » ; « la tête et le cou du monstre, résistants aux flammes, furent placés sur les remparts de la ville »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://fr.wikipedia.org/wiki/Privil%C3%A8ge_de_Saint-Romain",
+          "status": "verified",
+          "claims_checked": "Légende de saint Romain et de la Gargouille (VIIe s., Dagobert 629-639), étole et condamné gracié, privilège annuel ; AUCUNE mention de 1394 (début du privilège estimé au milieu du XIIe s.).",
+          "evidence": "« Saint Romain, évêque de Rouen au temps de Dagobert (629 - 639), décida de dompter un monstre des eaux, la Gargouille, qui désolait les marais de la rive gauche. » ; « Le privilège de saint Romain permettait au chapitre de la cathédrale de Rouen de gracier chaque année un condamné à mort le jour de l'Ascension. »"
+        },
+        {
+          "source_id": 4,
+          "url": "https://en.wikipedia.org/wiki/Romanus_of_Rouen",
+          "status": "verified",
+          "claims_checked": "Évêque de Rouen, mort vers 640, sous Dagobert I ; représenté avec une Gargouille. Le récit du dragon brûlé et de la tête/nuque incandescente n'y figure pas.",
+          "evidence": "« Attributes | depicted with a Gargouille » ; « died c. 640 AD... He would have lived under Dagobert I (629–39) »"
+        },
+        {
+          "source_id": 5,
+          "url": "https://www.dndbeyond.com/monsters/16868-gargoyle",
+          "status": "verified",
+          "claims_checked": "Gargouille de jeu de rôle : humanoïde, défenses de pierre, attaque surprise — base du portrait ludique de la notice.",
+          "evidence": "Fiche « Gargoyle » (D&D Beyond) : créature élémentaire de pierre, sensible à l'immobilité et à sa confusion avec une statue."
+        },
+        {
+          "source_id": 6,
+          "url": "https://en.wikipedia.org/wiki/Gargoyles_(TV_series)",
+          "status": "verified",
+          "claims_checked": "Série diffusée du 24 octobre 1994 au 15 février 1997, clan pétrifié le jour, Écosse médiévale puis New York contemporain ; ne dit rien du Bossu de Notre-Dame ni de Notre-Dame de Paris.",
+          "evidence": "« originally aired from October 24, 1994, to February 15, 1997. The series features a species of nocturnal creatures known as gargoyles that turn to stone during the day. » ; chaînes « Notre » et « Hunchback » : absentes de la page."
+        }
+      ],
+      "style_check": "Bonne tenue d'ensemble, et la notice fait correctement la part entre gouttière technique, légende rouennaise tardive et fantasy moderne ; le passif tient aux sources, pas à l'écriture."
+    },
+    {
+      "slug": "garuda",
+      "verdict": "revise",
+      "sha256": "fbdc94e29ed8f4f9ee5af8e6e9ae7afb94c7b9649a6c6597502b65ccfdb803ff",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[2]",
+          "quote": "En Indonésie, il est devenu le Garuda Pancasila, symbole national représenté comme gardien de l'unité et de la justice, tandis qu'en Thaïlande il est connu sous le nom de Krut, emblème de la royauté et protecteur du royaume.[3]",
+          "detail": "La source [3] (blog de l'agence hôtelière Secret Retreats) ne mentionne ni « Pancasila », ni « Krut », ni aucune armoirie ou emblème national (chaînes absentes de la page). Les faits sont exacts et largement documentés (armoiries de l'Indonésie « Garuda Pancasila », Garuda Indonesia, emblème royal thaïlandais) mais la citation ne les porte pas."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.anomalies[1]",
+          "quote": "certaines traditions bouddhiques et certains récits populaires d'Asie du Sud-Est nuancent la relation, évoquant des trêves ou des unions ponctuelles entre les deux lignées[3]",
+          "detail": "La source [3] affirme au contraire une hostilité perpétuelle — « the giant birdlike Garuda spends all of eternity killing the snake like Nagas » — et n'évoque aucune trêve ni union entre les deux lignées ; sa nuance porte sur le statut des nagas au Cambodge (ancêtres révérés, protecteurs du Bouddha), pas sur une réconciliation. Affirmation non portée, et en tension avec la source déclarée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[0]",
+          "quote": "Le parc culturel de Garuda Wisnu Kencana à Bali, dominé par une statue monumentale de Vishnu chevauchant Garuda, illustre cette continuité entre culte ancien et tourisme contemporain.[3]",
+          "detail": "Le parc n'apparaît que dans la source [1] (dont c'est le sujet) ; la source [3] n'en parle pas. Citation à repointe vers [1]."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "vahana, c'est-à-dire monture, du dieu Vishnu, dont il orne également la bannière.[1][2]",
+          "detail": "La bannière n'est mentionnée ni par [1] (qui parle de la « mount » de Vishnu) ni par [2] ; elle est portée par [3] — « He is the vehicle (vahana) of Vishnu and appears on this very important Hindu god's banner ». Redistribuer les appels."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Garuda_Wisnu_Kencana_Cultural_Park",
+          "status": "verified",
+          "claims_checked": "Garuda monture de Vishnu ; parc dédié à Vishnu et Garuda ; statue inspirée du récit de la quête d'Amrita et de la libération de la mère ; achèvement en 2018. Ne porte ni Pancasila, ni Garuda Indonesia, ni Krut.",
+          "evidence": "« It is devoted to the Hindu god Vishnu, and his mount, Garuda, the mythical bird who became his companion. » ; « Garuda agreed to be ridden by Lord Visnu in return for the right to use the elixir to liberate his enslaved mother »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://oldfolklore.com/garuda-the-eagle-mount-and-serpent-enemy/",
+          "status": "verified",
+          "claims_checked": "Naissance : œuf de Vinata, épouse du sage Kaśyapa, Kadrū mère des serpents ; Vinata réduite en servitude ; Garuda monture de Vishnu et ennemi éternel des Nagas ; dévoration des serpents ; rivalité structurelle.",
+          "evidence": "« a radiant bird hatched from a colossal egg laid by Vinata, the wife of the sage Kaśyapa, whose second wife Kadrū gave birth to the serpents. When Vinata was tricked into servitude by her sister, Garuda vowed to free her. » ; « the mount (vāhana) of Lord Viṣṇu, and the eternal enemy of the Nāgas » ; « Along his journey he devoured serpents to sustain himself hence his enmity with their race. »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.secret-retreats.com/blog/art-architecture/the-legend-of-garuda-vs-naga-an-asian-folktale.html",
+          "status": "verified",
+          "claims_checked": "Humanisation progressive de Garuda dans l'art indien ; hostilité perpétuelle avec les Nagas et récit des deux mères ; statut des nagas en Asie du Sud-Est. Ne porte pas les emblèmes nationaux (Pancasila, Krut).",
+          "evidence": "« He is the vehicle (vahana) of Vishnu and appears on this very important Hindu god’s banner. » ; « the giant birdlike Garuda spends all of eternity killing the snake like Nagas » ; « The feud started when the Garuda’s mother and the Nagas’ mother married the same husband. »"
+        }
+      ],
+      "style_check": "Écriture ample et lisible, sans consigne ni tournure bannie ; la notice signale elle-même que la tradition hindoue est vivante, ce qui est le bon réflexe."
+    },
+    {
+      "slug": "geant",
+      "verdict": "revise",
+      "sha256": "a5bb330d714ade7d83010a012bb55d4d1d6bd060cc8a71b30c6f695722b854a5",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1] ; sections.naturelle.parts[5].body[0]",
+          "quote": "ils habitent Jötunheim et les royaumes primordiaux de Niflheim et Muspellheim[1][2]",
+          "detail": "Ni [1] (« List of giants in mythology and folklore », simple liste de noms par culture) ni [2] (article « Giant », section Norse) ne mentionnent Jötunheim, Niflheim ni Muspellheim : la section Norse de [2] parle des jötnar, de leur taille, de leurs liens matrimoniaux avec les dieux, d'Ymir et de Ragnarök, pas de leurs royaumes. Éléments absents des sources déclarées (à repointer vers l'article Jötunn ou la cosmologie nordique)."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[3]",
+          "quote": "un géant dont le nom, selon certaines hypothèses, dériverait d'une figure celtique obscure parfois appelée Gurgiunt ou Gargam[3]",
+          "detail": "La source [3] (article en « Gargantua ») traite bien des hypothèses celtiques mais ne nomme qu'un seul candidat : « In 1863, Henri Gaidoz linked Gargantua to Gargan, a hypothetical Celtic sun god ». Les noms « Gurgiunt » et « Gargam » n'y figurent pas (la piste Gurgiunt existe ailleurs : Gaidoz, 1868, « Gargantua est très-probablement identique au Gurguntius, Gurgiunt ou Gurgant, des traditions galloises ») : nom absent de la source déclarée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "La tradition biblique et les folklores populaires européens ajoutent leurs propres géants, souvent rattachés à des reliefs particuliers, un rocher, une colline, une chaîne de montagnes, que leur corps aurait façonné par accident ou par colère.[1]",
+          "detail": "Attribué à [1], qui est un index de noms : l'article ne relate aucun récit étiologique. L'affirmation est vraie ailleurs mais mal appuyée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[0]",
+          "quote": "Le géant demeure l'une des figures les plus stables du folklore mondial, present dans les jeux de rôle",
+          "detail": "Coquille : « present » pour « présent »."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/List_of_giants_in_mythology_and_folklore",
+          "status": "verified",
+          "claims_checked": "Vérifié : la page est un index de géants par culture (Abrahamique, africaine, arménienne, etc.). Elle ne peut porter ni récit étiologique, ni habitat, ni cosmologie.",
+          "evidence": "« This is a list of giants and giantesses from mythology and folklore; it does not include giants from modern fantasy fiction or role-playing games » ; aucune occurrence de « Jötunheim », « Niflheim », « Muspellheim » dans le wikitexte."
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Giants_(mythology)",
+          "status": "verified",
+          "claims_checked": "Gigantes enfants d'Ouranos et Gaïa, jambes en serpent, Gigantomachie ; jötnar souvent traduits par géants mais de taille humaine, alliés/mariés aux dieux, Ymir ancêtre d'Odin, assaut d'Ásgard au Ragnarök ; géants bibliques et Goliath. Pas de Jötunheim/Niflheim/Muspellheim.",
+          "evidence": "« the Gigantes (γίγαντες) were (according to the poet Hesiod) the children of Uranus and Gaia... where some depictions had them with snake-like legs » ; « While often translated as \"giants\", most are described as being roughly human-sized. » ; « the gods themselves were related to the jötnar by many marriages and descent » ; « Odin... is the great-grandson of the jötunn Ymir »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://en.wikipedia.org/wiki/Gargantua",
+          "status": "verified",
+          "claims_checked": "Publication en 1534 ou 1535 ; récit des années d'apprentissage et des exploits guerriers du géant ; hypothèses celtiques (Gargan) ; chroniques gargantua­ines.",
+          "evidence": "« published in 1534 or 1535... it recounts the years of apprenticeship and the warlike exploits of the giant Gargantua » ; « In 1863, Henri Gaidoz linked Gargantua to Gargan, a hypothetical Celtic sun god. »"
+        }
+      ],
+      "style_check": "Tenue de langue correcte (une coquille), ton soutenu ; le passage sur Rabelais distingue bien invention littéraire et croyance populaire."
+    },
+    {
+      "slug": "genasi",
+      "verdict": "pass",
+      "sha256": "a22b1b2da9acec3ad5c3e92f3ea3795251d45848b40c5cf67da0d28b6f11d055",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2] ; sections.naturelle.parts[1].body[0]",
+          "quote": "comme les côtes autour de la mer des Étoiles Déchues pour les genasi de l'eau, ou le Nord pour ceux de la terre, leur sont associées.[2]",
+          "detail": "La source [2] nomme d'autres régions : « water genasi were found along the coasts of Threskel in Chessenta », « Earth genasi could also be found in Mulhorand », plus Waterdeep comme ville où les genasi se fondent. « Mer des Étoiles Déchues » et « originaires du Nord » sont des reformulations approximatives : à aligner sur les lieux cités par la source, ou à sourcer ailleurs."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://forgottenrealms.fandom.com/wiki/Genasi",
+          "status": "verified",
+          "claims_checked": "Genasi = humains porteurs d'un héritage planaire, le plus souvent un génie ; ce n'est pas une race mais une classification ; tempérament selon l'élément ; répartition dans les Royaumes oubliés. (web_extract a échoué sur ce domaine ; page récupérée en HTTP avec un agent de navigateur, contenu identique à celui décrit ici.)",
+          "evidence": "« the genasi were not a race but rather a general classification of humans who had a heritage (usually unknown) that included some planar being from one of the elemental planes, most often a genie » ; « The personality of the typical genasi reflected her or his core element. For example, a fire genasi might have a \"hot temper\" and an earth genasi might take life slowly and carefully. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://wikiproject-dungeons-dragons.fandom.com/wiki/Genasi",
+          "status": "verified",
+          "claims_checked": "Première apparition comme races jouables en 2e édition, cadre Planescape, The Planewalker's Handbook (1996) ; Monsters of Faerûn (2001) sous l'entrée « planetouched » ; Forgotten Realms Campaign Setting (2001), Dragon #293 (mars 2002), Races of Faerûn (2003) ; définition des planetouched. (Domaine inaccessible à web_extract ; récupéré en HTTP.)",
+          "evidence": "« The air genasi, the earth genasi, the fire genasi, and the water genasi first appeared in second edition as player character races for the Planescape setting in the Planewalker's Handbook (1996). » ; « appeared in the third edition for the Forgotten Realms setting in Monsters of Faerûn (2001), under the \"planetouched\" entry » ; « Dragon #293 (March 2002) » ; « Genasi are planetouched (mortal creatures who have in their veins some blood of creatures from an alternate plane), who in their case are humans with an elemental in their ancestry. »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.dndbeyond.com/species/23-genasi",
+          "status": "verified",
+          "claims_checked": "Espèce jouable en cinquième édition (page d'espèce D&D Beyond), ce qui soutient la dernière phrase de legendes[3].",
+          "evidence": "Page « The Genasi Species for Dungeons & Dragons (D&D) Fifth Edition (5e) » — fiche d'espèce officielle 5e."
+        }
+      ],
+      "style_check": "Texte clair, bien dégagé des clichés de « peuple élémentaire » ; les rubriques d'histoire naturelle assument l'origine exclusivement ludique de la créature."
+    }
+  ]
+}

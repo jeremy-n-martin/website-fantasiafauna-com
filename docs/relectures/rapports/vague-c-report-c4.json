@@ -1,0 +1,302 @@
+{
+  "batch": "batch-c4",
+  "reviewed": [
+    {
+      "slug": "halfling",
+      "verdict": "revise",
+      "sha256": "5c8e0e9a2647c1804aee7c078b539c97ea9108d686fa5795626b491930678d68",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.naturelle.parts[4] (Reproduction)",
+          "quote": "sa maturation et sa longévité suivent, dans les règles modernes, un rythme proche de celui des humains",
+          "detail": "Contredit par la source déclarée [3] : « The same gift might contribute to their robust life spans (about 150 years). » Une longévité d'environ 150 ans ne peut pas être dite « proche de celle des humains » (moins d'un siècle en 5e). La phrase n'est d'ailleurs couverte par aucun appel [n]."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "trois sous-races (hairfoot, stout, tallfellow) dans la version avancée de 1978",
+          "detail": "La source [2] place ces trois sous-races dans le Monster Manual original de 1977 ; 1978 est l'année du Players Handbook (la halfling comme race jouable). Datation décalée d'un an et d'un livre."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "des variantes comme le lightfoot ou le ghostwise apparues avec la troisième édition en 2000",
+          "detail": "La source [2] donne lightfoot/deep/tallfellow dans le Monster Manual 3e (2000) ; le ghostwise halfling n'est détaillé qu'en 2001 (Forgotten Realms Campaign Setting, alors cité comme 2001 par la source). L'attribution au seul millésime 2000 est approximative."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[2]",
+          "quote": "montrent une résistance physique accrue",
+          "detail": "L'appel [3] renvoie à la fiche D&D Beyond actuelle (règles 2024), qui ne mentionne pour les stouts/strongheart que la préférence pour la vie souterraine ; la résistance accrue (poison) appartient aux règles de 2014, absentes de la page citée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Hobbit",
+          "status": "verified",
+          "claims_checked": "phrase d'ouverture écrite en 1930 ou 1931 sur une copie d'examen vierge ; étymologie fictive holbytla « hole-builder » (hol + bytlan) ; Babbitt (1922) ; The Marvellous Land of Snergs (1927) et influence « inconsciente » ; Denham Tracts (1895) ; rejet du rapprochement avec le lapin",
+          "evidence": "« Tolkien claimed that he started *The Hobbit* suddenly, without premeditation, in the midst of grading a set of student essay exams in 1930 or 1931, writing its famous opening line on a blank piece of paper » ; « it was derived from *holbytla* (plural *holbytlan*), meaning \"hole-builder\" ... from Old English *hol*, \"a hole or hollow\", and *bytlan*, \"to build\" » ; « one \"probably ... unconscious\" inspiration was Edward Wyke Smith's 1927 children's book *The Marvellous Land of Snergs* » ; « one that Tolkien \"emphatically rejected\" »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Halfling_(Dungeons_%26_Dragons)",
+          "status": "verified",
+          "claims_checked": "mise en demeure de la succession Tolkien à TSR et changement de nom ; halfling comme race en 1978 ; sous-races hairfoot/stout/tallfellow ; 3e édition 2000 (lightfoot, deep, tallfellow) ; 5e édition 2014 (lightfoot et stout)",
+          "evidence": "« TSR changed the name to \"halfling\" after the Tolkien Estate sent a cease and desist. » ; « The Tolkien Estate sent a cease and desist to TSR that forced them to remove names such as hobbits from *D&D*. » ; « the original *Monster Manual* (1977), which described the halfling subraces of **hairfoot**, **stout**, and **tallfellow** » ; « the **lightfoot halfling**, the **deep halfling**, and the tallfellow halfling appeared in the third edition *Monster Manual* (2000) » ; « Two subraces were introduced with it: the **lightfoot halfling** and the **stout halfling**. »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.dndbeyond.com/species/1751440-halfling",
+          "status": "verified",
+          "claims_checked": "chance des halfelins (relance d'un 1 sur un d20) ; faufilerie dans l'espace d'une créature plus grande sans s'y arrêter ; avantage contre la peur ; sous-types lightfoot/stout ; longévité",
+          "evidence": "« When you roll a 1 on the d20 of a [D20 Test], you can reroll the die, and you must use the new roll. » ; « Halfling Nimbleness: You can move through the space of any creature that is a size larger than you, but you can't stop in the same space. » ; « Brave: You have Advantage on saving throws you make to avoid or end the Frightened condition. » ; « The same gift might contribute to their robust life spans (about 150 years). » ; « Halflings who prefer to live underground are sometimes called strongheart halflings or stouts. »"
+        }
+      ],
+      "style_check": "Français adulte et incarné, portraits nets, aucune consigne adressée à un auteur et pas d'inventaire de négations. Quelques phrases longues et une ouverture légèrement lyrique dans fascination, mais rien qui relève du tour de bot."
+    },
+    {
+      "slug": "harpie",
+      "verdict": "pass",
+      "sha256": "5c21642fc87a3e0954f20b6adb2a2c970ae21b316e5601730182fb993e70ab44",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[4] (Reproduction)",
+          "quote": "aucune tradition antique ne développe en détail leur propre reproduction",
+          "detail": "La source déclarée contient bien une donnée de reproduction : « On raconte aussi que Zéphyr s'unit à une des harpies, Podargé, qui avait pris la forme d'une jument, et que de cette union naquirent les célèbres chevaux immortels Xanthe et Balios ... ainsi que Phlogéos et Harpagos, les chevaux des Dioscures. » La rubrique s'en tient à une négation alors qu'un élément attesté était disponible. Ce n'est pas une invention, seulement un appauvrissement."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://fr.wikipedia.org/wiki/Harpie_(mythologie)",
+          "status": "verified",
+          "claims_checked": "Hésiode : corps ailé d'oiseau et tête de femme ; filiation Thaumas/Électre, sœurs d'Iris et d'Arcé ; variante Typhon ; trois harpies (ou plus) ; Aello « bourrasque » et Ocypète « rapide » ; rapts des filles de Pandarée livrées aux Érinyes comme servantes ; Phinée roi de Thrace, aveuglé, repas souillés ; Calaïs et Zétès, fils de Borée, poursuite jusqu'aux Strophades ; intervention d'Iris, sœur des harpies ; Énéide : visages de fillette et serres, prédiction de Céléno, galettes mangées ; sens figuré de « harpie » (Shakespeare, Beaucoup de bruit pour rien) ; harpie = oiseau réel et Harpyia = genre de papillon",
+          "evidence": "« Selon Hésiode, elles ont un corps ailé d'oiseau et une tête de femme. » ; « elles enlevèrent leurs protégées pour les donner aux Érinyes comme servantes » ; « C'est Céléno qui lui prédit que les Troyens n'atteindront leur nouvelle patrie que lorsque la faim les obligera à manger leurs tables. » ; « Le terme est souvent utilisé métaphoriquement pour désigner une méchante femme (sorcière) : par exemple, dans Beaucoup de bruit pour rien de William Shakespeare ... avec cette harpie. » ; « La harpie est aussi un véritable oiseau caractérisé d'après l'animal mythique. » ; « L'Harpyia est un genre de papillon de la famille des Notodontidae. » — NB : l'extraction rendue de la page perd les dernières sections (« Les harpies dans l'univers contemporain ») ; les citations ci-dessus proviennent du wikitexte complet de la même page (https://fr.wikipedia.org/wiki/Harpies?action=raw)."
+        }
+      ],
+      "style_check": "Texte tenu, sans tournure de bot ; la distinction tradition/jeu de rôle est faite comme il faut. Le seul reproche porte sur une rubrique plus pauvre que la source ne l'autorisait."
+    },
+    {
+      "slug": "hecatonchire",
+      "verdict": "pass",
+      "sha256": "7014fd2e730ff5d2c02f4b652214f51d859fadeb9f0fddc025803a242a7aeff4",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "Leur père, effrayé par leur difformité autant que par leur force, les enferme aussitôt au sein de la terre, avec leurs frères les Cyclopes.",
+          "detail": "La source déclarée donne la haine, non la peur, comme mobile : « Uranus hated his children, including the Hundred-Handers, and as soon as each was born, he imprisoned them underground, somewhere deep inside Gaia. » Le reste de la phrase (enfermement immédiat, au sein de Gaïa, avec les Cyclopes) est exact."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Hecatoncheires",
+          "status": "verified",
+          "claims_checked": "noms Cottos/Briarée/Gygès ; filiation Ouranos-Gaïa et enfermement ; libération par Zeus et usage des rochers ; Titanomachie perdue (Égéon du côté des Titans) ; Iliade, Thétis et la sédition des dieux ; Cymopolée fille de Poséidon ; arbitrage Corinthe entre Poséidon et Hélios ; Callimaque et le tombeau sous l'Etna ; papyrus d'Oxyrhynchos et invention de l'armure ; gardiens des portes de bronze du Tartare ; nom absent chez Hésiode, généralisé chez Apollodore ; fille Eubée donneuse de nom de l'île",
+          "evidence": "« Although the *Theogony* describes the three brothers as having one hundred hands ... the collective name Hecatoncheires ... is never used. ... the first certain usage is found in the works of the mythographers such as Apollodorus. » ; « Apparently, according to the *Titanomachy*, Aegaeon was the son of Gaia and Pontus (Sea), rather than Gaia and Uranus, and fought on the side of the Titans » ; « during a palace revolt by the Olympians Hera, Poseidon and Athena, who wished to chain Zeus, the sea goddess Thetis brought to Olympus » ; « According to a Corinthian legend, Briareus was the arbitrator in a dispute between Poseidon and Helios (Sun) over some land » ; « says he was buried under Mount Etna in Sicily » ; « According to an Oxyrhynchus papyrus, \"the first to use metal armour was Briareos, whilst previously men protected their bodies with animal skins.\" » ; « they returned to Tartarus, to live nearby the \"bronze gates\" of the Titans' prison » ; « Briareus was said to be the father of Euboea, after whom the island took its name. » ; « they hurled three hundred boulders from their massive hands one after another and overshadowed the Titans with their missiles » ; « He sat down by the side of [Zeus], exulting in his glory, and the blessed gods were seized with fear of him, and did not bind Zeus. »"
+        }
+      ],
+      "style_check": "Voix sûre et sobre, rubriques pleines, aucun tour de bot ; la partie « Alimentation » explique honnêtement le silence des sources au lieu de le combler."
+    },
+    {
+      "slug": "hippocampe",
+      "verdict": "revise",
+      "sha256": "8aef356d390d9bf629e4c7c13e9192546ed3408a49a4b3413d6ba59add16d2e7",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[2]",
+          "quote": "jusqu'à la fontaine de Trevi à Rome, achevée en 1732",
+          "detail": "La source déclarée est neutre et ne dit rien d'un achèvement : « The sea-horse is also a common image in Renaissance and Baroque art, for example, in the Trevi Fountain, dating to 1732. » Le mot « achevée » est un ajout de la notice, et il est faux : la fontaine a été construite de 1732 à 1762 (source de contrôle, https://en.wikipedia.org/wiki/Trevi_Fountain : « Constructed 1732–1762 » ; « completed by Giuseppe Pannini in 1762 » ; « Work began in 1732. »). Écrire « dont la construction commence en 1732 » lèverait le défaut."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "L'héraldique médiévale l'adopte à son tour comme meuble pour les familles et les régions liées à la mer",
+          "detail": "La source [1] situe cet usage plus tard et distingue deux créatures : « The \"sea-horse\" in medieval heraldry was a legendary creature that was part horse and part fish, not to be confused with the later heraldic *hippocampus* » et « The mythic hippocampus has been used as a heraldic charge, particularly since the Renaissance ». Le mot « médiévale » attribue au Moyen Âge ce que la source date de la Renaissance."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "Il convient donc de distinguer la monture cosmique des cortèges marins et l'animal discret des herbiers côtiers",
+          "detail": "« Il convient de » figure explicitement parmi les tournures de bot à éviter (grille, point 5). Reformuler à la deuxième ou troisième personne active (« La monture cosmique n'a rien à voir avec l'animal des herbiers... »)."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Hippocampus_(mythology)",
+          "status": "verified",
+          "claims_checked": "étymologie grecque (cheval + monstre marin) ; monnaies de Tyr montrant Melqart sur un hippocampe ailé ; bijou d'or de Lydie, VIe siècle av. J.-C. ; Homère et les chevaux de Poséidon sur la mer ; chars marins hellénistiques et romains tirés par des hippocampes ; fontaine de Trevi (datation floue dans la source) ; emblème d'Air France hérité d'Air Orient ; héraldique ; satellite de Neptune découvert en juillet 2013 et nommé en février 2019 ; confusion avec le poisson réel",
+          "evidence": "« from ἵππος, 'horse', and κάμπος, 'sea monster' » ; « Coins minted at Tyre around the 4th century BC show the patron god Melqart riding on a winged hippocampus » ; « A gold hippocamp was discovered in a hoard from the kingdom of Lydia ... dating to the 6th century BC. » ; « In the *Iliad*, Homer describes Poseidon—god of horses, earthquakes and oceans—driving a chariot drawn by brazen-hoofed horses over the ocean's surface. » ; « In Hellenistic and Roman imagery, however, Poseidon often drives a \"sea-chariot\", drawn by hippocampi. » ; « A winged hippocampus has been used as a symbol for Air France since its establishment in 1933 (inherited from its predecessor Air Orient) » ; « A small moon of Neptune, discovered in July 2013, was named for the mythological creature in February 2019. » ; « The mythic hippocampus has been used as a heraldic charge, particularly since the Renaissance »"
+        }
+      ],
+      "style_check": "Écriture nette et cultivée, mais deux réserves : la tournure « il convient de » (proscrite) et l'affirmation « des civilisations qui ne communiquaient pas directement entre elles » alors que le même paragraphe invoque des échanges marchands entre cités phéniciennes, lydiennes et grecques."
+    },
+    {
+      "slug": "hippogriffe",
+      "verdict": "revise",
+      "sha256": "b0158d201c7b2962939cb8b3fa4ac25580ab4d6dc31923b2d57cd6ebda6635a1",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[2]",
+          "quote": "J.K. Rowling en fait Buck, rebaptisé Buck-Beau dans certaines traductions",
+          "detail": "La source déclarée nomme l'hippogriffe autrement : « a hippogriff named Buckbeak (subsequently \"Witherwings\") features prominently in *Harry Potter* ». Ni « Buck » ni « Buck-Beau » n'y figurent : « Buck » est le nom de la traduction française (contrôle externe : « Buck (or Buckbeak in VO) », et les pages de référence en anglais donnent toutes Buckbeak/Witherwings), donc la notice attribue à Rowling un nom de traduction et ajoute une variante « Buck-Beau » introuvable. Vérifier sur une source documentée, ou écrire simplement « Buckbeak »."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[0]",
+          "quote": "le griffon, dans la tradition antique, passait justement pour détester les chevaux au point de les dévorer",
+          "detail": "Dans la source citée [1], la haine des chevaux est énoncée à propos du jeu de rôle, non de la tradition antique : « Hippogriffs, pegasi, and horses are all hunted by griffins as the latter have a strong attraction to the flesh of horses. » L'affirmation est vraie ailleurs (Pline), mais le renvoi [1] ne la porte pas telle quelle."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Hippogriff",
+          "status": "verified",
+          "claims_checked": "invention par l'Arioste dans Roland furieux (1516) ; avant d'aigle, arrière de cheval ; naissance d'une jument et d'un griffon, tenue pour impossible ; rareté du vers ; Atlantes puis Roger comme cavaliers ; description reprise par Bulfinch (Legends of Charlemagne, 1863) ; Gustave Doré ; symbolique amoureuse et nature du Christ ; manège Flight of the Hippogriff ; nom du personnage dans Harry Potter",
+          "evidence": "« It was invented at the beginning of the 16th century by [Ludovico Ariosto] in his *Orlando Furioso*. Within the poem, the hippogriff is a steed born of a mare and a griffin—something considered impossible. » ; « Such on Riphaean hills, though rarely found, / Are bred, beyond the frozen ocean's bound. » ; « The hippogriff became a subject of visual art in the 19th century, when it was often drawn by Gustave Doré. » ; « According to Thomas Bulfinch's *Legends of Charlemagne*: \"Like a griffin, it has the head of an eagle, claws armed with talons, and wings covered with feathers, the rest of its body being that of a horse.\" » ; « In some traditions, the hippogriff is said to be the symbol of love ... In other traditions, the hippogriff represents Christ's dual nature » ; « The character was used to create the theme for a roller coaster called Flight of the Hippogriff » ; « a hippogriff named Buckbeak (subsequently \"Witherwings\") features prominently in *Harry Potter* »"
+        }
+      ],
+      "style_check": "Très bonne tenue, distinction nette entre invention littéraire datée et folklore ; aucune consigne à auteur. Le défaut documentaire porte sur le nom du personnage, pas sur la langue."
+    },
+    {
+      "slug": "hobgobelin",
+      "verdict": "pass",
+      "sha256": "c4fec541802995c9816d419b139726e152da467a9395506edc3a5b1c435ce50b",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "un terme dont l'usage écrit le plus ancien remonte à environ 1530",
+          "detail": "Dans la source [1], la datation de 1530 porte sur le mot *hobgoblin*, non sur *hob* : « The term \"hobgoblin\" comes from \"hob\". ... The earliest known use of the word can be traced to about 1530 ». Formulation à resserrer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "où chaque individu — soldat, forgeron, messager ou cuisinier — sert la légion avant de se servir lui-même",
+          "detail": "L'énumération des métiers ne se trouve dans aucune des deux sources citées ([2] : bloc statistique et « Hobgoblins are large goblinoids with dark orange or red-orange skin » ; [3] : soldats, capitaines, seigneurs de guerre, devastators, iron shadows). Le cadre général (hiérarchie militaire rigide, service de Maglubiyet, légions) est en revanche exactement sourcé ; seule la liste des quatre métiers reste non documentée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Hobgoblin",
+          "status": "verified",
+          "claims_checked": "esprit domestique, tâches nocturnes (épousseter, repasser), nourriture comme seule rétribution ; humeur changeante, effrayant voire dangereux ; vite offensé ; don de vêtements qui le fait disparaître ; brownies ; Shakespeare identifiant Puck ; Robin Goodfellow ; Emerson",
+          "evidence": "« Hobgoblins seem to be small, hairy little men who, like their close relatives the brownies, are often found within human dwellings, doing odd jobs around the house while the family is asleep. Such chores are typically small tasks like dusting and ironing. Often, the only compensation necessary in return for these is food. » ; « Attempts to give them clothing will often banish them forever » ; « Shakespeare identifies the character of Puck in his *A Midsummer Night's Dream* as a hobgoblin. » ; « \"A foolish consistency is the hobgoblin of little minds\", from the essay *Self-Reliance* »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/monsters/16925-hobgoblin",
+          "status": "verified",
+          "claims_checked": "peau orangée ou rouge-orangé, humanoïde de taille humaine (Medium Humanoid), armure et longsword, valeur mesurée à la force",
+          "evidence": "« Hobgoblins are large goblinoids with dark orange or red-orange skin. A hobgoblin measures virtue by physical strength and martial prowess »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://www.dndbeyond.com/posts/263-how-to-play-hobgoblins-like-perfect-soldiers",
+          "status": "verified",
+          "claims_checked": "peuple guerrier, hiérarchie militaire rigide, service de Maglubiyet, légions",
+          "evidence": "« hobgoblins are lawful evil creatures who follow a rigid, military hierarchy » ; « They march in the service of Maglubiyet, god of goblins » ; « This CR 6 boss commands entire legions » ; « a relentless soldier ... trained into an efficient killing machine »"
+        }
+      ],
+      "style_check": "L'une des notices les mieux tenues du lot : la distinction folklore anglais / jeu de rôle est argumentée au lieu d'être affirmée, sans tournure de bot."
+    },
+    {
+      "slug": "hydre",
+      "verdict": "pass",
+      "sha256": "c69f4ae52baf254996c5fbecd71d4605378dd65a856e3ee49369e55cb99cfab5",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[2] (Alimentation)",
+          "quote": "son activité connue se limite à ravager le bétail et les récoltes de la région de Lerne, provoquant les plaintes qui motivent l'intervention d'Héraclès",
+          "detail": "La source déclarée dit seulement : « a deep cave from which it emerged only to terrorize neighboring villages ». Le bétail, les récoltes et les plaintes viennent d'autres récits antiques, non de la source citée. Le reste de la rubrique (aucune source ne décrit son alimentation) est parfaitement honnête."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[1]",
+          "quote": "dotée de règles précises de régénération et de décapitation.[1]",
+          "detail": "L'appel [1] renvoie à l'article Wikipédia « Lernaean Hydra », qui ne traite nulle part de la postérité du monstre dans les jeux de rôle. L'affirmation est vraie, mais la source citée ne la porte pas."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Lernaean_Hydra",
+          "status": "verified",
+          "claims_checked": "filiation Typhon/Échidna ; souffle et sang empoisonnés, odeur mortelle ; fibules de bronze vers 700 av. J.-C. avec six têtes ; Alcée fixant neuf têtes ; Simonides portant le nombre à cinquante ; Euripide, première mention de la repousse par paire ; deuxième travail ; Iolaos et le tison ; tête immortelle enterrée sous un rocher ; flèches trempées dans le sang, mort de Nessos ; expression proverbiale grecque ; Lerne entrée des Enfers",
+          "evidence": "« According to Hesiod, the Hydra was the offspring of Typhon and Echidna. It had poisonous breath and blood so virulent that even its scent was deadly. » ; « While these fibulae portray a six-headed Hydra, its number of heads was first fixed in writing by Alcaeus (c. 600 BC), who gave it nine heads. Simonides, writing a century later, increased the number to fifty » ; « The first mention of this ability of the Hydra occurs with Euripides, where the monster grew back a pair of heads for each one severed » ; « the proverbial expression Ὕδραν τέμνειν, meaning 'cutting off a hydra,' was used to describe tasks that are hopeless or endlessly futile » ; « Heracles placed the head—still alive and writhing—under a great rock » ; « He later used one to kill the centaur N[essus] » ; « Lerna was reputed to be an entrance to the Underworld » ; « it emerged only to terrorize neighboring villages »"
+        }
+      ],
+      "style_check": "Très solide : le mythe est suivi dans ses variantes et la rubrique Reproduction traite la régénération comme le fait du récit, non comme une biologie. Aucune tournure de bot."
+    },
+    {
+      "slug": "ifrit",
+      "verdict": "pass",
+      "sha256": "6347325933461c84519dceb9bcdbffbce02674a04576b291e52a11d5c9acfa5b",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[1], sections.anomalies[0], sections.naturelle.parts[5]",
+          "quote": "un ifrit enfermé dans une bouteille de cuivre par le sceau de Salomon jure, dans sa fureur, de tuer quiconque le libérera",
+          "detail": "Le motif du récipient scellé par le sceau de Salomon n'est pas dans la source déclarée [1], qui ne mentionne les Mille et Une Nuits qu'en passant (« In one tale called \"The Porter and the Young Girls\", a prince... »). Le contenu est exact — vérifié sur une source de contrôle : « he finds a copper jar with a cap that had the seal of Solomon on it ... A plume of smoke comes out of the jar and condenses into an Ifrit » (https://en.wikipedia.org/wiki/The_Fisherman_and_the_Jinni) — mais l'appel [1] ne le porte pas. Ajouter cette référence règlerait la réserve."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "façonnée de fumée et de feu sans flamme visible",
+          "detail": "La source dit « formed out of smoke and fire » et, en note, que cette formule est *contraire* à celle des djinns, créés d'un feu sans fumée : « The description \"smoke and fire\" is contrary to the jinn in Quranic traditions, who are created out of smokeless (clear) fire ». Le qualificatif « sans flamme visible » brouille les deux traditions."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[1]",
+          "quote": "repris par les bestiaires de la fantasy ludique moderne comme figure du djinn le plus puissant et le plus rebelle",
+          "detail": "La source [1] documente le cinéma et les jeux vidéo (« Afarit feature frequently in film and video games », Final Fantasy), pas les bestiaires de jeu de rôle. Affirmation plausible mais non couverte par l'appel."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "description",
+          "quote": "que même un sceau de Salomon ne suffit pas toujours à contenir",
+          "detail": "Tension interne : la notice affirme plus loin que le sceau reste « le seul instrument capable d'enfermer un ifrit contre sa volonté », et le récit des Mille et Une Nuits montre le sceau tenant quatre siècles. La formule d'accroche est plus forte que ce que disent les sources."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Ifrit",
+          "status": "verified",
+          "claims_checked": "Coran, sourate an-Naml 27:39, ifrit proposant d'apporter le trône de Bilqis avant que Salomon ne se lève ; ifrit comme épithète et non comme espèce ; étymologie ʿafara « frotter de poussière » ; hypothèse avestique āfriti- (Cheung) ; esprits chthoniens des sept terres, faits de fumée et de feu ; difformités marocaines, métamorphose inférieure à celle des djinns ; possession ; Égypte : seuls les tués donnent un ifrit dangereux ; Mille et Une Nuits",
+          "evidence": "« An ifrit from the jinn said: 'I will bring it to you before you rise from your place. And verily, I am indeed strong and trustworthy for such work.' » ; « the term functions as an epithet, always followed by the phrase \"among the jinn\" » ; « Arab philologists trace the derivation of the word to Arabic: عفر, romanized: ʻafara, lit. 'to rub with dust, to roll into dust' » ; « Johnny Cheung argued that there is a Zoroastrian spirit called an *āfriti-* in Avestan. He suggests that this Avestan term might be the ultimate source of Arabic 'ifrīt. » ; « a class of chthonic spirits, inhabiting the layers of the seven earths, generally ruthless and wicked, formed out of smoke and fire » ; « However, their shapeshifting abilities are inferior compared to jinn. » ; « an ifrit might possess an individual. Such persons gain some abilities from the ifrit, such as getting stronger and braver, but the ifrit renders them insane. » ; « Only people who are killed give rise to a dangerous and active ifrit, drawn to the blood of the victim. » ; « Their physical appearance is often portrayed as having monstrous deformities, such as claw-like or thorny hands, flaming eyes or seven heads. »"
+        }
+      ],
+      "style_check": "Belle tenue d'ensemble, mélange maîtrisé du Coran, du folklore et des Mille et Une Nuits, sans tournure de bot ; les réserves portent sur des renvois trop larges, pas sur la langue."
+    }
+  ]
+}

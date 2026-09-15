@@ -1,0 +1,379 @@
+{
+  "batch": "batch-c2",
+  "reviewed": [
+    {
+      "slug": "glabrezu",
+      "verdict": "pass",
+      "sha256": "1dc465aba781611c374a7babf4e8a7bef61e481c4317b5adc561032162830f37",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[0]",
+          "quote": "dix-huit pieds de muscles surmontés d'une tête canine aux yeux violets, quatre bras dont deux se terminent en pinces capables de broyer un homme en armure.[1][2]",
+          "detail": "Les 18 pieds sont littéralement dans la source [1], les quatre bras et les deux pinces dans [1] et [2]. En revanche « tête canine aux yeux violets » n'est porté ni par [1] (« The monster's eyes shine with a mix of intelligence and cruelty », aucune couleur ni forme de tête) ni par [2], la page aidedd n'étant qu'un bloc de statistiques sans texte descriptif. Le détail est exact pour le jeu (texte du Monster Manual : « Its doglike head ... Its violet eyes have a cold, dark, penetrating quality »), donc simple source incomplète, pas fabrication."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts (Alimentation)",
+          "quote": "sa nature de fiende",
+          "detail": "« fiende » n'est pas un mot français (le terme attendu serait « fiélon » ou « démon »). Coquille de langue, sans incidence documentaire."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.fascination[0]",
+          "quote": "dix-huit pieds",
+          "detail": "La même phrase mêle deux éditions : les 18 pieds viennent de la fiche Pathfinder [1] (créature Huge) tandis que [2] est la fiche 5e, qui classe le glabrezu « Large fiend » (échelle 5e d'environ 8 à 16 pieds). Le chiffre est juste pour [1], mais [1] et [2] ne décrivent pas la même créature."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/demon/glabrezu/",
+          "status": "verified",
+          "claims_checked": "taille de 18 pieds ; formation à partir des âmes des traîtres, des menteurs et des faux témoins ; vœu accordé une fois par mois à un mortel ; vision parfaite (true seeing) permanente ; troupe mêlée avec succube et vrocks ; le vœu se referme toujours par la voie la plus destructrice",
+          "evidence": "A glabrezu stands 18 feet tall and weighs just over 6,000 pounds. These treacherous demons form from the souls of the treasonous, the false, and the subversive—souls of mortals who, in life, bore false witness or used treachery and deceit to ruin the lives of others. | Organisation : solitary or troop (1 glabrezu, 1 succubus, and 2–5 vrocks) | Spell-like : Constant—true seeing ; 1/month—wish (granted to a mortal humanoid only) | A wish granted by a glabrezu always fulfills the wisher's need in the most destructive way possible"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.aidedd.org/dnd/monstres.php?vo=glabrezu",
+          "status": "verified",
+          "claims_checked": "quatre bras dont deux pinces, prise (grapple), sort lancé sans perdre la prise, vision parfaite (truesight), intelligence supérieure à la moyenne démonique, résistance à la magie",
+          "evidence": "Multiattack. The glabrezu makes four attacks: two with its pincers and two with its fists. Alternatively, it makes two attacks with its pincers and casts one spell. | Pincer ... If the target is a Medium or smaller creature, it is grappled (escape DC 15). | Senses truesight 120 ft., passive Perception 13 | INT 19 (+4) | Magic Resistance. The glabrezu has advantage on saving throws against spells and other magical effects."
+        }
+      ],
+      "style_check": "Français adulte et tenu, phrases longues mais contrôlées ; aucune consigne adressée à un auteur ni tournure de bot. La distinction entre création ludique et démonologie religieuse est faite dès legendes[0]. Appels [1] et [2] tous deux utilisés, aucun orphelin."
+    },
+    {
+      "slug": "gobelours",
+      "verdict": "pass",
+      "sha256": "c4ec12fd0656a0728689d408437ae4c69dd32d642e901168a05050cf5e3ff626",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts (Intelligence)",
+          "quote": "contraste avec l'absence de toute vie intellectuelle ou artisanale prêtée à d'autres gobelinoïdes",
+          "detail": "Comparatif sur les « autres gobelinoïdes » que la source [2] (bloc de statistiques du bugbear) ne permet pas d'étayer : la notice généralise au-delà de ses sources. Affirmation de contexte, non chiffrée."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Bugbear",
+          "status": "verified",
+          "claims_checked": "étymologie (moyen anglais bugge, gallois ancien bwg, écossais ancien bogill, cognats bogeyman), bugbear médiéval = ours effrayant des bois, mention dans The Buggbears adaptation de La Spiritata de Grazzini (1561), sens moderne « pet peeve »",
+          "evidence": "Its name is derived from the Middle English word \"bugge\" (a frightening thing), or perhaps the Old Welsh word bwg (evil spirit or goblin), or Old Scots bogill (goblin), and cognates most probably English \"bogeyman\" and \"bugaboo\". | In medieval England, the bugbear was depicted as a creepy bear that lurked in the woods to scare children. It was described in this manner in The Buggbears, an adaptation, with additions, from Antonio Francesco Grazzini's La Spiritata ('The Possessed [Woman]', 1561). | In a modern context, the term bugbear may also mean pet peeve."
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.aidedd.org/dnd/monstres.php?vo=bugbear",
+          "status": "verified",
+          "claims_checked": "Brute (dé de dégâts supplémentaire), Attaque surprise (premier round), discrétion et survie (compétences), subsistance par le raid et la chasse, embuscade et repli",
+          "evidence": "Brute. A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack). | Surprise Attack. If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack. | Skills Stealth +6, Survival +2 | Bugbears are hairy goblinoids born for battle and mayhem. They survive by raiding and hunting, but are fond of setting ambushes and fleeing when outmatched."
+        }
+      ],
+      "style_check": "Voix nette et incarnée (« on ne raconte pas d'histoires de gobelours vaincus en combat loyal ») ; le faux folklore est explicitement écarté (legendes[3] sépare le mot folklorique de la créature ludique). Aucun tournure de bot, aucun appel orphelin."
+    },
+    {
+      "slug": "golem",
+      "verdict": "pass",
+      "sha256": "2169d8601597c7f02a62eac60fe85a3702a7a0fe2ae6d6ab949f84fe0441719b",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "pour protéger la communauté juive des persécutions et des accusations de meurtre rituel.[1]",
+          "detail": "La source [1] écrit « to defend the Prague ghetto from antisemitic attacks and pogroms » : les « accusations de meurtre rituel » ne sont pas portées par la page citée (aucune occurrence de « libel » dans l'article). Motif réel de nombreux récits du golem, mais ajouté sans appui de la source déclarée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[0]",
+          "quote": "Le golem de Prague reste associé au Vieux Cimetière juif et à la Vieille Nouvelle Synagogue[1]",
+          "detail": "La Vieille Nouvelle Synagogue (combles, genizah) est bien dans [1] ; le Vieux Cimetière juif n'y apparaît pas (l'article mentionne en revanche une tombe du quartier de Žižkov et Madame Tussauds). Association touristique réelle mais non portée par la source citée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[1]",
+          "quote": "du roman de Gustav Meyrink aux films expressionnistes allemands",
+          "detail": "Le roman de Gustav Meyrink (1915) est bien dans [1] ; les « films expressionnistes allemands » n'y sont pas mentionnés (aucune occurrence de « expressionis » ni « Wegener »). Omission de source, l'article ne citant qu'un film tchèque (The Emperor and the Golem)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "Rava, sage babylonien du IVe siècle",
+          "detail": "La page citée ne date pas Rava et ne dit pas qu'il est babylonien ; elle écrit « Sanhedrin 65b describes Rava creating a man (gavra) ». Datation et origine exactes par ailleurs (Rava, amora babylonien, c. 280-352), mais non portées par [1]."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Golem",
+          "status": "verified",
+          "claims_checked": "épisode talmudique Rava/Zeira et mutisme, Sefer Yetzirah et combinaisons de lettres, nom divin sur papier dans la bouche ou sur le front, emet -> met par effacement de l'aleph, Maharal et argile des rives de la Vltava, protection contre les attaques antisémites et les pogroms, combles de la Vieille Nouvelle Synagogue, légende du Prague comme invention littéraire allemande du XIXe siècle, postérité (Meyrink 1915, généralisation du mot en « automaton »)",
+          "evidence": "Sanhedrin 65b describes Rava creating a man (gavra), whom he then sends to Rav Zeira. Zeira speaks to the man, but he does not answer, whereupon Zeira says, \"You were created by the sages; return to your dust\". | This was written on a piece of paper and inserted into the mouth or forehead of the golem. | the golem could then be deactivated by removing the aleph ... thus changing the inscription from \"truth\" to \"death\" (מֵת, mēt, 'dead'). | the late 16th-century rabbi of Prague, also known as the Maharal, who reportedly \"created a golem out of clay from the banks of the Vltava River ... to defend the Prague ghetto from antisemitic attacks and pogroms\" | The Golem's body was stored in the attic genizah of the Old New Synagogue | The general view of historians and critics is that the story of the Golem of Prague was a German literary invention of the early 19th century. | The 1915 novel by Gustav Meyrink (The Golem) was briefly popular | any crude automaton devised by a sorcerer may be termed a \"golem\""
+        }
+      ],
+      "style_check": "Très bonne tenue : la notice distingue explicitement le traité ancien, la légende de Prague et sa réécriture littéraire du XIXe siècle, et ne fabrique ni biologie ni régime (Alimentation et Reproduction expliquent l'absence de données). Aucune consigne à auteur, aucun appel orphelin."
+    },
+    {
+      "slug": "golem-de-chair",
+      "verdict": "pass",
+      "sha256": "ff20a181330c650d316b091aad2d058474ef50f50892ac044f44542db23a2f0b",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Cette image simplifiée doit beaucoup au film de James Whale en 1931, où Boris Karloff incarne un monstre muet, au front carré, affublé d'un cerveau criminel par erreur de laboratoire — un ajout entièrement absent du roman.[1]",
+          "detail": "La source [1] ne nomme pas James Whale (aucune occurrence de « Whale » dans la page) et ne mentionne pas l'échange de cerveau (aucune occurrence de « criminal brain »). Elle soutient en revanche Karloff, la 1931 et le crâne plat : « Boris Karloff's portrayal in the 1931 movie Frankenstein, in which he wore makeup ... who based the monster's face and iconic flat head shape » et « that incarnation bears little resemblance to the source material ». Détails exacts en histoire du cinéma, mais hors de la source citée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts (Intelligence)",
+          "quote": "ne peut ni raisonner sur eux ni être convaincu par la parole.[1][2]",
+          "detail": "Tension interne avec anomalies[1] de la même notice, qui décrit le calme obtenu par le créateur parlant à la créature. La fiche [2] dit exactement : « The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively... a DC 15 Charisma (Persuasion) check ». La phrase reste défendable (seul le créateur y parvient) mais gagnerait à être nuancée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "apparaît dans les bestiaires de Donjons et Dragons comme une variante du golem magique, empruntant au concept kabbalistique le principe d'un corps artificiel animé par un art occulte[2]",
+          "detail": "La fiche [2] décrit l'assemblage (« A flesh golem is a grisly assortment of humanoid body parts stitched and bolted together ») mais ne parle ni de « variante du golem magique » ni de concept kabbalistique. Le rattachement est exact (il figure sur la page Wikipédia Golem, non déclarée ici), mais la citation [2] ne le porte pas."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Frankenstein%27s_monster",
+          "status": "verified",
+          "claims_checked": "roman de 1818, procédé laissé dans le vague, description physique de la créature, apprentissage de l'allemand puis du français en moins d'un an, lectures (Paradis perdu, Souffrances du jeune Werther), postérité cinématographique de Karloff",
+          "evidence": "Mary Shelley's 1818 novel Frankenstein; or, The Modern Prometheus | Victor Frankenstein builds the creature in his laboratory through an ambiguous method based on a scientific principle he discovered. | His yellow skin scarcely covered the work of muscles and arteries beneath; his hair was of a lustrous black, and flowing; his teeth of a pearly whiteness | Contrary to many film versions, the creature in the novel is very articulate and eloquent in his speech. ... within 11 months, he can speak and read German and French. | The novel portrayed him as versed in Paradise Lost, Plutarch's Lives, and The Sorrows of Young Werther | The most popularly recognized version is Boris Karloff's portrayal of the monster in the 1930s films ... though that incarnation bears little resemblance to the source material."
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/monsters/16863-flesh-golem",
+          "status": "verified",
+          "claims_checked": "absorption de la foudre en soins, aversion du feu, Berserk (seuil de 40 points de vie, calmé par le créateur à 60 pieds sur test de Charisme, jusqu'à destruction ou guérison complète), assemblage de morceaux cousus et boulonnés",
+          "evidence": "Lightning Absorption. Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt. | Aversion of Fire. If the golem takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn. | Berserk. Whenever the golem starts its turn with 40 hit points or fewer ... Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points. The golem's creator, if within 60 feet ... can try to calm it by speaking firmly and persuasively ... a DC 15 Charisma (Persuasion) check. | A flesh golem is a grisly assortment of humanoid body parts stitched and bolted together into a muscled brute imbued with formidable strength."
+        }
+      ],
+      "style_check": "La filiation entre le roman, le cinéma des années 1930 et la catégorie ludique du golem est posée clairement, sans confusion des lignées. Français adulte, aucune consigne à auteur, appels [1] et [2] cohérents."
+    },
+    {
+      "slug": "golem-de-fer",
+      "verdict": "revise",
+      "sha256": "a86ccd7d3a630cb74a3122151b9ef5bc4ae26c3740d9903e8b88e587f68207f4",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1] et sections.naturelle.parts (Prédateurs)",
+          "quote": "Sa force colossale, sa résistance à la magie et son immunité à une large part des dommages conventionnels en font un gardien quasiment increvable par les moyens ordinaires. / sa résistance aux dommages courants et son immunité à de nombreux effets magiques le placent hors d'atteinte de la plupart des créatures",
+          "detail": "Contredit par la source déclarée elle-même. Le bloc D&D Beyond cité (iron golem 2024) porte une seule ligne d'immunités : « Immunities Fire, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned ». Il n'y a plus ni immunité ni résistance aux dommages contondants/perforants/tranchants : la version 2024 a retiré l'immunité aux armes non magiques (un commentaire de la même page le déplore : « they nerfed their immunity to BPS unless from adamantine weapons, only boosting its HP by like 40-50 to compensate »). Les deux passages reprennent donc une propriété de l'ancien golem (2014 : BPS non magiques) tout en citant et en décrivant la fiche 2024 (CR 16, 252 PV, Bladed Arm, Fiery Bolt, Poison Breath). Correction attendue : supprimer la mention ou citer le bloc de règles correspondant."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts (Habitat)",
+          "quote": "il n'est presque jamais rencontré en extérieur ou dans la nature sauvage, sauf abandonné après la chute d'une forteresse.[1]",
+          "detail": "Le bloc déclaré porte « Habitat: ANY », tag générique d'environnement qui contredit le « presque jamais en extérieur ». Reste un placement narratif et non une règle chiffrée, donc non bloquant à lui seul."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts (Habitat)",
+          "quote": "Sa taille et son poids considérables limitent ses déplacements aux structures conçues pour le supporter",
+          "detail": "La source ne donne ni taille en pieds ni poids (seulement « Large Construct »). Le détail est plausible mais non sourcé."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "Son immunité à la charme, à la peur, au poison, au psychique et à la pétrification[1]",
+          "detail": "Exact pour les états et pour les types de dégâts poison/psychique (« Fire, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned »). La suite du même paragraphe parle d'« immunité à de nombreux effets magiques » alors que la fiche ne donne qu'Immutable Form et Magic Resistance (avantage aux jets de sauvegarde), pas une immunité."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/5195090-iron-golem",
+          "status": "verified",
+          "claims_checked": "CR 16, classe d'armure 20, 252 points de vie, bras lames tranchantes et brûlantes, trait enflammé à 120 pieds (≈36 m), souffle empoisonné en cône, absorption du feu, immunités, Intelligence 3, résistance à la magie",
+          "evidence": "AC 20 | HP 252 (24d10 + 120) | CR 16 (XP 15,000; PB +5) | Immunities Fire, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned | Bladed Arm. Melee Attack Roll: +12, reach 10 ft. Hit: 20 (3d8 + 7) Slashing damage plus 10 (3d6) Fire damage. | Fiery Bolt. Ranged Attack Roll: +10, range 120 ft. Hit: 36 (8d8) Fire damage. | Poison Breath (Recharge 6). Constitution Saving Throw: DC 18, each creature in a 60-foot Cone. | Fire Absorption. Whenever the golem is subjected to Fire damage, it regains a number of Hit Points equal to the Fire damage dealt. | Magic Resistance. The golem has Advantage on saving throws against spells and other magical effects. | INT 3 | Habitat: ANY (page ouverte en navigateur réel ; le bloc AC/PV/CR n'est pas restitué par l'extraction texte simple)"
+        }
+      ],
+      "style_check": "Belle tenue d'écriture et bonne pédagogie du contre-intuitif (le feu qui soigne). Le défaut est documentaire, non stylistique : la notice emprunte ses immunités à une édition et ses chiffres à une autre."
+    },
+    {
+      "slug": "golem-de-pierre",
+      "verdict": "pass",
+      "sha256": "ee616b467935cbafbe159af1e2800217596da7cc024dbd3ef55e18512f010b5b",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "il est immunisé contre le poison et les effets psychiques, et résiste aux dommages contondants, perforants et tranchants portés par des armes non magiques.[1]",
+          "detail": "La source déclare une immunité, pas une résistance : « Damage Immunities Poison, Psychic; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks that aren't Adamantine ». La notice affaiblit la règle (elle sous-estime la créature) ; à corriger pour l'exactitude."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts (Prédateurs)",
+          "quote": "son immunité à plusieurs formes de magie",
+          "detail": "La fiche donne Magic Resistance (avantage aux jets de sauvegarde) et Immutable Form, pas une immunité magique générale."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "Certaines traditions ludiques dérivées font varier la roche employée — granit, marbre, basalte — sans toutefois modifier fondamentalement ce socle de résistances",
+          "detail": "Aucune de ces roches n'apparaît dans la source. Généralité plausible mais non étayée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "celui des statues gardiennes que l'on retrouve dans de nombreuses cultures, de l'Égypte antique aux temples d'Asie[1]",
+          "detail": "Enrichissement de contexte absent de la source (qui se limite à « magical constructs cut and chiseled from stone to appear as tall, impressive statues »). L'affirmation est exacte historiquement et bien encadrée (« sans toutefois qu'on leur prête un mouvement réel »), donc non bloquante."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/17025-stone-golem",
+          "status": "verified",
+          "claims_checked": "taille Grande, Force 22, Intelligence 3, CA 17, 178 points de vie, CR 10, immunités poison/psychique et BPS non magiques non adamantines, capacité Slow, description « statues »",
+          "evidence": "Armor Class 17 (natural armor) | Hit Points 178 (17d10 + 85) | STR 22 (+6) | INT 3 (-4) | Challenge 10 (5,900 XP) | Damage Immunities Poison, Psychic; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks that aren't Adamantine | Slow (Recharge 5–6). The golem targets one or more creatures it can see within 10 feet of it ... a DC 17 Wisdom saving throw | Stone golems are magical constructs cut and chiseled from stone to appear as tall, impressive statues. | page signalée « Legacy : This doesn't reflect the latest rules and lore »"
+        }
+      ],
+      "style_check": "Prose sobre et efficace, aucune tournure de bot, aucune consigne à auteur. La notice explique honnêtement l'absence de cycle biologique. Aucun appel orphelin (source unique, appelée)."
+    },
+    {
+      "slug": "goliath",
+      "verdict": "revise",
+      "sha256": "09eabf83f2e8b2b69f674b78420faafcafed3ebeac54fb9123b3e7870fa8439a",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.naturelle.parts (Alimentation)",
+          "quote": "Vivant dans un milieu pauvre en ressources, le goliath pratique une chasse et une cueillette adaptées à l'altitude, complétées par l'élevage de bêtes rustiques capables de survivre au froid. La rareté de la nourriture en haute montagne impose une discipline stricte de partage au sein du campement, où le gaspillage est mal vu.",
+          "detail": "Régime inventé : la seule source déclarée [2] ne dit rien de l'alimentation du goliath. Elle se borne à « Food, water, and shelter are rare in the uppermost mountain reaches » et décrit au contraire un régime social de mérite individuel (« Goliaths thus place a premium on self-sufficiency and individual skill », « any adult who can't contribute to the tribe is expelled », « Goliaths have little pity for adults who can't take care of themselves »). Ni l'élevage de bêtes rustiques ni la « discipline stricte de partage » n'y figurent, et cette dernière est en tension avec le texte source. Aucun appel [n] n'est d'ailleurs posé sur ce paragraphe, contrairement aux autres notices du lot (gobelours, glabrezu) qui signalent explicitement le silence des sources. Correction attendue : dire que les sources ne détaillent pas le régime, ou citer une source qui le documente."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "Sa morphologie – entre deux et deux mètres trente selon les sources –",
+          "detail": "La source déclarée donne « between 7 and 8 feet tall » (≈ 2,13 à 2,44 m). La fourchette annoncée (2,00–2,30 m) ne recoupe pas la source, qui n'est pas non plus pluralisée ici."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "une inclination naturelle à surmonter l'épuisement",
+          "detail": "Aucun trait de la fiche ne concerne l'épuisement. Les trois traits d'endurance réels sont Stone's Endurance (réduire des dégâts), Mountain Born (résistance au froid, acclimatation à l'altitude) et Powerful Build (charge). Les deux premiers éléments de la phrase sont exacts, le troisième extrapole."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts (Reproduction)",
+          "quote": "Les enfants goliaths grandissent au sein du campement tout entier, qui partage la responsabilité de leur éducation physique et morale.",
+          "detail": "Éducation communautaire absente de la source (qui ne mentionne que l'attribution des noms et l'exclusion des adultes incapables de contribuer : « any adult who can't contribute to the tribe is expelled »). Seule la fin du paragraphe, l'exclusion, est sourcée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts (Prédateurs)",
+          "quote": "Le goliath redoute cependant les grandes bêtes des cimes et les monstres qui partagent son territoire",
+          "detail": "Prédateurs inventés : la source ne cite aucune créature et attribue la mortalité au milieu et au risque pris (« A single mistake can bring doom to an entire tribe »)."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Goliath",
+          "status": "verified",
+          "claims_checked": "champion philistin du premier livre de Samuel, vallée d'Éla, quarante jours, tailles divergentes (textes massorétique, manuscrits de la mer Morte, Septante, Josèphe) et hypothèse majoritaire de l'erreur de copie, hypothèse Elhanân (2 Samuel 21:19)",
+          "evidence": "According to 1 Samuel, Goliath challenges the Israelites to beat him in single combat. | Twice a day for 40 days, morning and evening, Goliath, the champion of the Philistines | The Dead Sea Scrolls text of Samuel from the late 1st century BCE, the 1st-century CE historian Josephus, and the Septuagint all give Goliath's height as \"four cubits and a span\" (6 feet 9 inches or 2.06 metres), whereas the Masoretic Text has \"six cubits and a span\" (9 feet 9 inches or 2.97 metres). Many scholars have suggested that the smaller number grew in the course of transmission (only a few have suggested the reverse ...) | Some modern scholars now believe that the original slayer of Goliath in the text may have been Elhanan, son of Jair, who features in 2 Samuel 21:19"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.dndbeyond.com/species/22-goliath",
+          "status": "verified",
+          "claims_checked": "nomade des sommets, corps taillés dans la roche, compétition loyale et mérite, exclusions, taille et poids, traits d'endurance, absence de toute donnée sur le régime alimentaire ; page signalée « Legacy »",
+          "evidence": "Goliaths wander a bleak realm of rock, wind, and cold. Their bodies look as if they are carved from mountain stone | Their spirits take after the wandering wind, making them nomads who wander from peak to peak | Goliaths love to win, but they see defeat as a prod to improve their skills | For goliaths, competition exists only when it is supported by a level playing field ... not reliance on magic items, money | Among goliaths, any adult who can't contribute to the tribe is expelled. | Goliaths are between 7 and 8 feet tall and weigh between 280 and 340 pounds. | Stone's Endurance. You can focus yourself to occasionally shrug off injury ... reduce the damage by that total. | Mountain Born. You have resistance to cold damage. You're also acclimated to high altitude | Food, water, and shelter are rare in the uppermost mountain reaches. | # Goliath Legacy This doesn't reflect the latest rules and lore."
+        }
+      ],
+      "style_check": "Écriture solide et hauteur de vue (« sa place n'est pas la domination, seulement la preuve »). Le problème n'est pas la voix mais le remplissage documentaire de deux rubriques d'histoire naturelle, là où la notice sait pourtant écarter ailleurs le faux folklore (legendes[0] et reliques[0] distinguent bien l'emprunt du nom au récit biblique)."
+    },
+    {
+      "slug": "gorgone",
+      "verdict": "revise",
+      "sha256": "3a4064829d03c905a43a84d896d6e408c8a7b17f85d8b1affcce6a4b5122c882",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.fascination[1] et sections.naturelle.parts (Habitat)",
+          "quote": "Les Grecs anciens ont placé les Gorgones aux confins du monde connu, par-delà l'Océan, dans une région nocturne voisine des Hespérides.[2] / Hésiode situe leur demeure par-delà l'Océan, à l'extrémité occidentale du monde, dans une contrée nocturne voisine du jardin des Hespérides.[2]",
+          "detail": "La citation [2] ne porte pas l'affirmation : la page Wikipédia Medusa déclarée ne contient nulle part la formule « par-delà l'Océan / voisine des Hespérides » (seule occurrence des Hespérides : la liste des frères et sœurs dans l'infobox ; aucune occurrence de « Oceanus » hors palette de navigation, aucune de « edge of night »). Pire, cette page situe les Gorgones ailleurs pour Hésiode : « According to Hesiod and Aeschylus, she lived and died on Sarpedon, somewhere near Cisthene (Mysia) », la Libye étant attribuée à Dionysius Scytobrachion et à Hérodote. Le fait est exact pour la Théogonie (v. 274-275 : « au-delà du glorieux Océan, à la limite de la nuit, tout près des Hespérides »), mais il est ici rattaché à la mauvaise page : un lecteur qui ouvre [2] trouve une localisation différente. Correction attendue : citer la Théogonie ou la page Wikipédia Gorgones, ou corriger la phrase."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts (Habitat)",
+          "quote": "Les traditions postérieures, notamment romaines, déplacent parfois ce séjour vers la Libye",
+          "detail": "La source [2] attribue ce déplacement à Dionysius Scytobrachion (IIe siècle av. n. è.) et à Hérodote, tous deux grecs ; le mot « romaines » est flottant (les traditions romaines d'Ovide et de Lucain, elles, situent bien un épisode en Afrique)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "Dans sa Théogonie, composée entre 730 et 700 avant notre ère",
+          "detail": "Datation absente des deux sources déclarées (ni [2] ni [3] ne datent le poème). Chiffre exact par ailleurs, mais non porté par les pages citées."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "La taille des Gorgones connaît une variation comparable. Les vases archaïques les représentent souvent démesurées, presque monstrueuses dans leurs proportions, quand les sculptures classiques tardives donnent à Méduse une stature humaine ... Le présent catalogue retient une forme plus imposante",
+          "detail": "Aucune source déclarée ne traite de la taille des Gorgones : le paragraphe est bâti sur une variation non documentée (les sources parlent de la monstruosité du visage et de la chevelure, pas des proportions). Il comporte de plus une référence en méta-texte (« Le présent catalogue retient… ») qui n'a pas sa place dans une rubrique d'anomalies documentaires."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.reliques[1]",
+          "quote": "Le nom de gorgone reste également passé dans le langage courant pour désigner, de façon moqueuse, une femme au regard sévère ou intimidant",
+          "detail": "Usage lexical français non porté par [2] (qui ne documente que le glissement du nom de Méduse vers « monster » en anglais)."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Medusa",
+          "status": "verified",
+          "claims_checked": "parents Phorcys et Céto, trois Gorgones dont seule Méduse mortelle, Persée envoyé par Polydectès, dons d'Athéna (bouclier poli), d'Hermès (sandales ailées), d'Héphaïstos (épée) et d'Hadès (casque d'invisibilité), Pégase et Chrysaor nés du corps décapité, embellissement de Méduse à partir du Ve siècle av. n. è., version tardive d'Ovide, gorgoneion apotropaïque, étymologie de Gorgô et de Méduse, localisation hésiodique (Sarpedon/Cisthene) et libyenne",
+          "evidence": "The three Gorgons—Medusa, Stheno and Euryale—were described by Hesiod and Apollodorus as offspring of the sea-god Phorcys and his sister Ceto | of the three, only Medusa was mortal | who was sent to fetch her head by King Polydectes of Seriphus | He received a mirrored shield from Athena, sandals with gold wings from Hermes, a sword from Hephaestus and Hades's helm of invisibility. | When Perseus beheaded her, Pegasus, a winged horse, and Chrysaor, a giant wielding a golden sword, sprang from her body. | sculptors and vase-painters of the fifth century BC began to envisage her as being beautiful as well as terrifying | In a late version of the Medusa myth, by the Roman poet Ovid, Medusa was originally a beautiful maiden | the image of the head of Medusa appeared in the evil-averting device known as the Gorgoneion | Médousa, lit. 'guardian, protectress' | Gorgṓ, \"the grim one\". From gorgos, referring to a look or gaze, \"grim, fierce, terrible\" | According to Hesiod and Aeschylus, she lived and died on Sarpedon, somewhere near Cisthene (Mysia). The 2nd-century BC writer Dionysius Scytobrachion instead placed the Gorgons in modern-day Libya. Herodotus also associated the Gorgons with Libya | use of Medusa as a logo by fashion company Versace"
+        },
+        {
+          "source_id": 3,
+          "url": "https://worldhistoryedu.com/the-birth-of-the-gorgons-according-to-hesiods-theogony/",
+          "status": "verified",
+          "claims_checked": "trois sœurs nées de Phorcys et Céto selon la Théogonie, noms Sthéno/Euryale/Méduse, seule Méduse mortelle, œuvre avant tout généalogique sans récit développé, bouclier réfléchissant d'Athéna, Pégase et Chrysaor, représentation des Gorgones dans l'art ancien",
+          "evidence": "the Gorgons are described as three sisters born to the ancient sea deities Phorcys and Ceto | Hesiod's \"Theogony\" does not delve deeply into detailed narratives or extensive character backgrounds, as it is more of a genealogical work | No, only Medusa was mortal. Her sisters, Stheno and Euryale, were immortal. | Perseus was able to defeat Medusa by using a mirrored shield given to him by Athena. | the winged horse Pegasus and the giant Chrysaor sprang from her neck | In ancient Greek art, the Gorgons were depicted as winged females with broad, round faces, glaring eyes, wide mouths with lolling tongues, and snakes for hair."
+        }
+      ],
+      "style_check": "Très belle ouverture (« la pétrification ne blesse pas, elle interrompt ») et distinction nette entre sources archaïques et réécriture ovidienne. Aucun appel orphelin ; à noter que la source 1 n'existe pas (numérotation qui commence à 2, cohérente en interne mais à surveiller lors de l'assemblage)."
+    }
+  ]
+}

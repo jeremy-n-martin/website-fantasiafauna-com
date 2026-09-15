@@ -5193,6 +5193,320 @@ window.FF_NOTICES = {
       }
     ]
   },
+  "exorciste": {
+    "description": "Il n'affronte pas des monstres de chair : il conteste à l'invisible le droit d'habiter un corps qui ne lui appartient pas.",
+    "sections": {
+      "fascination": [
+        "Face à un possédé, l'exorciste ne brandit ni épée ni grimoire de sorts, mais un nom. Le rituel catholique tel que le fixe le Rituale Romanum exige d'abord que le prêtre écarte toute cause médicale ou psychiatrique avant d'engager le combat spirituel proprement dit[1] : ce préalable, souvent oublié des récits populaires, fait de l'exorciste un clinicien du surnaturel autant qu'un thaumaturge. Il doit savoir reconnaître ce qui relève du corps avant de s'attaquer à ce qui relève de l'âme.",
+        "Ce qui frappe dans la figure de l'exorciste, c'est la disproportion entre son arsenal et son adversaire. Face à une entité que la théologie dit capable de connaître les langues jamais apprises ou de manifester une force surhumaine[1], il n'oppose que des mots récités, de l'eau bénite, une relique, l'invocation d'un nom plus puissant que le sien. Le combat se joue tout entier dans la conviction que le langage rituel a barre sur la matière et sur l'esprit — une idée qui traverse presque toutes les civilisations, sous des formes très différentes."
+      ],
+      "legendes": [
+        "Le Rituale Romanum, texte de référence de l'Église catholique, encadre ce que l'on appelle le grand exorcisme : seul un prêtre mandaté peut le conduire, en invoquant le nom du Christ, la Vierge Marie, les saints et l'archange Michel[1]. Les cas les plus tenaces, selon cette tradition, ne cèdent pas en une séance : la littérature religieuse évoque des démons qui ne se retirent qu'après plusieurs exorcismes hebdomadaires répétés durant des années[1].",
+        "L'orthodoxie chrétienne diffère sensiblement de Rome sur ce point : chaque prêtre orthodoxe reçoit une formation à l'exorcisme, et non une poignée de spécialistes désignés. La tradition orthodoxe propose même un critère de discernement concret, en observant la réaction du sujet au contact des reliques ou des lieux saints[1]. Les manuels pastoraux luthériens, dès le XVIe siècle, décrivent des symptômes de possession très proches — connaissance de choses secrètes, glossolalie, force inexplicable — tout en imposant, déjà, la consultation d'un médecin avant tout rituel[1].",
+        "D'autres traditions ont bâti leurs propres rites d'expulsion. L'exorcisme islamique s'appuie sur la récitation coranique, en trois temps : écarter les distractions, établir la réalité de la possession, puis réciter des sourates précises comme *Al-Fatiha*[1]. La tradition hindoue puise dans l'Atharva-Veda, où mantras et sacrifices rituels tiennent lieu d'arme, le simple nom de Hanuman étant réputé terrifier les esprits malins[1]. Le rituel juif, lui, mobilise un rabbin versé dans la Kabbale et un minyan de dix hommes, qui récitent trois fois le psaume 91 avant que le shofar ne soit sonné pour « briser » le corps du possédé et en déloger la force intruse[1]. Ces variantes ne se ressemblent guère dans leurs gestes, mais elles partagent une même intuition : l'expulsion exige une autorité reconnue, une parole codifiée et un nom plus fort que l'intrus.",
+        "L'histoire retient aussi des cas où le rituel a tourné au drame. Le cas de Robbie Mannheim, en 1949, a inspiré le roman de William Peter Blatty devenu le film *L'Exorciste*[1]. Plus tragique encore, l'Allemande Anneliese Michel a subi environ soixante-sept séances d'exorcisme entre 1975 et 1976, alors que la médecine avait diagnostiqué une épilepsie du lobe temporal doublée de troubles psychotiques[2]. Ses parents avaient cessé tout traitement médical ; elle est morte de dénutrition à 23 ans, ne pesant plus que 30 kilogrammes, les genoux brisés à force d'agenouillements. Les deux prêtres et les parents furent condamnés pour homicide par négligence en 1978[2]. Ce fait divers rappelle, à front renversé, l'avertissement même que la théologie place en tête du rituel : ne jamais substituer la prière à la médecine."
+      ],
+      "anomalies": [
+        "La fantasy de jeu de rôle a fait de l'exorciste un archétype de personnage à part entière, détaché de toute obédience précise : il conserve le vocabulaire du rituel — bannissement, purification, protection — mais l'applique à des créatures que la théologie réelle n'a jamais eu à combattre, spectres, morts-vivants ou esprits invocables à volonté. Le glissement est net : là où le rituel historique suppose une Église, une hiérarchie et des années de discernement, la fiction concentre le pouvoir dans les mains d'un seul individu, capable d'expulser l'invisible sur l'instant, sans l'attente ni les doutes qui pèsent sur les cas réels.",
+        "Un autre déplacement mérite attention : les traditions religieuses insistent presque toutes sur l'obligation d'écarter d'abord une cause médicale[1], une prudence que le personnage de fantasy ignore le plus souvent, puisque dans un monde où les démons existent effectivement, la question ne se pose plus de la même manière. Cette différence n'est pas un détail : elle sépare un savoir né de l'incertitude d'un pouvoir de fiction né de la certitude."
+      ],
+      "naturelle": {
+        "lead": "Il ne s'agit pas ici d'une créature au sens zoologique, mais d'un rôle : celui que la religion, puis le jeu, confient à qui prétend chasser l'invisible. L'histoire naturelle de l'exorciste est donc celle d'une fonction, de ses rites et de ses risques.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'exorciste catholique agit rarement seul : le rituel prévoit des assistants, des témoins, parfois un médecin consulté en amont[1]. Sa conduite se veut mesurée, répétitive, patiente — les séances s'étalent sur des semaines, voire des années dans les cas les plus résistants[1]. Le personnage de fantasy, à l'inverse, agit dans l'urgence d'un affrontement bref, où la formule rituelle produit un effet immédiat."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Sanctuaires, presbytères, chambres de malades : le terrain de l'exorciste réel est celui du quotidien perturbé, une maison ou un hôpital plutôt qu'un donjon. La fiction déplace ce terrain vers les seuils, les maisons hantées et les cryptes, lieux plus spectaculaires mais qui gardent l'idée d'un espace où l'ordinaire et l'invisible se touchent."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Aucune tradition n'attribue à l'exorciste un régime particulier ; c'est au contraire le possédé, dans le cas d'Anneliese Michel, qui a cessé de s'alimenter durant le rituel, avec les conséquences mortelles que l'on sait[2]. Le jeûne n'est donc pas un pouvoir du personnage mais un risque du rite lui-même."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le savoir de l'exorciste est avant tout un savoir de discernement : reconnaître un symptôme médical, une sourate à réciter, un psaume, une invocation exacte. Les manuels luthériens ou orthodoxes listent des signes précis pour distinguer possession et maladie[1], preuve que ce métier suppose une érudition rituelle et clinique à la fois, bien plus qu'une simple bravoure."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La fonction ne se transmet pas par le sang mais par l'ordination et la formation : dans l'Église orthodoxe, tout prêtre y est instruit, tandis que Rome réserve la charge à des mandataires désignés[1]. Il s'agit d'une filiation de savoir et d'autorité, non d'une lignée biologique."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "L'exorciste réel affronte moins des créatures qu'un doute permanent : celui de se tromper de diagnostic, d'aggraver un mal médical en le traitant comme surnaturel. Le cas Michel en reste l'illustration la plus sombre[2]. Dans la fiction, ce doute s'efface au profit d'ennemis tangibles — esprits, revenants — que le personnage est certain d'affronter à bon escient."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le shofar juif, l'eau bénite catholique, les sourates coraniques, le psaume 91 : chaque tradition a ses objets et ses textes de prédilection, mais tous partagent la même fonction, celle de rendre sensible et efficace une parole qui, sans eux, resterait un simple souhait[1]. La relique n'agit jamais seule ; elle authentifie l'autorité de celui qui la porte.",
+        "Le souvenir le plus tenace de cette histoire reste paradoxalement un objet absent : la tombe d'Anneliese Michel, devenue lieu de pèlerinage pour des fidèles qui y voient une expiation plutôt qu'un drame médical manqué[2]. Que le rituel ait échoué n'a pas empêché sa mémoire de se muer en relique vivante — signe que l'exorcisme, réussi ou non, laisse toujours une trace qui dépasse le rite lui-même."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Exorcism — Catholic Rite and cross-cultural traditions, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Exorcism"
+      },
+      {
+        "id": 2,
+        "title": "Anneliese Michel — case history and trial, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Anneliese_Michel"
+      }
+    ]
+  },
+  "fee-dragon": {
+    "description": "Petit comme un chat, ailé comme un papillon, le fée-dragon transforme le duel le plus sérieux en farce, puis disparaît en riant dans les frondaisons.",
+    "sections": {
+      "fascination": [
+        "Un dragon devrait imposer sa masse, sa flamme, son ombre sur les toits. Le fée-dragon renverse ce lieu commun jusqu'à l'absurde : de la taille d'un chat, porté par des ailes de papillon, il tient dans les deux mains d'un enfant.[1][2] Cette miniaturisation n'affaiblit en rien l'orgueil du dragon, seulement son échelle ; l'espièglerie remplace la terreur, sans que la ruse ni la magie ne perdent en subtilité. On croit approcher un jouet vivant et l'on découvre un esprit plus retors que bien des créatures deux fois grandes comme lui.",
+        "Sa robe change de couleur avec l'âge, du rouge des tout-petits au noir ou au violet des individus les plus anciens, chaque teinte apportant son lot de sortilèges nouveaux.[1][2] Un simple coup d'œil sur sa couleur renseigne ainsi le visiteur averti sur l'étendue probable de ses pouvoirs, un peu comme on jugerait l'âge d'un arbre à ses anneaux. Cette correspondance entre l'apparence et la puissance, rare chez les créatures fantastiques, donne au fée-dragon une cohérence presque naturaliste malgré son origine si manifestement ludique."
+      ],
+      "legendes": [
+        "Le fée-dragon appartient en propre à l'histoire du jeu de rôle et n'a pas d'ancêtre direct dans les bestiaires folkloriques européens. Il apparaît dans les suppléments consacrés aux créatures draconiques mineures de Donjons et Dragons, où il est décrit comme bon, joueur et profondément attaché à sa forêt.[1][2] Rien dans les traditions médiévales n'annonce un dragon de cette taille ni de ce tempérament ; le rapprochement avec les fées tient surtout à sa petitesse et à son goût du jeu, hérités plutôt du folklore des esprits de bois que d'une généalogie draconique réelle.",
+        "Les bestiaires successifs distinguent une version plus ancienne du fée-dragon, conservée à titre historique sur les plateformes de règles, et une version actualisée qui affine son tempérament chaotique bon et son humour espiègle.[2] Les deux s'accordent sur l'essentiel : le fée-dragon évite le combat autant qu'il le peut et ne blesse jamais volontairement, sauf acculé ou pour défendre son repaire.[3] Cette réticence à nuire, rare chez les dragons de toute taille, en fait une figure presque à part dans son propre bestiaire.",
+        "Sa personnalité rappelle moins les grands dragons de trésor que les esprits farceurs des bois : il aime les friandises et les colifichets, qu'il échange volontiers contre un passage libre ou une information utile, et préfère l'observation invisible à l'affrontement.[1] On peut y lire une reformulation ludique d'un très vieux motif, celui du petit être des forêts qui négocie plutôt qu'il ne domine, transposé ici dans l'écaille et non dans la fourrure ou l'écorce."
+      ],
+      "anomalies": [
+        "L'invisibilité du fée-dragon n'est limitée par aucune durée fixe : il peut la maintenir tant qu'il conserve sa concentration, ce qui, dans les faits, revient à disparaître aussi longtemps qu'il le souhaite.[1][2] Un adversaire ne le voit alors réapparaître qu'au moment choisi par la créature elle-même, souvent après qu'elle a savouré la confusion provoquée. Cette maîtrise du moment de sa propre révélation est un pouvoir presque théâtral, plus proche de la mise en scène que du combat.",
+        "Son souffle ne blesse pas au sens ordinaire : il exhale un nuage d'euphorie qui, loin de brûler ou d'empoisonner, plonge la cible dans un état d'hilarité incontrôlable, l'empêchant de réagir normalement pendant une minute entière.[1][2] La créature préfère ainsi désarmer par le rire plutôt que par la douleur, ce qui déplace toute la logique du combat draconique habituel vers quelque chose de plus proche de la farce que de la guerre.",
+        "La progression de ses sortilèges avec l'âge constitue une anomalie biologique et magique à la fois : un fée-dragon rouge et jeune ne maîtrise que des tours mineurs, tandis qu'un individu violet et âgé peut transformer une créature entière par la magie.[1][2] Le pouvoir ne s'acquiert donc pas par étude ni par accumulation de trésor, comme chez les grands dragons, mais par le simple fait de vieillir et de changer de couleur, à la manière d'une mue qui serait aussi une initiation."
+      ],
+      "naturelle": {
+        "lead": "Le fée-dragon est une créature entièrement issue du bestiaire ludique moderne : son histoire naturelle décrit un petit dragon sylvestre, sociable à sa manière, dont la biologie sert avant tout la ruse et le jeu plutôt que la prédation.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le fée-dragon préfère de loin l'observation à l'affrontement : il aime jouer des tours, se rendre invisible pour épier les visiteurs de sa forêt, puis se révéler seulement lorsque la plaisanterie a fait son effet.[1][2] Sa nature chaotique bonne le pousse à agir selon son humeur plutôt que selon un plan, mais toujours sans intention de nuire durablement."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "On le trouve dans les bois, les bosquets et les jardins enchantés, où il dissimule son repaire avec le même soin qu'il met à dissimuler sa présence.[1] Il apprécie particulièrement les environnements riches en fleurs et en fruits, sources à la fois de nourriture et de cachettes commodes pour ses jeux."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Son goût pour les friandises et les menus trésors dépasse la simple nécessité alimentaire : il collectionne autant qu'il consomme, échangeant volontiers ce qu'il possède contre des sucreries ou de petits objets brillants apportés par des visiteurs de bonne composition.[1]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Son esprit vif et son sens de l'humour espiègle en font un interlocuteur capable de marchandage, de ruse et de mémoire des visages ; il communique par télépathie avec les autres fée-dragons dans un rayon limité, signe d'une vie sociale discrète mais réelle entre individus de son espèce.[1][2]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les bestiaires n'entrent pas dans le détail de sa reproduction, mais insistent sur la progression de couleur qui accompagne chaque étape de sa vie, du rouge des nouveau-nés jusqu'au noir ou au violet des individus les plus âgés, chaque changement de teinte s'accompagnant de nouveaux pouvoirs innés.[1][2]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Sa petite taille en ferait une proie facile sans son invisibilité et son souffle d'euphorie, qui suffisent à décourager la plupart des agresseurs avant même qu'un combat ne s'engage. Le fée-dragon compte avant tout sur la fuite et la ruse, jamais sur la résistance physique, pour échapper à ce qui le menace."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "N'ayant pas de racine dans le folklore traditionnel, le fée-dragon ne laisse ni relique ancienne ni sanctuaire. Ses seules traces sont celles du jeu de rôle : illustrations successives, descriptions rassemblées dans des suppléments consacrés aux créatures draconiques mineures, et la version plus ancienne de son profil que les plateformes de règles modernes continuent de conserver à titre de mémoire.[2]",
+        "Sa popularité tient précisément à ce statut d'exception dans un bestiaire par ailleurs dominé par des puissances écrasantes : le fée-dragon prouve qu'un dragon peut rester un dragon, avec sa fierté et sa magie, sans jamais devenir un tyran ni un monstre de conte. Ce contre-emploi assumé explique sa présence durable dans l'imaginaire ludique, malgré une existence entièrement récente."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Faerie Dragon (Older) — Monsters, D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/17108-faerie-dragon-older"
+      },
+      {
+        "id": 2,
+        "title": "Dragon féerique — Monstre Stat Block, aidedd.org (traduction française D&D 5e)",
+        "url": "https://www.aidedd.org/dnd/monstres.php?vo=faerie-dragon"
+      },
+      {
+        "id": 3,
+        "title": "Bestiaire Monstrueux — Dragon fée, Le Donjon du Dragon (AD&D 2e)",
+        "url": "https://www.donjondudragon.fr/drs/ad-d2/bestiaire-monstrueux/502145-dragon-f%C3%A9e.html"
+      }
+    ]
+  },
+  "genasi": {
+    "description": "Un mortel pétri d'un élément, braise, brise, onde ou roc : le genasi ne descend d'aucun mythe ancien, mais d'un supplément de jeu de rôle publié à la fin du XXe siècle.",
+    "sections": {
+      "fascination": [
+        "Ce qui distingue le genasi, c'est la sobriété de son prodige. Il ne lance pas des sorts spectaculaires ni ne commande des armées d'esprits ; il porte simplement, inscrite dans sa chair, une parenté avec un élément du monde, une mèche de cheveux qui ondule comme de l'air, une peau qui garde la chaleur d'une braise, une odeur de pierre humide qui ne le quitte jamais. Le merveilleux tient ici à la discrétion du signe plus qu'à son ampleur : on peut croiser un genasi sans le reconnaître immédiatement, jusqu'à ce qu'un détail trahisse son ascendance.",
+        "Cette retenue s'accompagne d'une question de filiation plus intime que chez la plupart des peuples de fantasy. Le genasi descend d'un génie, être capricieux et puissant des plans élémentaires, et d'un parent mortel, une union rarement simple à raconter dans une famille. Grandir avec un tel héritage suppose de composer avec un monde qui ne comprend pas toujours ce qu'on porte, et avec un élément intérieur qu'on ne choisit pas mais qu'il faut apprendre à habiter."
+      ],
+      "legendes": [
+        "Le genasi ne provient d'aucune mythologie ni d'aucun folklore antérieur : c'est une création entièrement issue du jeu de rôle sur table. Les quatre lignées originelles, air, terre, feu et eau, apparaissent pour la première fois comme peuples jouables dans le cadre de campagne Planescape, au sein du Planewalker's Handbook publié en 1996 pour la deuxième édition de Donjons et Dragons.[1]",
+        "Dans ce cadre, les genasi sont définis comme des planetouched, des créatures mortelles portant dans leurs veines le sang d'êtres issus de plans d'existence alternatifs ; plus précisément, ce sont des humains dont un ancêtre appartient à la lignée des génies, ce qui leur transmet une affinité élémentaire visible.[1] Cette catégorie de planetouched regroupe alors plusieurs peuples distincts, mais les genasi en constituent l'un des exemples les plus durables.",
+        "La troisième édition du jeu, publiée au tournant des années 2000, reprend et développe le concept pour le cadre des Royaumes oubliés : les quatre genasi apparaissent d'abord dans le supplément Monsters of Faerûn en 2001 sous l'entrée planetouched, puis comme peuples jouables à part entière dans le Forgotten Realms Campaign Setting la même année, avant d'être encore étoffés dans le magazine Dragon numéro 293 en mars 2002 et dans le supplément Races of Faerûn en 2003.[2] Cette suite de publications ancre durablement le genasi dans l'univers des Royaumes oubliés, où des régions entières, comme les côtes autour de la mer des Étoiles Déchues pour les genasi de l'eau, ou le Nord pour ceux de la terre, leur sont associées.[2]",
+        "Le peuple reste depuis un pilier des éditions suivantes du jeu, jusqu'à figurer aujourd'hui comme espèce jouable dans la cinquième édition, preuve d'une popularité qui n'a jamais nécessité de rattachement à une tradition antérieure au jeu de rôle lui-même.[3]"
+      ],
+      "anomalies": [
+        "Le trait distinctif du genasi tient à son apparence : un corps globalement humain, marqué d'une ou deux caractéristiques renvoyant directement à son élément, une chevelure vaporeuse et mouvante pour les genasi de l'air, une peau tirant sur le rouge et parfois tiède au toucher pour ceux du feu.[2] Ces marques s'accompagnent de capacités correspondantes, une résistance ou une affinité liée à l'élément d'origine, qui varient sensiblement d'une édition du jeu à l'autre sans jamais disparaître complètement.[1][2]",
+        "D'une édition à l'autre, le statut même du genasi a changé de nature : simple sous-catégorie de planetouched aux côtés d'autres peuples similaires dans les premières publications, il devient ensuite un peuple jouable autonome et détaillé, avec sa propre géographie d'origine dans les Royaumes oubliés, ce qui témoigne d'une consolidation progressive plutôt que d'une conception d'emblée figée.[1][2]"
+      ],
+      "naturelle": {
+        "lead": "Le genasi étant une création entièrement issue du jeu de rôle, sans ancrage dans un folklore antérieur, cette histoire naturelle reprend le portrait consolidé par les suppléments consacrés aux Royaumes oubliés.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Les genasi développent souvent un tempérament marqué par leur élément d'origine, une intensité proche de la colère pour ceux du feu, une adaptabilité fluide pour ceux de l'eau ou de l'air, sans que cela relève d'une règle stricte plutôt que d'une tendance culturelle au sein du peuple.[2]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Leur répartition géographique dans les Royaumes oubliés suit largement leur élément : les genasi de la terre sont originaires du Nord et se sont dispersés depuis, tandis que les genasi de l'eau viennent des régions côtières, en particulier autour de la mer des Étoiles Déchues.[2]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Aucune source ne leur attribue de régime alimentaire distinct de celui des humains, dont ils partagent la physiologie générale hormis les traits élémentaires hérités de leur ascendance.[1][2]"
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Les genasi sont présentés comme pleinement capables de raisonnement, de culture et d'intégration sociale parmi les humains et les autres peuples, leur différence tenant à l'apparence et à certaines capacités plutôt qu'à une cognition distincte.[1]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le peuple descend directement de l'union entre un génie, être des plans élémentaires, et un parent mortel humain, une origine hybride que les suppléments de jeu qualifient de planetouched, ascendance planaire touchant une lignée mortelle.[1]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucune menace naturelle spécifique n'est associée au genasi dans les suppléments consultés ; leurs difficultés relèvent davantage de l'intégration sociale et de la méfiance parfois suscitée par leur ascendance planaire que d'un prédateur biologique attitré.[1][2]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le genasi demeure aujourd'hui l'un des peuples jouables les plus appréciés des joueurs de Donjons et Dragons, régulièrement mis à jour dans les éditions successives du jeu et présent dans de nombreux suppléments consacrés aux Royaumes oubliés.[2][3] Sa popularité tient en grande partie à la simplicité de son concept, un humain marqué par un élément, qui se prête à une grande variété d'interprétations narratives sans nécessiter de connaissance mythologique préalable.",
+        "Le peuple a par ailleurs essaimé au-delà de la table de jeu, apparaissant dans des jeux vidéo et des œuvres dérivées inspirées de l'univers de Donjons et Dragons, où l'on retrouve systématiquement le principe des quatre lignées élémentaires établi dès le Planewalker's Handbook de 1996.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Genasi — Forgotten Realms Wiki, Fandom",
+        "url": "https://forgottenrealms.fandom.com/wiki/Genasi"
+      },
+      {
+        "id": 2,
+        "title": "Genasi — WikiProject Dungeons & Dragons Wiki, Fandom",
+        "url": "https://wikiproject-dungeons-dragons.fandom.com/wiki/Genasi"
+      },
+      {
+        "id": 3,
+        "title": "The Genasi Species for Dungeons & Dragons (D&D) Fifth Edition (5e) — D&D Beyond",
+        "url": "https://www.dndbeyond.com/species/23-genasi"
+      }
+    ]
+  },
+  "glabrezu": {
+    "description": "Quatre bras, deux pinces, une seule promesse : le glabrezu n'a pas besoin de vaincre par la force ce qu'il peut obtenir en exauçant un vœu.",
+    "sections": {
+      "fascination": [
+        "Le glabrezu ne ressemble à aucun autre démon du même rang : dix-huit pieds de muscles surmontés d'une tête canine aux yeux violets, quatre bras dont deux se terminent en pinces capables de broyer un homme en armure.[1][2] Sa seule stature suffirait à en faire un monstre de force brute. Ce qui le distingue vraiment, c'est qu'il préfère de loin la parole au combat : il négocie, propose, exauce, et laisse ses victimes se détruire elles-mêmes avec ce qu'il leur a offert.",
+        "L'idée d'un démon capable d'accorder des vœux inverse la figure attendue du monstre qui tue par la griffe. Le glabrezu tue par le désir satisfait.[1] Chaque don qu'il consent comble effectivement le besoin exprimé, mais toujours par le chemin le plus ruineux possible ; la richesse arrive avec la malédiction, le pouvoir avec la trahison qui l'accompagne. Ce mécanisme, aussi cohérent qu'implacable, fait du glabrezu une figure de corrupteur bien plus qu'un simple prédateur des Abysses."
+      ],
+      "legendes": [
+        "Le glabrezu appartient à la vaste hiérarchie démoniaque façonnée par le jeu de rôle depuis la fin du XXe siècle et n'a pas de source antérieure dans les démonologies religieuses ou populaires.[2] Les bestiaires du jeu le rattachent aux âmes des traîtres, des menteurs et des faux témoins, dont la trahison en cette vie façonnerait, une fois aux Abysses, la substance même du démon.[1] Cette origine par la faute morale, plutôt que par une génération surnaturelle classique, en fait une créature pensée comme le prolongement littéral d'un vice humain.",
+        "Sa place dans l'ordre démoniaque reste intermédiaire : ni piétaille jetable comme le manès, ni seigneur redouté comme le balor, le glabrezu commande souvent de plus petits démons qu'il entraîne dans des troupes mêlées, aux côtés de succubes ou de vrocks, sans jamais atteindre au sommet de la hiérarchie abyssale.[1] Cette position moyenne explique pourquoi on le rencontre aussi bien comme simple exécutant que comme corrupteur retors dans les intrigues qui impliquent des invocateurs mortels.",
+        "Les traductions et adaptations successives du jeu ont conservé son trait le plus caractéristique : la vision parfaite, capable de percer les illusions et l'invisibilité, qui accompagne ses pouvoirs de séduction et de tromperie.[1][2] Un glabrezu ne se laisse donc pas facilement approcher par la ruse ; il faut le confronter à visage découvert, ou refuser purement et simplement ce qu'il propose."
+      ],
+      "anomalies": [
+        "Le don le plus étrange du glabrezu n'a rien de martial : une fois par mois, il peut accorder un vœu à un mortel, un pouvoir que l'on associerait plutôt à un esprit bienveillant ou à un objet magique rarissime.[1] Mais chaque vœu exaucé par lui se referme comme un piège : la formulation la plus prudente ne protège jamais totalement le bénéficiaire de la conséquence la plus destructrice compatible avec son souhait. La créature ne ment jamais sur ce qu'elle accorde ; elle choisit seulement la pire manière de tenir parole.",
+        "Sa vue perpétuelle, qui traverse l'obscurité, l'illusion et l'invisibilité, contraste avec l'image du monstre qu'on pourrait espérer tromper par la ruse ou la discrétion.[1][2] Aucune magie de dissimulation ordinaire ne le gêne durablement, ce qui renverse le rapport de force habituel entre l'aventurier rusé et le monstre plus fort que lui : face au glabrezu, seule la force ou la négociation directe restent des options viables.",
+        "Ses quatre bras ne se répartissent pas les tâches de façon égale : les deux pinces suffisent à immobiliser une victime de taille humaine avant que les poings ne s'abattent, ou bien la créature choisit de suspendre l'assaut physique pour lancer un sortilège tout en maintenant sa prise.[1][2] Cette capacité à combiner combat et magie sans perdre en efficacité dans l'un ou l'autre registre est rare chez les démons de rang comparable."
+      ],
+      "naturelle": {
+        "lead": "Le glabrezu n'a pas d'histoire naturelle au sens biologique : sa nature relève entièrement de la cosmologie démoniaque du jeu de rôle, où son comportement, son habitat et sa place sociale sont décrits avec la même précision qu'une créature du monde matériel.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le glabrezu privilégie la manipulation à l'affrontement direct. Il observe, propose, feint la générosité, et ne recourt à ses pinces et à sa magie qu'une fois la négociation rompue ou devenue inutile.[1] Cette patience calculée le distingue des démons purement destructeurs, plus prompts à la violence immédiate."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Il hante les Abysses, où il tient parfois cour parmi de plus petits démons, mais on le rencontre aussi hors de ce plan lorsqu'un invocateur mortel, souvent par imprudence, parvient à établir un pacte ou un contact avec lui.[1]"
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les bestiaires du jeu ne détaillent pas de régime alimentaire propre au glabrezu ; sa nature de fiende le rapproche davantage d'une incarnation de vice que d'un organisme soumis aux besoins ordinaires du vivant."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Son intelligence est explicitement supérieure à celle de la plupart des démons de rang comparable, alliée à une résistance magique qui le protège des tentatives de charme ou de domination extérieure.[1][2] Cette combinaison de ruse et de résilience mentale en fait un interlocuteur redoutable pour quiconque croit pouvoir le manipuler à son tour."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le glabrezu ne se reproduit pas selon un cycle biologique ; les bestiaires le rattachent à une origine morale, celle des âmes de traîtres et de menteurs transformées par la substance même des Abysses, plutôt qu'à une filiation entre individus de son espèce.[1]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Peu de créatures s'attaquent directement à un glabrezu, protégé par sa force, sa magie et sa vue qui perce les ruses. Ses véritables dangers viennent d'en haut : des démons de rang supérieur dans la même hiérarchie abyssale, capables d'exiger son obéissance ou de le sacrifier à leurs propres intrigues."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "N'ayant aucune racine dans une tradition religieuse ou populaire antérieure, le glabrezu ne laisse aucune relique au sens propre. Ses seules traces sont celles de la fiction ludique : illustrations successives dans les bestiaires du jeu, fiches statistiques traduites dans plusieurs langues, récits de tables où un vœu mal formulé a scellé la perte d'un personnage entier.",
+        "Ce qui subsiste surtout de lui, c'est une leçon narrative recyclée dans d'innombrables scénarios : la mise en garde contre le marché trop généreux, le don qui comble un manque réel tout en ouvrant une plaie plus profonde. Le glabrezu incarne, sous une forme démoniaque bien datée, une méfiance beaucoup plus ancienne envers les pactes et les vœux exaucés à la lettre."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Demon, Glabrezu — Bestiary, d20PFSRD",
+        "url": "https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/demon/glabrezu/"
+      },
+      {
+        "id": 2,
+        "title": "Glabrezu — Monstre Stat Block, aidedd.org (traduction française D&D 5e)",
+        "url": "https://www.aidedd.org/dnd/monstres.php?vo=glabrezu"
+      }
+    ]
+  },
   "gnoll": {
     "description": "Une tête de hyène au-dessus d'un bouclier : le gnoll moderne donne des armes à une faim qui sait poursuivre.",
     "sections": {
@@ -5421,6 +5735,960 @@ window.FF_NOTICES = {
         "id": 7,
         "title": "George MacDonald — The Princess and the Goblin, Project Gutenberg",
         "url": "https://www.gutenberg.org/cache/epub/708/pg708-images.html"
+      }
+    ]
+  },
+  "gobelours": {
+    "description": "Ni ours ni gobelin, le gobelours frappe depuis l'ombre avant même d'avoir été aperçu : une brute furtive née des tables de jeu, mais dont le nom porte le souvenir bien plus ancien d'un croquemitaine anglais.",
+    "sections": {
+      "fascination": [
+        "Ce qui rend le gobelours redoutable n'est pas sa ruse mais son silence : une masse hirsute capable de rester immobile assez longtemps pour que l'œil la range, par erreur, parmi les rochers ou les fourrés. Le coup part avant que la menace ne soit identifiée, et c'est cette antériorité de la douleur sur la reconnaissance qui donne au gobelours sa réputation. On ne raconte pas d'histoires de gobelours vaincus en combat loyal ; on raconte des embuscades, des campements surpris, des sentinelles qui n'ont rien vu venir.",
+        "Sa silhouette entretient une ambiguïté que son nom résume déjà : ni tout à fait gobelin, ni tout à fait ours, il emprunte à l'un la ruse sociale des clans et à l'autre la carrure et la toison. Cette hybridation n'a rien d'un accident de conception ; elle vise précisément à déjouer une classification trop rapide. Un gobelin, on croit savoir à quoi s'attendre ; un gobelours, dressé dans la pénombre d'une caverne, refuse ce confort et impose sa propre mesure, plus haute, plus large, plus silencieuse qu'annoncé."
+      ],
+      "legendes": [
+        "Le mot anglais bugbear, dont le gobelours est la traduction française, ne naît pas dans un bestiaire de jeu de rôle. Il descend du moyen anglais bugge, désignant une chose effrayante, avec des parentés possibles du côté du gallois ancien bwg, esprit malfaisant ou gobelin, et de l'écossais ancien bogill, gobelin.[1] Le terme rejoint ainsi la famille du bogeyman anglais, cet épouvantail verbal utilisé de longue date pour tenir les enfants à distance des bois et des recoins sombres.",
+        "Dans l'Angleterre médiévale et moderne, le bugbear est décrit comme une sorte d'ours inquiétant rôdant en lisière de forêt pour effrayer les enfants désobéissants, image que reprend notamment la pièce The Buggbears, adaptation anglaise de La Spiritata d'Antonio Francesco Grazzini publiée au XVIe siècle.[1] Cette figure reste floue, plus proche de l'épouvantail verbal que du monstre à la biologie précise : on l'invoque pour avertir, rarement pour la décrire en détail.",
+        "Le passage de cet épouvantail à la brute goblinoïde d'aujourd'hui est un geste des jeux de rôle modernes, Donjons et Dragons en tête, qui ont réemployé le nom anglais pour désigner un grand gobelinoïde hirsute, plus fort et plus rusé que ses cousins gobelins.[1][2] Cette adaptation ludique construit une créature cohérente avec ses propres règles de jeu, sans reprendre la fonction pédagogique et vaguement définie du bugbear traditionnel destiné à effrayer les enfants.",
+        "Il faut donc tenir les deux fils séparés : le mot a une histoire folklorique réelle, mais la créature que l'on rencontre aujourd'hui dans les cavernes et les camps de bandits est une invention de jeu, sans lignée mythologique propre reliant directement le grand gobelinoïde furtif à l'ours effrayant des bois anglais."
+      ],
+      "anomalies": [
+        "Le trait distinctif du gobelours en jeu tient dans deux capacités complémentaires : la Brute, qui ajoute un dé de dégâts supplémentaire à ses attaques de mêlée, et l'Attaque surprise, qui inflige des dégâts additionnels considérables lorsqu'il touche une cible prise au dépourvu lors du premier round de combat.[2] Cette combinaison en fait un adversaire dont la dangerosité se concentre presque entièrement dans l'instant de la surprise, bien plus que dans un affrontement prolongé.",
+        "Sa discrétion n'est pas seulement un talent narratif : les descriptions lui prêtent une aptitude marquée à la discrétion et à la survie en milieu sauvage, cohérente avec un mode de vie fondé sur le raid et l'embuscade plutôt que sur l'assaut frontal.[2] Il privilégie le repli stratégique face à une force supérieure, ce qui le distingue des gobelinoïdes plus impulsifs et souligne un calcul, sinon une intelligence, mis au service exclusif de sa propre survie et de celle de son groupe.",
+        "Les variantes rencontrées selon les bestiaires — chefs de bande, guerriers, éclaireurs — conservent toutes ce socle commun de force et de fourberie, sans jamais reprendre la fonction d'avertissement enfantin du bugbear original ; le gobelours de jeu reste une créature de rencontre hostile, pensée pour surprendre des aventuriers, non pour discipliner des enfants au coin du feu."
+      ],
+      "naturelle": {
+        "lead": "N'ayant pas de tradition folklorique propre, le gobelours se décrit essentiellement à travers son usage dans les jeux de rôle modernes, où il occupe la niche du gobelinoïde le plus massif et le plus dangereux en embuscade.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le gobelours privilégie l'embuscade et le raid éclair, frappant fort dès le premier contact puis engageant un combat classique si la surprise échoue. Il sait aussi se replier lorsque le rapport de force se retourne, un calcul qui le distingue des gobelinoïdes plus impulsifs de son entourage."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Camps de fortune, collines rocailleuses et cavernes composent son territoire de prédilection, des lieux qui offrent à la fois des points d'observation et des recoins où sa silhouette hirsute se confond avec le terrain."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Les bestiaires ne détaillent guère son régime, mais son association constante au raid et à la chasse suggère une subsistance opportuniste, tirée du gibier local et du pillage des convois ou campements qu'il surprend."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Sans être des stratèges, les gobelours font preuve d'un calcul tactique certain : choix du moment de l'attaque, usage du terrain, repli organisé face à une force supérieure. Cette intelligence pratique, tournée vers l'embuscade, contraste avec l'absence de toute vie intellectuelle ou artisanale prêtée à d'autres gobelinoïdes."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les sources de jeu ne développent pas de cycle de reproduction propre au gobelours ; il est généralement présenté comme un membre plus robuste de la famille des gobelinoïdes, organisé en bandes ou intégré aux camps d'autres peuples goblinoïdes plutôt qu'en clans indépendants richement décrits."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Sa taille et sa force en font rarement une proie ; le danger vient surtout des aventuriers et des rivaux gobelinoïdes qui contestent son autorité au sein d'un même camp. Aucun prédateur naturel ne lui est attribué de façon constante d'un bestiaire à l'autre."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le mot bugbear a gardé, en anglais courant, un sens dérivé désignant une source récurrente d'agacement ou de crainte irraisonnée — un pet peeve —, trace discrète de son origine d'épouvantail verbal bien avant de devenir un monstre de bestiaire.[1] Le français gobelours, en revanche, n'a pas hérité de cet usage figuré et reste cantonné à son rôle de créature de jeu.",
+        "Cette double vie du nom rappelle que la fantasy contemporaine puise parfois dans des mots dont l'histoire dépasse largement le tableau de statistiques qu'on leur associe aujourd'hui, sans pour autant ressusciter la créature ancienne qu'ils désignaient : le gobelours des cavernes n'est pas l'ours des bois anglais, seulement son lointain homonyme."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Bugbear — étymologie et origine folklorique du croquemitaine anglais, Wikipédia (anglais)",
+        "url": "https://en.wikipedia.org/wiki/Bugbear"
+      },
+      {
+        "id": 2,
+        "title": "Bugbear — statistiques et description du gobelinoïde, aidedd.org (D&D 5e)",
+        "url": "https://www.aidedd.org/dnd/monstres.php?vo=bugbear"
+      }
+    ]
+  },
+  "golem": {
+    "description": "Une motte d'argile façonnée à l'image de l'homme, à laquelle un Nom sacré ou des lettres hébraïques ordonnent de se lever : le golem est né dans les études talmudiques et kabbalistiques avant de devenir un gardien de légende à Prague.",
+    "sections": {
+      "fascination": [
+        "Il y a quelque chose de vertigineux dans l'idée qu'un mot puisse faire lever une forme d'argile. Le golem ne doit rien à un souffle divin unique et irremplaçable : il doit tout à une combinaison de lettres, à un ordre gravé, à une formule qu'un homme savant a su assembler correctement. Le miracle n'est donc pas réservé au ciel ; il devient, pour un instant, à la portée d'une érudition humaine suffisamment rigoureuse. Cette proximité inquiète autant qu'elle fascine, car elle place la création non dans un geste unique et mystérieux, mais dans une technique transmissible, étudiée, presque reproductible.",
+        "Et pourtant la créature reste muette. Elle comprend les ordres, exécute les tâches, protège ceux qu'on lui désigne, mais ne parle pas, ne raisonne pas au sens plein du terme. Cette limite donne au golem une présence particulière : une force imposante habitée par une obéissance sans discernement propre. Le geste qui l'anime — un nom glissé sous la langue, un mot tracé sur le front — est aussi celui qui peut le rendre à l'argile. La vie qu'on lui prête tient à un fil de papier ou à une lettre effacée, et c'est cette fragilité, au cœur même de sa puissance, qui continue de hanter l'imagination."
+      ],
+      "legendes": [
+        "Le mot golem apparaît déjà dans la tradition juive ancienne : le Talmud rapporte que Rava, sage babylonien du IVe siècle, façonna un être et l'envoya vers Rabbi Zeira, qui, constatant son mutisme, le renvoya à la poussière.[1] L'anecdote fixe d'emblée un trait durable de la légende : la créature façonnée par un homme, même juste et savant, demeure incomplète, privée de la parole qui distinguerait une pleine création humaine d'un décret divin.",
+        "Le fondement théorique de l'animation vient du Sefer Yetzirah, le Livre de la Formation, le plus ancien traité connu de spéculation mystique juive. Des lecteurs médiévaux y ont cherché les combinaisons de lettres hébraïques et de noms divins censées permettre, par une pratique rituelle intense, de donner vie à une figure d'argile.[1] Il s'agit moins d'une recette magique isolée que d'une discipline d'étude, associée à la piété et à la maîtrise de la langue sacrée elle-même conçue comme instrument de la création du monde.",
+        "La version la plus célèbre situe l'événement à Prague, au XVIe siècle : le rabbin Judah Loew ben Bezalel, le Maharal, aurait façonné un golem dans l'argile des rives de la Vltava pour protéger la communauté juive des persécutions et des accusations de meurtre rituel.[1] Il lui aurait donné vie en inscrivant sur son front le mot emet, vérité, et en plaçant dans sa bouche un parchemin portant le Nom ineffable de Dieu. Pour l'arrêter, il suffisait d'effacer la première lettre du mot : emet devenait alors met, la mort, et la créature retournait à la glaise.",
+        "Cette légende de Prague, telle qu'on la raconte aujourd'hui, doit beaucoup à des réécritures plus tardives, notamment aux récits populaires et littéraires diffusés à partir du XIXe siècle, qui ont consolidé et dramatisé un ensemble de traditions plus anciennes et plus dispersées.[1] Le golem y devient un protecteur communautaire à l'heure des pogroms, une figure de défense née de la détresse plutôt qu'un simple exercice d'érudition kabbalistique."
+      ],
+      "anomalies": [
+        "La particularité du golem tient à la nature de son animation : il ne reçoit pas une âme au sens plein, mais une force qui exécute ce qu'on lui prescrit sans en comprendre le sens moral. Il agit selon la lettre de l'ordre, non selon son esprit, ce qui fait de lui un exécutant redoutable mais dépourvu de jugement propre. Ce trait, plus qu'une taille ou une force impressionnantes, distingue le golem des autres gardiens de légende : sa puissance dépend entièrement de la clarté et de la prudence de celui qui le commande.",
+        "L'animation elle-même varie selon les sources : combinaison de lettres du nom divin récitée sur la figure d'argile, parchemin glissé sous la langue ou dans la bouche, mot inscrit sur le front.[1] Ce qui reste constant, c'est la réversibilité du procédé : la même opération qui donne vie, inversée ou effacée, la retire. Le golem n'est jamais une création achevée et stable ; il demeure suspendu à la formule qui le maintient debout."
+      ],
+      "naturelle": {
+        "lead": "Le golem n'appartient à aucune zoologie : il est un artefact rituel, une figure d'argile mise en mouvement par la parole sacrée, et son histoire naturelle se lit dans les usages qu'on lui prête plutôt que dans un corps vivant.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le golem exécute les tâches confiées avec une fidélité littérale, sans initiative ni retenue propre. Les récits insistent sur sa force physique considérable et sur sa docilité tant que les ordres restent clairs ; une consigne mal formulée ou oubliée peut cependant le laisser poursuivre une tâche bien au-delà de ce qui était souhaité, révélant l'absence de discernement qui l'habite."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La légende de Prague le loge dans les combles de la Vieille Nouvelle Synagogue, où il aurait été remisé une fois son service achevé, prêt à se relever en cas de nécessité.[1] D'autres récits le situent simplement dans les quartiers qu'il protège, gardien discret plutôt qu'habitant d'un lieu qui lui serait propre."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Fait d'argile, le golem ne mange ni ne boit ; les récits ne lui prêtent aucun besoin de subsistance, à la différence des esprits élémentaires d'autres traditions qui partagent parfois la table des hommes."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le golem comprend les ordres qu'on lui donne mais ne possède ni langage propre ni raisonnement moral. Cette limite est constitutive : un être capable de parler pleinement échapperait au statut de créature façonnée pour rejoindre celui, réservé au divin, de l'être vivant à part entière.[1] C'est précisément ce défaut de parole que releva Rabbi Zeira dans l'épisode talmudique fondateur."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le golem ne se reproduit pas : chaque exemplaire est une création singulière, façonnée par un maître pour une occasion précise, et sa disparition ne laisse aucune descendance. Sa fabrication relève d'un acte rituel unique, non d'un cycle naturel."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le golem n'a pas d'ennemi naturel : sa seule vulnérabilité est rituelle, la formule ou l'inscription qui l'a fait naître et qui, retirée ou inversée, le rend à la glaise. Dans la légende de Prague, c'est le Maharal lui-même qui reprend cette maîtrise lorsque le danger s'éloigne."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le golem de Prague reste associé au Vieux Cimetière juif et à la Vieille Nouvelle Synagogue, lieux que visiteurs et récits continuent d'attacher à son souvenir, entre mémoire communautaire et attraction touristique.[1] Le mot lui-même a gagné les langues européennes comme désignation générale d'un être artificiel obéissant et sans volonté propre, jusqu'à nommer aujourd'hui des robots ou des automates dans la culture populaire.",
+        "La figure a nourri une descendance littéraire et cinématographique considérable, du roman de Gustav Meyrink aux films expressionnistes allemands, qui ont fixé dans l'imaginaire occidental l'image d'une haute silhouette d'argile arpentant les ruelles d'un ghetto. Cette postérité artistique a souvent pris le pas sur les sources rabbiniques et kabbalistiques, au point que beaucoup ignorent la distance qui sépare le gardien de Prague de l'usage discret qu'en faisaient, des siècles plus tôt, les études du Sefer Yetzirah."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Golem — origines talmudiques, Sefer Yetzirah et légende du Golem de Prague, Wikipédia (anglais)",
+        "url": "https://en.wikipedia.org/wiki/Golem"
+      }
+    ]
+  },
+  "golem-de-chair": {
+    "description": "Assemblage de dépouilles cousues et boulonnées, réveillé par une volonté qui n'est pas la sienne, le golem de chair descend directement de la créature de Mary Shelley, recomposée par le jeu de rôle en brute de laboratoire.",
+    "sections": {
+      "fascination": [
+        "Aucune autre créature d'atelier ou de laboratoire ne porte aussi visiblement les traces de sa fabrication : les cicatrices, les boulons, les teintes de peau qui ne s'accordent pas d'un membre à l'autre. Le golem de chair ne cache rien de son origine composite, et c'est précisément cette franchise qui trouble. Il ne prétend pas être un corps unique et cohérent ; il expose, comme une leçon d'anatomie inversée, la possibilité de faire tenir ensemble des morceaux qui n'auraient jamais dû se rencontrer. Le malaise vient de cette continuité brisée entre la forme humaine et son fonctionnement réel.",
+        "La créature de Mary Shelley, dont il descend, savait parler, lire, raisonner sur sa propre condition avec une éloquence presque insupportable pour son créateur.[1] Le golem de chair du jeu de rôle a perdu cette voix : il n'a plus que la force et l'obéissance rudimentaire, sauf lorsque, par accident, une mémoire enfouie dans les chairs assemblées remonte à la surface. Ce reste de conscience, imprévisible, est peut-être ce qui rapproche le plus la brute moderne de son modèle littéraire : la possibilité, ténue, qu'un fragment d'humanité subsiste sous les coutures."
+      ],
+      "legendes": [
+        "La créature fondatrice naît dans Frankenstein ou le Prométhée moderne, roman de Mary Shelley publié en 1818. Victor Frankenstein y assemble un être de grande taille à partir de matière organique récupérée, puis lui insuffle la vie par un procédé que le roman laisse volontairement dans le vague.[1] Le texte insiste sur le contraste entre des traits pris isolément superbes — une chevelure sombre et lustrée, des dents d'une blancheur parfaite — et un ensemble hideux une fois la peau jaunâtre tendue sur les muscles et les artères apparents.",
+        "Le trait le plus surprenant du roman, largement oublié par la culture populaire, est l'intelligence de la créature : en moins d'un an, elle apprend à parler et à lire l'allemand puis le français, se forme par la lecture du Paradis perdu et des Souffrances du jeune Werther, et adresse à son créateur des reproches d'une lucidité redoutable avant de sombrer dans la vengeance après un rejet répété.[1] Rien, dans le texte original, ne correspond à la brute grognante et muette que le cinéma imposera plus tard dans l'imaginaire collectif.",
+        "Cette image simplifiée doit beaucoup au film de James Whale en 1931, où Boris Karloff incarne un monstre muet, au front carré, affublé d'un cerveau criminel par erreur de laboratoire — un ajout entièrement absent du roman.[1] C'est cette silhouette cinématographique, et non la créature éloquente de Shelley, qui a fourni le modèle visuel et comportemental repris ensuite par la fantasy de jeu de rôle.",
+        "Le golem de chair proprement dit apparaît dans les bestiaires de Donjons et Dragons comme une variante du golem magique, empruntant au concept kabbalistique le principe d'un corps artificiel animé par un art occulte, mais construit à partir de morceaux de cadavres humanoïdes cousus et rivetés plutôt que d'argile.[2] Le nom associe ainsi deux lignées distinctes : la créature d'assemblage de Shelley et la catégorie ludique du golem, sans reprendre la dimension religieuse ou communautaire de la légende juive."
+      ],
+      "anomalies": [
+        "Le trait de jeu le plus caractéristique du golem de chair est sa capacité à absorber la foudre : plutôt que de subir des dégâts électriques, il en tire une régénération de ses points de vie, retournement ironique de la vulnérabilité classique du monstre de cinéma à l'électricité qui l'a pourtant fait naître dans certaines adaptations.[2] À l'inverse, le feu le fragilise et perturbe sa coordination, rappelant la peur ancestrale du bûcher qui poursuit la créature depuis les foules du roman et des films.",
+        "Une autre singularité tient à son inconstance : en dessous d'un certain seuil de résistance, le golem de chair peut entrer dans un état incontrôlé et frapper indifféremment amis et ennemis, jusqu'à ce qu'il soit calmé par celui qui l'a créé ou entièrement soigné.[2] Cette fureur imprévisible, absente du golem d'argile plus disciplinée, rapproche la créature de son modèle littéraire tourmenté davantage que de l'obéissance mécanique habituellement prêtée aux golems.",
+        "Les récits de jeu évoquent aussi, de façon plus rare, des exemplaires ayant conservé des fragments de mémoire des corps dont ils sont issus, au point de développer une volonté propre et de cesser d'être de simples instruments.[2] Ce motif fait écho, sans le nommer, au drame central du roman : une créature façonnée pour servir peut receler, malgré son créateur, un reste de vie intérieure."
+      ],
+      "naturelle": {
+        "lead": "Le golem de chair appartient à la catégorie ludique des créatures artificielles ; son histoire naturelle décrit un objet de fabrication plutôt qu'une espèce, mais les usages qu'on lui prête suivent des régularités que l'on peut décrire poste par poste.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Normalement, le golem de chair applique les instructions de son créateur sans initiative ni retenue, frappant avec une force considérable et une endurance que peu d'adversaires égalent. Sa dangerosité tient à cette combinaison de puissance brute et d'absence de jugement propre, aggravée par le risque de fureur incontrôlée lorsque ses forces déclinent."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les récits le logent dans les lieux mêmes de sa fabrication : laboratoires isolés, tours de nécromants, cryptes oubliées où un créateur ambitieux dispose du temps, du matériel et de la discrétion nécessaires à un assemblage aussi long que délicat."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Assemblage de chairs mortes maintenu en mouvement par un art occulte, le golem de chair ne se nourrit pas ; il ne connaît ni faim ni digestion, à l'image du golem d'argile dont il emprunte le principe d'animation sans matière vivante."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "À l'inverse de la créature très articulée du roman de 1818, le golem de chair du jeu ne comprend que des ordres simples et ne peut ni raisonner sur eux ni être convaincu par la parole.[1][2] Cet appauvrissement délibéré du modèle littéraire fait de lui un pur exécutant, sauf dans les récits, plus rares, où remonte un fragment de mémoire emprunté à l'un des corps qui le composent."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le golem de chair ne se reproduit pas : chaque exemplaire résulte d'un assemblage délibéré, réclamant du temps, des dépouilles compatibles et un savoir occulte ou alchimique poussé. Sa naissance est un acte de fabrication unique, non un événement biologique."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Sa robustesse le met à l'abri des agressions ordinaires ; seuls le feu, qui perturbe sa coordination, et les armes ou sorts les plus puissants entament sérieusement sa résistance. Son véritable danger reste interne : la bascule en fureur incontrôlée, qui peut retourner sa force contre son propre créateur."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "L'image du monstre assemblé, rendue muette et menaçante par le cinéma des années 1930, a fini par éclipser dans la mémoire commune l'éloquence tourmentée du personnage de Mary Shelley, au point que beaucoup de lecteurs découvrant le roman s'étonnent de le trouver capable de discourir sur sa propre solitude.[1] Le golem de chair du jeu de rôle est l'héritier direct de cette image cinématographique plutôt que du texte original, ce qui explique son mutisme et sa brutalité mécanique.",
+        "Le nom même de golem de chair, en associant Frankenstein à la tradition kabbalistique du golem, illustre la manière dont la fantasy moderne recombine librement des lignées d'origine très différentes pour former une figure nouvelle, cohérente à l'intérieur de ses propres règles mais étrangère à chacune de ses sources prises isolément."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Frankenstein's monster — création, éloquence et postérité cinématographique, Wikipédia (anglais)",
+        "url": "https://en.wikipedia.org/wiki/Frankenstein%27s_monster"
+      },
+      {
+        "id": 2,
+        "title": "Flesh Golem — description, capacités et règles, D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16863-flesh-golem"
+      }
+    ]
+  },
+  "golem-de-pierre": {
+    "description": "Le socle d'un temple oublié se soulève, et l'on comprend trop tard qu'il n'a jamais été une simple statue.",
+    "sections": {
+      "fascination": [
+        "Certaines ruines ne sont gardées par personne — c'est ce qu'on croit, jusqu'à ce qu'une colonne bouge. Le golem de pierre confond la frontière entre l'architecture et l'être vivant : il a pu se tenir des siècles durant, immobile parmi les décombres, pris pour une statue votive ou un pilier écroulé, avant qu'un pas mal placé ou un objet dérangé ne le réveille. Ce délai est l'essence de sa fascination : il n'attaque pas par surprise grâce à la vitesse, mais grâce à l'attente, à la patience minérale d'une chose qui ne connaît pas l'impatience.",
+        "Une fois en mouvement, le golem de pierre ne cherche pas la ruse. Chaque enjambée fait trembler le sol comme une petite secousse ; chaque coup de poing porte le poids d'un bloc taillé. Il n'y a dans son combat aucune économie de force, aucune retenue : la pierre frappe comme elle est tombée, avec toute sa masse. Ce qui impressionne n'est pas sa vivacité, mais l'evidence que rien de ce qui est fait de chair ne peut lui opposer une résistance comparable — sinon la fuite, ou une magie assez puissante pour ralentir jusqu'à la pierre elle-même."
+      ],
+      "legendes": [
+        "Comme les autres golems, le golem de pierre est une création propre au jeu de rôle moderne, sans racine dans un folklore populaire antérieur ; il ne faut pas le confondre avec une créature de légende attestée. Il puise cependant dans un imaginaire beaucoup plus ancien : celui des statues gardiennes que l'on retrouve dans de nombreuses cultures, de l'Égypte antique aux temples d'Asie, où des figures de pierre placées à l'entrée des sanctuaires étaient censées repousser les profanateurs — sans toutefois qu'on leur prête un mouvement réel.",
+        "Sur D&D Beyond, le golem de pierre est décrit comme une créature de grande taille, dotée d'une force physique considérable (22) mais d'une intelligence quasiment nulle (3), avec une classe d'armure de 17 et près de 180 points de vie.[1] Cette fiche le situe en dessous du golem de fer dans la hiérarchie des dangers, mais nettement au-dessus des créatures ordinaires : un gardien redoutable pour des groupes d'aventuriers de niveau intermédiaire, plutôt qu'un obstacle réservé aux héros les plus expérimentés.",
+        "Le golem de pierre hérite du concept général du golem — être artificiel façonné par la magie pour obéir sans juger — mais son matériau détermine un emploi particulier : on le confie moins aux coffres-forts qu'aux lieux immenses et anciens, temples, nécropoles, sanctuaires effondrés, où sa lenteur importe peu puisque l'intrus finit toujours par se retrouver piégé entre des couloirs qu'il ne connaît pas et une créature qui, elle, ne se fatigue jamais de le poursuivre."
+      ],
+      "anomalies": [
+        "La particularité la plus documentée du golem de pierre est sa capacité à ralentir ses adversaires par un effet magique assimilable au sortilège de lenteur, qu'il projette sans composante ni geste préparatoire.[1] Ce pouvoir contredit l'image d'une créature purement physique : sous son enveloppe de roche brute se cache un noyau enchanté capable d'agir à distance sur l'esprit et le corps de ses cibles, freinant leurs réflexes avant même que ses poings n'entrent en contact.",
+        "Comme tous les golems, il est immunisé contre le poison et les effets psychiques, et résiste aux dommages contondants, perforants et tranchants portés par des armes non magiques.[1] Cette insensibilité rend dérisoires la plupart des armes conventionnelles : seule une lame enchantée, ou une magie offensive d'une puissance suffisante, entame réellement sa carapace. Certaines traditions ludiques dérivées font varier la roche employée — granit, marbre, basalte — sans toutefois modifier fondamentalement ce socle de résistances, qui reste la signature du type."
+      ],
+      "naturelle": {
+        "lead": "Le golem de pierre n'est ni un animal ni un esprit désincarné : c'est un mécanisme magique taillé dans la roche, dont l'« histoire naturelle » décrit un fonctionnement plutôt qu'un cycle de vie.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Il reste immobile, parfois durant des siècles, jusqu'à ce qu'une condition programmée par son créateur ne le déclenche : une porte forcée, un objet sacré déplacé, un mot interdit prononcé à voix haute. Une fois activé, il se dirige sans détour vers la menace identifiée, frappe avec constance, et retourne à l'immobilité une fois l'intrusion écartée ou l'ordre révoqué. Il n'exprime ni colère ni satisfaction : sa conduite est celle d'un mécanisme, non d'une volonté."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "On le rencontre dans les grands ensembles de pierre voués à durer : ruines antiques, sanctuaires oubliés, nécropoles et tombeaux royaux. Sa masse considérable et sa lenteur relative le rendent peu adapté aux espaces exigus ou aux terrains meubles ; il prospère au contraire dans les architectures massives, où son propre poids se confond avec celui des murs qui l'entourent."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le golem de pierre ne se nourrit d'aucune substance. Il tire son animation d'un enchantement permanent inscrit dans sa structure, qui ne nécessite ni combustible ni entretien organique — seule une dissipation magique ou une destruction physique peut y mettre fin."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Son intelligence est extrêmement limitée, à peine supérieure à celle d'un animal.[1] Il n'improvise pas de tactique et ne distingue pas les intrus selon leur dangerosité réelle : il applique les consignes reçues avec une littéralité que son absence de jugement rend parfois redoutable, parfois exploitable par qui comprend les limites de sa programmation."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Il n'existe pas de reproduction pour le golem de pierre. Chaque exemplaire est sculpté et enchanté individuellement, un processus qui exige un bloc de roche de qualité, un rituel long et un mage suffisamment expérimenté pour lier une volonté artificielle à la matière inerte."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Il n'a pas de prédateur naturel. Sa résistance aux armes ordinaires et son immunité à plusieurs formes de magie le mettent hors de portée de la plupart des créatures qu'il pourrait croiser ; seules une érosion millénaire, une arme spécialement enchantée ou l'intervention délibérée d'aventuriers déterminés peuvent véritablement mettre fin à son existence."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le golem de pierre a fourni à la fantasy moderne l'une de ses images les plus reconnaissables : la statue de temple qui s'anime, aujourd'hui reprise dans d'innombrables jeux vidéo, films et bandes dessinées comme raccourci visuel du gardien ancestral. Son effet de ralentissement, distinctif parmi les golems, est également devenu un motif récurrent dans les jeux qui empruntent au type sans le nommer directement.",
+        "Il continue d'incarner, plus que ses cousins de fer ou de chair, l'idée d'un temps suspendu : une créature qui n'a rien à perdre à attendre des siècles, parce que rien en elle ne s'use ni ne vieillit comme un corps vivant."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "D&D Beyond — Stone Golem, fiche de créature",
+        "url": "https://www.dndbeyond.com/monsters/17025-stone-golem"
+      }
+    ]
+  },
+  "gremlin": {
+    "description": "Avant d'être un lutin de cinéma, le gremlin fut l'explication qu'inventaient les aviateurs pour tout ce qui, dans leur appareil, refusait obstinément de fonctionner.",
+    "sections": {
+      "fascination": [
+        "Un moteur cale sans raison, un instrument affiche une valeur absurde, un boulon mal serré cède au pire moment : le gremlin naît de ces incidents que personne ne sait expliquer autrement que par une présence malveillante et minuscule, tapie dans les entrailles de la machine. Ce qui fascine dans cette figure, c'est qu'elle est née d'hommes rationnels, ingénieurs et pilotes rompus à la technique, cherchant malgré tout un nom pour l'imprévisible. Le gremlin n'est pas un monstre de conte ancien transposé à l'aviation ; il est la superstition la plus moderne qui soit, taillée sur mesure pour l'âge des machines.",
+        "Sa petite taille et son caractère espiègle en font un adversaire d'un genre inédit : on ne le combat pas à l'épée, on le soupçonne dans chaque panne, on le blâme pour chaque vis desserrée. Le gremlin déplace ainsi la peur du sabotage humain vers une créature invisible et presque affectueusement détestée, une façon pour des équipages sous tension de nommer sans accuser personne. Il porte en lui cette ambiguïté propre aux légendes nées dans l'urgence : mi-explication, mi-plaisanterie, jamais tout à fait sérieuse et jamais tout à fait fausse non plus pour ceux qui volaient."
+      ],
+      "legendes": [
+        "Le mot gremlin apparaît dans l'argot de la Royal Air Force dès les années 1920, la première trace imprimée connue figurant dans un poème publié depuis Malte par le magazine Aeroplane, le 10 avril 1929.[1] Les pilotes britanniques y désignaient déjà de petites créatures fictives tenues pour responsables des pannes mécaniques inexplicables. Le terme se répand largement pendant la Seconde Guerre mondiale, les aviateurs l'employant couramment pour détourner le blâme, qu'il s'agisse d'une défaillance technique réelle ou d'une erreur de pilotage plus difficile à admettre.[1]",
+        "C'est l'écrivain Roald Dahl, lui-même ancien pilote de la RAF, qui donne au gremlin sa première grande diffusion publique. Après un accident d'avion en Libye, il rédige, alors qu'il est attaché de l'air à Washington en 1942, un texte intitulé The Gremlins. Le manuscrit parvient à Walt Disney, qui en négocie la publication dans le magazine Cosmopolitan en décembre 1942, puis sous forme d'album chez Random House en 1943.[1] Le premier tirage de cinquante mille exemplaires se vend bien, et Eleanor Roosevelt, alors première dame des États-Unis, est même connue pour l'avoir lu à ses petits-enfants.",
+        "Le projet de film d'animation que Disney envisageait autour du livre de Dahl est finalement abandonné, en grande partie pour des raisons de droits.[1] Cet abandon n'empêche pas le gremlin de s'installer durablement dans la culture populaire anglo-saxonne, porté par la publicité entourant le livre plutôt que par le film qui ne verra jamais le jour.",
+        "Le nom ressurgit avec éclat en 1984, lorsque le réalisateur Joe Dante, sous la production de Steven Spielberg, sort la comédie horrifique Gremlins.[1] Le film s'inspire librement du concept de Dahl sans en reprendre l'intrigue, mettant en scène des créatures d'abord attendrissantes qui se transforment en monstres destructeurs. Cette version cinématographique, bien plus que le folklore aéronautique d'origine, façonne aujourd'hui l'image la plus répandue du gremlin, y compris dans les adaptations ultérieures du jeu de rôle."
+      ],
+      "anomalies": [
+        "Le gremlin ne dispose d'aucun pouvoir surnaturel spectaculaire dans le folklore aéronautique qui l'a vu naître : sa seule force tient à son invisibilité et à son talent supposé pour le sabotage discret, jamais surpris en flagrant délit. Cette discrétion absolue distingue nettement le gremlin des autres créatures fantastiques, dont les pouvoirs se manifestent en général par un effet visible et immédiat.",
+        "Les adaptations ultérieures, qu'il s'agisse du film de 1984 ou des versions ludiques inspirées du folklore aviateur, ajoutent au personnage une malice plus active et parfois une capacité de reproduction rapide et incontrôlable, associée dans le film à des règles de soin absurdes et strictement respectées par la fiction. Cette dimension reste propre aux réinterprétations modernes et ne provient pas des récits originaux de la RAF, où le gremlin demeure avant tout un fauteur de troubles mécaniques sans autre don particulier."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle du gremlin doit distinguer la créature d'argot aéronautique, purement anecdotique, de ses réincarnations littéraires et cinématographiques, bien plus détaillées.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Dans le folklore des aviateurs, le gremlin agit par malice ponctuelle plutôt que par plan d'ensemble : une vis desserrée ici, un instrument déréglé là, jamais de destruction totale et calculée.[1] Les versions ultérieures, notamment cinématographiques, lui prêtent un comportement plus organisé et une propension à l'exubérance collective une fois réunis en nombre."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le gremlin originel se tient dans les carlingues, les moteurs et les instruments de bord des avions militaires, un habitat directement lié à son origine aéronautique.[1] Les adaptations modernes élargissent ce territoire aux hangars, aux usines et à tout environnement mécanisé où une panne peut survenir sans explication immédiate."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le folklore de la RAF ne prête au gremlin aucun régime alimentaire particulier, la créature étant définie exclusivement par son effet sur les machines plutôt que par des besoins biologiques.[1] Les fictions postérieures introduisent parfois une alimentation propre, sans que cet ajout ne s'appuie sur une tradition antérieure."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le gremlin d'origine est crédité d'une ruse suffisante pour choisir ses cibles au moment le plus embarrassant pour l'équipage, sans que cette intelligence soit jamais démontrée autrement que par la coïncidence des pannes.[1] Il s'agit moins d'une intelligence mesurée que d'une explication commode donnée après coup à des incidents mal compris."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Aucune reproduction n'est documentée dans le folklore aéronautique originel. Les réinterprétations cinématographiques ultérieures, notamment celle de 1984, développent au contraire une capacité de multiplication rapide, devenue un ressort central de leur intrigue plutôt qu'un trait hérité des récits d'aviateurs."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le folklore de la RAF ne mentionne aucun prédateur du gremlin, la créature restant par définition insaisissable. Les fictions modernes situent son principal danger dans l'exposition à des règles ou conditions précises que les récits eux-mêmes définissent, plutôt que dans l'action d'un quelconque chasseur naturel."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le mot gremlin a largement débordé son origine militaire pour désigner, dans le langage courant, tout dysfonctionnement mineur et inexpliqué d'un appareil électronique ou mécanique — un usage qui perpétue directement l'argot des aviateurs des années 1940.[1] Le livre de Roald Dahl, resté longtemps moins connu que ses œuvres ultérieures pour la jeunesse, occupe une place particulière dans son parcours d'écrivain comme son tout premier ouvrage publié.",
+        "Le film de 1984 a fixé pour plusieurs générations l'image visuelle du gremlin, bien au-delà de ce que le folklore aéronautique original avait jamais précisé. Cette postérité cinématographique illustre un trajet peu commun : une créature née de la superstition technique d'une poignée de pilotes est devenue, en un peu plus d'un demi-siècle, une figure populaire mondialement reconnue, sans jamais avoir eu de véritable ancrage dans un folklore antérieur à l'aviation elle-même.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Gremlin — folklore de la RAF, Roald Dahl et le film de 1984, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Gremlin"
+      }
+    ]
+  },
+  "grendel": {
+    "description": "Douze années durant, une salle d'hydromel illuminée devint, chaque nuit, le théâtre d'un massacre : celui que perpétrait Grendel, le maraudeur des marais danois.",
+    "sections": {
+      "fascination": [
+        "Ce qui pousse Grendel vers Heorot n'est ni la faim ni la conquête, mais un bruit : les chants et les rires qui montent de la salle du roi Hroðgar chaque soir. Le poème ne cache pas ce ressort — la joie des hommes le blesse comme une insulte personnelle, et c'est cette blessure, plus que toute cruauté gratuite, qui le pousse à massacrer les dormeurs de la grande salle.[1] Il y a quelque chose de profondément dérangeant dans cette haine du bonheur d'autrui, une motivation que la plupart des monstres de légende n'ont pas : Grendel ne veut rien prendre aux hommes, il veut seulement qu'ils cessent d'être heureux sous son regard.",
+        "Douze hivers de terreur, une salle désertée par crainte des nuits, puis l'arrivée d'un étranger venu du pays des Geats pour affronter à mains nues ce que personne d'autre n'osait affronter : la scène du combat entre Beowulf et Grendel reste l'un des sommets du texte, précisément parce qu'elle se joue sans arme, dans l'obscurité, au corps à corps.[1][2] Le bras arraché, emporté comme trophée jusqu'au marais où la créature va mourir, condense en une seule image tout ce que le poème veut dire de la victoire humaine sur une force plus grande que l'homme mais pas invincible pour autant."
+      ],
+      "legendes": [
+        "Grendel apparaît dans Beowulf, un poème épique en vieil anglais long d'environ 3 182 vers allitératifs, conservé dans un manuscrit unique connu sous le nom de Codex Nowell, daté d'environ 975 à 1025 après J.-C.[2] La datation de la composition elle-même reste débattue parmi les spécialistes, certains la situant dès le VIIIe siècle, d'autres la rapprochant de la date du manuscrit lui-même. L'auteur, resté anonyme, est traditionnellement désigné du simple nom de poète de Beowulf.",
+        "Le récit se déroule au Danemark, où le roi Hroðgar a fait construire Heorot, une grande salle destinée aux banquets et aux célébrations de sa cour. C'est le vacarme de ces festivités qui attire la fureur de Grendel, lequel s'en prend à la salle nuit après nuit pendant douze années, tuant et dévorant les guerriers qui s'y trouvent.[1][2] Beowulf, jeune guerrier du peuple des Geats, traverse la mer pour venir en aide à Hroðgar et affronte Grendel sans arme, lui arrachant le bras au terme d'un combat nocturne. Mortellement blessé, Grendel fuit vers son repaire marécageux pour y mourir.[1]",
+        "Le poème précise la généalogie de la créature : Grendel descend de Caïn, le premier meurtrier biblique, ce qui l'inscrit dans une lignée d'exclus et de maudits plutôt que dans une espèce définie par des traits physiques stables.[1] Le texte le désigne aussi par des termes empruntés à la mythologie germanique, eoten et þyrs, apparentés aux géants jötnar de la tradition nordique, sans jamais offrir de description physique complète — seule sa tête, si massive qu'il fallut quatre hommes pour la porter, et son bras aux écailles impénétrables sont décrits après sa mort.[1]",
+        "La mort de Grendel n'achève pas le péril : sa mère, restée dans les récits sans nom propre, vient venger son fils en s'attaquant à son tour à Heorot, avant que Beowulf ne la traque jusqu'à son repaire subaquatique et ne la tue avec une épée de géant.[1][2] Cette deuxième bataille complète un triptyque que le poème referme, cinquante ans plus tard, par l'ultime combat de Beowulf, devenu roi, contre un dragon. La nature exacte de Grendel — monstre, géant ou autre chose encore — demeure un sujet de débat parmi les spécialistes du texte, le poème lui-même entretenant volontairement cette ambiguïté.[1]"
+      ],
+      "anomalies": [
+        "La force physique de Grendel dépasse de loin celle d'un homme ordinaire, au point que le roi Hroðgar le décrit, après sa mort, comme ayant forme humaine mais taille supérieure à celle de toute autre créature de ce monde.[1] Son bras, une fois arraché, révèle des écailles ou des callosités impénétrables, un détail qui suggère une résistance physique hors norme plutôt qu'une simple robustesse musculaire.",
+        "Le trait le plus singulier de Grendel reste sa vulnérabilité au chant et à la joie humaine, non comme une faiblesse magique exploitable, mais comme le déclencheur même de sa fureur meurtrière : c'est le bonheur perçu d'autrui, plus que toute provocation directe, qui appelle ses attaques nocturnes.[1] Cette sensibilité inversée — souffrir de ce qui réjouit les autres — distingue Grendel de la plupart des monstres de la tradition, dont la motivation tient d'ordinaire à la faim, à la cupidité ou à la simple malveillance."
+      ],
+      "naturelle": {
+        "lead": "Le poème de Beowulf ne dresse jamais un portrait naturaliste complet de Grendel ; son histoire naturelle doit se reconstituer à partir des détails épars que le texte laisse échapper au fil du récit.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Grendel n'attaque que la nuit, toujours seul, et concentre sa fureur sur un lieu précis, Heorot, plutôt que de ravager la campagne environnante.[1] Cette régularité nocturne, maintenue douze années durant, donne à ses assauts une dimension presque rituelle, comme s'il répondait chaque soir au même appel de joie humaine."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Grendel vit dans les marais et les landes sauvages entourant le royaume des Danois, loin des habitations humaines, avant de se retirer y mourir après sa blessure mortelle.[1] Sa mère habite plus profondément encore, dans un antre situé sous les eaux d'un lac marécageux, un repaire que Beowulf ne peut atteindre qu'en plongeant."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Le poème indique explicitement que Grendel dévore les guerriers qu'il tue à Heorot, emportant leurs corps lors de ses raids nocturnes.[1] Aucune autre source de nourriture n'est mentionnée, la créature semblant se satisfaire de ces incursions meurtrières plutôt que de chasser un gibier ordinaire."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Grendel agit avec une forme de discernement suffisant pour cibler précisément Heorot plutôt que de s'en prendre au hasard à d'autres proies, mais le poème ne lui prête ni parole ni raisonnement complexe.[1] Sa motivation, la haine du chant et de la fête, relève davantage d'une réaction instinctive et douloureuse que d'un calcul délibéré."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le texte ne détaille pas la naissance de Grendel au-delà de sa filiation symbolique avec Caïn, dont il serait un descendant maudit parmi d'autres créatures monstrueuses.[1] Sa mère, en revanche, est bien présente dans le récit et agit pour venger son fils, ce qui suppose une filiation directe sans que le poème n'en précise davantage les circonstances."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Seul Beowulf parvient à vaincre Grendel, et seulement à mains nues, aucune arme humaine ordinaire ne semblant capable d'entamer sa résistance.[1] Sa mère ne succombe à son tour que sous une épée de fabrication gigantesque, retrouvée dans son propre repaire, ce qui suggère que rien d'humain, hormis un héros hors norme, ne représente une menace réelle pour cette lignée."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Beowulf demeure l'une des œuvres les plus traduites et les plus étudiées de la littérature en vieil anglais, et son influence s'étend jusqu'à des auteurs modernes majeurs, J.R.R. Tolkien en tête, qui a consacré à ce poème une partie importante de son travail de spécialiste avant d'en tirer une partie de l'imaginaire de son propre univers.[2] Grendel, à ce titre, compte parmi les toutes premières figures monstrueuses de la littérature anglaise à avoir traversé les siècles sans jamais perdre sa place dans les programmes d'études.",
+        "Le personnage a également connu de nombreuses réécritures modernes, romans, films et adaptations diverses ayant choisi de raconter l'histoire de son point de vue plutôt que celui de Beowulf. Cette postérité tient sans doute à l'ambiguïté même que le poème original entretenait déjà : un être à la fois monstrueux et doué d'une sensibilité — la souffrance devant la joie des autres — suffisamment humaine pour continuer de troubler, mille ans après sa première mise par écrit.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Grendel — personnage de Beowulf, origines et interprétations, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Grendel"
+      },
+      {
+        "id": 2,
+        "title": "Beowulf — poème en vieil anglais, manuscrit et résumé, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Beowulf"
+      }
+    ]
+  },
+  "griffon": {
+    "description": "Un lion et un aigle cousus par le mythe pour garder un or que nul ne devait toucher : avant l'emblème héraldique, le griffon fut la sentinelle des confins du monde.",
+    "sections": {
+      "fascination": [
+        "Le griffon ne choisit ni la terre ni le ciel : il règne sur les deux. Son corps de lion porte la masse et la royauté du prédateur terrestre, tandis que sa tête et ses ailes d'aigle lui donnent l'acuité et l'altitude du rapace.[1] Cette fusion n'est pas un simple assemblage décoratif ; elle installe dans un seul corps deux souverainetés animales que l'Antiquité tenait pour les plus hautes de leur règne, si bien que la créature semble condensée à partir de la puissance même, plutôt que composée à partir de deux bêtes ordinaires.",
+        "Ce qui frappe surtout, c'est la fonction de gardien attachée dès l'origine à cette silhouette. Le griffon ne vagabonde pas : il veille sur un trésor, souvent de l'or, dans des montagnes lointaines et hostiles.[1] Le merveilleux tient à cette fixité presque minérale, celle d'une créature qui ne vit que pour interdire, et dont la beauté hybride n'est que la façade d'une fonction de barrière absolue entre les hommes et la richesse convoitée."
+      ],
+      "legendes": [
+        "Les figures hybrides annonçant le griffon apparaissent bien avant la Grèce : l'Égypte en grave sur des palettes à fard dès 3300-3100 avant notre ère, la Mésopotamie sur des sceaux-cylindres vers 3000 avant notre ère, et l'Iran ou le Proche-Orient développent leurs propres versions à l'âge du bronze.[1] La Grèce ne reçoit donc pas une invention originale mais hérite, autour de 700 avant notre ère, d'un motif déjà ancien, probablement transmis par les répertoires néo-hittites, qu'elle transforme en un être doté d'une véritable légende.",
+        "Cette légende naît du récit du voyageur Aristéas, au VIIe siècle avant notre ère, relayé ensuite par Hérodote et Eschyle : des griffons peuplant l'Asie centrale défendraient farouchement des gisements d'or contre les raids des Arimaspes, un peuple de cavaliers borgnes.[1] Eschyle les compare à des chiens silencieux de Zeus, ce qui laisse penser qu'une partie des Grecs anciens les imaginait sans ailes. Ctésias déplace ensuite leur territoire vers l'Inde, tandis que Pline l'Ancien est le premier à affirmer explicitement que les griffons volent et portent de longues oreilles.[1] Apollonius de Tyane propose même une théorie alternative : des pattes palmées et membraneuses permettant seulement de courts bonds, plutôt que de véritables ailes.",
+        "Le Moyen Âge accumule les détails matériels sur la créature. Albert le Grand affirme que le griffon dépose des pierres d'agate parmi ses œufs pour en réguler la température, tandis que de prétendues serres, plumes et œufs de griffon circulent comme reliques précieuses — des œufs d'autruche, des cornes de bouquetin et des fibres de raphia identifiés a posteriori par les érudits.[1] Le folklore médiéval prête aussi à ses griffes des vertus médicinales et à ses plumes le pouvoir de rendre la vue aux aveugles, prolongeant par la matière le prestige que l'Antiquité avait accordé au mythe."
+      ],
+      "anomalies": [
+        "Le griffon change de sens selon qui le regarde. Associé à Apollon, qu'il accompagnerait dans ses voyages hivernaux vers l'Hyperborée, et parfois monté par Dionysos dans l'iconographie grecque, il devient dans la tradition chrétienne un symbole de la double nature du Christ, à la fois terrestre et céleste, par cette même dualité lion-aigle qui faisait sa force antique.[1] La créature protectrice de l'or se retrouve ainsi investie d'une charge théologique qu'aucun de ses premiers conteurs n'avait envisagée.",
+        "Isidore de Séville la décrit comme l'ennemie farouche des chevaux, écho probable des raids de cavalerie arimaspe contre les gardiens d'or, ce qui montre comment un détail narratif ancien se fige en trait de caractère permanent.[1] Chaque culture qui reprend le griffon lui donne aussi un autre nom sans changer sa fonction : le persan šērdāl signifie littéralement lion-aigle, les textes arméniens et zoroastriens emploient Paskuč ou Baškuč, et l'Égypte le désigne par des épithètes comme tesh-tesh, le déchiqueteur, ou sfr, l'ardent.[1] Sous ces appellations distinctes subsiste la même créature composite et gardienne.",
+        "La théorie moderne de la paléontologue Adrienne Mayor propose que les nomades d'Asie centrale, en découvrant des squelettes fossilisés de Protoceratops ou de Psittacosaurus, en auraient transmis la description aux marchands grecs, inspirant l'image du griffon : un corps de mammifère, un bec de rapace, une nidification au sol et des œufs.[1] Le paléontologue Mark Witton conteste cette hypothèse et rappelle que l'anatomie du griffon dérive avant tout de bêtes bien vivantes, le lion et l'aigle. Le doute lui-même appartient désormais à l'histoire de la créature."
+      ],
+      "naturelle": {
+        "lead": "Le griffon rassemble un noyau constant, la garde d'un trésor par un corps mi-lion mi-aigle, et une abondance de variations régionales et symboliques qui en ont fait, siècle après siècle, un blason plus qu'une bête que l'on rencontre.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le comportement du griffon se résume presque entièrement à la vigilance. Les sources antiques ne lui prêtent guère d'activité en dehors de la défense de son territoire aurifère contre les incursions humaines, en particulier celles des Arimaspes.[1] Cette fixation exclusive sur la garde donne à la créature une allure moins animale que fonctionnelle : elle n'a pas de vie propre distincte de la mission qu'on lui attribue, et son agressivité ne se manifeste que lorsque l'or ou son territoire sont menacés."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Le griffon occupe des montagnes reculées d'Asie centrale selon Hérodote et Eschyle, un territoire ensuite déplacé vers l'Inde par Ctésias.[1] Cette instabilité géographique n'est pas une incohérence mais le signe d'un être situé, par nature, aux confins du monde connu : où que la carte grecque place ses limites, le griffon se tient juste au-delà, gardien d'un lieu que l'on ne peut qu'imaginer."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Aucune source antique ou médiévale ne détaille un régime alimentaire propre au griffon ; sa nature de prédateur composite, empruntée au lion et à l'aigle, suffisait à en garantir la vraisemblance sans qu'il soit nécessaire d'en préciser les proies."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le griffon n'est jamais décrit comme un interlocuteur ou un être raisonnant à la manière d'un dragon savant ; sa capacité principale tient à la reconnaissance de l'or et à une défense implacable de son territoire, ce qui suffit aux Anciens à en faire une créature redoutée sans qu'elle ait besoin de parler ou de ruser."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Albert le Grand rapporte que le griffon dispose des pierres d'agate parmi ses œufs afin d'en réguler la chaleur, détail qui suppose une couvée protégée avec un soin presque artisan.[1] Des œufs prétendument griffonins circulaient comme reliques au Moyen Âge, bien que les érudits modernes y aient reconnu des œufs d'autruche, preuve que la reproduction de la créature relevait autant du commerce des curiosités que de la zoologie fabuleuse."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Le seul ennemi attesté du griffon est humain : les Arimaspes, cavaliers borgnes lancés dans des raids pour lui dérober son or.[1] Isidore de Séville ajoute que le griffon est l'ennemi farouche des chevaux, ce qui referme la boucle du conflit ancestral entre le gardien ailé et les monteurs qui cherchent à le piller."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le griffon a quitté depuis longtemps le registre du bestiaire pour celui de l'emblème. En héraldique, il signale la force, la vaillance militaire et l'autorité, et orne les armoiries de nombreuses cités européennes, de la Poméranie à Gênes et plusieurs républiques italiennes.[1] En Grande-Bretagne, le griffon mâle se distingue par l'absence d'ailes et un corps hérissé de pointes, parfois nommé keythong, preuve que même son iconographie a continué de se ramifier bien après la disparition de ses légendes fondatrices.",
+        "Ce que l'on montre aujourd'hui sur un écu ou une façade descend directement du gardien antique de l'or, mais en a gardé surtout la posture : une créature qui impose le respect par sa seule présence, sans qu'il soit besoin de rappeler ce qu'elle protégeait jadis dans les montagnes d'Asie centrale."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Griffin — origines, mythologie et héraldique, Wikipédia (en anglais)",
+        "url": "https://en.wikipedia.org/wiki/Griffin"
+      }
+    ]
+  },
+  "gueteur": {
+    "description": "Avant les magiciens et les monstres, un peuple discret veillait déjà sur les villes endormies : le guêteur, sentinelle humaine des remparts et des rues, ne doit rien au merveilleux et tout à la nuit qu'il traverse sans jamais la maîtriser.",
+    "sections": {
+      "fascination": [
+        "Il n'y a pas de créature plus modeste, ni de figure plus rassurante dans l'obscurité d'une cité médiévale, que cet homme qui marche quand tous les autres dorment. Le guêteur ne vole rien à la nature, ne transgresse aucune loi du monde : il tient une lanterne, une hallebarde, parfois une cloche, et il use de ses yeux là où les nôtres se ferment. Sa présence transforme la rue nocturne, espace incertain peuplé de rumeurs et de dangers réels, en un lieu encore surveillé, encore humain. Le charme tient à ce contraste presque silencieux entre l'immensité de la nuit urbaine et la fragilité d'un pas qui la parcourt seul.",
+        "Ce que l'imagination retient de lui n'est pas un pouvoir, mais une fonction répétée soir après soir, ronde après ronde. Le halo de sa torche découpe un cercle mouvant sur les pavés, ses appels marquent les heures mieux qu'une horloge, et son passage sous une fenêtre suffit parfois à calmer une peur enfantine. Le guêteur incarne une vigilance sans éclat, celle qui ne produit aucun exploit mais dont l'absence, une seule nuit, suffit à faire sentir combien elle manquait. Il fascine par ce qu'il refuse d'être : un héros, alors qu'il rend possible le sommeil de tous les autres."
+      ],
+      "legendes": [
+        "Pas une créature folklorique traditionnelle. Le guêteur ne descend d'aucun bestiaire ni d'aucune mythologie : il est un métier, une charge civique, une réalité administrative des villes européennes du Moyen Âge. Son histoire est celle du guet lui-même, cette institution de surveillance nocturne dont on trouve des traces jusque dans une ordonnance de Clotaire II en 595, imposant aux habitants de chaque quartier un tour de garde sous peine de sanctions.",
+        "À Paris, cette obligation prend une forme durable en décembre 1254, lorsque Louis IX institue le guet royal. Le dispositif repose alors sur deux corps complémentaires : le guet assis, formé de bourgeois et de maîtres de métier assignés à des postes fixes, et le guet royal proprement dit, chargé des rondes mobiles dans les rues. Un chevalier du guet commande l'ensemble sous l'autorité du prévôt de Paris ; en 1364, on compte encore une quarantaine d'hommes répartis sur huit postes fixes, du Châtelet aux abords du palais, chaque poste mobilisant six veilleurs jusqu'au lever du jour.",
+        "Le service commençait à l'heure du couvre-feu, ce signal sonore qui invitait les habitants à éteindre leurs feux et à rentrer chez eux, et se prolongeait jusqu'à l'aube. Les hommes du guet patrouillaient à la lueur de leurs flambeaux, hallebarde à la main, chargés d'arrêter les mendiants, les ivrognes et les locataires indélicats surpris dans les rues après l'heure permise. Leurs cris rythmés, connus sous le nom de cris du guet, annonçaient les heures et signalaient leur présence, un peu comme le ferait plus tard un veilleur de nuit dans les campagnes.",
+        "Ce service, obligatoire et non rémunéré pour les bourgeois assignés au guet assis, devint progressivement impopulaire et inefficace : les exemptions se multiplièrent pour les hommes âgés, les malades et certains corps de métier. En 1559, le guet bourgeois fut remplacé par des archers professionnels, amorçant une lente professionnalisation qui aboutira, en 1750, à la dissolution de l'institution et à son absorption dans une police parisienne unifiée. Le guêteur des fictions modernes hérite de cette longue histoire administrative plus que d'aucune légende [1][2]."
+      ],
+      "anomalies": [
+        "N'étant pas une créature surnaturelle, le guêteur ne possède aucun pouvoir au sens propre. Ce que les jeux de rôle et les fictions urbaines lui prêtent reste dans le registre de l'attribut humain poussé à son plus haut degré : une vigilance quasi inlassable, une connaissance intime des toits, des ruelles et des raccourcis de sa ville, une oreille exercée à distinguer le pas d'un voleur de celui d'un ivrogne. Sa lanterne, sa cloche ou son cor ne sont pas des objets magiques mais des outils de signalement, hérités directement de l'équipement du guet historique.",
+        "D'une œuvre à l'autre, le guêteur peut glisser vers des emplois voisins : garde municipal armé d'une hallebarde, sonneur de cloches chargé d'annoncer le couvre-feu, ou figure plus solitaire postée en haut d'une tour de guet. Ces variations ne changent rien à sa nature foncièrement non magique et à son faible degré de dangerosité : il n'est redoutable que pour qui enfreint la loi de la cité, jamais par une menace propre à sa personne."
+      ],
+      "naturelle": {
+        "lead": "N'étant pas un être vivant distinct de l'espèce humaine, le guêteur ne relève pas à proprement parler d'une histoire naturelle. On peut néanmoins décrire, sur le modèle de ses homologues historiques, les conditions concrètes de son existence urbaine.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le guêteur alterne rondes régulières et postes fixes, reproduisant la distinction ancienne entre guet assis et guet mobile. Sa discipline tient moins à un tempérament martial qu'à la répétition d'un parcours connu par cœur, nuit après nuit, jusqu'à ce que chaque pavé, chaque porche, chaque ombre familière devienne un repère."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Il occupe les remparts, les portes de la cité, les carrefours et les tours de guet, des postes choisis pour leur vue dégagée ou leur position stratégique, à l'image des huit points fixes que tenait le guet parisien du XIVe siècle."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Rien ne le distingue ici du reste de la population : le guêteur mange et dort selon un rythme inversé par son service de nuit, souvent aux frais de la charge qui l'emploie ou de la bourgeoisie qui l'a désigné."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Sa compétence est avant tout pratique : reconnaître un bruit suspect, estimer une heure à l'position des étoiles, mémoriser les visages qui n'ont rien à faire dehors après le couvre-feu. Une intelligence de terrain, transmise par l'expérience plus que par l'étude."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "La charge de guêteur n'est pas héréditaire au sens strict, mais elle se transmet souvent de fait dans certaines familles de bourgeois ou d'artisans astreints au service, ou se perpétue par recrutement au sein d'une même corporation."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Ses dangers sont d'ordre humain : voleurs surpris en flagrant délit, bandes profitant de l'obscurité, ou simple hostilité d'habitants excédés par les contrôles nocturnes. Aucune créature ne le menace en propre ; c'est la ville elle-même, dans ses aspérités, qui met sa vigilance à l'épreuve."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le guêteur survit aujourd'hui surtout comme silhouette d'ambiance dans les jeux de rôle et les récits de fantasy urbaine : un PNJ que l'on croise près d'une porte de ville, une voix qui annonce l'heure dans une taverne, un témoin discret des événements nocturnes. Son absence de pouvoir en fait un personnage secondaire par excellence, utile pour ancrer une scène dans un réalisme historique sans recourir au surnaturel.",
+        "Le mot lui-même, et l'image de la lanterne balancée au bout du bras, doivent beaucoup à la mémoire du couvre-feu médiéval et du crieur nocturne, popularisée par de nombreux récits et reconstitutions historiques de villes comme Paris. Le guêteur reste ainsi l'un des rares habitants du bestiaire fantastique à n'être, en définitive, qu'un homme fidèle à son tour de garde."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Guet royal — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Guet_royal"
+      },
+      {
+        "id": 2,
+        "title": "Le couvre-feu du Moyen Âge — Histoires de Paris",
+        "url": "https://www.histoires-de-paris.fr/couvre-feu-moyen-age/"
+      }
+    ]
+  },
+  "harpie": {
+    "description": "Entre la femme et l'oiseau de proie, la harpie grecque incarne un vent qui ravit et souille tout ce qu'il touche : une figure ancienne de la punition divine, née bien avant qu'on ne lui prête ailes décoratives et visage séduisant.",
+    "sections": {
+      "fascination": [
+        "Il y a une violence particulière dans l'idée d'un repas qu'on ne peut jamais achever. La harpie ne tue pas d'un coup de griffe spectaculaire : elle fond sur la table dressée, arrache la nourriture, souille ce qu'elle ne peut emporter, et disparaît en laissant derrière elle une puanteur qui interdit toute consommation. Ce mode d'action, presque domestique dans son objet, rend la créature plus dérangeante qu'un simple monstre dévorateur : elle ne prend pas la vie, elle prend la possibilité même de se nourrir, de se réunir, de vivre normalement.",
+        "Le visage de jeune fille greffé sur un corps d'oiseau de proie ajoute à ce malaise une dimension presque intime. Ce n'est pas une bête totalement étrangère à l'humain qui s'abat sur Phinée ou sur les compagnons d'Énée, mais un être à mi-chemin, dont les traits rappellent une sœur, une fille, une figure familière détournée en instrument de châtiment. Le vent qui accompagne son vol, rapide et insaisissable comme le suggèrent les noms mêmes d'Aello et d'Ocypète, achève de faire de la harpie une punition qu'on ne voit jamais venir et qu'on ne peut jamais vraiment fuir."
+      ],
+      "legendes": [
+        "Créature folklorique traditionnelle, la harpie appartient à la mythologie grecque la plus ancienne. Hésiode la décrit déjà comme un être ailé au corps d'oiseau et au visage de femme, fille du dieu marin Thaumas et de l'Océanide Électre, ce qui en fait la sœur d'Iris, messagère des dieux, et d'Arcé.[1] Certaines traditions plus tardives leur attribuent à la place une filiation avec Typhon, signe que la généalogie divine de ces créatures est restée flottante d'un auteur à l'autre.",
+        "Homère, dans l'Odyssée, associe les harpies aux disparitions inexpliquées : le poème raconte comment elles enlèvent les filles de Pandarée pendant l'absence des déesses qui les protégeaient, pour les livrer ensuite aux Érinyes comme servantes. Cette fonction de ravisseuses, agissant en marge du regard des dieux et des hommes, restera constante dans les récits ultérieurs, même lorsque leur apparence se précise et se durcit.",
+        "L'épisode le plus célèbre concerne Phinée, roi de Thrace, puni de cécité et tourmenté par les harpies qui souillent chacun de ses repas avant qu'il ait pu s'en nourrir. Lors de l'expédition des Argonautes, les fils ailés de Borée, Calaïs et Zétès, poursuivent les créatures jusqu'aux îles Strophades ; c'est l'intervention d'Iris, leur propre sœur, qui négocie la paix, les harpies renonçant à leur persécution de Phinée en échange de leur vie sauve.[1]",
+        "Virgile, dans l'Énéide, en donne le portrait le plus sombre : des créatures au visage de jeune fille mais aux serres de rapace, à la faim insatiable qui ne les rassasie jamais et qui souillent l'air et la végétation de leurs excréments. L'une d'elles, Céléno, prophétise à Énée que les Troyens ne pourront fonder leur nouvelle patrie qu'après avoir été réduits par la faim à dévorer leurs propres tables — une prédiction qui se réalisera plus tard sous une forme symbolique, lorsque les compagnons d'Énée mangent leurs galettes de pain en guise d'assiettes.[1]"
+      ],
+      "anomalies": [
+        "Ce qui distingue la harpie des autres monstres ailés de la mythologie grecque tient à son mode d'attaque : elle ne cherche ni à tuer ni à dévorer sa proie sur place, mais à ravir la nourriture ou à la rendre impropre à la consommation. Cette souillure, plus que la violence physique, constitue sa véritable arme, et explique pourquoi elle apparaît si souvent liée à un châtiment divin visant à affamer plutôt qu'à détruire.",
+        "Sa vitesse de vol, suggérée par les noms mêmes de ses représentantes les plus citées, Aello la « bourrasque » et Ocypète la « rapide », en fait une créature presque insaisissable, capable de frapper et de disparaître avant toute riposte efficace ; seuls des poursuivants eux-mêmes ailés, comme les fils de Borée, peuvent espérer la rattraper. Les sources antiques varient également sur le nombre exact des harpies et sur leurs noms, certaines traditions en comptant deux, d'autres trois ou davantage, signe d'un mythe jamais totalement fixé.[1]"
+      ],
+      "naturelle": {
+        "lead": "La tradition antique, plus attentive à la fonction punitive des harpies qu'à une véritable zoologie, laisse néanmoins deviner les grandes lignes de leur mode de vie à travers les récits d'Hésiode, d'Homère et de Virgile.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Les harpies agissent en bandes plutôt qu'isolément, fondant en groupe sur leur cible avant de se disperser aussi vite qu'elles sont apparues. Leur comportement reste étroitement lié à une mission de punition ou de représailles divines plutôt qu'à une simple prédation instinctive."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Les sources antiques les situent aux confins du monde connu, sur des îles isolées comme les Strophades où les repoussent finalement Calaïs et Zétès, ou dans des régions frontalières comme la Thrace de Phinée, aux marges du monde grec civilisé."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Leur faim, décrite par Virgile comme insatiable malgré une consommation constante, les pousse à s'emparer de tout repas humain à leur portée ; ce qu'elles ne peuvent emporter, elles le souillent pour le rendre immangeable, prolongeant ainsi le châtiment bien au-delà de leur simple passage."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Loin d'être de simples bêtes, les harpies parlent et prophétisent : Céléno, dans l'Énéide, s'adresse directement à Énée pour lui annoncer son destin, preuve d'une intelligence et d'un langage propres qui les rapprochent des figures divines mineures plutôt que des animaux ordinaires."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Leur généalogie les rattache à Thaumas et à l'Océanide Électre, ce qui les inscrit dans la vaste famille des divinités marines et atmosphériques grecques ; aucune tradition antique ne développe en détail leur propre reproduction, la mythologie s'intéressant surtout à leur rôle d'instruments du châtiment divin."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Seuls des poursuivants ailés et rapides, comme Calaïs et Zétès, fils de Borée le vent du nord, parviennent à les tenir en respect ; leur défaite face à ces derniers ne relève pas d'une force supérieure mais d'une intervention divine, Iris obtenant leur grâce en échange de la cessation de leurs méfaits contre Phinée."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le nom de harpie a fini par désigner, dans le langage courant, une femme acariâtre et malveillante, un glissement de sens déjà perceptible dans certaines pièces de Shakespeare comme Beaucoup de bruit pour rien. Ce sens figuré, aujourd'hui souvent daté et connoté, garde la trace de la réputation de rapacité et de souillure attachée à la créature antique.[1]",
+        "La zoologie moderne a repris le nom pour désigner un rapace réel, l'aigle harpie, l'un des plus puissants aigles du monde, ainsi qu'un genre de papillons, preuve que la figure mythologique a essaimé bien au-delà de la seule littérature. Dans les jeux vidéo et les jeux de rôle contemporains, la harpie demeure une adversaire récurrente, généralement représentée volant en groupe et attaquant par surprise, fidèle en cela à son modèle antique."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Harpie (mythologie) — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Harpie_(mythologie)"
+      }
+    ]
+  },
+  "hecatonchire": {
+    "description": "Cent bras jetant des rochers contre le ciel des Titans : l'Hécatonchire n'est pas un monstre parmi d'autres, mais une force primordiale mise au service de l'ordre nouveau.",
+    "sections": {
+      "fascination": [
+        "Imaginer cinquante têtes surgissant d'une seule paire d'épaules, et cent bras se déployant en éventail : la Théogonie d'Hésiode ne cherche pas à rendre ces géants vraisemblables, elle cherche à rendre visible une disproportion.[1] Chaque frère — Cottos, Briarée, Gygès — possède une puissance qui dépasse toute mesure humaine, comme si le poète avait voulu donner un corps à l'idée même de force brute, antérieure à toute forme raffinée.",
+        "Ce qui frappe surtout, c'est l'usage qui est fait de cette masse de bras : non pas le carnage indifférencié, mais un geste unique et répété, celui de saisir des rochers et de les précipiter en salve sur l'ennemi.[1] Cent mains agissant de concert transforment un seul être en une petite armée à elles seules. La bataille des Titans, dans ce récit, bascule précisément lorsque cette puissance surnuméraire entre en jeu."
+      ],
+      "legendes": [
+        "Selon Hésiode, les Hécatonchires sont nés de l'union d'Ouranos, le Ciel, et de Gaïa, la Terre, au tout début du monde.[1] Leur père, effrayé par leur difformité autant que par leur force, les enferme aussitôt au sein de la terre, avec leurs frères les Cyclopes. Le mythe pose ainsi, dès l'origine, une tension entre l'engendrement et le rejet : ce que le monde produit de plus puissant, il ne sait d'abord que le cacher.",
+        "C'est Zeus qui les délivre, des générations plus tard, pour en faire ses alliés dans la guerre contre les Titans.[1] Le geste est calculé : le jeune dieu comprend qu'aucune armée olympienne ne peut l'emporter sans cette force surnuméraire. Cottos, Briarée et Gygès rompent alors leurs chaînes et déversent sur les Titans une pluie de blocs de pierre, changeant le cours du combat. Un poème aujourd'hui perdu, la Titanomachie, proposait pourtant une tradition concurrente où l'un d'eux, Égéon, combattait du côté des Titans — signe que le mythe n'a jamais été fixé une fois pour toutes.[1]",
+        "Briarée, le plus souvent nommé aussi Égéon, connaît une carrière propre en dehors de ce récit fondateur. Homère raconte, dans l'Iliade, que Thétis fait appel à lui pour défendre Zeus menacé par une révolte des autres dieux : sa seule présence aux côtés du maître de l'Olympe suffit à dissuader les conjurés.[1] D'autres traditions, rapportées par des auteurs tardifs, le rapprochent de la mer plutôt que du ciel : il y devient l'époux de Cymopolée, fille de Poséidon, ou un arbitre choisi pour départager Poséidon et Hélios dans un différend territorial autour de Corinthe.[1]",
+        "Après la victoire sur les Titans, les Hécatonchires ne retournent pas à une vie parmi les dieux : Hésiode les place en gardiens, postés près des portes de bronze du Tartare où sont désormais enfermés les vaincus.[1] La force qui avait servi à briser un ordre ancien sert désormais à en garantir un nouveau. Il n'existe pas, dans les sources antiques, de récit détaillé de leur service — seulement cette mention brève, qui suffit à les fixer pour toujours dans une posture de sentinelles cosmiques."
+      ],
+      "anomalies": [
+        "Le nom même d'Hécatonchire — du grec désignant le nombre cent et la main — n'apparaît pas chez Hésiode, qui les décrit sans les nommer ainsi ; il se généralise seulement chez des mythographes plus tardifs comme Apollodore.[1] Ce décalage rappelle qu'une créature mythologique n'est pas toujours désignée d'emblée par le terme qui l'a rendue célèbre : le nom peut être un habit ajouté après coup à une image plus ancienne.",
+        "La confusion entre les Hécatonchires et les Géants proprement dits traverse une partie de la tradition antique. Certains auteurs, dont Callimaque, attribuent à Briarée un tombeau sous l'Etna, rendant ses mouvements responsables des tremblements de terre de Sicile — un rôle que d'autres récits réservent plutôt aux Géants ou à Typhon.[1] Un papyrus d'Oxyrhynchos va jusqu'à lui prêter l'invention de l'armure de métal, ce qui le rapprocherait presque d'un forgeron souterrain à la manière d'Héphaïstos. Aucune de ces versions ne s'accorde parfaitement avec l'image du gardien de Tartare : le personnage change de fonction selon la main qui l'écrit."
+      ],
+      "naturelle": {
+        "lead": "Il n'existe pas de traité d'histoire naturelle consacré aux Hécatonchires : la description reste celle, brève et fixée, que donne la poésie archaïque grecque. Le tableau qui suit rassemble ce que les sources permettent d'en dire, sans ajout étranger au mythe antique.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le comportement attesté des Hécatonchires se résume presque entièrement à un seul acte : combattre en masse, en lançant des rochers avec leurs cent bras.[1] Aucune ruse, aucune parole mémorable ne leur est prêtée dans la Théogonie ; leur registre est celui de la force appliquée sans détour. Seul Briarée, dans l'épisode homérique, se distingue par une attitude plus posée : il s'assied simplement aux côtés de Zeus, et sa présence silencieuse suffit à faire reculer des dieux rebelles.[1]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Leur histoire les fait passer par trois lieux successifs : nés de la Terre et du Ciel, ils sont d'abord enfermés au sein même de Gaïa par Ouranos, puis libérés pour combattre au grand jour, puis enfin postés aux portes de bronze du Tartare, qu'ils gardent après la défaite des Titans.[1] Ce parcours dessine une trajectoire du dedans vers la frontière : la créature souterraine devient sentinelle d'un seuil, celui qui sépare le monde des vivants du gouffre où sont enchaînés les vaincus."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Aucune source antique ne décrit ce que mangent ou boivent les Hécatonchires ; le mythe s'intéresse à leur force de combat et à leur fonction de gardiens, non à une vie quotidienne qu'il ne cherche jamais à représenter."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Rien n'indique une intelligence rusée ou stratège chez les trois frères, contrairement à des figures comme Prométhée. Leur rôle dans le mythe est celui d'une puissance mobilisée au bon moment par une intelligence extérieure — celle de Zeus, qui comprend seul la valeur de leur libération.[1] Leur force semble se suffire à elle-même, sans qu'un projet propre leur soit jamais attribué."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Les trois Hécatonchires forment une fratrie unique, née une seule fois d'Ouranos et de Gaïa aux côtés des Cyclopes et des Titans.[1] Aucune descendance directe n'est associée à Cottos ou à Gygès. Briarée, en revanche, se voit attribuer par certaines traditions une fille, Eubée, qui aurait donné son nom à l'île grecque, ainsi qu'une union avec Cymopolée, fille de Poséidon.[1] Ce sont là les seules ramifications généalogiques attestées."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Une force de cette ampleur n'a, dans le mythe, ni prédateur ni rival naturel : les Hécatonchires ne craignent que l'enfermement lui-même, celui que leur inflige d'abord Ouranos. Leur seule vulnérabilité est donc politique plutôt qu'animale — dépendre du bon vouloir d'un dieu plus jeune pour retrouver la liberté et l'usage de leur puissance."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Aucun objet, aucun sanctuaire ne s'est jamais attaché au culte des Hécatonchires : ils appartiennent à la cosmogonie plus qu'au culte vivant des cités grecques. Leur seule trace matérielle est textuelle — les vers d'Hésiode, les mentions homériques de Briarée, les récits tardifs qui tentent de les raccrocher à d'autres légendes, comme celle de l'Etna.[1]",
+        "Ce qui persiste, à travers les siècles, c'est moins une image qu'une idée : celle d'une force si excessive qu'elle doit être tenue captive avant de pouvoir servir. Bien après l'Antiquité, la figure du géant aux cent bras continue de nourrir la représentation d'une puissance primordiale, trop grande pour le monde qui l'a engendrée, et qu'il faut apprivoiser plutôt que vaincre."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Hecatoncheires — mythologie grecque, généalogie et rôle dans la Titanomachie, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Hecatoncheires"
+      }
+    ]
+  },
+  "hobgobelin": {
+    "description": "Le hob balaie la maison pendant la nuit et n'en demande qu'un peu de pain : le folklore anglais tient à cette distinction, presque oubliée, entre le lutin serviable et le gobelin qui ne l'est pas.",
+    "sections": {
+      "fascination": [
+        "Un petit être velu, entré dans la maison sans y avoir été invité, qui époussette et repasse pendant que la famille dort, et qui se contente pour salaire d'un peu de nourriture laissée à son intention : c'est cette image domestique, presque tendre, qui distingue le hobgobelin de la plupart des créatures redoutées du folklore anglais.[1] Il ne s'agit pas d'un monstre à combattre, mais d'un cohabitant à ménager — le merveilleux, ici, tient à la proximité plutôt qu'à la menace.",
+        "Cette proximité reste pourtant fragile. Le hobgobelin s'irrite pour des raisons que l'humain ne maîtrise pas toujours, et peut alors devenir, selon les récits, effrayant ou même dangereux.[1] Le même être qui ordonne un foyer peut, d'un jour à l'autre, se retourner contre ses hôtes ; c'est cette instabilité de tempérament, plus que sa taille modeste, qui donne au personnage son épaisseur."
+      ],
+      "legendes": [
+        "Le nom vient de « hob », un terme dont l'usage écrit le plus ancien remonte à environ 1530, et qui fonctionnait probablement comme un diminutif familier — une manière rustique de désigner un esprit sans le nommer trop précisément, peut-être en écho à « Robert » ou à « Robin ».[1] Cette étymologie affectueuse tranche avec la charge souvent négative du mot « gobelin » auquel il est accolé, et résume à elle seule l'ambiguïté du personnage : un esprit qu'on appelle par un petit nom, tout en se méfiant de lui.",
+        "La distinction avec le goblin proprement dit structure tout le folklore anglais sur ce point : là où le goblin est généralement malveillant, le hobgobelin appartient à la famille des esprits domestiques utiles, aux côtés du brownie dont il partage largement les habitudes.[1] Confondre les deux, comme le font parfois les traductions modernes, revient à effacer une nuance que les conteurs anglais tenaient pour essentielle.",
+        "La figure la plus célèbre du type reste Robin Goodfellow, popularisé par le théâtre élisabéthain. Shakespeare, dans Le Songe d'une nuit d'été, identifie explicitement son personnage de Puck à cette catégorie de hobgobelin, lui prêtant des pouvoirs de métamorphose et un goût prononcé pour la farce.[1] Par ce détour théâtral, le hobgobelin quitte le seul cercle du conte rural pour entrer dans la littérature savante, sans jamais renoncer à son caractère facétieux.",
+        "Un trait récurrent des récits populaires veut qu'offrir des vêtements neufs à un hobgobelin le fasse disparaître à jamais du foyer qu'il servait — que ce soit par une vexation, la nudité imposée révélant sa condition de serviteur, ou par une forme de fierté blessée que les conteurs eux-mêmes n'expliquent pas de façon unanime.[1] Le don, pourtant généreux en apparence, rompt le pacte tacite qui liait l'esprit à la maison."
+      ],
+      "anomalies": [
+        "Le jeu de rôle moderne, en premier lieu Donjons et Dragons, a profondément déplacé l'image du hobgobelin en la retirant de son cadre domestique originel. Il en fait un grand humanoïde à la peau orangée ou rouge-orangé, membre d'un peuple guerrier organisé selon une hiérarchie militaire rigide, où chaque individu — soldat, forgeron, messager ou cuisinier — sert la légion avant de se servir lui-même.[2][3] Cette version ne garde du folklore que le nom : le petit esprit balayeur des chaumières anglaises devient un légionnaire discipliné, mû par une dévotion guerrière envers son dieu Maglubiyet.",
+        "Cette évolution ludique n'invente pas un lien avec l'ancien hob rural, elle le remplace. Aucune continuité narrative n'explique le passage du serviteur nocturne au soldat en cotte de mailles ; les deux figures coexistent dans la culture contemporaine sous le même nom, sans que l'une ne dérive logiquement de l'autre. Traiter les légions de hobgobelins du jeu de rôle comme une suite naturelle du folklore anglais serait donc une erreur de généalogie, malgré la commodité du nom partagé.[1][3]"
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle du hobgobelin doit distinguer nettement l'esprit domestique du folklore anglais, sujet de cette notice, et le peuple guerrier du jeu de rôle moderne, retenu ici uniquement en contrepoint pour éclairer un usage contemporain du même nom.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Le hobgobelin traditionnel accomplit des tâches ménagères pendant la nuit — épousseter, repasser, ranger — pour une famille qui ne le voit généralement jamais à l'œuvre.[1] Son humeur reste changeante : facétieux la plupart du temps, il peut se montrer soudain irritable, et cette irritation, mal comprise par les habitants de la maison, est souvent à l'origine des récits où il devient menaçant."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "Son milieu est la maison humaine elle-même, qu'il investit sans y être formellement invité, à la manière du brownie dont il partage largement le mode de vie.[1] Il ne semble pas avoir de demeure propre en dehors du foyer qu'il choisit de servir, ce qui le distingue des esprits sauvages attachés à un bois ou à une source."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Sa rétribution se limite traditionnellement à de la nourriture laissée à son intention par les habitants, jamais à un salaire en monnaie ni à des biens de valeur.[1] Cette sobriété alimentaire fait partie du contrat tacite qui le lie à la maisonnée : il travaille pour un peu de pain, non pour un trésor."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Le hobgobelin fait preuve d'assez de discernement pour choisir les foyers qu'il sert et pour réagir, parfois de façon disproportionnée, à ce qu'il perçoit comme une offense — en particulier le don de vêtements neufs, qui le pousse invariablement à quitter la maison.[1] Son intelligence est celle d'un esprit susceptible, attaché à des règles non écrites plutôt qu'à un raisonnement explicite."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Le folklore anglais ne décrit ni naissance ni filiation pour le hobgobelin domestique : c'est un type d'esprit récurrent plutôt qu'un individu doté d'une généalogie, à l'image de la plupart des esprits familiers des chaumières européennes."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Aucun prédateur naturel n'est attribué au hobgobelin traditionnel ; son seul véritable danger vient de l'incompréhension humaine, qui peut le blesser par une offrande maladroite ou le pousser à devenir hostile envers ceux qu'il servait auparavant.[1]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le personnage de Robin Goodfellow, fixé par le théâtre élisabéthain et notamment par Shakespeare, reste la relique littéraire la plus durable du hobgobelin anglais, transmettant jusqu'à aujourd'hui l'image d'un esprit farceur autant que serviable.[1]",
+        "Le mot lui-même a fini par déborder le folklore pour désigner, au sens figuré, une crainte ou une contrainte absurde à laquelle on se soumet sans raison — Emerson parlant d'une « cohérence stupide » comme du hobgobelin des esprits étroits.[1] Cette survie dans la langue courante montre combien la figure, née d'un petit esprit de maison, a fini par prêter son nom à des idées bien éloignées du seuil qu'elle balayait autrefois."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Hobgoblin — folklore anglais, distinction avec le goblin, Robin Goodfellow, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Hobgoblin"
+      },
+      {
+        "id": 2,
+        "title": "Hobgoblin — Monsters, D&D Beyond",
+        "url": "https://www.dndbeyond.com/monsters/16925-hobgoblin"
+      },
+      {
+        "id": 3,
+        "title": "How to Play Hobgoblins like Perfect Soldiers, D&D Beyond",
+        "url": "https://www.dndbeyond.com/posts/263-how-to-play-hobgoblins-like-perfect-soldiers"
+      }
+    ]
+  },
+  "hydre": {
+    "description": "Coupez une tête à l'Hydre, deux repoussent aussitôt : la créature de Lerne transforme le combat lui-même en piège, et sa défaite exige moins de force que d'intelligence.",
+    "sections": {
+      "fascination": [
+        "Aucun monstre grec ne renverse aussi nettement l'idée que la violence finit toujours par l'emporter. Face à l'Hydre, chaque coup d'épée aggrave la situation : chaque tête tranchée en fait naître deux nouvelles à sa place, et le combattant s'épuise dans une victoire qui recule à mesure qu'il croit avancer.[1] Le merveilleux tient à ce paradoxe presque mathématique, où la solution ne réside pas dans la puissance du bras mais dans un changement de méthode.",
+        "Le poison de son sang et le souffle de ses gueules ajoutent une seconde menace, plus insidieuse que les morsures elles-mêmes : l'air autour du marais devient hostile avant même le contact.[1] La bête n'a donc pas besoin d'attaquer pour être redoutable ; sa seule présence corrompt le lieu qu'elle habite, faisant des marais de Lerne un territoire où l'on meurt de respirer."
+      ],
+      "legendes": [
+        "Hésiode, dans sa Théogonie, fait de l'Hydre la fille de Typhon et d'Échidna, l'inscrivant ainsi dans une fratrie de monstres primordiaux nés aux marges du monde ordonné par Zeus.[1] Elle s'installe dans les marais de Lerne, un site que la tradition grecque associe à une entrée des Enfers, ce qui n'est sans doute pas un hasard : la créature garde un seuil autant qu'elle terrorise une région.",
+        "Le nombre de ses têtes n'a jamais fait consensus. Les fibules de bronze les plus anciennes, datées d'environ 700 avant notre ère, lui en donnent six ; le poète Alcée en fixe neuf ; des auteurs plus tardifs parlent de cinquante, quand d'autres renoncent à compter.[1] Cette instabilité du chiffre n'affaiblit pas le mythe : elle en confirme au contraire la nature, celle d'une prolifération qu'aucune description ne peut figer.",
+        "Le pouvoir de régénération, qui fait toute la difficulté du combat, n'apparaît pas dans les toutes premières versions du récit : c'est chez Euripide qu'il se précise, avec la règle devenue canonique de deux têtes pour une tranchée.[1] Le mythe s'est donc construit par étapes, chaque auteur ajoutant une contrainte qui rend l'exploit d'Héraclès plus remarquable.",
+        "Second des douze travaux imposés par Eurysthée, l'affrontement échoue tant qu'Héraclès s'en tient à l'épée seule. La victoire vient de l'aide de son neveu Iolaos, qui cautérise au brandon chaque cou sitôt une tête abattue, empêchant toute repousse.[1] La tête immortelle de l'Hydre, elle, ne peut être détruite : Héraclès l'enterre sous un rocher, neutralisée plutôt que vaincue. Il trempe ensuite ses flèches dans le sang empoisonné du monstre, faisant de sa dépouille une arme pour les épreuves à venir.",
+        "L'expression proverbiale « couper une tête d'hydre », employée dans la Grèce antique pour désigner un effort sans fin, montre combien le mythe a très tôt débordé le récit héroïque pour devenir une image du travail vain.[1] Bien avant les jeux de rôle modernes, l'Hydre était déjà une leçon autant qu'un monstre."
+      ],
+      "anomalies": [
+        "La régénération de l'Hydre pose une question rarement posée par les autres monstres du bestiaire grec : que reste-t-il d'un adversaire dont la blessure elle-même est une reproduction ? Trancher, ici, ne diminue pas la bête, cela la multiplie, à moins d'empêcher la plaie de se refermer normalement.[1] Le feu d'Iolaos ne tue pas l'Hydre : il l'empêche seulement de guérir selon sa propre logique, ce qui revient à combattre non la créature mais son pouvoir de guérison.",
+        "La tête centrale, immortelle, introduit une seconde anomalie : un être partiellement indestructible, dont on ne peut venir à bout qu'en le rendant inoffensif plutôt qu'en le supprimant. Héraclès l'enterre vivante sous une pierre, solution qui n'est ni une mise à mort ni une capture, mais un enfermement définitif.[1] L'Hydre grecque n'est donc jamais vraiment vaincue : elle est neutralisée, ce qui la distingue des monstres que le héros abat purement et simplement."
+      ],
+      "naturelle": {
+        "lead": "L'histoire naturelle de l'Hydre se limite presque entièrement au récit du deuxième travail d'Héraclès, seule source ancienne détaillée ; les traits qui suivent en découlent directement, sans qu'aucune tradition parallèle ne vienne les compléter ou les contredire.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "Rien dans le mythe ne prête à l'Hydre une ruse ou une intention propre : elle ne chasse pas, elle se défend, et c'est cette défense même, par la multiplication des têtes, qui constitue toute sa menace. Son comportement se réduit à une réaction mécanique à l'agression, ce qui en fait moins un prédateur qu'un piège vivant posé au cœur du marais."
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La créature occupe les marais de Lerne, dans le Péloponnèse, une région de sources et d'eaux stagnantes que la tradition rattache à une entrée du monde souterrain.[1] Ce cadre humide et confiné convient à un corps serpentin autant qu'à une légende : on n'y voit l'ennemi qu'au moment où il est déjà trop proche."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Aucune source ancienne ne décrit l'Hydre se nourrissant ; son activité connue se limite à ravager le bétail et les récoltes de la région de Lerne, provoquant les plaintes qui motivent l'intervention d'Héraclès. Le mythe s'intéresse à sa nuisance, non à sa subsistance."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "L'Hydre n'est dotée d'aucun discours ni d'aucune stratégie propres ; sa seule tête immortelle, souvent présentée comme la plus significative, ne parle pas davantage que les autres. Sa dangerosité ne vient pas d'un calcul, mais d'une capacité biologique qui déjoue par elle-même les plans de son adversaire."
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "C'est ici que l'Hydre se distingue de tout autre monstre du corpus grec : elle ne se reproduit pas au sens habituel, elle se répare en se multipliant. Chaque décapitation incomplète fait naître deux têtes nouvelles, un processus que seule la cautérisation immédiate de la plaie parvient à interrompre.[1]"
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Héraclès demeure le seul adversaire que la tradition lui attribue, et sa victoire dépend entièrement de l'assistance d'Iolaos : seul, le héros échoue face à la régénération. Le sang de l'Hydre, recueilli après le combat, devient à son tour une arme redoutable, dont Héraclès enduira ses flèches pour les épreuves suivantes.[1]"
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le sang empoisonné de l'Hydre survit au monstre lui-même dans plusieurs épisodes ultérieurs du mythe d'Héraclès : trempées dedans, ses flèches deviennent mortelles au moindre effleurement, jusqu'à causer, bien plus tard, la mort du centaure Nessos puis, indirectement, celle du héros. L'arme qui a vaincu l'Hydre reste ainsi chargée de sa nature vénéneuse longtemps après sa disparition.",
+        "Le nom de l'Hydre a traversé les siècles jusqu'aux bestiaires modernes du jeu de rôle, où le monstre à têtes multiples devient une créature jouable à part entière, dotée de règles précises de régénération et de décapitation.[1] Cette descendance ludique prolonge fidèlement l'intuition centrale du mythe grec, sans en constituer une transcription savante : elle en retient l'image plus que le texte."
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Lernaean Hydra — mythe, généalogie et travaux d'Héraclès, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Lernaean_Hydra"
+      }
+    ]
+  },
+  "ifrit": {
+    "description": "Sous les cendres et la fumée, l'Ifrit est le jinn le plus redouté de la tradition arabe : une puissance capable de défier un roi, et que même un sceau de Salomon ne suffit pas toujours à contenir.",
+    "sections": {
+      "fascination": [
+        "Il y a une scène, dans le Coran, qui suffit à mesurer la puissance de l'Ifrit : sommé d'apporter le trône de la reine de Saba avant que Salomon ne se lève de son siège, un ifrit parmi les djinns se propose aussitôt, certain de pouvoir tenir ce délai.[1] Le texte ne s'attarde pas sur son apparence ; il suffit qu'il soit nommé ifrit pour que sa capacité aille de soi. La créature est ainsi définie moins par une forme que par une réputation de force et de rapidité hors du commun.",
+        "Les récits des Mille et Une Nuits en tirent une figure autrement inquiétante : dans « Le Pêcheur et le Djinn », un ifrit enfermé dans une bouteille de cuivre par le sceau de Salomon jure, dans sa fureur, de tuer quiconque le libérera.[1] Cette image de la puissance captive, comprimée dans un objet dérisoire et prête à se déchaîner à la première ouverture, a fini par façonner jusqu'au génie occidental de la lampe merveilleuse, bien loin de sa source arabe."
+      ],
+      "legendes": [
+        "Le mot ifrit viendrait de la racine arabe ʿafara, « frotter de poussière » ou « rouler dans la terre », une étymologie qui ancre la créature dans la matière brute plutôt que dans l'éther.[1] Certains orientalistes occidentaux ont proposé un rapprochement avec l'avestique āfriti-, d'origine zoroastrienne, mais cette hypothèse reste débattue et ne fait pas consensus parmi les spécialistes.",
+        "Dans la classification des djinns, l'ifrit occupe une position ambiguë : ni catégorie strictement définie ni simple synonyme de démon, le terme fonctionne d'abord comme une épithète de puissance, comme le montre la formule coranique « un ifrit parmi les djinns ».[1] Le folklore islamique en a néanmoins fait une espèce reconnaissable, décrite comme une entité chthonienne des sept terres inférieures, façonnée de fumée et de feu sans flamme visible.",
+        "Les traditions marocaines lui prêtent des difformités monstrueuses : mains griffues ou couvertes d'épines, yeux flamboyants, parfois sept têtes.[1] L'ifrit peut posséder un être humain, lui conférant une force soudaine au prix de la raison ; en Égypte, la croyance populaire l'associe volontiers à l'esprit d'une personne assassinée, errant tant que son sang n'a pas trouvé vengeance."
+      ],
+      "anomalies": [
+        "Rien ne distingue plus nettement l'ifrit du djinn ordinaire que son rapport au sceau de Salomon : la légende veut que ce dernier ait pu enfermer des ifrits rebelles dans des récipients scellés, preuve indirecte qu'aucune force humaine seule n'aurait pu les contraindre.[1] Cette capacité de résistance, propre à sa classe, en fait le djinn qu'on cite en exemple quand on veut désigner le sommet de la hiérarchie invisible plutôt qu'une simple nuisance nocturne.",
+        "Sa métamorphose, bien réelle, reste selon la tradition inférieure à celle des djinns ordinaires : l'ifrit change de forme, mais moins aisément, comme si sa puissance brute se payait d'une souplesse réduite.[1] La créature la plus redoutée n'est donc pas nécessairement la plus habile ; elle l'emporte par la force et l'endurance, non par la ruse des transformations."
+      ],
+      "naturelle": {
+        "lead": "Aucun traité unique ne fixe l'histoire naturelle de l'ifrit : elle se reconstitue à partir du Coran, du folklore islamique diffus et des Mille et Une Nuits, trois sources qui se complètent sans toujours s'accorder sur les détails.",
+        "parts": [
+          {
+            "title": "Comportement",
+            "body": [
+              "L'ifrit se distingue par son insoumission : rebelle plus volontiers que serviteur, il n'obéit qu'à une contrainte magique supérieure, comme celle imposée par Salomon. Sa fureur, une fois libérée, reste disproportionnée à l'offense reçue, comme le montre le djinn de la bouteille prêt à tuer son propre libérateur.[1]"
+            ]
+          },
+          {
+            "title": "Habitat",
+            "body": [
+              "La tradition islamique le loge dans les sept terres inférieures, un monde souterrain distinct de la surface humaine, ainsi que dans les déserts, les ruines et les lieux désolés où l'on évite de s'attarder après la tombée du jour.[1] Certaines croyances égyptiennes le rattachent plus précisément aux lieux d'un meurtre violent."
+            ]
+          },
+          {
+            "title": "Alimentation",
+            "body": [
+              "Aucune source consultée ne décrit de régime alimentaire propre à l'ifrit ; sa nature de fumée et de feu sans flamme le situe hors des besoins organiques ordinaires, à la différence des créatures de chair du folklore voisin."
+            ]
+          },
+          {
+            "title": "Intelligence",
+            "body": [
+              "Sa capacité à négocier, à formuler des serments et à tenir parole — fût-ce pour promettre la mort — suppose un langage et une conscience de soi pleinement développés. L'épisode coranique du trône de Saba le montre en outre capable d'évaluer ses propres limites avec exactitude, puisqu'il chiffre lui-même le délai qu'il peut tenir.[1]"
+            ]
+          },
+          {
+            "title": "Reproduction",
+            "body": [
+              "Aucune tradition consultée ne détaille de mode de reproduction propre aux ifrits ; le folklore les traite comme une classe de djinns existant de tout temps plutôt que comme une lignée qui se transmettrait de génération en génération."
+            ]
+          },
+          {
+            "title": "Prédateurs",
+            "body": [
+              "Seule une autorité d'ordre magique ou prophétique semble en mesure de le contraindre : le sceau de Salomon reste, dans la tradition, le seul instrument capable d'enfermer un ifrit contre sa volonté.[1] Aucun adversaire naturel ne lui est attribué en dehors de ce pouvoir surnaturel supérieur."
+            ]
+          }
+        ]
+      },
+      "reliques": [
+        "Le motif du récipient scellé par un sceau prophétique, dans lequel patiente un ifrit assoiffé de vengeance, a voyagé bien au-delà du monde arabe : c'est de cette image, transmise par les traductions des Mille et Une Nuits, que dérive en grande partie l'imaginaire occidental du génie enfermé dans une lampe, prêt à exaucer ou à punir celui qui le libère.[1]",
+        "L'ifrit a également été repris par les bestiaires de la fantasy ludique moderne comme figure du djinn le plus puissant et le plus rebelle, prolongement fidèle de sa réputation islamique de force brute difficilement domptable, sans que cette reprise n'ajoute rien à la tradition religieuse et folklorique dont il est issu.[1]"
+      ]
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Ifrit — mythologie islamique et arabe, Coran et Mille et Une Nuits, Wikipédia",
+        "url": "https://en.wikipedia.org/wiki/Ifrit"
       }
     ]
   },

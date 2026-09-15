@@ -1,0 +1,358 @@
+{
+  "batch": "c3",
+  "reviewed": [
+    {
+      "slug": "goule",
+      "verdict": "revise",
+      "sha256": "cafef7ab9c04e217473f4ae6b6b4f165e1a83d78c1ab3725b61935a9b3c9f71f",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.reliques[0]",
+          "quote": "on le retrouve jusque dans certains noms d'étoiles et expressions modernes évoquant une présence inquiétante et changeante.[1]",
+          "detail": "L'article cité [1] (en.wikipedia/wiki/Ghoul, 62 464 caractères extraits) ne contient aucune occurrence de « star », « Algol », « constellation » ni « Beta Persei » : l'appel [1] ne porte pas l'affirmation. Le fait est exact par ailleurs (Algol vient de l'arabe ra's al-ghūl, « tête du ghoul » — confirmé par deux sources de contrôle, dont BBC Sky at Night Magazine), mais la phrase doit soit être coupée, soit rattachée à une source astronomique."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[3]",
+          "quote": "présente dès le volume Monsters & Treasure du coffret original de 1974 et reconduite depuis dans chaque édition.[4]",
+          "detail": "La page [4] (D&D Beyond, statblock du ghoul) ne contient ni « 1974 » ni « Monsters & Treasure » (0 occurrence sur 100 485 caractères extraits). Le fait est porté par la source [3] (Dungeons & Dragons Lore Wiki), qui est déclarée mais non appelée ici : « Original D&D Ghouls first appeared in Monsters & Treasure, in the original Dungeons & Dragons 3-Volume Set (1974) ». Repointer l'appel vers [3]."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "un coup porté à une cible déjà paralysée devient automatiquement critique.[4]",
+          "detail": "La seule trace sur la page [4] est un commentaire de lecteur ; la règle est dans le glossaire auquel le statblock renvoie (D&D Beyond, Rules Glossary : « Automatic Critical Hits. Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you. »). Rien de faux, mais l'ancrage est à préciser."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "protégés jadis par leurs divinités contre la fureur d'un seigneur démon",
+          "detail": "Le statblock de [4] porte l'immunité des elfes (« a creature other than an elf or undead ») mais pas le récit de la protection divine contre un seigneur démon : sur la page, ce lore n'apparaît que dans un commentaire de lecteur (récit de Doresain)."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Ghoul",
+          "status": "verified",
+          "claims_checked": "étymologie ghūl < ghāla « saisir » ; origine préislamique ; proie des voyageurs, des enfants ; sang et chair ; prise de l'apparence de la dernière victime ; Galland introduisant la goule en Europe (cimetières, festin de cadavres) ; Poe ; Lovecraft (race souterraine dégénérée) ; absence totale de mention d'un nom d'étoile.",
+          "evidence": "« The English word *ghoul* is from the Arabic غُول (*ghūl*), from غَالَ (*ghāla*) 'to seize'. » / « The creature also preys on young children, drinks blood, steals coins, eats the dead, and takes the form of the person most recently eaten. » / « It was not until Antoine Galland translated *One Thousand and One Nights* into French that the Western concept of ghouls was introduced into European society. Galland depicted the ghoul as a monstrous creature that dwelled in cemeteries, feasting upon corpses. » / « described by Edgar Allan Poe as \"neither man nor woman... neither brute nor human\" » / « In \"Pickman's Model\"... ghouls are members of a subterranean race. Their diet of dead human flesh mutated them into bestial humanoids able to carry on intelligent conversations with the living. »"
+        },
+        {
+          "source_id": 3,
+          "url": "https://dungeonsdragons.fandom.com/wiki/Ghoul",
+          "status": "inaccessible",
+          "claims_checked": "antériorité de la goule dans D&D (Monsters & Treasure, 1974) — vérifiée indirectement.",
+          "evidence": "Extraction directe impossible : la récupération renvoie le contenu d'une autre page (site en JavaScript). Extrait obtenu via l'index d'un moteur de recherche sur la même URL : « Original D&D Ghouls first appeared in Monsters & Treasure, in the original Dungeons & Dragons 3-Volume Set (1974). They have the power of paralyzing touch »."
+        },
+        {
+          "source_id": 4,
+          "url": "https://www.dndbeyond.com/monsters/16872-ghoul",
+          "status": "verified",
+          "claims_checked": "mécanique des griffes (jet de sauvegarde de Constitution DD 10, paralysie d'une minute, jet répété à chaque tour) ; immunité des elfes et des morts-vivants ; chasse en meute ; absence des mentions « 1974 » / « Monsters & Treasure ».",
+          "evidence": "« ***Claws.** Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns... » / « ghouls roam the night in packs, driven by an insatiable hunger for humanoid flesh. »"
+        }
+      ],
+      "style_check": "Français adulte et incarné, aucune consigne adressée à un auteur, distinction nette entre folklore arabe, littérature occidentale et jeu de rôle ; la partie Reproduction refuse explicitement d'inventer un cycle biologique. Défaut réel : deux appels [1] et [4] adossés à des pages qui ne portent pas l'affirmation."
+    },
+    {
+      "slug": "gremlin",
+      "verdict": "pass",
+      "sha256": "a62f03fe327f312cdb10247aac3a3d06ae9266adf970615ca7137f5aeae429c2",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "Le premier tirage de cinquante mille exemplaires se vend bien",
+          "detail": "La source donne bien 50 000 exemplaires (plus 30 000 vendus en Australie) mais ajoute que les premières réimpressions furent bloquées par la pénurie de papier de guerre ; « se vend bien » atténue le propos. Formulation à nuancer."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Gremlin",
+          "status": "verified",
+          "claims_checked": "argot de la RAF dans les années 1920 ; première trace imprimée (poème, journal Aeroplane, Malte, 10 avril 1929) ; Dahl (crash dans le désert occidental / Libye, transfert à Washington en janvier 1942, rédaction de The Gremlins) ; publication dans Cosmopolitan en décembre 1942 ; album Random House 1943 ; 50 000 exemplaires ; lecture par Eleanor Roosevelt ; abandon du projet Disney (droits) ; film de 1984 réalisé par Joe Dante et produit par Steven Spielberg.",
+          "evidence": "« Use of the term in the sense of a mischievous creature that sabotages aircraft first arose in Royal Air Force (RAF) slang... with the earliest printed record in a poem published in the journal *Aeroplane* in Malta on 10 April 1929. » / « In January 1942, he was transferred to Washington, D.C. as Assistant Air attaché at the British Embassy. It was there that he wrote his first children's novel, *The Gremlins*. » / « Disney managed to have the story published in the December 1942 issue of *Cosmopolitan* magazine. At Dahl's urging, in early 1943, a revised version... was published as a picture book by Random House. » / « The 1943 publication of *The Gremlins* by Random House consisted of 50,000 copies... the US First Lady Eleanor Roosevelt who read it to her grandchildren. » / « The film project was reduced to an animated short and eventually cancelled in August 1943, when copyright and RAF rights could not be resolved. » / « The 1984 film *Gremlins*, produced by Steven Spielberg and directed by Joe Dante, is loosely inspired by Roald Dahl's characters »."
+        }
+      ],
+      "style_check": "Voix tenue, sans tournure de bot. Les parties Alimentation, Reproduction et Prédateurs expliquent que le folklore aéronautique ne dit rien plutôt que de fabriquer une biologie : conforme à la grille. Une seule nuance factuelle mineure."
+    },
+    {
+      "slug": "grendel",
+      "verdict": "pass",
+      "sha256": "25175653d032f9a7465a0b8e854818ac12eeaeaa4d96805d4a40c20ac837be75",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "apparentés aux géants jötnar de la tradition nordique",
+          "detail": "La source [1] écrit seulement : « referred to as both an *eoten and a þyrs*, types of beings from wider Germanic mythology » ; le rapprochement explicite avec les jötnar provient de l'article Eoten, non de la source citée. À alléger ou à sourcer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[5]",
+          "quote": "une épée de fabrication gigantesque, retrouvée dans son propre repaire",
+          "detail": "[1] dit seulement « over whom he triumphs with a sword found there » ; l'épée « de fabrication géante » vient du poème mais n'est pas dans la source citée (l'article Grendel's mother n'est pas déclaré)."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Grendel",
+          "status": "verified",
+          "claims_checked": "haine du chant et de la joie de Heorot ; douze années d'attaques nocturnes ; consommation des guerriers tués ; Beowulf venu du pays des Geats ; combat sans arme ; arrachement du bras ; fuite et mort dans le marais ; généalogie caïnite ; termes eoten et þyrs ; tête si lourde qu'il faut quatre hommes ; bras décrit après la mort comme couvert d'écailles impénétrables ; Hroðgar le décrivant après sa mort comme vaguement humain mais plus grand ; mère sans nom ; dragon ; débat sur sa nature.",
+          "evidence": "« is \"harrowed\" by the sounds of singing that come every night from the mead hall of Heorot » / « Grendel continues to attack the Hall every night for twelve years, killing its inhabitants » / « he is referred to as both an *eoten and a þyrs*, types of beings from wider Germanic mythology » / « After Grendel's death, Hroðgar describes him as vaguely human in shape, though much larger » / « Grendel's severed head is also so large that it takes four men to transport it. Furthermore, when Grendel's torn arm is inspected it is described as being covered in impenetrable scales and horny growths. » / « Beowulf uses neither weapon nor armour in this fight. » / « Beowulf tears off Grendel's arm, mortally wounding the creature. Grendel flees but dies in his marsh den. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://en.wikipedia.org/wiki/Beowulf",
+          "status": "verified",
+          "claims_checked": "3 182 vers allitératifs ; Codex Nowell daté d'environ 975-1025 ; date de composition disputée ; auteur anonyme dit « poète de Beowulf » ; place de Tolkien dans l'histoire des études du poème.",
+          "evidence": "« an epic in the tradition of Germanic heroic legend consisting of 3,182 alliterative lines, contained in the Nowell Codex » / « The date of composition is a matter of contention among scholars; the only certain dating is for the manuscript, which was produced between AD 975 and 1025. » / « Scholars call the anonymous author the \"*Beowulf* poet\". » / « scholars including J. R. R. Tolkien (in his essay \"On Translating *Beowulf*\") »"
+        }
+      ],
+      "style_check": "Français soutenu, aucune consigne à auteur ; le parallèle entre la souffrance de Grendel et la joie humaine est tenu sans emphase inutile. Réserves seulement ponctuelles."
+    },
+    {
+      "slug": "griffon",
+      "verdict": "pass",
+      "sha256": "8d1b2b37af162cbc6c4a96b86f7f442125ad70a8189d7b80256a045c7d5fe66f",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Albert le Grand affirme que le griffon dépose des pierres d'agate parmi ses œufs pour en réguler la température",
+          "detail": "[1] précise qu'Albertus Magnus attribue cette croyance à d'autres auteurs (« attributes to other writers the claim ») et que le but est de « change the ambient temperature and enhance reproduction » : « affirme » est trop direct et « réguler la température » restreint le propos."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[0]",
+          "quote": "l'Égypte en grave sur des palettes à fard dès 3300-3100 avant notre ère",
+          "detail": "[1] mentionne le plus ancien griffon égyptien comme un relief sur la palette cosmétique (Two Dog Palette) de la période thinite, sans donner la fourchette 3300-3100 : la datation précise doit être sourcée (elle vient de la datation de la palette elle-même)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[1]",
+          "quote": "les textes arméniens et zoroastriens emploient Paskuč ou Baškuč",
+          "detail": "[1] ne donne que l'arménien Paskuč (employé pour traduire gryp dans la Septante) ; « Baškuč » et l'attribution aux textes zoroastriens n'y figurent pas."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Griffin",
+          "status": "verified",
+          "claims_checked": "motifs antérieurs à la Grèce (palette égyptienne, sceaux-cylindres mésopotamiens vers 3000 av. J.-C., Iran) ; apparition du gryps dans l'art grec vers 700 av. J.-C. par les répertoires néo-hittites ; Aristéas (VIIe siècle) rapporté par Hérodote et Eschyle ; Arimaspes borgnes gardant l'or ; rapprochement d'Eschyle avec des « chiens de Zeus » sans voix, d'où l'hypothèse d'un griffon sans ailes ; Ctésias le déplaçant vers l'Inde ; Pline premier à le dire ailé et long d'oreilles ; Apollonius de Tyane et ses pattes membraneuses ; agate dans le nid ; reliques (œufs d'autruche, cornes de bouquetin, plume en fibre de raphia) ; Isidore de Séville ennemi des chevaux ; noms šērdāl, Paskuč, tesh-tesh, sfr ; hypothèse Mayor sur les dinosaures contestée par Mark Witton ; Apollon et l'Hyperborée ; symbolisme chrétien du Christ homme et divin ; héraldique (keythong, Poméranie, Gênes, Pérouse).",
+          "evidence": "« Griffin-like animals were depicted on cylinder seals in Mesopotamia c. 3000 BC » / « the animal called the gryps, gryphon, or griffin in Greek writings did not appear in Greek art until about 700 BC... adapting the style of griffin current in Neo-Hittite art » / « The earliest classical writings on the topic were derived from Aristeas (7th century BC) and preserved by Herodotus and Aeschylus » / « Aeschylus likened the *gryps* to \"silent hounds of Zeus\" » / « Pliny the Elder (1st century) was the first to state explicitly that griffins were winged and long eared. But Apollonius of Tyana wrote that griffins did not have true bird wings, but membranous webbed feet » / « Albertus Magnus (d. 1280) attributes to other writers the claim that \"this bird places an 'eagle-stone' (*echytem*) or agate (*gagatem*) among its eggs\" to change the ambient temperature and enhance reproduction » / « The eggs were often ostrich eggs... The feather is a piece of forgery, an object crafted from raffia palm fiber » / « the two-feet claws that still remain on display have been identified as Alpine ibex horns » / « Isidore of Seville (7th century AD) wrote that griffins were a great enemy of horses » / « the griffin has come to be called *šērdāl*... meaning 'lion-eagle' » / « the Armenian term *Paskuč* that had been used to translate Greek *gryp* 'griffin' in the Septuagint » / « *tesh-tesh* meaning \"Tearer[-in-pieces]\"... and *sfr*/*srf* \"fiery one\" » / « Paleontologist Mark P. Witton contests this hypothesis. » / « Apollo rode a griffin to Hyperboria each winter leaving Delphi » / « came to be regarded in Christendom as a symbol of Jesus, who was both human and divine » / « In British heraldry, a male griffin is shown without wings, its body covered in tufts of formidable spikes » / « When Genoa emerged as a major seafaring power... griffins commenced to be depicted as part of the republic's »"
+        }
+      ],
+      "style_check": "Voix maîtrisée, hybride antique / médiéval / héraldique clairement séparé ; la partie Reproduction s'appuie sur les reliques attestées au lieu d'inventer une biologie. Réserves de précision seulement."
+    },
+    {
+      "slug": "grindylow",
+      "verdict": "revise",
+      "sha256": "62af35b9e28b9884ad1b89211b2c4cd4d1402d7397edc3926426eececd8f6e87",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[2]",
+          "quote": "Classé XX par le ministère de la Magie car aisément repoussé par un sortilège de Répulsion",
+          "detail": "La page déclarée [2] ne mentionne aucun sortilège et ne donne pas la raison du classement : elle porte seulement « MOM classification XX » et « for the wizarding community, they were classified as Dark creatures and were best avoided ». Le classement XX correspond officiellement à « inoffensif / peut être domestiqué ». Le sortilège existe bien dans le corpus (Jinx de Révulsion employé contre un grindylow — confirmé par une source de contrôle : « resulting in Harry repelling them with the Revulsion Jinx »), mais la citation [2] ne porte pas l'affirmation et la raison avancée n'est pas la raison officielle. À corriger (retirer la cause, ou citer une source qui la donne)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[2]",
+          "quote": "la version moderne lui attribue toutefois un goût pour les petits poissons, capturés grâce à ses doigts démesurément longs",
+          "detail": "Aucun appel [n] sur ce point et la page [2] ne le dit pas ; le fait est exact dans le corpus (entrée officielle des Animaux fantastiques : « It feeds on small fish », reprise par plusieurs sources de contrôle). Ajouter l'appel et la source."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "Le film de la Coupe de Feu lui invente même des tentacules absentes des romans",
+          "detail": "Exact d'après les sources de contrôle (« In the film adaptation of Harry Potter and the Goblet of Fire, the Grindylow is a small creature with tentacles ») mais sans source déclarée : à sourcer ou à retirer."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[1]",
+          "quote": "où la créature niche dans les herbiers immergés",
+          "detail": "Détail absent de [1] comme de [2] (la page officielle ne donne que « British and Irish Lakes »)."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://en.wikipedia.org/wiki/Grindylow",
+          "status": "verified",
+          "claims_checked": "créature du Yorkshire et du Lancashire ; nom rapproché de Grendel, attesté dans des chartes vieil-anglaises en lien avec des mares, marécages et lacs ; apparence (petit humanoïde, peau écailleuse verdâtre, griffes et dents, longs bras filiformes et doigts démesurés) ; attente dans les mares pour saisir les enfants et les entraîner sous l'eau ; usage pédagogique pour éloigner les enfants des points d'eau ; Peg Powler, Nelly Longarms, Jenny Greenteech.",
+          "evidence": "« Grindylow or Grundylow is a creature in the counties of Yorkshire and Lancashire. The name is thought to be connected to Grendel, a name or term used in *Beowulf* and in many Old English charters where it is seen in connection with meres, bogs and lakes. » / « They are described as diminutive humanoids with scaly skin, a greenish complexion, sharp claws and teeth, and long, wiry arms with lengthy fingers at the end. They are said to dwell in ponds and marshes waiting for unsuspecting children » / « Grindylows have been used as shadowy figures to frighten children away from pools, marshes, or ponds where they could drown. » / « Peg Powler, Nelly Longarms, and Jenny Greenteeth are similar water spirits. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.harrypotter.com/fact-file/creatures/grindylow",
+          "status": "verified",
+          "claims_checked": "créature aquatique des îles Britanniques ; peau vert pâle, cornes courtes et pointues, dents vertes ; doigts longs et cassants servant à étrangler ; classement XX ; domestication par les Sirènes ; enseignement par Lupin en Défense contre les forces du Mal ; lacs britanniques et irlandais. Ne porte ni sortilège, ni régime de petits poissons.",
+          "evidence": "« Underwater creatures native to the British Isles, Grindylows were pale green in colour, had sharp little horns, green teeth... Aggressive towards humans, Grindylows preferred to use their long brittle fingers to strangle their victims... Occasionally, Grindylows could be tamed by merpeople to be kept as pets... Nonetheless, Remus Lupin taught his class about Grindylows during his tenure as Defence Against the Dark Arts teacher. » / « ### [MOM classification](/fact-file/magical-miscellany/ministry-of-magic-classifications) XX » / « ### Typical Habitats British and Irish Lakes »"
+        }
+      ],
+      "style_check": "Voix correcte, distinction folklore anglais / fiction moderne tenue. Problème de fond : une mécanique de fiction (le sortilège expliquant le classement XX) est ancrée sur une page qui ne la contient pas."
+    },
+    {
+      "slug": "guenaude",
+      "verdict": "revise",
+      "sha256": "491ff5fb7bdab2bfb95250b6857b9b6a857f55e8a9ae06c1b59ee8f464912879",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.anomalies[1]",
+          "quote": "insistent sur son alignement neutre mauvais et sur son goût pour la manipulation d'autres créatures à son service, ce qui l'éloigne",
+          "detail": "La page citée [1] (D&D Beyond, Green Hag) ne contient ni alignement ni texte de lore : elle se limite au statblock, aux tags (« Monster Tags: Hag ») et aux habitats (« Habitat: Forest Hill Swamp »). L'alignement neutre mauvais est exact — confirmé par une source de contrôle (SRD 5e : « *Medium fey, neutral evil* ») — mais la phrase « les sources qui la documentent insistent sur... » n'est adossée à aucune source consultable, et le volet « manipulation d'autres créatures à son service » n'apparaît nulle part dans la source déclarée (le texte de lore du Manuel des monstres n'est pas accessible gratuitement). Soit s'appuyer sur le SRD pour l'alignement et retirer le volet manipulation, soit rattacher ces deux points à une source de lore consultable."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[1]",
+          "quote": "Elle privilégie les forêts dépérissantes, les marécages solitaires et les landes brumeuses, où elle installe son repaire dans une grotte à l'écart de tout regard.[1]",
+          "detail": "La page [1] ne porte que les habitats « Forest Hill Swamp » : « dépérissantes », « solitaires », « landes brumeuses » et surtout l'antre « dans une grotte » viennent du lore non accessible. À rattacher à une source ou à alléger."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.anomalies[0]",
+          "quote": "82 points de vie, une classe d'armure de 17 et une attaque de griffe capable d'infliger 13 points de dégâts tranchants",
+          "detail": "Les 13 points tranchants figurent bien dans le statblock extrait (« *Hit:* 13 (2d8 + 4) slashing damage ») ; la CA et les PV ne sont pas dans le texte récupéré (ils sont dans l'en-tête graphique du statblock) mais sont exacts — confirmés par une source de contrôle (SRD 5e : « Armor Class 17 (natural armor) / Hit Points 82 (11d8 + 33) »). Rien à corriger sur le fond."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://www.dndbeyond.com/monsters/16911-green-hag",
+          "status": "verified",
+          "claims_checked": "capacités amphibie, imitation des voix (test de Perspicacité DD 14), sorts innés (lumières dansantes, illusion mineure, moquerie cruelle), attaque de griffes (+6 ; 13 (2d8+4) tranchants), fausse apparence qui ne résiste pas à l'inspection physique, invisibilité ne laissant aucune trace ; habitats forêt / colline / marais ; tags Hag. Ne porte ni alignement, ni lore de repaire, ni goût pour la manipulation d'autrui.",
+          "evidence": "« ***Mimicry.*** The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom (Insight) check. » / « At will: dancing lights, minor illusion, vicious mockery » / « ***Claws.** Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8 + 4) slashing damage. » / « ***Illusory Appearance.*** ... The changes wrought by this effect fail to hold up to physical inspection. » / « ***Invisible Passage.*** The hag magically turns invisible until she attacks or casts a spell... While invisible, she leaves no physical evidence of her passage » / « Monster Tags: Hag Habitat: ForestHillSwamp »"
+        }
+      ],
+      "style_check": "Voix dense et incarnée, aucune consigne adressée à un auteur. Deux séries d'affirmations (alignement et manipulation d'autrui ; repaire en grotte) sont présentées comme adossées à la source citée alors que celle-ci n'est qu'un statblock."
+    },
+    {
+      "slug": "guerrier",
+      "verdict": "revise",
+      "sha256": "9ffdf99f95d73b458315489e01333ea8b8e9967ad32dfcbf74a5459c995fbd17",
+      "issues": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[0]",
+          "quote": "les premiers chevaliers apparaissent à la cour de Charlemagne, fondateur de ce qui deviendra le Saint-Empire romain germanique, en croisant les traditions guerrières germaniques et l'héritage des légionnaires romains.[1]",
+          "detail": "La page citée [1] ne contient aucune occurrence de « Charlemagne », « Roman », « legion » ni rien sur l'origine des chevaliers : elle traite l'archétype jungien (courage, discipline, honneur, force, protection) et cite chevaliers et samouraïs comme simples exemples d'archétype. L'affirmation est de surcroît fragile historiquement : la chevalerie se forme aux Xe-XIe siècles et le Saint-Empire est traditionnellement daté d'Otton Ier (962). À couper ou à ressourcer solidement."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[0]",
+          "quote": "l'armure de plates, parfois estimée à plus de quarante-cinq kilogrammes",
+          "detail": "Chiffre absent des deux sources déclarées ([1] : aucune occurrence de « 45 », « kilogram », « pound » ; [2] n'aborde pas la question). Le chiffre de 45 kg est en outre contraire aux estimations habituelles (20 à 25 kg pour une armure de plates complète). À retirer ou à sourcer."
+        },
+        {
+          "severity": "major",
+          "blocking": true,
+          "location": "sections.legendes[1]",
+          "quote": "les guerriers des Grandes Plaines nord-américaines comptent parmi les membres les plus honorés de leur tribu, et que les Zoulous, sous le roi Shaka, se distinguent par leurs innovations militaires et leur bravoure.[1]",
+          "detail": "Aucune de ces mentions dans [1] (0 occurrence de « Zulu », « Shaka », « Plains »), ni dans [2], qui ne traite que hoplites, Immortels perses, centurions, Garde prétorienne, samouraïs, ninjas, chevaliers médiévaux, Templiers, Teutoniques et Hwarang. L'appel [1] ne porte pas l'affirmation ; ces exemples ne sont adossés à aucune source déclarée."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[3]",
+          "quote": "les centurions romains doivent former les légionnaires, répartir les tâches et maintenir l'ordre, un exercice qui exige autant de jugement que de force brute.[1]",
+          "detail": "Le contenu vient de [2] (World History Encyclopedia : « centurions were responsible for training legionaries, assigning duties, and maintaining discipline amongst the ranks »), pas de [1]. Repointer l'appel ; la phrase suivante sur la « maîtrise de soi » du samouraï n'apparaît dans aucune des deux sources."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://nofilmschool.com/warrior-archetype",
+          "status": "verified",
+          "claims_checked": "archétype jungien universel ; attributs (courage, discipline et compétence, honneur et intégrité, force et résilience, vocation protectrice, affrontement des défis, sacrifice, leadership) ; chevaliers médiévaux et samouraïs comme exemples d'archétype à travers les cultures. Ne contient ni Charlemagne, ni l'origine de la chevalerie, ni poids d'armure, ni bushido, ni Zoulous, ni guerriers des Plaines.",
+          "evidence": "« In the framework of Carl Jung's archetypal theory, the warrior archetype is considered a universal symbol in the human psyche » / « It's a pillar of bravery, strength, and the unyielding pursuit of justice. » / « 5. **Protective Nature:** Warriors often take on the role of protectors » / « From the chivalrous knights of medieval Europe to the Samurai of feudal Japan, each iteration of the warrior archetype reflects the values and beliefs of its time and culture. » — et vérification par recherche exhaustive du texte extrait : 0 occurrence de « Charlemagne », « bushido », « Zulu », « Shaka », « Plains », « centurion », « hoplite » et d'aucun poids d'armure."
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.worldhistory.org/collection/63/elite-warriors-in-history/",
+          "status": "verified",
+          "claims_checked": "hoplites grecs en phalange impénétrable ; centurions formant et encadrant les légionnaires ; Garde prétorienne à l'armure flamboyante et à la solde triplée protégeant l'empereur ; Garde varègue byzantine armée de haches entourant les empereurs.",
+          "evidence": "« The Greeks had their hoplites with heavy armour and large round shields who could work together to form an impenetrable battle line: the phalanx. » / « Reporting to the tribunes, centurions were responsible for training legionaries, assigning duties, and maintaining discipline amongst the ranks. » / « the Praetorian Guard, with their flashy armour and triple pay, protected the emperor. Byzantine emperors took similar precautions and surrounded themselves with huge axe-wielding Vikings: the Varangian Guard. »"
+        }
+      ],
+      "style_check": "La voix tient et les parties Comportement / Habitat / Intelligence s'appuient correctement sur [2] ; mais deux paragraphes entiers de legendes attribuent à [1] des faits que cette source ne contient pas — c'est le défaut le plus lourd du lot."
+    },
+    {
+      "slug": "gueteur",
+      "verdict": "pass",
+      "sha256": "91255cf04bebb966a48d2d01ee30fa5b134f812d54948a58a568ca2fc12d2e3f",
+      "issues": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "chargés d'arrêter les mendiants, les ivrognes et les locataires indélicats surpris dans les rues après l'heure permise",
+          "detail": "Les « locataires indélicats » viennent bien de [1] (« enlèvements de meubles par locataires pour frustrer leurs hôtes »), mais ni les mendiants ni les ivrognes n'apparaissent dans [1] ou [2] : ajout non sourcé (les sources parlent des brigands, du feu, des vols, des violences)."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[2]",
+          "quote": "connus sous le nom de cris du guet",
+          "detail": "L'expression ne se trouve ni dans [1] ni dans [2] ; le fait général (le guet annonce les heures) est attesté ailleurs, mais pas dans les sources déclarées. À sourcer ou à reformuler."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.naturelle.parts[3]",
+          "quote": "estimer une heure à l'position des étoiles",
+          "detail": "Coquille : lire « à la position des étoiles »."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "location": "sections.legendes[3]",
+          "quote": "hérite de cette longue histoire administrative plus que d'aucune légende [1][2]",
+          "detail": "Les faits précis de toute la section (ordonnance de 595, institution de 1254, huit postes de six hommes en 1364, passage aux archers en 1559, fusion de 1750) ne reposent que sur un bloc d'appels rejeté en fin de section, avec une espace avant le crochet. Ancrer au moins la note de 595 : je l'ai vérifiée sur le wikitexte de la source."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": 1,
+          "url": "https://fr.wikipedia.org/wiki/Guet_royal",
+          "status": "verified",
+          "claims_checked": "guet royal institué à Paris en décembre 1254 par Louis IX ; ordonnance de Clotaire II de 595 réglant l'exercice du guet de nuit ; guet assis (corps de garde fixes fournis par les bourgeois) et guet royal mobile, commandés par le chevalier du guet sous l'autorité du prévôt de Paris ; service de l'heure du couvre-feu au lever du soleil ; huit postes de six hommes en 1364 (ordonnance de Jean II le Bon), du Châtelet à la cour du palais ; régime obligatoire et non rémunéré, exemptions croissantes ; suppression du guet bourgeois et des métiers en 1559 et remplacement par des archers ; fusion en une garde de Paris unique en 1750 et disparition du guet.",
+          "evidence": "« Le **guet royal** était une unité de sécurité instituée à Paris en décembre 1254 par Louis IX » / extrait du wikitexte : « Une ordonnance Clotaire II de l'an 595 en règle l’exercice : * Il établit le guet de nuit par les habitants de chaque quartier, sous des peines capables de les rendre attentifs à ce devoir urbain » / « c’était le *guet assis,* qui formait des corps-de-garde fixes. Le guet royal faisait les rondes. » / « Ce service commençait à l'heure du couvre-feu et se terminait au lever du soleil. » / « En 1364, le guet des métiers était disposé comme suit... Chaque poste compte six hommes. Il y a 8 postes en tout » / « celle-ci est obligatoire, mais non rémunérée » / « la garde bourgeoise comme le guet des métiers sont supprimés en 1559 et remplacés par deux cent quarante archers » / « aboutit à la fusion des deux en une garde de Paris unique en 1750, et à la disparition du guet. »"
+        },
+        {
+          "source_id": 2,
+          "url": "https://www.histoires-de-paris.fr/couvre-feu-moyen-age/",
+          "status": "verified",
+          "claims_checked": "couvre-feu sonné à neuf heures à Paris au XIVe siècle ; patrouille du chevalier du guet et de ses archers avec flambeaux et hallebardes ; dangers nocturnes (boues, brigands) ; clocheteurs des trépassés annonçant les défunts.",
+          "evidence": "« Au XIVe siècle, les cloches qui sonnaient les neuf heures annonçaient la mise en place d’un couvre-feu dans Paris » / « le guet parcourait les rues. Le chevalier du guet et ses archers faisaient la patrouille à grands renforts de flambeaux et de hallebardes. » / « C’étaient les clocheteurs des trépassés, avec leurs robes blanches... »"
+        }
+      ],
+      "style_check": "Voix posée et convaincante, aucun tic de rédaction automatique. Le socle documentaire est solide (j'ai revérifié la note de 595 sur le wikitexte) ; quelques ajouts narratifs mineurs et une coquille restent à corriger, sans que cela bloque la publication."
+    }
+  ]
+}
