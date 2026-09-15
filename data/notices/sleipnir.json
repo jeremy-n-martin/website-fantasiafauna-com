@@ -1,0 +1,35 @@
+{
+  "description": "Huit jambes pour parcourir neuf mondes : Sleipnir n'est pas seulement le plus rapide des chevaux, il est la monture qui relie les vivants aux morts.",
+  "sections": {
+    "fascination": [
+      "Un cheval à huit jambes ne trotte pas simplement plus vite qu'un autre : il change de catégorie. La Prose Edda fait dire à Hárr, l'une des voix de la sagesse divine, que Sleipnir est le meilleur des chevaux et qu'il possède huit jambes — une affirmation posée sans autre justification, comme une évidence mythologique.[1] Le nombre lui-même intrigue : ni quatre, ni six, mais huit, comme si la vitesse exigeait de doubler l'anatomie ordinaire plutôt que de simplement l'améliorer.",
+      "Sa fonction dépasse la course. Lorsque Hermóðr doit se rendre au royaume de Hel pour tenter de ramener Baldr d'entre les morts, c'est Sleipnir qu'on va chercher et qu'on lui confie.[1] Le cheval devient alors un passage vivant entre les plans, capable de porter un dieu jusqu'aux portes du royaume des trépassés et de l'en ramener. Peu de montures, dans une mythologie quelconque, cumulent à ce point la rapidité et le privilège d'aller où les vivants ne devraient pas s'aventurer."
+    ],
+    "legendes": [
+      "La naissance de Sleipnir tient du récit le plus délibérément déconcertant de la mythologie nordique. Selon la Prose Edda, un bâtisseur anonyme s'engage à ériger les fortifications d'Ásgard en un temps record, aidé du seul étalon Svaðilfari, contre la promesse d'épouser la déesse Freyja si le délai est tenu. Pour faire échouer le pari, Loki se change en jument et détourne l'attention de Svaðilfari ; quelque temps plus tard, Loki donne naissance à un poulain gris à huit jambes.[1] Le dieu rusé devient ainsi, dans le texte même, mère d'un des animaux les plus prestigieux du panthéon.",
+      "Ce poulain grandit pour devenir la monture personnelle d'Odin, seul assez digne pour porter le père des dieux à travers les neuf mondes.[1] Les pierres gravées de Gotland, datées du VIIIe siècle, montrent déjà un cavalier sur un cheval aux jambes multiples, preuve que l'image circulait dans l'imaginaire scandinave bien avant la mise par écrit des Eddas aux XIIIe siècle.[1] Le mythe et l'archéologie se répondent ainsi à plusieurs siècles de distance, sans que l'un dépende entièrement de l'autre.",
+      "Le rôle de psychopompe de Sleipnir se confirme dans l'épisode de Hermóðr : le messager chevauche neuf nuits à travers des vallées sombres et profondes avant d'atteindre le fleuve Gjöll et le pont qui mène à Hel.[1] Seul un cheval capable de franchir la frontière entre les mondes pouvait accomplir un tel trajet sans se perdre ni périr en chemin."
+    ],
+    "anomalies": [
+      "La filiation de Sleipnir déroute par son double renversement : son père est un étalon ordinaire, Svaðilfari, mais sa mère est un dieu masculin métamorphosé en jument.[1] Aucune généalogie humaine ne prépare à cette confusion volontaire des sexes et des espèces, qui place Sleipnir hors de toute lignée équine normale dès sa conception.",
+      "Le nombre de ses jambes reste, dans les textes, un fait asserté plutôt qu'expliqué : ni la Prose Edda ni la Poetic Edda ne détaillent pourquoi huit membres rendent un cheval supérieur, ni comment leur coordination fonctionne. L'anomalie est acceptée comme un attribut de rang plutôt que discutée comme une curiosité biologique.[1]"
+    ],
+    "naturelle": {
+      "lead": "Sleipnir occupe une place unique dans la mythologie nordique : cheval, monture divine et véhicule entre les mondes, il échappe à toute classification animale simple. Les sources s'accordent sur ses attributs sans toujours les expliquer.",
+      "parts": [
+        {"title": "Comportement", "body": ["Sleipnir répond à un seul maître véritable, Odin, et se laisse aussi confier à des messagers en mission cruciale, comme Hermóðr lors de sa chevauchée vers Hel.[1] Rien dans les textes ne suggère une nature indocile : sa fidélité semble aussi absolue que sa vitesse."]},
+        {"title": "Habitat", "body": ["Aucun pâturage fixe ne lui est attribué ; son territoire, ce sont les neuf mondes eux-mêmes, qu'il parcourt au service d'Odin.[1] Il appartient moins à un lieu qu'à un réseau de chemins reliant les royaumes divins, humains et infernaux."]},
+        {"title": "Alimentation", "body": ["Les sources ne mentionnent aucun régime particulier pour Sleipnir ; sur ce point, comme souvent pour les montures mythiques, le texte s'intéresse à ce qu'il accomplit plutôt qu'à ce qui le nourrit."]},
+        {"title": "Intelligence", "body": ["Rien n'indique un langage ou un raisonnement propre à Sleipnir ; sa valeur tient à sa vitesse et à sa capacité de franchir les frontières entre les mondes plutôt qu'à une intelligence distincte de celle d'un cheval ordinaire.[1]"]},
+        {"title": "Reproduction", "body": ["Sa naissance demeure un événement unique et non reproductible dans le corpus : né de Loki métamorphosé en jument et de l'étalon Svaðilfari, Sleipnir n'a pas de lignée connue ni de descendance attestée dans les Eddas.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucune source ne lui prête d'ennemi naturel : sa vitesse et son statut de monture d'Odin le placent hors d'atteinte des dangers ordinaires du bestiaire nordique."]}
+      ]
+    },
+    "reliques": [
+      "Les pierres gravées de Gotland portant un cavalier sur un cheval à jambes multiples restent le principal témoignage matériel antérieur aux textes eddiques, preuve que l'image de Sleipnir circulait dans la culture scandinave dès le VIIIe siècle.[1] Aucune relique cultuelle propre à l'animal n'a cependant été identifiée : sa mémoire survit par le récit plus que par l'objet."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Sleipnir — Wikipédia (naissance, Prose Edda, Poetic Edda, pierres de Gotland)", "url": "https://en.wikipedia.org/wiki/Sleipnir"}
+  ]
+}

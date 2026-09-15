@@ -1,0 +1,35 @@
+{
+  "description": "Depuis l'ouest, en croissant comme un vol d'oiseaux, la horde des morts sans pardon traverse le ciel nocturne : le sluagh ne frappe pas à la porte, il la survole.",
+  "sections": {
+    "fascination": [
+      "Un fantôme isolé hante une maison ; le sluagh, lui, envahit le ciel entier. Cette horde des morts non pardonnés se déplace en formation, souvent décrite comme un croissant semblable à une nuée d'oiseaux migrateurs, ce qui donne à la mort elle-même une silhouette collective et mouvante.[1] L'effroi ne vient pas d'un visage précis mais du nombre : ce ne sont pas des esprits, c'est une armée.",
+      "Le sluagh conserve pourtant une ambiguïté qui le distingue d'un simple présage funeste. Le folkloriste Lewis Spence rapporte que, dans les îles occidentales d'Écosse, on le confondait avec l'hôte féerique, et que la fête des morts à la Toussaint coïncidait avec la fête des fées elles-mêmes.[1] Cette porosité entre morts errants et peuple féerique brouille une frontière que d'autres traditions tiennent pour étanche."
+    ],
+    "legendes": [
+      "Le nom sluagh vient du vieil irlandais slúag, qui désigne une armée, une troupe ou une assemblée, lui-même issu d'une racine proto-celtique.[1] L'étymologie seule annonce le trait central de la créature : elle n'existe jamais au singulier véritable, mais comme multitude organisée, ainsi que le confirment les variantes sluagh, slógh ou sluag relevées selon les régions.",
+      "Dans les traditions irlandaises et écossaises, le sluagh regroupe les âmes des trépassés qui n'ont pas obtenu le repos, condamnées à voler ensemble à travers les airs.[1] Cette errance collective en fait une figure distincte du revenant solitaire : il ne s'agit pas d'un mort qui refuse de partir, mais d'une multitude qui n'a jamais été admise nulle part, ni au ciel ni sous la terre.",
+      "Les récits recueillis décrivent une horde capable d'aborder les vivants de n'importe quelle direction et de les emporter sur de grandes distances à travers le ciel, y compris d'une île à l'autre.[1] Le danger tient moins à une attaque frontale qu'à cet enlèvement aérien, brutal et sans recours, qui efface d'un coup la distance protectrice entre le foyer et le large."
+    ],
+    "anomalies": [
+      "Le sluagh occupe une position instable entre deux catégories que le folklore distingue ailleurs avec soin : les morts et le peuple féerique. Spence note leur assimilation dans certaines régions des Hébrides, où la fête des morts et la fête des fées se confondent en une seule célébration à la Toussaint.[1] Aucune tradition unique ne tranche s'il faut voir dans le sluagh une catégorie de fantômes ou une variété d'hôte surnaturel.",
+      "Contrairement à l'image d'une horde uniquement malfaisante, certains récits lui prêtent occasionnellement le geste inverse : sauver un humain en péril plutôt que le ravir.[1] Cette exception rare complique le portrait d'une créature autrement présentée comme une menace constante."
+    ],
+    "naturelle": {
+      "lead": "Le sluagh appartient au folklore gaélique d'Irlande et d'Écosse, où il désigne une horde aérienne plutôt qu'un individu. Son histoire naturelle se lit donc à l'échelle du vol collectif, non du corps singulier.",
+      "parts": [
+        {"title": "Comportement", "body": ["La horde se déplace en formation resserrée, volontiers comparée à un vol d'oiseaux migrateurs, et fond sur les vivants sans direction prévisible, capable de les approcher par n'importe quel côté.[1]"]},
+        {"title": "Habitat", "body": ["Le ciel nocturne constitue son seul territoire ; les récits associent le sluagh à un déplacement venu de l'ouest, direction traditionnellement liée au monde des morts dans le folklore gaélique.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune source ne lui attribue de nourriture matérielle ; son activité recensée se limite à l'enlèvement des vivants et à l'errance aérienne collective."]},
+        {"title": "Intelligence", "body": ["Le sluagh agit comme une masse coordonnée plutôt que comme une addition de volontés individuelles ; aucune hiérarchie ni chef n'est mentionné dans les sources rassemblées, seulement une horde qui se déplace comme un seul corps.[1]"]},
+        {"title": "Reproduction", "body": ["Le sluagh ne se reproduit pas : il se recrute, chaque âme qui rejoint la horde étant un mort supplémentaire jugé indigne de repos, plutôt qu'une naissance au sens biologique.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur naturel n'est attesté ; la seule défense connue des vivants consistait à fermer portes et fenêtres orientées à l'ouest pour empêcher la horde de pénétrer dans la maison."]}
+      ]
+    },
+    "reliques": [
+      "Aucune relique matérielle ne subsiste du sluagh : sa seule trace tangible est la pratique protectrice, attestée dans le folklore, de tenir closes les fenêtres tournées vers l'ouest les nuits où la horde était censée passer.[1] Le sluagh continue par ailleurs d'apparaître dans la culture populaire contemporaine, notamment dans des jeux vidéo comme Legacy of Kain, preuve d'une horde qui n'a jamais cessé complètement de voler.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Sluagh — Wikipédia (folklore gaélique, hôte des morts, étymologie)", "url": "https://en.wikipedia.org/wiki/Sluagh"}
+  ]
+}

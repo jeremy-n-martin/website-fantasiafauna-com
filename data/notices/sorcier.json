@@ -1,0 +1,36 @@
+{
+  "description": "Il ne prie pas un dieu, il négocie avec le secret : le sorcier tire son pouvoir d'un savoir interdit, d'un pacte ou d'une magie qui lui appartient en propre.",
+  "sections": {
+    "fascination": [
+      "La différence entre un prêtre et un sorcier ne tient pas toujours à la puissance de leurs actes, mais à la légitimité qu'on leur reconnaît. L'anthropologie a longtemps proposé de distinguer la sorcellerie, pouvoir inné ou involontaire, de la magie rituelle, qui repose sur des techniques et des outils appris — une frontière qu'Evans-Pritchard formalisa en 1937, avant que les chercheurs suivants ne la jugent difficilement applicable à l'Europe, où les deux logiques se mêlent sans cesse.[1] Le sorcier occupe précisément cet entre-deux : il agit par savoir plutôt que par grâce, mais on ne sait jamais avec certitude si ce savoir vient de lui, d'un pacte, ou d'un don qu'il n'a pas choisi.",
+      "Ce flou n'a rien d'un défaut de définition : il constitue le trait distinctif du personnage. Ronald Hutton relève que la sorcellerie, dans la plupart des cultures qui la reconnaissent, implique une communion jugée immorale avec des forces malveillantes, l'acquisition d'un pouvoir par héritage ou initiation, et la possibilité d'être contrée par une magie défensive ou une sanction physique.[1] Le sorcier vit donc sous la double menace de sa propre magie et de la communauté qui la redoute."
+    ],
+    "legendes": [
+      "Les grandes chasses aux sorcières de l'Europe médiévale et moderne ont façonné la figure occidentale du sorcier presque autant que les pratiques réelles qu'elles prétendaient combattre. Le Malleus Maleficarum, publié en 1486, devient le manuel de référence de ces persécutions, qui visent en très grande majorité des femmes mais n'épargnent pas les hommes accusés de pactiser avec des puissances occultes.[1] Le sorcier littéraire hérite directement de ce climat : un individu que la communauté soupçonne de savoir plus qu'il ne devrait.",
+      "Hors d'Europe, la sorcellerie occupe une place sociale bien documentée, en particulier en Afrique, où elle s'entremêle à l'économie et à la politique locales ; les accusations y frappent souvent les personnes vulnérables — femmes âgées, veuves, enfants non désirés — et servent à expliquer le malheur autant qu'à faire respecter les normes du groupe.[1] Le sorcier n'est donc pas partout un simple praticien de rituels : il peut être avant tout la personne sur qui une communauté projette ses tensions internes.",
+      "À côté de cette figure redoutée existe presque partout son double protecteur : les cunning folk, guérisseurs ou devins qui pratiquaient une magie tournée vers la défense et le soin plutôt que le maléfice.[1] Cette ambiguïté sociale — tolérés ici, poursuivis là — explique pourquoi le sorcier de fantasy peut aussi bien incarner la menace que le recours ultime contre un mal plus grand que lui.",
+      "Le jeu de rôle a repris cette figure en la détachant largement de son contexte historique pour en faire un archétype de classe : le sorcier y devient un praticien qui obtient ses pouvoirs par l'étude de secrets, la conclusion de pactes ou l'exercice de rituels, plutôt que par la foi ou l'héritage magique inné qui caractérise d'autres lanceurs de sorts. Ce déplacement ludique constitue une réinterprétation moderne, non une transcription fidèle des pratiques attestées."
+    ],
+    "anomalies": [
+      "La distinction proposée par Evans-Pritchard entre witchcraft inné et sorcery acquise, un temps considérée comme universelle, s'est révélée inadaptée dès qu'on l'applique à l'Europe, où les mêmes praticiens combinent objets rituels et pouvoirs prétendument innés.[1] Le sorcier échappe ainsi à toute case stable : la même personne peut être crainte pour un don qu'elle n'a pas choisi et pour un savoir qu'elle a délibérément acquis.",
+      "L'écart entre malfaisance et soin traverse également la figure sans jamais se résoudre : dans la plupart des sociétés étudiées, les praticiens de magie défensive ou curative restent minoritaires parmi les personnes accusées de méfaits — sauf en Hongrie et en Norvège, où les cunning folk eux-mêmes ont pu être poursuivis comme sorciers.[1] Aucune règle générale ne permet donc de prédire, dans une communauté donnée, si le sorcier sera consulté ou brûlé."
+    ],
+    "naturelle": {
+      "lead": "Le sorcier n'est pas une créature au sens zoologique mais un archétype humain, attesté par la pratique historique autant que par la fiction. Son histoire naturelle décrit donc un rôle social plutôt qu'une biologie.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le sorcier agit en marge plutôt qu'au centre de la communauté : ses services sont sollicités en privé, ses pouvoirs redoutés en public. Cette double posture, discrète et surveillée, définit sa manière d'occuper l'espace social.[1]"]},
+        {"title": "Habitat", "body": ["Campagnes isolées, lieux retirés, cours seigneuriales où l'on tolère un conseiller occulte tant qu'il reste utile : le sorcier vit aux limites plutôt qu'au cœur des institutions religieuses reconnues."]},
+        {"title": "Alimentation", "body": ["Aucune source ne lui attribue de régime particulier ; le sorcier se distingue par son savoir et ses pratiques, non par un mode de subsistance propre."]},
+        {"title": "Intelligence", "body": ["Le pouvoir du sorcier réside dans l'accumulation de secrets, de rituels et parfois de pactes, plutôt que dans une révélation divine ou un don héréditaire assumé ouvertement.[1] Cette intelligence acquise nourrit autant la fascination que la méfiance à son égard."]},
+        {"title": "Reproduction", "body": ["Le savoir du sorcier se transmet par apprentissage, initiation ou pacte plutôt que par filiation biologique ; devenir sorcier relève d'un choix ou d'une contamination sociale, non d'une naissance."]},
+        {"title": "Prédateurs", "body": ["Historiquement, le sorcier redoute moins une créature qu'une communauté : accusations, procès et manuels comme le Malleus Maleficarum ont constitué sa menace la plus concrète.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le Malleus Maleficarum de 1486 demeure la trace écrite la plus influente de la chasse au sorcier en Europe, document qui a autant façonné l'image du praticien maléfique que les pratiques réelles qu'il prétendait dénoncer.[1] Aucun objet unique ne symbolise le sorcier lui-même : ce sont les manuels de persécution, plus que les instruments de sa magie, qui ont traversé les siècles jusqu'à nous."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Witchcraft — Wikipédia (définitions, Evans-Pritchard, Malleus Maleficarum, cunning folk)", "url": "https://en.wikipedia.org/wiki/Witchcraft"}
+  ]
+}

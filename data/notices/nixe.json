@@ -1,0 +1,37 @@
+{
+  "description": "Un violon joue sans musicien visible près d'une chute d'eau, et déjà la rivière n'est plus tout à fait sûre : la nixe habite l'instant où l'eau calme devient une voix.",
+  "sections": {
+    "fascination": [
+      "La nixe ne se contente pas d'habiter l'eau, elle en emprunte l'inconstance. Le nix germanique se montre volontiers comme un bel homme nu jouant du violon près d'une cascade, tandis que la nixe prend forme de sirène des rivières ; l'un et l'autre peuvent tout aussi bien se muer en cheval, en poisson, ou en simple bille de bois flottant à la surface.[1] Cette instabilité de forme fait de la rencontre avec elle un événement dont on ne sait jamais, sur le moment, s'il s'agit vraiment d'une créature ou d'un objet ordinaire.",
+      "Le cheval-de-ruisseau, ou bäckahästen, incarne la version la plus redoutée de cette métamorphose : un splendide cheval blanc surgi près de l'eau, dont la seule apparition suffit à attirer un cavalier imprudent vers la noyade.[1] Le merveilleux tient ici à un renversement cruel — la beauté la plus rassurante, celle d'un animal familier, devient l'appât d'un piège mortel."
+    ],
+    "legendes": [
+      "Le nom remonte au proto-germanique *nikwus, lui-même issu d'une racine indo-européenne signifiant laver, ce qui ancre la créature dans le geste le plus ordinaire du rapport humain à l'eau avant de le retourner en menace.[1] La même racine se retrouve, sous des formes variées, dans presque toutes les langues germaniques et scandinaves : nøkke au Danemark, näck en Suède, nøkk en Norvège, näkki en Finlande, näkk en Estonie.[1] Cette persistance linguistique dessine une croyance commune à toute une aire culturelle plutôt qu'une légende isolée.",
+      "Le folklore suédois et finlandais lui prête un rôle presque pédagogique : la nixe, ou son pendant masculin, enseigne aux mortels un talent musical extraordinaire, à condition qu'on sache l'approcher sans provoquer sa colère.[1] Le folklore allemand, en revanche, insiste davantage sur la séduction mortelle, rapprochant la créature des sirènes antiques par son chant et sa beauté trompeuse.[1] Une même figure porte ainsi, selon la région, le visage du maître de musique ou celui de la tentatrice.",
+      "Les frères Grimm ont consigné plusieurs récits qui fixent durablement cette figure dans la littérature du XIXe siècle, notamment des contes où un homme capturé par le nix doit être délivré par la ruse ou le courage de son épouse.[1] Ces textes transforment une croyance rurale de protection en récit structuré, avec ses propres péripéties et sa morale implicite sur la fidélité conjugale.",
+      "Face à ce danger, les communautés riveraines avaient développé des gestes de protection précis : jeter de l'acier dans l'eau, tracer un signe de croix, ou prononcer le nom véritable de la créature suffisait, disait-on, à la priver de son pouvoir.[1] Une formule rituelle accompagnait souvent la baignade : nixe sur la terre, moi dans l'eau — inversion verbale censée détourner le danger avant même d'entrer dans le courant.[1]"
+    ],
+    "anomalies": [
+      "L'instrument de prédilection de la créature reste constant à travers les variantes régionales : c'est presque toujours un violon, jamais une flûte ou une harpe, alors que rien dans sa nature aquatique n'explique cette préférence pour un instrument à cordes né bien plus tard dans l'histoire de la musique populaire.[1] Cette fixation instrumentale trahit sans doute une couche plus récente du folklore, superposée à une croyance aquatique beaucoup plus ancienne.",
+      "La vulnérabilité de la nixe à son propre nom constitue une autre singularité : contrairement à la plupart des créatures aquatiques du folklore européen, elle perd son pouvoir dès qu'un humain la nomme correctement.[1] Le langage, ici, agit comme une arme concrète et non comme un simple élément de récit, ce qui distingue nettement la nixe des ondines ou sirènes purement séductrices d'autres traditions."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle de la nixe suit le folklore germanique et scandinave des eaux douces : une créature façonnée par son élément, dont l'apparence, le chant et la dangerosité varient selon les régions et les rivières qu'elle habite.",
+      "parts": [
+        {"title": "Comportement", "body": ["Tour à tour séductrice, musicienne bienveillante ou noyeuse déterminée, la nixe adapte son comportement au visiteur : elle peut enseigner le violon à qui l'aborde avec respect ou attirer à la mort quiconque s'approche sans précaution.[1]"]},
+        {"title": "Habitat", "body": ["Rivières, moulins, chutes d'eau et étangs calmes constituent son territoire, toujours lié à une eau douce en mouvement plutôt qu'à la mer ouverte.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune source consultée ne décrit de régime alimentaire propre à la nixe ; son rapport à l'humain passe par la séduction et la noyade, non par la prédation nourricière."]},
+        {"title": "Intelligence", "body": ["Sa maîtrise de la métamorphose et du chant suppose une intelligence rusée, capable d'adapter sa forme — homme, femme, cheval blanc, bille de bois — à l'effet recherché sur sa victime ou son élève.[1]"]},
+        {"title": "Reproduction", "body": ["Les sources consultées ne mentionnent aucune reproduction propre à la nixe ; les contes des frères Grimm évoquent en revanche des unions ou des captures d'humains, sans qu'il en résulte de descendance décrite.[1]"]},
+        {"title": "Prédateurs", "body": ["Le nom véritable de la créature et l'acier jeté dans l'eau comptent parmi les seules défenses attestées contre elle ; aucun prédateur animal ne lui est opposé dans les récits recueillis.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Les contes recueillis par les frères Grimm, notamment celui de l'Ondine de l'étang du moulin, conservent la trace la plus durable de cette croyance, lue aujourd'hui comme littérature bien plus que comme mise en garde réelle.[1]",
+      "La formule protectrice destinée aux baigneurs, transmise oralement dans les campagnes germaniques et scandinaves, a largement disparu de l'usage courant, mais elle demeure consignée dans les collectes folkloriques comme la trace la plus concrète d'une peur autrefois partagée devant l'eau calme.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Nixie (folklore) — esprit des eaux germanique et scandinave, Wikipédia", "url": "https://en.wikipedia.org/wiki/Nixie_(folklore)"}
+  ]
+}

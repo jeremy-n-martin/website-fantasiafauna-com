@@ -1,0 +1,37 @@
+{
+  "description": "Avant que l'épée ne devienne un accessoire de fiction, le spadassin fut un homme bien réel qui vivait, et parfois mourait, de sa lame.",
+  "sections": {
+    "fascination": [
+      "Le mot lui-même trahit une origine étrangère et guerrière : spadassin vient de l'italien spadaccino, l'homme d'épée, dérivé de spada, l'épée.[1] Cette filiation linguistique dit assez le climat dans lequel le personnage est né : celui d'une Italie et d'une France de la Renaissance où le duel privé, hérité des rixes de rue et des rivalités de cour, devient un mode ordinaire de règlement des conflits d'honneur. Le spadassin n'a pas besoin d'armée ni de cause ; sa seule légitimité est la maîtrise de sa lame et sa disposition à s'en servir.",
+      "Le mot apparaît en français dès 1534, sous la plume de Rabelais dans Gargantua.[1] Il y désigne déjà un type reconnaissable, celui du bretteur qui cherche le duel pour sa propre gloire plutôt que pour défendre une cause. Le glissement de sens qui suit est révélateur : de l'escrimeur d'honneur, le terme finit par désigner aussi le tueur à gages, celui qu'on paie pour son épée plutôt que celui qui se bat pour son nom.[1] Le spadassin porte ainsi en lui deux visages, le duelliste flamboyant et le mercenaire de l'ombre, sans jamais tout à fait choisir entre les deux."
+    ],
+    "legendes": [
+      "La culture de la Renaissance et du premier XVIIe siècle offre au spadassin un terreau particulièrement fertile. Le duel d'honneur, condamné par les autorités royales mais toléré dans les faits, devient un phénomène social si répandu qu'il fait l'objet d'ordonnances répétées visant à l'interdire, sans grand succès. Dans cette France où l'affront se lave par le fer, le spadassin professionnel, loueur de bras ou maître d'armes prêt à en découdre, occupe une place reconnue, entre le soldat et l'homme de main.",
+      "Le théâtre s'empare vite du personnage. On le retrouve chez Shakespeare, puis chez Molière, notamment dans Les Fourberies de Scapin et dans Dom Juan, où il incarne la bravade armée autant que la menace latente qui pèse sur les personnages plus pacifiques.[1] Verdi le fait chanter dans Rigoletto, preuve que la figure a largement dépassé les frontières françaises et le seul répertoire comique pour devenir un type théâtral européen à part entière.[1]",
+      "Le cinéma de cape et d'épée prolonge cette tradition au XXe siècle, avec des films comme Le Bossu en 1959 ou Le Capitaine Fracasse en 1961, qui remettent en scène le spadassin dans des intrigues de vengeance et de panache.[1] C'est dans ce sillage que le jeu de rôle moderne façonne à son tour l'archétype du duelliste virtuose : la sous-classe Escrimeur du Roublard, introduite dans le supplément Xanathar's Guide to Everything de Donjons et Dragons, en offre une version ludique et charismatique.[2] Le manuel la présente comme l'essence même du charme roguesque, alliant des réflexes vifs à une repartie plus vive encore, et cite Zorro, le capitaine Jack Sparrow et Peter Pan parmi ses figures d'inspiration.[2]"
+    ],
+    "anomalies": [
+      "Le glissement du duelliste vers le mercenaire n'est pas un simple accident de vocabulaire : il traduit une ambiguïté morale que la fiction conserve. Le spadassin littéraire se bat rarement pour une cause désintéressée ; il vend son bras, sa gloire ou les deux, ce qui le distingue du chevalier ou du guerrier dévoué à un serment.",
+      "Dans sa version ludique, le duelliste perd volontiers l'ambiguïté du mercenaire pour gagner en constance héroïque. La sous-classe du Roublard, par exemple, ne cherche pas le duel pour l'argent mais pour l'occasion de briller : ses aptitudes, comme celle qui lui permet de porter une attaque sournoise sans le soutien d'alliés dès lors qu'il affronte un adversaire seul à seul, ou celle qui l'autorise à défier une cible pour la distraire de ses compagnons, transforment le duel en signature de style plutôt qu'en simple technique de combat.[2] Le spadassin historique n'avait pas ce souci de panache : sa seule règle était de vaincre, par n'importe quel moyen que l'épée autorisait."
+    ],
+    "naturelle": {
+      "lead": "N'étant pas une créature du folklore mais un type humain, le spadassin ne connaît pas d'histoire naturelle à proprement parler. Ce portrait rassemble plutôt les traits de son comportement social, de ses milieux de prédilection et de sa version ludique la plus connue.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le spadassin recherche l'occasion du duel plus qu'il ne le fuit : c'est sa réputation, autant que sa bourse, qui se construit affrontement après affrontement.[1] Dans sa version ludique, ce goût du face-à-face devient une tactique délibérée, la Fancy Footwork lui permettant de se dégager d'un adversaire sans subir d'attaque d'opportunité, et le Panache de contraindre ou de charmer un ennemi pour orienter le combat à son avantage.[2]"]},
+        {"title": "Habitat", "body": ["Rues, cours et arrière-salles d'auberge composent son territoire naturel, là où l'honneur se défend hors la vue des autorités. La fiction de cape et d'épée le place volontiers dans les ruelles nocturnes ou les jardins de palais, décors récurrents du duel clandestin."]},
+        {"title": "Alimentation", "body": ["Aucun trait particulier n'est attesté ; le spadassin, humain de part en part, vit des à-côtés ordinaires de son métier des armes, gages de duel ou soldes de mercenaire."]},
+        {"title": "Intelligence", "body": ["Son savoir est avant tout technique, celui de l'escrime, mais la version théâtrale et ludique du personnage y ajoute une vivacité de repartie qui en fait un charmeur autant qu'un combattant.[2] La sous-classe Escrimeur du Roublard pousse ce trait jusqu'à en faire une caractéristique de jeu, son charisme dictant nombre de ses talents."]},
+        {"title": "Reproduction", "body": ["Sans objet pour un archétype humain sans transmission surnaturelle : le spadassin se perpétue par imitation et par apprentissage, de maître d'armes à élève, plutôt que par lignée."]},
+        {"title": "Prédateurs", "body": ["Son principal danger reste un autre spadassin, ou plus prosaïquement la justice royale qui, en interdisant le duel, menace de le mener au gibet plutôt qu'à la gloire qu'il recherche."]}
+      ]
+    },
+    "reliques": [
+      "Le principal héritage du spadassin est linguistique et théâtral : le mot lui-même, attesté depuis Rabelais, et les pièces où il apparaît restent les traces les plus sûres de son existence historique.[1] Aucune arme ni relique matérielle ne lui est spécifiquement associée, sinon l'épée générique qui donne son nom au personnage.",
+      "Sa reprise moderne dans le jeu de rôle, à travers la sous-classe du Roublard duelliste, prolonge cette figure sous une forme codifiée et héroïsée, loin de l'ambiguïté du mercenaire historique.[2] Entre le bretteur de Rabelais et le duelliste charismatique des tables de jeu contemporaines, le spadassin aura ainsi traversé cinq siècles sans jamais renoncer à son arme de prédilection."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Spadassin — étymologie et figures littéraires, Wikipédia", "url": "https://fr.wikipedia.org/wiki/Spadassin"},
+    {"id": 2, "title": "Swashbuckler Rogue 5e — sous-classe du Roublard, DnD Subclass Guide", "url": "https://rpgbot.net/dnd5/characters/classes/rogue/subclasses/swashbuckler/"}
+  ]
+}

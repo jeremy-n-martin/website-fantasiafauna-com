@@ -1,0 +1,36 @@
+{
+  "description": "Un vieillard grimaçant garde le trésor sous la lande cornique, et si l'on insiste, il grandit jusqu'à toucher le ciel.",
+  "sections": {
+    "fascination": [
+      "Rien dans l'apparence du spriggan ne prépare à sa force. Les collecteurs cornouaillais le décrivent comme un vieillard laid et ratatiné, à la grosse tête presque enfantine, une silhouette que l'on croirait inoffensive au détour d'un talus.[1] Mais la légende y loge une puissance disproportionnée : ce petit corps porterait la force retenue de géants disparus, comme si la vieille terre de Cornouailles avait comprimé une stature ancienne dans une enveloppe de nain.",
+      "Le trait le plus saisissant reste sa capacité à changer de taille. Le folkloriste Robert Hunt rapporte que le spriggan peut s'enfler jusqu'à des proportions énormes,[1] transformant en un instant le promeneur importun en témoin d'un colosse surgi du sol. Cette métamorphose n'a rien d'un simple effet de frayeur : elle inverse le rapport de forces entre l'être minuscule et l'intrus humain, rappelant que la petitesse apparente ne dit jamais toute la mesure d'une créature du Petit Peuple."
+    ],
+    "legendes": [
+      "Le nom même du spriggan renvoie à une origine collective plutôt qu'à un individu isolé. Il dérive du cornique spyrysyon, pluriel signifiant esprits,[1] comme si la tradition désignait moins une créature précise qu'une famille entière de présences inquiétantes attachées à un même territoire. Cette étymologie éclaire pourquoi les récits le montrent rarement seul : il appartient à une lignée, à une population discrète des landes et des ruines.",
+      "Les spriggans se rencontrent aux abords des vieilles ruines, des cairns et des tumulus, où on les dit gardiens de trésors enfouis.[1] Hunt associe en particulier ces esprits à Trencrom Hill, une ancienne forteresse de hauteur en Cornouailles, suggérant qu'ils habitent les sites façonnés par des mains oubliées depuis des siècles. Le trésor qu'ils protègent n'est donc jamais un simple amas de pièces : il est la mémoire matérielle d'un peuple disparu, confiée à des sentinelles que l'on croirait elles-mêmes issues de ce passé.",
+      "Leur tempérament est franchement désagréable. Les récits leur prêtent le goût de soulever de brusques tourbillons pour effrayer les voyageurs, d'envoyer des orages qui ravagent les récoltes, et de voler des enfants humains pour les remplacer par des changelins.[1] On les blâme aussi pour des vols, des effondrements de bâtiments et des disparitions de bétail — un inventaire de petits désastres domestiques qui, mis bout à bout, dessine une créature moins meurtrière que systématiquement malveillante.",
+      "La spécialiste du folklore Katharine Briggs les qualifie de gardes du corps féeriques, tandis que l'English Dialect Dictionary les rapproche des trolls scandinaves.[1] Cette double filiation, féerique et nordique, situe le spriggan à un carrefour : il n'est ni tout à fait fée légère, ni tout à fait géant brutal, mais un chaînon qui emprunte aux deux registres sans se réduire à l'un ou à l'autre."
+    ],
+    "anomalies": [
+      "La légende du spriggan repose sur une tension qu'elle ne résout jamais complètement : comment un être aussi petit peut-il receler une force de géant ? La tradition cornique répond par une filiation plutôt que par une explication physique — le spriggan serait le fantôme ou le résidu d'un géant ancien,[1] ce qui déplace le mystère sans le dissiper. On ne sait pas exactement comment cette puissance ancestrale se love dans un corps ratatiné ; le grossissement soudain fonctionne comme la preuve intermittente d'une nature qui, la plupart du temps, reste cachée sous une apparence trompeuse.",
+      "Un autre flottement touche sa fonction. Gardien de trésor dans certains récits, il devient ravisseur d'enfants et fauteur de tempêtes dans d'autres, sans que les collecteurs du XIXe siècle tranchent lequel de ces rôles est premier.[1] Le spriggan semble ainsi moins défini par une tâche unique que par une réputation générale de nuisance, à laquelle chaque conteur local ajoute l'anecdote qui lui convient."
+    ],
+    "naturelle": {
+      "lead": "Le spriggan appartient au folklore cornique documenté au XIXe siècle, en particulier par les collectes de Robert Hunt. Son portrait naturel doit beaucoup à cette source, qui mêle observation locale et transmission orale.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le spriggan se montre rancunier envers les intrus et prompt à la vengeance disproportionnée. Il ne cherche pas le contact avec les humains mais réagit avec violence dès qu'on trouble son territoire — ruine, cairn ou trésor gardé.[1] Sa malveillance s'exprime par des actes indirects, tourbillons, orages, vols, plutôt que par un affrontement frontal, ce qui en fait une nuisance sournoise plus qu'un ennemi déclaré."]},
+        {"title": "Habitat", "body": ["On le trouve aux abords des vieilles ruines, des cairns et des tumulus de la lande cornouaillaise, en particulier autour de sites comme Trencrom Hill.[1] Ces lieux, chargés d'une histoire humaine ancienne, semblent lui fournir à la fois un refuge et une légitimité de gardien."]},
+        {"title": "Alimentation", "body": ["Les récits collectés ne détaillent pas de régime alimentaire propre au spriggan ; sa nature d'esprit gardien l'inscrit davantage dans l'ordre de la surveillance que dans celui de la subsistance."]},
+        {"title": "Intelligence", "body": ["Sa ruse se manifeste dans l'art de la nuisance calculée : provoquer un tourbillon au bon moment, orchestrer un orage sur une récolte précise, substituer un changelin sans être vu.[1] Cette intelligence pratique sert moins la réflexion que l'exécution de méfaits efficaces."]},
+        {"title": "Reproduction", "body": ["Le pluriel de son nom, spyrysyon, laisse entendre une population plutôt qu'un individu unique,[1] mais les sources ne précisent pas de mode de reproduction propre à ces esprits, conformément au flou qui entoure l'origine surnaturelle du Petit Peuple cornique."]},
+        {"title": "Prédateurs", "body": ["Aucune créature n'est identifiée comme prédatrice du spriggan ; sa capacité à s'enfler jusqu'à une taille énorme le place au contraire en position de dissuader tout assaillant potentiel, humain ou animal.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Ce que la tradition cornique laisse en héritage, c'est moins un objet qu'une méfiance durable envers les vieilles pierres. Chaque cairn, chaque tumulus resté intact sur la lande porte encore la possibilité qu'un gardien minuscule et furieux y veille,[1] et cette croyance a longtemps dissuadé les curieux de fouiller les sites sans précaution. Le trésor lui-même reste largement hypothétique dans les récits : ce qui compte, c'est la sentinelle qui le rend inaccessible, plus que l'or qu'elle protégerait."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Spriggan — folklore cornique, gardiens de trésor et métamorphose, Wikipédia", "url": "https://en.wikipedia.org/wiki/Spriggan"}
+  ]
+}

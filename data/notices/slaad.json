@@ -1,0 +1,36 @@
+{
+  "description": "Sur la Pierre à couvée, dans les Limbes sans forme, le chaos pond des œufs : le slaad n'est pas un monstre parmi d'autres, mais l'entropie faite crapaud.",
+  "sections": {
+    "fascination": [
+      "Un plan où la matière ne cesse de se refaire n'a pas besoin d'habitants stables pour lui ressembler. Le slaad, humanoïde batracien né dans les Limbes, incarne ce refus permanent de la forme fixe : il vit dans un univers qui se réorganise sans arrêt, et sa propre chair semble avoir renoncé à choisir un seul visage.[1] Le vertige ne vient pas de sa laideur mais de son adéquation totale au lieu qu'il habite — nulle autre créature n'aurait pu naître ailleurs.",
+      "Ce qui frappe surtout, c'est la discipline paradoxale imposée à un peuple voué au désordre. Deux seigneurs slaads, Ygorl et Ssendam, dominent la horde par la force plutôt que par un titre reconnu, et manipulent la pierre de ponte pour empêcher l'éclosion de rivaux trop puissants.[1] Le chaos, ici, engendre malgré lui sa propre tyrannie feutrée : même l'anarchie a ses gardiens."
+    ],
+    "legendes": [
+      "Les slaads apparaissent en 1981 dans le Fiend Folio de la première édition de Donjons et Dragons, où Charles Stross les décrit comme des représentants et dévots du chaos total, teintés d'un humour dérangé — une création qu'il rattache lui-même à une fièvre et à une fascination pour l'œuvre de Lovecraft.[1] L'anecdote éclaire le ton voulu : une horreur qui grimace autant qu'elle terrifie.",
+      "Leur société repose sur une hiérarchie de castes reconnaissables à la couleur : les rouges, capables d'implanter leurs œufs dans un hôte vivant ; les bleus, qui propagent une contamination proche de la lycanthropie transformant leurs victimes en slaads rouges ; les verts, nés de sorciers infectés et dotés d'une magie supérieure ; les gris, descendants plus puissants des verts ; et les slaads de la mort, les plus violents, préférant le massacre à l'incantation.[1] Cette échelle chromatique fait de la reproduction elle-même un vecteur de contagion et de promotion sociale.",
+      "Le berceau commun de tous les slaads est la Pierre à couvée, bloc dérivant dans les Limbes où chaque variété converge en saison pour féconder les œufs. La cinquième édition ajoute un mythe d'origine : Primus, seigneur des modrons, aurait façonné la pierre pour dompter les Limbes, mais le plan l'aurait corrompue, produisant les slaads comme une réponse immunitaire du chaos contre l'ordre imposé.[1] Le monstre devient alors un anticorps cosmique, aussi absurde que nécessaire à l'équilibre des plans.",
+      "Les éditions successives ont fait varier la nature même des slaads : nés extraplanaires dans les premières règles, ils deviennent en quatrième édition des créatures élémentaires originaires du Chaos Élémentaire, avant que la cinquième ne revienne aux Limbes en approfondissant la mécanique de la Pierre à couvée.[1] Ce sont des choix éditoriaux, non les strates d'une tradition populaire : le slaad n'a jamais existé hors du jeu."
+    ],
+    "anomalies": [
+      "La quasi-totalité des slaads sont de tendance chaotique neutre, à deux exceptions notables : les slaads de la mort, chaotiques mauvais, et les slaads gormeel, étrangement loyaux neutres.[1] Cette dernière variante contredit en apparence la définition même du peuple ; elle rappelle que même une race conçue comme incarnation d'un principe peut produire ses propres démentis internes.",
+      "La couleur noire, réservée à la forme la plus puissante du standard slaad, ne doit pas être confondue avec un rang de commandement : la domination reste entre les mains d'Ygorl et Ssendam, deux individus précis plutôt qu'une caste supérieure.[1] Le pouvoir chez les slaads se gagne par la ruse et la brutalité, jamais par la seule teinte de la peau."
+    ],
+    "naturelle": {
+      "lead": "Le slaad appartient entièrement à la fantasy de jeu de rôle ; aucune tradition folklorique ne le précède. Son histoire naturelle se lit donc comme une biologie inventée pour un plan où la matière refuse de se stabiliser.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le slaad agit avec une impulsivité qui décourage toute alliance durable, sinon celle imposée par la crainte des seigneurs de caste. Sa violence n'obéit à aucune stratégie à long terme : elle jaillit, se satisfait, recommence.[1]"]},
+        {"title": "Habitat", "body": ["Les Limbes constituent son unique foyer naturel, plan où le paysage se refait sans cesse et où seule la Pierre à couvée offre un repère stable. Les incursions sur d'autres plans se produisent par failles ou invasions plutôt que par migration organisée.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune source ne détaille un régime alimentaire propre au slaad ; sa survie tient moins à la nourriture qu'à la reproduction et à la domination des rivaux plus faibles.[1]"]},
+        {"title": "Intelligence", "body": ["Les castes supérieures, vertes puis grises, concentrent les capacités magiques du peuple, nées de l'infection de lanceurs de sorts capturés. L'intelligence slaad progresse ainsi par contamination plutôt que par apprentissage.[1]"]},
+        {"title": "Reproduction", "body": ["La reproduction du slaad se confond avec son identité : implantation d'œufs par les rouges, contagion par les bleus, ponte collective sur la Pierre à couvée durant une saison précise. Chaque naissance redistribue les castes et menace l'équilibre voulu par Ygorl et Ssendam.[1]"]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur naturel n'est attesté : la principale menace pour un slaad reste un autre slaad, dans une hiérarchie que la force seule maintient.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Il ne subsiste du slaad ni relique ni objet de culte : sa seule trace matérielle reconnue est la Pierre à couvée elle-même, artefact vivant dérivant dans les Limbes, tour à tour berceau, champ de bataille et enjeu de pouvoir pour un peuple qui ne connaît pas d'autre sanctuaire.[1]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Slaad — Wikipédia (origine, castes, Pierre à couvée, éditions)", "url": "https://en.wikipedia.org/wiki/Slaad"}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "description": "Le fantôme s'attarde ; le spectre, lui, chasse. Là où l'un traîne un souvenir, l'autre porte une haine assez dense pour traverser les murs et vider les vivants de leur propre vitalité.",
+  "sections": {
+    "fascination": [
+      "Ce qui distingue le spectre d'un simple mort qui refuse de partir, c'est la façon précise dont les règles de jeu le fabriquent : une créature morte-vivante née à la fois d'une méchanceté et d'une mort violente.[1] Il ne suffit donc pas de mourir pour devenir spectre ; il faut mourir mal, dans des circonstances brutales, et porter en soi assez de rancœur pour que cette rancœur survive au corps. Cette double condition, morale et circonstancielle, rapproche le spectre d'une punition plus que d'un simple accident post mortem.",
+      "Sa nature incorporelle pousse l'idée jusqu'au bout. Le spectre traverse les créatures et les objets comme s'ils n'étaient qu'un terrain difficile, ne subissant de dommage que s'il choisit de terminer son mouvement à l'intérieur d'une matière solide.[1] Rien ne l'arrête, sinon la lumière du jour, qui le désavantage dans ses attaques et sa perception : le spectre appartient à la nuit et aux lieux clos, jamais tout à fait au plein jour."
+    ],
+    "legendes": [
+      "Les bestiaires de jeu de rôle rattachent la genèse du spectre à un geste précis : une liche mineure ou un être de haut rang, comme le spectre errant que crée le sorcier des lames, peut prendre l'esprit d'un humanoïde mort violemment dans la minute écoulée et en faire surgir un spectre.[1][2] Le spectre n'est donc pas toujours un vestige spontané du passé ; il peut être une arme fabriquée, arrachée à un cadavre encore chaud par une volonté extérieure qui se sert de sa haine comme d'un outil.",
+      "Cette origine le distingue nettement du fantôme au sens large du folklore, cette catégorie plus ancienne et plus vaste de morts attachés à un lieu, un objet ou une dette non réglée. Le fantôme peut se contenter de hanter, d'apparaître, de faire grincer une porte ; le spectre, lui, est défini par son hostilité active envers les vivants et par une attaque bien précise, capable de puiser directement dans leur force vitale.[1] Il partage avec le fantôme une même origine funéraire, mais son tempérament est celui d'un prédateur plutôt que d'un simple revenant.",
+      "Le lien avec le wraith, entité proche mais distincte dans les mêmes bestiaires, éclaire encore la place du spectre : le wraith se tient en haut d'une hiérarchie d'esprits vengeurs, capable précisément d'engendrer des spectres à partir de victimes récemment tuées.[1] Le spectre occupe ainsi une position de rang inférieur, presque de soldat, dans une armée de morts que dirigent des entités plus puissantes et plus anciennes que lui."
+    ],
+    "anomalies": [
+      "L'attaque du spectre ne se contente pas d'infliger une blessure ordinaire. Son contact glacial inflige des dégâts nécrotiques et peut réduire durablement le maximum de points de vie de la victime si elle échoue à résister ; cette perte ne se répare qu'après un long repos, et une créature réduite à zéro point de vie maximum de cette manière meurt purement et simplement.[1] Le spectre ne blesse donc pas seulement le corps présent : il entame la réserve de vie elle-même, un mode d'agression que peu de créatures matérielles peuvent revendiquer.",
+      "Sa résistance physique complète ce portrait d'anomalie. Immunisé aux dégâts nécrotiques et empoisonnés, résistant à l'acide, au froid, au feu, à la foudre, au tonnerre et aux armes non magiques, le spectre encaisse l'essentiel de l'arsenal conventionnel sans broncher.[1] Seule la lumière du soleil, paradoxalement anodine, entame sa précision, preuve que sa faiblesse n'est jamais celle qu'on attend d'un simple mort-vivant."
+    ],
+    "naturelle": {
+      "lead": "N'ayant pas de tradition folklorique propre distincte du fantôme, le spectre est ici décrit à travers le bestiaire de jeu de rôle qui lui donne sa forme la plus précise et la plus reconnaissable.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le spectre nourrit une aversion pour les vivants et une faim de leur énergie vitale, deux traits qui suffisent à expliquer son agressivité systématique envers quiconque croise son chemin.[1] Il n'a ni négociation ni pitié à offrir, contrairement à certains fantômes du folklore qui peuvent se contenter d'un message ou d'une dette réglée."]},
+        {"title": "Habitat", "body": ["Ruines, lieux de serments trahis et nuits sans lumière composent son territoire de prédilection, en accord avec sa vulnérabilité au soleil. Les nécropoles et les champs de bataille où se sont produites des morts violentes restent ses lieux de naissance les plus probables."]},
+        {"title": "Alimentation", "body": ["Le spectre ne mange pas au sens propre : il se nourrit de l'énergie vitale de ses victimes par contact direct, un prélèvement qui abaisse durablement leur vitalité plutôt que de simplement les blesser.[1]"]},
+        {"title": "Intelligence", "body": ["Créature d'un chaos malveillant plutôt que d'une grande finesse, le spectre garde suffisamment de discernement pour choisir ses cibles et exploiter son incorporéité au combat, sans atteindre la complexité sociale d'un peuple vivant."]},
+        {"title": "Reproduction", "body": ["Le spectre ne se reproduit pas ; il est créé, non engendré. Une entité plus puissante, comme un wraith ou un sorcier lié à un pacte funeste, peut faire naître un spectre à partir d'un humanoïde mort violemment depuis peu.[1][2]"]},
+        {"title": "Prédateurs", "body": ["Peu de créatures naturelles menacent un être incorporel ; seuls la lumière du soleil et les armes ou sorts capables d'affecter les morts-vivants entament réellement sa présence."]}
+      ]
+    },
+    "reliques": [
+      "Le spectre ne laisse guère d'objet derrière lui, sinon parfois les reliques de la vie qu'il a perdue trop brutalement pour les abandonner : une arme, un bijou, un serment inachevé, qui expliquent parfois pourquoi telle victime plutôt qu'une autre s'est relevée sous cette forme.",
+      "Sa popularité dans les bestiaires modernes tient à ce statut d'intermédiaire : plus menaçant que le fantôme ordinaire, plus reconnaissable qu'une entité abstraite, le spectre offre un mort-vivant dont la logique — mort violente, haine persistante, faim de vie — se retient d'un coup et se redoute plus encore."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Specter — Monsters, D&D Beyond", "url": "https://www.dndbeyond.com/monsters/17017-specter"},
+    {"id": 2, "title": "Wraith — Monsters, D&D Beyond", "url": "https://www.dndbeyond.com/monsters/17064-wraith"}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "description": "Un souffle latin devenu lueur dans les clairières : le sprite ne nomme pas une créature précise, mais tout ce petit peuple d'étincelles que le folklore anglais n'a jamais fini de cataloguer.",
+  "sections": {
+    "fascination": [
+      "Le charme du sprite tient à son imprécision même. Là où d'autres créatures féeriques portent un nom propre et un territoire délimité, le sprite fonctionne comme un terme générique, un mot qui recouvre une famille entière d'esprits sans en fixer un seul portrait.[1] On ne rencontre jamais un sprite comme on rencontre un lutin ou une fée nommée : on rencontre une catégorie, une manière de nommer ce qui scintille et s'échappe avant d'être identifié.",
+      "Dans la fantasy moderne, cette légèreté nominale devient légèreté physique. Les sprites y sont figurés comme des étincelles ailées de quelques centimètres, assez vives pour égarer un voyageur d'un simple jeu de lumière. Leur pouvoir n'est pas la force mais la distraction : ils n'affrontent rien, ils désorientent, prolongeant dans le jeu et l'image ce que le mot portait déjà en germe — une présence insaisissable plutôt qu'un corps à combattre."
+    ],
+    "legendes": [
+      "L'histoire du mot commence en latin. Sprite dérive de spiritus, esprit, par l'intermédiaire du français esprit,[1] une filiation qui explique pourquoi la notion reste si large : elle désigne d'abord un souffle, une animation immatérielle, avant de se spécialiser en créature féerique. Les variantes spright et le terme celtique spriggan appartiennent à la même famille linguistique, signe que plusieurs traditions ont emprunté au même fond pour nommer des présences voisines mais non identiques.",
+      "En tant que catégorie, le sprite désigne une entité surnaturelle de la mythologie européenne, souvent figurée comme un être féerique ou une entité éthérée.[1] Le terme s'emploie surtout à propos des elfes et des fées du folklore européen, sans qu'un usage général au-delà de ce périmètre soit courant en anglais contemporain. Il fonctionne donc comme un mot-parapluie, utile pour parler collectivement d'êtres que la tradition locale nomme autrement selon les régions.",
+      "Cette croyance ne s'est pas éteinte avec l'ère industrielle. Elle persiste dans certains mouvements spirituels contemporains, notamment le néo-druidisme, où les sprites gardent une place parmi les esprits de la nature invoqués ou honorés.[1] Dans les traditions de magie élémentaire, on les associe le plus souvent à l'air, à l'exception notable des sprites aquatiques, rattachés à l'eau comme esprits élémentaires de cet élément."
+    ],
+    "anomalies": [
+      "La principale anomalie du sprite est de ne pas être une espèce mais une étiquette. Faute de traits fixes, chaque tradition, chaque auteur, chaque jeu peut le redessiner sans contredire une définition antérieure, puisque celle-ci ne fixait presque rien.[1] Cette plasticité rend le sprite difficile à confondre avec une autre créature du bestiaire tant qu'on se souvient qu'il n'a jamais prétendu être autre chose qu'un nom collectif.",
+      "L'association dominante à l'air, contredite par l'exception aquatique,[1] illustre bien cette absence de règle stable : même l'élément associé au sprite varie selon la tradition consultée, sans qu'aucune version ne s'impose comme la référence unique."
+    ],
+    "naturelle": {
+      "lead": "Faute d'un portrait unique, l'histoire naturelle du sprite décrit surtout une fonction : celle d'un mot-parapluie pour les petits esprits féeriques européens, entre héritage linguistique latin et prolongements contemporains.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le comportement du sprite se déduit moins d'un récit particulier que de sa fonction de catégorie : il regroupe des êtres au tempérament varié, généralement discrets, associés à des jeux de lumière ou d'air plutôt qu'à des actes hostiles marqués.[1]"]},
+        {"title": "Habitat", "body": ["Les traditions qui emploient le terme le situent dans les mêmes lieux que les elfes et fées européens en général — bosquets, clairières, cours d'eau pour la variante aquatique — sans qu'un habitat unique et propre au sprite soit défini.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune source ne précise de régime alimentaire spécifique attaché au terme sprite, celui-ci désignant une catégorie linguistique plus qu'une créature aux besoins biologiques décrits."]},
+        {"title": "Intelligence", "body": ["En tant qu'esprit plutôt que corps, le sprite est associé à une nature immatérielle héritée du latin spiritus,[1] ce qui place son intelligence du côté de l'animation et du souffle plutôt que d'une cognition détaillée par le folklore."]},
+        {"title": "Reproduction", "body": ["Le terme générique ne s'accompagne d'aucun récit de reproduction propre ; chaque tradition régionale qui emploierait un sprite particulier lui prêterait, le cas échéant, les usages de sa propre mythologie locale."]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur n'est associé au sprite en tant que catégorie, sa nature éthérée et sa vivacité proverbiale le plaçant hors de portée d'une chasse conventionnelle.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Ce que le mot sprite laisse derrière lui, c'est une trace linguistique plus qu'un objet : le souffle latin spiritus, transmis par le français esprit, continue de circuler dans les langues européennes bien après que ses usages féeriques précis se sont dispersés en une multitude de noms locaux.[1] Le terme survit aujourd'hui autant dans les grimoires néo-druidiques que dans les bestiaires de jeu, comme un mot suffisamment vaste pour accueillir toute nouvelle étincelle qu'on voudra y loger."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Sprite (creature) — étymologie et usage folklorique, Wikipédia", "url": "https://en.wikipedia.org/wiki/Sprite_(creature)"}
+  ]
+}

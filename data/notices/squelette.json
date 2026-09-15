@@ -1,0 +1,37 @@
+{
+  "description": "L'os survit à la chair, et parfois il se relève : entre la danse macabre des cimetières médiévaux et l'automate osseux des donjons modernes, le squelette n'a jamais cessé de marcher.",
+  "sections": {
+    "fascination": [
+      "Peu d'images traversent les siècles aussi intactes que celle du squelette dansant. Dès le XIVe siècle, l'Europe frappée par la peste noire se met à peindre la mort elle-même, ou son double décharné, entraînant dans une même ronde le pape, l'empereur, le paysan et l'enfant.[1] La force de cette image tient à son égalité brutale : sous la peau et le rang social, chacun porte déjà le même squelette, et la danse macabre ne fait que rendre visible ce que tous savent sans vouloir le regarder.",
+      "La fantasy moderne reprend cet os nu mais lui retire sa leçon morale pour lui donner un ordre à exécuter. Le squelette y devient un mort-vivant fabriqué : des points de lumière rouge logés dans les orbites vides, une démarche saccadée et mécanique, un corps entièrement gouverné par la magie nécromantique qui l'anime.[2] Il ne rappelle plus au vivant sa propre fin ; il combat pour quelqu'un d'autre, jusqu'à ce qu'on le détruise ou que l'ennemi quitte son domaine."
+    ],
+    "legendes": [
+      "L'origine documentée de la danse macabre remonte à une fresque aujourd'hui disparue, peinte au cimetière des Saints-Innocents à Paris entre 1424 et 1425.[1] Certains chercheurs situent des précédents dans les peintures du Triomphe de la Mort du XIVe siècle, mais c'est bien cette fresque parisienne, connue par des descriptions et des copies, qui cristallise le motif sous la forme qui se répandra ensuite dans toute l'Europe.",
+      "Le contexte de cette émergence n'a rien d'abstrait : la peste noire et ses ravages démographiques massifs sur la population européenne comptent parmi les facteurs déterminants de l'inspiration et de la consolidation de la tradition au XIVe siècle.[1] Face à une mortalité soudaine et indifférente au rang, l'image du mort qui vient chercher chacun à son tour offrait une manière de nommer et de mettre en scène une expérience collective autrement innommable.",
+      "Le motif migre ensuite du mur peint vers l'estampe et le livre imprimé, gagnant en diffusion ce qu'il perd en unicité de lieu. La série de gravures sur bois de Hans Holbein le Jeune, publiée en 1526, devient une référence si influente qu'elle engendre de nombreuses éditions et imitations tout au long du XVIe siècle.[1] Ces œuvres fonctionnaient comme des memento mori, des rappels de l'inévitabilité de la mort destinés à un public lettré comme illettré, et portaient un message sociocritique discret : la mort neutralise toute distinction de classe.",
+      "Le jeu de rôle moderne détache le squelette de cette leçon collective pour en faire une créature de fiche technique. Dans les règles classiques de Donjons et Dragons, il s'agit d'un mort-vivant de taille moyenne, loyal mauvais, capable de manier épée courte et arc court, protégé par des débris d'armure et doté d'une vision dans le noir.[2] Cette incarnation ludique ne prolonge pas directement le symbole médiéval : elle en emprunte la silhouette pour la mettre au service d'un combat réglé par des chiffres."
+    ],
+    "anomalies": [
+      "La bascule entre les deux traditions du squelette est presque totale. Le squelette de la danse macabre ne combat jamais : il invite à danser, geste qui vaut convocation plus qu'agression.[1] Le squelette du jeu, à l'inverse, est défini presque exclusivement par son comportement offensif — attaquer les vivants jusqu'à destruction ou jusqu'à ce que l'ennemi quitte son territoire.[2] Un même corps décharné porte ainsi deux gestes opposés selon l'époque qui le convoque.",
+      "Une autre anomalie touche sa fragilité apparente. Le squelette du bestiaire ludique reste vulnérable aux coups contondants, qui brisent plus facilement des os déjà secs, mais il est en revanche immunisé contre le poison et l'épuisement, deux menaces qui supposent un corps vivant et une chair à empoisonner.[2] Cette liste d'immunités révèle, en creux, tout ce que l'animation magique a retranché du corps original : plus de sang à corrompre, plus de souffle à épuiser."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle du squelette se partage entre une tradition artistique et morale, la danse macabre médiévale, et une tradition ludique contemporaine, le mort-vivant animé des règles de jeu de rôle. Les deux ne racontent pas la même créature, mais la même image nue leur sert de socle commun.",
+      "parts": [
+        {"title": "Comportement", "body": ["Le squelette animé par nécromancie ne connaît qu'une pulsion : attaquer les créatures vivantes, sans relâche, jusqu'à sa propre destruction ou jusqu'au départ de sa cible hors du domaine qu'il garde.[2] Il manie shortsword et arc court avec une efficacité mécanique, sans hésitation ni ruse, à la différence des mort-vivants pensants."]},
+        {"title": "Habitat", "body": ["On le trouve dans les cryptes, les champs de bataille oubliés et, plus récemment dans l'imaginaire, les laboratoires où un nécromancien l'aurait façonné et animé. Rien n'exige un lieu précis : seule compte la présence d'ossements et d'une volonté magique pour les relever."]},
+        {"title": "Alimentation", "body": ["Le squelette ne se nourrit pas ; privé de chair et d'organes, il n'a plus de métabolisme à entretenir, et son immunité au poison confirme qu'aucune substance ingérée ne peut plus l'affecter.[2]"]},
+        {"title": "Intelligence", "body": ["Les règles classiques lui attribuent une intelligence très faible : il ne parle pas, bien qu'il comprenne encore les langues connues de son vivant, et agit selon des ordres simples plutôt que par raisonnement propre.[2] Sa vision dans le noir à soixante pieds lui suffit pour repérer une cible dans l'obscurité des cryptes qu'il hante."]},
+        {"title": "Reproduction", "body": ["Le squelette ne se reproduit pas : chaque individu résulte de l'animation magique d'une ossature préexistante, humaine ou animale, et non d'un cycle de naissance. Sa population dépend entièrement du nombre de corps disponibles et de nécromanciens prêts à les relever."]},
+        {"title": "Prédateurs", "body": ["Sa vulnérabilité aux armes contondantes, qui brisent plus aisément des os secs que des armes tranchantes ne les entaillent, en fait une proie relativement simple pour qui dispose de masses ou de gourdins.[2] Aucun prédateur naturel ne le menace, faute de chair à consommer ; seule la destruction physique de l'ossature met fin à son animation."]}
+      ]
+    },
+    "reliques": [
+      "De la fresque disparue des Saints-Innocents ne restent que des copies et des descriptions, mais l'image qu'elle a lancée continue de circuler bien au-delà de son support d'origine.[1] Les gravures de Holbein, elles, ont traversé les rééditions du XVIe siècle jusqu'à devenir une référence visuelle que l'on retrouve, affaiblie de sa charge morale mais fidèle à sa silhouette, jusque dans les manuels de jeu contemporains où le squelette continue de se relever, non plus pour rappeler une vérité, mais pour garder un couloir ou une chambre forte.[2]"
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Danse macabre — origine médiévale et tradition artistique, Wikipédia", "url": "https://en.wikipedia.org/wiki/Danse_Macabre"},
+    {"id": 2, "title": "D&D Beyond — Skeleton, mort-vivant animé et règles de combat", "url": "https://www.dndbeyond.com/monsters/17015-skeleton"}
+  ]
+}

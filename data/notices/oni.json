@@ -1,0 +1,35 @@
+{
+  "description": "Sous le masque cornu, une entité que le folklore japonais a mis des siècles à faire passer de l'invisible au corps de chair.",
+  "sections": {
+    "fascination": [
+      "L'oni impose d'abord une évidence physique : cornes, dents massives, parfois un troisième œil, une peau rouge, bleue, noire ou jaune, un pagne de peau de tigre et un lourd gourdin de fer, le kanabō.[1] Rien dans cette description ne laisse place à l'ambiguïté ; l'oni se donne à voir tout entier, sans le voile que d'autres créatures du folklore japonais conservent volontiers. Sa force surhumaine et son association au tonnerre et à la foudre achèvent de en faire une puissance brute, plus proche de la catastrophe naturelle que du personnage rusé.",
+      "Ce qui fascine pourtant n'est pas seulement la menace, mais l'histoire de cette apparence. L'oni n'a pas toujours eu de corps : le caractère chinois qui le désigne, 鬼, signifiait à l'origine fantôme ou esprit invisible, avant que la tradition japonaise n'en fasse peu à peu un être substantiel et charnel.[1] Le monstre cornu que l'on connaît aujourd'hui est donc l'aboutissement d'une lente incarnation, un fantôme qui a fini par prendre chair et par se doter d'un club pour frapper le monde des vivants."
+    ],
+    "legendes": [
+      "L'étymologie du mot oni reste débattue mais éclairante : le dictionnaire du Xe siècle Wamyō Ruijushō propose de le faire dériver de on ou onu (隠), qui signifie se cacher.[1] Cette hypothèse relie l'oni à une origine d'esprit dissimulé, invisible, bien antérieure à l'image cornue qui s'impose ensuite. Le glissement se confirme durant l'époque de Heian, lorsque l'oni cesse d'être un esprit désincarné pour devenir une entité physique et substantielle, dotée d'un corps que l'on peut craindre au sens le plus concret.[1]",
+      "Les récits populaires donnent à l'oni un rôle d'antagoniste récurrent, dont le conte de Momotarō reste l'exemple le plus connu : le héros y affronte des oni retranchés sur leur île, incarnation d'un mal qu'il faut vaincre par la ruse et le courage.[1] Les adaptations plus récentes nuancent cependant ce portrait univoque et proposent des oni plus sympathiques, capables d'apporter la fortune autant que le malheur — une ambivalence que les sources anciennes reconnaissaient déjà en associant ces créatures aux calamités comme aux bonnes fortunes.[1]",
+      "Le folklore situe l'habitat de l'oni dans les grottes, les montagnes ou les enfers, des lieux à l'écart du monde ordonné des humains.[1] Cette relégation géographique renforce son statut de figure liminaire, gardienne de seuils que les vivants ne franchissent qu'au péril de leur intégrité."
+    ],
+    "anomalies": [
+      "Le décompte des doigts de l'oni varie d'une source à l'autre, entre trois et six par membre, chacun terminé par des griffes acérées.[1] Cette instabilité numérique, rare pour une créature aussi codifiée par ailleurs dans son apparence, rappelle que le folklore japonais n'a jamais fixé l'oni dans un canon unique et definitif.",
+      "Autre anomalie notable : la couleur de peau de l'oni change selon les récits — rouge, bleue, noire ou jaune — sans qu'aucune de ces teintes ne s'impose comme la forme de référence.[1] Cette variabilité chromatique distingue l'oni de créatures dont l'apparence reste stable d'une tradition à l'autre, et suggère que la couleur importe moins que l'ensemble des attributs — cornes, crocs, club de fer — qui signalent sa nature."
+    ],
+    "naturelle": {
+      "lead": "L'histoire naturelle de l'oni suit le parcours d'un esprit devenu progressivement créature de chair, du fantôme invisible de l'ère Heian au monstre cornu que documentent les récits populaires japonais.",
+      "parts": [
+        {"title": "Comportement", "body": ["L'oni agit avant tout par la force brute, maniant son kanabō de fer avec une puissance surhumaine.[1] Les récits comme Momotarō le présentent en antagoniste organisé, capable de retrancher les siens dans un repaire défendu, tandis que des adaptations plus récentes lui prêtent des dispositions plus conciliantes."]},
+        {"title": "Habitat", "body": ["Grottes, montagnes et enfers forment les lieux de vie traditionnels de l'oni, à l'écart des habitations humaines.[1] Cette relégation aux marges du monde ordonné correspond à son rôle de menace venue de l'extérieur."]},
+        {"title": "Alimentation", "body": ["Aucune source ne détaille de régime alimentaire propre à l'oni ; sa nature de créature surhumaine liée au tonnerre et à la foudre le place davantage du côté de la force élémentaire que du besoin organique.[1]"]},
+        {"title": "Intelligence", "body": ["L'oni sait organiser une défense collective, comme le montre l'épisode de Momotarō où plusieurs oni retranchés opposent une résistance construite au héros et à ses compagnons.[1] Cette capacité d'organisation dépasse le simple réflexe de la bête sauvage."]},
+        {"title": "Reproduction", "body": ["Aucune source ne documente de mode de reproduction propre à l'oni ; le folklore le traite comme une catégorie d'être surnaturel plutôt que comme une espèce animale dont on suivrait la lignée."]},
+        {"title": "Prédateurs", "body": ["Le principal adversaire de l'oni dans la tradition reste le héros humain, à l'image de Momotarō, mais aussi le rituel collectif : le lancer de haricots grillés du setsubun, accompagné du cri Oni wa soto, fuku wa uchi (les démons dehors, la fortune dedans), constitue depuis le Xe siècle une pratique organisée pour le repousser.[1]"]}
+      ]
+    },
+    "reliques": [
+      "Le rituel du setsubun reste la relique vivante la plus durable attachée à l'oni : chaque février, le lancer de haricots grillés au cri de Oni wa soto, fuku wa uchi perpétue une coutume dont l'origine remonte à une légende du Xe siècle.[1] Ce geste annuel maintient, bien après l'incarnation progressive de l'oni en créature de chair, le souvenir d'un temps où l'on croyait pouvoir chasser un esprit indésirable par la seule force d'une formule et d'un lancer de graines."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "Oni — folklore, étymologie et rituel du setsubun, Wikipédia", "url": "https://en.wikipedia.org/wiki/Oni"}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "description": "Un peuple-chat qui ne s'attarde nulle part : le tabaxi collectionne les récits et les curiosités du monde, mais ne construit jamais de trésor où se fixer.",
+  "sections": {
+    "fascination": [
+      "Le tabaxi n'est pas un félin qui aurait appris à parler, mais un peuple façonné, selon la légende de sa propre création, par un être divin des Plans supérieurs appelé le Seigneur des Chats, dans le but de mêler les qualités de l'humanoïde et du chat.[1] Cette origine explique une part de son étrangeté : il ne cherche pas à imiter l'humain ni à rester purement animal, il occupe un entre-deux assumé, où les griffes et l'agilité féline cohabitent avec la parole et le récit.",
+      "Ce qui frappe surtout chez le tabaxi, c'est la nature de son désir. Là où tant de créatures de légende amassent l'or par avarice, lui accumule les histoires et les objets curieux par pure curiosité — il veut avant tout « poser les yeux sur toutes les merveilles du monde ».[1] Le voyage n'est pas chez lui un moyen vers une fin, mais une fin en soi, sans cesse renouvelée dès qu'un but est atteint."
+    ],
+    "legendes": [
+      "Le tabaxi appartient aux peuples jouables nés du jeu de rôle moderne, sans ancrage dans un folklore antérieur : les sources le présentent comme un humanoïde félin originaire d'une terre étrange et lointaine.[1] Sa légende de fondation, transmise par les communautés qui en gardent la mémoire, fait du Seigneur des Chats un modeleur plutôt qu'un simple ancêtre — une divinité qui aurait voulu incarner dans la chair une synthèse entre deux natures jusque-là séparées.",
+      "Cette origine mythique irrigue directement le tempérament du peuple : le tabaxi errant est mû par la curiosité, cherchant à rassembler des artefacts intéressants, à recueillir des récits et des légendes, et à contempler toutes les merveilles du monde.[1][2] Il ne s'agit pas d'une quête organisée ni d'un pèlerinage religieux, mais d'une disposition presque instinctive, aussi naturelle chez lui que la chasse chez un chat domestique.",
+      "Les traits mécaniques associés au peuple — griffes félines, agilité, don du chat, vision dans le noir — ne sont que la traduction ludique d'une même idée : un corps taillé pour l'exploration légère, capable de bondir, de grimper et de se faufiler plutôt que d'imposer sa force.[1][2] Le tabaxi n'est donc pas conçu comme un guerrier ou un roi, mais comme un marcheur infatigable des routes du monde."
+    ],
+    "anomalies": [
+      "L'anomalie la plus nette du tabaxi tient à son rapport à la possession. Les récits le décrivent collectionnant des objets et des histoires sans jamais chercher à en tirer richesse ou pouvoir : il devient, selon un mot rapporté sur son caractère, capable de se concentrer intensément sur une tâche donnée puis, une fois celle-ci achevée, de l'abandonner aussitôt pour partir vers le prochain centre d'intérêt.[1] Ce cycle d'obsession brève et d'abandon total dessine un tempérament que peu d'autres peuples partagent aussi ouvertement.",
+      "Un autre trait déroutant concerne sa relation au territoire : contrairement à la plupart des peuples de légende, définis par une patrie, une cité ou un tertre, le tabaxi n'a pas de foyer fixe attesté dans son portrait le plus courant. Sa terre d'origine reste qualifiée d'« étrange et lointaine », presque volontairement floue, comme si son identité tenait davantage au mouvement qu'à un lieu.[1]",
+      "Enfin, la combinaison de traits félins et humanoïdes ne produit pas chez lui une bête sauvage à demi civilisée, mais l'inverse : une créature parfaitement sociale, dotée de récits, de talents et d'une mémoire collective, dont l'instinct de chasseur ne sert plus qu'à l'exploration et à la survie du voyage plutôt qu'à la prédation pure."
+    ],
+    "naturelle": {
+      "lead": "Le portrait naturel du tabaxi reste celui d'un peuple de jeu de rôle moderne, sans lignée folklorique antérieure. Il se dessine à travers ses traits raciaux et le tempérament qui leur est associé, plutôt qu'à travers une zoologie ancienne.",
+      "parts": [
+        {"title": "Comportement", "body": ["La curiosité domine chez le tabaxi toute autre motivation. Il collectionne récits, objets et souvenirs de voyage, se focalise avec intensité sur une découverte puis s'en détourne dès qu'elle est épuisée, prêt à repartir vers la merveille suivante.[1] Ce comportement donne à sa vie une allure de vagabondage permanent, plus proche de l'exploration que de la conquête."]},
+        {"title": "Habitat", "body": ["Le tabaxi ne s'attache pas à un territoire précis : jungles, caravanes et ports jalonnent ses trajets plutôt qu'ils ne composent une patrie. Sa terre d'origine, décrite comme lointaine et étrange, semble davantage un point de départ mythique qu'un lieu de résidence durable.[1]"]},
+        {"title": "Alimentation", "body": ["Aucune source ne détaille de régime alimentaire propre au tabaxi ; son héritage félin — griffes, agilité, sens aiguisés — évoque plutôt un chasseur occasionnel qu'un prédateur systématique, l'essentiel de son énergie étant tourné vers le voyage plutôt que la subsistance."]},
+        {"title": "Intelligence", "body": ["Le tabaxi conjugue des talents pratiques — discrétion, perception aiguë issue de son « don du chat » — avec une mémoire vive pour les récits et les légendes qu'il recueille.[1][2] Son intelligence se manifeste moins dans l'érudition savante que dans une curiosité active, sans cesse en quête de nouvelles données à emporter avec lui."]},
+        {"title": "Reproduction", "body": ["Aucune tradition détaillée ne documente les usages familiaux ou reproductifs du tabaxi ; les sources se concentrent sur son tempérament individuel de voyageur plutôt que sur une structure de clan ou de lignée."]},
+        {"title": "Prédateurs", "body": ["Aucun prédateur attitré n'est associé au tabaxi dans les sources consultées. Son agilité féline et sa vision nocturne suggèrent une créature davantage équipée pour échapper au danger que pour l'affronter de front, cohérente avec son rôle d'explorateur plutôt que de combattant de première ligne."]}
+      ]
+    },
+    "reliques": [
+      "Le tabaxi ne laisse pas de temple ni de sépulture célèbre : sa relique la plus fidèle est justement la collection elle-même — cet ensemble disparate d'artefacts et de récits amassés au fil du voyage, jamais amassés pour leur valeur mais pour l'histoire qu'ils racontent.[1]",
+      "Son nom reste attaché aux Terres Chaudes de la Faerûn dans les univers où il est le plus documenté, un ancrage géographique ténu qui contraste avec son tempérament foncièrement nomade — comme si même son origine officielle ne pouvait le retenir bien longtemps."
+    ]
+  },
+  "sources": [
+    {"id": 1, "title": "D&D Beyond — Espèces de personnage, description du peuple Tabaxi", "url": "https://www.dndbeyond.com/species"},
+    {"id": 2, "title": "D&D Beyond — Forums, discussion sur les traits raciaux du Tabaxi", "url": "https://www.dndbeyond.com/forums/dungeons-dragons-discussion/rules-game-mechanics/187791-whats-the-difference"}
+  ]
+}
