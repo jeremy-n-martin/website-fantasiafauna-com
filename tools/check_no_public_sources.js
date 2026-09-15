@@ -39,8 +39,9 @@ for (let i = 0; i < expected.length; i++) {
     assert.equal(d.querySelectorAll('.dossier dt').length, 7, 'seven dossier fields');
     const dossier = Object.fromEntries(Array.from(d.querySelectorAll('.dossier > div'), n => [n.querySelector('dt').textContent, n.querySelector('dd').textContent]));
     assert.equal(dossier.Tradition, undefined, 'no Tradition field');
-    assert.equal(dossier.Taille, 'Non renseignée');
-    assert.equal(dossier.Poids, 'Non renseigné');
+    const fiche = w.FF_FICHES[slug] || {};
+    assert.equal(dossier.Taille, fiche.taille || 'Non renseignée', 'the dossier shows the recorded size');
+    assert.equal(dossier.Poids, fiche.poids || 'Non renseigné', 'the dossier shows the recorded weight');
     row.taille = dossier.Taille; row.poids = dossier.Poids;
     assert.doesNotMatch(d.querySelector('#app').textContent, /\[\d+\]|Sources et lectures/i);
     assert.doesNotMatch(d.querySelector('meta[name="description"]').content, /\[\d+\]/);
