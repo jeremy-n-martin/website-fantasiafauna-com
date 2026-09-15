@@ -12,6 +12,12 @@ Les pages publiques ne présentent plus d'appels de citation, de bloc « Sources
 
 Le champ « Tradition » est remplacé par « Taille » et « Poids » : ne pas inventer de mesures absentes des données. Pour les fiches sans notice longue, afficher l'accroche existante sous le titre et conserver l'indication que la notice reste à documenter. Des fonds SVG originaux très légers décorent uniquement les pages de créatures, sans capturer les clics ni modifier les illustrations.
 
+## Illustration : agrandissement et bascule
+
+Le bouton séparé d'agrandissement (`button.exhibit-zoom`) a été remplacé par la bascule d'illustration ; l'agrandissement se fait en cliquant l'illustration elle-même. `tools/check_notice_render.js` a été réaligné sur ce comportement réel — clic sur l'image, changement d'illustration, ouverture du dialogue et restitution du focus — au lieu d'exiger un bouton qui n'existe plus.
+
+Limite connue : l'agrandissement n'est déclenchable qu'au pointeur, l'image n'étant pas focusable. Une commande clavier équivalente reste à ajouter.
+
 ## Direction
 
 Le catalogue est une galerie à explorer ; la fiche est une page de lecture. Conserver les illustrations existantes et les textes, sans ajouter de framework ni convertir les brouillons en notices publiées.

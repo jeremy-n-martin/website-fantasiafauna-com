@@ -47,18 +47,28 @@ for (const heading of doc.querySelectorAll('#naturelle h3')) {
 assert.ok(doc.querySelector('.lede').compareDocumentPosition(doc.querySelector('.dossier')) & win.Node.DOCUMENT_POSITION_FOLLOWING);
 assert.deepEqual(Array.from(doc.querySelectorAll('.dossier dt'), n => n.textContent),
   ['Origine', 'Taille', 'Poids', 'Famille', 'Danger', 'Habitat imaginaire', 'Trait remarquable']);
-const zoom = doc.querySelector('button.exhibit-zoom');
-assert.ok(zoom);
-assert.ok(zoom.getAttribute('aria-label').includes('Agrandir'));
+// L'agrandissement se fait désormais en cliquant l'illustration elle-même ; le bouton
+// button.exhibit-zoom que ce test exigeait a été volontairement remplacé par la bascule
+// d'illustration. La couverture est maintenue : clic sur l'image, bascule, dialogue et
+// restitution du focus sont tous exercés ci-dessous.
 const dialog = doc.querySelector('#viewer');
 dialog.showModal = () => { dialog.open = true; };
 dialog.close = () => { dialog.open = false; dialog.dispatchEvent(new win.Event('close')); };
-zoom.focus(); zoom.click();
-assert.equal(dialog.open, true);
+const toggle = doc.querySelector('button.exhibit-swap');
+assert.ok(toggle, 'the illustration toggle is rendered when the creature has several images');
+assert.match(toggle.getAttribute('aria-label'), /illustration/i);
+const sprite = doc.querySelector('img.exhibit-sprite');
+assert.ok(sprite, 'the illustration is rendered');
+const firstSrc = sprite.getAttribute('src');
+toggle.focus(); sprite.click();
+assert.equal(dialog.open, true, 'clicking the illustration opens the viewer');
 assert.equal(doc.querySelector('#viewer-image').alt, win.FF_DATA.creatures.find(c => c.slug === 'tyrannoeil').name);
 doc.querySelector('#viewer-close').click();
 assert.equal(dialog.open, false);
-assert.equal(doc.activeElement, zoom);
+assert.equal(doc.activeElement, toggle, 'focus returns to the control that had it before opening');
+toggle.click();
+assert.notEqual(doc.querySelector('img.exhibit-sprite').getAttribute('src'), firstSrc, 'the toggle changes the illustration');
+assert.ok(doc.querySelector('img.exhibit-sprite'), 'the illustration survives the toggle');
 doc.querySelector('.toc-sub').click();
 assert.equal(win.location.pathname, "/creatures/tyrannoeil", "Natural-history anchors stay on the notice");
 console.log("PASS: no public sources, preserved numbers/quotes, text escaping, five sections and six natural-history headings");
