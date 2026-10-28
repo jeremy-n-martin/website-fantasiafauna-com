@@ -407,6 +407,13 @@ add("zmey", "Le dragon slave, souvent à trois têtes, parfois trop humain.", "F
 add("zombie", "Du zonbi asservi au mort contagieux moderne, le corps marche sans volonté.", "Traditions haïtiennes et cinéma d'horreur moderne", "Personne asservie ou mort animé / serviteur", 3, "Récits haïtiens, cimetières et villes ravagées au cinéma", "Asservissement magique en Haïti, faim et contagion dans la fiction moderne")
 
 
+# Preserve the distinction between the antique serpent and fantasy interpretations.
+FICHES['basilic'].update({
+    'taille': 'Petit serpent antique ; dimensions variables en fantasy',
+    'poids': 'Non précisé dans le récit antique ; variable selon l’univers',
+})
+
+
 def load_creatures() -> list[dict]:
     text = DATA_JS.read_text(encoding="utf-8")
     start = text.index("{")

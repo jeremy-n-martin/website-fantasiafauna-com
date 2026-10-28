@@ -71,4 +71,4 @@ Survol léger des illustrations, désactivé avec prefers-reduced-motion. Contr�
 
 ## Content
 
-340 créatures. Les 109 notices complètes ont priorité sur les présentations courtes. Les 231 présentations proviennent de textes existants, sont éditables dans data/descriptions.json et ne modifient pas le registre de validation des articles longs. Les références restent dans les données éditoriales et ne s'affichent pas dans les pages publiques.
+340 créatures, toutes avec les cinq rubriques et les six sous-parties d’histoire naturelle. Les 109 notices relues restent prioritaires. Les 231 autres descriptions intègrent désormais les sections des textes de travail existants, dans data/descriptions.json. Le contrôle de structure, de couverture et de références ne vaut pas relecture documentaire indépendante ; le registre des approbations reste inchangé. Les références demeurent internes conformément au choix éditorial du site.

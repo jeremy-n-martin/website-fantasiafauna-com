@@ -10,7 +10,7 @@ w.scrollTo = () => {};
 w.matchMedia = () => ({matches: true});
 w.HTMLElement.prototype.scrollIntoView = () => {};
 for (const file of ['creatures-data.js', 'descriptions.js', 'notices.js', 'fiches.js']) w.eval(fs.readFileSync(path.join(root, 'js', file), 'utf8'));
-const before = JSON.stringify([w.FF_DATA, w.FF_NOTICES, w.FF_FICHES]);
+const before = JSON.stringify([w.FF_DATA, w.FF_NOTICES, w.FF_FICHES, w.FF_DESCRIPTIONS]);
 const expected = w.FF_DATA.creatures.map(c => c.slug);
 assert.equal(expected.length, 340);
 assert.equal(new Set(expected).size, 340);
@@ -26,7 +26,7 @@ for (const [bundle, entries] of [['FF_DATA', w.FF_DATA.creatures], ['FF_NOTICES'
 d.querySelector('.plate').click();
 for (let i = 0; i < expected.length; i++) {
   const slug = decodeURIComponent(w.location.pathname.split('/').pop());
-  const row = {slug, route: w.location.pathname, longNotice: !!w.FF_NOTICES[slug]?.sections, sections: d.querySelectorAll('.notice > section').length, naturalParts: d.querySelectorAll('#naturelle h3').length, tocLinks: d.querySelectorAll('.toc a').length};
+  const row = {slug, route: w.location.pathname, longNotice: !!(w.FF_NOTICES[slug] || w.FF_DESCRIPTIONS[slug])?.sections, reviewed: !!w.FF_NOTICES[slug], sections: d.querySelectorAll('.notice > section').length, naturalParts: d.querySelectorAll('#naturelle h3').length, tocLinks: d.querySelectorAll('.toc a').length};
   try {
     assert.ok(expected.includes(slug), 'known route');
     assert.ok(d.querySelector('.creature h1')?.textContent, 'rendered creature');
@@ -35,11 +35,8 @@ for (let i = 0; i < expected.length; i++) {
     const originalIntro = w.FF_NOTICES[slug]?.description || w.FF_DESCRIPTIONS[slug]?.description || creature.description || w.FF_FICHES[slug].accroche;
     assert.equal(d.querySelector('.lede')?.textContent, originalIntro.replace(/\[\d+\]/g, ''), 'original introduction restored, long description has priority');
     assert.equal(d.querySelector('meta[name="description"]').content, originalIntro.replace(/\[\d+\]/g, ''), 'SEO uses available introduction');
-    if (!row.longNotice) {
-      assert.equal(row.sections, 1, 'short presentation remains distinct from full article');
-      assert.ok(d.querySelectorAll('#fascination p').length >= 2, 'a developed description for each remaining creature');
-      assert.equal(d.querySelector('#app .undocumented'), null);
-    }
+    assert.ok(row.longNotice, 'every creature has developed sections');
+    assert.equal(d.querySelector('#app .undocumented'), null);
     assert.equal(d.querySelectorAll('.dossier dt').length, 7, 'seven dossier fields');
     const dossier = Object.fromEntries(Array.from(d.querySelectorAll('.dossier > div'), n => [n.querySelector('dt').textContent, n.querySelector('dd').textContent]));
     assert.equal(dossier.Tradition, undefined, 'no Tradition field');
@@ -63,8 +60,8 @@ for (let i = 0; i < expected.length; i++) {
 }
 assert.equal(new Set(rows.map(r => r.slug)).size, 340, 'pager visits every route exactly once');
 assert.deepEqual(rows.map(r => r.slug).sort(), [...expected].sort());
-assert.equal(JSON.stringify([w.FF_DATA, w.FF_NOTICES, w.FF_FICHES]), before, 'rendering never mutates corpus or internal references');
-const report = {total: rows.length, passed: rows.filter(r => r.pass).length, failed: failures.length, longNotices: rows.filter(r => r.longNotice).length, shortFiches: rows.filter(r => !r.longNotice).length, measurementFields, realMeasurementCount: rows.filter(r => r.taille && r.taille !== 'Non renseignée').length, missingMeasurementCount: rows.filter(r => r.taille === 'Non renseignée' && r.poids === 'Non renseigné').length, internalDataUnchanged: true, failures, routes: rows};
+assert.equal(JSON.stringify([w.FF_DATA, w.FF_NOTICES, w.FF_FICHES, w.FF_DESCRIPTIONS]), before, 'rendering never mutates corpus or internal references');
+const report = {total: rows.length, passed: rows.filter(r => r.pass).length, failed: failures.length, longNotices: rows.filter(r => r.longNotice).length, reviewedNotices: rows.filter(r => r.reviewed).length, expandedDescriptions: rows.filter(r => !r.reviewed).length, measurementFields, realMeasurementCount: rows.filter(r => r.taille && r.taille !== 'Non renseignée').length, missingMeasurementCount: rows.filter(r => r.taille === 'Non renseignée' && r.poids === 'Non renseigné').length, internalDataUnchanged: true, failures, routes: rows};
 fs.mkdirSync(path.join(root, 'tmp/redesign'), {recursive: true});
 fs.writeFileSync(path.join(root, 'tmp/redesign/no-sources-audit.json'), JSON.stringify(report, null, 2) + '\n');
 dom.window.close();

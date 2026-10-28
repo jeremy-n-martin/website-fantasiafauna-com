@@ -462,8 +462,8 @@ window.FF_FICHES = {
     "famille": "Serpent royal / regard mortel",
     "danger": 5,
     "habitat": "Puits, caves, déserts de pierre",
-    "taille": "1,80 à 2,50 m de long",
-    "poids": "60 à 100 kg",
+    "taille": "Petit serpent antique ; dimensions variables en fantasy",
+    "poids": "Non précisé dans le récit antique ; variable selon l’univers",
     "trait": "Regard mortel et haleine venimeuse",
     "nom": "Basilic"
   },
