@@ -396,9 +396,11 @@
           '<img class="specimen-frame" src="/img/ornaments/specimen-frame.svg?v=3" alt="" aria-hidden="true" width="300" height="300">' +
           staged +
         "</div>" +
+        '<div class="exhibit-actions"><button class="exhibit-open" type="button">Agrandir l’illustration</button>' +
         (images.length > 1
           ? '<button class="exhibit-swap" type="button" aria-label="Changer d’illustration de ' + escapeHtml(creature.name) + '">Changer d’illustration</button>'
           : "") +
+        "</div>" +
       "</figure>"
     );
   }
@@ -410,7 +412,10 @@
     if (!creature || !creature.images || creature.images.length < 2) return;
     activeImage = (activeImage + 1) % creature.images.length;
     const figure = app.querySelector(".exhibit");
-    if (figure) figure.outerHTML = exhibitHtml(creature);
+    if (figure) {
+      figure.outerHTML = exhibitHtml(creature);
+      app.querySelector(".exhibit-swap")?.focus({ preventScroll: true });
+    }
   }
 
   function renderCreature(slug) {
@@ -475,6 +480,7 @@
       '<div class="creature' + (sections.length ? " has-reading" : "") + '">' +
         exhibitHtml(creature) +
         '<div class="sheet-copy">' +
+          '<p class="kicker">Le bestiaire · ' + padIndex(creature.index + 1) + '</p>' +
           "<h1>" + escapeHtml(creature.name) + "</h1>" +
           (intro ? '<p class="lede">' + renderNoticeText(intro) + "</p>" : "") +
           dossier +
@@ -596,7 +602,7 @@
       swapImage();
       return;
     }
-    const zoom = event.target.closest(".exhibit-sprite");
+    const zoom = event.target.closest(".exhibit-sprite, .exhibit-open");
     if (zoom && app.contains(zoom)) {
       event.preventDefault();
       openViewer();
