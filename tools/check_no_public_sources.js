@@ -9,7 +9,7 @@ const w = dom.window;
 w.scrollTo = () => {};
 w.matchMedia = () => ({matches: true});
 w.HTMLElement.prototype.scrollIntoView = () => {};
-for (const file of ['creatures-data.js', 'notices.js', 'fiches.js']) w.eval(fs.readFileSync(path.join(root, 'js', file), 'utf8'));
+for (const file of ['creatures-data.js', 'descriptions.js', 'notices.js', 'fiches.js']) w.eval(fs.readFileSync(path.join(root, 'js', file), 'utf8'));
 const before = JSON.stringify([w.FF_DATA, w.FF_NOTICES, w.FF_FICHES]);
 const expected = w.FF_DATA.creatures.map(c => c.slug);
 assert.equal(expected.length, 340);
@@ -32,10 +32,14 @@ for (let i = 0; i < expected.length; i++) {
     assert.ok(d.querySelector('.creature h1')?.textContent, 'rendered creature');
     assert.ok(w.FF_FICHES[slug], 'synthesis exists');
     const creature = w.FF_DATA.creatures.find(c => c.slug === slug);
-    const originalIntro = w.FF_NOTICES[slug]?.description || creature.description || w.FF_FICHES[slug].accroche;
+    const originalIntro = w.FF_NOTICES[slug]?.description || w.FF_DESCRIPTIONS[slug]?.description || creature.description || w.FF_FICHES[slug].accroche;
     assert.equal(d.querySelector('.lede')?.textContent, originalIntro.replace(/\[\d+\]/g, ''), 'original introduction restored, long description has priority');
     assert.equal(d.querySelector('meta[name="description"]').content, originalIntro.replace(/\[\d+\]/g, ''), 'SEO uses available introduction');
-    if (!row.longNotice) assert.ok(d.querySelector('.undocumented'), 'short synthesis does not pretend to be a complete notice');
+    if (!row.longNotice) {
+      assert.equal(row.sections, 1, 'short presentation remains distinct from full article');
+      assert.ok(d.querySelectorAll('#fascination p').length >= 2, 'a developed description for each remaining creature');
+      assert.equal(d.querySelector('#app .undocumented'), null);
+    }
     assert.equal(d.querySelectorAll('.dossier dt').length, 7, 'seven dossier fields');
     const dossier = Object.fromEntries(Array.from(d.querySelectorAll('.dossier > div'), n => [n.querySelector('dt').textContent, n.querySelector('dd').textContent]));
     assert.equal(dossier.Tradition, undefined, 'no Tradition field');
@@ -64,5 +68,5 @@ const report = {total: rows.length, passed: rows.filter(r => r.pass).length, fai
 fs.mkdirSync(path.join(root, 'tmp/redesign'), {recursive: true});
 fs.writeFileSync(path.join(root, 'tmp/redesign/no-sources-audit.json'), JSON.stringify(report, null, 2) + '\n');
 dom.window.close();
-console.log(JSON.stringify({...report, routes: undefined, failures: failures.slice(0, 3)}, null, 2));
+console.log(JSON.stringify({...report, routes: undefined, measurementFields: undefined, failures: failures.slice(0, 3)}, null, 2));
 assert.equal(failures.length, 0, 'all 340 public routes must pass; see tmp/redesign/no-sources-audit.json');

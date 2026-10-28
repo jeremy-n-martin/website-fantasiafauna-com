@@ -1,6 +1,7 @@
 (function () {
   const data = window.FF_DATA || { creatures: [] };
   const notices = window.FF_NOTICES || {};
+  const descriptions = window.FF_DESCRIPTIONS || {};
   const fiches = window.FF_FICHES || {};
   const app = document.getElementById("app");
   const dialog = document.getElementById("viewer");
@@ -18,7 +19,7 @@
   ];
 
   const creatures = (data.creatures || []).map(function (entry) {
-    const notice = notices[entry.slug] || {};
+    const notice = notices[entry.slug] || descriptions[entry.slug] || {};
     const merged = Object.assign({}, entry, notice);
     if (notice.sections) {
       merged.sections = notice.sections;
@@ -308,7 +309,7 @@
     const hasFilters = cats.length > 0 || origins.length > 0;
     const resetNeeded = Boolean(route.q) || route.sort !== "az";
     setTitle(
-      "Fantasia Fauna — Le fantastique, espèce par espèce.",
+      "Fantasia Fauna — Bestiaire des créatures fantasy",
       "Catalogue visuel de " + creatures.length + " créatures fantastiques."
     );
     catalogNav.setAttribute("aria-current", "page");
@@ -316,18 +317,18 @@
     app.innerHTML =
       '<section class="catalog-intro" aria-labelledby="catalog-title">' +
         '<div class="intro-copy">' +
-          '<p class="kicker"><span aria-hidden="true">✧</span> Cabinet de curiosités</p>' +
-          '<h1 class="catalog-brand" id="catalog-title">Le fantastique,<br><em>espèce par espèce.</em></h1>' +
-          '<p class="catalog-lead">Un bestiaire illustré aux frontières du mythe et de l’imaginaire. Entrez, observez, laissez-vous surprendre.</p>' +
+          '<p class="kicker">Le bestiaire fantasy</p>' +
+          '<h1 class="catalog-brand" id="catalog-title">Les créatures ont<br><em>leurs légendes.</em></h1>' +
+          '<p class="catalog-lead">Dragons, esprits, peuples anciens et monstres de légende. Explorez ' + creatures.length + ' créatures fantasy, leurs origines et les pouvoirs qui font leur histoire.</p>' +
           '<a class="explore-link" href="#catalog-form">Explorer le bestiaire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>' +
         '</div>' +
         '<figure class="atlas-figure">' +
-          '<img src="/img/ornaments/moth-atlas.svg" width="600" height="500" alt="Gravure dorée d’un papillon imaginaire, entouré de cercles célestes et de feuillages">' +
-          '<figcaption><span aria-hidden="true">—</span> Les merveilles prennent forme <span aria-hidden="true">—</span></figcaption>' +
+          '<img src="/img/Dragon%20rouge%201.png" width="600" height="600" fetchpriority="high" alt="Dragon rouge aux ailes déployées, illustration en pixel art">' +
+          '<figcaption><span>À la rencontre du</span><a href="/creatures/dragon-rouge">Dragon rouge ↗</a></figcaption>' +
         '</figure>' +
       '</section>' +
       '<div class="collection-heading">' +
-        '<div><p class="kicker">Les archives de l’imaginaire</p><h2>La collection</h2></div>' +
+        '<div><p class="kicker">L’index des créatures</p><h2>Explorer le bestiaire</h2></div>' +
         '<p class="census"><b>' + creatures.length + '</b> créatures à découvrir</p>' +
       '</div>' +
       '<form class="toolbar" role="search" id="catalog-form">' +

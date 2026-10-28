@@ -91,7 +91,7 @@ for (const state of states) {
   const block = css.match(new RegExp(':root\\[data-theme="' + state + '"\\]\\s*\\{([^}]+)'));
   assert.ok(block, 'explicit palette: ' + state);
   const t = { ...base, ...tokens(block[1]) };
-  const pairs = ['paper', 'surface', 'wash', 'target'].flatMap(bg => ['ink', 'muted', 'forest'].map(fg => [fg, bg]));
+  const pairs = ['paper', 'surface', 'wash', 'target'].flatMap(bg => ['ink', 'muted', 'accent'].map(fg => [fg, bg]));
   pairs.push(['header-text', 'header-background']);
   ratios[state] = Math.min(...pairs.map(([fg,bg]) => {
     const a = luminance(t[fg]), b = luminance(t[bg]);
@@ -109,7 +109,7 @@ const decorative = boot();
 for (const selector of ['.theme-icon', '.brand .mark']) {
   assert.equal(decorative.window.document.querySelector(selector)?.getAttribute('aria-hidden'), 'true');
 }
-assert.equal(decorative.window.document.querySelectorAll('.brand .wing').length, 2);
+assert.equal(decorative.window.document.querySelector('.brand .mark').getAttribute('viewBox'), '0 0 64 64');
 decorative.window.close();
 console.log('PASS: AA palette text contrast minima ' + JSON.stringify(ratios));
 console.log('PASS: decorative SVG, reduced motion, print specificity and touch control contracts');
